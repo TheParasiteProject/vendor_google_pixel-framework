@@ -33,6 +33,7 @@ import com.android.systemui.flags.SystemPropertiesHelper;
 import com.android.systemui.keyguard.WakefulnessLifecycle;
 import com.android.systemui.settings.UserTracker;
 import com.android.systemui.statusbar.policy.ConfigurationController;
+import com.android.systemui.statusbar.policy.ConfigurationController.ConfigurationListener;
 import com.android.systemui.statusbar.policy.DeviceProvisionedController;
 import com.android.systemui.theme.ThemeOverlayApplier;
 import com.android.systemui.theme.ThemeOverlayController;
@@ -47,6 +48,16 @@ import javax.inject.Inject;
 public class ThemeOverlayControllerGoogle extends ThemeOverlayController {
     private final Resources resources;
     private final SystemPropertiesHelper systemProperties;
+
+    private final ConfigurationController darkConfigurationController;
+    private final ConfigurationListener darkConfigurationListener =
+            new ConfigurationListener() {
+                @Override
+                public void onUiModeChanged() {
+                    Log.d(TAG, "Re-applying theme on UI change");
+                    reevaluateSystemTheme(true /* forceReload */);
+                }
+            };
 
     @Inject
     public ThemeOverlayControllerGoogle(Context context, BroadcastDispatcher broadcastDispatcher,
@@ -64,6 +75,7 @@ public class ThemeOverlayControllerGoogle extends ThemeOverlayController {
                 resources, wakefulnessLifecycle, systemSettings, configurationController);
         this.systemProperties = systemPropertiesHelper;
         this.resources = resources;
+        darkConfigurationController = configurationController;
         configurationController.addCallback(new ConfigurationController.ConfigurationListener() {
             @Override
             public void onThemeChanged() {
@@ -79,7 +91,13 @@ public class ThemeOverlayControllerGoogle extends ThemeOverlayController {
             Log.d("ThemeOverlayController", "Boot animation colors " + i + ": " + i2);
         }
     }
-
+    
+    @Override
+    public void start() {
+        super.start();
+        darkConfigurationController.addCallback(darkConfigurationListener);
+    }
+        
     public final void setBootColorSystemProps() {
         try {
             int[] bootColors = getBootColors();
