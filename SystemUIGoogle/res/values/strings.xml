@@ -8,7 +8,7 @@
     <string name="adaptive_charging_notify_help_url">https://support.google.com/pixelphone?p=adaptive_charging</string>
     <string name="adaptive_charging_notify_title">Adaptive Charging is on</string>
     <string name="adaptive_charging_notify_turn_off_once">Turn off once</string>
-    <string name="adaptive_charging_time_estimate">%1$s • Adaptive charging (full by %2$s)</string>
+    <string name="adaptive_charging_time_estimate">%1$s • Adaptive charging • Full by %2$s</string>
     <string name="assistant_keyboard_icon_label">Keyboard</string>
     <string name="assistant_scrim_label">Listening, tap to cancel</string>
     <string name="assistant_zero_state_icon_label">Assistant Overview</string>
