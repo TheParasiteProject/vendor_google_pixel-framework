@@ -53,6 +53,7 @@ import com.android.systemui.screenshot.ReferenceScreenshotModule;
 import com.android.systemui.shade.NotificationShadeWindowControllerImpl;
 import com.android.systemui.shade.ShadeController;
 import com.android.systemui.shade.ShadeControllerImpl;
+import com.android.systemui.shade.ShadeExpansionStateManager;
 import com.android.systemui.settings.UserContentResolverProvider;
 import com.android.systemui.statusbar.CommandQueue;
 import com.android.systemui.statusbar.NotificationLockscreenUserManager;
@@ -79,6 +80,7 @@ import com.android.systemui.statusbar.policy.SensorPrivacyController;
 import com.android.systemui.statusbar.policy.SensorPrivacyControllerImpl;
 import com.android.systemui.volume.dagger.VolumeModule;
 
+import com.google.android.systemui.biometrics.FingerprintExtProvider;
 import com.google.android.systemui.NotificationLockscreenUserManagerGoogle;
 import com.google.android.systemui.assist.AssistManagerGoogle;
 import com.google.android.systemui.assist.dagger.AssistModule;
@@ -176,7 +178,8 @@ public abstract class SystemUIGoogleModule {
             ConfigurationController configurationController,
             @Main Handler handler,
             AccessibilityManagerWrapper accessibilityManagerWrapper,
-            UiEventLogger uiEventLogger) {
+            UiEventLogger uiEventLogger,
+            ShadeExpansionStateManager shadeExpansionStateManager) {
         return new HeadsUpManagerPhone(
                 context,
                 headsUpManagerLogger,
@@ -187,7 +190,8 @@ public abstract class SystemUIGoogleModule {
                 configurationController,
                 handler,
                 accessibilityManagerWrapper,
-                uiEventLogger
+                uiEventLogger,
+                shadeExpansionStateManager
         );
     }
 

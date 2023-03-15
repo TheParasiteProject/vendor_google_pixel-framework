@@ -26,6 +26,7 @@ import dagger.Lazy;
 public class GoogleServices extends VendorServices {
     private final ArrayList<Object> mServices;
     private final CentralSurfaces mCentralSurfaces;
+    private final Context mContext;
     private final AlarmManager mAlarmManager;
     private final UiEventLogger mUiEventLogger;
     private final Lazy<ServiceConfigurationGoogle> mServiceConfigurationGoogle;
@@ -33,10 +34,11 @@ public class GoogleServices extends VendorServices {
 
     @Inject
     public GoogleServices(Context context, AlarmManager alarmManager, CentralSurfaces centralSurfaces, UiEventLogger uiEventLogger, Lazy<ServiceConfigurationGoogle> serviceConfigurationGoogleLazy, Lazy<ColumbusServiceWrapper> columbusServiceWrapperLazy) {
-        super(context);
+        super();
         mServices = new ArrayList<>();
         mAlarmManager = alarmManager;
         mCentralSurfaces = centralSurfaces;
+        mContext = context;
         mUiEventLogger = uiEventLogger;
         mServiceConfigurationGoogle = serviceConfigurationGoogleLazy;
         mColumbusServiceLazy = columbusServiceWrapperLazy;

@@ -23,6 +23,9 @@ import com.android.systemui.recents.RecentsModule
 import com.google.android.systemui.keyguard.KeyguardSliceProviderGoogle
 import com.google.android.systemui.smartspace.KeyguardSmartspaceStartable
 import com.google.android.systemui.statusbar.dagger.CentralSurfacesGoogleModule
+import com.android.systemui.statusbar.NotificationInsetsModule
+import com.android.systemui.statusbar.QsFrameTranslateModule
+
 import dagger.Subcomponent
 
 /** Dagger Subcomponent for Core SysUI. */
@@ -31,6 +34,8 @@ import dagger.Subcomponent
     modules = [
         DefaultComponentBinder::class,
         DependencyProvider::class,
+        NotificationInsetsModule::class,
+        QsFrameTranslateModule::class,
         SystemUIGoogleBinder::class,
         SystemUIModule::class,
         SystemUIGoogleCoreStartableModule::class,

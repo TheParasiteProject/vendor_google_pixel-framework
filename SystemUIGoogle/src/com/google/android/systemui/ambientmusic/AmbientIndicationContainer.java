@@ -29,6 +29,7 @@ import android.graphics.drawable.DrawableWrapper;
 import android.media.MediaMetadata;
 import android.os.Handler;
 import android.os.Looper;
+import android.os.PowerManager;
 import android.os.SystemClock;
 import android.text.TextUtils;
 import android.util.AttributeSet;
@@ -294,7 +295,7 @@ public class AmbientIndicationContainer extends AutoReinflateContainer implement
             mBottomMarginPx = dimensionPixelSize;
             ((FrameLayout.LayoutParams) getLayoutParams()).bottomMargin = mBottomMarginPx;
         }
-        mCentralSurfaces.getPanelController().setAmbientIndicationTop(getTop(), mTextView.getVisibility() == View.VISIBLE);
+        mCentralSurfaces.getNotificationPanelViewController().setAmbientIndicationTop(getTop(), mTextView.getVisibility() == View.VISIBLE);
     }
 
     public void hideAmbientMusic() {
@@ -303,7 +304,7 @@ public class AmbientIndicationContainer extends AutoReinflateContainer implement
 
     private void onTextClick(View view) {
         if (mOpenIntent != null) {
-            mCentralSurfaces.wakeUpIfDozing(SystemClock.uptimeMillis(), view, "AMBIENT_MUSIC_CLICK");
+            mCentralSurfaces.wakeUpIfDozing(SystemClock.uptimeMillis(), view, "AMBIENT_MUSIC_CLICK", PowerManager.WAKE_REASON_GESTURE);
             if (mAmbientSkipUnlock) {
                 sendBroadcastWithoutDismissingKeyguard(mOpenIntent);
             } else {
@@ -314,7 +315,7 @@ public class AmbientIndicationContainer extends AutoReinflateContainer implement
 
     private void onIconClick(View view) {
         if (mFavoritingIntent != null) {
-            mCentralSurfaces.wakeUpIfDozing(SystemClock.uptimeMillis(), view, "AMBIENT_MUSIC_CLICK");
+            mCentralSurfaces.wakeUpIfDozing(SystemClock.uptimeMillis(), view, "AMBIENT_MUSIC_CLICK", PowerManager.WAKE_REASON_GESTURE);
             sendBroadcastWithoutDismissingKeyguard(mFavoritingIntent);
             return;
         }
