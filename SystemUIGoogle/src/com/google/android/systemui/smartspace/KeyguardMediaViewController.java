@@ -13,7 +13,7 @@ import com.android.systemui.R;
 import com.android.systemui.broadcast.BroadcastDispatcher;
 import com.android.systemui.dagger.SysUISingleton;
 import com.android.systemui.plugins.BcSmartspaceDataPlugin;
-import com.android.systemui.settings.CurrentUserTracker;
+import com.android.systemui.settings.UserTracker;
 import com.android.systemui.statusbar.NotificationMediaManager;
 import com.android.systemui.util.concurrency.DelayableExecutor;
 
@@ -51,7 +51,7 @@ public final class KeyguardMediaViewController {
     private BcSmartspaceDataPlugin.SmartspaceView smartspaceView;
     private CharSequence title;
     private final DelayableExecutor uiExecutor;
-    private CurrentUserTracker userTracker;
+    private UserTracker userTracker;
 
     @Inject
     public KeyguardMediaViewController(
@@ -111,7 +111,7 @@ public final class KeyguardMediaViewController {
                     }
                 });
         userTracker =
-                new CurrentUserTracker(broadcastDispatcher) {
+                new UserTracker(broadcastDispatcher) {
                     @Override
                     public void onUserSwitched(int i) {
                         reset();
@@ -149,8 +149,8 @@ public final class KeyguardMediaViewController {
                             .setSubtitle(artist)
                             .setIcon(mediaManager.getMediaIcon())
                             .build();
-            CurrentUserTracker currentUserTracker = userTracker;
-            if (currentUserTracker == null) {
+            UserTracker mUserTracker = userTracker;
+            if (mUserTracker == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("userTracker");
                 throw null;
             }
@@ -158,7 +158,7 @@ public final class KeyguardMediaViewController {
                     new SmartspaceTarget.Builder(
                                     "deviceMedia",
                                     mediaComponent,
-                                    UserHandle.of(currentUserTracker.getCurrentUserId()))
+                                    UserHandle.of(mUserTracker.getCurrentUserId()))
                             .setFeatureType(41)
                             .setHeaderAction(build)
                             .build();

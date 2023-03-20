@@ -42,7 +42,7 @@ import com.android.systemui.Dependency;
 import com.android.systemui.broadcast.BroadcastDispatcher;
 import com.android.systemui.dock.DockManager;
 import com.android.systemui.plugins.statusbar.StatusBarStateController;
-import com.android.systemui.settings.CurrentUserTracker;
+import com.android.systemui.settings.UserTracker;
 import com.android.systemui.statusbar.notification.collection.NotificationEntry;
 import com.android.systemui.statusbar.notification.interruption.NotificationInterruptStateProvider;
 import com.android.systemui.statusbar.notification.interruption.NotificationInterruptSuppressor;
@@ -106,7 +106,7 @@ public class DockObserver extends BroadcastReceiver implements DockManager {
     private final DockAlignmentController mDockAlignmentController;
     private final DelayableExecutor mMainExecutor;
     private final StatusBarStateController mStatusBarStateController;
-    private final CurrentUserTracker mUserTracker;
+    private final UserTracker mUserTracker;
     private final WirelessCharger mWirelessCharger;
     @VisibleForTesting
     DockGestureController mDockGestureController;
@@ -138,7 +138,7 @@ public class DockObserver extends BroadcastReceiver implements DockManager {
         mContext = context;
         mClients = new ArrayList();
         mAlignmentStateListeners = new ArrayList();
-        mUserTracker = new CurrentUserTracker(broadcastDispatcher) {
+        mUserTracker = new UserTracker(broadcastDispatcher) {
             @Override
             public void onUserSwitched(int i) {
                 stopDreamlinerService(context);
