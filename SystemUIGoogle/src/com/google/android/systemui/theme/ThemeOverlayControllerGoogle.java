@@ -38,7 +38,6 @@ import com.android.systemui.statusbar.policy.DeviceProvisionedController;
 import com.android.systemui.theme.ThemeOverlayApplier;
 import com.android.systemui.theme.ThemeOverlayController;
 import com.android.systemui.util.settings.SecureSettings;
-import com.android.systemui.util.settings.SystemSettings;
 
 import java.util.concurrent.Executor;
 
@@ -67,12 +66,12 @@ public class ThemeOverlayControllerGoogle extends ThemeOverlayController {
                                         UserManager userManager, DeviceProvisionedController deviceProvisionedController,
                                         UserTracker userTracker, DumpManager dumpManager, FeatureFlags featureFlags,
                                         @Main Resources resources, WakefulnessLifecycle wakefulnessLifecycle,
-                                        SystemSettings systemSettings, SystemPropertiesHelper systemPropertiesHelper,
+                                        SystemPropertiesHelper systemPropertiesHelper,
                                         ConfigurationController configurationController) {
         super(context, broadcastDispatcher, bgHandler, mainExecutor, bgExecutor,
                 themeOverlayApplier, secureSettings, wallpaperManager, userManager,
                 deviceProvisionedController, userTracker, dumpManager, featureFlags,
-                resources, wakefulnessLifecycle, systemSettings, configurationController);
+                resources, wakefulnessLifecycle, configurationController);
         this.systemProperties = systemPropertiesHelper;
         this.resources = resources;
         darkConfigurationController = configurationController;
