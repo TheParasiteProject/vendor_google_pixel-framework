@@ -13,7 +13,6 @@ import com.android.systemui.R;
 import com.android.systemui.broadcast.BroadcastDispatcher;
 import com.android.systemui.dagger.SysUISingleton;
 import com.android.systemui.plugins.BcSmartspaceDataPlugin;
-import com.android.systemui.settings.UserTracker;
 import com.android.systemui.statusbar.NotificationMediaManager;
 import com.android.systemui.util.concurrency.DelayableExecutor;
 
@@ -51,7 +50,6 @@ public final class KeyguardMediaViewController {
     private BcSmartspaceDataPlugin.SmartspaceView smartspaceView;
     private CharSequence title;
     private final DelayableExecutor uiExecutor;
-    private UserTracker userTracker;
 
     @Inject
     public KeyguardMediaViewController(
@@ -113,7 +111,6 @@ public final class KeyguardMediaViewController {
     }
 
     public final void updateMediaInfo(MediaMetadata mediaMetadata, int i) {
-        KeyguardMediaViewController keyguardMediaViewController = KeyguardMediaViewController.this;
         CharSequence charSequence;
         if (!NotificationMediaManager.isPlayingState(i)) {
             reset();
@@ -143,15 +140,11 @@ public final class KeyguardMediaViewController {
                             .setSubtitle(artist)
                             .setIcon(mediaManager.getMediaIcon())
                             .build();
-            if (userTracker == null) {
-                Intrinsics.throwUninitializedPropertyAccessException("userTracker");
-                throw null;
-            }
             SmartspaceTarget build2 =
                     new SmartspaceTarget.Builder(
                                     "deviceMedia",
                                     mediaComponent,
-                                    UserHandle.of(keyguardMediaViewController.userTracker.getUserId()))
+                                    UserHandle.CURRENT)
                             .setFeatureType(41)
                             .setHeaderAction(build)
                             .build();
