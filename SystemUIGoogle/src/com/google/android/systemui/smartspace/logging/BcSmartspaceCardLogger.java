@@ -4,6 +4,7 @@ import android.os.Debug;
 import android.util.Log;
 import com.android.systemui.shared.system.SysUiStatsLog;
 import com.android.systemui.smartspace.nano.SmartspaceProto;
+import com.google.android.systemui.smartspace.BcSmartspaceEvent;
 import com.google.android.systemui.smartspace.EventEnum;
 import com.google.protobuf.nano.MessageNano;
 import java.util.ArrayList;
@@ -36,7 +37,7 @@ public final class BcSmartspaceCardLogger {
     }
 
     static void writeLog(EventEnum eventEnum, BcSmartspaceCardLoggingInfo cardInfo, byte[] subcards) {
-        SysUiStatsLog.write(352, eventEnum.getId(), cardInfo.mInstanceId, 0, cardInfo.mDisplaySurface, cardInfo.mRank, cardInfo.mCardinality, cardInfo.mFeatureType, cardInfo.mUid, 0, 0, cardInfo.mReceivedLatency, subcards);
+        SysUiStatsLog.write(((BcSmartspaceEvent) eventEnum).getId(), eventEnum.getId(), cardInfo.mInstanceId, cardInfo.mDisplaySurface, cardInfo.mRank, cardInfo.mCardinality, cardInfo.mFeatureType, cardInfo.mUid, 0, 0, cardInfo.mReceivedLatency, subcards.toString());
         if (IS_VERBOSE) {
             Log.d(TAG, String.format("\nLogged Smartspace event(%s), info(%s), callers=%s", eventEnum, cardInfo.toString(), Debug.getCallers(5)));
         }

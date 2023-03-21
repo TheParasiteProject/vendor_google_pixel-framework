@@ -110,10 +110,10 @@ public final class KeyguardMediaViewController {
                         notificationMediaManager.removeCallback(keyguardMediaViewController);
                     }
                 });
-        userTracker = new UserTracker();
     }
 
     public final void updateMediaInfo(MediaMetadata mediaMetadata, int i) {
+        KeyguardMediaViewController keyguardMediaViewController = KeyguardMediaViewController.this;
         CharSequence charSequence;
         if (!NotificationMediaManager.isPlayingState(i)) {
             reset();
@@ -143,8 +143,7 @@ public final class KeyguardMediaViewController {
                             .setSubtitle(artist)
                             .setIcon(mediaManager.getMediaIcon())
                             .build();
-            UserTracker mUserTracker = userTracker;
-            if (mUserTracker == null) {
+            if (userTracker == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("userTracker");
                 throw null;
             }
@@ -152,7 +151,7 @@ public final class KeyguardMediaViewController {
                     new SmartspaceTarget.Builder(
                                     "deviceMedia",
                                     mediaComponent,
-                                    UserHandle.of(mUserTracker.userId))
+                                    UserHandle.of(keyguardMediaViewController.userTracker.getUserId()))
                             .setFeatureType(41)
                             .setHeaderAction(build)
                             .build();

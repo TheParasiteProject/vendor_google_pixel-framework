@@ -50,6 +50,7 @@ public class CardPagerAdapter extends PagerAdapter {
     public final SparseArray<BcSmartspaceCard> mRecycledLegacyCards = new SparseArray<>();
     public BcNextAlarmData mNextAlarmData = new BcNextAlarmData();
     public boolean mIsDreaming = false;
+    public String mUiSurface = null;
     public float mDozeAmount = 0.0f;
     public float mLastDozeAmount = 0.0f;
     public int mDozeColor = -1;
@@ -238,6 +239,7 @@ public class CardPagerAdapter extends PagerAdapter {
                 }
                 LayoutInflater from = LayoutInflater.from(viewGroup.getContext());
                 BaseTemplateCard baseTemplateCard2 = (BaseTemplateCard) from.inflate(i2, viewGroup, false);
+                String str = this.mUiSurface;
                 if (templateData != null && (secondaryCardRes = BcSmartspaceTemplateDataUtils.getSecondaryCardRes(templateData.getTemplateType())) != 0) {
                     BcSmartspaceCardSecondary bcSmartspaceCardSecondary = (BcSmartspaceCardSecondary) from.inflate(secondaryCardRes, (ViewGroup) baseTemplateCard2, false);
                     if (bcSmartspaceCardSecondary != null) {
@@ -272,6 +274,7 @@ public class CardPagerAdapter extends PagerAdapter {
                 int featureType = getFeatureType(smartspaceTarget);
                 LayoutInflater from2 = LayoutInflater.from(viewGroup.getContext());
                 BcSmartspaceCard bcSmartspaceCard2 = (BcSmartspaceCard) from2.inflate(getBaseLegacyCardRes(featureType), viewGroup, false);
+                String str2 = this.mUiSurface;
                 int legacySecondaryCardRes = getLegacySecondaryCardRes(featureType);
                 if (legacySecondaryCardRes != 0) {
                     BcSmartspaceCardSecondary bcSmartspaceCardSecondary2 = (BcSmartspaceCardSecondary) from2.inflate(legacySecondaryCardRes, (ViewGroup) bcSmartspaceCard2, false);

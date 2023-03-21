@@ -26,7 +26,6 @@ import android.content.IntentFilter;
 
 import com.android.systemui.broadcast.BroadcastDispatcher;
 import com.android.systemui.dagger.SysUISingleton;
-import com.android.systemui.settings.UserTracker;
 import com.android.systemui.statusbar.notification.collection.NotificationEntry;
 import com.google.android.collect.Sets;
 
@@ -40,7 +39,6 @@ public class WallpaperNotifier {
     private static final String[] NOTIFYABLE_WALLPAPERS = {"com.breel.wallpapers.imprint", "com.breel.wallpapers18.tactile", "com.breel.wallpapers18.delight", "com.breel.wallpapers18.miniman", "com.google.pixel.livewallpaper.imprint", "com.google.pixel.livewallpaper.tactile", "com.google.pixel.livewallpaper.delight", "com.google.pixel.livewallpaper.miniman"};
     private static final HashSet<String> NOTIFYABLE_PACKAGES = Sets.newHashSet(new String[]{"com.breel.wallpapers", "com.breel.wallpapers18", "com.google.pixel.livewallpaper"});
     private final Context mContext;
-    private final UserTracker mUserTracker;
     private boolean mShouldBroadcastNotifications;
     private String mWallpaperPackage;
     private final BroadcastReceiver mWallpaperChangedReceiver = new BroadcastReceiver() {
@@ -55,7 +53,6 @@ public class WallpaperNotifier {
     @Inject
     public WallpaperNotifier(Context context) {
         mContext = context;
-        mUserTracker = new UserTracker();
     }
 
     public void attach() {
