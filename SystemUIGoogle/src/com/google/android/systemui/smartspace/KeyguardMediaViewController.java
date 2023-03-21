@@ -110,13 +110,7 @@ public final class KeyguardMediaViewController {
                         notificationMediaManager.removeCallback(keyguardMediaViewController);
                     }
                 });
-        userTracker =
-                new UserTracker(broadcastDispatcher) {
-                    @Override
-                    public void onUserSwitched(int i) {
-                        reset();
-                    }
-                };
+        userTracker = new UserTracker();
     }
 
     public final void updateMediaInfo(MediaMetadata mediaMetadata, int i) {
@@ -158,7 +152,7 @@ public final class KeyguardMediaViewController {
                     new SmartspaceTarget.Builder(
                                     "deviceMedia",
                                     mediaComponent,
-                                    UserHandle.of(mUserTracker.getCurrentUserId()))
+                                    UserHandle.of(mUserTracker.userId))
                             .setFeatureType(41)
                             .setHeaderAction(build)
                             .build();

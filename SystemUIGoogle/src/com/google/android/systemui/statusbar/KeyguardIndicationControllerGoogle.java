@@ -53,7 +53,6 @@ import com.android.systemui.statusbar.policy.KeyguardStateController;
 import com.android.systemui.tuner.TunerService;
 import com.android.systemui.util.DeviceConfigProxy;
 import com.android.systemui.util.concurrency.DelayableExecutor;
-import com.android.systemui.util.time.DateFormatUtil;
 import com.android.systemui.util.wakelock.WakeLock;
 import com.google.android.systemui.googlebattery.AdaptiveChargingManager;
 
@@ -68,7 +67,6 @@ public class KeyguardIndicationControllerGoogle extends KeyguardIndicationContro
     private final BroadcastDispatcher mBroadcastDispatcher;
     private final BroadcastReceiver mBroadcastReceiver;
     private final Context mContext;
-    private final DateFormatUtil mDateFormatUtil;
     private final DeviceConfigProxy mDeviceConfig;
     private final TunerService mTunerService;
     @VisibleForTesting
@@ -142,7 +140,6 @@ public class KeyguardIndicationControllerGoogle extends KeyguardIndicationContro
         mDeviceConfig = deviceConfigProxy;
         mAdaptiveChargingManager = new AdaptiveChargingManager(context);
         mBatteryInfo = iBatteryStats;
-        mDateFormatUtil = new DateFormatUtil(context);
     }
 
     @Override

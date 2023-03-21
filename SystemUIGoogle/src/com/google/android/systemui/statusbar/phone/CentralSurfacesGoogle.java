@@ -148,6 +148,7 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
     private int mReceivingBatteryLevel;
     private boolean mReverseChargingAnimShown;
     private boolean mChargingAnimShown;
+    private final Context mContext;
 
     @SuppressWarnings("OptionalUsedAsFieldOrParameterType")
     @Inject
@@ -303,6 +304,7 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
                 }
             }
         };
+        mContext = context;
         mReverseChargingViewControllerOptional = reverseChargingViewControllerOptional;
         mKeyguardIndicationController = keyguardIndicationControllerGoogle;
         mStatusBarStateController = statusBarStateController;

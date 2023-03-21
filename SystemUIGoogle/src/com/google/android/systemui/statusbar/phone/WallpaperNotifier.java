@@ -53,13 +53,9 @@ public class WallpaperNotifier {
     };
 
     @Inject
-    public WallpaperNotifier(Context context, BroadcastDispatcher broadcastDispatcher) {
+    public WallpaperNotifier(Context context) {
         mContext = context;
-        mUserTracker = new UserTracker(broadcastDispatcher) {
-            @Override
-            public void onUserSwitched(int i) {
-            }
-        };
+        mUserTracker = new UserTracker();
     }
 
     public void attach() {

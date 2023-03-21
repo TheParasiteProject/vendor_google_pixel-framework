@@ -138,13 +138,7 @@ public class DockObserver extends BroadcastReceiver implements DockManager {
         mContext = context;
         mClients = new ArrayList();
         mAlignmentStateListeners = new ArrayList();
-        mUserTracker = new UserTracker(broadcastDispatcher) {
-            @Override
-            public void onUserSwitched(int i) {
-                stopDreamlinerService(context);
-                updateCurrentDockingStatus(context);
-            }
-        };
+        mUserTracker = new UserTracker();
         mWirelessCharger = wirelessCharger;
         if (wirelessCharger == null) {
             Log.i("DLObserver", "wireless charger is null, check dock component.");
@@ -439,7 +433,6 @@ public class DockObserver extends BroadcastReceiver implements DockManager {
                 DreamlinerServiceConn dreamlinerServiceConn = new DreamlinerServiceConn(context);
                 mDreamlinerServiceConn = dreamlinerServiceConn;
                 if (context.bindServiceAsUser(intent, dreamlinerServiceConn, 1, new UserHandle(mUserTracker.getCurrentUserId()))) {
-                    mUserTracker.startTracking();
                     return;
                 }
             } catch (SecurityException e) {
@@ -462,7 +455,6 @@ public class DockObserver extends BroadcastReceiver implements DockManager {
                 mDockGestureController.stopMonitoring();
                 mDockGestureController = null;
             }
-            mUserTracker.stopTracking();
             mDreamlinerReceiver.unregisterReceiver(context);
             context.unbindService(mDreamlinerServiceConn);
             mDreamlinerServiceConn = null;

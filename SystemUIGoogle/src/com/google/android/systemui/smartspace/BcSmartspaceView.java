@@ -395,6 +395,11 @@ public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlu
         this.mPageIndicator.setPrimaryColor(i);
     }
 
+    @Override // com.android.systemui.plugins.BcSmartspaceDataPlugin.SmartspaceView
+    public final void setUiSurface(String str) {
+        this.mAdapter.mUiSurface = str;
+    }
+
     public void setDozeAmount(float f) {
         this.mPageIndicator.setAlpha(1.0f - f);
         ArrayList<SmartspaceTarget> arrayList = this.mAdapter.mSmartspaceTargets;
