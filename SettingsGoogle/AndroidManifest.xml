@@ -10,8 +10,6 @@
     <uses-permission android:name="com.google.android.settings.setup.dock.RUN_DOCK_SETUP"/>
     <uses-permission android:name="android.permission.MANAGE_ACTIVITY_TASKS"/>
     <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
-    <uses-permission android:name="com.google.android.wildlife.permission.VPN_APP_EXCLUSION_LAUNCH"/>
-    <uses-permission android:name="com.google.android.wildlife.permission.ADVANCED_VPN_CONFIG"/>
     <application>
         <activity android:enabled="true" android:exported="false" android:hardwareAccelerated="true" android:name="com.google.android.settings.gestures.assist.bubble.AssistGestureBubbleActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@android:style/Theme.Material"/>
         <activity android:enabled="true" android:exported="true" android:icon="@drawable/ic_assist_gesture_suggestion" android:label="@string/assist_gesture_training_intro_title" android:name="com.google.android.settings.gestures.assist.AssistGestureTrainingIntroActivity" android:screenOrientation="portrait" android:theme="@style/SudThemeGlif.Light">
@@ -151,13 +149,6 @@
             <meta-data android:name="com.android.settings.summary" android:resource="@string/dream_setup_description"/>
             <meta-data android:name="com.android.settings.icon_tintable" android:value="true"/>
         </activity>
-        <activity android:excludeFromRecents="true" android:exported="false" android:immersive="true" android:label="@string/dock_setup_outro_title" android:name="com.google.android.settings.setup.dock.DockOutroActivity" android:theme="@style/SudThemeGlif.DayNight">
-            <intent-filter>
-                <action android:name="com.android.settings.action.DOCK_OUTRO"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-            <meta-data android:name="com.android.settings.icon_tintable" android:value="true"/>
-        </activity>
         <activity android:exported="false" android:label="@string/limited_warranty_title" android:name="com.google.android.settings.warranty.WarrantyActivity">
             <intent-filter>
                 <action android:name="android.settings.WARRANTY"/>
@@ -175,12 +166,6 @@
         <activity android:exported="true" android:name="com.google.android.settings.warranty.SuwWarrantyActivity" android:theme="@style/SudThemeGlif.DayNight">
             <intent-filter>
                 <action android:name="com.google.android.settings.warranty.SUW_DIGITAL_WARRANTY"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-        <activity android:exported="true" android:label="@string/vpn_app_bypass" android:launchMode="singleTask" android:name="com.google.android.settings.vpn2.AppBypassActivity" android:permission="com.google.android.wildlife.permission.VPN_APP_EXCLUSION_LAUNCH" android:screenOrientation="behind" android:theme="@style/VpnSettingsTheme">
-            <intent-filter>
-                <action android:name="com.google.android.settings.action.LAUNCH_VPN_APP_EXCLUSION"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
@@ -205,15 +190,8 @@
                 <action android:name="settings.intelligence.battery.action.CLEAR_BATTERY_CACHE_DATA"/>
             </intent-filter>
         </receiver>
-        <receiver android:exported="true" android:name="com.google.android.settings.vpn2.AppBypassBroadcastReceiver" android:permission="com.google.android.wildlife.permission.VPN_APP_EXCLUSION_LAUNCH">
-            <intent-filter>
-                <action android:name="com.google.android.settings.action.REMOVE_UNINSTALLED_APP"/>
-                <action android:name="com.google.android.settings.action.UPDATE_PREDEFINED_APP_EXCLUSION_LIST"/>
-            </intent-filter>
-        </receiver>
         <service android:exported="false" android:name="com.google.android.settings.fuelgauge.BatteryUsageLoaderService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":usage_data_loader"/>
         <service android:exported="false" android:name="com.google.android.settings.setup.dock.DockSetupSnoozeService" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <provider android:authorities="com.google.android.settings.AdvancedVpnContentProvider" android:exported="true" android:multiprocess="false" android:name="com.google.android.settings.vpn2.AdvancedVpnContentProvider" android:permission="com.google.android.wildlife.permission.ADVANCED_VPN_CONFIG"/>
         <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.libraries.hats20.SurveyPromptActivity" android:theme="@style/HatsLibPromptTheme" android:windowSoftInputMode="adjustPan"/>
         <receiver android:enabled="true" android:exported="true" android:name="com.google.android.wifitrackerlib.WsuPostProvisioningReceiver" android:permission="android.permission.NETWORK_CARRIER_PROVISIONING">
             <intent-filter>
