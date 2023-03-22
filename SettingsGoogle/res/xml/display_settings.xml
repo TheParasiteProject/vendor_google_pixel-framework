@@ -152,6 +152,13 @@
             android:defaultValue="0"
             settings:controller="com.android.settings.display.DisplayCutoutPreferenceController" />
 
+        <Preference
+            android:key="display_cutout_force_fullscreen_settings"
+            android:title="@string/display_cutout_force_fullscreen_title"
+            android:summary="@string/display_cutout_force_fullscreen_summary"
+            android:fragment="com.android.settings.display.DisplayCutoutForceFullscreenSettings"
+            settings:controller="com.android.settings.display.DisplayCutoutForceFullscreenPreferenceController" />
+
         <SwitchPreference
             android:key="touch_sensitivity"
             android:summary="@string/touch_sensitivity_summary"
