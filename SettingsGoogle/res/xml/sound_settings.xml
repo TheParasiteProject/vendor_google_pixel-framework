@@ -169,6 +169,13 @@
         android:title="@string/clear_calling_title"
         settings:controller="com.google.android.settings.notification.ClearCallingPreferenceController" />
 
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="show_app_volume"
+        android:title="@string/app_volume_title"
+        android:summary="@string/app_volume_summary"
+        android:defaultValue="false"
+        android:order="-5"/>
+
     <SwitchPreference
         android:key="dial_pad_tones"
         android:order="-50"
