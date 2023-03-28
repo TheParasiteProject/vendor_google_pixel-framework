@@ -31,7 +31,7 @@ import java.util.NoSuchElementException;
 import vendor.google.google_battery.V1_1.IGoogleBattery;
 
 public class AdaptiveChargingManager {
-    private static final boolean DEBUG = Log.isLoggable("AdaptiveChargingManager", 3);
+    private static final boolean DEBUG = false;
     Context mContext;
 
     public AdaptiveChargingManager(Context context) {
