@@ -36,12 +36,21 @@ import com.android.systemui.keyguard.data.quickaffordance.MuteQuickAffordanceCor
 import com.android.systemui.log.SessionTracker
 import com.android.systemui.media.dialog.MediaOutputSwitcherDialogUI
 import com.android.systemui.media.RingtonePlayer
+import com.android.systemui.media.taptotransfer.MediaTttCommandLineHelper
+import com.android.systemui.media.taptotransfer.receiver.MediaTttChipControllerReceiver
+import com.android.systemui.media.taptotransfer.sender.MediaTttSenderCoordinator
 import com.android.systemui.power.PowerUI
+import com.android.systemui.reardisplay.RearDisplayDialogController
 import com.android.systemui.recents.Recents
 import com.android.systemui.settings.dagger.MultiUserUtilsModule
 import com.android.systemui.shortcut.ShortcutKeyDispatcher
 import com.android.systemui.statusbar.notification.InstantAppNotifier
+import com.android.systemui.statusbar.notification.fsi.FsiChromeRepo
+import com.android.systemui.statusbar.notification.fsi.FsiChromeViewBinder
+import com.android.systemui.statusbar.notification.fsi.FsiChromeViewModelFactory
 import com.android.systemui.statusbar.phone.KeyguardLiftController
+import com.android.systemui.stylus.StylusUsiPowerStartable
+import com.android.systemui.temporarydisplay.chipbar.ChipbarCoordinator
 import com.android.systemui.theme.ThemeOverlayController
 import com.android.systemui.toast.ToastUI
 import com.android.systemui.usb.StorageNotification
@@ -65,31 +74,49 @@ import dagger.multibindings.IntoMap
 ])
 
 abstract class SystemUIGoogleCoreStartableModule {
-    /** Inject into AuthController.  */
+    /** Inject into AuthController. */
     @Binds
     @IntoMap
     @ClassKey(AuthController::class)
     abstract fun bindAuthController(service: AuthController): CoreStartable
 
-    /** Inject into ClipboardListener.  */
+    /** Inject into ClipboardListener. */
     @Binds
     @IntoMap
     @ClassKey(ClipboardListener::class)
     abstract fun bindClipboardListener(sysui: ClipboardListener): CoreStartable
 
-    /** Inject into GlobalActionsComponent.  */
+    /** Inject into FsiChromeRepo. */
+    @Binds
+    @IntoMap
+    @ClassKey(FsiChromeRepo::class)
+    abstract fun bindFSIChromeRepo(sysui: FsiChromeRepo): CoreStartable
+
+    /** Inject into FsiChromeWindowViewModel. */
+    @Binds
+    @IntoMap
+    @ClassKey(FsiChromeViewModelFactory::class)
+    abstract fun bindFSIChromeWindowViewModel(sysui: FsiChromeViewModelFactory): CoreStartable
+
+    /** Inject into FsiChromeWindowBinder. */
+    @Binds
+    @IntoMap
+    @ClassKey(FsiChromeViewBinder::class)
+    abstract fun bindFsiChromeWindowBinder(sysui: FsiChromeViewBinder): CoreStartable
+
+    /** Inject into GlobalActionsComponent. */
     @Binds
     @IntoMap
     @ClassKey(GlobalActionsComponent::class)
     abstract fun bindGlobalActionsComponent(sysui: GlobalActionsComponent): CoreStartable
 
-    /** Inject into InstantAppNotifier.  */
+    /** Inject into InstantAppNotifier. */
     @Binds
     @IntoMap
     @ClassKey(InstantAppNotifier::class)
     abstract fun bindInstantAppNotifier(sysui: InstantAppNotifier): CoreStartable
 
-    /** Inject into KeyboardUI.  */
+    /** Inject into KeyboardUI. */
     @Binds
     @IntoMap
     @ClassKey(KeyboardUI::class)
@@ -103,122 +130,160 @@ abstract class SystemUIGoogleCoreStartableModule {
         sysui: KeyguardBiometricLockoutLogger
     ): CoreStartable
 
-    /** Inject into KeyguardViewMediator.  */
+    /** Inject into KeyguardViewMediator. */
     @Binds
     @IntoMap
     @ClassKey(KeyguardViewMediator::class)
     abstract fun bindKeyguardViewMediator(sysui: KeyguardViewMediator): CoreStartable
 
-    /** Inject into LatencyTests.  */
+    /** Inject into LatencyTests. */
     @Binds
     @IntoMap
     @ClassKey(LatencyTester::class)
     abstract fun bindLatencyTester(sysui: LatencyTester): CoreStartable
 
-    /** Inject into NotificationChannels.  */
+    /** Inject into NotificationChannels. */
     @Binds
     @IntoMap
     @ClassKey(NotificationChannels::class)
     @PerUser
     abstract fun bindNotificationChannels(sysui: NotificationChannels): CoreStartable
 
-    /** Inject into PowerUI.  */
+    /** Inject into PowerUI. */
     @Binds
     @IntoMap
     @ClassKey(PowerUI::class)
     abstract fun bindPowerUI(sysui: PowerUI): CoreStartable
 
-    /** Inject into Recents.  */
+    /** Inject into Recents. */
     @Binds
     @IntoMap
     @ClassKey(Recents::class)
     abstract fun bindRecents(sysui: Recents): CoreStartable
 
-    /** Inject into RingtonePlayer.  */
+    /** Inject into RingtonePlayer. */
     @Binds
     @IntoMap
     @ClassKey(RingtonePlayer::class)
     abstract fun bind(sysui: RingtonePlayer): CoreStartable
 
-    /** Inject into ScreenDecorations.  */
+    /** Inject into ScreenDecorations. */
     @Binds
     @IntoMap
     @ClassKey(ScreenDecorations::class)
     abstract fun bindScreenDecorations(sysui: ScreenDecorations): CoreStartable
 
-    /** Inject into SessionTracker.  */
+    /** Inject into SessionTracker. */
     @Binds
     @IntoMap
     @ClassKey(SessionTracker::class)
     abstract fun bindSessionTracker(service: SessionTracker): CoreStartable
 
-    /** Inject into ShortcutKeyDispatcher.  */
+    /** Inject into ShortcutKeyDispatcher. */
     @Binds
     @IntoMap
     @ClassKey(ShortcutKeyDispatcher::class)
     abstract fun bindShortcutKeyDispatcher(sysui: ShortcutKeyDispatcher): CoreStartable
 
-    /** Inject into SliceBroadcastRelayHandler.  */
+    /** Inject into SliceBroadcastRelayHandler. */
     @Binds
     @IntoMap
     @ClassKey(SliceBroadcastRelayHandler::class)
     abstract fun bindSliceBroadcastRelayHandler(sysui: SliceBroadcastRelayHandler): CoreStartable
 
-    /** Inject into StorageNotification.  */
+    /** Inject into StorageNotification. */
     @Binds
     @IntoMap
     @ClassKey(StorageNotification::class)
     abstract fun bindStorageNotification(sysui: StorageNotification): CoreStartable
 
-    /** Inject into SystemActions.  */
+    /** Inject into SystemActions. */
     @Binds
     @IntoMap
     @ClassKey(SystemActions::class)
     abstract fun bindSystemActions(sysui: SystemActions): CoreStartable
 
-    /** Inject into ThemeOverlayController.  */
+    /** Inject into ThemeOverlayController. */
     @Binds
     @IntoMap
     @ClassKey(ThemeOverlayController::class)
     abstract fun bindThemeOverlayControllerGoogle(sysui: ThemeOverlayControllerGoogle): CoreStartable
 
-    /** Inject into ToastUI.  */
+    /** Inject into ToastUI. */
     @Binds
     @IntoMap
     @ClassKey(ToastUI::class)
     abstract fun bindToastUI(service: ToastUI): CoreStartable
 
-    /** Inject into MediaOutputSwitcherDialogUI.  */
+    /** Inject into MediaOutputSwitcherDialogUI. */
     @Binds
     @IntoMap
     @ClassKey(MediaOutputSwitcherDialogUI::class)
     abstract fun MediaOutputSwitcherDialogUI(sysui: MediaOutputSwitcherDialogUI): CoreStartable
 
-    /** Inject into VolumeUI.  */
+    /** Inject into VolumeUI. */
     @Binds
     @IntoMap
     @ClassKey(VolumeUI::class)
     abstract fun bindVolumeUI(sysui: VolumeUI): CoreStartable
 
-    /** Inject into WindowMagnification.  */
+    /** Inject into WindowMagnification. */
     @Binds
     @IntoMap
     @ClassKey(WindowMagnification::class)
     abstract fun bindWindowMagnification(sysui: WindowMagnification): CoreStartable
 
-    /** Inject into WMShell.  */
+    /** Inject into WMShell. */
     @Binds
     @IntoMap
     @ClassKey(WMShell::class)
     abstract fun bindWMShell(sysui: WMShell): CoreStartable
 
-    /** Inject into KeyguardLiftController.  */
+    /** Inject into KeyguardLiftController. */
     @Binds
     @IntoMap
     @ClassKey(KeyguardLiftController::class)
     abstract fun bindKeyguardLiftController(sysui: KeyguardLiftController): CoreStartable
 
-    /** Inject into GoogleServices.  */
+    /** Inject into MediaTttSenderCoordinator. */
+    @Binds
+    @IntoMap
+    @ClassKey(MediaTttSenderCoordinator::class)
+    abstract fun bindMediaTttSenderCoordinator(sysui: MediaTttSenderCoordinator): CoreStartable
+
+    /** Inject into MediaTttChipControllerReceiver. */
+    @Binds
+    @IntoMap
+    @ClassKey(MediaTttChipControllerReceiver::class)
+    abstract fun bindMediaTttChipControllerReceiver(
+            sysui: MediaTttChipControllerReceiver
+    ): CoreStartable
+
+    /** Inject into MediaTttCommandLineHelper. */
+    @Binds
+    @IntoMap
+    @ClassKey(MediaTttCommandLineHelper::class)
+    abstract fun bindMediaTttCommandLineHelper(sysui: MediaTttCommandLineHelper): CoreStartable
+
+    /** Inject into ChipbarCoordinator. */
+    @Binds
+    @IntoMap
+    @ClassKey(ChipbarCoordinator::class)
+    abstract fun bindChipbarController(sysui: ChipbarCoordinator): CoreStartable
+
+    /** Inject into RearDisplayDialogController) */
+    @Binds
+    @IntoMap
+    @ClassKey(RearDisplayDialogController::class)
+    abstract fun bindRearDisplayDialogController(sysui: RearDisplayDialogController): CoreStartable
+
+    /** Inject into StylusUsiPowerStartable) */
+    @Binds
+    @IntoMap
+    @ClassKey(StylusUsiPowerStartable::class)
+    abstract fun bindStylusUsiPowerStartable(sysui: StylusUsiPowerStartable): CoreStartable
+
+    /** Inject into GoogleServices. */
     @Binds
     @IntoMap
     @ClassKey(GoogleServices::class)
