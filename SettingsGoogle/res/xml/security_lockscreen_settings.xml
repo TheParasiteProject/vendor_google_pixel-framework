@@ -64,7 +64,6 @@
             android:summary="@string/lockscreen_double_line_clock_summary"
             android:title="@string/lockscreen_double_line_clock_setting_toggle"
             settings:controller="com.android.settings.display.LockscreenClockPreferenceController" />
-
     </PreferenceCategory>
 
     <PreferenceCategory
