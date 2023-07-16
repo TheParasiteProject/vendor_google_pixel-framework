@@ -16,7 +16,9 @@ class KeyguardSmartspaceController @Inject constructor(
     private val mediaController: KeyguardMediaViewController,
 ) {
     init {
-        mediaController.init()
-        zenController.init()
+        if (featureFlags.isEnabled(Flags.SMARTSPACE)) {
+            mediaController.init()
+            zenController.init()
+        }
     }
 }
