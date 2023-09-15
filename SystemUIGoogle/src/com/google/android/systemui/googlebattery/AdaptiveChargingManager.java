@@ -29,6 +29,7 @@ import android.provider.Settings;
 import android.text.format.DateFormat;
 import android.util.Log;
 
+import java.util.Calendar;
 import java.util.Locale;
 import java.util.NoSuchElementException;
 
@@ -80,7 +81,7 @@ public class AdaptiveChargingManager {
     }
 
     public boolean shouldShowNotification() {
-        return DeviceConfig.getBoolean("adaptive_charging", "adaptive_charging_notification", true);
+        return canActivateAdaptiveCharging();
     }
 
     public boolean getEnabled() {
@@ -123,6 +124,14 @@ public class AdaptiveChargingManager {
         if (initHalInterface == null) {
             return false;
         }
+        if (!canActivateAdaptiveCharging()) {
+            try {
+                initHalInterface.setChargingDeadline(-1);
+            } catch (RemoteException e) {
+                Log.e(TAG, "setChargingDeadline() failed");
+            }
+            return false;
+        }
         boolean result = false;
         try {
             initHalInterface.setChargingDeadline(secondsFromNow);
@@ -135,6 +144,10 @@ public class AdaptiveChargingManager {
     }
 
     public void queryStatus(final AdaptiveChargingStatusReceiver adaptiveChargingStatusReceiver) {
+        if (!canActivateAdaptiveCharging()) {
+            adaptiveChargingStatusReceiver.onDestroyInterface();
+            return;
+        }
         IBinder.DeathRecipient deathRecipient = new IBinder.DeathRecipient() {
            @Override
             public final void binderDied() {
@@ -160,5 +173,16 @@ public class AdaptiveChargingManager {
         }
         GoogleBatteryManager.destroyHalInterface(initHalInterface, deathRecipient);
         adaptiveChargingStatusReceiver.onDestroyInterface();
+    }
+    
+    private boolean canActivateAdaptiveCharging() {
+        if (!DeviceConfig.getBoolean("adaptive_charging", "adaptive_charging_notification", true)) {
+            return false;
+        }
+        Calendar calendar = Calendar.getInstance();
+        int currentHour = calendar.get(Calendar.HOUR_OF_DAY);
+        int currentMinute = calendar.get(Calendar.MINUTE);
+        // Allow activation only if time is between 9PM and 6AM.        
+        return (currentHour < 6 || (currentHour == 6 && currentMinute == 0)) || currentHour >= 21;
     }
 }
