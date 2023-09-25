@@ -40,6 +40,7 @@ import java.time.Clock;
 import java.util.NoSuchElementException;
 
 import vendor.google.google_battery.IGoogleBattery;
+import com.google.android.systemui.googlebattery.AdaptiveChargingManager;
 
 class BatteryDefenderNotification {
 
@@ -58,14 +59,20 @@ class BatteryDefenderNotification {
     boolean mRunBypassActionTask = true;
     private int mBatteryLevel;
     private SharedPreferences mSharedPreferences;
+    private final AdaptiveChargingManager mAdaptiveChargingManager;
     private boolean mHasSystemFeature = false;
 
     private static final boolean DEBUG = false;
 
     BatteryDefenderNotification(Context context, UiEventLogger uiEventLogger) {
+        this(context, new AdaptiveChargingManager(context), uiEventLogger);
+    }
+
+    BatteryDefenderNotification(Context context, AdaptiveChargingManager adaptiveChargingManager, UiEventLogger uiEventLogger) {
         mContext = context;
         mUiEventLogger = uiEventLogger;
         mNotificationManager = context.getSystemService(NotificationManager.class);
+        mAdaptiveChargingManager = adaptiveChargingManager;
         mHasSystemFeature = mContext.getPackageManager().hasSystemFeature("com.google.android.feature.ADAPTIVE_CHARGING");
     }
 
@@ -164,19 +171,28 @@ class BatteryDefenderNotification {
             return;
         }
         AsyncTask.execute(() -> {
+            IGoogleBattery initHalInterface = null;
             IBinder.DeathRecipient cbRecipient = new IBinder.DeathRecipient() {
                 @Override
                 public final void binderDied() {
                     Log.d(TAG, "serviceDied");
                 }
             };
-            if(!mHasSystemFeature) {
-                Log.d(TAG, "Device does not support Google Battery");
+            if (mHasSystemFeature) {
+                initHalInterface = initHalInterface(cbRecipient);
+            }
+            if (initHalInterface == null) {
+                Log.d(TAG, "Cannot init hal interface");
                 return;
             }
-            IGoogleBattery initHalInterface = initHalInterface(cbRecipient);
-            if (initHalInterface == null) {
-                Log.d(TAG, "Can not init hal interface");
+            if(!mAdaptiveChargingManager.canActivateAdaptiveCharging()) {
+                Log.d("BATTERY_DEFENDER_EXECUTE_BYPASS", "Can't activate Google Battery service, service may not be supported or it's daytime");
+                try {
+                    resumeCharging(BatteryDefenderEvent.BATTERY_DEFENDER_BYPASS_LIMIT);
+                } catch (Exception e) {
+                    Log.d(TAG, "Exception occured when disabling battery defender, battery defender is not supported or active");
+                }
+                return;
             }
             try {
                 try {

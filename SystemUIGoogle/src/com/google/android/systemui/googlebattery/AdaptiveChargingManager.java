@@ -121,15 +121,16 @@ public class AdaptiveChargingManager {
         if(mHasSystemFeature) {
             initHalInterface = GoogleBatteryManager.initHalInterface(deathRecipient);
         }
-        if (initHalInterface == null) {
-            return false;
-        }
         if (!canActivateAdaptiveCharging()) {
             try {
-                initHalInterface.setChargingDeadline(-1);
-            } catch (RemoteException e) {
+                initHalInterface.setChargingDeadline(-3);
+            } catch (Exception e) {
                 Log.e(TAG, "setChargingDeadline() failed");
             }
+            GoogleBatteryManager.destroyHalInterface(initHalInterface, deathRecipient);
+            return false;
+        }
+        if (initHalInterface == null) {
             return false;
         }
         boolean result = false;
@@ -144,10 +145,7 @@ public class AdaptiveChargingManager {
     }
 
     public void queryStatus(final AdaptiveChargingStatusReceiver adaptiveChargingStatusReceiver) {
-        if (!canActivateAdaptiveCharging()) {
-            adaptiveChargingStatusReceiver.onDestroyInterface();
-            return;
-        }
+        IGoogleBattery initHalInterface = null;
         IBinder.DeathRecipient deathRecipient = new IBinder.DeathRecipient() {
            @Override
             public final void binderDied() {
@@ -157,11 +155,15 @@ public class AdaptiveChargingManager {
                 adaptiveChargingStatusReceiver.onDestroyInterface();
             }
         };
-        IGoogleBattery initHalInterface = null;
         if(mHasSystemFeature) {
             initHalInterface = GoogleBatteryManager.initHalInterface(deathRecipient);
         }
         if (initHalInterface == null) {
+            adaptiveChargingStatusReceiver.onDestroyInterface();
+            return;
+        }
+        if (!canActivateAdaptiveCharging()) {
+            GoogleBatteryManager.destroyHalInterface(initHalInterface, deathRecipient);
             adaptiveChargingStatusReceiver.onDestroyInterface();
             return;
         }
@@ -175,8 +177,8 @@ public class AdaptiveChargingManager {
         adaptiveChargingStatusReceiver.onDestroyInterface();
     }
     
-    private boolean canActivateAdaptiveCharging() {
-        if (!DeviceConfig.getBoolean("adaptive_charging", "adaptive_charging_notification", true)) {
+    public boolean canActivateAdaptiveCharging() {
+        if (!DeviceConfig.getBoolean("adaptive_charging", "adaptive_charging_notification", true) || !hasAdaptiveChargingFeature()) {
             return false;
         }
         Calendar calendar = Calendar.getInstance();
