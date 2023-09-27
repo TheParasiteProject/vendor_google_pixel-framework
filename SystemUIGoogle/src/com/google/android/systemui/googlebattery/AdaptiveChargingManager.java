@@ -54,14 +54,23 @@ public class AdaptiveChargingManager {
         void onReceiveStatus(int seconds, String stage);
     }
 
-    private Locale getLocale() {
+    public final String formatTimeToFull(long j) {
+        String str;
+        Locale locale;
+        if (DateFormat.is24HourFormat(mContext)) {
+            str = "Hm";
+        } else {
+            str = "hma";
+        }
         LocaleList locales = mContext.getResources().getConfiguration().getLocales();
-        return (locales == null || locales.isEmpty()) ? Locale.getDefault() : locales.get(0);
+        if (locales != null && !locales.isEmpty()) {
+            locale = locales.get(0);
+        } else {
+            locale = Locale.getDefault();
+        }
+        return DateFormat.format(DateFormat.getBestDateTimePattern(locale, str), j).toString();
     }
 
-    public String formatTimeToFull(long j) {
-        return DateFormat.format(DateFormat.getBestDateTimePattern(getLocale(), DateFormat.is24HourFormat(mContext) ? "Hm" : "hma"), j).toString();
-    }
 
     public boolean hasAdaptiveChargingFeature() {
         return mHasSystemFeature ? isGoogleBatteryServiceAvailable() : false;
@@ -121,9 +130,9 @@ public class AdaptiveChargingManager {
         if(mHasSystemFeature) {
             initHalInterface = GoogleBatteryManager.initHalInterface(deathRecipient);
         }
-        if (!canActivateAdaptiveCharging()) {
+        if (!canActivateAdaptiveCharging() || secondsFromNow == -1) {
             try {
-                initHalInterface.setChargingDeadline(-3);
+                initHalInterface.setChargingDeadline(-1);
             } catch (Exception e) {
                 Log.e(TAG, "setChargingDeadline() failed");
             }

@@ -34,12 +34,12 @@ import java.util.concurrent.TimeUnit;
 class AdaptiveChargingNotification {
     private final AdaptiveChargingManager mAdaptiveChargingManager;
     @VisibleForTesting
-    boolean mAdaptiveChargingQueryInBackground;
+    private boolean mAdaptiveChargingQueryInBackground = true;
     private final Context mContext;
-    private final Handler mHandler;
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
     private final NotificationManager mNotificationManager;
     @VisibleForTesting
-    boolean mWasActive;
+    private boolean mWasActive = false;
 
     AdaptiveChargingNotification(Context context) {
         this(context, new AdaptiveChargingManager(context));
@@ -47,9 +47,6 @@ class AdaptiveChargingNotification {
 
     @VisibleForTesting
     AdaptiveChargingNotification(Context context, AdaptiveChargingManager adaptiveChargingManager) {
-        mAdaptiveChargingQueryInBackground = true;
-        mHandler = new Handler(Looper.getMainLooper());
-        mWasActive = false;
         mContext = context;
         mNotificationManager = context.getSystemService(NotificationManager.class);
         mAdaptiveChargingManager = adaptiveChargingManager;
@@ -65,7 +62,7 @@ class AdaptiveChargingNotification {
                 resolveBatteryChangedIntent(intent);
                 break;
             case "PNW.acChargeNormally":
-                mAdaptiveChargingManager.setAdaptiveChargingDeadline(-3);
+                mAdaptiveChargingManager.setAdaptiveChargingDeadline(-1);
                 cancelNotification();
                 break;
             case "com.google.android.systemui.adaptivecharging.ADAPTIVE_CHARGING_DEADLINE_SET":
@@ -75,10 +72,30 @@ class AdaptiveChargingNotification {
     }
 
     @VisibleForTesting
-    void resolveBatteryChangedIntent(Intent intent) {
-        boolean z = intent.getIntExtra("plugged", 0) != 0;
-        boolean isFullyCharged = PowerUtils.isFullyCharged(intent);
-        if (z && !isFullyCharged) {
+    public void resolveBatteryChangedIntent(Intent intent) {
+        boolean z;
+        boolean z2;
+        boolean z3 = true;
+        if (intent.getIntExtra("plugged", 0) != 0) {
+            z = true;
+        } else {
+            z = false;
+        }
+        if (intent.getIntExtra("status", 1) == 5) {
+            z2 = true;
+        } else {
+            z2 = false;
+        }
+        int i = -1;
+        int intExtra = intent.getIntExtra("level", -1);
+        int intExtra2 = intent.getIntExtra("scale", 0);
+        if (intExtra2 != 0) {
+            i = Math.round((intExtra / intExtra2) * 100.0f);
+        }
+        if (!z2 && i < 100) {
+            z3 = false;
+        }
+        if (z && !z3) {
             checkAdaptiveChargingStatus(false);
         } else {
             cancelNotification();
