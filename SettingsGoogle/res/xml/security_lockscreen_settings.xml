@@ -84,11 +84,28 @@
             android:title="@string/ambient_display_pickup_title"
             settings:controller="com.android.settings.gestures.PickupGesturePreferenceController"
             settings:searchable="false" />
+
+        <com.android.settings.custom.preference.SecureSettingSwitchPreference
+            android:fragment="com.android.settings.gestures.ScreenOffUdfpsSettings"
+            android:key="gesture_screen_off_udfps_input_summary"
+            android:title="@string/ambient_display_screen_off_udfps_title"
+            settings:controller="com.android.settings.gestures.ScreenOffUdfpsPreferenceController"
+            settings:searchable="false" />
+
         <SwitchPreference
             android:key="ambient_display_notification"
             android:summary="@string/doze_summary"
             android:title="@string/doze_title"
             settings:controller="com.android.settings.display.AmbientDisplayNotificationsPreferenceController" />
+
+        <com.android.settings.custom.preference.RemotePreference
+            android:key="doze_device_settings"
+            android:title="@string/ambient_display_screen_title"
+            settings:replacesKey="ambient_display_always_on|ambient_display_notification"
+            settings:requiresAction="org.lineageos.settings.device.DOZE_SETTINGS">
+            <intent android:action="org.lineageos.settings.device.DOZE_SETTINGS" />
+        </com.android.settings.custom.preference.RemotePreference>
+
     </PreferenceCategory>
     <PreferenceCategory
         android:key="security_setting_lock_screen_notif_work_header"
