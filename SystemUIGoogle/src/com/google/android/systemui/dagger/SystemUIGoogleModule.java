@@ -26,19 +26,21 @@ import android.os.PowerManager;
 
 import androidx.annotation.Nullable;
 
-import com.android.systemui.qs.QsEventLogger;
 import com.android.keyguard.KeyguardViewController;
 import com.android.systemui.assist.AssistManager;
 import com.android.systemui.broadcast.BroadcastDispatcher;
 import com.android.systemui.controls.controller.ControlsTileResourceConfiguration;
-import com.android.systemui.dagger.SysUISingleton;
 import com.android.systemui.dagger.qualifiers.Background;
 import com.android.systemui.dagger.qualifiers.Main;
+import com.android.systemui.dagger.SysUISingleton;
 import com.android.systemui.demomode.DemoModeController;
 import com.android.systemui.dock.DockManager;
 import com.android.systemui.dock.DockManagerImpl;
 import com.android.systemui.doze.DozeHost;
 import com.android.systemui.dump.DumpManager;
+import com.android.systemui.keyguard.dagger.KeyguardModule;
+import com.android.systemui.log.LogBuffer;
+import com.android.systemui.log.LogBufferFactory;
 import com.android.systemui.media.dagger.MediaModule;
 import com.android.systemui.navigationbar.gestural.GestureModule;
 import com.android.systemui.plugins.BcSmartspaceDataPlugin;
@@ -46,26 +48,30 @@ import com.android.systemui.plugins.qs.QSFactory;
 import com.android.systemui.plugins.statusbar.StatusBarStateController;
 import com.android.systemui.power.EnhancedEstimates;
 import com.android.systemui.qs.dagger.QSModule;
+import com.android.systemui.qs.QsEventLogger;
 import com.android.systemui.qs.tileimpl.QSFactoryImpl;
 import com.android.systemui.recents.Recents;
 import com.android.systemui.recents.RecentsImplementation;
+import com.android.systemui.recents.RecentsModule;
+import com.android.systemui.rotationlock.RotationLockModule;
 import com.android.systemui.screenshot.ReferenceScreenshotModule;
+import com.android.systemui.settings.UserContentResolverProvider;
 import com.android.systemui.shade.NotificationShadeWindowControllerImpl;
 import com.android.systemui.shade.ShadeExpansionStateManager;
-import com.android.systemui.settings.UserContentResolverProvider;
 import com.android.systemui.statusbar.CommandQueue;
 import com.android.systemui.statusbar.events.StatusBarEventsModule;
-import com.android.systemui.statusbar.NotificationLockscreenUserManager;
-import com.android.systemui.statusbar.NotificationLockscreenUserManagerImpl;
-import com.android.systemui.statusbar.NotificationShadeWindowController;
 import com.android.systemui.statusbar.KeyguardIndicationController;
 import com.android.systemui.statusbar.notification.collection.provider.VisualStabilityProvider;
 import com.android.systemui.statusbar.notification.collection.render.GroupMembershipManager;
+import com.android.systemui.statusbar.NotificationLockscreenUserManager;
+import com.android.systemui.statusbar.NotificationLockscreenUserManagerImpl;
+import com.android.systemui.statusbar.NotificationShadeWindowController;
 import com.android.systemui.statusbar.phone.DozeServiceHost;
 import com.android.systemui.statusbar.phone.HeadsUpManagerPhone;
 import com.android.systemui.statusbar.phone.KeyguardBypassController;
 import com.android.systemui.statusbar.phone.StatusBarKeyguardViewManager;
 import com.android.systemui.statusbar.policy.AccessibilityManagerWrapper;
+import com.android.systemui.statusbar.policy.AospPolicyModule;
 import com.android.systemui.statusbar.policy.ConfigurationController;
 import com.android.systemui.statusbar.policy.DeviceProvisionedController;
 import com.android.systemui.statusbar.policy.DeviceProvisionedControllerImpl;
@@ -76,30 +82,24 @@ import com.android.systemui.statusbar.policy.IndividualSensorPrivacyControllerIm
 import com.android.systemui.statusbar.policy.SensorPrivacyController;
 import com.android.systemui.statusbar.policy.SensorPrivacyControllerImpl;
 import com.android.systemui.volume.dagger.VolumeModule;
-import com.android.systemui.rotationlock.RotationLockModule;
-import com.android.systemui.statusbar.policy.AospPolicyModule;
 
-import com.google.android.systemui.NotificationLockscreenUserManagerGoogle;
 import com.google.android.systemui.assist.AssistManagerGoogle;
 import com.google.android.systemui.assist.dagger.AssistModule;
 import com.google.android.systemui.columbus.dagger.ColumbusModule;
 import com.google.android.systemui.controls.GoogleControlsTileResourceConfigurationImpl;
-import com.google.android.systemui.elmyra.dagger.ElmyraModule;
-import com.google.android.systemui.dreamliner.DockObserver;
 import com.google.android.systemui.dreamliner.dagger.DreamlinerModule;
+import com.google.android.systemui.dreamliner.DockObserver;
+import com.google.android.systemui.dreamliner.DreamlinerDockModule;
+import com.google.android.systemui.elmyra.ElmyraModule;
 import com.google.android.systemui.power.dagger.PowerModuleGoogle;
 import com.google.android.systemui.qs.dagger.QSModuleGoogle;
-import com.google.android.systemui.qs.tileimpl.QSFactoryImplGoogle;
-import com.google.android.systemui.qs.tileimpl.GoogleQSModule;
-import com.google.android.systemui.reversecharging.ReverseChargingController;
 import com.google.android.systemui.reversecharging.dagger.ReverseChargingModule;
+import com.google.android.systemui.reversecharging.ReverseChargingController;
 import com.google.android.systemui.smartspace.BcSmartspaceDataProvider;
 import com.google.android.systemui.smartspace.dagger.SmartspaceGoogleModule;
-import com.google.android.systemui.statusbar.dagger.StartCentralSurfacesGoogleModule;
 import com.google.android.systemui.statusbar.KeyguardIndicationControllerGoogle;
 import com.google.android.systemui.statusbar.policy.BatteryControllerImplGoogle;
-import com.google.android.systemui.elmyra.ServiceConfigurationGoogle;
-import com.google.android.systemui.statusbar.policy.dagger.SystemUIGooglePolicyModule;
+import com.google.android.systemui.statusbar.policy.dagger.GooglePolicyModule;
 
 import javax.inject.Named;
 
@@ -110,13 +110,16 @@ import dagger.Provides;
 import dagger.Lazy;
 
 @Module(includes = {
+        RecentsModule.class,
+        KeyguardModule.class,
         GestureModule.class,
+        MultiUserUtilsModule.class,
         MediaModule.class,
         GoogleQSModule.class,
         PowerModuleGoogle.class,
         QSModuleGoogle.class,
         ReferenceScreenshotModule.class,
-        StartCentralSurfacesGoogleModule.class,
+        StartCentralSurfacesModule.class,
         VolumeModule.class,
         SmartspaceGoogleModule.class,
         DreamlinerModule.class,
@@ -124,9 +127,12 @@ import dagger.Lazy;
         AssistModule.class,
         ElmyraModule.class,
         ColumbusModule.class,
+        DreamlinerDockModule.class,
         StatusBarEventsModule.class,
-        SystemUIGooglePolicyModule.class,
-        RotationLockModule.class
+        GooglePolicyModule.class,
+        RotationLockModule.class,
+        WallpaperModule.class,
+        KeyboardShortcutsModule.class,
 })
 public abstract class SystemUIGoogleModule {
 
@@ -139,7 +145,7 @@ public abstract class SystemUIGoogleModule {
 
     @Binds
     abstract NotificationLockscreenUserManager bindNotificationLockscreenUserManager(
-            NotificationLockscreenUserManagerGoogle notificationLockscreenUserManager);
+            NotificationLockscreenUserManagerImpl notificationLockscreenUserManager);
 
     @Provides
     @SysUISingleton
@@ -208,7 +214,7 @@ public abstract class SystemUIGoogleModule {
 
     @SysUISingleton
     @Provides
-    static DeviceProvisionedController bindDeviceProvisionedController(
+    static DeviceProvisionedController provideDeviceProvisionedController(
             DeviceProvisionedControllerImpl deviceProvisionedController) {
         deviceProvisionedController.init();
         return deviceProvisionedController;
@@ -231,11 +237,6 @@ public abstract class SystemUIGoogleModule {
     @Binds
     abstract DockManager bindDockManager(DockObserver dockObserver);
 
-    /** */
-    @Binds
-    @SysUISingleton
-    public abstract QSFactory bindQSFactoryGoogle(QSFactoryImplGoogle qsFactoryImpl);
-
     @Binds
     @SysUISingleton
     abstract AssistManager bindAssistManagerGoogle(AssistManagerGoogle assistManager);
@@ -245,7 +246,7 @@ public abstract class SystemUIGoogleModule {
 
     @Provides
     @SysUISingleton
-    static BcSmartspaceDataPlugin provideBcSmartspaceDataPlugin() {
-        return new BcSmartspaceDataProvider();
+    static LogBuffer provideNotifVoiceReplyLogBuffer(LogBufferFactory logBufferFactory) {
+        return logBufferFactory.create(500, "NotifVoiceReplyLog", true);
     }
 }

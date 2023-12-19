@@ -38,6 +38,7 @@ import com.android.systemui.statusbar.policy.DeviceProvisionedController
 import com.android.systemui.theme.ThemeOverlayApplier
 import com.android.systemui.theme.ThemeOverlayController
 import com.android.systemui.util.settings.SecureSettings
+import com.android.systemui.R
 import java.util.concurrent.Executor
 import javax.inject.Inject
 
@@ -108,11 +109,27 @@ class ThemeOverlayControllerGoogle @Inject constructor(
     }
 
     private fun getBootColors(): IntArray {
+        val color : Int = context.getColor(R.color.super_g_primary_mono);
+        var mono : Boolean =
+            if (Color.red(color) == Color.green(color)
+                && Color.green(color) == Color.blue(color)) {
+                true
+            } else {
+                false
+            }
+        if (mono) {
+            return intArrayOf(
+                mainResources.getColor(R.color.super_g_primary_mono),
+                mainResources.getColor(R.color.super_g_tertiary_mono),
+                mainResources.getColor(R.color.super_g_quaternary_mono),
+                mainResources.getColor(R.color.super_g_secondary_mono)
+            )
+        }
         return intArrayOf(
-            mainResources.getColor(android.R.color.system_accent3_100),
-            mainResources.getColor(android.R.color.system_accent1_300),
-            mainResources.getColor(android.R.color.system_accent2_500),
-            mainResources.getColor(android.R.color.system_accent1_100)
+            mainResources.getColor(R.color.super_g_primary),
+            mainResources.getColor(R.color.super_g_tertiary),
+            mainResources.getColor(R.color.super_g_quaternary),
+            mainResources.getColor(R.color.super_g_secondary)
         )
     }
 }

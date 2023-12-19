@@ -74,7 +74,7 @@ public interface QSModuleGoogle {
     Map<String, QSTileImpl<?>> tileMap();
 
     @Provides
-    static AutoTileManager provideAutoTileManager(
+    static AutoTileManagerGoogle provideAutoTileManager(
             Context context,
             AutoAddTracker.Builder autoAddTrackerBuilder,
             QSHost host,
@@ -85,13 +85,13 @@ public interface QSModuleGoogle {
             ManagedProfileController managedProfileController,
             NightDisplayListenerModule.Builder nightDisplayListenerBuilder,
             CastController castController,
+            BatteryController batteryController,
             ReduceBrightColorsController reduceBrightColorsController,
             DeviceControlsController deviceControlsController,
             WalletController walletController,
             SafetyController safetyController,
-            @Named(RBC_AVAILABLE) boolean isReduceBrightColorsAvailable,
-            BatteryController batteryController) {
-        AutoTileManager manager = new AutoTileManagerGoogle(
+            @Named(RBC_AVAILABLE) boolean isReduceBrightColorsAvailable) {
+        AutoTileManagerGoogle manager = new AutoTileManagerGoogle(
                 context,
                 autoAddTrackerBuilder,
                 host,
@@ -102,12 +102,12 @@ public interface QSModuleGoogle {
                 managedProfileController,
                 nightDisplayListenerBuilder,
                 castController,
+                batteryController,
                 reduceBrightColorsController,
                 deviceControlsController,
                 walletController,
                 safetyController,
-                isReduceBrightColorsAvailable,
-                batteryController
+                isReduceBrightColorsAvailable
         );
         manager.init();
         return manager;
