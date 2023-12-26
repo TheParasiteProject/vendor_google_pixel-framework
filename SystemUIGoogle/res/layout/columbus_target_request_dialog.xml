@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/columbus_dialog_background"
     android:orientation="vertical"
-    android:paddingEnd="@dimen/columbus_target_request_dialog_end_padding"
     android:paddingStart="@dimen/columbus_target_request_dialog_start_padding"
-    android:paddingTop="@dimen/columbus_target_request_dialog_top_padding">
+    android:paddingTop="@dimen/columbus_target_request_dialog_top_padding"
+    android:paddingEnd="@dimen/columbus_target_request_dialog_end_padding">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="fill_parent"
@@ -31,10 +30,10 @@
                 android:id="@id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_gravity="center"
-                android:layout_marginBottom="@dimen/columbus_target_request_dialog_title_to_content_space"
                 android:layout_marginTop="@dimen/columbus_target_request_dialog_icon_to_title_space"
+                android:layout_marginBottom="@dimen/columbus_target_request_dialog_title_to_content_space"
+                android:gravity="center"
                 android:lineHeight="@dimen/columbus_target_request_dialog_title_line_height"
                 android:textColor="?android:textColorPrimary"
                 android:textSize="@dimen/columbus_target_request_dialog_title_text_size" />
@@ -43,9 +42,9 @@
                 android:id="@id/content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_gravity="center"
                 android:layout_marginBottom="@dimen/columbus_target_request_dialog_content_to_button_space"
+                android:gravity="center"
                 android:lineHeight="@dimen/columbus_target_request_dialog_content_line_height"
                 android:textColor="?android:textColorSecondary"
                 android:textSize="@dimen/columbus_target_request_dialog_content_text_size" />
@@ -60,11 +59,11 @@
                     android:id="@id/negative_button"
                     android:layout_width="wrap_content"
                     android:layout_height="fill_parent"
-                    android:background="@drawable/columbus_chip_background"
                     android:layout_marginEnd="@dimen/columbus_target_request_dialog_button_to_button_space"
+                    android:background="@drawable/columbus_chip_background"
                     android:lineHeight="@dimen/columbus_target_request_dialog_content_line_height"
-                    android:paddingEnd="@dimen/columbus_target_request_dialog_button_background_radius"
                     android:paddingStart="@dimen/columbus_target_request_dialog_button_background_radius"
+                    android:paddingEnd="@dimen/columbus_target_request_dialog_button_background_radius"
                     android:textColor="?android:textColorPrimary"
                     android:textSize="@dimen/columbus_target_request_dialog_content_text_size" />
 
@@ -74,8 +73,8 @@
                     android:layout_height="fill_parent"
                     android:background="@drawable/columbus_chip_background"
                     android:lineHeight="@dimen/columbus_target_request_dialog_content_line_height"
-                    android:paddingEnd="@dimen/columbus_target_request_dialog_button_background_radius"
                     android:paddingStart="@dimen/columbus_target_request_dialog_button_background_radius"
+                    android:paddingEnd="@dimen/columbus_target_request_dialog_button_background_radius"
                     android:textColor="?android:textColorPrimary"
                     android:textSize="@dimen/columbus_target_request_dialog_content_text_size" />
 

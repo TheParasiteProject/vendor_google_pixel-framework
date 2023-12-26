@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@id/first_sub_card"
@@ -21,15 +20,15 @@
 
     <TextView
         android:id="@id/sub_card_text"
+        style="@style/EnhancedSmartspaceTextSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="2.0dip"
         android:ellipsize="end"
         android:gravity="center_horizontal"
-        android:layout_margin="2.0dip"
         android:maxLines="2"
         android:textColor="?androidprv:attr/textColorOnAccent"
         android:textSize="14.0sp"
-        style="@style/EnhancedSmartspaceTextSubtitle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

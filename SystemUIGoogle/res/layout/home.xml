@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.systemui.assist.OpaLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.systemui.assist.OpaLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:systemui="http://schemas.android.com/apk/res-auto"
     android:id="@id/home"
     android:layout_width="@dimen/navigation_key_width"
     android:layout_height="fill_parent"
+    android:layout_weight="0.0"
     android:clipChildren="false"
     android:clipToPadding="false"
-    android:layout_weight="0.0"
-    android:paddingEnd="@dimen/navigation_key_padding"
-    android:paddingStart="@dimen/navigation_key_padding">
+    android:paddingStart="@dimen/navigation_key_padding"
+    android:paddingEnd="@dimen/navigation_key_padding">
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -17,27 +16,27 @@
 
         <ImageView
             android:id="@id/red"
+            style="@style/DotStyle"
             android:importantForAccessibility="no"
-            android:src="@drawable/ic_sysbar_opa_red"
-            style="@style/DotStyle" />
+            android:src="@drawable/ic_sysbar_opa_red" />
 
         <ImageView
             android:id="@id/blue"
+            style="@style/DotStyle"
             android:importantForAccessibility="no"
-            android:src="@drawable/ic_sysbar_opa_blue"
-            style="@style/DotStyle" />
+            android:src="@drawable/ic_sysbar_opa_blue" />
 
         <ImageView
             android:id="@id/green"
+            style="@style/DotStyle"
             android:importantForAccessibility="no"
-            android:src="@drawable/ic_sysbar_opa_green"
-            style="@style/DotStyle" />
+            android:src="@drawable/ic_sysbar_opa_green" />
 
         <ImageView
             android:id="@id/yellow"
+            style="@style/DotStyle"
             android:importantForAccessibility="no"
-            android:src="@drawable/ic_sysbar_opa_yellow"
-            style="@style/DotStyle" />
+            android:src="@drawable/ic_sysbar_opa_yellow" />
 
     </RelativeLayout>
 
@@ -45,32 +44,32 @@
         android:id="@id/halo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:importantForAccessibility="no"
         android:layout_gravity="center"
+        android:importantForAccessibility="no"
         android:scaleType="center" />
 
     <ImageView
         android:id="@id/white_cutout"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:importantForAccessibility="no"
         android:layout_gravity="center"
+        android:importantForAccessibility="no"
         android:scaleType="center" />
 
     <ImageView
         android:id="@id/white"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:importantForAccessibility="no"
         android:layout_gravity="center"
+        android:importantForAccessibility="no"
         android:scaleType="center" />
 
     <com.android.systemui.navigationbar.buttons.KeyButtonView
         android:id="@id/home_button"
         android:layout_width="@dimen/navigation_key_width"
         android:layout_height="fill_parent"
-        android:contentDescription="@string/accessibility_home"
         android:layout_gravity="center"
+        android:contentDescription="@string/accessibility_home"
         android:scaleType="center"
         systemui:keyCode="3" />
 

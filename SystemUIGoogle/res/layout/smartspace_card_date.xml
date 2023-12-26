@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.systemui.smartspace.BcSmartspaceCard
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.systemui.smartspace.BcSmartspaceCard xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="@dimen/enhanced_smartspace_card_height"
@@ -19,12 +18,12 @@
 
         <com.google.android.systemui.smartspace.IcuDateTextView
             android:id="@id/date"
+            style="@style/EnhancedSmartspaceTextTitle"
             android:layout_width="0.0dip"
             android:layout_height="wrap_content"
-            android:focusable="true"
-            android:layout_alignParentEnd="true"
             android:layout_alignParentStart="true"
-            style="@style/EnhancedSmartspaceTextTitle" />
+            android:layout_alignParentEnd="true"
+            android:focusable="true" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@id/smartspace_subtitle_group"
@@ -33,8 +32,7 @@
             android:layout_below="@id/date"
             android:layout_marginTop="@dimen/enhanced_smartspace_subtitle_margin_top">
 
-            <include
-                layout="@layout/smartspace_subtitle_pane" />
+            <include layout="@layout/smartspace_subtitle_pane" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -47,8 +45,7 @@
             android:orientation="horizontal"
             android:visibility="gone">
 
-            <include
-                layout="@layout/smartspace_extras" />
+            <include layout="@layout/smartspace_extras" />
 
         </LinearLayout>
 

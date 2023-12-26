@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.systemui.smartspace.uitemplate.SubListTemplateCard
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.systemui.smartspace.uitemplate.SubListTemplateCard xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
@@ -18,12 +17,12 @@
 
     <TextView
         android:id="@id/list_item_1"
+        style="@style/EnhancedSmartspaceTextSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:maxLines="1"
         android:textSize="14.0sp"
         android:visibility="gone"
-        style="@style/EnhancedSmartspaceTextSubtitle"
         app:layout_constraintBottom_toTopOf="@id/list_item_2"
         app:layout_constraintEnd_toStartOf="@id/list_icon"
         app:layout_constraintHorizontal_bias="0.0"
@@ -33,12 +32,12 @@
 
     <TextView
         android:id="@id/list_item_2"
+        style="@style/EnhancedSmartspaceTextSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:maxLines="1"
         android:textSize="14.0sp"
         android:visibility="gone"
-        style="@style/EnhancedSmartspaceTextSubtitle"
         app:layout_constraintBottom_toTopOf="@id/list_item_3"
         app:layout_constraintEnd_toStartOf="@id/list_icon"
         app:layout_constraintHorizontal_bias="0.0"
@@ -47,12 +46,12 @@
 
     <TextView
         android:id="@id/list_item_3"
+        style="@style/EnhancedSmartspaceTextSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:maxLines="1"
         android:textSize="14.0sp"
         android:visibility="gone"
-        style="@style/EnhancedSmartspaceTextSubtitle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/list_icon"
         app:layout_constraintHorizontal_bias="0.0"

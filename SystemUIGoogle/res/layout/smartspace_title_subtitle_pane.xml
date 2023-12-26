@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
@@ -18,10 +17,10 @@
 
         <com.google.android.systemui.smartspace.DoubleShadowTextView
             android:id="@id/title_text"
+            style="@style/EnhancedSmartspaceTextTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:focusable="true"
-            style="@style/EnhancedSmartspaceTextTitle"
             app:layout_constraintBottom_toTopOf="@id/smartspace_subtitle_group"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -35,8 +34,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/title_text">
 
-            <include
-                layout="@layout/smartspace_subtitle_pane" />
+            <include layout="@layout/smartspace_subtitle_pane" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -44,8 +42,8 @@
             android:id="@id/smartspace_extras_group"
             android:layout_width="wrap_content"
             android:layout_height="0.0dip"
-            android:gravity="top"
             android:layout_marginTop="8.0dip"
+            android:gravity="top"
             android:orientation="horizontal"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -53,8 +51,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/smartspace_subtitle_group">
 
-            <include
-                layout="@layout/smartspace_extras" />
+            <include layout="@layout/smartspace_extras" />
 
         </LinearLayout>
 

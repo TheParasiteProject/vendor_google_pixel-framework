@@ -55,10 +55,10 @@
     <dimen name="dream_cast_icon_padding">4.0dip</dimen>
     <dimen name="dream_cast_name_text_size">16.0sp</dimen>
     <dimen name="dream_overlay_complication_cast_text_size">24.0sp</dimen>
-    <item type="dimen" name="elmyra_progress_alpha">0.35</item>
-    <item type="dimen" name="elmyra_progress_detect_threshold">0.5</item>
-    <item type="dimen" name="elmyra_progress_report_threshold">0.55</item>
-    <item type="dimen" name="elmyra_screen_off_adjustment">-0.1</item>
+    <item name="elmyra_progress_alpha" type="dimen">0.35</item>
+    <item name="elmyra_progress_detect_threshold" type="dimen">0.5</item>
+    <item name="elmyra_progress_report_threshold" type="dimen">0.55</item>
+    <item name="elmyra_screen_off_adjustment" type="dimen">-0.1</item>
     <dimen name="enhanced_smartspace_base_action_icon_margin">8.0dip</dimen>
     <dimen name="enhanced_smartspace_card_height">76.0dip</dimen>
     <dimen name="enhanced_smartspace_combination_card_padding">8.0dip</dimen>
@@ -109,7 +109,7 @@
     <dimen name="low_light_clock_translate_animation_offset">40.0dip</dimen>
     <dimen name="navigation_bar_gesture_height">20.0dip</dimen>
     <dimen name="opa_diamond_translation">16.0dip</dimen>
-    <item type="dimen" name="opa_disabled_home_diameter">@dimen/navigation_icon_size</item>
+    <item name="opa_disabled_home_diameter" type="dimen">@dimen/navigation_icon_size</item>
     <dimen name="opa_dot_diam">10.0dip</dimen>
     <dimen name="opa_elmyra_orb_diameter">160.0dip</dimen>
     <dimen name="opa_elmyra_orb_height">100.0dip</dimen>
@@ -132,7 +132,7 @@
     <dimen name="settings_gear_touch_target_size">48.0dip</dimen>
     <dimen name="setup_dream_complication_button_height">48.0dip</dimen>
     <dimen name="setup_dream_complication_minimum_height">200.0dip</dimen>
-    <item type="dimen" name="smartspaceLetterSpacing">0.01</item>
+    <item name="smartspaceLetterSpacing" type="dimen">0.01</item>
     <dimen name="smartspace_icon_shadow">1.0dip</dimen>
     <dimen name="swipe_arrow_height">48.0dip</dimen>
     <dimen name="swipe_arrow_width">48.0dip</dimen>

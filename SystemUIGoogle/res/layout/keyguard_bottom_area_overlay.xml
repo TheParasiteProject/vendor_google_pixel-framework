@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.systemui.assist.LockscreenOpaLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.systemui.assist.LockscreenOpaLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@id/lockscreen_opa"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
@@ -19,19 +18,19 @@
 
             <ImageView
                 android:id="@id/red"
-                android:importantForAccessibility="no"
+                style="@style/LockscreenDotStyle"
                 android:layout_gravity="end"
                 android:layout_marginEnd="-10.0dip"
-                android:src="@drawable/ic_sysbar_opa_red"
-                style="@style/LockscreenDotStyle" />
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_sysbar_opa_red" />
 
             <ImageView
                 android:id="@id/blue"
-                android:importantForAccessibility="no"
+                style="@style/LockscreenDotStyle"
                 android:layout_gravity="end"
                 android:layout_marginEnd="-10.0dip"
-                android:src="@drawable/ic_sysbar_opa_blue"
-                style="@style/LockscreenDotStyle" />
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_sysbar_opa_blue" />
 
         </FrameLayout>
 
@@ -42,19 +41,19 @@
 
             <ImageView
                 android:id="@id/green"
-                android:importantForAccessibility="no"
+                style="@style/LockscreenDotStyle"
                 android:layout_gravity="start"
                 android:layout_marginStart="-10.0dip"
-                android:src="@drawable/ic_sysbar_opa_green"
-                style="@style/LockscreenDotStyle" />
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_sysbar_opa_green" />
 
             <ImageView
                 android:id="@id/yellow"
-                android:importantForAccessibility="no"
+                style="@style/LockscreenDotStyle"
                 android:layout_gravity="start"
                 android:layout_marginStart="-10.0dip"
-                android:src="@drawable/ic_sysbar_opa_yellow"
-                style="@style/LockscreenDotStyle" />
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_sysbar_opa_yellow" />
 
         </FrameLayout>
 

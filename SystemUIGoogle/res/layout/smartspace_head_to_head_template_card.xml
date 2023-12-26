@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.systemui.smartspace.uitemplate.HeadToHeadTemplateCard
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.systemui.smartspace.uitemplate.HeadToHeadTemplateCard xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:clipChildren="false"
     android:clipToPadding="false"
-    android:paddingBottom="20.0dip"
-    android:paddingTop="12.0dip">
+    android:paddingTop="12.0dip"
+    android:paddingBottom="20.0dip">
 
     <TextView
         android:id="@id/head_to_head_title"
+        style="@style/EnhancedSmartspaceTextSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"
-        style="@style/EnhancedSmartspaceTextSubtitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -46,11 +45,11 @@
 
     <TextView
         android:id="@id/first_competitor_text"
+        style="@style/EnhancedSmartspaceTextSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4.0dip"
         android:visibility="gone"
-        style="@style/EnhancedSmartspaceTextSubtitle"
         app:layout_constraintBottom_toBottomOf="@id/first_competitor_icon"
         app:layout_constraintEnd_toStartOf="@id/second_competitor_text"
         app:layout_constraintStart_toEndOf="@id/first_competitor_icon"
@@ -58,12 +57,12 @@
 
     <TextView
         android:id="@id/second_competitor_text"
+        style="@style/EnhancedSmartspaceTextSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="4.0dip"
         android:layout_marginStart="12.0dip"
+        android:layout_marginEnd="4.0dip"
         android:visibility="gone"
-        style="@style/EnhancedSmartspaceTextSubtitle"
         app:layout_constraintBottom_toBottomOf="@id/second_competitor_icon"
         app:layout_constraintEnd_toStartOf="@id/second_competitor_icon"
         app:layout_constraintStart_toEndOf="@id/first_competitor_text"

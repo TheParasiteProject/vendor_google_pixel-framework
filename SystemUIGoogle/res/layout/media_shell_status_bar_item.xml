@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.android.systemui.shared.shadow.DoubleShadowTextView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.android.systemui.shared.shadow.DoubleShadowTextView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@id/dream_status_bar_item_cast_name"
     android:layout_width="wrap_content"
     android:layout_height="fill_parent"
-    android:drawablePadding="@dimen/dream_cast_icon_padding"
     android:drawableStart="@drawable/drawable_dream_cast_icon"
+    android:drawablePadding="@dimen/dream_cast_icon_padding"
     android:textColor="@color/dream_cast_name_color"
     android:textSize="@dimen/dream_cast_name_text_size"
     app:ambientShadowAlpha="0.35"

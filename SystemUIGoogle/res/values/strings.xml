@@ -20,7 +20,7 @@
     <string name="columbus_target_request_dialog_summary">Tap the back of your phone twice to open %1$s. You can change this anytime in Settings.</string>
     <string name="columbus_target_request_dialog_title">Allow Quick Tap to open %1$s?</string>
     <string name="config_communal_settings_action">com.google.android.settings.communal.COMMUNAL_MODE_SETTINGS</string>
-    <string name="config_dockComponent"/>
+    <string name="config_dockComponent" />
     <string name="config_dock_setup_account_type">com.google</string>
     <string name="config_dock_setup_component_v2">@null</string>
     <string name="config_dock_setup_service_component">@null</string>
@@ -28,8 +28,8 @@
     <!--string name="config_lowLightDisplayHalService">com.google.hardware.pixel.display.IDisplay/default</string>
     <string name="config_lowLightMonitorLightSensorName">Auto Brightness</string>
     <string name="config_lowLightMonitorLightSensorType">com.google.sensor.auto_brightness</string-->
-    <string name="config_media_shell_service_component"/>
-    <string name="config_nest_dock_manager_service_component"/>
+    <string name="config_media_shell_service_component" />
+    <string name="config_nest_dock_manager_service_component" />
     <string name="config_preferredEmergencySosPackage">com.google.android.apps.safetyhub</string>
     <string name="config_systemUIFactoryComponent">com.google.android.systemui.SystemUIGoogleInitializer</string>
     <string name="copied_text_label">Copied text</string>
@@ -51,8 +51,8 @@
     <string name="dock_defender_notify_helper_url">https://support.google.com/googlepixeltablet/?p=extend_battery_life</string>
     <string name="dock_photo_preview_text">Photo frame starting...</string>
     <string name="dock_promo_text">Swipe left for photo frame</string>
-    <string name="dock_setup_notification_text"/>
-    <string name="dock_setup_notification_title"/>
+    <string name="dock_setup_notification_text" />
+    <string name="dock_setup_notification_title" />
     <string name="dream_settings_notification_text">Customize your screen saver</string>
     <string name="dream_settings_notification_title">Settings</string>
     <string name="elmyra_raw_sensor_string_type">com.google.sensor.elmyra.raw</string>
@@ -102,10 +102,10 @@ The face data used by face unlock will be permanently and securely deleted. Afte
     <string name="smartspace_shopping_list_overflow">+ %1$d more</string>
     <string name="squeeze_invocation_prompt">Squeeze to talk</string>
     <string name="status_bar_google_reverse_charging">batteryshare</string>
-    <string name="stylus_charging_text"/>
-    <string name="stylus_stop_charging_text"/>
-    <string name="stylus_system_update_notification_text"/>
-    <string name="stylus_system_update_notification_title"/>
+    <string name="stylus_charging_text" />
+    <string name="stylus_stop_charging_text" />
+    <string name="stylus_system_update_notification_text" />
+    <string name="stylus_system_update_notification_title" />
     <string name="themepicker_overlayable_package">com.google.android.apps.wallpaper</string>
     <string name="thermal_shutdown_dialog_help_url">https://support.google.com/pixelphone?p=overheat_shutdown</string>
     <string name="too_hot_label">Pixel too hot</string>
