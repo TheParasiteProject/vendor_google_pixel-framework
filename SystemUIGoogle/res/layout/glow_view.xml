@@ -39,5 +39,4 @@
         android:cropToPadding="true"
         android:scaleType="matrix"
         android:tint="@color/edge_light_green" />
-
 </com.google.android.systemui.assist.uihints.GlowView>

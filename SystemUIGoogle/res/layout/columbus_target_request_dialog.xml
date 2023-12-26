@@ -23,7 +23,7 @@
                 android:layout_height="@dimen/columbus_target_request_dialog_icon_size"
                 android:layout_gravity="center"
                 android:src="@drawable/ic_quick_tap"
-                android:tint="?androidprv:attr/colorAccentPrimaryVariant"
+                android:tint="?androidprv:attr/materialColorPrimaryContainer"
                 android:tintMode="src_in" />
 
             <TextView
@@ -77,15 +77,11 @@
                     android:paddingEnd="@dimen/columbus_target_request_dialog_button_background_radius"
                     android:textColor="?android:textColorPrimary"
                     android:textSize="@dimen/columbus_target_request_dialog_content_text_size" />
-
             </LinearLayout>
 
             <Space
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/columbus_target_request_dialog_bottom_padding" />
-
         </LinearLayout>
-
     </androidx.core.widget.NestedScrollView>
-
 </LinearLayout>

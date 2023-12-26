@@ -32,11 +32,17 @@
     <string name="dock_defender_first_run_title">Beskerm jou battery</string>
     <string name="dock_photo_preview_text">Fotoraam begin …</string>
     <string name="dock_promo_text">Swiep links of regs vir fotoraam</string>
+    <string name="drag_to_remove_tiles">Sleep hierheen om te verwyder</string>
+    <string name="dream_lockscreen_wallpaper_description">Gebruik jou huidige sluitskermmuurpapier</string>
+    <string name="dream_lockscreen_wallpaper_label">Muurpapier</string>
     <string name="dream_settings_notification_text">Pasmaak jou sluimerskerm</string>
     <string name="dream_settings_notification_title">Instellings</string>
     <string name="extreme_battery_saver_text">Ekstreem</string>
+    <string name="extreme_low_battery_notification_text">Jou foon sal afskakel as dit nie binnekort gelaai word nie</string>
+    <string name="extreme_low_battery_notification_title">Battery is byna pap</string>
     <string name="face_notification_name">Gesigslot</string>
     <string name="face_reenroll_dialog_cancel">Nie nou nie</string>
+    <string name="finder_active">Jy kan hierdie foon met Kry My Toestel opspoor selfs wanneer dit afgeskakel is</string>
     <string name="face_reenroll_dialog_confirm">Stel op</string>
     <string name="face_reenroll_dialog_content">"Vee jou huidige gesigdata uit om Gesigslot weer op te stel.
 
@@ -47,18 +53,44 @@ Die gesigdata wat Gesigslot gebruik, sal permanent en veilig uitgevee word. Nada
     <string name="face_reenroll_notification_title">Gesigslot moet weer opgestel word</string>
     <string name="generic_smartspace_concatenated_desc">%1$s, %2$s</string>
     <string name="handle_invocation_prompt">Swiep om te praat</string>
-    <string name="home_controls_tile_title">Tuis</string>
+    <string name="home_controls_tile_title">Home</string>
+    <string name="incompatible_charging_learn_more">Kom meer te wete</string>
+    <string name="incompatible_charging_notify_des">Jou foon laai dalk stadig of laai glad nie. Gebruik ’n aanbeveelde kragprop en kabel om vinniger te laai.</string>
+    <string name="incompatible_charging_notify_title">Kwessie met laaibykomstigheid</string>
+    <string name="install_app">Installeer app</string>
     <string name="keyguard_indication_trust_unlocked">Ontsluit gehou deur Smart Lock</string>
     <string name="low_battery_label">Lae battery</string>
+    <string name="low_battery_notification_text">%s batterykrag oor</string>
+    <string name="low_battery_notification_title">Skakel Standaardbatterybespaarder aan?</string>
     <string name="quick_settings_rotation_posture_folded">gevou</string>
     <string name="quick_settings_rotation_posture_unfolded">oopgevou</string>
     <string name="reverse_charging_device_name_text">Ander Pixel</string>
     <string name="reverse_charging_device_providing_charge_text">%1$s bied tans batterykrag (%2$s)</string>
     <string name="reverse_charging_on_notification_title">Batterydeling is aan</string>
     <string name="reverse_charging_title">Batterydeling</string>
-    <string name="saver_confirmation_dialog_text">Superbatterybespaarder sal die meeste programme en kennisgewings onderbreek.</string>
-    <string name="severe_low_battery_dialog_checkbox_title">Moenie weer vra nie</string>
-    <string name="severe_low_battery_dialog_text">Jy het %s batterykrag oor. Superbatterybespaarder sal die meeste programme en kennisgewings onderbreek.</string>
+    <string name="saver_confirmation_dialog_dismiss_text">Kanselleer</string>
+    <string name="saver_confirmation_dialog_subtitle">Kies die modus wat jy wil gebruik</string>
+    <string name="saver_confirmation_dialog_summary_extreme_mode">Sluit alle veranderinge wat hier bo gelys word, in. Onderbreek ook nienoodsaaklike apps en hul kennisgewings.</string>
+    <string name="saver_confirmation_dialog_summary_standard_mode">Beperk visuele effekte en agtergrondaktiwiteit. Skakel Donkertema aan as dit nie reeds aan is nie.</string>
+    <string name="saver_confirmation_dialog_title">Welkom by batterybespaarder</string>
+    <string name="saver_confirmation_dialog_title_extreme_mode">Superbatterybespaarder</string>
+    <string name="saver_confirmation_dialog_title_standard_mode">Standaardbatterybespaarder</string>
+    <string name="saver_notification_dismiss_text">Nee, dankie</string>
+    <string name="screen_protector_absent_message">Deaktiveer skermbeskermermodus om aanraking te verbeter wanneer jy nie ’n skermbeskermer gebruik nie.</string>
+    <string name="screen_protector_disable_notification">Deaktiveer kennisgewing</string>
+    <string name="screen_protector_go_to_settings">Gaan na instellings</string>
+    <string name="screen_protector_got_it">Het dit</string>
+    <string name="screen_protector_mode_title">Skermbeskermermodus</string>
+    <string name="screen_protector_present_message">Aktiveer skermbeskermermodus om aanraking te verbeter wanneer jy ’n skermbeskermer gebruik.</string>
+    <string name="selectable_url_description">Kiesbare URL</string>
+    <string name="severe_low_battery_dialog_switch_action_text">Skakel oor</string>
+    <string name="severe_low_battery_dialog_switch_text">"%s batterykrag oor
+
+Alle nienoodsaaklike apps en hul kennisgewings sal onderbreek word"</string>
+    <string name="severe_low_battery_dialog_switch_title">Skakel oor na Superbatterybespaarder?</string>
+    <string name="severe_low_battery_dialog_text">"%s batterykrag oor
+
+Alle visuele effekte en agtergrondaktiwiteit sal verminder word, en alle nienoodsaaklike apps sal onderbreek word"</string>
     <string name="severe_low_battery_dialog_title">Skakel Superbatterybespaarder aan?</string>
     <string name="smartspace_flight_card_gate_header">Hek</string>
     <string name="smartspace_flight_card_seat_header">Sitplek</string>
@@ -66,8 +98,11 @@ Die gesigdata wat Gesigslot gebruik, sal permanent en veilig uitgevee word. Nada
     <string name="smartspace_hours_mins">%1$s %2$s</string>
     <string name="smartspace_now">Nou</string>
     <string name="smartspace_shopping_list_overflow">+ nog %1$d</string>
+    <string name="shutdown_progress">Skakel tans af …</string>
     <string name="squeeze_invocation_prompt">Druk om te praat</string>
+    <string name="standard_battery_saver_text">Standaard</string>
     <string name="too_hot_label">Pixel is te warm</string>
+    <string name="tuner_persistent_warning">Hierdie eksperimentele kenmerke kan in toekomstige weergawes verander, breek of verdwyn. Gaan versigtig voort.</string>
     <string name="voice_reply_cta_text">“Ok Google, reply” (Ok Google, antwoord)</string>
     <string name="voice_reply_quick_phrase_cta_text">Sê “Reply”</string>
     <string name="wireless_charging_label">Laai tans draadloos</string>

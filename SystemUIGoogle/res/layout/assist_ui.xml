@@ -42,5 +42,4 @@
     <include
         android:id="@id/zerostate"
         layout="@layout/zerostate_icon" />
-
 </com.google.android.systemui.assist.uihints.AssistUIView>

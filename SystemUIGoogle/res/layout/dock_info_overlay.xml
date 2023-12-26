@@ -17,5 +17,4 @@
         android:src="@drawable/ic_settings_gear"
         android:tooltipText="@string/accessibility_settings_gear"
         android:visibility="gone" />
-
 </FrameLayout>

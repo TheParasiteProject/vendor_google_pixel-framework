@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.globalactions.GlobalActionsItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0.0dip"
+    android:layout_height="@dimen/global_actions_grid_item_layout_height"
+    android:layout_marginLeft="@dimen/control_base_item_margin"
+    android:layout_marginRight="@dimen/control_base_item_margin"
+    android:layout_weight="1.0"
+    android:background="@drawable/control_background"
+    android:gravity="bottom|center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/global_actions_grid_item_side_margin"
+    android:paddingTop="12.0dip"
+    android:paddingRight="@dimen/global_actions_grid_item_side_margin"
+    android:paddingBottom="12.0dip"
+    android:stateListAnimator="@anim/control_state_list_animator">
+
+    <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="20.0dip"
+        android:layout_height="20.0dip"
+        android:layout_marginBottom="14.0dip"
+        android:scaleType="centerInside"
+        android:tint="@color/control_primary_text" />
+
+    <TextView
+        android:id="@android:id/message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:breakStrategy="high_quality"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:hyphenationFrequency="full"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="2"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/control_primary_text"
+        android:textSize="12.0sp" />
+</com.android.systemui.globalactions.GlobalActionsItem>

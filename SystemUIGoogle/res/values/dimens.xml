@@ -1,7 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <dimen name="a11y_minimum_tappable_size">48.0dip</dimen>
+    <dimen name="abc_button_inset_horizontal_material">@dimen/abc_control_inset_material</dimen>
+    <dimen name="abc_button_padding_vertical_material">@dimen/abc_control_padding_material</dimen>
+    <dimen name="abc_dialog_min_width_major">65.0%</dimen>
+    <dimen name="abc_dialog_min_width_minor">95.00001%</dimen>
+    <dimen name="abc_list_item_padding_horizontal_material">
+        @dimen/abc_action_bar_content_inset_material
+    </dimen>
+    <dimen name="ambient_indication_container_margin_top">0.0dip</dimen>
     <dimen name="ambient_indication_icon_size">20.0dip</dimen>
+    <dimen name="ambient_indication_margin_bottom">71.0dip</dimen>
     <dimen name="ambient_indication_note_icon_size">14.0dip</dimen>
     <dimen name="ambient_text_shadow_radius">1.5dip</dimen>
     <dimen name="assist_chip_bottom_padding">10.0dip</dimen>
@@ -17,6 +26,7 @@
     <dimen name="assist_greeting_start_delta">15.0dip</dimen>
     <dimen name="assist_prompt_rise_distance">31.0dip</dimen>
     <dimen name="assist_prompt_start_height">11.0dip</dimen>
+    <dimen name="back_progress_non_linear_factor">0.2</dimen>
     <dimen name="biometric_dialog_corner_size">8.0dip</dimen>
     <dimen name="chip_hint_corner_radius">20.0dip</dimen>
     <dimen name="chip_hint_end_padding2">16.0dip</dimen>
@@ -28,6 +38,7 @@
     <dimen name="chip_tap_target_vertical_margin">5.0dip</dimen>
     <dimen name="chip_text_size">14.0sp</dimen>
     <dimen name="chip_text_start_padding2">8.0dip</dimen>
+    <dimen name="clipboard_preview_size">@dimen/overlay_x_scale</dimen>
     <dimen name="columbus_target_request_dialog_bottom_padding">18.0dip</dimen>
     <dimen name="columbus_target_request_dialog_button_background_radius">18.0dip</dimen>
     <dimen name="columbus_target_request_dialog_button_background_vertical_insets">6.0dip</dimen>
@@ -44,6 +55,33 @@
     <dimen name="columbus_target_request_dialog_title_text_size">24.0sp</dimen>
     <dimen name="columbus_target_request_dialog_title_to_content_space">16.0dip</dimen>
     <dimen name="columbus_target_request_dialog_top_padding">24.0dip</dimen>
+    <dimen name="config_face_help_msgs_defer_until_timeout_threshold">0.75</dimen>
+    <dimen name="config_pictureInPictureDefaultAspectRatio">1.777778</dimen>
+    <dimen name="config_pipLargeScreenOptimizedAspectRatio">0.5625</dimen>
+    <dimen name="control_card_elevation">15.0</dimen>
+    <dimen name="control_menu_horizontal_padding">@dimen/notification_side_paddings</dimen>
+    <dimen name="control_popup_corner_radius">@dimen/notification_corner_radius</dimen>
+    <dimen name="control_popup_item_corner_radius">@dimen/notification_corner_radius_small</dimen>
+    <dimen name="control_popup_items_divider_height">@dimen/controls_app_divider_height</dimen>
+    <dimen name="controls_activity_view_corner_radius">
+        @*android:dimen/config_bottomDialogCornerRadius
+    </dimen>
+    <dimen name="controls_card_margin">@dimen/control_base_item_margin</dimen>
+    <dimen name="controls_management_favorites_top_margin">
+        @dimen/controls_management_zone_top_margin
+    </dimen>
+    <dimen name="controls_management_footer_top_margin">
+        @dimen/controls_management_footer_side_margin
+    </dimen>
+    <dimen name="controls_management_indicator_top_margin">@dimen/controls_management_list_margin
+    </dimen>
+    <dimen name="controls_max_columns_adjust_above_font_scale">1.25</dimen>
+    <dimen name="controls_task_view_width_percentage">1.0</dimen>
+    <dimen name="controls_thumbnail_shadow_radius">2.0</dimen>
+    <dimen name="controls_thumbnail_shadow_x">2.0</dimen>
+    <dimen name="controls_thumbnail_shadow_y">2.0</dimen>
+    <dimen name="date_weather_view_height">24.0dip</dimen>
+    <dimen name="design_snackbar_action_text_color_alpha">1.0</dimen>
     <dimen name="columbus_target_request_dialog_width">348.0dip</dimen>
     <dimen name="dock_logo_min_size">48.0dip</dimen>
     <dimen name="dock_photo_diff">48.0dip</dimen>
@@ -54,12 +92,19 @@
     <dimen name="dream_cast_icon_inset_dimen">2.0dip</dimen>
     <dimen name="dream_cast_icon_padding">4.0dip</dimen>
     <dimen name="dream_cast_name_text_size">16.0sp</dimen>
-    <dimen name="dream_overlay_complication_cast_text_size">24.0sp</dimen>
-    <item name="elmyra_progress_alpha" type="dimen">0.35</item>
-    <item name="elmyra_progress_detect_threshold" type="dimen">0.5</item>
-    <item name="elmyra_progress_report_threshold" type="dimen">0.55</item>
-    <item name="elmyra_screen_off_adjustment" type="dimen">-0.1</item>
+    <dimen name="dream_overlay_bouncer_start_region_screen_percentage">0.2</dimen>
+    <dimen name="dream_overlay_complication_guide_bottom_percent">0.9</dimen>
+    <dimen name="dream_overlay_complication_guide_end_percent">0.5</dimen>
+    <dimen name="dream_overlay_complication_guide_start_percent">0.5</dimen>
+    <dimen name="dream_overlay_complication_guide_top_percent">0.1</dimen>
+    <dimen name="dream_overlay_status_bar_icon_size">@*android:dimen/status_bar_system_icon_size
+    </dimen>
+    <dimen name="elmyra_progress_alpha">0.35</dimen>
+    <dimen name="elmyra_progress_detect_threshold">0.5</dimen>
+    <dimen name="elmyra_progress_report_threshold">0.55</dimen>
+    <dimen name="elmyra_screen_off_adjustment">-0.1</dimen>
     <dimen name="enhanced_smartspace_base_action_icon_margin">8.0dip</dimen>
+    <dimen name="enhanced_smartspace_base_action_icon_padding">4.0dip</dimen>
     <dimen name="enhanced_smartspace_card_height">76.0dip</dimen>
     <dimen name="enhanced_smartspace_combination_card_padding">8.0dip</dimen>
     <dimen name="enhanced_smartspace_combination_sub_card_corner_radius">20.0dip</dimen>
@@ -73,7 +118,11 @@
     <dimen name="enhanced_smartspace_secondary_card_end_margin">1.0dip</dimen>
     <dimen name="enhanced_smartspace_secondary_card_padding_end">12.0dip</dimen>
     <dimen name="enhanced_smartspace_secondary_card_start_margin">1.0dip</dimen>
-    <dimen name="enhanced_smartspace_subtitle_margin_top">9.0dip</dimen>
+    <dimen name="enhanced_smartspace_subtitle_margin_top">5.0dip</dimen>
+    <dimen name="enhanced_smartspace_text_size_medium">16.0sp</dimen>
+    <dimen name="enhanced_smartspace_text_size_regular">20.0sp</dimen>
+    <dimen name="global_actions_grid_item_layout_height">98.0dip</dimen>
+    <dimen name="global_actions_grid_item_side_margin">5.0dip</dimen>
     <dimen name="enhanced_smartspace_subtitle_size">16.0sp</dimen>
     <dimen name="enhanced_smartspace_title_size">20.0sp</dimen>
     <dimen name="focus_rect_expand_size">400.0dip</dimen>
@@ -88,6 +137,15 @@
     <dimen name="glow_tall_max_y">53.0dip</dimen>
     <dimen name="glow_tall_min_y">35.0dip</dimen>
     <dimen name="highlight_corner_radius">4.0dip</dimen>
+    <dimen name="group_overflow_number_padding">@*android:dimen/notification_content_margin_end
+    </dimen>
+    <dimen name="group_overflow_number_size">@*android:dimen/notification_text_size</dimen>
+    <dimen name="half_opened_bouncer_height_ratio">0.0</dimen>
+    <dimen name="highlight_alpha_material_colored">0.26</dimen>
+    <dimen name="hint_alpha_material_dark">0.5</dimen>
+    <dimen name="hint_alpha_material_light">0.38</dimen>
+    <dimen name="hint_pressed_alpha_material_dark">0.7</dimen>
+    <dimen name="hint_pressed_alpha_material_light">0.54</dimen>
     <dimen name="image_shadow_corner_radius">32.0dip</dimen>
     <dimen name="image_shadow_minimum_size">80.0dip</dimen>
     <dimen name="indicator_corner_radius">16.0dip</dimen>
@@ -101,15 +159,92 @@
     <dimen name="keyboard_icon_right_margin">10.0dip</dimen>
     <dimen name="keyboard_icon_size">24.0dip</dimen>
     <dimen name="keyboard_icon_tap_padding">12.0dip</dimen>
+    <dimen name="keyguard_clock_line_spacing_scale">0.7</dimen>
+    <dimen name="keyguard_clock_line_spacing_scale_burmese">1.0</dimen>
+    <dimen name="keyguard_shadow_radius">5.0</dimen>
+    <dimen name="ksh_layout_width">@dimen/match_parent</dimen>
+    <dimen name="large_dialog_width">@dimen/match_parent</dimen>
+    <dimen name="large_screen_shade_header_left_padding">@dimen/qs_horizontal_margin</dimen>
+    <dimen name="large_screen_shade_header_min_height">@dimen/qs_header_row_min_height</dimen>
+    <dimen name="lb_guidedactions_item_disabled_chevron_alpha">0.5</dimen>
+    <dimen name="lb_guidedactions_item_enabled_chevron_alpha">1.0</dimen>
+    <dimen name="lb_guidedactions_item_unselected_description_text_alpha">0.5</dimen>
+    <dimen name="lb_guidedactions_item_unselected_text_alpha">1.0</dimen>
+    <dimen name="lb_guidedactions_width_weight">0.71428573</dimen>
+    <dimen name="lb_guidedactions_width_weight_two_panels">1.1917808</dimen>
+    <dimen name="lb_guidedbuttonactions_width_weight">0.45</dimen>
+    <dimen name="lb_guidedstep_height_weight">2.0</dimen>
+    <dimen name="lb_guidedstep_keyline">40.0</dimen>
+    <dimen name="lockscreen_shade_depth_controller_transition_distance">
+        @dimen/lockscreen_shade_full_transition_distance
+    </dimen>
+    <dimen name="lockscreen_shade_keyguard_transition_distance">
+        @dimen/lockscreen_shade_media_transition_distance
+    </dimen>
+    <dimen name="lockscreen_shade_notif_shelf_transition_distance">
+        @dimen/lockscreen_shade_full_transition_distance
+    </dimen>
+    <dimen name="lockscreen_shade_notifications_scrim_transition_distance">
+        @dimen/lockscreen_shade_scrim_transition_distance
+    </dimen>
+    <dimen name="lockscreen_shade_npvc_keyguard_content_alpha_transition_distance">
+        @dimen/lockscreen_shade_full_transition_distance
+    </dimen>
+    <dimen name="lockscreen_shade_qs_squish_start_fraction">0.5</dimen>
+    <dimen name="lockscreen_shade_qs_squish_transition_distance">
+        @dimen/lockscreen_shade_qs_transition_distance
+    </dimen>
+    <dimen name="lockscreen_shade_qs_transition_distance">
+        @dimen/lockscreen_shade_full_transition_distance
+    </dimen>
+    <dimen name="lockscreen_shade_scrim_transition_distance">
+        @dimen/lockscreen_shade_full_transition_distance
+    </dimen>
+    <dimen name="lockscreen_shade_status_bar_transition_distance">
+        @dimen/lockscreen_shade_full_transition_distance
+    </dimen>
+    <dimen name="lockscreen_shade_udfps_keyguard_transition_distance">
+        @dimen/lockscreen_shade_full_transition_distance
+    </dimen>
     <dimen name="long_press_detection_size_x">20.0dip</dimen>
     <dimen name="long_press_detection_size_y">20.0dip</dimen>
     <dimen name="low_light_clock_charging_text_min_height">48.0dip</dimen>
     <dimen name="low_light_clock_charging_text_size">14.0sp</dimen>
     <dimen name="low_light_clock_text_size">260.0dip</dimen>
     <dimen name="low_light_clock_translate_animation_offset">40.0dip</dimen>
+    <dimen name="m3_comp_switch_disabled_handle_opacity">0.38</dimen>
+    <dimen name="m3_comp_switch_disabled_selected_icon_opacity">0.38</dimen>
+    <dimen name="m3_comp_switch_disabled_track_opacity">0.12</dimen>
+    <dimen name="m3_comp_switch_disabled_unselected_icon_opacity">0.38</dimen>
+    <dimen name="material_emphasis_disabled">0.38</dimen>
+    <dimen name="material_emphasis_high_type">0.87</dimen>
+    <dimen name="material_emphasis_medium">0.6</dimen>
+    <dimen name="mtrl_high_ripple_default_alpha">0.24</dimen>
+    <dimen name="mtrl_high_ripple_focused_alpha">0.4</dimen>
+    <dimen name="mtrl_high_ripple_hovered_alpha">0.4</dimen>
+    <dimen name="mtrl_high_ripple_pressed_alpha">0.24</dimen>
+    <dimen name="mtrl_low_ripple_default_alpha">0.12</dimen>
+    <dimen name="mtrl_low_ripple_focused_alpha">0.2</dimen>
+    <dimen name="mtrl_low_ripple_hovered_alpha">0.2</dimen>
+    <dimen name="mtrl_low_ripple_pressed_alpha">0.12</dimen>
+    <dimen name="mtrl_snackbar_action_text_color_alpha">0.5</dimen>
+    <dimen name="mtrl_snackbar_background_overlay_color_alpha">0.8</dimen>
+    <dimen name="mtrl_switch_track_height">@dimen/m3_comp_switch_track_height</dimen>
+    <dimen name="mtrl_switch_track_width">@dimen/m3_comp_switch_track_width</dimen>
+    <dimen name="navigation_bar_size">@*android:dimen/navigation_bar_height</dimen>
+    <dimen name="navigation_edge_active_scale">1.0</dimen>
+    <dimen name="navigation_edge_entry_scale">0.98</dimen>
+    <dimen name="navigation_edge_pre_threshold_scale">0.98</dimen>
+    <dimen name="navigation_edge_stretch_scale">1.0</dimen>
+    <dimen name="notification_divider_alpha">1.0</dimen>
+    <dimen name="notification_min_height">@*android:dimen/notification_min_height</dimen>
+    <dimen name="notification_section_divider_height">@dimen/notification_side_paddings</dimen>
+    <dimen name="ongoing_appops_dialog_side_margins">
+        @dimen/notification_shade_content_margin_horizontal
+    </dimen>
     <dimen name="navigation_bar_gesture_height">20.0dip</dimen>
     <dimen name="opa_diamond_translation">16.0dip</dimen>
-    <item name="opa_disabled_home_diameter" type="dimen">@dimen/navigation_icon_size</item>
+    <dimen name="opa_disabled_home_diameter">@dimen/navigation_icon_size</dimen>
     <dimen name="opa_dot_diam">10.0dip</dimen>
     <dimen name="opa_elmyra_orb_diameter">160.0dip</dimen>
     <dimen name="opa_elmyra_orb_height">100.0dip</dimen>
@@ -124,20 +259,61 @@
     <dimen name="page_indicator_dot_margin">3.0dip</dimen>
     <dimen name="page_indicator_dot_size">6.0dip</dimen>
     <dimen name="page_indicator_padding_top">10.0dip</dimen>
+    <dimen name="percent_displacement_at_fade_out">0.1066</dimen>
+    <dimen name="physical_charger_port_location_normalized_x">0.5</dimen>
+    <dimen name="physical_charger_port_location_normalized_y">1.0</dimen>
+    <dimen name="physical_fingerprint_sensor_center_screen_location_x">@null</dimen>
+    <dimen name="proximity_sensor_secondary_threshold">@null</dimen>
+    <dimen name="proximity_sensor_secondary_threshold_latch">@null</dimen>
+    <dimen name="proximity_sensor_threshold">@null</dimen>
+    <dimen name="proximity_sensor_threshold_latch">@null</dimen>
+    <dimen name="qqs_expand_clock_scale">2.57</dimen>
+    <dimen name="qs_content_horizontal_padding">
+        @dimen/notification_shade_content_margin_horizontal
+    </dimen>
+    <dimen name="qs_header_mobile_icon_size">@dimen/status_bar_icon_drawing_size</dimen>
+    <dimen name="qs_header_system_icons_area_height">@*android:dimen/quick_qs_offset_height</dimen>
+    <dimen name="qs_horizontal_margin">@dimen/notification_side_paddings</dimen>
+    <dimen name="qs_panel_padding_bottom">@dimen/footer_actions_height</dimen>
+    <dimen name="qs_tile_margin_vertical">@dimen/qs_tile_margin_horizontal</dimen>
+    <dimen name="qs_tiles_page_horizontal_margin">@dimen/notification_side_paddings</dimen>
+    <dimen name="rounded_corner_content_padding">@*android:dimen/rounded_corner_content_padding
+    </dimen>
+    <dimen name="screen_pinning_request_width">@dimen/match_parent</dimen>
     <dimen name="page_indicator_width">16.0dip</dimen>
     <dimen name="scaled_image_corner_radius">28.0dip</dimen>
     <dimen name="scrim_touchable_height">132.0dip</dimen>
     <dimen name="selection_padding">4.0dip</dimen>
     <dimen name="settings_gear_margin">30.0dip</dimen>
     <dimen name="settings_gear_touch_target_size">48.0dip</dimen>
+    <dimen name="settingslib_highlight_alpha_material_dark">0.1</dimen>
+    <dimen name="settingslib_highlight_alpha_material_light">0.1</dimen>
+    <dimen name="shade_header_system_icons_height">@dimen/large_screen_shade_header_min_height
+    </dimen>
+    <dimen name="shutdown_scrim_behind_alpha">0.95</dimen>
+    <dimen name="smartspaceLetterSpacing">0.01</dimen>
+    <dimen name="status_bar_height">@*android:dimen/status_bar_height</dimen>
+    <dimen name="status_bar_icon_drawing_alpha">90.0%</dimen>
+    <dimen name="status_bar_icon_drawing_size_dark">
+        @*android:dimen/notification_header_icon_size_ambient
+    </dimen>
+    <dimen name="status_bar_icon_scale_factor">1.0</dimen>
+    <dimen name="status_bar_icon_size">@*android:dimen/status_bar_icon_size</dimen>
+    <dimen name="status_bar_icon_size_sp">@*android:dimen/status_bar_icon_size_sp</dimen>
+    <dimen name="status_bar_system_icons_height">@dimen/status_bar_icon_size_sp</dimen>
+    <dimen name="sud_glif_land_content_area_weight">1.0</dimen>
+    <dimen name="sud_glif_land_header_area_weight">1.0</dimen>
+    <dimen name="sud_illustration_aspect_ratio">2.22</dimen>
     <dimen name="setup_dream_complication_button_height">48.0dip</dimen>
     <dimen name="setup_dream_complication_minimum_height">200.0dip</dimen>
-    <item name="smartspaceLetterSpacing" type="dimen">0.01</item>
     <dimen name="smartspace_icon_shadow">1.0dip</dimen>
     <dimen name="swipe_arrow_height">48.0dip</dimen>
     <dimen name="swipe_arrow_width">48.0dip</dimen>
     <dimen name="transcription_space_bottom_margin">73.0dip</dimen>
     <dimen name="transcription_text_size">16.0sp</dimen>
+    <dimen name="weather_clock_smartspace_scale">1.0</dimen>
+    <dimen name="wireless_charging_anim_battery_level_text_size_end">48.0</dimen>
+    <dimen name="wireless_charging_anim_battery_level_text_size_start">0.0</dimen>
     <dimen name="voice_reply_cta_divider_size">8.0dip</dimen>
     <dimen name="voice_reply_cta_icon_size">18.0dip</dimen>
     <dimen name="voice_reply_cta_text_size">12.0sp</dimen>

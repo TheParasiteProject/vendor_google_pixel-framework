@@ -20,5 +20,4 @@
         android:textAppearance="@style/TextAppearance.Keyguard.BottomArea"
         android:textColor="@color/dock_photo_text"
         android:textSize="24.0sp" />
-
 </FrameLayout>

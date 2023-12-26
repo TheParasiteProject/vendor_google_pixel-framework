@@ -34,8 +34,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/title_text">
 
-            <include layout="@layout/smartspace_subtitle_pane" />
+            <include layout="@layout/smartspace_subtitle_text" />
 
+            <include layout="@layout/smartspace_subtitle_supplemental" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
@@ -52,9 +53,6 @@
             app:layout_constraintTop_toBottomOf="@id/smartspace_subtitle_group">
 
             <include layout="@layout/smartspace_extras" />
-
         </LinearLayout>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

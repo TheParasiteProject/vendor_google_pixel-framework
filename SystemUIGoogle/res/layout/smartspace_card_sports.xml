@@ -62,5 +62,4 @@
         app:layout_constraintEnd_toStartOf="@id/second_competitor_logo"
         app:layout_constraintStart_toEndOf="@id/first_competitor_score"
         app:layout_constraintTop_toTopOf="@id/second_competitor_logo" />
-
 </com.google.android.systemui.smartspace.BcSmartspaceCardSports>

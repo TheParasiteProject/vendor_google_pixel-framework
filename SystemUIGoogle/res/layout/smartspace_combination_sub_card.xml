@@ -27,11 +27,10 @@
         android:ellipsize="end"
         android:gravity="center_horizontal"
         android:maxLines="2"
-        android:textColor="?androidprv:attr/textColorOnAccent"
+        android:textColor="?androidprv:attr/materialColorOnPrimary"
         android:textSize="14.0sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sub_card_icon" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

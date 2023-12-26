@@ -30,5 +30,4 @@
         android:maxLines="2"
         android:padding="6.0dip"
         android:visibility="invisible" />
-
 </LinearLayout>

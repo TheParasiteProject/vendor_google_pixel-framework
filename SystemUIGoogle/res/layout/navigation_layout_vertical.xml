@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:systemui="http://schemas.android.com/apk/res-auto"
+    android:id="@id/vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="@dimen/rounded_corner_content_padding"
+    android:layout_marginBottom="@dimen/rounded_corner_content_padding"
+    android:paddingTop="@dimen/nav_content_padding"
+    android:paddingBottom="@dimen/nav_content_padding">
+
+    <com.android.systemui.navigationbar.buttons.NearestTouchFrame
+        android:id="@id/nav_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        systemui:isVertical="true">
+
+        <com.android.systemui.navigationbar.buttons.ReverseLinearLayout
+            android:id="@id/ends_group"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical" />
+
+        <com.android.systemui.navigationbar.buttons.ReverseLinearLayout
+            android:id="@id/center_group"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="vertical" />
+    </com.android.systemui.navigationbar.buttons.NearestTouchFrame>
+</FrameLayout>

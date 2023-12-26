@@ -67,5 +67,4 @@
         app:layout_constraintEnd_toStartOf="@id/second_competitor_icon"
         app:layout_constraintStart_toEndOf="@id/first_competitor_text"
         app:layout_constraintTop_toTopOf="@id/second_competitor_icon" />
-
 </com.google.android.systemui.smartspace.uitemplate.HeadToHeadTemplateCard>

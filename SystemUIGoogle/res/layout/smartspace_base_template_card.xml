@@ -23,5 +23,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/secondary_card_group"
         app:layout_constraintTop_toTopOf="parent" />
-
 </com.google.android.systemui.smartspace.uitemplate.BaseTemplateCard>

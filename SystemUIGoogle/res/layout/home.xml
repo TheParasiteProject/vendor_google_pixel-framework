@@ -37,7 +37,6 @@
             style="@style/DotStyle"
             android:importantForAccessibility="no"
             android:src="@drawable/ic_sysbar_opa_yellow" />
-
     </RelativeLayout>
 
     <ImageView
@@ -72,5 +71,4 @@
         android:contentDescription="@string/accessibility_home"
         android:scaleType="center"
         systemui:keyCode="3" />
-
 </com.google.android.systemui.assist.OpaLayout>

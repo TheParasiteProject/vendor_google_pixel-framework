@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@id/background"
+        android:gravity="center">
+        <shape android:shape="oval">
+            <size
+                android:width="@dimen/ongoing_appops_dialog_circle_size"
+                android:height="@dimen/ongoing_appops_dialog_circle_size" />
+            <solid android:color="@color/privacy_chip_background" />
+        </shape>
+    </item>
+    <item
+        android:id="@id/icon"
+        android:width="@dimen/ongoing_appops_dialog_icon_size"
+        android:height="@dimen/ongoing_appops_dialog_icon_size"
+        android:drawable="@*android:drawable/perm_group_location"
+        android:gravity="center" />
+</layer-list>

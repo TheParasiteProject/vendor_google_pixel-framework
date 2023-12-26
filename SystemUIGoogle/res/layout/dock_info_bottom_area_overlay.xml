@@ -28,5 +28,4 @@
         android:scaleType="center"
         android:src="@drawable/ic_swipe_arrow"
         android:tint="@color/dock_photo_text" />
-
 </FrameLayout>

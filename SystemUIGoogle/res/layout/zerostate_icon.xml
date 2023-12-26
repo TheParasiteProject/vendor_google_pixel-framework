@@ -17,5 +17,4 @@
         android:importantForAccessibility="yes"
         android:scaleType="center"
         android:src="@drawable/ic_explore" />
-
 </com.google.android.systemui.assist.uihints.ZeroStateIconView>

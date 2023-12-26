@@ -1,6 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
 
+    <style name="DateWeatherText" parent="@style/EnhancedSmartspaceTextTitle">
+        <item name="android:textSize">?smartspaceSubtitleTextSize</item>
+        <item name="android:fontFamily">google-sans-text</item>
+    </style>
+
     <style name="DotStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -36,5 +41,32 @@
         <item name="android:alpha">0.0</item>
         <item name="android:scaleX">0.8</item>
         <item name="android:scaleY">0.8</item>
+    </style>
+
+    <style name="ScreenProtectorNotification" />
+
+    <style name="ScreenProtectorNotification.UserAction" parent="@style/ScreenProtectorNotification">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingTop">16.0dip</item>
+        <item name="android:paddingRight">24.0dip</item>
+        <item name="android:paddingBottom">16.0dip</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">roboto-regular</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="Smartspace">
+        <item name="smartspaceSubtitleTextSize">@dimen/enhanced_smartspace_text_size_medium</item>
+        <item name="smartspaceTitleTextSize">@dimen/enhanced_smartspace_text_size_regular</item>
+    </style>
+
+    <style name="SmartspaceWithDateWeather">
+        <item name="smartspaceSubtitleTextSize">@dimen/enhanced_smartspace_text_size_medium</item>
+        <item name="smartspaceTitleTextSize">@dimen/enhanced_smartspace_text_size_regular</item>
     </style>
 </resources>

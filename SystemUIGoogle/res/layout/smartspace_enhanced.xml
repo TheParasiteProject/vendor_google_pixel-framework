@@ -19,5 +19,4 @@
         android:layoutDirection="ltr"
         android:paddingTop="@dimen/page_indicator_padding_top"
         android:visibility="visible" />
-
 </com.google.android.systemui.smartspace.BcSmartspaceView>

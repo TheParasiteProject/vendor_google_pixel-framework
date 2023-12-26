@@ -19,6 +19,8 @@
     <string name="columbus_target_request_dialog_deny">Don’t allow</string>
     <string name="columbus_target_request_dialog_summary">Tap the back of your phone twice to open %1$s. You can change this anytime in Settings.</string>
     <string name="columbus_target_request_dialog_title">Allow Quick Tap to open %1$s?</string>
+    <string name="config_appStoreAppLinkTemplate">https://play.google.com/store/apps/details?id=$packageName</string>
+    <string name="config_appStorePackageName">com.android.vending</string>
     <string name="config_communal_settings_action">com.google.android.settings.communal.COMMUNAL_MODE_SETTINGS</string>
     <string name="config_dockComponent" />
     <string name="config_dock_setup_account_type">com.google</string>
@@ -51,15 +53,20 @@
     <string name="dock_defender_notify_helper_url">https://support.google.com/googlepixeltablet/?p=extend_battery_life</string>
     <string name="dock_photo_preview_text">Photo frame starting...</string>
     <string name="dock_promo_text">Swipe left for photo frame</string>
+    <string name="dream_lockscreen_wallpaper_description">Use your current lockscreen wallpaper</string>
+    <string name="dream_lockscreen_wallpaper_label">Wallpaper</string>
     <string name="dock_setup_notification_text" />
     <string name="dock_setup_notification_title" />
     <string name="dream_settings_notification_text">Customize your screen saver</string>
     <string name="dream_settings_notification_title">Settings</string>
     <string name="elmyra_raw_sensor_string_type">com.google.sensor.elmyra.raw</string>
     <string name="extreme_battery_saver_text">Extreme</string>
+    <string name="extreme_low_battery_notification_text">Your phone will shut down if it’s not charged soon</string>
+    <string name="extreme_low_battery_notification_title">Very low battery</string>
     <string name="face_notification_name">Face unlock</string>
     <string name="face_reenroll_dialog_cancel">Not now</string>
     <string name="face_reenroll_dialog_confirm">Set up</string>
+    <string name="finder_active">You can locate this phone with Find My Device even when powered off</string>
     <string name="face_reenroll_dialog_content">"Delete your current face data to set up face unlock again.
 
 The face data used by face unlock will be permanently and securely deleted. After removal, you will need your PIN, pattern, or password to unlock your phone, sign in to apps, and confirm payments."</string>
@@ -74,24 +81,54 @@ The face data used by face unlock will be permanently and securely deleted. Afte
     <string name="home_controls_tile_title">Home</string>
     <string name="image_content_description">Selectable image</string>
     <string name="instant_apps_help_url">https://support.google.com/googleplay/?p=instant_apps</string>
+    <string name="incompatible_charging_help_url">https://support.google.com/?p=fix_charging_issues</string>
+    <string name="incompatible_charging_learn_more">Learn more</string>
+    <string name="incompatible_charging_notify_des">Your phone may be charging slowly or not charging. For faster charging, use a recommended power adapter and cable.</string>
+    <string name="incompatible_charging_notify_title">Issue with charging accessory</string>
+    <string name="install_app">Install app</string>
     <string name="keyguard_indication_trust_unlocked">Kept unlocked by Smart Lock</string>
     <string name="launcher_overlayable_package">com.google.android.apps.nexuslauncher</string>
     <string name="low_battery_label">Low battery</string>
+    <string name="low_battery_notification_text">%s battery left</string>
+    <string name="low_battery_notification_title">Turn on Standard Battery Saver?</string>
     <string name="no_content_in_select_mode">No text or image to be selected</string>
     <string name="quick_settings_rotation_posture_folded">folded</string>
     <string name="quick_settings_rotation_posture_unfolded">unfolded</string>
-    <string name="quick_settings_tiles_default">internet,bt,flashlight,dnd,alarm,airplane,controls,wallet,rotation,qr_code_scanner,battery,cast,screenrecord,custom(com.google.android.gms/.nearby.sharing.SharingTileService),mictoggle,cameratoggle,custom(com.google.android.permissioncontroller/com.android.permissioncontroller.permission.service.SafetyCenterQsTileService)</string>
+    <string name="quick_settings_tiles_default">internet,bt,flashlight,dnd,alarm,airplane,controls,wallet,rotation,qr_code_scanner,battery,cast,screenrecord,custom(com.google.android.gms/.nearby.sharing.SharingTileService),mictoggle,cameratoggle,custom(com.google.android.permissioncontroller/com.android.permissioncontroller.permission.service.v33.SafetyCenterQsTileService)</string>
+    <string name="quick_settings_tiles_retail_mode">night,dark,dnd,flashlight,rotation,location</string>
+    <string name="quick_settings_tiles_stock">internet,bt,flashlight,dnd,alarm,airplane,controls,wallet,rotation,battery,cast,screenrecord,mictoggle,cameratoggle,location,hotspot,inversion,saver,dark,work,night,reverse,reduce_brightness,qr_code_scanner,onehanded,color_correction,dream,font_scaling</string>
     <string name="reverse_charging_device_name_text">Other Pixel</string>
     <string name="reverse_charging_device_providing_charge_text">%1$s providing charge (%2$s)</string>
     <string name="reverse_charging_on_notification_title">Battery Share is on</string>
     <string name="reverse_charging_started_sound">/product/media/audio/ui/reverse_charging_start.ogg</string>
     <string name="reverse_charging_title">Battery Share</string>
+    <string name="saver_confirmation_dialog_dismiss_text">Cancel</string>
+    <string name="saver_confirmation_dialog_subtitle">Select the mode to use</string>
+    <string name="saver_confirmation_dialog_summary_extreme_mode">Includes all changes listed above. Also pauses non-essential apps and their notifications.</string>
+    <string name="saver_confirmation_dialog_summary_standard_mode">Limits visual effects and background activity. Turns on Dark theme, if not already on.</string>
+    <string name="saver_confirmation_dialog_title">Welcome to Battery Saver</string>
+    <string name="saver_confirmation_dialog_title_extreme_mode">Extreme Battery Saver</string>
+    <string name="saver_confirmation_dialog_title_standard_mode">Standard Battery Saver</string>
+    <string name="saver_notification_dismiss_text">No, thanks</string>
+    <string name="screen_protector_absent_message">Disabling screen protector mode improves touch when a screen protector is not used.</string>
+    <string name="screen_protector_disable_notification">Disable notification</string>
+    <string name="screen_protector_go_to_settings">Go to settings</string>
+    <string name="screen_protector_got_it">Got it</string>
+    <string name="screen_protector_mode_title">Screen protector mode</string>
+    <string name="screen_protector_present_message">Enabling screen protector mode improves touch when using a screen protector.</string>
     <string name="saver_confirmation_dialog_text">Extreme Battery Saver will pause most apps and notifications.</string>
     <string name="selectable_url_description">Selectable URL</string>
     <string name="settings_app_package_name">com.android.settings</string>
-    <string name="severe_low_battery_dialog_checkbox_title">Don’t ask again</string>
-    <string name="severe_low_battery_dialog_text">You have %s battery left. Extreme Battery Saver will pause most apps and notifications.</string>
+    <string name="severe_low_battery_dialog_switch_action_text">Switch</string>
+    <string name="severe_low_battery_dialog_switch_text">"%s battery left
+
+This will pause all non-essential apps and their notifications"</string>
+    <string name="severe_low_battery_dialog_switch_title">Switch to Extreme Battery Saver?</string>
+    <string name="severe_low_battery_dialog_text">"%s battery left
+
+This will reduce visual effects and background activity, and pause all non-essential apps"</string>
     <string name="severe_low_battery_dialog_title">Turn on Extreme Battery Saver?</string>
+    <string name="shutdown_progress">Shutting down…</string>
     <string name="smartspace_flight_card_gate_header">Gate</string>
     <string name="smartspace_flight_card_seat_header">Seat</string>
     <string name="smartspace_flight_qr_code">QR code</string>
@@ -101,6 +138,7 @@ The face data used by face unlock will be permanently and securely deleted. Afte
     <string name="smartspace_pill_text_format">%1$s: %2$s</string>
     <string name="smartspace_shopping_list_overflow">+ %1$d more</string>
     <string name="squeeze_invocation_prompt">Squeeze to talk</string>
+    <string name="standard_battery_saver_text">Standard</string>
     <string name="status_bar_google_reverse_charging">batteryshare</string>
     <string name="stylus_charging_text" />
     <string name="stylus_stop_charging_text" />
@@ -113,5 +151,7 @@ The face data used by face unlock will be permanently and securely deleted. Afte
     <string name="url_menu_share">Share</string>
     <string name="voice_reply_cta_text">“Hey Google, reply”</string>
     <string name="voice_reply_quick_phrase_cta_text">Say “Reply”</string>
+    <string name="tuner_persistent_warning">These experimental features may change, break, or disappear in future releases. Proceed with caution.</string>
     <string name="wireless_charging_label">Charging wirelessly</string>
+    <string name="wifitrackerlib_no_attribution_annotation_packages">com.google.android.setupwizard,com.google.android.gms</string>
 </resources>

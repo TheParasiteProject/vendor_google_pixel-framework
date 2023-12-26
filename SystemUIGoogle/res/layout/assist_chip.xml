@@ -48,7 +48,5 @@
             android:textAlignment="textStart"
             android:textColor="@color/assist_chip_text_dark"
             android:textSize="@dimen/assist_chip_text_size" />
-
     </LinearLayout>
-
 </com.google.android.systemui.assist.uihints.ChipView>

@@ -112,4 +112,20 @@
     <item name="yellow_glow" type="id" />
     <item name="zerostate" type="id" />
     <item name="zerostate_icon_image" type="id" />
+    <item name="standard_option_layout" type="id" />
+    <item name="standard_button" type="id" />
+    <item name="standard_title" type="id" />
+    <item name="extreme_option_layout" type="id" />
+    <item name="extreme_button" type="id" />
+    <item name="extreme_title" type="id" />
+    <item name="setup_button" type="id" />
+    <item name="date_smartspace_view" type="id" />
+    <item name="alarm_text_view" type="id" />
+    <item name="nav_bar_background" type="id" />
+    <item name="goToSettings" type="id" />
+    <item name="disableNotification" type="id" />
+    <item name="base_template_card_with_date" type="id" />
+    <item name="finer_hint" type="id" />
+    <item name="weather_smartspace_view" type="id" />
+    <item name="weather_text_view" type="id" />
 </resources>
