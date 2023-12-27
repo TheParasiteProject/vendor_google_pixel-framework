@@ -35,12 +35,12 @@ import java.util.Optional;
 import java.util.concurrent.ExecutionException;
 
 /**
- * Initializer that stands up SystemUI.
+ * Initializer that stands up SystemUIGoogle.
  *
  * Implementations should override {@link #getGlobalRootComponentBuilder()} to fill in their own
  * Dagger root component.
  */
-public abstract class SystemUIGoogleInitializer {
+public abstract class SystemUIGoogleInitializer extends SystemUIInitializer {
     private static final String TAG = "SystemUIFactory";
 
     private final Context mContext;
@@ -54,15 +54,15 @@ public abstract class SystemUIGoogleInitializer {
         mContext = context;
     }
 
-    protected abstract SysUIGoogleGlobalRootComponent.Builder getGlobalRootComponentBuilder();
+    protected abstract DaggerSysUIGoogleGlobalRootComponent.Builder getGlobalRootComponentBuilder();
 
     /**
      * Prepares the SysUIComponent builder before it is built.
      * @param sysUIBuilder the builder provided by the root component's getSysUIComponent() method
      * @param wm the built WMComponent from the root component's getWMComponent() method
      */
-    protected SysUIComponent.Builder prepareSysUIComponentBuilder(
-            SysUIComponent.Builder sysUIBuilder, WMComponent wm) {
+    protected SysUIGoogleSysUIComponent.Builder prepareSysUIComponentBuilder(
+            SysUIGoogleSysUIComponent.Builder sysUIBuilder, WMComponent wm) {
         return sysUIBuilder;
     }
 
@@ -82,7 +82,7 @@ public abstract class SystemUIGoogleInitializer {
         setupWmComponent(mContext);
 
         // And finally, retrieve whatever SysUI needs from WMShell and build SysUI.
-        SysUIComponent.Builder builder = mRootComponent.getSysUIComponent();
+        SysUIGoogleSysUIComponent.Builder builder = mRootComponent.getSysUIComponent();
         if (initializeComponents) {
             // Only initialize when not starting from tests since this currently initializes some
             // components that shouldn't be run in the test environment
@@ -172,7 +172,7 @@ public abstract class SystemUIGoogleInitializer {
         return mWMComponent;
     }
 
-    public SysUIComponent getSysUIComponent() {
+    public SysUIGoogleSysUIComponent getSysUIComponent() {
         return mSysUIComponent;
     }
 }

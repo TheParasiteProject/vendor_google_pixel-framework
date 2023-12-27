@@ -50,7 +50,7 @@ public interface SysUIGoogleGlobalRootComponent : GlobalRootComponent {
     /**
      * Builder for a {@link ReferenceSysUIComponent}, which makes it a subcomponent of this class.
      */
-    override fun getSysUIComponent() : SysUIComponent.Builder
+    override fun getSysUIComponent() : SysUIGoogleSysUIComponent.Builder
 
     /**
      * Returns an {@link InitializationChecker}.
