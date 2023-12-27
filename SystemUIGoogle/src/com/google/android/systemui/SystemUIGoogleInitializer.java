@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.systemui;
+package com.google.android.systemui;
 
 import android.content.Context;
 import android.content.res.Resources;
