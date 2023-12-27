@@ -155,34 +155,6 @@
         android:title="@string/clear_calling_title"
         settings:controller="com.google.android.settings.notification.ClearCallingPreferenceController" />
 
-    <!-- In-call feedback -->
-    <com.android.settings.custom.preference.SystemSettingSwitchPreference
-        android:defaultValue="false"
-        android:key="incall_feeedback_vibrate"
-        android:title="@string/incall_feeedback_vibrate_title"
-        settings:controller="com.android.settings.sound.IncallFeedbackPreferenceController" />
-
-    <!-- QS Bightness slider haptic -->
-    <com.android.settings.custom.preference.SystemSettingSwitchPreference
-        android:defaultValue="false"
-        android:key="qs_brightness_slider_haptic"
-        android:title="@string/qs_brightness_slider_haptic_title"
-        settings:controller="com.android.settings.sound.CustomHapticPreferenceController" />
-
-    <!-- QS Tiles haptic -->
-    <com.android.settings.custom.preference.SystemSettingSwitchPreference
-        android:defaultValue="false"
-        android:key="qs_tiles_haptic"
-        android:title="@string/qs_tiles_haptic_title"
-        settings:controller="com.android.settings.sound.CustomHapticPreferenceController" />
-
-    <!-- Volume slider haptic -->
-    <com.android.settings.custom.preference.SystemSettingSwitchPreference
-        android:defaultValue="false"
-        android:key="volume_slider_haptic"
-        android:title="@string/volume_slider_haptic_title"
-        settings:controller="com.android.settings.sound.CustomHapticPreferenceController" />
-
     <DropDownPreference
         android:key="dock_audio_media"
         android:order="-54"
