@@ -32,18 +32,14 @@ import dagger.BindsInstance
         GlobalModule::class,
     ]
 )
-public interface SysUIGoogleGlobalRootComponent {
+public interface SysUIGoogleGlobalRootComponent : GlobalRootComponent {
 
     /**
      * Builder for a SysUIGoogleGlobalRootComponent.
      */
-    interface Builder : WMComponent.Builder {
-        var context
-        var instrumentationTest
-
-        public Builder(sysUIGoogleGlobalRootComponent : SysUIGoogleGlobalRootComponent) {
-            context = sysUIGoogleGlobalRootComponent
-        }
+    @Component.Builder
+    interface Builder : GlobalRootComponent.Builder {
+        fun build() : SysUIGoogleGlobalRootComponent
     }
 
     /**
