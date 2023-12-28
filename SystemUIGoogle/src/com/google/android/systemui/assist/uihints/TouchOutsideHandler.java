@@ -4,7 +4,7 @@ import dagger.Subcomponent;
 
 import com.google.android.systemui.assist.uihints.NgaMessageHandler;
 
-public final class TouchOutsideHandler implements NgaMessageHandler.ConfigInfoListener {
+public final class TouchOutsideHandler extends NgaMessageHandler.ConfigInfoListener {
 
     @Subcomponent.Factory
     public interface Factory {

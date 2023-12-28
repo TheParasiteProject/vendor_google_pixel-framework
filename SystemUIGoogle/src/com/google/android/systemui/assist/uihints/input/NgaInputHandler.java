@@ -5,7 +5,7 @@ import com.google.android.systemui.assist.uihints.TouchInsideHandler;
 
 import dagger.Subcomponent;
 
-public final class NgaInputHandler implements NgaMessageHandler.EdgeLightsInfoListener {
+public final class NgaInputHandler extends NgaMessageHandler.EdgeLightsInfoListener {
 
     @Subcomponent.Factory
     public interface Factory {

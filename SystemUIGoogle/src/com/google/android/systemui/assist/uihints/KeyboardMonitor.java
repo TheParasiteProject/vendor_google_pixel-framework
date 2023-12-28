@@ -8,7 +8,7 @@ import com.google.android.systemui.assist.uihints.NgaMessageHandler;
 
 import dagger.Subcomponent;
 
-public final class KeyboardMonitor implements CommandQueue.Callbacks, NgaMessageHandler.ConfigInfoListener {
+public final class KeyboardMonitor extends CommandQueue.Callbacks implements NgaMessageHandler.ConfigInfoListener {
 
     @Subcomponent.Factory
     public interface Factory {

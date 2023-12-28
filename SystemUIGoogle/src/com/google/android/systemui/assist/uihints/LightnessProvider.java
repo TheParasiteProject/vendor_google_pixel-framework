@@ -4,7 +4,7 @@ import com.google.android.systemui.assist.uihints.NgaMessageHandler;
 
 import dagger.Subcomponent;
 
-public final class LightnessProvider implements NgaMessageHandler.CardInfoListener {
+public final class LightnessProvider extends NgaMessageHandler.CardInfoListener {
 
     @Subcomponent.Factory
     public interface Factory {

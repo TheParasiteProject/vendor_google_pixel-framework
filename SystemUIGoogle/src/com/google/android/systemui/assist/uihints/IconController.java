@@ -8,7 +8,7 @@ import com.google.android.systemui.assist.uihints.input.TouchActionRegion;
 
 import dagger.Subcomponent;
 
-public final class IconController implements NgaMessageHandler.KeyboardInfoListener, NgaMessageHandler.ZerostateInfoListener, ConfigurationController.ConfigurationListener, TouchActionRegion {
+public final class IconController extends NgaMessageHandler.KeyboardInfoListener implements NgaMessageHandler.ZerostateInfoListener, ConfigurationController.ConfigurationListener, TouchActionRegion {
 
     @Subcomponent.Factory
     public interface Factory {

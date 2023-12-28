@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.systemui.columbus.dagger;
+package com.google.android.systemui.columbus.legacy;
 
 import android.content.Context;
 import android.provider.Settings;

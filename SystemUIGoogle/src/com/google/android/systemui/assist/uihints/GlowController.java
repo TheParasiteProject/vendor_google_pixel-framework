@@ -6,7 +6,7 @@ import com.android.systemui.navigationbar.NavigationModeController;
 
 import dagger.Subcomponent;
 
-public final class GlowController implements NgaMessageHandler.AudioInfoListener, NgaMessageHandler.CardInfoListener, EdgeLightsListener, TouchInsideRegion {
+public final class GlowController extends NgaMessageHandler.AudioInfoListener implements NgaMessageHandler.CardInfoListener, EdgeLightsListener, TouchInsideRegion {
 
     @Subcomponent.Factory
     public interface Factory {

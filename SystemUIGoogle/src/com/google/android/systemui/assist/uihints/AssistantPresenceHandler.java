@@ -8,7 +8,7 @@ import com.google.android.systemui.assist.uihints.NgaMessageHandler;
 
 import dagger.Subcomponent;
 
-public interface AssistantPresenceHandler implements NgaMessageHandler.ConfigInfoListener {
+public interface AssistantPresenceHandler extends NgaMessageHandler.ConfigInfoListener {
 
     @Subcomponent.Factory
     public interface Factory {
