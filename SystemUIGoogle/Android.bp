@@ -9,6 +9,15 @@ android_library {
     ],
 }
 
+filegroup {
+    name: "SystemUIGoogle-srcs",
+    srcs: [
+        "src/**/*.kt",
+        "src/**/*.java",
+        "src/**/*.aidl",
+    ],
+}
+
 android_library {
     name: "SystemUIGoogle-core",
     srcs: [
