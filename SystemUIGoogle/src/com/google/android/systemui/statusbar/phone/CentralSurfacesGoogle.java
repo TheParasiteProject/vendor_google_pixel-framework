@@ -18,6 +18,7 @@ package com.google.android.systemui.statusbar.phone;
 
 import static com.android.systemui.Dependency.TIME_TICK_HANDLER_NAME;
 
+import android.app.AlarmManager;
 import android.app.WallpaperManager;
 import android.content.Context;
 import android.content.IntentFilter;
@@ -156,7 +157,6 @@ import com.google.android.systemui.dreamliner.DockAlignmentControllerExternal;
 import com.google.android.systemui.dreamliner.DockIndicationController;
 import com.google.android.systemui.dreamliner.DockObserver;
 import com.google.android.systemui.dreamliner.DockObserverExternal;
-import com.google.android.systemui.NotificationLockscreenUserManagerGoogle;
 import com.google.android.systemui.dreamliner.WirelessCharger;
 import com.google.android.systemui.power.batteryhealth.HealthManager;
 import com.google.android.systemui.reversecharging.ReverseChargingViewController;
@@ -182,7 +182,6 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
     private final Optional<ReverseChargingViewController> mRCVC;
     private final Optional<HealthManager> mHealthManagerOptional;
     private final SysuiStatusBarStateController mStatusBarStateController;
-    private final NotificationLockscreenUserManagerGoogle mNotificationLockscreenUserManagerGoogle;
 
     private long mAnimStartTime;
     private int mReceivingBatteryLevel;
@@ -226,7 +225,7 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
             @UiBackground Executor uiBgExecutor,
             ShadeSurface shadeSurface,
             NotificationMediaManager notificationMediaManager,
-            NotificationLockscreenUserManage notificationLockscreenUserManager,
+            NotificationLockscreenUserManager notificationLockscreenUserManager,
             NotificationRemoteInputManager remoteInputManager,
             QuickSettingsController quickSettingsController,
             BatteryController batteryController,
@@ -254,7 +253,7 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
             Lazy<LockscreenWallpaper> lockscreenWallpaperLazy,
             Lazy<BiometricUnlockController> biometricUnlockControllerLazy,
             AuthRippleController authRippleController,
-            Lazy<NotificationShadeDepthControllerLazy> notificationShadeDepthControllerLazy,
+            Lazy<NotificationShadeDepthController> notificationShadeDepthControllerLazy,
             DozeServiceHost dozeServiceHost,
             BackActionInteractor backActionInteractor,
             PowerManager powerManager,
@@ -262,7 +261,7 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
             DozeScrimController dozeScrimController,
             VolumeComponent volumeComponent,
             CommandQueue commandQueue,
-            DaggerSysUIGoogleGlobalRootComponent.DozeComponentFactory dozeComponentFactory,
+            CentralSurfacesComponent.Factory centralSurfacesComponentFactory,
             PluginManager pluginManager,
             ShadeController shadeController,
             StatusBarKeyguardViewManager statusBarKeyguardViewManager,
@@ -310,7 +309,7 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
                 broadcastDispatcher, notificationGutsManager, notificationLogger,
                 shadeExpansionStateManager, keyguardViewMediator,
                 displayMetrics, metricsLogger, shadeLogger, uiBgExecutor, shadeSurface, notificationMediaManager,
-                notificationLockscreenUserManagerGoogle, remoteInputManager, quickSettingsController, 
+                notificationLockscreenUserManager, remoteInputManager, quickSettingsController, 
                 batteryController, colorExtractor, screenLifecycle,
                 wakefulnessLifecycle, powerInteractor, statusBarStateController,
                 bubblesOptional, noteTaskControllerLazy, deviceProvisionedController,

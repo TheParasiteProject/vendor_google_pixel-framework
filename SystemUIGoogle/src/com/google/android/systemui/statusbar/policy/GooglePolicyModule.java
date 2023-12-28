@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.systemui.statusbar.policy.dagger;
+package com.google.android.systemui.statusbar.policy;
 
 import android.content.Context;
 import android.os.Handler;
@@ -37,7 +37,7 @@ import dagger.Module;
 import dagger.Provides;
 
 @Module
-public class SystemUIGooglePolicyModule {
+public class GooglePolicyModule {
     @Provides
     @SysUISingleton
     static BatteryControllerImplGoogle provideBatteryController(

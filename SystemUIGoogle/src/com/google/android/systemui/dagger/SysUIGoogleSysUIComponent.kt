@@ -27,7 +27,6 @@ import com.android.systemui.statusbar.QsFrameTranslateModule
 import com.android.systemui.keyguard.KeyguardSliceProvider
 import com.android.systemui.people.PeopleProvider
 import com.android.systemui.SystemUIAppComponentFactoryBase
-import com.google.android.systemui.keyguard.KeyguardSliceProviderGoogle
 import com.google.android.systemui.smartspace.KeyguardSmartspaceStartable
 import com.google.android.systemui.smartspace.SmartSpaceController
 import com.google.android.systemui.statusbar.dagger.CentralSurfacesGoogleModule
@@ -48,7 +47,7 @@ import dagger.Subcomponent
         SystemUIGoogleModule::class
     ]
 )
-interface SysUIGoogleSysUIComponent : SysUIComponent {
+interface SysUIGoogleSysUIComponent {
     /** Builder for a SysUIComponent. */
     @SysUISingleton
     @Subcomponent.Builder
@@ -60,9 +59,9 @@ interface SysUIGoogleSysUIComponent : SysUIComponent {
     @SysUISingleton
     override fun inject(factory: SystemUIAppComponentFactoryBase)
 
-    /** Member injection into KeyguardSliceProviderGoogle. */
+    /** Member injection into KeyguardSliceProvider. */
     @SysUISingleton
-    fun inject(keyguardSliceProvider: KeyguardSliceProviderGoogle)
+    fun inject(keyguardSliceProvider: KeyguardSliceProvider)
 
     /** Member injection into CustomizationProvider. */
     @SysUISingleton

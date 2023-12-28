@@ -82,24 +82,26 @@ import com.android.systemui.statusbar.policy.IndividualSensorPrivacyControllerIm
 import com.android.systemui.statusbar.policy.SensorPrivacyController;
 import com.android.systemui.statusbar.policy.SensorPrivacyControllerImpl;
 import com.android.systemui.volume.dagger.VolumeModule;
+import com.android.systemui.wallpapers.dagger.WallpaperModule;
+import com.android.systemui.statusbar.KeyboardShortcutsModule;
+import com.android.systemui.statusbar.dagger.*;
+import com.google.android.systemui.statusbar.policy.GooglePolicyModule;
 
 import com.google.android.systemui.assist.AssistManagerGoogle;
-import com.google.android.systemui.assist.dagger.AssistModule;
 import com.google.android.systemui.columbus.dagger.ColumbusModule;
 import com.google.android.systemui.controls.GoogleControlsTileResourceConfigurationImpl;
 import com.google.android.systemui.dreamliner.dagger.DreamlinerModule;
 import com.google.android.systemui.dreamliner.DockObserver;
 import com.google.android.systemui.dreamliner.DreamlinerDockModule;
-import com.google.android.systemui.elmyra.ElmyraModule;
 import com.google.android.systemui.power.dagger.PowerModuleGoogle;
 import com.google.android.systemui.qs.dagger.QSModuleGoogle;
-import com.google.android.systemui.reversecharging.dagger.ReverseChargingModule;
-import com.google.android.systemui.reversecharging.ReverseChargingController;
 import com.google.android.systemui.smartspace.BcSmartspaceDataProvider;
 import com.google.android.systemui.smartspace.dagger.SmartspaceGoogleModule;
 import com.google.android.systemui.statusbar.KeyguardIndicationControllerGoogle;
 import com.google.android.systemui.statusbar.policy.BatteryControllerImplGoogle;
-import com.google.android.systemui.statusbar.policy.dagger.GooglePolicyModule;
+import com.android.systemui.settings.dagger.MultiUserUtilsModule;
+import com.google.android.systemui.qs.tileimpl.GoogleQSModule;
+import com.google.android.systemui.qs.tileimpl.QSFactoryImplGoogle;
 
 import javax.inject.Named;
 
@@ -121,18 +123,13 @@ import dagger.Lazy;
         ReferenceScreenshotModule.class,
         StartCentralSurfacesModule.class,
         VolumeModule.class,
-        SmartspaceGoogleModule.class,
-        DreamlinerModule.class,
-        ReverseChargingModule.class,
-        AssistModule.class,
-        ElmyraModule.class,
         ColumbusModule.class,
         DreamlinerDockModule.class,
         StatusBarEventsModule.class,
-        GooglePolicyModule.class,
         RotationLockModule.class,
         WallpaperModule.class,
         KeyboardShortcutsModule.class,
+        GooglePolicyModule.class,
 })
 public abstract class SystemUIGoogleModule {
 
@@ -236,6 +233,10 @@ public abstract class SystemUIGoogleModule {
 
     @Binds
     abstract DockManager bindDockManager(DockObserver dockObserver);
+
+    @Binds
+    @SysUISingleton
+    public abstract QSFactory bindQSFactoryGoogle(QSFactoryImplGoogle qsFactoryImpl);
 
     @Binds
     @SysUISingleton

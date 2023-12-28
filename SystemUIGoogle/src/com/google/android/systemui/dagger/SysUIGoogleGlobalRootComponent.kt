@@ -26,13 +26,17 @@ import com.android.systemui.util.InitializationChecker
 
 import dagger.BindsInstance
 
+import dagger.Component;
+
+import javax.inject.Singleton;
+
 @Singleton
 @Component(
     modules = [
         GlobalModule::class,
     ]
 )
-public interface SysUIGoogleGlobalRootComponent : GlobalRootComponent {
+public interface SysUIGoogleGlobalRootComponent {
 
     /**
      * Builder for a SysUIGoogleGlobalRootComponent.

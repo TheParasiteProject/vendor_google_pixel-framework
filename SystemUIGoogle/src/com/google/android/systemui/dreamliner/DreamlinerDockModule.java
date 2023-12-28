@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.android.systemui.dreamliner.dagger;
+package com.google.android.systemui.dreamliner;
 
 import androidx.annotation.NonNull;
 import android.content.Context;
@@ -29,9 +29,12 @@ import com.android.systemui.statusbar.policy.ConfigurationController;
 import com.android.systemui.util.concurrency.DelayableExecutor;
 import com.google.android.systemui.dreamliner.DockObserver;
 import com.google.android.systemui.dreamliner.DreamlinerUtils;
+import com.android.systemui.dock.DockManager;
 
 import dagger.Module;
 import dagger.Provides;
+
+import javax.inject.Provider;
 
 @Module
 public abstract class DreamlinerDockModule {
