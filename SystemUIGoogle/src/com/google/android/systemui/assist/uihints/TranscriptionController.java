@@ -9,7 +9,7 @@ import com.google.android.systemui.assist.uihints.input.TouchInsideRegion;
 
 import dagger.Subcomponent;
 
-public final class TranscriptionController extends NgaMessageHandler.CardInfoListener implements NgaMessageHandler.TranscriptionInfoListener, NgaMessageHandler.GreetingInfoListener, NgaMessageHandler.ChipsInfoListener, NgaMessageHandler.ClearListener, ConfigurationController.ConfigurationListener, TouchActionRegion, TouchInsideRegion {
+public class TranscriptionController {
 
     @Subcomponent.Factory
     public interface Factory {

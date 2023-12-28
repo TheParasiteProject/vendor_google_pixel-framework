@@ -8,7 +8,7 @@ import com.google.android.systemui.assist.uihints.input.TouchInsideRegion;
 import com.google.android.systemui.assist.uihints.NgaMessageHandler;
 import com.google.android.systemui.assist.uihints.TranscriptionController;
 
-public final class ScrimController extends TranscriptionController.TranscriptionSpaceListener implements NgaMessageHandler.CardInfoListener, EdgeLightsListener, TouchInsideRegion {
+public class ScrimController {
 
     @Subcomponent.Factory
     public interface Factory {

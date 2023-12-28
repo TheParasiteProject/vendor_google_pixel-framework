@@ -3,7 +3,7 @@ package com.google.android.systemui.assist.uihints;
 import android.content.Context;
 import dagger.Subcomponent;
 
-public final class OverlayUiHost {
+public class OverlayUiHost {
 
     @Subcomponent.Factory
     public interface Factory {

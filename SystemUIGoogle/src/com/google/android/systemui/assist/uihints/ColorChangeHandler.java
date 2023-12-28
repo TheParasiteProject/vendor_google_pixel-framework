@@ -6,7 +6,7 @@ import com.google.android.systemui.assist.uihints.NgaMessageHandler;
 
 import dagger.Subcomponent;
 
-public final class ColorChangeHandler extends NgaMessageHandler.ConfigInfoListener {
+public class ColorChangeHandler {
 
     @Subcomponent.Factory
     public interface Factory {

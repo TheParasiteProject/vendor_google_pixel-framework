@@ -6,7 +6,7 @@ import com.android.systemui.keyguard.domain.interactor.KeyguardInteractor;
 import com.android.systemui.recents.OverviewProxyService;
 import dagger.Subcomponent;
 
-public final class OverlappedElementController {
+public class OverlappedElementController {
 
     @Subcomponent.Factory
     public interface Factory {

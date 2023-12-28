@@ -2,7 +2,7 @@ package com.google.android.systemui.assist.uihints;
 
 import dagger.Subcomponent;
 
-public final class SwipeHandler {
+public class SwipeHandler {
 
     @Subcomponent.Factory
     public interface Factory {

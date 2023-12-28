@@ -7,7 +7,7 @@ import com.google.android.systemui.assist.uihints.edgelights.EdgeLightsControlle
 import dagger.Lazy;
 import dagger.Subcomponent;
 
-public abstract class NgaUiController {
+public class NgaUiController {
 
     @Subcomponent.Factory
     public interface Factory {

@@ -5,7 +5,7 @@ import dagger.Subcomponent;
 
 import com.google.android.systemui.assist.uihints.NgaMessageHandler;
 
-public final class TimeoutManager extends NgaMessageHandler.KeepAliveListener {
+public class TimeoutManager {
 
     @Subcomponent.Factory
     public interface Factory {

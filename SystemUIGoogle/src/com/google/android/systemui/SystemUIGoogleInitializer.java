@@ -22,12 +22,18 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.util.Log;
 
-import com.google.android.systemui.dagger.DaggerSysUIGoogleGlobalRootComponent;
+import com.android.systemui.dagger.GlobalRootComponent;
+import com.android.systemui.dagger.SysUIComponent;
+import com.google.android.systemui.dagger.SysUIGoogleGlobalRootComponent;
+import com.google.android.systemui.dagger.SysUIGoogleSysUIComponent;
+import com.android.systemui.dagger.WMComponent;
 import com.android.systemui.util.InitializationChecker;
 import com.android.wm.shell.dagger.WMShellConcurrencyModule;
 import com.android.wm.shell.keyguard.KeyguardTransitions;
 import com.android.wm.shell.sysui.ShellInterface;
 import com.android.wm.shell.transition.ShellTransitions;
+
+import com.android.systemui.SystemUIInitializer;
 
 import com.android.systemui.R;
 
@@ -45,16 +51,16 @@ public abstract class SystemUIGoogleInitializer extends SystemUIInitializer {
 
     private final Context mContext;
 
-    public DaggerSysUIGoogleGlobalRootComponent mRootComponent;
-    public DaggerSysUIGoogleGlobalRootComponent.SysUIGoogleSysUIComponentImpl mSysUIComponent;
-    public DaggerSysUIGoogleGlobalRootComponent.WMComponentImpl mWMComponent;
+    public SysUIGoogleGlobalRootComponent mRootComponent;
+    public WMComponent mWMComponent;
+    public SysUIGoogleSysUIComponent mSysUIComponent;
     private InitializationChecker mInitializationChecker;
 
     public SystemUIGoogleInitializer(Context context) {
         mContext = context;
     }
 
-    protected abstract DaggerSysUIGoogleGlobalRootComponent.Builder getGlobalRootComponentBuilder();
+    protected abstract SysUIGoogleGlobalRootComponent.Builder getGlobalRootComponentBuilder();
 
     /**
      * Prepares the SysUIComponent builder before it is built.
@@ -172,7 +178,7 @@ public abstract class SystemUIGoogleInitializer extends SystemUIInitializer {
         return mWMComponent;
     }
 
-    public SysUIGoogleSysUIComponent getSysUIComponent() {
+    public SysUIComponent getSysUIComponent() {
         return mSysUIComponent;
     }
 }

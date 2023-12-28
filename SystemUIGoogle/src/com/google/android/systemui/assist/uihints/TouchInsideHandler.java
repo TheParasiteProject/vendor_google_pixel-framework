@@ -8,7 +8,7 @@ import dagger.Subcomponent;
 import com.google.android.systemui.assist.uihints.NgaMessageHandler;
 import android.view.View;
 
-public final class TouchInsideHandler extends NgaMessageHandler.ConfigInfoListener implements View.OnClickListener, View.OnTouchListener {
+public class TouchInsideHandler {
 
     @Subcomponent.Factory
     public interface Factory {

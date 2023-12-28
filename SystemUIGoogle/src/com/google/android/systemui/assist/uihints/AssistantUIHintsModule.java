@@ -5,6 +5,7 @@ import android.view.ViewGroup;
 import com.android.systemui.dagger.SysUISingleton;
 
 import dagger.internal.Preconditions;
+import dagger.Provides;
 
 import javax.inject.Named;
 

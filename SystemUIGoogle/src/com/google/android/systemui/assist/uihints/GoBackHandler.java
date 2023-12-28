@@ -2,7 +2,7 @@ package com.google.android.systemui.assist.uihints;
 
 import dagger.Subcomponent;
 
-public final class GoBackHandler {
+public class GoBackHandler {
 
     @Subcomponent.Factory
     public interface Factory {

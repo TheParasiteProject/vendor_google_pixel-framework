@@ -5,7 +5,7 @@ import com.android.systemui.navigationbar.NavigationModeController;
 import java.util.Set;
 import dagger.Subcomponent;
 
-public final class NgaMessageHandler {
+public class NgaMessageHandler {
 
     @Subcomponent.Factory
     public interface Factory {
