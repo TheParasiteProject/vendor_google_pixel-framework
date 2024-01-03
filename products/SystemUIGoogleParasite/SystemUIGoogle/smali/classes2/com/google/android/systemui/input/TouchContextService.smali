@@ -527,10 +527,10 @@
     iput v2, p0, Lcom/google/android/systemui/input/TouchContextService;->mPreviousAudioMode:I
 
     .line 65
-    const-class v2, Landroid/hardware/display/DisplayManager;
+    const-string v2, "display"
 
     .line 67
-    invoke-virtual {p1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {p1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 69
     move-result-object v2
@@ -542,10 +542,10 @@
     iput-object v2, p0, Lcom/google/android/systemui/input/TouchContextService;->mDisplayManager:Landroid/hardware/display/DisplayManager;
 
     .line 75
-    const-class v2, Landroid/media/AudioManager;
+    const-string v2, "audio"
 
     .line 77
-    invoke-virtual {p1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {p1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 79
     move-result-object p1
@@ -570,7 +570,7 @@
     sget-object p0, Lcom/google/android/systemui/input/TouchContextService;->INTERFACE_NAME:Ljava/lang/String;
 
     .line 93
-    invoke-static {p0}, Landroid/os/ServiceManager;->isDeclared(Ljava/lang/String;)Z
+    invoke-static {p0}, Lcom/google/android/systemui/input/TouchContextService;->isTouchContextServiceDeclared(Ljava/lang/String;)Z
 
     .line 95
     move-result p1
@@ -645,4 +645,28 @@
     .line 134
     return-void
     .line 137
+.end method
+
+.method private static isTouchContextServiceDeclared(Ljava/lang/String;)Z
+    .locals 1
+
+    :try_start_0
+    invoke-static {p0}, Landroid/os/ServiceManager;->isDeclared(Ljava/lang/String;)Z
+
+    move-result p0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return p0
+
+    :catch_0
+    const-string p0, "TouchContextService"
+
+    const-string v0, "ITouchContextService is not supported, aborting initialization"
+
+    invoke-static {p0, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 p0, 0x0
+
+    return p0
 .end method
