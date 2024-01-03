@@ -2471,11 +2471,11 @@
 
     .line 65
     .line 66
-    const-class v1, Landroid/hardware/display/DisplayManager;
+    const-string v1, "display"
 
     .line 67
     .line 68
-    invoke-virtual {p1, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {p1, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 69
     .line 70
@@ -2491,11 +2491,11 @@
 
     .line 75
     .line 76
-    const-class v1, Landroid/media/AudioManager;
+    const-string v1, "audio"
 
     .line 77
     .line 78
-    invoke-virtual {p1, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {p1, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 79
     .line 80
@@ -2527,7 +2527,7 @@
 
     .line 93
     .line 94
-    invoke-static {p0}, Landroid/os/ServiceManager;->isDeclared(Ljava/lang/String;)Z
+    invoke-static {p0}, Lcom/google/android/systemui/input/TouchContextService;->isTouchContextServiceDeclared(Ljava/lang/String;)Z
 
     .line 95
     .line 96
@@ -2865,4 +2865,28 @@
     .line 399
     .line 400
     .line 401
+.end method
+
+.method private static isTouchContextServiceDeclared(Ljava/lang/String;)Z
+    .locals 1
+
+    :try_start_0
+    invoke-static {p0}, Landroid/os/ServiceManager;->isDeclared(Ljava/lang/String;)Z
+
+    move-result p0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return p0
+
+    :catch_0
+    const-string p0, "TouchContextService"
+
+    const-string v0, "ITouchContextService is not supported, aborting initialization"
+
+    invoke-static {p0, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 p0, 0x0
+
+    return p0
 .end method
