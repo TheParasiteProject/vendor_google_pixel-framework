@@ -1941,7 +1941,7 @@
 
     .line 34
     .line 35
-    invoke-static {p0}, Landroid/os/ServiceManager;->isDeclared(Ljava/lang/String;)Z
+    invoke-static {p0}, Lcom/google/android/systemui/screenprotector/ScreenProtectorNotifierService;->isScreenProtectorDetectorServiceDeclared(Ljava/lang/String;)Z
 
     .line 36
     .line 37
@@ -2352,6 +2352,29 @@
     .line 401
 .end method
 
+.method private static isScreenProtectorDetectorServiceDeclared(Ljava/lang/String;)Z
+    .locals 1
+
+    :try_start_0
+    invoke-static {p0}, Landroid/os/ServiceManager;->isDeclared(Ljava/lang/String;)Z
+
+    move-result p0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return p0
+
+    :catch_0
+    const-string p0, "ScreenProtectorNotifierService"
+
+    const-string v0, "IScreenProtectorDetectorService is not supported, aborting initialization"
+
+    invoke-static {p0, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    const/4 p0, 0x0
+
+    return p0
+.end method
 
 # virtual methods
 .method public final getScreenProtectorDetectorService()V
