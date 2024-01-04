@@ -8,6 +8,8 @@
 
 
 # instance fields
+.field private appUtils:Lcom/android/settings/custom/utils/AppUtils;
+
 .field private final mAllowedApps:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -71,23 +73,15 @@
 
     iput-object p2, p0, Lcom/android/settings/applications/AppStateClonedAppsBridge;->mCloneProfileApps:Ljava/util/List;
 
-    .line 49
+    new-instance p2, Lcom/android/settings/custom/utils/AppUtils;
+
+    invoke-direct {p2}, Lcom/android/settings/custom/utils/AppUtils;-><init>()V
+
+    iput-object p2, p0, Lcom/android/settings/applications/AppStateClonedAppsBridge;->appUtils:Lcom/android/settings/custom/utils/AppUtils;
+
     iput-object p1, p0, Lcom/android/settings/applications/AppStateClonedAppsBridge;->mContext:Landroid/content/Context;
 
-    .line 50
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object p1
-
-    const p2, 0x1070008    # @android:array/cloneable_apps
-
-    .line 51
-    invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 50
-    invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    invoke-virtual {p2, p1}, Lcom/android/settings/custom/utils/AppUtils;->getCloneableAppListStr(Landroid/content/Context;)Ljava/util/List;
 
     move-result-object p1
 

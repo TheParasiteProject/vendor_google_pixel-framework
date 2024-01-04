@@ -146,23 +146,17 @@
     .line 84
     iget-object p1, p0, Lcom/android/settings/applications/ClonedAppsPreferenceController$1;->this$0:Lcom/android/settings/applications/ClonedAppsPreferenceController;
 
-    invoke-static {p1}, Lcom/android/settings/applications/ClonedAppsPreferenceController;->-$$Nest$fgetmContext(Lcom/android/settings/applications/ClonedAppsPreferenceController;)Landroid/content/Context;
+    invoke-static {p1}, Lcom/android/settings/applications/ClonedAppsPreferenceController;->-$$Nest$fgetappUtils(Lcom/android/settings/applications/ClonedAppsPreferenceController;)Lcom/android/settings/custom/utils/AppUtils;
 
     move-result-object p1
 
-    .line 85
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    iget-object v0, p0, Lcom/android/settings/applications/ClonedAppsPreferenceController$1;->this$0:Lcom/android/settings/applications/ClonedAppsPreferenceController;
 
-    move-result-object p1
+    invoke-static {v0}, Lcom/android/settings/applications/ClonedAppsPreferenceController;->-$$Nest$fgetmContext(Lcom/android/settings/applications/ClonedAppsPreferenceController;)Landroid/content/Context;
 
-    const v0, 0x1070008    # @android:array/cloneable_apps
+    move-result-object v0
 
-    invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 84
-    invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+    invoke-virtual {p1, v0}, Lcom/android/settings/custom/utils/AppUtils;->getCloneableAppListStr(Landroid/content/Context;)Ljava/util/List;
 
     move-result-object p1
 

@@ -7,12 +7,23 @@
 
 
 # instance fields
+.field private appUtils:Lcom/android/settings/custom/utils/AppUtils;
+
 .field private mContext:Landroid/content/Context;
 
 .field private mPreference:Landroidx/preference/Preference;
 
 
 # direct methods
+.method static bridge synthetic -$$Nest$fgetappUtils(Lcom/android/settings/applications/ClonedAppsPreferenceController;)Lcom/android/settings/custom/utils/AppUtils;
+    .locals 0
+
+    .line 0
+    iget-object p0, p0, Lcom/android/settings/applications/ClonedAppsPreferenceController;->appUtils:Lcom/android/settings/custom/utils/AppUtils;
+
+    return-object p0
+.end method
+
 .method static bridge synthetic -$$Nest$fgetmContext(Lcom/android/settings/applications/ClonedAppsPreferenceController;)Landroid/content/Context;
     .locals 0
 
@@ -37,7 +48,12 @@
     .line 50
     invoke-direct {p0, p1, p2}, Lcom/android/settings/core/BasePreferenceController;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 51
+    new-instance p2, Lcom/android/settings/custom/utils/AppUtils;
+
+    invoke-direct {p2}, Lcom/android/settings/custom/utils/AppUtils;-><init>()V
+
+    iput-object p2, p0, Lcom/android/settings/applications/ClonedAppsPreferenceController;->appUtils:Lcom/android/settings/custom/utils/AppUtils;
+
     iput-object p1, p0, Lcom/android/settings/applications/ClonedAppsPreferenceController;->mContext:Landroid/content/Context;
 
     return-void
