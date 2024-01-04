@@ -1,0 +1,18 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := SettingsGoogleParasite
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := SettingsGoogle.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_CLASS := APPS
+LOCAL_SYSTEM_EXT_MODULE := true
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_RELATIVE_PATH := SettingsGoogle
+LOCAL_USES_LIBRARIES := org.apache.http.legacy 
+LOCAL_OPTIONAL_USES_LIBRARIES := androidx.window.extensions androidx.window.sidecar
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_NO_STANDARD_LIBRARIES := true
+LOCAL_OVERRIDES_PACKAGES := Settings SettingsGoogle
+LOCAL_MULTILIB := both
+include $(BUILD_PREBUILT)
