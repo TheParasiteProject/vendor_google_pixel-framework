@@ -17,7 +17,11 @@
 
 .field public static final VOLUME_MEDIA_URI:Landroid/net/Uri;
 
+.field public static final VOLUME_NOTIFICATION_URI:Landroid/net/Uri;
+
 .field public static final VOLUME_RINGER_URI:Landroid/net/Uri;
+
+.field public static final VOLUME_SEPARATE_RING_URI:Landroid/net/Uri;
 
 
 # instance fields
@@ -376,6 +380,62 @@
     .line 168
     .line 169
     .line 170
+    move-result-object v0
+
+    const-string v4, "separate_ring_volume"
+
+    invoke-virtual {v0, v4}, Landroid/net/Uri$Builder;->appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/systemui/volume/VolumePanelDialog;->VOLUME_SEPARATE_RING_URI:Landroid/net/Uri;
+
+    new-instance v0, Landroid/net/Uri$Builder;
+
+    invoke-direct {v0}, Landroid/net/Uri$Builder;-><init>()V
+
+    invoke-virtual {v0, v1}, Landroid/net/Uri$Builder;->scheme(Ljava/lang/String;)Landroid/net/Uri$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Landroid/net/Uri$Builder;->authority(Ljava/lang/String;)Landroid/net/Uri$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v3}, Landroid/net/Uri$Builder;->appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
+
+    move-result-object v0
+
+    const-string v4, "notification_volume"
+
+    invoke-virtual {v0, v4}, Landroid/net/Uri$Builder;->appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/systemui/volume/VolumePanelDialog;->VOLUME_NOTIFICATION_URI:Landroid/net/Uri;
+
+    new-instance v0, Landroid/net/Uri$Builder;
+
+    invoke-direct {v0}, Landroid/net/Uri$Builder;-><init>()V
+
+    invoke-virtual {v0, v1}, Landroid/net/Uri$Builder;->scheme(Ljava/lang/String;)Landroid/net/Uri$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Landroid/net/Uri$Builder;->authority(Ljava/lang/String;)Landroid/net/Uri$Builder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v3}, Landroid/net/Uri$Builder;->appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
+
     move-result-object v0
 
     .line 171
@@ -1378,6 +1438,14 @@
 
     .line 364
     .line 365
+    invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    sget-object v0, Lcom/android/systemui/volume/VolumePanelDialog;->VOLUME_SEPARATE_RING_URI:Landroid/net/Uri;
+
+    invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    sget-object v0, Lcom/android/systemui/volume/VolumePanelDialog;->VOLUME_NOTIFICATION_URI:Landroid/net/Uri;
+
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 366
