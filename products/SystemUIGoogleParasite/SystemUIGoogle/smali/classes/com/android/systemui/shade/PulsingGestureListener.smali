@@ -13,6 +13,8 @@
 
 .field public doubleTapEnabled:Z
 
+.field public doubleTapEnabledNative:Z
+
 .field public final dozeInteractor:Lcom/android/systemui/keyguard/domain/interactor/DozeInteractor;
 
 .field public final falsingManager:Lcom/android/systemui/plugins/FalsingManager;
@@ -81,7 +83,9 @@
 
     .line 26
     .line 27
-    filled-new-array {p2, p3}, [Ljava/lang/String;
+    const-string p4, "double_tap_to_wake"
+
+    filled-new-array {p4, p2, p3}, [Ljava/lang/String;
 
     .line 28
     .line 29
@@ -564,6 +568,12 @@
     .line 13
     invoke-static {v0, p2, p1}, Lcom/android/keyguard/ActiveUnlockConfig$$ExternalSyntheticOutline0;->m(Ljava/lang/String;ZLjava/io/PrintWriter;)V
 
+    iget-boolean p2, p0, Lcom/android/systemui/shade/PulsingGestureListener;->doubleTapEnabledNative:Z
+
+    const-string v0, "doubleTapEnabledNative="
+
+    invoke-static {v0, p2, p1}, Lcom/android/keyguard/ActiveUnlockConfig$$ExternalSyntheticOutline0;->m(Ljava/lang/String;ZLjava/io/PrintWriter;)V
+
     .line 14
     .line 15
     .line 16
@@ -750,6 +760,10 @@
     .line 19
     .line 20
     iget-boolean p1, p0, Lcom/android/systemui/shade/PulsingGestureListener;->singleTapEnabled:Z
+
+    if-nez p1, :cond_0
+
+    iget-boolean p1, p0, Lcom/android/systemui/shade/PulsingGestureListener;->doubleTapEnabledNative:Z
 
     .line 21
     .line 22
