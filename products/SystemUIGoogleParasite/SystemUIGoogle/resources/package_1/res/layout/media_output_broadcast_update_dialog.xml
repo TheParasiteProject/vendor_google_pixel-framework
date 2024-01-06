@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:paddingLeft="?android:attr/dialogPreferredPadding"
+              android:paddingRight="?android:attr/dialogPreferredPadding"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <EditText android:id="@id/broadcast_edit_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48.0dp"
+            android:textAlignment="viewStart" />
+  <TextView android:id="@id/broadcast_error_message"
+            android:visibility="invisible"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6.0dp"
+            style="@style/TextAppearance.ErrorText" />
+</LinearLayout>

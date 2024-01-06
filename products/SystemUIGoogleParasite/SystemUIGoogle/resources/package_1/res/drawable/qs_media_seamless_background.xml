@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<ripple android:color="@color/media_seamless_border" xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@android:id/background">
+    <shape android:shape="rectangle">
+      <solid android:color="@color/media_seamless_border" />
+      <corners android:radius="24.0dp" />
+      <padding android:left="8.0dp"
+               android:top="4.0dp"
+               android:right="8.0dp"
+               android:bottom="4.0dp" />
+    </shape>
+  </item>
+</ripple>

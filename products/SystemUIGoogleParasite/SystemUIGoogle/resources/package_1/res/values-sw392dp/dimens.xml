@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <dimen name="global_actions_grid_item_height">72.0dp</dimen>
+  <dimen name="global_actions_grid_item_side_margin">10.0dp</dimen>
+  <dimen name="global_actions_side_margin">16.0dp</dimen>
+</resources>

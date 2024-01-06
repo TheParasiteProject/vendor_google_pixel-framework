@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+  <solid android:color="?android:attr/colorBackgroundFloating" />
+  <corners android:topLeftRadius="?android:attr/dialogCornerRadius"
+           android:topRightRadius="?android:attr/dialogCornerRadius"
+           android:bottomLeftRadius="?android:attr/dialogCornerRadius"
+           android:bottomRightRadius="?android:attr/dialogCornerRadius" />
+</shape>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+  <com.google.android.material.appbar.AppBarLayout android:theme="@style/Theme.CollapsingToolbar.Settings"
+                        android:id="@id/app_bar"
+                        android:background="@android:color/transparent"
+                        android:fitsSystemWindows="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:outlineSpotShadowColor="@android:color/transparent"
+                        android:outlineAmbientShadowColor="@android:color/transparent">
+    <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar"
+                          android:clipToPadding="false"
+                          android:layout_width="fill_parent"
+                          android:layout_height="@dimen/settingslib_toolbar_layout_height"
+                          systemui:r0x7f040108="@style/CollapsingToolbarTitle.Collapsed"
+                          systemui:r0x7f040154="@color/settingslib_colorSurfaceHeader"
+                          systemui:r0x7f0401f6="@dimen/expanded_title_margin_end"
+                          systemui:r0x7f0401f7="@dimen/expanded_title_margin_start"
+                          systemui:r0x7f0401f9="@style/CollapsingToolbarTitle.Expanded"
+                          systemui:r0x7f040203="true"
+                          systemui:r0x7f04024d="true"
+                          systemui:r0x7f040367="0x00000013"
+                          systemui:r0x7f0403d9="3"
+                          systemui:r0x7f0404f7="50"
+                          systemui:r0x7f0404fa="@dimen/settingslib_scrim_visible_height_trigger"
+                          systemui:statusBarScrim="@null"
+                          systemui:r0x7f040699="1"
+                          systemui:r0x7f0406ad="@id/action_bar">
+      <Toolbar android:theme="?android:attr/actionBarTheme"
+               android:id="@id/action_bar"
+               android:layout_width="fill_parent"
+               android:layout_height="?attr/actionBarSize"
+               android:transitionName="shared_element_view"
+               systemui:r0x7f040326="1" />
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+  </com.google.android.material.appbar.AppBarLayout>
+  <FrameLayout android:id="@id/content_frame"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               systemui:r0x7f040325="@string/appbar_scrolling_view_behavior" />
+</merge>

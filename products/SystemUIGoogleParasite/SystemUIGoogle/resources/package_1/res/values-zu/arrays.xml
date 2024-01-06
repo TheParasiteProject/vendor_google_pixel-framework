@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <string-array name="battery_options">
+    <item>Njlalo bonisa iphesentheji</item>
+    <item>Bonisa iphesentheji uma ishaja (okuzenzakalelayo)</item>
+    <item>Ungabonisi lesi sithonjana</item>
+  </string-array>
+  <string-array name="clock_options">
+    <item>Bonisa amahora, amaminithi, namasekhondi</item>
+    <item>Bonisa amahora namaminithi (okuzenzakalelayo)</item>
+    <item>Ungabonisi lesi sithonjana</item>
+  </string-array>
+  <string-array name="nav_bar_buttons">
+    <item>Ibhodi lokumanathisela</item>
+    <item>Ikhodi yokhiye</item>
+    <item>Qinisekisa ukuzungezisa, isishintshi sekhibhodi</item>
+    <item>Akunalutho</item>
+  </string-array>
+  <string-array name="nav_bar_layouts">
+    <item>Okujwayelekile</item>
+    <item>Xinene</item>
+    <item>Ukuncika ngakwesokunxele</item>
+    <item>Ukuncika ngakwesokudla</item>
+  </string-array>
+  <string-array name="tile_states_airplane">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_alarm">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_battery">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_bt">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_cameratoggle">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_cast">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_cell">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_color_correction">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_controls">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_dark">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_dnd">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_dream">
+    <item>Ayitholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_flashlight">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_font_scaling">
+    <item>Ayitholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_hotspot">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_internet">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_inversion">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_location">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_mictoggle">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_night">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_onehanded">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_qr_code_scanner">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_reduce_brightness">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_reverse">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_rotation">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_saver">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_screenrecord">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_wallet">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_wifi">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="tile_states_work">
+    <item>Akutholakali</item>
+    <item>Valiwe</item>
+    <item>Vuliwe</item>
+  </string-array>
+  <string-array name="udfps_accessibility_touch_hints">
+    <item>Yisa kwesokunxele</item>
+    <item>Yehlisa</item>
+    <item>Yisa kwesokudla</item>
+    <item>Khuphula</item>
+  </string-array>
+  <string-array name="wifitrackerlib_wifi_status">
+    <item></item>
+    <item>Iyaskena…</item>
+    <item>Iyaxhuma…</item>
+    <item>Iyaqinisekisa…</item>
+    <item>Ithola ikheli lasesizindeni se-inthanethi…</item>
+    <item>Ixhunyiwe</item>
+    <item>Kumiswe okwesikhashana</item>
+    <item>Iyanqamula…</item>
+    <item>Inqamukile</item>
+    <item>Akuphumelelanga</item>
+    <item>Ivinjiwe</item>
+    <item>Okwesikhashana ivikela ukuxhumana okungaqinile</item>
+  </string-array>
+</resources>

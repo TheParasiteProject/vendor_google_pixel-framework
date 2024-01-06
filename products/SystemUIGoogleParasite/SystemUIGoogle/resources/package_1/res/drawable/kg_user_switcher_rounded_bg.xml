@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<ripple android:color="?android:attr/colorControlHighlight" xmlns:android="http://schemas.android.com/apk/res/android">
+  <item>
+    <shape>
+      <solid android:color="@color/kg_user_switcher_rounded_background_color" />
+      <padding android:left="8.0dp"
+               android:top="8.0dp"
+               android:right="8.0dp"
+               android:bottom="8.0dp" />
+      <corners android:radius="48.0dp" />
+    </shape>
+  </item>
+</ripple>

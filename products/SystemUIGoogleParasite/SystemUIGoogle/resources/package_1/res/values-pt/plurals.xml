@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">%d dia atrás</item>
+    <item quantity="many">%d days ago</item>
+    <item quantity="other">%d dias atrás</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">Há %dmin</item>
+    <item quantity="many">%d min ago</item>
+    <item quantity="other">Há %dmin</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">Há %d ano</item>
+    <item quantity="many">%d yr ago</item>
+    <item quantity="other">Há %d anos</item>
+  </plurals>
+</resources>

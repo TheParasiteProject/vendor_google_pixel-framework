@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <dimen name="controls_panel_corner_radius">46.0dp</dimen>
+  <dimen name="large_screen_shade_header_left_padding">24.0dp</dimen>
+  <dimen name="notification_panel_margin_horizontal">80.0dp</dimen>
+  <dimen name="notification_section_divider_height">16.0dp</dimen>
+  <dimen name="notification_side_paddings">40.0dp</dimen>
+  <dimen name="qqs_layout_padding_bottom">40.0dp</dimen>
+  <dimen name="qs_tiles_page_horizontal_margin">60.0dp</dimen>
+  <dimen name="status_view_margin_horizontal">124.0dp</dimen>
+</resources>

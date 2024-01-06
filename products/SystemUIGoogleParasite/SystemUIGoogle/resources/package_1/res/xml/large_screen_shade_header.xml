@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<ConstraintSet android:id="@id/large_screen_header_constraint" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+  <Constraint android:id="@id/clock">
+    <Layout android:layout_width="wrap_content"
+            android:layout_height="0.0dp"
+            systemui:r0x7f04032f="0"
+            systemui:r0x7f040348="@id/begin_guide"
+            systemui:r0x7f04034d="0" />
+    <PropertySet android:alpha="1.0" />
+  </Constraint>
+  <Constraint android:id="@id/date">
+    <Layout android:layout_width="wrap_content"
+            android:layout_height="0.0dp"
+            android:layout_marginStart="8.0dp"
+            systemui:r0x7f04032f="0"
+            systemui:r0x7f040348="@id/clock"
+            systemui:r0x7f04034d="0" />
+    <PropertySet android:alpha="1.0" />
+  </Constraint>
+  <Constraint android:id="@id/carrier_group">
+    <Layout android:layout_gravity="center|end"
+            android:layout_width="0.0dp"
+            android:layout_height="0.0dp"
+            systemui:r0x7f04032f="0"
+            systemui:r0x7f040336="@id/shade_header_system_icons"
+            systemui:r0x7f040348="@id/date"
+            systemui:r0x7f04034d="0"
+            systemui:r0x7f040352="1"
+            systemui:r0x7f040354="48.0dp" />
+    <PropertySet android:alpha="1.0" />
+  </Constraint>
+  <Constraint android:id="@id/shade_header_system_icons">
+    <Layout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            systemui:r0x7f04032f="0"
+            systemui:r0x7f040336="@id/privacy_container"
+            systemui:r0x7f040348="@id/carrier_group"
+            systemui:r0x7f04034d="0" />
+    <PropertySet android:alpha="1.0" />
+  </Constraint>
+  <Constraint android:id="@id/privacy_container">
+    <Layout android:layout_width="wrap_content"
+            android:layout_height="@dimen/large_screen_shade_header_min_height"
+            systemui:r0x7f04032f="0"
+            systemui:r0x7f040336="@id/end_guide"
+            systemui:r0x7f04034d="0" />
+  </Constraint>
+</ConstraintSet>

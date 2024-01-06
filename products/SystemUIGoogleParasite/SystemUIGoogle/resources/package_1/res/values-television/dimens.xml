@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <dimen name="bottom_sheet_actions_spacing">12.0dp</dimen>
+  <dimen name="bottom_sheet_actions_width">296.0dp</dimen>
+  <dimen name="bottom_sheet_background_blur_radius">37.0dp</dimen>
+  <dimen name="bottom_sheet_button_corner_radius">10.0dp</dimen>
+  <dimen name="bottom_sheet_button_padding_horizontal">20.0dp</dimen>
+  <dimen name="bottom_sheet_button_padding_vertical">16.0dp</dimen>
+  <dimen name="bottom_sheet_button_selection_scaled">1.1</dimen>
+  <dimen name="bottom_sheet_button_width">232.0dp</dimen>
+  <dimen name="bottom_sheet_corner_radius">24.0dp</dimen>
+  <dimen name="bottom_sheet_details_margin_bottom">8.0dp</dimen>
+  <dimen name="bottom_sheet_icon_margin">8.0dp</dimen>
+  <dimen name="bottom_sheet_icon_size">42.0dp</dimen>
+  <dimen name="bottom_sheet_margin">24.0dp</dimen>
+  <dimen name="bottom_sheet_min_height">208.0dp</dimen>
+  <dimen name="bottom_sheet_padding_horizontal">32.0dp</dimen>
+  <dimen name="bottom_sheet_padding_vertical">24.0dp</dimen>
+  <dimen name="bottom_sheet_title_margin_bottom">18.0dp</dimen>
+  <dimen name="pip_corner_radius">0.0dp</dimen>
+  <dimen name="shutdown_scrim_behind_alpha">1.0</dimen>
+  <dimen name="unblock_hw_sensor_icon_height">@dimen/bottom_sheet_icon_size</dimen>
+  <dimen name="unblock_hw_sensor_icon_width">@dimen/bottom_sheet_icon_size</dimen>
+</resources>

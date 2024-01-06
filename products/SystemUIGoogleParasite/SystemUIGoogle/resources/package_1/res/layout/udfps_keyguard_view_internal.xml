@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:id="@id/udfps_animation_view_internal"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:contentDescription="@string/accessibility_fingerprint_label" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+  <ImageView android:id="@id/udfps_keyguard_fp_bg"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:src="@drawable/fingerprint_bg" />
+  <com.android.systemui.keyguard.ui.view.UdfpsLottieViewWrapper android:layout_gravity="center"
+                        android:id="@id/udfps_aod_fp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scaleType="centerCrop"
+                        systemui:r0x7f040391="false"
+                        systemui:r0x7f04039a="true"
+                        systemui:r0x7f04039c="@raw/udfps_aod_fp" />
+  <com.android.systemui.keyguard.ui.view.UdfpsLottieViewWrapper android:layout_gravity="center"
+                        android:id="@id/udfps_lockscreen_fp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scaleType="centerCrop"
+                        systemui:r0x7f040391="false"
+                        systemui:r0x7f04039a="false"
+                        systemui:r0x7f04039c="@raw/udfps_lockscreen_fp" />
+</FrameLayout>

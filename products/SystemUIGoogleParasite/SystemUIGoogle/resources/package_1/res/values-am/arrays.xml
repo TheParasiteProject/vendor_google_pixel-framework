@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <string-array name="battery_options">
+    <item>ሁልጊዜ መቶኛ አሳይ</item>
+    <item>የባትሪ ኃይል በሚሞላበት ጊዜ መቶኛ አሳይ (ነባሪ)</item>
+    <item>ይህን አዶ አታሳይ</item>
+  </string-array>
+  <string-array name="clock_options">
+    <item>ሰዓቶችን፣ ደቂቃዎችን፣ ሴኮንዶችን አሳይ</item>
+    <item>ሰዓቶችን እና ደቂቃዎችን አሳይ (ነባሪ)</item>
+    <item>ይህን አዶ አታሳይ</item>
+  </string-array>
+  <string-array name="nav_bar_buttons">
+    <item>የቅንጥብ ሰሌዳ</item>
+    <item>የቁልፍ ኮድ</item>
+    <item>ማሽከርከር ያረጋግጡ፣ ቁልፍ ሰሌዳ መቀየሪያ</item>
+    <item>ምንም የለም</item>
+  </string-array>
+  <string-array name="nav_bar_layouts">
+    <item>መደበኛ</item>
+    <item>እምቅ</item>
+    <item>ወደ ግራ ያዘነበለ</item>
+    <item>ወደ ቀኝ ያዘነበለ</item>
+  </string-array>
+  <string-array name="tile_states_airplane">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_alarm">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_battery">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_bt">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_cameratoggle">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_cast">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_cell">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_color_correction">
+    <item>አይገኝም</item>
+    <item>አጥፋ</item>
+    <item>አብራ</item>
+  </string-array>
+  <string-array name="tile_states_controls">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_dark">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_dnd">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_dream">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_flashlight">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_font_scaling">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_hotspot">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_internet">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_inversion">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_location">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_mictoggle">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_night">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_onehanded">
+    <item>አይገኝም</item>
+    <item>አጥፋ</item>
+    <item>አብራ</item>
+  </string-array>
+  <string-array name="tile_states_qr_code_scanner">
+    <item>አይገኝም</item>
+    <item>አጥፋ</item>
+    <item>አብራ</item>
+  </string-array>
+  <string-array name="tile_states_reduce_brightness">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_reverse">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_rotation">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_saver">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_screenrecord">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_wallet">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_wifi">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="tile_states_work">
+    <item>አይገኝም</item>
+    <item>ጠፍቷል</item>
+    <item>በርቷል</item>
+  </string-array>
+  <string-array name="udfps_accessibility_touch_hints">
+    <item>ወደ ግራ ውሰድ</item>
+    <item>ወደ ታች ውሰድ</item>
+    <item>ወደ ቀኝ ውሰድ</item>
+    <item>ወደ ላይ ውሰድ</item>
+  </string-array>
+  <string-array name="wifitrackerlib_wifi_status">
+    <item></item>
+    <item>በመቃኘት ላይ…</item>
+    <item>በመገናኘት ላይ…</item>
+    <item>በማረጋገጥ ላይ…</item>
+    <item>የአይፒ አድራሻን በማግኘት ላይ…</item>
+    <item>ተገናኝቷል</item>
+    <item>ታግዷል</item>
+    <item>ግንኝነት በማቋረጥ ላይ…</item>
+    <item>ተቋርጧል</item>
+    <item>አልተሳካም</item>
+    <item>ታግዷል</item>
+    <item>ለጊዜው ከደካማ ግንኙነት በመታቀብ ላይ</item>
+  </string-array>
+</resources>

@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <string-array name="battery_options">
+    <item>Хувийг тогтмол харуулах</item>
+    <item>Цэнэглэх үед хувийг тогтмол харуулах (өгөгдмөл)</item>
+    <item>Энэ дүрс тэмдгийг бүү харуул</item>
+  </string-array>
+  <string-array name="clock_options">
+    <item>Цаг, минут, секундийг харуулах</item>
+    <item>Цаг, минутыг харуулах (өгөгдмөл)</item>
+    <item>Энэ дүрс тэмдгийг бүү харуул</item>
+  </string-array>
+  <string-array name="nav_bar_buttons">
+    <item>Түр санах ой</item>
+    <item>Түлхүүр код</item>
+    <item>Эргүүлэхийг баталгаажуулах, гар солигч</item>
+    <item>Хоосон</item>
+  </string-array>
+  <string-array name="nav_bar_layouts">
+    <item>Энгийн</item>
+    <item>Нягтшил сайтай</item>
+    <item>Зүүн налуу</item>
+    <item>Баруун налуу</item>
+  </string-array>
+  <string-array name="tile_states_airplane">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_alarm">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_battery">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_bt">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_cameratoggle">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_cast">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_cell">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_color_correction">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_controls">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_dark">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_dnd">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_dream">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_flashlight">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_font_scaling">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_hotspot">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_internet">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_inversion">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_location">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_mictoggle">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_night">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_onehanded">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_qr_code_scanner">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_reduce_brightness">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_reverse">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_rotation">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_saver">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_screenrecord">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_wallet">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_wifi">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="tile_states_work">
+    <item>Боломжгүй</item>
+    <item>Унтраалттай</item>
+    <item>Асаалттай</item>
+  </string-array>
+  <string-array name="udfps_accessibility_touch_hints">
+    <item>Зүүн тийш зөөх</item>
+    <item>Доош зөөх</item>
+    <item>Баруун тийш зөөх</item>
+    <item>Дээш зөөх</item>
+  </string-array>
+  <string-array name="wifitrackerlib_wifi_status">
+    <item></item>
+    <item>Скан хийж байна…</item>
+    <item>Холбогдож байна…</item>
+    <item>Баталгаажуулж байна…</item>
+    <item>IP хаягийг авч байна…</item>
+    <item>Холбогдсон</item>
+    <item>Түр хаасан</item>
+    <item>Салгаж байна…</item>
+    <item>Салгасан</item>
+    <item>Амжилтгүй боллоо</item>
+    <item>Блоклосон</item>
+    <item>Сул холболтоос түр зайлсхийж байна</item>
+  </string-array>
+</resources>

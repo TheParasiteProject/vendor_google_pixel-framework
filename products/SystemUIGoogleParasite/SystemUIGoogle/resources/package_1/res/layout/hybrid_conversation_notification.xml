@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.android.systemui.statusbar.notification.row.HybridConversationNotificationView android:gravity="center|start"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:paddingEnd="12.0dp" xmlns:android="http://schemas.android.com/apk/res/android">
+  <FrameLayout android:layout_width="@android:dimen/conversation_face_pile_avatar_size"
+               android:layout_height="@dimen/conversation_single_line_face_pile_size"
+               android:paddingHorizontal="16.0dp">
+    <ImageView android:layout_gravity="center|end"
+               android:id="@android:id/conversation_icon"
+               android:layout_width="@dimen/conversation_single_line_avatar_size"
+               android:layout_height="@dimen/conversation_single_line_avatar_size" />
+    <ViewStub android:layout_gravity="center|end"
+              android:id="@android:id/conversation_face_pile"
+              android:layout="@android:layout/conversation_face_pile_layout"
+              android:layout_width="@dimen/conversation_single_line_face_pile_size"
+              android:layout_height="@dimen/conversation_single_line_face_pile_size" />
+  </FrameLayout>
+  <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Notification.Title"
+            android:id="@id/notification_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:paddingEnd="8.0dp" />
+  <TextView android:id="@id/conversation_notification_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:paddingEnd="4.0dp"
+            style="@android:style/Widget.DeviceDefault.Notification.Text" />
+  <TextView android:id="@id/notification_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:paddingEnd="4.0dp"
+            style="@android:style/Widget.DeviceDefault.Notification.Text" />
+</com.android.systemui.statusbar.notification.row.HybridConversationNotificationView>

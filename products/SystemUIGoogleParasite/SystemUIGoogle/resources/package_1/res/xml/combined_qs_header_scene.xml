@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+  <Transition android:id="@id/header_transition"
+              systemui:r0x7f04013d="@id/qs_header_constraint"
+              systemui:r0x7f04013e="@id/qqs_header_constraint"
+              systemui:r0x7f040321="1">
+    <KeyFrameSet>
+      <KeyPosition systemui:r0x7f04016d="1"
+                   systemui:r0x7f040252="@integer/fade_out_complete_frame"
+                   systemui:r0x7f040312="0"
+                   systemui:r0x7f04042a="@id/date"
+                   systemui:r0x7f040477="0.0"
+                   systemui:r0x7f040478="@dimen/percent_displacement_at_fade_out"
+                   systemui:r0x7f04053e="0.0" />
+      <KeyPosition systemui:r0x7f04016d="1"
+                   systemui:r0x7f040252="50"
+                   systemui:r0x7f040312="0"
+                   systemui:r0x7f04042a="@id/date"
+                   systemui:r0x7f040477="1.0"
+                   systemui:r0x7f040478="0.5"
+                   systemui:r0x7f04053e="1.0" />
+      <KeyAttribute android:alpha="0.0"
+                    systemui:r0x7f040252="14"
+                    systemui:r0x7f04042a="@id/date" />
+      <KeyAttribute android:alpha="0.0"
+                    systemui:r0x7f040252="@integer/fade_in_start_frame"
+                    systemui:r0x7f04042a="@id/date" />
+      <KeyPosition systemui:r0x7f04016d="1"
+                   systemui:r0x7f040252="@integer/fade_out_complete_frame"
+                   systemui:r0x7f040312="0"
+                   systemui:r0x7f04042a="@id/shade_header_system_icons"
+                   systemui:r0x7f040477="0.0"
+                   systemui:r0x7f040478="@dimen/percent_displacement_at_fade_out"
+                   systemui:r0x7f04053e="0.0" />
+      <KeyPosition systemui:r0x7f04016d="1"
+                   systemui:r0x7f040252="50"
+                   systemui:r0x7f040312="0"
+                   systemui:r0x7f04042a="@id/shade_header_system_icons"
+                   systemui:r0x7f040477="1.0"
+                   systemui:r0x7f040478="0.5"
+                   systemui:r0x7f04053e="1.0" />
+      <KeyAttribute android:alpha="0.0"
+                    systemui:r0x7f040252="@integer/fade_out_complete_frame"
+                    systemui:r0x7f04042a="@id/shade_header_system_icons" />
+      <KeyAttribute android:alpha="0.0"
+                    systemui:r0x7f040252="@integer/fade_in_start_frame"
+                    systemui:r0x7f04042a="@id/shade_header_system_icons" />
+      <KeyPosition systemui:r0x7f04016d="1"
+                   systemui:r0x7f040252="50"
+                   systemui:r0x7f040312="0"
+                   systemui:r0x7f04042a="@id/carrier_group"
+                   systemui:r0x7f040475="1.0"
+                   systemui:r0x7f040476="1.0"
+                   systemui:r0x7f040477="1.0"
+                   systemui:r0x7f040478="0.5" />
+      <KeyAttribute android:alpha="0.0"
+                    systemui:r0x7f040252="0"
+                    systemui:r0x7f04042a="@id/carrier_group" />
+      <KeyAttribute android:alpha="0.0"
+                    systemui:r0x7f040252="@integer/fade_in_start_frame"
+                    systemui:r0x7f04042a="@id/carrier_group" />
+    </KeyFrameSet>
+  </Transition>
+  <Transition android:id="@id/large_screen_header_transition"
+              systemui:r0x7f04013d="@id/large_screen_header_constraint"
+              systemui:r0x7f04013e="@id/large_screen_header_constraint" />
+  <Include systemui:r0x7f04013c="@xml/large_screen_shade_header" />
+  <Include systemui:r0x7f04013c="@xml/qs_header" />
+  <Include systemui:r0x7f04013c="@xml/qqs_header" />
+</MotionScene>

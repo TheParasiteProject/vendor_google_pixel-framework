@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+  <ImageView android:id="@id/user_switcher_icon"
+             android:layout_width="@dimen/bouncer_user_switcher_icon_size_plus_margin"
+             android:layout_height="@dimen/bouncer_user_switcher_icon_size_plus_margin"
+             systemui:r0x7f040335="0"
+             systemui:r0x7f040349="0"
+             systemui:r0x7f04034d="0" />
+  <TextView android:textColor="@android:color/text_color_on_accent_device_default"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:id="@id/user_switcher_text"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            systemui:r0x7f040335="@id/user_switcher_icon"
+            systemui:r0x7f040349="@id/user_switcher_icon"
+            systemui:r0x7f04034c="@id/user_switcher_icon"
+            style="@style/Bouncer.UserSwitcher.Spinner.Item" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/first_sub_card"
+                      android:background="@drawable/bg_smartspace_combination_sub_card"
+                      android:padding="8.0dp"
+                      android:layout_width="0.0dp"
+                      android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+  <ImageView android:id="@id/sub_card_icon"
+             android:layout_width="22.0dp"
+             android:layout_height="22.0dp"
+             android:layout_margin="2.0dp"
+             systemui:r0x7f040330="@id/sub_card_text"
+             systemui:r0x7f040335="0"
+             systemui:r0x7f040349="0"
+             systemui:r0x7f04034d="0" />
+  <TextView android:textSize="14.0sp"
+            android:textColor="?android:^attr-private/materialColorOnPrimary"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@id/sub_card_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2.0dp"
+            android:maxLines="2"
+            systemui:r0x7f04032f="0"
+            systemui:r0x7f040335="0"
+            systemui:r0x7f040349="0"
+            systemui:r0x7f04034c="@id/sub_card_icon"
+            style="@style/EnhancedSmartspaceTextSubtitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

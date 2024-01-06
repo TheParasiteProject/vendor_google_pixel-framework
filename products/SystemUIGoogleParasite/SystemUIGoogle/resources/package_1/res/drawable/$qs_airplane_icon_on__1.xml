@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<set android:ordering="together" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <objectAnimator android:interpolator="@drawable/drawable_0x7f08018f"
+                  android:duration="383"
+                  android:startOffset="0"
+                  android:valueFrom="1"
+                  android:valueTo="1.15"
+                  android:valueType="floatType"
+                  android:propertyName="scaleX" />
+  <objectAnimator android:interpolator="@drawable/drawable_0x7f080190"
+                  android:duration="383"
+                  android:startOffset="0"
+                  android:valueFrom="1"
+                  android:valueTo="1.15"
+                  android:valueType="floatType"
+                  android:propertyName="scaleY" />
+  <objectAnimator android:interpolator="@drawable/drawable_0x7f080191"
+                  android:duration="67"
+                  android:startOffset="383"
+                  android:valueFrom="1.15"
+                  android:valueTo="1.15"
+                  android:valueType="floatType"
+                  android:propertyName="scaleX" />
+  <objectAnimator android:interpolator="@drawable/drawable_0x7f080192"
+                  android:duration="67"
+                  android:startOffset="383"
+                  android:valueFrom="1.15"
+                  android:valueTo="1.15"
+                  android:valueType="floatType"
+                  android:propertyName="scaleY" />
+  <objectAnimator android:interpolator="@drawable/drawable_0x7f080193"
+                  android:duration="700"
+                  android:startOffset="450"
+                  android:valueFrom="1.15"
+                  android:valueTo="1"
+                  android:valueType="floatType"
+                  android:propertyName="scaleX" />
+  <objectAnimator android:interpolator="@drawable/drawable_0x7f080194"
+                  android:duration="700"
+                  android:startOffset="450"
+                  android:valueFrom="1.15"
+                  android:valueTo="1"
+                  android:valueType="floatType"
+                  android:propertyName="scaleY" />
+</set>

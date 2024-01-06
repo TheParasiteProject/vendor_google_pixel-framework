@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<set android:ordering="together" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <objectAnimator android:interpolator="@drawable/drawable_0x7f080219"
+                  android:duration="533"
+                  android:startOffset="0"
+                  android:valueFrom="0"
+                  android:valueTo="0"
+                  android:valueType="floatType"
+                  android:propertyName="fillAlpha" />
+  <objectAnimator android:interpolator="@drawable/drawable_0x7f08021a"
+                  android:duration="83"
+                  android:startOffset="533"
+                  android:valueFrom="0"
+                  android:valueTo="1"
+                  android:valueType="floatType"
+                  android:propertyName="fillAlpha" />
+  <objectAnimator android:interpolator="@drawable/drawable_0x7f08021b"
+                  android:duration="250"
+                  android:startOffset="617"
+                  android:valueFrom="1"
+                  android:valueTo="1"
+                  android:valueType="floatType"
+                  android:propertyName="fillAlpha" />
+  <objectAnimator android:interpolator="@drawable/drawable_0x7f08021c"
+                  android:duration="83"
+                  android:startOffset="867"
+                  android:valueFrom="1"
+                  android:valueTo="0"
+                  android:valueType="floatType"
+                  android:propertyName="fillAlpha" />
+</set>

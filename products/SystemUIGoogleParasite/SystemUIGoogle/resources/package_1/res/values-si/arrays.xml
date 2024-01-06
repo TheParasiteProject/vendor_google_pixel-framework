@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <string-array name="battery_options">
+    <item>සෑම විටම ප්‍රතිශතය පෙන්වන්න</item>
+    <item>ආරෝපණය වන විට ප්‍රතිශතය පෙන්වන්න (පෙරනිමි)</item>
+    <item>මෙම නිරූපකය නොපෙන්වන්න</item>
+  </string-array>
+  <string-array name="clock_options">
+    <item>පැය, මිනිත්තු, සහ තත්පර පෙන්වන්න</item>
+    <item>පැය සහ මිනිත්තු පෙන්වන්න (පෙරනිමි)</item>
+    <item>මෙම නිරූපකය නොපෙන්වන්න</item>
+  </string-array>
+  <string-array name="nav_bar_buttons">
+    <item>පසුරු පුවරුව</item>
+    <item>යතුරු කේතය</item>
+    <item>තහවුරු කිරීම කරකවන්න, යතුරු පුවරු මාරුව</item>
+    <item>කිසිවක් නැත</item>
+  </string-array>
+  <string-array name="nav_bar_layouts">
+    <item>සාමාන්‍ය</item>
+    <item>සංයුක්ත</item>
+    <item>වමට-හැරුණු</item>
+    <item>දකුණට-හැරුණු</item>
+  </string-array>
+  <string-array name="tile_states_airplane">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_alarm">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_battery">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_bt">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_cameratoggle">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_cast">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_cell">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_color_correction">
+    <item>නොමැත</item>
+    <item>ක්‍රියාවිරහිතයි</item>
+    <item>ක්‍රියාත්මකයි</item>
+  </string-array>
+  <string-array name="tile_states_controls">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_dark">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_dnd">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_dream">
+    <item>නොමැත</item>
+    <item>ක්‍රියාවිරහිතයි</item>
+    <item>ක්‍රියාත්මකයි</item>
+  </string-array>
+  <string-array name="tile_states_flashlight">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_font_scaling">
+    <item>නොමැත</item>
+    <item>ක්‍රියාවිරහිතයි</item>
+    <item>ක්‍රියාත්මකයි</item>
+  </string-array>
+  <string-array name="tile_states_hotspot">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_internet">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_inversion">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_location">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_mictoggle">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_night">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_onehanded">
+    <item>නොමැත</item>
+    <item>ක්‍රියාවිරහිතයි</item>
+    <item>ක්‍රියාත්මකයි</item>
+  </string-array>
+  <string-array name="tile_states_qr_code_scanner">
+    <item>නොමැත</item>
+    <item>ක්‍රියාවිරහිතයි</item>
+    <item>ක්‍රියාත්මකයි</item>
+  </string-array>
+  <string-array name="tile_states_reduce_brightness">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_reverse">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_rotation">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_saver">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_screenrecord">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_wallet">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_wifi">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="tile_states_work">
+    <item>නොමැත</item>
+    <item>අක්‍රියයි</item>
+    <item>සක්‍රියයි</item>
+  </string-array>
+  <string-array name="udfps_accessibility_touch_hints">
+    <item>වමට ගෙන යන්න</item>
+    <item>පහළට ගෙන යන්න</item>
+    <item>දකුණට ගෙන යන්න</item>
+    <item>ඉහළට ගෙන යන්න</item>
+  </string-array>
+  <string-array name="wifitrackerlib_wifi_status">
+    <item></item>
+    <item>ස්කෑන් කරමින්…</item>
+    <item>සබැඳෙමින්…</item>
+    <item>සත්‍යාපනය කරමින්…</item>
+    <item>IP ලිපිනය ලබා ගනිමින්…</item>
+    <item>සම්බන්ධිතයි</item>
+    <item>තහනම් කරන ලදි</item>
+    <item>විසන්ධි වෙමින්…</item>
+    <item>විසන්ධි විය</item>
+    <item>අසාර්ථකයි</item>
+    <item>අවහිරයි</item>
+    <item>දුර්වල සම්බන්ධතාව තාවකාලිකව මග හරිමින්</item>
+  </string-array>
+</resources>

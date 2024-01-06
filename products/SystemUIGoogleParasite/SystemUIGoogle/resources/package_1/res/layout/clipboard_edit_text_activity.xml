@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent"
+                      android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+  <Button android:textColor="?android:^attr-private/materialColorOnPrimary"
+          android:id="@id/done_button"
+          android:background="@drawable/overlay_button_background"
+          android:layout_width="wrap_content"
+          android:layout_height="48.0dp"
+          android:layout_marginTop="8.0dp"
+          android:text="@string/clipboard_edit_text_done"
+          android:layout_marginStart="12.0dp"
+          android:backgroundTint="?android:^attr-private/materialColorPrimary"
+          android:paddingHorizontal="16.0dp"
+          systemui:r0x7f040349="0"
+          systemui:r0x7f04034d="0"
+          style="@style/EditTextActivityButton" />
+  <TextView android:textColor="?android:attr/textColorSecondary"
+            android:id="@id/attribution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40.0dp"
+            android:layout_marginStart="4.0dp"
+            systemui:r0x7f040349="@id/done_button"
+            systemui:r0x7f04034c="@id/done_button" />
+  <ScrollView android:layout_width="0.0dp"
+              android:layout_height="0.0dp"
+              android:layout_marginTop="8.0dp"
+              android:layout_marginEnd="16.0dp"
+              systemui:r0x7f04032f="0"
+              systemui:r0x7f040335="0"
+              systemui:r0x7f040349="@id/attribution"
+              systemui:r0x7f04034c="@id/attribution">
+    <EditText android:textSize="24.0sp"
+              android:gravity="center|start|top"
+              android:id="@id/edit_text"
+              android:background="@null"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:minHeight="48.0dp" />
+  </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<inset android:insetLeft="4.0dp"
+       android:insetRight="4.0dp"
+       android:insetTop="10.0dp"
+       android:insetBottom="10.0dp" xmlns:android="http://schemas.android.com/apk/res/android">
+  <selector>
+    <item android:state_enabled="false">
+      <nine-patch android:src="@drawable/textfield_default_filled"
+                  android:tint="?android:attr/colorControlNormal" />
+    </item>
+    <item android:state_focused="false"
+          android:state_pressed="false">
+      <nine-patch android:src="@drawable/textfield_default_filled"
+                  android:tint="?android:attr/colorControlNormal" />
+    </item>
+    <item>
+      <nine-patch android:src="@drawable/textfield_default_filled"
+                  android:tint="?android:attr/colorControlActivated" />
+    </item>
+  </selector>
+</inset>

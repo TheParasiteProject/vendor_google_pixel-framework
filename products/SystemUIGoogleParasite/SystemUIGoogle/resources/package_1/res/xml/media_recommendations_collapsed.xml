@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<ConstraintSet xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+  <Constraint android:id="@id/sizing_view"
+              android:layout_width="fill_parent"
+              android:layout_height="@dimen/qs_media_session_height_collapsed" />
+  <Constraint android:id="@id/media_rec_title"
+              systemui:r0x7f040349="0"
+              systemui:r0x7f04034d="0"
+              style="@style/MediaPlayer.Recommendation.Header" />
+  <Constraint android:id="@id/media_cover1_container"
+              android:layout_height="@dimen/qs_media_rec_album_height_collapsed"
+              android:layout_marginStart="@dimen/qs_media_padding"
+              android:layout_marginEnd="@dimen/qs_media_info_spacing"
+              systemui:r0x7f040336="@id/media_cover2_container"
+              systemui:r0x7f040349="0"
+              systemui:r0x7f04034c="@id/media_rec_title"
+              style="@style/MediaPlayer.Recommendation.AlbumContainer.Updated" />
+  <Constraint android:id="@id/media_cover2_container"
+              android:layout_height="@dimen/qs_media_rec_album_height_collapsed"
+              android:layout_marginEnd="@dimen/qs_media_info_spacing"
+              systemui:r0x7f040336="@id/media_cover3_container"
+              systemui:r0x7f040348="@id/media_cover1_container"
+              systemui:r0x7f04034c="@id/media_rec_title"
+              style="@style/MediaPlayer.Recommendation.AlbumContainer.Updated" />
+  <Constraint android:id="@id/media_cover3_container"
+              android:layout_height="@dimen/qs_media_rec_album_height_collapsed"
+              android:layout_marginEnd="@dimen/qs_media_padding"
+              systemui:r0x7f040335="0"
+              systemui:r0x7f040348="@id/media_cover2_container"
+              systemui:r0x7f04034c="@id/media_rec_title"
+              style="@style/MediaPlayer.Recommendation.AlbumContainer.Updated" />
+</ConstraintSet>

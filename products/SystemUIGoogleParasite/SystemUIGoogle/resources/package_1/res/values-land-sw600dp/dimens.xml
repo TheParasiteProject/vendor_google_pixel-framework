@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <dimen name="ambient_indication_margin_bottom">115.0dp</dimen>
+  <dimen name="controls_task_view_right_margin">8.0dp</dimen>
+  <dimen name="controls_task_view_width_percentage">0.45</dimen>
+  <dimen name="keyguard_clock_top_margin">8.0dp</dimen>
+  <dimen name="keyguard_indication_margin_bottom">25.0dp</dimen>
+  <dimen name="keyguard_smartspace_top_offset">0.0dp</dimen>
+  <dimen name="lock_icon_margin_bottom">60.0dp</dimen>
+  <dimen name="lockscreen_shade_depth_controller_transition_distance">0.0dp</dimen>
+  <dimen name="lockscreen_shade_full_transition_distance">200.0dp</dimen>
+  <dimen name="lockscreen_shade_keyguard_transition_vertical_offset">83.0dp</dimen>
+  <dimen name="lockscreen_shade_max_over_scroll_amount">32.0dp</dimen>
+  <dimen name="lockscreen_shade_media_transition_distance">129.28dp</dimen>
+  <dimen name="lockscreen_shade_notifications_scrim_transition_delay">76.0dp</dimen>
+  <dimen name="lockscreen_shade_notifications_scrim_transition_distance">53.28dp</dimen>
+  <dimen name="lockscreen_shade_npvc_keyguard_content_alpha_transition_distance">80.0dp</dimen>
+  <dimen name="lockscreen_shade_qs_transition_delay">@dimen/lockscreen_shade_notifications_scrim_transition_delay</dimen>
+  <dimen name="lockscreen_shade_qs_transition_distance">@dimen/lockscreen_shade_notifications_scrim_transition_distance</dimen>
+  <dimen name="lockscreen_shade_scrim_transition_distance">80.0dp</dimen>
+  <dimen name="notification_panel_margin_bottom">48.0dp</dimen>
+  <dimen name="notification_panel_margin_horizontal">24.0dp</dimen>
+  <dimen name="qs_content_horizontal_padding">24.0dp</dimen>
+  <dimen name="qs_horizontal_margin">24.0dp</dimen>
+  <dimen name="qs_media_session_height_expanded">172.0dp</dimen>
+  <dimen name="qs_panel_padding">24.0dp</dimen>
+  <dimen name="qs_panel_padding_top">16.0dp</dimen>
+  <dimen name="qs_tiles_page_horizontal_margin">12.0dp</dimen>
+  <dimen name="split_shade_notifications_scrim_margin_bottom">16.0dp</dimen>
+  <dimen name="status_view_margin_horizontal">8.0dp</dimen>
+  <dimen name="sud_decor_padding_top">128.0dp</dimen>
+  <dimen name="sud_glif_content_padding_top">88.0dp</dimen>
+  <dimen name="sud_glif_footer_bar_min_height_material_you">72.0dp</dimen>
+  <dimen name="sud_glif_footer_bar_padding_end_material_you">44.0dp</dimen>
+  <dimen name="sud_glif_footer_bar_padding_start_material_you">32.0dp</dimen>
+  <dimen name="sud_glif_footer_bar_padding_vertical_material_you">6.0dp</dimen>
+  <dimen name="sud_glif_footer_padding_end">44.0dp</dimen>
+  <dimen name="sud_glif_footer_padding_start">32.0dp</dimen>
+  <dimen name="sud_glif_land_middle_horizontal_spacing">76.0dp</dimen>
+  <dimen name="sud_glif_margin_end">48.0dp</dimen>
+  <dimen name="sud_glif_margin_end_material_you">48.0dp</dimen>
+  <dimen name="sud_glif_margin_start">48.0dp</dimen>
+  <dimen name="sud_glif_margin_start_material_you">48.0dp</dimen>
+  <dimen name="sud_items_glif_icon_divider_inset">96.0dp</dimen>
+  <dimen name="sud_items_glif_text_divider_inset">48.0dp</dimen>
+</resources>

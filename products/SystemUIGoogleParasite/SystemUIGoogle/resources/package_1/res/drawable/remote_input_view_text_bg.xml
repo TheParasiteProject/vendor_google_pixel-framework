@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+  <solid android:color="?android:attr/colorBackgroundFloating" />
+  <stroke android:width="@dimen/remote_input_view_text_stroke"
+          android:color="?android:attr/colorAccent" />
+  <padding android:left="12.0dp"
+           android:top="0.0dp"
+           android:right="12.0dp"
+           android:bottom="0.0dp" />
+  <corners android:radius="24.0dp" />
+</shape>

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <fraction name="config_one_handed_offset">40.0%</fraction>
+  <fraction name="controls_toggle_bg_intensity">5.0%</fraction>
+  <fraction name="lb_search_bar_speech_orb_max_level_zoom">144.0%</fraction>
+  <fraction name="lb_search_orb_focused_zoom">120.00001%</fraction>
+  <fraction name="lb_view_active_level">0.0%</fraction>
+  <fraction name="lb_view_dimmed_level">60.000004%</fraction>
+  <fraction name="magnification_resize_window_size_amount">10.0%</fraction>
+</resources>

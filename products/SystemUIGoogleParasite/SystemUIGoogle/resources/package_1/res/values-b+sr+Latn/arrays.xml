@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <string-array name="battery_options">
+    <item>Uvek prikazuj procenat</item>
+    <item>Prikaži procenat tokom punjenja (podrazumevano)</item>
+    <item>Ne prikazuj ovu ikonu</item>
+  </string-array>
+  <string-array name="clock_options">
+    <item>Prikaži sate, minute i sekunde</item>
+    <item>Prikaži sate i minute (podrazumevano)</item>
+    <item>Ne prikazuj ovu ikonu</item>
+  </string-array>
+  <string-array name="nav_bar_buttons">
+    <item>Memorija</item>
+    <item>Kôd tastera</item>
+    <item>Potvrda rotiranja, prebacivač za tastaturu</item>
+    <item>Ništa</item>
+  </string-array>
+  <string-array name="nav_bar_layouts">
+    <item>Normalni</item>
+    <item>Kompaktni</item>
+    <item>Uz levu stranu</item>
+    <item>Uz desnu stranu</item>
+  </string-array>
+  <string-array name="tile_states_airplane">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_alarm">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_battery">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_bt">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_cameratoggle">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_cast">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_cell">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_color_correction">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_controls">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_dark">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_dnd">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_dream">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_flashlight">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_font_scaling">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_hotspot">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_internet">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_inversion">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_location">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_mictoggle">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_night">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_onehanded">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_qr_code_scanner">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_reduce_brightness">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_reverse">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_rotation">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_saver">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_screenrecord">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_wallet">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_wifi">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="tile_states_work">
+    <item>Nedostupno</item>
+    <item>Isključeno</item>
+    <item>Uključeno</item>
+  </string-array>
+  <string-array name="udfps_accessibility_touch_hints">
+    <item>Pomerite nalevo</item>
+    <item>Pomerite nadole</item>
+    <item>Pomerite nadesno</item>
+    <item>Pomerite nagore</item>
+  </string-array>
+  <string-array name="wifitrackerlib_wifi_status">
+    <item></item>
+    <item>Traži se…</item>
+    <item>Povezuje se…</item>
+    <item>Potvrđuje se identitet…</item>
+    <item>Preuzima se IP adresa…</item>
+    <item>Povezano je</item>
+    <item>Suspendovano</item>
+    <item>Prekida se veza…</item>
+    <item>Veza je prekinuta</item>
+    <item>Nije uspelo</item>
+    <item>Blokirano</item>
+    <item>Privremeno izbegavanje loše veze</item>
+  </string-array>
+</resources>

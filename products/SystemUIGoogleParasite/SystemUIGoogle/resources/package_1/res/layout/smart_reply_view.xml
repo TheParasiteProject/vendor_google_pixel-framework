@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.android.systemui.statusbar.policy.SmartReplyView android:id="@id/smart_reply_view"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      systemui:r0x7f0400ab="@dimen/smart_reply_button_stroke_width"
+                      systemui:r0x7f040548="@dimen/smart_reply_button_spacing" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto" />
