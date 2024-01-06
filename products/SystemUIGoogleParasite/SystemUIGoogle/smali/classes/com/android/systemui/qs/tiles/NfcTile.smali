@@ -10,6 +10,8 @@
 
 .field public final mIcon:Lcom/android/systemui/plugins/qs/QSTile$Icon;
 
+.field public mListening:Z
+
 .field public final mNfcReceiver:Lcom/android/systemui/qs/tiles/NfcTile$1;
 
 
@@ -64,13 +66,16 @@
     :try_start_0
     iget-object v0, p0, Lcom/android/systemui/qs/tileimpl/QSTileImpl;->mContext:Landroid/content/Context;
 
-    .line 6
-    invoke-static {v0}, Landroid/nfc/NfcAdapter;->getDefaultAdapter(Landroid/content/Context;)Landroid/nfc/NfcAdapter;
+    invoke-virtual {v0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     .line 8
     move-result-object v0
 
     .line 11
+    invoke-static {v0}, Landroid/nfc/NfcAdapter;->getNfcAdapter(Landroid/content/Context;)Landroid/nfc/NfcAdapter;
+
+    move-result-object v0
+
     iput-object v0, p0, Lcom/android/systemui/qs/tiles/NfcTile;->mAdapter:Landroid/nfc/NfcAdapter;
     :try_end_0
     .catch Ljava/lang/UnsupportedOperationException; {:try_start_0 .. :try_end_0} :catch_0
@@ -209,13 +214,21 @@
     invoke-super {p0, p1}, Lcom/android/systemui/qs/tileimpl/QSTileImpl;->handleSetListening(Z)V
 
     .line 2
+    iget-boolean v0, p0, Lcom/android/systemui/qs/tiles/NfcTile;->mListening:Z
+
+    if-ne v0, p1, :cond_0
+
+    return-void
+
+    :cond_0
+    iput-boolean p1, p0, Lcom/android/systemui/qs/tiles/NfcTile;->mListening:Z
+
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/NfcTile;->mNfcReceiver:Lcom/android/systemui/qs/tiles/NfcTile$1;
 
     .line 5
     iget-object p0, p0, Lcom/android/systemui/qs/tiles/NfcTile;->mBroadcastDispatcher:Lcom/android/systemui/broadcast/BroadcastDispatcher;
 
-    .line 7
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_1
 
     .line 9
     new-instance p1, Landroid/content/IntentFilter;
@@ -233,7 +246,7 @@
     goto :goto_0
 
     .line 21
-    :cond_0
+    :cond_1
     invoke-virtual {p0, v0}, Lcom/android/systemui/broadcast/BroadcastDispatcher;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 22
