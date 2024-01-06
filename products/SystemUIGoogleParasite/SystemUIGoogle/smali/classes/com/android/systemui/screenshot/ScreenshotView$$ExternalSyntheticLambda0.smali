@@ -103,7 +103,9 @@
     check-cast p0, Lcom/android/systemui/screenshot/ScreenshotController;
 
     .line 46
-    invoke-virtual {p0, v0}, Lcom/android/systemui/screenshot/ScreenshotController;->setWindowFocusable(Z)V
+    sget-object p1, Lcom/android/systemui/screenshot/ScreenshotEvent;->SCREENSHOT_DISMISSED_OTHER:Lcom/android/systemui/screenshot/ScreenshotEvent;
+
+    invoke-virtual {p0, p1}, Lcom/android/systemui/screenshot/ScreenshotController;->dismissScreenshot(Lcom/android/systemui/screenshot/ScreenshotEvent;)V
 
     .line 48
     :cond_0
