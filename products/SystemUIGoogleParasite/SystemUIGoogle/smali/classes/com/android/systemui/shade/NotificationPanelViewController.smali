@@ -16001,7 +16001,7 @@
 .end method
 
 .method public final updateNotificationTranslucency()V
-    .locals 3
+    .locals 4
 
     .line 1
     iget-boolean v0, p0, Lcom/android/systemui/shade/NotificationPanelViewController;->mIsOcclusionTransitionRunning:Z
@@ -16057,7 +16057,8 @@
     .line 30
     const/4 v2, 0x1
 
-    .line 32
+    iget-object v3, p0, Lcom/android/systemui/shade/NotificationPanelViewController;->mQsController:Lcom/android/systemui/shade/QuickSettingsController;
+
     if-ne v1, v2, :cond_2
 
     .line 33
@@ -16072,11 +16073,7 @@
     .line 40
     if-nez v1, :cond_2
 
-    .line 41
-    iget-object v1, p0, Lcom/android/systemui/shade/NotificationPanelViewController;->mQsController:Lcom/android/systemui/shade/QuickSettingsController;
-
-    .line 43
-    iget-boolean v1, v1, Lcom/android/systemui/shade/QuickSettingsController;->mFullyExpanded:Z
+    iget-boolean v1, v3, Lcom/android/systemui/shade/QuickSettingsController;->mFullyExpanded:Z
 
     .line 45
     if-nez v1, :cond_2
@@ -16092,6 +16089,19 @@
 
     .line 53
     :cond_2
+    invoke-virtual {v3}, Lcom/android/systemui/shade/QuickSettingsController;->isExpandImmediate()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    iget-boolean v1, v3, Lcom/android/systemui/shade/QuickSettingsController;->mFullyExpanded:Z
+
+    if-nez v1, :cond_3
+
+    const/4 v0, 0x0
+
+    :cond_3
     iget-object p0, p0, Lcom/android/systemui/shade/NotificationPanelViewController;->mNotificationStackScrollLayoutController:Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayoutController;
 
     .line 54
@@ -16100,8 +16110,7 @@
     .line 56
     iget-object v1, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayoutController;->mView:Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;
 
-    .line 58
-    if-eqz v1, :cond_3
+    if-eqz p0, :cond_4
 
     .line 60
     iget p0, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayoutController;->mMaxAlphaForUnhide:F
@@ -16115,8 +16124,7 @@
     .line 67
     invoke-virtual {v1, p0}, Landroid/view/ViewGroup;->setAlpha(F)V
 
-    .line 68
-    :cond_3
+    :cond_4
     return-void
     .line 71
 .end method
