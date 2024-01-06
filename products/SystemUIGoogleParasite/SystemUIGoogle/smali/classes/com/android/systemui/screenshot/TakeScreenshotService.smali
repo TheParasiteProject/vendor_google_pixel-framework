@@ -695,6 +695,12 @@
     :cond_1
     iget-object p0, p0, Lcom/android/systemui/screenshot/TakeScreenshotService;->mScreenshot:Lcom/android/systemui/screenshot/ScreenshotController;
 
+    sget-object v0, Lcom/android/systemui/shared/system/TaskStackChangeListeners;->INSTANCE:Lcom/android/systemui/shared/system/TaskStackChangeListeners;
+
+    iget-object v1, p0, Lcom/android/systemui/screenshot/ScreenshotController;->mTaskListener:Lcom/android/systemui/screenshot/ScreenshotController$2;
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/shared/system/TaskStackChangeListeners;->unregisterTaskStackListener(Lcom/android/systemui/shared/system/TaskStackChangeListener;)V
+
     .line 61
     invoke-virtual {p0}, Lcom/android/systemui/screenshot/ScreenshotController;->onDestroy()V
 
