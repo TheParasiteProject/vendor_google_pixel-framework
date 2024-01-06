@@ -6,6 +6,24 @@
 .implements Ljavax/inject/Provider;
 
 
+# direct methods
+.method public static newInstance(Lcom/android/systemui/demomode/DemoModeController;Lcom/android/systemui/tuner/TunerService;Lcom/android/systemui/util/settings/GlobalSettings;)Lcom/android/systemui/tuner/TunerActivity;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/android/systemui/tuner/TunerActivity;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0, p1, p2}, Lcom/android/systemui/tuner/TunerActivity;-><init>(Lcom/android/systemui/demomode/DemoModeController;Lcom/android/systemui/tuner/TunerService;Lcom/android/systemui/util/settings/GlobalSettings;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method
+
+
 # virtual methods
 .method public final get()Ljava/lang/Object;
     .locals 0

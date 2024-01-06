@@ -23,6 +23,8 @@
 
 .field public mHideMobile:Z
 
+.field public mHideVpn:Z
+
 .field public final mIconController:Lcom/android/systemui/statusbar/phone/StatusBarIconController;
 
 .field public mInitialized:Z
@@ -531,7 +533,7 @@
 .end method
 
 .method public final onTuningChanged(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 2
+    .locals 3
 
     .line 1
     const-string v0, "icon_blacklist"
@@ -599,82 +601,90 @@
     .line 31
     .line 32
     .line 33
-    move-result p1
+    move-result v1
 
     .line 34
-    iget-boolean v1, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideAirplane:Z
+    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mSlotVpn:Ljava/lang/String;
 
     .line 35
     .line 36
-    if-ne p2, v1, :cond_1
+    invoke-virtual {p1, v2}, Landroid/util/ArraySet;->contains(Ljava/lang/Object;)Z
 
     .line 37
     .line 38
-    iget-boolean v1, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideMobile:Z
-
     .line 39
+    move-result p1
+
     .line 40
-    if-ne v0, v1, :cond_1
+    iget-boolean v2, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideAirplane:Z
 
     .line 41
     .line 42
-    iget-boolean v1, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideEthernet:Z
+    if-ne p2, v2, :cond_1
 
     .line 43
     .line 44
-    if-eq p1, v1, :cond_2
+    iget-boolean v2, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideMobile:Z
 
     .line 45
     .line 46
-    :cond_1
-    iput-boolean p2, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideAirplane:Z
+    if-ne v0, v2, :cond_1
 
     .line 47
     .line 48
-    iput-boolean v0, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideMobile:Z
+    iget-boolean v2, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideEthernet:Z
 
     .line 49
     .line 50
-    iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideEthernet:Z
+    if-ne v1, v2, :cond_1
 
     .line 51
     .line 52
-    iget-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mNetworkController:Lcom/android/systemui/statusbar/connectivity/NetworkController;
+    iget-boolean v2, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideVpn:Z
 
     .line 53
     .line 54
-    move-object p2, p1
+    if-eq p1, v2, :cond_2
 
     .line 55
-    check-cast p2, Lcom/android/systemui/statusbar/connectivity/NetworkControllerImpl;
-
     .line 56
-    .line 57
-    invoke-virtual {p2, p0}, Lcom/android/systemui/statusbar/connectivity/NetworkControllerImpl;->removeCallback(Ljava/lang/Object;)V
+    :cond_1
+    iput-boolean p2, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideAirplane:Z
 
+    .line 57
     .line 58
+    iput-boolean v0, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideMobile:Z
+
     .line 59
     .line 60
-    check-cast p1, Lcom/android/systemui/statusbar/connectivity/NetworkControllerImpl;
+    iput-boolean v1, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideEthernet:Z
 
     .line 61
     .line 62
-    invoke-virtual {p1, p0}, Lcom/android/systemui/statusbar/connectivity/NetworkControllerImpl;->addCallback(Ljava/lang/Object;)V
+    iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideVpn:Z
 
     .line 63
     .line 64
+    iget-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mNetworkController:Lcom/android/systemui/statusbar/connectivity/NetworkController;
+
     .line 65
-    :cond_2
-    return-void
     .line 66
+    check-cast p1, Lcom/android/systemui/statusbar/connectivity/NetworkControllerImpl;
+
     .line 67
     .line 68
+    invoke-virtual {p1, p0}, Lcom/android/systemui/statusbar/connectivity/NetworkControllerImpl;->removeCallback(Ljava/lang/Object;)V
+
     .line 69
     .line 70
     .line 71
+    invoke-virtual {p1, p0}, Lcom/android/systemui/statusbar/connectivity/NetworkControllerImpl;->addCallback(Ljava/lang/Object;)V
+
     .line 72
     .line 73
     .line 74
+    :cond_2
+    return-void
     .line 75
     .line 76
     .line 77
