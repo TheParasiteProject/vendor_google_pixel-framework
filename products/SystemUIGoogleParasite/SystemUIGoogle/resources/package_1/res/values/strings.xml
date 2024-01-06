@@ -1345,7 +1345,7 @@ If you have questions, contact %2$s.</string>
   <string name="quick_settings_tiles">default</string>
   <string name="quick_settings_tiles_default">internet,bt,flashlight,dnd,alarm,airplane,controls,wallet,rotation,qr_code_scanner,battery,cast,screenrecord,custom(com.google.android.gms/.nearby.sharing.SharingTileService),mictoggle,cameratoggle,custom(com.google.android.permissioncontroller/com.android.permissioncontroller.permission.service.v33.SafetyCenterQsTileService)</string>
   <string name="quick_settings_tiles_retail_mode">night,dark,dnd,flashlight,rotation,location</string>
-  <string name="quick_settings_tiles_stock">internet,bt,flashlight,dnd,alarm,airplane,controls,wallet,rotation,battery,cast,screenrecord,mictoggle,cameratoggle,location,hotspot,inversion,saver,dark,work,night,reverse,reduce_brightness,qr_code_scanner,onehanded,color_correction,dream,font_scaling</string>
+  <string name="quick_settings_tiles_stock">internet,bt,flashlight,dnd,alarm,airplane,controls,wallet,rotation,battery,cast,screenrecord,mictoggle,cameratoggle,location,hotspot,inversion,saver,dark,work,night,reverse,reduce_brightness,qr_code_scanner,onehanded,color_correction,dream,font_scaling,nfc</string>
   <string name="quick_settings_ui_mode_night_label">Dark theme</string>
   <string name="quick_settings_wifi_label">Wi-Fi</string>
   <string name="quick_settings_wifi_secondary_label_transient">Turning on…</string>
