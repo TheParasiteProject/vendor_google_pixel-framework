@@ -686,6 +686,18 @@
 
     .line 524
     :try_start_0
+    invoke-virtual {v1}, Landroid/net/Uri;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "android.resource://com.android.bluetooth.bthelper/drawable"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
     iget-object v2, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -697,6 +709,7 @@
     invoke-virtual {v2, v1, v3}, Landroid/content/ContentResolver;->takePersistableUriPermission(Landroid/net/Uri;I)V
 
     .line 527
+    :cond_0
     iget-object v2, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
 
     .line 528
