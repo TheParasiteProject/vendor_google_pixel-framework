@@ -230,3 +230,16 @@
     .line 24
     .line 25
 .end method
+
+.method public final onUiModeChanged()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    iget-object p0, p0, Lcom/android/systemui/shade/NotificationPanelViewController$ConfigurationListener;->this$0:Lcom/android/systemui/shade/NotificationPanelViewController;
+
+    invoke-virtual {p0, v0}, Lcom/android/systemui/shade/NotificationPanelViewController;->resetViews(Z)V
+
+    return-void
+.end method
+
