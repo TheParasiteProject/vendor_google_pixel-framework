@@ -2062,6 +2062,12 @@
     .line 60
     invoke-virtual {v0}, Landroid/window/WindowContext;->release()V
 
+    sget-object v0, Lcom/android/systemui/shared/system/TaskStackChangeListeners;->INSTANCE:Lcom/android/systemui/shared/system/TaskStackChangeListeners;
+
+    iget-object v1, p0, Lcom/android/systemui/screenshot/ScreenshotController;->mTaskListener:Lcom/android/systemui/screenshot/ScreenshotController$2;
+
+    invoke-virtual {v0, v1}, Lcom/android/systemui/shared/system/TaskStackChangeListeners;->unregisterTaskStackListener(Lcom/android/systemui/shared/system/TaskStackChangeListener;)V
+
     .line 61
     .line 62
     .line 63
