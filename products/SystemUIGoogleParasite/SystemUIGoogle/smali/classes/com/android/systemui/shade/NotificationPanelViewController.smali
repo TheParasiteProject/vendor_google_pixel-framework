@@ -34840,7 +34840,7 @@
 .end method
 
 .method public final updateNotificationTranslucency()V
-    .locals 3
+    .locals 4
 
     .line 1
     iget-boolean v0, p0, Lcom/android/systemui/shade/NotificationPanelViewController;->mIsOcclusionTransitionRunning:Z
@@ -34907,6 +34907,8 @@
     const/4 v2, 0x1
 
     .line 30
+    iget-object v3, p0, Lcom/android/systemui/shade/NotificationPanelViewController;->mQsController:Lcom/android/systemui/shade/QuickSettingsController;
+
     if-ne v1, v2, :cond_2
 
     .line 31
@@ -34933,13 +34935,7 @@
     .line 42
     if-nez v1, :cond_2
 
-    .line 43
-    .line 44
-    iget-object v1, p0, Lcom/android/systemui/shade/NotificationPanelViewController;->mQsController:Lcom/android/systemui/shade/QuickSettingsController;
-
-    .line 45
-    .line 46
-    iget-boolean v1, v1, Lcom/android/systemui/shade/QuickSettingsController;->mFullyExpanded:Z
+    iget-boolean v1, v3, Lcom/android/systemui/shade/QuickSettingsController;->mFullyExpanded:Z
 
     .line 47
     .line 48
@@ -34959,24 +34955,32 @@
 
     .line 55
     :cond_2
+    invoke-virtual {v3}, Lcom/android/systemui/shade/QuickSettingsController;->isExpandImmediate()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    iget-boolean v1, v3, Lcom/android/systemui/shade/QuickSettingsController;->mFullyExpanded:Z
+
+    if-nez v1, :cond_3
+
+    const/4 v0, 0x0
+
+    :cond_3
     iget-object p0, p0, Lcom/android/systemui/shade/NotificationPanelViewController;->mNotificationStackScrollLayoutController:Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayoutController;
 
     .line 56
     .line 57
     iget-object p0, p0, Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayoutController;->mView:Lcom/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout;
 
-    .line 58
-    .line 59
-    if-eqz p0, :cond_3
+    if-eqz p0, :cond_4
 
     .line 60
     .line 61
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->setAlpha(F)V
 
-    .line 62
-    .line 63
-    .line 64
-    :cond_3
+    :cond_4
     return-void
     .line 65
     .line 66
