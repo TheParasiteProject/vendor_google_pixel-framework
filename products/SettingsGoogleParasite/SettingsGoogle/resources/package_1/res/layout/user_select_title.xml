@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.android.internal.widget.DialogTitle android:textSize="24.0sp"
+                      android:ellipsize="end"
+                      android:layout_gravity="center"
+                      android:id="@android:id/title"
+                      android:paddingTop="24.0dp"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:singleLine="true"
+                      android:textAlignment="center"
+                      style="?android:attr/windowTitleStyle" xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/screen_pinning_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.TopIntroPreference android:title="@string/app_pinning_intro"
+                        settings:searchable="false" />
+  <SwitchPreference android:title="@string/screen_pinning_unlock_none"
+                    android:key="use_screen_lock"
+                    settings:allowDividerAbove="true" />
+  <com.android.settingslib.widget.FooterPreference android:title="@string/screen_pinning_description"
+                        android:key="screen_pinning_settings_screen_footer"
+                        settings:searchable="false" />
+</PreferenceScreen>

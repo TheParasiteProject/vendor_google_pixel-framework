@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<vector android:height="300.0dp"
+        android:width="412.0dp"
+        android:viewportWidth="412.0"
+        android:viewportHeight="300.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+  <path android:fillColor="#ff000000"
+        android:pathData="M384.2,300H27.8C12.5,300 0,287.2 0,271.5v-243C0,12.8 12.5,0 27.8,0h356.5C399.5,0 412,12.8 412,28.5v243.2C412,287.2 399.5,300 384.2,300z" />
+  <path android:fillColor="#80868b"
+        android:pathData="M274.9,97.7v-9.5c0,-1.3 -1.1,-2.4 -2.4,-2.4V35.9c0,-6.6 -5.3,-11.9 -11.9,-11.9H151.3c-6.6,0 -11.9,5.3 -11.9,11.9v228.2c0,6.6 5.3,11.9 11.9,11.9h109.4c6.6,0 11.9,-5.3 11.9,-11.9V147.6c1.3,0 2.4,-1.1 2.4,-2.4v-23.8c0,-1.3 -1.1,-2.4 -2.4,-2.4v-19C273.9,100.1 274.9,99 274.9,97.7zM270.2,264.1c0,5.2 -4.3,9.5 -9.5,9.5H151.3c-5.2,0 -9.5,-4.3 -9.5,-9.5V35.9c0,-5.2 4.3,-9.5 9.5,-9.5h109.4c5.2,0 9.5,4.3 9.5,9.5V264.1z" />
+  <path android:fillColor="@drawable/$accessibility_gesture_navigation_two_finger_preview__0"
+        android:pathData="M188.6,209.6c-3.7,0 -6.6,3 -6.6,6.6v24.6h13.3v-24.6C195.3,212.6 192.3,209.6 188.6,209.6z" />
+  <path android:fillColor="@drawable/$accessibility_gesture_navigation_two_finger_preview__1"
+        android:pathData="M223.4,209.6c-3.7,0 -6.6,3 -6.6,6.6v24.6H230v-24.6C230,212.6 227.1,209.6 223.4,209.6z" />
+</vector>

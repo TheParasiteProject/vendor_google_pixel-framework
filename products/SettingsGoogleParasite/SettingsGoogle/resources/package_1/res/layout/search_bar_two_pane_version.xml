@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.material.card.MaterialCardView android:layout_width="0.0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1.0"
+                      android:layout_marginEnd="@dimen/search_bar_margin"
+                      style="@style/SearchBarStyle" xmlns:android="http://schemas.android.com/apk/res/android">
+  <Toolbar android:id="@id/search_action_bar_two_pane"
+           android:background="@drawable/search_bar_selected_background"
+           android:layout_width="fill_parent"
+           android:layout_height="@dimen/search_bar_height"
+           android:paddingStart="@dimen/search_bar_padding_start_two_pane"
+           android:paddingEnd="@dimen/search_bar_padding_end_two_pane"
+           android:navigationIcon="@drawable/ic_homepage_search"
+           android:contentInsetStartWithNavigation="@dimen/search_bar_content_inset">
+    <TextView android:layout_gravity="start"
+              android:id="@id/search_bar_title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/search_settings"
+              android:paddingStart="@dimen/search_bar_title_padding_start_regular_two_pane"
+              style="@style/TextAppearance.SearchBar" />
+  </Toolbar>
+</com.google.android.material.card.MaterialCardView>

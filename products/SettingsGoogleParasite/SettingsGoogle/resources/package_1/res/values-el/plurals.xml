@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">%d ημ. πριν</item>
+    <item quantity="other">%d ημ. πριν</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">%d λ. πριν</item>
+    <item quantity="other">%d λ. πριν</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">%d έτος πριν</item>
+    <item quantity="other">%d έτη πριν</item>
+  </plurals>
+  <plurals name="lockscreen_quick_affordances_summary">
+    <item quantity="one">%1$s</item>
+    <item quantity="other">%1$s, %2$s</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d νέα ειδοποίηση</item>
+    <item quantity="other">%d νέες ειδοποιήσεις</item>
+  </plurals>
+  <plurals name="security_settings_hub_show_warnings_preference">
+    <item quantity="one">Εμφάνιση %1$d προειδοποίησης</item>
+    <item quantity="other">Εμφάνιση όλων των προειδοποιήσεων (%1$d)</item>
+  </plurals>
+  <plurals name="security_settings_hub_warnings_title">
+    <item quantity="one">%1$d προειδοποίηση</item>
+    <item quantity="other">%1$d προειδοποιήσεις</item>
+  </plurals>
+</resources>

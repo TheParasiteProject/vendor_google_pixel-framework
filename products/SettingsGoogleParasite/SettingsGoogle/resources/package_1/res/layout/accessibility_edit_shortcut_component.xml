@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:orientation="vertical"
+                android:id="@id/container"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <CheckBox android:textSize="16.0sp"
+              android:textColor="?android:attr/textColorAlertDialogListItem"
+              android:id="@id/checkbox"
+              android:background="@null"
+              android:focusable="false"
+              android:focusableInTouchMode="false"
+              android:clickable="false"
+              android:saveEnabled="false"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:minHeight="48.0dp"
+              android:paddingStart="12.0dp" />
+    <TextView android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+              android:textColor="?android:attr/textColorSecondary"
+              android:id="@id/summary"
+              android:paddingBottom="8.0dp"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:paddingStart="44.0dp" />
+  </LinearLayout>
+  <include android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="44.0dp"
+           layout="@layout/accessibility_lottie_animation_view" />
+</LinearLayout>

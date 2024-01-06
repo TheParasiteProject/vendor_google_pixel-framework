@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/privacy_controls_title"
+                  android:key="privacy_controls_page" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.RestrictedSwitchPreference android:title="@string/camera_toggle_title"
+                        android:key="privacy_camera_toggle"
+                        android:summary="@string/perm_toggle_description"
+                        settings:controller="com.android.settings.privacy.CameraToggleController" />
+  <com.android.settingslib.RestrictedSwitchPreference android:title="@string/mic_toggle_title"
+                        android:key="privacy_mic_toggle"
+                        android:summary="@string/mic_toggle_description"
+                        settings:controller="com.android.settings.privacy.MicToggleController" />
+  <SwitchPreference android:title="@string/show_clip_access_notification"
+                    android:key="show_clip_access_notification"
+                    android:summary="@string/show_clip_access_notification_summary"
+                    settings:controller="com.android.settings.privacy.ShowClipAccessNotificationPreferenceController" />
+</PreferenceScreen>

@@ -1,0 +1,36 @@
+.class public final synthetic Lcom/android/settings/wifi/repository/SharedConnectivityRepository$$ExternalSyntheticLambda1;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic f$0:Lcom/android/settings/wifi/repository/SharedConnectivityRepository;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/android/settings/wifi/repository/SharedConnectivityRepository;)V
+    .locals 0
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/android/settings/wifi/repository/SharedConnectivityRepository$$ExternalSyntheticLambda1;->f$0:Lcom/android/settings/wifi/repository/SharedConnectivityRepository;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 0
+
+    .line 0
+    iget-object p0, p0, Lcom/android/settings/wifi/repository/SharedConnectivityRepository$$ExternalSyntheticLambda1;->f$0:Lcom/android/settings/wifi/repository/SharedConnectivityRepository;
+
+    invoke-static {p0}, Lcom/android/settings/wifi/repository/SharedConnectivityRepository;->$r8$lambda$7_K_FytRgS_kNvp1-EL9i6WkIp8(Lcom/android/settings/wifi/repository/SharedConnectivityRepository;)V
+
+    return-void
+.end method

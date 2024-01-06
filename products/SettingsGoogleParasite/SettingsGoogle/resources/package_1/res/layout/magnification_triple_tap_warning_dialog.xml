@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<ScrollView android:scrollbarStyle="outsideOverlay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:orientation="vertical"
+                android:paddingTop="?android:attr/dialogPreferredPadding"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="?android:attr/dialogPreferredPadding"
+                android:paddingEnd="?android:attr/dialogPreferredPadding">
+    <TextView android:id="@id/message"
+              android:text="@string/accessibility_magnification_triple_tap_warning_message"
+              style="@style/AccessibilityDialogDescription" />
+  </LinearLayout>
+</ScrollView>

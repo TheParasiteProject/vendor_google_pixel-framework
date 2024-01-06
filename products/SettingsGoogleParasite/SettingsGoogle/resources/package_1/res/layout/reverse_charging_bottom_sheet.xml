@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:theme="@style/Theme.AlertDialog"
+              android:gravity="bottom"
+              android:layout_gravity="bottom|center"
+              android:orientation="vertical"
+              android:id="@id/card"
+              android:background="@drawable/bottom_sheet_bg"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:minHeight="@dimen/reverse_charging_bottom_sheet_min_height"
+              android:transitionName="card" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <FrameLayout android:id="@id/toolbar_wrapper"
+               android:paddingLeft="32.0dp"
+               android:paddingTop="24.0dp"
+               android:paddingRight="32.0dp"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content">
+    <TextView android:layout_gravity="center"
+              android:id="@id/toolbar_title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title" />
+  </FrameLayout>
+  <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/video_view"
+                        android:paddingTop="16.0dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0dp"
+                        android:layout_weight="1.0"
+                        android:paddingStart="40.0dp"
+                        android:paddingEnd="40.0dp"
+                        settings:layout_constraintEnd_toEndOf="parent"
+                        settings:layout_constraintStart_toStartOf="parent"
+                        settings:layout_constraintTop_toTopOf="parent">
+    <TextView android:textSize="12.0sp"
+              android:textColor="?android:attr/textColorSecondary"
+              android:gravity="center"
+              android:id="@id/header_subtitle"
+              android:paddingBottom="16.0dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:lineSpacingExtra="5.0dp"
+              settings:layout_constraintEnd_toEndOf="parent"
+              settings:layout_constraintStart_toStartOf="parent"
+              settings:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:id="@id/content_frame"
+                 android:layout_width="fill_parent"
+                 android:layout_height="@dimen/reverse_charging_bottom_sheet_image_size"
+                 android:importantForAccessibility="no"
+                 settings:layout_constraintEnd_toEndOf="parent"
+                 settings:layout_constraintStart_toStartOf="parent"
+                 settings:layout_constraintTop_toBottomOf="@id/header_subtitle" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+  <LinearLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                settings:layout_constraintBottom_toBottomOf="parent"
+                settings:layout_constraintEnd_toEndOf="parent"
+                settings:layout_constraintStart_toStartOf="parent"
+                settings:layout_constraintTop_toTopOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/nav_bar"
+                          android:padding="8.0dp"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content">
+      <Button android:id="@id/learn_more_btn"
+              android:text="@string/learn_more"
+              settings:layout_constraintBottom_toBottomOf="parent"
+              settings:layout_constraintStart_toStartOf="parent"
+              style="@style/BottomSheetButtonBorderless" />
+      <Button android:id="@id/ok_btn"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@android:string/ok"
+              settings:layout_constraintBottom_toBottomOf="parent"
+              settings:layout_constraintEnd_toEndOf="parent"
+              style="@style/SettingsLibButtonStyle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </LinearLayout>
+</LinearLayout>

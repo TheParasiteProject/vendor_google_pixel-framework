@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/zen_mode_messages_title"
+                  android:key="zen_mode_custom_rule_messages_settings_page" xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory android:title="@string/zen_mode_settings_category"
+                      android:key="zen_mode_settings_category_messages" />
+  <com.android.settingslib.widget.FooterPreference />
+</PreferenceScreen>

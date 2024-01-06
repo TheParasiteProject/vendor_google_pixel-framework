@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <dimen name="rotation_90_enroll_margin_end">150.0dp</dimen>
+  <dimen name="rotation_90_enroll_padding_end">108.0dp</dimen>
+  <dimen name="rotation_90_enroll_padding_start">-290.0dp</dimen>
+</resources>

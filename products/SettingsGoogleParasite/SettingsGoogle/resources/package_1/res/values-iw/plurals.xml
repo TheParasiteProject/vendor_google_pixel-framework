@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">לפני יום אחד (%d)</item>
+    <item quantity="two">לפני יומיים (%d)</item>
+    <item quantity="many">לפני %d ימים</item>
+    <item quantity="other">לפני %d ימים</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">לפני דקה (%d)</item>
+    <item quantity="two">לפני %d דקות</item>
+    <item quantity="many">לפני %d דקות</item>
+    <item quantity="other">לפני %d דקות</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">לפני שנה (%d)</item>
+    <item quantity="two">לפני %d שנים</item>
+    <item quantity="many">לפני %d שנים</item>
+    <item quantity="other">לפני %d שנים</item>
+  </plurals>
+  <plurals name="lockscreen_quick_affordances_summary">
+    <item quantity="one">%1$s, %2$s</item>
+    <item quantity="two">%1$s, %2$s</item>
+    <item quantity="other">%1$s, %2$s</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="one">התראה חדשה אחת (%d)</item>
+    <item quantity="two">%d התראות חדשות</item>
+    <item quantity="many">%d התראות חדשות</item>
+    <item quantity="other">%d התראות חדשות</item>
+  </plurals>
+  <plurals name="security_settings_hub_show_warnings_preference">
+    <item quantity="one">הצגת כל האזהרות (%1$d)</item>
+    <item quantity="two">הצגת כל האזהרות (%1$d)</item>
+    <item quantity="other">הצגת כל האזהרות (%1$d)</item>
+  </plurals>
+  <plurals name="security_settings_hub_warnings_title">
+    <item quantity="one">%1$d אזהרות</item>
+    <item quantity="two">%1$d אזהרות</item>
+    <item quantity="other">%1$d אזהרות</item>
+  </plurals>
+</resources>

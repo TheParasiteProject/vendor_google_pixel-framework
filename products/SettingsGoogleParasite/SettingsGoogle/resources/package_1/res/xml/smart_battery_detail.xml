@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/adaptive_charging_title"
+                  android:key="smart_battery_detail"
+                  app:keywords="@string/keywords_battery_adaptive_preferences" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.IllustrationPreference android:selectable="false"
+                        android:key="auto_awesome_battery"
+                        app:searchable="false"
+                        app:lottie_rawRes="@raw/lottie_adaptive_battery" />
+  <com.android.settingslib.widget.MainSwitchPreference android:title="@string/adaptive_charging_main_switch_title"
+                        android:key="adaptive_charging_switch"
+                        app:controller="com.google.android.settings.fuelgauge.adaptivecharging.AdaptiveChargingMainSwitchPreferenceController"
+                        app:keywords="@string/keywords_adaptive_charging" />
+  <com.android.settingslib.widget.FooterPreference android:title="@string/adaptive_charging_footer"
+                        android:key="adaptive_charging_footer_preference"
+                        app:controller="com.google.android.settings.fuelgauge.adaptivecharging.AdaptiveChargingFooterPreferenceController"
+                        app:searchable="false" />
+</PreferenceScreen>

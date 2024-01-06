@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/button_navigation_settings_activity_title"
+                  android:key="button_navigation_settings_page"
+                  settings:keywords="@string/keywords_button_navigation_settings" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.IllustrationPreference android:key="gesture_power_menu_video"
+                        settings:controller="com.google.android.settings.gestures.ButtonNavigationSettingsGoogleAssistController"
+                        settings:searchable="false"
+                        settings:lottie_rawRes="@raw/lottie_button_nav_menu"
+                        settings:dynamicColor="true"
+                        settings:lottie_imageAssetsFolder="button_nav_menu" />
+  <SwitchPreference android:title="@string/assistant_long_press_home_gesture_title"
+                    android:key="assistant_long_press_home_gesture"
+                    android:summary="@string/assistant_long_press_home_gesture_summary"
+                    settings:controller="com.google.android.settings.gestures.ButtonNavigationSettingsGoogleAssistController" />
+  <SwitchPreference android:title="@string/search_long_press_home_button_title"
+                    android:key="search_long_press_home_gesture"
+                    android:summary="@string/search_long_press_home_button_summary"
+                    settings:controller="com.google.android.settings.gestures.ButtonNavigationSettingsGoogleSearchController" />
+</PreferenceScreen>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/clear_calling_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.TopIntroPreference android:title="@string/clear_calling_topintro"
+                        settings:searchable="false" />
+  <com.android.settingslib.widget.IllustrationPreference android:key="clear_calling_illustration"
+                        settings:searchable="false"
+                        settings:lottie_rawRes="@drawable/clear_calling" />
+  <com.android.settingslib.widget.MainSwitchPreference android:title="@string/clear_calling_toggle"
+                        android:key="clear_calling"
+                        settings:controller="com.google.android.settings.notification.ClearCallingTogglePreferenceController" />
+  <com.android.settingslib.widget.FooterPreference android:title="@string/clear_calling_footer"
+                        android:selectable="false"
+                        android:key="clear_calling_footer"
+                        settings:searchable="false" />
+  <com.android.settingslib.widget.ButtonPreference android:icon="@drawable/ic_lightbulb_tips"
+                        android:title="@string/discover_tips_button"
+                        android:key="discover_tips"
+                        settings:controller="com.google.android.settings.notification.ClearCallingTipsButtonPreferenceController"
+                        settings:searchable="false" />
+</PreferenceScreen>

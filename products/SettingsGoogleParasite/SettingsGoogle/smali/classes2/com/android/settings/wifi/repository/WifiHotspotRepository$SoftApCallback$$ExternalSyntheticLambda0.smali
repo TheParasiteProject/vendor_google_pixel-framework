@@ -1,0 +1,36 @@
+.class public final synthetic Lcom/android/settings/wifi/repository/WifiHotspotRepository$SoftApCallback$$ExternalSyntheticLambda0;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic f$0:Lcom/android/settings/wifi/repository/WifiHotspotRepository$SoftApCallback;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/android/settings/wifi/repository/WifiHotspotRepository$SoftApCallback;)V
+    .locals 0
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/android/settings/wifi/repository/WifiHotspotRepository$SoftApCallback$$ExternalSyntheticLambda0;->f$0:Lcom/android/settings/wifi/repository/WifiHotspotRepository$SoftApCallback;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 0
+
+    .line 0
+    iget-object p0, p0, Lcom/android/settings/wifi/repository/WifiHotspotRepository$SoftApCallback$$ExternalSyntheticLambda0;->f$0:Lcom/android/settings/wifi/repository/WifiHotspotRepository$SoftApCallback;
+
+    invoke-static {p0}, Lcom/android/settings/wifi/repository/WifiHotspotRepository$SoftApCallback;->$r8$lambda$KopnosbXFQ0GG42gtEkwc67Pv3Y(Lcom/android/settings/wifi/repository/WifiHotspotRepository$SoftApCallback;)V
+
+    return-void
+.end method

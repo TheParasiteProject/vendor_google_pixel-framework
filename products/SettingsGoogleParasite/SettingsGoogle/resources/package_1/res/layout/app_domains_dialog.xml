@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<ListView android:scrollbarStyle="insideOverlay"
+          android:id="@android:id/list"
+          android:paddingLeft="24.0dp"
+          android:paddingTop="6.0dp"
+          android:paddingRight="24.0dp"
+          android:paddingBottom="24.0dp"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:divider="@null" xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <androidx.recyclerview.widget.RecyclerView android:id="@id/dream_list"
+                        android:paddingBottom="@dimen/dream_preference_card_padding"
+                        android:clipToPadding="true"
+                        android:layout_width="0.0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                        android:nestedScrollingEnabled="false"
+                        settings:layout_constraintBottom_toBottomOf="parent"
+                        settings:layout_constraintEnd_toEndOf="parent"
+                        settings:layout_constraintStart_toStartOf="parent"
+                        settings:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

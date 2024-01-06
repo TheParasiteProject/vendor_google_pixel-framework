@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/location_services_screen_title"
+                  android:key="location_services_managed_profile"
+                  settings:controller="com.android.settings.location.LocationInjectedServicesForWorkPreferenceController" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/sud_description_margin_top" xmlns:android="http://schemas.android.com/apk/res/android">
+  <TextView android:textSize="18.0sp"
+            android:textColor="?android:attr/textColorSecondary"
+            android:id="@id/storage_wizard_init_external_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32.0dp"
+            android:text="@string/storage_wizard_init_v2_external_summary" />
+  <ImageView android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:src="@drawable/ic_storage_wizard_external"
+             android:scaleType="centerInside" />
+</LinearLayout>

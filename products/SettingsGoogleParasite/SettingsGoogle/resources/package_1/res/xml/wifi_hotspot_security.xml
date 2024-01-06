@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/wifi_security"
+                  settings:searchable="false" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.SelectorWithWidgetPreference android:title="@string/wifi_security_sae"
+                        android:key="wifi_hotspot_security_wpa3" />
+  <com.android.settingslib.widget.SelectorWithWidgetPreference android:title="@string/wifi_security_psk_sae"
+                        android:key="wifi_hotspot_security_wpa2_wpa3" />
+  <com.android.settingslib.widget.SelectorWithWidgetPreference android:title="@string/wifi_security_wpa2"
+                        android:key="wifi_hotspot_security_wpa2" />
+  <com.android.settingslib.widget.SelectorWithWidgetPreference android:title="@string/wifi_security_none"
+                        android:key="wifi_hotspot_security_none" />
+  <com.android.settingslib.widget.FooterPreference android:title="@string/wifi_hotspot_security_footer" />
+</PreferenceScreen>

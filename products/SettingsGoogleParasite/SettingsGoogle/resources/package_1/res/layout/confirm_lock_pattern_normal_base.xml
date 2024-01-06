@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.setupdesign.GlifLayout android:icon="@drawable/ic_lock"
+                      android:id="@id/setup_wizard_layout"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      settings:sudUseBottomProgressBar="true" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient android:orientation="vertical"
+                        android:id="@id/topLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+    <LinearLayout android:gravity="center"
+                  android:orientation="vertical"
+                  android:paddingLeft="0.0dp"
+                  android:paddingRight="0.0dp"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  style="@style/SudContentFrame">
+      <com.google.android.setupdesign.view.FillContentLayout android:layout_width="wrap_content"
+                            android:layout_height="0.0dp"
+                            android:layout_weight="1.0"
+                            style="@style/LockPatternContainerStyle">
+        <com.android.internal.widget.LockPatternView android:layout_gravity="center"
+                              android:id="@id/lockPattern"
+                              android:layout_width="@dimen/biometric_auth_pattern_view_size"
+                              android:layout_height="@dimen/biometric_auth_pattern_view_size" />
+      </com.google.android.setupdesign.view.FillContentLayout>
+      <TextView android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:id="@id/errorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dp"
+                android:layout_marginBottom="12.0dp"
+                android:layout_marginStart="?attr/sudMarginStart"
+                android:layout_marginEnd="?attr/sudMarginEnd"
+                android:accessibilityLiveRegion="polite"
+                style="@style/TextAppearance.ErrorText" />
+      <CheckBox android:id="@id/checkbox"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12.0dp"
+                android:checked="true"
+                android:minHeight="48.0dp"
+                android:layout_marginStart="?attr/sudMarginStart"
+                android:layout_marginEnd="?attr/sudMarginEnd" />
+      <Button android:id="@id/cancelButton"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/cancel"
+              android:layout_marginStart="?attr/sudMarginStart"
+              android:layout_marginEnd="?attr/sudMarginEnd"
+              style="@style/SudGlifButton.Secondary" />
+      <Button android:layout_gravity="center_horizontal"
+              android:id="@id/emergencyCallButton"
+              android:visibility="gone"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="12.0dp"
+              android:text="@string/work_challenge_emergency_button_text"
+              android:layout_marginStart="?attr/sudMarginStart"
+              android:layout_marginEnd="?attr/sudMarginEnd"
+              style="@style/WorkChallengeEmergencyButtonStyle" />
+    </LinearLayout>
+  </com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient>
+</com.google.android.setupdesign.GlifLayout>

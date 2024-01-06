@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:fillViewport="true"
+                      android:importantForAccessibility="noHideDescendants" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <view android:id="@id/frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        class="com.android.settings.TouchBlockingFrameLayout">
+    <LinearLayout android:orientation="vertical"
+                  android:paddingTop="@dimen/conversation_message_list_padding"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:paddingStart="@dimen/conversation_message_list_padding"
+                  android:paddingEnd="@dimen/conversation_message_list_padding">
+      <com.android.settings.display.ConversationMessageView android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            settings:iconBackgroundColor="@color/message_icon_background_incoming"
+                            settings:incoming="true"
+                            settings:messageText="@string/accessibility_text_reading_conversation_message_1" />
+      <com.android.settings.display.ConversationMessageView android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            settings:iconBackgroundColor="@color/message_icon_background_outgoing"
+                            settings:incoming="false"
+                            settings:messageText="@string/accessibility_text_reading_conversation_message_2" />
+    </LinearLayout>
+  </view>
+</androidx.core.widget.NestedScrollView>

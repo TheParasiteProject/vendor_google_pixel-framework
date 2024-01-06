@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/aspect_ratio_experimental_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.TopIntroPreference android:title="@string/summary_placeholder"
+                        android:key="app_aspect_ratio_summary"
+                        android:order="-1001"
+                        app:searchable="false" />
+  <com.android.settingslib.widget.ActionButtonsPreference android:key="header_view" />
+  <com.android.settings.applications.appcompat.RadioWithImagePreference android:title="@string/user_aspect_ratio_app_default"
+                        android:key="app_default_pref" />
+  <com.android.settings.applications.appcompat.RadioWithImagePreference android:icon="@drawable/ic_app_aspect_ratio_fullscreen"
+                        android:title="@string/user_aspect_ratio_fullscreen"
+                        android:key="fullscreen_pref" />
+  <com.android.settings.applications.appcompat.RadioWithImagePreference android:icon="@drawable/ic_app_aspect_ratio_half_screen"
+                        android:title="@string/user_aspect_ratio_half_screen"
+                        android:key="half_screen_pref" />
+  <com.android.settings.applications.appcompat.RadioWithImagePreference android:icon="@drawable/ic_app_aspect_ratio_display_size"
+                        android:title="@string/user_aspect_ratio_device_size"
+                        android:key="display_size_pref" />
+  <com.android.settings.applications.appcompat.RadioWithImagePreference android:icon="@drawable/ic_app_aspect_ratio_16_9"
+                        android:key="16_9_pref" />
+  <com.android.settings.applications.appcompat.RadioWithImagePreference android:icon="@drawable/ic_app_aspect_ratio_4_3"
+                        android:key="4_3_pref" />
+  <com.android.settings.applications.appcompat.RadioWithImagePreference android:icon="@drawable/ic_app_aspect_ratio_3_2"
+                        android:key="3_2_pref" />
+  <com.android.settingslib.widget.FooterPreference android:title="@string/app_aspect_ratio_footer"
+                        android:selectable="false"
+                        app:searchable="false" />
+</PreferenceScreen>

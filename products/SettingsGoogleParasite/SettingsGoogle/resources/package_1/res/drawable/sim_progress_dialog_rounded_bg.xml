@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<inset android:insetLeft="24.0dp"
+       android:insetRight="24.0dp" xmlns:android="http://schemas.android.com/apk/res/android">
+  <shape android:shape="rectangle">
+    <solid android:color="?android:attr/colorBackground" />
+    <corners android:radius="@android:dimen/config_displayWhiteBalanceColorTemperatureFilterIntercept" />
+  </shape>
+</inset>

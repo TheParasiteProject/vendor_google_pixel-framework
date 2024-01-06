@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+             android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+             android:paddingVertical="@dimen/settingslib_illustration_padding" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:orientation="vertical"
+                android:background="@drawable/accessibility_text_reading_preview"
+                android:padding="18.0dp"
+                android:clipChildren="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <TextView android:id="@id/preview_label"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/screen_zoom_preview_title"
+              style="@style/AccessibilityTextReadingPreviewTitle" />
+    <com.android.settings.accessibility.TextReadingPreviewPager android:id="@id/preview_pager"
+                          android:layout_width="fill_parent"
+                          android:layout_height="217.0dp"
+                          android:contentDescription="@string/preview_pager_content_description" />
+    <com.android.settings.widget.DotsPageIndicator android:layout_gravity="center_horizontal"
+                          android:id="@id/page_indicator"
+                          android:padding="6.0dp"
+                          android:visibility="gone"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          style="@style/PreviewPagerPageIndicator" />
+  </LinearLayout>
+</FrameLayout>

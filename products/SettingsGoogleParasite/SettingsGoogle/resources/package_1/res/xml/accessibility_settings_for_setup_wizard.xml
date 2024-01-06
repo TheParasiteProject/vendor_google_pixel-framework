@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:persistent="true"
+                  android:title="@string/vision_settings_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <Preference android:icon="@drawable/ic_adaptive_font_download"
+              android:persistent="false"
+              android:title="@string/accessibility_text_reading_options_title"
+              android:key="text_reading_options"
+              android:fragment="com.android.settings.accessibility.TextReadingPreferenceFragmentForSetupWizard"
+              settings:controller="com.android.settings.accessibility.TextReadingFragmentForSuwController"
+              settings:keywords="text_reading_options" />
+  <Preference android:icon="@drawable/ic_accessibility_magnification"
+              android:title="@string/accessibility_screen_magnification_title"
+              android:key="screen_magnification_preference"
+              android:summary="@string/accessibility_preference_magnification_summary"
+              android:fragment="com.android.settings.accessibility.ToggleScreenMagnificationPreferenceFragmentForSetupWizard" />
+  <com.android.settingslib.RestrictedPreference android:persistent="true"
+                        android:key="select_to_speak_preference"
+                        android:summary="@string/select_to_speak_summary"
+                        android:fragment="com.android.settings.accessibility.ToggleSelectToSpeakPreferenceFragmentForSetupWizard" />
+  <com.android.settingslib.RestrictedPreference android:persistent="true"
+                        android:key="screen_reader_preference"
+                        android:summary="@string/talkback_summary"
+                        android:fragment="com.android.settings.accessibility.ToggleScreenReaderPreferenceFragmentForSetupWizard" />
+</PreferenceScreen>

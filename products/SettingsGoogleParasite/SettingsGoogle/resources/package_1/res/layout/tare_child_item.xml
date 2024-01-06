@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:padding="10.0dp"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Subhead"
+            android:id="@id/factor"
+            android:paddingLeft="35.0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+  <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Body1"
+            android:id="@id/factor_number"
+            android:paddingLeft="35.0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+</LinearLayout>

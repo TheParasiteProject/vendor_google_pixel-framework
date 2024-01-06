@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <item android:state_checked="true"
+        android:color="?attr/colorPrimary"
+        android:alpha="0.08" />
+  <item android:color="?attr/colorOnSurface"
+        android:alpha="0.08"
+        settings:state_dragged="true" />
+  <item android:state_checked="false"
+        android:color="@android:color/transparent"
+        settings:state_dragged="false" />
+</selector>

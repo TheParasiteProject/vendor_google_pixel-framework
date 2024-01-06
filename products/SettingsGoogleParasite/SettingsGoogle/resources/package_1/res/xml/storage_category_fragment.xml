@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/storage_settings" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settings.widget.CardPreference android:title="@string/storage_free_up_space_title"
+                        android:key="free_up_space"
+                        android:summary="@string/storage_free_up_space_summary"
+                        android:order="4"
+                        settings:controller="com.android.settings.deviceinfo.storage.ManageStoragePreferenceController" />
+  <Preference android:icon="@drawable/ic_folder_vd_theme_24"
+              android:title="@string/storage_files"
+              android:key="pref_public_storage"
+              android:order="100" />
+  <com.android.settings.deviceinfo.StorageItemPreference android:icon="@drawable/ic_photo_library"
+                        android:title="@string/storage_images"
+                        android:key="pref_images"
+                        android:order="101" />
+  <com.android.settings.deviceinfo.StorageItemPreference android:icon="@drawable/ic_local_movies"
+                        android:title="@string/storage_videos"
+                        android:key="pref_videos"
+                        android:order="102" />
+  <com.android.settings.deviceinfo.StorageItemPreference android:icon="@drawable/ic_media_stream"
+                        android:title="@string/storage_audio"
+                        android:key="pref_audio"
+                        android:order="103" />
+  <com.android.settings.deviceinfo.StorageItemPreference android:icon="@drawable/ic_storage_apps"
+                        android:title="@string/storage_apps"
+                        android:key="pref_apps"
+                        android:order="104" />
+  <com.android.settings.deviceinfo.StorageItemPreference android:icon="@drawable/ic_videogame_vd_theme_24"
+                        android:title="@string/storage_games"
+                        android:key="pref_games"
+                        android:order="105" />
+  <com.android.settings.deviceinfo.StorageItemPreference android:icon="@drawable/ic_folder_vd_theme_24"
+                        android:title="@string/storage_documents_and_other"
+                        android:key="pref_documents_and_other"
+                        android:order="106" />
+  <com.android.settings.deviceinfo.StorageItemPreference android:icon="@drawable/ic_system_update"
+                        android:title="@string/storage_system"
+                        android:key="pref_system"
+                        android:order="107" />
+  <com.android.settings.deviceinfo.StorageItemPreference android:icon="@drawable/ic_trash_can"
+                        android:title="@string/storage_trash"
+                        android:key="pref_trash"
+                        android:order="108" />
+  <PreferenceCategory android:title="@string/storage_other_users"
+                      android:key="pref_non_current_users"
+                      android:order="201" />
+</PreferenceScreen>

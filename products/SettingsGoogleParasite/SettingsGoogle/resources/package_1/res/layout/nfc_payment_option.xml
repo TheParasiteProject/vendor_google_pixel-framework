@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="horizontal"
+              android:id="@id/nfc_payment_pref"
+              android:background="?android:attr/selectableItemBackground"
+              android:focusable="true"
+              android:clickable="false"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:minHeight="?android:attr/listPreferredItemHeight"
+              android:layout_weight="1.0"
+              android:paddingStart="24.0dp" xmlns:android="http://schemas.android.com/apk/res/android">
+  <RadioButton android:gravity="center_vertical"
+               android:id="@id/button"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:checkMark="?android:attr/listChoiceIndicatorSingle"
+               android:textDirection="locale"
+               android:textAlignment="viewStart" />
+</LinearLayout>

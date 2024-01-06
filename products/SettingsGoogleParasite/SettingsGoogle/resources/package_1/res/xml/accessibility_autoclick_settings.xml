@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/accessibility_autoclick_preference_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.TopIntroPreference android:title="@string/accessibility_autoclick_intro_text"
+                        android:key="accessibility_autoclick_intro" />
+  <com.android.settingslib.widget.IllustrationPreference android:selectable="false"
+                        android:key="accessibility_autoclick_banner"
+                        settings:searchable="false"
+                        settings:lottie_rawRes="@drawable/accessibility_dwell" />
+  <com.android.settingslib.widget.SelectorWithWidgetPreference android:title="@string/accessibility_autoclick_default_title"
+                        android:key="accessibility_control_autoclick_default"
+                        settings:controller="com.android.settings.accessibility.ToggleAutoclickPreferenceController" />
+  <com.android.settingslib.widget.SelectorWithWidgetPreference android:title="@string/accessibility_autoclick_short_title"
+                        android:key="accessibility_control_autoclick_200ms"
+                        android:summary="@string/accessibility_autoclick_short_summary"
+                        settings:controller="com.android.settings.accessibility.ToggleAutoclickPreferenceController" />
+  <com.android.settingslib.widget.SelectorWithWidgetPreference android:title="@string/accessibility_autoclick_medium_title"
+                        android:key="accessibility_control_autoclick_600ms"
+                        android:summary="@string/accessibility_autoclick_medium_summary"
+                        settings:controller="com.android.settings.accessibility.ToggleAutoclickPreferenceController" />
+  <com.android.settingslib.widget.SelectorWithWidgetPreference android:title="@string/accessibility_autoclick_long_title"
+                        android:key="accessibility_control_autoclick_1sec"
+                        android:summary="@string/accessibility_autoclick_long_summary"
+                        settings:controller="com.android.settings.accessibility.ToggleAutoclickPreferenceController" />
+  <com.android.settingslib.widget.SelectorWithWidgetPreference android:title="@string/accessibility_autoclick_custom_title"
+                        android:key="accessibility_control_autoclick_custom"
+                        settings:controller="com.android.settings.accessibility.ToggleAutoclickPreferenceController" />
+  <com.android.settingslib.widget.LayoutPreference android:visibility="gone"
+                        android:layout="@layout/accessibility_autoclick_custom_seekbar"
+                        android:selectable="false"
+                        android:key="autoclick_custom_seekbar"
+                        settings:controller="com.android.settings.accessibility.ToggleAutoclickCustomSeekbarController" />
+  <com.android.settings.accessibility.AccessibilityFooterPreference android:title="@string/accessibility_autoclick_description"
+                        android:selectable="false"
+                        android:key="accessibility_autoclick_footer"
+                        settings:controller="com.android.settings.accessibility.ToggleAutoclickFooterPreferenceController"
+                        settings:searchable="false" />
+</PreferenceScreen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/media_controls_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <SwitchPreference android:title="@string/media_controls_resume_title"
+                    android:key="media_controls_resume_switch"
+                    android:summary="@string/media_controls_resume_description"
+                    settings:controller="com.android.settings.sound.MediaControlsPreferenceController"
+                    settings:keywords="@string/keywords_media_controls" />
+  <SwitchPreference android:title="@string/media_controls_lockscreen_title"
+                    android:key="media_controls_lockscreen"
+                    android:summary="@string/media_controls_lockscreen_description"
+                    settings:controller="com.android.settings.sound.MediaControlsLockScreenPreferenceController" />
+  <SwitchPreference android:title="@string/media_controls_recommendations_title"
+                    android:key="media_controls_recommendations"
+                    android:summary="@string/media_controls_recommendations_description"
+                    settings:controller="com.android.settings.sound.MediaControlsRecommendationController" />
+</PreferenceScreen>

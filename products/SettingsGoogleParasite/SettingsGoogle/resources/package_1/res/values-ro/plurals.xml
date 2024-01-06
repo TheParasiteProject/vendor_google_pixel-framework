@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">Acum %d zi</item>
+    <item quantity="few">Acum %d zile</item>
+    <item quantity="other">Acum %d de zile</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">Acum %d minut</item>
+    <item quantity="few">Acum %d minute</item>
+    <item quantity="other">Acum %d de minute</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">Acum %d an</item>
+    <item quantity="few">Acum %d ani</item>
+    <item quantity="other">Acum %d de ani</item>
+  </plurals>
+  <plurals name="lockscreen_quick_affordances_summary">
+    <item quantity="one">%1$s</item>
+    <item quantity="few">%1$s, %2$s</item>
+    <item quantity="other">%1$s, %2$s</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d notificare nouă</item>
+    <item quantity="few">%d notificări noi</item>
+    <item quantity="other">%d de notificări noi</item>
+  </plurals>
+  <plurals name="security_settings_hub_show_warnings_preference">
+    <item quantity="one">Se afișează %1$d avertisment</item>
+    <item quantity="few">Vezi toate avertismentele (%1$d)</item>
+    <item quantity="other">Vezi toate avertismentele (%1$d)</item>
+  </plurals>
+  <plurals name="security_settings_hub_warnings_title">
+    <item quantity="one">%1$d avertisment</item>
+    <item quantity="few">%1$d avertismente</item>
+    <item quantity="other">%1$d de avertismente</item>
+  </plurals>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout android:layout_width="120.0dp"
+                android:layout_height="112.0dp"
+                android:importantForAccessibility="no" xmlns:android="http://schemas.android.com/apk/res/android">
+  <FrameLayout android:id="@id/button"
+               android:background="@drawable/user_select_background"
+               android:layout_width="82.0dp"
+               android:layout_height="82.0dp"
+               android:layout_alignParentTop="true"
+               android:layout_centerHorizontal="true">
+    <ImageView android:layout_gravity="center"
+               android:id="@android:id/icon"
+               android:layout_width="32.0dp"
+               android:layout_height="32.0dp"
+               android:scaleType="fitCenter" />
+  </FrameLayout>
+  <TextView android:textSize="14.0sp"
+            android:id="@android:id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:importantForAccessibility="no"
+            style="@style/TextAppearance.PreferenceTitle.SettingsLib" />
+</RelativeLayout>

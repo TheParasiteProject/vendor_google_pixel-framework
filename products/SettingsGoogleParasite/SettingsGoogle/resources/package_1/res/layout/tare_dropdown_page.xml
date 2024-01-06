@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent"
+                      android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <Spinner android:theme="@style/Widget.PopupWindow.Settings"
+           android:id="@id/spinner"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           settings:layout_constraintEnd_toEndOf="parent"
+           settings:layout_constraintStart_toStartOf="parent"
+           settings:layout_constraintTop_toTopOf="parent" />
+  <FrameLayout android:id="@id/frame_layout"
+               android:layout_width="0.0dp"
+               android:layout_height="wrap_content"
+               settings:layout_constrainedHeight="true"
+               settings:layout_constrainedWidth="true"
+               settings:layout_constraintBottom_toBottomOf="parent"
+               settings:layout_constraintEnd_toEndOf="parent"
+               settings:layout_constraintStart_toStartOf="parent"
+               settings:layout_constraintTop_toBottomOf="@id/spinner"
+               settings:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

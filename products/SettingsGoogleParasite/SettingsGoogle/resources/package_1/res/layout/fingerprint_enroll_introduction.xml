@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.setupdesign.GlifLayout android:id="@id/setup_wizard_layout"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      style="?attr/fingerprint_layout_theme" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:orientation="vertical"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/SudContentFrame">
+    <com.google.android.setupdesign.view.RichTextView android:id="@id/error_text"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          style="@style/SudDescription.Glif" />
+    <FrameLayout android:layout_width="fill_parent"
+                 android:layout_height="wrap_content">
+      <ImageView android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:src="@drawable/fingerprint_enroll_introduction"
+                 android:contentDescription="@null"
+                 style="@style/SudContentIllustration" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+      <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/security_settings_fingerprint_v2_enroll_introduction_footer_title_2"
+                style="@style/BiometricEnrollIntroTitle" />
+      <LinearLayout android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon_fingerprint"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_fingerprint_24dp"
+                   android:contentDescription="@null" />
+        <Space android:layout_width="16.0dp"
+               android:layout_height="wrap_content" />
+        <TextView android:id="@id/footer_message_2"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  style="@style/BiometricEnrollIntroMessage" />
+      </LinearLayout>
+      <LinearLayout android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon_device_locked"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_lock_24dp"
+                   android:contentDescription="@null" />
+        <Space android:layout_width="16.0dp"
+               android:layout_height="wrap_content" />
+        <TextView android:id="@id/footer_message_3"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  style="@style/BiometricEnrollIntroMessage" />
+      </LinearLayout>
+      <TextView android:id="@id/footer_title_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/BiometricEnrollIntroTitle" />
+      <LinearLayout android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon_trash_can"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_trash_can"
+                   android:contentDescription="@null" />
+        <Space android:layout_width="16.0dp"
+               android:layout_height="wrap_content" />
+        <TextView android:id="@id/footer_message_4"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  style="@style/BiometricEnrollIntroMessage" />
+      </LinearLayout>
+      <TextView android:id="@id/footer_title_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/security_settings_face_enroll_introduction_info_title"
+                style="@style/BiometricEnrollIntroTitle" />
+      <LinearLayout android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon_info"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_info_outline_24dp"
+                   android:contentDescription="@null" />
+        <Space android:layout_width="16.0dp"
+               android:layout_height="wrap_content" />
+        <TextView android:id="@id/footer_message_5"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  style="@style/BiometricEnrollIntroMessage" />
+      </LinearLayout>
+      <LinearLayout android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon_shield"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_guarantee"
+                   android:contentDescription="@null" />
+        <Space android:layout_width="16.0dp"
+               android:layout_height="wrap_content" />
+        <TextView android:id="@id/footer_message_6"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  style="@style/BiometricEnrollIntroMessage" />
+      </LinearLayout>
+      <LinearLayout android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon_link"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_link_24dp"
+                   android:contentDescription="@null" />
+        <Space android:layout_width="16.0dp"
+               android:layout_height="wrap_content" />
+        <TextView android:linksClickable="true"
+                  android:id="@id/footer_learn_more"
+                  android:paddingBottom="0.0dp"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/security_settings_fingerprint_v2_enroll_introduction_message_learn_more"
+                  style="@style/BiometricEnrollIntroMessage" />
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

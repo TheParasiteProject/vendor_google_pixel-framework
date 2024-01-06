@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">%d ദിവസം മുമ്പ്</item>
+    <item quantity="other">%d ദിവസം മുമ്പ്</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">%d മിനിറ്റ് മുമ്പ്</item>
+    <item quantity="other">%d മിനിറ്റ് മുമ്പ്</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">%d വർഷം മുമ്പ്</item>
+    <item quantity="other">%d വർഷം മുമ്പ്</item>
+  </plurals>
+  <plurals name="lockscreen_quick_affordances_summary">
+    <item quantity="one">%1$s</item>
+    <item quantity="other">%1$s, %2$s</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d പുതിയ അറിയിപ്പ്</item>
+    <item quantity="other">%d പുതിയ അറിയിപ്പുകൾ</item>
+  </plurals>
+  <plurals name="security_settings_hub_show_warnings_preference">
+    <item quantity="one">%1$d മുന്നറിയിപ്പ് കാണിക്കുക</item>
+    <item quantity="other">എല്ലാ മുന്നറിയിപ്പുകളും (%1$d) കാണുക</item>
+  </plurals>
+  <plurals name="security_settings_hub_warnings_title">
+    <item quantity="one">%1$d മുന്നറിയിപ്പ്</item>
+    <item quantity="other">%1$d മുന്നറിയിപ്പുകൾ</item>
+  </plurals>
+</resources>

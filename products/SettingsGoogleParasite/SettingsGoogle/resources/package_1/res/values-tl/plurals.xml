@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">%d araw ang nakalipas</item>
+    <item quantity="other">%d na araw ang nakalipas</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">%d min ang nakalipas</item>
+    <item quantity="other">%d na min ang nakalipas</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">%d taon ang nakalipas</item>
+    <item quantity="other">%d na taon ang nakalipas</item>
+  </plurals>
+  <plurals name="lockscreen_quick_affordances_summary">
+    <item quantity="one">%1$s, %2$s</item>
+    <item quantity="other">%1$s, %2$s</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d bagong notification</item>
+    <item quantity="other">%d na bagong notification</item>
+  </plurals>
+  <plurals name="security_settings_hub_show_warnings_preference">
+    <item quantity="one">Tingnan lahat ng babala (%1$d)</item>
+    <item quantity="other">Tingnan lahat ng babala (%1$d)</item>
+  </plurals>
+  <plurals name="security_settings_hub_warnings_title">
+    <item quantity="one">%1$d babala</item>
+    <item quantity="other">%1$d na babala</item>
+  </plurals>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/connected_device_connections_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <Preference android:icon="@android:drawable/ic_settings_bluetooth"
+              android:title="@string/bluetooth_settings_title"
+              android:key="bluetooth_switchbar_screen"
+              android:order="-9"
+              android:fragment="com.android.settings.connecteddevice.BluetoothDashboardFragment" />
+  <Preference android:icon="@drawable/ic_nfc"
+              android:title="@string/nfc_quick_toggle_title"
+              android:key="nfc_and_payment_settings"
+              android:order="-7"
+              android:fragment="com.android.settings.connecteddevice.NfcAndPaymentFragment"
+              settings:controller="com.android.settings.connecteddevice.NfcAndPaymentFragmentController"
+              settings:searchable="false" />
+  <Preference android:icon="@drawable/ic_cast_24dp"
+              android:title="@string/wifi_display_settings_title"
+              android:key="wifi_display_settings"
+              android:order="-6"
+              android:fragment="com.android.settings.wfd.WifiDisplaySettings"
+              settings:controller="com.android.settings.wfd.WifiDisplayPreferenceController"
+              settings:keywords="@string/keywords_wifi_display_settings" />
+  <com.android.settingslib.RestrictedPreference android:icon="@drawable/ic_android"
+                        android:title="@string/android_beam_settings_title"
+                        android:key="android_beam_settings"
+                        android:order="-5"
+                        android:fragment="com.android.settings.nfc.AndroidBeam"
+                        settings:controller="com.android.settings.nfc.AndroidBeamPreferenceController" />
+  <com.android.settingslib.RestrictedPreference android:icon="@android:drawable/ic_settings_print"
+                        android:title="@string/print_settings"
+                        android:key="connected_device_printing"
+                        android:summary="@string/summary_placeholder"
+                        android:order="-3"
+                        android:fragment="com.android.settings.print.PrintSettingsFragment" />
+  <SwitchPreference android:title="@string/uwb_settings_title"
+                    android:key="uwb_settings"
+                    android:summary="@string/summary_placeholder"
+                    android:order="100"
+                    settings:controller="com.android.settings.uwb.UwbPreferenceController"
+                    settings:userRestriction="no_ultra_wideband_radio"
+                    settings:useAdminDisabledSummary="true" />
+  <PreferenceCategory android:key="dashboard_tile_placeholder"
+                      android:order="-8" />
+</PreferenceScreen>

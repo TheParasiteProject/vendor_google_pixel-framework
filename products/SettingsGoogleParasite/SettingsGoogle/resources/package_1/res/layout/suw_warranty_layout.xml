@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.setupdesign.GlifRecyclerLayout android:icon="@drawable/ic_logo_google"
+                      android:entries="@xml/items_suw_warranty_languages"
+                      android:id="@id/setup_wizard_layout"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      settings:sucHeaderText="@string/suw_limited_warranty_title"
+                      settings:sucUsePartnerResource="true" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" />

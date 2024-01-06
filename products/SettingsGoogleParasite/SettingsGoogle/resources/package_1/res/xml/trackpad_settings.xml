@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/trackpad_settings" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <Preference android:icon="@drawable/ic_trackpad_touch_gestures_normal"
+              android:title="@string/trackpad_touchpad_gesture_title"
+              android:key="trackpad_gesture_settings"
+              android:summary="@string/trackpad_touchpad_gesture_summary"
+              android:order="-10"
+              android:fragment="com.android.settings.inputmethod.TrackpadTouchGestureSettings"
+              settings:controller="com.android.settings.inputmethod.TrackpadTouchGestureSettingsController" />
+  <SwitchPreference android:icon="@drawable/ic_trackpad_tap_to_click"
+                    android:title="@string/trackpad_tap_to_click"
+                    android:key="trackpad_tap_to_click"
+                    android:order="10"
+                    settings:controller="com.android.settings.inputmethod.TrackpadTapToClickPreferenceController" />
+  <SwitchPreference android:icon="@drawable/ic_trackpad_reverse_scrolling"
+                    android:title="@string/trackpad_reverse_scrolling_title"
+                    android:key="trackpad_reverse_scrolling"
+                    android:summary="@string/trackpad_reverse_scrolling_summary"
+                    android:order="20"
+                    settings:controller="com.android.settings.inputmethod.TrackpadReverseScrollingPreferenceController" />
+  <SwitchPreference android:icon="@drawable/ic_trackpad_bottom_right_click"
+                    android:title="@string/trackpad_bottom_right_tap_title"
+                    android:key="trackpad_bottom_right_tap"
+                    android:summary="@string/trackpad_bottom_right_tap_summary"
+                    android:order="30"
+                    settings:controller="com.android.settings.inputmethod.TrackpadBottomPreferenceController" />
+  <com.android.settings.widget.SeekBarPreference android:icon="@drawable/ic_trackpad_pointer_speed"
+                        android:title="@string/trackpad_pointer_speed"
+                        android:selectable="false"
+                        android:key="trackpad_pointer_speed"
+                        android:order="40"
+                        settings:controller="com.android.settings.inputmethod.TrackpadPointerSpeedPreferenceController" />
+  <com.android.settingslib.widget.ButtonPreference android:icon="@drawable/ic_trackpad_touch_gestures_inverse"
+                        android:title="@string/trackpad_touch_gesture"
+                        android:key="trackpad_touch_gesture"
+                        settings:controller="com.android.settings.inputmethod.TouchGesturesButtonPreferenceController" />
+</PreferenceScreen>

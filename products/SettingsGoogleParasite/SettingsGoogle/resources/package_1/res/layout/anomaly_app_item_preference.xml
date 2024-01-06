@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <include layout="@layout/preference_app" />
+  <LinearLayout android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/warning_chip"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="gone"
+                android:clickable="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                android:paddingEnd="?android:attr/listPreferredItemPaddingEnd">
+    <Space android:layout_width="@dimen/secondary_app_icon_size"
+           android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal"
+                  android:background="@drawable/battery_hints_chip_bg_ripple"
+                  android:padding="8.0dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="16.0dp">
+      <ImageView android:layout_gravity="center|start"
+                 android:layout_width="16.0dp"
+                 android:layout_height="16.0dp"
+                 android:src="@drawable/ic_battery_tips_warning_icon"
+                 android:contentDescription="@string/battery_hints_warning_icon_a11y" />
+      <TextView android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="?android:attr/textColorPrimary"
+                android:layout_gravity="center|start"
+                android:id="@id/warning_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewStart"
+                android:paddingHorizontal="8.0dp" />
+    </LinearLayout>
+  </LinearLayout>
+</LinearLayout>

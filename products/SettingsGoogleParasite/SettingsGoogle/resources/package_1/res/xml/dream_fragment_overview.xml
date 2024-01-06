@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/screensaver_settings_title"
+                  android:key="screensaver_settings_screen"
+                  settings:keywords="@string/keywords_screensaver" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.MainSwitchPreference android:title="@string/screensaver_settings_toggle_title"
+                        android:key="dream_main_settings_switch"
+                        settings:controller="com.android.settings.dream.DreamMainSwitchPreferenceController"
+                        settings:searchable="false" />
+  <Preference android:title="@string/screensaver_settings_when_to_dream"
+              android:key="when_to_start"
+              android:fragment="com.android.settings.dream.WhenToDreamPicker" />
+  <PreferenceCategory android:title="@string/dream_picker_category">
+    <com.android.settingslib.widget.LayoutPreference android:layout="@layout/dream_picker_layout"
+                          android:selectable="false"
+                          android:key="dream_picker" />
+  </PreferenceCategory>
+  <SwitchPreference android:title="@string/dream_complications_toggle_title"
+                    android:key="dream_complications_toggle"
+                    android:summary="@string/dream_complications_toggle_summary"
+                    settings:controller="com.android.settings.dream.DreamComplicationPreferenceController" />
+  <SwitchPreference android:title="@string/dream_home_controls_toggle_title"
+                    android:key="dream_home_controls_toggle"
+                    android:summary="@string/dream_home_controls_toggle_summary"
+                    settings:controller="com.android.settings.dream.DreamHomeControlsPreferenceController" />
+  <com.android.settings.applications.SpacePreference android:layout_height="16.0dp" />
+</PreferenceScreen>

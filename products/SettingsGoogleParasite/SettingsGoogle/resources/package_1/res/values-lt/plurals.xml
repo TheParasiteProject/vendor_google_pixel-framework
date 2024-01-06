@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">Prieš %d d.</item>
+    <item quantity="few">Prieš %d d.</item>
+    <item quantity="many">Prieš %d d.</item>
+    <item quantity="other">Prieš %d d.</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">Prieš %d min.</item>
+    <item quantity="few">Prieš %d min.</item>
+    <item quantity="many">Prieš %d min.</item>
+    <item quantity="other">Prieš %d min.</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">Prieš %d m.</item>
+    <item quantity="few">Prieš %d m.</item>
+    <item quantity="many">Prieš %d m.</item>
+    <item quantity="other">Prieš %d m.</item>
+  </plurals>
+  <plurals name="lockscreen_quick_affordances_summary">
+    <item quantity="one">%1$s, %2$s</item>
+    <item quantity="few">%1$s, %2$s</item>
+    <item quantity="many">%1$s, %2$s</item>
+    <item quantity="other">%1$s, %2$s</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d naujas pranešimas</item>
+    <item quantity="few">%d nauji pranešimai</item>
+    <item quantity="many">%d naujo pranešimo</item>
+    <item quantity="other">%d naujų pranešimų</item>
+  </plurals>
+  <plurals name="security_settings_hub_show_warnings_preference">
+    <item quantity="one">Žr. visus įspėjimus (%1$d)</item>
+    <item quantity="few">Žr. visus įspėjimus (%1$d)</item>
+    <item quantity="many">Žr. visus įspėjimus (%1$d)</item>
+    <item quantity="other">Žr. visus įspėjimus (%1$d)</item>
+  </plurals>
+  <plurals name="security_settings_hub_warnings_title">
+    <item quantity="one">%1$d įspėjimas</item>
+    <item quantity="few">%1$d įspėjimai</item>
+    <item quantity="many">%1$d įspėjimo</item>
+    <item quantity="other">%1$d įspėjimų</item>
+  </plurals>
+</resources>

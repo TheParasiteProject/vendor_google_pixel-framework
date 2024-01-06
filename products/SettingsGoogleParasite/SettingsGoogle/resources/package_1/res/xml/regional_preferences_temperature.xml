@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/temperature_preferences_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.TopIntroPreference android:persistent="false"
+                        android:title="@string/regional_preferences_option_page_sub_title" />
+  <PreferenceCategory android:layout="@layout/preference_category_no_label"
+                      android:title="@string/summary_placeholder"
+                      android:key="temperature_unit_category"
+                      settings:controller="com.android.settings.regionalpreferences.TemperatureUnitCategoryController" />
+</PreferenceScreen>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/emergency_settings_preference_title"
+                  android:key="safety_and_emergency_screen" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.LayoutPreference android:layout="@layout/more_settings_button"
+                        android:selectable="false"
+                        android:key="more_emergency_settings"
+                        android:order="0"
+                        settings:controller="com.android.settings.emergency.MoreSettingsPreferenceController" />
+  <Preference android:icon="@drawable/ic_emergency_gesture_24dp"
+              android:title="@string/emergency_gesture_screen_title"
+              android:key="gesture_emergency_summary"
+              android:order="100"
+              android:fragment="com.android.settings.emergency.EmergencyGestureSettings"
+              settings:controller="com.android.settings.emergency.EmergencyGestureEntrypointPreferenceController" />
+  <PreferenceCategory android:layout="@layout/preference_category_no_label"
+                      android:order="170"
+                      settings:allowDividerAbove="true" />
+  <com.android.settingslib.RestrictedPreference android:title="@string/cell_broadcast_settings"
+                        android:key="app_and_notif_cell_broadcast_settings"
+                        android:order="200"
+                        settings:useAdminDisabledSummary="true">
+    <intent android:targetPackage="@string/config_cell_broadcast_receiver_package"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.cellbroadcastreceiver.CellBroadcastSettings" />
+  </com.android.settingslib.RestrictedPreference>
+</PreferenceScreen>

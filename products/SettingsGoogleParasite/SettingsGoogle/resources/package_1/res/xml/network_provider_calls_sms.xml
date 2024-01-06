@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/calls_and_sms"
+                  android:key="provider_model_calls_and_sms_screen" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <ListPreference android:icon="@drawable/ic_phone"
+                  android:title="@string/calls_preference_title"
+                  android:key="provider_model_calls_preference"
+                  android:order="10"
+                  settings:controller="com.android.settings.network.telephony.CallsDefaultSubscriptionController" />
+  <ListPreference android:icon="@drawable/ic_sms"
+                  android:title="@string/sms_preference_title"
+                  android:key="provider_model_sms_preference"
+                  android:order="15"
+                  settings:controller="com.android.settings.network.telephony.SmsDefaultSubscriptionController" />
+  <PreferenceCategory android:title="@string/calls_and_sms_category"
+                      android:key="provider_model_calling_category"
+                      android:order="20"
+                      settings:controller="com.android.settings.network.telephony.NetworkProviderWifiCallingPreferenceController"
+                      settings:allowDividerAbove="true" />
+  <PreferenceCategory android:title="@string/connectivity_helper_call_quality_category"
+                      android:key="connectivity_helper_call_quality_category"
+                      android:order="30"
+                      settings:allowDividerAbove="true">
+    <SwitchPreference android:icon="@drawable/ic_connectivity_helper_call_quality"
+                      android:title="@string/connectivity_helper_call_quality_title"
+                      android:key="connectivity_helper_call_quality"
+                      android:summary="@string/connectivity_helper_call_quality_summary"
+                      settings:controller="com.google.android.settings.network.ConnectivityHelperCallQualityPreferenceController" />
+    <SwitchPreference android:title="@string/connectivity_helper_d2d_title"
+                      android:key="connectivity_helper_d2d"
+                      android:summary="@string/connectivity_helper_d2d_summary"
+                      android:order="40"
+                      settings:controller="com.google.android.settings.network.ConnectivityHelperDeviceToDevicePreferenceController" />
+    <com.android.settingslib.widget.FooterPreference android:title="@string/connectivity_helper_footnote"
+                          android:selectable="false"
+                          android:key="connectivity_helper_footer"
+                          settings:searchable="false" />
+  </PreferenceCategory>
+</PreferenceScreen>

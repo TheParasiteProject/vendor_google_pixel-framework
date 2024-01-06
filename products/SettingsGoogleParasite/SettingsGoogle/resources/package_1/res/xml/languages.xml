@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/language_picker_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.TopIntroPreference android:persistent="false"
+                        android:title="@string/desc_introduction_of_language_picker"
+                        android:selectable="false" />
+  <PreferenceCategory android:title="@string/language_picker_category_title">
+    <com.android.settingslib.widget.LayoutPreference android:layout="@layout/locale_order_list"
+                          android:key="languages_picker" />
+  </PreferenceCategory>
+  <com.android.settingslib.widget.FooterPreference android:persistent="false"
+                        android:title="@string/desc_notice_of_language_picker"
+                        android:selectable="false"
+                        android:key="footer_languages_picker"
+                        settings:controller="com.android.settings.localepicker.LocaleHelperPreferenceController" />
+</PreferenceScreen>

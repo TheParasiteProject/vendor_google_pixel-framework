@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/account_dashboard_title"
+                  android:key="user_and_account_settings_screen"
+                  settings:keywords="@string/keywords_accounts" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <PreferenceCategory android:title="@string/credman_chosen_app_title"
+                      android:key="default_service_category"
+                      android:order="10">
+    <com.android.settings.widget.GearPreference android:title="@string/credman_chosen_app_title"
+                          android:key="default_credman_autofill_main"
+                          android:fragment="com.android.settings.applications.credentials.DefaultCombinedPicker"
+                          settings:keywords="@string/credman_autofill_keywords">
+      <extra android:name="for_work"
+             android:value="false" />
+    </com.android.settings.widget.GearPreference>
+  </PreferenceCategory>
+  <PreferenceCategory android:persistent="false"
+                      android:title="@string/credman_credentials"
+                      android:key="credman_category"
+                      android:order="20"
+                      settings:controller="com.android.settings.applications.credentials.CredentialManagerPreferenceController"
+                      settings:keywords="@string/credman_keywords" />
+  <PreferenceCategory android:key="dashboard_tile_placeholder"
+                      android:order="130" />
+  <SwitchPreference android:title="@string/auto_sync_account_title"
+                    android:key="auto_sync_account_data"
+                    android:summary="@string/auto_sync_account_summary"
+                    android:order="202"
+                    settings:allowDividerAbove="true" />
+  <SwitchPreference android:title="@string/account_settings_menu_auto_sync_work"
+                    android:key="auto_sync_work_account_data"
+                    android:summary="@string/auto_sync_account_summary"
+                    android:order="203"
+                    settings:forWork="true" />
+  <SwitchPreference android:title="@string/account_settings_menu_auto_sync_personal"
+                    android:key="auto_sync_personal_account_data"
+                    android:summary="@string/auto_sync_account_summary"
+                    android:order="204" />
+</PreferenceScreen>

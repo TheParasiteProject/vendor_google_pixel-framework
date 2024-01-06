@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:drawable="@drawable/ic_assist_gesture"
+        android:start="4.0dp"
+        android:end="4.0dp" />
+  <item android:gravity="bottom|center|end"
+        android:drawable="@drawable/ic_icon_check" />
+</layer-list>

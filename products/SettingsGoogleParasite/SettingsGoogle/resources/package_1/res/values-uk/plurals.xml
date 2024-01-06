@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">%d день тому</item>
+    <item quantity="few">%d дні тому</item>
+    <item quantity="many">%d днів тому</item>
+    <item quantity="other">%d дня тому</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">%d хв тому</item>
+    <item quantity="few">%d хв тому</item>
+    <item quantity="many">%d хв тому</item>
+    <item quantity="other">%d хв тому</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">%d р. тому</item>
+    <item quantity="few">%d р. тому</item>
+    <item quantity="many">%d р. тому</item>
+    <item quantity="other">%d р. тому</item>
+  </plurals>
+  <plurals name="lockscreen_quick_affordances_summary">
+    <item quantity="one">%1$s, %2$s</item>
+    <item quantity="few">%1$s, %2$s</item>
+    <item quantity="many">%1$s, %2$s</item>
+    <item quantity="other">%1$s, %2$s</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d нове сповіщення</item>
+    <item quantity="few">%d нові сповіщення</item>
+    <item quantity="many">%d нових сповіщень</item>
+    <item quantity="other">%d нового сповіщення</item>
+  </plurals>
+  <plurals name="security_settings_hub_show_warnings_preference">
+    <item quantity="one">Показати всі попередження (%1$d)</item>
+    <item quantity="few">Показати всі попередження (%1$d)</item>
+    <item quantity="many">Показати всі попередження (%1$d)</item>
+    <item quantity="other">Показати всі попередження (%1$d)</item>
+  </plurals>
+  <plurals name="security_settings_hub_warnings_title">
+    <item quantity="one">%1$d попередження</item>
+    <item quantity="few">%1$d попередження</item>
+    <item quantity="many">%1$d попереджень</item>
+    <item quantity="other">%1$d попередження</item>
+  </plurals>
+</resources>

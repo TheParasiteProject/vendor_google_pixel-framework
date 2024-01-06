@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/change_nfc_tag_apps_title"
+                  android:key="change_nfc_tag_apps" xmlns:android="http://schemas.android.com/apk/res/android">
+  <com.android.settings.widget.FilterTouchesSwitchPreference android:title="@string/change_nfc_tag_apps_detail_switch"
+                        android:key="app_ops_settings_switch" />
+  <com.android.settingslib.widget.FooterPreference android:title="@string/change_nfc_tag_apps_detail_summary"
+                        android:selectable="false"
+                        android:key="app_ops_settings_preference" />
+</PreferenceScreen>

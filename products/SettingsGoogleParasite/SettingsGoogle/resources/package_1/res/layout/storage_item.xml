@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:gravity="center_vertical"
+              android:orientation="vertical"
+              android:background="?android:attr/selectableItemBackground"
+              android:paddingTop="14.0dp"
+              android:paddingBottom="14.0dp"
+              android:clipToPadding="false"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:minHeight="?android:attr/listPreferredItemHeightSmall"
+              android:paddingEnd="?android:attr/listPreferredItemPaddingEnd" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:clipToPadding="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="?android:attr/listPreferredItemPaddingStart">
+    <include layout="@layout/settingslib_icon_frame" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent"
+                          android:layout_height="wrap_content">
+      <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Subhead"
+                android:textSize="20.0sp"
+                android:ellipsize="marquee"
+                android:id="@android:id/title"
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textAlignment="viewStart"
+                settings:layout_constraintEnd_toStartOf="@android:id/summary"
+                settings:layout_constraintStart_toStartOf="parent" />
+      <TextView android:textAppearance="@android:style/TextAppearance.DeviceDefault.Body1"
+                android:textSize="20.0sp"
+                android:textColor="?android:attr/textColorSecondary"
+                android:id="@android:id/summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="10"
+                android:textAlignment="viewStart"
+                settings:layout_constraintBaseline_toBaselineOf="@android:id/title"
+                settings:layout_constraintEnd_toEndOf="parent" />
+      <ProgressBar android:id="@android:id/progress"
+                   android:layout_width="fill_parent"
+                   android:layout_height="4.0dp"
+                   android:layout_marginTop="12.0dp"
+                   android:layout_marginBottom="4.0dp"
+                   android:max="100"
+                   android:layout_below="@android:id/title"
+                   settings:layout_constraintTop_toBottomOf="@android:id/title"
+                   style="?android:attr/progressBarStyleHorizontal" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </LinearLayout>
+</LinearLayout>

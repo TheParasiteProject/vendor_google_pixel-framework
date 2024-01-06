@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout android:background="@android:color/transparent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <Spinner android:theme="@style/Widget.PopupWindow.Settings"
+           android:id="@id/filter_spinner"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true" />
+  <ImageView android:id="@id/filter_settings"
+             android:visibility="gone"
+             android:layout_width="56.0dp"
+             android:layout_height="56.0dp"
+             android:src="@drawable/ic_apps_filter_settings_24dp"
+             android:scaleType="center"
+             android:layout_toRightOf="@id/filter_spinner"
+             android:layout_centerHorizontal="true"
+             android:contentDescription="@string/configure"
+             style="?android:attr/borderlessButtonStyle" />
+</RelativeLayout>

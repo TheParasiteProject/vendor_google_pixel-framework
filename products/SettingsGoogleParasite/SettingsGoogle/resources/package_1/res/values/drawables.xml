@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <drawable name="a11y_button_navigation">@drawable/accessibility_button_navigation</drawable>
+  <drawable name="a11y_button_preview_base">@drawable/accessibility_button_preview_base</drawable>
+  <drawable name="a11y_button_preview_large_floating_menu">@drawable/accessibility_button_preview_large_floating_menu</drawable>
+  <drawable name="a11y_button_preview_small_floating_menu">@drawable/accessibility_button_preview_small_floating_menu</drawable>
+  <drawable name="a11y_button_preview_three_finger">@drawable/accessibility_button_preview_three_finger</drawable>
+  <drawable name="a11y_button_preview_two_finger">@drawable/accessibility_button_preview_two_finger</drawable>
+  <drawable name="a11y_captioning_banner">@drawable/accessibility_captioning_banner</drawable>
+  <drawable name="a11y_gesture_navigation_three_finger_preview">@drawable/accessibility_gesture_navigation_three_finger_preview</drawable>
+  <drawable name="a11y_gesture_navigation_two_finger_preview">@drawable/accessibility_gesture_navigation_two_finger_preview</drawable>
+  <drawable name="a11y_magnification_mode_fullscreen">@drawable/accessibility_magnification_mode_fullscreen</drawable>
+  <drawable name="a11y_magnification_mode_switch">@drawable/accessibility_magnification_mode_switch</drawable>
+  <drawable name="a11y_magnification_mode_window">@drawable/accessibility_magnification_mode_window</drawable>
+  <drawable name="a11y_shortcut_type_hardware">@drawable/accessibility_shortcut_type_hardware</drawable>
+  <drawable name="a11y_shortcut_type_software">@drawable/accessibility_shortcut_type_software</drawable>
+  <drawable name="a11y_shortcut_type_software_floating">@drawable/accessibility_shortcut_type_software_floating</drawable>
+  <drawable name="a11y_shortcut_type_software_gesture">@drawable/accessibility_shortcut_type_software_gesture</drawable>
+  <drawable name="a11y_shortcut_type_software_gesture_talkback">@drawable/accessibility_shortcut_type_software_gesture_talkback</drawable>
+  <drawable name="material_ic_keyboard_arrow_next_black_24dp">@drawable/material_ic_keyboard_arrow_right_black_24dp</drawable>
+  <drawable name="material_ic_keyboard_arrow_previous_black_24dp">@drawable/material_ic_keyboard_arrow_left_black_24dp</drawable>
+  <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+  <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+</resources>

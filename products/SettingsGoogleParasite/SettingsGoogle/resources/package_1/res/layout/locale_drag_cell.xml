@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.android.settings.localepicker.LocaleDragCell android:background="?android:attr/colorBackground"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="12.0dp"
+                      android:layout_marginBottom="12.0dp"
+                      android:minHeight="?android:attr/listPreferredItemHeight"
+                      android:textDirection="locale"
+                      android:layoutDirection="locale" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:gravity="center"
+                android:id="@id/numberLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingStart="?android:attr/listPreferredItemPaddingStart">
+    <CheckBox android:id="@id/checkbox"
+              android:layout_marginRight="0.0dp"
+              android:minWidth="24.0dp"
+              android:paddingEnd="-8.0dp"
+              style="@style/LanguageCheckboxAndLabel" />
+    <TextView android:textColor="?android:attr/colorAccent"
+              android:gravity="center"
+              android:id="@id/miniLabel"
+              android:minWidth="24.0dp"
+              style="@style/LanguageCheckboxAndLabel" />
+  </LinearLayout>
+  <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="?android:attr/listPreferredItemHeight"
+                        android:paddingStart="32.0dp"
+                        android:layout_toStartOf="@id/dragHandle"
+                        android:layout_toEndOf="@id/numberLayout">
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  settings:layout_constraintBottom_toBottomOf="parent"
+                  settings:layout_constraintEnd_toEndOf="parent"
+                  settings:layout_constraintStart_toStartOf="parent"
+                  settings:layout_constraintTop_toTopOf="parent">
+      <TextView android:id="@id/label"
+                style="@style/LanguageCheckboxAndLabel" />
+      <TextView android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+                android:textColor="?android:attr/textColorSecondary"
+                android:id="@id/l10nWarn"
+                android:layout_marginTop="4.0dp"
+                android:text="@string/locale_not_translated"
+                style="@style/LanguageCheckboxAndLabel" />
+      <TextView android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+                android:textColor="?android:attr/textColorSecondary"
+                android:id="@id/default_locale"
+                android:layout_marginTop="4.0dp"
+                android:text="@string/desc_current_default_language"
+                style="@style/LanguageCheckboxAndLabel" />
+    </LinearLayout>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+  <ImageView android:id="@id/dragHandle"
+             android:layout_width="wrap_content"
+             android:layout_height="fill_parent"
+             android:src="@drawable/drag_handle"
+             android:layout_centerVertical="true"
+             android:importantForAccessibility="no"
+             android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+             android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+             android:layout_alignParentEnd="true" />
+</com.android.settings.localepicker.LocaleDragCell>
