@@ -1087,3 +1087,13 @@
     .line 80
     .line 81
 .end method
+
+.method public useApSensor()Z
+    .locals 0
+
+    invoke-static {}, Lorg/pixelexperience/systemui/columbus/ColumbusCompatibilityHelper;->useApSensor()Z
+
+    move-result p0
+
+    return p0
+.end method

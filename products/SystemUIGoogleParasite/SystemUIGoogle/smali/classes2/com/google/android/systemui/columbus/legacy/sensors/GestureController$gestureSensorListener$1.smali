@@ -90,63 +90,12 @@
     .line 3
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 4
-    .line 5
-    .line 6
-    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
+    invoke-static {p0, p1}, Lcom/google/android/systemui/columbus/legacy/sensors/GestureController;->access$isThrottled(Lcom/google/android/systemui/columbus/legacy/sensors/GestureController;I)Z
 
-    .line 7
-    .line 8
-    .line 9
-    move-result-wide v0
+    move-result v0
 
-    .line 10
-    iget-object v2, p0, Lcom/google/android/systemui/columbus/legacy/sensors/GestureController;->lastTimestampMap:Landroid/util/SparseLongArray;
-
-    .line 11
-    .line 12
-    invoke-virtual {v2, p1}, Landroid/util/SparseLongArray;->get(I)J
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-wide v3
-
-    .line 16
-    invoke-virtual {v2, p1, v0, v1}, Landroid/util/SparseLongArray;->put(IJ)V
-
-    .line 17
-    .line 18
-    .line 19
-    sub-long/2addr v0, v3
-
-    .line 20
-    const-wide/16 v2, 0x1f4
-
-    .line 21
-    .line 22
-    cmp-long v0, v0, v2
-
-    .line 23
-    .line 24
     const/4 v1, 0x1
 
-    .line 25
-    if-gtz v0, :cond_0
-
-    .line 26
-    .line 27
-    move v0, v1
-
-    .line 28
-    goto :goto_0
-
-    .line 29
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 30
-    :goto_0
     const-string v2, "Columbus/GestureControl"
 
     .line 31

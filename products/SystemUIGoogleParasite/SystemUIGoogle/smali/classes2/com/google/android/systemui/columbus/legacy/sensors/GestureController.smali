@@ -864,3 +864,73 @@
     .line 130
     .line 131
 .end method
+
+.method public static final access$isThrottled(Lcom/google/android/systemui/columbus/legacy/sensors/GestureController;I)Z
+    .locals 0
+
+    invoke-direct {p0, p1}, Lcom/google/android/systemui/columbus/legacy/sensors/GestureController;->isThrottled(I)Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method private final isThrottled(I)Z
+    .locals 8
+
+    invoke-static {}, Lorg/pixelexperience/systemui/columbus/ColumbusCompatibilityHelper;->useApSensor()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-static {}, Lorg/pixelexperience/systemui/columbus/ColumbusCompatibilityHelper;->apSensorThrottleMs()Ljava/lang/Long;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v0
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/16 v0, 0x1f4
+
+    :goto_0
+    const-wide/16 v2, 0x0
+
+    cmp-long v2, v0, v2
+
+    const/4 v3, 0x0
+
+    if-nez v2, :cond_1
+
+    return v3
+
+    :cond_1
+    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
+
+    move-result-wide v4
+
+    iget-object v2, p0, Lcom/google/android/systemui/columbus/legacy/sensors/GestureController;->lastTimestampMap:Landroid/util/SparseLongArray;
+
+    invoke-virtual {v2, p1}, Landroid/util/SparseLongArray;->get(I)J
+
+    move-result-wide v6
+
+    iget-object p0, p0, Lcom/google/android/systemui/columbus/legacy/sensors/GestureController;->lastTimestampMap:Landroid/util/SparseLongArray;
+
+    invoke-virtual {p0, p1, v4, v5}, Landroid/util/SparseLongArray;->put(IJ)V
+
+    sub-long/2addr v4, v6
+
+    cmp-long p0, v4, v0
+
+    if-gtz p0, :cond_2
+
+    const/4 v3, 0x1
+
+    :cond_2
+    return v3
+.end method

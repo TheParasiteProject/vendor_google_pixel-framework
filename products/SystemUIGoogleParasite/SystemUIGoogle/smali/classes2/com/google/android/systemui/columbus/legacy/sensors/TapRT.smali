@@ -334,181 +334,10 @@
     .line 143
     iput-boolean v5, p0, Lcom/google/android/systemui/columbus/legacy/sensors/TapRT;->mWasPeakApproaching:Z
 
-    .line 144
-    .line 145
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-direct {p0, p2}, Lcom/google/android/systemui/columbus/legacy/sensors/TapRT;->getModelFileName(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 146
-    .line 147
-    .line 148
-    invoke-virtual {p2}, Ljava/lang/String;->hashCode()I
+    move-result-object p2
 
-    .line 149
-    .line 150
-    .line 151
-    move-result v6
-
-    .line 152
-    const/4 v7, -0x1
-
-    .line 153
-    sparse-switch v6, :sswitch_data_0
-
-    .line 154
-    .line 155
-    .line 156
-    :goto_0
-    move v0, v7
-
-    .line 157
-    goto :goto_1
-
-    .line 158
-    :sswitch_0
-    const-string v0, "Pixel 4 XL"
-
-    .line 159
-    .line 160
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 161
-    .line 162
-    .line 163
-    move-result p2
-
-    .line 164
-    if-nez p2, :cond_0
-
-    .line 165
-    .line 166
-    goto :goto_0
-
-    .line 167
-    :cond_0
-    const/4 v0, 0x3
-
-    .line 168
-    goto :goto_1
-
-    .line 169
-    :sswitch_1
-    const-string v0, "Pixel 3 XL"
-
-    .line 170
-    .line 171
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 172
-    .line 173
-    .line 174
-    move-result p2
-
-    .line 175
-    if-nez p2, :cond_1
-
-    .line 176
-    .line 177
-    goto :goto_0
-
-    .line 178
-    :cond_1
-    const/4 v0, 0x2
-
-    .line 179
-    goto :goto_1
-
-    .line 180
-    :sswitch_2
-    const-string v0, "Pixel 5"
-
-    .line 181
-    .line 182
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 183
-    .line 184
-    .line 185
-    move-result p2
-
-    .line 186
-    if-nez p2, :cond_2
-
-    .line 187
-    .line 188
-    goto :goto_0
-
-    .line 189
-    :cond_2
-    move v0, v5
-
-    .line 190
-    goto :goto_1
-
-    .line 191
-    :sswitch_3
-    const-string v5, "Pixel 4a (5G)"
-
-    .line 192
-    .line 193
-    invoke-virtual {p2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 194
-    .line 195
-    .line 196
-    move-result p2
-
-    .line 197
-    if-nez p2, :cond_3
-
-    .line 198
-    .line 199
-    goto :goto_0
-
-    .line 200
-    :cond_3
-    :goto_1
-    packed-switch v0, :pswitch_data_0
-
-    .line 201
-    .line 202
-    .line 203
-    const-string p2, "tap7cls_flame.tflite"
-
-    .line 204
-    .line 205
-    goto :goto_2
-
-    .line 206
-    :pswitch_0
-    const-string p2, "tap7cls_coral.tflite"
-
-    .line 207
-    .line 208
-    goto :goto_2
-
-    .line 209
-    :pswitch_1
-    const-string p2, "tap7cls_crosshatch.tflite"
-
-    .line 210
-    .line 211
-    goto :goto_2
-
-    .line 212
-    :pswitch_2
-    const-string p2, "tap7cls_redfin.tflite"
-
-    .line 213
-    .line 214
-    goto :goto_2
-
-    .line 215
-    :pswitch_3
-    const-string p2, "tap7cls_bramble.tflite"
-
-    .line 216
-    .line 217
-    :goto_2
     const-string v0, "TapRT loaded "
 
     .line 218
@@ -2437,4 +2266,14 @@
     .line 79
     .line 80
     .line 81
+.end method
+
+.method private getModelFileName(Ljava/lang/String;)Ljava/lang/String;
+    .locals 0
+
+    invoke-static {}, Lorg/pixelexperience/systemui/columbus/ColumbusCompatibilityHelper;->getModelFileName()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
 .end method
