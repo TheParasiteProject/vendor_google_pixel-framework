@@ -2678,7 +2678,7 @@
               android:exported="false"
               android:screenOrientation="portrait" />
     <activity android:name="com.android.settings.biometrics.face.FaceEnrollFinish"
-              android:exported="false"
+              android:exported="true"
               android:screenOrientation="portrait" />
     <activity android:name="com.android.settings.biometrics.BiometricHandoffActivity"
               android:exported="false" />
