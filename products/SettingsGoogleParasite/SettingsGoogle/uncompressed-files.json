@@ -93,6 +93,7 @@
     "META-INF/services/kotlinx.coroutines.internal.MainDispatcherFactory",
     "classes.dex",
     "classes2.dex",
+    "classes3.dex",
     "res/drawable-hdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png",
     "res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png",
     "res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_015.png",

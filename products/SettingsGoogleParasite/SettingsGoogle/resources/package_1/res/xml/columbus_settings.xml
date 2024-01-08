@@ -9,9 +9,10 @@
                       android:key="columbus_action_category"
                       settings:controller="com.google.android.settings.gestures.columbus.ColumbusActionsPreferenceController" />
   <PreferenceCategory android:title="@string/columbus_setting_additional_settings_title"
-                      android:key="columbus_sensitivity_category">
+                      android:key="columbus_sensitivity_category"
+                      settings:controller="org.pixelexperience.settings.gestures.columbus.ColumbusLowSensitivityCategoryPreferenceController">
     <SwitchPreference android:title="@string/columbus_setting_sensitivity_title"
                       android:key="columbus_low_sensitivity"
-                      settings:controller="com.google.android.settings.gestures.columbus.ColumbusLowSensitivityPreferenceController" />
+                      settings:controller="org.pixelexperience.settings.gestures.columbus.ColumbusLowSensitivityPreferenceController" />
   </PreferenceCategory>
 </PreferenceScreen>
