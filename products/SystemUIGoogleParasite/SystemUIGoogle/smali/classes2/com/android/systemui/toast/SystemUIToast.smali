@@ -82,6 +82,8 @@
     .line 34
     const/4 v4, 0x0
 
+    const/4 v5, 0x1
+
     .line 37
     if-eqz v13, :cond_0
 
@@ -139,6 +141,8 @@
 
     .line 73
     invoke-virtual {v13, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v13, v5}, Landroid/widget/TextView;->setSelected(Z)V
 
     .line 75
     :try_start_0
