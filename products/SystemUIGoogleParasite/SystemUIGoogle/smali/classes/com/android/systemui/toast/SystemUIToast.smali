@@ -81,6 +81,8 @@
     .line 27
     move-result v7
 
+    const/4 v8, 0x1
+
     .line 28
     const/4 v9, 0x0
 
@@ -169,6 +171,8 @@
     .line 70
     .line 71
     invoke-virtual {v7, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    invoke-virtual {v7, v8}, Landroid/widget/TextView;->setSelected(Z)V
 
     .line 72
     .line 73
