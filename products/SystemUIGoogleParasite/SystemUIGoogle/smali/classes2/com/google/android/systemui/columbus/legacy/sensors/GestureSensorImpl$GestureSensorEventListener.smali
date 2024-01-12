@@ -565,47 +565,6 @@
     .line 161
     invoke-virtual {v9}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 162
-    .line 163
-    .line 164
-    iget-object v2, v2, Lcom/google/android/systemui/columbus/legacy/sensors/Sample3C;->mPoint:Lcom/google/android/systemui/columbus/legacy/sensors/Point3f;
-
-    .line 165
-    .line 166
-    iget v3, v2, Lcom/google/android/systemui/columbus/legacy/sensors/Point3f;->x:F
-
-    .line 167
-    .line 168
-    iget-object v4, v9, Lcom/google/android/systemui/columbus/legacy/sensors/Slope3C;->mSlopeX:Lcom/google/android/systemui/columbus/legacy/sensors/Slope1C;
-
-    .line 169
-    .line 170
-    iput v3, v4, Lcom/google/android/systemui/columbus/legacy/sensors/Slope1C;->mRawLastX:F
-
-    .line 171
-    .line 172
-    iget v3, v2, Lcom/google/android/systemui/columbus/legacy/sensors/Point3f;->y:F
-
-    .line 173
-    .line 174
-    iget-object v4, v9, Lcom/google/android/systemui/columbus/legacy/sensors/Slope3C;->mSlopeY:Lcom/google/android/systemui/columbus/legacy/sensors/Slope1C;
-
-    .line 175
-    .line 176
-    iput v3, v4, Lcom/google/android/systemui/columbus/legacy/sensors/Slope1C;->mRawLastX:F
-
-    .line 177
-    .line 178
-    iget v2, v2, Lcom/google/android/systemui/columbus/legacy/sensors/Point3f;->z:F
-
-    .line 179
-    .line 180
-    iget-object v3, v9, Lcom/google/android/systemui/columbus/legacy/sensors/Slope3C;->mSlopeZ:Lcom/google/android/systemui/columbus/legacy/sensors/Slope1C;
-
-    .line 181
-    .line 182
-    iput v2, v3, Lcom/google/android/systemui/columbus/legacy/sensors/Slope1C;->mRawLastX:F
-
     .line 183
     .line 184
     invoke-virtual {v15}, Lcom/google/android/systemui/columbus/legacy/sensors/Resample3C;->getResults()Lcom/google/android/systemui/columbus/legacy/sensors/Sample3C;
@@ -617,47 +576,6 @@
 
     .line 188
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 189
-    .line 190
-    .line 191
-    iget-object v2, v2, Lcom/google/android/systemui/columbus/legacy/sensors/Sample3C;->mPoint:Lcom/google/android/systemui/columbus/legacy/sensors/Point3f;
-
-    .line 192
-    .line 193
-    iget v3, v2, Lcom/google/android/systemui/columbus/legacy/sensors/Point3f;->x:F
-
-    .line 194
-    .line 195
-    iget-object v4, v1, Lcom/google/android/systemui/columbus/legacy/sensors/Slope3C;->mSlopeX:Lcom/google/android/systemui/columbus/legacy/sensors/Slope1C;
-
-    .line 196
-    .line 197
-    iput v3, v4, Lcom/google/android/systemui/columbus/legacy/sensors/Slope1C;->mRawLastX:F
-
-    .line 198
-    .line 199
-    iget v3, v2, Lcom/google/android/systemui/columbus/legacy/sensors/Point3f;->y:F
-
-    .line 200
-    .line 201
-    iget-object v4, v1, Lcom/google/android/systemui/columbus/legacy/sensors/Slope3C;->mSlopeY:Lcom/google/android/systemui/columbus/legacy/sensors/Slope1C;
-
-    .line 202
-    .line 203
-    iput v3, v4, Lcom/google/android/systemui/columbus/legacy/sensors/Slope1C;->mRawLastX:F
-
-    .line 204
-    .line 205
-    iget v2, v2, Lcom/google/android/systemui/columbus/legacy/sensors/Point3f;->z:F
-
-    .line 206
-    .line 207
-    iget-object v1, v1, Lcom/google/android/systemui/columbus/legacy/sensors/Slope3C;->mSlopeZ:Lcom/google/android/systemui/columbus/legacy/sensors/Slope1C;
-
-    .line 208
-    .line 209
-    iput v2, v1, Lcom/google/android/systemui/columbus/legacy/sensors/Slope1C;->mRawLastX:F
 
     .line 210
     .line 211
