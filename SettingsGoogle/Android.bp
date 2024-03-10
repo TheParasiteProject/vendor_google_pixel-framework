@@ -14,7 +14,6 @@ android_library {
     resource_dirs: [
         "res",
     ],
-    manifest: ":Settings_manifest",
 }
 
 android_app {
@@ -39,17 +38,11 @@ android_app {
     overrides: [
         "Settings",
     ],
-    manifest: ":Settings_manifest",
-    additional_manifests: ["AndroidManifest.xml"],
+    manifest: "AndroidManifest.xml",
 }
 
 java_import  {
     name: "SettingsGoogle-lib",
     sdk_version: "current",
     jars: ["libs/SettingsGoogle-lib.jar"],
-}
-
-filegroup {
-    name: "SettingsGoogle_manifest",
-    srcs: ["AndroidManifest.xml"],
 }
