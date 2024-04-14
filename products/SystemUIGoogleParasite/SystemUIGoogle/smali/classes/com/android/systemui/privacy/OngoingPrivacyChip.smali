@@ -598,7 +598,7 @@
     move-result-object v0
 
     .line 39
-    const v1, 0x1010433    # @android:attr/colorPrimary
+    const v1, 0x1010039    # @android:attr/textColorPrimaryInverse
 
     .line 40
     const/4 v2, 0x0

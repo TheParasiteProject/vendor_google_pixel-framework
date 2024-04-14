@@ -291,7 +291,7 @@
   <color name="primary_text_default_material_light">#de000000</color>
   <color name="primary_text_disabled_material_dark">#4dffffff</color>
   <color name="primary_text_disabled_material_light">#39000000</color>
-  <color name="privacy_chip_background">#3ddc84</color>
+  <color name="privacy_chip_background">?android:attr/colorAccent</color>
   <color name="qr_background_color">#b3ffffff</color>
   <color name="qr_corner_line_color">#ffdadce0</color>
   <color name="qr_focused_corner_line_color">#ff1a73e8</color>
