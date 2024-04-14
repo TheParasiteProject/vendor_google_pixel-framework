@@ -23,6 +23,8 @@
 
 .field public mHideMobile:Z
 
+.field public mHideVpn:Z
+
 .field public final mIconController:Lcom/android/systemui/statusbar/phone/StatusBarIconController;
 
 .field public mInitialized:Z
@@ -202,7 +204,7 @@
 .end method
 
 .method public final onTuningChanged(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 2
+    .locals 3
 
     .line 1
     const-string v0, "icon_blacklist"
@@ -254,58 +256,70 @@
     invoke-virtual {p1, v1}, Landroid/util/ArraySet;->contains(Ljava/lang/Object;)Z
 
     .line 31
-    move-result p1
+    move-result v1
 
     .line 34
-    iget-boolean v1, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideAirplane:Z
+    iget-object v2, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mSlotVpn:Ljava/lang/String;
 
     .line 35
-    if-ne p2, v1, :cond_1
+    invoke-virtual {p1, v2}, Landroid/util/ArraySet;->contains(Ljava/lang/Object;)Z
 
     .line 37
-    iget-boolean v1, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideMobile:Z
+    move-result p1
 
-    .line 39
-    if-ne v0, v1, :cond_1
+    .line 40
+    iget-boolean v2, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideAirplane:Z
 
     .line 41
-    iget-boolean v1, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideEthernet:Z
+    if-ne p2, v2, :cond_1
 
     .line 43
-    if-eq p1, v1, :cond_2
+    iget-boolean v2, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideMobile:Z
 
     .line 45
+    if-ne v0, v2, :cond_1
+
+    .line 47
+    iget-boolean v2, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideEthernet:Z
+
+    .line 49
+    if-ne v1, v2, :cond_1
+
+    .line 51
+    iget-boolean v2, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideVpn:Z
+
+    .line 53
+    if-eq p1, v2, :cond_2
+
+    .line 55
     :cond_1
     iput-boolean p2, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideAirplane:Z
 
-    .line 47
+    .line 57
     iput-boolean v0, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideMobile:Z
 
-    .line 49
-    iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideEthernet:Z
-
-    .line 51
-    iget-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mNetworkController:Lcom/android/systemui/statusbar/connectivity/NetworkController;
-
-    .line 53
-    move-object p2, p1
-
-    .line 55
-    check-cast p2, Lcom/android/systemui/statusbar/connectivity/NetworkControllerImpl;
-
-    .line 56
-    invoke-virtual {p2, p0}, Lcom/android/systemui/statusbar/connectivity/NetworkControllerImpl;->removeCallback(Ljava/lang/Object;)V
-
-    .line 58
-    check-cast p1, Lcom/android/systemui/statusbar/connectivity/NetworkControllerImpl;
+    .line 59
+    iput-boolean v1, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideEthernet:Z
 
     .line 61
-    invoke-virtual {p1, p0}, Lcom/android/systemui/statusbar/connectivity/NetworkControllerImpl;->addCallback(Ljava/lang/Object;)V
+    iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mHideVpn:Z
 
     .line 63
+    iget-object p1, p0, Lcom/android/systemui/statusbar/phone/StatusBarSignalPolicy;->mNetworkController:Lcom/android/systemui/statusbar/connectivity/NetworkController;
+
+    .line 65
+    check-cast p1, Lcom/android/systemui/statusbar/connectivity/NetworkControllerImpl;
+
+    .line 67
+    invoke-virtual {p1, p0}, Lcom/android/systemui/statusbar/connectivity/NetworkControllerImpl;->removeCallback(Ljava/lang/Object;)V
+
+    .line 69
+    invoke-virtual {p1, p0}, Lcom/android/systemui/statusbar/connectivity/NetworkControllerImpl;->addCallback(Ljava/lang/Object;)V
+
+    .line 72
     :cond_2
     return-void
-    .line 66
+    .line 75
 .end method
 
 .method public final setEthernetIndicators(Lcom/android/systemui/statusbar/connectivity/IconState;)V

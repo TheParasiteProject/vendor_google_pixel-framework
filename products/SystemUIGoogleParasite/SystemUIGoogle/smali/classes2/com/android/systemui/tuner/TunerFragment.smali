@@ -13,21 +13,30 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 6
 
     .line 1
-    const-string v0, "picture_in_picture"
+    const-string v2, "picture_in_picture"
 
     .line 2
-    const-string v1, "nav_bar"
+    const-string v3, "volume_and_do_not_disturb"
 
     .line 4
-    const-string v2, "lockscreen"
+    const-string v0, "nav_bar"
 
     .line 6
-    filled-new-array {v1, v2, v0}, [Ljava/lang/String;
+    const-string v1, "lockscreen"
 
     .line 8
+    const-string v4, "doze"
+
+    .line 10
+    const-string v5, "plugins"
+
+    .line 12
+    filled-new-array/range {v0 .. v5}, [Ljava/lang/String;
+
+    .line 14
     move-result-object v0
 
     .line 11
@@ -54,35 +63,6 @@
 
 
 # virtual methods
-.method public final onActivityCreated(Landroid/os/Bundle;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
-
-    .line 2
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
-
-    .line 5
-    move-result-object p0
-
-    .line 8
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
-
-    .line 9
-    move-result-object p0
-
-    .line 12
-    const/4 p1, 0x1
-
-    .line 13
-    invoke-virtual {p0, p1}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
-
-    .line 14
-    return-void
-    .line 17
-.end method
-
 .method public final onCreate(Landroid/os/Bundle;)V
     .locals 0
 
@@ -104,6 +84,11 @@
     .locals 1
 
     .line 1
+    sget-boolean p0, Landroid/os/Build;->IS_DEBUGGABLE:Z
+
+    .line 2
+    if-eqz p0, :cond_0
+
     const/4 p0, 0x2
 
     .line 2
@@ -116,6 +101,7 @@
     invoke-interface {p1, v0, p0, v0, p2}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
     .line 7
+    :cond_0
     return-void
     .line 10
 .end method
@@ -226,7 +212,7 @@
 
     .line 70
     :goto_0
-    const/4 v0, 0x3
+    const/4 v0, 0x6
 
     .line 71
     if-ge p1, v0, :cond_3
@@ -264,18 +250,23 @@
 
     .line 93
     :cond_3
-    invoke-virtual {p0}, Landroid/app/Fragment;->getContext()Landroid/content/Context;
+    sget-boolean p1, Landroid/os/Build;->IS_DEBUGGABLE:Z
 
     .line 94
-    move-result-object p1
+    if-eqz p1, :cond_4
 
-    .line 97
-    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Landroid/app/Fragment;->getContext()Landroid/content/Context;
 
     .line 98
     move-result-object p1
 
     .line 101
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    .line 102
+    move-result-object p1
+
+    .line 105
     const-string v0, "seen_tuner_warning"
 
     .line 102
