@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Button android:textSize="12.0sp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:gravity="center|start"
+        android:background="@drawable/action_button_bg"
+        android:clickable="true"
+        android:maxWidth="192.0dp"
+        android:singleLine="true"
+        android:drawablePadding="8.0dp"
+        android:paddingStart="12.0dp"
+        android:paddingEnd="12.0dp"
+        android:drawableTint="?android:attr/textColorPrimary"
+        android:drawableTintMode="src_in"
+        style="?android:attr/borderlessButtonStyle" xmlns:android="http://schemas.android.com/apk/res/android" />

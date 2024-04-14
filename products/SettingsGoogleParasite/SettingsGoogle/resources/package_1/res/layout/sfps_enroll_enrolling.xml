@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.setupdesign.GlifLayout android:id="@id/setup_wizard_layout"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      style="?attr/fingerprint_layout_theme" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:orientation="vertical"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/SudContentFrame">
+    <RelativeLayout android:gravity="center"
+                    android:orientation="vertical"
+                    android:id="@id/progress_lottie"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dp"
+                    android:layout_weight="1.0"
+                    android:translationX="0.0dp">
+      <com.airbnb.lottie.LottieAnimationView android:id="@id/illustration_lottie"
+                            android:visibility="gone"
+                            android:clipChildren="false"
+                            android:clipToPadding="false"
+                            android:layout_width="@dimen/fingerprint_progress_bar_max_size"
+                            android:layout_height="@dimen/fingerprint_progress_bar_max_size"
+                            android:layout_marginRight="@dimen/sfps_lottie_translate_x"
+                            android:layout_marginBottom="@dimen/sfps_lottie_translate_y"
+                            android:scaleType="centerInside"
+                            settings:lottie_autoPlay="true"
+                            settings:lottie_loop="true"
+                            settings:lottie_speed="0.85" />
+      <com.google.android.setupdesign.view.FillContentLayout android:paddingTop="0.0dp"
+                            android:paddingBottom="0.0dp"
+                            android:layout_width="@dimen/fingerprint_progress_bar_max_size"
+                            android:layout_height="@dimen/fingerprint_progress_bar_max_size">
+        <com.android.settings.widget.RingProgressBar android:layout_gravity="center"
+                              android:id="@id/fingerprint_progress_bar"
+                              android:layout_width="fill_parent"
+                              android:layout_height="fill_parent"
+                              android:layout_marginLeft="@dimen/sfps_progress_bar_translate_x"
+                              android:layout_marginTop="@dimen/sfps_progress_bar_translate_y"
+                              android:progress="0"
+                              android:minHeight="@dimen/fingerprint_progress_bar_min_size"
+                              android:progressBackgroundTint="@color/sfps_enrollment_progress_bar_bg_color" />
+      </com.google.android.setupdesign.view.FillContentLayout>
+      <TextView android:gravity="center"
+                android:layout_gravity="bottom|center"
+                android:id="@id/error_text"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:accessibilityLiveRegion="polite"
+                style="@style/TextAppearance.ErrorText" />
+    </RelativeLayout>
+  </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

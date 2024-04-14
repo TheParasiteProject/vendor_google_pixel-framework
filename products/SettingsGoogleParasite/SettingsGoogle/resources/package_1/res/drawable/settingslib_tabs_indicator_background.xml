@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<inset android:insetLeft="4.0dp"
+       android:insetRight="4.0dp"
+       android:insetTop="6.0dp"
+       android:insetBottom="6.0dp" xmlns:android="http://schemas.android.com/apk/res/android">
+  <shape android:shape="rectangle">
+    <solid android:color="@color/settingslib_tabs_indicator_color" />
+    <corners android:radius="12.0dp" />
+  </shape>
+</inset>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.LayoutPreference android:layout="@layout/settings_entity_header"
+                        android:selectable="false"
+                        android:key="header_view" />
+  <com.android.settingslib.widget.ActionButtonsPreference android:key="action_buttons" />
+  <PreferenceCategory android:key="battery_usage_time_category"
+                      settings:controller="com.android.settings.fuelgauge.PowerUsageTimeController"
+                      settings:isPreferenceVisible="false"
+                      settings:selectable="false">
+    <com.android.settings.fuelgauge.PowerUsageTimePreference android:key="battery_usage_screen_time"
+                          settings:isPreferenceVisible="false"
+                          settings:selectable="false" />
+    <com.android.settings.fuelgauge.PowerUsageTimePreference android:key="battery_usage_background_time"
+                          settings:isPreferenceVisible="false"
+                          settings:selectable="false" />
+  </PreferenceCategory>
+  <PreferenceCategory android:title="@string/manager_battery_usage_category_title"
+                      android:key="manage_battery_usage_category">
+    <com.android.settingslib.PrimarySwitchPreference android:title="@string/manager_battery_usage_allow_background_usage_title"
+                          android:key="allow_background_usage"
+                          settings:controller="com.android.settings.fuelgauge.AllowBackgroundPreferenceController" />
+  </PreferenceCategory>
+</PreferenceScreen>

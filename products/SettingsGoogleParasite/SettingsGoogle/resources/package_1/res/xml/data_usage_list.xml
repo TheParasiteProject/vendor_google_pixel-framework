@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <PreferenceCategory android:title="@string/summary_placeholder"
+                      android:key="usage_amount">
+    <com.android.settings.datausage.ChartDataUsagePreference android:key="chart_data"
+                          settings:controller="com.android.settings.datausage.ChartDataUsagePreferenceController" />
+    <Preference android:selectable="false"
+                android:key="non_carrier_data_usage_warning"
+                android:summary="@string/non_carrier_data_usage_warning" />
+  </PreferenceCategory>
+  <PreferenceCategory android:layout="@layout/preference_category_no_label"
+                      android:key="apps_group"
+                      settings:controller="com.android.settings.datausage.DataUsageListAppsController" />
+</PreferenceScreen>

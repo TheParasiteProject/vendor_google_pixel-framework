@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/media_management_apps_title" xmlns:android="http://schemas.android.com/apk/res/android">
+  <com.android.settings.widget.FilterTouchesSwitchPreference android:title="@string/media_management_apps_toggle_label"
+                        android:key="media_management_apps_toggle" />
+  <com.android.settingslib.widget.FooterPreference android:title="@string/media_management_apps_description"
+                        android:selectable="false"
+                        android:key="media_management_apps_description" />
+</PreferenceScreen>

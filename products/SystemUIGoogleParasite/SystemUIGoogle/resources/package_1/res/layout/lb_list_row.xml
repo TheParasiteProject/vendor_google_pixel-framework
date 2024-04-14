@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.leanback.widget.HorizontalGridView android:id="@id/row_content"
+                      android:clipToPadding="false"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      systemui:r0x7f0404ea="-2"
+                      style="?attr/rowHorizontalGridStyle" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto" />

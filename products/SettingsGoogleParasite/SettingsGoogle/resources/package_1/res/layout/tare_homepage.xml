@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+  <Switch android:id="@id/on_switch"
+          android:background="?android:attr/colorBackground"
+          android:padding="20.0dp"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textOn="@string/tare_on"
+          android:textOff="@string/tare_off"
+          android:showText="true" />
+  <TextView android:textColor="?android:attr/textColorSecondary"
+            android:id="@id/alarmmanager"
+            android:padding="20.0dp"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tare_alarmmanager"
+            android:onClick="launchAlarmManagerPage" />
+  <TextView android:textColor="?android:attr/textColorSecondary"
+            android:id="@id/jobscheduler"
+            android:padding="20.0dp"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tare_jobscheduler"
+            android:onClick="launchJobSchedulerPage" />
+  <View android:id="@id/divider"
+        android:background="?android:attr/listDivider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dp" />
+  <Button android:id="@id/revert_button"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="20.0dp"
+          android:text="@string/tare_revert"
+          android:onClick="revertSettings"
+          style="@style/ActionPrimaryButton" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:gravity="center|start"
+              android:orientation="horizontal"
+              android:background="@drawable/battery_hints_chip_bg_ripple"
+              android:padding="8.0dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+  <ImageView android:layout_width="16.0dp"
+             android:layout_height="16.0dp"
+             android:src="@drawable/ic_battery_tips_warning_icon"
+             android:contentDescription="@string/battery_hints_warning_icon_a11y" />
+  <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+            android:textColor="?android:^attr-private/materialColorOnTertiary"
+            android:id="@id/warning_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:paddingHorizontal="8.0dp" />
+</LinearLayout>

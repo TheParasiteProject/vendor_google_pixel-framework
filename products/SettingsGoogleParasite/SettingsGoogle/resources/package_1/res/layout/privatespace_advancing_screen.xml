@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.setupdesign.GlifLayout android:icon="@drawable/ic_privatespace_icon"
+                      android:id="@id/private_space_autoadvance_screen"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/SudContentFrame">
+    <ImageView android:id="@id/placeholder_image"
+               android:layout_width="fill_parent"
+               android:layout_height="0.0dp"
+               android:src="@drawable/privatespace_setup_flow_placeholder"
+               android:layout_weight="1.0"
+               android:contentDescription="@null" />
+    <TextView android:textSize="14.0sp"
+              android:id="@id/createMessage"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="24.0dp"
+              android:text="@string/private_space_setting_up_text"
+              style="@style/PrivateSpaceSetupTextFontStyle" />
+  </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

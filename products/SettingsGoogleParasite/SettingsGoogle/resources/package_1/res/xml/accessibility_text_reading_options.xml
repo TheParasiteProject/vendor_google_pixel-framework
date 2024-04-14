@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:persistent="false"
+                  android:title="@string/accessibility_text_reading_options_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settings.accessibility.TextReadingPreviewPreference android:selectable="false"
+                        android:key="preview" />
+  <com.android.settings.widget.LabeledSeekBarPreference android:title="@string/title_font_size"
+                        android:key="font_size"
+                        android:summary="@string/short_summary_font_size"
+                        settings:iconEnd="@drawable/ic_add_24dp"
+                        settings:iconEndContentDescription="@string/font_size_make_larger_desc"
+                        settings:iconStart="@drawable/ic_remove_24dp"
+                        settings:iconStartContentDescription="@string/font_size_make_smaller_desc"
+                        settings:keywords="@string/keywords_font_size" />
+  <com.android.settings.widget.LabeledSeekBarPreference android:title="@string/screen_zoom_title"
+                        android:key="display_size"
+                        android:summary="@string/screen_zoom_short_summary"
+                        settings:iconEnd="@drawable/ic_add_24dp"
+                        settings:iconEndContentDescription="@string/screen_zoom_make_larger_desc"
+                        settings:iconStart="@drawable/ic_remove_24dp"
+                        settings:iconStartContentDescription="@string/screen_zoom_make_smaller_desc"
+                        settings:keywords="@string/keywords_display_size" />
+  <SwitchPreferenceCompat android:persistent="false"
+                        android:title="@string/force_bold_text"
+                        android:key="toggle_force_bold_text"
+                        settings:controller="com.android.settings.accessibility.FontWeightAdjustmentPreferenceController"
+                        settings:keywords="@string/keywords_bold_text" />
+  <SwitchPreferenceCompat android:persistent="false"
+                        android:title="@string/accessibility_toggle_high_text_contrast_preference_title"
+                        android:key="toggle_high_text_contrast_preference"
+                        android:summary="@string/accessibility_toggle_high_text_contrast_preference_summary"
+                        settings:controller="com.android.settings.accessibility.HighTextContrastPreferenceController" />
+  <com.android.settings.accessibility.TextReadingResetPreference android:persistent="false"
+                        android:selectable="false"
+                        android:key="reset" />
+</PreferenceScreen>

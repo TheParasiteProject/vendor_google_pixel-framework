@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/wifi_configure_settings_preference_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <SwitchPreferenceCompat android:icon="@drawable/ic_auto_wifi"
+                        android:title="@string/wifi_wakeup"
+                        android:key="enable_wifi_wakeup"
+                        android:summary="@string/wifi_wakeup_summary"
+                        settings:controller="com.android.settings.wifi.WifiWakeupPreferenceController" />
+  <SwitchPreferenceCompat android:icon="@drawable/ic_open_wifi_notifications"
+                        android:title="@string/wifi_notify_open_networks"
+                        android:key="notify_open_networks"
+                        android:summary="@string/wifi_notify_open_networks_summary"
+                        settings:controller="com.android.settings.wifi.NotifyOpenNetworksPreferenceController"
+                        settings:keywords="@string/keywords_wifi_notify_open_networks" />
+  <SwitchPreferenceCompat android:title="@string/wifi_cellular_data_fallback_title"
+                        android:key="wifi_cellular_data_fallback"
+                        android:summary="@string/wifi_cellular_data_fallback_summary"
+                        settings:controller="com.android.settings.wifi.CellularFallbackPreferenceController" />
+  <Preference android:title="@string/wifi_install_credentials"
+              android:key="install_credentials" />
+  <Preference android:title="@string/wifi_menu_p2p"
+              android:key="wifi_direct"
+              android:fragment="com.android.settings.wifi.p2p.WifiP2pSettings" />
+</PreferenceScreen>

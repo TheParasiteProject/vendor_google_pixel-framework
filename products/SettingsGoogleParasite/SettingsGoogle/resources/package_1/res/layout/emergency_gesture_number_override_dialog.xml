@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<ScrollView android:layout_width="fill_parent"
+            android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="24.0dp"
+                android:paddingVertical="8.0dp">
+    <EditText android:id="@id/emergency_gesture_number_override"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:minHeight="@dimen/min_tap_target_size"
+              android:inputType="numberSigned"
+              android:imeOptions="actionDone" />
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="16.0dp">
+      <ImageView android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_info_outline_24"
+                 android:importantForAccessibility="no"
+                 android:paddingEnd="16.0dp" />
+      <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/emergency_gesture_number_override_notes" />
+    </LinearLayout>
+  </LinearLayout>
+</ScrollView>

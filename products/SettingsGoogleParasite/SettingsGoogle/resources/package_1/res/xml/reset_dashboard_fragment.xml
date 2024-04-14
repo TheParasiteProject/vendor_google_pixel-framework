@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/reset_dashboard_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.RestrictedPreference android:title="@string/reset_mobile_network_settings_title"
+                        android:key="network_reset_mobile_network_settings_pref"
+                        android:fragment="com.android.settings.ResetNetwork"
+                        settings:isPreferenceVisible="@bool/config_show_sim_info"
+                        settings:useAdminDisabledSummary="true"
+                        settings:userRestriction="no_network_reset" />
+  <com.android.settings.spa.preference.ComposePreference android:title="@string/reset_bluetooth_wifi_title"
+                        android:key="network_reset_bluetooth_wifi_pref"
+                        settings:controller="com.android.settings.network.BluetoothWiFiResetPreferenceController" />
+  <com.android.settingslib.RestrictedPreference android:title="@string/reset_app_preferences"
+                        android:key="reset_app_prefs"
+                        settings:userRestriction="no_control_apps" />
+  <Preference android:title="@string/reset_esim_title"
+              android:key="erase_euicc_data"
+              settings:controller="com.android.settings.network.EraseEuiccDataController"
+              settings:isPreferenceVisible="@bool/config_show_sim_info" />
+  <com.android.settingslib.RestrictedPreference android:title="@string/main_clear_title"
+                        android:key="factory_reset"
+                        android:fragment="com.android.settings.MainClear"
+                        settings:controller="com.android.settings.system.FactoryResetPreferenceController"
+                        settings:keywords="@string/keywords_factory_data_reset"
+                        settings:useAdminDisabledSummary="true"
+                        settings:userRestriction="no_factory_reset" />
+  <Preference android:title="@string/main_clear_title"
+              android:key="factory_reset_demo_user"
+              android:fragment="com.android.settings.MainClear"
+              settings:controller="com.android.settings.system.FactoryResetDemoUserPreferenceController"
+              settings:keywords="@string/keywords_factory_data_reset" />
+</PreferenceScreen>

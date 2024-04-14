@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/memtag_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.TopIntroPreference android:title="@string/memtag_intro"
+                        settings:searchable="false" />
+  <com.android.settingslib.RestrictedSwitchPreference android:id="@id/memtag_page_switch"
+                        android:title="@string/memtag_toggle"
+                        android:key="memtag"
+                        settings:controller="com.android.settings.security.MemtagPreferenceController" />
+  <com.android.settingslib.widget.FooterPreference android:title="@string/memtag_footer"
+                        android:key="memtag_footer"
+                        settings:controller="com.android.settings.security.MemtagFooterPreferenceController"
+                        settings:searchable="false" />
+</PreferenceScreen>

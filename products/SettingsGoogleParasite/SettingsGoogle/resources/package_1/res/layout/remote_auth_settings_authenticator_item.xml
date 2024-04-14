@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/authenticator_item_layout"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:minHeight="@dimen/remoteauth_touchable_area_minimum_span"
+                      android:layout_marginVertical="@dimen/remoteauth_device_vertical_margin" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <ImageView android:id="@id/device_icon"
+             android:background="@drawable/ic_watch_24dp"
+             android:layout_width="@dimen/remoteauth_icon_small_size"
+             android:layout_height="@dimen/remoteauth_icon_small_size"
+             settings:layout_constraintBottom_toBottomOf="parent"
+             settings:layout_constraintStart_toStartOf="parent"
+             settings:layout_constraintTop_toTopOf="parent" />
+  <TextView android:ellipsize="end"
+            android:id="@id/authenticator_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginHorizontal="@dimen/remoteauth_settings_device_horizontal_margin"
+            settings:layout_constrainedWidth="true"
+            settings:layout_constraintBottom_toBottomOf="parent"
+            settings:layout_constraintEnd_toStartOf="@id/barrier"
+            settings:layout_constraintHorizontal_bias="0.0"
+            settings:layout_constraintStart_toEndOf="@id/device_icon"
+            settings:layout_constraintTop_toTopOf="parent" />
+  <ImageView android:id="@id/remove_icon"
+             android:background="@drawable/ic_delete"
+             android:layout_width="@dimen/remoteauth_icon_small_size"
+             android:layout_height="@dimen/remoteauth_icon_small_size"
+             android:tint="?android:attr/colorPrimary"
+             android:contentDescription="@string/security_settings_remoteauth_settings_remove_device"
+             settings:layout_constraintBottom_toBottomOf="parent"
+             settings:layout_constraintEnd_toEndOf="parent"
+             settings:layout_constraintTop_toTopOf="parent" />
+  <androidx.constraintlayout.widget.Barrier android:id="@id/barrier"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        settings:barrierDirection="start"
+                        settings:constraint_referenced_ids="remove_icon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

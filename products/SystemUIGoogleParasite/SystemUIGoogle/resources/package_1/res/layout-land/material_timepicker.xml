@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<merge android:id="@id/material_timepicker_container"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+  <androidx.constraintlayout.widget.Guideline android:orientation="horizontal"
+                        android:id="@id/guideline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        systemui:r0x7f04033e="16.0dp" />
+  <include android:id="@id/material_clock_display"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="4.0dp"
+           systemui:r0x7f040337="@id/material_clock_period_toggle"
+           systemui:r0x7f04034a="0"
+           systemui:r0x7f040354="@id/guideline"
+           systemui:r0x7f040356="2"
+           layout="@layout/material_clock_display" />
+  <include android:id="@id/material_clock_period_toggle"
+           android:layout_width="0.0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="12.0dp"
+           systemui:r0x7f040336="0"
+           systemui:r0x7f04034a="@id/material_clock_display"
+           systemui:r0x7f04034e="@id/material_clock_display"
+           systemui:r0x7f040353="@id/material_clock_display"
+           systemui:r0x7f040356="2"
+           layout="@layout/material_clock_period_toggle_land" />
+  <com.google.android.material.timepicker.ClockFaceView android:id="@id/material_clock_face"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/clock_face_margin_start"
+                        systemui:r0x7f04034f="@id/material_clock_display"
+                        systemui:r0x7f040354="0" />
+</merge>

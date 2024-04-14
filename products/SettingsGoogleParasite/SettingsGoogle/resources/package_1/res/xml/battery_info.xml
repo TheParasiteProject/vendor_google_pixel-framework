@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/battery_info"
+                  settings:keywords="@string/keywords_battery_info" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <Preference android:title="@string/battery_manufacture_date"
+              android:key="battery_info_manufacture_date"
+              android:summary="@string/summary_placeholder"
+              settings:controller="com.android.settings.deviceinfo.batteryinfo.BatteryManufactureDatePreferenceController"
+              settings:enableCopying="true" />
+  <Preference android:title="@string/battery_first_use_date"
+              android:key="battery_info_first_use_date"
+              android:summary="@string/summary_placeholder"
+              settings:controller="com.android.settings.deviceinfo.batteryinfo.BatteryFirstUseDatePreferenceController"
+              settings:enableCopying="true" />
+  <Preference android:title="@string/battery_cycle_count"
+              android:key="battery_info_cycle_count"
+              android:summary="@string/summary_placeholder"
+              settings:controller="com.android.settings.deviceinfo.batteryinfo.BatteryCycleCountPreferenceController"
+              settings:enableCopying="true" />
+  <com.android.settingslib.widget.FooterPreference android:title="@string/battery_cycle_count_footer"
+                        android:selectable="false"
+                        android:key="battery_info_footer"
+                        settings:searchable="false" />
+</PreferenceScreen>

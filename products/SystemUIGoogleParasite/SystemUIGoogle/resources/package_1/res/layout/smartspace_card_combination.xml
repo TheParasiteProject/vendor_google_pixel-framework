@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.systemui.smartspace.BcSmartspaceCardCombination android:layout_width="wrap_content"
+                      android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+  <include android:id="@id/first_sub_card"
+           android:layout_width="0.0dp"
+           android:layout_height="fill_parent"
+           systemui:r0x7f040336="0"
+           systemui:layout_constraintDimensionRatio="1:1"
+           systemui:r0x7f040350="0"
+           systemui:r0x7f040354="0"
+           layout="@layout/smartspace_combination_sub_card" />
+  <include android:id="@id/second_sub_card"
+           android:visibility="gone"
+           android:layout_width="0.0dp"
+           android:layout_height="fill_parent"
+           android:layout_marginStart="8.0dp"
+           systemui:r0x7f040336="0"
+           systemui:layout_constraintDimensionRatio="1:1"
+           systemui:r0x7f04034f="@id/first_sub_card"
+           systemui:r0x7f040354="0"
+           layout="@layout/smartspace_combination_sub_card" />
+</com.google.android.systemui.smartspace.BcSmartspaceCardCombination>

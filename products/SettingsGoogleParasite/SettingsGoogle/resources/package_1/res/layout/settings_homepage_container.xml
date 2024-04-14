@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/settings_homepage_container"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <androidx.core.widget.NestedScrollView android:id="@id/main_content_scrollable_container"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        settings:layout_behavior="com.android.settings.widget.HomepageAppBarScrollingViewBehavior">
+    <LinearLayout android:orientation="vertical"
+                  android:id="@id/homepage_container"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+      <include android:id="@id/suggestion_container_two_pane"
+               android:visibility="gone"
+               layout="@layout/suggestion_container_two_pane" />
+      <FrameLayout android:id="@id/contextual_cards_content"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/contextual_card_side_margin"
+                   android:layout_marginEnd="@dimen/contextual_card_side_margin" />
+      <FrameLayout android:id="@id/main_content"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:animateLayoutChanges="true" />
+    </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+  <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:touchscreenBlocksFocus="false"
+                        android:keyboardNavigationCluster="false">
+    <LinearLayout android:orientation="vertical"
+                  android:id="@id/app_bar_container"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  settings:layout_scrollFlags="exitUntilCollapsed|scroll">
+      <include android:id="@id/homepage_app_bar_regular_phone_view"
+               layout="@layout/settings_homepage_app_bar_regular_phone_layout" />
+      <include android:id="@id/homepage_app_bar_two_pane_view"
+               android:visibility="gone"
+               layout="@layout/settings_homepage_app_bar_two_pane_layout" />
+    </LinearLayout>
+  </com.google.android.material.appbar.AppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

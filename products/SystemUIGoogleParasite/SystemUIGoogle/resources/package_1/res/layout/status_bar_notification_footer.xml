@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.android.systemui.statusbar.notification.footer.ui.view.FooterView android:visibility="gone"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+  <com.android.systemui.statusbar.AlphaOptimizedFrameLayout android:id="@id/content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+    <TextView android:textAppearance="?android:attr/textAppearanceButton"
+              android:gravity="center"
+              android:layout_gravity="center_horizontal"
+              android:id="@id/unlock_prompt_footer"
+              android:visibility="gone"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="12.0dp"
+              android:text="@string/unlock_to_see_notif_text"
+              android:drawablePadding="8.0dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent"
+                          android:layout_height="wrap_content">
+      <com.android.systemui.statusbar.notification.row.FooterViewButton android:id="@id/manage_text"
+                            android:background="@drawable/notif_footer_btn_background"
+                            android:focusable="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48.0dp"
+                            android:layout_marginTop="12.0dp"
+                            android:text="@string/manage_notifications_history_text"
+                            android:contentDescription="@string/manage_notifications_history_text"
+                            android:layout_marginStart="16.0dp"
+                            systemui:r0x7f04033d="@id/dismiss_text"
+                            systemui:r0x7f040346="0.0"
+                            systemui:r0x7f040347="1"
+                            systemui:r0x7f040350="0"
+                            systemui:r0x7f040354="0"
+                            style="@style/TextAppearance.NotificationFooterButton" />
+      <com.android.systemui.statusbar.notification.row.FooterViewButton android:id="@id/dismiss_text"
+                            android:background="@drawable/notif_footer_btn_background"
+                            android:focusable="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48.0dp"
+                            android:layout_marginTop="12.0dp"
+                            android:text="@string/clear_all_notifications_text"
+                            android:contentDescription="@string/accessibility_clear_all"
+                            android:layout_marginEnd="16.0dp"
+                            systemui:r0x7f04033c="0"
+                            systemui:r0x7f04034f="@id/manage_text"
+                            systemui:r0x7f040354="0"
+                            style="@style/TextAppearance.NotificationFooterButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </com.android.systemui.statusbar.AlphaOptimizedFrameLayout>
+</com.android.systemui.statusbar.notification.footer.ui.view.FooterView>

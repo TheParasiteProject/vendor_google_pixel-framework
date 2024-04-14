@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/systemui/shared/FeatureFlagsImpl;->exampleSharedFlag()Z,out/soong/.intermediates/frameworks/libs/systemui/aconfig/com_android_systemui_shared_flags_lib/android_common/javac/srcjars/com/android/systemui/shared/FeatureFlagsImpl.java,10,5,10,25,
+Lcom/android/systemui/shared/FeatureFlagsImpl;->sidefpsControllerRefactor()Z,out/soong/.intermediates/frameworks/libs/systemui/aconfig/com_android_systemui_shared_flags_lib/android_common/javac/srcjars/com/android/systemui/shared/FeatureFlagsImpl.java,19,5,19,25,

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:fillViewport="true"
+                      android:importantForAccessibility="noHideDescendants" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium"
+              android:textSize="14.0sp"
+              android:textColor="?android:attr/textColorPrimary"
+              android:id="@id/subject"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/accessibility_text_reading_preview_mail_subject" />
+    <TextView android:textSize="12.0sp"
+              android:textColor="?android:attr/textColorSecondary"
+              android:id="@id/from"
+              android:paddingTop="11.0dp"
+              android:paddingBottom="16.0dp"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/accessibility_text_reading_preview_mail_from" />
+    <TextView android:textSize="13.0sp"
+              android:textColor="?android:attr/textColorPrimary"
+              android:id="@id/content"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/accessibility_text_reading_preview_mail_content" />
+  </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.android.settings.display.AppGridView android:gravity="center"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:numColumns="3"
+                      android:importantForAccessibility="noHideDescendants"
+                      android:nestedScrollingEnabled="true"
+                      settings:appCount="6" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" />

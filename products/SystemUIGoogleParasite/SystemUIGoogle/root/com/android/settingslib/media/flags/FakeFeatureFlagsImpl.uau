@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/settingslib/media/flags/FakeFeatureFlagsImpl;->enableOutputSwitcherForSystemRouting()Z,out/soong/.intermediates/frameworks/base/packages/SettingsLib/settingslib_flags_lib/android_common/javac/srcjars/com/android/settingslib/media/flags/FakeFeatureFlagsImpl.java,17,5,17,25,
+Lcom/android/settingslib/media/flags/FakeFeatureFlagsImpl;->enableTvMediaOutputDialog()Z,out/soong/.intermediates/frameworks/base/packages/SettingsLib/settingslib_flags_lib/android_common/javac/srcjars/com/android/settingslib/media/flags/FakeFeatureFlagsImpl.java,25,5,25,25,
+Lcom/android/settingslib/media/flags/FakeFeatureFlagsImpl;->useMediaRouter2ForInfoMediaManager()Z,out/soong/.intermediates/frameworks/base/packages/SettingsLib/settingslib_flags_lib/android_common/javac/srcjars/com/android/settingslib/media/flags/FakeFeatureFlagsImpl.java,33,5,33,25,

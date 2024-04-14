@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.setupdesign.GlifLayout android:id="@id/setup_wizard_layout"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      style="?attr/fingerprint_layout_theme" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:orientation="vertical"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+    <Space android:layout_width="wrap_content"
+           android:layout_height="0.0dp"
+           android:layout_weight="1.0" />
+    <include android:layout_gravity="center_horizontal"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             layout="@layout/fingerprint_enroll_find_sensor_graphic" />
+  </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

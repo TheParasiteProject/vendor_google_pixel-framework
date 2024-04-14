@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">%d நா முன்பு</item>
+    <item quantity="other">%d நா முன்பு</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">%d நிமி முன்பு</item>
+    <item quantity="other">%d நிமி முன்பு</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">%d ஆண்டுக்கு முன்</item>
+    <item quantity="other">%d ஆண்டுக்கு முன்</item>
+  </plurals>
+  <plurals name="lockscreen_quick_affordances_summary">
+    <item quantity="one">%1$s</item>
+    <item quantity="other">%1$s, %2$s</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d புதிய அறிவிப்பு</item>
+    <item quantity="other">%d புதிய அறிவிப்புகள்</item>
+  </plurals>
+  <plurals name="security_settings_hub_show_warnings_preference">
+    <item quantity="one">%1$d எச்சரிக்கையைக் காட்டு</item>
+    <item quantity="other">அனைத்து எச்சரிக்கைகளையும் (%1$d) காட்டு</item>
+  </plurals>
+  <plurals name="security_settings_hub_warnings_title">
+    <item quantity="one">%1$d எச்சரிக்கை</item>
+    <item quantity="other">%1$d எச்சரிக்கைகள்</item>
+  </plurals>
+</resources>

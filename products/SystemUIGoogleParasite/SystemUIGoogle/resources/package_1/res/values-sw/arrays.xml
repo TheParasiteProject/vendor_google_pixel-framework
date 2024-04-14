@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <string-array name="battery_options">
+    <item>Onyesha asilimia kila wakati</item>
+    <item>Onyesha asilimia wakati inachaji (chaguomsingi)</item>
+    <item>Usionyeshe aikoni hii</item>
+  </string-array>
+  <string-array name="clock_options">
+    <item>Onyesha saa, dakika na sekunde</item>
+    <item>Onyesha saa na dakika (chaguomsingi)</item>
+    <item>Usionyeshe aikoni hii</item>
+  </string-array>
+  <string-array name="nav_bar_buttons">
+    <item>Ubao wa kunakili</item>
+    <item>Msimbo wa ufunguo</item>
+    <item>Thibitisha ugeuzaji, kibadilishaji cha kibodi</item>
+    <item>Hamna</item>
+  </string-array>
+  <string-array name="nav_bar_layouts">
+    <item>Ya Kawaida</item>
+    <item>Kushikamana</item>
+    <item>Inayoegemea kushoto</item>
+    <item>Inayoegemea kulia</item>
+  </string-array>
+  <string-array name="qs_record_issue_types">
+    <item>Utendaji</item>
+    <item>Kiolesura cha Mtumiaji</item>
+    <item>Betri</item>
+  </string-array>
+  <string-array name="tile_states_airplane">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_alarm">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_battery">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_bt">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_cameratoggle">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_cast">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_cell">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_color_correction">
+    <item>Haupatikani</item>
+    <item>Umezimwa</item>
+    <item>Umewashwa</item>
+  </string-array>
+  <string-array name="tile_states_controls">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_dark">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_dnd">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_dream">
+    <item>Haipatikani</item>
+    <item>Imezimwa</item>
+    <item>Imewashwa</item>
+  </string-array>
+  <string-array name="tile_states_flashlight">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_font_scaling">
+    <item>Haipatikani</item>
+    <item>Umezima</item>
+    <item>Umewasha</item>
+  </string-array>
+  <string-array name="tile_states_hotspot">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_internet">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_inversion">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_location">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_mictoggle">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Imewashwa</item>
+  </string-array>
+  <string-array name="tile_states_night">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_onehanded">
+    <item>Haipatikani</item>
+    <item>Imezimwa</item>
+    <item>Imewashwa</item>
+  </string-array>
+  <string-array name="tile_states_qr_code_scanner">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_reduce_brightness">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_reverse">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_rotation">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_saver">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_screenrecord">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_wallet">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_wifi">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="tile_states_work">
+    <item>Hakipatikani</item>
+    <item>Kimezimwa</item>
+    <item>Kimewashwa</item>
+  </string-array>
+  <string-array name="wifitrackerlib_wifi_status">
+    <item></item>
+    <item>Inatafuta…</item>
+    <item>Inaunganisha…</item>
+    <item>Inathibitisha…</item>
+    <item>Inapata anwani ya IP…</item>
+    <item>Imeunganishwa</item>
+    <item>Imesimamishwa</item>
+    <item>Inatenganisha…</item>
+    <item>Imetenganishwa</item>
+    <item>Imeshindwa kuunganisha</item>
+    <item>Imezuiwa</item>
+    <item>Inaepuka kwa muda muunganisho mbovu</item>
+  </string-array>
+</resources>

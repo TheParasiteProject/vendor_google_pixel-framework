@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/regional_preferences_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.TopIntroPreference android:persistent="false"
+                        android:title="@string/regional_preferences_main_page_sub_title" />
+  <Preference android:title="@string/temperature_preferences_title"
+              android:key="key_temperature_unit"
+              android:summary="@string/default_string_of_regional_preference"
+              settings:controller="com.android.settings.regionalpreferences.TemperatureUnitController"
+              settings:fragment="com.android.settings.regionalpreferences.TemperatureUnitFragment">
+    <extra android:name="arg_key_regional_preference"
+           android:value="mu" />
+  </Preference>
+  <Preference android:title="@string/first_day_of_week_preferences_title"
+              android:key="key_first_day_of_week"
+              android:summary="@string/default_string_of_regional_preference"
+              settings:controller="com.android.settings.regionalpreferences.FirstDayOfWeekController"
+              settings:fragment="com.android.settings.regionalpreferences.FirstDayOfWeekItemFragment">
+    <extra android:name="arg_key_regional_preference"
+           android:value="fw" />
+  </Preference>
+  <Preference android:title="@string/numbers_preferences_title"
+              android:key="key_numbering_system"
+              android:summary="@string/default_string_of_regional_preference"
+              settings:controller="com.android.settings.regionalpreferences.NumberingSystemController"
+              settings:fragment="com.android.settings.regionalpreferences.NumberingPreferencesFragment">
+    <extra android:name="arg_key_regional_preference"
+           android:value="arg_value_language_select" />
+  </Preference>
+  <com.android.settingslib.widget.FooterPreference android:title="@string/title_regional_pref_footer"
+                        android:selectable="false"
+                        android:key="regional_pref_footer"
+                        settings:controller="com.android.settings.regionalpreferences.RegionalFooterPreferenceController"
+                        settings:searchable="false" />
+</PreferenceScreen>

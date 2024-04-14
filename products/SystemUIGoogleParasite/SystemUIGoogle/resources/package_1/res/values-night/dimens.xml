@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <dimen name="accessibility_floating_menu_stroke_inset">-2.0dp</dimen>
+  <dimen name="accessibility_floating_menu_stroke_width">1.0dp</dimen>
+</resources>

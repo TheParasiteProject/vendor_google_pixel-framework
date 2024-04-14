@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<RelativeLayout android:layout_gravity="center"
+                android:id="@id/add_clone_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <ImageView android:layout_gravity="center"
+             android:id="@id/add_preference_widget"
+             android:background="@drawable/ic_add_24dp"
+             android:layout_width="24.0dp"
+             android:layout_height="24.0dp"
+             android:scaleType="center"
+             android:tint="?android:attr/colorAccent"
+             android:minWidth="@dimen/two_target_min_width"
+             android:contentDescription="@string/add"
+             android:paddingStart="?android:attr/listPreferredItemPaddingEnd"
+             android:paddingEnd="?android:attr/listPreferredItemPaddingEnd" />
+  <ProgressBar android:id="@id/progressBar_cyclic"
+               android:visibility="gone"
+               android:layout_width="24.0dp"
+               android:layout_height="24.0dp"
+               style="?android:attr/progressBarStyleLarge" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.android.settings.biometrics2.ui.widget.UdfpsEnrollView android:id="@id/udfps_animation_view"
+                      android:layout_width="218.42dp"
+                      android:layout_height="216.0dp"
+                      android:layout_marginTop="553.0dp"
+                      android:layout_alignParentTop="true"
+                      android:layout_centerHorizontal="true" xmlns:android="http://schemas.android.com/apk/res/android">
+  <ImageView android:id="@id/udfps_enroll_animation_fp_progress_view"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent" />
+  <ImageView android:id="@id/udfps_enroll_animation_fp_view"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent" />
+</com.android.settings.biometrics2.ui.widget.UdfpsEnrollView>

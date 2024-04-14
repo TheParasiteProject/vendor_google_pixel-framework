@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent"
+                      android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <androidx.recyclerview.widget.RecyclerView android:id="@id/apps_list"
+                        android:visibility="invisible"
+                        android:scrollbars="none"
+                        android:clipToPadding="false"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        settings:fastScrollEnabled="true"
+                        settings:fastScrollHorizontalThumbDrawable="@drawable/thumb_drawable"
+                        settings:fastScrollHorizontalTrackDrawable="@drawable/line_drawable"
+                        settings:fastScrollVerticalThumbDrawable="@drawable/thumb_drawable"
+                        settings:fastScrollVerticalTrackDrawable="@drawable/line_drawable"
+                        settings:layout_constrainedHeight="true"
+                        settings:layout_constraintBottom_toBottomOf="parent"
+                        settings:layout_constraintTop_toBottomOf="@id/pinned_header"
+                        settings:layout_constraintVertical_bias="0.0" />
+  <TextView android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:id="@android:id/empty"
+            android:visibility="invisible"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dp"
+            android:text="@string/no_applications"
+            android:textAlignment="gravity"
+            settings:layout_constraintBottom_toBottomOf="parent"
+            settings:layout_constraintTop_toBottomOf="@id/pinned_header" />
+  <include settings:layout_constraintBottom_toBottomOf="parent"
+           settings:layout_constraintTop_toBottomOf="@id/pinned_header"
+           layout="@layout/loading_container" />
+  <FrameLayout android:id="@id/pinned_header"
+               android:background="?android:attr/colorBackground"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               settings:layout_constraintBottom_toTopOf="@id/apps_list"
+               settings:layout_constraintTop_toTopOf="parent"
+               settings:layout_constraintVertical_bias="0.0"
+               settings:layout_constraintVertical_chainStyle="packed" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="Audio stream details" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.LayoutPreference android:layout="@layout/settings_entity_header"
+                        android:selectable="false"
+                        android:key="audio_stream_header"
+                        settings:allowDividerBelow="true"
+                        settings:controller="com.android.settings.connecteddevice.audiosharing.audiostreams.AudioStreamHeaderController"
+                        settings:searchable="false" />
+  <com.android.settingslib.widget.ActionButtonsPreference android:key="audio_stream_button"
+                        settings:allowDividerBelow="true"
+                        settings:controller="com.android.settings.connecteddevice.audiosharing.audiostreams.AudioStreamButtonController" />
+</PreferenceScreen>

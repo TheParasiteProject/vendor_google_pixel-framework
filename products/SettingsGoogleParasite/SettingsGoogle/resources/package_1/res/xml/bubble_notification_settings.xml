@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/bubbles_app_toggle_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.TopIntroPreference android:title="@string/notifications_bubble_setting_description"
+                        android:key="notification_bubbles_desc" />
+  <com.android.settingslib.widget.IllustrationPreference android:key="bubbles_illustration"
+                        app:controller="com.android.settings.notification.BubbleNotificationIllustrationPreferenceController"
+                        app:dynamicColor="true"
+                        app:lottie_cacheComposition="false"
+                        app:lottie_rawRes="@raw/lottie_bubbles"
+                        app:searchable="false" />
+  <com.android.settingslib.widget.MainSwitchPreference android:title="@string/notifications_bubble_setting_title"
+                        android:key="global_notification_bubbles"
+                        app:controller="com.android.settings.notification.BubbleNotificationPreferenceController" />
+</PreferenceScreen>

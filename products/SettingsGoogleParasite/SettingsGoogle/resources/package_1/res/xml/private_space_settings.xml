@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/private_space_title"
+                  android:key="private_space_title"
+                  settings:searchable="false" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.IllustrationPreference android:key="privatespace_hide_video"
+                        settings:lottie_rawRes="@drawable/privatespace_placeholder_image"
+                        settings:searchable="false" />
+  <Preference android:selectable="false"
+              android:key="private_space_description"
+              android:summary="@string/private_space_description"
+              settings:searchable="false" />
+  <PreferenceCategory android:title="@string/security_header">
+    <Preference android:title="@string/private_space_lock_title"
+                android:key="private_space_use_one_lock"
+                android:fragment="com.android.settings.privatespace.onelock.UseOneLockSettingsFragment"
+                settings:controller="com.android.settings.privatespace.onelock.UseOneLockController"
+                settings:searchable="false" />
+    <Preference android:title="@string/private_space_hide_title"
+                android:key="private_space_hidden"
+                android:fragment="com.android.settings.privatespace.HidePrivateSpaceSettings"
+                settings:controller="com.android.settings.privatespace.HidePrivateSpaceSummaryController"
+                settings:searchable="false" />
+  </PreferenceCategory>
+  <PreferenceCategory android:title="@string/private_space_category_system">
+    <Preference android:title="@string/private_space_delete_title"
+                android:key="private_space_delete"
+                settings:controller="com.android.settings.privatespace.DeletePrivateSpaceController"
+                settings:searchable="false" />
+  </PreferenceCategory>
+</PreferenceScreen>

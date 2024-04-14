@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.setupdesign.GlifLayout android:id="@id/setup_wizard_layout"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      style="?attr/fingerprint_layout_theme" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.airbnb.lottie.LottieAnimationView android:id="@id/illustration_lottie"
+                        android:layout_width="fill_parent"
+                        android:layout_height="400.0dp"
+                        android:scaleType="centerInside"
+                        android:importantForAccessibility="no"
+                        settings:lottie_autoPlay="true"
+                        settings:lottie_imageAssetsFolder="images"
+                        settings:lottie_loop="true"
+                        settings:lottie_rawRes="@raw/udfps_edu_lottie" />
+</com.google.android.setupdesign.GlifLayout>

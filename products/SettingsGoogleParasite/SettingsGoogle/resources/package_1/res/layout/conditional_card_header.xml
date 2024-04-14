@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:contentDescription="@string/condition_expand_show"
+                      style="@style/ContextualCardStyle" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/contextual_condition_header_padding_top"
+                android:paddingBottom="@dimen/contextual_condition_header_padding_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical"
+                  android:orientation="horizontal"
+                  android:id="@id/header_icons_container"
+                  android:layout_width="0.0dp"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="1.0"
+                  android:layout_marginStart="@dimen/contextual_condition_header_icons_margin_start" />
+    <ImageView android:id="@id/expand_indicator"
+               android:paddingTop="@dimen/contextual_condition_header_indicator_padding_top"
+               android:layout_width="wrap_content"
+               android:layout_height="fill_parent"
+               android:src="@drawable/ic_expand_more_inverse"
+               android:tint="?android:attr/colorControlNormal"
+               android:paddingStart="@dimen/contextual_condition_header_indicator_padding_start"
+               android:paddingEnd="@dimen/contextual_condition_header_indicator_padding_end" />
+  </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

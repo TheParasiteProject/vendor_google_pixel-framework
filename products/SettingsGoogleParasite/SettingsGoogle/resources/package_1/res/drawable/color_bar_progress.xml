@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@android:id/background">
+    <shape android:tint="@android:color/chooser_gradient_background"
+           android:shape="rectangle">
+      <corners android:radius="@android:dimen/config_scrollbarSize" />
+      <size android:height="10.0dp" />
+      <solid android:color="@android:color/user_icon_default_gray" />
+    </shape>
+  </item>
+  <item android:id="@android:id/secondaryProgress">
+    <scale android:scaleWidth="100%">
+      <shape android:tint="?android:attr/colorControlActivated"
+             android:shape="rectangle">
+        <corners android:radius="@android:dimen/config_scrollbarSize" />
+        <size android:height="10.0dp" />
+        <solid android:color="@android:color/user_icon_default_gray" />
+      </shape>
+    </scale>
+  </item>
+  <item android:id="@android:id/progress">
+    <scale android:scaleWidth="100%">
+      <shape android:tint="?android:attr/colorControlActivated"
+             android:shape="rectangle">
+        <corners android:radius="@android:dimen/config_scrollbarSize" />
+        <size android:height="10.0dp" />
+        <solid android:color="@android:color/white" />
+      </shape>
+    </scale>
+  </item>
+</layer-list>

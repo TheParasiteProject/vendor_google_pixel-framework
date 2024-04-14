@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<navigation android:id="@id/privatespace_main_context_nav"
+            settings:startDestination="@id/ps_education_fragment" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <fragment android:label="fragment_ps_education"
+            android:name="com.android.settings.privatespace.PrivateSpaceEducation"
+            android:id="@id/ps_education_fragment">
+    <action android:id="@id/action_education_to_auto_advance"
+            settings:destination="@id/ps_auto_advance_fragment" />
+  </fragment>
+  <fragment android:label="fragment_ps_auto_advance"
+            android:name="com.android.settings.privatespace.AutoAdvanceSetupFragment"
+            android:id="@id/ps_auto_advance_fragment">
+    <action android:id="@id/action_advance_profile_error"
+            settings:destination="@id/ps_profile_error_fragment" />
+    <action android:id="@id/action_set_lock_fragment"
+            settings:destination="@id/ps_profile_lock_fragment" />
+  </fragment>
+  <fragment android:label="fragment_ps_error"
+            android:name="com.android.settings.privatespace.PrivateProfileCreationError"
+            android:id="@id/ps_profile_error_fragment">
+    <action android:id="@id/action_retry_profile_creation"
+            settings:destination="@id/ps_auto_advance_fragment" />
+  </fragment>
+  <fragment android:label="fragment_ps_success"
+            android:name="com.android.settings.privatespace.SetupSuccessFragment"
+            android:id="@id/ps_profile_success_fragment" />
+  <fragment android:label="fragment_account_error"
+            android:name="com.android.settings.privatespace.PrivateSpaceAccountLoginError"
+            android:id="@id/ps_account_error_fragment">
+    <action android:id="@id/action_advance_login_error"
+            settings:destination="@id/ps_account_error_fragment" />
+  </fragment>
+  <fragment android:label="fragment_ps_lock"
+            android:name="com.android.settings.privatespace.PrivateSpaceSetLockFragment"
+            android:id="@id/ps_profile_lock_fragment">
+    <action android:id="@id/action_advance_login_error"
+            settings:destination="@id/ps_account_error_fragment" />
+  </fragment>
+  <action android:id="@id/action_success_fragment"
+          settings:destination="@id/ps_profile_success_fragment" />
+</navigation>

@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <array name="avatar_image_descriptions" />
+  <array name="avatar_images" />
+  <array name="background_style1">
+    <item>@drawable/rounded_ripple</item>
+  </array>
+  <array name="background_style2">
+    <item>@drawable/left_rounded_ripple</item>
+    <item>@drawable/right_rounded_ripple</item>
+  </array>
+  <array name="background_style3">
+    <item>@drawable/left_rounded_ripple</item>
+    <item>@drawable/square_ripple</item>
+    <item>@drawable/right_rounded_ripple</item>
+  </array>
+  <array name="background_style4">
+    <item>@drawable/left_rounded_ripple</item>
+    <item>@drawable/square_ripple</item>
+    <item>@drawable/square_ripple</item>
+    <item>@drawable/right_rounded_ripple</item>
+  </array>
+  <string-array name="battery_options">
+    <item>Always show percentage</item>
+    <item>Show percentage when charging (default)</item>
+    <item>Don't show this icon</item>
+  </string-array>
+  <integer-array name="batterymeter_color_levels">
+    <item>20</item>
+    <item>100</item>
+  </integer-array>
+  <array name="batterymeter_color_values">
+    <item>?android:attr/colorError</item>
+    <item>@android:color/white</item>
+  </array>
+  <array name="bouncer_pin_shapes">
+    <item>@drawable/pin_dot_shape_1_avd</item>
+    <item>@drawable/pin_dot_shape_2_avd</item>
+    <item>@drawable/pin_dot_shape_3_avd</item>
+    <item>@drawable/pin_dot_shape_4_avd</item>
+    <item>@drawable/pin_dot_shape_5_avd</item>
+    <item>@drawable/pin_dot_shape_6_avd</item>
+  </array>
+  <string-array name="carrierId_2032_iconOverrides">
+    <item>5G_PLUS</item>
+    <item>@drawable/ic_5g_plus_mobiledata_default</item>
+  </string-array>
+  <string-array name="clock_options">
+    <item>Show hours, minutes, and seconds</item>
+    <item>Show hours and minutes (default)</item>
+    <item>Don't show this icon</item>
+  </string-array>
+  <string-array name="columbus_sumatra_cert_allow_list">
+    <item>⼜꫼ꇭバ듣衣뺠焟꓏禸≑骂姙婘</item>
+    <item>괥仙胛ύꚾ샍洞恧㗆꯷咝ㅾ뿣鄖數</item>
+    <item>᥵닱煷벉ꗟ鹤ꛊꔽ쇑햛ᴔ翡젪切</item>
+    <item>္㣮䔷軧鋶呐侸㑯욳䛐믄䅟쌹ﳼ軁</item>
+  </string-array>
+  <string-array name="columbus_sumatra_package_allow_list">
+    <item>com.snapchat.android</item>
+    <item>com.snapchat.android.alpha</item>
+    <item>com.snapchat.android.perf</item>
+    <item>com.snapchat.android.master</item>
+    <item>com.snapchat.android.dev</item>
+    <item>com.snapchat.android.catalina</item>
+    <item>com.google.android.GoogleCamera</item>
+    <item>com.google.columbustest</item>
+  </string-array>
+  <string-array name="config_appsSupportMultiInstancesSplit">
+    <item>com.android.chrome</item>
+    <item>com.chrome.canary</item>
+    <item>com.chrome.dev</item>
+    <item>com.chrome.beta</item>
+    <item>com.google.android.apps.chrome</item>
+    <item>org.chromium.chrome</item>
+    <item>com.google.android.apps.docs</item>
+    <item>com.android.server.wm.flicker.testapp</item>
+  </string-array>
+  <integer-array name="config_cameraLaunchGestureVibePattern">
+    <item>0</item>
+    <item>400</item>
+  </integer-array>
+  <array name="config_collapsed_statusbar_icon_blocklist">
+    <item>@android:string/use_a_different_app</item>
+    <item>@android:string/undo</item>
+    <item>@android:string/unread_convo_overflow</item>
+  </array>
+  <array name="config_communalWidgetAllowlist" />
+  <array name="config_controlsPreferredPackages" />
+  <integer-array name="config_doze_brightness_sensor_to_brightness">
+    <item>-1</item>
+    <item>2</item>
+    <item>5</item>
+    <item>27</item>
+    <item>28</item>
+  </integer-array>
+  <integer-array name="config_doze_brightness_sensor_to_scrim_opacity">
+    <item>-1</item>
+    <item>0</item>
+    <item>0</item>
+    <item>0</item>
+    <item>0</item>
+  </integer-array>
+  <integer-array name="config_face_acquire_device_entry_ignorelist">
+    <item>1</item>
+    <item>2</item>
+    <item>4</item>
+    <item>5</item>
+    <item>11</item>
+    <item>12</item>
+    <item>14</item>
+    <item>15</item>
+    <item>19</item>
+  </integer-array>
+  <array name="config_face_auth_props" />
+  <integer-array name="config_face_auth_wake_up_triggers">
+    <item>1</item>
+    <item>4</item>
+    <item>6</item>
+    <item>7</item>
+    <item>9</item>
+    <item>12</item>
+    <item>15</item>
+    <item>16</item>
+    <item>17</item>
+  </integer-array>
+  <integer-array name="config_face_help_msgs_defer_until_timeout">
+    <item>3</item>
+  </integer-array>
+  <integer-array name="config_face_help_msgs_ignore">
+    <item>20</item>
+    <item>23</item>
+    <item>24</item>
+  </integer-array>
+  <integer-array name="config_face_help_msgs_when_fingerprint_enrolled">
+    <item>3</item>
+    <item>25</item>
+    <item>26</item>
+  </integer-array>
+  <array name="config_fingerprint_listen_on_occluding_activity_packages" />
+  <string-array name="config_keyguardQuickAffordanceDefaults">
+    <item>bottom_start:home</item>
+    <item>bottom_end:wallet</item>
+  </string-array>
+  <string-array name="config_keyguardQuickAffordanceSlots">
+    <item>bottom_start:1</item>
+    <item>bottom_end:1</item>
+  </string-array>
+  <array name="config_nfc_conflict_with_usb_audio_productid" />
+  <array name="config_nfc_conflict_with_usb_audio_vendorid" />
+  <integer-array name="config_notification_snooze_times">
+    <item>15</item>
+    <item>30</item>
+    <item>60</item>
+    <item>120</item>
+  </integer-array>
+  <string-array name="config_pluginAllowlist">
+    <item>com.android.systemui</item>
+  </string-array>
+  <string-array name="config_quickSettingsAutoAdd">
+    <item>accessibility_display_daltonizer_enabled:color_correction</item>
+    <item>accessibility_display_inversion_enabled:inversion</item>
+    <item>one_handed_mode_enabled:onehanded</item>
+    <item>accessibility_font_scaling_has_been_changed:font_scaling</item>
+    <item>wind_down_first_time_setup:custom(com.google.android.apps.wellbeing/.screen.ui.GrayscaleTileService)</item>
+    <item>focus_mode_first_time_setup:custom(com.google.android.apps.wellbeing/.focusmode.quicksettings.FocusModeTileService)</item>
+  </string-array>
+  <array name="config_roundedCornerBottomDrawableArray">
+    <item>@drawable/rounded_corner_bottom</item>
+    <item>@drawable/rounded_corner_bottom_secondary</item>
+  </array>
+  <array name="config_roundedCornerTopDrawableArray">
+    <item>@drawable/rounded_corner_top</item>
+    <item>@drawable/rounded_corner_top_secondary</item>
+  </array>
+  <array name="config_statusBarIconsToExclude">
+    <item>@android:string/usb_notification_message</item>
+    <item>@android:string/usb_contaminant_detected_message</item>
+  </array>
+  <string-array name="config_systemUIServiceComponentsPerUser">
+    <item>com.android.systemui.util.NotificationChannels</item>
+  </string-array>
+  <array name="doze_brightness_sensor_name_posture_mapping" />
+  <integer-array name="doze_single_tap_uses_prox_posture_mapping">
+    <item>1</item>
+    <item>1</item>
+    <item>1</item>
+    <item>1</item>
+  </integer-array>
+  <integer-array name="elmyra_blocking_system_keys">
+    <item>24</item>
+    <item>25</item>
+    <item>26</item>
+  </integer-array>
+  <string-array name="entryvalues_font_size">
+    <item>0.85</item>
+    <item>1.0</item>
+    <item>1.15</item>
+    <item>1.30</item>
+    <item>1.50</item>
+    <item>1.80</item>
+    <item>2.0</item>
+  </string-array>
+  <string-array name="lockscreen_num_pad_klondike">
+    <item>+</item>
+    <item></item>
+    <item>ABC</item>
+    <item>DEF</item>
+    <item>GHI</item>
+    <item>JKL</item>
+    <item>MNO</item>
+    <item>PQRS</item>
+    <item>TUV</item>
+    <item>WXYZ</item>
+  </string-array>
+  <string-array name="nav_bar_button_values">
+    <item>clipboard</item>
+    <item>key</item>
+    <item>menu_ime</item>
+    <item>space</item>
+  </string-array>
+  <string-array name="nav_bar_buttons">
+    <item>Clipboard</item>
+    <item>Keycode</item>
+    <item>Rotate confirm, keyboard switcher</item>
+    <item>None</item>
+  </string-array>
+  <string-array name="nav_bar_layouts">
+    <item>Normal</item>
+    <item>Compact</item>
+    <item>Left-leaning</item>
+    <item>Right-leaning</item>
+  </string-array>
+  <string-array name="nav_bar_layouts_values">
+    <item>default</item>
+    <item>left;back,home,recent;right</item>
+    <item>left,back,home,recent,right;space;space</item>
+    <item>space;space;left,back,home,recent,right</item>
+  </string-array>
+  <array name="proximity_sensor_posture_mapping" />
+  <array name="proximity_sensor_secondary_posture_mapping" />
+  <string-array name="qs_record_issue_types">
+    <item>Performance</item>
+    <item>User Interface</item>
+    <item>Battery</item>
+  </string-array>
+  <string-array name="services_always_show_magnification_settings">
+    <item>com.android.switchaccess.SwitchAccessService</item>
+    <item>com.google.android.apps.accessibility.voiceaccess.JustSpeakService</item>
+  </string-array>
+  <string-array name="system_ui_packages">
+    <item>com.android.keyguard</item>
+    <item>com.android.systemui</item>
+    <item>com.google.android.systemui</item>
+  </string-array>
+  <string-array name="tile_states_airplane">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_alarm">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_battery">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_bt">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_cameratoggle">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_cast">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_cell">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_color_correction">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_controls">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_dark">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <array name="tile_states_default">
+    <item>@string/tile_unavailable</item>
+    <item>@string/switch_bar_off</item>
+    <item>@string/switch_bar_on</item>
+  </array>
+  <string-array name="tile_states_dnd">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_dream">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_flashlight">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_font_scaling">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_hotspot">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_internet">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_inversion">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_location">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_mictoggle">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_night">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_onehanded">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_qr_code_scanner">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_reduce_brightness">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_reverse">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_rotation">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_saver">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_screenrecord">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_wallet">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_wifi">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="tile_states_work">
+    <item>Unavailable</item>
+    <item>Off</item>
+    <item>On</item>
+  </string-array>
+  <string-array name="wifitrackerlib_wifi_status">
+    <item></item>
+    <item>Scanning…</item>
+    <item>Connecting…</item>
+    <item>Authenticating…</item>
+    <item>Obtaining IP address…</item>
+    <item>Connected</item>
+    <item>Suspended</item>
+    <item>Disconnecting…</item>
+    <item>Disconnected</item>
+    <item>Unsuccessful</item>
+    <item>Blocked</item>
+    <item>Temporarily avoiding poor connection</item>
+  </string-array>
+</resources>

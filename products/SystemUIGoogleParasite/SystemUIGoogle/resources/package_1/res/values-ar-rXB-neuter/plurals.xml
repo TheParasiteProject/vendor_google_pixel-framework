@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">(N)%d ‏‮day‬‏ ‏‮ago‬‏</item>
+    <item quantity="other">(N)%d ‏‮days‬‏ ‏‮ago‬‏</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">(N)%d ‏‮min‬‏ ‏‮ago‬‏</item>
+    <item quantity="other">(N)%d ‏‮min‬‏ ‏‮ago‬‏</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">(N)%d ‏‮yr‬‏ ‏‮ago‬‏</item>
+    <item quantity="other">(N)%d ‏‮yr‬‏ ‏‮ago‬‏</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="one">(N)%d ‏‮new‬‏ ‏‮notification‬‏</item>
+    <item quantity="other">(N)%d ‏‮new‬‏ ‏‮notifications‬‏</item>
+  </plurals>
+</resources>

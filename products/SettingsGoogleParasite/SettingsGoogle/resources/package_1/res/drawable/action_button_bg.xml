@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<ripple android:color="?android:attr/colorControlHighlight" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+  <item>
+    <inset android:insetLeft="0.0dp"
+           android:insetRight="0.0dp"
+           android:insetTop="8.0dp"
+           android:insetBottom="8.0dp">
+      <shape android:shape="rectangle">
+        <corners android:radius="8.0dp" />
+        <stroke android:width="1.0dp"
+                android:color="?android:^attr-private/colorAccentPrimaryVariant" />
+      </shape>
+    </inset>
+  </item>
+</ripple>

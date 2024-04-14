@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">(M)[%d ðåý åĝö one two]</item>
+    <item quantity="other">(M)[%d ðåýš åĝö one two]</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">(M)[%d ḿîñ åĝö one two]</item>
+    <item quantity="other">(M)[%d ḿîñ åĝö one two]</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">(M)[%d ýŕ åĝö one two]</item>
+    <item quantity="other">(M)[%d ýŕ åĝö one two]</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="one">(M)[%d ñéŵ ñöţîƒîçåţîöñ one two three]</item>
+    <item quantity="other">(M)[%d ñéŵ ñöţîƒîçåţîöñš one two three]</item>
+  </plurals>
+</resources>

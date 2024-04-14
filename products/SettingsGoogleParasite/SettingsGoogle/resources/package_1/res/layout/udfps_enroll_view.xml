@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.android.settings.biometrics.fingerprint.UdfpsEnrollView android:id="@id/udfps_animation_view"
+                      android:visibility="gone"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+  <ImageView android:id="@id/udfps_enroll_animation_fp_progress_view"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent" />
+  <ImageView android:id="@id/udfps_enroll_animation_fp_view"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent" />
+</com.android.settings.biometrics.fingerprint.UdfpsEnrollView>

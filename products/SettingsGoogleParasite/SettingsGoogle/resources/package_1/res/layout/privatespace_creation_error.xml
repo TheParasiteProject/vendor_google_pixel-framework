@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.setupdesign.GlifLayout android:icon="@drawable/ic_warning_circle_red"
+                      android:id="@id/private_space_setup_error"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:filterTouchesWhenObscured="true"
+                      settings:sucHeaderText="@string/private_space_error_screen_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/bt_hci_snoop_log_filters_dashboard_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <PreferenceCategory android:layout="@layout/preference_category_no_label"
+                      android:title="@string/bt_hci_snoop_log_filters_dashboard_summary"
+                      android:key="snoop_logger_filters_category"
+                      settings:controller="com.android.settings.development.snooplogger.SnoopLoggerFiltersPreferenceController" />
+  <com.android.settingslib.widget.FooterPreference android:title="@string/bt_hci_snoop_log_filters_dashboard_footer"
+                        android:selectable="false"
+                        android:key="snoop_logger_filters_footer"
+                        settings:searchable="false" />
+</PreferenceScreen>

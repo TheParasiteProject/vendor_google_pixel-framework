@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:gravity="center_vertical"
+              android:id="@id/seekbar_frame"
+              android:clipChildren="false"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <FrameLayout android:id="@id/icon_start_frame"
+               android:focusable="true"
+               android:visibility="gone"
+               android:clipChildren="false"
+               android:layout_width="48.0dp"
+               android:layout_height="48.0dp">
+    <ImageView android:layout_gravity="center|start"
+               android:id="@id/icon_start"
+               android:background="?android:attr/selectableItemBackgroundBorderless"
+               android:focusable="false"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:adjustViewBounds="true"
+               android:tint="?android:attr/textColorPrimary"
+               android:tintMode="src_in" />
+  </FrameLayout>
+  <SeekBar android:layout_gravity="center_vertical"
+           android:id="@android:id/sequential"
+           android:layout_width="0.0dp"
+           android:layout_height="48.0dp"
+           android:layout_weight="1.0"
+           android:paddingStart="0.0dp"
+           android:paddingEnd="12.0dp"
+           style="@android:style/Widget.Material.SeekBar.Discrete" />
+  <FrameLayout android:id="@id/icon_end_frame"
+               android:focusable="true"
+               android:visibility="gone"
+               android:clipChildren="false"
+               android:layout_width="48.0dp"
+               android:layout_height="48.0dp">
+    <ImageView android:layout_gravity="center|end"
+               android:id="@id/icon_end"
+               android:background="?android:attr/selectableItemBackgroundBorderless"
+               android:focusable="false"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:adjustViewBounds="true"
+               android:tint="?android:attr/textColorPrimary"
+               android:tintMode="src_in" />
+  </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:orientation="vertical"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <Button android:id="@id/device_button"
+          android:background="@drawable/audio_sharing_rounded_bg_ripple"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="4.0dp"
+          android:textAlignment="center"
+          style="@style/SettingsLibActionButton" />
+</FrameLayout>

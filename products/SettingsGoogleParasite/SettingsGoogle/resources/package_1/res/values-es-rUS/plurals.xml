@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">Hace %d día</item>
+    <item quantity="many">%d days ago</item>
+    <item quantity="other">Hace %d días</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">Hace %d min</item>
+    <item quantity="many">%d min ago</item>
+    <item quantity="other">Hace %d min</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">Hace %d año</item>
+    <item quantity="many">%d yr ago</item>
+    <item quantity="other">Hace %d años</item>
+  </plurals>
+  <plurals name="lockscreen_quick_affordances_summary">
+    <item quantity="one">%1$s</item>
+    <item quantity="other">%1$s, %2$s</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d notificación nueva</item>
+    <item quantity="other">%d notificaciones nuevas</item>
+  </plurals>
+  <plurals name="security_settings_hub_show_warnings_preference">
+    <item quantity="one">Mostrar %1$d advertencia</item>
+    <item quantity="other">Ver todas las advertencias (%1$d)</item>
+  </plurals>
+  <plurals name="security_settings_hub_warnings_title">
+    <item quantity="one">%1$d advertencia</item>
+    <item quantity="other">%1$d advertencias</item>
+  </plurals>
+</resources>

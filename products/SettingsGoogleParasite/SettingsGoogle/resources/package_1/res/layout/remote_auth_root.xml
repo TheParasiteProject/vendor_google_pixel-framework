@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.fragment.NavHostFragment"
+                        android:id="@id/nav_host_fragment"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        settings:defaultNavHost="true" />
+</FrameLayout>

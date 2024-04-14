@@ -1,0 +1,49 @@
+.class Lcom/android/settings/wifi/NetworkRequestDialogActivity$1;
+.super Landroid/os/Handler;
+.source "NetworkRequestDialogActivity.java"
+
+
+# instance fields
+.field final synthetic this$0:Lcom/android/settings/wifi/NetworkRequestDialogActivity;
+
+
+# direct methods
+.method constructor <init>(Lcom/android/settings/wifi/NetworkRequestDialogActivity;Landroid/os/Looper;)V
+    .locals 0
+
+    .line 148
+    iput-object p1, p0, Lcom/android/settings/wifi/NetworkRequestDialogActivity$1;->this$0:Lcom/android/settings/wifi/NetworkRequestDialogActivity;
+
+    invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 0
+
+    .line 151
+    iget p1, p1, Landroid/os/Message;->what:I
+
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 153
+    invoke-virtual {p0, p1}, Landroid/os/Handler;->removeMessages(I)V
+
+    .line 154
+    iget-object p0, p0, Lcom/android/settings/wifi/NetworkRequestDialogActivity$1;->this$0:Lcom/android/settings/wifi/NetworkRequestDialogActivity;
+
+    sget-object p1, Lcom/android/settings/wifi/NetworkRequestErrorDialogFragment$ERROR_DIALOG_TYPE;->TIME_OUT:Lcom/android/settings/wifi/NetworkRequestErrorDialogFragment$ERROR_DIALOG_TYPE;
+
+    invoke-virtual {p0, p1}, Lcom/android/settings/wifi/NetworkRequestDialogActivity;->stopScanningAndPopErrorDialog(Lcom/android/settings/wifi/NetworkRequestErrorDialogFragment$ERROR_DIALOG_TYPE;)V
+
+    :goto_0
+    return-void
+.end method

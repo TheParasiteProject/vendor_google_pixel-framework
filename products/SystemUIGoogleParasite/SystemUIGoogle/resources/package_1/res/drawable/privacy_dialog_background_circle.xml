@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<ripple android:color="?android:attr/colorControlHighlight" xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@android:id/background">
+    <shape android:gravity="center"
+           android:id="@id/background"
+           android:shape="oval">
+      <size android:height="24.0dp"
+            android:width="24.0dp" />
+      <solid android:color="@android:color/white" />
+    </shape>
+  </item>
+</ripple>

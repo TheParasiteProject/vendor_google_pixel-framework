@@ -1,0 +1,2 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/google/android/apps/miphone/aiai/matchmaker/overview/ui/FakeFeatureFlagsImpl;->enableBarcodeDetectionInOverview()Z,out/soong/.intermediates/vendor/unbundled_google/libraries/aiai_ui/aconfig/com_google_android_libraries_aiai_ui_flags_lib/android_common/javac/srcjars/com/google/android/apps/miphone/aiai/matchmaker/overview/ui/FakeFeatureFlagsImpl.java,17,5,17,25,

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">Hai %d día</item>
+    <item quantity="other">Hai %d días</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">Hai %d min</item>
+    <item quantity="other">Hai %d min</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">Hai %d ano</item>
+    <item quantity="other">Hai %d anos</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d notificación nova</item>
+    <item quantity="other">%d notificacións novas</item>
+  </plurals>
+</resources>

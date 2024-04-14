@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <string-array name="battery_options">
+    <item>Wys altyd persentasie</item>
+    <item>Wys persentasie wanneer gelaai word (verstek)</item>
+    <item>Moenie hierdie ikoon wys nie</item>
+  </string-array>
+  <string-array name="clock_options">
+    <item>Wys ure, minute en sekondes</item>
+    <item>Wys ure en minute (verstek)</item>
+    <item>Moenie hierdie ikoon wys nie</item>
+  </string-array>
+  <string-array name="nav_bar_buttons">
+    <item>Knipbord</item>
+    <item>Sleutelkode</item>
+    <item>Draaibevestiging, sleutelbordwisselaar</item>
+    <item>Geen</item>
+  </string-array>
+  <string-array name="nav_bar_layouts">
+    <item>Normaal</item>
+    <item>Kompak</item>
+    <item>Na links</item>
+    <item>Na regs</item>
+  </string-array>
+  <string-array name="qs_record_issue_types">
+    <item>Werkverrigting</item>
+    <item>Gebruikerkoppelvlak</item>
+    <item>Battery</item>
+  </string-array>
+  <string-array name="tile_states_airplane">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_alarm">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_battery">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_bt">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_cameratoggle">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_cast">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_cell">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_color_correction">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_controls">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_dark">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_dnd">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_dream">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_flashlight">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_font_scaling">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_hotspot">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_internet">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_inversion">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_location">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_mictoggle">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_night">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_onehanded">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_qr_code_scanner">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_reduce_brightness">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_reverse">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_rotation">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_saver">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_screenrecord">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_wallet">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_wifi">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="tile_states_work">
+    <item>Onbeskikbaar</item>
+    <item>Af</item>
+    <item>Aan</item>
+  </string-array>
+  <string-array name="wifitrackerlib_wifi_status">
+    <item></item>
+    <item>Soek tans …</item>
+    <item>Koppel tans …</item>
+    <item>Staaf tans …</item>
+    <item>Verkry tans IP-adres …</item>
+    <item>Gekoppel</item>
+    <item>Opgeskort</item>
+    <item>Ontkoppel tans …</item>
+    <item>Ontkoppel</item>
+    <item>Onsuksesvol</item>
+    <item>Geblokkeer</item>
+    <item>Vermy swak verbinding tydelik</item>
+  </string-array>
+</resources>

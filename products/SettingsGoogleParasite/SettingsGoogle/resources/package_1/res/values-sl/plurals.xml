@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">Pred %d dnevom</item>
+    <item quantity="two">Pred %d dnevoma</item>
+    <item quantity="few">Pred %d dnevi</item>
+    <item quantity="other">Pred %d dnevi</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">Pred %d min</item>
+    <item quantity="two">Pred %d min</item>
+    <item quantity="few">Pred %d min</item>
+    <item quantity="other">Pred %d min</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">Pred %d letom</item>
+    <item quantity="two">Pred %d letoma</item>
+    <item quantity="few">Pred %d leti</item>
+    <item quantity="other">Pred %d leti</item>
+  </plurals>
+  <plurals name="lockscreen_quick_affordances_summary">
+    <item quantity="one">%1$s, %2$s</item>
+    <item quantity="two">%1$s, %2$s</item>
+    <item quantity="few">%1$s, %2$s</item>
+    <item quantity="other">%1$s, %2$s</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d novo obvestilo</item>
+    <item quantity="two">%d novi obvestili</item>
+    <item quantity="few">%d nova obvestila</item>
+    <item quantity="other">%d novih obvestil</item>
+  </plurals>
+  <plurals name="security_settings_hub_show_warnings_preference">
+    <item quantity="one">Prikaz vseh opozoril (%1$d)</item>
+    <item quantity="two">Prikaz vseh opozoril (%1$d)</item>
+    <item quantity="few">Prikaz vseh opozoril (%1$d)</item>
+    <item quantity="other">Prikaz vseh opozoril (%1$d)</item>
+  </plurals>
+  <plurals name="security_settings_hub_warnings_title">
+    <item quantity="one">%1$d opozorilo</item>
+    <item quantity="two">%1$d opozorili</item>
+    <item quantity="few">%1$d opozorila</item>
+    <item quantity="other">%1$d opozoril</item>
+  </plurals>
+</resources>

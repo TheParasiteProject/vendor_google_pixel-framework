@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <Button android:theme="@style/RoundedCornerThemeOverlay"
+          android:id="@id/button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:drawablePadding="8.0dp"
+          android:layout_marginHorizontal="16.0dp"
+          android:layout_marginVertical="8.0dp"
+          android:paddingHorizontal="16.0dp"
+          style="@style/ActionPrimaryButton" />
+</FrameLayout>

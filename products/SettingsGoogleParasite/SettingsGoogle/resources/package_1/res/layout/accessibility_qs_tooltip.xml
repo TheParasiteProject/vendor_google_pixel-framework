@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:gravity="center"
+              android:orientation="vertical"
+              android:background="@drawable/accessibility_qs_tooltip_background"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <ImageView android:layout_gravity="center_horizontal"
+             android:id="@id/qs_illustration"
+             android:paddingTop="@dimen/accessibility_qs_tooltip_margin_top"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:contentDescription="@null" />
+  <TextView android:textSize="16.0sp"
+            android:textColor="@android:color/black"
+            android:id="@id/qs_content"
+            android:padding="@dimen/accessibility_qs_tooltip_margin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@android:string/config_mainDisplayShape" />
+</LinearLayout>

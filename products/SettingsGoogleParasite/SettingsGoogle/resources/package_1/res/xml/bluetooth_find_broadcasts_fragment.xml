@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/bluetooth_find_broadcast_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.LayoutPreference android:layout="@layout/bluetooth_broadcast_entity_header"
+                        android:selectable="false"
+                        android:key="bluetooth_find_broadcast_header"
+                        settings:allowDividerBelow="true"
+                        settings:searchable="false" />
+  <PreferenceCategory android:layout="@layout/preference_category_no_label"
+                      android:key="broadcast_source_list" />
+</PreferenceScreen>

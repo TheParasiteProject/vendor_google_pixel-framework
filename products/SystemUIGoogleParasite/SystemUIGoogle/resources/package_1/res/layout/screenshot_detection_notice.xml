@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:id="@id/screenshot_detection_notice"
+             android:padding="12.0dp"
+             android:visibility="gone"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <TextView android:textSize="18.0sp"
+            android:id="@id/screenshot_detection_notice_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lineHeight="24.0sp" />
+</FrameLayout>

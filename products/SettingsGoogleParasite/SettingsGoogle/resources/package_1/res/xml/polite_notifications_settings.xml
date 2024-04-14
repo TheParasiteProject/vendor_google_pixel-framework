@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/notification_polite_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settings.RestrictedListPreference android:persistent="false"
+                        android:entries="@array/notification_polite_options"
+                        android:title="@string/notification_polite_title"
+                        android:key="polite_notifications_pref_dlg"
+                        android:entryValues="@array/notification_polite_options_values"
+                        settings:controller="com.android.settings.notification.PoliteNotificationFilterController" />
+  <SwitchPreferenceCompat android:persistent="false"
+                        android:title="@string/notification_polite_vibrate_unlocked"
+                        android:key="notification_polite_vibrate_unlocked"
+                        android:summary="@string/notification_polite_vibrate_unlocked_summary"
+                        settings:controller="com.android.settings.notification.PoliteNotifVibrateUnlockedToggleController" />
+  <SwitchPreferenceCompat android:persistent="false"
+                        android:title="@string/notification_polite_work"
+                        android:key="notification_polite_work_profile"
+                        android:summary="@string/notification_polite_work_summary"
+                        settings:controller="com.android.settings.notification.PoliteNotifWorkProfileToggleController" />
+</PreferenceScreen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/audio_streams_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <Preference android:icon="@drawable/ic_add_24dp"
+              android:title="@string/bluetooth_find_broadcast_button_scan"
+              android:key="audio_streams_scan_qr_code"
+              android:summary="@string/audio_streams_qr_code_summary"
+              settings:controller="com.android.settings.connecteddevice.audiosharing.audiostreams.AudioStreamsScanQrCodeController" />
+  <Preference android:title="Listen with"
+              android:key="audio_streams_active_device"
+              settings:controller="com.android.settings.connecteddevice.audiosharing.audiostreams.AudioStreamsActiveDeviceController" />
+  <com.android.settings.connecteddevice.audiosharing.audiostreams.AudioStreamsProgressCategoryPreference android:title="@string/audio_streams_pref_title"
+                        android:key="audio_streams_nearby_category"
+                        settings:controller="com.android.settings.connecteddevice.audiosharing.audiostreams.AudioStreamsProgressCategoryController" />
+</PreferenceScreen>

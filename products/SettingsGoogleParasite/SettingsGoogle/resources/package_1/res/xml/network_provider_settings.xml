@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/provider_internet_settings"
+                  settings:keywords="@string/keywords_wifi" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.LayoutPreference android:layout="@layout/resetting_internet"
+                        android:title="@string/resetting_internet_text"
+                        android:selectable="false"
+                        android:key="resetting_your_internet"
+                        settings:allowDividerBelow="true" />
+  <com.android.settingslib.widget.LayoutPreference android:layout="@layout/airplane_mode_message_preference"
+                        android:title="@string/condition_airplane_title"
+                        android:selectable="false"
+                        android:key="airplane_mode_message"
+                        settings:allowDividerBelow="true" />
+  <Preference android:icon="@drawable/ic_settings_ethernet"
+              android:title="@string/ethernet"
+              android:key="connected_ethernet_network"
+              android:summary="@string/to_switch_networks_disconnect_ethernet" />
+  <PreferenceCategory android:layout="@layout/preference_category_no_label"
+                      android:title="@string/summary_placeholder"
+                      android:key="provider_model_mobile_network"
+                      settings:controller="com.android.settings.network.NetworkMobileProviderController"
+                      settings:isPreferenceVisible="@bool/config_show_sim_info" />
+  <com.android.settingslib.RestrictedSwitchPreference android:title="@string/wifi"
+                        android:key="main_toggle_wifi"
+                        settings:allowDividerAbove="true"
+                        settings:keywords="@string/keywords_wifi" />
+  <PreferenceCategory android:layout="@layout/preference_category_no_label"
+                      android:key="connected_access_point" />
+  <PreferenceCategory android:layout="@layout/preference_category_no_label"
+                      android:key="first_access_points" />
+  <PreferenceCategory android:layout="@layout/preference_category_no_label"
+                      android:key="access_points">
+    <com.android.settings.wifi.AddWifiNetworkPreference android:icon="@drawable/ic_add_24dp"
+                          android:title="@string/wifi_add_network"
+                          android:key="add_wifi_network" />
+  </PreferenceCategory>
+  <Preference android:title="@string/network_and_internet_preferences_title"
+              android:key="configure_network_settings"
+              android:fragment="com.android.settings.wifi.ConfigureWifiSettings"
+              settings:allowDividerAbove="true" />
+  <Preference android:title="@string/wifi_saved_access_points_label"
+              android:key="saved_networks"
+              android:fragment="com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2" />
+  <com.android.settings.datausage.DataUsagePreference android:title="@string/non_carrier_data_usage"
+                        android:key="non_carrier_data_usage" />
+  <com.android.settingslib.widget.FooterPreference android:selectable="false"
+                        android:key="wifi_status_message_footer"
+                        settings:allowDividerAbove="false"
+                        settings:searchable="false" />
+</PreferenceScreen>

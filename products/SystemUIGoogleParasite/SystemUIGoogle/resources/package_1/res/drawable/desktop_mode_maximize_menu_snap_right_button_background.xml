@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+  <solid android:color="@color/desktop_mode_maximize_menu_button_color_selector" />
+  <corners android:topLeftRadius="@dimen/desktop_mode_maximize_menu_buttons_small_corner_radius"
+           android:topRightRadius="@dimen/desktop_mode_maximize_menu_buttons_large_corner_radius"
+           android:bottomLeftRadius="@dimen/desktop_mode_maximize_menu_buttons_small_corner_radius"
+           android:bottomRightRadius="@dimen/desktop_mode_maximize_menu_buttons_large_corner_radius" />
+  <stroke android:width="1.0dp"
+          android:color="@color/desktop_mode_maximize_menu_button_outline_color_selector" />
+</shape>

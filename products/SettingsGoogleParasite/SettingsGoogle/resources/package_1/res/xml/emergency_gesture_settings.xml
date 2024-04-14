@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/emergency_gesture_screen_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.MainSwitchPreference android:key="gesture_emergency_button_switch_bar"
+                        settings:controller="com.android.settings.emergency.EmergencyGesturePreferenceController" />
+  <com.android.settingslib.widget.TopIntroPreference android:title="@string/emergency_gesture_screen_summary"
+                        settings:allowDividerAbove="false" />
+  <SwitchPreferenceCompat android:icon="@drawable/ic_hearing"
+                        android:title="@string/emergency_gesture_sound_setting_title"
+                        android:key="emergency_gesture_sound"
+                        android:summary="@string/emergency_gesture_sound_setting_summary"
+                        settings:controller="com.android.settings.emergency.EmergencyGestureSoundPreferenceController"
+                        settings:keywords="@string/keywords_gesture" />
+  <PreferenceCategory android:title="@string/emergency_gesture_category_call_for_help_title"
+                      android:key="emergency_gesture_notify_for_help">
+    <com.android.settings.emergency.EmergencyGestureNumberOverridePreference android:icon="@drawable/ic_call_grey_24dp"
+                          android:title="@string/emergency_gesture_call_for_help_title"
+                          android:key="emregency_gesture_number_override"
+                          android:summary="@string/summary_placeholder"
+                          android:dialogTitle="@string/emergency_gesture_call_for_help_dialog_title"
+                          android:positiveButtonText="@string/save"
+                          android:dialogLayout="@layout/emergency_gesture_number_override_dialog"
+                          settings:controller="com.android.settings.emergency.EmergencyGestureNumberOverridePreferenceController" />
+  </PreferenceCategory>
+</PreferenceScreen>

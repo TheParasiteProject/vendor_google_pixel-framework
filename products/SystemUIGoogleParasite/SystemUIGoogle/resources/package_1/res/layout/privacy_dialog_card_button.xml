@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Button android:ellipsize="end"
+        android:gravity="center"
+        android:paddingTop="4.0dp"
+        android:paddingBottom="4.0dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:layout_height="56.0dp"
+        android:layout_marginBottom="4.0dp"
+        android:maxLines="1"
+        style="@style/Widget.Dialog.Button.BorderButton" xmlns:android="http://schemas.android.com/apk/res/android" />

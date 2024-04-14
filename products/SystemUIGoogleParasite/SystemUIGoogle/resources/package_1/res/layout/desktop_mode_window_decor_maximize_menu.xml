@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:gravity="center"
+              android:orientation="horizontal"
+              android:background="@drawable/desktop_mode_maximize_menu_background"
+              android:layout_width="@dimen/desktop_mode_maximize_menu_width"
+              android:layout_height="@dimen/desktop_mode_maximize_menu_height"
+              style="?android:attr/buttonBarStyle" xmlns:android="http://schemas.android.com/apk/res/android">
+  <Button android:id="@id/maximize_menu_maximize_button"
+          android:background="@drawable/desktop_mode_maximize_menu_maximize_button_background"
+          android:layout_width="120.0dp"
+          android:layout_height="80.0dp"
+          android:layout_marginRight="15.0dp"
+          android:color="@color/desktop_mode_maximize_menu_button"
+          android:stateListAnimator="@null"
+          style="?android:attr/buttonBarButtonStyle" />
+  <Button android:id="@id/maximize_menu_snap_left_button"
+          android:background="@drawable/desktop_mode_maximize_menu_snap_left_button_background"
+          android:layout_width="58.0dp"
+          android:layout_height="80.0dp"
+          android:layout_marginRight="6.0dp"
+          android:color="@color/desktop_mode_maximize_menu_button"
+          android:stateListAnimator="@null"
+          style="?android:attr/buttonBarButtonStyle" />
+  <Button android:id="@id/maximize_menu_snap_right_button"
+          android:background="@drawable/desktop_mode_maximize_menu_snap_right_button_background"
+          android:layout_width="58.0dp"
+          android:layout_height="80.0dp"
+          android:color="@color/desktop_mode_maximize_menu_button"
+          android:stateListAnimator="@null"
+          style="?android:attr/buttonBarButtonStyle" />
+</LinearLayout>

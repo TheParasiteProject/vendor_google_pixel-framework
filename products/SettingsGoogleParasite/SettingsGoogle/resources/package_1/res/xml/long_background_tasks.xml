@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/long_background_tasks_title" xmlns:android="http://schemas.android.com/apk/res/android">
+  <com.android.settings.widget.FilterTouchesRestrictedSwitchPreference android:title="@string/long_background_tasks_switch_title"
+                        android:key="long_background_tasks_switch" />
+  <com.android.settingslib.widget.FooterPreference android:title="@string/long_background_tasks_footer_title"
+                        android:selectable="false"
+                        android:key="long_background_tasks_description" />
+</PreferenceScreen>

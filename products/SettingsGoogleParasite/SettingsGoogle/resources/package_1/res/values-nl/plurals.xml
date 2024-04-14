@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">%d dag geleden</item>
+    <item quantity="other">%d dagen geleden</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">%d min geleden</item>
+    <item quantity="other">%d min geleden</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">%d jr geleden</item>
+    <item quantity="other">%d jr geleden</item>
+  </plurals>
+  <plurals name="lockscreen_quick_affordances_summary">
+    <item quantity="one">%1$s</item>
+    <item quantity="other">%1$s, %2$s</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d nieuwe melding</item>
+    <item quantity="other">%d nieuwe meldingen</item>
+  </plurals>
+  <plurals name="security_settings_hub_show_warnings_preference">
+    <item quantity="one">%1$d waarschuwing tonen</item>
+    <item quantity="other">Alle waarschuwingen tonen (%1$d)</item>
+  </plurals>
+  <plurals name="security_settings_hub_warnings_title">
+    <item quantity="one">%1$d waarschuwing</item>
+    <item quantity="other">%1$d waarschuwingen</item>
+  </plurals>
+</resources>

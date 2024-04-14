@@ -1,0 +1,42 @@
+.class Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate$1;
+.super Landroid/animation/AnimatorListenerAdapter;
+.source "DropdownMenuEndIconDelegate.java"
+
+
+# instance fields
+.field final synthetic this$0:Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate;)V
+    .locals 0
+
+    .line 306
+    iput-object p1, p0, Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate$1;->this$0:Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate;
+
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 0
+
+    .line 309
+    iget-object p1, p0, Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate$1;->this$0:Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate;
+
+    invoke-virtual {p1}, Lcom/google/android/material/textfield/EndIconDelegate;->refreshIconState()V
+
+    .line 310
+    iget-object p0, p0, Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate$1;->this$0:Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate;
+
+    invoke-static {p0}, Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate;->access$000(Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate;)Landroid/animation/ValueAnimator;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Landroid/animation/ValueAnimator;->start()V
+
+    return-void
+.end method

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<Button android:textAppearance="@style/TextAppearance.SimConfirmDialogList"
+        android:gravity="center"
+        android:id="@id/title"
+        android:paddingLeft="?attr/listPreferredItemPaddingLeft"
+        android:paddingTop="?attr/listPreferredItemPaddingStart"
+        android:paddingRight="?attr/listPreferredItemPaddingRight"
+        android:paddingBottom="?attr/listPreferredItemPaddingEnd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/listPreferredItemHeightSmall"
+        style="@style/SettingsLibActionButton" xmlns:android="http://schemas.android.com/apk/res/android" />

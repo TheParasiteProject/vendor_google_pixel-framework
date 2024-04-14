@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.material.card.MaterialCardView android:id="@id/container"
+                      android:clickable="true"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:foreground="@drawable/contextual_card_background"
+                      android:layout_marginStart="24.0dp"
+                      android:layout_marginEnd="16.0dp"
+                      android:layout_marginVertical="8.0dp"
+                      style="@style/ContextualCardStyle" xmlns:android="http://schemas.android.com/apk/res/android">
+  <include android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="-8.0dp"
+           layout="@layout/card_preference" />
+</com.google.android.material.card.MaterialCardView>

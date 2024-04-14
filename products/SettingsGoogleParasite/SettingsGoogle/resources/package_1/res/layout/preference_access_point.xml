@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:gravity="center_vertical"
+              android:background="?android:attr/selectableItemBackground"
+              android:clipToPadding="false"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:minHeight="?android:attr/listPreferredItemHeightSmall"
+              android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+              android:paddingEnd="?android:attr/listPreferredItemPaddingEnd" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:gravity="center|start"
+                android:clipToPadding="false"
+                android:layout_width="0.0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+    <LinearLayout android:gravity="center|start"
+                  android:orientation="horizontal"
+                  android:id="@id/icon_frame"
+                  android:paddingTop="4.0dp"
+                  android:paddingBottom="4.0dp"
+                  android:clipToPadding="false"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:minWidth="48.0dp">
+      <androidx.preference.internal.PreferenceImageView android:id="@android:id/icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            settings:maxHeight="48.0dp"
+                            settings:maxWidth="48.0dp" />
+    </LinearLayout>
+    <RelativeLayout android:paddingTop="16.0dp"
+                    android:paddingBottom="16.0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+      <TextView android:textAppearance="?android:attr/textAppearanceListItem"
+                android:ellipsize="marquee"
+                android:id="@android:id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:hyphenationFrequency="normalFast"
+                android:lineBreakWordStyle="phrase" />
+      <TextView android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+                android:textColor="?android:attr/textColorSecondary"
+                android:id="@android:id/summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="10"
+                android:layout_below="@android:id/title"
+                android:layout_alignStart="@android:id/title"
+                android:hyphenationFrequency="normalFast"
+                android:lineBreakWordStyle="phrase" />
+    </RelativeLayout>
+  </LinearLayout>
+  <include layout="@layout/preference_two_target_divider" />
+  <LinearLayout android:gravity="center"
+                android:orientation="vertical"
+                android:id="@android:id/widget_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:minWidth="@dimen/two_target_min_width" />
+  <ImageButton android:layout_gravity="center"
+               android:id="@id/icon_button"
+               android:background="?android:attr/selectableItemBackground"
+               android:visibility="gone"
+               android:layout_width="wrap_content"
+               android:layout_height="fill_parent"
+               android:minWidth="@dimen/two_target_min_width"
+               android:minHeight="@dimen/min_tap_target_size" />
+</LinearLayout>

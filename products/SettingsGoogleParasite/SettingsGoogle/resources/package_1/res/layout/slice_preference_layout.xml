@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.slice.widget.SliceView android:id="@id/slice_view"
+                      android:paddingTop="12.0dp"
+                      android:paddingBottom="8.0dp"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                      android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+                      style="@style/Widget.SliceView.Bluetooth" xmlns:android="http://schemas.android.com/apk/res/android" />

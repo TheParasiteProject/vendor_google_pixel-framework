@@ -1,0 +1,571 @@
+.class public Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;
+.super Lcom/android/settings/core/BasePreferenceController;
+.source "BatteryHeaderPreferenceController.java"
+
+# interfaces
+.implements Lcom/android/settings/core/PreferenceControllerMixin;
+.implements Lcom/android/settings/fuelgauge/BatteryPreferenceController;
+
+
+# static fields
+.field private static final BATTERY_MAX_LEVEL:I = 0x64
+
+.field static final KEY_BATTERY_HEADER:Ljava/lang/String; = "battery_header"
+
+.field private static final TAG:Ljava/lang/String; = "BatteryHeaderPreferenceController"
+
+
+# instance fields
+.field mBatteryStatusFeatureProvider:Lcom/android/settings/fuelgauge/BatteryStatusFeatureProvider;
+
+.field private mBatteryTip:Lcom/android/settings/fuelgauge/batterytip/tips/BatteryTip;
+
+.field mBatteryUsageProgressBarPref:Lcom/android/settingslib/widget/UsageProgressBarPreference;
+
+.field private final mPowerManager:Landroid/os/PowerManager;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
+    .locals 0
+
+    .line 52
+    invoke-direct {p0, p1, p2}, Lcom/android/settings/core/BasePreferenceController;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+
+    .line 53
+    const-class p2, Landroid/os/PowerManager;
+
+    invoke-virtual {p1, p2}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/os/PowerManager;
+
+    iput-object p1, p0, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->mPowerManager:Landroid/os/PowerManager;
+
+    .line 55
+    invoke-static {}, Lcom/android/settings/overlay/FeatureFactory;->getFeatureFactory()Lcom/android/settings/overlay/FeatureFactory;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/android/settings/overlay/FeatureFactory;->getBatteryStatusFeatureProvider()Lcom/android/settings/fuelgauge/BatteryStatusFeatureProvider;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->mBatteryStatusFeatureProvider:Lcom/android/settings/fuelgauge/BatteryStatusFeatureProvider;
+
+    return-void
+.end method
+
+.method private formatBatteryPercentageText(I)Ljava/lang/CharSequence;
+    .locals 3
+
+    .line 147
+    iget-object p0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
+
+    sget v0, Lcom/android/settings/R$string;->battery_header_title_alternate:I
+
+    .line 148
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+
+    move-result-object p0
+
+    .line 149
+    invoke-static {}, Landroid/icu/text/NumberFormat;->getIntegerInstance()Landroid/icu/text/NumberFormat;
+
+    move-result-object v0
+
+    int-to-long v1, p1
+
+    invoke-virtual {v0, v1, v2}, Landroid/icu/text/NumberFormat;->format(J)Ljava/lang/String;
+
+    move-result-object p1
+
+    const/4 v0, 0x1
+
+    new-array v0, v0, [Ljava/lang/CharSequence;
+
+    const/4 v1, 0x0
+
+    aput-object p1, v0, v1
+
+    .line 147
+    invoke-static {p0, v0}, Landroid/text/TextUtils;->expandTemplate(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private generateLabel(Lcom/android/settings/fuelgauge/BatteryInfo;)Ljava/lang/CharSequence;
+    .locals 3
+
+    .line 79
+    iget-object v0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
+
+    const-string v1, "BatteryHeaderPreferenceController"
+
+    invoke-static {v0, v1}, Lcom/android/settingslib/Utils;->containsIncompatibleChargers(Landroid/content/Context;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 80
+    iget-object p0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
+
+    sget p1, Lcom/android/settingslib/R$string;->battery_info_status_not_charging:I
+
+    invoke-virtual {p0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 82
+    :cond_0
+    invoke-static {p1}, Lcom/android/settings/fuelgauge/BatteryUtils;->isBatteryDefenderOn(Lcom/android/settings/fuelgauge/BatteryInfo;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const/4 p0, 0x0
+
+    return-object p0
+
+    .line 84
+    :cond_1
+    iget-object v0, p1, Lcom/android/settings/fuelgauge/BatteryInfo;->remainingLabel:Ljava/lang/CharSequence;
+
+    if-eqz v0, :cond_6
+
+    iget v1, p1, Lcom/android/settings/fuelgauge/BatteryInfo;->batteryStatus:I
+
+    const/4 v2, 0x4
+
+    if-ne v1, v2, :cond_2
+
+    goto :goto_0
+
+    .line 88
+    :cond_2
+    iget-object v1, p1, Lcom/android/settings/fuelgauge/BatteryInfo;->statusLabel:Ljava/lang/String;
+
+    if-eqz v1, :cond_3
+
+    iget-boolean v2, p1, Lcom/android/settings/fuelgauge/BatteryInfo;->discharging:Z
+
+    if-nez v2, :cond_3
+
+    .line 90
+    iget-object p0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
+
+    sget p1, Lcom/android/settings/R$string;->battery_state_and_duration:I
+
+    filled-new-array {v1, v0}, [Ljava/lang/Object;
+
+    move-result-object v0
+
+    invoke-virtual {p0, p1, v0}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 92
+    :cond_3
+    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->mPowerManager:Landroid/os/PowerManager;
+
+    invoke-virtual {v0}, Landroid/os/PowerManager;->isPowerSaveMode()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    .line 94
+    iget-object v0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
+
+    sget v1, Lcom/android/settings/R$string;->battery_tip_early_heads_up_done_title:I
+
+    .line 95
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 96
+    iget-object p0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
+
+    sget v1, Lcom/android/settings/R$string;->battery_state_and_duration:I
+
+    iget-object p1, p1, Lcom/android/settings/fuelgauge/BatteryInfo;->remainingLabel:Ljava/lang/CharSequence;
+
+    filled-new-array {v0, p1}, [Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-virtual {p0, v1, p1}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 98
+    :cond_4
+    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->mBatteryTip:Lcom/android/settings/fuelgauge/batterytip/tips/BatteryTip;
+
+    if-eqz v0, :cond_5
+
+    invoke-virtual {v0}, Lcom/android/settings/fuelgauge/batterytip/tips/BatteryTip;->getType()I
+
+    move-result v0
+
+    const/4 v1, 0x5
+
+    if-ne v0, v1, :cond_5
+
+    .line 100
+    iget-object v0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
+
+    sget v1, Lcom/android/settings/R$string;->low_battery_summary:I
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 101
+    iget-object p0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
+
+    sget v1, Lcom/android/settings/R$string;->battery_state_and_duration:I
+
+    iget-object p1, p1, Lcom/android/settings/fuelgauge/BatteryInfo;->remainingLabel:Ljava/lang/CharSequence;
+
+    filled-new-array {v0, p1}, [Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-virtual {p0, v1, p1}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 105
+    :cond_5
+    iget-object p0, p1, Lcom/android/settings/fuelgauge/BatteryInfo;->remainingLabel:Ljava/lang/CharSequence;
+
+    return-object p0
+
+    .line 87
+    :cond_6
+    :goto_0
+    iget-object p0, p1, Lcom/android/settings/fuelgauge/BatteryInfo;->statusLabel:Ljava/lang/String;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public displayPreference(Landroidx/preference/PreferenceScreen;)V
+    .locals 2
+
+    .line 60
+    invoke-super {p0, p1}, Lcom/android/settings/core/BasePreferenceController;->displayPreference(Landroidx/preference/PreferenceScreen;)V
+
+    .line 61
+    invoke-virtual {p0}, Lcom/android/settings/core/BasePreferenceController;->getPreferenceKey()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Landroidx/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroidx/preference/Preference;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/android/settingslib/widget/UsageProgressBarPreference;
+
+    iput-object p1, p0, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->mBatteryUsageProgressBarPref:Lcom/android/settingslib/widget/UsageProgressBarPreference;
+
+    .line 63
+    iget-object v0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
+
+    sget v1, Lcom/android/settings/R$string;->settings_license_activity_loading:I
+
+    .line 64
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 63
+    invoke-virtual {p1, v0}, Lcom/android/settingslib/widget/UsageProgressBarPreference;->setBottomSummary(Ljava/lang/CharSequence;)V
+
+    .line 66
+    iget-object p1, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
+
+    invoke-static {p1}, Lcom/android/settings/Utils;->isBatteryPresent(Landroid/content/Context;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 67
+    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->quickUpdateHeaderPreference()V
+
+    goto :goto_0
+
+    .line 69
+    :cond_0
+    iget-object p0, p0, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->mBatteryUsageProgressBarPref:Lcom/android/settingslib/widget/UsageProgressBarPreference;
+
+    const/4 p1, 0x0
+
+    invoke-virtual {p0, p1}, Landroidx/preference/Preference;->setVisible(Z)V
+
+    :goto_0
+    return-void
+.end method
+
+.method public getAvailabilityStatus()I
+    .locals 0
+
+    .line 0
+    const/4 p0, 0x1
+
+    return p0
+.end method
+
+.method public bridge synthetic getBackgroundWorkerClass()Ljava/lang/Class;
+    .locals 0
+
+    .line 0
+    invoke-super {p0}, Lcom/android/settings/slices/Sliceable;->getBackgroundWorkerClass()Ljava/lang/Class;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public bridge synthetic getIntentFilter()Landroid/content/IntentFilter;
+    .locals 0
+
+    .line 0
+    invoke-super {p0}, Lcom/android/settings/slices/Sliceable;->getIntentFilter()Landroid/content/IntentFilter;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public bridge synthetic getSliceHighlightMenuRes()I
+    .locals 0
+
+    .line 0
+    invoke-super {p0}, Lcom/android/settings/slices/Sliceable;->getSliceHighlightMenuRes()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public bridge synthetic hasAsyncUpdate()Z
+    .locals 0
+
+    .line 0
+    invoke-super {p0}, Lcom/android/settings/slices/Sliceable;->hasAsyncUpdate()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public bridge synthetic isPublicSlice()Z
+    .locals 0
+
+    .line 0
+    invoke-super {p0}, Lcom/android/settings/slices/Sliceable;->isPublicSlice()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public bridge synthetic isSliceable()Z
+    .locals 0
+
+    .line 0
+    invoke-super {p0}, Lcom/android/settings/slices/Sliceable;->isSliceable()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public quickUpdateHeaderPreference()V
+    .locals 4
+
+    .line 127
+    iget-object v0, p0, Lcom/android/settingslib/core/AbstractPreferenceController;->mContext:Landroid/content/Context;
+
+    .line 128
+    invoke-static {v0}, Lcom/android/settingslib/fuelgauge/BatteryUtils;->getBatteryIntent(Landroid/content/Context;)Landroid/content/Intent;
+
+    move-result-object v0
+
+    .line 129
+    invoke-static {v0}, Lcom/android/settingslib/Utils;->getBatteryLevel(Landroid/content/Intent;)I
+
+    move-result v1
+
+    .line 130
+    const-string v2, "plugged"
+
+    const/4 v3, -0x1
+
+    .line 131
+    invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+
+    .line 133
+    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->mBatteryUsageProgressBarPref:Lcom/android/settingslib/widget/UsageProgressBarPreference;
+
+    invoke-direct {p0, v1}, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->formatBatteryPercentageText(I)Ljava/lang/CharSequence;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Lcom/android/settingslib/widget/UsageProgressBarPreference;->setUsageSummary(Ljava/lang/CharSequence;)V
+
+    .line 134
+    iget-object p0, p0, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->mBatteryUsageProgressBarPref:Lcom/android/settingslib/widget/UsageProgressBarPreference;
+
+    int-to-long v0, v1
+
+    const-wide/16 v2, 0x64
+
+    invoke-virtual {p0, v0, v1, v2, v3}, Lcom/android/settingslib/widget/UsageProgressBarPreference;->setPercent(JJ)V
+
+    return-void
+.end method
+
+.method public updateBatteryStatus(Ljava/lang/String;Lcom/android/settings/fuelgauge/BatteryInfo;)V
+    .locals 1
+
+    if-eqz p1, :cond_0
+
+    move-object p2, p1
+
+    goto :goto_0
+
+    .line 121
+    :cond_0
+    invoke-direct {p0, p2}, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->generateLabel(Lcom/android/settings/fuelgauge/BatteryInfo;)Ljava/lang/CharSequence;
+
+    move-result-object p2
+
+    .line 122
+    :goto_0
+    iget-object p0, p0, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->mBatteryUsageProgressBarPref:Lcom/android/settingslib/widget/UsageProgressBarPreference;
+
+    invoke-virtual {p0, p2}, Lcom/android/settingslib/widget/UsageProgressBarPreference;->setBottomSummary(Ljava/lang/CharSequence;)V
+
+    .line 123
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "updateBatteryStatus: "
+
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p1, " summary: "
+
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string p1, "BatteryHeaderPreferenceController"
+
+    invoke-static {p1, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+.end method
+
+.method public updateHeaderByBatteryTips(Lcom/android/settings/fuelgauge/batterytip/tips/BatteryTip;Lcom/android/settings/fuelgauge/BatteryInfo;)V
+    .locals 0
+
+    .line 139
+    iput-object p1, p0, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->mBatteryTip:Lcom/android/settings/fuelgauge/batterytip/tips/BatteryTip;
+
+    if-eqz p1, :cond_0
+
+    if-eqz p2, :cond_0
+
+    .line 142
+    invoke-virtual {p0, p2}, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->updateHeaderPreference(Lcom/android/settings/fuelgauge/BatteryInfo;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public updateHeaderPreference(Lcom/android/settings/fuelgauge/BatteryInfo;)V
+    .locals 4
+
+    .line 110
+    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->mBatteryStatusFeatureProvider:Lcom/android/settings/fuelgauge/BatteryStatusFeatureProvider;
+
+    invoke-interface {v0, p0, p1}, Lcom/android/settings/fuelgauge/BatteryStatusFeatureProvider;->triggerBatteryStatusUpdate(Lcom/android/settings/fuelgauge/BatteryPreferenceController;Lcom/android/settings/fuelgauge/BatteryInfo;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 111
+    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->mBatteryUsageProgressBarPref:Lcom/android/settingslib/widget/UsageProgressBarPreference;
+
+    invoke-direct {p0, p1}, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->generateLabel(Lcom/android/settings/fuelgauge/BatteryInfo;)Ljava/lang/CharSequence;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/UsageProgressBarPreference;->setBottomSummary(Ljava/lang/CharSequence;)V
+
+    .line 114
+    :cond_0
+    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->mBatteryUsageProgressBarPref:Lcom/android/settingslib/widget/UsageProgressBarPreference;
+
+    iget v1, p1, Lcom/android/settings/fuelgauge/BatteryInfo;->batteryLevel:I
+
+    .line 115
+    invoke-direct {p0, v1}, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->formatBatteryPercentageText(I)Ljava/lang/CharSequence;
+
+    move-result-object v1
+
+    .line 114
+    invoke-virtual {v0, v1}, Lcom/android/settingslib/widget/UsageProgressBarPreference;->setUsageSummary(Ljava/lang/CharSequence;)V
+
+    .line 116
+    iget-object p0, p0, Lcom/android/settings/fuelgauge/BatteryHeaderPreferenceController;->mBatteryUsageProgressBarPref:Lcom/android/settingslib/widget/UsageProgressBarPreference;
+
+    iget p1, p1, Lcom/android/settings/fuelgauge/BatteryInfo;->batteryLevel:I
+
+    int-to-long v0, p1
+
+    const-wide/16 v2, 0x64
+
+    invoke-virtual {p0, v0, v1, v2, v3}, Lcom/android/settingslib/widget/UsageProgressBarPreference;->setPercent(JJ)V
+
+    return-void
+.end method
+
+.method public bridge synthetic useDynamicSliceSummary()Z
+    .locals 0
+
+    .line 0
+    invoke-super {p0}, Lcom/android/settings/slices/Sliceable;->useDynamicSliceSummary()Z
+
+    move-result p0
+
+    return p0
+.end method

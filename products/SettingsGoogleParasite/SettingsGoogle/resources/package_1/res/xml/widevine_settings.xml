@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/widevine_settings_title"
+                  settings:searchable="false" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <SwitchPreferenceCompat android:title="@string/force_l3_fallback_title"
+                        android:key="force_l3_fallback"
+                        android:summary="@string/force_l3_fallback_summary"
+                        settings:controller="com.android.settings.development.widevine.ForceL3FallbackPreferenceController" />
+</PreferenceScreen>

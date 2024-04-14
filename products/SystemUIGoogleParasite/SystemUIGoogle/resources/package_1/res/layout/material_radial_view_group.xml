@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+  <View android:id="@id/circle_center"
+        android:layout_width="1.0px"
+        android:layout_height="1.0px"
+        systemui:r0x7f040336="0"
+        systemui:r0x7f04033c="0"
+        systemui:r0x7f040350="0"
+        systemui:r0x7f040354="0" />
+</merge>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:persistent="false"
+                  android:title="@string/reduce_bright_colors_preference_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settings.widget.LabeledSeekBarPreference android:persistent="false"
+                        android:title="@string/reduce_bright_colors_intensity_preference_title"
+                        android:key="rbc_intensity"
+                        settings:textEnd="@string/reduce_bright_colors_intensity_end_label"
+                        settings:textStart="@string/reduce_bright_colors_intensity_start_label"
+                        settings:tickMark="@android:color/transparent" />
+  <SwitchPreferenceCompat android:persistent="false"
+                        android:title="@string/reduce_bright_colors_persist_preference_title"
+                        android:key="rbc_persist" />
+</PreferenceScreen>

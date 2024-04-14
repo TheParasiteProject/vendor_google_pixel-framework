@@ -1,0 +1,46 @@
+.class Landroidx/slice/widget/DisplayedListItems;
+.super Ljava/lang/Object;
+.source "DisplayedListItems.java"
+
+
+# instance fields
+.field private final mDisplayedItems:Ljava/util/List;
+
+.field private final mHiddenItemCount:I
+
+
+# direct methods
+.method constructor <init>(Ljava/util/List;I)V
+    .locals 0
+
+    .line 33
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 34
+    iput-object p1, p0, Landroidx/slice/widget/DisplayedListItems;->mDisplayedItems:Ljava/util/List;
+
+    .line 35
+    iput p2, p0, Landroidx/slice/widget/DisplayedListItems;->mHiddenItemCount:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method getDisplayedItems()Ljava/util/List;
+    .locals 0
+
+    .line 39
+    iget-object p0, p0, Landroidx/slice/widget/DisplayedListItems;->mDisplayedItems:Ljava/util/List;
+
+    return-object p0
+.end method
+
+.method getHiddenItemCount()I
+    .locals 0
+
+    .line 43
+    iget p0, p0, Landroidx/slice/widget/DisplayedListItems;->mHiddenItemCount:I
+
+    return p0
+.end method

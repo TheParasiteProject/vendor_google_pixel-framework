@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/manager_battery_usage_allow_background_usage_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.LayoutPreference android:layout="@layout/settings_entity_header"
+                        android:selectable="false"
+                        android:key="header_view" />
+  <com.android.settingslib.widget.MainSwitchPreference android:title="@string/manager_battery_usage_allow_background_usage_title"
+                        android:key="allow_background_usage"
+                        settings:controller="com.android.settings.fuelgauge.AllowBackgroundPreferenceController" />
+  <com.android.settingslib.widget.SelectorWithWidgetPreference android:title="@string/manager_battery_usage_optimized_title"
+                        android:key="optimized_preference"
+                        android:summary="@string/manager_battery_usage_optimized_summary"
+                        settings:controller="com.android.settings.fuelgauge.OptimizedPreferenceController" />
+  <com.android.settingslib.widget.SelectorWithWidgetPreference android:title="@string/manager_battery_usage_unrestricted_title"
+                        android:key="unrestricted_preference"
+                        android:summary="@string/manager_battery_usage_unrestricted_summary"
+                        settings:controller="com.android.settings.fuelgauge.UnrestrictedPreferenceController" />
+  <com.android.settingslib.widget.FooterPreference android:title="@string/manager_battery_usage_footer"
+                        android:selectable="false"
+                        android:key="app_usage_footer_preference"
+                        settings:searchable="false" />
+</PreferenceScreen>

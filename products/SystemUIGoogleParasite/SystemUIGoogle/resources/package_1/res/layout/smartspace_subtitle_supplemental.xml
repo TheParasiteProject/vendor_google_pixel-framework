@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.systemui.smartspace.DoubleShadowTextView android:textColor="?android:attr/textColorPrimary"
+                      android:ellipsize="none"
+                      android:id="@id/base_action_icon_subtitle"
+                      android:padding="@dimen/enhanced_smartspace_base_action_icon_padding"
+                      android:focusable="true"
+                      android:layout_width="0.0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="@dimen/enhanced_smartspace_base_action_icon_padding"
+                      systemui:r0x7f040332="@id/subtitle_text"
+                      systemui:r0x7f04033c="0"
+                      systemui:r0x7f04034f="@id/subtitle_text"
+                      systemui:r0x7f04035b="-2"
+                      style="@style/EnhancedSmartspaceTextSubtitle" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto" />

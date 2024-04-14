@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.setupdesign.GlifLayout android:id="@id/face_enroll_confirmation"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      style="@style/FaceLayoutTheme" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/SudContentFrame">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/lock_screen_bypass_lottie"
+                          android:layout_width="fill_parent"
+                          android:layout_height="@dimen/lock_screen_bypass_lottie_height"
+                          android:scaleType="centerInside"
+                          settings:lottie_autoPlay="true"
+                          settings:lottie_loop="true" />
+    <com.google.android.settings.biometrics.face.FaceEnrollLockScreenBypassToggle android:id="@id/lock_screen_bypass_toggle"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="20.0dp" />
+  </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

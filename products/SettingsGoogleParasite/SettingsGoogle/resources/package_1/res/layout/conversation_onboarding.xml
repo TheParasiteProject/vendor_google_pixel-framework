@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:gravity="center"
+              android:layout_gravity="center"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+  <ImageView android:layout_width="80.0dp"
+             android:layout_height="80.0dp"
+             android:layout_marginTop="143.0dp"
+             android:src="@drawable/ic_promote_conversation" />
+  <TextView android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:layout_width="316.0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47.0dp"
+            android:text="@string/conversation_onboarding_title"
+            android:fontFamily="@android:string/config_mainDisplayShape" />
+  <TextView android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="?android:attr/textColorSecondary"
+            android:gravity="center"
+            android:layout_width="316.0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24.0dp"
+            android:text="@string/conversation_onboarding_summary" />
+</LinearLayout>

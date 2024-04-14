@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <raw name="a11y_color_inversion_banner">@raw/accessibility_color_inversion_banner</raw>
+  <raw name="a11y_extra_dim_banner">@raw/extra_dim_banner</raw>
+  <raw name="a11y_magnification_banner">@raw/accessibility_magnification_banner</raw>
+  <raw name="a11y_shortcut_type_triple_tap">@raw/accessibility_shortcut_type_triple_tap</raw>
+  <raw name="a11y_timeout_banner">@raw/accessibility_timeout_banner</raw>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.setupdesign.GlifLayout android:icon="@drawable/ic_lock"
+                      android:id="@id/ps_fragment_lock"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:filterTouchesWhenObscured="true"
+                      settings:sucHeaderText="@string/private_space_lockscreen_title"
+                      settings:sudDescriptionText="@string/private_space_lockscreen_summary" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.google.android.setupdesign.view.FillContentLayout android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:maxWidth="@dimen/animation_max_size"
+                        android:maxHeight="@dimen/animation_max_size"
+                        style="@style/SudContentFrame">
+    <ImageView android:id="@id/privatespace_lock_image"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:src="@drawable/privatespace_lock_placeholder"
+               android:scaleType="fitCenter"
+               android:contentDescription="@null" />
+  </com.google.android.setupdesign.view.FillContentLayout>
+</com.google.android.setupdesign.GlifLayout>

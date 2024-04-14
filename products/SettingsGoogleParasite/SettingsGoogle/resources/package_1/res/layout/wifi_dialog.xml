@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.core.widget.NestedScrollView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:fadeScrollbars="false"
+                      android:scrollIndicators="bottom|top" xmlns:android="http://schemas.android.com/apk/res/android">
+  <include layout="@layout/wifi_network_config" />
+</androidx.core.widget.NestedScrollView>

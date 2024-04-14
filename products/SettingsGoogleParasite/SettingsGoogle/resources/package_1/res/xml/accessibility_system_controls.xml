@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:persistent="false"
+                  android:title="@string/accessibility_system_controls_title"
+                  android:key="accessibility_system_controls" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <Preference android:persistent="false"
+              android:title="@string/system_navigation_title"
+              android:key="gesture_system_navigation_input_summary_accessibility"
+              android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
+              settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController"
+              settings:searchable="false" />
+  <Preference android:persistent="false"
+              android:title="@string/one_handed_title"
+              android:key="gesture_system_navigation_one_handed_accessibility"
+              android:fragment="com.android.settings.gestures.OneHandedSettings"
+              settings:controller="com.android.settings.gestures.OneHandedEnablePreferenceController"
+              settings:searchable="false" />
+  <SwitchPreferenceCompat android:persistent="false"
+                        android:title="@string/accessibility_power_button_ends_call_prerefence_title"
+                        android:key="toggle_power_button_ends_call_preference"
+                        settings:controller="com.android.settings.accessibility.PowerButtonEndsCallPreferenceController" />
+  <com.android.settingslib.PrimarySwitchPreference android:persistent="false"
+                        android:title="@string/accelerometer_title"
+                        android:key="toggle_lock_screen_rotation_preference"
+                        android:summary="@string/auto_rotate_summary_a11y"
+                        android:fragment="com.android.settings.display.SmartAutoRotatePreferenceFragment"
+                        settings:controller="com.android.settings.accessibility.LockScreenRotationPreferenceController"
+                        settings:keywords="@string/keywords_auto_rotate" />
+  <Preference android:persistent="false"
+              android:title="@string/accelerometer_title"
+              android:key="device_state_auto_rotate_accessibility"
+              android:fragment="com.android.settings.display.SmartAutoRotatePreferenceFragment"
+              settings:controller="com.android.settings.display.DeviceStateAutoRotateOverviewController"
+              settings:keywords="@string/keywords_auto_rotate" />
+</PreferenceScreen>

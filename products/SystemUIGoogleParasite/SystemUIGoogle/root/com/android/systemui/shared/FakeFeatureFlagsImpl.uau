@@ -1,0 +1,3 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/systemui/shared/FakeFeatureFlagsImpl;->exampleSharedFlag()Z,out/soong/.intermediates/frameworks/libs/systemui/aconfig/com_android_systemui_shared_flags_lib/android_common/javac/srcjars/com/android/systemui/shared/FakeFeatureFlagsImpl.java,17,5,17,25,
+Lcom/android/systemui/shared/FakeFeatureFlagsImpl;->sidefpsControllerRefactor()Z,out/soong/.intermediates/frameworks/libs/systemui/aconfig/com_android_systemui_shared_flags_lib/android_common/javac/srcjars/com/android/systemui/shared/FakeFeatureFlagsImpl.java,25,5,25,25,

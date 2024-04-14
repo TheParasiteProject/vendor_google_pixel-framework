@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <dimen name="biometric_auth_pattern_view_size">298.0dp</dimen>
+  <dimen name="global_actions_side_margin">12.0dp</dimen>
+  <dimen name="navigation_key_width">80.0dp</dimen>
+  <dimen name="navigation_side_padding">40.0dp</dimen>
+  <dimen name="num_pad_key_margin_end">20.0dp</dimen>
+  <dimen name="num_pad_key_width">84.0dp</dimen>
+  <dimen name="sud_description_text_size">16.0sp</dimen>
+</resources>

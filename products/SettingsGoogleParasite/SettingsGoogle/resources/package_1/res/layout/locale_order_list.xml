@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:textDirection="locale"
+             android:layoutDirection="locale" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:orientation="vertical"
+                android:clipChildren="true"
+                android:clipToPadding="true"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/dragList"
+                          android:scrollbars="none"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content" />
+    <Button android:textAppearance="?android:attr/textAppearanceListItem"
+            android:id="@id/add_language"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_a_language"
+            android:drawablePadding="32.0dp"
+            android:drawableStart="@drawable/ic_add_24dp"
+            android:textAlignment="textStart"
+            android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+            android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+            style="@style/Base.Widget.AppCompat.Button.Borderless" />
+  </LinearLayout>
+</FrameLayout>

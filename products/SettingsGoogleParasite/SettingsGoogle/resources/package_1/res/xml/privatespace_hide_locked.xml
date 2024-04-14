@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/privatespace_hide_page_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.IllustrationPreference android:key="privatespace_hide_video"
+                        settings:lottie_rawRes="@drawable/privatespace_placeholder_image"
+                        settings:searchable="false" />
+  <com.android.settingslib.widget.MainSwitchPreference android:title="@string/privatespace_hide_page_title"
+                        android:key="hide_when_locked"
+                        settings:controller="com.android.settings.privatespace.HidePrivateSpaceController" />
+  <Preference android:selectable="false"
+              android:key="private_space_hidden"
+              android:summary="@string/privatespace_hide_page_summary"
+              settings:searchable="false" />
+  <Preference android:selectable="false"
+              android:key="private_space_note"
+              android:summary="@string/privatespace_development_note"
+              settings:searchable="false" />
+  <PreferenceCategory android:title="@string/privatespace_unhide_header">
+    <Preference android:icon="@drawable/counter_1_24dp"
+                android:title="@string/privatespace_open_settings"
+                android:selectable="false"
+                android:key="search_when_locked_footer"
+                settings:searchable="false" />
+    <Preference android:icon="@drawable/counter_2_24dp"
+                android:title="@string/privatespace_tap_settings"
+                android:selectable="false"
+                android:key="tap_tile_footer"
+                settings:searchable="false" />
+    <Preference android:icon="@drawable/counter_3_24dp"
+                android:title="@string/privatespace_turnoff_hide"
+                android:selectable="false"
+                android:key="turn_off_footer"
+                settings:searchable="false" />
+  </PreferenceCategory>
+</PreferenceScreen>

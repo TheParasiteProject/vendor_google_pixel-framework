@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.android.internal.widget.ResolverDrawerLayout android:layout_gravity="center"
+                      android:id="@android:id/content_preview_container"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:maxWidth="@android:dimen/config_bottomDialogCornerRadius"
+                      android:maxItems="10000.0dp"
+                      android:minorWeightMax="56.0dp" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:gravity="center"
+                android:orientation="vertical"
+                android:id="@android:id/chooser_nearby_button"
+                android:background="@android:drawable/btn_checkbox_checked_to_unchecked_mtrl_animation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:elevation="0.0dp"
+                android:layout_ignoreOffset="true">
+    <ImageView android:layout_width="@dimen/media_projection_app_selector_icon_size"
+               android:layout_height="@dimen/media_projection_app_selector_icon_size"
+               android:layout_marginTop="@android:dimen/chooser_preview_image_border"
+               android:layout_marginBottom="@android:dimen/chooser_preview_image_border"
+               android:src="@drawable/ic_present_to_all"
+               android:tint="?android:attr/textColorPrimary"
+               android:importantForAccessibility="no" />
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge"
+              android:gravity="center"
+              android:id="@android:id/title"
+              android:paddingLeft="24.0dp"
+              android:paddingRight="24.0dp"
+              android:paddingBottom="@android:dimen/config_backGestureInset"
+              android:focusable="false"
+              android:clickable="false"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+  </LinearLayout>
+  <FrameLayout android:id="@android:id/content_preview_file_area"
+               android:visibility="gone"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content" />
+  <TabHost android:id="@android:id/qwertz"
+           android:background="?android:attr/colorBackground"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true">
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+      <TabWidget android:id="@android:id/tabs"
+                 android:visibility="gone"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content" />
+      <FrameLayout android:id="@android:id/tabcontent"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content">
+        <com.android.internal.app.ResolverViewPager android:id="@android:id/qwerty"
+                              android:layout_width="fill_parent"
+                              android:layout_height="wrap_content" />
+      </FrameLayout>
+    </LinearLayout>
+  </TabHost>
+</com.android.internal.widget.ResolverDrawerLayout>

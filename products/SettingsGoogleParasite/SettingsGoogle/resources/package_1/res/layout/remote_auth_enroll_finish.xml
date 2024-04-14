@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.setupdesign.GlifLayout android:icon="@drawable/ic_lock"
+                      android:id="@id/setup_wizard_layout"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      settings:sucHeaderText="@string/security_settings_remoteauth_enroll_finish_title"
+                      settings:sudDescriptionText="@string/security_settings_remoteauth_enroll_finish_description" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:paddingHorizontal="@dimen/remoteauth_fragment_padding_horizontal"
+                        style="@style/SudContentFrame">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/enroll_finish_animation"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:importantForAccessibility="no"
+                          settings:layout_constraintEnd_toEndOf="parent"
+                          settings:layout_constraintStart_toStartOf="parent"
+                          settings:layout_constraintTop_toTopOf="parent"
+                          settings:lottie_autoPlay="true"
+                          settings:lottie_loop="true"
+                          settings:lottie_rawRes="@raw/remoteauth_enroll_finish_animation" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.setupdesign.GlifLayout>

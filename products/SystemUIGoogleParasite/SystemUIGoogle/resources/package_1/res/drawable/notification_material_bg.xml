@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<layer-list android:color="?android:attr/colorControlHighlight" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+  <item>
+    <shape>
+      <solid android:color="?android:^attr-private/materialColorSurfaceContainerLowest" />
+    </shape>
+  </item>
+  <item>
+    <shape>
+      <solid android:color="@color/notification_overlay_color" />
+    </shape>
+  </item>
+</layer-list>

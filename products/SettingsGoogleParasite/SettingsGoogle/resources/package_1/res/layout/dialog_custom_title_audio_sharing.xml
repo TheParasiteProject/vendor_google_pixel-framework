@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:padding="?android:attr/dialogPreferredPadding"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <ImageView android:layout_gravity="center"
+             android:id="@id/title_icon"
+             android:layout_width="32.0dp"
+             android:layout_height="32.0dp"
+             android:tint="?android:attr/colorControlNormal" />
+  <TextView android:textSize="24.0sp"
+            android:layout_gravity="center"
+            android:id="@id/title_text"
+            android:paddingTop="14.0dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textAlignment="center"
+            style="?android:attr/windowTitleStyle" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/private_space_lock_title"
+                  settings:searchable="false" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.TopIntroPreference android:title="@string/private_space_one_lock_summary"
+                        settings:searchable="false" />
+  <com.android.settingslib.widget.MainSwitchPreference android:title="@string/private_space_screen_lock_title"
+                        android:key="private_lock_unification"
+                        settings:searchable="false" />
+  <Preference android:title="@string/private_space_lock_title"
+              android:key="change_private_space_lock"
+              android:summary="@string/unlock_set_unlock_mode_pattern"
+              settings:searchable="false" />
+  <Preference android:title="@string/private_space_biometric_title"
+              android:key="private_space_biometrics"
+              android:summary="@string/private_space_biometric_summary"
+              android:fragment="com.android.settings.privatespace.onelock.FaceFingerprintUnlockFragment"
+              settings:searchable="false" />
+</PreferenceScreen>

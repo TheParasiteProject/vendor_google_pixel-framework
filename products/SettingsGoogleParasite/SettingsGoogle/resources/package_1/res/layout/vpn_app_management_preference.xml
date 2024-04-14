@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical"
+                      android:background="?android:attr/selectableItemBackground"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:minHeight="?android:attr/listPreferredItemHeight"
+                      android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+                      android:paddingEnd="?android:attr/listPreferredItemPaddingEnd" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <FrameLayout android:id="@id/icon_frame"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+    <androidx.preference.internal.PreferenceImageView android:id="@android:id/icon"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          settings:maxHeight="48.0dp"
+                          settings:maxWidth="48.0dp" />
+  </FrameLayout>
+  <TextView android:ellipsize="marquee"
+            android:id="@android:id/title"
+            android:fadingEdge="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.0dp"
+            android:layout_marginTop="16.0dp"
+            android:singleLine="true"
+            settings:layout_constraintHeight="wrap_content_constrained"
+            settings:layout_constraintLeft_toRightOf="@android:id/icon_frame" />
+  <TextView android:textColor="?android:attr/textColorSecondary"
+            android:id="@android:id/summary"
+            android:scrollbars="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16.0dp"
+            settings:layout_constraintHeight="wrap_content_constrained"
+            settings:layout_constraintLeft_toLeftOf="@android:id/title"
+            settings:layout_constraintTop_toBottomOf="@android:id/title" />
+  <LinearLayout android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:id="@android:id/widget_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                settings:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

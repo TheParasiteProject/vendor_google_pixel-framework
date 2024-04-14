@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <dimen name="battery_margin_bottom">1.0px</dimen>
+  <dimen name="tv_window_menu_button_margin">4.0dp</dimen>
+  <dimen name="tv_window_menu_button_radius">20.0dp</dimen>
+  <dimen name="tv_window_menu_button_size">48.0dp</dimen>
+  <dimen name="tv_window_menu_icon_size">20.0dp</dimen>
+</resources>

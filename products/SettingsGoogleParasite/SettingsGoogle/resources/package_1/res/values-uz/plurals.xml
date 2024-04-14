@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">%d kun oldin</item>
+    <item quantity="other">%d kun oldin</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">%d daqiqa oldin</item>
+    <item quantity="other">%d daqiqa oldin</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">%d yil oldin</item>
+    <item quantity="other">%d yil oldin</item>
+  </plurals>
+  <plurals name="lockscreen_quick_affordances_summary">
+    <item quantity="one">%1$s</item>
+    <item quantity="other">%1$s, %2$s</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d ta yangi bildirishnoma</item>
+    <item quantity="other">%d ta yangi bildirishnoma</item>
+  </plurals>
+  <plurals name="security_settings_hub_show_warnings_preference">
+    <item quantity="one">%1$d ta ogohlantirishni ochish</item>
+    <item quantity="other">Barcha ogohlantirishlarni (%1$d) ochish</item>
+  </plurals>
+  <plurals name="security_settings_hub_warnings_title">
+    <item quantity="one">%1$d ta ogohlantirish</item>
+    <item quantity="other">%1$d ta ogohlantirish</item>
+  </plurals>
+</resources>

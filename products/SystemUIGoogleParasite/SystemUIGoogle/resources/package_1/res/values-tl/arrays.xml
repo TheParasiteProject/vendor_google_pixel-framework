@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <string-array name="battery_options">
+    <item>Palaging ipakita ang porsyento</item>
+    <item>Ipakita ang porsyento kapag nagcha-charge (default)</item>
+    <item>Huwag ipakita ang icon na ito</item>
+  </string-array>
+  <string-array name="clock_options">
+    <item>Ipakita ang oras, minuto at segundo</item>
+    <item>Ipakita ang oras at minuto (default)</item>
+    <item>Huwag ipakita ang icon na ito</item>
+  </string-array>
+  <string-array name="nav_bar_buttons">
+    <item>Clipboard</item>
+    <item>Keycode</item>
+    <item>Pagkumpirma ng pag-rotate, keyboard switcher</item>
+    <item>Wala</item>
+  </string-array>
+  <string-array name="nav_bar_layouts">
+    <item>Karaniwan</item>
+    <item>Compact</item>
+    <item>Nakapanig sa kaliwa</item>
+    <item>Nakapanig sa kanan</item>
+  </string-array>
+  <string-array name="qs_record_issue_types">
+    <item>Performance</item>
+    <item>User Interface</item>
+    <item>Baterya</item>
+  </string-array>
+  <string-array name="tile_states_airplane">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_alarm">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_battery">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_bt">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_cameratoggle">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_cast">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_cell">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_color_correction">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_controls">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_dark">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_dnd">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_dream">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_flashlight">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_font_scaling">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_hotspot">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_internet">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_inversion">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_location">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_mictoggle">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_night">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_onehanded">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_qr_code_scanner">
+    <item>Hindi Available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_reduce_brightness">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_reverse">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_rotation">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_saver">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_screenrecord">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_wallet">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_wifi">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="tile_states_work">
+    <item>Hindi available</item>
+    <item>Naka-off</item>
+    <item>Naka-on</item>
+  </string-array>
+  <string-array name="wifitrackerlib_wifi_status">
+    <item></item>
+    <item>Nagsa-scan…</item>
+    <item>Kumokonekta…</item>
+    <item>Ino-authenticate…</item>
+    <item>Kinukuha ang IP address…</item>
+    <item>Konektado</item>
+    <item>Nasuspinde</item>
+    <item>Nagdidiskonekta…</item>
+    <item>Nadiskonekta</item>
+    <item>Hindi matagumpay</item>
+    <item>Naka-block</item>
+    <item>Pansamantalang iniiwasan ang mahinang koneksyon</item>
+  </string-array>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:left="@dimen/screen_flash_color_button_inner_circle_padding"
+        android:top="@dimen/screen_flash_color_button_inner_circle_padding"
+        android:right="@dimen/screen_flash_color_button_inner_circle_padding"
+        android:bottom="@dimen/screen_flash_color_button_inner_circle_padding">
+    <shape android:shape="oval">
+      <size android:height="@dimen/screen_flash_color_button_inner_circle_size"
+            android:width="@dimen/screen_flash_color_button_inner_circle_size" />
+      <solid android:color="@color/screen_flash_preset_opaque_color_12" />
+      <stroke android:width="@dimen/screen_flash_color_button_inner_circle_stroke"
+              android:color="@color/screen_flash_color_button_inner_circle_stroke_color" />
+    </shape>
+  </item>
+</layer-list>

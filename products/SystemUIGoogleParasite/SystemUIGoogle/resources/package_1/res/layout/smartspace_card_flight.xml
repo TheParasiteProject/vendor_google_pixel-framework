@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.systemui.smartspace.BcSmartspaceCardFlight android:layout_width="wrap_content"
+                      android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+  <ImageView android:id="@id/flight_qr_code"
+             android:background="@drawable/bg_flight_qr_code"
+             android:padding="10.0dp"
+             android:layout_width="0.0dp"
+             android:layout_height="fill_parent"
+             android:contentDescription="@string/smartspace_flight_qr_code"
+             systemui:r0x7f040336="0"
+             systemui:layout_constraintDimensionRatio="1:1"
+             systemui:r0x7f04033c="0"
+             systemui:r0x7f040350="0"
+             systemui:r0x7f040354="0" />
+</com.google.android.systemui.smartspace.BcSmartspaceCardFlight>

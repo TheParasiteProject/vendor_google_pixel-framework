@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <string-array name="battery_options">
+    <item>Ар дайым пайызы көрүнсүн</item>
+    <item>Кубаттоо учурунда пайызы көрүнсүн (демейки)</item>
+    <item>Бул сүрөтчө көрүнбөсүн</item>
+  </string-array>
+  <string-array name="clock_options">
+    <item>Сааттар, мүнөттөр жана секунддар</item>
+    <item>Сааттар жана мүнөттөр (демейки шартта)</item>
+    <item>Бул сүрөтчө көрүнбөсүн</item>
+  </string-array>
+  <string-array name="nav_bar_buttons">
+    <item>Алмашуу буфери</item>
+    <item>Баскыч коду</item>
+    <item>Бурууну ырастоо, баскычтопту которуштургуч</item>
+    <item>Жок</item>
+  </string-array>
+  <string-array name="nav_bar_layouts">
+    <item>Кадимки</item>
+    <item>Жыйнактуу</item>
+    <item>Сол жакта</item>
+    <item>Оң жакта</item>
+  </string-array>
+  <string-array name="qs_record_issue_types">
+    <item>Иштин майнаптуулугу</item>
+    <item>Колдонуучунун интерфейси</item>
+    <item>Батарея</item>
+  </string-array>
+  <string-array name="tile_states_airplane">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_alarm">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_battery">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_bt">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_cameratoggle">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_cast">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_cell">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_color_correction">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_controls">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_dark">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_dnd">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_dream">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_flashlight">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_font_scaling">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_hotspot">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_internet">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_inversion">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_location">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_mictoggle">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_night">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_onehanded">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_qr_code_scanner">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_reduce_brightness">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_reverse">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_rotation">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_saver">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_screenrecord">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_wallet">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_wifi">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="tile_states_work">
+    <item>Жеткиликсиз</item>
+    <item>Өчүк</item>
+    <item>Күйүк</item>
+  </string-array>
+  <string-array name="wifitrackerlib_wifi_status">
+    <item></item>
+    <item>Изделүүдө…</item>
+    <item>Туташууда…</item>
+    <item>Аутентификациядан өтүүдө…</item>
+    <item>IP дареги алынууда…</item>
+    <item>Туташып турат</item>
+    <item>Убактылуу токтотулду</item>
+    <item>Ажыратылууда…</item>
+    <item>Ажыратылды</item>
+    <item>Ката</item>
+    <item>Бөгөттөлдү</item>
+    <item>Байланыш начар болгондуктан өчүрүлдү</item>
+  </string-array>
+</resources>

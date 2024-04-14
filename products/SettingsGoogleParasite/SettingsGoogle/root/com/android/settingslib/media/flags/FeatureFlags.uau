@@ -1,0 +1,4 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/settingslib/media/flags/FeatureFlags;->enableOutputSwitcherForSystemRouting()Z,out/soong/.intermediates/frameworks/base/packages/SettingsLib/settingslib_flags_lib/android_common/javac/srcjars/com/android/settingslib/media/flags/FeatureFlags.java,10,5,10,25,
+Lcom/android/settingslib/media/flags/FeatureFlags;->enableTvMediaOutputDialog()Z,out/soong/.intermediates/frameworks/base/packages/SettingsLib/settingslib_flags_lib/android_common/javac/srcjars/com/android/settingslib/media/flags/FeatureFlags.java,17,5,17,25,
+Lcom/android/settingslib/media/flags/FeatureFlags;->useMediaRouter2ForInfoMediaManager()Z,out/soong/.intermediates/frameworks/base/packages/SettingsLib/settingslib_flags_lib/android_common/javac/srcjars/com/android/settingslib/media/flags/FeatureFlags.java,24,5,24,25,

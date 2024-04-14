@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/notif_listener_excluded_app_screen_title"
+                  android:key="nonbridged_apps"
+                  settings:controller="com.android.settings.applications.specialaccess.notificationaccess.BridgedAppsPreferenceController"
+                  settings:searchable="false" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto" />

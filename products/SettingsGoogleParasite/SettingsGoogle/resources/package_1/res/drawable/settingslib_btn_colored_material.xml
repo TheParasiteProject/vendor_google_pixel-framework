@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<inset android:insetLeft="4.0dp"
+       android:insetRight="4.0dp"
+       android:insetTop="6.0dp"
+       android:insetBottom="6.0dp" xmlns:android="http://schemas.android.com/apk/res/android">
+  <ripple android:color="?attr/colorControlHighlight">
+    <item>
+      <shape android:tint="@color/settingslib_btn_colored_background_material"
+             android:shape="rectangle">
+        <corners android:radius="2.0dp" />
+        <solid android:color="@android:color/white" />
+        <padding android:left="8.0dp"
+                 android:top="4.0dp"
+                 android:right="8.0dp"
+                 android:bottom="4.0dp" />
+      </shape>
+    </item>
+  </ripple>
+</inset>

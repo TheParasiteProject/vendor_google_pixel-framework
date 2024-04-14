@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/adaptive_connectivity_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.TopIntroPreference android:title="@string/adaptive_connectivity_summary"
+                        settings:searchable="false" />
+  <com.android.settingslib.widget.IllustrationPreference android:key="adaptive_connectivity_header"
+                        settings:lottie_rawRes="@drawable/ic_enhanced_connectivity"
+                        settings:searchable="false" />
+  <com.android.settingslib.widget.MainSwitchPreference android:title="@string/adaptive_connectivity_main_switch_title"
+                        android:key="adaptive_connectivity"
+                        settings:controller="com.android.settings.network.AdaptiveConnectivityTogglePreferenceController" />
+</PreferenceScreen>

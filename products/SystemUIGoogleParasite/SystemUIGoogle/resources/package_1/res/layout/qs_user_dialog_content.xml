@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:layout_width="fill_parent"
+             android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+  <com.android.systemui.qs.PseudoGridView android:layout_gravity="center"
+                        android:id="@id/grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        systemui:r0x7f04021f="80.0dp"
+                        systemui:r0x7f0402c4="4.0dp"
+                        systemui:r0x7f0406e1="20.0dp" />
+</FrameLayout>

@@ -1,0 +1,2 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/settings/development/FeatureFlags;->deprecateListActivity()Z,out/soong/.intermediates/packages/apps/Settings/aconfig/development_settings_flag_lib/android_common/javac/srcjars/com/android/settings/development/FeatureFlags.java,10,5,10,25,

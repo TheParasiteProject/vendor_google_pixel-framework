@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.setupdesign.GlifLayout android:id="@id/setup_wizard_layout"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      settings:sudDescriptionText="@string/security_settings_face_enroll_introduction_message"
+                      style="?attr/face_layout_theme" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:orientation="vertical"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/SudContentFrame">
+    <com.google.android.setupdesign.view.RichTextView android:id="@id/error_text"
+                          android:visibility="gone"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          style="@style/SudDescription.Glif" />
+    <FrameLayout android:layout_width="fill_parent"
+                 android:layout_height="wrap_content">
+      <ImageView android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:layout_marginBottom="@dimen/face_enroll_intro_illustration_margin_bottom"
+                 android:src="@drawable/face_enroll_intro_illustration"
+                 android:contentDescription="@null"
+                 style="@style/SudContentIllustration" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+      <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/security_settings_face_enroll_introduction_info_title"
+                style="@style/BiometricEnrollIntroTitle" />
+      <LinearLayout android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon_glasses"
+                   android:background="@drawable/ic_face_enroll_introduction_glasses"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+        <Space android:layout_width="16.0dp"
+               android:layout_height="wrap_content" />
+        <TextView android:id="@id/info_message_glasses"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  style="@style/BiometricEnrollIntroMessage" />
+      </LinearLayout>
+      <LinearLayout android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon_looking"
+                   android:background="@drawable/ic_face_enroll_introduction_visibility"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+        <Space android:layout_width="16.0dp"
+               android:layout_height="wrap_content" />
+        <TextView android:id="@id/info_message_looking"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  style="@style/BiometricEnrollIntroMessage" />
+      </LinearLayout>
+      <LinearLayout android:orientation="horizontal"
+                    android:id="@id/info_row_less_secure"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon_less_secure"
+                   android:background="@drawable/ic_info_outline_24dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+        <Space android:layout_width="16.0dp"
+               android:layout_height="wrap_content" />
+        <TextView android:id="@id/info_message_less_secure"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/security_settings_face_enroll_introduction_info_less_secure"
+                  style="@style/BiometricEnrollIntroMessage" />
+      </LinearLayout>
+      <LinearLayout android:orientation="horizontal"
+                    android:id="@id/info_row_require_eyes"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon_require_eyes"
+                   android:background="@drawable/ic_settings_24dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+        <Space android:layout_width="16.0dp"
+               android:layout_height="wrap_content" />
+        <TextView android:id="@id/info_message_require_eyes"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  style="@style/BiometricEnrollIntroMessage" />
+      </LinearLayout>
+      <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/security_settings_face_enroll_introduction_how_title"
+                style="@style/BiometricEnrollIntroTitle" />
+      <TextView android:id="@id/how_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/BiometricEnrollIntroMessage" />
+      <TextView android:id="@id/title_in_control"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/BiometricEnrollIntroTitle" />
+      <TextView android:id="@id/message_in_control"
+                android:paddingBottom="0.0dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/BiometricEnrollIntroMessage" />
+    </LinearLayout>
+  </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

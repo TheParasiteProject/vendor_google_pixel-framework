@@ -1,0 +1,2 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/settings/media_drm/FeatureFlagsImpl;->forceL3Enabled()Z,out/soong/.intermediates/packages/apps/Settings/aconfig/MediaDrmSettingsFlagsLib/android_common/javac/srcjars/com/android/settings/media_drm/FeatureFlagsImpl.java,10,5,10,25,

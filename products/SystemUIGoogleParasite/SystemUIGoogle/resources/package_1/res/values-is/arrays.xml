@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <string-array name="battery_options">
+    <item>Sýna alltaf hlutfall</item>
+    <item>Sýna hlutfall meðan á hleðslu stendur (sjálfgefið)</item>
+    <item>Ekki sýna þetta tákn</item>
+  </string-array>
+  <string-array name="clock_options">
+    <item>Sýna klukkustundir, mínútur og sekúndur</item>
+    <item>Sýna klukkustundir og mínútur (sjálfgefið)</item>
+    <item>Ekki sýna þetta tákn</item>
+  </string-array>
+  <string-array name="nav_bar_buttons">
+    <item>Klippiborð</item>
+    <item>Lykilkóði</item>
+    <item>Snúa til að staðfesta, lyklaborðsval</item>
+    <item>Ekkert</item>
+  </string-array>
+  <string-array name="nav_bar_layouts">
+    <item>Venjulegt</item>
+    <item>Þjappað</item>
+    <item>Hallar til vinstri</item>
+    <item>Hallar til hægri</item>
+  </string-array>
+  <string-array name="qs_record_issue_types">
+    <item>Afköst</item>
+    <item>Notandaviðmót</item>
+    <item>Rafhlaða</item>
+  </string-array>
+  <string-array name="tile_states_airplane">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_alarm">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_battery">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_bt">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_cameratoggle">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_cast">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_cell">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_color_correction">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_controls">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_dark">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_dnd">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_dream">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_flashlight">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_font_scaling">
+    <item>Ekki tiltækt</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_hotspot">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_internet">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_inversion">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_location">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_mictoggle">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_night">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_onehanded">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_qr_code_scanner">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_reduce_brightness">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_reverse">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_rotation">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_saver">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_screenrecord">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_wallet">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_wifi">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="tile_states_work">
+    <item>Ekki í boði</item>
+    <item>Slökkt</item>
+    <item>Kveikt</item>
+  </string-array>
+  <string-array name="wifitrackerlib_wifi_status">
+    <item></item>
+    <item>Leitar…</item>
+    <item>Tengist…</item>
+    <item>Auðkennir…</item>
+    <item>Sækir IP-tölu…</item>
+    <item>Tengt</item>
+    <item>Í bið</item>
+    <item>Aftengist…</item>
+    <item>Aftengt</item>
+    <item>Mistókst</item>
+    <item>Lokað</item>
+    <item>Forðast lélega tengingu tímabundið</item>
+  </string-array>
+</resources>

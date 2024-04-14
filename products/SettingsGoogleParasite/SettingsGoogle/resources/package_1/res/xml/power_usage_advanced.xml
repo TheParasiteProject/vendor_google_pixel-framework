@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/advanced_battery_title"
+                  android:key="power_usage_advanced_screen"
+                  settings:keywords="@string/keywords_battery_usage" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <PreferenceCategory android:key="battery_tips_category"
+                      settings:controller="com.android.settings.fuelgauge.batteryusage.BatteryTipsController"
+                      settings:isPreferenceVisible="false">
+    <com.android.settings.fuelgauge.batteryusage.BatteryTipsCardPreference android:key="battery_tips_card"
+                          settings:isPreferenceVisible="false" />
+  </PreferenceCategory>
+  <com.android.settings.fuelgauge.batteryusage.BatteryHistoryPreference android:key="battery_chart"
+                        settings:controller="com.android.settings.fuelgauge.batteryusage.BatteryChartPreferenceController" />
+  <PreferenceCategory android:key="screen_on_time_category"
+                      settings:controller="com.android.settings.fuelgauge.batteryusage.ScreenOnTimeController"
+                      settings:isPreferenceVisible="false">
+    <com.android.settings.fuelgauge.batteryusage.TextViewPreference android:key="screen_on_time_text"
+                          settings:isPreferenceVisible="false" />
+  </PreferenceCategory>
+  <PreferenceCategory android:key="battery_usage_breakdown"
+                      settings:controller="com.android.settings.fuelgauge.batteryusage.BatteryUsageBreakdownController"
+                      settings:isPreferenceVisible="false">
+    <com.android.settings.fuelgauge.batteryusage.SpinnerPreference android:key="battery_usage_spinner"
+                          settings:isPreferenceVisible="false" />
+    <PreferenceCategory android:key="app_list"
+                        settings:isPreferenceVisible="false" />
+    <com.android.settingslib.widget.FooterPreference android:selectable="false"
+                          android:key="battery_usage_footer"
+                          settings:isPreferenceVisible="false"
+                          settings:searchable="false" />
+  </PreferenceCategory>
+</PreferenceScreen>

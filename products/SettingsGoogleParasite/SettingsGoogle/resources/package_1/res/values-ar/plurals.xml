@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="zero">قبل %d يوم</item>
+    <item quantity="one">قبل يوم واحد (%d)</item>
+    <item quantity="two">قبل يومين (%d)</item>
+    <item quantity="few">قبل %d أيام</item>
+    <item quantity="many">قبل %d يومًا</item>
+    <item quantity="other">قبل %d يوم</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="zero">قبل %d دقيقة</item>
+    <item quantity="one">قبل دقيقة واحدة (%d)</item>
+    <item quantity="two">قبل دقيقتين (%d)</item>
+    <item quantity="few">قبل %d دقائق</item>
+    <item quantity="many">قبل %d دقيقة</item>
+    <item quantity="other">قبل %d دقيقة</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="zero">قبل %d سنة</item>
+    <item quantity="one">قبل %d سنة</item>
+    <item quantity="two">قبل سنتين (%d)</item>
+    <item quantity="few">قبل %d سنوات</item>
+    <item quantity="many">قبل %d سنة</item>
+    <item quantity="other">قبل %d سنة</item>
+  </plurals>
+  <plurals name="lockscreen_quick_affordances_summary">
+    <item quantity="zero">بدون قفل شاشة</item>
+    <item quantity="one">%1$s</item>
+    <item quantity="two">"%1$s" و"%2$s"</item>
+    <item quantity="few">"%1$s" و"%2$s"</item>
+    <item quantity="many">"%1$s" و"%2$s"</item>
+    <item quantity="other">"%1$s" و"%2$s"</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="zero">%d إشعار جديد</item>
+    <item quantity="one">إشعار جديد واحد (%d)</item>
+    <item quantity="two">إشعاران جديدان (%d)</item>
+    <item quantity="few">%d إشعارات جديدة</item>
+    <item quantity="many">%d إشعارًا جديدًا</item>
+    <item quantity="other">%d إشعار جديد</item>
+  </plurals>
+  <plurals name="security_settings_hub_show_warnings_preference">
+    <item quantity="zero">إظهار كل التحذيرات (%1$d)</item>
+    <item quantity="one">إظهار تحذير واحد (%1$d)</item>
+    <item quantity="two">إظهار كلا التحذيرين (%1$d)</item>
+    <item quantity="few">إظهار كل التحذيرات (%1$d)</item>
+    <item quantity="many">إظهار كل التحذيرات (%1$d)</item>
+    <item quantity="other">إظهار كل التحذيرات (%1$d)</item>
+  </plurals>
+  <plurals name="security_settings_hub_warnings_title">
+    <item quantity="zero">%1$d تحذير</item>
+    <item quantity="one">تحذير واحد (%1$d)</item>
+    <item quantity="two">تحذيران (%1$d)</item>
+    <item quantity="few">%1$d تحذيرات</item>
+    <item quantity="many">%1$d تحذيرًا</item>
+    <item quantity="other">%1$d تحذير</item>
+  </plurals>
+</resources>

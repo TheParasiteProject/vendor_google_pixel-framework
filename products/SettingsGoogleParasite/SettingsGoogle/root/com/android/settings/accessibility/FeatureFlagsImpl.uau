@@ -1,0 +1,2 @@
+signature,file,startline,startcol,endline,endcol,properties
+Lcom/android/settings/accessibility/FeatureFlagsImpl;->removeQsTooltipInSuw()Z,out/soong/.intermediates/packages/apps/Settings/aconfig/accessibility_settings_flags_lib/android_common/javac/srcjars/com/android/settings/accessibility/FeatureFlagsImpl.java,10,5,10,25,

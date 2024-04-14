@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:padding="?android:attr/dialogPreferredPadding"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <TextView android:textSize="16.0sp"
+            android:textColor="?android:attr/textColorAlertDialogListItem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/accessibility_magnification_area_settings_message"
+            style="?android:attr/textAppearanceMedium" />
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<ConstraintSet android:id="@id/qqs_header_constraint" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+  <Constraint android:id="@id/clock">
+    <Layout android:layout_width="wrap_content"
+            android:layout_height="@dimen/large_screen_shade_header_min_height"
+            systemui:r0x7f040336="@id/qqs_header_bottom_guideline"
+            systemui:r0x7f04033d="@id/date"
+            systemui:r0x7f040346="0.0"
+            systemui:r0x7f040347="2"
+            systemui:r0x7f040350="@id/begin_guide"
+            systemui:r0x7f040354="0" />
+    <Transform android:scaleX="1.0"
+               android:scaleY="1.0" />
+  </Constraint>
+  <Constraint android:id="@id/date">
+    <Layout android:layout_width="wrap_content"
+            android:layout_height="@dimen/new_qs_header_non_clickable_element_height"
+            android:layout_marginStart="8.0dp"
+            systemui:r0x7f040330="true"
+            systemui:r0x7f040332="@id/clock"
+            systemui:r0x7f04033d="@id/barrier"
+            systemui:r0x7f040346="0.0"
+            systemui:r0x7f04034f="@id/clock" />
+  </Constraint>
+  <Constraint android:id="@id/shade_header_system_icons">
+    <Layout android:layout_width="wrap_content"
+            android:layout_height="@dimen/new_qs_header_non_clickable_element_height"
+            systemui:r0x7f040336="@id/qqs_header_bottom_guideline"
+            systemui:r0x7f04033c="@id/end_guide"
+            systemui:r0x7f040344="@dimen/new_qs_header_non_clickable_element_height"
+            systemui:r0x7f040346="1.0"
+            systemui:r0x7f040347="2"
+            systemui:r0x7f04034f="@id/date"
+            systemui:r0x7f040354="0" />
+  </Constraint>
+  <Constraint android:id="@id/carrier_group">
+    <Layout android:layout_width="wrap_content"
+            android:layout_height="@dimen/large_screen_shade_header_min_height"
+            systemui:r0x7f04033c="0"
+            systemui:r0x7f040354="0"
+            systemui:r0x7f04035b="48.0dp" />
+    <PropertySet android:alpha="0.0" />
+  </Constraint>
+  <Constraint android:id="@id/privacy_container">
+    <Layout android:layout_width="wrap_content"
+            android:layout_height="@dimen/large_screen_shade_header_min_height"
+            systemui:r0x7f040336="@id/qqs_header_bottom_guideline"
+            systemui:r0x7f04033c="@id/end_guide"
+            systemui:r0x7f040346="1.0"
+            systemui:r0x7f04034f="@id/date"
+            systemui:r0x7f040354="0" />
+  </Constraint>
+</ConstraintSet>

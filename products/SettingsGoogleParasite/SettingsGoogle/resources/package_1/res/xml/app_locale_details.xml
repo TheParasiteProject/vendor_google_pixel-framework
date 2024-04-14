@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/app_locale_picker_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.TopIntroPreference android:title="@string/desc_app_locale_disclaimer"
+                        android:key="app_locale_disclaimer"
+                        android:order="1" />
+  <com.android.settingslib.widget.LayoutPreference android:visibility="gone"
+                        android:layout="@layout/app_locale_details_description"
+                        android:selectable="false"
+                        android:key="app_locale_description"
+                        android:order="30"
+                        settings:allowDividerBelow="true"
+                        settings:searchable="false" />
+</PreferenceScreen>

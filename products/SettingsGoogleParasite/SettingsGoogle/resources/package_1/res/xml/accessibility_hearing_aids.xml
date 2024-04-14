@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/accessibility_hearingaid_title"
+                  android:key="accessibility_hearing_devices_screen" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.TopIntroPreference android:title="@string/accessibility_hearingaid_intro" />
+  <PreferenceCategory android:title="@string/accessibility_hearing_device_connected_title"
+                      android:key="available_hearing_devices"
+                      settings:controller="com.android.settings.accessibility.AvailableHearingDevicePreferenceController" />
+  <com.android.settingslib.RestrictedPreference android:icon="@drawable/ic_add_24dp"
+                        android:title="@string/bluetooth_pairing_pref_title"
+                        android:key="add_bt_devices"
+                        android:summary="@string/connected_device_add_device_summary"
+                        android:fragment="com.android.settings.accessibility.HearingDevicePairingDetail"
+                        settings:controller="com.android.settings.connecteddevice.AddDevicePreferenceController"
+                        settings:useAdminDisabledSummary="true"
+                        settings:userRestriction="no_config_bluetooth" />
+  <PreferenceCategory android:title="@string/accessibility_hearing_device_saved_title"
+                      android:key="previously_connected_hearing_devices"
+                      settings:controller="com.android.settings.accessibility.SavedHearingDevicePreferenceController" />
+  <PreferenceCategory android:title="@string/accessibility_screen_option"
+                      android:key="hearing_options_category">
+    <Preference android:title="@string/bluetooth_audio_routing_title"
+                android:key="audio_routing"
+                android:summary="@string/bluetooth_audio_routing_summary"
+                android:fragment="com.android.settings.accessibility.AccessibilityAudioRoutingFragment"
+                settings:controller="com.android.settings.accessibility.HearingAidAudioRoutingPreferenceController" />
+    <SwitchPreferenceCompat android:title="@string/accessibility_hac_mode_title"
+                          android:key="hearing_aid_compatibility"
+                          android:summary="@string/accessibility_hac_mode_summary"
+                          android:order="30"
+                          settings:controller="com.android.settings.accessibility.HearingAidCompatibilityPreferenceController"
+                          settings:searchable="true" />
+  </PreferenceCategory>
+  <com.android.settings.accessibility.AccessibilityFooterPreference android:title="@string/accessibility_hearing_device_footer_summary"
+                        android:selectable="false"
+                        android:key="hearing_device_footer"
+                        settings:controller="com.android.settings.accessibility.HearingDeviceFooterPreferenceController"
+                        settings:searchable="false" />
+</PreferenceScreen>

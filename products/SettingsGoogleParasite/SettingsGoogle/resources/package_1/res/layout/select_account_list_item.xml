@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:gravity="center"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:minHeight="?attr/listPreferredItemHeightSmall" xmlns:android="http://schemas.android.com/apk/res/android">
+  <TextView android:textAppearance="@style/TextAppearance.SimConfirmDialogList"
+            android:ellipsize="marquee"
+            android:gravity="center|start"
+            android:id="@id/title"
+            android:fadingEdge="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+  <TextView android:textAppearance="@style/TextAppearance.SimConfirmDialogList.Summary"
+            android:gravity="center|start"
+            android:id="@id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_alignStart="@id/title" />
+</LinearLayout>

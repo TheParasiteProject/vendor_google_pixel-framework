@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">%d dia atrás</item>
+    <item quantity="many">%d days ago</item>
+    <item quantity="other">%d dias atrás</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">Há %dmin</item>
+    <item quantity="many">%d min ago</item>
+    <item quantity="other">Há %dmin</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">Há %d ano</item>
+    <item quantity="many">%d yr ago</item>
+    <item quantity="other">Há %d anos</item>
+  </plurals>
+  <plurals name="lockscreen_quick_affordances_summary">
+    <item quantity="one">%1$s, %2$s</item>
+    <item quantity="other">%1$s, %2$s</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d nova notificação</item>
+    <item quantity="other">%d novas notificações</item>
+  </plurals>
+  <plurals name="security_settings_hub_show_warnings_preference">
+    <item quantity="one">Ver todos os avisos (%1$d)</item>
+    <item quantity="other">Ver todos os avisos (%1$d)</item>
+  </plurals>
+  <plurals name="security_settings_hub_warnings_title">
+    <item quantity="one">%1$d aviso</item>
+    <item quantity="other">%1$d avisos</item>
+  </plurals>
+</resources>

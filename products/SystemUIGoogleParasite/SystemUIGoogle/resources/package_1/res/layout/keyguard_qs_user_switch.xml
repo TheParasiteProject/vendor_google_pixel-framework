@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<FrameLayout android:layout_gravity="end"
+             android:id="@id/keyguard_qs_user_switch_view"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+  <com.android.systemui.animation.view.LaunchableFrameLayout android:layout_gravity="center|end|top"
+                        android:id="@id/kg_multi_user_avatar_with_background"
+                        android:background="@drawable/keyguard_framed_avatar_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16.0dp">
+    <com.android.systemui.statusbar.phone.UserAvatarView android:id="@id/kg_multi_user_avatar"
+                          android:layout_width="@dimen/kg_framed_avatar_size"
+                          android:layout_height="@dimen/kg_framed_avatar_size"
+                          systemui:r0x7f04005b="0.0dp"
+                          systemui:r0x7f040068="18.0dp"
+                          systemui:r0x7f04006a="1.0dp"
+                          systemui:r0x7f040256="@color/kg_user_avatar_frame"
+                          systemui:r0x7f040257="0.0dp"
+                          systemui:r0x7f040259="0.0dp" />
+  </com.android.systemui.animation.view.LaunchableFrameLayout>
+</FrameLayout>

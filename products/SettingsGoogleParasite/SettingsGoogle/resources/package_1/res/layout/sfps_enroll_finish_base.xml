@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.setupdesign.GlifLayout android:id="@id/setup_wizard_layout"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      style="?attr/fingerprint_layout_theme" xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:orientation="vertical"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/SudContentFrame">
+    <com.google.android.setupdesign.view.FillContentLayout android:layout_gravity="center"
+                          android:paddingTop="0.0dp"
+                          android:paddingBottom="0.0dp"
+                          android:layout_width="@dimen/sfps_enrollment_finished_icon_max_size"
+                          android:layout_height="@dimen/sfps_enrollment_finished_icon_max_size"
+                          android:layout_marginTop="24.0dp">
+      <ImageView android:id="@id/fingerprint_in_app_indicator"
+                 android:layout_width="@dimen/sfps_enrollment_finished_icon_max_size"
+                 android:layout_height="@dimen/sfps_enrollment_finished_icon_max_size"
+                 android:src="@drawable/sfps_enroll_finish"
+                 android:contentDescription="@android:string/fingerprint_icon_content_description"
+                 android:importantForAccessibility="no"
+                 style="@style/SudContentIllustration" />
+    </com.google.android.setupdesign.view.FillContentLayout>
+  </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:gravity="center_vertical"
+              android:background="?android:attr/selectableItemBackground"
+              android:clipToPadding="false"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:baselineAligned="false"
+              android:minHeight="@dimen/homepage_preference_min_height" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:gravity="center|end"
+                android:orientation="horizontal"
+                android:id="@id/icon_frame"
+                android:paddingTop="4.0dp"
+                android:paddingBottom="4.0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48.0dp"
+                android:paddingStart="@dimen/homepage_preference_icon_padding_start">
+    <androidx.preference.internal.PreferenceImageView android:id="@android:id/icon"
+                          android:layout_width="24.0dp"
+                          android:layout_height="24.0dp"
+                          settings:maxHeight="48.0dp"
+                          settings:maxWidth="48.0dp" />
+  </LinearLayout>
+  <RelativeLayout android:id="@id/text_frame"
+                  android:paddingTop="16.0dp"
+                  android:paddingBottom="16.0dp"
+                  android:layout_width="0.0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1.0"
+                  android:paddingStart="@dimen/homepage_preference_text_padding_start"
+                  android:paddingEnd="24.0dp">
+    <TextView android:textAppearance="?android:attr/textAppearanceListItem"
+              android:ellipsize="marquee"
+              android:layout_gravity="start"
+              android:id="@android:id/title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:singleLine="true"
+              android:textAlignment="viewStart"
+              android:hyphenationFrequency="normalFast"
+              android:lineBreakWordStyle="phrase" />
+    <TextView android:textAppearance="?android:attr/textAppearanceSmall"
+              android:textColor="?android:attr/textColorSecondary"
+              android:layout_gravity="start"
+              android:id="@android:id/summary"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:maxLines="4"
+              android:layout_below="@android:id/title"
+              android:textAlignment="viewStart"
+              android:layout_alignStart="@android:id/title"
+              android:hyphenationFrequency="normalFast"
+              android:lineBreakWordStyle="phrase"
+              style="@style/PreferenceSummaryTextStyle" />
+  </RelativeLayout>
+</LinearLayout>

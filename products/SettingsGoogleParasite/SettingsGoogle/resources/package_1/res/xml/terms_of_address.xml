@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/terms_of_address_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.TopIntroPreference android:persistent="false"
+                        android:title="@string/terms_of_address_intro_title" />
+  <com.android.settings.widget.TickButtonPreference android:title="@string/terms_of_address_not_specified"
+                        android:key="key_terms_of_address_not_specified"
+                        settings:controller="com.android.settings.localepicker.TermsOfAddressNotSpecifiedController" />
+  <com.android.settings.widget.TickButtonPreference android:title="@string/terms_of_address_feminine"
+                        android:key="key_terms_of_address_feminine"
+                        settings:controller="com.android.settings.localepicker.TermsOfAddressFeminineController" />
+  <com.android.settings.widget.TickButtonPreference android:title="@string/terms_of_address_masculine"
+                        android:key="key_terms_of_address_masculine"
+                        settings:controller="com.android.settings.localepicker.TermsOfAddressMasculineController" />
+  <com.android.settings.widget.TickButtonPreference android:title="@string/terms_of_address_neutral"
+                        android:key="key_terms_of_address_neutral"
+                        settings:controller="com.android.settings.localepicker.TermsOfAddressNeutralController" />
+</PreferenceScreen>

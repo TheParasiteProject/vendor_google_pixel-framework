@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">%d день назад</item>
+    <item quantity="few">%d дня назад</item>
+    <item quantity="many">%d дней назад</item>
+    <item quantity="other">%d дня назад</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">%d минуту назад</item>
+    <item quantity="few">%d минуты назад</item>
+    <item quantity="many">%d минут назад</item>
+    <item quantity="other">%d минуты назад</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">%d год назад</item>
+    <item quantity="few">%d года назад</item>
+    <item quantity="many">%d лет назад</item>
+    <item quantity="other">%d года назад</item>
+  </plurals>
+  <plurals name="lockscreen_quick_affordances_summary">
+    <item quantity="one">%1$s, %2$s</item>
+    <item quantity="few">%1$s, %2$s</item>
+    <item quantity="many">%1$s, %2$s</item>
+    <item quantity="other">%1$s, %2$s</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d новое уведомление</item>
+    <item quantity="few">%d новых уведомления</item>
+    <item quantity="many">%d новых уведомлений</item>
+    <item quantity="other">%d нового уведомления</item>
+  </plurals>
+  <plurals name="security_settings_hub_show_warnings_preference">
+    <item quantity="one">Показать все предупреждения (%1$d)</item>
+    <item quantity="few">Показать все предупреждения (%1$d)</item>
+    <item quantity="many">Показать все предупреждения (%1$d)</item>
+    <item quantity="other">Показать все предупреждения (%1$d)</item>
+  </plurals>
+  <plurals name="security_settings_hub_warnings_title">
+    <item quantity="one">%1$d предупреждение</item>
+    <item quantity="few">%1$d предупреждения</item>
+    <item quantity="many">%1$d предупреждений</item>
+    <item quantity="other">%1$d предупреждения</item>
+  </plurals>
+</resources>

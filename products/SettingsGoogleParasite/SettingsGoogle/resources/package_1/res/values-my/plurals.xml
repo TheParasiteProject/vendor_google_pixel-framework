@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">ပြီးခဲ့သော %d ရက်</item>
+    <item quantity="other">ပြီးခဲ့သော %d ရက်</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">ပြီးခဲ့သော %d မိနစ်</item>
+    <item quantity="other">ပြီးခဲ့သော %d မိနစ်</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">ပြီးခဲ့သော %d နှစ်</item>
+    <item quantity="other">ပြီးခဲ့သော %d နှစ်</item>
+  </plurals>
+  <plurals name="lockscreen_quick_affordances_summary">
+    <item quantity="one">%1$s</item>
+    <item quantity="other">%1$s၊ %2$s</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="one">အကြောင်းကြားချက်အသစ် %d ခု</item>
+    <item quantity="other">အကြောင်းကြားချက်အသစ် %d ခု</item>
+  </plurals>
+  <plurals name="security_settings_hub_show_warnings_preference">
+    <item quantity="one">သတိပေးချက် %1$d ခု ပြရန်</item>
+    <item quantity="other">သတိပေးချက်အားလုံး (%1$d ခု) ကြည့်ရန်</item>
+  </plurals>
+  <plurals name="security_settings_hub_warnings_title">
+    <item quantity="one">သတိပေးချက် %1$d ခု</item>
+    <item quantity="other">သတိပေးချက် %1$d ခု</item>
+  </plurals>
+</resources>

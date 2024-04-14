@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/device_details_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.LayoutPreference android:layout="@layout/settings_entity_header"
+                        android:selectable="false"
+                        android:key="bluetooth_device_header"
+                        settings:allowDividerBelow="true"
+                        settings:searchable="false" />
+  <com.android.settingslib.widget.LayoutPreference android:layout="@layout/advanced_bt_entity_header"
+                        android:selectable="false"
+                        android:key="advanced_bluetooth_device_header"
+                        settings:allowDividerBelow="true"
+                        settings:controller="com.android.settings.bluetooth.AdvancedBluetoothDetailsHeaderController"
+                        settings:searchable="false" />
+  <com.android.settingslib.widget.LayoutPreference android:layout="@layout/le_audio_bt_entity_header"
+                        android:selectable="false"
+                        android:key="le_audio_bluetooth_device_header"
+                        settings:allowDividerBelow="true"
+                        settings:controller="com.android.settings.bluetooth.LeAudioBluetoothDetailsHeaderController"
+                        settings:searchable="false" />
+  <com.android.settingslib.widget.ButtonPreference android:gravity="center"
+                        android:key="hearing_aid_pair_other_button" />
+  <com.android.settings.applications.SpacePreference android:layout_height="8.0dp"
+                        android:key="hearing_aid_space_layout" />
+  <com.android.settingslib.widget.ActionButtonsPreference android:key="action_buttons"
+                        settings:allowDividerBelow="true" />
+  <PreferenceCategory android:key="device_stylus" />
+  <com.android.settings.slices.SlicePreference android:key="bt_extra_control"
+                        settings:allowDividerAbove="true"
+                        settings:controller="com.android.settings.slices.SlicePreferenceController" />
+  <PreferenceCategory android:key="bt_device_slice_category"
+                      settings:controller="com.android.settings.bluetooth.BlockingPrefWithSliceController" />
+  <PreferenceCategory android:key="device_companion_apps" />
+  <PreferenceCategory android:key="device_controls_general" />
+  <PreferenceCategory android:key="bluetooth_audio_device_type_group" />
+  <PreferenceCategory android:key="spatial_audio_group" />
+  <PreferenceCategory android:key="bluetooth_profiles" />
+  <PreferenceCategory android:title="@string/bluetooth_screen_related"
+                      android:key="bluetooth_related_tools">
+    <Preference android:icon="@drawable/ic_live_caption"
+                android:persistent="false"
+                android:title="@string/live_caption_title"
+                android:key="live_caption"
+                android:summary="@string/live_caption_summary"
+                settings:controller="com.android.settings.accessibility.LiveCaptionPreferenceController" />
+  </PreferenceCategory>
+  <PreferenceCategory android:key="data_sync_group" />
+  <Preference android:persistent="false"
+              android:title="@string/bluetooth_device_keyboard_settings_preference_title"
+              android:key="keyboard_settings"
+              settings:controller="com.android.settings.inputmethod.KeyboardSettingsPreferenceController" />
+  <com.android.settingslib.widget.FooterPreference android:selectable="false"
+                        android:key="device_details_footer"
+                        settings:controller="com.android.settings.bluetooth.BluetoothDetailsMacAddressController"
+                        settings:searchable="false" />
+</PreferenceScreen>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/fingerprint_bg"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:contentDescription="@string/accessibility_fingerprint_label" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:systemui="http://schemas.android.com/apk/res-auto">
+  <com.android.systemui.keyguard.ui.view.UdfpsLottieViewWrapper android:layout_width="0.0dp"
+                        android:layout_height="0.0dp"
+                        android:scaleType="centerCrop"
+                        systemui:r0x7f040336="0"
+                        systemui:r0x7f04033c="0"
+                        systemui:r0x7f040345="0.5"
+                        systemui:r0x7f040350="0"
+                        systemui:r0x7f040354="0"
+                        systemui:r0x7f04035c="0.5"
+                        systemui:r0x7f040395="false"
+                        systemui:r0x7f040398="?android:attr/textColorPrimary"
+                        systemui:r0x7f04039e="false"
+                        systemui:r0x7f04039f="1.0"
+                        systemui:r0x7f0403a0="@raw/udfps_lockscreen_fp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="zero">Pirms %d dienām</item>
+    <item quantity="one">Pirms %d dienas</item>
+    <item quantity="other">Pirms %d dienām</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="zero">Pirms %d minūtēm</item>
+    <item quantity="one">Pirms %d minūtes</item>
+    <item quantity="other">Pirms %d minūtēm</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="zero">Pirms %d gadiem</item>
+    <item quantity="one">Pirms %d gada</item>
+    <item quantity="other">Pirms %d gadiem</item>
+  </plurals>
+  <plurals name="lockscreen_quick_affordances_summary">
+    <item quantity="zero">Nav</item>
+    <item quantity="one">%1$s, %2$s</item>
+    <item quantity="other">%1$s, %2$s</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="zero">%d jaunu paziņojumu</item>
+    <item quantity="one">%d jauns paziņojums</item>
+    <item quantity="other">%d jauni paziņojumi</item>
+  </plurals>
+  <plurals name="security_settings_hub_show_warnings_preference">
+    <item quantity="zero">Rādīt visus brīdinājumus (%1$d)</item>
+    <item quantity="one">Rādīt visus brīdinājumus (%1$d)</item>
+    <item quantity="other">Rādīt visus brīdinājumus (%1$d)</item>
+  </plurals>
+  <plurals name="security_settings_hub_warnings_title">
+    <item quantity="zero">%1$d brīdinājumu</item>
+    <item quantity="one">%1$d brīdinājums</item>
+    <item quantity="other">%1$d brīdinājumi</item>
+  </plurals>
+</resources>

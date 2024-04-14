@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<LinearLayout android:orientation="vertical"
+              android:background="?android:attr/colorBackground"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+  <ImageView android:layout_gravity="end"
+             android:id="@id/account_avatar"
+             android:visibility="invisible"
+             android:layout_width="@dimen/avatar_length"
+             android:layout_height="@dimen/avatar_length"
+             android:layout_marginTop="@dimen/avatar_margin_top"
+             android:contentDescription="@string/search_bar_account_avatar_content_description"
+             android:layout_marginEnd="@dimen/avatar_margin_end"
+             android:accessibilityTraversalAfter="@id/homepage_title" />
+  <TextView android:id="@id/homepage_title"
+            android:text="@string/settings_label"
+            style="@style/HomepageTitleText" />
+  <FrameLayout android:id="@id/suggestion_content"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content" />
+  <include layout="@layout/search_bar" />
+</LinearLayout>

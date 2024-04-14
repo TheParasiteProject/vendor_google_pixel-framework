@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <plurals name="abc_slice_duration_days">
+    <item quantity="one">(N)%d ‏‮day‬‏ ‏‮ago‬‏</item>
+    <item quantity="other">(N)%d ‏‮days‬‏ ‏‮ago‬‏</item>
+  </plurals>
+  <plurals name="abc_slice_duration_min">
+    <item quantity="one">(N)%d ‏‮min‬‏ ‏‮ago‬‏</item>
+    <item quantity="other">(N)%d ‏‮min‬‏ ‏‮ago‬‏</item>
+  </plurals>
+  <plurals name="abc_slice_duration_years">
+    <item quantity="one">(N)%d ‏‮yr‬‏ ‏‮ago‬‏</item>
+    <item quantity="other">(N)%d ‏‮yr‬‏ ‏‮ago‬‏</item>
+  </plurals>
+  <plurals name="lockscreen_quick_affordances_summary">
+    <item quantity="zero">(N)‏‮None‬‏</item>
+    <item quantity="one">(N)%1$s</item>
+    <item quantity="other">(N)%1$s‏‮,‬‏ %2$s</item>
+  </plurals>
+  <plurals name="mtrl_badge_content_description">
+    <item quantity="one">(N)%d ‏‮new‬‏ ‏‮notification‬‏</item>
+    <item quantity="other">(N)%d ‏‮new‬‏ ‏‮notifications‬‏</item>
+  </plurals>
+  <plurals name="security_settings_hub_show_warnings_preference">
+    <item quantity="one">(N)‏‮Show‬‏ %1$d ‏‮warning‬‏</item>
+    <item quantity="other">(N)‏‮See‬‏ ‏‮all‬‏ ‏‮warnings‬‏ ‏‮(‬‏%1$d‏‮)‬‏</item>
+  </plurals>
+  <plurals name="security_settings_hub_warnings_title">
+    <item quantity="one">(N)%1$d ‏‮warning‬‏</item>
+    <item quantity="other">(N)%1$d ‏‮warnings‬‏</item>
+  </plurals>
+</resources>

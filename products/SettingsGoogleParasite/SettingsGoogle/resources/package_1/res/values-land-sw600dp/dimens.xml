@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<resources>
+  <dimen name="biometric_auth_pattern_view_size">298.0dp</dimen>
+  <dimen name="screen_margin_sides">128.0dp</dimen>
+  <dimen name="sud_decor_padding_top">128.0dp</dimen>
+  <dimen name="sud_glif_button_margin_end">44.0dp</dimen>
+  <dimen name="sud_glif_button_margin_start">32.0dp</dimen>
+  <dimen name="sud_glif_content_padding_top">88.0dp</dimen>
+  <dimen name="sud_glif_content_padding_top_material_you">96.0dp</dimen>
+  <dimen name="sud_glif_footer_bar_min_height_material_you">72.0dp</dimen>
+  <dimen name="sud_glif_footer_bar_padding_end_material_you">44.0dp</dimen>
+  <dimen name="sud_glif_footer_bar_padding_start_material_you">32.0dp</dimen>
+  <dimen name="sud_glif_footer_bar_padding_vertical_material_you">6.0dp</dimen>
+  <dimen name="sud_glif_footer_padding_end">44.0dp</dimen>
+  <dimen name="sud_glif_footer_padding_start">32.0dp</dimen>
+  <dimen name="sud_glif_land_middle_horizontal_spacing">76.0dp</dimen>
+  <dimen name="sud_glif_land_middle_horizontal_spacing_material_you">76.0dp</dimen>
+  <dimen name="sud_glif_margin_end">48.0dp</dimen>
+  <dimen name="sud_glif_margin_end_material_you">48.0dp</dimen>
+  <dimen name="sud_glif_margin_start">48.0dp</dimen>
+  <dimen name="sud_glif_margin_start_material_you">48.0dp</dimen>
+  <dimen name="sud_glif_primary_button_button_margin_start">24.0dp</dimen>
+  <dimen name="sud_items_glif_icon_divider_inset">96.0dp</dimen>
+  <dimen name="sud_items_glif_text_divider_inset">48.0dp</dimen>
+</resources>

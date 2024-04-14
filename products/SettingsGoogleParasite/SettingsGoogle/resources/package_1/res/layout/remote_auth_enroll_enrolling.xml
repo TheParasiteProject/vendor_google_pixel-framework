@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.setupdesign.GlifLayout android:icon="@drawable/ic_lock"
+                      android:id="@id/setup_wizard_layout"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      settings:sucHeaderText="@string/security_settings_remoteauth_enroll_enrolling_title" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:orientation="vertical"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/SudContentFrame">
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/security_settings_remoteauth_enroll_enrolling_list_heading"
+              style="@style/BiometricEnrollIntroTitle" />
+    <ProgressBar android:id="@id/enrolling_list_progress_bar"
+                 android:visibility="invisible"
+                 android:layout_width="@dimen/remoteauth_enrolling_progress_bar_size"
+                 android:layout_height="@dimen/remoteauth_enrolling_progress_bar_size" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/discovered_authenticator_list"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content" />
+    <TextView android:gravity="center"
+              android:layout_gravity="bottom|center"
+              android:id="@id/error_text"
+              android:visibility="invisible"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:accessibilityLiveRegion="polite"
+              style="@style/TextAppearance.ErrorText" />
+  </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>

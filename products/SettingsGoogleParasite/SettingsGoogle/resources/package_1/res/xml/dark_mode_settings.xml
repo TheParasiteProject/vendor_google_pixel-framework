@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/dark_ui_mode"
+                  settings:keywords="@string/keywords_dark_ui_mode" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.TopIntroPreference android:title="@string/dark_ui_text"
+                        android:key="dark_ui_top_intro"
+                        settings:searchable="false" />
+  <com.android.settingslib.widget.MainSwitchPreference android:title="@string/dark_theme_main_switch_title"
+                        android:key="dark_ui_activated"
+                        settings:controller="com.android.settings.display.darkmode.DarkModeActivationPreferenceController" />
+  <com.android.settingslib.widget.BannerMessagePreference android:title="@string/twilight_mode_location_off_dialog_message"
+                        android:key="dark_ui_location_off"
+                        settings:controller="com.android.settings.display.TwilightLocationPreferenceController" />
+  <DropDownPreference android:entries="@array/dark_ui_scheduler_preference_titles"
+                      android:title="@string/dark_ui_auto_mode_title"
+                      android:key="dark_ui_auto_mode"
+                      android:summary="%s"
+                      android:entryValues="@array/dark_ui_scheduler_preference_titles"
+                      settings:allowDividerAbove="true"
+                      settings:controller="com.android.settings.display.darkmode.DarkModeScheduleSelectorController"
+                      settings:keywords="@string/keywords_dark_ui_mode" />
+  <Preference android:title="@string/night_display_start_time_title"
+              android:key="dark_theme_start_time"
+              settings:searchable="false" />
+  <Preference android:title="@string/night_display_end_time_title"
+              android:key="dark_theme_end_time"
+              settings:searchable="false" />
+  <com.android.settingslib.widget.FooterPreference android:title="@string/dark_ui_bedtime_footer_summary"
+                        android:selectable="false"
+                        android:key="dark_theme_custom_bedtime_footer"
+                        settings:controller="com.android.settings.display.darkmode.DarkModeCustomBedtimePreferenceController"
+                        settings:searchable="false" />
+</PreferenceScreen>

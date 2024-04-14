@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<navigation android:id="@id/remote_auth_navigation" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <fragment android:label="fragment_enroll_introduction"
+            android:name="com.android.settings.remoteauth.introduction.RemoteAuthEnrollIntroduction"
+            android:id="@id/remote_auth_enroll_introduction_fragment">
+    <action android:id="@id/action_introduction_to_enrolling"
+            settings:destination="@id/remote_auth_enroll_enrolling_fragment" />
+  </fragment>
+  <fragment android:label="fragment_enroll_enrolling"
+            android:name="com.android.settings.remoteauth.enrolling.RemoteAuthEnrollEnrolling"
+            android:id="@id/remote_auth_enroll_enrolling_fragment">
+    <action android:id="@id/action_enrolling_to_finish"
+            settings:destination="@id/remote_auth_enroll_finish_fragment" />
+  </fragment>
+  <fragment android:label="fragment_enroll_finish"
+            android:name="com.android.settings.remoteauth.finish.RemoteAuthEnrollFinish"
+            android:id="@id/remote_auth_enroll_finish_fragment">
+    <action android:id="@id/action_finish_to_settings"
+            settings:destination="@id/remote_auth_settings_fragment" />
+  </fragment>
+  <fragment android:label="fragment_settings"
+            android:name="com.android.settings.remoteauth.settings.RemoteAuthSettings"
+            android:id="@id/remote_auth_settings_fragment">
+    <action android:id="@id/action_settings_to_introduction"
+            settings:destination="@id/remote_auth_enroll_introduction_fragment" />
+  </fragment>
+</navigation>

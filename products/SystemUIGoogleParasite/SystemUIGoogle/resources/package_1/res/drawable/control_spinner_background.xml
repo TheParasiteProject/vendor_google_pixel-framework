@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<layer-list android:paddingLeft="0.0dp"
+            android:paddingRight="0.0dp"
+            android:paddingStart="40.0dp"
+            android:paddingEnd="40.0dp"
+            android:paddingMode="stack" xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:gravity="bottom|center|end"
+        android:height="24.0dp"
+        android:width="24.0dp"
+        android:drawable="@drawable/ic_ksh_key_down"
+        android:bottom="4.0dp"
+        android:end="12.0dp" />
+</layer-list>

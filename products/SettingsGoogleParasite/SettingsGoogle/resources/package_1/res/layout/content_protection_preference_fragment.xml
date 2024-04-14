@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<PreferenceScreen android:title="@string/content_protection_preference_title"
+                  android:key="content_protection_preference_subpage" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <com.android.settingslib.widget.TopIntroPreference android:title="@string/content_protection_preference_subpage_summary"
+                        android:key="content_protection_preference_top_intro"
+                        settings:searchable="false" />
+  <com.android.settings.widget.SettingsMainSwitchPreference android:title="@string/content_protection_preference_user_consent_switch_title"
+                        android:key="content_protection_preference_user_consent_switch"
+                        settings:controller="com.android.settings.security.ContentProtectionTogglePreferenceController" />
+  <com.android.settingslib.widget.IllustrationPreference android:selectable="false"
+                        android:key="content_protection_preference_subpage_illustration"
+                        settings:lottie_rawRes="@drawable/content_protection_preference_illustration"
+                        settings:searchable="false" />
+  <com.android.settingslib.RestrictedSwitchPreference android:title="@string/content_protection_preference_user_consent_work_profile_switch_title"
+                        android:key="content_protection_preference_user_consent_work_profile_switch"
+                        settings:controller="com.android.settings.security.ContentProtectionWorkSwitchController"
+                        settings:restrictedSwitchSummary="@string/summary_placeholder"
+                        settings:useAdditionalSummary="true" />
+  <com.android.settingslib.widget.FooterPreference android:title="@string/content_protection_preference_subpage_info"
+                        android:key="content_protection_preference_subpage_footer" />
+</PreferenceScreen>

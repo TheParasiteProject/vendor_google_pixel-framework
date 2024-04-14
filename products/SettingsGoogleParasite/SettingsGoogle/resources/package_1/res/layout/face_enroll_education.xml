@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<com.google.android.setupdesign.GlifLayout android:id="@id/setup_wizard_layout"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      settings:sucHeaderText="@string/security_settings_face_enroll_education_title"
+                      style="?attr/face_layout_theme" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings="http://schemas.android.com/apk/res-auto">
+  <LinearLayout android:orientation="vertical"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                style="@style/SudContentFrame">
+    <Space android:layout_width="fill_parent"
+           android:layout_height="0.0dp"
+           android:layout_weight="1.0" />
+    <FrameLayout android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/face_enroll_education_lottie_frame_margin_top">
+      <com.google.android.setupdesign.view.IllustrationVideoView android:id="@id/illustration_default"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            settings:sudVideo="@raw/face_education"
+                            style="@style/SudContentIllustration" />
+      <com.airbnb.lottie.LottieAnimationView android:id="@id/illustration_lottie"
+                            android:visibility="gone"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/illustration_lottie_height"
+                            android:layout_marginTop="@dimen/lottie_animation_view_margin_top"
+                            android:scaleType="centerInside"
+                            settings:lottie_autoPlay="true"
+                            settings:lottie_loop="true"
+                            settings:lottie_speed="1.5" />
+      <ImageView android:layout_gravity="center"
+                 android:id="@id/illustration_accessibility"
+                 android:visibility="invisible"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/illustration_accessibility_margin_top"
+                 android:src="@drawable/face_enroll_icon_large" />
+    </FrameLayout>
+    <Space android:layout_width="fill_parent"
+           android:layout_height="0.0dp"
+           android:layout_weight="1.0" />
+    <LinearLayout android:layout_gravity="bottom|center"
+                  android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+      <FrameLayout android:layout_width="fill_parent"
+                   android:layout_height="wrap_content">
+        <Button android:layout_gravity="center"
+                android:id="@id/accessibility_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/limited_vision_button_margin_top"
+                android:layout_marginBottom="@dimen/limited_vision_button_margin_bottom"
+                android:text="@string/security_settings_face_enroll_introduction_accessibility"
+                style="@style/SudGlifButton.Secondary" />
+        <com.android.settings.biometrics.face.FaceEnrollAccessibilityToggle android:id="@id/toggle_diversity"
+                              android:visibility="gone"
+                              android:layout_width="fill_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="@dimen/limited_vision_button_toggle_margin_top"
+                              settings:messageText="@string/security_settings_face_enroll_introduction_accessibility" />
+      </FrameLayout>
+    </LinearLayout>
+  </LinearLayout>
+</com.google.android.setupdesign.GlifLayout>
