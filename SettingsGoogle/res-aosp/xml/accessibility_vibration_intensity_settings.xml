@@ -78,4 +78,67 @@
 
     </PreferenceCategory>
 
+    <!-- Incall vibration options -->
+    <PreferenceCategory
+        android:key="accessibility_incall_vibration_category"
+        android:title="@string/incall_vibration_category"
+        app:controller="com.android.settings.sound.IncallFeedbackPreferenceController">
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="vibrate_on_connect"
+            android:title="@string/incall_vibrate_connect_title"
+            android:defaultValue="true" />
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="vibrate_on_callwaiting"
+            android:title="@string/incall_vibrate_call_wait_title"
+            android:defaultValue="true" />
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="vibrate_on_disconnect"
+            android:title="@string/incall_vibrate_disconnect_title"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <!-- Misc vibration options -->
+    <PreferenceCategory
+        android:key="misc_vibration_category"
+        android:title="@string/misc_vibration_category_title"
+        app:controller="com.android.settings.sound.CustomHapticPreferenceController">
+
+        <!-- QS Tiles haptic -->
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="qs_tiles_haptic_feedback"
+            android:title="@string/qs_tiles_haptic_feedback_title"
+            android:defaultValue="false" />
+
+        <!-- Volume slider haptic -->
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="volume_slider_haptic_feedback"
+            android:title="@string/volume_slider_haptic_feedback_title"
+            android:defaultValue="false" />
+
+        <!-- Scroll fling haptic feedback -->
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="scroll_fling_haptic_feedback"
+            android:title="@string/scroll_fling_haptic_feedback_title"
+            android:summary="@string/scroll_fling_haptic_feedback_summary"
+            android:dependency="vibration_intensity_preference_touch"
+            android:defaultValue="false" />
+
+        <!-- Charger haptic feedback -->
+        <com.android.settings.custom.preference.GlobalSettingSwitchPreference
+            android:key="charging_vibration_enabled"
+            android:title="@string/charger_haptic_feedback_title"
+            android:defaultValue="false" />
+
+        <!-- QS Bightness slider haptic feedback -->
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="qs_brightness_slider_haptic_feedback"
+            android:title="@string/qs_brightness_slider_haptic_feedback_title"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
