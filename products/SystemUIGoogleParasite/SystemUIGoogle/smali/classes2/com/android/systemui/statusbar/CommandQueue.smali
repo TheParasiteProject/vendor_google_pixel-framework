@@ -1121,33 +1121,55 @@
     invoke-virtual {v1, p1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     .line 3
-    iget-object v1, p0, Lcom/android/systemui/statusbar/CommandQueue;->mHandler:Lcom/android/systemui/statusbar/CommandQueue$H;
+    sget-boolean v1, Landroid/os/DeviceIntegrationUtils;->DISABLE_DEVICE_INTEGRATION:Z
 
-    const/high16 v2, 0x20000
+    if-nez v1, :cond_0
 
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->removeMessages(I)V
+    iget-object v1, p0, Lcom/android/systemui/statusbar/CommandQueue;->mDisplayTracker:Lcom/android/systemui/settings/DisplayTracker;
+
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    if-eqz p1, :cond_0
+
+    const/high16 v1, 0x640000
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p0
+
+    goto :goto_2
+
+    :cond_0
+    const/high16 v1, 0x20000
 
     .line 4
-    invoke-static {}, Lcom/android/internal/os/SomeArgs;->obtain()Lcom/android/internal/os/SomeArgs;
+    :goto_0
+    iget-object v2, p0, Lcom/android/systemui/statusbar/CommandQueue;->mHandler:Lcom/android/systemui/statusbar/CommandQueue$H;
 
-    move-result-object v1
+    invoke-virtual {v2, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 5
-    iput p1, v1, Lcom/android/internal/os/SomeArgs;->argi1:I
+    invoke-static {}, Lcom/android/internal/os/SomeArgs;->obtain()Lcom/android/internal/os/SomeArgs;
+
+    move-result-object v2
 
     .line 6
-    iput p2, v1, Lcom/android/internal/os/SomeArgs;->argi2:I
+    iput p1, v2, Lcom/android/internal/os/SomeArgs;->argi1:I
 
     .line 7
-    iput p3, v1, Lcom/android/internal/os/SomeArgs;->argi3:I
+    iput p2, v2, Lcom/android/internal/os/SomeArgs;->argi2:I
 
     .line 8
-    iput p4, v1, Lcom/android/internal/os/SomeArgs;->argi4:I
+    iput p3, v2, Lcom/android/internal/os/SomeArgs;->argi3:I
 
     .line 9
+    iput p4, v2, Lcom/android/internal/os/SomeArgs;->argi4:I
+
+    .line 10
     iget-object p1, p0, Lcom/android/systemui/statusbar/CommandQueue;->mHandler:Lcom/android/systemui/statusbar/CommandQueue$H;
 
-    invoke-virtual {p1, v2, v1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {p1, v1, v2}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object p1
 
@@ -1162,7 +1184,7 @@
 
     move-result-object p3
 
-    if-ne p2, p3, :cond_0
+    if-ne p2, p3, :cond_1
 
     .line 11
     iget-object p0, p0, Lcom/android/systemui/statusbar/CommandQueue;->mHandler:Lcom/android/systemui/statusbar/CommandQueue$H;
@@ -1172,24 +1194,19 @@
     .line 12
     invoke-virtual {p1}, Landroid/os/Message;->recycle()V
 
-    goto :goto_0
-
-    :catchall_0
-    move-exception p0
-
     goto :goto_1
 
-    .line 13
-    :cond_0
+    .line 14
+    :cond_1
     invoke-virtual {p1}, Landroid/os/Message;->sendToTarget()V
 
-    .line 14
-    :goto_0
+    .line 15
+    :goto_1
     monitor-exit v0
 
     return-void
 
-    :goto_1
+    :goto_2
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
