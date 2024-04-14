@@ -55,6 +55,37 @@
         android:title="@string/gesture_preference_title"
         settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController" />
 
+    <!-- Button Settings -->
+    <Preference
+        android:key="button_settings"
+        android:title="@string/button_pref_title"
+        android:icon="@drawable/ic_button_settings"
+        android:order="-249"
+        android:fragment="com.android.settings.custom.buttons.ButtonSettings"/>
+
+    <!-- Statusbar Settings -->
+    <Preference
+        android:key="statusbar_settings"
+        android:title="@string/status_bar_title"
+        android:icon="@drawable/ic_settings_statusbar"
+        android:order="-248"
+        android:fragment="com.android.settings.custom.statusbar.StatusBarSettings" />
+
+    <Preference
+        android:key="default_usb_configuration"
+        android:fragment="com.android.settings.connecteddevice.usb.UsbDefaultFragment"
+        android:icon="@drawable/ic_usb_24"
+        android:order="-245"
+        android:title="@string/usb_default_config_title"/>
+
+    <!-- Custom Advanced Settings -->
+    <Preference
+        android:key="advanced_settings"
+        android:title="@string/advanced_pref_title"
+        android:icon="@drawable/ic_advanced_settings"
+        android:order="-242"
+        android:fragment="com.android.settings.custom.advanced.AdvancedSettings"/>
+
     <Preference
         android:fragment="com.android.settings.datetime.DateTimeSettings"
         android:icon="@drawable/ic_settings_date_time"

@@ -6,6 +6,26 @@
     android:title="@string/gesture_settings_activity_title"
     settings:keywords="@string/keywords_gesture_navigation_settings">
 
+    <Preference
+        android:key="gesture_nav_custom_options"
+        android:title="@string/navbar_gesture_tweaks_pref_title"
+        android:summary="@string/navbar_gesture_tweaks_pref_summary"
+        android:fragment="com.android.settings.gestures.GestureTweaksSettings" />
+
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        android:key="navigation_bar_hint"
+        android:title="@string/show_navbar_gesture_bar_title"
+        android:summary="@string/show_navbar_gesture_bar_summary"
+        android:defaultValue="true" />
+
+    <com.android.settings.custom.preference.SystemSettingListPreference
+        android:key="navigation_bar_ime_space"
+        android:title="@string/navigation_bar_ime_space_title"
+        android:summary="@string/navigation_bar_ime_space_summary"
+        android:entries="@array/navigation_bar_ime_space_entries"
+        android:entryValues="@array/navigation_bar_ime_space_values"
+        android:defaultValue="0" />
+
     <PreferenceCategory
         android:key="assistant_gesture_category"
         android:persistent="false"
@@ -45,6 +65,15 @@
             android:title="@string/left_edge"
             settings:textEnd="@string/high_label"
             settings:textStart="@string/low_label" />
+
+
+        <com.android.settings.widget.LabeledSeekBarPreference
+            android:key="gesture_back_height"
+            android:title="@string/back_height"
+            android:max="3"
+            android:selectable="true"
+            settings:textStart="@string/back_height_low_label"
+            settings:textEnd="@string/back_height_high_label"/>
 
         <com.android.settings.widget.LabeledSeekBarPreference
             android:key="gesture_right_back_sensitivity"
