@@ -864,7 +864,7 @@
   <dimen name="max_name_text_size_for_medium">14.0sp</dimen>
   <dimen name="max_people_avatar_size">108.0dp</dimen>
   <dimen name="max_people_avatar_size_for_large_content">64.0dp</dimen>
-  <dimen name="max_window_blur_radius">23.0px</dimen>
+  <dimen name="max_window_blur_radius">17.5dp</dimen>
   <dimen name="media_output_broadcast_info">21.0dp</dimen>
   <dimen name="media_output_broadcast_info_edit">18.0dp</dimen>
   <dimen name="media_output_broadcast_info_item_height">56.0dp</dimen>
