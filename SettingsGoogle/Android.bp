@@ -15,6 +15,7 @@ android_library {
     ],
     resource_dirs: [
         "res",
+        "res-aosp",
     ],
 }
 
