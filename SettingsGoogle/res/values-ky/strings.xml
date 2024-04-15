@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="aware_category_display" />
-    <string name="aware_category_gesture" />
-    <string name="aware_display_settings_title">Күтүү режиминдеги кулпу экраны</string>
-    <string name="aware_settings_description" />
-    <string name="aware_settings_summary" />
-    <string name="gesture_silence_title">¨Шашылыш билдирүүлөр көрүнбөсүн¨ жаңсоосу</string>
-    <string name="gesture_skip_title">Өткөрүп жиберүү жаңсоосу</string>
-    <string name="keywords_touch_sensitivity">басуу, сезгичтик, сезгич, экранды коргогуч, плёнка, жооп берүүчү, жооп берүү</string>
-    <string name="keywords_wake_display" />
-    <string name="touch_sensitivity_summary">Экранга коргоочу пленка же айнек коюлганда, анын тийүүгө сезгичтиги жогорулайт</string>
-    <string name="touch_sensitivity_title">Экранды коргоо режими</string>
-    <string name="columbus_title">Тез баскылап, аракеттерди аткарып баштоо</string>
-    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge жөндөлдү. Кийинки экранга өтүңүз же тууралоону улантыңыз.</string>
     <string name="accessibility_keyboard_haptics_title">Баскычтоптун сенсорлору</string>
     <string name="adaptive_alert_vibration_summary">Телефонуңуздун экраны өйдө караганда акырыныраак дирилдейт</string>
     <string name="adaptive_alert_vibration_title">Дирилдөөнү ыңгайлаштырып тууралоо</string>
@@ -28,73 +15,29 @@
     <string name="add_bypassed_application_hint">Колдонмолор кошулган жок</string>
     <string name="advanced_vpn_preference_group_title">Алдын ала орнотулган оюн</string>
     <string name="all_apps_category_title">Бардык колдонмолор</string>
-    <string name="allow_debugging_data_description">Google мүчүлүштүк тууралуу кабарлар аркылуу колдонмодогу жана түзмөктөгү көйгөйлөрдү <a href="https://policies.google.com/privacy">Купуялык эрежелерибизге</a>" ылайык аныктайт.
+    <string name="allow_debugging_data_description">Google мүчүлүштүк тууралуу кабарларды колдонуп, колдонмо жана түзмөктөгү көйгөйлөрдү <a href="https://policies.google.com/privacy">Купуялык эрежелерибизге</a>" ылайык аныктайт.
 
-"<b>Мүчүлүштүк тууралуу кабарларда колдонмо жана система таржымалдары бар</b>", ошондой эле жеке маалыматтар жана түзмөккө байланыштуу маалымат, мисалы, колдонуучулардын аты-жөнү, электрондук почта даректери, телефон номерлери, жайгашкан жер тууралуу маалымат, түзмөктүн идентификаторлору, байланышкан түзмөктөр жана тармак маалыматы болушу мүмкүн. Кабарлар бул көйгөйгө тиешеси бар өнөктөштөргө жөнөтүлүшү мүмкүн.
+"<b>Мүчүлүштүк тууралуу кабарларда колдонмо жана тутум таржымалдары бар</b>", ошондой эле аларда жеке жана түзмөк тууралуу маалымат, мисалы, колдонуучулардын аты-жөнү, электрондук почта даректери, телефон номерлери, жайгашкан жер тууралуу маалымат, түзмөктүн идентификаторлору, туташкан түзмөктөр жана тармак маалыматы болушу мүмкүн. Кабарлар бул көйгөй кедергисин тийгизе турган өнөктөштөр менен бөлүшүлүшү мүмкүн.
 
-Кирүү мүмкүнчүлүгүн берсеңиз, бул колдонмо бардык ката тууралуу кабарлар үчүн колдонмо жана система таржымалдары камтылган "<b>мүчүлүштүк тууралуу кабарларды автоматтык түрдө чогултуп, жүктөп бере алат.</b>"
+Кирүү мүмкүнчүлүгүн берсеңиз, бул колдонмо сиз тапшырган бардык ката тууралуу кабарлар, анын ичинде жеке жана жумуш профилдериндеги колдонмо жана тутум таржымалдары камтылган"<b>мүчүлүштүк тууралуу кабарларды автоматтык түрдө чогултуп, жүктөп бере алат.</b>"
 
 Эгер кирүүгө тыюу салсаңыз, колдонмо ар бир ката тууралуу кабар үчүн мүчүлүштүк тууралуу кабарды сиздин уруксатыңыз менен чогултуп, жүктөп берет."</string>
-    <string name="ambient_display_wake_screen_footer">
-        <annotation link="link">Жеке параметрлер</annotation>
-    </string>
-    <string name="ambient_display_wake_screen_summary" />
-    <string name="ambient_display_wake_screen_summary_on" />
-    <string name="assist_gesture_enrollment_continue_to_assistant">Жардамчыга өтүү</string>
-    <string name="assist_gesture_enrollment_do_it_later">Азыр эмес</string>
-    <string name="assist_gesture_enrollment_seekbar_light">Акырын кысуу</string>
-    <string name="assist_gesture_enrollment_seekbar_strong">Катуу кысуу</string>
-    <string name="assist_gesture_enrollment_settings">Параметрлер</string>
-    <string name="assist_gesture_setting_enable_assistant_text">Жардамчыңызга кайрылуу үчүн телефонуңуздун ылдыйкы бөлүгүн кысып коюңуз</string>
-    <string name="assist_gesture_setting_enable_assistant_title">Телефонду кысып, Жардамчыга кайрылуу</string>
-    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Ойготкучтардын, таймерлердин, билдирмелердин жана келген чалуулардын үнүн басуу үчүн түзмөктү кысып койсоңуз болот</string>
-    <string name="assist_gesture_setting_enable_ring_silence_text">Билдирмелердин жана кирүүчү чалуулардын үнүн басуу үчүн түзмөктү кысып коюңуз</string>
-    <string name="assist_gesture_setting_enable_ring_silence_title">Телефонду кысып, үндү басуу</string>
-    <string name="assist_gesture_setting_enable_wake_title">Экран өчүп турганда Жардамчыны ачуу</string>
-    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Акырын кысуу</string>
-    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Катуу кысуу</string>
-    <string name="assist_gesture_squeeze_sensitivity_label">Кысуу күчү</string>
-    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Жардамчыны кокустан ачып алышы мүмкүн</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Телефонуңуздун ылдыйкы жарымын кысыңыз</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Ылдамыраак кысыңыз</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Катуураак кысыңыз</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Тез кысып туруп, кайра коё бериңиз</string>
-    <string name="assist_gesture_training_enrolling_error_try_adjusting">Сыдырманы тууралап көрүңүз</string>
-    <string name="assist_gesture_training_enrolling_text">Телефонуңуздун ылдыйкы жарымын кысыңыз. Кысуу күчүн жөндөөлөрдөн тууралап алсаңыз болот.</string>
-    <string name="assist_gesture_training_enrolling_title">Тез кысып, кайра коё бериңиз</string>
-    <string name="assist_gesture_training_finished_text">Кысуунун деңгээлин кийинчерээк Параметрлерден өзгөртсөңүз да болот</string>
-    <string name="assist_gesture_training_finished_title">Бүтүрүү же тууралоону улантуу</string>
-    <string name="assist_gesture_training_intro_text">Жардамчыңызга каалаган убакта кайрылуу ү-н тел-дун ылдыйкы жар-н тез кысып туруп, кайра коё бериңиз</string>
-    <string name="assist_gesture_training_intro_title">Телефонду кысып, Жардамчыга кайрылуу</string>
-    <string name="assist_gesture_training_suggestion_summary">Жардамчыга кайрылуу, чалуулардын үнүн басуу</string>
-    <string name="assist_gesture_training_suggestion_summary_including_alarms">Жардамчыга кайрылуу, ойготкучтардын жана чалуулардын үнүн басуу</string>
-    <string name="assist_gesture_training_suggestion_title">Жардамчыга кайрылуу үчүн телефонду кысып, кайра коё бериңиз</string>
-    <string name="aware_category_security" />
-    <string name="aware_disabled_preference_action">Күйгүзүү</string>
-    <string name="aware_disabled_preference_dialog_content" />
-    <string name="aware_disabled_preference_dialog_title" />
-    <string name="aware_disabled_preference_neutral">Азыр эмес</string>
-    <string name="aware_footer_when_airplane_batterysaver_on">Motion Sense жеткиликсиз, анткени учак режими менен Батареяны үнөмдөгүч режими күйүк</string>
-    <string name="aware_footer_when_airplane_on">Motion Sense жеткиликсиз, анткени учак режими күйүк</string>
-    <string name="aware_footer_when_batterysaver_on">Motion Sense жеткиликсиз, анткени Батареяны үнөмдөгүч режими күйүк</string>
-    <string name="aware_gesture_summary_off">Ыкчам жаңсоолор күйүк, Active Edge өчүк</string>
-    <string name="aware_gesture_summary_on_non_assist">Ыкчам жаңсоолор күйүк, Active Edge күйүк</string>
-    <string name="aware_gesture_summary_on_with_assist">Ыкчам жаңсоолор күйүк, Active Edge күйүк, Жардамчыга телефонду кысып кайрылуу күйүк</string>
-    <string name="aware_info_button_description">Дагы параметрлер</string>
-    <string name="aware_settings_disabled_info_dialog_content" />
-    <string name="aware_settings_disabled_info_dialog_title" />
-    <string name="aware_settings_enabled_info_dialog_content" />
-    <string name="aware_settings_enabled_info_dialog_title" />
-    <string name="aware_settings_suggestion_summary" />
-    <string name="aware_settings_suggestion_title" />
-    <string name="aware_summary_when_airplane_batterysaver_on">Жеткиликсиз, анткени учак режими менен Батареяны үнөмдөгүч режими күйүк</string>
-    <string name="aware_summary_when_airplane_on">Жеткиликсиз, анткени учак режими күйүк</string>
-    <string name="aware_summary_when_batterysaver_on">Батареяны үнөмдөгүч режими күйүп тургандыктан, бул функция иштебейт</string>
-    <string name="aware_wake_display_summary" />
-    <string name="aware_wake_display_summary_aod_off" />
-    <string name="aware_wake_display_title" />
+    <string name="app_and_notification_dashboard_summary">Жардамчы, акыркы колдонмолор, демейки колдонмолор</string>
+    <string name="automatic_storage_manager_activation_warning">Интернетке туташып турганда, сүрөттөр менен видеолорду камдык көчүрмө үчүн тандалган сапатта көрө аласыз</string>
+    <string name="automatic_storage_manager_days_title">Google´да сакталган сүрөттөрдү/видеолорду өчүрүү</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Акылдуу сактагыч өчүрүлсүнбү? 
+
+Сактагычыңыз толгону калганда Акылдуу сактагыч орун бошотпой калат."</string>
+    <string name="automatic_storage_manager_preference_title">Акылдуу сактагыч</string>
+    <string name="automatic_storage_manager_primary_switch_title">Акылдуу сактагычты колдонуу</string>
+    <string name="automatic_storage_manager_settings">Акылдуу сактагыч</string>
+    <string name="automatic_storage_manager_text">Сактагычта орун калбай баратканда Google Фотого сакталган сүрөттөр менен видеолорду түзмөктөн өчүрүп салыңыз. Аларды Google Фотодон көрө бересиз.</string>
+    <string name="backup_data_summary">Колдонмонун дайындарынын, Wi-Fi сырсөздөрүнүн жана башка параметрлердин камдалган көчүрмөлөрүн Google серверлеринде сактап коюңуз</string>
     <string name="basic_battery_saver_summary">Визуалдык эффекттерди жана фондогу аракеттерди чектейт. Эгер күйгүзүлө элек болсо, Караңгы теманы күйгүзүңүз.</string>
     <string name="basic_battery_saver_title">Стандарттуу Батареяны үнөмдөгүч</string>
+    <string name="battery_manager_summary">Батареяны көбүрөөк убакытка жеткирүү жана кубаттоону оптималдаштыруу</string>
+    <string name="battery_manager_summary_unsupported">Батареяны көпкө жеткирүү</string>
+    <string name="battery_missing_link_message">Кененирээк</string>
     <string name="battery_saver_reminder_category">Эстеткичтер</string>
     <string name="battery_saver_reminder_switch_summary">Батареянын отуруп баратканын билип турасыз</string>
     <string name="battery_saver_reminder_switch_title">Батареяны үнөмдөгүч режиминин эстеткичтери</string>
@@ -103,7 +46,11 @@
     <string name="battery_saver_schedule_switch_title">Батареянын деңгээлине жараша күйгүзүү</string>
     <string name="battery_schedule_summary">Батареяны үнөмдөгүч качан күйө турганын тандайсыз</string>
     <string name="battery_schedule_title">График жана эстеткичтер</string>
+    <string name="battery_tip_battery_health_learn_more_description">Батареянын абалы жөнүндө кеңири маалымат</string>
+    <string name="battery_tip_battery_health_reduced_title">Батареянын сыйымдуулугу азайды</string>
+    <string name="battery_tip_battery_health_unknown_title">Батареянын абалы аныкталбай жатат</string>
     <string name="battery_tip_limited_temporarily_extra_summary">Планшет туташып турганда, батареяны коргоо үчүн кубаттоо %1$s жеткенде тындырылат</string>
+    <string name="battery_tip_smart_battery_summary">Adaptive Battery функциясын иштетесиз</string>
     <string name="clear_calling_footer">"Купуялыгыңызды коргоо үчүн Таза үн функциясы аудио файлдарды же жазышууларды Google'га жөнөтпөйт.
 
 Таза үн функциясы Wi-Fi аркылуу чалууда жана көптөгөн мобилдик тармактарда иштейт. 3G тармактарында жеткиликсиз."</string>
@@ -154,8 +101,11 @@
     <string name="columbus_setting_app_shortcut_selection_help_text">Бул колдонмону тез баскылап ачкандан кийин аткарыла турган аракетти тандаңыз.</string>
     <string name="columbus_setting_enable_switch_title">Тез баскылоону иштетүү</string>
     <string name="columbus_setting_sensitivity_title">Катуураак басууну талап кылуу</string>
+    <string name="columbus_title">Тез баскылап, аракеттерди аткарып баштоо</string>
     <string name="communal_lock_screen_summary">Купуялык, билдирмелер жана Үйдөгү түзмөктөрдү башкаруу</string>
     <string name="communal_other">Башка</string>
+    <string name="communal_settings_summary">Туташуу жана кулпуланган экрандагы параметрлер</string>
+    <string name="communal_settings_title">Hub режими</string>
     <string name="communal_smartspace_summary">Эстеткичтер, эскертүүлөр жана Жардамчынын башка функциялары</string>
     <string name="communal_smartspace_title">Дароо көрүү</string>
     <string name="communal_what_to_show">Көрсөтүлө турган нерселер</string>
@@ -166,17 +116,17 @@
     <string name="connectivity_helper_d2d_summary">Чалуу учурунда телефонуңузда келип чыккан туташуу көйгөйлөрү тууралуу башка кишиге кабарлай аласыз</string>
     <string name="connectivity_helper_d2d_title">Туташуу маалыматын бөлүшүү</string>
     <string name="connectivity_helper_footnote">Чалып жаткан башка абонент колдоого алынган түзмөктү же тармакты колдонуп жатса, туташуу маалыматын бөлүшө аласыз</string>
+    <string name="content_capture">Колдонмолордогу нерселердин негизинде жекечелештирүү</string>
+    <string name="content_protection_preference_subpage_info">"Бул – корголгон коопсуздук функциясы. Түзмөк тууралуу же жеке маалымат Google менен бөлүшүлбөйт. 
+
+Фишинг – кирүү эсептик дайындарын же башка жеке маалыматты уурдоо аракети."</string>
+    <string name="content_protection_preference_subpage_summary">Скандоо түзмөгүңүздө жеке иштетилип, колдонмолордо жасалган аракеттерде фишинг же башка алдамчы аракеттер текшерилет. Эгер мындай аракеттер аныкталса, коркунучту ырастоо жана колдонмонун колдонуучуларына эскертүү берүү үчүн колдонмонун айрым маалыматы Google Play Protect кызматына жөнөтүлөт.</string>
+    <string name="dark_ui_text">Түзмөгүңүздүн батареясын көпкө жеткирүү үчүн караңгы темада кара фон колдонулат. Караңгы тема күйгүзүлө турган маалда телефонуңузду колдонуп жаткан болсоңуз, ал экраныңыз кийинки жолу күйгөндө иштейт.</string>
     <string name="debugging_data_title">Мүчүлүштүктөрдү оңдоо маалыматы</string>
-    <string name="dialog_aware_settings_message" />
-    <string name="dialog_aware_settings_ok" />
-    <string name="dialog_aware_settings_title" />
     <string name="discover_tips_button">Кеңештерди карап чыгуу</string>
-    <string name="dock_setup_notification_text" />
     <string name="dock_summary_charging_phone">Телефонду кубаттоо</string>
-    <string name="dream_no_screen_saver_caption" />
-    <string name="dream_no_screen_saver_description" />
-    <string name="dream_no_screen_saver_preview_caption" />
-    <string name="dream_secondary_button_title" />
+    <string name="double_twist_for_camera_mode_summary">Google Камерада селфи режимин күйгүзүп же өчүрүү үчүн колдонмо ачылып турганда билегиңизди айландырып коюңуз.</string>
+    <string name="duration_less_than_one_minute">1 мүнөткө жеткен жок</string>
     <string name="extreme_battery_saver_summary">Жогоруда тизмеленген бардык өзгөртүүлөрдү камтыйт. Ошондой эле керексиз колдонмолорду жана алар жөнөткөн билдирмелерди тындырат.</string>
     <string name="extreme_battery_saver_title">Батареяны кескин үнөмдөө режими</string>
     <string name="face_confirmation_hide_illustration_description">Эми телефонуңузду колуңузга алганда же экранына тийгенде, анын кулпусун жүзүңүз менен ача аласыз.</string>
@@ -203,49 +153,44 @@
     <string name="face_enrolling_too_right">Телефонду солго жылдырыңыз</string>
     <string name="face_enrolling_turn_head_to_arrow">Башыңызды жебе көрсөткөндөй буруңуз</string>
     <string name="face_enrolling_turned_too_far">Башыңызды бир аз гана буруңуз</string>
+    <string name="fast_pair_device_not_found_dialog_title">Туташпай калды</string>
+    <string name="fast_pair_device_not_found_other_device_description">Түзмөктү Pixel телефонуңуздун жанына коюп, кайталап көрүңүз.</string>
+    <string name="fast_pair_device_not_found_tws_headphone_description">Гарнитуранын кутучасын ачып, Pixel телефонуңуздун жанына коюп, кайталаңыз.</string>
+    <string name="fingerprint_unlock_set_unlock_password">Nexus Imprint + Сырсөз</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Nexus Imprint + Графикалык ачкыч</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Nexus Imprint + PIN код</string>
+    <string name="fingerprint_unlock_skip_fingerprint">"Nexus Imprint'сиз улантуу"</string>
+    <string name="firmware_update_accessory_version_number_title">Аксессуарга орнотулган программа</string>
     <string name="firmware_update_status_category">Түзмөктө орнотулган программанын абалы</string>
     <string name="firmware_update_status_title">Орнотулган программанын жаңыртуусу бар</string>
     <string name="firmware_update_version_number_category">Түзмөктө орнотулган программанын версиясы</string>
     <string name="firmware_update_version_number_title">Pixel баскычтобунда орнотулган программа</string>
-    <string name="gesture_aware_confirmation_action_button">Түшүндүм</string>
-    <string name="gesture_aware_disabled_info_dialog_content" />
-    <string name="gesture_aware_footer">
-        <annotation link="link">Жеке параметрлер</annotation>
-    </string>
-    <string name="gesture_aware_off_dialog_content" />
-    <string name="gesture_aware_off_dialog_title" />
-    <string name="gesture_silence_footer">
-        <annotation link="link">Жеке параметрлер</annotation>
-    </string>
-    <string name="gesture_silence_off_summary" />
-    <string name="gesture_silence_on_summary" />
-    <string name="gesture_silence_summary" />
-    <string name="gesture_skip_direction_ltr">Солдон оңго</string>
-    <string name="gesture_skip_direction_rtl">Оңдон солго</string>
-    <string name="gesture_skip_direction_title">Өткөрүп жиберүү багыты</string>
-    <string name="gesture_skip_footer">
-        <annotation link="link">Жеке параметрлер</annotation>
-    </string>
-    <string name="gesture_skip_off_summary" />
-    <string name="gesture_skip_on_summary" />
-    <string name="gesture_skip_summary" />
-    <string name="gesture_tap_footer">
-        <annotation link="link">Жеке параметрлер</annotation>
-    </string>
-    <string name="gesture_tap_on_summary" />
-    <string name="gesture_tap_summary" />
+    <string name="fullbackup_data_summary">"Түзмөктөгү дайындары (мисалы, Wi-Fi тармагынын сырсөздөрү жана чалуулар таржымалы) менен колдонмодогу нерселердин (мисалы жөндөөлөр жана файлдар) камдалган көчүрмөлөрүн Google Drive'га автоматтык түрдө сактап коюңуз.
+
+Автоматтык түрдө көчүрмөнү сактоо мүмкүнчүлүгү иштетилгенде,түзмөк менен колдонмонун дайындары Google Drive'дагы жеке куржунга маал-маалы менен сакталып турат. Иштеп чыгуучунун параметрлерине ылайык колдонмодо сакталган дайындарда байланыштар, билдирүүлөр, сүрөттөр сыяктуу купуя маалыматтар камтылышы мүмкүн.
+
+Көчүрмөсү сакталган дайындар Google Drive'да орун ээлебейт. Ири файлдардын же иштеп чыгуучулар көчүрмөлөөгө тыюу салган файлдардын көчүрмөлөрү сакталбайт."</string>
+    <string name="fullbackup_erase_dialog_message">"Түзмөктөгү нерселердин (мисалы, Wi-Fi тармагынын сырсөздөрү жана чалуулар таржымалы) жана колдонмодогу нерселердин (мисалы жөндөөлөр жана файлдар) камдык көчүрмөлөрү мындан ары сакталбай, Google Drive'дагы бардык көчүрмөлөр өчүрүлөт. Уланта бересизби?"</string>
+    <string name="gesture_settings_activity_title">Жаңсап чабыттоо</string>
     <string name="install_unknown_applications">"Play Store'дон башка булактардан алынган колдонмолорду орнотууга уруксат берүү"</string>
+    <string name="keywords_accessibility_menu">мотор, тез меню, жардамчы меню, тийүү, эптүүлүк, артрит, инсульт, тремор, склероз, церебралдык шал оорусу, баскыч, аппараттык каражат, пресс, кайталанма кыймылдан келип чыккан травма, кол, оору, жеткиликтүү, жардам</string>
     <string name="keywords_adaptive_alert_vibration">сенсорлор, дирилдөө, телефон, чалуу, шыңгыратуу, эскертүү, билдирмелер, катуу, акырын, ызы-чуу, кутуча, адаптивдүү</string>
     <string name="keywords_adaptive_charging">кубаттоо, кубатталууда, акылдуу кубаттоо, ыңгайлаштырылуучу кубаттоо, батарея, батареянын акыбалы</string>
-    <string name="keywords_assist_gesture_silence">жаңсоо, кыркуу, тарап, жигердүү кыркуу, үндү басуу, тындыруу, ойготкуч, кириш чалуу, акырын, дисплей, кулпуланган экран, кысуу, кармоо, токтотуу</string>
-    <string name="keywords_assist_gesture_wake">жаңсоо, кыркуу, тарап, жигердүү кыркуу, ойготуу, билдирмелер, экран, дисплей, экран өчүк, экран күйүк, кысуу, уктап калуу, уйку режими, кыркуу</string>
     <string name="keywords_battery_share">батареяны бөлүшүү, зымсыз кубаттоо</string>
     <string name="keywords_battery_share_settings">батареяны бөлүшүү, зымсыз тескери кубаттоо</string>
-    <string name="keywords_gesture_silence" />
-    <string name="keywords_gesture_skip" />
-    <string name="keywords_gesture_tap" />
+    <string name="keywords_gesture">жаңсоо, кыймылдар</string>
+    <string name="keywords_hearing_devices">начар угуу, дүлөйлүк, жеке үн күчөткүч товарлары</string>
     <string name="keywords_limited_warranty">кепилдик, чектелген кепилдик, убада, оңдоо, rma, алмаштыруу</string>
+    <string name="keywords_live_caption">Коштомо жазуулар, Тике транскрипциялоо, начар угуу, угуу жөндөмүнүн жоголушу, CART, cөздөн текстке, коштомо жазуу</string>
+    <string name="keywords_live_transcribe">Коштомо жазуулар, ыкчам коштомо жазуулар, начар угуу, угуу жөндөмүнүн жоголушу, CART, сөздөн текстке, коштомо жазуу</string>
     <string name="keywords_reverse_charging_stop_threshold">Телефондун батареясынын кубаты төмөнкүгө жеткенде кубатты бөлүшүү токтотулсун:</string>
+    <string name="keywords_select_to_speak">Текстти угуу, үн чыгарып окуу, экрандагыны окуу, экрандагыны окугуч</string>
+    <string name="keywords_sound_amplifier">PSAP, күчөтүү, үндү күчөтүү, начар угуу, угуу жөндөмүнүн жоголушу</string>
+    <string name="keywords_sound_notifications">Билдирмелер, начар угуу, угуу жөндөмүнүн жоголушу, билдирме жөнөтүү</string>
+    <string name="keywords_switch_access">кыймылдын бузулушу, которуу, кол, AT, ыңгайлуу технология, шал, ALS, скандоо, кадамды скандоо</string>
+    <string name="keywords_talkback">Экрандагыны окугуч, Voice Over, VoiceOver, Үн жардамчысы, көзү азиз, начар көрүү, TTS, кеп синтезатору, экрандагы текстти окуп берүү</string>
+    <string name="keywords_touch_sensitivity">басуу, сезгичтик, сезгич, экранды коргогуч, плёнка, жооп берүүчү, жооп берүү</string>
+    <string name="keywords_voice_access">үн, үн менен башкаруу, кыймылдын бузулушу, кол, микрофон, текстти айтып терүү, сүйлөө, башкаруу</string>
     <string name="led_preference_title">LED индикаторунун үлгүлөрү</string>
     <string name="legal_source_code_description">"Ачык ресурс катары жеткиликтүү компонеттердин коду жөнүндө кеңири маалыматты Pixel'дин жардам борборунан көрүүгө болот."</string>
     <string name="legal_source_code_title">Код</string>
@@ -253,9 +198,12 @@
     <string name="limited_warranty_title">Чектелген кепилдик</string>
     <string name="lockscreen_show_weather_summary">Учурдагы аба ырайынын шарттарын көрүү</string>
     <string name="lockscreen_show_weather_title">Аба ырайын көрсөтүү</string>
+    <string name="my_device_info_account_preference_title">Google аккаунту</string>
+    <string name="owner_info_settings_edit_text_hint">Мисалы, Асандын Pixel түзмөгү.</string>
     <string name="permit_debugging_data">Мүчүлүштүк тууралуу кабарга уруксат берүү</string>
     <string name="play_application_detail_indication_summary">Жаңыртууларды карап көрүү</string>
     <string name="play_application_update_entry_title">Колдонмонун жаңыртуулары</string>
+    <string name="privatespace_retry_summary">Жеке чөйрөнү тууралоо үчүн Google аккаунтуңузга киришиңиз керек</string>
     <string name="repair_mode_active_summary">Оңдоо режиминде</string>
     <string name="repair_mode_summary">Түзмөктү оңдоо үчүн коопсуз чөйрө</string>
     <string name="repair_mode_title">Оңдоо режими</string>
@@ -286,18 +234,35 @@
     <string name="reverse_charging_unplug_usb_cable_message">Жеткиликсиз, анткени USB-C түзмөгү сайылып турат</string>
     <string name="reverse_charging_warning_summary">Жеткиликсиз, анткени телефондун кубатынын деңгээли %1$s төмөн</string>
     <string name="reverse_charging_warning_title">Батареяны бөлүшүү функциясы жеткиликсиз, анткени батареянын деңгээли %1$s төмөн</string>
-    <string name="search_gesture_category_title">Экранда издөө</string>
-    <string name="search_long_press_home_button_summary">"Google'да издеп баштоо үчүн башкы бет баскычын коё бербей басып туруңуз."</string>
-    <string name="search_long_press_home_button_title">Издөө үчүн Башкы бет баскычын коё бербей басып туруу</string>
-    <string name="search_press_hold_gesture_summary">Экрандан издөө үчүн чабыттоо тилкесин коё бербей басып туруңуз.</string>
-    <string name="search_press_hold_gesture_title">Издөө үчүн маркерди кармап туруңуз</string>
+    <string name="rtt_settings_always_visible">Ар дайым көрүнөт</string>
+    <string name="rtt_settings_no_visible">Көрүнбөйт</string>
+    <string name="rtt_settings_title">Анык убакыттагы билдирүү (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Чалуу учурунда көрүнөт</string>
+    <string name="screen_time_summary_usage_today">Бүгүн %1$s колдонулду</string>
+    <string name="search_bar_account_avatar_content_description">Профиль сүрөтү, Google аккаунту ачуу үчүн эки жолу таптап коюңуз</string>
+    <string name="search_gesture_category_title">Издөө</string>
+    <string name="search_gesture_feature_title">Circle to Search</string>
+    <string name="search_long_press_home_button_summary">Экрандын ылдый жагындагы башкы бет баскычын коё бербей басып туруп, издей турган нерсени тегеректеп же бөлүп көрсөтүңүз</string>
+    <string name="search_press_hold_gesture_summary">Экрандын ылдый жагындагы маркерди коё бербей басып туруп, издей турган нерсени тегеректеп же бөлүп көрсөтүңүз</string>
     <string name="security_dismiss_dialog_dismiss_button">Жабуу</string>
     <string name="security_dismiss_dialog_title">Бул эскертүүнү жабасызбы?</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">Коюу үчүн басыңыз</string>
+    <string name="security_settings_face_enroll_education_message">Кийинки экран ачылганда башыңызды буруп, жүзүңүздү ар кайсы тараптан тартыңыз</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Жүзүнөн таанып ачууну коюу убактысы бүтүп калды</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Эми манжаңыздын изи менен телефонуңуздун кулпусун ачып же колдонмолорго кирүүдө өзүңүздү ырастап, керектүү нерселерди сатып ала аласыз</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Эми телефонуңузду колуңузга алганда же экранына тийгенде, анын кулпусун жүзүңүз менен ача аласыз.
 
 Жүзүнөн таанып ачуу жарык жерде жана беткап же кара көз айнек тагынбай турганда иштейт."</string>
+    <string name="security_settings_face_enroll_finish_title">Баары жайында!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Атайын мүмкүнчүлүктөрдү иштетүү</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Көзүңүз ачык болушу керек</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Баарын өзүңүз жана балаңыз көзөмөлдөйт</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Баары өзүңүздүн колуңузда</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Кантип иштейт</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Эгер балаңыз көз айнек тагынса, жөндөп жатканда аны тагып алса болот.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Көз айнегиңизди чечпей эле койсоңуз болот (күндөн коргогон көз айнегиңизди да, эгер өтө капкара болбосо).</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Көңүл буруңуз</string>
+    <string name="security_settings_face_enroll_introduction_title">Жүзүнөн таанып ачууну коюу</string>
     <string name="security_settings_face_enroll_next">Кийинки</string>
     <string name="security_settings_face_enroll_partial_message">Майнаптуулугун жакшыртуу үчүн жүзүнөн таанып ачууну Параметрлерден кайра коюп алсаңыз болот</string>
     <string name="security_settings_face_enroll_partial_start_over">Кайра баштоо</string>
@@ -312,8 +277,24 @@
     <string name="security_settings_face_enroll_too_hot_message">Телефон ысып кеткендиктен, Жүзүнөн таанып ачуу функциясы коюлган жок. Телефон муздаганда кайталап көрүңүз.</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Жүзүнөн таанууну өткөрүп жиберүү</string>
     <string name="security_settings_face_enroll_too_hot_title">Телефон ысып кетти</string>
+    <string name="security_settings_face_preference_summary_none">Коюу үчүн басып коюңуз</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Nexus Imprint менен манжа изиңизди кандайдыр бир нерсени сатып алып жатканыңызды ырастап же колдонмолорго кирүү үчүн пайдалана аласыз.
+
+Кимдир бирөөнүн манжа изин кошуп жатканыңызда этият болуңуз. Манжа издери кошулган адамдардын баары бул нерселерди аткара алышат.
+
+Эскертүү: Манжа изиңизди бул түзмөктүн кулпусун ачууга колдоно албайсыз. Көбүрөөк маалымат үчүн ишканаңыздын администраторуна кайрылыңыз."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Nexus Imprint менен кулпуну ачуу</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Манжа изин кошуу үчүн таптап коюңуз</string>
+    <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint функциясы сизди таануу үчүн манжаңыздын изинин уникалдуу үлгүсүн түзөт. Үлгүнү түзүү үчүн манжаңызды ар кайсы абалдан скандашыңыз керек.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint функциясы балаңызды таануу үчүн манжа изинин кайталанбас үлгүсүн түзөт. Манжа изинин үлгүсүн түзүү үчүн ал манжасынын изин ар кайсы абалдан сүрөткө тартышы керек.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Pixel'ди манжа изи менен ачуу жөнүндө кененирээк маалымат алыңыз: &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
+    <string name="security_settings_work_fingerprint_preference_title">Жумуш профили үчүн Pixel Imprint</string>
     <string name="setup_suggestion_summary">Дагы бир нече кадам калды</string>
     <string name="setup_suggestion_title">Аягына чейин тууралаңыз</string>
+    <string name="smart_battery_footer">Батареяны көбүрөөк убакытка жеткирүү үчүн Adaptive Battery функциясы түзмөктүн иштешин жана фондогу аракеттерди чектеп коёт. Айрым колдонмолордун билдирмелери кечигүү менен келиши мүмкүн.</string>
+    <string name="smart_battery_manager_title">Ыңгайлаштырылуучу параметрлер</string>
+    <string name="smart_battery_title">Adaptive Battery</string>
     <string name="software_update_can_be_updated_header">Pixel түзмөгүңүздү жакшыртыңыз</string>
     <string name="software_update_detail_indication_1_update_available">1 жаңыртуу бар</string>
     <string name="software_update_detail_indication_2_or_more_updates_available">%1$d жаңыртуу жеткиликтүү</string>
@@ -326,9 +307,11 @@
     <string name="software_update_up_to_date_summary">Жаңы</string>
     <string name="software_update_up_to_specific_date_summary">%1$s жаңыртылды</string>
     <string name="software_update_update_available_summary">Жаңыртуу бар</string>
+    <string name="sound_dashboard_summary">Үндүн катуулугу, сенсорлор, Тынчымды алба</string>
     <string name="speed_boost_summary_off">Өчүк</string>
     <string name="speed_boost_summary_on">Күйүк</string>
     <string name="speed_boost_title">Spectrum Ылдамдатуусу</string>
+    <string name="suggested_fingerprint_lock_settings_title">"Pixel Imprint'ти колдонуу"</string>
     <string name="suw_limited_warranty_title">Чектелген кепилдик</string>
     <string name="suw_warranty_description">Чектелген кепилдикти көрүү үчүн бул түзмөктү кайсы өлкөдөн сатып алсаңыз, ошону тандаңыз.&lt;br /&gt;&lt;br /&gt;Ошондой эле кепилдикти &lt;b&gt;Тууралоолор &gt; Телефон жөнүндө &gt; Чектелген кепилдик&lt;/b&gt; жана g.co/devicewarranty бөлүмүнөн көрүүгө болот.</string>
     <string name="suw_warranty_description_content">Чектелген кепилдикти көрүү үчүн бул түзмөктү кайсы өлкөдөн сатып алсаңыз, ошону тандаңыз. Ошондой эле кепилдикти Тууралоолор, андан соң Телефон жөнүндө, Чектелген кепилдик жана g.co/devicewarranty бөлүмүнөн көрүүгө болот.</string>
@@ -336,10 +319,11 @@
     <string name="suw_warranty_positive_button_text">Жабуу</string>
     <string name="system_update_entry_title">Системаны жаңыртуу</string>
     <string name="system_updates_group_title">Pixel жаңыртуулары</string>
-    <string name="tips_suggestion_summary">Телефонуңуздун мүмкүнчүлүктөрүн карап чыгыңыз</string>
-    <string name="tips_suggestion_title">Pixel жөнүндө билип алыңыз</string>
+    <string name="touch_sensitivity_summary">Экранга коргоочу пленка же айнек коюлганда, анын тийүүгө сезгичтиги жогорулайт</string>
+    <string name="touch_sensitivity_title">Экранды коргоо режими</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Телефонду жүзүңүздүн алдына алып келиңиз</string>
     <string name="unified_battery_saver_page_intro">Батареянын кубатын үнөмдөп, телефонуңузду узагыраак колдонуңуз</string>
+    <string name="usb_use_file_transfers">Файлдарды өткөрүү / Android Auto</string>
     <string name="vpn_app_bypass">Таандалган колдонмолор камтылбасын</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">Байланыш операторунун учурдагы колдонмолору</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">"VPN'ден байланыш операторунун %1$d колдонмосу чыгарылсынбы?"</string>
@@ -360,12 +344,9 @@
     <string name="vpn_exclude_ntf_content">"Байланыш операторунун VPN'сиз иштеген жаңы орнотулган колдонмолору бар"</string>
     <string name="vpn_exclude_ntf_title">"Жаңы колдонмолор VPN'ден чыгарылсынбы?"</string>
     <string name="vpn_preference_group_title">Башкалар</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_title" />
-    <string name="wake_screen_suggestion_summary" />
-    <string name="wake_screen_suggestion_title" />
+    <string name="wallpaper_dashboard_summary">Түстөр, тематикалык сүрөтчөлөр, колдонмолор торчосу</string>
     <string name="warranty_country_information">%1$s (%2$s)</string>
+    <string name="wifi_subscription_summary">OpenRoaming жазылуусун көрүү же өзгөртүү</string>
     <string name="wifitrackerlib_connected_with_wsu_authenticator">Төмөнкү менен туташты: %1$s</string>
     <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Туташуу үчүн таптап коюңуз</string>
     <string name="wifitrackerlib_wsu_entry_summary_provision_error">Туташпай жатат. Кайталоо үчүн басыңыз.</string>

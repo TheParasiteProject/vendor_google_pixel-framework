@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.setupdesign.GlifLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.setupdesign.GlifLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@id/layout"
     android:layout_width="fill_parent"
@@ -12,8 +13,8 @@
         android:id="@id/animation"
         android:layout_width="@dimen/columbus_animation_layout_width"
         android:layout_height="@dimen/columbus_animation_layout_height"
-        android:layout_gravity="center"
         android:importantForAccessibility="no"
+        android:layout_gravity="center"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/gesture_columbus_circle" />
@@ -22,6 +23,7 @@
         android:id="@id/columbus_gesture_illustration"
         android:layout_width="@dimen/columbus_illustration_layout_width"
         android:layout_height="@dimen/columbus_illustration_layout_height"
-        android:layout_gravity="center"
-        android:importantForAccessibility="no" />
+        android:importantForAccessibility="no"
+        android:layout_gravity="center" />
+
 </com.google.android.setupdesign.GlifLayout>

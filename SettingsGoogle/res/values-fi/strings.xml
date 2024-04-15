@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="aware_category_display" />
-    <string name="aware_category_gesture" />
-    <string name="aware_display_settings_title">Valmiustilassa oleva lukitusnäyttö</string>
-    <string name="aware_settings_description" />
-    <string name="aware_settings_summary" />
-    <string name="gesture_silence_title">Ilmoitusten vaimennusele</string>
-    <string name="gesture_skip_title">Ohitusele</string>
-    <string name="keywords_touch_sensitivity">kosketus, herkkyys, herkkä, näytön suojakalvo, reagoiva, reagoivuus</string>
-    <string name="keywords_wake_display" />
-    <string name="touch_sensitivity_summary">Lisää kosketuksen herkkyyttä ja paranna kosketuskäyttöä, kun näytönsuojus on käytössä</string>
-    <string name="touch_sensitivity_title">Näytönsuojustila</string>
-    <string name="columbus_title">Käynnistä toimintoja pikanäpäytyksellä</string>
-    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge on määritetty. Siirry seuraavalle näytölle tai säädä ominaisuutta lisää.</string>
     <string name="accessibility_keyboard_haptics_title">Näppäimistön haptinen palaute</string>
     <string name="adaptive_alert_vibration_summary">Vähentää värinän voimakkuutta puhelimen ollessa paikoillaan näyttö ylöspäin</string>
     <string name="adaptive_alert_vibration_title">Mukautuva hälytyksen värinä</string>
@@ -30,71 +17,27 @@
     <string name="all_apps_category_title">Kaikki sovellukset</string>
     <string name="allow_debugging_data_description">Google diagnosoi sovellusten ja laitteiden ongelmia virheraporttien avulla <a href="https://policies.google.com/privacy">tietosuojakäytännön</a>" mukaisesti.
 
-"<b>Virheraportit sisältävät sovellus- ja järjestelmälokeja</b>" ja mahdollisesti myös henkilötietoja ja laitetietoja, esimerkiksi nimiä, sähköpostiosoitteita, puhelinnumeroita, sijaintidataa, laitetunnisteita, yhdistettyjä laitteita ja verkkotietoja. Raportteja voidaan jakaa teknisille kumppaneille, joihin ongelma mahdollisesti vaikuttaa.
+"<b>Virheraportit sisältävät sovellus- ja järjestelmälokeja</b>" ja mahdollisesti myös henkilökohtaisia ja laitetietoja, esimerkiksi nimiä, sähköpostiosoitteita, puhelinnumeroita, sijaintidataa, laitetunnisteita, yhdistettyjä laitteita ja verkkotietoja. Raportteja voidaan jakaa teknisille kumppaneille, joihin ongelma mahdollisesti vaikuttaa.
 
-Jos sovellus saa pääsyn, se voi "<b>kerätä ja ladata automaattisesti virheraportteja</b>", jotka sisältävät kaikkien ongelmaraporttien sovellus- ja järjestelmälokit.
+Jos sovellus saa pääsyn, se voi "<b>kerätä ja ladata automaattisesti virheraportteja</b>", jotka sisältävät kaikkien lähettämiesi ongelmaraporttien sovellus- ja järjestelmälokit työ- ja henkilökohtaisista profiileista.
 
 Jos pääsy perutaan, sovelluksen täytyy pyytää lupaasi virheraportin keräämiseen ja lataamiseen erikseen kutakin ongelmaraporttia varten."</string>
-    <string name="ambient_display_wake_screen_footer">
-        <annotation link="link">Valinnat</annotation>
-    </string>
-    <string name="ambient_display_wake_screen_summary" />
-    <string name="ambient_display_wake_screen_summary_on" />
-    <string name="assist_gesture_enrollment_continue_to_assistant">Jatka Assistantiin</string>
-    <string name="assist_gesture_enrollment_do_it_later">Tee myöhemmin</string>
-    <string name="assist_gesture_enrollment_seekbar_light">Kevyt puristus</string>
-    <string name="assist_gesture_enrollment_seekbar_strong">Voimakas puristus</string>
-    <string name="assist_gesture_enrollment_settings">Asetukset</string>
-    <string name="assist_gesture_setting_enable_assistant_text">Purista nopeasti puhelimen alaosaa ja päästä irti, niin Assistant kuuntelee</string>
-    <string name="assist_gesture_setting_enable_assistant_title">Purista, niin Assistant aktivoituu</string>
-    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Purista laitetta, niin hälytys, ajastin tai saapuva puhelu hiljennetään</string>
-    <string name="assist_gesture_setting_enable_ring_silence_text">Purista puhelinta, niin ilmoitus tai saapuva puhelu hiljennetään</string>
-    <string name="assist_gesture_setting_enable_ring_silence_title">Purista, niin puhelin hiljenee</string>
-    <string name="assist_gesture_setting_enable_wake_title">Avaa Assistant, kun näyttö ei ole päällä</string>
-    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Kevyt puristus</string>
-    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Voimakas puristus</string>
-    <string name="assist_gesture_squeeze_sensitivity_label">Puristusherkkyys</string>
-    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Assistant voi aktivoitua vahingossa.</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Purista puhelimesi alaosaa.</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Purista nopeammin.</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Purista kovempaa</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Purista nopeasti ja päästä irti</string>
-    <string name="assist_gesture_training_enrolling_error_try_adjusting">Kokeile siirtää liukusäädintä.</string>
-    <string name="assist_gesture_training_enrolling_text">Purista puhelimen alaosaa. Voit muuttaa tarvittavan puristuksen voimakkuutta.</string>
-    <string name="assist_gesture_training_enrolling_title">Purista nopeasti ja päästä irti</string>
-    <string name="assist_gesture_training_finished_text">Voit säätää puristusherkkyyttä myöhemmin asetuksissa.</string>
-    <string name="assist_gesture_training_finished_title">Lopeta tai jatka muokkausta</string>
-    <string name="assist_gesture_training_intro_text">Purista puhelimen alaosaa nopeasti ja päästä irti, niin Assistant kuuntelee</string>
-    <string name="assist_gesture_training_intro_title">Purista, niin Assistant aktivoituu</string>
-    <string name="assist_gesture_training_suggestion_summary">Puhu Assistantille, hiljennä puhelut</string>
-    <string name="assist_gesture_training_suggestion_summary_including_alarms">Puhu Assistantille, hiljennä herätys tai puhelu</string>
-    <string name="assist_gesture_training_suggestion_title">Purista, vapauta ja puhu Assistantille</string>
-    <string name="aware_category_security" />
-    <string name="aware_disabled_preference_action">Ota käyttöön</string>
-    <string name="aware_disabled_preference_dialog_content" />
-    <string name="aware_disabled_preference_dialog_title" />
-    <string name="aware_disabled_preference_neutral">Ei nyt</string>
-    <string name="aware_footer_when_airplane_batterysaver_on">Motion Sense ei ole käytettävissä, koska lentokonetila ja virransäästö ovat päällä</string>
-    <string name="aware_footer_when_airplane_on">Motion Sense ei ole käytettävissä, koska lentokonetila on päällä</string>
-    <string name="aware_footer_when_batterysaver_on">Motion Sense ei ole käytettävissä, koska virransäästö on päällä</string>
-    <string name="aware_gesture_summary_off">Pikaeleet päällä, Active Edge pois päältä</string>
-    <string name="aware_gesture_summary_on_non_assist">Pikaeleet ja Active Edge päällä</string>
-    <string name="aware_gesture_summary_on_with_assist">Pikaeleet ja Active Edge päällä, aktivoi Assistant puristamalla</string>
-    <string name="aware_info_button_description">Lisäasetukset</string>
-    <string name="aware_settings_disabled_info_dialog_content" />
-    <string name="aware_settings_disabled_info_dialog_title" />
-    <string name="aware_settings_enabled_info_dialog_content" />
-    <string name="aware_settings_enabled_info_dialog_title" />
-    <string name="aware_settings_suggestion_summary" />
-    <string name="aware_settings_suggestion_title" />
-    <string name="aware_summary_when_airplane_batterysaver_on">Ei käytettävissä, koska lentokonetila ja virransäästö ovat päällä</string>
-    <string name="aware_summary_when_airplane_on">Ei käytettävissä, koska lentokonetila on päällä</string>
-    <string name="aware_summary_when_batterysaver_on">Ei käytettävissä, koska virransäästö on päällä</string>
-    <string name="aware_wake_display_summary" />
-    <string name="aware_wake_display_summary_aod_off" />
-    <string name="aware_wake_display_title" />
+    <string name="app_and_notification_dashboard_summary">Assistant, viimeaikaiset sovellukset, oletussovellukset</string>
+    <string name="automatic_storage_manager_activation_warning">Verkkoyhteyden avulla voit silti käyttää kuvia ja videoita sillä laadulla, millä ne varmuuskopioitiin.</string>
+    <string name="automatic_storage_manager_days_title">Poista varmuuskopioidut kuvat ja videot</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Poistetaanko Smart Storage käytöstä? 
+
+Smart Storage ei enää vapauta tallennustila, kun se on lähes täynnä."</string>
+    <string name="automatic_storage_manager_preference_title">Smart Storage</string>
+    <string name="automatic_storage_manager_primary_switch_title">Käytä Smart Storagea</string>
+    <string name="automatic_storage_manager_settings">Smart Storage</string>
+    <string name="automatic_storage_manager_text">Varmuuskopioidut kuvat ja videot poistetaan, kun tallennustila on lähes täynnä. Tiedostot ovat yhä käytettävissä Google Kuvissa.</string>
+    <string name="backup_data_summary">Varmuuskopioi sovelluksen tiedot, Wi-Fi-salasanat ja muut asetukset Googlen palvelimille.</string>
     <string name="basic_battery_saver_summary">Rajoittaa visuaalisia efektejä ja taustatoimintaa. Laittaa tumman teeman päälle, jos se ei vielä ole.</string>
     <string name="basic_battery_saver_title">Oletusvirransäästö</string>
+    <string name="battery_manager_summary">Pidennä akunkestoa ja optimoi lataamista</string>
+    <string name="battery_manager_summary_unsupported">Pidennä akunkestoa</string>
+    <string name="battery_missing_link_message">Lue lisää</string>
     <string name="battery_saver_reminder_category">Muistutukset</string>
     <string name="battery_saver_reminder_switch_summary">Tilaa ilmoitukset akun alhaisesta varaustasosta</string>
     <string name="battery_saver_reminder_switch_title">Virransäästömuistutukset</string>
@@ -103,7 +46,11 @@ Jos pääsy perutaan, sovelluksen täytyy pyytää lupaasi virheraportin kerää
     <string name="battery_saver_schedule_switch_title">Laita päälle akun varaustason mukaan</string>
     <string name="battery_schedule_summary">Valitse, milloin virransäästö menee päälle</string>
     <string name="battery_schedule_title">Aikataulu ja muistutukset</string>
+    <string name="battery_tip_battery_health_learn_more_description">Lue lisää akun kunnosta</string>
+    <string name="battery_tip_battery_health_reduced_title">Akun kapasiteetti on heikentynyt</string>
+    <string name="battery_tip_battery_health_unknown_title">Akun kuntoa ei voi tunnistaa</string>
     <string name="battery_tip_limited_temporarily_extra_summary">Akun suojaamiseksi lataaminen keskeytetään, kun virtaa on %1$s ja tabletti on telakoitu</string>
+    <string name="battery_tip_smart_battery_summary">Ota käyttöön mukautuva virta</string>
     <string name="clear_calling_footer">"Selkeä-ääniset puhelut ei lähetä audiota tai keskusteluja Googlelle yksityisyytesi suojaamiseksi.
 
 Selkeä-ääniset puhelut toimii Wi-Fi-puheluiden ja useimpien mobiiliverkkojen kautta (ei ole saatavilla 3G-verkoissa)."</string>
@@ -154,8 +101,11 @@ Selkeä-ääniset puhelut toimii Wi-Fi-puheluiden ja useimpien mobiiliverkkojen 
     <string name="columbus_setting_app_shortcut_selection_help_text">Valitse, mitä tapahtuu, kun tämä sovellus avataan pikanäpäytyksellä.</string>
     <string name="columbus_setting_enable_switch_title">Käytä pikanäpäytystä</string>
     <string name="columbus_setting_sensitivity_title">Vaadi voimakkaampia napautuksia</string>
+    <string name="columbus_title">Käynnistä toimintoja pikanäpäytyksellä</string>
     <string name="communal_lock_screen_summary">Yksityisyys, ilmoitukset ja kodin ohjaus</string>
     <string name="communal_other">Muu</string>
+    <string name="communal_settings_summary">Telineen ja lukitusnäytön asetukset</string>
+    <string name="communal_settings_title">Hubitila</string>
     <string name="communal_smartspace_summary">Muistutukset, varoitukset ja muuta Assistantilta</string>
     <string name="communal_smartspace_title">Pikanäkymä</string>
     <string name="communal_what_to_show">Mitä kannattaa pitää näkyvillä</string>
@@ -166,17 +116,17 @@ Selkeä-ääniset puhelut toimii Wi-Fi-puheluiden ja useimpien mobiiliverkkojen 
     <string name="connectivity_helper_d2d_summary">Ilmoita toiselle osapuolelle, kun puhelimessa on yhteysongelmia puheluiden aikana</string>
     <string name="connectivity_helper_d2d_title">Jaa yhteyden tiedot</string>
     <string name="connectivity_helper_footnote">Voit jakaa yhteyden tiedot, kun toinen osapuoli käyttää tuettua laitetta ja verkkoa</string>
+    <string name="content_capture">Personoi sovellusdatan perusteella</string>
+    <string name="content_protection_preference_subpage_info">"Tämä on suojattu turvaominaisuus. Yhtäkään laitetta tai henkilökohtaisia tietoja ei jaeta Googlelle. 
+
+Tietojenkalastelu on yritys varastaa kirjautumistietoja tai muita henkilökohtaisia tietoja."</string>
+    <string name="content_protection_preference_subpage_summary">Tarkistus tapahtuu yksityisesti laitteellasi. Siinä tarkistetaan sovellustoiminta tietojenkalastelun tai muun petollisen toiminnan varalta. Jos sellaista havaitaan, joitakin sovelluksen tietoja lähetetään Google Play Protectille uhkien varmistamiseksi ja käyttäjien varoittamiseksi.</string>
+    <string name="dark_ui_text">Tumman teeman musta tausta auttaa pidentämään akunkestoa. Tumman teeman aikataulut otetaan käyttöön vasta, kun näyttö on sammutettu.</string>
     <string name="debugging_data_title">Virheenkorjausdata</string>
-    <string name="dialog_aware_settings_message" />
-    <string name="dialog_aware_settings_ok" />
-    <string name="dialog_aware_settings_title" />
     <string name="discover_tips_button">Löydä vinkkejä</string>
-    <string name="dock_setup_notification_text" />
     <string name="dock_summary_charging_phone">Puhelinta ladataan</string>
-    <string name="dream_no_screen_saver_caption" />
-    <string name="dream_no_screen_saver_description" />
-    <string name="dream_no_screen_saver_preview_caption" />
-    <string name="dream_secondary_button_title" />
+    <string name="double_twist_for_camera_mode_summary">Siirry Google Kameran selfie-tilaan tai poistu siitä kiertämällä laitetta kahdesti, kun käytät sovellusta.</string>
+    <string name="duration_less_than_one_minute">Alle 1 minuutti</string>
     <string name="extreme_battery_saver_summary">Sisältää yllä mainitut muutokset. Keskeyttää myös toissijaiset sovellukset ja niiden ilmoitukset.</string>
     <string name="extreme_battery_saver_title">Akun tehosäästö</string>
     <string name="face_confirmation_hide_illustration_description">Voit nyt avata puhelimen lukituksen kasvoillasi, kun nostat sen tai napautat näyttöä.</string>
@@ -203,49 +153,44 @@ Selkeä-ääniset puhelut toimii Wi-Fi-puheluiden ja useimpien mobiiliverkkojen 
     <string name="face_enrolling_too_right">Siirrä puhelinta vasemmalle</string>
     <string name="face_enrolling_turn_head_to_arrow">Käännä päätä nuolen suuntaan</string>
     <string name="face_enrolling_turned_too_far">Käännä päätä vähän vähemmän</string>
+    <string name="fast_pair_device_not_found_dialog_title">Yhteyden muodostaminen epäonnistui</string>
+    <string name="fast_pair_device_not_found_other_device_description">Siirrä laite lähemmäs Pixel-puhelinta ja yritä uudelleen.</string>
+    <string name="fast_pair_device_not_found_tws_headphone_description">Avaa kotelo, siirrä se lähemmäs Pixeliä ja yritä uudelleen.</string>
+    <string name="fingerprint_unlock_set_unlock_password">Nexus Imprint ja salasana</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Nexus Imprint ja kuvio</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Nexus Imprint ja PIN-koodi</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Jatka ilman Nexus Imprintiä</string>
+    <string name="firmware_update_accessory_version_number_title">Lisävarusteen laiteohjelmisto</string>
     <string name="firmware_update_status_category">Laiteohjelmiston tila</string>
     <string name="firmware_update_status_title">Laiteohjelmiston päivitys saatavilla</string>
     <string name="firmware_update_version_number_category">Laiteohjelmiston versio</string>
     <string name="firmware_update_version_number_title">Pixel-näppäimistön laiteohjelmisto</string>
-    <string name="gesture_aware_confirmation_action_button">OK</string>
-    <string name="gesture_aware_disabled_info_dialog_content" />
-    <string name="gesture_aware_footer">
-        <annotation link="link">Valinnat</annotation>
-    </string>
-    <string name="gesture_aware_off_dialog_content" />
-    <string name="gesture_aware_off_dialog_title" />
-    <string name="gesture_silence_footer">
-        <annotation link="link">Valinnat</annotation>
-    </string>
-    <string name="gesture_silence_off_summary" />
-    <string name="gesture_silence_on_summary" />
-    <string name="gesture_silence_summary" />
-    <string name="gesture_skip_direction_ltr">Vasemmalta oikealle</string>
-    <string name="gesture_skip_direction_rtl">Oikealta vasemmalle</string>
-    <string name="gesture_skip_direction_title">Ohita suunta</string>
-    <string name="gesture_skip_footer">
-        <annotation link="link">Valinnat</annotation>
-    </string>
-    <string name="gesture_skip_off_summary" />
-    <string name="gesture_skip_on_summary" />
-    <string name="gesture_skip_summary" />
-    <string name="gesture_tap_footer">
-        <annotation link="link">Valinnat</annotation>
-    </string>
-    <string name="gesture_tap_on_summary" />
-    <string name="gesture_tap_summary" />
+    <string name="fullbackup_data_summary">"Varmuuskopioi automaattisesti laitteen tiedot (kuten Wi-Fi-salasanat ja soittohistoria) sekä sovellusten tiedot (kuten asetukset ja sovellusten tallentamat tiedostot) Google Driveen.
+
+Kun otat automaattiset varmuuskopiot käyttöön, laitteen ja sovellusten tiedot tallennetaan säännöllisesti yksityiseen kansioon Google Drivessa. Sovelluksen tiedot voivat olla mitä tahansa sovelluksen tallentamia tietoja (kehittäjän asetusten perustella), myös mahdollisesti yksityisiä tietoja, kuten yhteystietoja, viestejä ja kuvia.
+
+Varmuuskopioita ei vähennetä Drive-tallennustilan kiintiöstäsi. Suuria ja kehittäjien estämiä tiedostoja ei varmuuskopioida."</string>
+    <string name="fullbackup_erase_dialog_message">Lopetetaanko laitteen tietojen (kuten Wi-Fi-salasanojen ja soittohistorian) ja sovellusten tietojen (kuten asetusten ja sovellusten tallentamien tiedostojen) automaattinen varmuuskopiointi? Myös vanhat varmuuskopiot poistetaan Google Drivesta.</string>
+    <string name="gesture_settings_activity_title">Eleillä navigointi</string>
     <string name="install_unknown_applications">Salli sovellusten asentaminen muualta kuin Play Kaupasta.</string>
+    <string name="keywords_accessibility_menu">motoriikka, pikavalikko, apuvalikko, kosketus, liikkuvuus, niveltulehdus, aivoinfarkti, vapina, MS-tauti, CP-vamma, painike, laitteisto, painallus, rasitusvamma, käsi, kipu, esteetön, ohje</string>
     <string name="keywords_adaptive_alert_vibration">haptinen teknologia, värinä, puhelin, puhelu, hälytys, ilmoitukset, äänekäs, hiljainen, ääni, kotelo, mukautuva</string>
     <string name="keywords_adaptive_charging">lataa, lataus, älykäs lataus, mukautuva lataus, akku, akun toiminta</string>
-    <string name="keywords_assist_gesture_silence">ele, edge, sivu, active edge, hiljennä, torkku, herätys, saapuva puhelu, äänetön, näyttö, lukitusnäyttö, puristus, ote, lopeta</string>
-    <string name="keywords_assist_gesture_wake">ele, edge, sivu, active edge, aktivoi, ilmoitukset, näyttö, ruutu, näyttö poissa, näyttö päällä, puristus, lepotila, levossa, ote</string>
     <string name="keywords_battery_share">akunjako, langaton lataus</string>
     <string name="keywords_battery_share_settings">akunjako, käänteinen langaton lataus</string>
-    <string name="keywords_gesture_silence" />
-    <string name="keywords_gesture_skip" />
-    <string name="keywords_gesture_tap" />
+    <string name="keywords_gesture">ele, liikkeet</string>
+    <string name="keywords_hearing_devices">huonokuuloinen, kuulon heikkeneminen, henkilökohtaiseen äänenvahvistukseen tarkoitetut tuotteet (PSAP)</string>
     <string name="keywords_limited_warranty">takuu, rajoitettu takuu, lupaus, korjaus, tuotepalautusvaltuutus, vaihto</string>
+    <string name="keywords_live_caption">Tekstitykset, videotekstitykset, Live Transcribe, huonokuuloinen, kuulon heikkeneminen, reaaliaikainen käännös (CART), puheesta tekstiksi, tekstitys</string>
+    <string name="keywords_live_transcribe">Tekstitykset, videotekstitykset, Livetekstitys, huonokuuloinen, kuulon heikkeneminen, CART, puheesta tekstiksi, tekstitys</string>
     <string name="keywords_reverse_charging_stop_threshold">Lopeta virran jakaminen, kun puhelimen akun varaus on</string>
+    <string name="keywords_select_to_speak">Kuuntele tekstiä, lue ääneen, puhu näytölle, näytönlukuohjelma</string>
+    <string name="keywords_sound_amplifier">hätäkeskus, vahvista, äänenvahvistus, huonokuuloinen, kuulon heikkeneminen, vahvistus</string>
+    <string name="keywords_sound_notifications">Ilmoitukset, huonokuuloinen, kuulon heikkeneminen, ilmoita</string>
+    <string name="keywords_switch_access">motoriikka, vaihda, käsi, AT, avustava teknologia, halvaus, ALS, skannaus, kohtien selaus</string>
+    <string name="keywords_talkback">Näytönlukuohjelma, ääniselostus, Ääniapuri, sokea, heikko näkö, TTS, tekstistä puheeksi, äänipalaute</string>
+    <string name="keywords_touch_sensitivity">kosketus, herkkyys, herkkä, näytön suojakalvo, reagoiva, reagoivuus</string>
+    <string name="keywords_voice_access">ääni, ääniohjaus, motoriikka, käsi, mikki, mikrofoni, sanelu, puhe, ohjaus</string>
     <string name="led_preference_title">LED-tilaosoittimen kuviot</string>
     <string name="legal_source_code_description">Osien lähdekoodin tiedot ovat saatavilla sitä mukaa, kun avoin lähdekoodi löytyy Pixel-ohjekeskuksesta.</string>
     <string name="legal_source_code_title">Lähdekoodi</string>
@@ -253,9 +198,12 @@ Selkeä-ääniset puhelut toimii Wi-Fi-puheluiden ja useimpien mobiiliverkkojen 
     <string name="limited_warranty_title">Rajoitettu takuu</string>
     <string name="lockscreen_show_weather_summary">Näe tämänhetkinen sää</string>
     <string name="lockscreen_show_weather_title">Näytä sää</string>
+    <string name="my_device_info_account_preference_title">Google-tili</string>
+    <string name="owner_info_settings_edit_text_hint">Esim. Rikun Pixel</string>
     <string name="permit_debugging_data">Salli pääsy virheraportteihin</string>
     <string name="play_application_detail_indication_summary">Tarkista päivitykset</string>
     <string name="play_application_update_entry_title">Sovelluspäivitykset</string>
+    <string name="privatespace_retry_summary">Sinun täytyy kirjautua Google-tilille, jotta voit ottaa yksityisen tilan käyttöön</string>
     <string name="repair_mode_active_summary">Korjaustilassa</string>
     <string name="repair_mode_summary">Turvallinen ympäristö laitteen korjausta varten</string>
     <string name="repair_mode_title">Korjaustila</string>
@@ -286,18 +234,37 @@ Kokeile kääntämällä puhelin ympäri."</string>
     <string name="reverse_charging_unplug_usb_cable_message">Ei käytettävissä, koska USB-C-laite on liitettynä</string>
     <string name="reverse_charging_warning_summary">Ei käytettävissä, koska akun varaus on alle %1$s</string>
     <string name="reverse_charging_warning_title">Akunjako ei ole käytettävissä, koska akun varaus on alle %1$s</string>
-    <string name="search_gesture_category_title">Näyttöhaku</string>
-    <string name="search_long_press_home_button_summary">Avaa Google Haku näytöllä painamalla aloitusnäyttöpainiketta pitkään</string>
-    <string name="search_long_press_home_button_title">Hae painamalla aloitusnäyttöpainiketta pitkään</string>
-    <string name="search_press_hold_gesture_summary">Pidä navigointipalkkia painettuna pitkään, jotta voit käynnistää haun näytöllä.</string>
-    <string name="search_press_hold_gesture_title">Pidä palkkia painettuna hakeaksesi</string>
+    <string name="rtt_settings_always_visible">Aina näkyvissä</string>
+    <string name="rtt_settings_no_visible">Ei näkyvissä</string>
+    <string name="rtt_settings_title">Puhelusta lähetettävä teksti (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Näkyvissä puhelun aikana</string>
+    <string name="screen_time_summary_usage_today">%1$s tänään</string>
+    <string name="search_bar_account_avatar_content_description">Profiilikuva, avaa Google Assistant kaksoisnapauttamalla</string>
+    <string name="search_gesture_category_title">Haku</string>
+    <string name="search_gesture_feature_title">Hae ympyröimällä</string>
+    <string name="search_long_press_home_button_summary">Kosketa näytön alareunassa olevaa aloitusnäyttöpainiketta pitkään ja tee sitten haku ympyröimällä tai korostamalla mitä vain</string>
+    <string name="search_press_hold_gesture_summary">Kosketa näytön alareunassa olevaa rajauskahvaa pitkään ja tee sitten haku ympyröimällä tai korostamalla mitä vain</string>
     <string name="security_dismiss_dialog_dismiss_button">Ohita</string>
     <string name="security_dismiss_dialog_title">Ohitetaanko varoitus?</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">Ota käyttöön napauttamalla</string>
+    <string name="security_settings_face_enroll_consent_introduction_title">Salli Face Unlock</string>
+    <string name="security_settings_face_enroll_education_message">Seuraavassa kohdassa käännä päätäsi, jotta kasvosi tallentuvat kaikista kuvakulmista.</string>
+    <string name="security_settings_face_enroll_error_dialog_title">Käyttöönotto ei ole valmis</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Kasvojentunnistusavauksen käyttöönotto aikakatkaistu</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Voit nyt käyttää kasvojasi puhelimen lukituksen avaamiseen tai henkilöllisyyden todentamiseen esim. kirjautuessasi sovelluksiin tai hyväksyessäsi ostoksen</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Voit nyt avata puhelimen lukituksen kasvoillasi, kun nostat sen tai napautat näyttöä.
 
 Kasvojentunnistusavaus toimii parhaiten, kun ympäristö on sopivan valoisa eikä kasvoillasi ole maskia tai tummia laseja."</string>
+    <string name="security_settings_face_enroll_finish_title">Hyvältä näyttää!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Näkö- tai päänliikerajoitukset</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Silmien on oltava auki</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Sinä ja lapsesi päätätte</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Sinä päätät</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Näin se toimii</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Jos lapsi käyttää yleensä silmälaseja, hän voi käyttää niitä myös käyttöönoton aikana.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Silmälasit tai kevyesti sävytetyt aurinkolasit eivät haittaa.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Hyvä muistaa</string>
+    <string name="security_settings_face_enroll_introduction_title">Ota kasvojen- tunnistusavaus käyttöön</string>
     <string name="security_settings_face_enroll_next">Seuraava</string>
     <string name="security_settings_face_enroll_partial_message">Voit parantaa kasvojentunnistusavauksen toimintaa ottamalla sen käyttöön uudelleen asetuksissa</string>
     <string name="security_settings_face_enroll_partial_start_over">Aloita alusta</string>
@@ -312,8 +279,24 @@ Voit parantaa kasvojentunnistusavauksen toimintaa ottamalla sen käyttöön uude
     <string name="security_settings_face_enroll_too_hot_message">Kasvojentunnistusavauksen käyttöönottoa ei voi suorittaa loppuun, koska puhelin on liian kuuma. Yritä uudelleen, kun puhelin on jäähtynyt.</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Ohita kasvojentunnistusavaus</string>
     <string name="security_settings_face_enroll_too_hot_title">Puhelin on liian kuuma</string>
+    <string name="security_settings_face_preference_summary_none">Ota kasvot käyttöön napauttamalla</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Voit hyväksyä ostoksia tai kirjautua sovelluksiin Nexus Imprintillä.
+
+Ole varovainen lisätessäsi sormenjälkiä – edellä mainitut toiminnot onnistuvat kaikilla laitteeseen lisätyillä sormenjäljillä.
+
+Huom. Tämän laitteen lukitusta ei voi avata sormenjäljellä. Saat lisätietoja organisaatiosi järjestelmänvalvojalta."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Avaa Nexus Imprintillä</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Määritä sormenjälki napauttamalla</string>
+    <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint luo sormenjäljestäsi yksilöllisen mallin, jonka avulla henkilöllisyytesi voidaan todentaa. Käyttöönoton aikana otat sormenjäljestäsi kuvia eri asennoissa sormenjälkimallin luomiseksi.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint luo lapsesi sormenjäljestä yksilöllisen mallin, jonka avulla hänen henkilöllisyytensä voidaan todentaa. Käyttöönoton aikana lapsi ottaa sormenjäljestään kuvia eri asennoissa sormenjälkimallin luomiseksi.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Lue lisää Pixelin sormenjälkiavauksesta osoitteessa &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint työkäyttöön</string>
     <string name="setup_suggestion_summary">Vielä muutama vaihe</string>
     <string name="setup_suggestion_title">Viimeistele käyttöönotto</string>
+    <string name="smart_battery_footer">Mukautuva virta voi pidentää akun kestoa rajoittamalla suorituskykyä ja taustatoimintaa. Osa ilmoituksista voi näkyä viiveellä.</string>
+    <string name="smart_battery_manager_title">Mukautuvat asetukset</string>
+    <string name="smart_battery_title">Mukautuva virta</string>
     <string name="software_update_can_be_updated_header">Tee Pixelistä entistä parempi</string>
     <string name="software_update_detail_indication_1_update_available">Yksi päivitys saatavilla</string>
     <string name="software_update_detail_indication_2_or_more_updates_available">%1$d päivitystä saatavilla</string>
@@ -326,9 +309,11 @@ Voit parantaa kasvojentunnistusavauksen toimintaa ottamalla sen käyttöön uude
     <string name="software_update_up_to_date_summary">Ajan tasalla</string>
     <string name="software_update_up_to_specific_date_summary">Päivitetty %1$s</string>
     <string name="software_update_update_available_summary">Päivitys saatavilla</string>
+    <string name="sound_dashboard_summary">Äänenvoimakkuus, haptinen palaute, Älä häiritse</string>
     <string name="speed_boost_summary_off">Pois päältä</string>
     <string name="speed_boost_summary_on">Päällä</string>
     <string name="speed_boost_title">Spectrum Speed Boost</string>
+    <string name="suggested_fingerprint_lock_settings_title">Pixel Imprintin käyttö</string>
     <string name="suw_limited_warranty_title">Rajoitettu takuu</string>
     <string name="suw_warranty_description">Jos haluat nähdä rajoitetun takuusi tiedot, valitse maa, josta ostit laitteen.&lt;br /&gt;&lt;br /&gt;Löydät takuutiedot myös valitsemalla &lt;b&gt;Asetukset &gt; Tietoa puhelimesta &gt; Rajoitettu takuu&lt;/b&gt; tai menemällä osoitteeseen g.co/devicewarranty.</string>
     <string name="suw_warranty_description_content">Jos haluat nähdä rajoitetun takuusi tiedot, valitse maa, josta ostit laitteen. Löydät takuutiedot myös valitsemalla \"Asetukset\", \"Tietoa puhelimesta\" ja sitten \"Rajoitettu takuu\" tai menemällä osoitteeseen g.co/devicewarranty.</string>
@@ -336,10 +321,11 @@ Voit parantaa kasvojentunnistusavauksen toimintaa ottamalla sen käyttöön uude
     <string name="suw_warranty_positive_button_text">Sulje</string>
     <string name="system_update_entry_title">Järjestelmäpäivitys</string>
     <string name="system_updates_group_title">Pixelin päivitykset</string>
-    <string name="tips_suggestion_summary">Tutki, mitä voit tehdä puhelimellasi</string>
-    <string name="tips_suggestion_title">Tutustu Pixeliin</string>
+    <string name="touch_sensitivity_summary">Lisää kosketuksen herkkyyttä ja paranna kosketuskäyttöä, kun näytönsuojus on käytössä</string>
+    <string name="touch_sensitivity_title">Näytönsuojustila</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Pidä puhelinta kasvojesi edessä</string>
     <string name="unified_battery_saver_page_intro">Säästä virtaa ja auta puhelimen akkua kestämään pidempään latausten välillä</string>
+    <string name="usb_use_file_transfers">Tiedostonsiirto / Android Auto</string>
     <string name="vpn_app_bypass">Estä valitut sovellukset</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">Nykyiset operaattorisovellukset</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">Estetäänkö %1$d operaattorisovelluksen käyttö VPN:llä?</string>
@@ -360,12 +346,9 @@ Voit parantaa kasvojentunnistusavauksen toimintaa ottamalla sen käyttöön uude
     <string name="vpn_exclude_ntf_content">Sinulla on äskettäin asennettuja operaattorisovelluksia, jotka eivät välttämättä toimi VPN:llä</string>
     <string name="vpn_exclude_ntf_title">Estetäänkö uusien sovellusten käyttö VPN:llä?</string>
     <string name="vpn_preference_group_title">Muut</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_title" />
-    <string name="wake_screen_suggestion_summary" />
-    <string name="wake_screen_suggestion_title" />
+    <string name="wallpaper_dashboard_summary">Värit, teemaan sopivat kuvakkeet, sovellusruudukko</string>
     <string name="warranty_country_information">%1$s (%2$s)</string>
+    <string name="wifi_subscription_summary">Katso tai muuta OpenRoaming-tilausta</string>
     <string name="wifitrackerlib_connected_with_wsu_authenticator">%1$s on yhdistetty</string>
     <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Yhdistä napauttamalla</string>
     <string name="wifitrackerlib_wsu_entry_summary_provision_error">Yhdistäminen ei onnistu. Yritä uudelleen napauttamalla.</string>

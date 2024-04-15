@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
-    package="com.android.settings">
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.android.settings"
+          coreApp="true"
+          android:sharedUserId="android.uid.system">
 
     <permission
         android:name="com.google.android.settings.routines.ROUTINES_ACTIONS"
@@ -18,6 +20,9 @@
     <permission
         android:name="com.google.android.settings.fuelgauge.READ_BATTERY_USAGE_DATA"
         android:protectionLevel="normal" />
+    <permission
+        android:name="com.google.android.settings.biometrics.face.POSTURE_GUIDANCE"
+        android:protectionLevel="privileged|signature" />
 
     <uses-permission android:name="android.permission.MANAGE_GAME_MODE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -31,13 +36,16 @@
     <uses-permission android:name="com.google.android.wildlife.permission.ADVANCED_VPN_CONFIG" />
     <uses-permission android:name="com.google.android.apps.scone.speedboost.settings.READ_PREFERENCES" />
     <uses-permission android:name="android.permission.MANAGE_SAFETY_CENTER" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <protected-broadcast android:name="com.google.android.settings.PRE_INDEX_SEARCH" />
-    <uses-permission android:name="android.permission.MANAGE_USERS" />
     <permission
         android:name="com.android.settings.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
     <uses-permission android:name="com.android.settings.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <original-package android:name="com.android.settings" />
+
     <queries>
         <intent>
             <action android:name="com.android.setupwizard.action.PARTNER_CUSTOMIZATION" />
@@ -45,81 +53,9 @@
     </queries>
 
     <application
-        android:name="com.google.android.settings.SettingsGoogleApplication">
+        android:name="com.google.android.settings.SettingsGoogleApplication"
+        tools:replace="android:name">
 
-        <activity
-            android:name="com.google.android.settings.gestures.assist.bubble.AssistGestureBubbleActivity"
-            android:enabled="true"
-            android:exported="false"
-            android:hardwareAccelerated="true"
-            android:resizeableActivity="false"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Material" />
-        <activity
-            android:name="com.google.android.settings.gestures.assist.AssistGestureTrainingIntroActivity"
-            android:enabled="true"
-            android:exported="true"
-            android:icon="@drawable/ic_assist_gesture_suggestion"
-            android:label="@string/assist_gesture_training_intro_title"
-            android:screenOrientation="portrait"
-            android:theme="@style/SudThemeGlif.Light">
-            <intent-filter>
-                <action android:name="com.google.android.settings.ASSIST_GESTURE_TRAINING" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="com.android.settings.suggested.category.ASSIST_GESTURE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="com.android.settings.title"
-                android:resource="@string/assist_gesture_training_intro_title" />
-            <meta-data
-                android:name="com.android.settings.summary"
-                android:resource="@string/assist_gesture_training_intro_text" />
-            <meta-data
-                android:name="com.android.settings.icon_tintable"
-                android:value="true" />
-        </activity>
-
-        <activity-alias
-            android:name="com.google.android.settings.gestures.AssistGestureSuggestion"
-            android:enabled="true"
-            android:exported="true"
-            android:icon="@drawable/ic_assist_gesture"
-            android:label="@string/assist_gesture_training_intro_title"
-            android:targetActivity="com.google.android.settings.gestures.assist.AssistGestureTrainingIntroActivity">
-            <intent-filter android:priority="30">
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="com.android.settings.suggested.category.FIRST_IMPRESSION" />
-            </intent-filter>
-
-            <meta-data
-                android:name="com.android.settings.dismiss"
-                android:value="14" />
-            <meta-data
-                android:name="com.android.settings.title"
-                android:resource="@string/assist_gesture_training_suggestion_title" />
-            <meta-data
-                android:name="com.android.settings.summary"
-                android:resource="@string/assist_gesture_training_suggestion_summary" />
-        </activity-alias>
-
-        <activity
-            android:name="com.google.android.settings.gestures.assist.AssistGestureTrainingEnrollingActivity"
-            android:enabled="true"
-            android:exported="false"
-            android:label="@string/assist_gesture_training_enrolling_title"
-            android:screenOrientation="portrait"
-            android:theme="@style/SudThemeGlif.Light" />
-        <activity
-            android:name="com.google.android.settings.gestures.assist.AssistGestureTrainingFinishedActivity"
-            android:enabled="true"
-            android:exported="false"
-            android:label="@string/assist_gesture_training_finished_title"
-            android:screenOrientation="portrait"
-            android:theme="@style/SudThemeGlif.Light" />
         <activity
             android:name="com.google.android.settings.gestures.columbus.ColumbusGestureTrainingIntroActivity"
             android:enabled="true"
@@ -196,6 +132,7 @@
             android:configChanges="density|keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
             android:excludeFromRecents="true"
             android:exported="true"
+            android:permission="com.google.android.settings.biometrics.face.POSTURE_GUIDANCE"
             android:theme="@style/SudThemeGlif.Light" />
         <activity
             android:name="com.google.android.settings.biometrics.face.FaceEnrollEnrolling"
@@ -210,57 +147,11 @@
         <activity
             android:name="com.google.android.settings.biometrics.face.FaceEnrollConfirmation"
             android:exported="true"
-            android:screenOrientation="portrait"
-            android:theme="@style/SudThemeGlif.Light">
+            android:permission="com.google.android.settings.biometrics.face.POSTURE_GUIDANCE">
             <intent-filter>
                 <action android:name="com.google.android.settings.action.CONFIRM_FACE_ENROLLMENT" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name="com.google.android.settings.aware.AwareSettingsActivity"
-            android:exported="true"
-            android:icon="@drawable/ic_suggestion_aware"
-            android:label="@string/aware_settings_title"
-            android:theme="@android:style/Theme.NoDisplay">
-            <intent-filter>
-                <action android:name="com.android.settings.action.AWARE_SETTING" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="com.android.settings.suggested.category.FIRST_IMPRESSION" />
-            </intent-filter>
-
-            <meta-data
-                android:name="com.android.settings.dismiss"
-                android:value="0" />
-            <meta-data
-                android:name="com.android.settings.title"
-                android:resource="@string/aware_settings_suggestion_title" />
-            <meta-data
-                android:name="com.android.settings.summary"
-                android:resource="@string/aware_settings_suggestion_summary" />
-        </activity>
-        <activity
-            android:name="com.google.android.settings.aware.WakeScreenSuggestionActivity"
-            android:exported="true"
-            android:icon="@drawable/ic_suggestion_wake_screen"
-            android:label="@string/aware_settings_title">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="com.android.settings.suggested.category.FIRST_IMPRESSION" />
-            </intent-filter>
-
-            <meta-data
-                android:name="com.android.settings.dismiss"
-                android:value="0" />
-            <meta-data
-                android:name="com.android.settings.title"
-                android:resource="@string/wake_screen_suggestion_title" />
-            <meta-data
-                android:name="com.android.settings.summary"
-                android:resource="@string/wake_screen_suggestion_summary" />
         </activity>
         <activity
             android:name="com.google.android.settings.fuelgauge.reversecharging.ReverseChargingTrampoline"
@@ -468,6 +359,12 @@
             android:exported="true"
             android:multiprocess="false"
             android:permission="com.google.android.settings.fuelgauge.READ_BATTERY_USAGE_DATA" />
+        <provider
+            android:name="com.google.android.settings.fuelgauge.AdaptiveChargingContentProvider"
+            android:authorities="com.android.settings.fuelgauge.provider.adaptive_charging"
+            android:exported="true"
+            android:multiprocess="false"
+            android:permission="com.google.android.settings.fuelgauge.BATTERY_SETTING" />
 
         <receiver
             android:name="com.google.android.settings.fuelgauge.BatteryBroadcastReceiver"
@@ -475,6 +372,21 @@
             android:permission="android.permission.BLUETOOTH_CONNECT">
             <intent-filter>
                 <action android:name="settings.intelligence.battery.action.FETCH_BLUETOOTH_BATTERY_DATA" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.settings.fuelgauge.powermonitor.PowerMonitorBroadcastReceiver"
+            android:enabled="false"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.settings.action.DUMP_POWER_CONSUMPTION_DATA" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.settings.fuelgauge.powermonitor.BootBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
         <receiver
@@ -526,6 +438,9 @@
             <meta-data
                 android:name="com.android.settings.spa.DESTINATION"
                 android:value="TogglePermissionAppList/DebuggingData" />
+            <meta-data
+                android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
+                android:value="@string/menu_key_apps" />
         </activity-alias>
         <activity-alias
             android:name="com.google.android.settings.AppDebuggingDataActivity"
@@ -536,9 +451,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:scheme="package" />
             </intent-filter>
+
             <meta-data
                 android:name="com.android.settings.spa.DESTINATION"
                 android:value="TogglePermissionAppInfoPage/DebuggingData" />
+            <meta-data
+                android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
+                android:value="@string/menu_key_apps" />
         </activity-alias>
 
         <receiver

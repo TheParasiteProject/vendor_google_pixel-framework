@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="@*android:color/transparent"
+    android:background="@android:color/transparent"
     android:clickable="false"
     android:gravity="center_vertical"
     android:minHeight="?android:listPreferredItemHeight"
     android:orientation="horizontal"
-    android:paddingStart="?android:listPreferredItemPaddingStart"
-    android:paddingEnd="?android:listPreferredItemPaddingEnd">
+    android:paddingEnd="?android:listPreferredItemPaddingEnd"
+    android:paddingStart="?android:listPreferredItemPaddingStart">
 
     <RelativeLayout
         android:layout_width="0.0dip"
         android:layout_height="fill_parent"
-        android:layout_weight="1.0"
-        android:clipToPadding="false">
+        android:clipToPadding="false"
+        android:layout_weight="1.0">
 
         <LinearLayout
             android:id="@id/icon_frame"
@@ -24,9 +25,10 @@
             android:paddingTop="24.0dip">
 
             <com.android.internal.widget.PreferenceImageView
-                android:id="@*android:id/icon"
+                android:id="@android:id/icon"
                 android:layout_width="24.0dip"
                 android:layout_height="24.0dip" />
+
         </LinearLayout>
 
         <RelativeLayout
@@ -34,11 +36,11 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/icon_frame"
             android:layout_weight="1.0"
-            android:paddingTop="16.0dip"
-            android:paddingBottom="16.0dip">
+            android:paddingBottom="16.0dip"
+            android:paddingTop="16.0dip">
 
             <TextView
-                android:id="@*android:id/title"
+                android:id="@android:id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingStart="12.0dip"
@@ -49,8 +51,8 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@*android:id/title"
-                android:layout_alignStart="@*android:id/title"
+                android:layout_alignStart="@android:id/title"
+                android:layout_below="@android:id/title"
                 android:orientation="vertical">
 
                 <TextView
@@ -66,7 +68,11 @@
                     android:layout_width="fill_parent"
                     android:layout_height="48.0dip"
                     android:layout_gravity="center_vertical" />
+
             </LinearLayout>
+
         </RelativeLayout>
+
     </RelativeLayout>
+
 </LinearLayout>

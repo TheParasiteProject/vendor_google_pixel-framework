@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="aware_category_display" />
-    <string name="aware_category_gesture" />
-    <string name="aware_display_settings_title">Pantalla de bloqueo inactiva</string>
-    <string name="aware_settings_description" />
-    <string name="aware_settings_summary" />
-    <string name="gesture_silence_title">Gesto para silenciar alertas</string>
-    <string name="gesture_skip_title">Gesto para omitir</string>
-    <string name="keywords_touch_sensitivity">tocar, sensibilidad, sensible, protector de pantalla, protector, respuesta, capacidad de respuesta</string>
-    <string name="keywords_wake_display" />
-    <string name="touch_sensitivity_summary">Aumenta la sensibilidad táctil y mejora el control táctil con un protector de pantalla</string>
-    <string name="touch_sensitivity_title">Modo protector de pantalla</string>
-    <string name="columbus_title">Usar Quick Tap para iniciar acciones</string>
-    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Se completó la configuración de Active Edge. Ve a la siguiente pantalla o haz otros ajustes.</string>
     <string name="accessibility_keyboard_haptics_title">Tecnología táctil de teclado</string>
     <string name="adaptive_alert_vibration_summary">Reduce la intensidad de las vibraciones cuando el teléfono está quieto y con la pantalla hacia arriba</string>
     <string name="adaptive_alert_vibration_title">Vibración de alerta adaptable</string>
@@ -30,71 +17,27 @@
     <string name="all_apps_category_title">Todas las apps</string>
     <string name="allow_debugging_data_description">Google usa los informes de errores para diagnosticar problemas de apps y dispositivos según nuestra <a href="https://policies.google.com/privacy">Política de Privacidad</a>".
 
-"<b>Los informes de errores contienen registros de apps y sistemas,</b>" y pueden incluir información personal y del dispositivo, como nombres, direcciones de correo electrónico, números de teléfono, datos de ubicación, identificadores de dispositivos, dispositivos conectados y datos de red. Los informes pueden compartirse con socios de ingeniería potencialmente afectados por tu problema.
+"<b>Los informes de errores contienen registros de apps y sistemas,</b>" y pueden incluir información personal y del dispositivo, como nombres, direcciones de correo electrónico, números de teléfono, datos de ubicación, identificadores de dispositivos, dispositivos conectados y datos de red. Los informes pueden compartirse con socios de ingeniería que podrían verse afectados por tu problema.
 
-Otorgar acceso permitirá que esta app "<b>recopile y suba automáticamente informes de errores</b>" que contengan registros de la app y del sistema para todos los informes de incidencias.
+Cuando se otorga acceso, se permite que esta app "<b>recopile y suba automáticamente informes de errores</b>", que incluyen registros de la app y del sistema de perfiles personales y de trabajo, para todos los informes de incidencias.
 
 Si revocas el acceso, la app te pedirá permiso para recopilar y subir un informe de errores para cada informe de incidencia individual."</string>
-    <string name="ambient_display_wake_screen_footer">
-        <annotation link="link">Preferencias</annotation>
-    </string>
-    <string name="ambient_display_wake_screen_summary" />
-    <string name="ambient_display_wake_screen_summary_on" />
-    <string name="assist_gesture_enrollment_continue_to_assistant">Ir al Asistente</string>
-    <string name="assist_gesture_enrollment_do_it_later">Hacerlo más tarde</string>
-    <string name="assist_gesture_enrollment_seekbar_light">Apretar levemente</string>
-    <string name="assist_gesture_enrollment_seekbar_strong">Apretar con firmeza</string>
-    <string name="assist_gesture_enrollment_settings">Configuración</string>
-    <string name="assist_gesture_setting_enable_assistant_text">Para hablar con tu Asistente, aprieta rápidamente la parte inferior del teléfono y, luego, suéltala</string>
-    <string name="assist_gesture_setting_enable_assistant_title">Apretar para acceder al Asistente</string>
-    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Aprieta para silenciar alarmas, temporizadores, notificaciones y llamadas entrantes</string>
-    <string name="assist_gesture_setting_enable_ring_silence_text">Aprieta para silenciar notificaciones y llamadas entrantes</string>
-    <string name="assist_gesture_setting_enable_ring_silence_title">Apretar para silenciar el teléfono</string>
-    <string name="assist_gesture_setting_enable_wake_title">Abrir el Asistente con pantalla apagada</string>
-    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Aprieta levemente</string>
-    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Aprieta con firmeza</string>
-    <string name="assist_gesture_squeeze_sensitivity_label">Sensibilidad al apretar</string>
-    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Podrías abrir el Asistente por error</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Aprieta la parte inferior del teléfono</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Aprieta más rápido</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Aprieta más fuerte</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Aprieta rápidamente y suelta</string>
-    <string name="assist_gesture_training_enrolling_error_try_adjusting">Ajusta el control deslizante</string>
-    <string name="assist_gesture_training_enrolling_text">Aprieta la parte inferior de tu teléfono. Puedes configurar la intensidad.</string>
-    <string name="assist_gesture_training_enrolling_title">Aprieta rápidamente y suelta</string>
-    <string name="assist_gesture_training_finished_text">También puedes cambiar la sensibilidad al apretar desde la Configuración más tarde</string>
-    <string name="assist_gesture_training_finished_title">Finaliza o sigue ajustando esta opción</string>
-    <string name="assist_gesture_training_intro_text">Para hablar con tu Asistente, aprieta rápidamente la parte inferior del teléfono y, luego, suéltala</string>
-    <string name="assist_gesture_training_intro_title">Aprieta para acceder al Asistente</string>
-    <string name="assist_gesture_training_suggestion_summary">Hablar con el Asistente, silenciar llamadas</string>
-    <string name="assist_gesture_training_suggestion_summary_including_alarms">Hablar con el Asistente, silenciar alarmas y llamadas</string>
-    <string name="assist_gesture_training_suggestion_title">Aprieta y suelta para ir al Asistente</string>
-    <string name="aware_category_security" />
-    <string name="aware_disabled_preference_action">Activar</string>
-    <string name="aware_disabled_preference_dialog_content" />
-    <string name="aware_disabled_preference_dialog_title" />
-    <string name="aware_disabled_preference_neutral">Ahora no</string>
-    <string name="aware_footer_when_airplane_batterysaver_on">Motion Sense no está disponible porque se activó el modo de avión y el Ahorro de batería</string>
-    <string name="aware_footer_when_airplane_on">Motion Sense no está disponible porque se activó el modo de avión</string>
-    <string name="aware_footer_when_batterysaver_on">Motion Sense no está disponible porque se activó el Ahorro de batería</string>
-    <string name="aware_gesture_summary_off">Gestos rápidos activados, Active Edge desactivado</string>
-    <string name="aware_gesture_summary_on_non_assist">Gestos rápidos activados, Active Edge activado</string>
-    <string name="aware_gesture_summary_on_with_assist">Gestos rápidos activados, Active Edge activado, apretar para usar el Asistente</string>
-    <string name="aware_info_button_description">Más opciones</string>
-    <string name="aware_settings_disabled_info_dialog_content" />
-    <string name="aware_settings_disabled_info_dialog_title" />
-    <string name="aware_settings_enabled_info_dialog_content" />
-    <string name="aware_settings_enabled_info_dialog_title" />
-    <string name="aware_settings_suggestion_summary" />
-    <string name="aware_settings_suggestion_title" />
-    <string name="aware_summary_when_airplane_batterysaver_on">No está disponible porque se activaron el modo de avión y el Ahorro de batería</string>
-    <string name="aware_summary_when_airplane_on">No está disponible porque se activó el modo de avión</string>
-    <string name="aware_summary_when_batterysaver_on">No está disponible porque se activó el Ahorro de batería</string>
-    <string name="aware_wake_display_summary" />
-    <string name="aware_wake_display_summary_aod_off" />
-    <string name="aware_wake_display_title" />
+    <string name="app_and_notification_dashboard_summary">Asistente, apps recientes, apps predeterminadas</string>
+    <string name="automatic_storage_manager_activation_warning">Cuando tengas conexión, podrás acceder a las fotos y los videos en la calidad que seleccionaste para la copia de seguridad.</string>
+    <string name="automatic_storage_manager_days_title">Borrar fotos y videos con copia de seguridad</string>
+    <string name="automatic_storage_manager_deactivation_warning">"¿Desactivar el almacenamiento inteligente? 
+
+El almacenamiento inteligente no podrá liberar espacio cuando tu almacenamiento esté casi completo."</string>
+    <string name="automatic_storage_manager_preference_title">Almacenamiento inteligente</string>
+    <string name="automatic_storage_manager_primary_switch_title">Usar el Almacenamiento inteligente</string>
+    <string name="automatic_storage_manager_settings">Almacenamiento inteligente</string>
+    <string name="automatic_storage_manager_text">Cuando el almacenamiento esté casi completo, quita las fotos y los videos con copia de seguridad. Aún podrás encontrar ese contenido en Google Fotos.</string>
+    <string name="backup_data_summary">Crear copias de seguridad de los datos de distintas apps, contraseñas de Wi-Fi y otros parámetros de configuración en los servidores de Google</string>
     <string name="basic_battery_saver_summary">Limita los efectos visuales y la actividad en segundo plano. Activa el Tema oscuro, si aún no lo está.</string>
     <string name="basic_battery_saver_title">Ahorro de batería estándar</string>
+    <string name="battery_manager_summary">Extiende la duración de batería y optimiza la carga</string>
+    <string name="battery_manager_summary_unsupported">Extender la duración de batería</string>
+    <string name="battery_missing_link_message">Más información</string>
     <string name="battery_saver_reminder_category">Recordatorios</string>
     <string name="battery_saver_reminder_switch_summary">Recibe recordatorios cuando quede poca batería</string>
     <string name="battery_saver_reminder_switch_title">Recordatorios del Ahorro de batería</string>
@@ -103,7 +46,11 @@ Si revocas el acceso, la app te pedirá permiso para recopilar y subir un inform
     <string name="battery_saver_schedule_switch_title">Activar según el nivel de batería</string>
     <string name="battery_schedule_summary">Administra cuándo se activa el Ahorro de batería.</string>
     <string name="battery_schedule_title">Programa y recordatorios</string>
+    <string name="battery_tip_battery_health_learn_more_description">Más información sobre el estado de la batería</string>
+    <string name="battery_tip_battery_health_reduced_title">Se redujo la capacidad de la batería</string>
+    <string name="battery_tip_battery_health_unknown_title">No se puede detectar el estado de la batería</string>
     <string name="battery_tip_limited_temporarily_extra_summary">Para proteger la batería, la carga se detiene en %1$s mientras la tablet está conectada</string>
+    <string name="battery_tip_smart_battery_summary">Activar Batería adaptable</string>
     <string name="clear_calling_footer">"Para proteger tu privacidad, Llamadas nítidas no envía audio ni conversaciones a Google.
 
 Esta función es compatible con Llamada por Wi-Fi y la mayoría de las redes, pero no está disponible para las redes 3G."</string>
@@ -154,8 +101,11 @@ Esta función es compatible con Llamada por Wi-Fi y la mayoría de las redes, pe
     <string name="columbus_setting_app_shortcut_selection_help_text">Selecciona lo que sucede cuando abres esta app con Quick Tap.</string>
     <string name="columbus_setting_enable_switch_title">Usar Quick Tap</string>
     <string name="columbus_setting_sensitivity_title">Presiona con más fuerza</string>
+    <string name="columbus_title">Usar Quick Tap para iniciar acciones</string>
     <string name="communal_lock_screen_summary">Privacidad, notificaciones y controles de la casa</string>
     <string name="communal_other">Otra</string>
+    <string name="communal_settings_summary">Opciones de pantalla de bloqueo y carga</string>
+    <string name="communal_settings_title">Modo Hub</string>
     <string name="communal_smartspace_summary">Recordatorios, alertas y más de Asistente</string>
     <string name="communal_smartspace_title">De un vistazo</string>
     <string name="communal_what_to_show">Qué mostrar</string>
@@ -166,17 +116,17 @@ Esta función es compatible con Llamada por Wi-Fi y la mayoría de las redes, pe
     <string name="connectivity_helper_d2d_summary">Notifica a la otra persona cuando tu teléfono tenga problemas de conexión durante las llamadas</string>
     <string name="connectivity_helper_d2d_title">Compartir info de conexión</string>
     <string name="connectivity_helper_footnote">Puedes compartir información de conexión cuando el otro emisor usa un dispositivo y una red compatibles.</string>
+    <string name="content_capture">Personalizar con datos de apps</string>
+    <string name="content_protection_preference_subpage_info">"Esta es una función de seguridad protegida. No se comparte información personal ni del dispositivo con Google. 
+
+El phishing es un intento de robo de las credenciales de acceso o de otra información personal."</string>
+    <string name="content_protection_preference_subpage_summary">El análisis se realiza de forma privada en tu dispositivo y revisa la actividad en las apps en busca de phishing o algún otro comportamiento engañoso. Si se detecta, se envía información sobre la app a Google Play Protect para confirmar la amenaza y advertir a los usuarios de la app.</string>
+    <string name="dark_ui_text">El Tema oscuro utiliza un fondo negro que ayuda ahorrar batería. Si lo programas, se activará después de apagar la pantalla.</string>
     <string name="debugging_data_title">Datos de depuración</string>
-    <string name="dialog_aware_settings_message" />
-    <string name="dialog_aware_settings_ok" />
-    <string name="dialog_aware_settings_title" />
     <string name="discover_tips_button">Descubrir sugerencias</string>
-    <string name="dock_setup_notification_text" />
     <string name="dock_summary_charging_phone">Cargando teléfono</string>
-    <string name="dream_no_screen_saver_caption" />
-    <string name="dream_no_screen_saver_description" />
-    <string name="dream_no_screen_saver_preview_caption" />
-    <string name="dream_secondary_button_title" />
+    <string name="double_twist_for_camera_mode_summary">Para activar y desactivar el modo de selfie en la Cámara de Google, gira el dispositivo dos veces cuando estés en la app.</string>
+    <string name="duration_less_than_one_minute">Menos de 1 minuto</string>
     <string name="extreme_battery_saver_summary">Se incluyen todos los cambios detallados arriba. También pausa apps no esenciales y sus notificaciones.</string>
     <string name="extreme_battery_saver_title">Ahorro de batería extremo</string>
     <string name="face_confirmation_hide_illustration_description">Ahora podrás desbloquear el teléfono con el rostro cuando lo levantes o cuando toques la pantalla.</string>
@@ -203,49 +153,43 @@ Esta función es compatible con Llamada por Wi-Fi y la mayoría de las redes, pe
     <string name="face_enrolling_too_right">Mueve el teléfono hacia la izquierda</string>
     <string name="face_enrolling_turn_head_to_arrow">Gira la cabeza en la dirección de la flecha</string>
     <string name="face_enrolling_turned_too_far">Gira la cabeza un poco menos</string>
+    <string name="fast_pair_device_not_found_dialog_title">No se pudo establecer conexión</string>
+    <string name="fast_pair_device_not_found_other_device_description">Acerca este dispositivo al Pixel y vuelve a intentarlo.</string>
+    <string name="fast_pair_device_not_found_tws_headphone_description">Abre la funda de los auriculares, acércala al Pixel y vuelve a intentarlo.</string>
+    <string name="fingerprint_unlock_set_unlock_password">Nexus Imprint y contraseña</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Nexus Imprint y patrón</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Nexus Imprint y PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Continuar sin Nexus Imprint</string>
+    <string name="firmware_update_accessory_version_number_title">Firmware del accesorio</string>
     <string name="firmware_update_status_category">Estado del firmware del dispositivo</string>
     <string name="firmware_update_status_title">Actualización de firmware disponible</string>
     <string name="firmware_update_version_number_category">Versión del firmware del dispositivo</string>
     <string name="firmware_update_version_number_title">Firmware del teclado Pixel</string>
-    <string name="gesture_aware_confirmation_action_button">Entendido</string>
-    <string name="gesture_aware_disabled_info_dialog_content" />
-    <string name="gesture_aware_footer">
-        <annotation link="link">Preferencias</annotation>
-    </string>
-    <string name="gesture_aware_off_dialog_content" />
-    <string name="gesture_aware_off_dialog_title" />
-    <string name="gesture_silence_footer">
-        <annotation link="link">Preferencias</annotation>
-    </string>
-    <string name="gesture_silence_off_summary" />
-    <string name="gesture_silence_on_summary" />
-    <string name="gesture_silence_summary" />
-    <string name="gesture_skip_direction_ltr">De izquierda a derecha</string>
-    <string name="gesture_skip_direction_rtl">De derecha a izquierda</string>
-    <string name="gesture_skip_direction_title">Dirección para omitir</string>
-    <string name="gesture_skip_footer">
-        <annotation link="link">Preferencias</annotation>
-    </string>
-    <string name="gesture_skip_off_summary" />
-    <string name="gesture_skip_on_summary" />
-    <string name="gesture_skip_summary" />
-    <string name="gesture_tap_footer">
-        <annotation link="link">Preferencias</annotation>
-    </string>
-    <string name="gesture_tap_on_summary" />
-    <string name="gesture_tap_summary" />
+    <string name="fullbackup_data_summary">"Crea una copia de seguridad de los datos del dispositivo (como las contraseñas de Wi-Fi y el historial de llamadas) y los datos de las apps (como las opciones de configuración y los archivos que estas almacenan) de forma automática en Google Drive.
+
+Al activar la copia de seguridad automática, los datos del dispositivo y de las apps se guardan de forma periódica en una carpeta privada en Google Drive. Los datos de las apps incluyen cualquier información que estas guarden (según la configuración del programador), incluso datos potencialmente confidenciales, como contactos, mensajes y fotos.
+
+La copia de seguridad de los datos no incide en la cuota de almacenamiento de Drive. No se creará una copia de seguridad de los archivos de gran tamaño o aquellos que los programadores hayan decidido excluir del servicio."</string>
+    <string name="fullbackup_erase_dialog_message">¿Deseas dejar de crear copias de seguridad de los datos del dispositivo (como las contraseñas de Wi-Fi y el historial de llamadas) y de los datos de las apps (como las opciones de configuración y los archivos que estas almacenan), y borrar todas las copias en Google Drive?</string>
+    <string name="gesture_settings_activity_title">Navegación por gestos</string>
     <string name="install_unknown_applications">Permitir la instalación de apps que no sean de Play Store</string>
+    <string name="keywords_accessibility_menu">motriz, menú rápido, menú de asistencia, toque, destreza, artritis, LER, accidente cerebrovascular, artritis, temblor, esclerosis múltiple, parálisis cerebral, botón, hardware, presionar, lesiones por esfuerzo repetitivo, mano, dolor, accesible, ayuda</string>
     <string name="keywords_adaptive_alert_vibration">tecnología táctil, vibración, teléfono, llamada, hacer sonar, alerta, notificaciones, ruidoso, silencioso, ruido, funda, adaptable</string>
     <string name="keywords_adaptive_charging">cargar, cargando, carga inteligente, carga adaptable, batería, cantidad de batería</string>
-    <string name="keywords_assist_gesture_silence">gesto, borde, lado, active edge, silencio, posponer, alarma, llamada entrante, volumen bajo, pantalla, pantalla bloqueada, apretar, sujetar, detener</string>
-    <string name="keywords_assist_gesture_wake">gesto, borde, lado, active edge, activar, notificaciones, pantalla, pantalla apagada, pantalla encendida, apretar, inactivo, suspender, sujetar</string>
     <string name="keywords_battery_share">compartir batería, carga inalámbrica</string>
     <string name="keywords_battery_share_settings">compartir batería, carga inalámbrica inversa</string>
-    <string name="keywords_gesture_silence" />
-    <string name="keywords_gesture_skip" />
-    <string name="keywords_gesture_tap" />
+    <string name="keywords_gesture">gestos, movimientos</string>
+    <string name="keywords_hearing_devices">persona con hipoacusia, pérdida auditiva, amplificador personal de sonido</string>
     <string name="keywords_limited_warranty">garantías, garantía, garantía limitada, promesa, reparación, adp, reemplazo</string>
+    <string name="keywords_live_transcribe">Subtítulos, subtítulos opcionales, subtítulos para personas sordas, Subtitulado instantáneo, persona con hipoacusia, pérdida de la audición, transcripción en tiempo real asistida por computadora, voz a texto, subtítulo</string>
     <string name="keywords_reverse_charging_stop_threshold">Dejar de compartir la batería cuando el teléfono llegue al:</string>
+    <string name="keywords_select_to_speak">Escuchar texto, leer en voz alta, leer pantalla, lector de pantalla</string>
+    <string name="keywords_sound_amplifier">Amplificador personal de sonido, amplificar, amplificación del sonido, persona con hipoacusia, pérdida de la audición, amplificación</string>
+    <string name="keywords_sound_notifications">Notificaciones, persona con hipoacusia, pérdida de la audición, notificar</string>
+    <string name="keywords_switch_access">motor, interruptor, TA, tecnología de accesibilidad, parálisis, ALS, búsqueda, búsqueda por pasos</string>
+    <string name="keywords_talkback">lector de pantalla, voz en off, VoiceOver, asistencia por voz, persona ciega, visión reducida, TTS, texto a voz, comentarios por voz</string>
+    <string name="keywords_touch_sensitivity">tocar, sensibilidad, sensible, protector de pantalla, protector, respuesta, capacidad de respuesta</string>
+    <string name="keywords_voice_access">voz, control por voz, motor, mano, micro, micrófono, dictado, hablar, control</string>
     <string name="led_preference_title">Patrones del indicador LED</string>
     <string name="legal_source_code_description">Los detalles sobre el código fuente de los componentes disponibles como código abierto se encuentran en el Centro de ayuda de Pixel.</string>
     <string name="legal_source_code_title">Código fuente</string>
@@ -253,9 +197,12 @@ Esta función es compatible con Llamada por Wi-Fi y la mayoría de las redes, pe
     <string name="limited_warranty_title">Garantía limitada</string>
     <string name="lockscreen_show_weather_summary">Ver las condiciones climáticas actuales</string>
     <string name="lockscreen_show_weather_title">Mostrar clima</string>
+    <string name="my_device_info_account_preference_title">Cuenta de Google</string>
+    <string name="owner_info_settings_edit_text_hint">P. ej., Pixel de Juan</string>
     <string name="permit_debugging_data">Permitir el acceso a informes de errores</string>
     <string name="play_application_detail_indication_summary">Comprueba si hay actualizaciones</string>
     <string name="play_application_update_entry_title">Actualizaciones de las apps</string>
+    <string name="privatespace_retry_summary">Debes acceder a una Cuenta de Google para configurar el Espacio privado</string>
     <string name="repair_mode_active_summary">En modo de reparación</string>
     <string name="repair_mode_summary">Ambiente seguro para la reparación del dispositivo</string>
     <string name="repair_mode_title">Modo de reparación</string>
@@ -286,18 +233,35 @@ Gira el teléfono para probarlo."</string>
     <string name="reverse_charging_unplug_usb_cable_message">No está disponible porque se conectó un dispositivo USB-C</string>
     <string name="reverse_charging_warning_summary">No está disponible porque la batería del teléfono tiene menos del %1$s</string>
     <string name="reverse_charging_warning_title">La función Compartir batería no está disponible porque la batería está por debajo del %1$s</string>
-    <string name="search_gesture_category_title">Búsqueda directa</string>
-    <string name="search_long_press_home_button_summary">Mantén presionado el botón de inicio para abrir la Búsqueda de Google en tu pantalla.</string>
-    <string name="search_long_press_home_button_title">Mantener presionado el botón de inicio para buscar</string>
-    <string name="search_press_hold_gesture_summary">Mantén presionado el control de navegación para invocar la búsqueda en pantalla.</string>
-    <string name="search_press_hold_gesture_title">Mantén presionado el control para buscar</string>
+    <string name="rtt_settings_always_visible">Siempre visible</string>
+    <string name="rtt_settings_no_visible">No visible</string>
+    <string name="rtt_settings_title">Texto en tiempo real (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Visible durante una llamada</string>
+    <string name="screen_time_summary_usage_today">%1$s hoy</string>
+    <string name="search_bar_account_avatar_content_description">Foto de perfil, presiona dos veces para abrir la Cuenta de Google</string>
+    <string name="search_gesture_category_title">Búsqueda</string>
+    <string name="search_gesture_feature_title">Marcar para buscar</string>
+    <string name="search_long_press_home_button_summary">Mantén presionado el botón de inicio en la parte inferior de la pantalla y marca o destaca un elemento para realizar una búsqueda</string>
+    <string name="search_press_hold_gesture_summary">Mantén presionado el controlador en la parte inferior de la pantalla y marca o destaca un elemento para realizar una búsqueda</string>
     <string name="security_dismiss_dialog_dismiss_button">Descartar</string>
     <string name="security_dismiss_dialog_title">¿Quieres descartar esta advertencia?</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">Presiona para configurar</string>
+    <string name="security_settings_face_enroll_education_message">En la pantalla siguiente, gira la cabeza para que se capturen todos los ángulos de tu rostro</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Tiempo para configurar Desbloqueo facial agotado</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Ahora puedes usar tu rostro para desbloquear el teléfono o verificar tu identidad (por ejemplo, para acceder a apps o aprobar compras).</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Ahora podrás desbloquear el teléfono con el rostro cuando lo levantes o cuando toques la pantalla.
 
 El Desbloqueo facial funciona mejor cuando hay suficiente luz y no llevas mascarilla ni lentes oscuros."</string>
+    <string name="security_settings_face_enroll_finish_title">¡Muy bien!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Configurar con visión o movilidad limitadas</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Es necesario mantener los ojos abiertos</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Tanto tú como tu hijo tienen el control</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Tú tienes el control</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Cómo funciona</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Si tu hijo suele usar gafas, puede dejárselas durante la configuración.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Funciona aunque uses lentes o lentes de sol claras.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Importante</string>
+    <string name="security_settings_face_enroll_introduction_title">Configurar Desbloqueo facial</string>
     <string name="security_settings_face_enroll_next">Siguiente</string>
     <string name="security_settings_face_enroll_partial_message">Para mejorar el reconocimiento, vuelve a configurar Desbloqueo facial en Configuración</string>
     <string name="security_settings_face_enroll_partial_start_over">Volver a empezar</string>
@@ -312,8 +276,25 @@ Para mejorar el reconocimiento, vuelve a configurar Desbloqueo facial en Configu
     <string name="security_settings_face_enroll_too_hot_message">No se puede completar la configuración de Desbloqueo facial porque se sobrecalentó el teléfono. Vuelve a intentarlo más tarde cuando el teléfono se enfríe.</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Omitir desbloqueo facial</string>
     <string name="security_settings_face_enroll_too_hot_title">Se sobrecalentó el teléfono</string>
+    <string name="security_settings_face_preference_summary_none">Presiona para configurar Desbloqueo facial</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message">Está en la parte posterior del teléfono. Usa el dedo índice.</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Con Nexus Imprint, puedes usar tu huella dactilar para autorizar compras y acceder a las apps.
+
+Ten cuidado con las personas que agregas, ya que todas las huellas dactilares que agregues podrán realizar estas acciones.
+
+Nota: No puedes utilizar tu huella dactilar para desbloquear este dispositivo. Para obtener más información, ponte en contacto con el administrador de tu organización."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Desbloquear con Nexus Imprint</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Presiona para configurar una huella dactilar</string>
+    <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint crea un modelo único de tu huella dactilar que permite verificar tu identidad. Para crear este modelo durante la configuración, deberás tomar fotos de tu huella desde diferentes posiciones.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint crea un modelo único de la huella dactilar de tu hijo que permite verificar su identidad. Para crear este modelo durante la configuración, deberá tomar fotos de su huella desde diferentes posiciones.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Más información sobre el Desbloqueo con huellas dactilares de Pixel en &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint para el trabajo</string>
     <string name="setup_suggestion_summary">Solo unos pasos más</string>
     <string name="setup_suggestion_title">Finalizar la configuración</string>
+    <string name="smart_battery_footer">Para extender la duración de la batería, la función Batería adaptable puede reducir el rendimiento y la actividad en segundo plano. Es posible que algunas notificaciones funcionen con retraso.</string>
+    <string name="smart_battery_manager_title">Preferencias adaptativas</string>
+    <string name="smart_battery_title">Batería adaptable</string>
     <string name="software_update_can_be_updated_header">Mejora tu Pixel aún más</string>
     <string name="software_update_detail_indication_1_update_available">1 actualización disponible</string>
     <string name="software_update_detail_indication_2_or_more_updates_available">%1$d actualizaciones disponibles</string>
@@ -326,9 +307,11 @@ Para mejorar el reconocimiento, vuelve a configurar Desbloqueo facial en Configu
     <string name="software_update_up_to_date_summary">Actualizado</string>
     <string name="software_update_up_to_specific_date_summary">Actualización: %1$s</string>
     <string name="software_update_update_available_summary">Actualización disponible</string>
+    <string name="sound_dashboard_summary">Volumen, tecnología táctil, No interrumpir</string>
     <string name="speed_boost_summary_off">Desactivado</string>
     <string name="speed_boost_summary_on">Activado</string>
     <string name="speed_boost_title">Speed Boost de Spectrum</string>
+    <string name="suggested_fingerprint_lock_settings_title">Usa Pixel Imprint</string>
     <string name="suw_limited_warranty_title">Garantía limitada</string>
     <string name="suw_warranty_description">Para ver tu garantía limitada, selecciona el país en el que compraste este dispositivo.&lt;br /&gt;&lt;br /&gt;También puedes consultarla en &lt;b&gt;Configuración &gt; Acerca del teléfono &gt; Garantía limitada&lt;/b&gt;, o bien ve a g.co/devicewarranty.</string>
     <string name="suw_warranty_description_content">Para ver la garantía limitada, selecciona el país en el que compraste este dispositivo. También puedes consultarla en Configuración, Acerca del teléfono y, luego, Garantía limitada, o bien en g.co/devicewarranty.</string>
@@ -336,10 +319,11 @@ Para mejorar el reconocimiento, vuelve a configurar Desbloqueo facial en Configu
     <string name="suw_warranty_positive_button_text">Cerrar</string>
     <string name="system_update_entry_title">Actualización del sistema</string>
     <string name="system_updates_group_title">Actualizaciones de Pixel</string>
-    <string name="tips_suggestion_summary">Mira lo que puedes hacer con tu teléfono</string>
-    <string name="tips_suggestion_title">Familiarízate con tu Pixel</string>
+    <string name="touch_sensitivity_summary">Aumenta la sensibilidad táctil y mejora el control táctil con un protector de pantalla</string>
+    <string name="touch_sensitivity_title">Modo protector de pantalla</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Coloca el teléfono delante del rostro</string>
     <string name="unified_battery_saver_page_intro">Ahorra energía para que la batería de tu teléfono dure más entre carga y carga</string>
+    <string name="usb_use_file_transfers">Transferencia de archivos/Android Auto</string>
     <string name="vpn_app_bypass">Excluir las apps seleccionadas</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">Apps de operador actuales</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">¿Quieres excluir %1$d apps de operadores de la VPN?</string>
@@ -360,12 +344,9 @@ Para mejorar el reconocimiento, vuelve a configurar Desbloqueo facial en Configu
     <string name="vpn_exclude_ntf_content">Tienes apps de operador instaladas recientemente que pueden no funcionar con la VPN.</string>
     <string name="vpn_exclude_ntf_title">¿Quieres excluir las nuevas apps de la VPN?</string>
     <string name="vpn_preference_group_title">Otras</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_title" />
-    <string name="wake_screen_suggestion_summary" />
-    <string name="wake_screen_suggestion_title" />
+    <string name="wallpaper_dashboard_summary">Colores, íconos temáticos y cuadrícula de apps</string>
     <string name="warranty_country_information">%1$s (%2$s)</string>
+    <string name="wifi_subscription_summary">Ver o cambiar la suscripción a OpenRoaming</string>
     <string name="wifitrackerlib_connected_with_wsu_authenticator">Se estableció conexión con %1$s</string>
     <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Presiona para conectar</string>
     <string name="wifitrackerlib_wsu_entry_summary_provision_error">No se puede establecer la conexión. Presiona para volver a intentarlo.</string>

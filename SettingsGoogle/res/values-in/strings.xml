@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="aware_category_display" />
-    <string name="aware_category_gesture" />
-    <string name="aware_display_settings_title">Layar kunci tidak ada aktivitas</string>
-    <string name="aware_settings_description" />
-    <string name="aware_settings_summary" />
-    <string name="gesture_silence_title">Nonaktifkan gestur notifikasi</string>
-    <string name="gesture_skip_title">Lewati gestur</string>
-    <string name="keywords_touch_sensitivity">sentuh, sensitivitas, sensitif, pelindung layar, film, responsif, responsivitas</string>
-    <string name="keywords_wake_display" />
-    <string name="touch_sensitivity_summary">Tingkatkan sensitivitas sentuh dan respons sentuh saat menggunakan pelindung layar</string>
-    <string name="touch_sensitivity_title">Mode pelindung layar</string>
-    <string name="columbus_title">Ketuk Cepat untuk memulai tindakan</string>
-    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge sudah disiapkan. Buka layar berikutnya atau lanjutkan penyesuaian.</string>
     <string name="accessibility_keyboard_haptics_title">Sentuhan keyboard</string>
     <string name="adaptive_alert_vibration_summary">Mengurangi kekuatan getaran saat ponsel tidak ada aktivitas dan layar menghadap ke atas</string>
     <string name="adaptive_alert_vibration_title">Getaran notifikasi adaptif</string>
@@ -32,69 +19,25 @@
 
 "<b>Laporan bug berisi log aplikasi dan sistem</b>" serta dapat mencakup informasi pribadi dan perangkat, seperti nama, alamat email, nomor telepon, data lokasi, ID perangkat, perangkat terhubung, dan informasi jaringan. Laporan dapat dibagikan kepada partner engineer yang kemungkinan terkena dampak masalah Anda.
 
-Memberikan akses akan memungkinkan aplikasi ini untuk "<b>secara otomatis mengumpulkan dan mengupload laporan bug</b>" berisi log aplikasi dan sistem untuk semua laporan masalah.
+Memberikan akses akan memungkinkan aplikasi ini untuk "<b>secara otomatis mengumpulkan dan mengupload laporan bug</b>", termasuk log sistem dan aplikasi dari profil kerja dan pribadi, untuk semua laporan masalah yang Anda kirimkan.
 
 Mencabut akses akan mewajibkan aplikasi meminta izin Anda guna mengumpulkan dan mengupload laporan bug untuk setiap laporan masalah."</string>
-    <string name="ambient_display_wake_screen_footer">
-        <annotation link="link">Preferensi</annotation>
-    </string>
-    <string name="ambient_display_wake_screen_summary" />
-    <string name="ambient_display_wake_screen_summary_on" />
-    <string name="assist_gesture_enrollment_continue_to_assistant">Lanjutkan ke Asisten</string>
-    <string name="assist_gesture_enrollment_do_it_later">Lakukan nanti</string>
-    <string name="assist_gesture_enrollment_seekbar_light">Tekan ringan</string>
-    <string name="assist_gesture_enrollment_seekbar_strong">Tekan kuat</string>
-    <string name="assist_gesture_enrollment_settings">Setelan</string>
-    <string name="assist_gesture_setting_enable_assistant_text">Untuk berbicara dengan Asisten, tekan kedua sisi bawah ponsel, lalu lepaskan dengan cepat</string>
-    <string name="assist_gesture_setting_enable_assistant_title">Tekan kedua sisi agar Asisten aktif</string>
-    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Tekan kedua sisi perangkat untuk mematikan suara alarm, timer, notifikasi, dan panggilan masuk</string>
-    <string name="assist_gesture_setting_enable_ring_silence_text">Squeeze untuk mematikan suara notifikasi dan panggilan masuk</string>
-    <string name="assist_gesture_setting_enable_ring_silence_title">Tekan kedua sisi untuk membisukan ponsel</string>
-    <string name="assist_gesture_setting_enable_wake_title">Buka Asisten saat layar nonaktif</string>
-    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Tekan ringan</string>
-    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Tekan kuat</string>
-    <string name="assist_gesture_squeeze_sensitivity_label">Sensitivitas tekanan kedua sisi</string>
-    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Asisten bisa muncul secara tidak sengaja</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Squeeze bagian bawah ponsel</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Squeeze lebih cepat</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Squeeze lebih keras</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Tekan kedua sisi dan lepas dengan cepat</string>
-    <string name="assist_gesture_training_enrolling_error_try_adjusting">Coba sesuaikan penggeser</string>
-    <string name="assist_gesture_training_enrolling_text">Squeeze separuh bagian bawah ponsel. Anda dapat menyesuaikan seberapa kuat squeeze Anda.</string>
-    <string name="assist_gesture_training_enrolling_title">Tekan kedua sisi dan lepas dengan cepat</string>
-    <string name="assist_gesture_training_finished_text">Anda juga dapat mengganti sensitivitas tekan kedua sisi nanti di Setelan</string>
-    <string name="assist_gesture_training_finished_title">Selesaikan atau lanjutkan penyesuaian</string>
-    <string name="assist_gesture_training_intro_text">Untuk berbicara dengan Asisten kapan saja, tekan kedua sisi bawah ponsel, lalu lepas dengan cepat</string>
-    <string name="assist_gesture_training_intro_title">Tekan kedua sisi untuk berbicara dengan Asisten</string>
-    <string name="assist_gesture_training_suggestion_summary">Bicara dengan Asisten, matikan suara dering telepon</string>
-    <string name="assist_gesture_training_suggestion_summary_including_alarms">Bicaralah dengan Asisten, bisukan panggilan dan alarm</string>
-    <string name="assist_gesture_training_suggestion_title">Squeeze dan lepas untuk Asisten</string>
-    <string name="aware_category_security" />
-    <string name="aware_disabled_preference_action">Aktifkan</string>
-    <string name="aware_disabled_preference_dialog_content" />
-    <string name="aware_disabled_preference_dialog_title" />
-    <string name="aware_disabled_preference_neutral">Lain kali</string>
-    <string name="aware_footer_when_airplane_batterysaver_on">Motion Sense tidak tersedia karena mode pesawat dan Penghemat Baterai aktif</string>
-    <string name="aware_footer_when_airplane_on">Motion Sense tidak tersedia karena mode pesawat aktif</string>
-    <string name="aware_footer_when_batterysaver_on">Motion Sense tidak tersedia karena Penghemat Baterai aktif</string>
-    <string name="aware_gesture_summary_off">Quick Gestures aktif, Active Edge dinonaktifkan</string>
-    <string name="aware_gesture_summary_on_non_assist">Quick Gestures aktif, Active Edge diaktifkan</string>
-    <string name="aware_gesture_summary_on_with_assist">Quick Gestures aktif, Active Edge aktif, tekan kedua sisi perangkat untuk berbicara dengan Asisten</string>
-    <string name="aware_info_button_description">Setelan lainnya</string>
-    <string name="aware_settings_disabled_info_dialog_content" />
-    <string name="aware_settings_disabled_info_dialog_title" />
-    <string name="aware_settings_enabled_info_dialog_content" />
-    <string name="aware_settings_enabled_info_dialog_title" />
-    <string name="aware_settings_suggestion_summary" />
-    <string name="aware_settings_suggestion_title" />
-    <string name="aware_summary_when_airplane_batterysaver_on">Tidak tersedia karena mode pesawat dan Penghemat Baterai aktif</string>
-    <string name="aware_summary_when_airplane_on">Tidak tersedia karena mode pesawat aktif</string>
-    <string name="aware_summary_when_batterysaver_on">Tidak tersedia karena Penghemat Baterai aktif</string>
-    <string name="aware_wake_display_summary" />
-    <string name="aware_wake_display_summary_aod_off" />
-    <string name="aware_wake_display_title" />
+    <string name="app_and_notification_dashboard_summary">Asisten, aplikasi terbaru, aplikasi default</string>
+    <string name="automatic_storage_manager_activation_warning">Saat terhubung, Anda tetap dapat mengakses foto dan video dengan kualitas yang dipilih untuk cadangan</string>
+    <string name="automatic_storage_manager_days_title">Hapus foto &amp; video yang dicadangkan</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Nonaktifkan Smart Storage? 
+
+Smart Storage tidak akan mengosongkan ruang jika penyimpanan hampir penuh."</string>
+    <string name="automatic_storage_manager_preference_title">Smart Storage</string>
+    <string name="automatic_storage_manager_primary_switch_title">Gunakan Smart Storage</string>
+    <string name="automatic_storage_manager_settings">Smart Storage</string>
+    <string name="automatic_storage_manager_text">Jika ruang penyimpanan hampir penuh, hapus foto dan video yang dicadangkan. Anda tetap dapat menemukannya di Google Foto.</string>
+    <string name="backup_data_summary">Cadangkan data aplikasi, sandi Wi-Fi, dan setelan lainnya ke server Google</string>
     <string name="basic_battery_saver_summary">Membatasi efek visual dan aktivitas latar belakang. Mengaktifkan Tema gelap, jika belum diaktifkan.</string>
     <string name="basic_battery_saver_title">Penghemat Baterai Standar</string>
+    <string name="battery_manager_summary">Memperpanjang masa pakai baterai dan mengoptimalkan pengisian daya</string>
+    <string name="battery_manager_summary_unsupported">Memperpanjang masa pakai baterai</string>
+    <string name="battery_missing_link_message">Pelajari lebih lanjut</string>
     <string name="battery_saver_reminder_category">Pengingat</string>
     <string name="battery_saver_reminder_switch_summary">Dapatkan pengingat saat daya baterai rendah</string>
     <string name="battery_saver_reminder_switch_title">Pengingat Penghemat Baterai</string>
@@ -103,7 +46,11 @@ Mencabut akses akan mewajibkan aplikasi meminta izin Anda guna mengumpulkan dan 
     <string name="battery_saver_schedule_switch_title">Aktifkan berdasarkan level baterai</string>
     <string name="battery_schedule_summary">Kelola waktu pengaktifan Penghemat Baterai</string>
     <string name="battery_schedule_title">Jadwal dan pengingat</string>
+    <string name="battery_tip_battery_health_learn_more_description">Pelajari kesehatan baterai lebih lanjut</string>
+    <string name="battery_tip_battery_health_reduced_title">Kapasitas baterai berkurang</string>
+    <string name="battery_tip_battery_health_unknown_title">Tidak dapat mendeteksi kesehatan baterai</string>
     <string name="battery_tip_limited_temporarily_extra_summary">Untuk melindungi baterai, pengisian daya dijeda pada %1$s saat tablet dipasang ke dok</string>
+    <string name="battery_tip_smart_battery_summary">Aktifkan Baterai Adaptif</string>
     <string name="clear_calling_footer">"Untuk melindungi privasi Anda, Panggilan Jernih tidak akan mengirimkan audio atau percakapan ke Google.
 
 Panggilan Jernih berfungsi pada panggilan Wi-Fi dan sebagian besar jaringan, tidak tersedia untuk jaringan 3G."</string>
@@ -154,8 +101,11 @@ Panggilan Jernih berfungsi pada panggilan Wi-Fi dan sebagian besar jaringan, tid
     <string name="columbus_setting_app_shortcut_selection_help_text">Pilih yang akan terjadi saat Anda membuka aplikasi ini menggunakan Ketuk Cepat.</string>
     <string name="columbus_setting_enable_switch_title">Gunakan Ketuk Cepat</string>
     <string name="columbus_setting_sensitivity_title">Perlu ketukan yang lebih kuat</string>
+    <string name="columbus_title">Ketuk Cepat untuk memulai tindakan</string>
     <string name="communal_lock_screen_summary">Privasi, notifikasi, dan Kontrol rumah</string>
     <string name="communal_other">Lainnya</string>
+    <string name="communal_settings_summary">Opsi layar kunci dan dok</string>
+    <string name="communal_settings_title">Mode hub</string>
     <string name="communal_smartspace_summary">Pengingat, pemberitahuan, dan lainnya dari Asisten</string>
     <string name="communal_smartspace_title">Sekilas</string>
     <string name="communal_what_to_show">Yang ditampilkan</string>
@@ -166,17 +116,17 @@ Panggilan Jernih berfungsi pada panggilan Wi-Fi dan sebagian besar jaringan, tid
     <string name="connectivity_helper_d2d_summary">Beri tahu orang lain jika ponsel Anda mengalami masalah koneksi saat panggilan telepon berlangsung</string>
     <string name="connectivity_helper_d2d_title">Bagikan info koneksi</string>
     <string name="connectivity_helper_footnote">Anda dapat berbagi info koneksi jika penelepon lain menggunakan perangkat dan jaringan yang didukung</string>
+    <string name="content_capture">Personalisasi menggunakan data aplikasi</string>
+    <string name="content_protection_preference_subpage_info">"Fitur ini adalah fitur keamanan yang dilindungi. Tidak ada info pribadi atau perangkat yang dibagikan kepada Google. 
+
+Phishing adalah upaya untuk mencuri kredensial login atau info pribadi lainnya."</string>
+    <string name="content_protection_preference_subpage_summary">Pemindaian dijalankan secara pribadi di perangkat Anda. Pemindaian ini memeriksa aktivitas aplikasi untuk menemukan phishing atau perilaku menipu lainnya. Jika terdeteksi, beberapa info aplikasi akan dikirim ke Google Play Protect untuk mengonfirmasi ancaman dan memperingatkan pengguna aplikasi.</string>
+    <string name="dark_ui_text">Tema gelap menggunakan latar belakang gelap agar daya baterai bertahan lebih lama. Jadwal tema gelap baru akan aktif setelah layar nonaktif.</string>
     <string name="debugging_data_title">Data proses debug</string>
-    <string name="dialog_aware_settings_message" />
-    <string name="dialog_aware_settings_ok" />
-    <string name="dialog_aware_settings_title" />
     <string name="discover_tips_button">Temukan tips</string>
-    <string name="dock_setup_notification_text" />
     <string name="dock_summary_charging_phone">Mengisi baterai ponsel</string>
-    <string name="dream_no_screen_saver_caption" />
-    <string name="dream_no_screen_saver_description" />
-    <string name="dream_no_screen_saver_preview_caption" />
-    <string name="dream_secondary_button_title" />
+    <string name="double_twist_for_camera_mode_summary">Untuk masuk atau keluar mode selfie di Google Kamera, balik dua kali saat di dalam aplikasi.</string>
+    <string name="duration_less_than_one_minute">Kurang dari 1 menit</string>
     <string name="extreme_battery_saver_summary">Mencakup semua perubahan yang tercantum di atas. Juga menjeda aplikasi yang tidak penting dan notifikasinya.</string>
     <string name="extreme_battery_saver_title">Penghemat Baterai Super</string>
     <string name="face_confirmation_hide_illustration_description">Kini saat akan memakai ponsel atau mengetuk layarnya, Anda dapat menggunakan wajah untuk membuka kunci.</string>
@@ -203,49 +153,44 @@ Panggilan Jernih berfungsi pada panggilan Wi-Fi dan sebagian besar jaringan, tid
     <string name="face_enrolling_too_right">Geser ponsel ke kiri</string>
     <string name="face_enrolling_turn_head_to_arrow">Tolehkan kepala Anda ke arah panah</string>
     <string name="face_enrolling_turned_too_far">Tolehkan kepala lebih sedikit</string>
+    <string name="fast_pair_device_not_found_dialog_title">Gagal terhubung</string>
+    <string name="fast_pair_device_not_found_other_device_description">Dekatkan perangkat ini ke ponsel Pixel dan coba lagi.</string>
+    <string name="fast_pair_device_not_found_tws_headphone_description">Buka casing earbud dan dekatkan ke ponsel Pixel, lalu coba lagi.</string>
+    <string name="fingerprint_unlock_set_unlock_password">Nexus Imprint + Sandi</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Nexus Imprint + Pola</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Nexus Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Lanjutkan tanpa Nexus Imprint</string>
+    <string name="firmware_update_accessory_version_number_title">Firmware aksesori</string>
     <string name="firmware_update_status_category">Status firmware perangkat</string>
     <string name="firmware_update_status_title">Update firmware tersedia</string>
     <string name="firmware_update_version_number_category">Versi firmware perangkat</string>
     <string name="firmware_update_version_number_title">Firmware keyboard Pixel</string>
-    <string name="gesture_aware_confirmation_action_button">Oke</string>
-    <string name="gesture_aware_disabled_info_dialog_content" />
-    <string name="gesture_aware_footer">
-        <annotation link="link">Preferensi</annotation>
-    </string>
-    <string name="gesture_aware_off_dialog_content" />
-    <string name="gesture_aware_off_dialog_title" />
-    <string name="gesture_silence_footer">
-        <annotation link="link">Preferensi</annotation>
-    </string>
-    <string name="gesture_silence_off_summary" />
-    <string name="gesture_silence_on_summary" />
-    <string name="gesture_silence_summary" />
-    <string name="gesture_skip_direction_ltr">Kiri ke kanan</string>
-    <string name="gesture_skip_direction_rtl">Kanan ke kiri</string>
-    <string name="gesture_skip_direction_title">Arah Lewati</string>
-    <string name="gesture_skip_footer">
-        <annotation link="link">Preferensi</annotation>
-    </string>
-    <string name="gesture_skip_off_summary" />
-    <string name="gesture_skip_on_summary" />
-    <string name="gesture_skip_summary" />
-    <string name="gesture_tap_footer">
-        <annotation link="link">Preferensi</annotation>
-    </string>
-    <string name="gesture_tap_on_summary" />
-    <string name="gesture_tap_summary" />
+    <string name="fullbackup_data_summary">"Otomatis cadangkan data perangkat (seperti sandi Wi-Fi dan histori panggilan) dan data aplikasi (seperti setelan dan file yang disimpan oleh aplikasi) ke Google Drive.
+
+Jika Anda mengaktifkan cadangan otomatis, data perangkat dan aplikasi secara berkala disimpan ke folder pribadi di Google Drive. Data aplikasi dapat berupa data apa saja yang telah disimpan oleh aplikasi (menurut setelan developer), termasuk data yang berpotensi sensitif seperti kontak, pesan, dan foto.
+
+Data cadangan tidak dihitung dari kuota penyimpanan Drive. File besar, atau file yang dipilih oleh developer untuk tidak disertakan dalam layanan tidak akan dicadangkan."</string>
+    <string name="fullbackup_erase_dialog_message">Berhenti mencadangkan data perangkat (seperti sandi Wi-Fi dan histori panggilan) dan data aplikasi (seperti setelan dan file yang disimpan oleh aplikasi), serta hapus semua salinan di Google Drive?</string>
+    <string name="gesture_settings_activity_title">Navigasi Gestur</string>
     <string name="install_unknown_applications">Izinkan penginstalan aplikasi dari sumber selain Google Play Store</string>
+    <string name="keywords_accessibility_menu">motorik, menu cepat, menu asistif, sentuhan, ketangkasan, artritis, rsi, stroke, tremor, sklerosis ganda, lumpuh otak, tombol, hardware, tekan, cedera regangan berulang, tangan, nyeri, mudah diakses, bantuan</string>
     <string name="keywords_adaptive_alert_vibration">haptic, getar, ponsel, panggilan, dering, pemberitahuan, notifikasi, keras, sunyi, bising, casing, adaptif</string>
     <string name="keywords_adaptive_charging">mengisi daya, pengisian daya, pengisian daya smart, pengisian daya adaptif, baterai, kesehatan baterai</string>
-    <string name="keywords_assist_gesture_silence">gestur, edge, sisi, active edge, senyap, tunda, alarm, panggilan masuk, diam, tampilan, layar kunci, squeeze, pegangan, stop</string>
-    <string name="keywords_assist_gesture_wake">gestur, edge, sisi, active edge, aktifkan, notifikasi, layar, tampilan, layar nonaktif, layar aktif, squeeze, tertidur, tidur, pegangan</string>
     <string name="keywords_battery_share">berbagi baterai, pengisian daya nirkabel</string>
     <string name="keywords_battery_share_settings">berbagi baterai, pengisian daya nirkabel terbalik</string>
-    <string name="keywords_gesture_silence" />
-    <string name="keywords_gesture_skip" />
-    <string name="keywords_gesture_tap" />
+    <string name="keywords_gesture">gestur, gerakan</string>
+    <string name="keywords_hearing_devices">gangguan pendengaran, kehilangan pendengaran, PSAP</string>
     <string name="keywords_limited_warranty">jaminan, garansi, garansi terbatas, dijamin, perbaikan, rma, penggantian</string>
+    <string name="keywords_live_caption">Teks, teks tertutup, CC, Transkripsi Instan, gangguan pendengaran, kehilangan pendengaran, CART, speech to text, subtitel</string>
+    <string name="keywords_live_transcribe">Teks, teks tertutup, CC, Teks Otomatis, gangguan pendengaran, kerusakan pendengaran, CART, speech to text, subtitel</string>
     <string name="keywords_reverse_charging_stop_threshold">Berhenti berbagi baterai saat ponsel mencapai:</string>
+    <string name="keywords_select_to_speak">Dengarkan teks, baca dengan keras, layar bicara, pembaca layar</string>
+    <string name="keywords_sound_amplifier">PSAP, perkuat, penguatan suara, gangguan pendengaran, kerusakan pendengaran, penguatan</string>
+    <string name="keywords_sound_notifications">Notifikasi, gangguan pendengaran, kerusakan pendengaran, beri tahukan</string>
+    <string name="keywords_switch_access">motorik, tombol akses, tangan, AT, teknologi pendukung, kelumpuhan, ALS, pemindaian, pemindaian bertahap</string>
+    <string name="keywords_talkback">Pembaca layar, Voice Over, VoiceOver, Bantuan Suara, Tunanetra, Gangguan Penglihatan, TTS, text to speech, respons lisan</string>
+    <string name="keywords_touch_sensitivity">sentuh, sensitivitas, sensitif, pelindung layar, film, responsif, responsivitas</string>
+    <string name="keywords_voice_access">suara, kontrol suara, motorik, tangan, mikrofon, dikte, bicara, kontrol</string>
     <string name="led_preference_title">Pola indikator LED</string>
     <string name="legal_source_code_description">Detail tentang kode sumber untuk komponen yang tersedia sebagai open source dapat ditemukan di pusat bantuan Pixel.</string>
     <string name="legal_source_code_title">Kode sumber</string>
@@ -253,9 +198,12 @@ Panggilan Jernih berfungsi pada panggilan Wi-Fi dan sebagian besar jaringan, tid
     <string name="limited_warranty_title">Garansi Terbatas</string>
     <string name="lockscreen_show_weather_summary">Lihat kondisi cuaca saat ini</string>
     <string name="lockscreen_show_weather_title">Tampilkan cuaca</string>
+    <string name="my_device_info_account_preference_title">Akun Google</string>
+    <string name="owner_info_settings_edit_text_hint">Misalnya, Pixel Joko.</string>
     <string name="permit_debugging_data">Izinkan akses laporan bug</string>
     <string name="play_application_detail_indication_summary">Periksa update</string>
     <string name="play_application_update_entry_title">Update aplikasi</string>
+    <string name="privatespace_retry_summary">Anda harus login ke Akun Google untuk menyiapkan Ruang Pribadi</string>
     <string name="repair_mode_active_summary">Dalam mode perbaikan</string>
     <string name="repair_mode_summary">Lingkungan aman untuk reparasi perangkat</string>
     <string name="repair_mode_title">Mode reparasi</string>
@@ -286,18 +234,37 @@ Balik ponsel Anda untuk mencobanya."</string>
     <string name="reverse_charging_unplug_usb_cable_message">Tidak tersedia karena perangkat USB-C dicolokkan</string>
     <string name="reverse_charging_warning_summary">Tidak tersedia karena baterai di bawah %1$s</string>
     <string name="reverse_charging_warning_title">Berbagi Baterai tidak tersedia karena daya baterai di bawah %1$s</string>
-    <string name="search_gesture_category_title">Cari cepat</string>
-    <string name="search_long_press_home_button_summary">Tekan dan tahan tombol layar utama untuk memulai penelusuran Google di layar.</string>
-    <string name="search_long_press_home_button_title">Tahan tombol Layar Utama untuk menelusuri</string>
-    <string name="search_press_hold_gesture_summary">Tekan dan tahan handel navigasi untuk memanggil penelusuran di layar.</string>
-    <string name="search_press_hold_gesture_title">Tahan handel untuk menelusuri</string>
+    <string name="rtt_settings_always_visible">Selalu terlihat</string>
+    <string name="rtt_settings_no_visible">Tidak terlihat</string>
+    <string name="rtt_settings_title">Pesan real-time (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Terlihat selama panggilan telepon</string>
+    <string name="screen_time_summary_usage_today">%1$s hari ini</string>
+    <string name="search_bar_account_avatar_content_description">Foto profil, ketuk dua kali untuk membuka Akun Google</string>
+    <string name="search_gesture_category_title">Penelusuran</string>
+    <string name="search_gesture_feature_title">Lingkari untuk Menelusuri</string>
+    <string name="search_long_press_home_button_summary">Sentuh lama tombol layar utama di bagian bawah layar, lalu lingkari atau tandai item untuk ditelusuri</string>
+    <string name="search_press_hold_gesture_summary">Sentuh lama handel di bagian bawah layar, lalu lingkari atau tandai item untuk ditelusuri</string>
     <string name="security_dismiss_dialog_dismiss_button">Tutup</string>
     <string name="security_dismiss_dialog_title">Tutup peringatan ini?</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">Ketuk untuk menyiapkan</string>
+    <string name="security_settings_face_enroll_consent_introduction_title">Izinkan Buka dengan Wajah</string>
+    <string name="security_settings_face_enroll_dialog_ok">Oke</string>
+    <string name="security_settings_face_enroll_education_message">Di layar berikutnya, putar kepala agar dapat mengambil foto semua sudut wajah Anda</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Waktu penyiapan Buka dengan Wajah habis</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Anda kini dapat menggunakan wajah untuk membuka kunci ponsel atau memverifikasi diri Anda, seperti saat login ke aplikasi atau menyetujui pembelian</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Kini saat akan memakai ponsel atau mengetuk layarnya, Anda dapat menggunakan wajah untuk membuka kunci.
 
 Buka dengan Wajah berfungsi optimal saat ada cukup cahaya dan Anda tidak sedang memakai masker atau kacamata hitam."</string>
+    <string name="security_settings_face_enroll_finish_title">Sip, selesai!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Penyiapan untuk Anda yang memiliki keterbatasan pandangan atau gerakan kepala</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Mata harus terbuka</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Anda dan anak Anda memegang kendali</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Kendali di tangan Anda</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Cara kerjanya</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Jika anak Anda biasanya memakai kacamata, dia dapat memakainya selama penyiapan.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Kacamata atau kacamata berlensa warna transparan dapat digunakan.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Ingat</string>
+    <string name="security_settings_face_enroll_introduction_title">Siapkan Buka dengan Wajah</string>
     <string name="security_settings_face_enroll_next">Berikutnya</string>
     <string name="security_settings_face_enroll_partial_message">Untuk meningkatkan performa, Anda dapat menyiapkan Buka dengan Wajah lagi di Setelan</string>
     <string name="security_settings_face_enroll_partial_start_over">Mulai dari awal</string>
@@ -312,8 +279,24 @@ Untuk meningkatkan performa, Anda dapat menyiapkan Buka dengan Wajah lagi di Set
     <string name="security_settings_face_enroll_too_hot_message">Penyiapan Buka dengan Wajah tidak dapat diselesaikan karena ponsel terlalu panas. Coba lagi nanti saat ponsel sudah dingin.</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Lewati Buka dengan Wajah</string>
     <string name="security_settings_face_enroll_too_hot_title">Ponsel terlalu panas</string>
+    <string name="security_settings_face_preference_summary_none">Ketuk untuk menyiapkan wajah</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Dengan Nexus Imprint, Anda dapat menggunakan sidik jari untuk mengotorisasi pembelian atau login ke aplikasi.
+
+Berhati-hatilah dengan sidik jari yang ditambahkan. Sidik jari yang ditambahkan dapat melakukan semua ini.
+
+Catatan: Anda tidak dapat menggunakan sidik jari untuk membuka kunci perangkat. Untuk informasi selengkapnya, hubungi admin organisasi Anda."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Buka dengan Nexus Imprint</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Ketuk untuk menyiapkan sidik jari</string>
+    <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint membuat model unik dari sidik jari untuk memverifikasi diri Anda. Untuk membuat model sidik jari ini selama penyiapan, Anda akan mengambil gambar sidik jari dari berbagai posisi.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint membuat model unik dari sidik jari anak Anda untuk memverifikasi dirinya. Untuk membuat model sidik jari ini selama penyiapan, dia akan mengambil gambar sidik jari dari berbagai posisi.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Pelajari fitur Buka dengan Sidik Jari Pixel lebih lanjut di &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint untuk profil kerja</string>
     <string name="setup_suggestion_summary">Tinggal beberapa langkah lagi</string>
     <string name="setup_suggestion_title">Selesaikan penyiapan</string>
+    <string name="smart_battery_footer">Untuk memperpanjang masa pakai baterai, Baterai Adaptif dapat mengurangi performa dan aktivitas latar belakang. Beberapa notifikasi mungkin tertunda.</string>
+    <string name="smart_battery_manager_title">Preferensi adaptif</string>
+    <string name="smart_battery_title">Baterai adaptif</string>
     <string name="software_update_can_be_updated_header">Buat Pixel jadi lebih baik</string>
     <string name="software_update_detail_indication_1_update_available">1 update tersedia</string>
     <string name="software_update_detail_indication_2_or_more_updates_available">%1$d update tersedia</string>
@@ -326,9 +309,13 @@ Untuk meningkatkan performa, Anda dapat menyiapkan Buka dengan Wajah lagi di Set
     <string name="software_update_up_to_date_summary">Terbaru</string>
     <string name="software_update_up_to_specific_date_summary">Diupdate %1$s</string>
     <string name="software_update_update_available_summary">Update tersedia</string>
+    <string name="sound_dashboard_summary">Volume, sentuhan, Jangan Ganggu</string>
+    <string name="sound_settings">Suara &amp; getaran</string>
+    <string name="spatial_audio_title">Audio spasial</string>
     <string name="speed_boost_summary_off">Nonaktif</string>
     <string name="speed_boost_summary_on">Aktif</string>
     <string name="speed_boost_title">Spectrum Speed Boost</string>
+    <string name="suggested_fingerprint_lock_settings_title">Gunakan Pixel Imprint</string>
     <string name="suw_limited_warranty_title">Garansi terbatas</string>
     <string name="suw_warranty_description">Untuk melihat garansi terbatas, pilih negara tempat Anda membeli perangkat ini.&lt;br /&gt;&lt;br /&gt;Garansi juga tersedia di &lt;b&gt;Setelan &gt; Tentang ponsel &gt; Garansi terbatas&lt;/b&gt; dan di g.co/devicewarranty.</string>
     <string name="suw_warranty_description_content">Untuk melihat garansi terbatas, pilih negara tempat Anda membeli perangkat ini. Garansi juga tersedia di Setelan, lalu tentang ponsel, lalu Garansi terbatas, dan di g.co/devicewarranty.</string>
@@ -336,10 +323,11 @@ Untuk meningkatkan performa, Anda dapat menyiapkan Buka dengan Wajah lagi di Set
     <string name="suw_warranty_positive_button_text">Tutup</string>
     <string name="system_update_entry_title">Update sistem</string>
     <string name="system_updates_group_title">Update Pixel</string>
-    <string name="tips_suggestion_summary">Jelajahi hal-hal yang dapat Anda lakukan dengan ponsel</string>
-    <string name="tips_suggestion_title">Kenali Pixel Anda</string>
+    <string name="touch_sensitivity_summary">Tingkatkan sensitivitas sentuh dan respons sentuh saat menggunakan pelindung layar</string>
+    <string name="touch_sensitivity_title">Mode pelindung layar</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Pegang ponsel di depan wajah Anda</string>
     <string name="unified_battery_saver_page_intro">Menghemat daya untuk membantu baterai ponsel bertahan lebih lama sampai perlu diisi daya kembali</string>
+    <string name="usb_use_file_transfers">Transfer file / Android Auto</string>
     <string name="vpn_app_bypass">Kecualikan aplikasi yang dipilih</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">Aplikasi operator saat ini</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">Kecualikan %1$d aplikasi operator dari VPN?</string>
@@ -360,12 +348,9 @@ Untuk meningkatkan performa, Anda dapat menyiapkan Buka dengan Wajah lagi di Set
     <string name="vpn_exclude_ntf_content">Anda baru saja menginstal aplikasi operator yang mungkin tidak berfungsi dengan VPN</string>
     <string name="vpn_exclude_ntf_title">Kecualikan aplikasi baru dari VPN?</string>
     <string name="vpn_preference_group_title">Lainnya</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_title" />
-    <string name="wake_screen_suggestion_summary" />
-    <string name="wake_screen_suggestion_title" />
+    <string name="wallpaper_dashboard_summary">Warna, ikon bertema, petak aplikasi</string>
     <string name="warranty_country_information">%1$s (%2$s)</string>
+    <string name="wifi_subscription_summary">Melihat atau mengubah langganan OpenRoaming</string>
     <string name="wifitrackerlib_connected_with_wsu_authenticator">Terhubung dengan %1$s</string>
     <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Ketuk untuk menghubungkan</string>
     <string name="wifitrackerlib_wsu_entry_summary_provision_error">Tidak dapat terhubung. Ketuk untuk mencoba lagi.</string>

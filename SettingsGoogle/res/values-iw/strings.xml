@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="aware_category_display" />
-    <string name="aware_category_gesture" />
-    <string name="aware_display_settings_title">מסך הנעילה לא פעיל</string>
-    <string name="aware_settings_description" />
-    <string name="aware_settings_summary" />
-    <string name="gesture_silence_title">תנועה להשתקת התראות</string>
-    <string name="gesture_skip_title">דילוג על תנועה</string>
-    <string name="keywords_touch_sensitivity">מגע, רגישות, רגיש, מגן מסך, סרט, מגיב, תגובה</string>
-    <string name="keywords_wake_display" />
-    <string name="touch_sensitivity_summary">הגברת הרגישות למגע ושיפור של זיהוי המגע כשמשתמשים במגן מסך</string>
-    <string name="touch_sensitivity_title">מצב מגן מסך</string>
-    <string name="columbus_title">הקשה מהירה לביצוע פעולות</string>
-    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">‏Active Edge מוגדר. אפשר לעבור למסך הבא או להמשיך בהתאמה.</string>
     <string name="accessibility_keyboard_haptics_title">מגע פיזי במקלדת</string>
     <string name="adaptive_alert_vibration_summary">כדי להפחית את עוצמת הרטט כשהטלפון יציב והמסך שלו פונה כלפי מעלה</string>
     <string name="adaptive_alert_vibration_title">רטט של התראה שניתן להתאמה</string>
@@ -32,69 +19,25 @@
 
 "<b>דוח איתור הבאגים כולל יומני אפליקציות ויומני מערכת</b>" והוא עשוי לכלול מידע אישי ומידע מהמכשירים שלך כמו שמות, כתובות אימייל, מספרי טלפון, נתוני מיקום, מזהי מכשיר, מכשירים מחוברים ומידע על הרשת. ייתכן שהדוחות ישותפו עם מהנדסי תוכנה שותפים שעשויים להיות מושפעים מהבעיה.
 
-הענקת גישה תאפשר לאפליקציה הזו "<b>לאסוף נתונים ולהעלות באופן אוטומטי דוחות איתור באגים</b>" שכוללים יומני אפליקציות ויומני מערכת של כל דיווחי הבעיות ביחד.
+הענקת גישה תאפשר לאפליקציה "<b>לאסוף נתונים ולהעלות באופן אוטומטי דוחות איתור באגים,</b>" שכוללים יומני אפליקציות ויומני מערכת מפרופילים אישיים ופרופילים של עבודה, של כל דיווחי הבעיות שהגשת.
 
 ביטול הגישה יוביל לכך שהאפליקציה תצטרך לבקש ממך הרשאה לאסוף נתונים ולהעלות דוח איתור באגים לכל בעיה בנפרד."</string>
-    <string name="ambient_display_wake_screen_footer">
-        <annotation link="link">העדפות</annotation>
-    </string>
-    <string name="ambient_display_wake_screen_summary" />
-    <string name="ambient_display_wake_screen_summary_on" />
-    <string name="assist_gesture_enrollment_continue_to_assistant">‏המשך אל Assistant</string>
-    <string name="assist_gesture_enrollment_do_it_later">יותר מאוחר</string>
-    <string name="assist_gesture_enrollment_seekbar_light">לחיצה קלה</string>
-    <string name="assist_gesture_enrollment_seekbar_strong">לחיצה חזקה</string>
-    <string name="assist_gesture_enrollment_settings">הגדרות</string>
-    <string name="assist_gesture_setting_enable_assistant_text">‏כדי לדבר עם Assistant‏, לוחצים משני צדי המכשיר בחלק התחתון שלו ומשחררים במהירות</string>
-    <string name="assist_gesture_setting_enable_assistant_title">‏לחיצה משני הצדדים כדי לדבר עם Assistant</string>
-    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">לחיצה משני צדי המכשיר תשתיק התראות, שעונים מעוררים, טיימרים ושיחות נכנסות</string>
-    <string name="assist_gesture_setting_enable_ring_silence_text">לחיצה משני צדי המכשיר תשתיק התראות ושיחות נכנסות</string>
-    <string name="assist_gesture_setting_enable_ring_silence_title">לחיצה משני הצדדים להשתקת הטלפון</string>
-    <string name="assist_gesture_setting_enable_wake_title">‏פתיחת Assistant כשהמסך כבוי</string>
-    <string name="assist_gesture_squeeze_help_maximum_sensitivity">לחיצה קלה</string>
-    <string name="assist_gesture_squeeze_help_minimum_sensitivity">לחיצה חזקה</string>
-    <string name="assist_gesture_squeeze_sensitivity_label">עוצמת לחיצה</string>
-    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">‏ייתכן שהתנועה תפעיל את Assistant בטעות</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">יש ללחוץ משני צדי הטלפון בחלק התחתון</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_faster">לא לחצת מהר מספיק משני צדי המכשיר</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_harder">לא לחצת חזק מספיק משני צדי המכשיר</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">יש ללחוץ משני צדי המכשיר ולשחרר במהירות</string>
-    <string name="assist_gesture_training_enrolling_error_try_adjusting">כדאי לנסות להתאים את המחוון</string>
-    <string name="assist_gesture_training_enrolling_text">יש ללחוץ משני צדי המכשיר בחלק התחתון. ניתן לשנות את חוזק הלחיצה הנדרש להפעלה.</string>
-    <string name="assist_gesture_training_enrolling_title">לחיצה משני צדי המכשיר ושחרור מהיר</string>
-    <string name="assist_gesture_training_finished_text">"ניתן לשנות את רגישות הלחיצה גם בשלב מאוחר יותר ב'הגדרות'"</string>
-    <string name="assist_gesture_training_finished_title">סיום או המשך התאמה</string>
-    <string name="assist_gesture_training_intro_text">‏כדי לדבר עם Assistant, צריך פשוט ללחוץ משני צדי הטלפון בחלק התחתון שלו ולשחרר במהירות</string>
-    <string name="assist_gesture_training_intro_title">‏לחיצה משני צדי המכשיר כדי לדבר עם Assistant</string>
-    <string name="assist_gesture_training_suggestion_summary">‏לדבר עם Assistant, להשתיק שיחות</string>
-    <string name="assist_gesture_training_suggestion_summary_including_alarms">‏לדבר עם Assistant, להשתיק התראות ושיחות</string>
-    <string name="assist_gesture_training_suggestion_title">‏לחיצה דו-צדדית ושחרור להפעלת Assistant</string>
-    <string name="aware_category_security" />
-    <string name="aware_disabled_preference_action">הפעלה</string>
-    <string name="aware_disabled_preference_dialog_content" />
-    <string name="aware_disabled_preference_dialog_title" />
-    <string name="aware_disabled_preference_neutral">לא עכשיו</string>
-    <string name="aware_footer_when_airplane_batterysaver_on">"‏התכונה Motion Sense לא זמינה מפני שהאפשרויות 'מצב טיסה' ו'חיסכון בסוללה' מופעלות"</string>
-    <string name="aware_footer_when_airplane_on">"‏התכונה Motion Sense לא זמינה מפני ש'מצב טיסה' פועל"</string>
-    <string name="aware_footer_when_batterysaver_on">"‏התכונה Motion Sense לא זמינה מפני שהתכונה 'חיסכון בסוללה' פועלת"</string>
-    <string name="aware_gesture_summary_off">‏התנועות המהירות פועלות, Active Edge כבוי</string>
-    <string name="aware_gesture_summary_on_non_assist">‏התנועות המהירות פועלות, Active Edge פועל</string>
-    <string name="aware_gesture_summary_on_with_assist">‏התנועות המהירות פועלות, Active Edge פועל, יש ללחוץ משני צדי המכשיר כדי להפעיל את Assistant</string>
-    <string name="aware_info_button_description">הגדרות נוספות</string>
-    <string name="aware_settings_disabled_info_dialog_content" />
-    <string name="aware_settings_disabled_info_dialog_title" />
-    <string name="aware_settings_enabled_info_dialog_content" />
-    <string name="aware_settings_enabled_info_dialog_title" />
-    <string name="aware_settings_suggestion_summary" />
-    <string name="aware_settings_suggestion_title" />
-    <string name="aware_summary_when_airplane_batterysaver_on">"לא זמינה מפני שהאפשרויות 'מצב טיסה' ו'חיסכון בסוללה' מופעלות"</string>
-    <string name="aware_summary_when_airplane_on">"לא זמינה מפני ש'מצב טיסה' פועל"</string>
-    <string name="aware_summary_when_batterysaver_on">"לא זמינה מפני שהתכונה 'חיסכון בסוללה' פועלת"</string>
-    <string name="aware_wake_display_summary" />
-    <string name="aware_wake_display_summary_aod_off" />
-    <string name="aware_wake_display_title" />
+    <string name="app_and_notification_dashboard_summary">‏Assistant, אפליקציות אחרונות, אפליקציות ברירת מחדל</string>
+    <string name="automatic_storage_manager_activation_warning">אם יש חיבור לאינטרנט, עדיין אפשר לגשת לתמונות ולסרטונים באיכות שבחרת לגיבוי</string>
+    <string name="automatic_storage_manager_days_title">הסרת תמונות וסרטונים שגובו</string>
+    <string name="automatic_storage_manager_deactivation_warning">"האם להשבית את התכונה 'ניהול אחסון חכם'? 
+
+השבתת התכונה לא תפנה מקום כאשר שטח האחסון שלך יהיה כמעט מלא."</string>
+    <string name="automatic_storage_manager_preference_title">ניהול אחסון חכם</string>
+    <string name="automatic_storage_manager_primary_switch_title">"שימוש ב'ניהול אחסון חכם'"</string>
+    <string name="automatic_storage_manager_settings">ניהול אחסון חכם</string>
+    <string name="automatic_storage_manager_text">‏כשהאחסון כמעט מלא, כדאי להסיר תמונות וסרטונים שגובו. עדיין ניתן יהיה למצוא אותם ב-Google Photos.</string>
+    <string name="backup_data_summary">‏גיבוי של נתוני אפליקציות, סיסמאות Wi-Fi והגדרות אחרות בשרתי Google</string>
     <string name="basic_battery_saver_summary">הגבלה של אפקטים חזותיים ופעילות ברקע. הפעלת העיצוב הכהה, אם הוא עדיין לא מופעל.</string>
     <string name="basic_battery_saver_title">חיסכון סטנדרטי בסוללה</string>
+    <string name="battery_manager_summary">הארכת חיי הסוללה וביצוע אופטימיזציה של הטעינה</string>
+    <string name="battery_manager_summary_unsupported">הארכת חיי הסוללה</string>
+    <string name="battery_missing_link_message">מידע נוסף</string>
     <string name="battery_saver_reminder_category">תזכורות</string>
     <string name="battery_saver_reminder_switch_summary">קבלת תזכורות כשהסוללה חלשה</string>
     <string name="battery_saver_reminder_switch_title">תזכורות על סוללה חלשה</string>
@@ -103,7 +46,11 @@
     <string name="battery_saver_schedule_switch_title">הפעלה על סמך רמת הטעינה</string>
     <string name="battery_schedule_summary">"ניהול הפעלת מצב 'חיסכון בסוללה'"</string>
     <string name="battery_schedule_title">לוח זמנים ותזכורות</string>
+    <string name="battery_tip_battery_health_learn_more_description">מידע נוסף על תקינות הסוללה</string>
+    <string name="battery_tip_battery_health_reduced_title">קיבולת הסוללה נמוכה יותר</string>
+    <string name="battery_tip_battery_health_unknown_title">לא ניתן לקבוע את תקינות הסוללה</string>
     <string name="battery_tip_limited_temporarily_extra_summary">כדי להגן על הסוללה, הטעינה מושהית במצב של %1$s כשהטאבלט נמצא באביזר העגינה</string>
+    <string name="battery_tip_smart_battery_summary">הפעלת אופטימיזציה של ניצול הסוללה</string>
     <string name="clear_calling_footer">"‏כדי להגן על הפרטיות שלך, התכונה 'שיחה ללא רעשי רקע' לא שולחת אודיו או שיחות ל-Google.
 
 התכונה 'שיחה ללא רעשי רקע' פועלת בשיחות Wi-Fi וברוב הרשתות. היא לא זמינה ברשתות 3G."</string>
@@ -154,8 +101,11 @@
     <string name="columbus_setting_app_shortcut_selection_help_text">צריך לבחור מה קורה כשפותחים את האפליקציה באמצעות ההקשה המהירה.</string>
     <string name="columbus_setting_enable_switch_title">שימוש בהקשה המהירה</string>
     <string name="columbus_setting_sensitivity_title">הגברת עוצמת ההקשה שנדרשת</string>
+    <string name="columbus_title">הקשה מהירה לביצוע פעולות</string>
     <string name="communal_lock_screen_summary">פרטיות, התראות ופקדים לשליטה בבית חכם</string>
     <string name="communal_other">עוד הגדרות</string>
+    <string name="communal_settings_summary">אפשרויות באביזר העגינה ובמסך הנעילה</string>
+    <string name="communal_settings_title">מצב רכזת</string>
     <string name="communal_smartspace_summary">‏קבלת תזכורות, התראות ועוד מ-Assistant</string>
     <string name="communal_smartspace_title">בקצרה</string>
     <string name="communal_what_to_show">מה להציג</string>
@@ -166,17 +116,16 @@
     <string name="connectivity_helper_d2d_summary">עדכון המשתתף/ת בשיחה שלטלפון שלך יש בעיות בחיבור במהלך שיחות</string>
     <string name="connectivity_helper_d2d_title">שיתוף פרטי החיבור</string>
     <string name="connectivity_helper_footnote">יש לך אפשרות לשתף את פרטי החיבור עם המשתתף/ת בשיחה כאשר יש להם רשת או מכשיר נתמכים</string>
+    <string name="content_capture">התאמה אישית באמצעות נתונים מאפליקציות</string>
+    <string name="content_protection_preference_subpage_info">"‏זהו אמצעי אבטחה מוגן. אף אחד מפרטי המכשיר או הפרטים האישיים לא משותף עם Google. 
+
+פישינג הוא ניסיון לגנוב פרטי כניסה או פרטים אישיים אחרים."</string>
+    <string name="content_protection_preference_subpage_summary">‏הסריקה פועלת ישירות במכשיר באופן פרטי ובודקת את הפעילות באפליקציה לאיתור פישינג או התנהגות מטעה אחרת. במקרה שהתנהגות כזו אותרה, חלק מהמידע של האפליקציה נשלח אל Google Play Protect כדי לאשר שנמצא איום ולהזהיר את משתמשי האפליקציה.</string>
     <string name="debugging_data_title">נתונים של ניפוי באגים</string>
-    <string name="dialog_aware_settings_message" />
-    <string name="dialog_aware_settings_ok" />
-    <string name="dialog_aware_settings_title" />
     <string name="discover_tips_button">טיפים מועילים</string>
-    <string name="dock_setup_notification_text" />
     <string name="dock_summary_charging_phone">טעינת הטלפון</string>
-    <string name="dream_no_screen_saver_caption" />
-    <string name="dream_no_screen_saver_description" />
-    <string name="dream_no_screen_saver_preview_caption" />
-    <string name="dream_secondary_button_title" />
+    <string name="double_twist_for_camera_mode_summary">‏כדי להיכנס למצב סלפי ולצאת ממנו במצלמת Google, צריך לאחוז במכשיר ולסובב אותו פעמיים מצד לצד כאשר משתמשים באפליקציה.</string>
+    <string name="duration_less_than_one_minute">פחות מדקה</string>
     <string name="extreme_battery_saver_summary">כל השינויים שרשומים למעלה כלולים. בנוסף, אפליקציות לא חיוניות וההתראות שלהן יושהו.</string>
     <string name="extreme_battery_saver_title">חיסכון משמעותי בסוללה</string>
     <string name="face_confirmation_hide_illustration_description">עכשיו אפשר להרים את הטלפון או להקיש על המסך ולהשתמש בזיהוי פנים כדי לבטל את הנעילה</string>
@@ -203,49 +152,44 @@
     <string name="face_enrolling_too_right">צריך להזיז את הטלפון שמאלה</string>
     <string name="face_enrolling_turn_head_to_arrow">יש להפנות את הראש לכיוון החץ</string>
     <string name="face_enrolling_turned_too_far">עליך לסובב את הראש קצת פחות</string>
+    <string name="fast_pair_device_not_found_dialog_title">לא ניתן להתחבר</string>
+    <string name="fast_pair_device_not_found_other_device_description">‏מקרבים את המכשיר הזה אל טלפון Pixel ומנסים שוב.</string>
+    <string name="fast_pair_device_not_found_tws_headphone_description">‏פותחים את הנרתיק של אוזניות הכפתור, מקרבים אותו לטלפון Pixel ומנסים שוב.</string>
+    <string name="fingerprint_unlock_set_unlock_password">‏Nexus Imprint וסיסמה</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">‏Nexus Imprint וקו ביטול נעילה</string>
+    <string name="fingerprint_unlock_set_unlock_pin">‏Nexus Imprint וקוד אימות</string>
+    <string name="fingerprint_unlock_skip_fingerprint">‏המשך ללא Nexus Imprint</string>
+    <string name="firmware_update_accessory_version_number_title">הקושחה של האביזר</string>
     <string name="firmware_update_status_category">סטטוס הקושחה של המכשיר</string>
     <string name="firmware_update_status_title">יש עדכון קושחה זמין</string>
     <string name="firmware_update_version_number_category">גרסת הקושחה של המכשיר</string>
     <string name="firmware_update_version_number_title">‏הקושחה של מקלדת Pixel</string>
-    <string name="gesture_aware_confirmation_action_button">הבנתי</string>
-    <string name="gesture_aware_disabled_info_dialog_content" />
-    <string name="gesture_aware_footer">
-        <annotation link="link">העדפות</annotation>
-    </string>
-    <string name="gesture_aware_off_dialog_content" />
-    <string name="gesture_aware_off_dialog_title" />
-    <string name="gesture_silence_footer">
-        <annotation link="link">העדפות</annotation>
-    </string>
-    <string name="gesture_silence_off_summary" />
-    <string name="gesture_silence_on_summary" />
-    <string name="gesture_silence_summary" />
-    <string name="gesture_skip_direction_ltr">משמאל לימין</string>
-    <string name="gesture_skip_direction_rtl">מימין לשמאל</string>
-    <string name="gesture_skip_direction_title">דילוג על הכיוון</string>
-    <string name="gesture_skip_footer">
-        <annotation link="link">העדפות</annotation>
-    </string>
-    <string name="gesture_skip_off_summary" />
-    <string name="gesture_skip_on_summary" />
-    <string name="gesture_skip_summary" />
-    <string name="gesture_tap_footer">
-        <annotation link="link">העדפות</annotation>
-    </string>
-    <string name="gesture_tap_on_summary" />
-    <string name="gesture_tap_summary" />
+    <string name="fullbackup_data_summary">"‏שימוש ב-Google Drive כדי לגבות אוטומטית את נתוני המכשיר (כמו ססמאות לרשתות Wi-Fi והיסטוריית שיחות) ונתוני אפליקציות (כמו הגדרות וקבצים המאוחסנים על ידי אפליקציות).
+
+כשהגיבוי האוטומטי פועל, נתוני המכשיר והאפליקציות נשמרים מדי פעם בתיקייה פרטית ב-Google Drive. נתוני אפליקציות יכולים להיות כל מה שהאפליקציה שמרה (בהתבסס על הגדרות המפתח), כולל נתונים שעשויים להיות רגישים, כמו אנשי קשר, הודעות ותמונות.
+
+נתונים בגיבוי לא ייחשבו כחלק ממכסת האחסון ב-Drive. לא יתבצע גיבוי של קבצים גדולים או של קבצים שהמפתחים בחרו שלא לכלול בשירות."</string>
+    <string name="fullbackup_erase_dialog_message">‏האם להפסיק לגבות את נתוני המכשיר (כמו סיסמאות לרשתות Wi-Fi והיסטוריית שיחות) ונתוני אפליקציות (כמו הגדרות וקבצים המאוחסנים על ידי אפליקציות) ולמחוק את כל העותקים השמורים ב-Google Drive?</string>
+    <string name="gesture_settings_activity_title">ניווט באמצעות תנועות</string>
     <string name="install_unknown_applications">‏אישור התקנת אפליקציות ממקורות אחרים שאינם חנות Play</string>
+    <string name="keywords_accessibility_menu">‏מוטורי, לקות מוטורית, ניידות, תפריט מהיר, תפריט מסייע, מגע, נגיעה, מוטוריקה עדינה, דלקת מפרקים, מדד העוצמה היחסית (RSI), שבץ מוחי, רעד, טרשת נפוצה, שיתוק מוחין, לחצן, כפתור, חומרה, לחיצה, פציעה בעקבות עומס חוזר ונשנה, יד, כאב, נגיש, נגישות, עזרה</string>
     <string name="keywords_adaptive_alert_vibration">מגע, רטט, טלפון, שיחה, צלצול, התראה, הודעות, רועש, שקט, רעש, כיסוי, אפשרות להתאמה</string>
     <string name="keywords_adaptive_charging">טעינה, טעינה דינמית, מתבצעת טעינה, טעינה חכמה, טעינה ניתנת להתאמה, סוללה, תקינות הסוללה</string>
-    <string name="keywords_assist_gesture_silence">"‏תנועה, מחווה, אדג', צד, אקטיב אדג', השתק, השתקה, נודניק, שעון מעורר, שיחה נכנסת, שקט, מצב שקט, מסך, צג, תצוגה, מסך נעילה, נעילת מסך, לחץ משני צדי המכשיר, אחיזה, תפיסה, עצירה, gesture, edge, side, active edge, silence, snooze, alarm, incoming call, quiet, display, lockscreen, squeeze, grip, stop"</string>
-    <string name="keywords_assist_gesture_wake">"‏תנועה, מחווה, אדג', צד, אקטיב אדג', להעיר, מסך, צג, תצוגה, כיבוי מסך, הפעלת מסך, הדלקת מסך, לחץ משני צדי המכשיר, אדג', מצב שינה, שינה, אחיזה, תפיסה, gesture, edge, side, active edge, wake, notifications, screen, display, screen off, screen on, squeeze, asleep, sleep, grip"</string>
     <string name="keywords_battery_share">שיתוף סוללה, טעינה אלחוטית</string>
     <string name="keywords_battery_share_settings">שיתוף סוללה, טעינה אלחוטית הפוכה</string>
-    <string name="keywords_gesture_silence" />
-    <string name="keywords_gesture_skip" />
-    <string name="keywords_gesture_tap" />
+    <string name="keywords_gesture">‏תנועה, תנועות, gesture‏, moves</string>
+    <string name="keywords_hearing_devices">‏כבדי שמיעה, אובדן שמיעה, לקות שמיעה, PSAP, מוקד חירום לציבור</string>
     <string name="keywords_limited_warranty">‏תנאי אחריות, אחריות, אחריות מוגבלת, הבטחה, תיקון, אישור החזרת סחורה (RMA), החלפה</string>
+    <string name="keywords_live_caption">‏כתוביות, כתוביות מיידיות, תמלול בזמן אמת, כבדי שמיעה, אובדן שמיעה, לקות שמיעה, CART, המרת דיבור לטקסט (STT), כתובית</string>
+    <string name="keywords_live_transcribe">‏כתוביות, כתוביות מיידיות, כבד שמיעה, אובדן שמיעה, CART, המרת דיבור לטקסט (STT), כתובית</string>
     <string name="keywords_reverse_charging_stop_threshold">להפסיק את שיתוף הסוללה כשהטלפון יגיע לרמה של:</string>
+    <string name="keywords_select_to_speak">שמיעת טקסט, הקראה בקול, הקראת תוכן מסך, קורא מסך</string>
+    <string name="keywords_sound_amplifier">‏PSAP, להגביר, הגברת קול, כבד שמיעה, אובדן שמיעה, הגברה</string>
+    <string name="keywords_sound_notifications">התראות, כבד שמיעה, אובדן שמיעה, להודיע</string>
+    <string name="keywords_switch_access">‏מוטורי, מתג, יד, AT, טכנולוגיה מסייעת, שיתוק, ALS, סריקה, סריקה בשלבים</string>
+    <string name="keywords_talkback">‏קורא מסך, הקראה, VoiceOver, סיוע קולי, עיוור, לקוי ראייה, TTS, המרת טקסט לדיבור, קורא מסך קולי</string>
+    <string name="keywords_touch_sensitivity">מגע, רגישות, רגיש, מגן מסך, סרט, מגיב, תגובה</string>
+    <string name="keywords_voice_access">קול, שליטה באמצעות הקול, מוטורי, יד, מיקרופון, הכתבה, דיבור, שליטה</string>
     <string name="led_preference_title">‏הדפוסים של אינדיקטור ה-LED</string>
     <string name="legal_source_code_description">‏במרכז העזרה של Pixel ניתן למצוא פרטים לגבי קוד המקור של רכיבים שזמינים כקוד פתוח.</string>
     <string name="legal_source_code_title">קוד מקור</string>
@@ -253,9 +197,12 @@
     <string name="limited_warranty_title">אחריות מוגבלת</string>
     <string name="lockscreen_show_weather_summary">הצגת תנאי מזג האוויר הנוכחיים</string>
     <string name="lockscreen_show_weather_title">הצגת נתונים של מזג האוויר</string>
+    <string name="my_device_info_account_preference_title">‏חשבון Google</string>
+    <string name="owner_info_settings_edit_text_hint">‏לדוגמה, ה-Pixel של יוסי.</string>
     <string name="permit_debugging_data">מתן גישה לדוח איתור באגים</string>
     <string name="play_application_detail_indication_summary">חיפוש עדכונים</string>
     <string name="play_application_update_entry_title">עדכונים לאפליקציות</string>
+    <string name="privatespace_retry_summary">‏עליך להיכנס לחשבון Google כדי להגדיר מרחב פרטי</string>
     <string name="repair_mode_active_summary">במצב תיקון</string>
     <string name="repair_mode_summary">סביבה מאובטחת לתיקון המכשיר</string>
     <string name="repair_mode_title">מצב תיקון</string>
@@ -286,18 +233,37 @@
     <string name="reverse_charging_unplug_usb_cable_message">‏לא זמין מפני שמחובר מכשיר USB-C</string>
     <string name="reverse_charging_warning_summary">לא זמין כי רמת טעינת הסוללה נמוכה מ-%1$s</string>
     <string name="reverse_charging_warning_title">שיתוף הסוללה אינו זמין כי רמת טעינת הסוללה נמוכה מ-%1$s</string>
-    <string name="search_gesture_category_title">חיפוש מהמסך</string>
-    <string name="search_long_press_home_button_summary">‏לוחצים לחיצה ארוכה על הלחצן הראשי כדי להפעיל את חיפוש Google במסך.</string>
-    <string name="search_long_press_home_button_title">לחיצה ארוכה על הלחצן הראשי כדי לחפש</string>
-    <string name="search_press_hold_gesture_summary">לוחצים לחיצה ארוכה על נקודת האחיזה של הניווט כדי להפעיל חיפוש מהמסך.</string>
-    <string name="search_press_hold_gesture_title">לחיצה ארוכה על נקודת האחיזה כדי לחפש</string>
+    <string name="rtt_settings_always_visible">מוצג תמיד</string>
+    <string name="rtt_settings_no_visible">לא מוצג</string>
+    <string name="rtt_settings_title">‏טקסט בזמן אמת (RTT)</string>
+    <string name="rtt_settings_visible_during_call">מוצג במהלך שיחה</string>
+    <string name="screen_time_summary_usage_today">%1$s היום</string>
+    <string name="search_bar_account_avatar_content_description">‏תמונת פרופיל, יש ללחוץ פעמיים כדי לפתוח את חשבון Google</string>
+    <string name="search_gesture_category_title">חיפוש</string>
+    <string name="search_gesture_feature_title">הקפה בעיגול כדי לחפש</string>
+    <string name="search_long_press_home_button_summary">לוחצים לחיצה ארוכה על הלחצן הראשי בתחתית המסך ולאחר מכן מקיפים בעיגול או מדגישים משהו לחיפוש</string>
+    <string name="search_press_hold_gesture_summary">לוחצים לחיצה ארוכה על נקודת האחיזה בתחתית המסך ולאחר מכן מקיפים בעיגול או מדגישים משהו לחיפוש</string>
     <string name="security_dismiss_dialog_dismiss_button">סגירה</string>
     <string name="security_dismiss_dialog_title">לסגור את האזהרה הזו?</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">אפשר להקיש כדי להגדיר</string>
+    <string name="security_settings_face_enroll_education_message">במסך הבא, עליך לסובב את הראש כדי לצלם את הפנים מכל הזוויות</string>
+    <string name="security_settings_face_enroll_error_generic_dialog_message">הסריקה לצורך זיהוי פנים לא פעלה.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">הגעת למגבלת הזמן של סריקה לצורך זיהוי פנים. יש לנסות שוב.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">פג הזמן הקצוב להגדרה של הפתיחה</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">עכשיו אפשר להשתמש בזיהוי פנים כדי לבטל את נעילת הטלפון או כדי לאמת את זהותך, למשל בכניסה לחשבון באפליקציות או באישור רכישה</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"עכשיו אפשר להרים את הטלפון או להקיש על המסך ולהשתמש בזיהוי פנים כדי לבטל את הנעילה.
 
 פתיחה ע\"י זיהוי הפנים פועלת בצורה הטובה ביותר כשיש מספיק אור, ללא מסכה וללא משקפיים כהים."</string>
+    <string name="security_settings_face_enroll_finish_title">נראה טוב!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">מגבלה בראייה או בתנועת הראש</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">העיניים צריכות להיות פתוחות</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">השליטה נמצאת בידיים שלך ושל הילד או הילדה</string>
+    <string name="security_settings_face_enroll_introduction_control_title">השליטה בידיים שלך</string>
+    <string name="security_settings_face_enroll_introduction_how_title">איך זה עובד</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">אם הילד או הילדה שלך מרכיבים בדרך כלל משקפיים, הם יכולים להרכיב אותם במהלך ההגדרה.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">אפשר להרכיב משקפיים או משקפי שמש בגוון בהיר.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">חשוב לזכור</string>
+    <string name="security_settings_face_enroll_introduction_title">"הגדרת 'פתיחה ע\"י זיהוי הפנים'"</string>
     <string name="security_settings_face_enroll_next">הבא</string>
     <string name="security_settings_face_enroll_partial_message">"כדי לשפר את הביצועים, ניתן להגדיר שוב את התכונה 'פתיחה ע\"י זיהוי הפנים' ב'הגדרות'"</string>
     <string name="security_settings_face_enroll_partial_start_over">התחלה מחדש</string>
@@ -312,8 +278,24 @@
     <string name="security_settings_face_enroll_too_hot_message">לא ניתן להשלים את ההגדרה של פתיחה ע\"י זיהוי הפנים מפני שהטלפון חם מדי. יש לנסות שוב מאוחר יותר לאחר שהטלפון יתקרר.</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">דילוג על פתיחה ע\"י זיהוי הפנים</string>
     <string name="security_settings_face_enroll_too_hot_title">הטלפון חם מדי</string>
+    <string name="security_settings_face_preference_summary_none">יש להקיש כדי להגדיר זיהוי פנים</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"‏עם Nexus Imprint ניתן להשתמש בטביעת האצבע שלך כדי לאשר רכישות או להיכנס לאפליקציות.
+
+יש לשים לב כשמוסיפים טביעות אצבע של אנשים. כל מי שהוספת טביעת אצבע שלו יוכל לבצע את הפעולות האלה.
+
+הערה: אי אפשר להשתמש בטביעת האצבע שלך כדי לבטל את הנעילה של המכשיר הזה. לקבלת מידע נוסף, יש לפנות למנהל המערכת בארגון שלך."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">‏ביטול נעילה באמצעות Nexus Imprint</string>
+    <string name="security_settings_fingerprint_preference_summary_none">יש להקיש כדי להגדיר טביעת אצבע</string>
+    <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">"‏הפיצ'ר Pixel Imprint יוצר תבנית ייחודית של טביעת האצבע שלך כדי לאמת את זהותך. תהליך היצירה של תבנית לטביעת האצבע כולל צילום תמונות של טביעת האצבע שלך מזוויות שונות."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">"‏הפיצ'ר Pixel Imprint יוצר תבנית ייחודית של טביעת האצבע של הילד או הילדה כדי לאמת את זהותם. כדי ליצור את התבנית הזו לטביעת האצבע במהלך ההגדרה, יהיה עליהם לצלם תמונות של טביעת האצבע מזוויות שונות."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"‏מידע נוסף על ביטול הנעילה של Pixel בטביעת אצבע זמין בכתובת &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
+    <string name="security_settings_work_fingerprint_preference_title">‏Pixel Imprint לעבודה</string>
     <string name="setup_suggestion_summary">רק עוד כמה שלבים</string>
     <string name="setup_suggestion_title">סיום תהליך ההגדרה</string>
+    <string name="smart_battery_footer">"כדי להאריך את חיי הסוללה, התכונה 'אופטימיזציה של ניצול הסוללה' עשויה להפחית את רמת הביצועים ואת הפעילות ברקע. ייתכן שיהיה עיכוב בקבלת התראות מסוימות."</string>
+    <string name="smart_battery_manager_title">העדפות סוללה</string>
+    <string name="smart_battery_title">אופטימיזציה של ניצול הסוללה</string>
     <string name="software_update_can_be_updated_header">‏רוצה לשפר את Pixel אפילו יותר?</string>
     <string name="software_update_detail_indication_1_update_available">יש עדכון זמין</string>
     <string name="software_update_detail_indication_2_or_more_updates_available">%1$d עדכונים זמינים</string>
@@ -326,9 +308,11 @@
     <string name="software_update_up_to_date_summary">מעודכנת</string>
     <string name="software_update_up_to_specific_date_summary">עודכן לתאריך %1$s</string>
     <string name="software_update_update_available_summary">יש עדכון זמין</string>
+    <string name="sound_dashboard_summary">עוצמת קול, משוב פיזי, נא לא להפריע</string>
     <string name="speed_boost_summary_off">מושבתת</string>
     <string name="speed_boost_summary_on">מופעלת</string>
     <string name="speed_boost_title">הגברת מהירות הספקטרום</string>
+    <string name="suggested_fingerprint_lock_settings_title">‏שימוש ב-Pixel Imprint</string>
     <string name="suw_limited_warranty_title">אחריות מוגבלת</string>
     <string name="suw_warranty_description">‏כדי לראות את האחריות המוגבלת, עליך לבחור את המדינה שבה קנית את המכשיר הזה.&lt;br /&gt;&lt;br /&gt;תנאי האחריות זמינים גם ב&lt;b&gt;הגדרות &gt; מידע על הטלפון &gt; אחריות מוגבלת&lt;/b&gt; ובכתובת g.co/devicewarranty.</string>
     <string name="suw_warranty_description_content">"‏כדי לראות את האחריות המוגבלת, עליך לבחור את המדינה שבה קנית את המכשיר הזה. תנאי האחריות זמינים גם ב'הגדרות' &gt; 'מידע על הטלפון' &gt; 'אחריות מוגבלת', ובכתובת g.co/devicewarranty."</string>
@@ -336,10 +320,11 @@
     <string name="suw_warranty_positive_button_text">סגירה</string>
     <string name="system_update_entry_title">עדכון מערכת</string>
     <string name="system_updates_group_title">‏עדכונים ל-Pixel</string>
-    <string name="tips_suggestion_summary">מה אפשר לעשות בעזרת הטלפון?</string>
-    <string name="tips_suggestion_title">‏טיפים ל-Pixel</string>
+    <string name="touch_sensitivity_summary">הגברת הרגישות למגע ושיפור של זיהוי המגע כשמשתמשים במגן מסך</string>
+    <string name="touch_sensitivity_title">מצב מגן מסך</string>
     <string name="traffic_light_face_enrolling_title_accessibility">צריך להחזיק את הטלפון מול הפנים</string>
     <string name="unified_battery_saver_page_intro">כדאי לחסוך בשימוש בסוללת הטלפון כדי להאריך את חיי הסוללה בין טעינות</string>
+    <string name="usb_use_file_transfers">‏העברת קבצים / Android Auto</string>
     <string name="vpn_app_bypass">החרגת האפליקציות שנבחרו</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">אפליקציות הספק הנוכחיות</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">‏להחריג %1$d אפליקציות ספק מ-VPN?</string>
@@ -360,12 +345,9 @@
     <string name="vpn_exclude_ntf_content">‏יכול להיות שחלק מאפליקציות הספק שהותקנו לאחרונה לא יעבדו עם ה-VPN</string>
     <string name="vpn_exclude_ntf_title">‏להחריג אפליקציות חדשות מ-VPN?</string>
     <string name="vpn_preference_group_title">אחרים</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_title" />
-    <string name="wake_screen_suggestion_summary" />
-    <string name="wake_screen_suggestion_title" />
+    <string name="wallpaper_dashboard_summary">צבעים, סמלים מעוצבים, תצוגת אפליקציות</string>
     <string name="warranty_country_information">%1$s (%2$s)</string>
+    <string name="wifi_subscription_summary">‏הצגה או שינוי של מינוי OpenRoaming</string>
     <string name="wifitrackerlib_connected_with_wsu_authenticator">מחובר עם %1$s</string>
     <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">יש להקיש כדי להתחבר</string>
     <string name="wifitrackerlib_wsu_entry_summary_provision_error">לא ניתן להתחבר. יש להקיש כדי לנסות שוב.</string>

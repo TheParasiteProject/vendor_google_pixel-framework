@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="aware_category_display" />
-    <string name="aware_category_gesture" />
-    <string name="aware_display_settings_title">Ekrani i kyçjes në gjendje joaktive</string>
-    <string name="aware_settings_description" />
-    <string name="aware_settings_summary" />
-    <string name="gesture_silence_title">Gjesti i sinjalizimeve të heshtjes</string>
-    <string name="gesture_skip_title">Gjesti i kapërcimit</string>
-    <string name="keywords_touch_sensitivity">prekje, ndjeshmëri, i ndjeshëm, mbrojtësi i ekranit, shtresë plastike, reagues, reagueshmëria</string>
-    <string name="keywords_wake_display" />
-    <string name="touch_sensitivity_summary">Rrit ndjeshmërinë e prekjes dhe përmirëso prekjen kur përdor një mbrojtës ekrani</string>
-    <string name="touch_sensitivity_title">Modaliteti i mbrojtësit të ekranit</string>
-    <string name="columbus_title">\"Trokit shpejt\" për të filluar veprimet</string>
-    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Konfigurimi i Active Edge. Shko tek ekrani tjetër ose vazhdo me rregullimin.</string>
     <string name="accessibility_keyboard_haptics_title">Prekja e tastierës</string>
     <string name="adaptive_alert_vibration_summary">Zvogëlon forcën e dridhjeve kur telefoni është i palëvizur dhe ekrani është i kthyer lart</string>
     <string name="adaptive_alert_vibration_title">Dridhja sinjalizuese me përshtatje</string>
@@ -30,71 +17,26 @@
     <string name="all_apps_category_title">Të gjitha aplikacionet</string>
     <string name="allow_debugging_data_description">Google përdor raporte të defekteve në kod për të diagnostikuar problemet me aplikacionin dhe pajisjen sipas <a href="https://policies.google.com/privacy">Politikës sonë të privatësisë</a>".
 
-"<b>Raportet e defekteve në kod përmbajnë evidenca të aplikacioneve dhe të sistemit</b>" dhe mund të përfshijnë informacione personale dhe të pajisjeve, si p.sh emra, adresa email-i, numra telefoni, të dhënat e vendndodhjes, identifikues të pajisjes dhe informacione të rrjetit. Raportet mund të ndahen me partnerët inxhinierikë që me gjasa janë ndikuar nga problemi yt.
+"<b>Raportet e defekteve në kod përmbajnë evidenca të aplikacionit dhe të sistemit</b>" dhe mund të përfshijnë informacione personale dhe të pajisjeve, si p.sh emra, adresa email-i, numra telefoni, të dhënat e vendndodhjes, identifikues të pajisjes dhe informacione të rrjetit. Raportet mund të ndahen me partnerët inxhinierikë që mund të jenë prekur nga problemi yt.
 
-Dhënia e qasjes do ta lejojë aplikacionin të "<b>mbledhë dhe të ngarkojë automatikisht raporte të defekteve në kod</b>" të cilat përmbajnë evidenca të aplikacionit dhe të sistemit për të gjitha problemet e raportuara.
+Dhënia e qasjes do ta lejojë këtë aplikacion që "<b>të mbledhë dhe të ngarkojë automatikisht raporte të defekteve në kod</b>", duke përfshirë evidenca të aplikacionit dhe të sistemit nga profilet personale dhe të punës për të gjitha problemet që raporton ti.
 
 Revokimi i qasjes do t'i kërkojë aplikacionit që të kërkojë lejen tënde për të mbledhur dhe ngarkuar një raport të defekteve në kod për çdo raport individual të problemeve."</string>
-    <string name="ambient_display_wake_screen_footer">
-        <annotation link="link">Preferencat</annotation>
-    </string>
-    <string name="ambient_display_wake_screen_summary" />
-    <string name="ambient_display_wake_screen_summary_on" />
-    <string name="assist_gesture_enrollment_continue_to_assistant">Vazhdo tek \"Asistenti\"</string>
-    <string name="assist_gesture_enrollment_do_it_later">Bëje më vonë</string>
-    <string name="assist_gesture_enrollment_seekbar_light">Shtrydhje e lehtë</string>
-    <string name="assist_gesture_enrollment_seekbar_strong">Shtrydhje e fortë</string>
-    <string name="assist_gesture_enrollment_settings">Cilësimet</string>
-    <string name="assist_gesture_setting_enable_assistant_text">Për të folur me \"Asistentin\", shtrydh me shpejtësi gjysmën e poshtme të telefonit, e më pas lëshoje.</string>
-    <string name="assist_gesture_setting_enable_assistant_title">Shtrydhe për \"Asistentin\" tënd</string>
-    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Shtrydh për të vendosur në heshtje alarmet, kohëmatësit, njoftimet dhe telefonatat hyrëse</string>
-    <string name="assist_gesture_setting_enable_ring_silence_text">Shtrydh për të vendosur në heshtje njoftimet dhe telefonatat hyrëse</string>
-    <string name="assist_gesture_setting_enable_ring_silence_title">Shtrydhe për ta vendosur telefonin në heshtje</string>
-    <string name="assist_gesture_setting_enable_wake_title">Hap \"Asistentin\" kur ekrani të jetë fikur</string>
-    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Shtrydhje e lehtë</string>
-    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Shtrydhje e fortë</string>
-    <string name="assist_gesture_squeeze_sensitivity_label">Ndjeshmëria e shtrydhjes</string>
-    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Mund të aktivizojë pa dashje \"Asistentin\"</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Shtrydh gjysmën e poshtme të telefonit</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Shtrydh më shpejt</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Shtrydhe më shumë</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Shtrydh me shpejtësi dhe më pas lëshoje</string>
-    <string name="assist_gesture_training_enrolling_error_try_adjusting">Provo të rregullosh rrëshqitësin</string>
-    <string name="assist_gesture_training_enrolling_text">Shtrydh gjysmën e poshtme të telefonit. Mund të rregullosh forcën që nevojitet për të shtrydhur.</string>
-    <string name="assist_gesture_training_enrolling_title">Shtrydh me shpejtësi dhe lëshoje</string>
-    <string name="assist_gesture_training_finished_text">Gjithashtu mund ta ndryshosh ndjeshmërinë e shtrydhjes më vonë te \"Cilësimet\"</string>
-    <string name="assist_gesture_training_finished_title">Përfundo ose vazhdo ta rregullosh</string>
-    <string name="assist_gesture_training_intro_text">Për të folur me \"Asistentin\" në çdo kohë, shtrydh me shpejtësi gjysmën e poshtme të telefonit dhe më pas lëshoje.</string>
-    <string name="assist_gesture_training_intro_title">Shtrydhe për \"Asistentin\" tënd</string>
-    <string name="assist_gesture_training_suggestion_summary">Fol me \"Asistentin\", vendos në heshtje telefonatat</string>
-    <string name="assist_gesture_training_suggestion_summary_including_alarms">Fol me \"Asistentin\", vendos në heshtje alarmet dhe telefonatat</string>
-    <string name="assist_gesture_training_suggestion_title">Shtrydh dhe lësho për \"Asistentin\"</string>
-    <string name="aware_category_security" />
-    <string name="aware_disabled_preference_action">Aktivizo</string>
-    <string name="aware_disabled_preference_dialog_content" />
-    <string name="aware_disabled_preference_dialog_title" />
-    <string name="aware_disabled_preference_neutral">Jo tani</string>
-    <string name="aware_footer_when_airplane_batterysaver_on">Motion Sense nuk ofrohet sepse modaliteti i aeroplanit dhe \"Kursyesi i baterisë\" janë të aktivizuar</string>
-    <string name="aware_footer_when_airplane_on">Motion Sense nuk ofrohet sepse modaliteti i aeroplanit është i aktivizuar</string>
-    <string name="aware_footer_when_batterysaver_on">Motion Sense nuk ofrohet sepse \"Kursyesi i baterisë\" është i aktivizuar</string>
-    <string name="aware_gesture_summary_off">\"Gjestet e shpejta\" është aktiv, Active Edge është joaktiv</string>
-    <string name="aware_gesture_summary_on_non_assist">\"Gjestet e shpejta\" është aktiv, Active Edge është aktiv</string>
-    <string name="aware_gesture_summary_on_with_assist">\"Gjestet e shpejta\" është aktiv, Active Edge është aktiv, shtrydhe për \"Asistentin\"</string>
-    <string name="aware_info_button_description">Cilësime të tjera</string>
-    <string name="aware_settings_disabled_info_dialog_content" />
-    <string name="aware_settings_disabled_info_dialog_title" />
-    <string name="aware_settings_enabled_info_dialog_content" />
-    <string name="aware_settings_enabled_info_dialog_title" />
-    <string name="aware_settings_suggestion_summary" />
-    <string name="aware_settings_suggestion_title" />
-    <string name="aware_summary_when_airplane_batterysaver_on">Nuk ofrohet sepse modaliteti i aeroplanit dhe \"Kursyesi i baterisë\" janë të aktivizuar</string>
-    <string name="aware_summary_when_airplane_on">Nuk ofrohet sepse modaliteti i aeroplanit është i aktivizuar</string>
-    <string name="aware_summary_when_batterysaver_on">Nuk ofrohet sepse \"Kursyesi i baterisë\" është i aktivizuar</string>
-    <string name="aware_wake_display_summary" />
-    <string name="aware_wake_display_summary_aod_off" />
-    <string name="aware_wake_display_title" />
+    <string name="app_and_notification_dashboard_summary">Asistenti, aplikacionet e fundit, aplikacionet e parazgjedhura</string>
+    <string name="automatic_storage_manager_activation_warning">Kur të jesh i lidhur, mund të kesh përsëri qasje te fotografitë dhe videot me cilësinë që ke zgjedhur për rezervimin</string>
+    <string name="automatic_storage_manager_days_title">Fotografitë dhe videot e rezervuara</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Të çaktivizohet \"Hapësira ruajtëse inteligjente\"? 
+
+\"Hapësira ruajtëse inteligjente\" nuk do të lirojë hapësirë kur hapësira jote ruajtëse është pothuajse plot."</string>
+    <string name="automatic_storage_manager_preference_title">Hapësira ruajtëse inteligjente</string>
+    <string name="automatic_storage_manager_primary_switch_title">Përdor \"Hapësirën ruajtëse inteligjente\"</string>
+    <string name="automatic_storage_manager_settings">Hapësira ruajtëse inteligjente</string>
+    <string name="automatic_storage_manager_text">"Kur hapësira ruajtëse të jetë thuajse plot, hiq fotografitë dhe videot e rezervuara. Mund t'i gjesh ato përsëri te \"Fotografitë e Google\"."</string>
     <string name="basic_battery_saver_summary">Kufizon efektet vizuale dhe aktivitetin në sfond. Aktivizon \"Temën e errët\", nëse nuk është aktivizuar tashmë.</string>
     <string name="basic_battery_saver_title">Kursyesi standard i baterisë</string>
+    <string name="battery_manager_summary">Rrit kohëzgjatjen e baterisë dhe optimizo karikimin</string>
+    <string name="battery_manager_summary_unsupported">Zgjat kohëzgjatjen e baterisë</string>
+    <string name="battery_missing_link_message">Mëso më shumë</string>
     <string name="battery_saver_reminder_category">Alarmet rikujtuese</string>
     <string name="battery_saver_reminder_switch_summary">Merr alarme rikujtuese kur bateria është në nivel të ulët</string>
     <string name="battery_saver_reminder_switch_title">Alarmet rikujtuese për \"Kursyesin e baterisë\"</string>
@@ -103,7 +45,11 @@ Revokimi i qasjes do t'i kërkojë aplikacionit që të kërkojë lejen tënde p
     <string name="battery_saver_schedule_switch_title">Aktivizo bazuar në nivelin e baterisë</string>
     <string name="battery_schedule_summary">Menaxhoje kur aktivizohet \"Kursyesi i baterisë\"</string>
     <string name="battery_schedule_title">Planifikimi dhe alarmet rikujtuese</string>
+    <string name="battery_tip_battery_health_learn_more_description">Mëso më shumë për gjendjen e baterisë</string>
+    <string name="battery_tip_battery_health_reduced_title">Kapaciteti i baterisë është reduktuar</string>
+    <string name="battery_tip_battery_health_unknown_title">Gjendja e baterisë nuk mund të zbulohet</string>
     <string name="battery_tip_limited_temporarily_extra_summary">Për të mbrojtur baterinë tënde, karikimi vendoset në pauzë në %1$s kur tableti yt është i lidhur me stacionin</string>
+    <string name="battery_tip_smart_battery_summary">Aktivizo \"Baterinë me përshtatje\"</string>
     <string name="clear_calling_footer">"Për të mbrojtur privatësinë tënde, \"Telefonata e qartë\" nuk dërgon audio apo biseda te Google.
 
 \"Telefonata e qartë\" funksionon në telefonatat Wi‑Fi dhe në shumicën e rrjeteve, nuk ofrohet për rrjetet 3G."</string>
@@ -154,8 +100,11 @@ Revokimi i qasjes do t'i kërkojë aplikacionit që të kërkojë lejen tënde p
     <string name="columbus_setting_app_shortcut_selection_help_text">Zgjidh se çfarë ndodh kur e hap këtë aplikacion duke përdorur \"Trokitjen e shpejtë\".</string>
     <string name="columbus_setting_enable_switch_title">Përdor \"Trokitjen e shpejtë\"</string>
     <string name="columbus_setting_sensitivity_title">Kërko trokitje më të forta</string>
+    <string name="columbus_title">\"Trokit shpejt\" për të filluar veprimet</string>
     <string name="communal_lock_screen_summary">Privatësia, njoftimet dhe kontrollet e shtëpisë</string>
     <string name="communal_other">Të tjera</string>
+    <string name="communal_settings_summary">Opsionet e stacionit dhe të ekranit të kyçjes</string>
+    <string name="communal_settings_title">Modaliteti i qendrës</string>
     <string name="communal_smartspace_summary">Alarmet rikujtuese, sinjalizimet etj. nga \"Asistenti\"</string>
     <string name="communal_smartspace_title">Shkurtimisht</string>
     <string name="communal_what_to_show">Çfarë të shfaqet</string>
@@ -166,17 +115,16 @@ Revokimi i qasjes do t'i kërkojë aplikacionit që të kërkojë lejen tënde p
     <string name="connectivity_helper_d2d_summary">Njoftoje personin tjetër kur telefoni yt ka probleme me lidhjen gjatë telefonatave</string>
     <string name="connectivity_helper_d2d_title">Ndaj informacionin e lidhjes</string>
     <string name="connectivity_helper_footnote">Nuk mund ta ndash informacionin e lidhjes kur telefonuesi tjetër është duke përdorur një pajisje dhe rrjet të mbështetur</string>
+    <string name="content_capture">Personalizo duke përdorur të dhënat e aplikacioneve</string>
+    <string name="content_protection_preference_subpage_info">"Kjo është një veçori e mbrojtur sigurie. Nuk ndahen informacionet e pajisjes apo informacione personale me Google. 
+
+Mashtrimi është një përpjekje për të vjedhur kredencialet e identifikimit ose informacione të tjera personale."</string>
+    <string name="content_protection_preference_subpage_summary">Skanimi ekzekutohet në mënyrë private pikërisht në pajisjen tënde, duke kontrolluar aktivitetin e aplikacioneve për mashtrime ose sjellje të tjera mashtruese. Nëse zbulohen, disa informacione të aplikacionit dërgohen te Google Play Protect për të konfirmuar kërcënimin dhe për të paralajmëruar përdoruesit e tjerë të aplikacionit.</string>
     <string name="debugging_data_title">Të dhënat e korrigjimit të gabimeve</string>
-    <string name="dialog_aware_settings_message" />
-    <string name="dialog_aware_settings_ok" />
-    <string name="dialog_aware_settings_title" />
     <string name="discover_tips_button">Zbulo këshilla</string>
-    <string name="dock_setup_notification_text" />
     <string name="dock_summary_charging_phone">Telefoni po karikohet</string>
-    <string name="dream_no_screen_saver_caption" />
-    <string name="dream_no_screen_saver_description" />
-    <string name="dream_no_screen_saver_preview_caption" />
-    <string name="dream_secondary_button_title" />
+    <string name="double_twist_for_camera_mode_summary">Për të hyrë dhe dalë nga modaliteti për \"selfie\" në \"Kamerën e Google\", përdridhe dy herë kur je në aplikacion.</string>
+    <string name="duration_less_than_one_minute">Më pak se 1 minutë</string>
     <string name="extreme_battery_saver_summary">Përfshin të gjitha ndryshimet e listuara më sipër. Vendos në pauzë edhe aplikacionet jothelbësore dhe njoftimet e tyre.</string>
     <string name="extreme_battery_saver_title">Kursyesi ekstrem i baterisë</string>
     <string name="face_confirmation_hide_illustration_description">Tani kur ngre telefonin ose troket në ekran, mund të përdorësh fytyrën tënde për ta shkyçur.</string>
@@ -203,49 +151,44 @@ Revokimi i qasjes do t'i kërkojë aplikacionit që të kërkojë lejen tënde p
     <string name="face_enrolling_too_right">Lëvize telefonin në të majtën tënde</string>
     <string name="face_enrolling_turn_head_to_arrow">Ktheje kokën drejt shigjetës</string>
     <string name="face_enrolling_turned_too_far">Ktheje më pak kokën</string>
+    <string name="fast_pair_device_not_found_dialog_title">Lidhja dështoi</string>
+    <string name="fast_pair_device_not_found_other_device_description">Afroje këtë pajisje me telefonin Pixel dhe provo sërish.</string>
+    <string name="fast_pair_device_not_found_tws_headphone_description">Hap kasën e kufjeve të vogla, afroje me telefonin Pixel e provo sërish.</string>
+    <string name="fingerprint_unlock_set_unlock_password">Nexus Imprint dhe fjalëkalim</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Nexus Imprint dhe motiv</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Nexus Imprint dhe kod PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Vazhdo pa Nexus Imprint</string>
+    <string name="firmware_update_accessory_version_number_title">Firmueri i aksesorit</string>
     <string name="firmware_update_status_category">Statusi i firmuerit të pajisjes</string>
     <string name="firmware_update_status_title">Ofrohet përditësimi i firmuerit</string>
     <string name="firmware_update_version_number_category">Versioni i firmuerit të pajisjes</string>
     <string name="firmware_update_version_number_title">Firmueri i tastierës së Pixel</string>
-    <string name="gesture_aware_confirmation_action_button">E kuptova</string>
-    <string name="gesture_aware_disabled_info_dialog_content" />
-    <string name="gesture_aware_footer">
-        <annotation link="link">Preferencat</annotation>
-    </string>
-    <string name="gesture_aware_off_dialog_content" />
-    <string name="gesture_aware_off_dialog_title" />
-    <string name="gesture_silence_footer">
-        <annotation link="link">Preferencat</annotation>
-    </string>
-    <string name="gesture_silence_off_summary" />
-    <string name="gesture_silence_on_summary" />
-    <string name="gesture_silence_summary" />
-    <string name="gesture_skip_direction_ltr">Nga e majta në të djathtë</string>
-    <string name="gesture_skip_direction_rtl">Nga e djathta në të majtë</string>
-    <string name="gesture_skip_direction_title">Kapërce drejtimin</string>
-    <string name="gesture_skip_footer">
-        <annotation link="link">Preferencat</annotation>
-    </string>
-    <string name="gesture_skip_off_summary" />
-    <string name="gesture_skip_on_summary" />
-    <string name="gesture_skip_summary" />
-    <string name="gesture_tap_footer">
-        <annotation link="link">Preferencat</annotation>
-    </string>
-    <string name="gesture_tap_on_summary" />
-    <string name="gesture_tap_summary" />
+    <string name="fullbackup_data_summary">"Rezervo automatikisht te \"Disku i Google\" të dhënat e pajisjes (si p.sh. fjalëkalimet e Wi-Fi dhe historikun e telefonatave) dhe të dhënat e aplikacioneve (si p.sh. cilësimet dhe skedarët e ruajtur nga aplikacionet).
+
+Kur aktivizon rezervimin automatik, të dhënat e pajisjes dhe të aplikacioneve ruhen periodikisht te një dosje private në \"Diskun e Google\". Të dhënat e aplikacioneve mund të jenë çdo e dhënë që ka ruajtur një aplikacion (bazuar në cilësimet e zhvilluesit), duke përfshirë të dhëna ndoshta delikate, si p.sh. kontaktet, mesazhet dhe fotografitë.
+
+Të dhënat e rezervimit nuk do të ndikojnë në kuotat e hapësirës ruajtëse të \"Diskut të Google\". Skedarët e mëdhenj ose skedarët që zhvilluesit kanë zgjedhur t'i përjashtojnë nga shërbimi nuk do të rezervohen."</string>
+    <string name="fullbackup_erase_dialog_message">Ndalo rezervimin e të dhënave të pajisjes (si p.sh. fjalëkalimet e Wi-Fi dhe historikun e telefonatave) dhe të dhënat e aplikacioneve (si p.sh. cilësimet dhe skedarët e ruajtur nga aplikacionet) dhe spastro të gjitha kopjet në Diskun e Google?</string>
+    <string name="gesture_settings_activity_title">Navigimi me gjeste</string>
     <string name="install_unknown_applications">Lejo instalimin e aplikacioneve nga burime të ndryshme nga Dyqani \"Luaj\"</string>
+    <string name="keywords_accessibility_menu">motorik, meny e shpejtë, meny ndihmëse, prekje, shkathtësi, artrit, rsi, goditje në tru, dridhje, sklerozë multiple, paralizë cerebrale, buton, harduer, shtyp, lëndim nga sforcim i përsëritur, dorë, dhimbje, e qasshme, ndihmë</string>
     <string name="keywords_adaptive_alert_vibration">prekje, dridhje, telefon, telefonatë, zile, sinjalizim, njoftime, i lartë, i qetë, zhurmë, kasa, me përshtatje</string>
     <string name="keywords_adaptive_charging">kariko, karikim, karikim inteligjent, karikim me përshtatje, bateri, integriteti i baterisë</string>
-    <string name="keywords_assist_gesture_silence">gjest, skaji, ana, skaji aktiv, heshtje, shtyj, alarm, telefonatë hyrëse, i qetë, ekrani, ekrani i kyçjes, shtrydh, kap, ndalo</string>
-    <string name="keywords_assist_gesture_wake">gjest, skaji, ana, skaji aktiv, zgjoj, njoftime, ekrani, shfaq, ekrani joaktiv, ekrani aktiv, shtrydh, në gjumë, gjumi, kap</string>
     <string name="keywords_battery_share">ndarja e baterisë, karikimi wireless</string>
     <string name="keywords_battery_share_settings">ndarja e baterisë, karikimi wireless në të kundërt</string>
-    <string name="keywords_gesture_silence" />
-    <string name="keywords_gesture_skip" />
-    <string name="keywords_gesture_tap" />
+    <string name="keywords_gesture">gjest, lëvizje</string>
+    <string name="keywords_hearing_devices">vështirësi në dëgjim, humbje dëgjimi, PSAP</string>
     <string name="keywords_limited_warranty">garanci, siguri, garanci e kufizuar, premtim, riparim, AKM, zëvendësim</string>
+    <string name="keywords_live_caption">Titrat, titra, CC, \"Transkriptim në çast\", vështirësi në dëgjim, humbje e dëgjimit, CART, ligjërimi në tekst, titra</string>
+    <string name="keywords_live_transcribe">Titrat, CC, Titrat në çast, vështirësi në dëgjim, humbje e dëgjimit, CART, ligjërimi në tekst, nëntitull</string>
     <string name="keywords_reverse_charging_stop_threshold">Ndalo ndarjen e baterisë kur telefoni arrin:</string>
+    <string name="keywords_select_to_speak">Dëgjo tekst, lexo me zë të lartë, lexo ekranin, lexuesi i ekranit</string>
+    <string name="keywords_sound_amplifier">PSAP, amplifiko, amplifikimi i tingujve, vështirësi në dëgjim, humbje e dëgjimit, amplifikim</string>
+    <string name="keywords_sound_notifications">Njoftimet, vështirësi në dëgjim, humbje e dëgjimit, njofto</string>
+    <string name="keywords_switch_access">aftësitë motorike, çelësi, dora, AT, teknologjia ndihmëse, paralizë, ALS, skanim, skanim me hapa</string>
+    <string name="keywords_talkback">Lexuesi i ekranit, regjistrimi i zërit, VoiceOver, Ndihma zanore, i verbër, shikim i dobët, TTS, teksti-në-ligjërim, komentet me zë</string>
+    <string name="keywords_touch_sensitivity">prekje, ndjeshmëri, i ndjeshëm, mbrojtësi i ekranit, shtresë plastike, reagues, reagueshmëria</string>
+    <string name="keywords_voice_access">zëri, kontrolli zanor, aftësitë motorike, dora, mikrofoni, mikrofon, diktim, flas, kontrolloj</string>
     <string name="led_preference_title">Motivet e treguesit LED</string>
     <string name="legal_source_code_description">Detajet për kodin e burimit për përbërësit e ofruar si me burim të hapur mund të gjendjen në qendrën e ndihmës të Pixel.</string>
     <string name="legal_source_code_title">Kodi i burimit</string>
@@ -253,9 +196,12 @@ Revokimi i qasjes do t'i kërkojë aplikacionit që të kërkojë lejen tënde p
     <string name="limited_warranty_title">Garancia e kufizuar</string>
     <string name="lockscreen_show_weather_summary">Shiko kushtet aktuale të motit</string>
     <string name="lockscreen_show_weather_title">Shfaq motin</string>
+    <string name="my_device_info_account_preference_title">Llogaria e Google</string>
+    <string name="owner_info_settings_edit_text_hint">P.sh. pajisja Pixel e Admirit</string>
     <string name="permit_debugging_data">Lejo qasjen te raportet e defekteve në kod</string>
     <string name="play_application_detail_indication_summary">Kontrollo për përditësime</string>
     <string name="play_application_update_entry_title">Përditësimet e aplikacioneve</string>
+    <string name="privatespace_retry_summary">Duhet të identifikohesh në një \"Llogari të Google\" për të konfiguruar \"Hapësirën private\"</string>
     <string name="repair_mode_active_summary">Në modalitetin e riparimit</string>
     <string name="repair_mode_summary">Mjedis i sigurt për riparimin e pajisjes</string>
     <string name="repair_mode_title">Modaliteti i riparimit</string>
@@ -286,18 +232,39 @@ Ktheje telefonin nga ana tjetër dhe provo."</string>
     <string name="reverse_charging_unplug_usb_cable_message">Nuk ofrohet për shkak se pajisja USB-C është në prizë</string>
     <string name="reverse_charging_warning_summary">Nuk ofrohet sepse bateria është nën %1$s</string>
     <string name="reverse_charging_warning_title">\"Ndarja e baterisë\" nuk ofrohet sepse bateria është nën %1$s</string>
-    <string name="search_gesture_category_title">Kërkimi nga ekrani</string>
-    <string name="search_long_press_home_button_summary">Shtyp dhe mbaj shtypur butonin \"Kreu\" për të nisur \"Kërko në Google\" në ekranin tënd.</string>
-    <string name="search_long_press_home_button_title">Mbaj shtypur butonin \"Kreu\" për të kërkuar</string>
-    <string name="search_press_hold_gesture_summary">Shtyp dhe mbaj shtypur dorezën e navigimit për të nisur kërkimin nga ekrani yt.</string>
-    <string name="search_press_hold_gesture_title">Mbaj shtypur dorezën për të kërkuar</string>
+    <string name="rtt_settings_always_visible">Gjithmonë i dukshëm</string>
+    <string name="rtt_settings_no_visible">Jo i dukshëm</string>
+    <string name="rtt_settings_title">Teksti në kohë reale (RTT)</string>
+    <string name="rtt_settings_visible_during_call">I dukshëm gjatë telefonatës</string>
+    <string name="screen_time_summary_usage_today">%1$s sot</string>
+    <string name="search_bar_account_avatar_content_description">Fotografia e profilit, trokit dy herë për të hapur \"Llogarinë e Google\"</string>
+    <string name="search_gesture_category_title">Kërkimi</string>
+    <string name="search_gesture_feature_title">Qarko për të kërkuar</string>
+    <string name="search_long_press_home_button_summary">Prek dhe mbaj shtypur butonin \"kreu\" në fund të ekranit dhe më pas qarko ose thekso çfarëdolloj gjëje për të kërkuar</string>
+    <string name="search_press_hold_gesture_summary">Prek dhe mbaj shtypur dorezën në fund të ekranit dhe më pas qarko ose thekso çfarëdolloj gjëje për të kërkuar</string>
     <string name="security_dismiss_dialog_dismiss_button">Hiq</string>
     <string name="security_dismiss_dialog_title">Të hiqet ky paralajmërim?</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">Trokit për ta konfiguruar</string>
+    <string name="security_settings_face_enroll_consent_introduction_title">Lejo \"Shkyçjen me fytyrë\"</string>
+    <string name="security_settings_face_enroll_dialog_ok">Në rregull</string>
+    <string name="security_settings_face_enroll_education_message">Në ekranin tjetër, rrotullo kokën për të regjistruar të gjitha këndet e fytyrës sate</string>
+    <string name="security_settings_face_enroll_error_generic_dialog_message">Regjistrimi me fytyrë nuk funksionoi.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">U arrit afati i regjistrimit. Provo sërish.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Konfigurimit të \"Shkyçjes me fytyrë\" i mbaroi koha</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Tani mund të përdorësh fytyrën tënde për të shkyçur telefonin ose për të verifikuar që je ti, p.sh. kur identifikohesh në aplikacione ose kur miraton një blerje</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Tani kur ngre telefonin ose troket ekranin, mund të përdorësh fytyrën tënde për ta shkyçur.
 
 \"Shkyçja me fytyrë\" funksionon më mirë kur ka mjaftueshëm ndriçim dhe nuk ke vënë një maskë ose syze të errëta."</string>
+    <string name="security_settings_face_enroll_finish_title">Duket mirë!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Konfigurimi për kufizime me shikimin ose lëvizjen e kokës</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Kërko sy të hapur</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Kontrollin e ke ti dhe fëmija yt</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Kontrolli është në duart e tua</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Si funksionon</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">"Nëse fëmija yt normalisht mban syze, mund t'i mbajë dhe gjatë konfigurimit."</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Syzet optike dhe syzet e diellit me nuancë të lehtë janë të pranueshme.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Ki parasysh</string>
+    <string name="security_settings_face_enroll_introduction_title">Konfiguro \"Shkyçjen me fytyrë\"</string>
     <string name="security_settings_face_enroll_next">Para</string>
     <string name="security_settings_face_enroll_partial_message">Për të përmirësuar cilësinë e funksionimit, mund ta konfigurosh \"Shkyçjen me fytyrë\" përsëri te \"Cilësimet\"</string>
     <string name="security_settings_face_enroll_partial_start_over">Fillo nga e para</string>
@@ -312,8 +279,24 @@ Për të përmirësuar cilësinë e funksionimit, mund ta konfigurosh \"Shkyçje
     <string name="security_settings_face_enroll_too_hot_message">Konfigurimi i \"Shkyçjes me fytyrë\" nuk mund të kryhet për shkak se telefoni është tepër i nxehtë. Provo përsëri më vonë kur telefoni të ftohet.</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Kapërce \"Shkyçjen me fytyrë\"</string>
     <string name="security_settings_face_enroll_too_hot_title">Telefoni është tepër i nxehtë</string>
+    <string name="security_settings_face_preference_summary_none">Trokit për të konfiguruar fytyrën</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Me Nexus Imprint, mund ta përdorësh gjurmën e gishtit për të autorizuar blerjet ose për t'u identifikuar tek aplikacionet.
+
+Ki kujdes se gjurmët e kujt shton. Çdo gjurmë gishti e shtuar do të mund t'i kryejë këto gjëra.
+
+Shënim. Nuk mund ta përdorësh gjurmën tënde të gishtit për ta shkyçur këtë pajisje. Për më shumë informacione, kontakto me administratorin e organizatës tënde."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Shkyçe me Nexus Imprint</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Trokit për të konfiguruar gjurmën e gishtit</string>
+    <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">"Pixel Imprint krijon një model unik të gjurmës sate të gishtit për të verifikuar që je ti. Për ta krijuar këtë model të gjurmës së gishtit gjatë konfigurimit, duhet t'i regjistrosh nga pozicione të ndryshme imazhet e gjurmës sate të gishtit."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">"Pixel Imprint krijon një model unik të gjurmës së gishtit të fëmijës tënd për të verifikuar që është ai. Për ta krijuar këtë model të gjurmës së gishtit gjatë konfigurimit, ai duhet t'i regjistrojë nga pozicione të ndryshme imazhet e gjurmës sate të gishtit."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Mëso më shumë për shkyçjen me gjurmën e gishtit në telefonin Pixel në &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint për punën</string>
     <string name="setup_suggestion_summary">Vetëm edhe disa hapa</string>
     <string name="setup_suggestion_title">Përfundo konfigurimin</string>
+    <string name="smart_battery_footer">Për të rritur kohëzgjatjen e baterisë, \"Bateria me përshtatje\" mund të reduktojë cilësinë e funksionimit dhe aktivitetin në sfond. Disa njoftime mund të vonohen.</string>
+    <string name="smart_battery_manager_title">Preferencat me përshtatje</string>
+    <string name="smart_battery_title">Bateria me përshtatje</string>
     <string name="software_update_can_be_updated_header">Bëje pajisjen tënde Pixel akoma më të mirë</string>
     <string name="software_update_detail_indication_1_update_available">Ofrohet 1 përditësim</string>
     <string name="software_update_detail_indication_2_or_more_updates_available">Ofrohen %1$d përditësime</string>
@@ -326,9 +309,12 @@ Për të përmirësuar cilësinë e funksionimit, mund ta konfigurosh \"Shkyçje
     <string name="software_update_up_to_date_summary">I përditësuar</string>
     <string name="software_update_up_to_specific_date_summary">Përditësuar më %1$s</string>
     <string name="software_update_update_available_summary">Ofrohet një përditësim</string>
+    <string name="sound_dashboard_summary">Volumi, prekja, \"Mos shqetëso\"</string>
+    <string name="spatial_audio_title">Audio hapësinore</string>
     <string name="speed_boost_summary_off">Çaktivizuar</string>
     <string name="speed_boost_summary_on">Aktive</string>
     <string name="speed_boost_title">Spectrum Speed Boost</string>
+    <string name="suggested_fingerprint_lock_settings_title">Përdor Pixel Imprint</string>
     <string name="suw_limited_warranty_title">Garancia e kufizuar</string>
     <string name="suw_warranty_description">Për të parë garancinë e kufizuar, zgjidh shtetin ku e ke blerë këtë pajisje.&lt;br /&gt;&lt;br /&gt;Garancia ofrohet gjithashtu te &lt;b&gt;Cilësimet &gt; Rreth telefonit &gt; Garancia e kufizuar&lt;/b&gt; dhe g.co/devicewarranty.</string>
     <string name="suw_warranty_description_content">Për të parë garancinë e kufizuar, zgjidh shtetin ku e ke blerë këtë pajisje. Garancia ofrohet gjithashtu te \"Cilësimet\", më pas te \"Rreth telefonit\" dhe më pas te \"Garancia e kufizuar\" dhe g.co/devicewarranty</string>
@@ -336,10 +322,11 @@ Për të përmirësuar cilësinë e funksionimit, mund ta konfigurosh \"Shkyçje
     <string name="suw_warranty_positive_button_text">Mbyll</string>
     <string name="system_update_entry_title">Përditësimi i sistemit</string>
     <string name="system_updates_group_title">Përditësimet e Pixel</string>
-    <string name="tips_suggestion_summary">Eksploro se çfarë mund të bësh me telefonin tënd</string>
-    <string name="tips_suggestion_title">Njihu me telefonin tënd Pixel</string>
+    <string name="touch_sensitivity_summary">Rrit ndjeshmërinë e prekjes dhe përmirëso prekjen kur përdor një mbrojtës ekrani</string>
+    <string name="touch_sensitivity_title">Modaliteti i mbrojtësit të ekranit</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Mbaje telefonin përpara fytyrës sate</string>
     <string name="unified_battery_saver_page_intro">Kurse energjinë për të ndihmuar që bateria e telefonit të zgjasë më shumë midis karikimeve</string>
+    <string name="usb_use_file_transfers">Transferimi i skedarëve / Android Auto</string>
     <string name="vpn_app_bypass">Përjashto aplikacionet e zgjedhura</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">Aplikacionet aktuale të operatorit celular</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">Të përjashtohen %1$d aplikacione të operatorit celular nga VPN-ja?</string>
@@ -360,12 +347,9 @@ Për të përmirësuar cilësinë e funksionimit, mund ta konfigurosh \"Shkyçje
     <string name="vpn_exclude_ntf_content">Ke aplikacione të instaluara rishtazi të operatorit celular që mund të mos funksionojnë me VPN-në.</string>
     <string name="vpn_exclude_ntf_title">Të përjashtohen aplikacionet e reja nga VPN-ja?</string>
     <string name="vpn_preference_group_title">Të tjera</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_title" />
-    <string name="wake_screen_suggestion_summary" />
-    <string name="wake_screen_suggestion_title" />
+    <string name="wallpaper_dashboard_summary">Ngjyrat, ikonat tematike, rrjeta e aplikacioneve</string>
     <string name="warranty_country_information">%1$s (%2$s)</string>
+    <string name="wifi_subscription_summary">Shiko ose ndrysho abonimin e OpenRoaming</string>
     <string name="wifitrackerlib_connected_with_wsu_authenticator">Lidhur me %1$s</string>
     <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">"Trokit për t'u lidhur"</string>
     <string name="wifitrackerlib_wsu_entry_summary_provision_error">Nuk mund të lidhet. Trokit për të provuar përsëri.</string>

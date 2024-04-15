@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="aware_category_display" />
-    <string name="aware_category_gesture" />
-    <string name="aware_display_settings_title">Неактиван закључан екран</string>
-    <string name="aware_settings_description" />
-    <string name="aware_settings_summary" />
-    <string name="gesture_silence_title">Покрет за утишавање обавештења</string>
-    <string name="gesture_skip_title">Покрет за прескакање</string>
-    <string name="keywords_touch_sensitivity">додир, осетљивост, осетљиво, заштита екрана, филм, прилагодљиво, прилагодљивост</string>
-    <string name="keywords_wake_display" />
-    <string name="touch_sensitivity_summary">Повећајте осетљивост додира и побољшајте додир док користите заштиту за екран</string>
-    <string name="touch_sensitivity_title">Режим заштите за екран</string>
-    <string name="columbus_title">Брзи додир за покретање радњи</string>
-    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge је подешен. Пређите на следећи екран или наставите са подешавањем.</string>
     <string name="accessibility_keyboard_haptics_title">Хаптика тастатуре</string>
     <string name="adaptive_alert_vibration_summary">Смањује јачину вибрације док је телефон у стању мировања, а екран окренут нагоре</string>
     <string name="adaptive_alert_vibration_title">Прилагодљива обавештења вибрацијом</string>
@@ -32,69 +19,25 @@
 
 "<b>Извештаји о грешкама садрже евиденције апликација и система</b>" и могу да укључују личне податке и информације о уређају као што су имена, имејл адресе, бројеви телефона, подаци о локацији, идентификатори уређаја, повезани уређаји и информације о мрежи. Извештаји могу да се деле са партнерским инжењерима на које потенцијално утиче ваш проблем.
 
-Одобравање приступа ће омогућити овој апликацији да "<b>аутоматски прикупља и отпрема извештаје о грешкама</b>" који садрже евиденције апликација и система за све извештаје о проблемима.
+Одобравање приступа ће омогућити овој апликацији "<b> да аутоматски прикупља и отпрема извештаје о грешкама</b>" који садрже евиденције апликација и система за све извештаје о проблемима које пошаљете.
 
 Опозив приступа ће захтевати да апликација затражи вашу дозволу за прикупљање и отпремање извештаја о грешци за сваки појединачни извештај о проблему."</string>
-    <string name="ambient_display_wake_screen_footer">
-        <annotation link="link">Подешавања</annotation>
-    </string>
-    <string name="ambient_display_wake_screen_summary" />
-    <string name="ambient_display_wake_screen_summary_on" />
-    <string name="assist_gesture_enrollment_continue_to_assistant">Настави на Помоћник</string>
-    <string name="assist_gesture_enrollment_do_it_later">Урадите то касније</string>
-    <string name="assist_gesture_enrollment_seekbar_light">Лаган стисак</string>
-    <string name="assist_gesture_enrollment_seekbar_strong">Чврст стисак</string>
-    <string name="assist_gesture_enrollment_settings">Подешавања</string>
-    <string name="assist_gesture_setting_enable_assistant_text">Да бисте причали са Помоћником, брзо стисните доњи део телефона, па га пустите</string>
-    <string name="assist_gesture_setting_enable_assistant_title">Стисните да бисте активирали Помоћник</string>
-    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Стисните да бисте потпуно утишали аларме, тајмере, обавештења и долазне позиве</string>
-    <string name="assist_gesture_setting_enable_ring_silence_text">Стисните да бисте потпуно утишали обавештења и долазне позиве</string>
-    <string name="assist_gesture_setting_enable_ring_silence_title">Стисните за потпуно утишавање телефона</string>
-    <string name="assist_gesture_setting_enable_wake_title">Отвори Помоћник када је екран искључен</string>
-    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Лаган стисак</string>
-    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Чврст стисак</string>
-    <string name="assist_gesture_squeeze_sensitivity_label">Осетљивост на стисак</string>
-    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Може случајно да покрене Помоћник</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Стисните доњи део телефона</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Стисните брже</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Стисните јаче</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Брзо стисните, па пустите</string>
-    <string name="assist_gesture_training_enrolling_error_try_adjusting">Прилагодите клизач</string>
-    <string name="assist_gesture_training_enrolling_text">Стисните доњи део телефона. Можете да прилагодите колико јако треба да стиснете.</string>
-    <string name="assist_gesture_training_enrolling_title">Брзо стисните и пустите</string>
-    <string name="assist_gesture_training_finished_text">Осетљивост на стисак можете да промените и касније у Подешавањима</string>
-    <string name="assist_gesture_training_finished_title">Довршите или наставите са прилагођавањем</string>
-    <string name="assist_gesture_training_intro_text">Да бисте причали са Помоћником било кад, брзо стисните доњи део телефона, па га пустите</string>
-    <string name="assist_gesture_training_intro_title">Стисните да бисте активирали Помоћник</string>
-    <string name="assist_gesture_training_suggestion_summary">Причајте са Помоћником, утишајте позиве</string>
-    <string name="assist_gesture_training_suggestion_summary_including_alarms">Причајте са Помоћником, утишајте аларме и позиве</string>
-    <string name="assist_gesture_training_suggestion_title">Стисните и пустите за покретање Помоћника</string>
-    <string name="aware_category_security" />
-    <string name="aware_disabled_preference_action">Укључи</string>
-    <string name="aware_disabled_preference_dialog_content" />
-    <string name="aware_disabled_preference_dialog_title" />
-    <string name="aware_disabled_preference_neutral">Не сада</string>
-    <string name="aware_footer_when_airplane_batterysaver_on">Motion Sense је недоступан јер су укључени режим рада у авиону и Уштеда батерије</string>
-    <string name="aware_footer_when_airplane_on">Motion Sense је недоступан јер је укључен режим рада у авиону</string>
-    <string name="aware_footer_when_batterysaver_on">Motion Sense је недоступан јер је укључена Уштеда батерије</string>
-    <string name="aware_gesture_summary_off">Брза гестикулација је укључена, Active Edge је искључен</string>
-    <string name="aware_gesture_summary_on_non_assist">Брза гестикулација је укључена, Active Edge је укључен</string>
-    <string name="aware_gesture_summary_on_with_assist">Брза гестикулација је укључена, Active Edge је укључен, стисните да бисте активирали Помоћник</string>
-    <string name="aware_info_button_description">Још подешавања</string>
-    <string name="aware_settings_disabled_info_dialog_content" />
-    <string name="aware_settings_disabled_info_dialog_title" />
-    <string name="aware_settings_enabled_info_dialog_content" />
-    <string name="aware_settings_enabled_info_dialog_title" />
-    <string name="aware_settings_suggestion_summary" />
-    <string name="aware_settings_suggestion_title" />
-    <string name="aware_summary_when_airplane_batterysaver_on">Није доступно јер су укључени режим рада у авиону и Уштеда батерије</string>
-    <string name="aware_summary_when_airplane_on">Није доступно јер је укључен режим рада у авиону</string>
-    <string name="aware_summary_when_batterysaver_on">Није доступно јер је укључена Уштеда батерије</string>
-    <string name="aware_wake_display_summary" />
-    <string name="aware_wake_display_summary_aod_off" />
-    <string name="aware_wake_display_title" />
+    <string name="app_and_notification_dashboard_summary">Помоћник, недавне апликације, подразумеване апликације</string>
+    <string name="automatic_storage_manager_activation_warning">Када сте повезани, можете да приступате сликама и видеима квалитета који сте изабрали при прављењу резервне копије</string>
+    <string name="automatic_storage_manager_days_title">Уклони резервне копије слика и видеа</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Желите да искључите Паметну меморију? 
+
+Паметна меморија неће ослобађати простор кад се меморијски простор скоро напуни."</string>
+    <string name="automatic_storage_manager_preference_title">Паметна меморија</string>
+    <string name="automatic_storage_manager_primary_switch_title">Користите Паметну меморију</string>
+    <string name="automatic_storage_manager_settings">Паметна меморија</string>
+    <string name="automatic_storage_manager_text">Када меморијски простор буде скоро пун, уклоните резервне копије слика и видеа. И даље ћете моћи да их пронађете у Google сликама.</string>
+    <string name="backup_data_summary">Прављење резервних копија података о апликацијама, WiFi лозинки и других подешавања на Google серверима</string>
     <string name="basic_battery_saver_summary">Ограничава визуелне ефекте и активности у позадини. Укључује тамну тему ако већ није укључена.</string>
     <string name="basic_battery_saver_title">Стандардна уштеда батерије</string>
+    <string name="battery_manager_summary">Продужите трајање батерије и оптимизујте пуњење</string>
+    <string name="battery_manager_summary_unsupported">Продужите трајање батерије</string>
+    <string name="battery_missing_link_message">Сазнајте више</string>
     <string name="battery_saver_reminder_category">Подсетници</string>
     <string name="battery_saver_reminder_switch_summary">Добијајте подсетнике када је батерија скоро празна</string>
     <string name="battery_saver_reminder_switch_title">Подсетници уштеде батерије</string>
@@ -103,7 +46,11 @@
     <string name="battery_saver_schedule_switch_title">Укључи на основу нивоа батерије</string>
     <string name="battery_schedule_summary">Управљајте тиме када се Уштеда батерије укључује</string>
     <string name="battery_schedule_title">Распоред и подсетници</string>
+    <string name="battery_tip_battery_health_learn_more_description">Сазнајте више о стању батерије</string>
+    <string name="battery_tip_battery_health_reduced_title">Капацитет батерије је смањен</string>
+    <string name="battery_tip_battery_health_unknown_title">Утврђивање стања батерије није успело</string>
     <string name="battery_tip_limited_temporarily_extra_summary">Да бисмо заштитили батерију, пуњење се паузира на %1$s док је таблет на базној станици</string>
+    <string name="battery_tip_smart_battery_summary">Укључите прилагодљиву батерију</string>
     <string name="clear_calling_footer">"Да би вам заштитили приватност, Разговетни позиви не шаљу звук нити разговоре Google-у.
 
 Разговетни позиви раде са Позивањем преко WiFi-ја и већином мрежа, а нису доступни за 3G мреже."</string>
@@ -154,8 +101,11 @@
     <string name="columbus_setting_app_shortcut_selection_help_text">Изаберите шта се дешава када отворите ову апликацију помоћу брзог додира.</string>
     <string name="columbus_setting_enable_switch_title">Користи брзи додир</string>
     <string name="columbus_setting_sensitivity_title">Захтевај јаче додире</string>
+    <string name="columbus_title">Брзи додир за покретање радњи</string>
     <string name="communal_lock_screen_summary">Приватност, обавештења и контроле за дом</string>
     <string name="communal_other">Друго</string>
+    <string name="communal_settings_summary">Опције за базну станицу и закључани екран</string>
+    <string name="communal_settings_title">Режим центра</string>
     <string name="communal_smartspace_summary">Подсетници, обавештења и још од Помоћника</string>
     <string name="communal_smartspace_title">Кратак преглед</string>
     <string name="communal_what_to_show">Шта се приказује</string>
@@ -166,17 +116,17 @@
     <string name="connectivity_helper_d2d_summary">Обавестите другу особу када ваш телефон има проблема са везом током позива</string>
     <string name="connectivity_helper_d2d_title">Дели информације о вези</string>
     <string name="connectivity_helper_footnote">Можете да делите информације о вези када други позивалац користи подржани уређај и мрежу</string>
+    <string name="content_capture">Персонализуј помоћу података апликација</string>
+    <string name="content_protection_preference_subpage_info">"Ово је заштићена безбедносна функција. Са Google-ом се не деле подаци о уређају ни лични подаци. 
+
+„Пецање“ је покушај крађе акредитива за пријављивање или других личних података."</string>
+    <string name="content_protection_preference_subpage_summary">Провера се обавља приватно и директно на уређају, а њоме се проверавају активности у апликацијама ради откривања „пецања“ или другог обмањујућег понашања. Ако се то открије, неки подаци о апликацији се шаљу Google Play заштити да би се потврдила претња и упозорили корисници.</string>
+    <string name="dark_ui_text">Тамна тема користи црну позадину да би батерија трајала дуже. Распореди тамне теме се укључују тек када се екран искључи.</string>
     <string name="debugging_data_title">Отклањање грешака у подацима</string>
-    <string name="dialog_aware_settings_message" />
-    <string name="dialog_aware_settings_ok" />
-    <string name="dialog_aware_settings_title" />
     <string name="discover_tips_button">Прикажи савете</string>
-    <string name="dock_setup_notification_text" />
     <string name="dock_summary_charging_phone">Пуњење телефона</string>
-    <string name="dream_no_screen_saver_caption" />
-    <string name="dream_no_screen_saver_description" />
-    <string name="dream_no_screen_saver_preview_caption" />
-    <string name="dream_secondary_button_title" />
+    <string name="double_twist_for_camera_mode_summary">Обрните двапут док сте у апликацији да бисте укључили или искључили режим за селфије на Google камери.</string>
+    <string name="duration_less_than_one_minute">Mање од 1 минута</string>
     <string name="extreme_battery_saver_summary">Обухвата све промене наведене изнад. Такође паузира апликације које нису неопходне и њихова обавештења.</string>
     <string name="extreme_battery_saver_title">Екстремна уштеда батерије</string>
     <string name="face_confirmation_hide_illustration_description">Сада можете да откључате телефон помоћу лица када га узмете или додирнете екран.</string>
@@ -194,7 +144,7 @@
     <string name="face_enrolling_how_to_setup">Како да подесите</string>
     <string name="face_enrolling_title">Не померајте телефон. Окрећите главу. Полако.</string>
     <string name="face_enrolling_title_accessibility">Гледајте право у телефон</string>
-    <string name="face_enrolling_title_accessibility_progress">Наставите да гледате право у телефон</string>
+    <string name="face_enrolling_title_accessibility_progress">Настави да гледаш право у телефон</string>
     <string name="face_enrolling_too_close">Удаљите телефон</string>
     <string name="face_enrolling_too_far">Приближите телефон</string>
     <string name="face_enrolling_too_high">Померите телефон надоле</string>
@@ -203,49 +153,42 @@
     <string name="face_enrolling_too_right">Померите телефон улево</string>
     <string name="face_enrolling_turn_head_to_arrow">Померајте главу ка стрелици</string>
     <string name="face_enrolling_turned_too_far">Мало мање померите главу</string>
+    <string name="fast_pair_device_not_found_dialog_title">Повезивање није успело</string>
+    <string name="fast_pair_device_not_found_other_device_description">Приближите овај уређај Pixel телефону и пробајте поново.</string>
+    <string name="fast_pair_device_not_found_tws_headphone_description">Отворите кутију за слушалице, приближите је Pixel телефону и пробајте поново.</string>
+    <string name="fingerprint_unlock_set_unlock_password">Nexus Imprint + лозинка</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Nexus Imprint + шаблон</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Nexus Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Настави без Nexus Imprint-а</string>
+    <string name="firmware_update_accessory_version_number_title">Фирмвер за додатну опрему</string>
     <string name="firmware_update_status_category">Статус фирмвера уређаја</string>
     <string name="firmware_update_status_title">Доступно је ажурирање фирмвера</string>
     <string name="firmware_update_version_number_category">Верзија фирмвера уређаја</string>
     <string name="firmware_update_version_number_title">Фирмвер Pixel тастатуре</string>
-    <string name="gesture_aware_confirmation_action_button">Важи</string>
-    <string name="gesture_aware_disabled_info_dialog_content" />
-    <string name="gesture_aware_footer">
-        <annotation link="link">Подешавања</annotation>
-    </string>
-    <string name="gesture_aware_off_dialog_content" />
-    <string name="gesture_aware_off_dialog_title" />
-    <string name="gesture_silence_footer">
-        <annotation link="link">Подешавања</annotation>
-    </string>
-    <string name="gesture_silence_off_summary" />
-    <string name="gesture_silence_on_summary" />
-    <string name="gesture_silence_summary" />
-    <string name="gesture_skip_direction_ltr">Слева надесно</string>
-    <string name="gesture_skip_direction_rtl">Здесна налево</string>
-    <string name="gesture_skip_direction_title">Смер за прескакање</string>
-    <string name="gesture_skip_footer">
-        <annotation link="link">Подешавања</annotation>
-    </string>
-    <string name="gesture_skip_off_summary" />
-    <string name="gesture_skip_on_summary" />
-    <string name="gesture_skip_summary" />
-    <string name="gesture_tap_footer">
-        <annotation link="link">Подешавања</annotation>
-    </string>
-    <string name="gesture_tap_on_summary" />
-    <string name="gesture_tap_summary" />
+    <string name="fullbackup_data_summary">"Аутоматски правите резервне копије података уређаја (попут WiFi лозинки и историје позива) и података апликација (попут подешавања и датотека сачуваних у апликацијама) на Google диску.
+
+Када укључите аутоматско прављење резервних копија, подаци уређаја и апликација се повремено чувају у приватном фолдеру на Google диску. Подаци апликације могу да буду било који подаци које је апликација сачувала (на основу подешавања програмера), укључујући потенцијално осетљиве податке као што су контакти, поруке и слике.
+
+Резервне копије података неће улазити у квоту меморијског простора Диска. За велике датотеке или датотеке које су програмери изоставили из услуге нећемо правити резервне копије."</string>
+    <string name="fullbackup_erase_dialog_message">Желите ли да зауставите прављење резервних копија података уређаја (попут WiFi лозинки и историје позива) и података апликација (попут подешавања и датотека сачуваних у апликацијама) и избришете све копије на Google диску?</string>
+    <string name="gesture_settings_activity_title">Навигација помоћу покрета</string>
     <string name="install_unknown_applications">Дозволи инсталацију апликација и из других извора, а не само из Google Play продавнице</string>
+    <string name="keywords_accessibility_menu">моторика, брзи мени, помоћни мени, додир, спретност, артритис, учестала трауматска истегнућа зглоба, мождани удар, тремор, мултипла склероза, церебрална парализа, дугме, хардвер, притискање, повреда изазвана понављајућим покретима, рука, бол, прилагођено особама са инвалидитетом, помоћ</string>
     <string name="keywords_adaptive_alert_vibration">хаптика, вибрирање, телефон, позив, звоно, упозорење, обавештење, гласно, тихо, бука, футрола, прилагодљиво</string>
     <string name="keywords_adaptive_charging">пунити, пуњење, паметно пуњење, прилагодљиво пуњење, батерија, стање батерије</string>
-    <string name="keywords_assist_gesture_silence">покрет, ивица, страна, active edge, потпуно утишати, одложити, аларм, долазни позив, тихо, приказ, закључани екран, стиснути, стисак, зауставити</string>
-    <string name="keywords_assist_gesture_wake">покрет, ивица, страна, active edge, будити, обавештења, екран, приказ, искључивање екрана, укључивање екрана, стиснути, спава, спавати, стисак</string>
     <string name="keywords_battery_share">дељење батерије, бежично пуњење</string>
     <string name="keywords_battery_share_settings">дељење батерије, обрнуто бежично пуњење</string>
-    <string name="keywords_gesture_silence" />
-    <string name="keywords_gesture_skip" />
-    <string name="keywords_gesture_tap" />
+    <string name="keywords_hearing_devices">оштећење слуха, губитак слуха, PSAP</string>
     <string name="keywords_limited_warranty">гаранција, ограничена гаранција, обећање, поправка, овлашћење за враћање робе, замена</string>
+    <string name="keywords_live_transcribe">титл, титлови, CC, титл уживо, оштећење слуха, губитак слуха, CART, претварање говора у текст, титловање</string>
     <string name="keywords_reverse_charging_stop_threshold">Заустави дељење батерије када телефон достигне:</string>
+    <string name="keywords_select_to_speak">слушање текста, читање наглас, изговарање са екрана, читач екрана</string>
+    <string name="keywords_sound_amplifier">PSAP, појачати, појачање звука, оштећење слуха, губитак слуха, појачавање</string>
+    <string name="keywords_sound_notifications">обавештења, оштећење слуха, губитак слуха, обавестити</string>
+    <string name="keywords_switch_access">моторика, прекидач, шака, AT, технологија за помоћ особама са инвалидитетом, парализа, ALS, скенирање, скенирање корака</string>
+    <string name="keywords_talkback">читач екрана, нарација, синхронизација, гласовна помоћ, слепило, слабовидост, TTS, претварање текста у говор, говорне повратне информације</string>
+    <string name="keywords_touch_sensitivity">додир, осетљивост, осетљиво, заштита екрана, филм, прилагодљиво, прилагодљивост</string>
+    <string name="keywords_voice_access">глас, контрола гласом, моторика, шака, микрофон, диктирање, говор, контрола</string>
     <string name="led_preference_title">Шаблони LED индикатора</string>
     <string name="legal_source_code_description">Детаље о изворном коду за компоненте које су постале доступне као отворени кôд можете да пронађете у Pixel центру за помоћ.</string>
     <string name="legal_source_code_title">Изворни кôд</string>
@@ -253,9 +196,12 @@
     <string name="limited_warranty_title">Ограничена гаранција</string>
     <string name="lockscreen_show_weather_summary">Погледајте актуелне временске услове</string>
     <string name="lockscreen_show_weather_title">Прикажите информације о времену</string>
+    <string name="my_device_info_account_preference_title">Google налог</string>
+    <string name="owner_info_settings_edit_text_hint">Нпр. Јованов Pixel.</string>
     <string name="permit_debugging_data">Дозволи приступ извештају о грешци</string>
     <string name="play_application_detail_indication_summary">Проверите да ли има ажурирања</string>
     <string name="play_application_update_entry_title">Ажурирања апликација</string>
+    <string name="privatespace_retry_summary">Треба да се пријавите на Google налог да бисте подесили приватни простор</string>
     <string name="repair_mode_active_summary">У режиму за поправку</string>
     <string name="repair_mode_summary">Безбедно окружење за поправку уређаја</string>
     <string name="repair_mode_title">Режим за поправку</string>
@@ -286,18 +232,38 @@
     <string name="reverse_charging_unplug_usb_cable_message">Није доступно јер је прикључен USB-C уређај</string>
     <string name="reverse_charging_warning_summary">Није доступно јер је батерија испод %1$s</string>
     <string name="reverse_charging_warning_title">Дељење батерије није доступно јер је батерија на мање од %1$s</string>
-    <string name="search_gesture_category_title">Претрага екрана</string>
-    <string name="search_long_press_home_button_summary">Притисните и задржите дугме за почетни екран да бисте покренули Google претрагу на екрану.</string>
-    <string name="search_long_press_home_button_title">Задржите дугме за почетни екран да бисте претраживали</string>
-    <string name="search_press_hold_gesture_summary">Притисните и задржите идентификатор за кретање да бисте покренули претрагу екрана.</string>
-    <string name="search_press_hold_gesture_title">Задржите идентификатор да бисте претраживали</string>
+    <string name="rtt_settings_always_visible">Увек је видљиво</string>
+    <string name="rtt_settings_no_visible">Није видљиво</string>
+    <string name="rtt_settings_title">Текст у реалном времену (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Видљиво је током позива</string>
+    <string name="screen_time_summary_usage_today">%1$s данас</string>
+    <string name="search_bar_account_avatar_content_description">Слика профила, двапут додирните да бисте отворили Google налог</string>
+    <string name="search_gesture_category_title">Претрага</string>
+    <string name="search_gesture_feature_title">Заокружи за претрагу</string>
+    <string name="search_long_press_home_button_summary">Додирните и задржите дугме Почетак у дну екрана, па заокружите или истакните било шта да бисте претражили</string>
+    <string name="search_press_hold_gesture_summary">Додирните и задржите идентификатор у дну екрана, па заокружите или истакните било шта да бисте претражили</string>
     <string name="security_dismiss_dialog_dismiss_button">Одбаци</string>
     <string name="security_dismiss_dialog_title">Желите да одбаците ово упозорење?</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">Додирните да бисте подесили</string>
+    <string name="security_settings_face_enroll_dialog_ok">У реду</string>
+    <string name="security_settings_face_enroll_education_message">На следећем екрану ротирајте главу да бисте снимили све углове лица</string>
+    <string name="security_settings_face_enroll_error_generic_dialog_message">Регистровање лица није успело.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">Достигнуто је ограничење времена за регистровање лица. Пробајте поново.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Време за подешавање откључавања лицем је истекло</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Сада можете да користите лице за откључавање телефона или потврду идентитета, на пример, кад се пријављујете у апликације или одобравате куповину</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Сада можете да откључате телефон помоћу лица када га узмете или додирнете екран.
 
 Откључавање лицем најбоље ради када има довољно светла и не носите маску или тамне наочаре."</string>
+    <string name="security_settings_face_enroll_finish_title">Одлично!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Ограничен вид или покрети главом</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Очи треба да буду отворене</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Ви и дете имате контролу</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Ви имате контролу</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Принцип рада</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Ако дете обично носи наочаре, може да их носи током подешавања.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Наочаре за вид или сунце са благом нијансом су у реду.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Имајте на уму</string>
+    <string name="security_settings_face_enroll_introduction_title">Подесите откључавање лицем</string>
     <string name="security_settings_face_enroll_next">Даље</string>
     <string name="security_settings_face_enroll_partial_message">Да бисте побољшали учинак, можете поново да подесите откључавање лицем у Подешавањима</string>
     <string name="security_settings_face_enroll_partial_start_over">Почни поново</string>
@@ -312,8 +278,25 @@
     <string name="security_settings_face_enroll_too_hot_message">Подешавање откључавања лицем не може да се доврши јер је телефон превише загрејан. Пробајте поново касније када се телефон охлади.</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Прескочи откључавање лицем</string>
     <string name="security_settings_face_enroll_too_hot_title">Телефон је превише загрејан</string>
+    <string name="security_settings_face_preference_summary_none">Додирните да бисте подесили лице</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message">Налази се на задњој страни телефона. Користите кажипрст.</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Уз Nexus Imprint можете да користите отисак прста за одобравање куповине или пријављивање на апликације.
+
+Пажљиво бирајте чије отиске прста ћете додати. Сви отисци прста које додате моћи ће да изврше горенаведене радње.
+
+Напомена: Не можете да користите отисак прста за откључавање овог уређаја. За више информација обратите се администратору организације."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Откључајте Nexus Imprint-ом</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Додирните да бисте подесили отисак прста</string>
+    <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint прави јединствен модел отиска прста ради верификовања идентитета. Да бисте направили тај модел отиска прста током подешавања, морате да сликате отисак прста из различитих положаја.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint прави јединствени модел дететовог отиска прста ради верификовања идентитета. Да би направило тај модел отиска прста током подешавања, дете треба да слика отисак прста из различитих положаја.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Сазнајте више о Pixel откључавању отиском прста на &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint за посао</string>
     <string name="setup_suggestion_summary">Још само неколико корака</string>
     <string name="setup_suggestion_title">Завршите подешавање</string>
+    <string name="smart_battery_footer">Да би продужила трајање батерије, прилагодљива батерија може да смањи учинак и активности у позадини. Нека обавештења могу да касне.</string>
+    <string name="smart_battery_manager_title">Прилагодљива подешавања</string>
+    <string name="smart_battery_title">Прилагодљива батерија</string>
     <string name="software_update_can_be_updated_header">Побољшајте Pixel</string>
     <string name="software_update_detail_indication_1_update_available">Доступно је 1 ажурирање</string>
     <string name="software_update_detail_indication_2_or_more_updates_available">Доступних ажурирања: %1$d</string>
@@ -326,9 +309,11 @@
     <string name="software_update_up_to_date_summary">Ажурно</string>
     <string name="software_update_up_to_specific_date_summary">Aжурирано: %1$s</string>
     <string name="software_update_update_available_summary">Доступно је ажурирање</string>
+    <string name="sound_dashboard_summary">Јачина звука, хаптика, Не узнемиравај</string>
     <string name="speed_boost_summary_off">Искључено</string>
     <string name="speed_boost_summary_on">Укључено</string>
     <string name="speed_boost_title">Spectrum повећање брзине</string>
+    <string name="suggested_fingerprint_lock_settings_title">Користите Pixel Imprint</string>
     <string name="suw_limited_warranty_title">Ограничена гаранција</string>
     <string name="suw_warranty_description">Да бисте прегледали ограничену гаранцију, изаберите земљу у којој сте купили овај уређај.&lt;br /&gt;&lt;br /&gt;Гаранција је доступна и у &lt;b&gt;Подешавањима &gt; О телефону &amp;gt Ограничена гаранција&lt;/b&gt; и на g.co/devicewarranty.</string>
     <string name="suw_warranty_description_content">Да бисте прегледали ограничену гаранцију, изаберите земљу у којој сте купили овај уређај. Гаранција је доступна и у Подешавањима, у одељку О телефону, па Ограничена гаранција, као и на g.co/devicewarranty.</string>
@@ -336,10 +321,11 @@
     <string name="suw_warranty_positive_button_text">Затвори</string>
     <string name="system_update_entry_title">Ажурирање система</string>
     <string name="system_updates_group_title">Pixel ажурирања</string>
-    <string name="tips_suggestion_summary">Истражите шта можете да радите помоћу телефона</string>
-    <string name="tips_suggestion_title">Упознајте свој Pixel</string>
+    <string name="touch_sensitivity_summary">Повећајте осетљивост додира и побољшајте додир док користите заштиту за екран</string>
+    <string name="touch_sensitivity_title">Режим заштите за екран</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Држите телефон испред лица</string>
     <string name="unified_battery_saver_page_intro">Штедите енергију да би батерија телефона трајала дуже између пуњења</string>
+    <string name="usb_use_file_transfers">Пребацивање фајлова/Android Auto</string>
     <string name="vpn_app_bypass">Изузми изабране апликације</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">Актуелне апликације мобилних оператера</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">Желите да изузмете апликације (%1$d) мобилног оператера из VPN-а?</string>
@@ -360,12 +346,9 @@
     <string name="vpn_exclude_ntf_content">Имате новоинсталиране апликације мобилних оператера које можда неће радити са VPN-ом</string>
     <string name="vpn_exclude_ntf_title">Желите да изузмете нове апликације из VPN-а?</string>
     <string name="vpn_preference_group_title">Друго</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_title" />
-    <string name="wake_screen_suggestion_summary" />
-    <string name="wake_screen_suggestion_title" />
+    <string name="wallpaper_dashboard_summary">Боје, тематске иконе, мрежа апликација</string>
     <string name="warranty_country_information">%1$s (%2$s)</string>
+    <string name="wifi_subscription_summary">Прегледајте или промените OpenRoaming претплату</string>
     <string name="wifitrackerlib_connected_with_wsu_authenticator">Повезано са добављачем %1$s</string>
     <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Додирните да бисте се повезали</string>
     <string name="wifitrackerlib_wsu_entry_summary_provision_error">Повезивање није успело. Пробајте опет.</string>

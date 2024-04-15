@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="aware_category_display" />
-    <string name="aware_category_gesture" />
-    <string name="aware_display_settings_title">Pantalla de bloqueig inactiva</string>
-    <string name="aware_settings_description" />
-    <string name="aware_settings_summary" />
-    <string name="gesture_silence_title">Gest per silenciar alertes</string>
-    <string name="gesture_skip_title">Gest per ometre</string>
-    <string name="keywords_touch_sensitivity">tacte, sensibilitat, sensible, protector de pantalla, protector, responsiu, responsivitat</string>
-    <string name="keywords_wake_display" />
-    <string name="touch_sensitivity_summary">"Augmenta la sensibilitat al tacte i millora la resposta tàctil quan s'utilitza un protector de pantalla"</string>
-    <string name="touch_sensitivity_title">Mode de protector de pantalla</string>
-    <string name="columbus_title">Toc ràpid per iniciar accions</string>
-    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">"Configuració d'Active Edge. Ves a la pantalla següent o continua ajustant."</string>
     <string name="accessibility_keyboard_haptics_title">Tecnologia hàptica del teclat</string>
     <string name="adaptive_alert_vibration_summary">Redueix la intensitat de la vibració mentre el telèfon està quiet i la pantalla és cara amunt</string>
     <string name="adaptive_alert_vibration_title">"Vibració d'alerta adaptativa"</string>
@@ -30,71 +17,27 @@
     <string name="all_apps_category_title">Totes les aplicacions</string>
     <string name="allow_debugging_data_description">"Google utilitza informes d'errors per diagnosticar problemes relacionats amb les aplicacions i el dispositiu d'acord amb la nostra "<a href="https://policies.google.com/privacy">política de privadesa</a>".
 
-"<b>"Els informes d'errors contenen registres del sistema i de les aplicacions"</b>", i poden incloure informació personal i del dispositiu (com ara noms, adreces electròniques, números de telèfon, dades d'ubicació, identificadors de dispositiu, dispositius connectats i informació de la xarxa). És possible que es comparteixin els informes amb els partners d'enginyeria que es vegin potencialment afectats pel teu problema.
+"<b>"Els informes d'errors contenen registres del sistema i de les aplicacions"</b>", i poden incloure informació personal i del dispositiu (com ara noms, adreces electròniques, números de telèfon, dades d'ubicació, identificadors de dispositiu, dispositius connectats i informació de la xarxa). És possible que es comparteixin els informes amb els partners enginyers que es vegin potencialment afectats pel teu problema.
 
-Si concedeixes l'accés, permetràs que aquesta aplicació "<b>"reculli i pengi automàticament informes d'errors "</b>" que contenen registres del sistema i de les aplicacions per a tots els informes de problemes.
+Si concedeixes l'accés, permetràs que aquesta aplicació "<b>"reculli i pengi automàticament informes d'errors"</b>", inclosos registres del sistema i de les aplicacions de perfils personals i de treball, per a tots els informes de problemes que enviïs.
 
-Per revocar l'accés, l'aplicació haurà de sol·licitar el teu permís per recollir i penjar un informe d'errors per a cada informe de problemes concret."</string>
-    <string name="ambient_display_wake_screen_footer">
-        <annotation link="link">Preferències</annotation>
-    </string>
-    <string name="ambient_display_wake_screen_summary" />
-    <string name="ambient_display_wake_screen_summary_on" />
-    <string name="assist_gesture_enrollment_continue_to_assistant">"Inicia l'Assistent"</string>
-    <string name="assist_gesture_enrollment_do_it_later">Fes-ho més tard</string>
-    <string name="assist_gesture_enrollment_seekbar_light">Estrènyer fluix</string>
-    <string name="assist_gesture_enrollment_seekbar_strong">Estrènyer fort</string>
-    <string name="assist_gesture_enrollment_settings">Configuració</string>
-    <string name="assist_gesture_setting_enable_assistant_text">Per parlar amb el teu Assistent, estreny ràpidament la meitat inferior del telèfon i deixa-la anar</string>
-    <string name="assist_gesture_setting_enable_assistant_title">Estreny per iniciar el teu Assistent</string>
-    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Estreny per silenciar alarmes, temporitzadors, notificacions i trucades entrants</string>
-    <string name="assist_gesture_setting_enable_ring_silence_text">Estreny per silenciar les notificacions i les trucades entrants</string>
-    <string name="assist_gesture_setting_enable_ring_silence_title">Estreny per silenciar el telèfon</string>
-    <string name="assist_gesture_setting_enable_wake_title">"Obre l'Assistent amb la pantalla desactivada"</string>
-    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Estrènyer fluix</string>
-    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Estrènyer fort</string>
-    <string name="assist_gesture_squeeze_sensitivity_label">Sensibilitat en estrènyer</string>
-    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">"Pot activar l'Assistent per error"</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Estreny la part inferior del telèfon</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Estreny més ràpid</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Estreny amb més força</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Estreny ràpidament i deixa anar</string>
-    <string name="assist_gesture_training_enrolling_error_try_adjusting">"Prova d'ajustar el control lliscant"</string>
-    <string name="assist_gesture_training_enrolling_text">Estreny la part inferior del telèfon. Pots ajustar la força necessària.</string>
-    <string name="assist_gesture_training_enrolling_title">Estreny ràpidament i deixa anar</string>
-    <string name="assist_gesture_training_finished_text">"També pots canviar la sensibilitat del gest d'estrènyer més endavant a Configuració"</string>
-    <string name="assist_gesture_training_finished_title">Acaba o continua ajustant</string>
-    <string name="assist_gesture_training_intro_text">"Per parlar amb l'Assistent, estreny ràpidament la meitat inferior del telèfon i deixa-la anar"</string>
-    <string name="assist_gesture_training_intro_title">Estreny per iniciar el teu Assistent</string>
-    <string name="assist_gesture_training_suggestion_summary">"Parla amb l'Assistent, silencia les trucades"</string>
-    <string name="assist_gesture_training_suggestion_summary_including_alarms">"Parla amb l'Assistent, silencia les alarmes i les trucades"</string>
-    <string name="assist_gesture_training_suggestion_title">"Estreny i deixa per iniciar l'Assistent"</string>
-    <string name="aware_category_security" />
-    <string name="aware_disabled_preference_action">Activa</string>
-    <string name="aware_disabled_preference_dialog_content" />
-    <string name="aware_disabled_preference_dialog_title" />
-    <string name="aware_disabled_preference_neutral">Ara no</string>
-    <string name="aware_footer_when_airplane_batterysaver_on">"Motion Sense no està disponible perquè el mode d'avió i la funció Estalvi de bateria estan activats"</string>
-    <string name="aware_footer_when_airplane_on">"Motion Sense no està disponible perquè el mode d'avió està activat"</string>
-    <string name="aware_footer_when_batterysaver_on">Motion Sense no està disponible perquè la funció Estalvi de bateria està activada</string>
-    <string name="aware_gesture_summary_off">Gestos ràpids activats, Active Edge desactivat</string>
-    <string name="aware_gesture_summary_on_non_assist">Gestos ràpids activats, Active Edge activat</string>
-    <string name="aware_gesture_summary_on_with_assist">Gestos ràpids activats, Active Edge activat, estreny per iniciar el teu Assistent</string>
-    <string name="aware_info_button_description">Més opcions de configuració</string>
-    <string name="aware_settings_disabled_info_dialog_content" />
-    <string name="aware_settings_disabled_info_dialog_title" />
-    <string name="aware_settings_enabled_info_dialog_content" />
-    <string name="aware_settings_enabled_info_dialog_title" />
-    <string name="aware_settings_suggestion_summary" />
-    <string name="aware_settings_suggestion_title" />
-    <string name="aware_summary_when_airplane_batterysaver_on">"No disponible perquè el mode d'avió i la funció Estalvi de bateria estan activats"</string>
-    <string name="aware_summary_when_airplane_on">"No disponible perquè el mode d'avió està activat"</string>
-    <string name="aware_summary_when_batterysaver_on">No disponible perquè la funció Estalvi de bateria està activada</string>
-    <string name="aware_wake_display_summary" />
-    <string name="aware_wake_display_summary_aod_off" />
-    <string name="aware_wake_display_title" />
+Si revoques l'accés, l'aplicació haurà de sol·licitar el teu permís per recollir i penjar un informe d'errors per a cada informe concret."</string>
+    <string name="app_and_notification_dashboard_summary">Assistent, aplicacions recents, aplicacions predeterminades</string>
+    <string name="automatic_storage_manager_activation_warning">Quan tinguis connexió, podràs continuar accedint a les fotos i els vídeos amb la qualitat que hagis seleccionat per a la còpia de seguretat.</string>
+    <string name="automatic_storage_manager_days_title">Suprimeix fotos i vídeos amb còpia de seguretat</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Vols desactivar l'Emmagatzematge intel·ligent? 
+
+Si ho fas, no s'alliberarà espai quan l'emmagatzematge estigui gairebé ple."</string>
+    <string name="automatic_storage_manager_preference_title">Emmagatzematge intel·ligent</string>
+    <string name="automatic_storage_manager_primary_switch_title">Utilitza Emmagatzematge intel·ligent</string>
+    <string name="automatic_storage_manager_settings">Emmagatzematge intel·ligent</string>
+    <string name="automatic_storage_manager_text">"Quan l'espai d'emmagatzematge està quasi ple, suprimeix les fotos i els vídeos amb còpia de seguretat. Continuaran estant disponibles a Google Fotos."</string>
+    <string name="backup_data_summary">Crea una còpia de seguretat als servidors de Google de les dades de les aplicacions, les contrasenyes de les xarxes Wi-Fi i altres opcions de configuració</string>
     <string name="basic_battery_saver_summary">"Limita els efectes visuals i l'activitat en segon pla. Activa el tema fosc si aquesta opció encara no està activada."</string>
     <string name="basic_battery_saver_title">Estalvi de bateria estàndard</string>
+    <string name="battery_manager_summary">Allarga la durada de la bateria i optimitza la càrrega</string>
+    <string name="battery_manager_summary_unsupported">Allarga la durada de la bateria</string>
+    <string name="battery_missing_link_message">Més informació</string>
     <string name="battery_saver_reminder_category">Recordatoris</string>
     <string name="battery_saver_reminder_switch_summary">Obtén recordatoris quan quedi poca bateria</string>
     <string name="battery_saver_reminder_switch_title">"Recordatoris d'Estalvi de bateria"</string>
@@ -103,7 +46,11 @@ Per revocar l'accés, l'aplicació haurà de sol·licitar el teu permís per rec
     <string name="battery_saver_schedule_switch_title">Activa segons el nivell de bateria</string>
     <string name="battery_schedule_summary">"Gestiona quan vols que s'activi la funció Estalvi de bateria"</string>
     <string name="battery_schedule_title">Programació i recordatoris</string>
+    <string name="battery_tip_battery_health_learn_more_description">"Més informació sobre l'estat de la bateria"</string>
+    <string name="battery_tip_battery_health_reduced_title">La capacitat de la bateria és reduïda</string>
+    <string name="battery_tip_battery_health_unknown_title">"No es pot detectar l'estat de la bateria"</string>
     <string name="battery_tip_limited_temporarily_extra_summary">"Per protegir la bateria, la càrrega s'atura al %1$s mentre la tauleta està connectada a la base"</string>
+    <string name="battery_tip_smart_battery_summary">Activa la bateria adaptativa</string>
     <string name="clear_calling_footer">"Per protegir la teva privadesa, la funció Trucades nítides no envia àudio ni converses a Google.
 
 Aquesta funció s'utilitza en trucades per Wi‑Fi i la majoria de xarxes, però no està disponible per a xarxes 3G."</string>
@@ -154,8 +101,11 @@ Aquesta funció s'utilitza en trucades per Wi‑Fi i la majoria de xarxes, però
     <string name="columbus_setting_app_shortcut_selection_help_text">Tria què passa quan obres aquesta aplicació amb Toc ràpid.</string>
     <string name="columbus_setting_enable_switch_title">Utilitza Toc ràpid</string>
     <string name="columbus_setting_sensitivity_title">Requereix tocs més forts</string>
+    <string name="columbus_title">Toc ràpid per iniciar accions</string>
     <string name="communal_lock_screen_summary">Privadesa, notificacions i domòtica</string>
     <string name="communal_other">Altres</string>
+    <string name="communal_settings_summary">Opcions de la base i de la pantalla de bloqueig</string>
+    <string name="communal_settings_title">Mode Hub</string>
     <string name="communal_smartspace_summary">"Recordatoris, alertes i més de l'Assistent"</string>
     <string name="communal_smartspace_title">"D'una ullada"</string>
     <string name="communal_what_to_show">Què es mostra</string>
@@ -166,17 +116,17 @@ Aquesta funció s'utilitza en trucades per Wi‑Fi i la majoria de xarxes, però
     <string name="connectivity_helper_d2d_summary">"Notifica l'altra persona quan el teu telèfon tingui problemes de connexió durant les trucades"</string>
     <string name="connectivity_helper_d2d_title">Comparteix informació de connexió</string>
     <string name="connectivity_helper_footnote">Pots compartir la informació sobre la connexió si la persona amb qui parles utilitza un dispositiu i una xarxa compatibles</string>
+    <string name="content_capture">"Personalitza amb dades d'aplicacions"</string>
+    <string name="content_protection_preference_subpage_info">"És una funció de seguretat protegida. No es comparteix cap informació personal ni del dispositiu amb Google. 
+
+La pesca de credencials és un intent de robar les credencials d'inici de sessió o altres dades personals."</string>
+    <string name="content_protection_preference_subpage_summary">"L'anàlisi s'executa de manera privada directament des del dispositiu, i es comprova l'activitat de les aplicacions per detectar pesca de credencials o altres comportaments enganyosos. Si s'identifica algun d'aquests comportaments, s'enviarà determinada informació de les aplicacions en qüestió a Google Play Protect per confirmar l'amenaça i avisar-ne els usuaris."</string>
+    <string name="dark_ui_text">"El tema fosc utilitza un fons negre perquè la bateria duri més. Les programacions del tema fosc no s'activen fins que la pantalla està desactivada."</string>
     <string name="debugging_data_title">Dades de depuració</string>
-    <string name="dialog_aware_settings_message" />
-    <string name="dialog_aware_settings_ok" />
-    <string name="dialog_aware_settings_title" />
     <string name="discover_tips_button">Descobreix consells</string>
-    <string name="dock_setup_notification_text" />
     <string name="dock_summary_charging_phone">Càrrega del telèfon</string>
-    <string name="dream_no_screen_saver_caption" />
-    <string name="dream_no_screen_saver_description" />
-    <string name="dream_no_screen_saver_preview_caption" />
-    <string name="dream_secondary_button_title" />
+    <string name="double_twist_for_camera_mode_summary">"Per activar i desactivar el mode de selfie a Càmera de Google, gira el dispositiu dues vegades quan siguis a l'aplicació."</string>
+    <string name="duration_less_than_one_minute">"Menys d'1 minut"</string>
     <string name="extreme_battery_saver_summary">Inclou tots els canvis anteriors. També posa en pausa aplicacions no essencials i les seves notificacions.</string>
     <string name="extreme_battery_saver_title">Estalvi de bateria extrem</string>
     <string name="face_confirmation_hide_illustration_description">Ara, quan agafis el telèfon o toquis la pantalla, pots utilitzar la cara per desbloquejar-lo.</string>
@@ -203,49 +153,43 @@ Aquesta funció s'utilitza en trucades per Wi‑Fi i la majoria de xarxes, però
     <string name="face_enrolling_too_right">"Mou el telèfon cap a l'esquerra"</string>
     <string name="face_enrolling_turn_head_to_arrow">Gira el cap seguint la fletxa</string>
     <string name="face_enrolling_turned_too_far">No giris tant el cap</string>
+    <string name="fast_pair_device_not_found_dialog_title">Ha fallat la connexió</string>
+    <string name="fast_pair_device_not_found_other_device_description">Mou el dispositiu més a prop del Pixel i torna-ho a provar.</string>
+    <string name="fast_pair_device_not_found_tws_headphone_description">"Obre l'estoig d'auriculars, mou-lo més a prop del Pixel i torna-ho a provar."</string>
+    <string name="fingerprint_unlock_set_unlock_password">Nexus Imprint + contrasenya</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Nexus Imprint + patró</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Nexus Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Continua sense Nexus Imprint</string>
+    <string name="firmware_update_accessory_version_number_title">"Microprogramari de l'accessori"</string>
     <string name="firmware_update_status_category">Estat del microprogramari del dispositiu</string>
     <string name="firmware_update_status_title">Actualització de microprogramari disponible</string>
     <string name="firmware_update_version_number_category">Versió del microprogramari del dispositiu</string>
     <string name="firmware_update_version_number_title">Microprogramari del teclat de Pixel</string>
-    <string name="gesture_aware_confirmation_action_button">Entesos</string>
-    <string name="gesture_aware_disabled_info_dialog_content" />
-    <string name="gesture_aware_footer">
-        <annotation link="link">Preferències</annotation>
-    </string>
-    <string name="gesture_aware_off_dialog_content" />
-    <string name="gesture_aware_off_dialog_title" />
-    <string name="gesture_silence_footer">
-        <annotation link="link">Preferències</annotation>
-    </string>
-    <string name="gesture_silence_off_summary" />
-    <string name="gesture_silence_on_summary" />
-    <string name="gesture_silence_summary" />
-    <string name="gesture_skip_direction_ltr">D’esquerra a dreta</string>
-    <string name="gesture_skip_direction_rtl">De dreta a esquerra</string>
-    <string name="gesture_skip_direction_title">Direcció per ometre</string>
-    <string name="gesture_skip_footer">
-        <annotation link="link">Preferències</annotation>
-    </string>
-    <string name="gesture_skip_off_summary" />
-    <string name="gesture_skip_on_summary" />
-    <string name="gesture_skip_summary" />
-    <string name="gesture_tap_footer">
-        <annotation link="link">Preferències</annotation>
-    </string>
-    <string name="gesture_tap_on_summary" />
-    <string name="gesture_tap_summary" />
+    <string name="fullbackup_data_summary">"Crea una còpia de seguretat automàtica a Google Drive de les dades del dispositiu (com ara les contrasenyes de les xarxes Wi-Fi i l'historial de trucades) i de les aplicacions (com ara les configuracions i els fitxers que desen).
+
+Quan s'activa la còpia de seguretat automàtica, les dades del dispositiu i de les aplicacions es desen de manera periòdica en una carpeta privada de Google Drive. S'entén per dades d'una aplicació qualsevol dada que hagi desat una aplicació (segons la configuració del desenvolupador), incloses dades potencialment confidencials, com ara els contactes, els missatges i les fotos.
+
+Les dades de la còpia de seguretat no ocupen espai de la teva quota d'emmagatzematge de Drive. No es farà còpia de seguretat dels fitxers grans ni dels que els desenvolupadors hagin exclòs del servei."</string>
+    <string name="fullbackup_erase_dialog_message">"Vols deixar de crear una còpia de seguretat de les dades del dispositiu (com ara les contrasenyes de les xarxes Wi-Fi i l'historial de trucades) i de les aplicacions (com ara les configuracions i els fitxers que desen) i, a més, esborrar totes les còpies de Google Drive?"</string>
+    <string name="gesture_settings_activity_title">Navegació amb gestos</string>
     <string name="install_unknown_applications">"Permet la instal·lació d'aplicacions que no siguin de Play Store"</string>
+    <string name="keywords_accessibility_menu">"motricitat, menú ràpid, menú d'assistència, toc, destresa, artritis, rsi, accident cerebrovascular, tremolor, esclerosi múltiple, paràlisi cerebral, botó, maquinari, premsa, lesió per moviment repetitiu, mà, dolor, accessible, ajuda"</string>
     <string name="keywords_adaptive_alert_vibration">tecnologia hàptica, vibració, telèfon, trucada, so, alerta, notificacions, fort, fluix, soroll, funda, adaptatiu</string>
     <string name="keywords_adaptive_charging">càrrega, carregar, càrrega intel·ligent, càrrega intel·ligent, bateria, estat de la bateria</string>
-    <string name="keywords_assist_gesture_silence">gest, lateral, costat, active edge, silenciar, posposar, alarma, trucada entrant, baix, visualització, pantalla de bloqueig, estrènyer, agafar, aturar</string>
-    <string name="keywords_assist_gesture_wake">gest, lateral, costat, active edge, activar, notificacions, pantalla, visualització, pantalla desactivada, pantalla activada, estrènyer, inactiu, repòs, agafar</string>
     <string name="keywords_battery_share">compartició de bateria, càrrega sense fil</string>
     <string name="keywords_battery_share_settings">compartició de bateria, càrrega sense fil inversa</string>
-    <string name="keywords_gesture_silence" />
-    <string name="keywords_gesture_skip" />
-    <string name="keywords_gesture_tap" />
+    <string name="keywords_gesture">gestos, moviments</string>
+    <string name="keywords_hearing_devices">deficiències auditives, pèrdua auditiva, PSAP</string>
     <string name="keywords_limited_warranty">garantia, garantia limitada, promesa, reparació, rma, substitució</string>
+    <string name="keywords_live_transcribe">subtítols, subtítols instantanis, deficiències auditives, pèrdua auditiva, CART, parla a text, subtítol</string>
     <string name="keywords_reverse_charging_stop_threshold">Deixa de compartir la bateria quan el telèfon arribi al:</string>
+    <string name="keywords_select_to_speak">escoltar text, llegir en veu alta, veu en pantalla, lector de pantalla</string>
+    <string name="keywords_sound_amplifier">PSAP, amplificar, amplificació de so, deficiències auditives, pèrdua auditiva, amplificació</string>
+    <string name="keywords_sound_notifications">notificacions, deficiències auditives, pèrdua de so, notificar</string>
+    <string name="keywords_switch_access">motor, interruptor, mà, TA, tecnologia assistencial, paràlisi, ELA, cerca, cerca per passos</string>
+    <string name="keywords_talkback">lector de pantalla, veu superposada, Assistent de veu, invident, poca visió, text a parla, avisos de veu</string>
+    <string name="keywords_touch_sensitivity">tacte, sensibilitat, sensible, protector de pantalla, protector, responsiu, responsivitat</string>
+    <string name="keywords_voice_access">veu, control per veu, motor, mà, micro, micròfon, dictat, parla, control</string>
     <string name="led_preference_title">"Patrons d'indicadors LED"</string>
     <string name="legal_source_code_description">"Pots trobar els detalls sobre el codi font dels components que estan disponibles com a codi obert al Centre d'ajuda de Pixel."</string>
     <string name="legal_source_code_title">Codi font</string>
@@ -253,9 +197,12 @@ Aquesta funció s'utilitza en trucades per Wi‑Fi i la majoria de xarxes, però
     <string name="limited_warranty_title">Garantia limitada</string>
     <string name="lockscreen_show_weather_summary">Consulta les condicions meteorològiques actuals</string>
     <string name="lockscreen_show_weather_title">Mostra el temps</string>
+    <string name="my_device_info_account_preference_title">Compte de Google</string>
+    <string name="owner_info_settings_edit_text_hint">"P. ex.: El Pixel de l'Anna."</string>
     <string name="permit_debugging_data">"Permet l'accés a l'informe d'errors"</string>
     <string name="play_application_detail_indication_summary">Cerca actualitzacions</string>
     <string name="play_application_update_entry_title">"Actualitzacions d'aplicacions"</string>
+    <string name="privatespace_retry_summary">"Has d'iniciar la sessió en un Compte de Google per configurar Espai privat"</string>
     <string name="repair_mode_active_summary">En mode de reparació</string>
     <string name="repair_mode_summary">Entorn segur per a la reparació del dispositiu</string>
     <string name="repair_mode_title">Mode de reparació</string>
@@ -286,18 +233,38 @@ Per provar-ho, gira el telèfon."</string>
     <string name="reverse_charging_unplug_usb_cable_message">No està disponible perquè hi ha un dispositiu USB-C connectat</string>
     <string name="reverse_charging_warning_summary">"No està disponible perquè queda menys d'un %1$s de bateria"</string>
     <string name="reverse_charging_warning_title">"La funció Compartició de bateria no està disponible perquè queda menys d'un %1$s de bateria"</string>
-    <string name="search_gesture_category_title">Cerca directa</string>
-    <string name="search_long_press_home_button_summary">"Mantén premut el botó d'inici per iniciar la Cerca de Google a la pantalla."</string>
-    <string name="search_long_press_home_button_title">"Mantén premut el botó d'inici per cercar"</string>
-    <string name="search_press_hold_gesture_summary">"Mantén premuda l'ansa de navegació per invocar la cerca sobre la pantalla"</string>
-    <string name="search_press_hold_gesture_title">"Mantén premuda l'ansa per cercar"</string>
+    <string name="rtt_settings_always_visible">Sempre visible</string>
+    <string name="rtt_settings_no_visible">No és visible</string>
+    <string name="rtt_settings_title">Text en temps real (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Visible durant la trucada</string>
+    <string name="screen_time_summary_usage_today">%1$s avui</string>
+    <string name="search_bar_account_avatar_content_description">Foto de perfil, fes doble toc per obrir el Compte de Google</string>
+    <string name="search_gesture_category_title">Cerca</string>
+    <string name="search_gesture_feature_title">Encercla per cercar</string>
+    <string name="search_long_press_home_button_summary">"Mantén premut el botó d'inici a la part inferior de la pantalla i, a continuació, encercla o marca qualsevol element per fer una cerca"</string>
+    <string name="search_press_hold_gesture_summary">"Mantén premut l'ansa a la part inferior de la pantalla i, a continuació, encercla o marca qualsevol element per fer una cerca"</string>
     <string name="security_dismiss_dialog_dismiss_button">Ignora</string>
     <string name="security_dismiss_dialog_title">Vols ignorar aquest advertiment?</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">Toca per configurar</string>
+    <string name="security_settings_face_enroll_consent_introduction_title">Permet Desbloqueig facial</string>
+    <string name="security_settings_face_enroll_dialog_ok">"D'acord"</string>
+    <string name="security_settings_face_enroll_education_message">A la pantalla següent, gira el cap perquè es capturin tots els angles de la cara.</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">"S'ha arribat al límit de temps del registre de cara. Torna-ho a provar."</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">"Temps d'espera esgotat per configurar Desbloqueig facial"</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Ara pots utilitzar la cara per desbloquejar el telèfon o verificar la teva identitat, com ara quan inicies la sessió en aplicacions o aproves una compra</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Ara, quan agafis el telèfon o toquis la pantalla, pots utilitzar la cara per desbloquejar-lo.
 
 La funció Desbloqueig facial funciona millor quan hi ha prou llum i no portes mascareta ni ulleres fosques."</string>
+    <string name="security_settings_face_enroll_finish_title">Tot correcte!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Configuració amb visió o moviment del cap limitats</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">"Els ulls han d'estar oberts"</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Tu i el teu fill teniu el control</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Ets tu qui té el control</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Com funciona</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Si el teu fill normalment porta ulleres, pot dur-les posades durant la configuració.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Pots utilitzar ulleres o ulleres de sol amb els vidres clars.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Nota important</string>
+    <string name="security_settings_face_enroll_introduction_title">Configura Desbloqueig facial</string>
     <string name="security_settings_face_enroll_next">Següent</string>
     <string name="security_settings_face_enroll_partial_message">Per millorar-ne el rendiment, pots tornar a configurar Desbloqueig facial a Configuració</string>
     <string name="security_settings_face_enroll_partial_start_over">Torna a començar</string>
@@ -312,8 +279,24 @@ Per millorar-ne el rendiment, pots tornar a configurar Desbloqueig facial a Conf
     <string name="security_settings_face_enroll_too_hot_message">No es pot completar la configuració de Desbloqueig facial perquè el telèfon està massa calent. Torna-ho a provar quan el telèfon es refredi.</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Omet Desbloqueig facial</string>
     <string name="security_settings_face_enroll_too_hot_title">El telèfon està massa calent</string>
+    <string name="security_settings_face_preference_summary_none">Toca per configurar la cara</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Amb Nexus Imprint, pots fer servir la teva empremta digital per autoritzar una compra o iniciar la sessió en una aplicació.
+
+Ves amb compte a l'hora d'afegir-hi empremtes dactilars; tingues present que totes les que hi afegeixis podran dur a terme totes aquestes accions.
+
+Nota: no pots fer servir l'empremta digital per desbloquejar el dispositiu. Per obtenir més informació, contacta amb l'administrador de l'organització."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Desbloqueja amb Nexus Imprint</string>
+    <string name="security_settings_fingerprint_preference_summary_none">"Toca per configurar l'empremta digital"</string>
+    <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint crea un model únic de la teva empremta digital per verificar la teva identitat. Per crear-lo durant la configuració, es prendran imatges de la teva empremta digital des de diverses posicions.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">"Pixel Imprint crea un model únic de l'empremta digital del teu fill per verificar la seva identitat. Per crear aquest model durant la configuració, es farà fotos de l'empremta digital des de diverses posicions."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Obtén més informació sobre el desbloqueig amb empremta digital de Pixel a &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint per a la feina</string>
     <string name="setup_suggestion_summary">Només cal fer uns quants passos més</string>
     <string name="setup_suggestion_title">Finalitza la configuració</string>
+    <string name="smart_battery_footer">"Per allargar la durada de la bateria, la funció Bateria adaptativa pot reduir el rendiment i l'activitat en segon pla. És possible que algunes notificacions arribin amb retard."</string>
+    <string name="smart_battery_manager_title">Preferències adaptatives</string>
+    <string name="smart_battery_title">Bateria adaptativa</string>
     <string name="software_update_can_be_updated_header">Millora encara més el Pixel</string>
     <string name="software_update_detail_indication_1_update_available">1 actualització disponible</string>
     <string name="software_update_detail_indication_2_or_more_updates_available">%1$d actualitzacions disponibles</string>
@@ -326,9 +309,11 @@ Per millorar-ne el rendiment, pots tornar a configurar Desbloqueig facial a Conf
     <string name="software_update_up_to_date_summary">Actualitzat</string>
     <string name="software_update_up_to_specific_date_summary">Actualitzat el dia %1$s</string>
     <string name="software_update_update_available_summary">Actualització disponible</string>
+    <string name="sound_dashboard_summary">Volum, tecnologia hàptica, No molestis</string>
     <string name="speed_boost_summary_off">Desactivat</string>
     <string name="speed_boost_summary_on">Activat</string>
     <string name="speed_boost_title">Spectrum Speed Boost</string>
+    <string name="suggested_fingerprint_lock_settings_title">Utilitza Pixel Imprint</string>
     <string name="suw_limited_warranty_title">Garantia limitada</string>
     <string name="suw_warranty_description">Per veure la teva garantia limitada, selecciona el país on has comprat aquest dispositiu.&lt;br /&gt;&lt;br /&gt;La garantia també està disponible a &lt;b&gt;Configuració &gt; Informació del telèfon &gt; Garantia limitada&lt;/b&gt;, i a g.co/devicewarranty.</string>
     <string name="suw_warranty_description_content">Per veure la teva garantia limitada, selecciona el país on has comprat aquest dispositiu. La garantia també està disponible a Configuració, després Informació del telèfon i, a continuació, Garantia limitada, i a g.co/devicewarranty.</string>
@@ -336,10 +321,11 @@ Per millorar-ne el rendiment, pots tornar a configurar Desbloqueig facial a Conf
     <string name="suw_warranty_positive_button_text">Tanca</string>
     <string name="system_update_entry_title">Actualització del sistema</string>
     <string name="system_updates_group_title">Actualitzacions de Pixel</string>
-    <string name="tips_suggestion_summary">Explora què pots fer amb el telèfon</string>
-    <string name="tips_suggestion_title">Coneix el teu Pixel</string>
+    <string name="touch_sensitivity_summary">"Augmenta la sensibilitat al tacte i millora la resposta tàctil quan s'utilitza un protector de pantalla"</string>
+    <string name="touch_sensitivity_title">Mode de protector de pantalla</string>
     <string name="traffic_light_face_enrolling_title_accessibility">"Subjecta't el telèfon davant de la cara"</string>
     <string name="unified_battery_saver_page_intro">Estalvia energia perquè la bateria del telèfon duri més entre càrregues</string>
+    <string name="usb_use_file_transfers">Transferència de fitxers / Android Auto</string>
     <string name="vpn_app_bypass">Exclou les aplicacions seleccionades</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">"Aplicacions de l'operador actuals"</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">"Vols excloure %1$d aplicacions de l'operador de la VPN?"</string>
@@ -360,12 +346,9 @@ Per millorar-ne el rendiment, pots tornar a configurar Desbloqueig facial a Conf
     <string name="vpn_exclude_ntf_content">"Tens aplicacions de l'operador instal·lades recentment que és possible que no funcionin amb la VPN"</string>
     <string name="vpn_exclude_ntf_title">Vols excloure les aplicacions noves de la VPN?</string>
     <string name="vpn_preference_group_title">Altres</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_title" />
-    <string name="wake_screen_suggestion_summary" />
-    <string name="wake_screen_suggestion_title" />
+    <string name="wallpaper_dashboard_summary">"Colors, icones temàtiques, quadrícula d'aplicacions"</string>
     <string name="warranty_country_information">%1$s (%2$s)</string>
+    <string name="wifi_subscription_summary">Consulta o canvia la subscripció a OpenRoaming</string>
     <string name="wifitrackerlib_connected_with_wsu_authenticator">Connectada amb %1$s</string>
     <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Toca per connectar</string>
     <string name="wifitrackerlib_wsu_entry_summary_provision_error">No es pot connectar. Toca per tornar-ho a provar.</string>

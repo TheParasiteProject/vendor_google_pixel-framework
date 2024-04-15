@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="aware_category_display" />
-    <string name="aware_category_gesture" />
-    <string name="aware_display_settings_title">잠금 화면 유휴 상태</string>
-    <string name="aware_settings_description" />
-    <string name="aware_settings_summary" />
-    <string name="gesture_silence_title">알림 무음 설정 동작</string>
-    <string name="gesture_skip_title">동작 건너뛰기</string>
-    <string name="keywords_touch_sensitivity">터치, 민감도, 민감한, 화면 보호 필름, 필름, 반응성, 반응 속도</string>
-    <string name="keywords_wake_display" />
-    <string name="touch_sensitivity_summary">화면 보호필름 사용 시 터치 감도 및 터치 반응 개선</string>
-    <string name="touch_sensitivity_title">화면 보호필름 모드</string>
-    <string name="columbus_title">더블 탭하여 작업 시작하기</string>
-    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge가 설정되었습니다. 다음 화면으로 이동하거나 조정을 계속하세요.</string>
     <string name="accessibility_keyboard_haptics_title">키보드 햅틱 반응</string>
     <string name="adaptive_alert_vibration_summary">휴대전화가 움직이지 않고 화면이 위를 향하고 있으면 진동 강도를 줄입니다.</string>
     <string name="adaptive_alert_vibration_title">적응형 알림 진동</string>
@@ -28,73 +15,28 @@
     <string name="add_bypassed_application_hint">추가된 앱 없음</string>
     <string name="advanced_vpn_preference_group_title">내장됨</string>
     <string name="all_apps_category_title">모든 앱</string>
-    <string name="allow_debugging_data_description">Google에서는 버그 신고를 사용하여 <a href="https://policies.google.com/privacy">개인정보처리방침</a>"에 따라 앱과 기기 문제를 진단합니다.
+    <string name="allow_debugging_data_description">Google에서는 버그 신고를 사용하여 Google <a href="https://policies.google.com/privacy">개인정보처리방침</a>"에 따라 앱과 기기 문제를 진단합니다.
 
-"<b>버그 신고에는 앱과 시스템 로그가 포함되며</b>" 이름, 이메일 주소, 전화번호, 위치 데이터, 기기 식별자, 연결된 기기, 네트워크 정보 등 개인 및 기기 정보가 포함될 수 있습니다. 신고 내용은 잠재적으로 문제의 영향을 받는 엔지니어링 파트너와 공유될 수 있습니다.
+"<b>버그 신고에는 앱과 시스템 로그가 포함되며</b>" 이름, 이메일 주소, 전화번호, 위치 데이터, 기기 식별자, 연결된 기기, 네트워크 정보 등 개인 및 기기 정보가 포함될 수도 있습니다. 신고 내용은 문제의 영향을 받을 수 있는 엔지니어링 파트너와 공유될 수 있습니다.
 
-액세스 권한을 부여하면 이 앱에서 모든 문제 신고에 관한 앱 및 시스템 로그가 포함된 "<b>버그 신고를 자동으로 수집 및 업로드</b>"할 수 있습니다.
+액세스 권한을 부여하면 이 앱에서는 제출하는 모든 문제 신고에 관한 개인 및 직장 프로필의 앱 및 시스템 로그가 포함된 "<b>버그 신고를 자동으로 수집 및 업로드</b>"할 수 있습니다.
 
-액세스 권한을 취소하면 앱이 버그 신고를 수집 및 업로드하기 위한 권한을 개별 문제 신고별로 귀하에게 요청해야 합니다."</string>
-    <string name="ambient_display_wake_screen_footer">
-        <annotation link="link">환경설정</annotation>
-    </string>
-    <string name="ambient_display_wake_screen_summary" />
-    <string name="ambient_display_wake_screen_summary_on" />
-    <string name="assist_gesture_enrollment_continue_to_assistant">어시스턴트에서 계속하기</string>
-    <string name="assist_gesture_enrollment_do_it_later">나중에</string>
-    <string name="assist_gesture_enrollment_seekbar_light">약하게 쥐기</string>
-    <string name="assist_gesture_enrollment_seekbar_strong">강하게 쥐기</string>
-    <string name="assist_gesture_enrollment_settings">설정</string>
-    <string name="assist_gesture_setting_enable_assistant_text">어시스턴트에게 말하려면 휴대전화 하단 부분을 손으로 빠르게 쥐었다가 놓으세요.</string>
-    <string name="assist_gesture_setting_enable_assistant_title">기기를 쥐어서 어시스턴트 실행하기</string>
-    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">휴대전화를 손으로 쥐어서 알람, 타이머, 알림, 수신 전화를 무음 설정합니다.</string>
-    <string name="assist_gesture_setting_enable_ring_silence_text">휴대전화를 쥐어서 알림 및 수신 전화를 무음 설정합니다.</string>
-    <string name="assist_gesture_setting_enable_ring_silence_title">휴대전화를 쥐어서 소리 끄기</string>
-    <string name="assist_gesture_setting_enable_wake_title">화면이 꺼져 있을 때 어시스턴트 열기</string>
-    <string name="assist_gesture_squeeze_help_maximum_sensitivity">약하게 쥐기</string>
-    <string name="assist_gesture_squeeze_help_minimum_sensitivity">강하게 쥐기</string>
-    <string name="assist_gesture_squeeze_sensitivity_label">쥐기 민감도</string>
-    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">실수로 어시스턴트를 호출할 수 있습니다.</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">휴대전화 하단 부분을 손으로 쥐세요.</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_faster">더 빨리 쥐어 주세요.</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_harder">더 세게 쥐어 보세요.</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">손으로 빠르게 쥐었다가 놓으세요.</string>
-    <string name="assist_gesture_training_enrolling_error_try_adjusting">슬라이더를 조정해보세요.</string>
-    <string name="assist_gesture_training_enrolling_text">휴대전화의 하단 부분을 쥐어 보세요. 얼마나 세게 쥐어야 하는지 조정할 수 있습니다.</string>
-    <string name="assist_gesture_training_enrolling_title">손으로 빠르게 쥐었다가 놓으세요</string>
-    <string name="assist_gesture_training_finished_text">나중에 설정에서 손으로 쥐는 감도를 변경할 수도 있습니다.</string>
-    <string name="assist_gesture_training_finished_title">완료 또는 계속 조정</string>
-    <string name="assist_gesture_training_intro_text">어시스턴트에게 말하려면 언제든지 휴대전화의 하단 부분을 손으로 빠르게 쥔 다음 놓으세요.</string>
-    <string name="assist_gesture_training_intro_title">기기를 쥐어서 어시스턴트 실행하기</string>
-    <string name="assist_gesture_training_suggestion_summary">어시스턴트에게 말하고, 벨소리를 무음으로 설정합니다.</string>
-    <string name="assist_gesture_training_suggestion_summary_including_alarms">어시스턴트에게 말하고, 알람 및 벨소리를 무음으로 설정합니다.</string>
-    <string name="assist_gesture_training_suggestion_title">쥐었다 놓아서 어시스턴트 부르기</string>
-    <string name="aware_category_security" />
-    <string name="aware_disabled_preference_action">사용</string>
-    <string name="aware_disabled_preference_dialog_content" />
-    <string name="aware_disabled_preference_dialog_title" />
-    <string name="aware_disabled_preference_neutral">나중에</string>
-    <string name="aware_footer_when_airplane_batterysaver_on">비행기 모드와 절전 모드가 켜져 있기 때문에 Motion Sense를 사용할 수 없습니다.</string>
-    <string name="aware_footer_when_airplane_on">비행기 모드가 켜져 있기 때문에 Motion Sense를 사용할 수 없습니다.</string>
-    <string name="aware_footer_when_batterysaver_on">절전 모드가 켜져 있기 때문에 Motion Sense를 사용할 수 없습니다.</string>
-    <string name="aware_gesture_summary_off">퀵 제스처 켜짐, Active Edge 꺼짐</string>
-    <string name="aware_gesture_summary_on_non_assist">퀵 제스처 켜짐, Active Edge 켜짐</string>
-    <string name="aware_gesture_summary_on_with_assist">퀵 제스처 켜짐, Active Edge 켜짐, 기기를 쥐어서 어시스턴트 실행</string>
-    <string name="aware_info_button_description">설정 더보기</string>
-    <string name="aware_settings_disabled_info_dialog_content" />
-    <string name="aware_settings_disabled_info_dialog_title" />
-    <string name="aware_settings_enabled_info_dialog_content" />
-    <string name="aware_settings_enabled_info_dialog_title" />
-    <string name="aware_settings_suggestion_summary" />
-    <string name="aware_settings_suggestion_title" />
-    <string name="aware_summary_when_airplane_batterysaver_on">비행기 모드 및 절전 모드가 켜져 있기 때문에 사용할 수 없음</string>
-    <string name="aware_summary_when_airplane_on">비행기 모드가 켜져 있기 때문에 사용할 수 없음</string>
-    <string name="aware_summary_when_batterysaver_on">절전 모드가 켜져 있기 때문에 사용할 수 없음</string>
-    <string name="aware_wake_display_summary" />
-    <string name="aware_wake_display_summary_aod_off" />
-    <string name="aware_wake_display_title" />
+액세스 권한을 취소하면 앱이 개별 문제마다 버그 신고를 수집 및 업로드하기 위한 권한을 요청해야 합니다."</string>
+    <string name="app_and_notification_dashboard_summary">어시스턴트, 최근 앱, 기본 앱</string>
+    <string name="automatic_storage_manager_activation_warning">연결되면 백업 시 선택한 품질로 사진 및 동영상에 계속 액세스할 수 있습니다.</string>
+    <string name="automatic_storage_manager_days_title">백업된 사진과 동영상 삭제</string>
+    <string name="automatic_storage_manager_deactivation_warning">"스마트 저장용량을 사용 중지하시겠습니까? 
+
+저장용량이 거의 가득 차 있는 경우에는 스마트 저장용량을 사용해도 여유 공간이 확보되지 않습니다."</string>
+    <string name="automatic_storage_manager_preference_title">스마트 저장용량</string>
+    <string name="automatic_storage_manager_primary_switch_title">스마트 저장용량 사용</string>
+    <string name="automatic_storage_manager_settings">스마트 저장용량</string>
+    <string name="automatic_storage_manager_text">저장용량이 얼마 남지 않았다면 백업된 사진과 동영상을 삭제하세요. 사진과 동영상을 삭제해도 Google 포토에서 계속 확인할 수 있습니다.</string>
     <string name="basic_battery_saver_summary">시각 효과와 백그라운드 활동을 제한합니다. 아직 사용 설정되어 있지 않은 경우 어두운 테마를 사용 설정합니다.</string>
     <string name="basic_battery_saver_title">표준 절전 모드</string>
+    <string name="battery_manager_summary">배터리 수명 연장 및 충전 최적화</string>
+    <string name="battery_manager_summary_unsupported">배터리 수명 연장</string>
+    <string name="battery_missing_link_message">자세히 알아보기</string>
     <string name="battery_saver_reminder_category">리마인더</string>
     <string name="battery_saver_reminder_switch_summary">배터리가 부족할 때 알림을 받습니다.</string>
     <string name="battery_saver_reminder_switch_title">절전 모드 알림</string>
@@ -103,7 +45,11 @@
     <string name="battery_saver_schedule_switch_title">배터리 잔량에 따라 시작</string>
     <string name="battery_schedule_summary">절전 모드가 켜지는 시점 관리</string>
     <string name="battery_schedule_title">일정 및 리마인더</string>
+    <string name="battery_tip_battery_health_learn_more_description">배터리 상태에 관해 자세히 알아보기</string>
+    <string name="battery_tip_battery_health_reduced_title">배터리 용량이 감소함</string>
+    <string name="battery_tip_battery_health_unknown_title">배터리 성능 상태를 감지할 수 없음</string>
     <string name="battery_tip_limited_temporarily_extra_summary">배터리 절약을 위해 태블릿이 도킹되어 있는 동안 충전이 %1$s에서 일시중지됩니다.</string>
+    <string name="battery_tip_smart_battery_summary">배터리 자동 조절을 사용 설정하세요</string>
     <string name="clear_calling_footer">"개인 정보 보호를 위해 선명한 통화 음질은 Google로 오디오 또는 대화를 전송하지 않습니다.
 
 선명한 통화 음질은 Wi-Fi 통화 및 대부분의 네트워크에서 작동하며 3G 네트워크에서는 사용할 수 없습니다."</string>
@@ -154,8 +100,11 @@
     <string name="columbus_setting_app_shortcut_selection_help_text">앱을 더블 탭으로 열 때 실행할 작업을 선택하세요.</string>
     <string name="columbus_setting_enable_switch_title">더블 탭 사용</string>
     <string name="columbus_setting_sensitivity_title">더 강한 탭 필요</string>
+    <string name="columbus_title">더블 탭하여 작업 시작하기</string>
     <string name="communal_lock_screen_summary">개인 정보 보호, 알림 및 홈 컨트롤</string>
     <string name="communal_other">기타</string>
+    <string name="communal_settings_summary">도크 및 잠금 화면 옵션</string>
+    <string name="communal_settings_title">허브 모드</string>
     <string name="communal_smartspace_summary">어시스턴트의 리마인더, 알림 등</string>
     <string name="communal_smartspace_title">한눈에 보기</string>
     <string name="communal_what_to_show">표시 내용</string>
@@ -166,17 +115,17 @@
     <string name="connectivity_helper_d2d_summary">통화 중 휴대전화에 연결 문제가 있을 때 상대방에게 알립니다.</string>
     <string name="connectivity_helper_d2d_title">연결 정보 공유</string>
     <string name="connectivity_helper_footnote">상대방이 지원되는 기기와 네트워크를 사용 중일 때 연결 정보를 공유할 수 있습니다.</string>
+    <string name="content_capture">앱 데이터를 사용하여 맞춤설정</string>
+    <string name="content_protection_preference_subpage_info">"보호되는 보안 기능으로, 기기 또는 개인 정보가 Google과 공유되지 않습니다. 
+
+피싱은 로그인 사용자 인증 정보 또는 기타 개인 정보를 도용하려는 시도입니다."</string>
+    <string name="content_protection_preference_subpage_summary">기기에서 바로 검사가 실행되어 앱 활동에서 피싱 또는 기타 사기 행위를 확인합니다. 피싱 또는 기타 사기 행위가 감지되는 경우, 위협을 확인하고 앱 사용자에게 경고를 표시할 수 있도록 일부 앱 정보가 Google Play 프로텍트로 전송됩니다.</string>
+    <string name="dark_ui_text">어두운 테마는 검은색 배경을 사용하므로 배터리 사용 시간이 늘어납니다. 어두운 테마 일정은 화면이 꺼질 때까지 기다린 후 켜집니다.</string>
     <string name="debugging_data_title">디버깅 데이터</string>
-    <string name="dialog_aware_settings_message" />
-    <string name="dialog_aware_settings_ok" />
-    <string name="dialog_aware_settings_title" />
     <string name="discover_tips_button">도움말 확인</string>
-    <string name="dock_setup_notification_text" />
     <string name="dock_summary_charging_phone">휴대전화 충전 중</string>
-    <string name="dream_no_screen_saver_caption" />
-    <string name="dream_no_screen_saver_description" />
-    <string name="dream_no_screen_saver_preview_caption" />
-    <string name="dream_secondary_button_title" />
+    <string name="double_twist_for_camera_mode_summary">Google 카메라에서 셀카 모드를 시작하거나 종료하려면 앱을 실행한 상태에서 두 번 돌립니다.</string>
+    <string name="duration_less_than_one_minute">1분 미만</string>
     <string name="extreme_battery_saver_summary">위의 모든 변경사항을 포함합니다. 필수 앱 및 알림을 제외하고 모두 일시중지합니다.</string>
     <string name="extreme_battery_saver_title">최대 절전 모드</string>
     <string name="face_confirmation_hide_illustration_description">이제 휴대전화를 들어 올리거나 화면을 탭하면 얼굴 인식을 사용해 잠금 해제할 수 있습니다.</string>
@@ -203,49 +152,44 @@
     <string name="face_enrolling_too_right">휴대전화를 왼쪽으로 움직이세요</string>
     <string name="face_enrolling_turn_head_to_arrow">화살표 방향으로 머리를 돌려 주세요.</string>
     <string name="face_enrolling_turned_too_far">고개를 조금만 덜 돌려 보세요.</string>
+    <string name="fast_pair_device_not_found_dialog_title">연결 실패</string>
+    <string name="fast_pair_device_not_found_other_device_description">이 기기를 Pixel 휴대전화에 가까운 위치로 옮긴 후 다시 시도하세요.</string>
+    <string name="fast_pair_device_not_found_tws_headphone_description">이어폰 케이스를 열고 Pixel 휴대전화에 가까운 위치로 옮긴 후 다시 시도하세요.</string>
+    <string name="fingerprint_unlock_set_unlock_password">Nexus Imprint + 비밀번호</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Nexus Imprint + 패턴</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Nexus Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Nexus Imprint 없이 계속하기</string>
+    <string name="firmware_update_accessory_version_number_title">액세서리 펌웨어</string>
     <string name="firmware_update_status_category">기기 펌웨어 상태</string>
     <string name="firmware_update_status_title">펌웨어 업데이트 사용 가능</string>
     <string name="firmware_update_version_number_category">기기 펌웨어 버전</string>
     <string name="firmware_update_version_number_title">Pixel 키보드 펌웨어</string>
-    <string name="gesture_aware_confirmation_action_button">확인</string>
-    <string name="gesture_aware_disabled_info_dialog_content" />
-    <string name="gesture_aware_footer">
-        <annotation link="link">환경설정</annotation>
-    </string>
-    <string name="gesture_aware_off_dialog_content" />
-    <string name="gesture_aware_off_dialog_title" />
-    <string name="gesture_silence_footer">
-        <annotation link="link">환경설정</annotation>
-    </string>
-    <string name="gesture_silence_off_summary" />
-    <string name="gesture_silence_on_summary" />
-    <string name="gesture_silence_summary" />
-    <string name="gesture_skip_direction_ltr">왼쪽에서 오른쪽으로</string>
-    <string name="gesture_skip_direction_rtl">오른쪽에서 왼쪽으로</string>
-    <string name="gesture_skip_direction_title">방향 설정 건너뛰기</string>
-    <string name="gesture_skip_footer">
-        <annotation link="link">환경설정</annotation>
-    </string>
-    <string name="gesture_skip_off_summary" />
-    <string name="gesture_skip_on_summary" />
-    <string name="gesture_skip_summary" />
-    <string name="gesture_tap_footer">
-        <annotation link="link">환경설정</annotation>
-    </string>
-    <string name="gesture_tap_on_summary" />
-    <string name="gesture_tap_summary" />
+    <string name="fullbackup_data_summary">"기기 데이터(예: Wi-Fi 비밀번호, 통화 기록)와 앱 데이터(예: 앱에 저장된 설정 및 파일)를 Google Drive에 자동으로 백업하세요.
+
+자동 백업을 사용하면 기기 데이터와 앱 데이터가 Google Drive의 비공개 폴더에 정기적으로 저장됩니다. 앱 데이터는 개발자 설정에 따라 앱에서 저장하며 민감할 수 있는 모든 데이터(예: 주소록, 메시지, 사진)를 가리킵니다.
+
+백업 데이터는 드라이브 저장용량 계산에 포함되지 않습니다. 대용량 파일이나 개발자가 자동 백업 서비스에서 제외하도록 선택한 파일은 백업되지 않습니다."</string>
+    <string name="fullbackup_erase_dialog_message">기기 데이터(예: Wi-Fi 비밀번호, 통화 기록)와 앱 데이터(예: 앱에서 저장한 설정 및 파일) 백업을 중단하고 Google Drive에 있는 모든 사본을 삭제하시겠습니까?</string>
+    <string name="gesture_settings_activity_title">동작 탐색</string>
     <string name="install_unknown_applications">Play 스토어 외 출처의 앱 설치 허용</string>
+    <string name="keywords_accessibility_menu">거동, 빠른 메뉴, 보조 메뉴, 터치, 민첩성, 관절염, RSI, 뇌졸중, 떨림, 다발성 경화증, 뇌성마비, 버튼, 하드웨어, 누르기, 반복성 긴장 장애, 손, 통증, 접근성, 지원</string>
     <string name="keywords_adaptive_alert_vibration">햅틱, 진동, 휴대전화, 통화, 벨소리, 경고, 알림, 크게, 작게, 소음, 케이스, 적응형</string>
     <string name="keywords_adaptive_charging">충전, 충전하기, 스마트 충전, 자동 조절 충전, 배터리, 배터리 상태</string>
-    <string name="keywords_assist_gesture_silence">동작, Edge, 측면, Active Edge, 소리 끄기, 일시 중지, 알람, 수신 전화, 무음, 표시, 잠금 화면, 쥐기, 잡기, 중지</string>
-    <string name="keywords_assist_gesture_wake">동작, Edge, 측면, Active Edge, 절전 모드 해제, 알림, 화면, 표시, 화면 끄기, 화면 켜기, 쥐기, 대기 상태, 절전 모드, 잡기</string>
     <string name="keywords_battery_share">배터리 공유, 무선 충전</string>
     <string name="keywords_battery_share_settings">배터리 공유, 역무선 충전</string>
-    <string name="keywords_gesture_silence" />
-    <string name="keywords_gesture_skip" />
-    <string name="keywords_gesture_tap" />
+    <string name="keywords_gesture">동작, 빠른 동작</string>
+    <string name="keywords_hearing_devices">난청, 청력 손실, PSAP</string>
     <string name="keywords_limited_warranty">보증, 보장, 한정 보증, 약속, 수리, RMA, 교환</string>
+    <string name="keywords_live_caption">캡션, 자막, CC, 음성 자막 변환, 난청, 청력 손실, CART, 음성 텍스트 변환, 자막</string>
+    <string name="keywords_live_transcribe">캡션, 폐쇄 자막, CC, 실시간 자막, 난청, 청력 손실, CART, 음성 텍스트 변환, 자막</string>
     <string name="keywords_reverse_charging_stop_threshold">배터리 공유를 중지할 휴대전화 배터리 잔량:</string>
+    <string name="keywords_select_to_speak">텍스트 듣기, 소리 내 읽기, 화면 읽기, 스크린 리더</string>
+    <string name="keywords_sound_amplifier">PSAP, 증폭, 청각 보조 기능, 난청, 청력 손실, 증폭</string>
+    <string name="keywords_sound_notifications">알림, 난청, 청력 손실, 알림</string>
+    <string name="keywords_switch_access">거동, 스위치, 손, AT, 보조 기술, 마비, ALS, 스캔, 단계 스캔</string>
+    <string name="keywords_talkback">스크린 리더, 보이스오버, VoiceOver, 음성 보조, 시각장애, 저시력, TTS, 텍스트 음성 변환, 음성 피드백</string>
+    <string name="keywords_touch_sensitivity">터치, 민감도, 민감한, 화면 보호 필름, 필름, 반응성, 반응 속도</string>
+    <string name="keywords_voice_access">음성, 음성 제어, 거동, 손, 마이크, 받아쓰기, 말하기, 제어</string>
     <string name="led_preference_title">LED 표시기 패턴</string>
     <string name="legal_source_code_description">구성요소의 소스 코드에 관한 세부정보는 Pixel 고객센터에서 오픈소스를 확인할 수 있게 되면 제공됩니다.</string>
     <string name="legal_source_code_title">소스 코드</string>
@@ -253,9 +197,12 @@
     <string name="limited_warranty_title">한정 보증</string>
     <string name="lockscreen_show_weather_summary">현재 기상 상황 보기</string>
     <string name="lockscreen_show_weather_title">날씨 표시</string>
+    <string name="my_device_info_account_preference_title">Google 계정</string>
+    <string name="owner_info_settings_edit_text_hint">예: 수지의 Pixel</string>
     <string name="permit_debugging_data">버그 신고 액세스 허용</string>
     <string name="play_application_detail_indication_summary">업데이트 확인</string>
     <string name="play_application_update_entry_title">앱 업데이트</string>
+    <string name="privatespace_retry_summary">비공개 스페이스를 설정하려면 Google 계정에 로그인해야 합니다.</string>
     <string name="repair_mode_active_summary">수리 모드 사용 중</string>
     <string name="repair_mode_summary">기기 수리를 위한 안전한 환경</string>
     <string name="repair_mode_title">수리 모드</string>
@@ -286,18 +233,37 @@
     <string name="reverse_charging_unplug_usb_cable_message">USB-C 기기가 연결되어 있으므로 사용할 수 없음</string>
     <string name="reverse_charging_warning_summary">배터리가 %1$s 미만이므로 사용할 수 없음</string>
     <string name="reverse_charging_warning_title">배터리가 %1$s 미만이므로 배터리 공유를 사용할 수 없음</string>
-    <string name="search_gesture_category_title">화면검색</string>
-    <string name="search_long_press_home_button_summary">화면에서 Google 검색을 시작하려면 홈 버튼을 길게 누르세요.</string>
-    <string name="search_long_press_home_button_title">홈 버튼을 길게 눌러 검색</string>
-    <string name="search_press_hold_gesture_summary">화면에 검색을 호출하려면 탐색 핸들을 길게 누릅니다.</string>
-    <string name="search_press_hold_gesture_title">핸들을 길게 눌러 검색하기</string>
+    <string name="rtt_settings_always_visible">항상 표시</string>
+    <string name="rtt_settings_no_visible">표시 안함</string>
+    <string name="rtt_settings_title">실시간 문자 메시지(RTT)</string>
+    <string name="rtt_settings_visible_during_call">통화 중 표시</string>
+    <string name="screen_time_summary_usage_today">%1$s(오늘)</string>
+    <string name="search_bar_account_avatar_content_description">프로필 사진, 두 번 탭하여 Google 계정 열기</string>
+    <string name="search_gesture_category_title">검색</string>
+    <string name="search_gesture_feature_title">원을 그려 검색</string>
+    <string name="search_long_press_home_button_summary">화면 하단의 홈 버튼을 길게 터치한 다음 검색할 항목에 원을 그리거나 강조 표시하세요.</string>
+    <string name="search_press_hold_gesture_summary">화면 하단의 핸들을 길게 터치한 다음 검색할 항목에 원을 그리거나 강조 표시하세요.</string>
     <string name="security_dismiss_dialog_dismiss_button">닫기</string>
     <string name="security_dismiss_dialog_title">경고를 닫으시겠습니까?</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">탭하여 설정</string>
+    <string name="security_settings_face_enroll_education_message">다음 화면이 표시되면 모든 각도에서 얼굴을 촬영할 수 있도록 고개를 돌리세요.</string>
+    <string name="security_settings_face_enroll_error_dialog_title">등록이 완료되지 않음</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">얼굴 등록 시간제한이 초과되었습니다. 다시 시도해 보세요.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">얼굴 인식 잠금 해제 설정 시간 초과</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">이제 얼굴 인식을 사용하여 휴대전화를 잠금 해제하거나 앱 로그인, 구매 승인 등을 위해 본인 인증을 진행할 수 있습니다.</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"이제 휴대전화를 들어 올리거나 화면을 탭하면 얼굴 인식을 사용해 잠금 해제할 수 있습니다.
 
 얼굴 인식 잠금 해제 기능은 주변이 밝고 마스크 또는 렌즈에 색이 들어간 안경을 쓰고 있지 않아야 잘 작동합니다."</string>
+    <string name="security_settings_face_enroll_finish_title">설정 완료</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">시력이 나쁘거나 고개 움직임이 제한된 경우의 설정</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">눈을 뜨고 있어야 설정 가능</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">부모와 자녀가 함께 설정</string>
+    <string name="security_settings_face_enroll_introduction_control_title">사용자가 직접 관리 가능</string>
+    <string name="security_settings_face_enroll_introduction_how_title">작동 방식</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">평소 자녀가 안경을 쓰는 경우 설정 중 안경을 착용할 수 있습니다.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">안경이나 옅은 색의 선글라스는 괜찮습니다.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">주의사항</string>
+    <string name="security_settings_face_enroll_introduction_title">얼굴 인식 잠금 해제 설정</string>
     <string name="security_settings_face_enroll_next">다음</string>
     <string name="security_settings_face_enroll_partial_message">인식 성능을 높이려면 설정에서 얼굴 인식 잠금 해제를 다시 설정하세요.</string>
     <string name="security_settings_face_enroll_partial_start_over">다시 시작</string>
@@ -312,8 +278,24 @@
     <string name="security_settings_face_enroll_too_hot_message">휴대전화 온도가 너무 높아서 얼굴 인식 잠금 해제 설정을 완료할 수 없습니다. 휴대전화의 열이 식고 난 후에 다시 시도해 보세요.</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">얼굴 인식 잠금 해제 건너뛰기</string>
     <string name="security_settings_face_enroll_too_hot_title">휴대전화 온도가 너무 높습니다</string>
+    <string name="security_settings_face_preference_summary_none">얼굴 인식을 설정하려면 탭하세요.</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Nexus Imprint를 사용하면 지문으로 구매를 승인하거나 앱에 로그인할 수 있습니다.
+
+지문을 추가할 때 주의하시기 바랍니다. 지문이 추가된 사용자 누구나 다음 작업을 모두 수행할 수 있습니다.
+
+참고: 지문으로 기기를 잠금 해제할 수 없습니다. 자세한 내용은 조직의 관리자에게 문의하세요."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Nexus Imprint로 잠금 해제</string>
+    <string name="security_settings_fingerprint_preference_summary_none">지문을 설정하려면 탭하세요.</string>
+    <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint를 사용하면 본인 인증을 위한 고유한 지문 모델이 생성됩니다. 설정 중 지문 모델을 만들기 위해 다양한 위치에서 지문 이미지를 촬영합니다.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint를 사용하면 자녀의 본인 인증을 위한 고유한 지문 모델이 생성됩니다. 설정 중 지문 모델을 만들기 위해 다양한 위치에서 자녀의 지문 이미지를 촬영합니다.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"&lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;에서 Pixel 지문 잠금 해제에 관해 자세히 알아보세요."</string>
+    <string name="security_settings_work_fingerprint_preference_title">직장용 Pixel Imprint</string>
     <string name="setup_suggestion_summary">몇 단계밖에 남지 않았습니다.</string>
     <string name="setup_suggestion_title">설정을 완료하세요</string>
+    <string name="smart_battery_footer">배터리 자동 조절 기능은 배터리 수명을 늘리기 위해 성능 및 백그라운드 활동을 제한할 수 있습니다. 일부 알림이 지연될 수 있습니다.</string>
+    <string name="smart_battery_manager_title">환경설정 자동 조절</string>
+    <string name="smart_battery_title">배터리 자동 조절</string>
     <string name="software_update_can_be_updated_header">Pixel 더 효과적으로 사용하기</string>
     <string name="software_update_detail_indication_1_update_available">업데이트 1개 가능</string>
     <string name="software_update_detail_indication_2_or_more_updates_available">업데이트 %1$d개 가능</string>
@@ -324,11 +306,13 @@
     <string name="software_update_unknown_state_summary">나중에 다시 확인하세요</string>
     <string name="software_update_up_to_date_header">Pixel이 최신 상태임</string>
     <string name="software_update_up_to_date_summary">최신 상태</string>
-    <string name="software_update_up_to_specific_date_summary">%1$s 설정이 업데이트되었습니다</string>
+    <string name="software_update_up_to_specific_date_summary">%1$s 업데이트되었습니다</string>
     <string name="software_update_update_available_summary">업데이트 가능</string>
+    <string name="sound_dashboard_summary">볼륨, 햅틱, 방해 금지 모드</string>
     <string name="speed_boost_summary_off">사용 안함</string>
     <string name="speed_boost_summary_on">사용</string>
     <string name="speed_boost_title">스펙트럼 속도 부스트</string>
+    <string name="suggested_fingerprint_lock_settings_title">Pixel Imprint 사용</string>
     <string name="suw_limited_warranty_title">한정 보증</string>
     <string name="suw_warranty_description">한정 보증 내용을 보려면 기기를 구매한 국가를 선택하세요.&lt;br /&gt;&lt;br /&gt;보증 정보는 &lt;b&gt;설정 &gt; 휴대전화 정보 &gt; 한정 보증&lt;/b&gt; 및 g.co/devicewarranty에서도 볼 수 있습니다.</string>
     <string name="suw_warranty_description_content">한정 보증 내용을 보려면 기기를 구매한 국가를 선택하세요. 보증 정보는 설정 &gt; 휴대전화 정보 &gt; 한정 보증 및 g.co/devicewarranty에서도 볼 수 있습니다.</string>
@@ -336,10 +320,11 @@
     <string name="suw_warranty_positive_button_text">닫기</string>
     <string name="system_update_entry_title">시스템 업데이트</string>
     <string name="system_updates_group_title">Pixel 업데이트</string>
-    <string name="tips_suggestion_summary">휴대전화로 할 수 있는 작업 살펴보기</string>
-    <string name="tips_suggestion_title">Pixel 알아보기</string>
+    <string name="touch_sensitivity_summary">화면 보호필름 사용 시 터치 감도 및 터치 반응 개선</string>
+    <string name="touch_sensitivity_title">화면 보호필름 모드</string>
     <string name="traffic_light_face_enrolling_title_accessibility">휴대전화가 얼굴을 향하도록 들어 주세요</string>
     <string name="unified_battery_saver_page_intro">다음 충전까지 휴대전화 배터리를 더 오래 사용할 수 있도록 전력을 절약합니다.</string>
+    <string name="usb_use_file_transfers">파일 전송/Android Auto</string>
     <string name="vpn_app_bypass">선택한 앱 제외</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">현재 이동통신사 앱</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">이동통신사 앱 %1$d개를 VPN에서 제외하시겠습니까?</string>
@@ -360,12 +345,9 @@
     <string name="vpn_exclude_ntf_content">VPN을 사용하지 않을 수 있는 이동통신사 앱을 새로 설치했습니다.</string>
     <string name="vpn_exclude_ntf_title">새 앱을 VPN에서 제외하시겠습니까?</string>
     <string name="vpn_preference_group_title">기타</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_title" />
-    <string name="wake_screen_suggestion_summary" />
-    <string name="wake_screen_suggestion_title" />
+    <string name="wallpaper_dashboard_summary">색상, 테마 아이콘, 앱 그리드</string>
     <string name="warranty_country_information">%1$s(%2$s)</string>
+    <string name="wifi_subscription_summary">OpenRoaming 구독 확인 또는 변경</string>
     <string name="wifitrackerlib_connected_with_wsu_authenticator">%1$s에 연결됨</string>
     <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">탭하여 연결</string>
     <string name="wifitrackerlib_wsu_entry_summary_provision_error">연결할 수 없음. 탭하여 다시 시도</string>

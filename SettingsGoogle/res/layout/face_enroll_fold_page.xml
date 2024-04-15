@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.setupdesign.GlifLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.setupdesign.GlifLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@id/setup_wizard_layout"
-    style="?face_layout_theme"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    style="?face_layout_theme">
 
     <LinearLayout
-        style="@style/SudContentFrame"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:clipChildren="false"
         android:clipToPadding="false"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        style="@style/SudContentFrame">
 
         <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="0.0dip"
-            android:layout_weight="1.0"
             android:gravity="center"
+            android:layout_weight="1.0"
             android:orientation="vertical">
 
             <com.airbnb.lottie.LottieAnimationView
@@ -32,6 +33,9 @@
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
                 app:lottie_speed="0.85" />
+
         </RelativeLayout>
+
     </LinearLayout>
+
 </com.google.android.setupdesign.GlifLayout>

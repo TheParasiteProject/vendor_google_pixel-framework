@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="aware_category_display" />
-    <string name="aware_category_gesture" />
-    <string name="aware_display_settings_title">معطل مقفل اسکرین</string>
-    <string name="aware_settings_description" />
-    <string name="aware_settings_summary" />
-    <string name="gesture_silence_title">خاموشی الرٹس کا اشارہ</string>
-    <string name="gesture_skip_title">اشارہ کو نظر انداز کریں</string>
-    <string name="keywords_touch_sensitivity">ٹچ ، حساسیت ، حساس ، اسکرین محافظ ، فلم ، ذمہ دار ، ردعمل</string>
-    <string name="keywords_wake_display" />
-    <string name="touch_sensitivity_summary">اسکرین پروٹیکٹر استعمال کرتے وقت ٹچ کی حساسیت میں اضافہ کریں اور ٹچ کو بہتر بنائیں</string>
-    <string name="touch_sensitivity_title">اسکرین پروٹیکٹر موڈ</string>
-    <string name="columbus_title">کارروائیاں شروع کرنے کے لیے فوری تھپتھپاہٹ</string>
-    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">‏Active Edge سیٹ اپ۔ اگلی اسکرین پر جائيں یا ایڈجسٹ کرتے رہیں۔</string>
     <string name="accessibility_keyboard_haptics_title">کی بورڈ ہیپٹکس</string>
     <string name="adaptive_alert_vibration_summary">جب آپ کا فون ساکن ہو اور اسکرین اوپر کی طرف ہو تو یہ وائبریشن کی طاقت کو کم کرتا ہے</string>
     <string name="adaptive_alert_vibration_title">تغیر پذیر الرٹ وائبریشن</string>
@@ -32,69 +19,25 @@
 
 "<b>بگ رپورٹس ایپ اور سسٹم لاگز پر مشتمل ہوتی ہیں</b>" اور ان میں ذاتی اور آلے کی معلومات شامل ہو سکتی ہیں، جیسے کہ نام، ای میل پتے، فون نمبرز، مقام کا ڈیٹا، آلے کے شناخت کنندگان، منسلک آلات اور نیٹ ورک کی معلومات۔ رپورٹس کا اشتراک انجینئرنگ پارٹنرز کے ساتھ کیا جا سکتا ہے جو ممکنہ طور پر آپ کے مسئلے سے متاثر ہوئے ہیں۔
 
-رسائی دینے سے اس ایپ کو "<b>بگ رپورٹس خودکار طور پر اکٹھا کرنے اور اپ لوڈ کرنے کی اجازت ملے گی</b>" بشمول مسئلے کی تمام رپورٹس کے لیے ایپ اور سسٹم لاگز۔
+رسائی دینے سے اس ایپ کو "<b>بگ رپورٹس خودکار طور پر اکٹھا کرنے اور اپ لوڈ کرنے کی اجازت ملے گی</b>"، بشمول آپ کی جمع کرائی گئی سبھی مسئلے کی رپورٹس کے لیے ذاتی اور دفتری پروفائلز سے ایپ اور سسٹم لاگز۔
 
 رسائی ہٹانے سے ایپ کو ہر انفرادی مسئلے کی خاطر بگ رپورٹس اکٹھا کرنے اور اپ لوڈ کرنے کے لیے آپ سے اجازت کی درخواست کرنی ہوگی۔"</string>
-    <string name="ambient_display_wake_screen_footer">
-        <annotation link="link">ترجیحات</annotation>
-    </string>
-    <string name="ambient_display_wake_screen_summary" />
-    <string name="ambient_display_wake_screen_summary_on" />
-    <string name="assist_gesture_enrollment_continue_to_assistant">اسسٹنٹ پر جاری رہیں</string>
-    <string name="assist_gesture_enrollment_do_it_later">اسے بعد میں کریں</string>
-    <string name="assist_gesture_enrollment_seekbar_light">ہلکا سا دبائیں</string>
-    <string name="assist_gesture_enrollment_seekbar_strong">مضبوطی سے دبائیں</string>
-    <string name="assist_gesture_enrollment_settings">ترتیبات</string>
-    <string name="assist_gesture_setting_enable_assistant_text">اپنے اسسٹنٹ سے بات کرنے کیلئے، فون کا نصف نچلا حصہ جلدی سے دبائیں پھر چھوڑ دیں</string>
-    <string name="assist_gesture_setting_enable_assistant_title">اپنے اسسٹنٹ کے لیے دبائیں</string>
-    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">الارمز، ٹائمرز، اطلاعات، اور موصول ہونے والی کالز کو خاموش کرنے کے لیے دبائیں</string>
-    <string name="assist_gesture_setting_enable_ring_silence_text">اطلاعات، اور موصول ہونے والی کالز کو خاموش کرنے کے لیے دبائیں</string>
-    <string name="assist_gesture_setting_enable_ring_silence_title">فون خاموش کرنے کے لیے دبائيں</string>
-    <string name="assist_gesture_setting_enable_wake_title">اسکرین آف ہونے پر اسسٹنٹ کھولیں</string>
-    <string name="assist_gesture_squeeze_help_maximum_sensitivity">ہلکا سا دبائیں</string>
-    <string name="assist_gesture_squeeze_help_minimum_sensitivity">مضبوطی سے دبائیں</string>
-    <string name="assist_gesture_squeeze_sensitivity_label">دبانے کی حساسیت</string>
-    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">حادثاتی طور پر اسسٹنٹ کو بلا سکتا ہے</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">اپنے فون کا نصف نچلا حصہ دبائیں</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_faster">زیادہ تیز دبائیں</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_harder">مزید سختی سے دبائیں</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">جلدی سے دبائیں اور پھر چھوڑ دیں</string>
-    <string name="assist_gesture_training_enrolling_error_try_adjusting">سلائیڈر کو ایڈجسٹ کرنے کی کوشش کریں</string>
-    <string name="assist_gesture_training_enrolling_text">اپنے فون کا نصف نچلا حصہ دبائیں۔ آپ کو کتنی قوت سے دبانا ہے، آپ اسے ایڈجسٹ کر سکتے ہیں۔</string>
-    <string name="assist_gesture_training_enrolling_title">جلدی سے دبائیں اور چھوڑ دیں</string>
-    <string name="assist_gesture_training_finished_text">آپ بعد میں ترتیبات میں دبانے کی حساسیت کو بھی تبدیل کر سکتے ہیں</string>
-    <string name="assist_gesture_training_finished_title">مکمل کریں یا ایڈجسٹ کرنا جاری رکھیں</string>
-    <string name="assist_gesture_training_intro_text">کسی بھی وقت اپنے اسسٹنٹ سے بات کرنے کیلئے، فون کا نصف نچلا حصہ جلدی سے دبائیں، پھر چھوڑ دیں</string>
-    <string name="assist_gesture_training_intro_title">اپنے اسسٹنٹ کے لیے دبائیں</string>
-    <string name="assist_gesture_training_suggestion_summary">اسسٹنٹ سے بات کریں، کالز کو خاموش کریں</string>
-    <string name="assist_gesture_training_suggestion_summary_including_alarms">اسسٹنٹ سے بات کریں، الارمز اور کالز کو خاموش کریں</string>
-    <string name="assist_gesture_training_suggestion_title">اسسٹنٹ کیلئے دبائیں اور چھوڑ دیں</string>
-    <string name="aware_category_security" />
-    <string name="aware_disabled_preference_action">آن کریں</string>
-    <string name="aware_disabled_preference_dialog_content" />
-    <string name="aware_disabled_preference_dialog_title" />
-    <string name="aware_disabled_preference_neutral">ابھی نہیں</string>
-    <string name="aware_footer_when_airplane_batterysaver_on">‏Motion Sense دستیاب نہیں ہے کیونکہ ہوائی جہاز وضع اور بیٹری سیور آن ہیں</string>
-    <string name="aware_footer_when_airplane_on">‏Motion Sense دستیاب نہیں ہے کیونکہ ہوائی جہاز وضع آن ہے</string>
-    <string name="aware_footer_when_batterysaver_on">‏Motion Sense دستیاب نہیں ہے کیونکہ بیٹری سیور آن ہے</string>
-    <string name="aware_gesture_summary_off">‏فوری اشارے آن ہے، Active Edge کو آف کر دیا گیا</string>
-    <string name="aware_gesture_summary_on_non_assist">‏فوری اشارے آن ہے، Active Edge کو آن کر دیا گیا</string>
-    <string name="aware_gesture_summary_on_with_assist">‏فوری اشارے آن ہے، Active Edge آن ہے، اپنی اسسٹنٹ کے لیے دبائیں</string>
-    <string name="aware_info_button_description">مزید ترتیبات</string>
-    <string name="aware_settings_disabled_info_dialog_content" />
-    <string name="aware_settings_disabled_info_dialog_title" />
-    <string name="aware_settings_enabled_info_dialog_content" />
-    <string name="aware_settings_enabled_info_dialog_title" />
-    <string name="aware_settings_suggestion_summary" />
-    <string name="aware_settings_suggestion_title" />
-    <string name="aware_summary_when_airplane_batterysaver_on">دستیاب نہیں ہے کیونکہ ہوائی جہاز وضع اور بیٹری سیور آن ہیں</string>
-    <string name="aware_summary_when_airplane_on">دستیاب نہیں ہے کیونکہ ہوائی جہاز وضع آن ہے</string>
-    <string name="aware_summary_when_batterysaver_on">دستیاب نہیں ہے کیونکہ بیٹری سیور آن ہے</string>
-    <string name="aware_wake_display_summary" />
-    <string name="aware_wake_display_summary_aod_off" />
-    <string name="aware_wake_display_title" />
+    <string name="app_and_notification_dashboard_summary">اسسٹنٹ، حالیہ ایپس، ڈیفالٹ ایپس</string>
+    <string name="automatic_storage_manager_activation_warning">جب آپ منسلک ہوں تو آپ پھر بھی تصاویر اور ویڈیوز تک اس معیار پر رسائی کر سکتے ہیں جسے آپ نے بیک اپ کیلئے منتخب کیا تھا</string>
+    <string name="automatic_storage_manager_days_title">بیک اپ کردہ تصاویر اور ویڈیوز ہٹائیں</string>
+    <string name="automatic_storage_manager_deactivation_warning">"اسمارٹ اسٹوریج آف کر دیں؟ 
+
+آپ کا اسٹوریج تقریباً بھر جانے پر اسمارٹ اسٹوریج جگہ خالی نہیں کرے گا۔"</string>
+    <string name="automatic_storage_manager_preference_title">اسمارٹ سٹوریج</string>
+    <string name="automatic_storage_manager_primary_switch_title">اسمارٹ اسٹوریج استعمال کریں</string>
+    <string name="automatic_storage_manager_settings">اسمارٹ اسٹوریج</string>
+    <string name="automatic_storage_manager_text">‏جب اسٹوریج تقریباً بھر جائے تو بیک اپ کردہ تصاویر اور ویڈیوز ہٹا دیں۔ آپ انہیں پھر بھی Google تصاویر میں تلاش کر سکتے ہیں۔</string>
+    <string name="backup_data_summary">‏Google سرورز پر ایپ کے ڈیٹا، Wi-Fi پاس ورڈز اور دیگر ترتیبات کا بیک اپ لیں</string>
     <string name="basic_battery_saver_summary">ویژوئل کے اثرات اور پس منظر کی سرگرمی کو محدود کرتا ہے۔ گہری تھیم کے پہلے سے آن نہ ہونے پر اسے آن کرتا ہے۔</string>
     <string name="basic_battery_saver_title">معیاری بیٹری سیور</string>
+    <string name="battery_manager_summary">بیٹری لائف کو بڑھائیں اور چارجنگ کو بہترین بنائیں</string>
+    <string name="battery_manager_summary_unsupported">بیٹری لائف میں توسیع کریں</string>
+    <string name="battery_missing_link_message">مزید جانیں</string>
     <string name="battery_saver_reminder_category">یاد دہانیاں</string>
     <string name="battery_saver_reminder_switch_summary">بیٹری کے کم ہونے پر یاد دہانیاں حاصل کریں</string>
     <string name="battery_saver_reminder_switch_title">بیٹری سیور کی یاد دہانیاں</string>
@@ -103,7 +46,11 @@
     <string name="battery_saver_schedule_switch_title">بیٹری کی سطح کی بنیاد پر آن کریں</string>
     <string name="battery_schedule_summary">بیٹری سیور کے آن ہونے پر نظم کریں</string>
     <string name="battery_schedule_title">شیڈول اور یاد دہانیاں</string>
+    <string name="battery_tip_battery_health_learn_more_description">بیٹری کی صحت کے بارے میں مزید جانیں</string>
+    <string name="battery_tip_battery_health_reduced_title">بیٹری کی گنجائش کم ہو گئی ہے</string>
+    <string name="battery_tip_battery_health_unknown_title">بیٹری کی صحت کا پتا نہیں لگایا جا سکتا</string>
     <string name="battery_tip_limited_temporarily_extra_summary">آپ کے ٹیبلیٹ کے ڈاک ہونے کے دوران آپ کی بیٹری کی حفاظت کرنے کیلئے، چارجنگ کو %1$s پر روک دیا گیا ہے</string>
+    <string name="battery_tip_smart_battery_summary">تغیر پذیر بیٹری آن کریں</string>
     <string name="clear_calling_footer">"‏آپ کی رازداری کے تحفظ کے لیے، کلیئر کالنگ آڈیو یا گفتگوئیں Google کو نہیں بھیجتی ہے۔
 
 کلیئر کالنگ Wi-Fi کالنگ اور زیادہ تر نیٹ ورکس پر کام کرتی ہے، 3G نیٹ ورکس کیلئے دستیاب نہیں ہے۔"</string>
@@ -154,8 +101,11 @@
     <string name="columbus_setting_app_shortcut_selection_help_text">منتخب کریں کہ جب آپ فوری تھپتھپاہٹ کا استعمال کرتے ہوئے ایپ کھولتے ہیں تو کیا ہوتا ہے۔</string>
     <string name="columbus_setting_enable_switch_title">فوری تھپتھپاہٹ کا استعمال کریں</string>
     <string name="columbus_setting_sensitivity_title">مضبوط تھپتھپاہٹیں درکار ہیں</string>
+    <string name="columbus_title">کارروائیاں شروع کرنے کے لیے فوری تھپتھپاہٹ</string>
     <string name="communal_lock_screen_summary">رازداری، اطلاعات اور ہوم کنٹرولز</string>
     <string name="communal_other">دیگر</string>
+    <string name="communal_settings_summary">ڈاک اور لاک اسکرین کے اختیارات</string>
+    <string name="communal_settings_title">ہب موڈ</string>
     <string name="communal_smartspace_summary">اسسٹنٹ کی جانب سے یاد دہانیاں، الرٹس اور بہت کچھ</string>
     <string name="communal_smartspace_title">ایک نظر میں</string>
     <string name="communal_what_to_show">کیا دکھانا ہے</string>
@@ -166,17 +116,17 @@
     <string name="connectivity_helper_d2d_summary">کالز کے دوران جب آپ کے فون میں کنکشن کے مسائل ہوں تو دوسرے شخص کو مطلع کریں</string>
     <string name="connectivity_helper_d2d_title">کنکشن کی معلومات کا اشتراک کریں</string>
     <string name="connectivity_helper_footnote">آپ کنکشن کی معلومات کا اشتراک کر سکتے ہیں جب دوسرا کالر ایک تعاون یافتہ آلہ اور نیٹ ورک استعمال کر رہا ہو</string>
+    <string name="content_capture">ایپ کے ڈیٹا کے ذریعے ذاتی نوعیت کا بنائيں</string>
+    <string name="content_protection_preference_subpage_info">"‏یہ سیکیورٹی کی ایک محفوظ خصوصیت ہے۔ Google کے ساتھ کسی بھی آلے یا ذاتی معلومات کا اشتراک نہیں کیا جاتا ہے۔ 
+
+فریب دہی سائن ان کی اسناد یا دیگر ذاتی معلومات چرانے کی کوشش ہے۔"</string>
+    <string name="content_protection_preference_subpage_summary">‏اسکیننگ آپ کے آلے پر نجی طور پر چلتی ہے، ایپ کی سرگرمی کو فریب دہی یا دیگر جعلسازی کے برتاؤ کے لیے چیک کیا جا رہا ہے۔ اس کا پتہ چلنے پر خطرے کی تصدیق اور ایپ کے صارفین کو متنبہ کرنے کے لیے ایپ کی کچھ معلومات Google Play Protect کو بھیجی جاتی ہیں۔</string>
+    <string name="dark_ui_text">گہری تھیم آپ کی بیٹری کو زیادہ دیر تک فعال رکھنے میں مدد کے ليے سیاہ پس منظر کا استعمال کرتی ہے۔ گہری تھیم کے شیڈولز آپ کی اسکرین کے آف ہونے پر آن ہونے کا انتظار کرتے ہیں۔</string>
     <string name="debugging_data_title">ڈیبگنگ ڈیٹا</string>
-    <string name="dialog_aware_settings_message" />
-    <string name="dialog_aware_settings_ok" />
-    <string name="dialog_aware_settings_title" />
     <string name="discover_tips_button">تجاویز دریافت کریں</string>
-    <string name="dock_setup_notification_text" />
     <string name="dock_summary_charging_phone">فون چارج کیا جا رہا ہے</string>
-    <string name="dream_no_screen_saver_caption" />
-    <string name="dream_no_screen_saver_description" />
-    <string name="dream_no_screen_saver_preview_caption" />
-    <string name="dream_secondary_button_title" />
+    <string name="double_twist_for_camera_mode_summary">‏جب آپ ایپ میں ہوں تو Google کیمرا میں سیلفی موڈ میں سوئچ اِن اور آؤٹ کرنے کیلئے دو بار مروڑیں۔</string>
+    <string name="duration_less_than_one_minute">1 منٹ سے کم</string>
     <string name="extreme_battery_saver_summary">اوپر درج کردہ تمام تبدیلیاں شامل ہیں۔ غیر ضروری ایپس اور ان کی اطلاعات کو بھی موقوف کرتا ہے۔</string>
     <string name="extreme_battery_saver_title">انتہائی بیٹری سیور</string>
     <string name="face_confirmation_hide_illustration_description">اب جب آپ اپنا فون اٹھاتے ہیں یا اسکرین پر تھپتھپاتے ہیں تو آپ اپنے چہرے کو غیر مقفل کرنے کے لیے استعمال کر سکتے ہیں۔</string>
@@ -203,49 +153,44 @@
     <string name="face_enrolling_too_right">فون کو اپنی بائیں جانب لے جائیں</string>
     <string name="face_enrolling_turn_head_to_arrow">اپنے سر کا رخ تیر کی طرف کريں</string>
     <string name="face_enrolling_turned_too_far">سر کو تھوڑا کم گھمائیں</string>
+    <string name="fast_pair_device_not_found_dialog_title">منسلک ہونے میں ناکام</string>
+    <string name="fast_pair_device_not_found_other_device_description">‏اس آلہ کو اپنے Pixel فون کے قریب لے جائیں اور دوبارہ کوشش کریں۔</string>
+    <string name="fast_pair_device_not_found_tws_headphone_description">‏ایئر بڈز کیس کھولیں اور اسے اپنے Pixel فون کے قریب لے جائیں، پھر دوبارہ کوشش کریں</string>
+    <string name="fingerprint_unlock_set_unlock_password">‏Nexus Imprint + پاس ورڈ</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">‏Nexus Imprint + پیٹرن</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Nexus Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">‏Nexus Imprint کے بغیر جاری رکھیں</string>
+    <string name="firmware_update_accessory_version_number_title">ایکسیسری فرم ویئر</string>
     <string name="firmware_update_status_category">آلہ فرم ویئر کی صورتحال</string>
     <string name="firmware_update_status_title">فرم ویئر اپ ڈیٹ دستیاب ہے</string>
     <string name="firmware_update_version_number_category">آلے کے فرم ویئر کا ورژن</string>
     <string name="firmware_update_version_number_title">‏Pixel کی پورڈ فرم ویئر</string>
-    <string name="gesture_aware_confirmation_action_button">سمجھ آ گئی</string>
-    <string name="gesture_aware_disabled_info_dialog_content" />
-    <string name="gesture_aware_footer">
-        <annotation link="link">ترجیحات</annotation>
-    </string>
-    <string name="gesture_aware_off_dialog_content" />
-    <string name="gesture_aware_off_dialog_title" />
-    <string name="gesture_silence_footer">
-        <annotation link="link">ترجیحات</annotation>
-    </string>
-    <string name="gesture_silence_off_summary" />
-    <string name="gesture_silence_on_summary" />
-    <string name="gesture_silence_summary" />
-    <string name="gesture_skip_direction_ltr">بائیں سے دائیں</string>
-    <string name="gesture_skip_direction_rtl">دائیں سے بائیں</string>
-    <string name="gesture_skip_direction_title">ڈائریکشن کو نظرانداز کریں</string>
-    <string name="gesture_skip_footer">
-        <annotation link="link">ترجیحات</annotation>
-    </string>
-    <string name="gesture_skip_off_summary" />
-    <string name="gesture_skip_on_summary" />
-    <string name="gesture_skip_summary" />
-    <string name="gesture_tap_footer">
-        <annotation link="link">ترجیحات</annotation>
-    </string>
-    <string name="gesture_tap_on_summary" />
-    <string name="gesture_tap_summary" />
+    <string name="fullbackup_data_summary">"‏Google Drive میں خود کار طریقے سے آلہ کے ڈیٹا (جیسے کہ Wi-Fi پاس ورڈز اور کال کی سرگزشت) اور ایپ ڈیٹا (جیسے کہ ایپس کی جانب سے اسٹور کردہ ترتیبات اور فائلز) کا بیک اپ لیں۔
+
+جب آپ خود کار بیک اپ آن کرتے ہیں تو آلہ اور ایپ کا ڈیٹا مخصوص وقفوں کے بعد آپ کے Google Drive کے ایک نجی فولڈر میں محفوظ ہو جاتا ہے۔ ایپ ڈیٹا کوئی بھی ایسا ڈیٹا ہو سکتا ہے جسے کسی ایپ نے (ڈویلپر ترتیبات کی بنیاد پر) محفوظ کیا ہو بشمول ممکنہ طور پر حساس ڈیٹا مثلاً رابطے، پیغامات اور تصاویر۔
+
+بیک اپ ڈیٹا کا شمار آپ کے Drive storage کوٹہ میں نہیں ہوگا۔ بڑی فائلیں، یا ایسی فائلیں جنہیں ڈویلپرز نے سروس میں شامل نہ کرنے کا انتخاب کیا ہے ان کا بیک اپ نہیں لیا جائے گا۔"</string>
+    <string name="fullbackup_erase_dialog_message">‏آلہ کے ڈیٹا (جیسے کہ Wi-Fi پاسورڈز اور کال کی سرگزشت) اور ایپ ڈیٹا (جیسے کہ ایپس کی جانب سے اسٹور کردہ ترتیبات اور فائلز) کا بیک اپ لینا بند کریں، نیز Google Drive پر موجود سبھی کاپیاں مٹا دیں؟</string>
+    <string name="gesture_settings_activity_title">اشاروں والی نیویگیشن</string>
     <string name="install_unknown_applications">‏Play اسٹور کے علاوہ دیگر مآخذ سے ایپس انسٹال کرنے کی اجازت دیں</string>
+    <string name="keywords_accessibility_menu">موٹر، فوری مینو، مددگار مینیو، ٹچ، مہارت، گٹھیا، آر ایس آئی، اسٹروک، رَعشہ، مضاعفِ تصلب، دماغی فالج، بٹن، ہارڈویئر، پریس، بار بار عصاب کی کھچھاؤ، ہاتھ، درد، قابل رسائی، مدد</string>
     <string name="keywords_adaptive_alert_vibration">ہیپٹکس، وائبریٹ، فون، کال، رنگ، الرٹ، اطلاعات، بلند آواز، خاموش، شور، کیس، تغیر پذیر</string>
     <string name="keywords_adaptive_charging">چارج کریں، چارجنگ، اسمارٹ چارجنگ، اڈاپٹیو چارجنگ، بیٹری، بیٹری کی صحت</string>
-    <string name="keywords_assist_gesture_silence">‏اشارہ، edge، سائڈ، active edge، خاموشی، اسنوز، الارم، اِن کمنگ کال، خاموش، ڈسپلے، لاک اسکرین، دبانا، گرفت، بند کرنا</string>
-    <string name="keywords_assist_gesture_wake">‏اشارہ، edge، سائڈ، active edge، جگانا، اطلاعات، اسکرین، ڈسپلے، اسکرین آف، اسکرین آن، دبانا، سویا ہوا، سلیپ وضع، گرفت</string>
     <string name="keywords_battery_share">بیٹری کا اشتراک، وائرلیس چارجنگ</string>
     <string name="keywords_battery_share_settings">بیٹری کا اشتراک، معکوس وائرلیس چارجنگ</string>
-    <string name="keywords_gesture_silence" />
-    <string name="keywords_gesture_skip" />
-    <string name="keywords_gesture_tap" />
+    <string name="keywords_gesture">اشارہ، اشاراتی حرکتیں</string>
+    <string name="keywords_hearing_devices">‏اونچا سننے والا، سماعت سے محروم، PSAP</string>
     <string name="keywords_limited_warranty">‏وارنٹی، ضمانت، محدود وارنٹی، وعدہ، مرمت، rma، تبدیلی</string>
+    <string name="keywords_live_caption">کیپشنز، سب ٹائٹلز، سب ٹائٹلز، لائیو ٹرانسکرپشن، اونچا سننے والا، سننے میں دشواری، کارٹ، اسپیچ ٹو ٹیکسٹ، ذیلی عنوان</string>
+    <string name="keywords_live_transcribe">کیپشنز، سب ٹائٹلز، سب ٹائٹلز، لائیو کیپشن، اونچا سننے والا، سننے میں دشواری، کارٹ، اسپیچ ٹو ٹیکسٹ، ذیلی عنوان</string>
     <string name="keywords_reverse_charging_stop_threshold">جب فون کی بیٹری اس حد کو پہنچ جائے تو اشتراک بند کر دیں:</string>
+    <string name="keywords_select_to_speak">ٹیکسٹ سننا، اونچی آواز میں پڑھنا، اسپیک اسکرین، اسکرین قاری</string>
+    <string name="keywords_sound_amplifier">‏PSAP، ایمپلی فائے، ساؤنڈ ایمپلیفائر، اونچا سننے والا، سننے میں دشواری، ایمپلیفیکیشن</string>
+    <string name="keywords_sound_notifications">اطلاعات، اونچا سننے والا، سننے میں دشواری، مطلع کرنا</string>
+    <string name="keywords_switch_access">‏اعصاب کی حرکی سرگرمی سے متعلق مہارتیں، سوئچ، ہاتھ، AT، معاون ٹیکنالوجی، فالج، ALS، اسکیننگ، اسٹیپ اسکیننگ</string>
+    <string name="keywords_talkback">‏اسکرین قاری، وائس اوور، VoiceOver، صوتی معاون، نابینا، کم بصارت، TTS، ٹیکسٹ ٹو اسپیچ، صوتی تاثرات</string>
+    <string name="keywords_touch_sensitivity">ٹچ ، حساسیت ، حساس ، اسکرین محافظ ، فلم ، ذمہ دار ، ردعمل</string>
+    <string name="keywords_voice_access">آواز، صوتی کنٹرول، اعصاب کی حرکی سرگرمی سے متعلق مہارتیں، ہاتھ، مائیک، مائیکروفون، ڈکٹیشن، بات کرنا، کنٹرول</string>
     <string name="led_preference_title">‏LED انڈیکیٹر کے پیٹرنز</string>
     <string name="legal_source_code_description">‏Pixel مرکز امداد میں اوپن سورس کے بطور دستیاب بنائے گئے اجزاء کے ماخذ کوڈ کے بارے میں تفصیلات مل سکتی ہیں۔</string>
     <string name="legal_source_code_title">ماخذ کوڈ</string>
@@ -253,9 +198,12 @@
     <string name="limited_warranty_title">محدود وارنٹی</string>
     <string name="lockscreen_show_weather_summary">موجودہ موسمی حالات دیکھیں</string>
     <string name="lockscreen_show_weather_title">موسم دکھائیں</string>
+    <string name="my_device_info_account_preference_title">‏Google اکاؤنٹ</string>
+    <string name="owner_info_settings_edit_text_hint">‏جیسے، شمائلہ کا Pixel۔</string>
     <string name="permit_debugging_data">بگ رپورٹ تک رسائی کی اجازت دیں</string>
     <string name="play_application_detail_indication_summary">اپ ڈیٹس چیک کریں</string>
     <string name="play_application_update_entry_title">ایپ کی اپ ڈیٹس</string>
+    <string name="privatespace_retry_summary">‏نجی اسپیس سیٹ اپ کرنے کے لیے آپ کو Google اکاؤنٹ میں سائن ان کرنے کی ضرورت ہے</string>
     <string name="repair_mode_active_summary">مرمتی وضع میں</string>
     <string name="repair_mode_summary">آلے کی مرمت کے لیے محفوظ ماحول</string>
     <string name="repair_mode_title">مرمت کی وضع</string>
@@ -286,18 +234,36 @@
     <string name="reverse_charging_unplug_usb_cable_message">‏دستیاب نہیں ہے کیونکہ USB-C آلہ پلگ ان ہے</string>
     <string name="reverse_charging_warning_summary">دستیاب نہیں ہے کیونکہ بیٹری %1$s کے تحت ہے</string>
     <string name="reverse_charging_warning_title">بیٹری کا اشتراک دستیاب نہیں ہے کیونکہ بیٹری %1$s سے کم ہے</string>
-    <string name="search_gesture_category_title">اسکرین پر تلاش</string>
-    <string name="search_long_press_home_button_summary">‏اپنی اسکرین پر Google پر تلاش شروع کرنے کے لیے ہوم بٹن کو چھوئیں اور دبائے رکھیں۔</string>
-    <string name="search_long_press_home_button_title">تلاش کرنے کے لیے ہوم بٹن کو دبائے رکھیں</string>
-    <string name="search_press_hold_gesture_summary">اپنی اسکرین پر درخواست کی تلاش کرنے کے لیے نیویگیشن ہینڈل کو چھوئیں اور دبائے رکھیں۔</string>
-    <string name="search_press_hold_gesture_title">تلاش کرنے کے لیے ہینڈل کو پکڑے رکھیں</string>
+    <string name="rtt_settings_always_visible">ہمیشہ مرئی</string>
+    <string name="rtt_settings_no_visible">مرئی نہیں</string>
+    <string name="rtt_settings_title">‏ریئل ٹائم ٹیکسٹ (RTT)</string>
+    <string name="rtt_settings_visible_during_call">کال کے دوران مرئی</string>
+    <string name="screen_time_summary_usage_today">%1$s آج</string>
+    <string name="search_bar_account_avatar_content_description">‏پروفائل تصویر، Google اکاؤنٹ کو کھولنے کے لیے دو بار تھپتھپائیں</string>
+    <string name="search_gesture_category_title">تلاش کریں</string>
+    <string name="search_gesture_feature_title">تلاش کے لیے دائرہ</string>
+    <string name="search_long_press_home_button_summary">اسکرین کے نیچے ہوم بٹن کو ٹچ کریں اور دبائے رکھیں، پھر کسی بھی چیز کو تلاش کرنے کے لیے دائرہ بنائیں یا نمایاں کریں</string>
+    <string name="search_press_hold_gesture_summary">اسکرین کے نیچے ہینڈل کو ٹچ کریں اور دبائے رکھیں، پھر کسی بھی چیز کو تلاش کرنے کے لیے دائرہ بنائیں یا نمایاں کریں</string>
     <string name="security_dismiss_dialog_dismiss_button">برخاست کریں</string>
     <string name="security_dismiss_dialog_title">اس وارننگ کو برخاست کریں؟</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">سیٹ اپ کرنے کیلئے تھپتھپائیں</string>
+    <string name="security_settings_face_enroll_education_message">اگلی اسکرین پر، اپنے چہرے کے تمام زاویے کیپچر کرنے کے ليے اپنے سر کو گھمائیں</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">چہرے کے اندراج کے وقت کی حد پوری ہو گئی۔ دوبارہ کوشش کریں۔</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">فیس اَنلاک کے سیٹ اپ کا وقت ختم ہو گیا</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">اب آپ اپنا فون غیر مقفل کرنے یا اس بات کی توثیق کرنے کیلئے اپنے چہرے کا استعمال کر سکتے ہیں کہ یہ آپ ہی ہیں، جیسے جب آپ ایپس میں سائن ان کرتے ہیں یا کسی خریداری کی منظوری دیتے ہیں</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"اب جب آپ اپنا فون اٹھاتے ہیں یا اسکرین پر تھپتھپاتے ہیں تو آپ اپنے چہرے کو غیر مقفل کرنے کے لیے استعمال کر سکتے ہیں۔
 
 فیس اَنلاک اس وقت بہترین کام کرتا ہے جب کافی روشنی ہو اور آپ نے ماسک یا سیاہ چشمہ نہیں پہن رکھا ہو۔"</string>
+    <string name="security_settings_face_enroll_finish_title">ٹھیک لگ رہا ہے!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">محدود بصارت یا سر کی حرکت کے لیے سیٹ اپ کریں</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">آنکھوں کو کھولنا ہوگا</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">آپ اور آپ کے بچے کا کنٹرول ہے</string>
+    <string name="security_settings_face_enroll_introduction_control_title">سب کچھ آپ کے اختیار میں ہے</string>
+    <string name="security_settings_face_enroll_introduction_how_title">یہ کیسے کام کرتا ہے</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">اگر آپ کا بچہ عام طور پر عینک پہنتا ہے تو وہ سیٹ اپ کے دوران انہیں پہن سکتا ہے۔</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">چشمے یا ہلکے ٹِنٹ کردہ دھوپ چشمے ٹھیک ہیں۔</string>
+    <string name="security_settings_face_enroll_introduction_info_title">یاد رکھیں</string>
+    <string name="security_settings_face_enroll_introduction_title">فیس اَنلاک سیٹ اپ کریں</string>
     <string name="security_settings_face_enroll_next">آگے</string>
     <string name="security_settings_face_enroll_partial_message">کارکردگی کو بہتر بنانے کے لیے، آپ ترتیبات میں فیس اَنلاک کو دوبارہ سے سیٹ اپ کر سکتے ہیں</string>
     <string name="security_settings_face_enroll_partial_start_over">دوبارہ شروع کریں</string>
@@ -312,8 +278,24 @@
     <string name="security_settings_face_enroll_too_hot_message">فیس اَنلاک کا سیٹ اپ مکمل نہیں کیا جا سکتا کیونکہ فون بہت گرم ہے۔ فون کے ٹھنڈے ہونے پر بعد میں دوبارہ کوشش کریں۔</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">فیس اَنلاک کو نظر انداز کریں</string>
     <string name="security_settings_face_enroll_too_hot_title">فون بہت گرم ہے</string>
+    <string name="security_settings_face_preference_summary_none">فیس سیٹ اپ کرنے کے لیے تھپتھپائیں</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"‏Nexus Imprint کے ساتھ آپ اپنے فنگر پرنٹ کو خریداریوں کی اجازت دینے یا ایپس میں سائن ان کرنے کیلئے استعمال کر سکتے ہیں۔
+
+کسی کے فنگر پرنٹس شامل کرتے وقت احتیاط برتیں۔ کسی بھی شامل کردہ فنگر پرنٹ سے یہ کام کیے جا سکتے ہیں۔
+
+نوٹ: آپ اس آلہ کو غیر مقفل کرنے کیلئے اپنا فنگر پرنٹ استعمال نہیں کر سکتے۔ مزید معلومات کیلئے اپنی تنظیم کے منتظم سے رابطہ کریں۔"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">‏Nexus Imprint کے ساتھ غیر مقفل کریں</string>
+    <string name="security_settings_fingerprint_preference_summary_none">فنگر پرنٹ سیٹ اپ کرنے کیلئے تھپتھپائیں</string>
+    <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">‏Pixel Imprint آپ کے فنگر پرنٹ کا ایک منفرد ماڈل تخلیق کرتا ہے تاکہ یہ توثیق کی جا سکے کہ یہ آپ ہی ہیں۔ سیٹ اپ کے دوران اس فنگر پرنٹ کا ماڈل تخلیق کرنے کے لیے آپ اپنے فنگر پرنٹ کی تصاویر مختلف پوزیشنز سے لیں گے۔</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">‏Pixel Imprint آپ کے بچے کے فنگر پرنٹ کا ایک منفرد ماڈل تخلیق کرتا ہے تاکہ یہ توثیق کی جا سکے کہ یہ وہی بچہ ہے۔ سیٹ اپ کے دوران اس فنگر پرنٹ کا ماڈل تخلیق کرنے کے لیے وہ اپنے فنگر پرنٹ کی تصاویر مختلف پوزیشنز سے لے گا۔</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"‏&lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt; پر Pixel فنگر پرنٹ اَن لاک کے بارے میں مزید جانیں۔"</string>
+    <string name="security_settings_work_fingerprint_preference_title">‏کام کیلئےPixel Imprint</string>
     <string name="setup_suggestion_summary">صرف چند مزید اقدامات</string>
     <string name="setup_suggestion_title">سیٹ اپ مکمل کریں</string>
+    <string name="smart_battery_footer">بیٹری لائف کو بڑھانے کے لیے تغیر پذیر بیٹری کارکردگی اور پس منظر کی سرگرمی کو کم کر سکتی ہے۔ ممکن ہے کچھ اطلاعات میں تاخیر ہو جائے۔</string>
+    <string name="smart_battery_manager_title">اڈاپٹیو ترجیحات</string>
+    <string name="smart_battery_title">تغیر پذیر بیٹری</string>
     <string name="software_update_can_be_updated_header">‏اپنے Pixel کو مزید بہتر بنائیں</string>
     <string name="software_update_detail_indication_1_update_available">1 اپ ڈیٹ دستیاب ہے</string>
     <string name="software_update_detail_indication_2_or_more_updates_available">%1$d اپ ڈیٹس دستیاب ہیں</string>
@@ -326,9 +308,11 @@
     <string name="software_update_up_to_date_summary">اپ ٹو ڈیٹ</string>
     <string name="software_update_up_to_specific_date_summary">%1$s کو اپ ڈیٹ کر دیا گیا</string>
     <string name="software_update_update_available_summary">اپ ڈیٹ دستیاب ہے</string>
+    <string name="sound_dashboard_summary">والیوم، ہیپٹکس، ڈسٹرب نہ کریں</string>
     <string name="speed_boost_summary_off">آف ہے</string>
     <string name="speed_boost_summary_on">آن ہے</string>
     <string name="speed_boost_title">‏Spectrum کی رفتار کو بڑھانا</string>
+    <string name="suggested_fingerprint_lock_settings_title">‏Pixel Imprint استعمال کریں</string>
     <string name="suw_limited_warranty_title">محدود وارنٹی</string>
     <string name="suw_warranty_description">‏اپنی محدود وارنٹی دیکھنے کے لیے، وہ ملک منتخب کریں جہاں سے آپ نے یہ آلہ خریدا ہے۔&lt;br /&gt;&lt;br /&gt;وارنٹی &lt;b&gt;ترتیبات &gt; فون کے بارے میں &gt; محدود وارنٹی&lt;/b&gt; اور g.co/devicewarranty پر بھی دستیاب ہے۔</string>
     <string name="suw_warranty_description_content">‏اپنی محدود وارنٹی دیکھنے کے لیے، وہ ملک منتخب کریں جہاں سے آپ نے یہ آلہ خریدا ہے۔ وارنٹی ترتیبات پھر فون کے بارے میں، اس کے بعد محدود وارنٹی اور g.co/devicewarranty پر بھی دستیاب ہے۔</string>
@@ -336,10 +320,11 @@
     <string name="suw_warranty_positive_button_text">بند کریں</string>
     <string name="system_update_entry_title">سسٹم اپ ڈیٹ</string>
     <string name="system_updates_group_title">‏Pixel اپ ڈیٹس</string>
-    <string name="tips_suggestion_summary">دریافت کریں کہ اپنے فون سے کیا کر سکتے ہیں</string>
-    <string name="tips_suggestion_title">‏اپنے Pixel کے بارے میں جانیں</string>
+    <string name="touch_sensitivity_summary">اسکرین پروٹیکٹر استعمال کرتے وقت ٹچ کی حساسیت میں اضافہ کریں اور ٹچ کو بہتر بنائیں</string>
+    <string name="touch_sensitivity_title">اسکرین پروٹیکٹر موڈ</string>
     <string name="traffic_light_face_enrolling_title_accessibility">فون کو اپنے چہرے کے سامنے پکڑیں</string>
     <string name="unified_battery_saver_page_intro">چارجز کے درمیان اپنے فون کی بیٹری کو زیادہ دیر تک چلنے میں مدد کرنے کے لیے پاور کی بچت کریں</string>
+    <string name="usb_use_file_transfers">‏فائل کی منتقلی / Android Auto</string>
     <string name="vpn_app_bypass">منتخب کردہ ایپس خارج کریں</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">موجودہ کیریئر ایپس</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">‏VPN سے %1$d کیریئر ایپس خارج کریں؟</string>
@@ -360,12 +345,9 @@
     <string name="vpn_exclude_ntf_content">‏آپ کے پاس نئی انسٹال کردہ کیریئر ایپس ہیں جو ہو سکتا ہے کہ VPN کے ساتھ کام نہ کرے</string>
     <string name="vpn_exclude_ntf_title">‏نئی ایپس کو VPN سے خارج کریں؟</string>
     <string name="vpn_preference_group_title">دیگر</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_title" />
-    <string name="wake_screen_suggestion_summary" />
-    <string name="wake_screen_suggestion_title" />
+    <string name="wallpaper_dashboard_summary">رنگ، تھیم کردہ آئیکنز، ایپ گرڈ</string>
     <string name="warranty_country_information">%1$s (%2$s)</string>
+    <string name="wifi_subscription_summary">‏OpenRoaming سبسکرپشن دیکھیں یا تبدیل کریں</string>
     <string name="wifitrackerlib_connected_with_wsu_authenticator">‫%1$s کے ساتھ منسلک ہے</string>
     <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">منسلک کرنے کیلئے تھپتھپائیں</string>
     <string name="wifitrackerlib_wsu_entry_summary_provision_error">منسلک نہیں ہو سکتا۔ دوبارہ کوشش کرنے کے لیے تھپتھپائیں۔</string>

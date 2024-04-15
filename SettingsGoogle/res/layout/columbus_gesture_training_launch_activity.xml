@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.google.android.setupdesign.GlifLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.setupdesign.GlifLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@id/layout"
     android:layout_width="fill_parent"
@@ -9,8 +10,9 @@
 
     <RadioGroup
         android:id="@id/apps"
-        style="@style/SudContentFrame"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:orientation="vertical" />
+        android:orientation="vertical"
+        style="@style/SudContentFrame" />
+
 </com.google.android.setupdesign.GlifLayout>

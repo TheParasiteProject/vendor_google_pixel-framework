@@ -1,8 +1,8 @@
 # Custom rules
--keep class android.frameworks.** { *; }
--keep class android.hardware.** { *; }
--keep class com.google.** { *; }
--keep class vendor.** { *; }
--keep class hardware.google.** { *; }
+-keep,allowoptimization class android.frameworks.** { *; }
+-keep,allowoptimization class android.hardware.** { *; }
+-keep,allowoptimization class com.google.** { *; }
+-keep,allowoptimization class vendor.** { *; }
+-keep,allowoptimization class hardware.google.** { *; }
 
 -include ../../../packages/apps/Settings/proguard.flags

@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="aware_category_display" />
-    <string name="aware_category_gesture" />
-    <string name="aware_display_settings_title">Inaktiv låseskjerm</string>
-    <string name="aware_settings_description" />
-    <string name="aware_settings_summary" />
-    <string name="gesture_silence_title">Bevegelse for å dempe varsler</string>
-    <string name="gesture_skip_title">Hopp over bevegelse</string>
-    <string name="keywords_touch_sensitivity">trykk, sensitivitet, sensitiv, skjermbeskytter, film, responsiv, følsomhet</string>
-    <string name="keywords_wake_display" />
-    <string name="touch_sensitivity_summary">Øk berøringsfølsomheten og trykkresponsen når du bruker en skjermbeskytter</string>
-    <string name="touch_sensitivity_title">Skjermbeskyttermodus</string>
-    <string name="columbus_title">Hurtigtrykk for å starte handlinger</string>
-    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge er konfigurert. Gå til neste skjerm eller fortsett å justere.</string>
     <string name="accessibility_keyboard_haptics_title">Fysisk tilbakemelding på tastaturet</string>
     <string name="adaptive_alert_vibration_summary">Reduserer vibreringsstyrken når telefonen er i ro og skjermen er vendt oppover</string>
     <string name="adaptive_alert_vibration_title">Tilpasset varselsvibrering</string>
@@ -30,71 +17,26 @@
     <string name="all_apps_category_title">Alle apper</string>
     <string name="allow_debugging_data_description">Google bruker feilrapporter for å diagnostisere app- og enhetsproblemer. Dette gjøres i henhold til <a href="https://policies.google.com/privacy">personvernreglene</a>" våre.
 
-"<b>Feilrapporter inneholder app- og systemlogger</b>" samt muligens personopplysninger og enhetsinformasjon, for eksempel informasjon om navn, e-postadresser, telefonnumre, posisjonsdata, enhetsidentifikatorer, tilkoblede enheter og nettverk. Rapporter kan bli delt med ingeniørpartnere som muligens er påvirket av problemet du opplever.
+"<b>Feilrapporter inneholder app- og systemlogger</b>" samt muligens personopplysninger og enhetsinformasjon, for eksempel informasjon om navn, e-postadresser, telefonnumre, posisjonsdata, enhetsidentifikatorer, tilkoblede enheter og nettverk. Rapporter kan bli delt med ingeniørpartnere som muligens er berørt av problemet du opplever.
 
-Hvis du gir tilgang, kan denne appen "<b>automatisk samle inn og laste opp feilrapporter</b>" med app- og systemlogger for alle rapporter om problemer.
+Hvis du gir tilgang, kan denne appen "<b>automatisk samle inn og laste opp feilrapporter</b>", inkludert app- og systemlogger fra personlige profiler og jobbprofiler, for alle feilrapporter du sender inn.
 
-Hvis du ikke gir tilgang, må appen be deg om tillatelse for å samle inn og laste opp en feilrapport hver gang du sender inn en rapport om en feil."</string>
-    <string name="ambient_display_wake_screen_footer">
-        <annotation link="link">Preferanser</annotation>
-    </string>
-    <string name="ambient_display_wake_screen_summary" />
-    <string name="ambient_display_wake_screen_summary_on" />
-    <string name="assist_gesture_enrollment_continue_to_assistant">Fortsett til Assistent</string>
-    <string name="assist_gesture_enrollment_do_it_later">Gjør det senere</string>
-    <string name="assist_gesture_enrollment_seekbar_light">Lett klemstyrke</string>
-    <string name="assist_gesture_enrollment_seekbar_strong">Fast klemstyrke</string>
-    <string name="assist_gesture_enrollment_settings">Innstillinger</string>
-    <string name="assist_gesture_setting_enable_assistant_text">For å snakke med assistenten, klem sammen og slipp raskt nederst på telefonen</string>
-    <string name="assist_gesture_setting_enable_assistant_title">Klem sammen for å åpne assistenten</string>
-    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Klem sammen for å dempe alarmer, nedtellinger, varsler og innkommende anrop</string>
-    <string name="assist_gesture_setting_enable_ring_silence_text">Klem sammen for å dempe varsler og innkommende anrop</string>
-    <string name="assist_gesture_setting_enable_ring_silence_title">Klem for å dempe telefonen</string>
-    <string name="assist_gesture_setting_enable_wake_title">Åpne assistenten når skjermen er av</string>
-    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Lett klemstyrke</string>
-    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Fast klemstyrke</string>
-    <string name="assist_gesture_squeeze_sensitivity_label">Klemmefølsomhet</string>
-    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Kan hente opp assistenten ved et uhell</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Klem sammen nedre halvdel av telefonen</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Klem sammen raskere</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Klem hardere</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Klem sammen raskt og slipp</string>
-    <string name="assist_gesture_training_enrolling_error_try_adjusting">Prøv å justere glidebryteren</string>
-    <string name="assist_gesture_training_enrolling_text">Klem sammen nedre halvdel av telefonen. Du kan justere hvor kraftig du må klemme.</string>
-    <string name="assist_gesture_training_enrolling_title">Klem sammen raskt og slipp</string>
-    <string name="assist_gesture_training_finished_text">Du kan også endre klemmefølsomheten senere, i Innstillinger</string>
-    <string name="assist_gesture_training_finished_title">Fullfør eller fortsett justeringen</string>
-    <string name="assist_gesture_training_intro_text">For å snakke med assistenten når som helst, klem sammen og slipp raskt nederst på telefonen</string>
-    <string name="assist_gesture_training_intro_title">Klem sammen for å åpne assistenten</string>
-    <string name="assist_gesture_training_suggestion_summary">Snakk til assistenten, demp anrop</string>
-    <string name="assist_gesture_training_suggestion_summary_including_alarms">Snakk til assistenten, demp alarmer og anrop</string>
-    <string name="assist_gesture_training_suggestion_title">Klem og slipp for å åpne assistenten</string>
-    <string name="aware_category_security" />
-    <string name="aware_disabled_preference_action">Slå på</string>
-    <string name="aware_disabled_preference_dialog_content" />
-    <string name="aware_disabled_preference_dialog_title" />
-    <string name="aware_disabled_preference_neutral">Ikke nå</string>
-    <string name="aware_footer_when_airplane_batterysaver_on">Motion Sense er utilgjengelig fordi flymodus og batterisparing er på</string>
-    <string name="aware_footer_when_airplane_on">Motion Sense er utilgjengelig fordi flymodus er på</string>
-    <string name="aware_footer_when_batterysaver_on">Motion Sense er utilgjengelig fordi batterisparing er på</string>
-    <string name="aware_gesture_summary_off">Quick Gestures er på, Active Edge er slått av</string>
-    <string name="aware_gesture_summary_on_non_assist">Quick Gestures er på, Active Edge er slått på</string>
-    <string name="aware_gesture_summary_on_with_assist">Quick Gestures er på, Active Edge er på, klem for å åpne assistenten</string>
-    <string name="aware_info_button_description">Flere innstillinger</string>
-    <string name="aware_settings_disabled_info_dialog_content" />
-    <string name="aware_settings_disabled_info_dialog_title" />
-    <string name="aware_settings_enabled_info_dialog_content" />
-    <string name="aware_settings_enabled_info_dialog_title" />
-    <string name="aware_settings_suggestion_summary" />
-    <string name="aware_settings_suggestion_title" />
-    <string name="aware_summary_when_airplane_batterysaver_on">Utilgjengelig fordi flymodus og batterisparing er på</string>
-    <string name="aware_summary_when_airplane_on">Utilgjengelig fordi flymodus er på</string>
-    <string name="aware_summary_when_batterysaver_on">Utilgjengelig fordi batterisparing er på</string>
-    <string name="aware_wake_display_summary" />
-    <string name="aware_wake_display_summary_aod_off" />
-    <string name="aware_wake_display_title" />
+Hvis du opphever tilgangen, må appen be deg om tillatelse for å samle inn og laste opp en feilrapport hver gang du sender inn en rapport om en feil."</string>
+    <string name="app_and_notification_dashboard_summary">Assistent, nylige apper, standardapper</string>
+    <string name="automatic_storage_manager_activation_warning">Når du er på nettet, har du fremdeles tilgang til bilder og videoer med den kvaliteten du har valgt for sikkerhetskopiering</string>
+    <string name="automatic_storage_manager_days_title">Fjern sikkerhetskopierte bilder og videoer</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Vil du slå av Smart lagring? 
+
+Smart lagring kommer ikke til å frigjøre plass når du nesten er tom for ledig lagringsplass."</string>
+    <string name="automatic_storage_manager_preference_title">Smart lagring</string>
+    <string name="automatic_storage_manager_primary_switch_title">Bruk smart lagring</string>
+    <string name="automatic_storage_manager_settings">Smart lagring</string>
+    <string name="automatic_storage_manager_text">Når du nesten er tom for lagringsplass, kan du fjerne sikkerhetskopierte bilder og videoer. Du finner dem fremdeles i Google Foto.</string>
     <string name="basic_battery_saver_summary">Reduserer visuelle effekter og bakgrunnsaktivitet. Slår på mørkt tema hvis det ikke er på allerede.</string>
     <string name="basic_battery_saver_title">Standard batterisparing</string>
+    <string name="battery_manager_summary">Forleng batterilevetiden og optimaliser ladingen</string>
+    <string name="battery_manager_summary_unsupported">Forleng batterilevetiden</string>
+    <string name="battery_missing_link_message">Finn ut mer</string>
     <string name="battery_saver_reminder_category">Påminnelser</string>
     <string name="battery_saver_reminder_switch_summary">Få påminnelser når enheten har lite batteri</string>
     <string name="battery_saver_reminder_switch_title">Påminnelser for batterisparing</string>
@@ -103,7 +45,11 @@ Hvis du ikke gir tilgang, må appen be deg om tillatelse for å samle inn og las
     <string name="battery_saver_schedule_switch_title">Slå på basert på batterinivået</string>
     <string name="battery_schedule_summary">Administrer når batterisparing slås på</string>
     <string name="battery_schedule_title">Tidsplan og påminnelser</string>
+    <string name="battery_tip_battery_health_learn_more_description">Finn ut mer om batteritilstand</string>
+    <string name="battery_tip_battery_health_reduced_title">Batterikapasiteten er redusert</string>
+    <string name="battery_tip_battery_health_unknown_title">Kan ikke registrere batteritilstand</string>
     <string name="battery_tip_limited_temporarily_extra_summary">For å beskytte batteriet settes lading på pause ved %1$s når nettbrettet er i dokken</string>
+    <string name="battery_tip_smart_battery_summary">Slå på Tilpasset batteri</string>
     <string name="clear_calling_footer">"For å ivareta personvernet ditt sender Klare samtaler aldri lyd eller samtaler til Google.
 
 Klare samtaler fungerer med wifi-anrop og de fleste nettverk, men er ikke tilgjengelig for 3G-nettverk."</string>
@@ -154,8 +100,11 @@ Klare samtaler fungerer med wifi-anrop og de fleste nettverk, men er ikke tilgje
     <string name="columbus_setting_app_shortcut_selection_help_text">Velg hva som skjer når du åpner denne appen med hurtigtrykk.</string>
     <string name="columbus_setting_enable_switch_title">Bruk hurtigtrykk</string>
     <string name="columbus_setting_sensitivity_title">Krev hardere trykk</string>
+    <string name="columbus_title">Hurtigtrykk for å starte handlinger</string>
     <string name="communal_lock_screen_summary">Personvern, varsler og hjemkontroller</string>
     <string name="communal_other">Annet</string>
+    <string name="communal_settings_summary">Alternativer for dokk og låseskjerm</string>
+    <string name="communal_settings_title">Hub-modus</string>
     <string name="communal_smartspace_summary">Påminnelser, varsler med mer fra assistenten</string>
     <string name="communal_smartspace_title">Kort fortalt</string>
     <string name="communal_what_to_show">Hva skal vises?</string>
@@ -166,17 +115,17 @@ Klare samtaler fungerer med wifi-anrop og de fleste nettverk, men er ikke tilgje
     <string name="connectivity_helper_d2d_summary">Varsle personen du snakker med, når telefonen din har tilkoblingsproblemer under samtaler</string>
     <string name="connectivity_helper_d2d_title">Del tilkoblingsinformasjon</string>
     <string name="connectivity_helper_footnote">Du kan dele tilkoblingsinformasjon når personen du snakker med, bruker en enhet og et nettverk som støttes</string>
+    <string name="content_capture">Gi personlig preg med appdata</string>
+    <string name="content_protection_preference_subpage_info">"Dette er en beskyttet sikkerhetsfunksjon. Ingen enhetsinformasjon eller personopplysninger deles med Google. 
+
+Nettfisking er et forsøk på å stjele påloggingslegitimasjon eller andre personopplysninger."</string>
+    <string name="content_protection_preference_subpage_summary">Skanningen kjøres privat, direkte på enheten din, og kontrollerer appaktivitet for å oppdage nettfisking og annen villedende funksjonalitet. Hvis noe av dette blir funnet, sender funksjonen noe appinformasjon til Google Play Protect for å bekrefte trusselen og advare appbrukere.</string>
+    <string name="dark_ui_text">Mørkt tema bruker en svart bakgrunn for å få batteriet til å vare lenger. Tidsplaner for mørkt tema blir ikke slått på før skjermen er slått av.</string>
     <string name="debugging_data_title">Feilsøkingsdata</string>
-    <string name="dialog_aware_settings_message" />
-    <string name="dialog_aware_settings_ok" />
-    <string name="dialog_aware_settings_title" />
     <string name="discover_tips_button">Se tips</string>
-    <string name="dock_setup_notification_text" />
     <string name="dock_summary_charging_phone">Lader telefonen</string>
-    <string name="dream_no_screen_saver_caption" />
-    <string name="dream_no_screen_saver_description" />
-    <string name="dream_no_screen_saver_preview_caption" />
-    <string name="dream_secondary_button_title" />
+    <string name="double_twist_for_camera_mode_summary">Start eller avslutt selfie-modus i Google Kamera ved å vri to ganger når du er i appen.</string>
+    <string name="duration_less_than_one_minute">Under ett minutt</string>
     <string name="extreme_battery_saver_summary">Inkluderer alle endringene ovenfor. Setter også apper som ikke er nødvendige, og tilhørende varsler, på pause.</string>
     <string name="extreme_battery_saver_title">Ekstrem batterisparing</string>
     <string name="face_confirmation_hide_illustration_description">Nå kan du låse opp telefonen med ansiktet når du løfter den opp eller trykker på skjermen.</string>
@@ -203,49 +152,43 @@ Klare samtaler fungerer med wifi-anrop og de fleste nettverk, men er ikke tilgje
     <string name="face_enrolling_too_right">Flytt telefonen til venstre</string>
     <string name="face_enrolling_turn_head_to_arrow">Vri hodet ditt mot pilen</string>
     <string name="face_enrolling_turned_too_far">Vri hodet litt mindre</string>
+    <string name="fast_pair_device_not_found_dialog_title">Kunne ikke koble til</string>
+    <string name="fast_pair_device_not_found_other_device_description">Flytt denne enheten nærmere Pixel-telefonen, og prøv igjen.</string>
+    <string name="fast_pair_device_not_found_tws_headphone_description">Åpne etuiet for ørepluggene, flytt det nærmere Pixel-telefonen, og prøv igjen.</string>
+    <string name="fingerprint_unlock_set_unlock_password">Nexus Imprint og passord</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Nexus Imprint og mønster</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Nexus Imprint og PIN-kode</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Fortsett uten Nexus Imprint</string>
+    <string name="firmware_update_accessory_version_number_title">Fastvare for tilbehøret</string>
     <string name="firmware_update_status_category">Status for fastvare på enheten</string>
     <string name="firmware_update_status_title">En fastvareoppdatering er tilgjengelig</string>
     <string name="firmware_update_version_number_category">Fastvareversjonen på enheten:</string>
     <string name="firmware_update_version_number_title">Fastvare for Pixel-tastatur</string>
-    <string name="gesture_aware_confirmation_action_button">Greit</string>
-    <string name="gesture_aware_disabled_info_dialog_content" />
-    <string name="gesture_aware_footer">
-        <annotation link="link">Preferanser</annotation>
-    </string>
-    <string name="gesture_aware_off_dialog_content" />
-    <string name="gesture_aware_off_dialog_title" />
-    <string name="gesture_silence_footer">
-        <annotation link="link">Preferanser</annotation>
-    </string>
-    <string name="gesture_silence_off_summary" />
-    <string name="gesture_silence_on_summary" />
-    <string name="gesture_silence_summary" />
-    <string name="gesture_skip_direction_ltr">Venstre mot høyre</string>
-    <string name="gesture_skip_direction_rtl">Høyre mot venstre</string>
-    <string name="gesture_skip_direction_title">Retning for å hoppe over</string>
-    <string name="gesture_skip_footer">
-        <annotation link="link">Preferanser</annotation>
-    </string>
-    <string name="gesture_skip_off_summary" />
-    <string name="gesture_skip_on_summary" />
-    <string name="gesture_skip_summary" />
-    <string name="gesture_tap_footer">
-        <annotation link="link">Preferanser</annotation>
-    </string>
-    <string name="gesture_tap_on_summary" />
-    <string name="gesture_tap_summary" />
+    <string name="fullbackup_data_summary">"Sikkerhetskopiér enhetsdata automatisk (for eksempel wifi-passord og anropslogg) og appdata (for eksempel innstillinger og filer lagret av apper) på Google Disk.
+
+Når du slår på automatisk sikkerhetskopiering, lagres app- og enhetsdata regelmessig i en privat mappe på Google Disk. Appdata kan være alle slags data som er lagret av apper (basert på utviklerinnstillingene). Dette inkluderer potensielt sensitive data, for eksempel kontakter, meldinger og bilder.
+
+Sikkerhetskopierte data teller ikke mot lagringsgrensen i Disk. Store filer eller filer utviklere har valgt å ekskludere fra tjenesten, sikkerhetskopieres ikke."</string>
+    <string name="fullbackup_erase_dialog_message">Vil du stoppe automatisk sikkerhetskopiering av enhetsdata (for eksempel wifi-passord og anropslogg) og appdata (for eksempel innstillinger og filer lagret av apper), og i tillegg slette alle kopier på Google Disk?</string>
+    <string name="gesture_settings_activity_title">Navigasjon med bevegelser</string>
     <string name="install_unknown_applications">Tillat installasjon av apper fra andre kilder enn Play-butikken</string>
+    <string name="keywords_accessibility_menu">motorikk, hurtigmeny, assisterende meny, berøring, førlighet, artritt, musesyke, slag, risting, multippel sklerose, cerebral parese, knapp, maskinvare, trykk, hånd, smerte, tilgjengelig, hjelp</string>
     <string name="keywords_adaptive_alert_vibration">haptisk teknologi, vibrering, telefon, anrop, ring, varsel, varslinger, høy, stille, støy, etui, tilpasset</string>
     <string name="keywords_adaptive_charging">lad, lading, smart lading, tilpasset lading, batteri, batterihelse</string>
-    <string name="keywords_assist_gesture_silence">bevegelse, edge, side, active edge, demp, slumre, alarm, innkommende anrop, stille, skjerm, låseskjerm, klem sammen, grep, stopp</string>
-    <string name="keywords_assist_gesture_wake">bevegelse, edge, side, active edge, vekke, varsler, skjerm, display, skjerm av, skjerm på, klem sammen, hviler, hvilemodus, grep</string>
     <string name="keywords_battery_share">batterideling, trådløs lading</string>
     <string name="keywords_battery_share_settings">batterideling, omvendt trådløs lading</string>
-    <string name="keywords_gesture_silence" />
-    <string name="keywords_gesture_skip" />
-    <string name="keywords_gesture_tap" />
+    <string name="keywords_gesture">bevegelse, bevegelser</string>
+    <string name="keywords_hearing_devices">hørselshemmet, hørselstap, nødsentral</string>
     <string name="keywords_limited_warranty">garanti, begrenset garanti, løfte, reparasjon, rma, erstatning, retur</string>
+    <string name="keywords_live_transcribe">Teksting, teksting for hørselshemmede, CC, Direkteteksting, hørselshemmet, hørselstap, CART, tale til tekst, undertekst</string>
     <string name="keywords_reverse_charging_stop_threshold">Slutt å dele batteri når telefonen når:</string>
+    <string name="keywords_select_to_speak">Hør tekst, høytlesing, les opp skjermen, skjermleser</string>
+    <string name="keywords_sound_amplifier">nødsentral, forsterk, lydforsterker, hørselshemmet, hørselstap, forsterking</string>
+    <string name="keywords_sound_notifications">Varsler, hørselshemmet, hørselstap, varsle</string>
+    <string name="keywords_switch_access">motor, bryter, hånd, AT, assisterende teknologi, lammelse, ALS, skanning, trinnvis skanning</string>
+    <string name="keywords_talkback">Skjermleser, kommentator, VoiceOver, Talehjelp, blind, nedsatt synsevne, TTS, tekst til tale, taletilbakemelding</string>
+    <string name="keywords_touch_sensitivity">trykk, sensitivitet, sensitiv, skjermbeskytter, film, responsiv, følsomhet</string>
+    <string name="keywords_voice_access">tale, stemmestyring, motor, hånd, mik., mikrofon, diktering, snakk, kontroll</string>
     <string name="led_preference_title">Mønstre for LED-indikatoren</string>
     <string name="legal_source_code_description">Detaljer om kildekoden for komponenter som gjøres tilgjengelige som åpen kildekode, finnes i Pixel-brukerstøtten.</string>
     <string name="legal_source_code_title">Kildekode</string>
@@ -253,9 +196,12 @@ Klare samtaler fungerer med wifi-anrop og de fleste nettverk, men er ikke tilgje
     <string name="limited_warranty_title">Begrenset garanti</string>
     <string name="lockscreen_show_weather_summary">Se værforholdene nå</string>
     <string name="lockscreen_show_weather_title">Vis været</string>
+    <string name="my_device_info_account_preference_title">Google-konto</string>
+    <string name="owner_info_settings_edit_text_hint">F.eks. Petters Pixel.</string>
     <string name="permit_debugging_data">Gi tilgang til feilrapporter</string>
     <string name="play_application_detail_indication_summary">Se etter oppdateringer</string>
     <string name="play_application_update_entry_title">Appoppdateringer</string>
+    <string name="privatespace_retry_summary">Du må logge på en Google-konto for å konfigurere Private Space</string>
     <string name="repair_mode_active_summary">I reparasjonsmodus</string>
     <string name="repair_mode_summary">Trygt miljø for enhetsreparasjon</string>
     <string name="repair_mode_title">Reparasjonsmodus</string>
@@ -286,18 +232,36 @@ Vend telefonen for å prøve."</string>
     <string name="reverse_charging_unplug_usb_cable_message">Utilgjengelig fordi en USB-C-enhet er koblet til</string>
     <string name="reverse_charging_warning_summary">Utilgjengelig fordi batteriet er under %1$s</string>
     <string name="reverse_charging_warning_title">Batterideling er utilgjengelig fordi batteriet er under %1$s</string>
-    <string name="search_gesture_category_title">Skjermsøk</string>
-    <string name="search_long_press_home_button_summary">Trykk og hold på hjemknappen for å starte et Google-søk på skjermen.</string>
-    <string name="search_long_press_home_button_title">Hold inne hjemknappen for å søke</string>
-    <string name="search_press_hold_gesture_summary">Trykk og hold på navigasjonshåndtaket for å starte søk over skjermen.</string>
-    <string name="search_press_hold_gesture_title">Hold på håndtaket for å søke</string>
+    <string name="rtt_settings_always_visible">Alltid synlig</string>
+    <string name="rtt_settings_no_visible">Ikke synlig</string>
+    <string name="rtt_settings_title">Sanntidstekst (STT)</string>
+    <string name="rtt_settings_visible_during_call">Synlig under anrop</string>
+    <string name="screen_time_summary_usage_today">%1$s i dag</string>
+    <string name="search_bar_account_avatar_content_description">Profilbilde – dobbelttrykk for å åpne Google-kontoen</string>
+    <string name="search_gesture_category_title">Søk</string>
+    <string name="search_gesture_feature_title">Tegn sirkel for å søke</string>
+    <string name="search_long_press_home_button_summary">Trykk og hold på hjemknappen nederst på skjermen, og sirkle rundt eller fremhev det du vil søke etter</string>
+    <string name="search_press_hold_gesture_summary">Trykk og hold på håndtaket nederst på skjermen, og sirkle rundt eller fremhev det du vil søke etter</string>
     <string name="security_dismiss_dialog_dismiss_button">Lukk</string>
     <string name="security_dismiss_dialog_title">Vil du lukke dette varselet?</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">Trykk for å konfigurere</string>
+    <string name="security_settings_face_enroll_education_message">På neste skjerm roterer du hodet for å fange inn alle vinkler av ansiktet ditt</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_message">Tidsgrensen for ansiktsregistrering er nådd. Prøv på nytt.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Konfigureringen av ansiktslås ble tidsavbrutt</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Nå kan du bruke ansiktet til å låse opp telefonen eller bekrefte at du er deg, for eksempel når du logger på apper eller godkjenner kjøp</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Når du løfter telefonen eller trykker på skjermen, kan du nå bruke ansiktet til å låse opp.
 
 Ansiktslås fungerer best når det er nok lys og du ikke bruker munnbind eller mørke briller."</string>
+    <string name="security_settings_face_enroll_finish_title">Dette ser bra ut</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Oppsett for nedsatt syn eller hodemobilitet</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Krever at øynene er åpne</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Du og barnet ditt har kontrollen</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Du har kontrollen</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Slik fungerer det</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Hvis barnet ditt vanligvis bruker briller, kan hen bruke dem under konfigureringen.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Briller eller lyse solbriller går bra.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Vær obs på dette</string>
+    <string name="security_settings_face_enroll_introduction_title">Konfigurer ansiktslås</string>
     <string name="security_settings_face_enroll_next">Neste</string>
     <string name="security_settings_face_enroll_partial_message">For å forbedre ytelsen kan du konfigurere ansiktslås på nytt i innstillingene</string>
     <string name="security_settings_face_enroll_partial_start_over">Start på nytt</string>
@@ -312,8 +276,24 @@ For å forbedre ytelsen kan du konfigurere ansiktslås på nytt i innstillingene
     <string name="security_settings_face_enroll_too_hot_message">Konfigurering av ansiktslås kan ikke fullføres fordi telefonen er for varm. Prøv på nytt senere når telefonen er nedkjølt.</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Hopp over ansiktslås</string>
     <string name="security_settings_face_enroll_too_hot_title">Telefonen er for varm</string>
+    <string name="security_settings_face_preference_summary_none">Trykk for å konfigurere ansiktslås</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Med Nexus Imprint kan du bruke fingeravtrykket ditt til å autorisere kjøp eller logge på apper.
+
+Tenk over hvilke fingeravtrykk du legger til. Alle fingeravtrykkene du legger til, kan gjøre alt dette.
+
+Merk: Du kan ikke bruke fingeravtrykket ditt til å låse opp dette enheten. For mer informasjon, kontakt administratoren for organisasjonen din."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Lås opp med Nexus Imprint</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Trykk for å legge til fingeravtrykk</string>
+    <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint lager en unik modell av fingeravtrykket for å bekrefte identiteten din. For å opprette denne fingeravtrykkmodellen under konfigureringen tar du bilder av fingeravtrykket ditt fra forskjellige posisjoner.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint lager en unik modell av fingeravtrykket til barnet for å bekrefte barnets identitet. For å opprette denne fingeravtrykkmodellen under konfigureringen tar hen bilder av fingeravtrykket sitt fra forskjellige posisjoner.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Finn ut mer om opplåsing med fingeravtrykk på Pixel på &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint for jobb</string>
     <string name="setup_suggestion_summary">Bare noen trinn til</string>
     <string name="setup_suggestion_title">Fullfør konfigureringen</string>
+    <string name="smart_battery_footer">Tilpasset batteri kan redusere ytelse og bakgrunnsaktivitet for å forlenge batterilevetiden. Noen varsler kan bli utsatt.</string>
+    <string name="smart_battery_manager_title">Alternativer for selvjustering</string>
+    <string name="smart_battery_title">Tilpasset batteri</string>
     <string name="software_update_can_be_updated_header">Få enda mer ut av Pixel-telefonen</string>
     <string name="software_update_detail_indication_1_update_available">1 oppdatering er tilgjengelig</string>
     <string name="software_update_detail_indication_2_or_more_updates_available">%1$d oppdateringer er tilgjengelige</string>
@@ -326,9 +306,11 @@ For å forbedre ytelsen kan du konfigurere ansiktslås på nytt i innstillingene
     <string name="software_update_up_to_date_summary">Oppdatert</string>
     <string name="software_update_up_to_specific_date_summary">Oppdatert %1$s</string>
     <string name="software_update_update_available_summary">En oppdatering er tilgjengelig</string>
+    <string name="sound_dashboard_summary">Volum, fysisk tilbakemelding, Ikke forstyrr</string>
     <string name="speed_boost_summary_off">Av</string>
     <string name="speed_boost_summary_on">På</string>
     <string name="speed_boost_title">Spectrum Speed Boost</string>
+    <string name="suggested_fingerprint_lock_settings_title">Bruk Pixel Imprint</string>
     <string name="suw_limited_warranty_title">Begrenset garanti</string>
     <string name="suw_warranty_description">For å se den begrensede garantien din, velg landet du kjøpte denne enheten i.&lt;br /&gt;&lt;br /&gt;Garantien er også tilgjengelig på &lt;b&gt;Innstillinger &gt; Om telefonen &gt; Begrenset garanti&lt;/b&gt; og g.co/devicewarranty.</string>
     <string name="suw_warranty_description_content">For å se den begrensede garantien din, velg landet du kjøpte denne enheten i. Garantien er også tilgjengelig på Innstillinger, så Om telefonen og deretter Begrenset garanti og g.co/devicewarranty.</string>
@@ -336,10 +318,11 @@ For å forbedre ytelsen kan du konfigurere ansiktslås på nytt i innstillingene
     <string name="suw_warranty_positive_button_text">Lukk</string>
     <string name="system_update_entry_title">Systemoppdatering</string>
     <string name="system_updates_group_title">Pixel-oppdateringer</string>
-    <string name="tips_suggestion_summary">Finn ut hva du kan gjøre med telefonen</string>
-    <string name="tips_suggestion_title">Bli kjent med Pixel</string>
+    <string name="touch_sensitivity_summary">Øk berøringsfølsomheten og trykkresponsen når du bruker en skjermbeskytter</string>
+    <string name="touch_sensitivity_title">Skjermbeskyttermodus</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Hold telefonen foran ansiktet</string>
     <string name="unified_battery_saver_page_intro">Reduser strømforbruket for å få batteriet til telefonen til å vare lenger mellom ladinger</string>
+    <string name="usb_use_file_transfers">Filoverføring / Android Auto</string>
     <string name="vpn_app_bypass">Ekskluder de valgte appene</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">Nåværende operatørapper</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">Vil du ekskludere %1$d operatørapper fra VPN?</string>
@@ -360,12 +343,9 @@ For å forbedre ytelsen kan du konfigurere ansiktslås på nytt i innstillingene
     <string name="vpn_exclude_ntf_content">Du har nylig installerte operatørapper som muligens ikke fungerer med VPN-et</string>
     <string name="vpn_exclude_ntf_title">Vil du ekskludere nye apper fra VPN?</string>
     <string name="vpn_preference_group_title">Andre</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_title" />
-    <string name="wake_screen_suggestion_summary" />
-    <string name="wake_screen_suggestion_title" />
+    <string name="wallpaper_dashboard_summary">Farger, temaikoner, apprutenett</string>
     <string name="warranty_country_information">%1$s (%2$s)</string>
+    <string name="wifi_subscription_summary">Se eller endre OpenRoaming-abonnement</string>
     <string name="wifitrackerlib_connected_with_wsu_authenticator">Koblet til med %1$s</string>
     <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Trykk for å koble til</string>
     <string name="wifitrackerlib_wsu_entry_summary_provision_error">Kan ikke koble til. Trykk for å prøve igjen.</string>

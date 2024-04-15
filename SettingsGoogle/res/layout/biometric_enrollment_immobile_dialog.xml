@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/biometric_enrollment_immobile_help"
+    android:layout_width="348.0dip"
+    android:layout_height="278.0dip"
+    android:paddingBottom="36.0dip"
+    android:paddingLeft="24.0dip"
+    android:paddingRight="18.0dip"
+    android:paddingTop="36.0dip">
+
+    <ImageView
+        android:id="@id/immobile_icon"
+        android:layout_width="24.0dip"
+        android:layout_height="24.0dip"
+        android:src="@drawable/ic_warning_24dp"
+        android:tint="@color/sfps_enroll_immobile_title_exclamation_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@id/immobile_title"
+        android:layout_width="276.0dip"
+        android:layout_height="32.0dip"
+        android:fontFamily="google-sans"
+        android:gravity="center"
+        android:layout_marginTop="10.0dip"
+        android:lineHeight="32.0sp"
+        android:text="@string/setup_fingerprint_enroll_immobile_help_title"
+        android:textColor="@color/sfps_enroll_immobile_title_text_color"
+        android:textFontWeight="400"
+        android:textSize="24.0sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/immobile_icon" />
+
+    <TextView
+        android:id="@id/immobile_subtitle"
+        android:layout_width="276.0dip"
+        android:layout_height="60.0dip"
+        android:fontFamily="google-sans-text"
+        android:gravity="center"
+        android:lineHeight="20.0sp"
+        android:text="@string/setup_fingerprint_enroll_immobile_help_subtitle"
+        android:textColor="@color/sfps_enroll_immobile_subtitle_text_color"
+        android:textFontWeight="400"
+        android:textSize="14.0sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/immobile_title" />
+
+    <Button
+        android:id="@id/immobile_continue_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="36.0dip"
+        android:background="@drawable/fingerprint_sfps_immobile_continue_btn_bg"
+        android:fontFamily="google-sans-text"
+        android:gravity="center"
+        android:layout_gravity="end"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginTop="16.0dip"
+        android:lineHeight="20.0sp"
+        android:paddingBottom="8.0dip"
+        android:paddingLeft="16.0dip"
+        android:paddingRight="16.0dip"
+        android:paddingTop="8.0dip"
+        android:text="@string/setup_fingerprint_enroll_immobile_help_continue"
+        android:textColor="@color/sfps_enroll_immobile_continue_btn_text_color"
+        android:textFontWeight="500"
+        android:textSize="14.0sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/immobile_subtitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

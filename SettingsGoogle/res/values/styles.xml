@@ -1,17 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
 
-    <style name="AssistGestureTrainingProgressBar">
-        <item name="android:padding">8.0dip</item>
+    <style name="BiometricEnrollIntroMessage">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:paddingBottom">@dimen/biometric_enroll_introduction_message_padding_bottom</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
     </style>
-
+    <style name="BiometricEnrollIntroTitle">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:paddingVertical">@dimen/biometric_enroll_introduction_title_padding_vertical</item>
+    </style>
     <style name="BottomSheetButtonBorderless" parent="@android:style/Widget.DeviceDefault.Button.Borderless.Colored">
         <item name="android:textColor">?android:colorAccent</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textAllCaps">false</item>
     </style>
-
     <style name="BottomSheetStyle" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowFrame">@null</item>
@@ -37,139 +44,62 @@
     <style name="DreamSudCardStyle" parent="@style/DreamCardStyle">
         <item name="cardBackgroundColor">@color/dream_card_suw_color_state_list</item>
     </style>
-
-    <style name="MarlinColors">
-        <item name="color_iphonecircle">#ffcecece</item>
-        <item name="color_iphoneface">#ffededed</item>
-        <item name="color_iphoneoutline">#ffcecece</item>
-        <item name="color_nexusface">#ffededed</item>
-        <item name="color_nexusoutline">#ffcecece</item>
-        <item name="fingerprint_sensor_location_color1">#ffc6c6c6</item>
-        <item name="fingerprint_sensor_location_color2">#ffdddddd</item>
-        <item name="fingerprint_sensor_location_color3">#ffd6d6d6</item>
-        <item name="fingerprint_sensor_location_color4">#ffafafaf</item>
-        <item name="fingerprint_sensor_location_color5">#ffafafaf</item>
-        <item name="fingerprint_sensor_location_color6">#ff9b9b9b</item>
-        <item name="fingerprint_sensor_location_color7">#ffcecece</item>
-    </style>
-
-    <style name="MarlinColors.Blue" parent="@style/MarlinColors" />
-
-    <style name="MarlinColors.Graphite" parent="@style/MarlinColors" />
-
-    <style name="MarlinColors.Silver" parent="@style/MarlinColors" />
-
     <style name="NoScreenSaverTextColor">
         <item name="android:textColor">?android:textColorPrimary</item>
     </style>
-
     <style name="SecurityShowMoreWarningsCard" parent="@style/ContextualCardStyle">
         <item name="strokeWidth">0.0dip</item>
     </style>
-
-    <style name="SuggestionCardIcon">
-        <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_marginStart">12.0dip</item>
-        <item name="android:layout_marginEnd">12.0dip</item>
-        <item name="android:layout_alignParentStart">false</item>
-    </style>
-
     <style name="SuggestionCardIconStyle">
         <item name="android:tint">?android:textColorPrimary</item>
     </style>
-
     <style name="SuggestionCardIconStyle.TwoPane" parent="@style/SuggestionCardIconStyle">
         <item name="android:tint">?android:textColorPrimary</item>
     </style>
-
     <style name="SuggestionCardSummaryColor">
         <item name="android:textColor">?android:textColorSecondary</item>
     </style>
-
-    <style name="SuggestionCardText">
-        <item name="android:textAlignment">center</item>
-    </style>
-
     <style name="SuggestionCardTitleColor">
         <item name="android:textColor">?android:textColorPrimary</item>
     </style>
-
-    <style name="SuwAlertDialogTheme" parent="@android:style/Theme.DeviceDefault.Dialog.Alert" />
-
-    <style name="SuwAlertDialogTheme.Light" parent="@android:style/Theme.DeviceDefault.Light.Dialog.Alert" />
-
-    <style name="SuwBase.ProgressBarLarge" parent="@android:style/Widget.Material.ProgressBar.Large" />
-
-    <style name="SuwBaseHeaderTitle">
-        <item name="android:textSize">@dimen/suw_header_title_size</item>
-        <item name="android:ellipsize">end</item>
-        <item name="android:layout_gravity">top</item>
-        <item name="android:maxLines">3</item>
-    </style>
-
-    <style name="SuwButtonItem" />
-
-    <style name="SuwContentFrame">
-        <item name="android:paddingLeft">?suwMarginSides</item>
-        <item name="android:paddingTop">@dimen/suw_content_frame_padding_top</item>
-        <item name="android:paddingRight">?suwMarginSides</item>
-        <item name="android:paddingBottom">@dimen/suw_content_frame_padding_bottom</item>
-        <item name="android:clipToPadding">false</item>
-    </style>
-
-    <style name="SuwContentIllustration">
-        <item name="android:layout_gravity">center</item>
-        <item name="android:scaleType">fitCenter</item>
-    </style>
-
     <style name="TextAppearance.FaceErrorText" parent="@android:style/TextAppearance.Material.Body1">
         <item name="android:textColor">?android:colorError</item>
     </style>
-
     <style name="TextAppearance.SecurityShowMoreTitle" parent="@style/TextAppearance.SecurityStatusSummary">
         <item name="android:textColor">?android:textColorPrimary</item>
     </style>
-
     <style name="TextAppearance.SecurityStatusSummary" parent="@android:style/TextAppearance.DeviceDefault.Small">
         <item name="android:textSize">14.0sp</item>
         <item name="android:textColor">?android:textColorSecondary</item>
-        <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
+        <item name="android:fontFamily">@*android:string/config_bodyFontFamilyMedium</item>
     </style>
-
     <style name="TextAppearance.SecurityStatusTitle" parent="@android:style/TextAppearance.DeviceDefault.Medium">
         <item name="android:textSize">22.0sp</item>
         <item name="android:textColor">?android:textColorPrimary</item>
-        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFeatureSettings</item>
     </style>
-
     <style name="TextAppearance.SuggestionCardSummary" parent="@style/SuggestionCardSummaryColor">
         <item name="android:textSize">14.0sp</item>
-        <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
+        <item name="android:fontFamily">@*android:string/config_bodyFontFamilyMedium</item>
     </style>
-
     <style name="TextAppearance.SuggestionCardSummary.TwoPane" parent="@style/TextAppearance.SuggestionCardSummary">
         <item name="android:textColor">?android:textColorSecondary</item>
     </style>
-
     <style name="TextAppearance.SuggestionCardTitle" parent="@style/SuggestionCardTitleColor">
         <item name="android:textSize">20.0sp</item>
-        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFeatureSettings</item>
     </style>
-
     <style name="TextAppearance.SuggestionCardTitle.TwoPane" parent="@style/TextAppearance.SuggestionCardTitle">
         <item name="android:textColor">?android:textColorPrimary</item>
     </style>
-
     <style name="VpnBottomSheetStyle" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
-
     <style name="VpnSettingsTheme" parent="@style/Theme.SubSettingsBase">
         <item name="android:clipChildren">false</item>
         <item name="android:clipToPadding">false</item>
     </style>
-
 </resources>

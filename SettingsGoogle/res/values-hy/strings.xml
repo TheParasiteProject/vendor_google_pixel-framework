@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="aware_category_display" />
-    <string name="aware_category_gesture" />
-    <string name="aware_display_settings_title">Էկրանի կողպում սպասման ռեժիմում</string>
-    <string name="aware_settings_description" />
-    <string name="aware_settings_summary" />
-    <string name="gesture_silence_title">Ծանուցումների ձայնն անջատելու ժեստ</string>
-    <string name="gesture_skip_title">Բաց թողնելու ժեստ</string>
-    <string name="keywords_touch_sensitivity">հպել, զգայունություն, զգայուն, էկրանի պաշտպանիչ, թաղանթ, արձագանքող, արձագանքման ունակություն</string>
-    <string name="keywords_wake_display" />
-    <string name="touch_sensitivity_summary">Բարձրացնել հպէկրանի զգայունությունը և բարելավել արձագանքը հպմանը, երբ օգտագործվում է էկրանի պաշտպանիչ</string>
-    <string name="touch_sensitivity_title">Էկրանի պաշտպանիչի ռեժիմ</string>
-    <string name="columbus_title">Կարճ հպում՝ գործողություններ սկսելու համար</string>
-    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge-ի կարգավորում։ Շարունակելու համար անցեք հաջորդ էկրանին։</string>
     <string name="accessibility_keyboard_haptics_title">Ստեղնաշարի հապտիկ արձագանք</string>
     <string name="adaptive_alert_vibration_summary">Նվազեցնում է թրթռոցի ուժգնությունը, երբ հեռախոսն անշարժ դրված է՝ էկրանը դեպի վերև դիրքով</string>
     <string name="adaptive_alert_vibration_title">Հարմարվող թրթռոց ծանուցումների ժամանակ</string>
@@ -35,66 +22,22 @@
 Հասանելիության տրամադրումը թույլ կտա այս հավելվածին "<b>ավտոմատ հավաքել և վերբեռնել վրիպակների մասին հաղորդումներ</b>", որոնք պարունակում են հավելվածի և համակարգի մատյաններ խնդիրների մասին բոլոր հաղորդումների համար։
 
 Հասանելիության հետկանչման դեպքում հավելվածը պետք է ստանա ձեր թույլտվությունը՝ հավաքելու և վերբեռնելու վրիպակի մասին հաշվետվություն յուրաքանչյուր առանձին վրիպակի հաշվետվության համար։"</string>
-    <string name="ambient_display_wake_screen_footer">
-        <annotation link="link">Կարգավորումներ</annotation>
-    </string>
-    <string name="ambient_display_wake_screen_summary" />
-    <string name="ambient_display_wake_screen_summary_on" />
-    <string name="assist_gesture_enrollment_continue_to_assistant">Գործարկել Օգնականը</string>
-    <string name="assist_gesture_enrollment_do_it_later">Ավելի ուշ</string>
-    <string name="assist_gesture_enrollment_seekbar_light">Թեթև սեղմում</string>
-    <string name="assist_gesture_enrollment_seekbar_strong">Ամուր սեղմում</string>
-    <string name="assist_gesture_enrollment_settings">Կարգավորումներ</string>
-    <string name="assist_gesture_setting_enable_assistant_text">Օգնականի հետ խոսելու համար արագ սեղմեք և բաց թողեք հեռախոսի ներքևի մասը</string>
-    <string name="assist_gesture_setting_enable_assistant_title">Օգնականը գործարկել սեղմումով</string>
-    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Սեղմել՝ զարթուցիչի, ժամաչափերի, ծանուցումների, մուտքային զանգերի ձայնն անջատելու համար</string>
-    <string name="assist_gesture_setting_enable_ring_silence_text">Սեղմեք՝ ծանուցումների և մուտքային զանգերի ձայնն անջատելու համար</string>
-    <string name="assist_gesture_setting_enable_ring_silence_title">Հեռախոսն անջատել սեղմումով</string>
-    <string name="assist_gesture_setting_enable_wake_title">Բացել Օգնականը, երբ էկրանն անջատված է</string>
-    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Թեթև սեղմում</string>
-    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Ամուր սեղմում</string>
-    <string name="assist_gesture_squeeze_sensitivity_label">Սեղմման ուժգնություն</string>
-    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Հնարավոր է Օգնականի պատահական միացում</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Սեղմեք ձեր հեռախոսի ներքևի մասը</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Սեղմեք ավելի արագ</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Ավելի ուժեղ սեղմեք</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Արագ սեղմեք, ապա բաց թողեք</string>
-    <string name="assist_gesture_training_enrolling_error_try_adjusting">Փորձեք կարգավորել սահիչը</string>
-    <string name="assist_gesture_training_enrolling_text">Սեղմեք հեռախոսի ներքևի մասը: Կարող եք կարգավորել սեղմելու զգայունությունը:</string>
-    <string name="assist_gesture_training_enrolling_title">Արագ սեղմեք և բաց թողեք</string>
-    <string name="assist_gesture_training_finished_text">Սեղմման զգայունությունը կարող եք նաև ավելի ուշ փոխել Կարգավորումներում</string>
-    <string name="assist_gesture_training_finished_title">Ավարտել կամ շարունակել կարգավորել</string>
-    <string name="assist_gesture_training_intro_text">Ձեր Օգնականի հետ ցանկացած ժամանակ խոսելու համար, արագ սեղմեք ձեր հեռախոսի ներքևի մասը, ապա բաց թողեք</string>
-    <string name="assist_gesture_training_intro_title">Օգնականը գործարկել սեղմումով</string>
-    <string name="assist_gesture_training_suggestion_summary">Զրուցել Օգնականի հետ, անջատել զանգերի ձայնը</string>
-    <string name="assist_gesture_training_suggestion_summary_including_alarms">Զրուցել Օգնականի հետ, անջատել զարթուցիչի և զանգերի ձայնը</string>
-    <string name="assist_gesture_training_suggestion_title">Սեղմեք և բաց թողեք՝ Օգնականը գործարկելու համար</string>
-    <string name="aware_category_security" />
-    <string name="aware_disabled_preference_action">Միացնել</string>
-    <string name="aware_disabled_preference_dialog_content" />
-    <string name="aware_disabled_preference_dialog_title" />
-    <string name="aware_disabled_preference_neutral">Ոչ հիմա</string>
-    <string name="aware_footer_when_airplane_batterysaver_on">Motion Sense-ը հասանելի չէ, քանի որ ավիառեժիմը և մարտկոցի տնտեսումը միացված են</string>
-    <string name="aware_footer_when_airplane_on">Motion Sense-ը հասանելի չէ, քանի որ ավիառեժիմը միացված է</string>
-    <string name="aware_footer_when_batterysaver_on">Motion Sense-ը հասանելի չէ, քանի որ մարտկոցի տնտեսումը միացված է</string>
-    <string name="aware_gesture_summary_off">Արագ ժեստերը միացված են, Active Edge գործառույթն անջատված է</string>
-    <string name="aware_gesture_summary_on_non_assist">Արագ ժեստերը միացված են, Active Edge գործառույթը միացված է</string>
-    <string name="aware_gesture_summary_on_with_assist">Արագ ժեստերը և Active Edge գործառույթը միացված են։ Սեղմեք՝ Օգնականը գործարկելու համար</string>
-    <string name="aware_info_button_description">Այլ կարգավորումներ</string>
-    <string name="aware_settings_disabled_info_dialog_content" />
-    <string name="aware_settings_disabled_info_dialog_title" />
-    <string name="aware_settings_enabled_info_dialog_content" />
-    <string name="aware_settings_enabled_info_dialog_title" />
-    <string name="aware_settings_suggestion_summary" />
-    <string name="aware_settings_suggestion_title" />
-    <string name="aware_summary_when_airplane_batterysaver_on">Հասանելի չէ, քանի որ ավիառեժիմը և մարտկոցի տնտեսումը միացված են</string>
-    <string name="aware_summary_when_airplane_on">Հասանելի չէ, քանի որ ավիառեժիմը միացված է</string>
-    <string name="aware_summary_when_batterysaver_on">Հասանելի չէ, քանի որ մարտկոցի տնտեսումը միացված է</string>
-    <string name="aware_wake_display_summary" />
-    <string name="aware_wake_display_summary_aod_off" />
-    <string name="aware_wake_display_title" />
+    <string name="app_and_notification_dashboard_summary">Օգնական, վերջին հավելվածները, կանխադրված հավելվածներ</string>
+    <string name="automatic_storage_manager_activation_warning">Համացանցին միացած լինելու դեպքում դուք կկարողանաք լուսանկարներն ու տեսանյութերը դիտել այն որակով, որն ընտրել եք պահուստավորման համար։</string>
+    <string name="automatic_storage_manager_days_title">Հեռացնել պահուստավորված նկարներն ու տեսանյութերը</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Անջատե՞լ Խելացի պահոցը: 
+
+Գործառույթը չի կարողանա տեղ ազատել, եթե սարքի հիշողությունը գրեթե լիքը լինի։"</string>
+    <string name="automatic_storage_manager_preference_title">Խելացի պահեստ</string>
+    <string name="automatic_storage_manager_primary_switch_title">Օգտագործել խելացի պահոցը</string>
+    <string name="automatic_storage_manager_settings">Խելացի պահեստ</string>
+    <string name="automatic_storage_manager_text">Եթե տարածքը սպառվում է, դուք կարող եք հեռացնել պահուստավորված լուսանկարներն ու տեսանյութերը։ Դրանք կպահպանվեն Google Լուսանկարներում:</string>
+    <string name="backup_data_summary">Պահուստավորել հավելվածի տվյալները, Wi-Fi գաղտնաբառերը և այլ կարգավորումները Google սերվերներում</string>
     <string name="basic_battery_saver_summary">Սահմանափակում է վիզուալ էֆեկտները և աշխատանքը ֆոնային ռեժիմում։ Միացնում է մուգ թեման, եթե այն դեռ միացված չէ։</string>
     <string name="basic_battery_saver_title">Մարտկոցի տնտեսման ստանդարտ ռեժիմ</string>
+    <string name="battery_manager_summary">Երկարացրեք մարտկոցի աշխատաժամանակը և օպտիմալացրեք լիցքավորումը</string>
+    <string name="battery_manager_summary_unsupported">Մարտկոցի աշխատաժամանակի երկարացում</string>
+    <string name="battery_missing_link_message">Իմանալ ավելին</string>
     <string name="battery_saver_reminder_category">Հիշեցումներ</string>
     <string name="battery_saver_reminder_switch_summary">Ստանալ հիշեցումներ, երբ մարտկոցի լիցքը քիչ է</string>
     <string name="battery_saver_reminder_switch_title">Մարտկոցի տնտեսման հիշեցումներ</string>
@@ -103,7 +46,11 @@
     <string name="battery_saver_schedule_switch_title">Միացնել մարտկոցի լիցքի հիման վրա</string>
     <string name="battery_schedule_summary">Կարգավորել, թե երբ պետք է մարտկոցի տնտեսումը միանա</string>
     <string name="battery_schedule_title">Ժամանակացույց և հիշեցումներ</string>
+    <string name="battery_tip_battery_health_learn_more_description">Իմանալ ավելին մարտկոցի վիճակի մասին</string>
+    <string name="battery_tip_battery_health_reduced_title">Մարտկոցի տարողունակությունը նվազել է</string>
+    <string name="battery_tip_battery_health_unknown_title">Հնարավոր չէ որոշել մարտկոցի վիճակը</string>
     <string name="battery_tip_limited_temporarily_extra_summary">Մարտկոցը պաշտպանելու համար լիցքավորումը դադարեցվում է %1$s-ի մակարդակում, երբ պլանշետը տեղադրված է դոկ-կայանում</string>
+    <string name="battery_tip_smart_battery_summary">Միացրեք «Հարմարվող մարտկոց» գործառույթը</string>
     <string name="clear_calling_footer">"Ձեր գաղտնիությունն ապահովելու համար «Մաքուր ձայնով զանգեր» գործառույթը չի ուղարկում ձայնագրությունները կամ զրույցները Google-ին։
 
 «Մաքուր ձայնով զանգեր» գործառույթն աշխատում է Wi‑Fi-ով զանգերի դեպքում և ցանցերի մեծամասնությունում, սակայն հասանելի չէ 3G ցանցերի համար։"</string>
@@ -154,8 +101,11 @@
     <string name="columbus_setting_app_shortcut_selection_help_text">Ընտրեք, թե ինչ պետք է կատարվի հավելվածը արագ հպման միջոցով բացելու դեպքում։</string>
     <string name="columbus_setting_enable_switch_title">Արագ հպման օգտագործում</string>
     <string name="columbus_setting_sensitivity_title">Պահանջել ավելի ուժգին հպումներ</string>
+    <string name="columbus_title">Կարճ հպում՝ գործողություններ սկսելու համար</string>
     <string name="communal_lock_screen_summary">Գաղտնիություն, ծանուցումներ և տան կառավարման տարրեր</string>
     <string name="communal_other">Այլ</string>
+    <string name="communal_settings_summary">Դոկ-կայանի և կողպէկրանի պարամետրեր</string>
+    <string name="communal_settings_title">Հանգույցի ռեժիմ</string>
     <string name="communal_smartspace_summary">Հիշեցումներ, ծանուցումներ և ավելին՝ Օգնականից</string>
     <string name="communal_smartspace_title">Հակիրճ գլխավորի մասին</string>
     <string name="communal_what_to_show">Ինչ ցուցադրել</string>
@@ -166,17 +116,17 @@
     <string name="connectivity_helper_d2d_summary">Ծանուցում ուղարկեք մյուս օգտատիրոջը, երբ ձեր հեռախոսը կապի խնդիրներ ունի զանգերի ընթացքում</string>
     <string name="connectivity_helper_d2d_title">Կապի տվյալների ուղարկում</string>
     <string name="connectivity_helper_footnote">Միացման մասին տեղեկություններ ուղարկեք մյուս զանգողին, եթե նա օգտագործում է աջակցվող սարք և ցանց։</string>
+    <string name="content_capture">Անհատականացում հավելվածների տվյալների միջոցով</string>
+    <string name="content_protection_preference_subpage_info">"Սա անվտանգության պաշտպանված գործառույթ է։ Սարքի տվյալները և անձնական տեղեկությունները չեն փոխանցվում Google-ին։ 
+
+Ֆիշինգը փորձ է գողանալու մուտքի տվյալները կամ այլ անձնական տեղեկություններ։"</string>
+    <string name="content_protection_preference_subpage_summary">Սկանավորումը գաղտնի է և կատարվում է անմիջապես ձեր սարքում։ Հավելվածի օգտագործման պատմությունը ստուգվում է՝ ֆիշինգ կամ խաբեություն հայտնաբերելու նպատակով։ Հայտնաբերման դեպքում հավելվածի որոշ տեղեկություններ ուղարկվում են Google Play Protect-ին՝ հաստատելու վտանգը և զգուշացնելու հավելվածի օգտատերերին։</string>
+    <string name="dark_ui_text">Մուգ թեման օգտագործում է սև ֆոնը՝ մարտկոցի աշխատանքի տևողությունը երկարացնելու համար։ Մուգ թեմայի ժամանակացույցները չեն միանա, մինչև էկրանը չանջատվի։</string>
     <string name="debugging_data_title">Տվյալների վրիպազերծում</string>
-    <string name="dialog_aware_settings_message" />
-    <string name="dialog_aware_settings_ok" />
-    <string name="dialog_aware_settings_title" />
     <string name="discover_tips_button">Ստանալ խորհուրդներ</string>
-    <string name="dock_setup_notification_text" />
     <string name="dock_summary_charging_phone">Հեռախոսի լիցքավորում</string>
-    <string name="dream_no_screen_saver_caption" />
-    <string name="dream_no_screen_saver_description" />
-    <string name="dream_no_screen_saver_preview_caption" />
-    <string name="dream_secondary_button_title" />
+    <string name="double_twist_for_camera_mode_summary">Google Տեսախցիկում սելֆիի ռեժիմը միացնելու և անջատելու համար բացեք հավելվածը և կրկնակի շրջեք դաստակը:</string>
+    <string name="duration_less_than_one_minute">1 րոպեից պակաս</string>
     <string name="extreme_battery_saver_summary">Ներառում է վերը թվարկված բոլոր փոփոխությունները։ Ինչպես նաև դադարեցնում է երկրորդական հավելվածների աշխատանքը և անջատում դրանց ծանուցումները։</string>
     <string name="extreme_battery_saver_title">Մարտկոցի առավելագույն տնտեսում</string>
     <string name="face_confirmation_hide_illustration_description">Այժմ, երբ դուք վերցնում եք ձեր հեռախոսը կամ հպում եք էկրանին, դուք կարող եք ապակողպել այն ձեր դեմքի միջոցով։</string>
@@ -203,49 +153,44 @@
     <string name="face_enrolling_too_right">Հեռախոսը շարժեք դեպի ձախ</string>
     <string name="face_enrolling_turn_head_to_arrow">Գլուխը շրջեք դեպի սլաքը</string>
     <string name="face_enrolling_turned_too_far">Փոքր-ինչ հետ պտտեք գլուխը</string>
+    <string name="fast_pair_device_not_found_dialog_title">Չհաջողվեց միացնել</string>
+    <string name="fast_pair_device_not_found_other_device_description">Մոտեցրեք այս սարքը ձեր Pixel հեռախոսին և նորից փորձեք։</string>
+    <string name="fast_pair_device_not_found_tws_headphone_description">Բացեք ականջակալի պատյանը, մոտեցրեք այն Pixel հեռախոսին և նորից փորձեք։</string>
+    <string name="fingerprint_unlock_set_unlock_password">Nexus Imprint + գաղտնաբառ</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Nexus Imprint + նախշ</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Nexus Imprint + PIN կոդ</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Շարունակել առանց Nexus Imprint-ի</string>
+    <string name="firmware_update_accessory_version_number_title">Լրասարքի ներկառուցված ծրագիր</string>
     <string name="firmware_update_status_category">Ներկառուցված ծրագրի կարգավիճակը</string>
     <string name="firmware_update_status_title">Հասանելի է ներկառուցված ծրագրի թարմացում</string>
     <string name="firmware_update_version_number_category">Ներկառուցված ծրագրի տարբերակը</string>
     <string name="firmware_update_version_number_title">Pixel Keyboard-ի ներկառուցված ծրագիր</string>
-    <string name="gesture_aware_confirmation_action_button">Եղավ</string>
-    <string name="gesture_aware_disabled_info_dialog_content" />
-    <string name="gesture_aware_footer">
-        <annotation link="link">Կարգավորումներ</annotation>
-    </string>
-    <string name="gesture_aware_off_dialog_content" />
-    <string name="gesture_aware_off_dialog_title" />
-    <string name="gesture_silence_footer">
-        <annotation link="link">Կարգավորումներ</annotation>
-    </string>
-    <string name="gesture_silence_off_summary" />
-    <string name="gesture_silence_on_summary" />
-    <string name="gesture_silence_summary" />
-    <string name="gesture_skip_direction_ltr">Ձախից աջ</string>
-    <string name="gesture_skip_direction_rtl">Աջից ձախ</string>
-    <string name="gesture_skip_direction_title">«Բաց թողնել» ժեստի ուղղությունը</string>
-    <string name="gesture_skip_footer">
-        <annotation link="link">Կարգավորումներ</annotation>
-    </string>
-    <string name="gesture_skip_off_summary" />
-    <string name="gesture_skip_on_summary" />
-    <string name="gesture_skip_summary" />
-    <string name="gesture_tap_footer">
-        <annotation link="link">Կարգավորումներ</annotation>
-    </string>
-    <string name="gesture_tap_on_summary" />
-    <string name="gesture_tap_summary" />
+    <string name="fullbackup_data_summary">"Ավտոմատ կերպով պահուստավորել սարքի տվյալները (օրինակ՝ Wi-Fi-ի գաղտնաբառերը և զանգերի պատմությունը) և հավելվածների տվյալները (օրինակ՝ կարգավորումները և հավելվածների պահած ֆայլերը) Google Drive-ում:
+
+Ավտոմատ պահուստավորումը միացնելու դեպքում սարքի ու հավելվածների տվյալները պարբերաբար պահվում են Google Drive-ի առանձին պանակի մեջ: Հավելվածների տվյալները հավելվածների կողմից պահված տվյալներն են (կախված մշակողի կարգավորումներից), ներառյալ հնարավոր գաղտնի տվյալները, օրինակ՝ կոնտակտները, հաղորդագրությունները և լուսանկարները:
+
+Պահուստավորված տվյալները Google Drive-ի պահեստում տեղ չեն զբաղեցնում: Չեն պահուստավորվի մեծ ֆայլերը կամ ֆայլերը, որոնք մշակողները որոշել են չընդգրկել այս ծառայության մեջ:"</string>
+    <string name="fullbackup_erase_dialog_message">Դադարեցնե՞լ սարքի տվյալների (օրինակ՝ Wi-Fi-ի գաղտնաբառեր և զանգերի պատմություն) և հավելվածների տվյալների (օրինակ՝ հավելվածների պահած կարգավորումներ և ֆայլեր) պահուստավորումը և ջնջել բոլոր պատճենները Google Drive-ից:</string>
+    <string name="gesture_settings_activity_title">Ժեստերով նավիգացիա</string>
     <string name="install_unknown_applications">Թույլատրել հավելվածների տեղադրումը ոչ միայն Play Խանութից, այլ նաև ուրիշ աղբյուրներից</string>
+    <string name="keywords_accessibility_menu">մոտորիկա, արագ ընտրացանկ, հատուկ գործառույթների ընտրացանկ, հպում, շարժողական ընդունակություններ, արթրիտ, կրկնվող լարվածության հետևանքով վնասվածք, կաթված, թրեմոր, ցրված սկլերոզ, մանկական ուղեղային կաթված, կոճակ, սարքակազմ, սեղմել, ձեռք, ցավ, հատուկ գործառույթներ, օգնություն</string>
     <string name="keywords_adaptive_alert_vibration">հապտիկ արձագանք, թրթռոց, հեռախոս, զանգ, ազդանշան, ծանուցումներ, բարձր ձայն, լռություն, աղմուկ, պատյան, հարմարվող</string>
     <string name="keywords_adaptive_charging">լիցքավորել, լիցքավորում, խելացի լիցքավորում, հարմարվող լիցքավորում, մարտկոց, մարտկոցի, մարտկոցի կարգավիճակ, մարտկոցի կյանք</string>
-    <string name="keywords_assist_gesture_silence">ժեստ, եզր, կողմ, ակտիվ եզր, լռություն, հետաձգել, ազդանշան, մուտքային զանգ, անձայն, էկրան, կողպէկրան, սեղմել, ճզմել, դադարեցնել</string>
-    <string name="keywords_assist_gesture_wake">ժեստ, եզր, կողմ, ակտիվ եզր, ակտիվ, ազդանշաններ, էկրան, ցուցադրում, ոչ ակտիվ էկրան, ակտիվ էկրան, սեղմել, քնած, քնել, ճզմել</string>
     <string name="keywords_battery_share">մարտկոցի լիցքի փոխանցում, անլար լիցքավորում</string>
     <string name="keywords_battery_share_settings">մարտկոցի լիցքի փոխանցում, հակառակ անլար լիցքավորում</string>
-    <string name="keywords_gesture_silence" />
-    <string name="keywords_gesture_skip" />
-    <string name="keywords_gesture_tap" />
+    <string name="keywords_gesture">ժեստ, շարժումներ</string>
+    <string name="keywords_hearing_devices">լսողության խանգարում, լսողության կորուստ, հերթապահության միասնական դիսպետչերական ծառայություն</string>
     <string name="keywords_limited_warranty">երաշխիք, սահմանափակ երաշխիք, խոստում, վերանորոգում, նորոգում, rma, վերադարձ, փոխարինում</string>
+    <string name="keywords_live_caption">Ենթագրեր, գրադարձում, Կենդանի գրադարձում, լսողության խանգարում, խլություն, ուղիղ գրադարձում, խոսքի գրադարձում, ձայնային ներածում, խոսքի ճանաչում</string>
+    <string name="keywords_live_transcribe">Ենթագրեր, տառադարձում, կենդանի ենթագրեր, լսողության խանգարում, խլություն, տառադարձություն, խոսքի տառադարձում, ձայնային ներածում, խոսքի ճանաչում</string>
     <string name="keywords_reverse_charging_stop_threshold">Անջատել գործառույթը, երբ մարտկոցի լիցքի մակարդակը հասնի</string>
+    <string name="keywords_select_to_speak">Տեքստի հնչեցում, կարդալ բարձրաձայն, կարդալ էկրանի տեքստը, էկրանի ընթերցիչ</string>
+    <string name="keywords_sound_amplifier">Ձայնի ուժեղացում, ուժեղացում, ուժեղացնել ձայնը, ձայնի ուժեղացուցիչ, լսողության խանգարում, խլություն, բարձրացնել ձայնը</string>
+    <string name="keywords_sound_notifications">Ծանուցումներ, լսողության խանգարում, խլություն, ծանուցել</string>
+    <string name="keywords_switch_access">շարժման խանգարումներ, փոխանջատիչ, ձեռք, օժանդակ տեխնոլոգիաներ, լսողական սարքեր, կաթված, շարժիչային նեյրոնների հիվանդություն, սկանավորում</string>
+    <string name="keywords_talkback">Էկրանի ընթերցիչ, ձայնային հուշումներ, ձայնային օգնական, կուրություն, թույլ տեսողություն, տեքստի հնչեցում, ձայնային արձագանք</string>
+    <string name="keywords_touch_sensitivity">հպել, զգայունություն, զգայուն, էկրանի պաշտպանիչ, թաղանթ, արձագանքող, արձագանքման ունակություն</string>
+    <string name="keywords_voice_access">ձայն, ձայնային կառավարում, շարժման խանգարումներ, ձեռք, խոսափող, ձայնային ներածում, թելադրում, խոսել, կառավարում</string>
     <string name="led_preference_title">LED ցուցիչի կաղապարներ</string>
     <string name="legal_source_code_description">Մանրամասն տեղեկությունները բաղադրիչների սկզբնական կոդի մասին, որը հրապարակված է որպես բաց կոդ, կարելի է գտնել Pixel-ի օգնության կենտրոնում։</string>
     <string name="legal_source_code_title">Սկզբնական կոդ</string>
@@ -253,9 +198,12 @@
     <string name="limited_warranty_title">Սահմանափակ երաշխիք</string>
     <string name="lockscreen_show_weather_summary">Տեսնել ընթացիկ եղանակային պայմանները</string>
     <string name="lockscreen_show_weather_title">Եղանակի ցուցադրում</string>
+    <string name="my_device_info_account_preference_title">Google հաշիվ</string>
+    <string name="owner_info_settings_edit_text_hint">Օրինակ՝ Վարդանի Pixel-ը</string>
     <string name="permit_debugging_data">Հասանելի դարձնել վրիպակների հաղորդումները</string>
     <string name="play_application_detail_indication_summary">Թարմացումների առկայության ստուգում</string>
     <string name="play_application_update_entry_title">Հավելվածների թարմացումներ</string>
+    <string name="privatespace_retry_summary">Անձնական տարածք կարգավորելու համար դուք պետք է մտնեք Google հաշիվ</string>
     <string name="repair_mode_active_summary">Նորոգման ռեժիմում</string>
     <string name="repair_mode_summary">Ապահով միջավայր սարքի վերանորոգման համար</string>
     <string name="repair_mode_title">Նորոգման ռեժիմ</string>
@@ -286,18 +234,35 @@
     <string name="reverse_charging_unplug_usb_cable_message">Հասանելի չէ, քանի որ USB-C միացքով սարք է միացված։</string>
     <string name="reverse_charging_warning_summary">Հասանելի չէ, քանի որ մարտկոցի լիցքի մակարդակը %1$s-ից ցածր է։</string>
     <string name="reverse_charging_warning_title">Հնարավոր չէ կիսվել մարտկոցի լիցքով, քանի որ մարտկոցի լիցքի մակարդակը %1$s-ից ցածր է։</string>
-    <string name="search_gesture_category_title">Ուղիղ որոնում</string>
-    <string name="search_long_press_home_button_summary">Սեղմեք և պահեք գլխավոր էկրանի կոճակը՝ Google-ում որոնումը սկսելու համար։</string>
-    <string name="search_long_press_home_button_title">Սեղմած պահել գլխավոր կոճակը՝ որոնելու համար</string>
-    <string name="search_press_hold_gesture_summary">Սեղմեք և պահեք նավիգացիայի նշիչը՝ ձեր էկրանին որոնումը կանչելու համար։</string>
-    <string name="search_press_hold_gesture_title">Սեղմած պահել նշիչը՝ որոնելու համար</string>
+    <string name="rtt_settings_always_visible">Միշտ տեսանելի է</string>
+    <string name="rtt_settings_no_visible">Տեսանելի չէ</string>
+    <string name="rtt_settings_title">Տեքստ իրական ժամանակում (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Տեսանելի է զանգի ժամանակ</string>
+    <string name="screen_time_summary_usage_today">Այսօր՝ %1$s</string>
+    <string name="search_bar_account_avatar_content_description">Պրոֆիլի լուսանկար: Կրկնակի հպեք՝ Google հաշիվը բացելու համար:</string>
+    <string name="search_gesture_category_title">Որոնում</string>
+    <string name="search_gesture_feature_title">Շրջանագծեք որոնելու համար</string>
+    <string name="search_long_press_home_button_summary">Հպեք էկրանի ներքևի մասում գտնվող գլխավոր էկրանի կոճակին և պահեք, այնուհետև շրջանագծեք կամ ընդգծեք ցանկացած բան՝ այն որոնելու համար</string>
+    <string name="search_press_hold_gesture_summary">Հպեք էկրանի ներքևի մասում գտնվող բռնիչին և պահեք, այնուհետև շրջանագծեք կամ ընդգծեք ցանկացած բան՝ այն որոնելու համար</string>
     <string name="security_dismiss_dialog_dismiss_button">Փակել</string>
     <string name="security_dismiss_dialog_title">Փակե՞լ այս զգուշացումը</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">Հպեք կարգավորելու համար</string>
+    <string name="security_settings_face_enroll_education_message">Հաջորդ էկրանին պտտեք գլուխը՝ ձեր դեմքը բոլոր անկյուններից նկարելու համար</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Կարգավորման ժամանակը սպառվեց</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Այժմ կարող եք օգտագործել ձեր դեմքը՝ հեռախոսն ապակողպելու կամ ձեր ինքնությունը հաստատելու համար (օրինակ՝ հավելվածներ մտնելիս կամ որևէ գնում հաստատելիս)</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Այժմ, երբ վերցնում եք ձեր հեռախոսը կամ հպում եք էկրանին, դուք կարող եք ապակողպել այն ձեր դեմքի միջոցով։
 
 Դեմքով ապակողպումը լավագույնս աշխատում է լավ լուսավորության դեպքում, և երբ դուք չեք կրում դիմակ կամ մուգ ակնոց։"</string>
+    <string name="security_settings_face_enroll_finish_title">Հոյակապ է</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Միացնել հատուկ գործառույթները</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Աչքերը պետք է բաց լինեն</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Դուք և երեխան եք կառավարում կարգավորումները</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Ամեն ինչ դուք եք վերահսկում</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Ինչպես է դա աշխատում</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Եթե ձեր երեխան սովորաբար ակնոց է կրում, կարող է չհանել այն կարգավորման ժամանակ։</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Օպտիկական կամ թույլ մգացված արևային ակնոցը չի խանգարի։</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Հիշեք</string>
+    <string name="security_settings_face_enroll_introduction_title">Դեմքով ապակողպման կարգավորում</string>
     <string name="security_settings_face_enroll_next">Առաջ</string>
     <string name="security_settings_face_enroll_partial_message">Կարգավորումներում դուք կարող եք նորից կարգավորել դեմքով ապակողպումը։</string>
     <string name="security_settings_face_enroll_partial_start_over">Սկսել նորից</string>
@@ -312,9 +277,25 @@
     <string name="security_settings_face_enroll_too_hot_message">Հնարավոր չէ կարգավորել դեմքով ապակողպումը, քանի որ հեռախոսը գերտաքացել է։ Փորձեք ավելի ուշ, երբ այն հովանա։</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Բաց թողնել դեմքով ապակողպումը</string>
     <string name="security_settings_face_enroll_too_hot_title">Հեռախոսը շատ է տաքացել</string>
+    <string name="security_settings_face_preference_summary_none">Հպեք՝ դեմքով ապակողպումը կարգավորելու համար</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Nexus Imprint-ը թույլ է տալիս օգտագործել ձեր մատնահետքը՝ գնումները թույլատրելու և հավելվածներ մուտք գործելու համար:
+
+Զգույշ եղեք մատնահետքեր ավելացնելիս, քանի որ այս գործողությունները հնարավոր է կատարել ցանկացած ավելացված մատնահետքի միջոցով:
+
+Նշում. այս սարքն ապակողպելու համար չեք կարող օգտագործել ձեր մատնահետքը: Լրացուցիչ տեղեկություններ ստանալու համար դիմեք ձեր կազմակերպության ադմինիստրատորին:"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Ապակողպել Nexus Imprint-ով</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Հպեք` մատնահետքը կարգավորելու համար</string>
+    <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint-ը ստեղծում է ձեր մատնահետքի եզակի նմուշը՝ նույնականացման ժամանակ ձեզ ճանաչելու համար։ Կարգավորման ժամանակ նմուշը ստեղծելու համար պետք է սկանավորեք ձեր մատնահետքը տարբեր դիրքերից։</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint-ը ստեղծում է ձեր երեխայի մատնահետքի եզակի նմուշը՝ նույնականացման ժամանակ նրան ճանաչելու համար։ Կարգավորման ժամանակ նմուշը ստեղծելու համար նա պետք է լուսանկարի իր մատնահետքը տարբեր դիրքերից։</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Իմացեք ավելին Pixel-ի մատնահետքով ապակողպման մասին &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt; էջում։"</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint աշխատանքի համար</string>
     <string name="setup_suggestion_summary">Մնացել է ընդամենը մի քանի քայլ</string>
     <string name="setup_suggestion_title">Ավարտեք կարգավորումը</string>
-    <string name="software_update_can_be_updated_header">Դարձրեք ձեր Pixel-ն ավելի լավը</string>
+    <string name="smart_battery_footer">Մարտկոցի աշխատաժամանակը երկարացնելու համար «Հարմարվող մարտկոց» գործառույթը կարող է նվազեցնել արդյունավետությունը և ֆոնային գործողությունները։ Որոշ ծանուցումներ կարող են հետաձգվել։</string>
+    <string name="smart_battery_manager_title">Հարմարվող մարտկոցի կարգավորումներ</string>
+    <string name="smart_battery_title">Հարմարվող մարտկոց</string>
+    <string name="software_update_can_be_updated_header">Ավելի լավը դարձրեք ձեր Pixel-ը</string>
     <string name="software_update_detail_indication_1_update_available">Հասանելի է 1 թարմացում</string>
     <string name="software_update_detail_indication_2_or_more_updates_available">Հասանելի է %1$d թարմացում</string>
     <string name="software_update_detail_indication_action_required">Պահանջվում է գործողություն</string>
@@ -326,9 +307,11 @@
     <string name="software_update_up_to_date_summary">Թարմացումներ չկան</string>
     <string name="software_update_up_to_specific_date_summary">Վերջին թարմացումը՝ %1$s</string>
     <string name="software_update_update_available_summary">Հասանելի է նոր տարբերակը</string>
+    <string name="sound_dashboard_summary">Ձայնի ուժգնություն, հապտիկ արձագանք, Չանհանգստացնել</string>
     <string name="speed_boost_summary_off">Անջատված է</string>
     <string name="speed_boost_summary_on">Միացված է</string>
     <string name="speed_boost_title">Spectrum Speed Boost</string>
+    <string name="suggested_fingerprint_lock_settings_title">Օգտագործել Pixel Imprint-ը</string>
     <string name="suw_limited_warranty_title">Սահմանափակ երաշխիք</string>
     <string name="suw_warranty_description">Ձեր սահմանափակ երաշխիքը տեսնելու համար ընտրեք երկիրը, որտեղ գնել եք այս սարքը։&lt;br /&gt;&lt;br /&gt;Երաշխիքը կարող եք նաև դիտել՝ անցնելով &lt;b&gt;Կարգավորումներ &gt; Հեռախոսի մասին &gt; Սահմանափակ երաշխիք&lt;/b&gt; և g.co/devicewarranty։</string>
     <string name="suw_warranty_description_content">Ձեր սահմանափակ երաշխիքը տեսնելու համար ընտրեք երկիրը, որտեղ գնել եք այս սարքը։ Երաշխիքը կարող եք նաև դիտել՝ անցնելով Կարգավորումներ, ապա՝ Հեռախոսի մասին, այնուհետև՝ Սահմանափակ երաշխիք և g.co/devicewarranty։</string>
@@ -336,10 +319,11 @@
     <string name="suw_warranty_positive_button_text">Փակել</string>
     <string name="system_update_entry_title">Համակարգի թարմացում</string>
     <string name="system_updates_group_title">Pixel-ի թարմացումներ</string>
-    <string name="tips_suggestion_summary">Իմացեք՝ ինչ կարող եք անել ձեր հեռախոսով</string>
-    <string name="tips_suggestion_title">Ուսումնասիրեք ձեր Pixel-ը</string>
+    <string name="touch_sensitivity_summary">Բարձրացնել հպէկրանի զգայունությունը և բարելավել արձագանքը հպմանը, երբ օգտագործվում է էկրանի պաշտպանիչ</string>
+    <string name="touch_sensitivity_title">Էկրանի պաշտպանիչի ռեժիմ</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Հեռախոսը պահեք ձեր դեմքի առջև</string>
     <string name="unified_battery_saver_page_intro">Տնտեսեք մարտկոցի լիցքը, որպեսզի ավելի երկար օգտագործեք հեռախոսը լիցքավորումների միջակայքում</string>
+    <string name="usb_use_file_transfers">Ֆայլերի փոխանցում / Android Auto</string>
     <string name="vpn_app_bypass">Բացառել ընտրված հավելվածները</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">Օպերատորի ընթացիկ հավելվածներ</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">Բացառե՞լ օպերատորի %1$d հավելված VPN-ից</string>
@@ -360,12 +344,9 @@
     <string name="vpn_exclude_ntf_content">Դուք ունեք օպերատորի նոր տեղադրված հավելվածներ, որոնք կարող են չաշխատել VPN-ի հետ։</string>
     <string name="vpn_exclude_ntf_title">Բացառե՞լ նոր հավելվածները VPN-ից</string>
     <string name="vpn_preference_group_title">Այլ</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_title" />
-    <string name="wake_screen_suggestion_summary" />
-    <string name="wake_screen_suggestion_title" />
+    <string name="wallpaper_dashboard_summary">Գույներ, թեմատիկ պատկերակներ, հավելվածների ցանց</string>
     <string name="warranty_country_information">%1$s (%2$s)</string>
+    <string name="wifi_subscription_summary">Դիտել և փոխել OpenRoaming-ի բաժանորդագրությունը</string>
     <string name="wifitrackerlib_connected_with_wsu_authenticator">Միացված է %1$s-ի միջոցով</string>
     <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Հպեք՝ միանալու համար</string>
     <string name="wifitrackerlib_wsu_entry_summary_provision_error">Չհաջողվեց միանալ։ Հպեք՝ կրկնելու համար։</string>

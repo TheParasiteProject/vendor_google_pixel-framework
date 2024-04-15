@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="aware_category_display" />
-    <string name="aware_category_gesture" />
-    <string name="aware_display_settings_title">Idle lock screen</string>
-    <string name="aware_settings_description" />
-    <string name="aware_settings_summary" />
-    <string name="gesture_silence_title">Silence alerts gesture</string>
-    <string name="gesture_skip_title">Skip gesture</string>
-    <string name="keywords_touch_sensitivity">touch, sensitivity, sensitive, screen protector, film, responsive, responsiveness</string>
-    <string name="keywords_wake_display" />
-    <string name="touch_sensitivity_summary">Increase touch sensitivity and improve touch when using a screen protector</string>
-    <string name="touch_sensitivity_title">Screen protector mode</string>
-    <string name="columbus_title">Quick Tap to start actions</string>
-    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Active Edge set up. Go to the next screen or keep adjusting.</string>
     <string name="accessibility_keyboard_haptics_title">Keyboard haptics</string>
     <string name="adaptive_alert_vibration_summary">Reduces vibration strength while your phone is still and the screen is facing up</string>
     <string name="adaptive_alert_vibration_title">Adaptive alert vibration</string>
@@ -32,69 +19,25 @@
 
 "<b>Bug reports contain app and system logs</b>" and may include personal and device information, such as names, email addresses, phone numbers, location data, device identifiers, connected devices, and network information. Reports may be shared with engineering partners potentially impacted by your issue.
 
-Granting access will allow this app to "<b>automatically collect and upload bug reports</b>" containing app and system logs for all issue reports.
+Granting access will allow this app to "<b>automatically collect and upload bug reports</b>", including app and system logs from personal and work profiles, for all issue reports you submit.
 
 Revoking access will require the app to request your permission to collect and upload a bug report for each individual issue report."</string>
-    <string name="ambient_display_wake_screen_footer">
-        <annotation link="link">Preferences</annotation>
-    </string>
-    <string name="ambient_display_wake_screen_summary" />
-    <string name="ambient_display_wake_screen_summary_on" />
-    <string name="assist_gesture_enrollment_continue_to_assistant">Continue to Assistant</string>
-    <string name="assist_gesture_enrollment_do_it_later">Do it later</string>
-    <string name="assist_gesture_enrollment_seekbar_light">Light squeeze</string>
-    <string name="assist_gesture_enrollment_seekbar_strong">Firm squeeze</string>
-    <string name="assist_gesture_enrollment_settings">Settings</string>
-    <string name="assist_gesture_setting_enable_assistant_text">To talk to your Assistant, quickly squeeze the bottom half of your phone, then release</string>
-    <string name="assist_gesture_setting_enable_assistant_title">Squeeze for your Assistant</string>
-    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Squeeze to silence alarms, timers, notifications, and incoming calls</string>
-    <string name="assist_gesture_setting_enable_ring_silence_text">Squeeze to silence notifications and incoming calls</string>
-    <string name="assist_gesture_setting_enable_ring_silence_title">Squeeze to silence phone</string>
-    <string name="assist_gesture_setting_enable_wake_title">Open Assistant when screen is off</string>
-    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Light squeeze</string>
-    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Firm squeeze</string>
-    <string name="assist_gesture_squeeze_sensitivity_label">Squeeze sensitivity</string>
-    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">May bring up Assistant accidentally</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Squeeze the bottom half of your phone</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Squeeze faster</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Squeeze harder</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Squeeze quickly and then release</string>
-    <string name="assist_gesture_training_enrolling_error_try_adjusting">Try adjusting the slider</string>
-    <string name="assist_gesture_training_enrolling_text">Squeeze the bottom half of your phone. You can adjust how strongly you need to squeeze.</string>
-    <string name="assist_gesture_training_enrolling_title">Squeeze quickly and release</string>
-    <string name="assist_gesture_training_finished_text">You can also change the squeeze sensitivity later in Settings</string>
-    <string name="assist_gesture_training_finished_title">Finish up or keep adjusting</string>
-    <string name="assist_gesture_training_intro_text">To talk to your Assistant at any time, quickly squeeze the bottom half of your phone, then release</string>
-    <string name="assist_gesture_training_intro_title">Squeeze for your Assistant</string>
-    <string name="assist_gesture_training_suggestion_summary">Talk to Assistant, silence calls</string>
-    <string name="assist_gesture_training_suggestion_summary_including_alarms">Talk to Assistant, silence alarms and calls</string>
-    <string name="assist_gesture_training_suggestion_title">Squeeze and release for Assistant</string>
-    <string name="aware_category_security" />
-    <string name="aware_disabled_preference_action">Turn on</string>
-    <string name="aware_disabled_preference_dialog_content" />
-    <string name="aware_disabled_preference_dialog_title" />
-    <string name="aware_disabled_preference_neutral">Not now</string>
-    <string name="aware_footer_when_airplane_batterysaver_on">Motion Sense is unavailable because Airplane mode and Battery Saver are on</string>
-    <string name="aware_footer_when_airplane_on">Motion Sense is unavailable because Airplane mode is on</string>
-    <string name="aware_footer_when_batterysaver_on">Motion Sense is unavailable because Battery Saver is on</string>
-    <string name="aware_gesture_summary_off">Quick Gestures on, Active Edge turned off</string>
-    <string name="aware_gesture_summary_on_non_assist">Quick Gestures on, Active Edge turned on</string>
-    <string name="aware_gesture_summary_on_with_assist">Quick Gestures on, Active Edge on, squeeze for your Assistant</string>
-    <string name="aware_info_button_description">More settings</string>
-    <string name="aware_settings_disabled_info_dialog_content" />
-    <string name="aware_settings_disabled_info_dialog_title" />
-    <string name="aware_settings_enabled_info_dialog_content" />
-    <string name="aware_settings_enabled_info_dialog_title" />
-    <string name="aware_settings_suggestion_summary" />
-    <string name="aware_settings_suggestion_title" />
-    <string name="aware_summary_when_airplane_batterysaver_on">Unavailable because Airplane mode and Battery Saver are on</string>
-    <string name="aware_summary_when_airplane_on">Unavailable because Airplane mode is on</string>
-    <string name="aware_summary_when_batterysaver_on">Unavailable because Battery Saver is on</string>
-    <string name="aware_wake_display_summary" />
-    <string name="aware_wake_display_summary_aod_off" />
-    <string name="aware_wake_display_title" />
+    <string name="app_and_notification_dashboard_summary">Assistant, recent apps, default apps</string>
+    <string name="automatic_storage_manager_activation_warning">"When you're connected, you can still access photos and videos at the quality you selected for backup"</string>
+    <string name="automatic_storage_manager_days_title">Remove backed up photos and videos</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Turn off Smart Storage? 
+
+Smart Storage won't free up space when your storage is almost full."</string>
+    <string name="automatic_storage_manager_preference_title">Smart Storage</string>
+    <string name="automatic_storage_manager_primary_switch_title">Use Smart Storage</string>
+    <string name="automatic_storage_manager_settings">Smart Storage</string>
+    <string name="automatic_storage_manager_text">When storage is almost full, remove backed up photos and videos. You can still find them in Google Photos.</string>
+    <string name="backup_data_summary">Back up app data, Wi-Fi passwords, and other settings to Google servers</string>
     <string name="basic_battery_saver_summary">Limits visual effects and background activity. Turns on Dark theme, if not already on.</string>
     <string name="basic_battery_saver_title">Standard Battery Saver</string>
+    <string name="battery_manager_summary">Extend battery life and optimize charging</string>
+    <string name="battery_manager_summary_unsupported">Extend battery life</string>
+    <string name="battery_missing_link_message">Learn more</string>
     <string name="battery_saver_reminder_category">Reminders</string>
     <string name="battery_saver_reminder_switch_summary">Get reminders when battery is low</string>
     <string name="battery_saver_reminder_switch_title">Battery Saver reminders</string>
@@ -103,7 +46,11 @@ Revoking access will require the app to request your permission to collect and u
     <string name="battery_saver_schedule_switch_title">Turn on based on battery level</string>
     <string name="battery_schedule_summary">Manage when Battery Saver turns on</string>
     <string name="battery_schedule_title">Schedule and reminders</string>
+    <string name="battery_tip_battery_health_learn_more_description">Learn more about battery health</string>
+    <string name="battery_tip_battery_health_reduced_title">Battery capacity is reduced</string>
+    <string name="battery_tip_battery_health_unknown_title">Can’t detect battery health</string>
     <string name="battery_tip_limited_temporarily_extra_summary">To protect your battery, charging is paused at %1$s while your tablet is docked</string>
+    <string name="battery_tip_smart_battery_summary">Turn on Adaptive Battery</string>
     <string name="clear_calling_footer">"To protect your privacy, Clear Calling does not send audio or conversations to Google.
 
 Clear Calling works on Wi‑Fi calling and most networks, not available for 3G networks."</string>
@@ -154,8 +101,11 @@ Clear Calling works on Wi‑Fi calling and most networks, not available for 3G n
     <string name="columbus_setting_app_shortcut_selection_help_text">Select what happens when you open this app using Quick Tap.</string>
     <string name="columbus_setting_enable_switch_title">Use Quick Tap</string>
     <string name="columbus_setting_sensitivity_title">Require stronger taps</string>
+    <string name="columbus_title">Quick Tap to start actions</string>
     <string name="communal_lock_screen_summary">Privacy, notifications, and Home controls</string>
     <string name="communal_other">Other</string>
+    <string name="communal_settings_summary">Dock and lock screen options</string>
+    <string name="communal_settings_title">Hub mode</string>
     <string name="communal_smartspace_summary">Reminders, alerts, and more from Assistant</string>
     <string name="communal_smartspace_title">At a glance</string>
     <string name="communal_what_to_show">What to show</string>
@@ -166,17 +116,17 @@ Clear Calling works on Wi‑Fi calling and most networks, not available for 3G n
     <string name="connectivity_helper_d2d_summary">Notify the other person when your phone has connection issues during calls</string>
     <string name="connectivity_helper_d2d_title">Share connection info</string>
     <string name="connectivity_helper_footnote">You can share connection info when the other caller is using a supported device and network</string>
+    <string name="content_capture">Personalize using app data</string>
+    <string name="content_protection_preference_subpage_info">"This is a protected security feature. No device or personal info is shared with Google. 
+
+Phishing is an attempt to steal sign-in credentials or other personal info."</string>
+    <string name="content_protection_preference_subpage_summary">Scanning runs privately right on your device, checking app activity for phishing or other deceptive behavior. If its detected, some app info is sent to Google Play Protect to confirm the threat and warn app users.</string>
+    <string name="dark_ui_text">Dark theme uses a black background to help keep your battery alive longer. Dark theme schedules wait to turn on until your screen is off.</string>
     <string name="debugging_data_title">Debugging data</string>
-    <string name="dialog_aware_settings_message" />
-    <string name="dialog_aware_settings_ok" />
-    <string name="dialog_aware_settings_title" />
     <string name="discover_tips_button">Discover tips</string>
-    <string name="dock_setup_notification_text" />
     <string name="dock_summary_charging_phone">Charging phone</string>
-    <string name="dream_no_screen_saver_caption" />
-    <string name="dream_no_screen_saver_description" />
-    <string name="dream_no_screen_saver_preview_caption" />
-    <string name="dream_secondary_button_title" />
+    <string name="double_twist_for_camera_mode_summary">To switch in and out of selfie mode in Google Camera, double-twist when you’re in the app.</string>
+    <string name="duration_less_than_one_minute">Less than 1 minute</string>
     <string name="extreme_battery_saver_summary">Includes all changes listed above. Also pauses non-essential apps and their notifications.</string>
     <string name="extreme_battery_saver_title">Extreme Battery Saver</string>
     <string name="face_confirmation_hide_illustration_description">Now when you pick up your phone or tap the screen, you can use your face to unlock.</string>
@@ -203,49 +153,43 @@ Clear Calling works on Wi‑Fi calling and most networks, not available for 3G n
     <string name="face_enrolling_too_right">Move phone to your left</string>
     <string name="face_enrolling_turn_head_to_arrow">Turn your head toward the arrow</string>
     <string name="face_enrolling_turned_too_far">Turn head a little less</string>
+    <string name="fast_pair_device_not_found_dialog_title">Failed to connect</string>
+    <string name="fast_pair_device_not_found_other_device_description">Move this device closer to your Pixel phone and try again.</string>
+    <string name="fast_pair_device_not_found_tws_headphone_description">Open the earbuds case and move it closer to your Pixel phone, then try again.</string>
+    <string name="fingerprint_unlock_set_unlock_password">Nexus Imprint + Password</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Nexus Imprint + Pattern</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Nexus Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Continue without Nexus Imprint</string>
+    <string name="firmware_update_accessory_version_number_title">Accessory firmware</string>
     <string name="firmware_update_status_category">Device firmware status</string>
     <string name="firmware_update_status_title">Firmware update available</string>
     <string name="firmware_update_version_number_category">Device firmware version</string>
     <string name="firmware_update_version_number_title">Pixel keyboard firmware</string>
-    <string name="gesture_aware_confirmation_action_button">Got it</string>
-    <string name="gesture_aware_disabled_info_dialog_content" />
-    <string name="gesture_aware_footer">
-        <annotation link="link">Preferences</annotation>
-    </string>
-    <string name="gesture_aware_off_dialog_content" />
-    <string name="gesture_aware_off_dialog_title" />
-    <string name="gesture_silence_footer">
-        <annotation link="link">Preferences</annotation>
-    </string>
-    <string name="gesture_silence_off_summary" />
-    <string name="gesture_silence_on_summary" />
-    <string name="gesture_silence_summary" />
-    <string name="gesture_skip_direction_ltr">Left to right</string>
-    <string name="gesture_skip_direction_rtl">Right to left</string>
-    <string name="gesture_skip_direction_title">Skip Direction</string>
-    <string name="gesture_skip_footer">
-        <annotation link="link">Preferences</annotation>
-    </string>
-    <string name="gesture_skip_off_summary" />
-    <string name="gesture_skip_on_summary" />
-    <string name="gesture_skip_summary" />
-    <string name="gesture_tap_footer">
-        <annotation link="link">Preferences</annotation>
-    </string>
-    <string name="gesture_tap_on_summary" />
-    <string name="gesture_tap_summary" />
+    <string name="fullbackup_data_summary">"Automatically back up device data (such as Wi-Fi passwords and call history) and app data (such as settings and files stored by apps) to Google Drive.
+
+When you turn on automatic backup, device and app data is periodically saved to a private folder in Google Drive. App data can be any data an app has saved (based on developer settings), including potentially sensitive data such as contacts, messages and photos.
+
+Backup data won't count towards your Drive storage quota. Large files or files developers have chosen to exclude from the service won't be backed up."</string>
+    <string name="fullbackup_erase_dialog_message">Stop backing up device data (such as Wi-Fi passwords and call history) and app data (such as settings and files stored by apps), plus erase all copies on Google Drive?</string>
+    <string name="gesture_settings_activity_title">Gesture Navigation</string>
     <string name="install_unknown_applications">Allow installation of apps from sources other than the Play Store</string>
+    <string name="keywords_accessibility_menu">motor, quick menu, assistive menu, touch, dexterity, arthritis, rsi, stroke, tremor, multiple sclerosis, cerebral palsy, button, hardware, press, repetitive strain injury, hand, pain, accessible, help</string>
     <string name="keywords_adaptive_alert_vibration">haptics, vibrate, phone, call, ring, alert, notifications, loud, quiet, noise, case, adaptive</string>
     <string name="keywords_adaptive_charging">charge, charging, smart charging, adaptive charging, battery, battery health</string>
-    <string name="keywords_assist_gesture_silence">gesture, edge, side, active edge, silence, snooze, alarm, incoming call, quiet, display, lockscreen, squeeze, grip, stop</string>
-    <string name="keywords_assist_gesture_wake">gesture, edge, side, active edge, wake, notifications, screen, display, screen off, screen on, squeeze, asleep, sleep, grip</string>
     <string name="keywords_battery_share">battery share, wireless charging</string>
     <string name="keywords_battery_share_settings">battery share, reverse wireless charging</string>
-    <string name="keywords_gesture_silence" />
-    <string name="keywords_gesture_skip" />
-    <string name="keywords_gesture_tap" />
+    <string name="keywords_gesture">gesture, moves</string>
+    <string name="keywords_hearing_devices">hard of hearing, hearing loss, PSAP</string>
     <string name="keywords_limited_warranty">warranty, guarantee, limited warranty, promise, repair, rma, replacement</string>
+    <string name="keywords_live_transcribe">Captions, closed captions, CC, Live Caption, hard of hearing, hearing loss, CART, speech to text, subtitle</string>
     <string name="keywords_reverse_charging_stop_threshold">Stop sharing battery when phone reaches:</string>
+    <string name="keywords_select_to_speak">Hear text, read aloud, speak screen, screen reader</string>
+    <string name="keywords_sound_amplifier">PSAP, amplify, sound amplification, hard of hearing, hearing loss, amplification</string>
+    <string name="keywords_sound_notifications">Notifications, hard of hearing, hearing loss, notify</string>
+    <string name="keywords_switch_access">motor, switch, hand, AT, assistive technology, paralysis, ALS, scanning, step scanning</string>
+    <string name="keywords_talkback">Screen reader, Voice Over, VoiceOver, Voice Assistance, Blind, Low Vision, TTS, text to speech, spoken feedback</string>
+    <string name="keywords_touch_sensitivity">touch, sensitivity, sensitive, screen protector, film, responsive, responsiveness</string>
+    <string name="keywords_voice_access">voice, voice control, motor, hand, mic, microphone, dictation, talk, control</string>
     <string name="led_preference_title">LED indicator patterns</string>
     <string name="legal_source_code_description">Details about the source code for components made available as open source can be found at the Pixel help center.</string>
     <string name="legal_source_code_title">Source code</string>
@@ -253,9 +197,12 @@ Clear Calling works on Wi‑Fi calling and most networks, not available for 3G n
     <string name="limited_warranty_title">Limited Warranty</string>
     <string name="lockscreen_show_weather_summary">See current weather conditions</string>
     <string name="lockscreen_show_weather_title">Show weather</string>
+    <string name="my_device_info_account_preference_title">Google Account</string>
+    <string name="owner_info_settings_edit_text_hint">E.g., Joe’s Pixel.</string>
     <string name="permit_debugging_data">Allow bug report access</string>
     <string name="play_application_detail_indication_summary">Check for updates</string>
     <string name="play_application_update_entry_title">App updates</string>
+    <string name="privatespace_retry_summary">You need to sign in to a Google Account to set up Private Space</string>
     <string name="repair_mode_active_summary">In repair mode</string>
     <string name="repair_mode_summary">Secure environment for device repair</string>
     <string name="repair_mode_title">Repair mode</string>
@@ -286,18 +233,36 @@ Flip your phone over to try."</string>
     <string name="reverse_charging_unplug_usb_cable_message">Unavailable because USB-C device plugged in</string>
     <string name="reverse_charging_warning_summary">Unavailable because battery is under %1$s</string>
     <string name="reverse_charging_warning_title">Battery Share is unavailable because battery is under %1$s</string>
-    <string name="search_gesture_category_title">Screen search</string>
-    <string name="search_long_press_home_button_summary">Press and hold the home button to initiate Google search over your screen.</string>
-    <string name="search_long_press_home_button_title">Hold Home to search</string>
-    <string name="search_press_hold_gesture_summary">Press and hold the navigation handle to invoke search over your screen.</string>
-    <string name="search_press_hold_gesture_title">Hold handle to search</string>
+    <string name="rtt_settings_always_visible">Always visible</string>
+    <string name="rtt_settings_no_visible">Not visible</string>
+    <string name="rtt_settings_title">Real-time text (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Visible during call</string>
+    <string name="screen_time_summary_usage_today">%1$s today</string>
+    <string name="search_bar_account_avatar_content_description">Profile picture, double tap to open Google Account</string>
+    <string name="search_gesture_category_title">Search</string>
+    <string name="search_gesture_feature_title">Circle to Search</string>
+    <string name="search_long_press_home_button_summary">Touch &amp; hold the home button at the bottom of the screen, then circle or highlight anything to search</string>
+    <string name="search_press_hold_gesture_summary">Touch &amp; hold the handle at the bottom of the screen, then circle or highlight anything to search</string>
     <string name="security_dismiss_dialog_dismiss_button">Dismiss</string>
     <string name="security_dismiss_dialog_title">Dismiss this warning?</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">Tap to set up</string>
+    <string name="security_settings_face_enroll_consent_introduction_title">Allow Face Unlock</string>
+    <string name="security_settings_face_enroll_education_message">On the next screen, rotate your head to capture all angles of your face</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Face Unlock setup timed out</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">"Now you can use your face to unlock your phone or verify it's you, like when you sign in to apps or approve a purchase"</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Now when you pick up your phone or tap the screen, you can use your face to unlock.
 
 Face Unlock works best when there’s enough light and you’re not wearing a mask or dark glasses."</string>
+    <string name="security_settings_face_enroll_finish_title">Looks good!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Setup for limited vision or head motion</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Require eyes open</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">You and your child are in control</string>
+    <string name="security_settings_face_enroll_introduction_control_title">"You're in control"</string>
+    <string name="security_settings_face_enroll_introduction_how_title">How it works</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">If your child normally wears eyeglasses, they can wear them during setup.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Glasses or lightly tinted sunglasses are OK.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Keep in mind</string>
+    <string name="security_settings_face_enroll_introduction_title">Set up Face Unlock</string>
     <string name="security_settings_face_enroll_next">Next</string>
     <string name="security_settings_face_enroll_partial_message">To improve performance, you can set up Face Unlock again in Settings</string>
     <string name="security_settings_face_enroll_partial_start_over">Start over</string>
@@ -312,8 +277,24 @@ To improve performance, you can set up Face Unlock again in Settings."</string>
     <string name="security_settings_face_enroll_too_hot_message">Face Unlock setup can’t be completed because the phone is too hot. Try again later when the phone cools down.</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Skip Face Unlock</string>
     <string name="security_settings_face_enroll_too_hot_title">Phone is too hot</string>
+    <string name="security_settings_face_preference_summary_none">Tap to set up face</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"With Nexus Imprint, you can use your fingerprint to authorize purchases or sign in to apps.
+
+Be careful whose fingerprints you add. Any fingerprints added will be able to do these things.
+
+Note: You can't use your fingerprint to unlock this device. For more information, contact your organization's admin."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Unlock with Nexus Imprint</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Tap to set up fingerprint</string>
+    <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">"Pixel Imprint creates a unique model of your fingerprint to verify it's you. To create this fingerprint model during setup, you will take images of your fingerprint from different positions."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint creates a unique model of your child’s fingerprint to verify it’s them. To create this fingerprint model during setup, they will take images of their fingerprint from different positions.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Learn more about Pixel fingerprint unlock at &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint for work</string>
     <string name="setup_suggestion_summary">Just a few more steps</string>
     <string name="setup_suggestion_title">Finish setting up</string>
+    <string name="smart_battery_footer">To extend battery life, Adaptive Battery may reduce performance and background activity. Some notifications may be delayed.</string>
+    <string name="smart_battery_manager_title">Adaptive preferences</string>
+    <string name="smart_battery_title">Adaptive Battery</string>
     <string name="software_update_can_be_updated_header">Make your Pixel even better</string>
     <string name="software_update_detail_indication_1_update_available">1 update available</string>
     <string name="software_update_detail_indication_2_or_more_updates_available">%1$d updates available</string>
@@ -326,9 +307,12 @@ To improve performance, you can set up Face Unlock again in Settings."</string>
     <string name="software_update_up_to_date_summary">Up to date</string>
     <string name="software_update_up_to_specific_date_summary">Updated to %1$s</string>
     <string name="software_update_update_available_summary">Update available</string>
+    <string name="sound_dashboard_summary">Volume, haptics, Do Not Disturb</string>
+    <string name="spatial_audio_title">Spatial audio</string>
     <string name="speed_boost_summary_off">Off</string>
     <string name="speed_boost_summary_on">On</string>
     <string name="speed_boost_title">Spectrum Speed Boost</string>
+    <string name="suggested_fingerprint_lock_settings_title">Use Pixel Imprint</string>
     <string name="suw_limited_warranty_title">Limited warranty</string>
     <string name="suw_warranty_description">To view your limited warranty, select the country where you bought this device.&lt;br /&gt;&lt;br /&gt;The warranty is also available at &lt;b&gt;Settings &gt; About phone &gt; Limited warranty&lt;/b&gt; and g.co/devicewarranty.</string>
     <string name="suw_warranty_description_content">To view your limited warranty, select the country where you bought this device. The warranty is also available at Settings then about phone then Limited warranty and g.co/devicewarranty.</string>
@@ -336,10 +320,11 @@ To improve performance, you can set up Face Unlock again in Settings."</string>
     <string name="suw_warranty_positive_button_text">Close</string>
     <string name="system_update_entry_title">System update</string>
     <string name="system_updates_group_title">Pixel updates</string>
-    <string name="tips_suggestion_summary">Explore what you can do with your phone</string>
-    <string name="tips_suggestion_title">Get to know your Pixel</string>
+    <string name="touch_sensitivity_summary">Increase touch sensitivity and improve touch when using a screen protector</string>
+    <string name="touch_sensitivity_title">Screen protector mode</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Hold phone in front of your face</string>
     <string name="unified_battery_saver_page_intro">Save power to help your phone battery last longer between charges</string>
+    <string name="usb_use_file_transfers">File transfer / Android Auto</string>
     <string name="vpn_app_bypass">Exclude selected apps</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">Current carrier apps</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">Exclude %1$d carrier apps from VPN?</string>
@@ -360,12 +345,9 @@ To improve performance, you can set up Face Unlock again in Settings."</string>
     <string name="vpn_exclude_ntf_content">You have newly installed carrier apps that may not work with the VPN</string>
     <string name="vpn_exclude_ntf_title">Exclude new apps from VPN?</string>
     <string name="vpn_preference_group_title">Others</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_title" />
-    <string name="wake_screen_suggestion_summary" />
-    <string name="wake_screen_suggestion_title" />
+    <string name="wallpaper_dashboard_summary">Colours, themed icons, app grid</string>
     <string name="warranty_country_information">%1$s (%2$s)</string>
+    <string name="wifi_subscription_summary">View or change OpenRoaming subscription</string>
     <string name="wifitrackerlib_connected_with_wsu_authenticator">Connected with %1$s</string>
     <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Tap to connect</string>
     <string name="wifitrackerlib_wsu_entry_summary_provision_error">Can’t connect. Tap to try again.</string>

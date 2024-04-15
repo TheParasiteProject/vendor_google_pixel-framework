@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="aware_category_display" />
-    <string name="aware_category_gesture" />
-    <string name="aware_display_settings_title">閒置上鎖畫面</string>
-    <string name="aware_settings_description" />
-    <string name="aware_settings_summary" />
-    <string name="gesture_silence_title">將提示設為靜音的手勢</string>
-    <string name="gesture_skip_title">略過手勢</string>
-    <string name="keywords_touch_sensitivity">輕觸, 敏感度, 敏感, 螢幕保護貼, 膠片, 反應靈敏, 反應</string>
-    <string name="keywords_wake_display" />
-    <string name="touch_sensitivity_summary">提升使用螢幕保護貼時的觸控敏感度，並改善觸控回應效果</string>
-    <string name="touch_sensitivity_title">螢幕保護貼模式</string>
-    <string name="columbus_title">使用「快速輕觸」以啟動操作</string>
-    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">已經完成設定 Active Edge。請去下一個畫面或者繼續調整設定。</string>
     <string name="accessibility_keyboard_haptics_title">鍵盤觸感反應</string>
     <string name="adaptive_alert_vibration_summary">在手機靜止且螢幕向上時降低震動強度</string>
     <string name="adaptive_alert_vibration_title">自動調整震動強度</string>
@@ -30,71 +17,26 @@
     <string name="all_apps_category_title">所有應用程式</string>
     <string name="allow_debugging_data_description">Google 會根據《<a href="https://policies.google.com/privacy">私隱權政策</a>"》使用錯誤報告診斷應用程式和裝置問題。
 
-"<b>錯誤報告包含應用程式和系統記錄</b>"，且可能包含個人和裝置資訊，例如名稱、電郵地址、手機號碼、位置資料、裝置識別碼、已連結的裝置和網絡資料。報告可能會與受此問題影響的工程合作夥伴分享。
+"<b>錯誤報告包含應用程式和系統記錄</b>"，且可能包含個人和裝置資訊，例如名稱、電郵地址、手機號碼、位置資料、裝置 ID、已連結的裝置和網絡資料。報告可能會與受此問題影響的工程合作夥伴分享。
 
-如授予存取權，此應用程式將可"<b>自動收集並上載錯誤報告</b>"，報告中將包含所有問題報告的應用程式和系統記錄。
+如授予存取權，此應用程式將可"<b>自動收集並上載錯誤報告</b>"，報告中將包含所有問題報告的個人及工作設定檔之應用程式和系統記錄。
 
 如撤銷存取權，應用程式將就個別問題報告要求你同意收集並上載錯誤報告。"</string>
-    <string name="ambient_display_wake_screen_footer">
-        <annotation link="link">偏好設定</annotation>
-    </string>
-    <string name="ambient_display_wake_screen_summary" />
-    <string name="ambient_display_wake_screen_summary_on" />
-    <string name="assist_gesture_enrollment_continue_to_assistant">開啟「助理」</string>
-    <string name="assist_gesture_enrollment_do_it_later">稍後再執行</string>
-    <string name="assist_gesture_enrollment_seekbar_light">輕力握緊</string>
-    <string name="assist_gesture_enrollment_seekbar_strong">用力握緊</string>
-    <string name="assist_gesture_enrollment_settings">設定</string>
-    <string name="assist_gesture_setting_enable_assistant_text">如要與「助理」對話，請快速握緊手機下方</string>
-    <string name="assist_gesture_setting_enable_assistant_title">握緊手機啟動助理</string>
-    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">透過握緊手勢將鬧鐘、計時器、通知和來電靜音</string>
-    <string name="assist_gesture_setting_enable_ring_silence_text">握緊裝置即可關閉通知音效和來電鈴聲</string>
-    <string name="assist_gesture_setting_enable_ring_silence_title">握緊手機設為靜音</string>
-    <string name="assist_gesture_setting_enable_wake_title">在螢幕關閉時開啟 Google 助理</string>
-    <string name="assist_gesture_squeeze_help_maximum_sensitivity">輕力握緊</string>
-    <string name="assist_gesture_squeeze_help_minimum_sensitivity">用力握緊</string>
-    <string name="assist_gesture_squeeze_sensitivity_label">握緊手勢的敏感度</string>
-    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">可能不小心開啟「助理」</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">請握緊手機的下半部</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_faster">請加快握緊速度</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_harder">請握緊些</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">請握緊再快速放開</string>
-    <string name="assist_gesture_training_enrolling_error_try_adjusting">請嘗試調整滑桿</string>
-    <string name="assist_gesture_training_enrolling_text">請握緊手機的下半部。你可以按需要調整握緊力度的設定。</string>
-    <string name="assist_gesture_training_enrolling_title">快速握緊再放開</string>
-    <string name="assist_gesture_training_finished_text">你日後亦可以在「設定」中變更握緊力度敏感度</string>
-    <string name="assist_gesture_training_finished_title">完成設定或繼續調整</string>
-    <string name="assist_gesture_training_intro_text">快速握緊手機的下半部再放開，即可隨時與「助理」對話</string>
-    <string name="assist_gesture_training_intro_title">握緊手機啟動助理</string>
-    <string name="assist_gesture_training_suggestion_summary">與「助理」對話、關閉來電鈴聲</string>
-    <string name="assist_gesture_training_suggestion_summary_including_alarms">與「助理」對話、關閉鬧鐘音效和來電鈴聲</string>
-    <string name="assist_gesture_training_suggestion_title">握緊裝置再放開，即可開啟助理</string>
-    <string name="aware_category_security" />
-    <string name="aware_disabled_preference_action">開啟</string>
-    <string name="aware_disabled_preference_dialog_content" />
-    <string name="aware_disabled_preference_dialog_title" />
-    <string name="aware_disabled_preference_neutral">暫時不要</string>
-    <string name="aware_footer_when_airplane_batterysaver_on">由於飛行模式和「慳電模式」已開啟，因此 Motion Sense 無法使用</string>
-    <string name="aware_footer_when_airplane_on">由於飛行模式已開啟，因此 Motion Sense 無法使用</string>
-    <string name="aware_footer_when_batterysaver_on">由於「慳電模式」已開啟，因此 Motion Sense 無法使用</string>
-    <string name="aware_gesture_summary_off">「快速手勢操作」已開啟，Active Edge 已關閉</string>
-    <string name="aware_gesture_summary_on_non_assist">「快速手勢操作」和 Active Edge 均已開啟。</string>
-    <string name="aware_gesture_summary_on_with_assist">「快速手勢操作」和 Active Edge 均已開啟。握緊裝置即可啟動「Google 助理」</string>
-    <string name="aware_info_button_description">更多設定</string>
-    <string name="aware_settings_disabled_info_dialog_content" />
-    <string name="aware_settings_disabled_info_dialog_title" />
-    <string name="aware_settings_enabled_info_dialog_content" />
-    <string name="aware_settings_enabled_info_dialog_title" />
-    <string name="aware_settings_suggestion_summary" />
-    <string name="aware_settings_suggestion_title" />
-    <string name="aware_summary_when_airplane_batterysaver_on">由於飛行模式和「慳電模式」已開啟，因此無法使用</string>
-    <string name="aware_summary_when_airplane_on">由於飛行模式已開啟，因此無法使用</string>
-    <string name="aware_summary_when_batterysaver_on">由於「慳電模式」已開啟，因此無法使用</string>
-    <string name="aware_wake_display_summary" />
-    <string name="aware_wake_display_summary_aod_off" />
-    <string name="aware_wake_display_title" />
+    <string name="app_and_notification_dashboard_summary">Google 助理、最近使用的應用程式、預設應用程式</string>
+    <string name="automatic_storage_manager_activation_warning">連接後，你仍可按所選的備份品質存取相片和影片</string>
+    <string name="automatic_storage_manager_days_title">移除已備份的相片和影片</string>
+    <string name="automatic_storage_manager_deactivation_warning">"要關閉「智能儲存空間」功能嗎？
+
+當你的儲存空間即將用盡時，「智能儲存空間」功能將不會騰出空間。"</string>
+    <string name="automatic_storage_manager_preference_title">智能儲存空間</string>
+    <string name="automatic_storage_manager_primary_switch_title">使用智能儲存空間</string>
+    <string name="automatic_storage_manager_settings">智能儲存空間</string>
+    <string name="automatic_storage_manager_text">儲存空間即將用盡時，系統會移除已備份的相片和影片。你仍可以在「Google 相片」中查看這些相片和影片。</string>
     <string name="basic_battery_saver_summary">限制視覺效果和背景活動。系統會開啟深色主題背景 (如未開啟)。</string>
     <string name="basic_battery_saver_title">標準慳電模式</string>
+    <string name="battery_manager_summary">延長電池壽命並優化充電</string>
+    <string name="battery_manager_summary_unsupported">延長電池壽命</string>
+    <string name="battery_missing_link_message">瞭解詳情</string>
     <string name="battery_saver_reminder_category">提醒</string>
     <string name="battery_saver_reminder_switch_summary">在電量不足時接收提醒</string>
     <string name="battery_saver_reminder_switch_title">「慳電模式」提醒</string>
@@ -103,7 +45,11 @@
     <string name="battery_saver_schedule_switch_title">根據電量開啟</string>
     <string name="battery_schedule_summary">管理慳電模式何時開啟</string>
     <string name="battery_schedule_title">時間表和提醒</string>
+    <string name="battery_tip_battery_health_learn_more_description">進一步了解電池效能</string>
+    <string name="battery_tip_battery_health_reduced_title">電池容量已降低</string>
+    <string name="battery_tip_battery_health_unknown_title">無法偵測電池效能</string>
     <string name="battery_tip_limited_temporarily_extra_summary">為保護電池，平板電腦放在插座上充電至 %1$s 後便會暫停充電</string>
+    <string name="battery_tip_smart_battery_summary">開啟「自動調節電池用量」</string>
     <string name="clear_calling_footer">"為保護你的私隱，「清晰通話」功能絕對不會將音訊或對話內容傳送給 Google。
 
 「清晰通話」功能可用於 Wi-Fi 通話及大多數流動網絡，但不適用於 3G 網絡。"</string>
@@ -154,8 +100,11 @@
     <string name="columbus_setting_app_shortcut_selection_help_text">選取用「快速輕觸」開啟此應用程式時要執行的操作。</string>
     <string name="columbus_setting_enable_switch_title">使用「快速輕觸」</string>
     <string name="columbus_setting_sensitivity_title">需要使用較強的力道</string>
+    <string name="columbus_title">使用「快速輕觸」以啟動操作</string>
     <string name="communal_lock_screen_summary">私隱、通知及智能家居控制項</string>
     <string name="communal_other">其他</string>
+    <string name="communal_settings_summary">插座及上鎖畫面選項</string>
+    <string name="communal_settings_title">插座模式</string>
     <string name="communal_smartspace_summary">透過「Google 助理」接收提醒、警示等</string>
     <string name="communal_smartspace_title">資訊一覽</string>
     <string name="communal_what_to_show">要顯示的項目</string>
@@ -166,17 +115,17 @@
     <string name="connectivity_helper_d2d_summary">當手機在通話過程中出現連線問題時通知對方</string>
     <string name="connectivity_helper_d2d_title">分享連線資料</string>
     <string name="connectivity_helper_footnote">如果另一位來電者使用支援的裝置和網絡，你便可以分享連線資料</string>
+    <string name="content_capture">利用應用程式資料進行個人化</string>
+    <string name="content_protection_preference_subpage_info">"這是受保護的安全功能。系統不會與 Google 分享任何裝置或個人資料。
+
+仿冒詐騙會試圖竊取登入憑證或其他個人資料。"</string>
+    <string name="content_protection_preference_subpage_summary">系統會在保護私隱的情況下執行裝置掃瞄功能，檢查應用程式活動是否有仿冒詐騙或其他欺詐行為。如果偵測到這類行為，會將部分應用程式資料傳送給 Google Play Protect，確認威脅並向應用程式使用者發出警告。</string>
+    <string name="dark_ui_text">「深色主題背景」使用黑色背景，有助延長電池壽命。「深色主題背景」時間表會等待啟動，直至螢幕關閉。</string>
     <string name="debugging_data_title">偵錯資料</string>
-    <string name="dialog_aware_settings_message" />
-    <string name="dialog_aware_settings_ok" />
-    <string name="dialog_aware_settings_title" />
     <string name="discover_tips_button">探索提示</string>
-    <string name="dock_setup_notification_text" />
     <string name="dock_summary_charging_phone">手機充電時</string>
-    <string name="dream_no_screen_saver_caption" />
-    <string name="dream_no_screen_saver_description" />
-    <string name="dream_no_screen_saver_preview_caption" />
-    <string name="dream_secondary_button_title" />
+    <string name="double_twist_for_camera_mode_summary">使用「Google 相機」時轉動裝置兩次，即可開啟或關閉自拍模式。</string>
+    <string name="duration_less_than_one_minute">少於 1 分鐘</string>
     <string name="extreme_battery_saver_summary">包括上述所有變更。系統亦會暫停非必要的應用程式及其通知。</string>
     <string name="extreme_battery_saver_title">超慳電模式</string>
     <string name="face_confirmation_hide_illustration_description">現在拿起手機或輕按螢幕，即可使用面孔解鎖。</string>
@@ -203,49 +152,44 @@
     <string name="face_enrolling_too_right">請將手機向左移</string>
     <string name="face_enrolling_turn_head_to_arrow">將頭部轉至箭頭的方向</string>
     <string name="face_enrolling_turned_too_far">請減少頭部轉動幅度</string>
+    <string name="fast_pair_device_not_found_dialog_title">無法連線</string>
+    <string name="fast_pair_device_not_found_other_device_description">請將此裝置放近 Pixel 手機，然後再試一次。</string>
+    <string name="fast_pair_device_not_found_tws_headphone_description">請開啟耳塞充電盒並放近 Pixel 手機，然後再試一次。</string>
+    <string name="fingerprint_unlock_set_unlock_password">Nexus Imprint + 密碼</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Nexus Imprint + 上鎖圖案</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Nexus Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">不使用 Nexus Imprint 並繼續</string>
+    <string name="firmware_update_accessory_version_number_title">配件韌體</string>
     <string name="firmware_update_status_category">裝置韌體狀態</string>
     <string name="firmware_update_status_title">有可用的韌體更新</string>
     <string name="firmware_update_version_number_category">裝置韌體版本</string>
     <string name="firmware_update_version_number_title">Pixel 鍵盤韌體</string>
-    <string name="gesture_aware_confirmation_action_button">知道了</string>
-    <string name="gesture_aware_disabled_info_dialog_content" />
-    <string name="gesture_aware_footer">
-        <annotation link="link">偏好設定</annotation>
-    </string>
-    <string name="gesture_aware_off_dialog_content" />
-    <string name="gesture_aware_off_dialog_title" />
-    <string name="gesture_silence_footer">
-        <annotation link="link">偏好設定</annotation>
-    </string>
-    <string name="gesture_silence_off_summary" />
-    <string name="gesture_silence_on_summary" />
-    <string name="gesture_silence_summary" />
-    <string name="gesture_skip_direction_ltr">由左至右</string>
-    <string name="gesture_skip_direction_rtl">由右至左</string>
-    <string name="gesture_skip_direction_title">略過手勢的滑動方向</string>
-    <string name="gesture_skip_footer">
-        <annotation link="link">偏好設定</annotation>
-    </string>
-    <string name="gesture_skip_off_summary" />
-    <string name="gesture_skip_on_summary" />
-    <string name="gesture_skip_summary" />
-    <string name="gesture_tap_footer">
-        <annotation link="link">偏好設定</annotation>
-    </string>
-    <string name="gesture_tap_on_summary" />
-    <string name="gesture_tap_summary" />
+    <string name="fullbackup_data_summary">"自動備份裝置資料 (例如 Wi-Fi 密碼和通話記錄) 和應用程式資料 (例如由應用程式儲存的設定和檔案) 至「Google 雲端硬碟」。
+
+啟用自動備份功能後，裝置和應用程式資料會定時儲存至「Google 雲端硬碟」的私人資料夾。應用程式資料可以是由應用程式儲存的任何資料 (視乎開發設定而定)，包括可能視為敏感的資料，如聯絡人、訊息及相片。
+
+備份資料不會佔用你的「雲端硬碟」儲存空間。大型檔案或檔案開發工具並不會進行備份。"</string>
+    <string name="fullbackup_erase_dialog_message">要停止備份裝置資料 (例如 Wi-Fi 密碼和通話記錄) 和應用程式資料 (例如由應用程式儲存的設定和檔案)，並清除「Google 雲端硬碟」內的所有副本嗎？</string>
+    <string name="gesture_settings_activity_title">手勢導覽</string>
     <string name="install_unknown_applications">允許安裝「Play 商店」以外的應用程式</string>
+    <string name="keywords_accessibility_menu">行動, 快速選單, 輔助選單, 輕觸, 靈活性, 關節炎, rsi, 中風, 顫抖, 多發性硬化症, 大腦麻痺, 按鈕, 硬件, 按, 重複性勞損, 手, 痛楚, 無障礙, 協助</string>
     <string name="keywords_adaptive_alert_vibration">觸感反應, 震動, 手機, 通話, 鈴聲, 警示, 通知, 大聲, 安靜, 噪音, 情況, 自動調整</string>
     <string name="keywords_adaptive_charging">充電, 智能充電, 自動調節充電速度, 電池, 電池狀態</string>
-    <string name="keywords_assist_gesture_silence">手勢, 邊緣, 側邊, Active Edge, 靜音, 延後, 鬧鐘, 來電, 靜音, 顯示屏, 上鎖畫面, 握緊, 緊握, 停止</string>
-    <string name="keywords_assist_gesture_wake">手勢, 邊緣, 側邊, Active Edge, 喚醒, 通知, 螢幕, 顯示屏, 螢幕關閉, 螢幕開啟, 握緊, 休眠, 休眠, 緊握</string>
     <string name="keywords_battery_share">電池分享, 無線充電</string>
     <string name="keywords_battery_share_settings">電池分享, 反向無線充電</string>
-    <string name="keywords_gesture_silence" />
-    <string name="keywords_gesture_skip" />
-    <string name="keywords_gesture_tap" />
+    <string name="keywords_gesture">手勢、動作</string>
+    <string name="keywords_hearing_devices">聽障, 聽力受損, PSAP</string>
     <string name="keywords_limited_warranty">保證, 擔保, 有限保養, 承諾, 維修, 退貨授權, 換貨</string>
+    <string name="keywords_live_caption">字幕, CC, 即時轉錄, 障, 聽力受損, CART, 語音轉文字, 字幕</string>
+    <string name="keywords_live_transcribe">字幕, CC, 即時字幕, 聽障, 失聰, CART, 語音轉文字</string>
     <string name="keywords_reverse_charging_stop_threshold">手機達至以下電量時停止分享電池：</string>
+    <string name="keywords_select_to_speak">聽取文字, 朗讀, 讀出螢幕文字, 螢幕閱讀器</string>
+    <string name="keywords_sound_amplifier">PSAP, 擴大, 聲音擴大器, 聽障, 失聰, 擴音</string>
+    <string name="keywords_sound_notifications">通知, 聽障, 失聰</string>
+    <string name="keywords_switch_access">行動, 按鈕裝置, AT, 輔助科技, 癱瘓, ALS, 掃瞄, 步驟掃瞄</string>
+    <string name="keywords_talkback">螢幕閱讀器, 語音朗讀, 語音助手, 失明, 低視力, TTS, 文字轉語音, 朗讀功能</string>
+    <string name="keywords_touch_sensitivity">輕觸, 敏感度, 敏感, 螢幕保護貼, 膠片, 反應靈敏, 反應</string>
+    <string name="keywords_voice_access">語音, 語音控制, 行動, 手, 麥克風, 語音聽寫, 朗讀, 控制</string>
     <string name="led_preference_title">LED 指示燈模式</string>
     <string name="legal_source_code_description">如需開放原始碼組件的原始碼詳情，請前往 Pixel 說明中心。</string>
     <string name="legal_source_code_title">原始碼</string>
@@ -253,9 +197,12 @@
     <string name="limited_warranty_title">有限保養</string>
     <string name="lockscreen_show_weather_summary">查看目前天氣狀況</string>
     <string name="lockscreen_show_weather_title">顯示天氣</string>
+    <string name="my_device_info_account_preference_title">Google 帳戶</string>
+    <string name="owner_info_settings_edit_text_hint">例如：Joe 的 Pixel。</string>
     <string name="permit_debugging_data">允許存取錯誤報告</string>
     <string name="play_application_detail_indication_summary">檢查更新</string>
     <string name="play_application_update_entry_title">應用程式更新</string>
+    <string name="privatespace_retry_summary">你必須登入 Google 帳戶，才能設定「私人空間」</string>
     <string name="repair_mode_active_summary">處於維修模式</string>
     <string name="repair_mode_summary">適合裝置維修的安全環境</string>
     <string name="repair_mode_title">維修模式</string>
@@ -286,18 +233,36 @@
     <string name="reverse_charging_unplug_usb_cable_message">由於手機已插上 USB-C 裝置，因此無法使用</string>
     <string name="reverse_charging_warning_summary">由於電量低於 %1$s，因此無法使用</string>
     <string name="reverse_charging_warning_title">由於電量低於 %1$s，因此無法使用電池分享功能</string>
-    <string name="search_gesture_category_title">螢幕搜尋</string>
-    <string name="search_long_press_home_button_summary">按住主按鈕即可在畫面上啟動 Google 搜尋。</string>
-    <string name="search_long_press_home_button_title">按住主按鈕以搜尋</string>
-    <string name="search_press_hold_gesture_summary">按住導航控點在螢幕上調用搜尋。</string>
-    <string name="search_press_hold_gesture_title">按住控點以搜尋</string>
+    <string name="rtt_settings_always_visible">一律顯示</string>
+    <string name="rtt_settings_no_visible">不顯示</string>
+    <string name="rtt_settings_title">即時文字短訊 (RTT)</string>
+    <string name="rtt_settings_visible_during_call">通話時顯示</string>
+    <string name="screen_time_summary_usage_today">今天使用了 %1$s</string>
+    <string name="search_bar_account_avatar_content_description">個人檔案相片，㩒兩下就可以開啟 Google 帳戶</string>
+    <string name="search_gesture_category_title">搜尋</string>
+    <string name="search_gesture_feature_title">圈選即可搜尋</string>
+    <string name="search_long_press_home_button_summary">輕觸並按住螢幕底部的主按鈕，然後圈選或突顯任何內容以搜尋</string>
+    <string name="search_press_hold_gesture_summary">輕觸並按住螢幕底部的控點，然後圈選或突顯任何內容以搜尋</string>
     <string name="security_dismiss_dialog_dismiss_button">關閉</string>
     <string name="security_dismiss_dialog_title">要關閉此警告嗎？</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">輕按即可設定</string>
+    <string name="security_settings_face_enroll_education_message">在下一個畫面，請轉動頭部，從所有角度拍攝面孔</string>
+    <string name="security_settings_face_enroll_error_generic_dialog_message">無法登記面孔。</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">「面孔解鎖」設定已逾時</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">你現可使用面孔解鎖手機或驗證身分，例如用來登入應用程式或核准購買交易</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"現在拿起手機或輕按螢幕，即可使用面孔解鎖。
 
 在光線充足，且你沒有戴著口罩或深色眼鏡的情況下，「面孔解鎖」就能發揮最佳效果。"</string>
+    <string name="security_settings_face_enroll_finish_title">大功告成！</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">視力或頭部活動能力受限人士的設定方式</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">需要睜眼</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">一切由你和子女做主</string>
+    <string name="security_settings_face_enroll_introduction_control_title">一切由你掌控</string>
+    <string name="security_settings_face_enroll_introduction_how_title">運作方式</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">如果你的子女平時佩戴眼鏡，可在設定過程中如常佩戴。</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">可佩戴眼鏡或淺色太陽眼鏡。</string>
+    <string name="security_settings_face_enroll_introduction_info_title">注意事項</string>
+    <string name="security_settings_face_enroll_introduction_title">設定「面孔解鎖」</string>
     <string name="security_settings_face_enroll_next">繼續</string>
     <string name="security_settings_face_enroll_partial_message">如要提升效能，你可以在「設定」中再次設定「面孔解鎖」</string>
     <string name="security_settings_face_enroll_partial_start_over">重新開始</string>
@@ -312,8 +277,24 @@
     <string name="security_settings_face_enroll_too_hot_message">手機過熱，因此無法完成「面孔解鎖」設定。請待手機降溫後再試一次。</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">略過「面孔解鎖」設定</string>
     <string name="security_settings_face_enroll_too_hot_title">手機過熱</string>
+    <string name="security_settings_face_preference_summary_none">輕按即可設定面孔</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Nexus Imprint 讓你使用指紋核准購物，或登入應用程式。
+
+所有已加入裝置的指紋均可執行這些操作，因此請審慎決定讓哪些人加入指紋。
+
+請注意，你不可使用指紋解鎖此裝置。如需瞭解詳情，請聯絡你機構的管理員。"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">使用 Nexus Imprint 解鎖</string>
+    <string name="security_settings_fingerprint_preference_summary_none">輕按即可設定指紋</string>
+    <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint 會為你建立獨一無二的指紋模型，以便系統驗證你的身分。在設定期間，你必須拍攝指紋的各個部位，才能建立這個指紋模型。</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint 會為你的子女建立獨一無二的指紋模型，以便系統驗證其身分。在設定期間，他們必須拍攝指紋的各個部位，才能建立這個指紋模型。</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"如要進一步瞭解 Pixel 指紋解鎖，請前往 &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;。"</string>
+    <string name="security_settings_work_fingerprint_preference_title">工作設定檔的 Pixel Imprint</string>
     <string name="setup_suggestion_summary">只需幾個步驟即可完成設定</string>
     <string name="setup_suggestion_title">完成設定</string>
+    <string name="smart_battery_footer">為延長電池壽命，「自動調節電池用量」功能可能會降低效能及減少背景活動。部分通知可能會延遲。</string>
+    <string name="smart_battery_manager_title">自動調節偏好設定</string>
+    <string name="smart_battery_title">自動調節電池用量</string>
     <string name="software_update_can_be_updated_header">讓 Pixel 更臻完善</string>
     <string name="software_update_detail_indication_1_update_available">1 項更新</string>
     <string name="software_update_detail_indication_2_or_more_updates_available">%1$d 項可用的更新</string>
@@ -326,9 +307,11 @@
     <string name="software_update_up_to_date_summary">最新版本</string>
     <string name="software_update_up_to_specific_date_summary">更新日期：%1$s</string>
     <string name="software_update_update_available_summary">有更新</string>
+    <string name="sound_dashboard_summary">音量、觸感反應、「請勿騷擾」</string>
     <string name="speed_boost_summary_off">關閉</string>
     <string name="speed_boost_summary_on">開啟</string>
     <string name="speed_boost_title">Spectrum Speed Boost</string>
+    <string name="suggested_fingerprint_lock_settings_title">使用 Pixel Imprint</string>
     <string name="suw_limited_warranty_title">有限保固</string>
     <string name="suw_warranty_description">如要查看有限保養資料，請選取你購買此裝置的國家/地區。&lt;br /&gt;&lt;br /&gt;你亦可前往「設定」&gt; [關於手機] &gt; [有限保養]&lt;b&gt;&lt;/b&gt;，或前往 g.co/devicewarranty 查看保養資料。</string>
     <string name="suw_warranty_description_content">如要查看有限保養資料，請選取你購買此裝置的國家/地區。你亦可前往「設定」&gt; [關於手機] &gt; [有限保養]，或前往 g.co/devicewarranty 查看保養資料。</string>
@@ -336,10 +319,11 @@
     <string name="suw_warranty_positive_button_text">關閉</string>
     <string name="system_update_entry_title">系統更新</string>
     <string name="system_updates_group_title">Pixel 更新</string>
-    <string name="tips_suggestion_summary">探索手機的功能</string>
-    <string name="tips_suggestion_title">瞭解你的 Pixel</string>
+    <string name="touch_sensitivity_summary">提升使用螢幕保護貼時的觸控敏感度，並改善觸控回應效果</string>
+    <string name="touch_sensitivity_title">螢幕保護貼模式</string>
     <string name="traffic_light_face_enrolling_title_accessibility">將手機舉到面前</string>
     <string name="unified_battery_saver_page_intro">節省電量，延長手機充電後的電池壽命</string>
+    <string name="usb_use_file_transfers">檔案傳輸/Android Auto</string>
     <string name="vpn_app_bypass">排除所選應用程式</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">目前的流動網絡供應商應用程式</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">要排除 %1$d 個流動網絡供應商應用程式使用 VPN 嗎？</string>
@@ -360,12 +344,9 @@
     <string name="vpn_exclude_ntf_content">你新安裝的流動網絡供應商應用程式可能無法使用 VPN</string>
     <string name="vpn_exclude_ntf_title">要排除新應用程式使用 VPN 嗎？</string>
     <string name="vpn_preference_group_title">其他</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_title" />
-    <string name="wake_screen_suggestion_summary" />
-    <string name="wake_screen_suggestion_title" />
+    <string name="wallpaper_dashboard_summary">顏色、主題圖示、應用程式網格</string>
     <string name="warranty_country_information">%1$s (%2$s)</string>
+    <string name="wifi_subscription_summary">查看或變更 OpenRoaming 訂閱</string>
     <string name="wifitrackerlib_connected_with_wsu_authenticator">已連接至 %1$s</string>
     <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">輕按即可連接</string>
     <string name="wifitrackerlib_wsu_entry_summary_provision_error">無法連線。輕按即可重試。</string>

@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="aware_category_display" />
-    <string name="aware_category_gesture" />
-    <string name="aware_display_settings_title">Nedejaven zaklenjen zaslon</string>
-    <string name="aware_settings_description" />
-    <string name="aware_settings_summary" />
-    <string name="gesture_silence_title">Poteza za utišanje opozoril</string>
-    <string name="gesture_skip_title">Poteza za preskok</string>
-    <string name="keywords_touch_sensitivity">dotik, občutljivost, občutljivo, zaščita zaslona, folija, odzivno, odzivnost</string>
-    <string name="keywords_wake_display" />
-    <string name="touch_sensitivity_summary">Povečanje občutljivosti na dotik in izboljšanje zaznavanja dotikov pri uporabi zaščite zaslona.</string>
-    <string name="touch_sensitivity_title">Način z zaščito zaslona</string>
-    <string name="columbus_title">Hitri dotik za zagon dejanj</string>
-    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Funkcija Active Edge je nastavljena. Pojdite na naslednji zaslon ali pa nadaljujte s prilagajanjem.</string>
     <string name="accessibility_keyboard_haptics_title">Tipni odziv tipkovnice</string>
     <string name="adaptive_alert_vibration_summary">Zmanjša moč vibriranja, ko je telefon pri miru z navzgor obrnjenim zaslonom.</string>
     <string name="adaptive_alert_vibration_title">Prilagodljivo vibriranje ob opozorilih</string>
@@ -30,71 +17,26 @@
     <string name="all_apps_category_title">Vse aplikacije</string>
     <string name="allow_debugging_data_description">Google uporablja poročila o napakah za diagnosticiranje težav z aplikacijo in napravo v skladu z našim <a href="https://policies.google.com/privacy">pravilnikom o zasebnosti</a>".
 
-"<b>Poročila o napakah vsebujejo dnevnike aplikacije in sistemske dnevnike</b>" ter morda vključujejo osebne podatke in podatke o napravi, kot so imena, e-poštni naslovi, telefonske številke, podatki o lokaciji, identifikatorji naprave, povezane naprave in podatki o omrežju. Poročila se lahko delijo z inženirskimi partnerji, na katere morda vpliva vaša težava.
+"<b>Poročila o napakah vsebujejo dnevnike aplikacije in sistemske dnevnike</b>" ter morda vključujejo osebne podatke in podatke o napravi, kot so imena, e-poštni naslovi, telefonske številke, lokacijski podatki, identifikatorji naprave, povezane naprave in podatki o omrežju. Poročila se lahko delijo z inženirskimi partnerji, na katere morda vpliva vaša težava.
 
-Z odobritvijo dostopa boste tej aplikaciji pri vseh prijavah težav omogočili "<b>samodejno zbiranje in nalaganje poročil o napakah</b>", ki vsebujejo dnevnike aplikacije in sistemske dnevnike.
+Z odobritvijo dostopa boste tej aplikaciji pri vseh prijavah težav omogočili "<b>samodejno zbiranje in nalaganje poročil o napakah</b>", vključno z dnevniki aplikacije in sistemskimi dnevniki iz osebnega in delovnega profila.
 
 Če dostopa ne odobrite, bo morala aplikacija pri vsaki prijavi težave zaprositi za vaše dovoljenje za zbiranje in nalaganje poročila o napakah."</string>
-    <string name="ambient_display_wake_screen_footer">
-        <annotation link="link">Nastavitve</annotation>
-    </string>
-    <string name="ambient_display_wake_screen_summary" />
-    <string name="ambient_display_wake_screen_summary_on" />
-    <string name="assist_gesture_enrollment_continue_to_assistant">Naprej na Pomočnika</string>
-    <string name="assist_gesture_enrollment_do_it_later">Pozneje</string>
-    <string name="assist_gesture_enrollment_seekbar_light">Rahel stisk</string>
-    <string name="assist_gesture_enrollment_seekbar_strong">Čvrst stisk</string>
-    <string name="assist_gesture_enrollment_settings">Nastavitve</string>
-    <string name="assist_gesture_setting_enable_assistant_text">Če želite govoriti s Pomočnikom, na hitro stisnite in spustite spodnji del telefona.</string>
-    <string name="assist_gesture_setting_enable_assistant_title">Priklic Pomočnika Google s stiskom</string>
-    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Utišanje alarmov, časovnikov, obvestil in dohodnih klicev s stiskom.</string>
-    <string name="assist_gesture_setting_enable_ring_silence_text">Utišanje obvestil in dohodnih klicev s stiskom</string>
-    <string name="assist_gesture_setting_enable_ring_silence_title">Utišanje telefona s stiskom</string>
-    <string name="assist_gesture_setting_enable_wake_title">Odpiranje Pomočnika pri izklop. zaslonu</string>
-    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Rahel stisk</string>
-    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Čvrst stisk</string>
-    <string name="assist_gesture_squeeze_sensitivity_label">Občutljivost na stisk</string>
-    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Pomočnik se lahko nenamerno odpre</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Stisnite spodnji del telefona</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Stisnite hitreje</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Stisnite močneje</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Na hitro stisnite in nato spustite</string>
-    <string name="assist_gesture_training_enrolling_error_try_adjusting">Poskusite prilagoditi drsnik</string>
-    <string name="assist_gesture_training_enrolling_text">Stisnite spodnji del telefona. Potrebno moč stiska lahko prilagodite.</string>
-    <string name="assist_gesture_training_enrolling_title">Na hitro stisnite in spustite</string>
-    <string name="assist_gesture_training_finished_text">Občutljivost na stisk lahko pozneje spremenite v nastavitvah</string>
-    <string name="assist_gesture_training_finished_title">Dokončajte ali nastavljajte še naprej</string>
-    <string name="assist_gesture_training_intro_text">Kadar koli želite govoriti s Pomočnikom, na hitro stisnite in spustite spodnji del telefona</string>
-    <string name="assist_gesture_training_intro_title">Priklic Pomočnika Google s stiskom</string>
-    <string name="assist_gesture_training_suggestion_summary">Govorite s Pomočnikom, utišajte klice</string>
-    <string name="assist_gesture_training_suggestion_summary_including_alarms">Govorite s Pomočnikom, utišajte alarme in klice</string>
-    <string name="assist_gesture_training_suggestion_title">Stisnite in spustite za Pomočnika</string>
-    <string name="aware_category_security" />
-    <string name="aware_disabled_preference_action">Vklopi</string>
-    <string name="aware_disabled_preference_dialog_content" />
-    <string name="aware_disabled_preference_dialog_title" />
-    <string name="aware_disabled_preference_neutral">Ne zdaj</string>
-    <string name="aware_footer_when_airplane_batterysaver_on">Motion Sense ni na voljo, ker sta vklopljena način za letalo in varčevanje z energijo baterije</string>
-    <string name="aware_footer_when_airplane_on">Motion Sense ni na voljo, ker je vklopljen način za letalo</string>
-    <string name="aware_footer_when_batterysaver_on">Motion Sense ni na voljo, ker je vklopljeno varčevanje z energijo baterije</string>
-    <string name="aware_gesture_summary_off">Hitre poteze vklopljene, funkcija Active Edge izklopljena</string>
-    <string name="aware_gesture_summary_on_non_assist">Hitre poteze vklopljene, funkcija Active Edge vklopljena</string>
-    <string name="aware_gesture_summary_on_with_assist">Hitre poteze vklopljene, funkcija Active Edge vklopljena, priklic Pomočnika Google s stiskom</string>
-    <string name="aware_info_button_description">Več nastavitev</string>
-    <string name="aware_settings_disabled_info_dialog_content" />
-    <string name="aware_settings_disabled_info_dialog_title" />
-    <string name="aware_settings_enabled_info_dialog_content" />
-    <string name="aware_settings_enabled_info_dialog_title" />
-    <string name="aware_settings_suggestion_summary" />
-    <string name="aware_settings_suggestion_title" />
-    <string name="aware_summary_when_airplane_batterysaver_on">Ni na voljo, ker sta vklopljena način za letalo in varčevanje z energijo baterije</string>
-    <string name="aware_summary_when_airplane_on">Ni na voljo, ker je vklopljen način za letalo</string>
-    <string name="aware_summary_when_batterysaver_on">Ni na voljo, ker je vklopljeno varčevanje z energijo baterije.</string>
-    <string name="aware_wake_display_summary" />
-    <string name="aware_wake_display_summary_aod_off" />
-    <string name="aware_wake_display_title" />
+    <string name="app_and_notification_dashboard_summary">Pomočnik, nedavne aplikacije, privzete aplikacije</string>
+    <string name="automatic_storage_manager_activation_warning">Z vzpostavljeno povezavo lahko še naprej dostopate do fotografij in videoposnetkov takšne kakovosti, kakršno ste izbrali za varnostno kopiranje.</string>
+    <string name="automatic_storage_manager_days_title">Odstrani varn. kopirane fotografije in videe</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Želite izklopiti funkcijo »Pametna shramba«? 
+
+S tem ne boste sprostili prostora, če je shramba že skoraj polna."</string>
+    <string name="automatic_storage_manager_preference_title">Pametna shramba</string>
+    <string name="automatic_storage_manager_primary_switch_title">Uporabi pametno shrambo</string>
+    <string name="automatic_storage_manager_settings">Pametna shramba</string>
+    <string name="automatic_storage_manager_text">Ko je shramba skoraj polna, odstranite varnostno kopirane fotografije in videoposnetke. Še vedno bodo na voljo v Googlu Foto.</string>
     <string name="basic_battery_saver_summary">Omeji vizualne učinke in dejavnost v ozadju. Vklopi temno temo, če še ni vklopljena.</string>
     <string name="basic_battery_saver_title">Standardno varčevanje z energijo baterije</string>
+    <string name="battery_manager_summary">Podaljševanje časa delovanja baterije in optimiziranje polnjenja</string>
+    <string name="battery_manager_summary_unsupported">Podaljšanje časa delovanja akumulatorja</string>
+    <string name="battery_missing_link_message">Več o tem</string>
     <string name="battery_saver_reminder_category">Opomniki</string>
     <string name="battery_saver_reminder_switch_summary">Prejmite opomnike, ko je baterija skoraj prazna.</string>
     <string name="battery_saver_reminder_switch_title">Opomniki o varčevanju z energijo baterije</string>
@@ -103,7 +45,11 @@ Z odobritvijo dostopa boste tej aplikaciji pri vseh prijavah težav omogočili "
     <string name="battery_saver_schedule_switch_title">Vklopi na podlagi ravni napolnjenosti baterije</string>
     <string name="battery_schedule_summary">Upravljanje, kdaj naj se vklopi varčevanje z energijo baterije</string>
     <string name="battery_schedule_title">Razpored in opomniki</string>
+    <string name="battery_tip_battery_health_learn_more_description">Preberite več o stanju baterije</string>
+    <string name="battery_tip_battery_health_reduced_title">Zmogljivost baterije je zmanjšana</string>
+    <string name="battery_tip_battery_health_unknown_title">Stanja baterije ni mogoče zaznati</string>
     <string name="battery_tip_limited_temporarily_extra_summary">Zaradi zaščite baterije je polnjenje začasno zaustavljeno pri %1$s, ko je tablični računalnik priklopljen na nosilec.</string>
+    <string name="battery_tip_smart_battery_summary">Vklopite prilagodljivo varčevanje z energijo baterije.</string>
     <string name="clear_calling_footer">"Zaradi varovanja vaše zasebnosti funkcija za jasen zvok klica zvoka ali pogovorov ne pošlje Googlu.
 
 Jasen zvok klica deluje pri klicanju prek Wi-Fi-ja in v večini omrežij, ni pa na voljo v omrežjih 3G."</string>
@@ -154,8 +100,11 @@ Jasen zvok klica deluje pri klicanju prek Wi-Fi-ja in v večini omrežij, ni pa 
     <string name="columbus_setting_app_shortcut_selection_help_text">Izberite, katero dejanje se izvede, ko to aplikacijo odprete s hitrim dotikom.</string>
     <string name="columbus_setting_enable_switch_title">Uporabi hitri dotik</string>
     <string name="columbus_setting_sensitivity_title">Uporaba močnejših dotikov</string>
+    <string name="columbus_title">Hitri dotik za zagon dejanj</string>
     <string name="communal_lock_screen_summary">Zasebnost, obvestila in kontrolniki za dom</string>
     <string name="communal_other">Drugo</string>
+    <string name="communal_settings_summary">Možnosti nosilca in zaklenjenega zaslona</string>
+    <string name="communal_settings_title">Način središča</string>
     <string name="communal_smartspace_summary">Opomniki, opozorila in drugo od Pomočnika</string>
     <string name="communal_smartspace_title">Hitri pregled</string>
     <string name="communal_what_to_show">Kaj naj bo prikazano</string>
@@ -166,17 +115,17 @@ Jasen zvok klica deluje pri klicanju prek Wi-Fi-ja in v večini omrežij, ni pa 
     <string name="connectivity_helper_d2d_summary">Obvestite sogovornika, ko ima vaš telefon težave s povezavo med klici.</string>
     <string name="connectivity_helper_d2d_title">Deljenje podatkov o povezavi</string>
     <string name="connectivity_helper_footnote">Podatke o povezavi lahko delite, kadar sogovornik uporablja podprto napravo in omrežje.</string>
+    <string name="content_capture">Individualno prilagajanje z uporabo podatkov aplikacij</string>
+    <string name="content_protection_preference_subpage_info">"To je zaščitena varnostna funkcija. Nobeni podatki o napravi ali osebni podatki se ne delijo z Googlom. 
+
+Lažno predstavljanje je poskus kraje poverilnic za prijavo ali drugih osebnih podatkov."</string>
+    <string name="content_protection_preference_subpage_summary">Pregledovanje poteka zasebno kar v napravi in v dejavnosti v aplikacijah išče znake lažnega predstavljanja ali drugega zavajajočega vedenja. Če so takšni znaki zaznani, se nekateri podatki o aplikacijah pošljejo v storitev Google Play Protect za potrditev grožnje in v opozorilo uporabnikom aplikacije.</string>
+    <string name="dark_ui_text">Temna tema s črnim ozadjem podaljša čas delovanja baterije. Razporedi temne teme z vklopom počakajo, dokler se zaslon ne izklopi.</string>
     <string name="debugging_data_title">Podatki za odpravljanje napak</string>
-    <string name="dialog_aware_settings_message" />
-    <string name="dialog_aware_settings_ok" />
-    <string name="dialog_aware_settings_title" />
     <string name="discover_tips_button">Odkrijte nasvete</string>
-    <string name="dock_setup_notification_text" />
     <string name="dock_summary_charging_phone">Polnjenje baterije telefona</string>
-    <string name="dream_no_screen_saver_caption" />
-    <string name="dream_no_screen_saver_description" />
-    <string name="dream_no_screen_saver_preview_caption" />
-    <string name="dream_secondary_button_title" />
+    <string name="double_twist_for_camera_mode_summary">Če želite v Google Fotoaparatu preklopiti v način za selfije in iz njega, napravo z odprto aplikacijo dvakrat zasukajte.</string>
+    <string name="duration_less_than_one_minute">Manj kot ena minuta</string>
     <string name="extreme_battery_saver_summary">Vključuje vse zgoraj navedene spremembe. Prav tako začasno zaustavi nenujne aplikacije in njihova obvestila.</string>
     <string name="extreme_battery_saver_title">Strogo varčevanje z energijo baterije</string>
     <string name="face_confirmation_hide_illustration_description">Zdaj lahko z obrazom odklenete telefon, ko ga primete ali se dotaknete zaslona.</string>
@@ -203,49 +152,43 @@ Jasen zvok klica deluje pri klicanju prek Wi-Fi-ja in v večini omrežij, ni pa 
     <string name="face_enrolling_too_right">Telefon premaknite v svojo levo.</string>
     <string name="face_enrolling_turn_head_to_arrow">Glavo zasukajte v smeri puščice</string>
     <string name="face_enrolling_turned_too_far">Glejte malce bolj naravnost</string>
+    <string name="fast_pair_device_not_found_dialog_title">Povezovanje ni uspelo</string>
+    <string name="fast_pair_device_not_found_other_device_description">Napravo približajte telefonu Pixel in poskusite znova.</string>
+    <string name="fast_pair_device_not_found_tws_headphone_description">Odprite škatlico za slušalke, približajte jo telefonu Pixel in poskusite znova.</string>
+    <string name="fingerprint_unlock_set_unlock_password">Nexus Imprint in geslo</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Nexus Imprint in vzorec</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Nexus Imprint in PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Nadaljevanje brez funkcije Nexus Imprint</string>
+    <string name="firmware_update_accessory_version_number_title">Vdelana programska oprema dodatne opreme</string>
     <string name="firmware_update_status_category">Stanje vdelane programske opreme naprave</string>
     <string name="firmware_update_status_title">Na voljo je posodobitev vdelane programske opreme</string>
     <string name="firmware_update_version_number_category">Različica vdelane programske opreme naprave</string>
     <string name="firmware_update_version_number_title">Vdelana programska oprema tipkovnice Pixel</string>
-    <string name="gesture_aware_confirmation_action_button">V redu</string>
-    <string name="gesture_aware_disabled_info_dialog_content" />
-    <string name="gesture_aware_footer">
-        <annotation link="link">Nastavitve</annotation>
-    </string>
-    <string name="gesture_aware_off_dialog_content" />
-    <string name="gesture_aware_off_dialog_title" />
-    <string name="gesture_silence_footer">
-        <annotation link="link">Nastavitve</annotation>
-    </string>
-    <string name="gesture_silence_off_summary" />
-    <string name="gesture_silence_on_summary" />
-    <string name="gesture_silence_summary" />
-    <string name="gesture_skip_direction_ltr">Od leve proti desni</string>
-    <string name="gesture_skip_direction_rtl">Od desne proti levi</string>
-    <string name="gesture_skip_direction_title">Smer za preskok</string>
-    <string name="gesture_skip_footer">
-        <annotation link="link">Nastavitve</annotation>
-    </string>
-    <string name="gesture_skip_off_summary" />
-    <string name="gesture_skip_on_summary" />
-    <string name="gesture_skip_summary" />
-    <string name="gesture_tap_footer">
-        <annotation link="link">Nastavitve</annotation>
-    </string>
-    <string name="gesture_tap_on_summary" />
-    <string name="gesture_tap_summary" />
+    <string name="fullbackup_data_summary">"V Google Drive samodejno varnostno kopirajte podatke naprave (kot so gesla za Wi-Fi in zgodovina klicev) in podatke aplikacij (na primer nastavitve in datoteke, ki jih shranjujejo aplikacije).
+
+Ko vklopite samodejno varnostno kopiranje, se podatki naprave in aplikacij redno shranjujejo v zasebno mapo v Googlu Drive. Podatki aplikacij so lahko poljubni podatki, ki jih je shranila aplikacija (glede na nastavitve razvijalca), vključno z morebitnimi občutljivimi podatki, kot so stiki, sporočila in fotografije.
+
+Varnostno kopirani podatki se ne bodo šteli v vašo omejitev prostora za shranjevanje v Google Drive. Velike datoteke ali datoteke, ki so jih razvijalci izključili iz storitve, ne bodo varnostno kopirane."</string>
+    <string name="fullbackup_erase_dialog_message">Ali želite zaustaviti varnostno kopiranje podatkov naprave (kot so gesla za Wi-Fi in zgodovina klicev) in podatkov aplikacij (na primer nastavitev in datotek, ki jih shranjujejo aplikacije) ter iz Googla Drive izbrisati vse kopije?</string>
+    <string name="gesture_settings_activity_title">Krmarjenje s potezami</string>
     <string name="install_unknown_applications">Dovoli namestitev aplikacij iz virov, ki niso Trgovina Google Play</string>
+    <string name="keywords_accessibility_menu">gibalno, hitri meni, podporni meni, dotik, spretnostno, artritis, RSI, kap, tremor, multipla skleroza, cerebralna paraliza, gumb, strojna oprema, pritisniti, poškodba zaradi ponavljajočih se gibov, roka, bolečina, dostopno, pomoč</string>
     <string name="keywords_adaptive_alert_vibration">haptično, tipno, vibriranje, telefon, klic, zvonjenje, opozorilo, obvestila, glasno, tiho, hrup, ovitek, prilagodljivo</string>
     <string name="keywords_adaptive_charging">polniti, polnjenje, pametno polnjenje, prilagodljivo polnjenje, baterija, zmogljivost baterije</string>
-    <string name="keywords_assist_gesture_silence">poteza, rob, stran, stranica, aktivni rob, utišanje, dremanje, dremež, alarm, dohodni klic, tiho, prikaz, zaklenjen zaslon, stisk, prijem, oprijem, ustavitev, prekinitev</string>
-    <string name="keywords_assist_gesture_wake">poteza, rob, stran, stranica, aktivni rob, prebujanje, obvestila, zaslon, prikaz, izklopljen zaslon, izklop zaslona, vklopljen zaslon, vklop zaslona, stisk, v stanju pripravljenosti, stanje pripravljenosti, prijem, oprijem</string>
     <string name="keywords_battery_share">deljenje energije baterije, brezžično polnjenje</string>
     <string name="keywords_battery_share_settings">deljenje energije baterije, obratno brezžično polnjenje</string>
-    <string name="keywords_gesture_silence" />
-    <string name="keywords_gesture_skip" />
-    <string name="keywords_gesture_tap" />
+    <string name="keywords_gesture">poteze, gibi</string>
+    <string name="keywords_hearing_devices">naglušni, izguba sluha, telefonska centrala za javno varnost, PSAP</string>
     <string name="keywords_limited_warranty">garancija, jamstvo, omejeno jamstvo, obljuba, popravilo, dovoljenje za vračilo blaga, zamenjava</string>
+    <string name="keywords_live_transcribe">podnapisi, samodejni podnapisi, naglušnost, izguba sluha, CART, pretvorba govora v besedilo, podnapis</string>
     <string name="keywords_reverse_charging_stop_threshold">Zaustavi deljenje energije baterije, ko napolnjenost telefona doseže:</string>
+    <string name="keywords_select_to_speak">poslušanje besedila, glasno branje, izgovarjanje zaslona, bralnik zaslona</string>
+    <string name="keywords_sound_amplifier">PSAP, ojačanje, ojačanje zvoka, naglušnost, izguba sluha, ojačitev</string>
+    <string name="keywords_sound_notifications">obvestila, naglušnost, izguba sluha, obveščanje</string>
+    <string name="keywords_switch_access">motorično, gibalno, stikalo, roka, podporna tehnologija, paraliza, ALS, iskanje, postopno iskanje</string>
+    <string name="keywords_talkback">bralnik zaslona, spremni govor, glasovna pomoč, slepota, slabovidnost, TTS, pretvorba besedila v govor, glasovni odziv</string>
+    <string name="keywords_touch_sensitivity">dotik, občutljivost, občutljivo, zaščita zaslona, folija, odzivno, odzivnost</string>
+    <string name="keywords_voice_access">glas, glasovno upravljanje, motorično, gibalno, roka, mikrofon, narek, govorjenje, upravljanje</string>
     <string name="led_preference_title">Vzorci indikatorja LED</string>
     <string name="legal_source_code_description">Podrobnosti o izvorni kodi za komponente, ki je na voljo kot odprta izvorna koda, lahko najdete v centru za pomoč za Pixel.</string>
     <string name="legal_source_code_title">Izvorna koda</string>
@@ -253,9 +196,12 @@ Jasen zvok klica deluje pri klicanju prek Wi-Fi-ja in v večini omrežij, ni pa 
     <string name="limited_warranty_title">Omejeno jamstvo</string>
     <string name="lockscreen_show_weather_summary">Prikaz trenutnih vremenskih razmer</string>
     <string name="lockscreen_show_weather_title">Pokaži vreme</string>
+    <string name="my_device_info_account_preference_title">Račun Google</string>
+    <string name="owner_info_settings_edit_text_hint">Npr. Janezov Pixel.</string>
     <string name="permit_debugging_data">Dovoli dostop do poročil o napakah</string>
     <string name="play_application_detail_indication_summary">Preverite, ali so na voljo posodobitve</string>
     <string name="play_application_update_entry_title">Posodobitve aplikacij</string>
+    <string name="privatespace_retry_summary">Če želite nastaviti zasebni prostor, se morate prijaviti v račun Google</string>
     <string name="repair_mode_active_summary">V načinu za popravilo</string>
     <string name="repair_mode_summary">Varno okolje za popravilo naprave</string>
     <string name="repair_mode_title">Način za popravilo</string>
@@ -286,18 +232,36 @@ Obrnite telefon, če želite poskusiti."</string>
     <string name="reverse_charging_unplug_usb_cable_message">Ni na voljo, ker je priključena naprava USB-C</string>
     <string name="reverse_charging_warning_summary">Ni na voljo, ker je napolnjenost baterije pod %1$s</string>
     <string name="reverse_charging_warning_title">Deljenje energije baterije ni na voljo, ker je napolnjenost baterije pod %1$s</string>
-    <string name="search_gesture_category_title">Iskanje po zaslonu</string>
-    <string name="search_long_press_home_button_summary">Pridržite gumb za začetni zaslon, da na zaslonu sprožite Iskanje Google.</string>
-    <string name="search_long_press_home_button_title">Za iskanje pridržite gumb za začetni zaslon</string>
-    <string name="search_press_hold_gesture_summary">Pridržite ročico za pomikanje, da sprožite iskanje po zaslonu.</string>
-    <string name="search_press_hold_gesture_title">Za iskanje pridržite ročico</string>
+    <string name="rtt_settings_always_visible">Vedno vidno</string>
+    <string name="rtt_settings_no_visible">Ni vidno</string>
+    <string name="rtt_settings_title">Sprotno besedilo (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Vidno med klicem</string>
+    <string name="screen_time_summary_usage_today">Danes: %1$s</string>
+    <string name="search_bar_account_avatar_content_description">Slika za profil, dvakrat se dotaknite, da odprete račun Google</string>
+    <string name="search_gesture_category_title">Iskanje</string>
+    <string name="search_gesture_feature_title">Iskanje z obkroževanjem</string>
+    <string name="search_long_press_home_button_summary">Pridržite gumb za začetni zaslon na dnu zaslona in nato obkrožite ali označite vsebino, ki jo želite iskati</string>
+    <string name="search_press_hold_gesture_summary">Pridržite ročico na dnu zaslona in nato obkrožite ali označite vsebino, ki jo želite iskati</string>
     <string name="security_dismiss_dialog_dismiss_button">Opusti</string>
     <string name="security_dismiss_dialog_title">Želite opustiti to opozorilo?</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">Dotaknite se za nastavitev.</string>
+    <string name="security_settings_face_enroll_education_message">Na naslednjem zaslonu zasukajte glavo, da posnamete obraz z vseh možnih kotov.</string>
+    <string name="security_settings_face_enroll_error_dialog_title">Registracija ni bila dokončana</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Čas za nastavitev odklepanja z obrazom je potekel</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Zdaj lahko z obrazom odklenete telefon ali potrdite svojo identiteto, na primer ob prijavi v aplikacije ali odobritvi nakupa.</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Zdaj lahko z obrazom odklenete telefon, ko ga primete ali se dotaknete zaslona.
 
 Odklepanje z obrazom najbolje deluje, ko je dovolj svetlo in ne nosite maske ali temnih očal."</string>
+    <string name="security_settings_face_enroll_finish_title">Videti je v redu</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Nastavitev za slabovidne ali osebe z omejenim gibanjem glave</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Oči morajo biti odprte</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Vi in otrok imate nadzor</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Vse imate pod nadzorom</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Delovanje</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Če otrok običajno nosi očala, jih lahko nadene med postopkom nastavitve.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Lahko nosite očala ali rahlo zatemnjena sončna očala.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Upoštevajte</string>
+    <string name="security_settings_face_enroll_introduction_title">Nastavite odklepanje z obrazom</string>
     <string name="security_settings_face_enroll_next">Naprej</string>
     <string name="security_settings_face_enroll_partial_message">Če želite izboljšati učinkovitost delovanja, lahko odklepanje z obrazom znova nastavite v nastavitvah.</string>
     <string name="security_settings_face_enroll_partial_start_over">Začni znova</string>
@@ -312,8 +276,25 @@ Odklepanje z obrazom najbolje deluje, ko je dovolj svetlo in ne nosite maske ali
     <string name="security_settings_face_enroll_too_hot_message">Nastavitve odklepanja z obrazom ni mogoče dokončati, ker je telefon prevroč. Poskusite znova pozneje, ko se bo telefon ohladil.</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Preskoči odklepanje z obrazom</string>
     <string name="security_settings_face_enroll_too_hot_title">Telefon je prevroč</string>
+    <string name="security_settings_face_preference_summary_none">Za nastavitev obraza se dotaknite</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message">Najdete ga na hrbtni strani telefona. Uporabite kazalec.</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Nexus Imprint omogoča uporabo prstnega odtisa za odobritev nakupov ali prijavo v aplikacije.
+
+Pazite, čigave prstne odtise boste dodali, saj ta dejanja lahko izvajajo vsi dodani prstni odtisi.
+
+Opomba: prstnega odtisa ne morete uporabiti za odklepanje naprave. Za več informacij se obrnite na skrbnika v organizaciji."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Odklep. z Nexus Imprint</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Za nastavitev prstnega odtisa se dotaknite</string>
+    <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint ustvari edinstven model vašega prstnega odtisa, s katerim potrdite svojo identiteto. Za ustvarjanje modela prstnega odtisa med postopkom nastavitve morate posneti svoj prstni odtis v različnih položajih.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint ustvari edinstven model otrokovega prstnega odtisa, s katerim potrdi svojo identiteto. Za ustvarjanje modela prstnega odtisa med postopkom nastavitve mora posneti svoj prstni odtis v različnih položajih.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Več o odklepanju s prstnim odtisom v telefonu Pixel preberite na &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint za službo</string>
     <string name="setup_suggestion_summary">Ostalo vam je samo še nekaj korakov.</string>
     <string name="setup_suggestion_title">Dokončajte nastavitev</string>
+    <string name="smart_battery_footer">Prilagodljivo varčevanje z energijo baterije lahko zmanjša zmogljivost in dejavnost v ozadju, da podaljša čas delovanja baterije. Nekatera obvestila bodo morda zakasnjena.</string>
+    <string name="smart_battery_manager_title">Nastavitve prilagodljivega polnjenja</string>
+    <string name="smart_battery_title">Prilagodljivo varčevanje z energijo baterije</string>
     <string name="software_update_can_be_updated_header">Pixel lahko še izboljšate</string>
     <string name="software_update_detail_indication_1_update_available">Na voljo je ena posodobitev</string>
     <string name="software_update_detail_indication_2_or_more_updates_available">Na voljo je toliko posodobitev: %1$d</string>
@@ -326,9 +307,11 @@ Odklepanje z obrazom najbolje deluje, ko je dovolj svetlo in ne nosite maske ali
     <string name="software_update_up_to_date_summary">Posodobljeno</string>
     <string name="software_update_up_to_specific_date_summary">Posodobljeno na %1$s</string>
     <string name="software_update_update_available_summary">Na voljo je posodobitev</string>
+    <string name="sound_dashboard_summary">Glasnost, tipna tehnologija, ne moti</string>
     <string name="speed_boost_summary_off">Izklopljeno</string>
     <string name="speed_boost_summary_on">Vklopljeno</string>
     <string name="speed_boost_title">Povečanje hitrosti pri operaterju Spectrum</string>
+    <string name="suggested_fingerprint_lock_settings_title">Uporaba funkcije Pixel Imprint</string>
     <string name="suw_limited_warranty_title">Omejeno jamstvo</string>
     <string name="suw_warranty_description">Če si želite ogledati omejeno jamstvo, izberite državo, v kateri ste kupili to napravo.&lt;br /&gt;&lt;br /&gt;Izjava o jamstvu je na voljo tudi v meniju &lt;b&gt;»Nastavitve« &gt; »O telefonu« &gt; »Omejeno jamstvo«&lt;/b&gt; in na naslovu g.co/devicewarranty.</string>
     <string name="suw_warranty_description_content">Če si želite ogledati omejeno jamstvo, izberite državo, v kateri ste kupili to napravo. Izjava o jamstvu je na voljo tudi v meniju »Nastavitve« &amp;gt; »O telefonu« &amp;gt; »Omejeno jamstvo« in na naslovu g.co/devicewarranty.</string>
@@ -336,10 +319,11 @@ Odklepanje z obrazom najbolje deluje, ko je dovolj svetlo in ne nosite maske ali
     <string name="suw_warranty_positive_button_text">Zapri</string>
     <string name="system_update_entry_title">Posodobitev sistema</string>
     <string name="system_updates_group_title">Posodobitve za Pixel</string>
-    <string name="tips_suggestion_summary">Raziščite, kaj vam telefon omogoča.</string>
-    <string name="tips_suggestion_title">Spoznajte svoj Pixel</string>
+    <string name="touch_sensitivity_summary">Povečanje občutljivosti na dotik in izboljšanje zaznavanja dotikov pri uporabi zaščite zaslona.</string>
+    <string name="touch_sensitivity_title">Način z zaščito zaslona</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Držite telefon pred obrazom</string>
     <string name="unified_battery_saver_page_intro">Varčevanje z energijo za daljši čas delovanja baterije telefona med polnjenji</string>
+    <string name="usb_use_file_transfers">Prenos datotek/Android Auto</string>
     <string name="vpn_app_bypass">Izključi izbrane aplikacije</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">Trenutne aplikacije operaterja</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">Želite iz omrežja VPN izključiti toliko aplikacij operaterjev: %1$d?</string>
@@ -360,12 +344,9 @@ Odklepanje z obrazom najbolje deluje, ko je dovolj svetlo in ne nosite maske ali
     <string name="vpn_exclude_ntf_content">Imate novo nameščene aplikacije operaterjev, ki morda ne bodo delovale v omrežju VPN.</string>
     <string name="vpn_exclude_ntf_title">Želite nove aplikacije izključiti iz omrežja VPN?</string>
     <string name="vpn_preference_group_title">Drugo</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_title" />
-    <string name="wake_screen_suggestion_summary" />
-    <string name="wake_screen_suggestion_title" />
+    <string name="wallpaper_dashboard_summary">Barve, ikone s temo, mreža aplikacij</string>
     <string name="warranty_country_information">%1$s (%2$s)</string>
+    <string name="wifi_subscription_summary">Ogled ali sprememba naročnine OpenRoaming</string>
     <string name="wifitrackerlib_connected_with_wsu_authenticator">Povezano z: %1$s</string>
     <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Dotaknite se za vzpostavitev povezave</string>
     <string name="wifitrackerlib_wsu_entry_summary_provision_error">Povezave ni mogoče vzpostaviti. Dotaknite se, če želite poskusiti znova.</string>

@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="aware_category_display" />
-    <string name="aware_category_gesture" />
-    <string name="aware_display_settings_title">Neaktyvus užrakinimo ekranas</string>
-    <string name="aware_settings_description" />
-    <string name="aware_settings_summary" />
-    <string name="gesture_silence_title">Įspėjimų nutildymo gestas</string>
-    <string name="gesture_skip_title">Praleisti gestą</string>
-    <string name="keywords_touch_sensitivity">palietimas, jautrumas, jautrus, ekrano apsaugos priemonė, plėvelė, reaguojantis, reagavimas</string>
-    <string name="keywords_wake_display" />
-    <string name="touch_sensitivity_summary">Padidinkite palietimo jautrumą ir pagerinkite atsaką į palietimą, kai naudojate apsauginį ekrano stiklą</string>
-    <string name="touch_sensitivity_title">Apsauginio ekrano stiklo režimas</string>
-    <string name="columbus_title">Veiksmų pradžia naudojant „Quick Tap“</string>
-    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">„Active Edge“ nustatytas. Eikite į kitą ekraną arba koreguokite toliau.</string>
     <string name="accessibility_keyboard_haptics_title">Klaviatūros lietimo technologija</string>
     <string name="adaptive_alert_vibration_summary">Sumažina vibracijos stiprį, kai telefonas nejuda ir yra nukreiptas ekranu į viršų</string>
     <string name="adaptive_alert_vibration_title">Prisitaikantis įspėjimo vibravimas</string>
@@ -32,69 +19,25 @@
 
 "<b>Pranešimai apie riktus apima programų ir sistemų žurnalus</b>" ir juose gali būti asmens bei įrenginio informacijos, pvz., vardų, el. pašto adresų, telefonų numerių, vietovių duomenų, įrenginių identifikatorių, prijungtų įrenginių ir tinklo informacijos. Pranešimai gali būti bendrinami su inžinerijos partneriais, kuriems gali turėti įtakos jūsų problema.
 
-Suteikus prieigą šiai programai bus leidžiama "<b>automatiškai rinkti ir įkelti pranešimus apie riktus</b>", kuriuose yra visų problemų pranešimų programų ir sistemų žurnalai.
+Suteikus prieigą, šiai programai bus leidžiama "<b>automatiškai rinkti ir įkelti pranešimus apie riktus</b>", įskaitant visų pateiktų problemų ataskaitų programų ir sistemos žurnalus iš asmeninių ir darbo profilių.
 
 Anuliavus prieigą programa turės prašyti jūsų leidimo rinkti ir įkelti kiekvieno atskiro problemos pranešimo pranešimą apie riktą."</string>
-    <string name="ambient_display_wake_screen_footer">
-        <annotation link="link">Nuostatos</annotation>
-    </string>
-    <string name="ambient_display_wake_screen_summary" />
-    <string name="ambient_display_wake_screen_summary_on" />
-    <string name="assist_gesture_enrollment_continue_to_assistant">Paleisti Padėjėją</string>
-    <string name="assist_gesture_enrollment_do_it_later">Atlikti vėliau</string>
-    <string name="assist_gesture_enrollment_seekbar_light">Lengvai suspausti</string>
-    <string name="assist_gesture_enrollment_seekbar_strong">Tvirtai suspausti</string>
-    <string name="assist_gesture_enrollment_settings">Nustatymai</string>
-    <string name="assist_gesture_setting_enable_assistant_text">Norėdami kalbėti su Padėjėju greitai suspauskite apatinę telefono dalį, tada atleiskite</string>
-    <string name="assist_gesture_setting_enable_assistant_title">Suspauskite ir įjunkite Padėjėją</string>
-    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Suspauskite, kad nutildyt. signalus, laikmačius, pranešimus ir gaun. skambučius</string>
-    <string name="assist_gesture_setting_enable_ring_silence_text">Suspauskite, kad nutildytumėte pranešimus ir gaunamuosius skambučius</string>
-    <string name="assist_gesture_setting_enable_ring_silence_title">Suspauskite, kad nutildytumėte telefoną</string>
-    <string name="assist_gesture_setting_enable_wake_title">Padėjėjo atidarymas išjungus ekraną</string>
-    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Lengvai suspausti</string>
-    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Tvirtai suspausti</string>
-    <string name="assist_gesture_squeeze_sensitivity_label">Suspaudimo jautrumas</string>
-    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Galima netyčia įjungti Padėjėją</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Suspauskite apatinę telefono dalį</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Suspauskite greičiau</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Suspauskite stipriau</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Greitai suspauskite ir atleiskite</string>
-    <string name="assist_gesture_training_enrolling_error_try_adjusting">Pabandykite koreguoti šliaužiklį</string>
-    <string name="assist_gesture_training_enrolling_text">Suspauskite apatinę telefono dalį. Galite koreguoti suspaudimo greitį.</string>
-    <string name="assist_gesture_training_enrolling_title">Greitai suspauskite ir atleiskite</string>
-    <string name="assist_gesture_training_finished_text">Vėliau galėsite pakeisti suspaudimo jautrumą nustatymuose</string>
-    <string name="assist_gesture_training_finished_title">Užbaikite arba toliau koreguokite</string>
-    <string name="assist_gesture_training_intro_text">Bet kada kalbėkite su Padėjėju greitai suspaudę apatinę telefono dalį ir atleidę</string>
-    <string name="assist_gesture_training_intro_title">Suspauskite ir įjunkite Padėjėją</string>
-    <string name="assist_gesture_training_suggestion_summary">Kalbėkite su Padėjėju, nutildykite skambučius</string>
-    <string name="assist_gesture_training_suggestion_summary_including_alarms">Kalbėkite su Padėjėju, nutildykite signalus ir skambučius</string>
-    <string name="assist_gesture_training_suggestion_title">Suspaudę ir atleidę įjunkite Padėjėją</string>
-    <string name="aware_category_security" />
-    <string name="aware_disabled_preference_action">Įjungti</string>
-    <string name="aware_disabled_preference_dialog_content" />
-    <string name="aware_disabled_preference_dialog_title" />
-    <string name="aware_disabled_preference_neutral">Ne dabar</string>
-    <string name="aware_footer_when_airplane_batterysaver_on">Funkcija „Motion Sense“ nepasiekiama, nes įjungtas lėktuvo režimas ir akumuliatoriaus tausojimo priemonė</string>
-    <string name="aware_footer_when_airplane_on">Funkcija „Motion Sense“ nepasiekiama, nes įjungtas lėktuvo režimas</string>
-    <string name="aware_footer_when_batterysaver_on">Funkcija „Motion Sense“ nepasiekiama, nes įjungta akumuliatoriaus tausojimo priemonė</string>
-    <string name="aware_gesture_summary_off">Spartieji gestai įjungti, „Active Edge“ išjungta</string>
-    <string name="aware_gesture_summary_on_non_assist">Spartieji gestai įjungti, „Active Edge“ įjungta</string>
-    <string name="aware_gesture_summary_on_with_assist">Spartieji gestai įjungti, „Active Edge“ įjungta, Padėjėjas suspaustas ir įjungtas</string>
-    <string name="aware_info_button_description">Daugiau nustatymų</string>
-    <string name="aware_settings_disabled_info_dialog_content" />
-    <string name="aware_settings_disabled_info_dialog_title" />
-    <string name="aware_settings_enabled_info_dialog_content" />
-    <string name="aware_settings_enabled_info_dialog_title" />
-    <string name="aware_settings_suggestion_summary" />
-    <string name="aware_settings_suggestion_title" />
-    <string name="aware_summary_when_airplane_batterysaver_on">Nepasiekiama, nes įjungtas lėktuvo režimas ir akumuliatoriaus tausojimo priemonė</string>
-    <string name="aware_summary_when_airplane_on">Nepasiekiama, nes įjungtas lėktuvo režimas</string>
-    <string name="aware_summary_when_batterysaver_on">Nepasiekiama, nes įjungta akumuliatoriaus tausojimo priemonė</string>
-    <string name="aware_wake_display_summary" />
-    <string name="aware_wake_display_summary_aod_off" />
-    <string name="aware_wake_display_title" />
+    <string name="app_and_notification_dashboard_summary">Padėjėjas, pastarosios programos, numatytosios programos</string>
+    <string name="automatic_storage_manager_activation_warning">Kai būsite prisijungę, vis tiek galėsite pasiekti atsarginės kopijos nustatymuose nurodytos kokybės nuotraukas ir vaizdo įrašus</string>
+    <string name="automatic_storage_manager_days_title">Pašalinti atsarg. kopijas (nuotr. ir vaizdo įr.)</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Išjungti Išmaniąją saugyklą? 
+
+Išmanioji saugykla neatlaisvins vietos, kai saugykla bus beveik pilna."</string>
+    <string name="automatic_storage_manager_preference_title">Išmanioji saugykla</string>
+    <string name="automatic_storage_manager_primary_switch_title">Naudoti Išmaniąją saugyklą</string>
+    <string name="automatic_storage_manager_settings">Išmanioji saugykla</string>
+    <string name="automatic_storage_manager_text">Jei saugykla yra beveik pilna, pašalinkite nuotraukas ir vaizdo įrašus, kurių atsarginė kopija buvo sukurta. Juos vis dar galite rasti „Google“ nuotraukose.</string>
+    <string name="backup_data_summary">Kurti atsargines programos duomenų, „Wi-Fi“ slaptažodžių ir kitų nustatymų kopijas „Google“ serveriuose</string>
     <string name="basic_battery_saver_summary">Apribojami vaizdiniai efektai ir veikla fone. Įjungiama tamsioji tema (jei dar neįjungta).</string>
     <string name="basic_battery_saver_title">Įprasta Akumuliatoriaus tausojimo priemonė</string>
+    <string name="battery_manager_summary">Pailginamas akumuliatoriaus veikimo laikas ir optimizuojamas įkrovimas</string>
+    <string name="battery_manager_summary_unsupported">Akumuliatoriaus veikimo laiko pailginimas</string>
+    <string name="battery_missing_link_message">Sužinokite daugiau</string>
     <string name="battery_saver_reminder_category">Priminimai</string>
     <string name="battery_saver_reminder_switch_summary">Gauti priminimų, kai akumuliatorius išsikraus</string>
     <string name="battery_saver_reminder_switch_title">Akumuliatoriaus tausojimo priemonės priminimai</string>
@@ -103,7 +46,11 @@ Anuliavus prieigą programa turės prašyti jūsų leidimo rinkti ir įkelti kie
     <string name="battery_saver_schedule_switch_title">Įjungimas pagal akumuliatoriaus lygį</string>
     <string name="battery_schedule_summary">Tvarkyti, kai įjungiama Akumuliatoriaus tausojimo priemonė</string>
     <string name="battery_schedule_title">Tvarkaraštis ir priminimai</string>
+    <string name="battery_tip_battery_health_learn_more_description">Sužinokite daugiau apie akumuliatoriaus būseną</string>
+    <string name="battery_tip_battery_health_reduced_title">Sumažinta akumuliatoriaus talpa</string>
+    <string name="battery_tip_battery_health_unknown_title">Nepavyksta aptikti akumuliatoriaus būsenos</string>
     <string name="battery_tip_limited_temporarily_extra_summary">Siekiant apsaugoti akumuliatorių, įkrovimas pristabdytas pasiekus %1$s, kol planšetinis kompiuteris prijungtas prie doko</string>
+    <string name="battery_tip_smart_battery_summary">Įjunkite prisitaikantį akumuliatorių</string>
     <string name="clear_calling_footer">"Kad apsaugotų jūsų privatumą, funkcija „Aiškus skambutis“ nesiunčia garso įrašų ar pokalbių „Google“.
 
 Funkcija „Aiškus skambutis“ veikia naudojant „Wi-Fi“ skambinimą ir daugumą tinklų, bet nepasiekiama naudojant 3G tinklus."</string>
@@ -154,8 +101,11 @@ Funkcija „Aiškus skambutis“ veikia naudojant „Wi-Fi“ skambinimą ir dau
     <string name="columbus_setting_app_shortcut_selection_help_text">Pasirinkite, kas nutinka, kai atidarote šią programą naudodami „Quick Tap“.</string>
     <string name="columbus_setting_enable_switch_title">Naudoti „Quick Tap“</string>
     <string name="columbus_setting_sensitivity_title">Intensyvesnių palietimų reikalavimas</string>
+    <string name="columbus_title">Veiksmų pradžia naudojant „Quick Tap“</string>
     <string name="communal_lock_screen_summary">Privatumas, pranešimai ir namų sistemos valdymas</string>
     <string name="communal_other">Kita</string>
+    <string name="communal_settings_summary">Doko ir užrakinimo ekrano parinktys</string>
+    <string name="communal_settings_title">Centro režimas</string>
     <string name="communal_smartspace_summary">Priminimai, įspėjimai ir kitos Padėjėjo funkcijos</string>
     <string name="communal_smartspace_title">Apžvalga</string>
     <string name="communal_what_to_show">Ką rodyti</string>
@@ -166,17 +116,17 @@ Funkcija „Aiškus skambutis“ veikia naudojant „Wi-Fi“ skambinimą ir dau
     <string name="connectivity_helper_d2d_summary">Praneškite kitam asmeniui, jei kyla telefono ryšio problemų per skambučius</string>
     <string name="connectivity_helper_d2d_title">Bendrinti ryšio informaciją</string>
     <string name="connectivity_helper_footnote">Galite bendrinti ryšio informaciją, kai kitas skambintojas naudoja palaikomą įrenginį ir tinklą</string>
+    <string name="content_capture">Suasmeninti programos duomenų naudojimą</string>
+    <string name="content_protection_preference_subpage_info">"Tai yra apsaugota saugos funkcija. Su „Google“ nebendrinama jokia įrenginio ar asmens informacija. 
+
+Sukčiavimas – tai bandymas pavogti prisijungimo duomenis ar kitą asmens informaciją."</string>
+    <string name="content_protection_preference_subpage_summary">Nuskaitymas atliekamas privačiai tiesiai jūsų įrenginyje, tikrinant programų aktyvumą dėl sukčiavimo ar kitos apgaulingos elgsenos. Aptikus tokios elgsenos, dalis programų informacijos siunčiama „Google Play Protect“, kad patvirtintų grėsmę ir įspėtų naudotojus.</string>
+    <string name="dark_ui_text">Tamsiojoje temoje naudojamas juodas fonas, kad akumuliatorius ilgiau veiktų. Tamsiosios temos tvarkaraščiai neprasideda, kol ekranas išsijungia.</string>
     <string name="debugging_data_title">Derinimo duomenys</string>
-    <string name="dialog_aware_settings_message" />
-    <string name="dialog_aware_settings_ok" />
-    <string name="dialog_aware_settings_title" />
     <string name="discover_tips_button">Rasti patarimų</string>
-    <string name="dock_setup_notification_text" />
     <string name="dock_summary_charging_phone">Įkraunamas telefonas</string>
-    <string name="dream_no_screen_saver_caption" />
-    <string name="dream_no_screen_saver_description" />
-    <string name="dream_no_screen_saver_preview_caption" />
-    <string name="dream_secondary_button_title" />
+    <string name="double_twist_for_camera_mode_summary">Jei norite įjungti ir išjungti „Google“ fotoaparato autoportreto režimą, dukart pasukite atidarę programą.</string>
+    <string name="duration_less_than_one_minute">Mažiau nei 1 min.</string>
     <string name="extreme_battery_saver_summary">Įtraukiami visi anksčiau pateikti pakeitimai. Taip pat pristabdo nebūtinąsias programas ir jų pranešimus.</string>
     <string name="extreme_battery_saver_title">Akumuliatoriaus energijos taupymas didžiausiu režimu</string>
     <string name="face_confirmation_hide_illustration_description">Dabar paėmę telefoną ar palietę ekraną galite jį atrakinti pagal veidą.</string>
@@ -203,49 +153,43 @@ Funkcija „Aiškus skambutis“ veikia naudojant „Wi-Fi“ skambinimą ir dau
     <string name="face_enrolling_too_right">Laikykite telefoną kairiau</string>
     <string name="face_enrolling_turn_head_to_arrow">Pasukite galvą rodyklės kryptimi</string>
     <string name="face_enrolling_turned_too_far">Nesukite tiek galvos</string>
+    <string name="fast_pair_device_not_found_dialog_title">Nepavyko susieti</string>
+    <string name="fast_pair_device_not_found_other_device_description">Perkelkite šį įrenginį arčiau „Pixel“ telefono ir bandykite dar kartą.</string>
+    <string name="fast_pair_device_not_found_tws_headphone_description">Atidarykite ausinių dėklą ir perkelkite arčiau „Pixel“ telefono, tada bandykite dar kartą.</string>
+    <string name="fingerprint_unlock_set_unlock_password">„Nexus Imprint“ + slaptažodis</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">„Nexus Imprint“ + atrakinimo piešinys</string>
+    <string name="fingerprint_unlock_set_unlock_pin">„Nexus Imprint“ + PIN kodas</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Tęsti nenaudojant „Nexus Imprint“</string>
+    <string name="firmware_update_accessory_version_number_title">Priedo programinė aparatinė įranga</string>
     <string name="firmware_update_status_category">Įrenginio programinės aparatinės įrangos būsena</string>
     <string name="firmware_update_status_title">Pasiekiamas programinės aparatinės įrangos naujinys</string>
     <string name="firmware_update_version_number_category">Įrenginio programinės aparatinės įrangos versija</string>
     <string name="firmware_update_version_number_title">„Pixel“ klaviatūros programinė aparatinė įranga</string>
-    <string name="gesture_aware_confirmation_action_button">Supratau</string>
-    <string name="gesture_aware_disabled_info_dialog_content" />
-    <string name="gesture_aware_footer">
-        <annotation link="link">Nuostatos</annotation>
-    </string>
-    <string name="gesture_aware_off_dialog_content" />
-    <string name="gesture_aware_off_dialog_title" />
-    <string name="gesture_silence_footer">
-        <annotation link="link">Nuostatos</annotation>
-    </string>
-    <string name="gesture_silence_off_summary" />
-    <string name="gesture_silence_on_summary" />
-    <string name="gesture_silence_summary" />
-    <string name="gesture_skip_direction_ltr">Iš kairės į dešinę</string>
-    <string name="gesture_skip_direction_rtl">Iš dešinės į kairę</string>
-    <string name="gesture_skip_direction_title">Praleidimo kryptis</string>
-    <string name="gesture_skip_footer">
-        <annotation link="link">Nuostatos</annotation>
-    </string>
-    <string name="gesture_skip_off_summary" />
-    <string name="gesture_skip_on_summary" />
-    <string name="gesture_skip_summary" />
-    <string name="gesture_tap_footer">
-        <annotation link="link">Nuostatos</annotation>
-    </string>
-    <string name="gesture_tap_on_summary" />
-    <string name="gesture_tap_summary" />
+    <string name="fullbackup_data_summary">"Automatiškai kurkite atsargines įrenginio duomenų (pvz., „Wi-Fi“ slaptažodžių ir skambučių istorijos) ir programos duomenų (pvz., nustatymų ir programų saugomų failų) kopijas „Google“ diske.
+
+Kai įjungiate automatinio atsarginės kopijos kūrimo funkciją, įrenginio ir programos duomenys periodiškai išsaugomi privačiame „Google“ disko aplanke. Programų duomenys gali būti bet kurie programos išsaugoti duomenys (atsižvelgiant į kūrėjo nustatymus), įskaitant potencialiai neskelbtinus duomenis, pvz., kontaktus, pranešimus ir nuotraukas.
+
+Atsarginių kopijų duomenys nebus įtraukti skaičiuojant Disko saugyklos kvotą. Dideli failai arba failai, kuriuos kūrėjas pasirinko išskirti iš šios paslaugos, nebus įtraukiami į atsargines kopijas."</string>
+    <string name="fullbackup_erase_dialog_message">Nebekurti įrenginio duomenų (pvz., „Wi-Fi“ slaptažodžių ir skambučių istorijos) ir programų duomenų (pvz., programų saugomų nustatymų ir failų) atsarginių kopijų ir ištrinti visas kopijas iš „Google“ disko?</string>
+    <string name="gesture_settings_activity_title">Naršymas gestais</string>
     <string name="install_unknown_applications">Leisti diegti programas iš kitų nei „Google Play“ parduotuvė šaltinių</string>
+    <string name="keywords_accessibility_menu">motorika, spartusis meniu, pagalbinis meniu, lietimas, miklumas, artritas, RSI, priepuolis, tremoras, išsėtinė sklerozė, cerebrinis paralyžius, mygtukas, aparatinė įranga, paspausti, pakartotinis patempimas, ranka, skausmas, pasiekiamas, padėti</string>
     <string name="keywords_adaptive_alert_vibration">lietimo technologija, vibruoti, telefonas, skambutis, skambėjimas, įspėjimas, pranešimai, garsus, tylus, triukšmas, dėklas, prisitaikantis</string>
     <string name="keywords_adaptive_charging">įkrauti, įkrovimas, išmanusis įkrovimas, prisitaikantis įkrovimas, akumuliatorius, akumuliatoriaus būsena</string>
-    <string name="keywords_assist_gesture_silence">gestas, kraštas, šonas, „Active Edge“, tyla, snausti, žadintuvas, gaunamas skambutis, tylus, vaizdas, užrakinimo ekranas, suspausti, sugriebti, sustabdyti</string>
-    <string name="keywords_assist_gesture_wake">gestas, kraštas, šonas, „Active Edge“, pažadinti, pranešimai, ekranas, vaizdas, ekrano išjungimas, ekrano įjungimas, suspausti, miega, miegas, sugriebti</string>
     <string name="keywords_battery_share">dalijimasis baterija, belaidis įkrovimas</string>
     <string name="keywords_battery_share_settings">dalijimasis baterija, atvirkštinis belaidis įkrovimas</string>
-    <string name="keywords_gesture_silence" />
-    <string name="keywords_gesture_skip" />
-    <string name="keywords_gesture_tap" />
+    <string name="keywords_gesture">gestas, veiksmai</string>
+    <string name="keywords_hearing_devices">neprigirdintis asmuo, klausos sutrikimai, PSAP</string>
     <string name="keywords_limited_warranty">garantija, garantijos, ribota garantija, įsipareigojimas, taisymas, gpl, pakeitimas</string>
+    <string name="keywords_live_transcribe">Subtitrai, CC, subtitrai realiuoju laiku, neprigirdintis asmuo, klausos sutrikimai, CART, kalba į tekstą, titrai</string>
     <string name="keywords_reverse_charging_stop_threshold">Nebebendrinti akumuliatoriaus telefonui pasiekus:</string>
+    <string name="keywords_select_to_speak">Išgirsti tekstą, skaityti garsiai, kalbantis ekranas, ekrano skaitytuvas</string>
+    <string name="keywords_sound_amplifier">PSAP, stiprintuvas, garso stiprintuvas, neprigirdintis asmuo, klausos sutrikimai, stiprinimas</string>
+    <string name="keywords_sound_notifications">Pranešimai, neprigirdintis asmuo, klausos sutrikimai, pranešti</string>
+    <string name="keywords_switch_access">motorika, perjungti, ranka, ADBK, pagalbinės technologijos, paralyžius, ALS, nuskaitymas, veiksmų nuskaitymas</string>
+    <string name="keywords_talkback">ekrano skaitytuvas, įgarsinimas, „VoiceOver“, Pagalba balsu, aklasis, sutrikusio regėjimo asmuo, TĮK, tekstas į kalbą, ekrano skaitymas balsu</string>
+    <string name="keywords_touch_sensitivity">palietimas, jautrumas, jautrus, ekrano apsaugos priemonė, plėvelė, reaguojantis, reagavimas</string>
+    <string name="keywords_voice_access">balsas, valdymas balsu, motorika, ranka, mikrofonas, diktavimas, kalbėti, valdyti</string>
     <string name="led_preference_title">LED indikatorių šablonai</string>
     <string name="legal_source_code_description">Išsamią informaciją apie komponentų, kurie pasiekiami kaip atvirasis šaltinis, šaltinio kodą rasite „Pixel“ pagalbos centre.</string>
     <string name="legal_source_code_title">Šaltinio kodas</string>
@@ -253,9 +197,12 @@ Funkcija „Aiškus skambutis“ veikia naudojant „Wi-Fi“ skambinimą ir dau
     <string name="limited_warranty_title">Ribota garantija</string>
     <string name="lockscreen_show_weather_summary">Žr. dabartines oro sąlygas</string>
     <string name="lockscreen_show_weather_title">Rodyti orų prognozę</string>
+    <string name="my_device_info_account_preference_title">„Google“ paskyra</string>
+    <string name="owner_info_settings_edit_text_hint">Pvz., Jurgio „Pixel“ įrenginys.</string>
     <string name="permit_debugging_data">Leisti pasiekti pranešimą apie riktą</string>
     <string name="play_application_detail_indication_summary">Patikrinkite, ar yra naujinių</string>
     <string name="play_application_update_entry_title">Programų naujiniai</string>
+    <string name="privatespace_retry_summary">Norint nustatyti privačią erdvę, reikia prisijungti prie paskyros</string>
     <string name="repair_mode_active_summary">Taisymo režimas</string>
     <string name="repair_mode_summary">Saugi aplinka taisant įrenginį</string>
     <string name="repair_mode_title">Taisymo režimas</string>
@@ -286,18 +233,35 @@ Norėdami pabandyti, apverskite telefoną."</string>
     <string name="reverse_charging_unplug_usb_cable_message">Nepasiekiama, nes prijungtas USB-C įrenginys</string>
     <string name="reverse_charging_warning_summary">Nepasiekiama, nes akumuliatoriaus įkrova mažesnė nei %1$s</string>
     <string name="reverse_charging_warning_title">Akumuliatoriaus bendrinimo funkcija nepasiekiama, nes akumuliatoriaus įkrova mažesnė nei %1$s</string>
-    <string name="search_gesture_category_title">Paieška ekrane</string>
-    <string name="search_long_press_home_button_summary">Palieskite ir palaikykite pagrindinio ekrano mygtuką, kad inicijuotumėte „Google“ paiešką ekrane.</string>
-    <string name="search_long_press_home_button_title">Norėdami ieškoti, palaikykite pagrindinio ekrano mygtuką</string>
-    <string name="search_press_hold_gesture_summary">Paspauskite ir palaikykite naršymo rankenėlę, kad ekrane būtų iškviesta paieška.</string>
-    <string name="search_press_hold_gesture_title">Palaikykite rankenėlę, kad iškviestumėte paiešką</string>
+    <string name="rtt_settings_always_visible">Visada matoma</string>
+    <string name="rtt_settings_no_visible">Nematoma</string>
+    <string name="rtt_settings_title">Tikralaikis teksto pranešimas (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Matoma per skambutį</string>
+    <string name="screen_time_summary_usage_today">%1$s šiandien</string>
+    <string name="search_bar_account_avatar_content_description">Profilio nuotrauka, dukart palieskite ir atidarykite „Google“ paskyrą</string>
+    <string name="search_gesture_category_title">Paieška</string>
+    <string name="search_gesture_feature_title">Paieška apibrėžiant</string>
+    <string name="search_long_press_home_button_summary">Palieskite ir palaikykite pagrindinio ekrano mygtuką ekrano apačioje, tada apibrėžkite ar paryškinkite, ką norite ieškoti</string>
+    <string name="search_press_hold_gesture_summary">Palieskite ir palaikykite rankenėlę ekrano apačioje, tada apibrėžkite ar paryškinkite, ką norite ieškoti</string>
     <string name="security_dismiss_dialog_dismiss_button">Atsisakyti</string>
     <string name="security_dismiss_dialog_title">Atsisakyti šio perspėjimo?</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">Palieskite, kad atliktumėte sąranką</string>
+    <string name="security_settings_face_enroll_education_message">Kitame ekrane sukinėkite galvą, kad užfiksuotumėte veidą visais kampais</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Baigėsi atrakinimo pagal veidą nustatymo skirtasis laikas</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Dabar galite naudoti veidą, kad atrakintumėte telefoną ar patvirtintumėte savo tapatybę, pvz., kai prisijungiate prie programų ar patvirtinate pirkinį</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Dabar paėmę telefoną ar palietę ekraną galite jį atrakinti pagal veidą.
 
 Atrakinimas pagal veidą geriausiai veikia, kai yra tinkamas apšvietimas ir nedėvite kaukės ar tamsių akinių."</string>
+    <string name="security_settings_face_enroll_finish_title">Viskas gerai!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Nust. esant ribotam regėj. ar galvos judes.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Akys turi būti atmerktos</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Viską valdote jūs ir jūsų vaikas</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Jūs viską valdote</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Kaip tai veikia</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Jei vaikas įprastai nešioja akinius, nustatydamas jis gali juos užsidėti.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Akiniai arba neryškaus atspalvio akiniai nuo saulės netrukdys.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Atminkite</string>
+    <string name="security_settings_face_enroll_introduction_title">Nustatyti atrakinimą pagal veidą</string>
     <string name="security_settings_face_enroll_next">Kitas</string>
     <string name="security_settings_face_enroll_partial_message">Norėdami patobulinti našumą, atrakinimą pagal veidą galite vėl nustatyti apsilankę skiltyje „Nustatymai“</string>
     <string name="security_settings_face_enroll_partial_start_over">Pradėti iš naujo</string>
@@ -312,8 +276,24 @@ Norėdami patobulinti našumą, atrakinimą pagal veidą galite vėl nustatyti a
     <string name="security_settings_face_enroll_too_hot_message">Nepavyko užbaigti atrakinimo pagal veidą nustatymo, nes telefonas per daug įkaitęs. Vėliau bandykite dar kartą, kai telefonas atvės.</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Praleisti atrakinimą pagal veidą</string>
     <string name="security_settings_face_enroll_too_hot_title">Telefonas per daug įkaitęs</string>
+    <string name="security_settings_face_preference_summary_none">Palieskite, kad nustatytumėte veidą</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Naudodami „Nexus Imprint“ galite įgalioti pirkimo veiksmus arba prisijungti prie programų piršto antspaudu.
+
+Atidžiai rinkitės, kieno kontrolinius kodus pridedate. Bet kuriuo pridėtu piršto antspaudu galima atlikti visus šiuos veiksmus.
+
+Pastaba: naudodami piršto antspaudą šio įrenginio atrakinti negalite. Daugiau informacijos galite gauti susisiekę su organizacijos administratoriumi."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">„Nexus Imprint“ atrak.</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Palieskite, kad nustatytumėte piršto atspaudą</string>
+    <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Naudojant „Pixel Imprint“ kuriamas unikalus jūsų kontrolinio kodo modelis, kad būtų galima patvirtinti jūsų tapatybę. Kad sukurtumėte šį kontrolinio kodo modelį nustatydami, turite sukurti kontrolinio kodo vaizdų iš skirtingų pozicijų.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Naudojant „Pixel Imprint“ kuriamas unikalus jūsų vaiko kontrolinio kodo modelis, kad būtų galima patvirtinti vaiko tapatybę. Norint sukurti šį kontrolinio kodo modelį nustatant, reikia sukurti kontrolinio kodo vaizdų iš skirtingų pozicijų.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Sužinokite daugiau apie „Pixel“ atrakinimą piršto atspaudu adresu &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
+    <string name="security_settings_work_fingerprint_preference_title">„Pixel Imprint“, skirtas darbo profiliui</string>
     <string name="setup_suggestion_summary">Liko tik keli veiksmai</string>
     <string name="setup_suggestion_title">Nustatymų užbaigimas</string>
+    <string name="smart_battery_footer">Kad akumuliatorius veiktų ilgiau, prisitaikančio akumuliatoriaus funkcija gali sumažinti našumą ir apriboti veiklą fone. Kai kurie pranešimai gali vėluoti.</string>
+    <string name="smart_battery_manager_title">Prisitaikančio akumuliatoriaus ir prisitaikančio įkrovimo nuostatos</string>
+    <string name="smart_battery_title">Prisitaikantis akum.</string>
     <string name="software_update_can_be_updated_header">Padarykite, kad jūsų „Pixel“ būtų dar geresnis</string>
     <string name="software_update_detail_indication_1_update_available">Pasiekiamas vienas naujinys</string>
     <string name="software_update_detail_indication_2_or_more_updates_available">Pasiekiama naujinių: %1$d</string>
@@ -326,9 +306,11 @@ Norėdami patobulinti našumą, atrakinimą pagal veidą galite vėl nustatyti a
     <string name="software_update_up_to_date_summary">Atnaujinta</string>
     <string name="software_update_up_to_specific_date_summary">Atnaujinta %1$s</string>
     <string name="software_update_update_available_summary">Pasiekiamas naujinys</string>
+    <string name="sound_dashboard_summary">Garsumas, lietimo technologija, netrukdymo režimas</string>
     <string name="speed_boost_summary_off">Išjungta</string>
     <string name="speed_boost_summary_on">Įjungta</string>
     <string name="speed_boost_title">Spektro spartos padidinimas</string>
+    <string name="suggested_fingerprint_lock_settings_title">„Pixel Imprint“ naudojimas</string>
     <string name="suw_limited_warranty_title">Ribota garantija</string>
     <string name="suw_warranty_description">Jei norite peržiūrėti ribotą garantiją, pasirinkite šalį, kurioje įsigijote šį įrenginį.&lt;br /&gt;&lt;br /&gt;Garantija taip pat pasiekiama skiltyje &lt;b&gt;„Nustatymai“ &gt; „Apie telefoną“ &gt; „Ribota garantija“&lt;/b&gt; ir adresu g.co/devicewarranty.</string>
     <string name="suw_warranty_description_content">Jei norite peržiūrėti ribotą garantiją, pasirinkite šalį, kurioje įsigijote šį įrenginį. Garantija taip pat pasiekiama skiltyje „Nustatymai“ &gt; „Apie telefoną“ &gt; „Ribota garantija“ ir adresu g.co/devicewarranty.</string>
@@ -336,10 +318,11 @@ Norėdami patobulinti našumą, atrakinimą pagal veidą galite vėl nustatyti a
     <string name="suw_warranty_positive_button_text">Uždaryti</string>
     <string name="system_update_entry_title">Sistemos naujinys</string>
     <string name="system_updates_group_title">„Pixel“ naujiniai</string>
-    <string name="tips_suggestion_summary">Sužinokite, ką galite atlikti telefonu</string>
-    <string name="tips_suggestion_title">Susipažinimas su „Pixel“</string>
+    <string name="touch_sensitivity_summary">Padidinkite palietimo jautrumą ir pagerinkite atsaką į palietimą, kai naudojate apsauginį ekrano stiklą</string>
+    <string name="touch_sensitivity_title">Apsauginio ekrano stiklo režimas</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Laikykite telefoną prieš save</string>
     <string name="unified_battery_saver_page_intro">Taupoma energija, kad jūsų telefono akumuliatorius veiktų ilgiau tarp įkrovimų</string>
+    <string name="usb_use_file_transfers">Failų perkėlimas / „Android Auto“</string>
     <string name="vpn_app_bypass">Neleisti naudoti pasirinktoms programoms</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">Dabartinės operatoriaus programos</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">Išskirti operatorių programas (iš viso: %1$d) iš VPN?</string>
@@ -360,12 +343,9 @@ Norėdami patobulinti našumą, atrakinimą pagal veidą galite vėl nustatyti a
     <string name="vpn_exclude_ntf_content">Turite naujai įdiegtų operatorių programų, kurios gali neveikti su VPN</string>
     <string name="vpn_exclude_ntf_title">Išskirti naujas programas iš VPN?</string>
     <string name="vpn_preference_group_title">Kita</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_title" />
-    <string name="wake_screen_suggestion_summary" />
-    <string name="wake_screen_suggestion_title" />
+    <string name="wallpaper_dashboard_summary">Spalvos, teminės piktogramos, programų tinklelis</string>
     <string name="warranty_country_information">%1$s (%2$s)</string>
+    <string name="wifi_subscription_summary">„OpenRoaming“ prenumeratos peržiūra arba keitimas</string>
     <string name="wifitrackerlib_connected_with_wsu_authenticator">Prisijungta naudojant „%1$s“</string>
     <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Palieskite, kad prisijungtumėte</string>
     <string name="wifitrackerlib_wsu_entry_summary_provision_error">Nepavyko prisijungti. Palieskite, kad bandytumėte dar kartą.</string>

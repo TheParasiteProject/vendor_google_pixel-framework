@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="accessibility_keyboard_haptics_title">(M)[Ķéýɓöåŕð ĥåþţîçš one two three]</string>
+    <string name="adaptive_alert_vibration_summary">(M)[Ŕéðûçéš Vîɓŕåţîöñ šţŕéñĝţĥ ŵĥîļé ýöûŕ þĥöñé îš šţîļļ åñð ţĥé šçŕééñ îš ƒåçîñĝ ûþ one two three four five six seven eight nine]</string>
+    <string name="adaptive_alert_vibration_title">(M)[ÅðåþţîVé åļéŕţ Vîɓŕåţîöñ one two three]</string>
+    <string name="adaptive_battery_switch_des">(M)[Ţö éхţéñð ɓåţţéŕý ļîƒé, ÅðåþţîVé βåţţéŕý ḿåý ŕéðûçé þéŕƒöŕḿåñçé åñð ɓåçķĝŕöûñð åçţîVîţý. Šöḿé ñöţîƒîçåţîöñš ḿåý ɓé ðéļåýéð. one two three four five six seven eight nine ten eleven twelve]</string>
+    <string name="adaptive_battery_switch_title">(M)[Ûšé ÅðåþţîVé βåţţéŕý one two three]</string>
+    <string name="adaptive_charging">(M)[ÅðåþţîVé Çĥåŕĝîñĝ one two three]</string>
+    <string name="adaptive_charging_description">(M)[Éхţéñð ɓåţţéŕý ļîƒéšþåñ ɓý çĥåŕĝîñĝ šţéåðîļý ðûŕîñĝ ļöñĝéŕ çĥåŕĝîñĝ þéŕîöðš. ÅçţîVåţéð ɓåšéð öñ ýöûŕ ûšåĝé çýçļé. one two three four five six seven eight nine ten eleven twelve]</string>
+    <string name="adaptive_charging_footer">(M)[Ţö ĥéļþ éхţéñð ɓåţţéŕý ļîƒéšþåñ, ýöûŕ þĥöñé ļéåŕñš ýöûŕ çĥåŕĝîñĝ ŕöûţîñé åñð ŵåîţš ûñţîļ ýöû ñééð îţ ţö ƒûļļý çĥåŕĝé. one two three four five six seven eight nine ten eleven twelve]</string>
+    <string name="adaptive_charging_link_a11y">(M)[Ļéåŕñ ḿöŕé åɓöûţ ÅðåþţîVé Çĥåŕĝîñĝ one two three four]</string>
+    <string name="adaptive_charging_main_switch_title">(M)[Ûšé ÅðåþţîVé Çĥåŕĝîñĝ one two three]</string>
+    <string name="adaptive_charging_time_estimate">(<b>M)[ÅðåþţîVé Çĥåŕĝ</b>îñĝ • Fûļļ ɓý »%1«$s one two three four]</string>
+    <string name="adaptive_charging_title">(M)[ÅðåþţîVé Çĥåŕĝîñĝ one two three]</string>
+    <string name="add_bypassed_application_hint">(M)[Ñö åþþš åððéð one two]</string>
+    <string name="advanced_vpn_preference_group_title">(M)[βûîļţ-îñ one two]</string>
+    <string name="all_apps_category_title">(M)[Åļļ åþþš one two]</string>
+    <string name="allow_debugging_data_description">(M)[Ĝööĝļé ûšéš ɓûĝ ŕéþöŕţš ţö ðîåĝñöšé åþþ åñð ðéVîçé îššûéš îñ åççöŕðåñçé ŵîţĥ ö<a href="https://policies.google.com/privacy">ûŕ ÞŕîVåçý Þöļ</a>îçý<b>".
+
+βûĝ ŕéþöŕţš çöñţåîñ åþþ åñð šýšţéḿ ļ"</b>"öĝš åñð ḿåý îñçļûðé þéŕšöñåļ åñð ðéVîçé îñƒöŕḿåţîöñ, šûçĥ åš ñåḿéš, éḿåîļ åððŕéššéš, þĥöñé ñûḿɓéŕš, ļöçåţîöñ ðåţå, ðéVîçé îðéñţîƒîéŕš, çöññéçţéð ðéVîçéš, åñð ñéţŵöŕķ îñƒöŕḿåţîöñ. Ŕéþöŕţš ḿåý ɓé šĥåŕéð ŵîţĥ éñĝîñééŕîñĝ þåŕţñéŕš þöţéñţîåļļý îḿþåçţéð ɓý ýöûŕ îššûé.
+
+Ĝŕåñţîñĝ åççéšš ŵîļļ åļļöŵ ţĥîš åþþ "<b>ţö åûţöḿåţîçåļļý çöļļéçţ åñð ûþļöåð ɓûĝ ŕéþö</b>"ŕţš, îñçļûðîñĝ åþþ åñð šýšţéḿ ļöĝš ƒŕöḿ þéŕšöñåļ åñð ŵöŕķ þŕöƒîļéš, ƒöŕ åļļ îššûé ŕéþöŕţš ýöû šûɓḿîţ.
+
+ŔéVöķîñĝ åççéšš ŵîļļ ŕéQûîŕé ţĥé åþþ ţö ŕéQûéšţ ýöûŕ þéŕḿîššîöñ ţö çöļļéçţ åñð ûþļöåð å ɓûĝ ŕéþöŕţ ƒöŕ éåçĥ îñðîVîðûåļ îššûé ŕéþöŕţ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen]"</string>
+    <string name="app_and_notification_dashboard_summary">(M)[Åššîšţåñţ, ŕéçéñţ åþþš, ðéƒåûļţ åþþš one two three four five]</string>
+    <string name="automatic_storage_manager_activation_warning">"(M)[Ŵĥéñ ýöû'ŕé çöññéçţéð, ýöû çåñ šţîļļ åççéšš þĥöţöš åñð Vîðéöš åţ ţĥé Qûåļîţý ýöû šéļéçţéð ƒöŕ ɓåçķûþ one two three four five six seven eight nine ten eleven]"</string>
+    <string name="automatic_storage_manager_days_title">"(M)[ŔéḿöVé ɓåçķéð ûþ þĥöţöš &amp;  Vîðéöš one two three four]"</string>
+    <string name="automatic_storage_manager_deactivation_warning">"(M)[Ţûŕñ öƒƒ Šḿåŕţ Šţöŕåĝé¿ 
+
+Šḿåŕţ Šţöŕåĝé ŵöñ'ţ ƒŕéé ûþ šþåçé ŵĥéñ ýöûŕ šţöŕåĝé îš åļḿöšţ ƒûļļ. one two three four five six seven eight nine ten]"</string>
+    <string name="automatic_storage_manager_preference_title">(M)[Šḿåŕţ Šţöŕåĝé one two]</string>
+    <string name="automatic_storage_manager_primary_switch_title">(M)[Ûšé Šḿåŕţ Šţöŕåĝé one two three]</string>
+    <string name="automatic_storage_manager_settings">(M)[Šḿåŕţ Šţöŕåĝé one two]</string>
+    <string name="automatic_storage_manager_text">(M)[Ŵĥéñ šţöŕåĝé îš åļḿöšţ ƒûļļ, ŕéḿöVé ɓåçķéð ûþ þĥöţöš åñð Vîðéöš. Ýöû çåñ šţîļļ ƒîñð ţĥéḿ îñ Ĝööĝļé Þĥöţöš. one two three four five six seven eight nine ten eleven]</string>
+    <string name="backup_data_summary">(M)[βåçķ ûþ åþþ ðåţå, Ŵî-Fî þåššŵöŕðš, åñð öţĥéŕ šéţţîñĝš ţö Ĝööĝļé šéŕVéŕš one two three four five six seven eight]</string>
+    <string name="basic_battery_saver_summary">(M)[Ļîḿîţš Vîšûåļ éƒƒéçţš åñð ɓåçķĝŕöûñð åçţîVîţý. Ţûŕñš öñ Ðåŕķ ţĥéḿé, îƒ ñöţ åļŕéåðý öñ. one two three four five six seven eight nine]</string>
+    <string name="basic_battery_saver_title">(M)[Šţåñðåŕð βåţţéŕý ŠåVéŕ one two three]</string>
+    <string name="battery_manager_summary">(M)[Éхţéñð ɓåţţéŕý ļîƒé åñð öþţîḿîžé çĥåŕĝîñĝ one two three four five]</string>
+    <string name="battery_manager_summary_unsupported">(M)[Éхţéñð ɓåţţéŕý ļîƒé one two three]</string>
+    <string name="battery_missing_link_message">(M)[Ļéåŕñ ḿöŕé one two]</string>
+    <string name="battery_saver_reminder_category">(M)[Ŕéḿîñðéŕš one two]</string>
+    <string name="battery_saver_reminder_switch_summary">(M)[Ĝéţ ŕéḿîñðéŕš ŵĥéñ ɓåţţéŕý îš ļöŵ one two three four]</string>
+    <string name="battery_saver_reminder_switch_title">(M)[βåţţéŕý ŠåVéŕ ŕéḿîñðéŕš one two three]</string>
+    <string name="battery_saver_schedule_category">(M)[Šçĥéðûļé one two]</string>
+    <string name="battery_saver_schedule_switch_summary">(M)[βåţţéŕý ŠåVéŕ ţûŕñš öñ ŵĥéñ ɓåţţéŕý ƒåļļš ţö å ļéVéļ ýöû šéţ one two three four five six seven]</string>
+    <string name="battery_saver_schedule_switch_title">(M)[Ţûŕñ öñ ɓåšéð öñ ɓåţţéŕý ļéVéļ one two three four]</string>
+    <string name="battery_schedule_summary">(M)[Ḿåñåĝé ŵĥéñ βåţţéŕý ŠåVéŕ ţûŕñš öñ one two three four]</string>
+    <string name="battery_schedule_title">(M)[Šçĥéðûļé åñð ŕéḿîñðéŕš one two three]</string>
+    <string name="battery_tip_battery_health_learn_more_description">(M)[Ļéåŕñ ḿöŕé åɓöûţ ɓåţţéŕý ĥéåļţĥ one two three four]</string>
+    <string name="battery_tip_battery_health_reduced_title">(M)[βåţţéŕý çåþåçîţý îš ŕéðûçéð one two three four]</string>
+    <string name="battery_tip_battery_health_unknown_title">(M)[Çåñ’ţ ðéţéçţ ɓåţţéŕý ĥéåļţĥ one two three four]</string>
+    <string name="battery_tip_limited_temporarily_extra_summary">(M)[Ţö þŕöţéçţ ýöûŕ ɓåţţéŕý, çĥåŕĝîñĝ îš þåûšéð åţ %1$s ŵĥîļé ýöûŕ ţåɓļéţ îš ðöçķéð one two three four five six seven eight]</string>
+    <string name="battery_tip_smart_battery_summary">(M)[Ţûŕñ öñ ÅðåþţîVé βåţţéŕý one two three]</string>
+    <string name="clear_calling_footer">"(M)[Ţö þŕöţéçţ ýöûŕ þŕîVåçý, Çļéåŕ Çåļļîñĝ ðöéš ñöţ šéñð åûðîö öŕ çöñVéŕšåţîöñš ţö Ĝööĝļé.
+
+Çļéåŕ Çåļļîñĝ ŵöŕķš öñ Ŵî‑Fî çåļļîñĝ åñð ḿöšţ ñéţŵöŕķš, ñöţ åVåîļåɓļé ƒöŕ 3Ĝ ñéţŵöŕķš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven]"</string>
+    <string name="clear_calling_title">(M)[Çļéåŕ Çåļļîñĝ one two]</string>
+    <string name="clear_calling_toggle">(M)[Ûšé Çļéåŕ Çåļļîñĝ one two three]</string>
+    <string name="clear_calling_topintro">(M)[Ŕéðûçéš ɓåçķĝŕöûñð ñöîšéš ðûŕîñĝ çåļļš one two three four five]</string>
+    <string name="columbus_gesture_detected">(M)[qûîçķ Ţåþ ðéţéçţéð¡ one two three]</string>
+    <string name="columbus_gesture_enrollment_complete">(M)[Ðöñé one]</string>
+    <string name="columbus_gesture_enrollment_do_it_later">(M)[Ñöţ ñöŵ one two]</string>
+    <string name="columbus_gesture_enrollment_settings">(M)[Ĝö ţö Šéţţîñĝš one two three]</string>
+    <string name="columbus_gesture_enrollment_try_it">(M)[Ţŕý îţ one two]</string>
+    <string name="columbus_gesture_training_action_no_selection_error">(M)[Þļéåšé šéļéçţ åñ åçţîöñ ţö þéŕƒöŕḿ one two three four]</string>
+    <string name="columbus_gesture_training_action_text">(M)[Šéļéçţ ŵĥåţ ĥåþþéñš ŵĥéñ ýöû ûšé qûîçķ Ţåþ. Ýöû çåñ çĥåñĝé ţĥîš ļåţéŕ îñ šéţţîñĝš. one two three four five six seven eight nine]</string>
+    <string name="columbus_gesture_training_action_title">(M)[Çĥööšé qûîçķ Ţåþ öþţîöñ one two three]</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture">(M)[… Ðöûɓļé-ţåþ 1 öûţ öƒ 2 ðéţéçţéð one two three four five six seven eight]</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_text">(M)[Ļéţ’š ţŕý ţĥåţ öñçé ḿöŕé. qûîçķļý ţåþ ţĥé ɓåçķ öƒ ýöûŕ þĥöñé ţŵîçé. one two three four five six seven eight]</string>
+    <string name="columbus_gesture_training_enrolling_first_gesture_title">(M)[Ñîçé¡ one]</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture">(M)[… Ðöûɓļé-ţåþ 2 öûţ öƒ 2 ðéţéçţéð one two three four five six seven eight]</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_text">(M)[Ýöû’ŕé ŕéåðý ţö šţåŕţ ûšîñĝ qûîçķ Ţåþ one two three four five]</string>
+    <string name="columbus_gesture_training_enrolling_second_gesture_title">(M)[Ýöû ĝöţ îţ¡ one two]</string>
+    <string name="columbus_gesture_training_enrolling_text">(M)[qûîçķļý ţåþ ţĥé ɓåçķ öƒ ýöûŕ þĥöñé ţŵîçé. one two three four five]</string>
+    <string name="columbus_gesture_training_enrolling_title">(M)[Ţŕý qûîçķ Ţåþ one two]</string>
+    <string name="columbus_gesture_training_finished_text">(M)[Ţö çĥåñĝé ţĥé ţåþ šţŕéñĝţĥ ñééðéð ţö ûšé qûîçķ Ţåþ, ĝö ţö Šéţţîñĝš. one two three four five six seven eight]</string>
+    <string name="columbus_gesture_training_finished_title">(M)[Ýöû’Vé šéţ ûþ qûîçķ Ţåþ one two three]</string>
+    <string name="columbus_gesture_training_intro_text_accidental">(M)[Ýöû‘Vé ĵûšţ ţåþþéð ţŵîçé öñ ţĥé ɓåçķ öƒ ýöûŕ ðéVîçé, ŵĥîçĥ åļļöŵš ýöû ţö ûšé ýöûŕ Åššîšţåñţ öñ ţĥé ĝö. Ýöû çåñ çûšţöḿîžé ţĥîš ĝéšţûŕé îñ šéţţîñĝš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six]</string>
+    <string name="columbus_gesture_training_intro_text_suw">(M)[Ţåķé å šçŕééñšĥöţ, šĥöŵ ñöţîƒîçåţîöñš, öŕ šţåŕţ åñöţĥéŕ åçţîöñ îñ ţŵö ţåþš. one two three four five six seven eight]</string>
+    <string name="columbus_gesture_training_intro_title">(M)[qûîçķ Ţåþ ƒöŕ Qûîçķ åçţîöñš one two three four]</string>
+    <string name="columbus_gesture_training_launch_no_selection_error">(M)[Þļéåšé šéļéçţ åñ åþþ ţö öþéñ one two three four]</string>
+    <string name="columbus_gesture_training_launch_text">(M)[Šéļéçţ ţĥé åþþ ýöû’ð ļîķé ţö öþéñ ŵĥéñ ýöû ûšé qûîçķ Ţåþ. one two three four five six seven]</string>
+    <string name="columbus_gesture_training_launch_title">(M)[Çĥööšé åþþ ţö öþéñ one two three]</string>
+    <string name="columbus_launch_app_extra_widget_a11y_label">(M)[%1$s šĥöŕţçûţ šéţţîñĝš one two three]</string>
+    <string name="columbus_launch_settings_activity_title">(M)[qûîçķ Ţåþ šéţţîñĝš one two three]</string>
+    <string name="columbus_name">(M)[qûîçķ Ţåþ one two]</string>
+    <string name="columbus_radio_button_extra_widget_a11y_label">(M)[%1$s šéţţîñĝš one two]</string>
+    <string name="columbus_setting_action_assistant_title">(M)[Åççéšš ýöûŕ ðîĝîţåļ åššîšţåñţ one two three four]</string>
+    <string name="columbus_setting_action_flashlight_title">(M)[Ţöĝĝļé ƒļåšĥļîĝĥţ one two three]</string>
+    <string name="columbus_setting_action_launch_summary_no_selection">(M)[Ñö åþþ šéļéçţéð one two three]</string>
+    <string name="columbus_setting_action_launch_summary_not_installed">(M)[Åþþ ñöţ îñšţåļļéð one two three]</string>
+    <string name="columbus_setting_action_launch_title">(M)[Öþéñ åþþ one two]</string>
+    <string name="columbus_setting_action_notification_title">(M)[Šĥöŵ ñöţîƒîçåţîöñš one two three]</string>
+    <string name="columbus_setting_action_open_app_title">(M)[Öþéñ åþþ one two]</string>
+    <string name="columbus_setting_action_overview_title">(M)[Šéé ŕéçéñţ åþþš one two three]</string>
+    <string name="columbus_setting_action_play_pause_title">(M)[Þļåý öŕ þåûšé ḿéðîå one two three]</string>
+    <string name="columbus_setting_action_screenshot_title">(M)[Ţåķé šçŕééñšĥöţ one two three]</string>
+    <string name="columbus_setting_actions_title">(M)[Ţåþ ɓåçķ öƒ þĥöñé ţŵîçé ţö one two three four]</string>
+    <string name="columbus_setting_additional_settings_title">(M)[qûîçķ Ţåþ šţŕéñĝţĥ one two three]</string>
+    <string name="columbus_setting_app_selection_help_text">(M)[Šéļéçţ åñ åþþ ţö öþéñ ŵĥéñ ýöû ţåþ ţĥé ɓåçķ öƒ ýöûŕ þĥöñé ţŵîçé. Îƒ ýöû ûñîñšţåļļ ţĥé åþþ, qûîçķ Ţåþ ţûŕñš öƒƒ ûñţîļ ýöû šéļéçţ å ðîƒƒéŕéñţ åþþ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen]</string>
+    <string name="columbus_setting_app_shortcut_selection_help_text">(M)[Šéļéçţ ŵĥåţ ĥåþþéñš ŵĥéñ ýöû öþéñ ţĥîš åþþ ûšîñĝ qûîçķ Ţåþ. one two three four five six seven]</string>
+    <string name="columbus_setting_enable_switch_title">(M)[Ûšé qûîçķ Ţåþ one two]</string>
+    <string name="columbus_setting_sensitivity_title">(M)[ŔéQûîŕé šţŕöñĝéŕ ţåþš one two three]</string>
+    <string name="columbus_title">(M)[qûîçķ Ţåþ ţö šţåŕţ åçţîöñš one two three four]</string>
+    <string name="communal_lock_screen_summary">(M)[ÞŕîVåçý, ñöţîƒîçåţîöñš, åñð Ĥöḿé çöñţŕöļš one two three four five]</string>
+    <string name="communal_other">(M)[Öţĥéŕ one]</string>
+    <string name="communal_settings_summary">(M)[Ðöçķ åñð ļöçķ šçŕééñ öþţîöñš one two three four]</string>
+    <string name="communal_settings_title">(M)[Ĥûɓ ḿöðé one two]</string>
+    <string name="communal_smartspace_summary">(M)[Ŕéḿîñðéŕš, åļéŕţš, åñð ḿöŕé ƒŕöḿ Åššîšţåñţ one two three four five]</string>
+    <string name="communal_smartspace_title">(M)[Åţ å ĝļåñçé one two]</string>
+    <string name="communal_what_to_show">(M)[Ŵĥåţ ţö šĥöŵ one two]</string>
+    <string name="communal_what_to_use">(M)[Ŵĥåţ ţö ûšé one two]</string>
+    <string name="connectivity_helper_call_quality_category">(M)[Çåļļ Qûåļîţý one two]</string>
+    <string name="connectivity_helper_call_quality_summary">(M)[Ĝéţ ñöţîƒîéð åɓöûţ çåûšéš öƒ çöññéçţîöñ îššûéš ðûŕîñĝ çåļļš one two three four five six seven]</string>
+    <string name="connectivity_helper_call_quality_title">(M)[Ĝéţ ñöţîƒîçåţîöñš one two three]</string>
+    <string name="connectivity_helper_d2d_summary">(M)[Ñöţîƒý ţĥé öţĥéŕ þéŕšöñ ŵĥéñ ýöûŕ þĥöñé ĥåš çöññéçţîöñ îššûéš ðûŕîñĝ çåļļš one two three four five six seven eight]</string>
+    <string name="connectivity_helper_d2d_title">(M)[Šĥåŕé çöññéçţîöñ îñƒö one two three]</string>
+    <string name="connectivity_helper_footnote">(M)[Ýöû çåñ šĥåŕé çöññéçţîöñ îñƒö ŵĥéñ ţĥé öţĥéŕ çåļļéŕ îš ûšîñĝ å šûþþöŕţéð ðéVîçé åñð ñéţŵöŕķ one two three four five six seven eight nine ten]</string>
+    <string name="content_capture">(M)[Þéŕšöñåļîžé ûšîñĝ åþþ ðåţå one two three four]</string>
+    <string name="content_protection_preference_subpage_info">"(M)[Ţĥîš îš å þŕöţéçţéð šéçûŕîţý ƒéåţûŕé. Ñö ðéVîçé öŕ þéŕšöñåļ îñƒö îš šĥåŕéð ŵîţĥ Ĝööĝļé. 
+
+Þĥîšĥîñĝ îš åñ åţţéḿþţ ţö šţéåļ šîĝñ-îñ çŕéðéñţîåļš öŕ öţĥéŕ þéŕšöñåļ îñƒö. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine]"</string>
+    <string name="content_protection_preference_subpage_summary">(M)[Šçåññîñĝ ŕûñš þŕîVåţéļý ŕîĝĥţ öñ ýöûŕ ðéVîçé, çĥéçķîñĝ åþþ åçţîVîţý ƒöŕ þĥîšĥîñĝ öŕ öţĥéŕ ðéçéþţîVé ɓéĥåVîöŕ. Îƒ îţ’š ðéţéçţéð, šöḿé åþþ îñƒö îš šéñţ ţö Ĝööĝļé Þļåý Þŕöţéçţ ţö çöñƒîŕḿ ţĥé ţĥŕéåţ åñð ŵåŕñ åþþ ûšéŕš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen]</string>
+    <string name="dark_ui_text">(M)[Ðåŕķ ţĥéḿé ûšéš å ɓļåçķ ɓåçķĝŕöûñð ţö ĥéļþ ķééþ ýöûŕ ɓåţţéŕý åļîVé ļöñĝéŕ. Ðåŕķ ţĥéḿé šçĥéðûļéš ŵåîţ ţö ţûŕñ öñ ûñţîļ ýöûŕ šçŕééñ îš öƒƒ. one two three four five six seven eight nine ten eleven twelve thirteen]</string>
+    <string name="debugging_data_title">(M)[Ðéɓûĝĝîñĝ ðåţå one two three]</string>
+    <string name="discover_tips_button">(M)[ÐîšçöVéŕ ţîþš one two]</string>
+    <string name="dock_setup_notification_text">(M)[]</string>
+    <string name="dock_summary_charging_phone">(M)[Çĥåŕĝîñĝ þĥöñé one two three]</string>
+    <string name="double_twist_for_camera_mode_summary">(M)[Ţö šŵîţçĥ îñ åñð öûţ öƒ šéļƒîé ḿöðé îñ Ĝööĝļé Çåḿéŕå, ðöûɓļé-ţŵîšţ ŵĥéñ ýöû’ŕé îñ ţĥé åþþ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen]</string>
+    <string name="dream_no_screen_saver_caption">(M)[]</string>
+    <string name="dream_no_screen_saver_description">(M)[]</string>
+    <string name="dream_no_screen_saver_preview_caption">(M)[]</string>
+    <string name="dream_secondary_button_title">(M)[]</string>
+    <string name="duration_less_than_one_minute">(M)[Ļéšš ţĥåñ 1 ḿîñûţé one two three]</string>
+    <string name="extreme_battery_saver_summary">(M)[Îñçļûðéš åļļ çĥåñĝéš ļîšţéð åɓöVé. Åļšö þåûšéš ñöñ-éššéñţîåļ åþþš åñð ţĥéîŕ ñöţîƒîçåţîöñš. one two three four five six seven eight nine ten]</string>
+    <string name="extreme_battery_saver_title">(M)[Éхţŕéḿé βåţţéŕý ŠåVéŕ one two three]</string>
+    <string name="face_confirmation_hide_illustration_description">(M)[Ñöŵ ŵĥéñ ýöû þîçķ ûþ ýöûŕ þĥöñé öŕ ţåþ ţĥé šçŕééñ, ýöû çåñ ûšé ýöûŕ ƒåçé ţö ûñļöçķ. one two three four five six seven eight nine]</string>
+    <string name="face_confirmation_info_enough_light">(M)[Fåçé Ûñļöçķ ŵöŕķš ɓéšţ ŵĥéñ ţĥéŕé’š éñöûĝĥ ļîĝĥţ åñð ýöû’ŕé ñöţ ŵéåŕîñĝ å ḿåšķ öŕ ðåŕķ ĝļåššéš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen]</string>
+    <string name="face_confirmation_info_outside_screen">(M)[Fåçé Ûñļöçķ ŵöŕķš ƒŕöḿ ţĥé öûţšîðé šçŕééñ öñļý one two three four five six]</string>
+    <string name="face_enrolling_center_head">(M)[Fîţ ýöûŕ ƒåçé îñ ţĥé îññéŕ ƒŕåḿé one two three four]</string>
+    <string name="face_enrolling_close_to_continue">(M)[Föļð þĥöñé ðûŕîñĝ šéţûþ one two three]</string>
+    <string name="face_enrolling_close_to_continue_description">(M)[Ţĥé þĥöñé ḿûšţ ɓé ƒöļðéð ţö šéţ ûþ öŕ ûšé Fåçé Ûñļöçķ one two three four five six]</string>
+    <string name="face_enrolling_description">(M)[Çåþţûŕé åļļ åñĝļéš öƒ ýöûŕ ƒåçé ɓý ŕéḿöVîñĝ åļļ ţĥé ţîļéš. one two three four five six seven]</string>
+    <string name="face_enrolling_do_it_later">(M)[Ðö îţ ļåţéŕ one two]</string>
+    <string name="face_enrolling_gaze_dialog_cancel">(M)[Çåñçéļ one two]</string>
+    <string name="face_enrolling_gaze_dialog_continue">(M)[Šéţ ûþ ŵîţĥöûţ éýéš öþéñ one two three]</string>
+    <string name="face_enrolling_gaze_dialog_message">(M)[Ðö ýöû ŵåñţ ţö šéţ ûþ Fåçé Ûñļöçķ ŵîţĥöûţ ŕéQûîŕîñĝ ýöûŕ éýéš ţö ɓé öþéñ¿ Îƒ ýöû šéţ ûþ ţĥîš ŵåý, šöḿéöñé çåñ ûñļöçķ ýöûŕ þĥöñé ɓý þöîñţîñĝ îţ åţ ýöûŕ ƒåçé ŵĥéñ ýöû’ŕé ñöţ åŵåŕé. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve]</string>
+    <string name="face_enrolling_gaze_dialog_title">(M)[Šéţ ûþ ŵîţĥöûţ éýéš öþéñ one two three]</string>
+    <string name="face_enrolling_how_to_setup">(M)[Ĥöŵ ţö šéţ ûþ one two]</string>
+    <string name="face_enrolling_title">(M)[Ĥöļð ţĥé þĥöñé šţîļļ. Ŕöţåţé ýöûŕ ĥéåð. Ĝö šļöŵ. one two three four five six]</string>
+    <string name="face_enrolling_title_accessibility">(M)[Ļööķ ðîŕéçţļý åţ ýöûŕ þĥöñé one two three four]</string>
+    <string name="face_enrolling_title_accessibility_progress">(M)[Ķééþ ļööķîñĝ ðîŕéçţļý åţ ýöûŕ þĥöñé one two three four]</string>
+    <string name="face_enrolling_too_close">(M)[ḾöVé þĥöñé ƒåŕţĥéŕ åŵåý one two three]</string>
+    <string name="face_enrolling_too_far">(M)[ḾöVé þĥöñé çļöšéŕ one two three]</string>
+    <string name="face_enrolling_too_high">(M)[ḾöVé þĥöñé ļöŵéŕ one two three]</string>
+    <string name="face_enrolling_too_left">(M)[ḾöVé þĥöñé ţö ýöûŕ ŕîĝĥţ one two three]</string>
+    <string name="face_enrolling_too_low">(M)[ḾöVé þĥöñé ĥîĝĥéŕ one two three]</string>
+    <string name="face_enrolling_too_right">(M)[ḾöVé þĥöñé ţö ýöûŕ ļéƒţ one two three]</string>
+    <string name="face_enrolling_turn_head_to_arrow">(M)[Ţûŕñ ýöûŕ ĥéåð ţöŵåŕð ţĥé åŕŕöŵ one two three four]</string>
+    <string name="face_enrolling_turned_too_far">(M)[Ţûŕñ ĥéåð å ļîţţļé ļéšš one two three]</string>
+    <string name="fast_pair_device_not_found_dialog_title">(M)[Fåîļéð ţö çöññéçţ one two three]</string>
+    <string name="fast_pair_device_not_found_other_device_description">(M)[ḾöVé ţĥîš ðéVîçé çļöšéŕ ţö ýöûŕ Þîхéļ þĥöñé åñð ţŕý åĝåîñ. one two three four five six seven]</string>
+    <string name="fast_pair_device_not_found_tws_headphone_description">(M)[Öþéñ ţĥé éåŕɓûðš çåšé åñð ḿöVé îţ çļöšéŕ ţö ýöûŕ Þîхéļ þĥöñé, ţĥéñ ţŕý åĝåîñ. one two three four five six seven eight]</string>
+    <string name="fingerprint_unlock_set_unlock_password">(M)[Ñéхûš Îḿþŕîñţ + Þåššŵöŕð one two three]</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">(M)[Ñéхûš Îḿþŕîñţ + Þåţţéŕñ one two three]</string>
+    <string name="fingerprint_unlock_set_unlock_pin">(M)[Ñéхûš Îḿþŕîñţ + ÞÎÑ one two three]</string>
+    <string name="fingerprint_unlock_skip_fingerprint">(M)[Çöñţîñûé ŵîţĥöûţ Ñéхûš Îḿþŕîñţ one two three four]</string>
+    <string name="firmware_update_accessory_version_number_title">(M)[Åççéššöŕý ƒîŕḿŵåŕé one two three]</string>
+    <string name="firmware_update_status_category">(M)[ÐéVîçé ƒîŕḿŵåŕé šţåţûš one two three]</string>
+    <string name="firmware_update_status_title">(M)[Fîŕḿŵåŕé ûþðåţé åVåîļåɓļé one two three]</string>
+    <string name="firmware_update_version_number_category">(M)[ÐéVîçé ƒîŕḿŵåŕé Véŕšîöñ one two three]</string>
+    <string name="firmware_update_version_number_title">(M)[Þîхéļ ķéýɓöåŕð ƒîŕḿŵåŕé one two three]</string>
+    <string name="fullbackup_data_summary">"(M)[Åûţöḿåţîçåļļý ɓåçķ ûþ ðéVîçé ðåţå (šûçĥ åš Ŵî-Fî þåššŵöŕðš åñð çåļļ ĥîšţöŕý) åñð åþþ ðåţå (šûçĥ åš šéţţîñĝš åñð ƒîļéš šţöŕéð ɓý åþþš) ţö Ĝööĝļé ÐŕîVé.
+
+Ŵĥéñ ýöû ţûŕñ öñ åûţöḿåţîç ɓåçķûþ, ðéVîçé åñð åþþ ðåţå îš þéŕîöðîçåļļý šåVéð ţö å þŕîVåţé ƒöļðéŕ îñ Ĝööĝļé ÐŕîVé. Åþþ ðåţå çåñ ɓé åñý ðåţå ţĥåţ åñ åþþ ĥåš šåVéð (ɓåšéð öñ ðéVéļöþéŕ šéţţîñĝš), îñçļûðîñĝ þöţéñţîåļļý šéñšîţîVé ðåţå šûçĥ åš çöñţåçţš, ḿéššåĝéš, åñð þĥöţöš.
+
+βåçķûþ ðåţå ŵîļļ ñöţ çöûñţ ţöŵåŕðš ýöûŕ ÐŕîVé šţöŕåĝé Qûöţå. Ļåŕĝé ƒîļéš, öŕ ƒîļéš ðéVéļöþéŕš ĥåVé çĥöšéñ ţö éхçļûðé ƒŕöḿ ţĥé šéŕVîçé ŵîļļ ñöţ ɓé ɓåçķéð ûþ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen]"</string>
+    <string name="fullbackup_erase_dialog_message">(M)[Šţöþ ɓåçķîñĝ ûþ ðéVîçé ðåţå (šûçĥ åš Ŵî-Fî þåššŵöŕðš åñð çåļļ ĥîšţöŕý) åñð åþþ ðåţå (šûçĥ åš šéţţîñĝš åñð ƒîļéš šţöŕéð ɓý åþþš), þļûš éŕåšé åļļ çöþîéš öñ Ĝööĝļé ÐŕîVé¿ one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine]</string>
+    <string name="gesture_settings_activity_title">(M)[Ĝéšţûŕé ÑåVîĝåţîöñ one two three]</string>
+    <string name="install_unknown_applications">(M)[Åļļöŵ îñšţåļļåţîöñ öƒ åþþš ƒŕöḿ šöûŕçéš öţĥéŕ ţĥåñ ţĥé Þļåý Šţöŕé one two three four five six seven]</string>
+    <string name="keywords_accessibility_menu">(M)[ḿöţöŕ, Qûîçķ ḿéñû, åššîšţîVé ḿéñû, ţöûçĥ, ðéхţéŕîţý, åŕţĥŕîţîš, ŕšî, šţŕöķé, ţŕéḿöŕ, ḿûļţîþļé šçļéŕöšîš, çéŕéɓŕåļ þåļšý, ɓûţţöñ, ĥåŕðŵåŕé, þŕéšš, ŕéþéţîţîVé šţŕåîñ îñĵûŕý, ĥåñð, þåîñ, åççéššîɓļé, ĥéļþ one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen]</string>
+    <string name="keywords_adaptive_alert_vibration">(M)[ĥåþţîçš, Vîɓŕåţé, þĥöñé, çåļļ, ŕîñĝ, åļéŕţ, ñöţîƒîçåţîöñš, ļöûð, Qûîéţ, ñöîšé, çåšé, åðåþţîVé one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen]</string>
+    <string name="keywords_adaptive_charging">(M)[çĥåŕĝé, çĥåŕĝîñĝ, šḿåŕţ çĥåŕĝîñĝ, åðåþţîVé çĥåŕĝîñĝ, ɓåţţéŕý, ɓåţţéŕý ĥéåļţĥ one two three four five six seven eight nine ten eleven twelve thirteen fourteen]</string>
+    <string name="keywords_battery_share">(M)[ɓåţţéŕý šĥåŕé, ŵîŕéļéšš çĥåŕĝîñĝ one two three four]</string>
+    <string name="keywords_battery_share_settings">(M)[ɓåţţéŕý šĥåŕé, ŕéVéŕšé ŵîŕéļéšš çĥåŕĝîñĝ one two three four five]</string>
+    <string name="keywords_gesture">(M)[ĝéšţûŕé, ḿöVéš one two three]</string>
+    <string name="keywords_hearing_devices">(M)[ĥåŕð öƒ ĥéåŕîñĝ, ĥéåŕîñĝ ļöšš, ÞŠÅÞ one two three four]</string>
+    <string name="keywords_limited_warranty">(M)[ŵåŕŕåñţý, ĝûåŕåñţéé, ļîḿîţéð ŵåŕŕåñţý, þŕöḿîšé, ŕéþåîŕ, ŕḿå, ŕéþļåçéḿéñţ one two three four five six seven eight nine ten eleven twelve thirteen fourteen]</string>
+    <string name="keywords_live_transcribe">(M)[Çåþţîöñš, çļöšéð çåþţîöñš, ÇÇ, ĻîVé Çåþţîöñ, ĥåŕð öƒ ĥéåŕîñĝ, ĥéåŕîñĝ ļöšš, ÇÅŔŢ, šþééçĥ ţö ţéхţ, šûɓţîţļé one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen]</string>
+    <string name="keywords_reverse_charging_stop_threshold">(M)[Šţöþ šĥåŕîñĝ ɓåţţéŕý ŵĥéñ þĥöñé ŕéåçĥéš: one two three four five]</string>
+    <string name="keywords_select_to_speak">(M)[Ĥéåŕ ţéхţ, ŕéåð åļöûð, šþéåķ šçŕééñ, šçŕééñ ŕéåðéŕ one two three four five six]</string>
+    <string name="keywords_sound_amplifier">(M)[ÞŠÅÞ, åḿþļîƒý, šöûñð åḿþļîƒîçåţîöñ, ĥåŕð öƒ ĥéåŕîñĝ, ĥéåŕîñĝ ļöšš, åḿþļîƒîçåţîöñ one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen]</string>
+    <string name="keywords_sound_notifications">(M)[Ñöţîƒîçåţîöñš, ĥåŕð öƒ ĥéåŕîñĝ, ĥéåŕîñĝ ļöšš, ñöţîƒý one two three four five six]</string>
+    <string name="keywords_switch_access">(M)[ḿöţöŕ, šŵîţçĥ, ĥåñð, ÅŢ, åššîšţîVé ţéçĥñöļöĝý, þåŕåļýšîš, ÅĻŠ, šçåññîñĝ, šţéþ šçåññîñĝ one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen]</string>
+    <string name="keywords_talkback">(M)[Šçŕééñ ŕéåðéŕ, νöîçé ÖVéŕ, νöîçéÖVéŕ, νöîçé Åššîšţåñçé, βļîñð, Ļöŵ νîšîöñ, ŢŢŠ, ţéхţ ţö šþééçĥ, šþöķéñ ƒééðɓåçķ one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen]</string>
+    <string name="keywords_touch_sensitivity">(M)[ţöûçĥ, šéñšîţîVîţý, šéñšîţîVé, šçŕééñ þŕöţéçţöŕ, ƒîļḿ, ŕéšþöñšîVé, ŕéšþöñšîVéñéšš one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen]</string>
+    <string name="keywords_voice_access">(M)[Vöîçé, Vöîçé çöñţŕöļ, ḿöţöŕ, ĥåñð, ḿîç, ḿîçŕöþĥöñé, ðîçţåţîöñ, ţåļķ, çöñţŕöļ one two three four five six seven eight nine ten eleven twelve thirteen fourteen]</string>
+    <string name="led_preference_title">(M)[ĻÉÐ îñðîçåţöŕ þåţţéŕñš one two three]</string>
+    <string name="legal_source_code_description">(M)[Ðéţåîļš åɓöûţ ţĥé šöûŕçé çöðé ƒöŕ çöḿþöñéñţš ḿåðé åVåîļåɓļé åš öþéñ šöûŕçé çåñ ɓé ƒöûñð åţ ţĥé Þîхéļ ĥéļþ çéñţéŕ. one two three four five six seven eight nine ten eleven twelve]</string>
+    <string name="legal_source_code_title">(M)[Šöûŕçé çöðé one two]</string>
+    <string name="limited_warranty_introduction">(M)[Ţåþ ţĥé çöûñţŕý öƒ þûŕçĥåšé ţö Vîéŵ ţĥé ŵåŕŕåñţý ƒöŕ ţĥîš ðéVîçé. Ţĥé ŵåŕŕåñţý îš åļšö åVåîļåɓļé åţ ĝ.çö/ðéVîçéŵåŕŕåñţý one two three four five six seven eight nine ten eleven twelve]</string>
+    <string name="limited_warranty_title">(M)[Ļîḿîţéð Ŵåŕŕåñţý one two three]</string>
+    <string name="lockscreen_show_weather_summary">(M)[Šéé çûŕŕéñţ ŵéåţĥéŕ çöñðîţîöñš one two three four]</string>
+    <string name="lockscreen_show_weather_title">(M)[Šĥöŵ ŵéåţĥéŕ one two]</string>
+    <string name="my_device_info_account_preference_title">(M)[Ĝööĝļé Åççöûñţ one two three]</string>
+    <string name="owner_info_settings_edit_text_hint">(M)[É.ĝ., Ĵöé’š Þîхéļ. one two three]</string>
+    <string name="permit_debugging_data">(M)[Åļļöŵ ɓûĝ ŕéþöŕţ åççéšš one two three]</string>
+    <string name="play_application_detail_indication_summary">(M)[Çĥéçķ ƒöŕ ûþðåţéš one two three]</string>
+    <string name="play_application_update_entry_title">(M)[Åþþ ûþðåţéš one two]</string>
+    <string name="privatespace_retry_summary">(M)[Ýöû ñééð ţö šîĝñ îñ ţö å Ĝööĝļé Åççöûñţ ţö šéţ ûþ ÞŕîVåţé Šþåçé one two three four five six seven]</string>
+    <string name="repair_mode_active_summary">(M)[Îñ ŕéþåîŕ ḿöðé one two three]</string>
+    <string name="repair_mode_summary">(M)[Šéçûŕé éñVîŕöñḿéñţ ƒöŕ ðéVîçé ŕéþåîŕ one two three four five]</string>
+    <string name="repair_mode_title">(M)[Ŕéþåîŕ ḿöðé one two]</string>
+    <string name="request_google_account_summary">(M)[Åðð å Ĝööĝļé åççöûñţ one two three]</string>
+    <string name="reverse_charging_auto_turn_on_subtitle">(M)[Ŵîļļ ţûŕñ öñ åûţöḿåţîçåļļý ƒöŕ å šĥöŕţ þéŕîöð ŵĥéñ ýöûŕ þĥöñé îš þļûĝĝéð îñţö å çĥåŕĝéŕ one two three four five six seven eight nine]</string>
+    <string name="reverse_charging_auto_turn_on_title">(M)[Ţûŕñ öñ åûţöḿåţîçåļļý one two three]</string>
+    <string name="reverse_charging_charging_wirelessly_message">(M)[ÛñåVåîļåɓļé ɓéçåûšé þĥöñé çĥåŕĝîñĝ ŵîŕéļéššļý one two three four five]</string>
+    <string name="reverse_charging_detail_charging_overheat_message">(M)[βåţţéŕý Šĥåŕé îš ûñåVåîļåɓļé ɓéçåûšé Þîхéļ îš ţöö ĥöţ. Ŵåîţ ƒöŕ þĥöñé ţö çööļ ðöŵñ åñð ţŕý åĝåîñ. one two three four five six seven eight nine ten eleven]</string>
+    <string name="reverse_charging_detail_charging_wirelessly_message">(M)[βåţţéŕý Šĥåŕé îš ûñåVåîļåɓļé ɓéçåûšé þĥöñé îš çĥåŕĝîñĝ ŵîŕéļéššļý one two three four five six seven]</string>
+    <string name="reverse_charging_detail_footer_title">(M)[Ýöûŕ þĥöñé’š ɓåţţéŕý ŵîļļ ŕûñ öûţ ƒåšţéŕ ŵĥéñ ûšîñĝ βåţţéŕý Šĥåŕé. βåţţéŕý Šĥåŕé ŵöŕķš ŵîţĥ çöḿþåţîɓļé éåŕ ɓûðš, ŵåţçĥéš, þĥöñéš, åñð ḿöŕé. Föŕ ɓéţţéŕ çĥåŕĝîñĝ, ŕéḿöVé ýöûŕ þĥöñé’š çåšé. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen]</string>
+    <string name="reverse_charging_detail_footer_title_advanced">"(M)[βåţţéŕý Šĥåŕé ŵöŕķš ŵîţĥ çöḿþåţîɓļé éåŕ ɓûðš, þĥöñéš, åñð ḿöŕé.
+
+Ýöûŕ þĥöñé’š ɓåţţéŕý ŵîļļ ŕûñ öûţ ƒåšţéŕ ŵĥéñ ûšîñĝ ţĥîš ƒéåţûŕé. βåţţéŕý Šĥåŕé åûţöḿåţîçåļļý ţûŕñš öƒƒ åƒţéŕ å ƒéŵ ḿîñûţéš îƒ åñöţĥéŕ ðéVîçé îšñ’ţ ðéţéçţéð. Föŕ ɓéţţéŕ çĥåŕĝîñĝ, ŕéḿöVé ýöûŕ þĥöñé’š çåšé åñð öţĥéŕ îţéḿš ţĥåţ ḿåý îñţéŕƒéŕé, ļîķé ḿéţåļ öɓĵéçţš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen]"</string>
+    <string name="reverse_charging_detail_power_save_mode_is_on_message">(M)[βåţţéŕý Šĥåŕé îš ûñåVåîļåɓļé ɓéçåûšé βåţţéŕý ŠåVéŕ îš öñ one two three four five six seven]</string>
+    <string name="reverse_charging_detail_unplug_usb_cable_message">(M)[βåţţéŕý Šĥåŕé îš ûñåVåîļåɓļé ɓéçåûšé ÛŠβ-Ç ðéVîçé îš þļûĝĝéð îñ one two three four five six seven]</string>
+    <string name="reverse_charging_instructions_title">"(M)[Çĥåŕĝé öţĥéŕ ðéVîçéš ŵîţĥ ýöûŕ Þîхéļ.
+Fļîþ ýöûŕ þĥöñé öVéŕ ţö ţŕý. one two three four five six seven eight]"</string>
+    <string name="reverse_charging_is_off_summary">(M)[Öƒƒ one]</string>
+    <string name="reverse_charging_is_on_and_charging_summary">(M)[Šĥåŕîñĝ åñð çĥåŕĝîñĝ ɓåţţéŕý one two three four]</string>
+    <string name="reverse_charging_is_on_and_discharging_summary">(M)[Šĥåŕîñĝ ɓåţţéŕý one two three]</string>
+    <string name="reverse_charging_is_on_summary">(M)[Öñ / Çĥåŕĝé öţĥéŕ ðéVîçéš one two three]</string>
+    <string name="reverse_charging_main_switch">(M)[Ûšé βåţţéŕý Šĥåŕé one two three]</string>
+    <string name="reverse_charging_overheat_summary">(M)[ÛñåVåîļåɓļé ɓéçåûšé Þîхéļ îš ţöö ĥöţ. Ŵåîţ ƒöŕ þĥöñé ţö çööļ ðöŵñ åñð ţŕý åĝåîñ. one two three four five six seven eight nine]</string>
+    <string name="reverse_charging_power_save_mode_is_on_message">(M)[ÛñåVåîļåɓļé ɓéçåûšé βåţţéŕý ŠåVéŕ îš öñ one two three four five]</string>
+    <string name="reverse_charging_sharing_level_message">(M)[ÛñåVåîļåɓļé ɓéçåûšé ɓåţţéŕý îš ɓéļöŵ šĥåŕîñĝ ļéVéļ one two three four five six]</string>
+    <string name="reverse_charging_switch_title">(M)[Çĥåŕĝé öţĥéŕ ðéVîçéš ɓý þļåçîñĝ ţĥéḿ öñ ţĥé ɓåçķ öƒ ýöûŕ Þîхéļ one two three four five six seven]</string>
+    <string name="reverse_charging_title">(M)[βåţţéŕý Šĥåŕé one two]</string>
+    <string name="reverse_charging_unplug_usb_cable_message">(M)[ÛñåVåîļåɓļé ɓéçåûšé ÛŠβ-Ç ðéVîçé þļûĝĝéð îñ one two three four five]</string>
+    <string name="reverse_charging_warning_summary">(M)[ÛñåVåîļåɓļé ɓéçåûšé ɓåţţéŕý îš ûñðéŕ %1$s one two three four five]</string>
+    <string name="reverse_charging_warning_title">(M)[βåţţéŕý Šĥåŕé îš ûñåVåîļåɓļé ɓéçåûšé ɓåţţéŕý îš ûñðéŕ %1$s one two three four five six seven]</string>
+    <string name="rtt_settings_always_visible">(M)[Åļŵåýš Vîšîɓļé one two three]</string>
+    <string name="rtt_settings_no_visible">(M)[Ñöţ Vîšîɓļé one two]</string>
+    <string name="rtt_settings_title">(M)[Ŕéåļ-ţîḿé ţéхţ (ŔŢŢ) one two three]</string>
+    <string name="rtt_settings_visible_during_call">(M)[νîšîɓļé ðûŕîñĝ çåļļ one two three]</string>
+    <string name="screen_time_summary_usage_today">(M)[%1$s ţöðåý one two]</string>
+    <string name="search_bar_account_avatar_content_description">(M)[Þŕöƒîļé þîçţûŕé, ðöûɓļé ţåþ ţö öþéñ Ĝööĝļé Åççöûñţ one two three four five six]</string>
+    <string name="search_gesture_category_title">(M)[Šéåŕçĥ one two]</string>
+    <string name="search_gesture_feature_title">(M)[Çîŕçļé ţö Šéåŕçĥ one two three]</string>
+    <string name="search_long_press_home_button_summary">"(M)[Ţöûçĥ &amp;  ĥöļð ţĥé ĥöḿé ɓûţţöñ åţ ţĥé ɓöţţöḿ öƒ ţĥé šçŕééñ, ţĥéñ çîŕçļé öŕ ĥîĝĥļîĝĥţ åñýţĥîñĝ ţö šéåŕçĥ one two three four five six seven eight nine ten eleven]"</string>
+    <string name="search_press_hold_gesture_summary">"(M)[Ţöûçĥ &amp;  ĥöļð ţĥé ĥåñðļé åţ ţĥé ɓöţţöḿ öƒ ţĥé šçŕééñ, ţĥéñ çîŕçļé öŕ ĥîĝĥļîĝĥţ åñýţĥîñĝ ţö šéåŕçĥ one two three four five six seven eight nine ten]"</string>
+    <string name="security_dismiss_dialog_dismiss_button">(M)[Ðîšḿîšš one two]</string>
+    <string name="security_dismiss_dialog_title">(M)[Ðîšḿîšš ţĥîš ŵåŕñîñĝ¿ one two three]</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">(M)[Ţåþ ţö šéţ ûþ one two]</string>
+    <string name="security_settings_face_enroll_consent_introduction_title">(M)[Åļļöŵ Fåçé Ûñļöçķ one two three]</string>
+    <string name="security_settings_face_enroll_education_message">(M)[Öñ ţĥé ñéхţ šçŕééñ, ŕöţåţé ýöûŕ ĥéåð ţö çåþţûŕé åļļ åñĝļéš öƒ ýöûŕ ƒåçé one two three four five six seven eight]</string>
+    <string name="security_settings_face_enroll_error_timeout_dialog_title">(M)[Fåçé Ûñļöçķ šéţûþ ţîḿéð öûţ one two three four]</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp">(M)[Ñöŵ ýöû çåñ ûšé ýöûŕ ƒåçé ţö ûñļöçķ ýöûŕ þĥöñé öŕ Véŕîƒý îţ’š ýöû, ļîķé ŵĥéñ ýöû šîĝñ îñ ţö åþþš öŕ åþþŕöVé å þûŕçĥåšé one two three four five six seven eight nine ten eleven twelve]</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp_full">"(M)[Ñöŵ ýöû çåñ ûšé ýöûŕ ƒåçé ţö ûñļöçķ ýöûŕ þĥöñé öŕ Véŕîƒý îţ’š ýöû, ļîķé ŵĥéñ ýöû šîĝñ îñ ţö åþþš öŕ åþþŕöVé å þûŕçĥåšé.
+
+Fåçé Ûñļöçķ ŵöŕķš ɓéšţ ŵĥéñ ţĥéŕé’š éñöûĝĥ ļîĝĥţ åñð ýöû’ŕé ñöţ ŵéåŕîñĝ å ḿåšķ öŕ ðåŕķ ĝļåššéš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen]"</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp">"(M)[Ñöŵ ŵĥéñ ýöû þîçķ ûþ ýöûŕ þĥöñé öŕ ţåþ ţĥé šçŕééñ, ýöû çåñ ûšé ýöûŕ ƒåçé ţö ûñļöçķ.
+
+Fåçé Ûñļöçķ ŵöŕķš ɓéšţ ŵĥéñ ţĥéŕé’š éñöûĝĥ ļîĝĥţ åñð ýöû’ŕé ñöţ ŵéåŕîñĝ å ḿåšķ öŕ ðåŕķ ĝļåššéš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve]"</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp_folded">"(M)[Ñöŵ ŵĥéñ ýöû þîçķ ûþ ýöûŕ þĥöñé öŕ ţåþ ţĥé šçŕééñ, ýöû çåñ ûšé ýöûŕ ƒåçé ţö ûñļöçķ. Ýöûŕ þĥöñé ḿûšţ ɓé ƒöļðéð ţö ûšé Fåçé Ûñļöçķ.
+
+Fåçé Ûñļöçķ ŵöŕķš ɓéšţ ŵĥéñ ţĥéŕé’š éñöûĝĥ ļîĝĥţ åñð ýöû’ŕé ñöţ ŵéåŕîñĝ å ḿåšķ öŕ ðåŕķ ĝļåššéš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen]"</string>
+    <string name="security_settings_face_enroll_finish_title">(M)[Ļööķš ĝööð¡ one two]</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">(M)[Šéţûþ ƒöŕ ļîḿîţéð Vîšîöñ öŕ ĥéåð ḿöţîöñ one two three four five]</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">(M)[ŔéQûîŕé éýéš öþéñ one two three]</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">(M)[Ýöû åñð ýöûŕ çĥîļð åŕé îñ çöñţŕöļ one two three four]</string>
+    <string name="security_settings_face_enroll_introduction_control_title">(M)[Ýöû’ŕé îñ çöñţŕöļ one two three]</string>
+    <string name="security_settings_face_enroll_introduction_how_title">(M)[Ĥöŵ îţ ŵöŕķš one two]</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">(M)[Îƒ ýöûŕ çĥîļð ñöŕḿåļļý ŵéåŕš éýéĝļåššéš, ţĥéý çåñ ŵéåŕ ţĥéḿ ðûŕîñĝ šéţûþ. one two three four five six seven eight]</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">(M)[Ĝļåššéš öŕ ļîĝĥţļý ţîñţéð šûñĝļåššéš åŕé ÖĶ. one two three four five]</string>
+    <string name="security_settings_face_enroll_introduction_info_title">(M)[Ķééþ îñ ḿîñð one two]</string>
+    <string name="security_settings_face_enroll_introduction_title">(M)[Šéţ ûþ Fåçé Ûñļöçķ one two three]</string>
+    <string name="security_settings_face_enroll_next">(M)[Ñéхţ one]</string>
+    <string name="security_settings_face_enroll_partial_message">(M)[Ţö îḿþŕöVé þéŕƒöŕḿåñçé, ýöû çåñ šéţ ûþ Fåçé Ûñļöçķ åĝåîñ îñ Šéţţîñĝš one two three four five six seven eight]</string>
+    <string name="security_settings_face_enroll_partial_start_over">(M)[Šţåŕţ öVéŕ one two]</string>
+    <string name="security_settings_face_enroll_partial_title">(M)[Fåçé Ûñļöçķ šéţûþ ƒîñîšĥéð one two three four]</string>
+    <string name="security_settings_face_enroll_timeout_message">"(M)[Ţŕý ƒåšţ šéţûþ îñšţéåð. Ķééþ îñ ḿîñð, ýöûŕ ĥéåð ḿåý ñééð ţö ɓé ḿöŕé ðîŕéçţļý îñ ƒŕöñţ öƒ ýöûŕ þĥöñé ŵĥéñ ûšîñĝ Fåçé Ûñļöçķ.
+
+Ţö îḿþŕöVé þéŕƒöŕḿåñçé, ýöû çåñ šéţ ûþ Fåçé Ûñļöçķ åĝåîñ îñ Šéţţîñĝš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen]"</string>
+    <string name="security_settings_face_enroll_timeout_title">(M)[Çåñ’ţ çöñţîñûé šéţûþ one two three]</string>
+    <string name="security_settings_face_enroll_timeout_try_again">(M)[Ţŕý åĝåîñ one two]</string>
+    <string name="security_settings_face_enroll_timeout_use_fast_setup">(M)[Ûšé ƒåšţ šéţûþ one two three]</string>
+    <string name="security_settings_face_enroll_too_hot_exit_setup">(M)[Éхîţ šéţûþ one two]</string>
+    <string name="security_settings_face_enroll_too_hot_message">(M)[Fåçé Ûñļöçķ šéţûþ çåñ’ţ ɓé çöḿþļéţéð ɓéçåûšé ţĥé þĥöñé îš ţöö ĥöţ. Ţŕý åĝåîñ ļåţéŕ ŵĥéñ ţĥé þĥöñé çööļš ðöŵñ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen]</string>
+    <string name="security_settings_face_enroll_too_hot_skip_face_unlock">(M)[Šķîþ Fåçé Ûñļöçķ one two three]</string>
+    <string name="security_settings_face_enroll_too_hot_title">(M)[Þĥöñé îš ţöö ĥöţ one two three]</string>
+    <string name="security_settings_face_preference_summary_none">(M)[Ţåþ ţö šéţ ûþ ƒåçé one two three]</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"(M)[Ŵîţĥ Ñéхûš Îḿþŕîñţ, ýöû çåñ ûšé ýöûŕ ƒîñĝéŕþŕîñţ ţö åûţĥöŕîžé þûŕçĥåšéš öŕ šîĝñ îñ ţö åþþš.
+
+βé çåŕéƒûļ ŵĥöšé ƒîñĝéŕþŕîñţš ýöû åðð. Åñý ƒîñĝéŕþŕîñţš åððéð ŵîļļ ɓé åɓļé ţö ðö ţĥéšé ţĥîñĝš.
+
+Ñöţé: Ýöû çåñ’ţ ûšé ýöûŕ ƒîñĝéŕþŕîñţ ţö ûñļöçķ ţĥîš ðéVîçé. Föŕ ḿöŕé îñƒöŕḿåţîöñ, çöñţåçţ ýöûŕ öŕĝåñîžåţîöñ’š åðḿîñ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve]"</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">(M)[Ûñļöçķ ŵîţĥ Ñéхûš Îḿþŕîñţ one two three]</string>
+    <string name="security_settings_fingerprint_enroll_repeat_title_immobile_overlay">(M)[]</string>
+    <string name="security_settings_fingerprint_preference_summary_none">(M)[Ţåþ ţö šéţ ûþ ƒîñĝéŕþŕîñţ one two three]</string>
+    <string name="security_settings_fingerprint_preference_title">(M)[Ñéхûš Îḿþŕîñţ one two]</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">(M)[Þîхéļ Îḿþŕîñţ çŕéåţéš å ûñîQûé ḿöðéļ öƒ ýöûŕ ƒîñĝéŕþŕîñţ ţö Véŕîƒý îţ’š ýöû. Ţö çŕéåţé ţĥîš ƒîñĝéŕþŕîñţ ḿöðéļ ðûŕîñĝ šéţûþ, ýöû ŵîļļ ţåķé îḿåĝéš öƒ ýöûŕ ƒîñĝéŕþŕîñţ ƒŕöḿ ðîƒƒéŕéñţ þöšîţîöñš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen]</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">(M)[Þîхéļ Îḿþŕîñţ çŕéåţéš å ûñîQûé ḿöðéļ öƒ ýöûŕ çĥîļð’š ƒîñĝéŕþŕîñţ ţö Véŕîƒý îţ’š ţĥéḿ. Ţö çŕéåţé ţĥîš ƒîñĝéŕþŕîñţ ḿöðéļ ðûŕîñĝ šéţûþ, ţĥéý ŵîļļ ţåķé îḿåĝéš öƒ ţĥéîŕ ƒîñĝéŕþŕîñţ ƒŕöḿ ðîƒƒéŕéñţ þöšîţîöñš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen]</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"(M)[Ļéåŕñ ḿöŕé åɓöûţ Þîхéļ ƒîñĝéŕþŕîñţ ûñļöçķ åţ &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;ĝ.çö/þîхéļ/ƒîñĝéŕþŕîñţûñļöçķ&lt;/a&gt;. one two three four five six seven eight]"</string>
+    <string name="security_settings_sfps_enroll_finger_center_title_immobile_overlay">(M)[]</string>
+    <string name="security_settings_sfps_enroll_fingertip_title_immobile_overlay">(M)[]</string>
+    <string name="security_settings_sfps_enroll_left_edge_title_immobile_overlay">(M)[]</string>
+    <string name="security_settings_sfps_enroll_right_edge_title_immobile_overlay">(M)[]</string>
+    <string name="security_settings_work_fingerprint_preference_title">(M)[Þîхéļ Îḿþŕîñţ ƒöŕ ŵöŕķ one two three]</string>
+    <string name="setup_fingerprint_enroll_immobile_help_continue">(M)[]</string>
+    <string name="setup_fingerprint_enroll_immobile_help_subtitle">(M)[]</string>
+    <string name="setup_fingerprint_enroll_immobile_help_title">(M)[]</string>
+    <string name="setup_suggestion_summary">(M)[Ĵûšţ å ƒéŵ ḿöŕé šţéþš one two three]</string>
+    <string name="setup_suggestion_title">(M)[Fîñîšĥ šéţţîñĝ ûþ one two three]</string>
+    <string name="smart_battery_footer">(M)[Ţö éхţéñð ɓåţţéŕý ļîƒé, ÅðåþţîVé βåţţéŕý ḿåý ŕéðûçé þéŕƒöŕḿåñçé åñð ɓåçķĝŕöûñð åçţîVîţý. Šöḿé ñöţîƒîçåţîöñš ḿåý ɓé ðéļåýéð. one two three four five six seven eight nine ten eleven twelve]</string>
+    <string name="smart_battery_manager_title">(M)[ÅðåþţîVé þŕéƒéŕéñçéš one two three]</string>
+    <string name="smart_battery_title">(M)[ÅðåþţîVé βåţţéŕý one two three]</string>
+    <string name="software_update_can_be_updated_header">(M)[Ḿåķé ýöûŕ Þîхéļ éVéñ ɓéţţéŕ one two three four]</string>
+    <string name="software_update_detail_indication_1_update_available">(M)[1 ûþðåţé åVåîļåɓļé one two three]</string>
+    <string name="software_update_detail_indication_2_or_more_updates_available">(M)[%1$d ûþðåţéš åVåîļåɓļé one two three]</string>
+    <string name="software_update_detail_indication_action_required">(M)[Åçţîöñ ŕéQûîŕéð one two three]</string>
+    <string name="software_update_entry_title">(M)[Šöƒţŵåŕé ûþðåţéš one two three]</string>
+    <string name="software_update_entry_up_to_date_summary">(M)[Ķééþ ýöûŕ Þîхéļ ûþ ţö ðåţé one two three four]</string>
+    <string name="software_update_pending_update_summary">(M)[Þéñðîñĝ ûþðåţé one two three]</string>
+    <string name="software_update_unknown_state_summary">(M)[Çĥéçķ åĝåîñ ļåţéŕ one two three]</string>
+    <string name="software_update_up_to_date_header">(M)[Ýöûŕ Þîхéļ îš ûþ ţö ðåţé one two three]</string>
+    <string name="software_update_up_to_date_summary">(M)[Ûþ ţö ðåţé one two]</string>
+    <string name="software_update_up_to_specific_date_summary">(M)[Ûþðåţéð ţö %1$s one two]</string>
+    <string name="software_update_update_available_summary">(M)[Ûþðåţé åVåîļåɓļé one two three]</string>
+    <string name="sound_dashboard_summary">(M)[νöļûḿé, ĥåþţîçš, Ðö Ñöţ Ðîšţûŕɓ one two three four]</string>
+    <string name="spatial_audio_title">(M)[Šþåţîåļ åûðîö one two]</string>
+    <string name="speed_boost_summary_off">(M)[Öƒƒ one]</string>
+    <string name="speed_boost_summary_on">(M)[Öñ one]</string>
+    <string name="speed_boost_title">(M)[Šþéçţŕûḿ Šþééð βööšţ one two three]</string>
+    <string name="suggested_fingerprint_lock_settings_title">(M)[Ûšé Þîхéļ Îḿþŕîñţ one two three]</string>
+    <string name="suw_limited_warranty_title">(M)[Ļîḿîţéð ŵåŕŕåñţý one two three]</string>
+    <string name="suw_warranty_description">(M)[Ţö Vîéŵ ýöûŕ ļîḿîţéð ŵåŕŕåñţý, šéļéçţ ţĥé çöûñţŕý ŵĥéŕé ýöû ɓöûĝĥţ ţĥîš ðéVîçé.&lt;br /&gt;&lt;br /&gt;Ţĥé ŵåŕŕåñţý îš åļšö åVåîļåɓļé åţ &lt;b&gt;Šéţţîñĝš &gt; Åɓöûţ þĥöñé &gt; Ļîḿîţéð ŵåŕŕåñţý&lt;/b&gt; åñð ĝ.çö/ðéVîçéŵåŕŕåñţý. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve]</string>
+    <string name="suw_warranty_description_content">(M)[Ţö Vîéŵ ýöûŕ ļîḿîţéð ŵåŕŕåñţý, šéļéçţ ţĥé çöûñţŕý ŵĥéŕé ýöû ɓöûĝĥţ ţĥîš ðéVîçé. Ţĥé ŵåŕŕåñţý îš åļšö åVåîļåɓļé åţ Šéţţîñĝš ţĥéñ åɓöûţ þĥöñé ţĥéñ Ļîḿîţéð ŵåŕŕåñţý åñð ĝ.çö/ðéVîçéŵåŕŕåñţý. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen]</string>
+    <string name="suw_warranty_next_button_text">(M)[Ñéхţ one]</string>
+    <string name="suw_warranty_positive_button_text">(M)[Çļöšé one]</string>
+    <string name="system_update_entry_title">(M)[Šýšţéḿ ûþðåţé one two]</string>
+    <string name="system_updates_group_title">(M)[Þîхéļ ûþðåţéš one two]</string>
+    <string name="touch_sensitivity_summary">(M)[Îñçŕéåšé ţöûçĥ šéñšîţîVîţý åñð îḿþŕöVé ţöûçĥ ŵĥéñ ûšîñĝ å šçŕééñ þŕöţéçţöŕ one two three four five six seven eight]</string>
+    <string name="touch_sensitivity_title">(M)[Šçŕééñ þŕöţéçţöŕ ḿöðé one two three]</string>
+    <string name="traffic_light_face_enrolling_title_accessibility">(M)[Ĥöļð þĥöñé îñ ƒŕöñţ öƒ ýöûŕ ƒåçé one two three four]</string>
+    <string name="unified_battery_saver_page_intro">(M)[ŠåVé þöŵéŕ ţö ĥéļþ ýöûŕ þĥöñé ɓåţţéŕý ļåšţ ļöñĝéŕ ɓéţŵééñ çĥåŕĝéš one two three four five six seven]</string>
+    <string name="usb_use_file_transfers">(M)[Fîļé ţŕåñšƒéŕ / Åñðŕöîð Åûţö one two three four]</string>
+    <string name="vpn_app_bypass">(M)[Éхçļûðé šéļéçţéð åþþš one two three]</string>
+    <string name="vpn_bypass_bottom_sheet_current_carrier_app">(M)[Çûŕŕéñţ çåŕŕîéŕ åþþš one two three]</string>
+    <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">(M)[Éхçļûðé %1$d çåŕŕîéŕ åþþš ƒŕöḿ νÞÑ¿ one two three four]</string>
+    <string name="vpn_bypass_bottom_sheet_new_installed_description">(M)[Šöḿé çåŕŕîéŕ åþþš öñļý ŵöŕķ öñ ţĥéîŕ öŵñ ñéţŵöŕķš one two three four five six]</string>
+    <string name="vpn_bypass_bottom_sheet_no_carrier_apps">(M)[Ñö çåŕŕîéŕ åþþš öñ ţĥîš ðéVîçé one two three four]</string>
+    <string name="vpn_bypass_bottom_sheet_notification_description">"(M)[Ýöû'ļļ ɓé ñöţîƒîéð ŵĥéñ ýöû îñšţåļļ åñý ñéŵ çåŕŕîéŕ åþþš one two three four five six seven]"</string>
+    <string name="vpn_bypass_bottom_sheet_one_carrier_app_title">(M)[Éхçļûðé %1$d çåŕŕîéŕ åþþ ƒŕöḿ νÞÑ¿ one two three four]</string>
+    <string name="vpn_bypass_bottom_sheet_zero_carrier_app_title">(M)[Éхçļûðé çåŕŕîéŕ åþþš ƒŕöḿ νÞÑ¿ one two three four]</string>
+    <string name="vpn_bypass_cancel">(M)[Çåñçéļ one two]</string>
+    <string name="vpn_bypass_carrier_accessibility_description">(M)[Éхçļûðé çåŕŕîéŕ åþþš ÖÑ/ÖFF one two three four]</string>
+    <string name="vpn_bypass_carrier_app_bottom_sheet_description">"(M)[βý åļļöŵîñĝ çåŕŕîéŕ åþþš ţö îĝñöŕé ţĥé νÞÑ åñð ûšé ýöûŕ þĥöñé'š ŕéĝûļåŕ ñéţŵöŕķ çöññéçţîöñ, îţ ḿåý þŕéVéñţ çåŕŕîéŕ åþþš ƒŕöḿ ḿåļƒûñçţîöñîñĝ. one two three four five six seven eight nine ten eleven twelve thirteen]"</string>
+    <string name="vpn_bypass_carrier_app_suggestion_text">(M)[ŔéVîéŵ ñéŵļý îñšţåļļéð çåŕŕîéŕ åþþš one two three four]</string>
+    <string name="vpn_bypass_carrier_app_toggle_description">(M)[ţöĝĝļé çåŕŕîéŕ åþþš one two three]</string>
+    <string name="vpn_bypass_carrier_description">(M)[Éхçļûðé çåŕŕîéŕ åþþš one two three]</string>
+    <string name="vpn_bypass_category_title">(M)[Åþþš éхçļûðéð ƒŕöḿ νÞÑ one two three]</string>
+    <string name="vpn_bypass_description">"(M)[Éхçļûðéð åþþš ŵöñ'ţ ûšé νÞÑ. Šöḿé ḿöɓîļé çåŕŕîéŕ åþþš öñļý ŵöŕķ öñ ţĥéîŕ öŵñ ñéţŵöŕķš ŵîţĥöûţ νÞÑ. one two three four five six seven eight nine ten eleven]"</string>
+    <string name="vpn_bypass_exclude">(M)[Éхçļûðé one two]</string>
+    <string name="vpn_exclude_ntf_content">(M)[Ýöû ĥåVé ñéŵļý îñšţåļļéð çåŕŕîéŕ åþþš ţĥåţ ḿåý ñöţ ŵöŕķ ŵîţĥ ţĥé νÞÑ one two three four five six seven eight]</string>
+    <string name="vpn_exclude_ntf_title">(M)[Éхçļûðé ñéŵ åþþš ƒŕöḿ νÞÑ¿ one two three four]</string>
+    <string name="vpn_preference_group_title">(M)[Öţĥéŕš one two]</string>
+    <string name="wallpaper_dashboard_summary">(M)[Çöļöŕš, ţĥéḿéð îçöñš, åþþ ĝŕîð one two three four]</string>
+    <string name="warranty_country_information">(M)[%1$s (%2$s) one]</string>
+    <string name="wifi_subscription_summary">(M)[νîéŵ öŕ çĥåñĝé ÖþéñŔöåḿîñĝ šûɓšçŕîþţîöñ one two three four five]</string>
+    <string name="wifitrackerlib_connected_with_wsu_authenticator">(M)[Çöññéçţéð ŵîţĥ %1$s one two three]</string>
+    <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">(M)[Ţåþ ţö çöññéçţ one two three]</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provision_error">(M)[Çåñ’ţ çöññéçţ. Ţåþ ţö ţŕý åĝåîñ. one two three four]</string>
+    <string name="wifitrackerlib_wsu_entry_summary_provisioning">(M)[Çöññéçţîñĝ… one two]</string>
+</resources>

@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="aware_category_display" />
-    <string name="aware_category_gesture" />
-    <string name="aware_display_settings_title">Skjálás vegna aðgerðarleysis</string>
-    <string name="aware_settings_description" />
-    <string name="aware_settings_summary" />
-    <string name="gesture_silence_title">Slökkva á hljóði fyrir tilkynningar</string>
-    <string name="gesture_skip_title">Sleppa bendingu</string>
-    <string name="keywords_touch_sensitivity">snerting, næmi, næm, næmur, skjáhlíf, filma, mikil svörun, svörun</string>
-    <string name="keywords_wake_display" />
-    <string name="touch_sensitivity_summary">Þú getur aukið næmi fyrir snertingu og bætt snertingu með því að nota skjávörn</string>
-    <string name="touch_sensitivity_title">Skjávarnarstilling</string>
-    <string name="columbus_title">Pikka til að ræsa aðgerðir</string>
-    <string name="accessibility_assist_gesture_complete_or_keep_adjusting">Uppsetning á Active Edge. Farðu á næsta skjá eða haltu áfram að stilla.</string>
     <string name="accessibility_keyboard_haptics_title">Snertisvörun lyklaborðs</string>
     <string name="adaptive_alert_vibration_summary">Dregur úr styrk titrings þegar síminn er kyrr og skjárinn snýr upp</string>
     <string name="adaptive_alert_vibration_title">Aðlögunarhæf titringsviðvörun</string>
@@ -28,73 +15,28 @@
     <string name="add_bypassed_application_hint">Engum forritum bætt við</string>
     <string name="advanced_vpn_preference_group_title">Innbyggt</string>
     <string name="all_apps_category_title">Öll forrit</string>
-    <string name="allow_debugging_data_description">Google notar villutilkynningar til að greina vandamál forrita og tækja í samræmi við <a href="https://policies.google.com/privacy">persónuverndarstefnu</a>" okkar.
+    <string name="allow_debugging_data_description">Google notar villutilkynningar til að greina vandamál forrita og tækja í samræmi við <a href="https://policies.google.com/privacy">persónuverndarstefnuna</a>" okkar.
 
 "<b>Villutilkynningar innihalda forrits- og kerfisannála</b>" og geta innihaldið persónuupplýsingar og tækjaupplýsingar, t.d. nöfn, netföng, símanúmer, staðsetningargögn, auðkenni tækja, tengd tæki og netupplýsingar. Skýrslum verður hugsanlega deilt með verkfræðisamstarfsaðilum sem vandamálið kann að hafa áhrif á.
 
-Með því að veita aðgang fær þetta forrit leyfi til að "<b>safna og hlaða sjálfkrafa upp villutilkynningum</b>" sem innihalda forrits- og kerfisannála allra tilkynninga um vandamál.
+Með því að veita aðgang fær þetta forrit leyfi til að "<b>safna og hlaða sjálfkrafa upp villutilkynningum</b>", þar á meðal forrits- og kerfisannálum frá einka- og vinnuprófílum, fyrir allar tilkynningar um vandamál sem þú sendir.
 
 Ef samþykki er afturkallað þarf forritið að biðja þig um heimild til að safna og hlaða upp villutilkynningu fyrir hverja tilkynningu um vandamál."</string>
-    <string name="ambient_display_wake_screen_footer">
-        <annotation link="link">Kjörstillingar</annotation>
-    </string>
-    <string name="ambient_display_wake_screen_summary" />
-    <string name="ambient_display_wake_screen_summary_on" />
-    <string name="assist_gesture_enrollment_continue_to_assistant">Halda áfram í aðstoðarmanninn</string>
-    <string name="assist_gesture_enrollment_do_it_later">Gera þetta seinna</string>
-    <string name="assist_gesture_enrollment_seekbar_light">Kreista létt</string>
-    <string name="assist_gesture_enrollment_seekbar_strong">Kreista fast</string>
-    <string name="assist_gesture_enrollment_settings">Stillingar</string>
-    <string name="assist_gesture_setting_enable_assistant_text">Þú getur talað við hjálparann hvenær sem er með því að kreista neðri hluta símans snögglega og sleppa svo</string>
-    <string name="assist_gesture_setting_enable_assistant_title">Kreista til að opna Hjálparann</string>
-    <string name="assist_gesture_setting_enable_ring_alarm_silence_text">Kreista til slökkva á vekjurum, teljurum og símtölum sem berast</string>
-    <string name="assist_gesture_setting_enable_ring_silence_text">Kreistu til slökkva á tilkynningum og símtölum sem berast</string>
-    <string name="assist_gesture_setting_enable_ring_silence_title">Kreista til að slökkva á hljóði símans</string>
-    <string name="assist_gesture_setting_enable_wake_title">Opna Hjálpara þegar slökkt er á skjánum</string>
-    <string name="assist_gesture_squeeze_help_maximum_sensitivity">Kreista létt</string>
-    <string name="assist_gesture_squeeze_help_minimum_sensitivity">Kreista fast</string>
-    <string name="assist_gesture_squeeze_sensitivity_label">Hversu fast skal kreista</string>
-    <string name="assist_gesture_training_enrolling_error_may_cause_falsing">Gæti óvart opnað aðstoðarmanninn</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_bottom">Kreistu neðri hluta símans</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_faster">Kreistu fastar</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_harder">Kreistu fastar</string>
-    <string name="assist_gesture_training_enrolling_error_squeeze_release_quickly">Kreistu snögglega og slepptu síðan</string>
-    <string name="assist_gesture_training_enrolling_error_try_adjusting">Prófaðu að stilla sleðann</string>
-    <string name="assist_gesture_training_enrolling_text">Kreistu neðri hluta símans. Þú getur stillt hversu fast skal kreista.</string>
-    <string name="assist_gesture_training_enrolling_title">Kreistu snögglega og slepptu</string>
-    <string name="assist_gesture_training_finished_text">Þú getur einnig breytt næmni fyrir kreistingu síðar í stillingunum</string>
-    <string name="assist_gesture_training_finished_title">Ljúka eða halda áfram að stilla</string>
-    <string name="assist_gesture_training_intro_text">Þú getur talað við Hjálparann hvenær sem er með því að kreista neðri hluta símans snögglega og sleppa síðan</string>
-    <string name="assist_gesture_training_intro_title">Kreistu til að opna aðstoðarmanninn</string>
-    <string name="assist_gesture_training_suggestion_summary">Tala við aðstoðarmanninn, þagga símtöl</string>
-    <string name="assist_gesture_training_suggestion_summary_including_alarms">Tala við aðstoðarmanninn, þagga vekjara og símtöl</string>
-    <string name="assist_gesture_training_suggestion_title">Kreistu og slepptu fyrir aðstoðarmanninn</string>
-    <string name="aware_category_security" />
-    <string name="aware_disabled_preference_action">Kveikja</string>
-    <string name="aware_disabled_preference_dialog_content" />
-    <string name="aware_disabled_preference_dialog_title" />
-    <string name="aware_disabled_preference_neutral">Ekki núna</string>
-    <string name="aware_footer_when_airplane_batterysaver_on">Motion Sense er ekki í boði vegna þess að kveikt er á flugstillingu og rafhlöðusparnaði</string>
-    <string name="aware_footer_when_airplane_on">Motion Sense er ekki í boði vegna þess að kveikt er á flugstillingu</string>
-    <string name="aware_footer_when_batterysaver_on">Motion Sense er ekki í boði vegna þess að kveikt er á rafhlöðusparnaði</string>
-    <string name="aware_gesture_summary_off">Kveikt á flýtihreyfingum, slökkt á Active Edge</string>
-    <string name="aware_gesture_summary_on_non_assist">Kveikt á flýtihreyfingum, kveikt á Active Edge</string>
-    <string name="aware_gesture_summary_on_with_assist">Kveikt á flýtihreyfingum, kveikt á Active Edge, kreistu til að opna hjálparann</string>
-    <string name="aware_info_button_description">Fleiri stillingar</string>
-    <string name="aware_settings_disabled_info_dialog_content" />
-    <string name="aware_settings_disabled_info_dialog_title" />
-    <string name="aware_settings_enabled_info_dialog_content" />
-    <string name="aware_settings_enabled_info_dialog_title" />
-    <string name="aware_settings_suggestion_summary" />
-    <string name="aware_settings_suggestion_title" />
-    <string name="aware_summary_when_airplane_batterysaver_on">Þetta er ekki í boði vegna þess að kveikt er á flugstillingu og rafhlöðusparnaði</string>
-    <string name="aware_summary_when_airplane_on">Þetta er ekki í boði vegna þess að kveikt er á flugstillingu</string>
-    <string name="aware_summary_when_batterysaver_on">Þetta er ekki í boði vegna þess að kveikt er á rafhlöðusparnaði</string>
-    <string name="aware_wake_display_summary" />
-    <string name="aware_wake_display_summary_aod_off" />
-    <string name="aware_wake_display_title" />
+    <string name="app_and_notification_dashboard_summary">Hjálpari, nýleg forrit, sjálfgefin forrit</string>
+    <string name="automatic_storage_manager_activation_warning">Þegar þú ert tengd(ur) hefurðu enn aðgang að myndum og myndskeiðum í þeim gæðum sem þú valdir fyrir afritun</string>
+    <string name="automatic_storage_manager_days_title">Fjarlægja afritaðar myndir og myndskeið</string>
+    <string name="automatic_storage_manager_deactivation_warning">"Viltu slökkva á snjallgeymslu? 
+
+Við það hættir snjallgeymsla að losa pláss þegar geymslan er að fyllast."</string>
+    <string name="automatic_storage_manager_preference_title">Snjallgeymsla</string>
+    <string name="automatic_storage_manager_primary_switch_title">Nota snjallgeymslu</string>
+    <string name="automatic_storage_manager_settings">Snjallgeymsla</string>
+    <string name="automatic_storage_manager_text">Fjarlægja myndir og myndskeið sem hafa verið afrituð þegar geymsla er næstum full. Þú getur áfram fundið afritaðar myndir og myndskeið í Google myndum.</string>
     <string name="basic_battery_saver_summary">Takmarkar myndáhrif og bakgrunnsvirkni. Kveikir á dökku þema, ef ekki er þegar kveikt á því.</string>
     <string name="basic_battery_saver_title">Venjulegur rafhlöðusparnaður</string>
+    <string name="battery_manager_summary">Auka rafhlöðuendingu og fínstilla hleðslu</string>
+    <string name="battery_manager_summary_unsupported">Lengja endingartíma rafhlöðu</string>
+    <string name="battery_missing_link_message">Frekari upplýsingar</string>
     <string name="battery_saver_reminder_category">Áminningar</string>
     <string name="battery_saver_reminder_switch_summary">Fá áminningar þegar rafhleðslan er lítil</string>
     <string name="battery_saver_reminder_switch_title">Áminningar um rafhlöðusparnað</string>
@@ -103,7 +45,11 @@ Ef samþykki er afturkallað þarf forritið að biðja þig um heimild til að 
     <string name="battery_saver_schedule_switch_title">Kveikja í samræmi við rafhlöðustöðu</string>
     <string name="battery_schedule_summary">Stjórna því hvenær kviknar á rafhlöðusparnaði</string>
     <string name="battery_schedule_title">Áætlun og áminningar</string>
+    <string name="battery_tip_battery_health_learn_more_description">Nánar um ástand rafhlöðu</string>
+    <string name="battery_tip_battery_health_reduced_title">Rafhlöðurýmd er takmörkuð</string>
+    <string name="battery_tip_battery_health_unknown_title">Ekki er hægt að greina ástand rafhlöðu</string>
     <string name="battery_tip_limited_temporarily_extra_summary">Til að vernda rafhlöðuna verður gert hlé á hleðslu við %1$s þegar spjaldtölvan er tengd við dokku</string>
+    <string name="battery_tip_smart_battery_summary">Kveikja á breytilegri rafhlöðustjórnun</string>
     <string name="clear_calling_footer">"Til að gæta persónuverndar sendir Clear Calling aldrei hljóð eða samtöl til Google.
 
 Clear Calling virkar í WiFi-símtölum og á flestum netkerfum en er ekki í boði fyrir 3G-net."</string>
@@ -154,8 +100,11 @@ Clear Calling virkar í WiFi-símtölum og á flestum netkerfum en er ekki í bo
     <string name="columbus_setting_app_shortcut_selection_help_text">Veldu hvað gerist þegar þú opnar þetta forrit með pikki.</string>
     <string name="columbus_setting_enable_switch_title">Nota pikk</string>
     <string name="columbus_setting_sensitivity_title">Krefjast þess að ýtt sé fastar</string>
+    <string name="columbus_title">Pikka til að ræsa aðgerðir</string>
     <string name="communal_lock_screen_summary">Persónuvernd, tilkynningar og heimastýringar</string>
     <string name="communal_other">Annað</string>
+    <string name="communal_settings_summary">Valkostir þegar skjálás er á eða tæki er í dokku</string>
+    <string name="communal_settings_title">Miðstöðvarstilling</string>
     <string name="communal_smartspace_summary">Áminningar, viðvaranir og fleira frá Hjálparanum</string>
     <string name="communal_smartspace_title">Í fljótu bragði</string>
     <string name="communal_what_to_show">Hvað á að sýna</string>
@@ -166,17 +115,17 @@ Clear Calling virkar í WiFi-símtölum og á flestum netkerfum en er ekki í bo
     <string name="connectivity_helper_d2d_summary">Láttu hinn aðilann vita þegar tengingarvandamál koma upp í símanum á meðan símtali stendur</string>
     <string name="connectivity_helper_d2d_title">Deila tengingarupplýsingum</string>
     <string name="connectivity_helper_footnote">Þú getur deilt tengingarupplýsingum þegar hinn hringjandinn notar stutt tæki og netkerfi</string>
+    <string name="content_capture">Nota forritsgögn til að sérsníða</string>
+    <string name="content_protection_preference_subpage_info">"Þetta er varinn öryggiseiginleiki. Engum tækja- eða persónuupplýsingum er deilt með Google. 
+
+Vefveiðar eru tilraun til að stela innskráningarupplýsingum eða öðrum persónuupplýsingum."</string>
+    <string name="content_protection_preference_subpage_summary">Leit er keyrð á lokaðan hátt í tækinu og farið er yfir forritavirkni í leit að vefveiðum eða öðru sviksamlegu athæfi. Ef slíkt greinist eru tilteknar forritsupplýsingar sendar til Google Play Protect til að staðfesta ógnina og vara notendur forritsins við.</string>
+    <string name="dark_ui_text">Dökkt þema er með svörtum bakgrunni til að rafhlaðan endist lengur. Virknitímar fyrir dökkt þema bíða þar til það slokknar á skjánum.</string>
     <string name="debugging_data_title">Villuleitargögn</string>
-    <string name="dialog_aware_settings_message" />
-    <string name="dialog_aware_settings_ok" />
-    <string name="dialog_aware_settings_title" />
     <string name="discover_tips_button">Uppgötvaðu ábendingar</string>
-    <string name="dock_setup_notification_text" />
     <string name="dock_summary_charging_phone">Hleður síma</string>
-    <string name="dream_no_screen_saver_caption" />
-    <string name="dream_no_screen_saver_description" />
-    <string name="dream_no_screen_saver_preview_caption" />
-    <string name="dream_secondary_button_title" />
+    <string name="double_twist_for_camera_mode_summary">Til að skipta í eða úr sjálfsmyndastillingu í Google myndavélinni skaltu snúa úlnliðnum tvisvar þegar forritið er opið.</string>
+    <string name="duration_less_than_one_minute">Innan við 1 mínúta</string>
     <string name="extreme_battery_saver_summary">Inniheldur allar breytingar sem getið er hér að ofan. Gerir einnig hlé á ónauðsynlegum forritum og tilkynningum frá þeim.</string>
     <string name="extreme_battery_saver_title">Ofurrafhlöðu­sparnaður</string>
     <string name="face_confirmation_hide_illustration_description">Nú geturðu notað andlitið til að taka símann úr lás þegar þú tekur hann upp eða ýtir á skjáinn.</string>
@@ -203,49 +152,44 @@ Clear Calling virkar í WiFi-símtölum og á flestum netkerfum en er ekki í bo
     <string name="face_enrolling_too_right">Færðu símann til vinstri</string>
     <string name="face_enrolling_turn_head_to_arrow">Snúðu höfðinu í átt að örinni</string>
     <string name="face_enrolling_turned_too_far">Snúðu höfðinu aðeins minna</string>
+    <string name="fast_pair_device_not_found_dialog_title">Ekki tókst að tengjast</string>
+    <string name="fast_pair_device_not_found_other_device_description">Færðu þetta tæki nær Pixel-símanum og reyndu aftur.</string>
+    <string name="fast_pair_device_not_found_tws_headphone_description">Opnaðu heyrnartólahulstrið, færðu það nær Pixel-símanum og reyndu aftur.</string>
+    <string name="fingerprint_unlock_set_unlock_password">Nexus Imprint + aðgangsorð</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Nexus Imprint + mynstur</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Nexus Imprint + PIN-númer</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Halda áfram án Nexus Imprint</string>
+    <string name="firmware_update_accessory_version_number_title">Fastbúnaður aukahlutar</string>
     <string name="firmware_update_status_category">Fastbúnaðarstaða tækis</string>
     <string name="firmware_update_status_title">Fastbúnaðaruppfærsla í boði</string>
     <string name="firmware_update_version_number_category">Fastbúnaðarútgáfa tækis</string>
     <string name="firmware_update_version_number_title">Fastbúnaður Pixel-lyklaborðs</string>
-    <string name="gesture_aware_confirmation_action_button">Ég skil</string>
-    <string name="gesture_aware_disabled_info_dialog_content" />
-    <string name="gesture_aware_footer">
-        <annotation link="link">Kjörstillingar</annotation>
-    </string>
-    <string name="gesture_aware_off_dialog_content" />
-    <string name="gesture_aware_off_dialog_title" />
-    <string name="gesture_silence_footer">
-        <annotation link="link">Kjörstillingar</annotation>
-    </string>
-    <string name="gesture_silence_off_summary" />
-    <string name="gesture_silence_on_summary" />
-    <string name="gesture_silence_summary" />
-    <string name="gesture_skip_direction_ltr">Vinstri til hægri</string>
-    <string name="gesture_skip_direction_rtl">Hægri til vinstri</string>
-    <string name="gesture_skip_direction_title">Sleppa leiðarlýsingu</string>
-    <string name="gesture_skip_footer">
-        <annotation link="link">Kjörstillingar</annotation>
-    </string>
-    <string name="gesture_skip_off_summary" />
-    <string name="gesture_skip_on_summary" />
-    <string name="gesture_skip_summary" />
-    <string name="gesture_tap_footer">
-        <annotation link="link">Kjörstillingar</annotation>
-    </string>
-    <string name="gesture_tap_on_summary" />
-    <string name="gesture_tap_summary" />
+    <string name="fullbackup_data_summary">"Taktu sjálfkrafa afrit af gögnum tækisins (s.s. Wi-Fi aðgangsorðum og símtalaferli) og forritagögnum (s.s. stillingum og skrám sem forrit vista) og vistaðu á Google Drive.
+
+Þegar þú kveikir á sjálfvirkri afritun eru gögn tækisins og forrita reglulega vistuð í lokaðri möppu á Google Drive. Forritagögn geta verið öll gögn sem forrit hefur vistað (fer eftir stillingum þróunaraðilans), þ.m.t. hugsanlega viðkvæm gögn á borð við tengiliði þína, skilaboð og myndir.
+
+Afritunargögn nota ekki geymslukvótann þinn á Drive. Stórar skrár eða skrár sem þróunaraðilar hafa valið að hafa ekki með í þjónustunni eru ekki afritaðar."</string>
+    <string name="fullbackup_erase_dialog_message">Viltu hætta að taka afrit af gögnum tækisins (s.s. Wi-Fi aðgangsorðum og símtalaferli) og forritagögnum (s.s. stillingum og skrám sem forrit vista) og eyða öllum afritum af Google Drive?</string>
+    <string name="gesture_settings_activity_title">Bendingastjórnun</string>
     <string name="install_unknown_applications">Leyfa uppsetningu forrita sem ekki eru frá Play Store</string>
+    <string name="keywords_accessibility_menu">hreyfivirkni, flýtivalmynd, hjálparvalmynd, snerting, fimi, gigt, rsi, heilablóðfall, skjálfti, heila- og mænusigg, heilalömun, hnappur, vélbúnaður, ýta, vöðvabólga, hönd, verkur, aðgengilegt, aðstoð</string>
     <string name="keywords_adaptive_alert_vibration">snertisvörun, titra, sími, símtal, hringing, viðvörun, tilkynningar, hátt, hljóðlátt, hávaði, hulstur, stillanlegt</string>
     <string name="keywords_adaptive_charging">hlaða, hleður, snjallhleðsla, breytileg hleðsla, rafhlaða, ástand rafhlöðu</string>
-    <string name="keywords_assist_gesture_silence">bending, brún, hlið, active edge, þögn, blunda, vekjari, símtal berst, þögult, skjár, lásskjár, kreista, grípa, stöðva</string>
-    <string name="keywords_assist_gesture_wake">bending, brún, hlið, active edge, vekja, tilkynningar, skjár, slökkt á skjá, kveikt á skjá, kreista, sofandi, sofa, grípa</string>
     <string name="keywords_battery_share">deiling rafhlöðu, þráðlaus hleðsla</string>
     <string name="keywords_battery_share_settings">deiling rafhlöðu, öfug þráðlaus hleðsla</string>
-    <string name="keywords_gesture_silence" />
-    <string name="keywords_gesture_skip" />
-    <string name="keywords_gesture_tap" />
+    <string name="keywords_gesture">bending, hreyfingar</string>
+    <string name="keywords_hearing_devices">heyrnarskerðing, heyrnartap, PSAP</string>
     <string name="keywords_limited_warranty">ábyrgð, trygging, takmörkuð ábyrgð, loforð, viðgerð, heimild fyrir vöruskilum, skipti</string>
+    <string name="keywords_live_caption">skjátextar, skýringartextar, CC, umritun í beinni, heyrnarskerðing, heyrnartap, tölvustudd umritun í beinni, talgreinir, texti</string>
+    <string name="keywords_live_transcribe">skjátextar, skýringartextar, CC, skjátextar í rauntíma, heyrnarskerðing, heyrnarleysi, tölvustudd umritun í beinni, talgreinir, texti</string>
     <string name="keywords_reverse_charging_stop_threshold">Hætta að deila rafhlöðu þegar síminn nær:</string>
+    <string name="keywords_select_to_speak">heyra texta, lesa upphátt, talskjár, skjálesari</string>
+    <string name="keywords_sound_amplifier">PSAP-hljóðmagnari, magna, hljóðmögnun, heyrnarskerðing, heyrnarleysi, mögnun</string>
+    <string name="keywords_sound_notifications">tilkynningar, heyrnarskerðing, heyrnarleysi, tilkynna</string>
+    <string name="keywords_switch_access">mótor, rofi, hönd, stoðtækni, hjálpartækni, lömun, blönduð hreyfitaugahrörnun, skönnun, skrefaskönnun</string>
+    <string name="keywords_talkback">skjálesari, talsetning, VoiceOver stuðningur, raddaðstoð, blinda, sjónskerðing, talgervill, upplestur, raddsvörun</string>
+    <string name="keywords_touch_sensitivity">snerting, næmi, næm, næmur, skjáhlíf, filma, mikil svörun, svörun</string>
+    <string name="keywords_voice_access">rödd, raddstýring, mótor, hönd, míkrófónn, hljóðnemi, raddinnsláttur, tal, stjórnun</string>
     <string name="led_preference_title">Mynstur LED-ljósa</string>
     <string name="legal_source_code_description">Í hjálparmiðstöð Pixel má finna upplýsingar um upprunakóða fyrir íhluti sem er tiltækur sem opinn kóði.</string>
     <string name="legal_source_code_title">Upprunakóði</string>
@@ -253,9 +197,12 @@ Clear Calling virkar í WiFi-símtölum og á flestum netkerfum en er ekki í bo
     <string name="limited_warranty_title">Takmörkuð ábyrgð</string>
     <string name="lockscreen_show_weather_summary">Sjá núverandi veðurskilyrði</string>
     <string name="lockscreen_show_weather_title">Sýna veður</string>
+    <string name="my_device_info_account_preference_title">Google-reikningur</string>
+    <string name="owner_info_settings_edit_text_hint">Til dæmis „Pixel-sími Jóa“.</string>
     <string name="permit_debugging_data">Veita aðgang að villutilkynningum</string>
     <string name="play_application_detail_indication_summary">Leita að uppfærslum</string>
     <string name="play_application_update_entry_title">Forritauppfærslur</string>
+    <string name="privatespace_retry_summary">Þú þarft að skrá þig inn á Google-reikning til að setja upp einkarými</string>
     <string name="repair_mode_active_summary">Í viðgerðarstillingu</string>
     <string name="repair_mode_summary">Öruggt umhverfi fyrir viðgerð á tæki</string>
     <string name="repair_mode_title">Viðgerðarstilling</string>
@@ -286,18 +233,37 @@ Settu símann á hvolf til að prófa."</string>
     <string name="reverse_charging_unplug_usb_cable_message">Ekki í boði vegna þess að USB-C tæki er í sambandi</string>
     <string name="reverse_charging_warning_summary">Ekki tiltækt því að hleðsla rafhlöðunnar er minni en %1$s</string>
     <string name="reverse_charging_warning_title">Deiling rafhlöðu er ekki í boði vegna þess að rafhlöðuhleðsla er undir %1$s</string>
-    <string name="search_gesture_category_title">Skjáleit</string>
-    <string name="search_long_press_home_button_summary">Haltu heimahnappnum inni til að hefja Google-leit yfir skjáinn.</string>
-    <string name="search_long_press_home_button_title">Haltu Heima inni til að leita</string>
-    <string name="search_press_hold_gesture_summary">Haltu flettihandfanginu inni til að hefja leit yfir skjánum.</string>
-    <string name="search_press_hold_gesture_title">Haltu handfanginu inni til að leita</string>
+    <string name="rtt_settings_always_visible">Alltaf sýnilegur</string>
+    <string name="rtt_settings_no_visible">Ekki sýnilegur</string>
+    <string name="rtt_settings_title">Texti í rauntíma (RTT)</string>
+    <string name="rtt_settings_visible_during_call">Sýnilegur meðan á símtali stendur</string>
+    <string name="screen_time_summary_usage_today">%1$s í dag</string>
+    <string name="search_bar_account_avatar_content_description">Prófílmynd, ýttu tvisvar til að opna Google reikninginn</string>
+    <string name="search_gesture_category_title">Leit</string>
+    <string name="search_gesture_feature_title">Gera hring utan um til að leita</string>
+    <string name="search_long_press_home_button_summary">Snertu og haltu inni heimahnappnum neðst á skjánum, gerðu svo hring utan um eða merktu eitthvað til að leita</string>
+    <string name="search_press_hold_gesture_summary">Snertu og haltu inni handfanginu neðst á skjánum, gerðu svo hring utan um eða merktu eitthvað til að leita</string>
     <string name="security_dismiss_dialog_dismiss_button">Hunsa</string>
     <string name="security_dismiss_dialog_title">Hunsa þessa viðvörun?</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">Ýttu til að setja upp</string>
+    <string name="security_settings_face_enroll_dialog_ok">Ég skil</string>
+    <string name="security_settings_face_enroll_education_message">Á næsta skjá máttu snúa höfðinu svo andlitið náist frá öllum sjónarhornum</string>
+    <string name="security_settings_face_enroll_error_dialog_title">Ekki var lokið við skráningu</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Uppsetning andlitskennis rann út á tíma</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Nú geturðu notað andlitið til að taka símann úr lás eða til að staðfesta hver þú ert, t.d. þegar þú skráir þig inn í forrit eða samþykkir kaup</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Nú geturðu notað andlitið til að taka símann úr lás þegar þú tekur hann upp eða ýtir á skjáinn.
 
 Andlitskenni virkar best þegar birtan er næg og þú ert ekki með grímu eða dökk gleraugu."</string>
+    <string name="security_settings_face_enroll_finish_title">Lítur vel út!</string>
+    <string name="security_settings_face_enroll_introduction_accessibility">Uppsetning fyrir skerta sjón eða hreyfigetu</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_vision">Augun verða að vera opin</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_title">Þú og barnið þitt stjórnið ferðinni</string>
+    <string name="security_settings_face_enroll_introduction_control_title">Þú ert við stjórnvölinn</string>
+    <string name="security_settings_face_enroll_introduction_how_title">Svona virkar þetta</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_glasses">Ef barnið notar gleraugu að staðaldri getur það verið með þau við uppsetningu.</string>
+    <string name="security_settings_face_enroll_introduction_info_glasses">Gleraugu eða lítið dekkt sólgleraugu trufla ekki.</string>
+    <string name="security_settings_face_enroll_introduction_info_title">Hafðu í huga</string>
+    <string name="security_settings_face_enroll_introduction_title">Setja upp andlitslás</string>
     <string name="security_settings_face_enroll_next">Áfram</string>
     <string name="security_settings_face_enroll_partial_message">Til að bæta eiginleikann geturðu sett andlitskenni upp aftur í stillingum</string>
     <string name="security_settings_face_enroll_partial_start_over">Byrja upp á nýtt</string>
@@ -312,8 +278,24 @@ Til að bæta eiginleikann geturðu sett andlitskenni upp aftur í stillingum."<
     <string name="security_settings_face_enroll_too_hot_message">Ekki er hægt að ljúka við uppsetningu andlitskennis vegna þess að síminn er of heitur. Reyndu aftur síðar þegar síminn hefur kólnað.</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">Sleppa andlitskenni</string>
     <string name="security_settings_face_enroll_too_hot_title">Síminn er of heitur</string>
+    <string name="security_settings_face_preference_summary_none">Ýttu til að setja upp andlit</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Með Nexus Imprint geturðu notað fingrafarið til að heimila kaup eða skrá þig inn á forrit.
+
+Gættu vel að því hvaða fingraförum þú bætir við. Öll fingraför sem er bætt við geta gert allt þetta.
+
+Athugaðu: Þú getur ekki notað fingrafarið til að taka lásinn af þessu tæki. Hafðu samband við kerfisstjóra fyrirtækisins þíns til að fá frekari upplýsingar."</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Úr lás með Nexus Imprint</string>
+    <string name="security_settings_fingerprint_preference_summary_none">Ýttu til að setja upp fingrafar</string>
+    <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint býr til einkvæmt líkan af fingrafarinu þínu til að staðfesta hver þú ert. Til að búa líkanið til við uppsetningu þarf að taka myndir af fingrafarinu þínu frá nokkrum sjónarhornum.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint býr til einkvæmt líkan af fingrafari barnsins þíns til að staðfesta hver það er. Til að búa líkanið til við uppsetningu tekur barnið myndir af fingrafarinu sínu frá mismunandi sjónarhornum.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Nánar um Pixel-fingrafarskenni á &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
+    <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint fyrir vinnu</string>
     <string name="setup_suggestion_summary">Aðeins nokkur skref í viðbót</string>
     <string name="setup_suggestion_title">Ljúka uppsetningu</string>
+    <string name="smart_battery_footer">Til að auka endingu rafhlöðunnar kann breytileg rafhlöðustjórnun að draga úr afköstum og bakgrunnsvirkni. Einhverjum tilkynningum kann að vera seinkað.</string>
+    <string name="smart_battery_manager_title">Aðlögunarstillingar</string>
+    <string name="smart_battery_title">Breytileg rafhlöðustjórnun</string>
     <string name="software_update_can_be_updated_header">Gerðu Pixel-tækið enn betra</string>
     <string name="software_update_detail_indication_1_update_available">1 uppfærsla í boði</string>
     <string name="software_update_detail_indication_2_or_more_updates_available">%1$d uppfærslur í boði</string>
@@ -326,9 +308,11 @@ Til að bæta eiginleikann geturðu sett andlitskenni upp aftur í stillingum."<
     <string name="software_update_up_to_date_summary">Uppfært</string>
     <string name="software_update_up_to_specific_date_summary">Uppfært %1$s</string>
     <string name="software_update_update_available_summary">Uppfærsla í boði</string>
+    <string name="sound_dashboard_summary">Hljóðstyrkur, snertisvörun, ónáðið ekki</string>
     <string name="speed_boost_summary_off">Slökkt</string>
     <string name="speed_boost_summary_on">Kveikt</string>
     <string name="speed_boost_title">Spectrum Speed Boost</string>
+    <string name="suggested_fingerprint_lock_settings_title">Nota Pixel Imprint</string>
     <string name="suw_limited_warranty_title">Takmörkuð ábyrgð</string>
     <string name="suw_warranty_description">Til að skoða takmörkuðu ábyrgðina þína skaltu velja landið sem þú keyptir tækið í.&lt;br /&gt;&lt;br /&gt;Þú getur líka fundið ábyrgðina undir&lt;b&gt;„Stillingar &gt; Um síma &gt; Takmörkuð ábyrgð“&lt;/b&gt; og á g.co/devicewarranty.</string>
     <string name="suw_warranty_description_content">Til að skoða takmörkuðu ábyrgðina þína skaltu velja landið sem þú keyptir tækið í. Þú getur einnig séð ábyrgðina með því að opna „Stillingar &gt; Um síma &gt; Takmörkuð ábyrgð“ eða á g.co/devicewarranty.</string>
@@ -336,10 +320,11 @@ Til að bæta eiginleikann geturðu sett andlitskenni upp aftur í stillingum."<
     <string name="suw_warranty_positive_button_text">Loka</string>
     <string name="system_update_entry_title">Kerfisuppfærsla</string>
     <string name="system_updates_group_title">Pixel-uppfærslur</string>
-    <string name="tips_suggestion_summary">Skoðaðu hvað þú getur gert með símanum</string>
-    <string name="tips_suggestion_title">Kynntu þér Pixel betur</string>
+    <string name="touch_sensitivity_summary">Þú getur aukið næmi fyrir snertingu og bætt snertingu með því að nota skjávörn</string>
+    <string name="touch_sensitivity_title">Skjávarnarstilling</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Haltu símanum fyrir framan andlitið</string>
     <string name="unified_battery_saver_page_intro">Sparaðu rafhlöðuna til að rafhleðsla símans endist lengur á milli hleðslna</string>
+    <string name="usb_use_file_transfers">Skráaflutningur / Android Auto</string>
     <string name="vpn_app_bypass">Undanskilja valin forrit</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">Núverandi forrit símafyrirtækja</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">Undanskilja %1$d forrit símafyrirtækja frá VPN?</string>
@@ -360,12 +345,9 @@ Til að bæta eiginleikann geturðu sett andlitskenni upp aftur í stillingum."<
     <string name="vpn_exclude_ntf_content">Þú ert með nýlega uppsett forrit símafyrirtækja sem virka hugsanlega ekki með VPN</string>
     <string name="vpn_exclude_ntf_title">Undanskilja ný forrit frá VPN?</string>
     <string name="vpn_preference_group_title">Aðrir</string>
-    <string name="wake_screen_aware_disabled_info_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_content" />
-    <string name="wake_screen_aware_off_dialog_title" />
-    <string name="wake_screen_suggestion_summary" />
-    <string name="wake_screen_suggestion_title" />
+    <string name="wallpaper_dashboard_summary">Litir, þematákn, forritatafla</string>
     <string name="warranty_country_information">%1$s (%2$s)</string>
+    <string name="wifi_subscription_summary">Skoða eða breyta OpenRoaming-áskrift</string>
     <string name="wifitrackerlib_connected_with_wsu_authenticator">Tengt við %1$s</string>
     <string name="wifitrackerlib_wsu_entry_summary_not_provisioned">Ýttu til að tengjast</string>
     <string name="wifitrackerlib_wsu_entry_summary_provision_error">Ekki tókst að tengjast. Ýttu til að reyna aftur.</string>
