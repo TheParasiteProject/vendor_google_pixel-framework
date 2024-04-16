@@ -5,4 +5,4 @@
 -keep,allowoptimization class vendor.** { *; }
 -keep,allowoptimization class hardware.google.** { *; }
 
--include ../../../packages/apps/Settings/proguard.flags
+-include ../../../../packages/apps/Settings/proguard.flags
