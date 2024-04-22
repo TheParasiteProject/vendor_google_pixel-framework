@@ -18,6 +18,7 @@ package com.google.android.systemui.assist;
 
 import static android.view.Display.DEFAULT_DISPLAY;
 
+import android.app.ActivityManager;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
@@ -50,6 +51,7 @@ import com.google.android.systemui.assist.uihints.AssistantPresenceHandler;
 import com.google.android.systemui.assist.uihints.GoogleDefaultUiController;
 import com.google.android.systemui.assist.uihints.NgaMessageHandler;
 import com.google.android.systemui.assist.uihints.NgaUiController;
+import com.android.systemui.user.domain.interactor.SelectedUserInteractor;
 import com.android.systemui.util.settings.SecureSettings;
 
 import javax.inject.Inject;
@@ -96,12 +98,15 @@ public class AssistManagerGoogle extends AssistManager {
                                UserTracker userTracker,
                                DisplayTracker displayTracker,
                                SecureSettings secureSettings,
-                               IWindowManager iWindowManager) {
+                               IWindowManager iWindowManager,
+                               SelectedUserInteractor selectedUserInteractor,
+                               ActivityManager activityManager) {
         super(controller, context, assistUtils, commandQueue,
                 phoneStateMonitor, overviewProxyService,
                 sysUiState, defaultUiController,
                 assistLogger, handler, userTracker,
-                displayTracker, secureSettings);
+                displayTracker, secureSettings,
+                selectedUserInteractor, activityManager);
         mUiHandler = handler;
         mDefaultUiController = googleDefaultUiController;
         mUiController = googleDefaultUiController;

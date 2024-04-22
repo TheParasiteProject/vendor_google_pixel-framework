@@ -1,23 +1,15 @@
 android_library {
-    name: "SystemUIGoogle-res",
-    manifest: "AndroidManifest.xml",
-    resource_dirs: [
-        "res",
-    ],
-    static_libs: [
-        "SystemUI-core",
-    ],
-}
-
-android_library {
     name: "SystemUIGoogle-core",
     srcs: [
         "src/**/*.kt",
         "src/**/*.java",
         "src/**/*.aidl",
     ],
+    resource_dirs: [
+        "res",
+    ],
     static_libs: [
-        "SystemUIGoogle-res",
+        "SystemUI-core",
         "tensorflowlite_java",
         "android.frameworks.stats-V1-java",
         "vendor-pixelatoms-java",
@@ -32,11 +24,11 @@ android_library {
         "google-battery",
         "vendor.google.google_battery-V1-java",
     ],
+    libs: [
+        "keepanno-annotations",
+    ],
     manifest: "AndroidManifest.xml",
-
-    javacflags: ["-Adagger.fastInit=enabled"],
-    kotlincflags: ["-Xjvm-default=enable"],
-
+    kotlincflags: ["-Xjvm-default=all"],
     plugins: ["dagger2-compiler"],
     lint: {
         extra_check_modules: ["SystemUILintChecker"],
@@ -52,8 +44,14 @@ android_app {
     static_libs: [
         "SystemUIGoogle-core",
     ],
+    libs: [
+        "ims-common",
+    ],
     jni_libs: ["libtensorflowlite_jni"],
     use_embedded_native_libs: true,
+    overrides: [
+        "SystemUI",
+    ],
     resource_dirs: [],
     asset_dirs: ["assets"],
     aaptflags: [
@@ -61,27 +59,18 @@ android_app {
         "-0 .vocab",
     ],
 
-    libs: [
-        "ims-common",
-    ],
-
     platform_apis: true,
     system_ext_specific: true,
     certificate: "platform",
     privileged: true,
 
+    kotlincflags: ["-Xjvm-default=all"],
+
+    dxflags: ["--multi-dex"],
     optimize: {
         proguard_flags_files: ["proguard.flags"],
     },
-
-    kotlincflags: ["-Xjvm-default=enable"],
-
-    dxflags: ["--multi-dex"],
     required: [
         "privapp_whitelist_com.android.systemui",
-        "wmshell.protolog.json.gz",
-    ],
-    overrides: [
-        "SystemUI",
     ],
 }

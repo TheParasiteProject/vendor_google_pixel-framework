@@ -44,7 +44,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.android.systemui.Dependency;
-import com.android.systemui.R;
+import com.android.systemui.res.R;
 import com.android.app.animation.Interpolators;
 import com.android.systemui.assist.AssistManager;
 import com.android.systemui.navigationbar.buttons.ButtonInterface;

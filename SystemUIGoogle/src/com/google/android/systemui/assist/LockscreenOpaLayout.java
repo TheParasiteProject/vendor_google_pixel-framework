@@ -29,7 +29,7 @@ import android.view.animation.Interpolator;
 import android.view.animation.PathInterpolator;
 import android.widget.FrameLayout;
 
-import com.android.systemui.R;
+import com.android.systemui.res.R;
 import com.android.app.animation.Interpolators;
 import com.google.android.systemui.elmyra.feedback.FeedbackEffect;
 import com.google.android.systemui.elmyra.sensors.GestureSensor;

@@ -22,6 +22,7 @@ import android.app.smartspace.SmartspaceTarget.FEATURE_WEATHER
 import com.android.systemui.dagger.SysUISingleton
 import com.android.systemui.smartspace.SmartspaceTargetFilter
 
+// ToDo: Remove or update this class to upstream
 @SysUISingleton
 class DreamTargetFilter(
     private val lockscreenFilter: SmartspaceTargetFilter

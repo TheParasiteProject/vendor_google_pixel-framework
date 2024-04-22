@@ -44,6 +44,7 @@ import com.android.internal.annotations.VisibleForTesting;
 import com.android.systemui.Dependency;
 import com.android.systemui.dagger.qualifiers.Main;
 import com.android.systemui.dock.DockManager;
+import com.android.systemui.dock.DockManagerImpl;
 import com.android.systemui.plugins.statusbar.StatusBarStateController;
 import com.android.systemui.settings.UserTracker;
 import com.android.systemui.statusbar.notification.collection.NotificationEntry;
@@ -61,7 +62,7 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class DockObserver extends BroadcastReceiver implements DockManager {
+public class DockObserver extends DockManagerImpl {
     @VisibleForTesting
     static final String ACTION_ALIGN_STATE_CHANGE = "com.google.android.systemui.dreamliner.ALIGNMENT_CHANGE";
     @VisibleForTesting
@@ -136,6 +137,39 @@ public class DockObserver extends BroadcastReceiver implements DockManager {
                 }
             };
 
+    private BroadcastReceiver stateReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if (intent == null) {
+                return;
+            }
+            if (DEBUG) {
+                Log.i("DLObserver", "onReceive(); " + intent.getAction());
+            }
+            String action = intent.getAction();
+            switch (action) {
+                case "android.intent.action.ACTION_POWER_DISCONNECTED":
+                    stopDreamlinerService(context);
+                    sIsDockingUiShowing = DEBUG;
+                    break;
+                case "com.google.android.systemui.dreamliner.ACTION_SET_FEATURES":
+                    setFeatures(intent);
+                    break;
+                case "android.intent.action.BOOT_COMPLETED":
+                    break;
+                case "com.google.android.systemui.dreamliner.ACTION_GET_FEATURES":
+                    getFeatures(intent);
+                    break;
+                case "android.intent.action.ACTION_POWER_CONNECTED":
+                    checkIsDockPresentIfNeeded(context);
+                    break;
+                case ACTION_REBIND_DOCK_SERVICE:
+                    updateCurrentDockingStatus(context);
+                    break;
+            }
+        }
+    };
+
     public DockObserver(final Context context, WirelessCharger wirelessCharger, StatusBarStateController statusBarStateController,
         NotificationInterruptStateProvider notificationInterruptStateProvider, ConfigurationController configurationController,
         DelayableExecutor delayableExecutor, @NonNull UserTracker userTracker, @Main Handler mainHandler) {
@@ -159,7 +193,7 @@ public class DockObserver extends BroadcastReceiver implements DockManager {
             Log.i("DLObserver", "wireless charger is null, check dock component.");
         }
         mStatusBarStateController = statusBarStateController;
-        context.registerReceiver(this, getDockIntentFilter(), PERMISSION_WIRELESS_CHARGER_STATUS, null, 2);
+        context.registerReceiver(stateReceiver, getDockIntentFilter(), PERMISSION_WIRELESS_CHARGER_STATUS, null, 2);
         mDockAlignmentController = new DockAlignmentController(wirelessCharger, this);
         notificationInterruptStateProvider.addSuppressor(notificationInterruptSuppressor);
         mConfigurationController = configurationController;
@@ -399,37 +433,6 @@ public class DockObserver extends BroadcastReceiver implements DockManager {
         intentFilter.addAction("com.google.android.systemui.dreamliner.ACTION_SET_FEATURES");
         intentFilter.setPriority(1000);
         return intentFilter;
-    }
-
-    @Override
-    public void onReceive(Context context, Intent intent) {
-        if (intent == null) {
-            return;
-        }
-        if (DEBUG) {
-            Log.i("DLObserver", "onReceive(); " + intent.getAction());
-        }
-        String action = intent.getAction();
-        switch (action) {
-            case "android.intent.action.ACTION_POWER_DISCONNECTED":
-                stopDreamlinerService(context);
-                sIsDockingUiShowing = DEBUG;
-                break;
-            case "com.google.android.systemui.dreamliner.ACTION_SET_FEATURES":
-                setFeatures(intent);
-                break;
-            case "android.intent.action.BOOT_COMPLETED":
-                break;
-            case "com.google.android.systemui.dreamliner.ACTION_GET_FEATURES":
-                getFeatures(intent);
-                break;
-            case "android.intent.action.ACTION_POWER_CONNECTED":
-                checkIsDockPresentIfNeeded(context);
-                break;
-            case ACTION_REBIND_DOCK_SERVICE:
-                updateCurrentDockingStatus(context);
-                break;
-        }
     }
 
     private synchronized void startDreamlinerService(Context context, int i, int i2, int i3) {
