@@ -1,3 +1,36 @@
+// Opt-out config for optimizing the SystemUIGoogle target using R8.
+// Disabled via `export SYSTEMUI_OPTIMIZE_JAVA=false`, or explicitly in Make via
+// `SYSTEMUI_OPTIMIZE_JAVA := false`.
+soong_config_module_type {
+    name: "systemuigoogle_optimized_java_defaults",
+    module_type: "java_defaults",
+    config_namespace: "ANDROID",
+    bool_variables: ["SYSTEMUI_OPTIMIZE_JAVA"],
+    properties: ["optimize"],
+}
+
+systemuigoogle_optimized_java_defaults {
+    name: "SystemUIGoogle_optimized_defaults",
+    soong_config_variables: {
+        SYSTEMUI_OPTIMIZE_JAVA: {
+            optimize: {
+                enabled: true,
+                optimize: true,
+                shrink: true,
+                shrink_resources: true,
+                ignore_warnings: true,
+                proguard_compatibility: true,
+            },
+            conditions_default: {
+                optimize: {
+                    ignore_warnings: true,
+                    proguard_compatibility: true,
+                },
+            },
+        },
+    },
+}
+
 android_library {
     name: "SystemUIGoogle-core",
     srcs: [
@@ -39,7 +72,7 @@ android_app {
     name: "SystemUIGoogle",
     defaults: [
         "platform_app_defaults",
-        "SystemUI_optimized_defaults",
+        "SystemUIGoogle_optimized_defaults",
     ],
     static_libs: [
         "SystemUIGoogle-core",
