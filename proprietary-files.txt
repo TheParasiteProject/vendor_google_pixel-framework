@@ -1,0 +1,3 @@
+# Pixel framework
+system_ext/etc/permissions/com.android.settings.xml:system_ext/etc/permissions/com.google.android.settings.xml
+system_ext/etc/permissions/com.android.systemui.xml:system_ext/etc/permissions/com.google.android.systemui.xml
