@@ -56,6 +56,7 @@ android_library {
         "columbus-lib",
         "google-battery",
         "vendor.google.google_battery-V1-java",
+        "androidx.concurrent_concurrent-futures-ktx",
     ],
     libs: [
         "keepanno-annotations",
