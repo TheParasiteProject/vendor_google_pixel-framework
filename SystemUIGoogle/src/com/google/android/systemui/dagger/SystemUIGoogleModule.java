@@ -39,7 +39,6 @@ import com.android.systemui.dagger.qualifiers.Background;
 import com.android.systemui.dagger.qualifiers.Main;
 import com.android.systemui.demomode.DemoModeController;
 import com.android.systemui.dock.DockManager;
-import com.android.systemui.dock.DockManagerImpl;
 import com.android.systemui.doze.DozeHost;
 import com.android.systemui.dump.DumpManager;
 import com.android.systemui.media.dagger.MediaModule;
@@ -236,7 +235,7 @@ public abstract class SystemUIGoogleModule {
     abstract KeyguardIndicationController bindKeyguardIndicationControllerGoogle(KeyguardIndicationControllerGoogle keyguardIndicationControllerGoogle);
 
     @Binds
-    abstract DockManager bindDockManagerImpl(DockManagerImpl dockManagerImpl);
+    abstract DockManager bindDockManager(DockObserver dockManager);
 
     /** */
     @Binds

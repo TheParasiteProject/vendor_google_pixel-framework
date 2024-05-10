@@ -35,7 +35,9 @@ import vendor.google.wireless_charger.V1_3.FanDetailedInfo;
 import vendor.google.wireless_charger.V1_3.FanInfo;
 import vendor.google.wireless_charger.V1_3.IWirelessCharger;
 
-public class WirelessChargerImpl extends WirelessCharger implements IHwBinder.DeathRecipient, IWirelessCharger.isDockPresentCallback {
+import javax.inject.Inject;
+
+public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathRecipient, IWirelessCharger.isDockPresentCallback {
     private static final boolean DEBUG = Log.isLoggable("Dreamliner-WLC_HAL", 3);
     private static final long MAX_POLLING_TIMEOUT_NS = TimeUnit.SECONDS.toNanos(5);
     private final Handler mHandler = new Handler(Looper.getMainLooper());
@@ -67,6 +69,10 @@ public class WirelessChargerImpl extends WirelessCharger implements IHwBinder.De
         bundle.putByte("fan_type", fanDetailedInfo.type);
         bundle.putByte("fan_count", fanDetailedInfo.count);
         return bundle;
+    }
+
+    @Inject
+    public WirelessChargerImpl() {
     }
 
     @Override
@@ -241,7 +247,7 @@ public class WirelessChargerImpl extends WirelessCharger implements IHwBinder.De
     }
 
     @Override
-    int getFanLevel() {
+    public int getFanLevel() {
         initHALInterface();
         Log.d("Dreamliner-WLC_HAL", "command=2");
         if (mWirelessCharger != null) {

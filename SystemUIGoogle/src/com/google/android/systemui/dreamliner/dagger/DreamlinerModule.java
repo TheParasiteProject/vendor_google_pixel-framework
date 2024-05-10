@@ -16,31 +16,15 @@
 
 package com.google.android.systemui.dreamliner.dagger;
 
-import androidx.annotation.NonNull;
-import android.content.Context;
-import android.os.Handler;
+import com.google.android.systemui.dreamliner.WirelessCharger;
+import com.google.android.systemui.dreamliner.WirelessChargerImpl;
 
-import com.android.systemui.dagger.SysUISingleton;
-import com.android.systemui.dagger.qualifiers.Main;
-import com.android.systemui.plugins.statusbar.StatusBarStateController;
-import com.android.systemui.settings.UserTracker;
-import com.android.systemui.statusbar.notification.interruption.NotificationInterruptStateProvider;
-import com.android.systemui.statusbar.policy.ConfigurationController;
-import com.android.systemui.util.concurrency.DelayableExecutor;
-import com.google.android.systemui.dreamliner.DockObserver;
-import com.google.android.systemui.dreamliner.DreamlinerUtils;
-
+import dagger.Binds;
 import dagger.Module;
-import dagger.Provides;
 
 @Module
 public abstract class DreamlinerModule {
-    @Provides
-    @SysUISingleton
-    static DockObserver provideDockObserver(Context context, StatusBarStateController statusBarStateController,
-        NotificationInterruptStateProvider notificationInterruptStateProvider, ConfigurationController configurationController,
-        @Main DelayableExecutor delayableExecutor, @NonNull UserTracker userTracker, @Main Handler mainHandler) {
-        return new DockObserver(context, DreamlinerUtils.getInstance(context), statusBarStateController,
-            notificationInterruptStateProvider, configurationController, delayableExecutor, userTracker, mainHandler);
-    }
+    @Binds
+    abstract WirelessCharger bindWirelessCharger(
+            WirelessChargerImpl wirelessCharger);
 }

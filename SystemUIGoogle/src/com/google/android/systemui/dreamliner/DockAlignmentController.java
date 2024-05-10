@@ -20,23 +20,25 @@ import android.util.Log;
 
 import com.google.android.systemui.dreamliner.WirelessCharger;
 
+import javax.inject.Inject;
+
 public class DockAlignmentController {
     private static final boolean DEBUG = Log.isLoggable("DockAlignmentController", 3);
     private final DockObserver mDockObserver;
     private final WirelessCharger mWirelessCharger;
     private int mAlignmentState = 0;
 
+    @Inject
     public DockAlignmentController(WirelessCharger wirelessCharger, DockObserver dockObserver) {
         mWirelessCharger = wirelessCharger;
         mDockObserver = dockObserver;
     }
 
     void registerAlignInfoListener() {
-        WirelessCharger wirelessCharger = mWirelessCharger;
-        if (wirelessCharger == null) {
+        if (mWirelessCharger == null) {
             Log.w("DockAlignmentController", "wirelessCharger is null");
         } else {
-            wirelessCharger.registerAlignInfo(new RegisterAlignInfoListener());
+            mWirelessCharger.registerAlignInfo(new RegisterAlignInfoListener());
         }
     }
 
