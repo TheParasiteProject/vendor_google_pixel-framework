@@ -53,6 +53,34 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        system_ext/etc/permissions/com.google.android.systemui.xml)
+            fixSystemUIPermission $2
+            ;;
+    esac
+}
+
+function fixSystemUIPermission() {
+    local perms=(
+        "android.permission.ACCESS_CONTEXT_HUB"
+        "android.permission.BLUETOOTH_CONNECT"
+        "android.permission.READ_CONTACTS"
+    )
+
+    for perm in ${perms[@]}
+    do
+        xmlstarlet ed -L \
+            -s "//permissions/privapp-permissions[@package='com.android.systemui']" \
+            -t elem -n "permission" \
+            -i '/permissions/privapp-permissions/permission[not(@name)]' \
+            -t attr -n "name" -v $perm \
+            "$1"
+    done
+    xmlstarlet fo -s 4 "$1" > "$1".bak
+    mv "$1".bak "$1"
+}
+
 if [ -z "$SRC" ]; then
     echo "Path to system dump not specified! Specify one with --path"
     exit 1
