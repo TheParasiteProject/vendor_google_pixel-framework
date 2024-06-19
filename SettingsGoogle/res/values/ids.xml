@@ -5,6 +5,8 @@
     <item type="id" name="biometric_enrollment_immobile_help"/>
     <item type="id" name="bottom_sheet_description"/>
     <item type="id" name="bottom_sheet_title"/>
+    <item type="id" name="btn_list"/>
+    <item type="id" name="cancel_btn"/>
     <item type="id" name="candidate_apps_header_text"/>
     <item type="id" name="candidate_apps_list"/>
     <item type="id" name="card"/>
@@ -15,6 +17,9 @@
     <item type="id" name="carrier_apps_list"/>
     <item type="id" name="carrier_apps_suggestion_chip"/>
     <item type="id" name="columbus_gesture_illustration"/>
+    <item type="id" name="device_btn_list"/>
+    <item type="id" name="device_button"/>
+    <item type="id" name="dialog_subtitle_2"/>
     <item type="id" name="distance_indicator_view"/>
     <item type="id" name="enabled_apps_header_text"/>
     <item type="id" name="enabled_apps_hint_text"/>
@@ -27,10 +32,10 @@
     <item type="id" name="face_enroll_participation"/>
     <item type="id" name="face_enrolled_anim"/>
     <item type="id" name="face_smiley"/>
+    <item type="id" name="fingerprint_in_app_indicator_rest"/>
     <item type="id" name="icon_fold"/>
     <item type="id" name="icon_light"/>
     <item type="id" name="immobile_continue_btn"/>
-    <item type="id" name="immobile_icon"/>
     <item type="id" name="immobile_subtitle"/>
     <item type="id" name="immobile_title"/>
     <item type="id" name="indicator_view"/>
@@ -38,6 +43,7 @@
     <item type="id" name="info_outside_screen"/>
     <item type="id" name="item_language"/>
     <item type="id" name="learn_more_btn"/>
+    <item type="id" name="lock_icon"/>
     <item type="id" name="lock_screen_bypass_lottie"/>
     <item type="id" name="lock_screen_bypass_toggle"/>
     <item type="id" name="nav_bar"/>
@@ -47,6 +53,16 @@
     <item type="id" name="percentage_number"/>
     <item type="id" name="preview_caption"/>
     <item type="id" name="preview_image"/>
+    <item type="id" name="rest_to_unlock_desc"/>
+    <item type="id" name="rest_to_unlock_option"/>
+    <item type="id" name="rest_to_unlock_switch"/>
+    <item type="id" name="rest_to_unlock_title"/>
+    <item type="id" name="share_audio_disconnect_description"/>
+    <item type="id" name="share_audio_guidance"/>
+    <item type="id" name="share_audio_subtitle"/>
+    <item type="id" name="share_audio_subtitle1"/>
+    <item type="id" name="share_audio_subtitle2"/>
+    <item type="id" name="share_btn"/>
     <item type="id" name="show_more_title"/>
     <item type="id" name="square_frame_layout"/>
     <item type="id" name="status_image"/>

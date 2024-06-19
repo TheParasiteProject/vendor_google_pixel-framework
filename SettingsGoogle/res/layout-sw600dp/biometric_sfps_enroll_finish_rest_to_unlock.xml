@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/sfps_rest_to_unlock_enroll_finish_content_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@id/fingerprint_in_app_indicator_rest"
+        android:layout_width="@dimen/sfps_rest_to_unlock_enroll_finish_content_width"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:scaleType="fitXY"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/rest_to_unlock_option"
+        android:layout_width="@dimen/sfps_rest_to_unlock_enroll_finish_content_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16.0dip"
+        android:layout_marginTop="24.0dip">
+
+        <TextView
+            android:id="@id/rest_to_unlock_title"
+            android:layout_width="@dimen/sfps_rest_to_unlock_enroll_finish_title_width"
+            android:layout_height="wrap_content"
+            android:fontFamily="google-sans"
+            android:lineHeight="28.0sp"
+            android:text="@string/security_settings_sfps_enroll_finish_rest_to_unlock_title"
+            android:textColor="@color/sfps_enroll_immobile_title_text_color"
+            android:textFontWeight="400"
+            android:textSize="24.0sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@id/rest_to_unlock_desc"
+            android:layout_width="@dimen/sfps_rest_to_unlock_enroll_finish_title_width"
+            android:layout_height="wrap_content"
+            android:fontFamily="google-sans-text"
+            android:layout_marginTop="4.0dip"
+            android:lineHeight="20.0sp"
+            android:text="@string/security_settings_sfps_enroll_finish_rest_to_unlock_desc"
+            android:textColor="@color/sfps_enroll_immobile_subtitle_text_color"
+            android:textFontWeight="400"
+            android:textSize="14.0sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rest_to_unlock_title" />
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@id/rest_to_unlock_switch"
+            android:layout_width="@dimen/sfps_rest_to_unlock_enroll_finish_switch_width"
+            android:layout_height="@dimen/sfps_rest_to_unlock_enroll_finish_switch_height"
+            android:theme="@style/Theme.Material3.DynamicColors.DayNight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

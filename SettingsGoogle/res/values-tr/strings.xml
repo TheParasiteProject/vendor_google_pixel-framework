@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">Klavye dokunma teknolojisi</string>
+    <string name="accessibility_screen_magnifier_summary">Etrafınızdaki ayrıntıları büyütmek için kameranızı kullanın</string>
+    <string name="accessibility_screen_magnifier_title">Büyüteç</string>
     <string name="adaptive_alert_vibration_summary">Telefonunuz sabit ve ekranı yukarı bakarken titreşim kuvvetini azaltır</string>
     <string name="adaptive_alert_vibration_title">Uyarlanabilir uyarı titreşimi</string>
     <string name="adaptive_battery_switch_des">Uyarlanabilir Pil özelliği, pil ömrünü uzatmak için performansı düşürebilir ve arka plan etkinliğini azaltabilir. Bazı bildirimler gecikebilir.</string>
@@ -12,6 +14,8 @@
     <string name="adaptive_charging_main_switch_title">"Uyarlanabilir Şarj'ı kullan"</string>
     <string name="adaptive_charging_time_estimate"><b>Uyarlanabilir Şarj</b> •Tamamen dolacağı zaman: %1$s</string>
     <string name="adaptive_charging_title">Uyarlanabilir Şarj</string>
+    <string name="adaptive_touch_sensitivity_summary">Dokunma hassasiyeti; ortamınıza, etkinliklerinize ve ekran koruyucunuza göre otomatik olarak ayarlanır.</string>
+    <string name="adaptive_touch_sensitivity_title">Adaptif dokunma</string>
     <string name="add_bypassed_application_hint">Eklenmiş uygulama yok</string>
     <string name="advanced_vpn_preference_group_title">Yerleşik</string>
     <string name="all_apps_category_title">Tüm uygulamalar</string>
@@ -23,6 +27,16 @@ Erişim izni verirseniz bu uygulama, gönderdiğiniz tüm sorun raporlarıyla il
 
 Erişim iznini iptal ederseniz uygulamanın, her sorun raporuyla ilgili bir hata raporu toplayıp yüklemesi için izninizi istemesi gerekir."</string>
     <string name="app_and_notification_dashboard_summary">Asistan, son uygulamalar, varsayılan uygulamalar</string>
+    <string name="audio_sharing_switch_title">Sesi paylaş</string>
+    <string name="audio_sharing_title">Ses paylaşımı</string>
+    <string name="audio_streams_category_title">LE ses akışına bağlanın</string>
+    <string name="audio_streams_connect">Bağlan</string>
+    <string name="audio_streams_disconnect">Bağlantıyı kes</string>
+    <string name="audio_streams_pref_title">Yakındaki ses akışları</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">QR kodu geçerli bir biçim değil</string>
+    <string name="audio_streams_qr_code_scanner">Dinlemeye başlamak için aşağıdaki QR kodunu ortalayın</string>
+    <string name="audio_streams_qr_code_summary">QR kodu kullanarak ses akışına bağlanın</string>
+    <string name="audio_streams_title">Ses akışları</string>
     <string name="automatic_storage_manager_activation_warning">Bağlandığınızda, fotoğraflara ve videolara yedekleme için seçtiğiniz kalitede erişmeye devam edebileceksiniz</string>
     <string name="automatic_storage_manager_days_title">Yedeklenen fotoğraf ve videoları kaldır</string>
     <string name="automatic_storage_manager_deactivation_warning">"Akıllı Depolama kapatılsın mı? 
@@ -48,8 +62,20 @@ Depolama alanınız neredeyse dolu olduğu zaman Akıllı Depolama yer açamayac
     <string name="battery_tip_battery_health_learn_more_description">Pil sağlığı hakkında daha fazla bilgi edinin</string>
     <string name="battery_tip_battery_health_reduced_title">Pil kapasitesi azaldı</string>
     <string name="battery_tip_battery_health_unknown_title">Pil sağlığı algılanamıyor</string>
+    <string name="battery_tip_dock_defender_active_summary">Tabletiniz yuvaya yerleştirilmiş durumdayken şarjı %90 dolduğunda pil kullanım ömrünü uzatmaya yardımcı olmak için şarj işlemi beklemeye alınır</string>
+    <string name="battery_tip_dock_defender_active_title">Pili korumak için şarj beklemede</string>
+    <string name="battery_tip_dock_defender_button_learn_more">Daha fazla bilgi</string>
+    <string name="battery_tip_dock_defender_button_override">Geçersiz kıl</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">Tabletiniz yuvaya yerleştirilmiş durumdayken şarjı %90 dolduğunda pil kullanım ömrünü uzatmaya yardımcı olmak için şarj işlemi beklemeye alınacak</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">%90 seviyesine kadar şarj ediliyor</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">Tabletiniz bir sonraki sefer yuvaya yerleştirilmiş durumdayken şarjı %90 dolduğunda pilini korumak için şarj işlemi beklemeye alınacak</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">Tamamen dolana kadar şarj ediliyor</string>
     <string name="battery_tip_limited_temporarily_extra_summary">Pilinizi korumak için, tabletiniz yuvadayken şarj işlemi %1$s seviyesinde duraklatıldı</string>
     <string name="battery_tip_smart_battery_summary">"Uyarlanabilir Pil'i aç"</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">Kablosuz şarj hakkında daha fazla bilgi</string>
+    <string name="battery_tip_wireless_charging_summary">Telefonunuzu kablosuz olarak şarj etmeniz, diğer şarj yöntemlerine kıyasla daha fazla enerji tüketebilir</string>
+    <string name="battery_tip_wireless_charging_title">Kablosuz şarj oluyor</string>
+    <string name="calls_and_alarms_device_title">Aramalar ve alarmlar</string>
     <string name="clear_calling_footer">"Net Görüşme Sesi, gizliliğinizi korumak için Google'a ses veya konuşma göndermez.
 
 Net Görüşme Sesi kablosuz çağrıda ve çoğu ağda çalışır, 3G ağlarında ise kullanılamaz."</string>
@@ -120,12 +146,15 @@ Net Görüşme Sesi kablosuz çağrıda ve çoğu ağda çalışır, 3G ağları
 
 Kimlik avı, oturum açma kimlik bilgilerini veya diğer kişisel bilgileri çalmaya yönelik bir girişimdir."</string>
     <string name="content_protection_preference_subpage_summary">"Doğrudan cihazınızda gizli olarak yürütülen tarama işlemi, uygulama etkinliğini kimlik avı veya diğer yanıltıcı davranışlar açısından kontrol eder. Böyle bir durum tespit edilirse tehdidi onaylamak ve uygulama kullanıcılarını uyarmak için bazı uygulama bilgileri Google Play Protect'e gönderilir."</string>
+    <string name="contextual_timeout_description">Cihazınızı kullanmadığınızda ekranınızı otomatik olarak erkenden kapatır</string>
+    <string name="contextual_timeout_title">Uyarlanabilir zaman aşımı</string>
     <string name="dark_ui_text">Koyu tema, pilinizin daha uzun süre dayanmasına yardımcı olmak için siyah arka plan kullanır. Koyu tema, açılmak için ekranınızın kapanmasını beklemeye programlanır.</string>
     <string name="debugging_data_title">Hata ayıklama verileri</string>
     <string name="discover_tips_button">İpuçlarını keşfedin</string>
     <string name="dock_summary_charging_phone">Telefonunuz şarj oluyor</string>
     <string name="double_twist_for_camera_mode_summary">"Google Kamera'da selfie moduna geçmek ve bu moddan çıkmak için uygulama içindeyken cihazı iki kez döndürün."</string>
     <string name="duration_less_than_one_minute">1 dakikadan az</string>
+    <string name="enable_glanceable_hub_toggle">Hub Modu</string>
     <string name="extreme_battery_saver_summary">Yukarıda listelenen tüm değişiklikleri içerir. Bunun yanı sıra, gerekli olmayan uygulamaları ve bildirimlerini duraklatır.</string>
     <string name="extreme_battery_saver_title">Ekstra Pil Tasarrufu</string>
     <string name="face_confirmation_hide_illustration_description">Artık telefonunuzu elinize aldığınızda veya ekranına dokunduğunuzda kilidini açmak için yüzünüzü kullanabilirsiniz.</string>
@@ -163,7 +192,6 @@ Kimlik avı, oturum açma kimlik bilgilerini veya diğer kişisel bilgileri çal
     <string name="firmware_update_status_category">Cihazın donanım yazılımı durumu</string>
     <string name="firmware_update_status_title">Donanım yazılımı güncellemesi mevcut</string>
     <string name="firmware_update_version_number_category">Cihazın donanım yazılımı sürümü</string>
-    <string name="firmware_update_version_number_title">Pixel klavye donanım yazılımı</string>
     <string name="fullbackup_data_summary">"Cihaz verilerini (kablosuz ağ şifreleri ve çağrı geçmişi gibi) ve uygulama verilerini (uygulamalar tarafından depolanan ayarlar ve dosyalar gibi) Google Drive'a otomatik olarak yedekleyin.
 
 Otomatik yedeklemeyi etkinleştirdiğinizde, cihaz ve uygulama verileri belirli aralıklarla Google Drive'daki özel bir klasöre kaydedilir. Uygulama verileri, bir uygulamanın (geliştirici ayarlarına göre) kaydettiği herhangi bir veri olabilir. Buna kişiler, iletiler ve fotoğraflar gibi potansiyel olarak hassas veriler dahildir.
@@ -171,16 +199,19 @@ Otomatik yedeklemeyi etkinleştirdiğinizde, cihaz ve uygulama verileri belirli 
 Yedek veriler Drive depolama kotanıza dahil edilmez. Büyük dosyalar veya geliştiricilerin hizmetin dışında tutmak üzere seçtiği dosyalar yedeklenmez."</string>
     <string name="fullbackup_erase_dialog_message">"Cihaz verilerinin (kablosuz ağ şifreleri ve çağrı geçmişi gibi) ve uygulama verilerinin (uygulamalar tarafından depolanan ayarlar ve dosyalar gibi) yedeklenmesi durdurulsun ve Google Drive'daki tüm kopyaları silinsin mi?"</string>
     <string name="gesture_settings_activity_title">Hareketle Gezinme</string>
+    <string name="hub_mode_content_setting">"Hub Modu'nda tüm widget'lara izin ver"</string>
     <string name="install_unknown_applications">Google Play Store dışındaki kaynaklardan uygulama yüklemeye izin ver</string>
     <string name="keywords_accessibility_menu">motor, hızlı menü, yardımcı menü, dokunma, el becerisi, eklem iltihabı, rsi, inme, titreme, multipl skleroz, beyin felci, düğme, donanım, basmak, aşırı kullanım sonucu kas rahatsızlığı, el, acı, erişilebilir, yardım</string>
     <string name="keywords_adaptive_alert_vibration">dokunma teknolojisi, titreşim, telefon, çağrı, zili çaldırma, uyarı, bildirimler, yüksek ses, alçak ses, gürültü, kılıf, uyarlanabilir</string>
     <string name="keywords_adaptive_charging">şarj, şarj etme, akıllı şarj, uyarlanabilir şarj, pil, pil sağlığı</string>
     <string name="keywords_battery_share">pil paylaşımı, kablosuz şarj</string>
     <string name="keywords_battery_share_settings">pil paylaşımı, ters kablosuz şarj</string>
+    <string name="keywords_contextual_screen_timeout">ekran, zaman aşımı, uyarlanabilir, bağlamsal</string>
     <string name="keywords_gesture">hareket, hareketler</string>
     <string name="keywords_hearing_devices">işitme zorluğu, işitme kaybı, PSAP</string>
     <string name="keywords_limited_warranty">garanti, sınırlı garanti, taahhüt, onarım, rma, değiştirme</string>
     <string name="keywords_live_transcribe">Altyazı, altyazılar, alt yazılar, Canlı Altyazı, duyma zorluğu, duyma kaybı, gerçek zamanlı altyazı, sesle yazma, alt yazı</string>
+    <string name="keywords_magnifier">Yakınlaştırma, Büyütme, Az görme, Genişlet, büyüt</string>
     <string name="keywords_reverse_charging_stop_threshold">Telefon şu seviyeye ulaştığında pil paylaşımını durdur:</string>
     <string name="keywords_select_to_speak">Metin okuma, sesli okuma, ekranı oku, ekran okuyucu</string>
     <string name="keywords_sound_amplifier">kişisel ses yükseltme cihazı, ses yükselt, ses yükseltme, duyma zorluğu, duyma kaybı, ses yükseltici</string>
@@ -188,6 +219,7 @@ Yedek veriler Drive depolama kotanıza dahil edilmez. Büyük dosyalar veya geli
     <string name="keywords_switch_access">motor, anahtar, el, yardımcı, yardımcı teknoloji, felç, ALS, tarama, adım adım tarama</string>
     <string name="keywords_talkback">Ekran okuyucu, seslendirme, seslendir, Sesli Yardım, Görme engelli, Az Görme, metin okuma, metin oku, sözlü geri bildirim</string>
     <string name="keywords_touch_sensitivity">dokunma, hassasiyet, hassas, ekran koruyucu, film, duyarlı, yanıt verme</string>
+    <string name="keywords_touch_sensitivity_settings">dokunma, hassasiyet, hassas, ekran koruyucu, film, duyarlı, yanıt verme</string>
     <string name="keywords_voice_access">ses, sesli kontrol, motor, el, mikrofon, sesli erişim, dikte, konuşma, kontrol</string>
     <string name="led_preference_title">LED göstergesi kalıpları</string>
     <string name="legal_source_code_description">Açık kaynak olarak kullanıma sunulan bileşenlerin kaynak koduyla ilgili ayrıntıları Pixel yardım merkezinde bulabilirsiniz.</string>
@@ -201,7 +233,7 @@ Yedek veriler Drive depolama kotanıza dahil edilmez. Büyük dosyalar veya geli
     <string name="permit_debugging_data">Hata raporu erişimine izin ver</string>
     <string name="play_application_detail_indication_summary">Güncellemeleri denetleyin</string>
     <string name="play_application_update_entry_title">Uygulama güncellemeleri</string>
-    <string name="privatespace_retry_summary">"Gizli alan kurmak için bir Google Hesabı'nda oturum açmanız gerekir"</string>
+    <string name="private_space_retry_summary">"Özel alanınızda kullanılacak Google Hesabı'nda oturum açın"</string>
     <string name="repair_mode_active_summary">Onarım modunda</string>
     <string name="repair_mode_summary">Cihaz onarımı için güvenli ortam</string>
     <string name="repair_mode_title">Onarım modu</string>
@@ -239,20 +271,26 @@ Denemek için telefonunuzu çevirin."</string>
     <string name="screen_time_summary_usage_today">Bugün %1$s</string>
     <string name="search_bar_account_avatar_content_description">"Profil resmi, Google Hesabı'nı açmak için iki kez dokunun"</string>
     <string name="search_gesture_category_title">Arama</string>
-    <string name="search_gesture_feature_title">Aramak için daire içine alın</string>
+    <string name="search_gesture_feature_title">Seçerek Arat</string>
     <string name="search_long_press_home_button_summary">Ekranın alt tarafındaki ana sayfa düğmesine dokunup basılı tuttuktan sonra aramak istediğiniz bir şeyi daire içine alın veya vurgulayın</string>
     <string name="search_press_hold_gesture_summary">Ekranın alt tarafındaki tutma yerine dokunup basılı tuttuktan sonra aramak istediğiniz bir şeyi daire içine alın veya vurgulayın</string>
     <string name="security_dismiss_dialog_dismiss_button">Kapat</string>
     <string name="security_dismiss_dialog_title">Bu uyarı kapatılsın mı?</string>
-    <string name="security_settings_biometric_preference_summary_none_enrolled">Kurmak için dokunun</string>
+    <string name="security_settings_biometric_preference_summary_none_enrolled">Ayarlamak için dokunun</string>
     <string name="security_settings_face_enroll_consent_introduction_title">"Yüz Tanıma Kilidi'ne izin verin"</string>
     <string name="security_settings_face_enroll_education_message">Bir sonraki ekranda, yüzünüzün tüm açılardan fotoğrafını çekmek için başınızı çevirin.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Yüz Tanıma Kilidi kurulumu zaman aşımına uğradı</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Artık telefonunuzun kilidini açmak veya uygulamalarda oturum açma ya da satın alma işlemlerini onaylama gibi durumlarda kimliğinizi doğrulamak için yüzünüzü kullanabilirsiniz.</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp_full">"Artık telefonunuzun kilidini açarken veya uygulamalarda oturum açmak ya da satın alma işlemlerini onaylamak gibi işlemler için kimliğinizi doğrularken yüzünüzü kullanabilirsiniz.
+
+Yüz Tanıma Kilidi'nin iyi bir şekilde çalışabilmesi için yeterli ışık olması ve maske ya da koyu renk gözlük takmıyor olmanız gerekir."</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Artık telefonunuzu elinize aldığınızda veya ekranına dokunduğunuzda kilidini açmak için yüzünüzü kullanabilirsiniz.
 
 Yüz Tanıma Kilidi'nin iyi bir şekilde çalışabilmesi için yeterli ışık olması ve maske ya da koyu renk gözlük takmıyor olmanız gerekir."</string>
-    <string name="security_settings_face_enroll_finish_title">İyi görünüyor!</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp_folded">"Artık telefonunuzu elinize aldığınızda veya ekranına dokunduğunuzda kilidini açmak için yüzünüzü kullanabilirsiniz. Yüz Tanıma Kilidi'ni kullanabilmek için telefonunuzun katlanmış olması gerekir.
+
+Yüz Tanıma Kilidi'nin iyi bir şekilde çalışabilmesi için yeterli ışık olması ve maske ya da koyu renk gözlük takmıyor olmanız gerekir."</string>
+    <string name="security_settings_face_enroll_finish_title">Her şey hazır</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Görme veya başını hareket ettirme yeteneği kısıtlı olanlar için kurulum</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Gözlerin açık olması gerekir</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Kontrol sizde ve çocuğunuzdadır</string>
@@ -261,7 +299,7 @@ Yüz Tanıma Kilidi'nin iyi bir şekilde çalışabilmesi için yeterli ışık 
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Çocuğunuz normalde gözlük takıyorsa kurulum sırasında da takabilir.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Gözlük veya camı açık renkli olan güneş gözlüğü kullanılabilir.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Unutmayın</string>
-    <string name="security_settings_face_enroll_introduction_title">Yüz Tanıma Kilidi kurulumu</string>
+    <string name="security_settings_face_enroll_introduction_title">"Yüz Tanıma Kilidi'ni ayarlama"</string>
     <string name="security_settings_face_enroll_next">İleri</string>
     <string name="security_settings_face_enroll_partial_message">"Performansı artırmak için Yüz Tanıma Kilidi'ni Ayarlar'dan tekrar kurabilirsiniz."</string>
     <string name="security_settings_face_enroll_partial_start_over">Baştan başla</string>
@@ -273,10 +311,10 @@ Performansı artırmak için Yüz Tanıma Kilidi'ni Ayarlar'dan tekrar seçebili
     <string name="security_settings_face_enroll_timeout_try_again">Tekrar dene</string>
     <string name="security_settings_face_enroll_timeout_use_fast_setup">Hızlı kurulumu kullan</string>
     <string name="security_settings_face_enroll_too_hot_exit_setup">Kurulumdan çık</string>
-    <string name="security_settings_face_enroll_too_hot_message">Telefon çok fazla ısındığından Yüz Tanıma Kilidi kurulumu tamamlanamadı. Telefon soğuduktan sonra tekrar deneyin.</string>
+    <string name="security_settings_face_enroll_too_hot_message">Telefon çok fazla ısındığından Yüz Tanıma Kilidi ayarlaması tamamlanamadı. Telefon soğuduktan sonra tekrar deneyin.</string>
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">"Yüz Tanıma Kilidi'ni atla"</string>
     <string name="security_settings_face_enroll_too_hot_title">Telefon çok ısındı</string>
-    <string name="security_settings_face_preference_summary_none">Yüz tanımayı kurmak için dokunun</string>
+    <string name="security_settings_face_preference_summary_none">Yüz tanımayı ayarlamak için dokunun</string>
     <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Nexus Imprint ile, satın alma işlemlerini yetkilendirmek veya uygulamalarda oturum açmak için parmak izinizi kullanabilirsiniz.
 
 Kimlerin parmak izini eklediğinize dikkat edin. Eklenen herhangi bir parmak izi bunların tümünü yapabilir.
@@ -291,6 +329,8 @@ Not: Bu cihazın kilidini açmak için parmak izinizi kullanamazsınız. Daha fa
     <string name="security_settings_work_fingerprint_preference_title">İş profili için Pixel Imprint</string>
     <string name="setup_suggestion_summary">Yalnızca birkaç adım kaldı</string>
     <string name="setup_suggestion_title">Kurulumu tamamlayın</string>
+    <string name="smart_battery_a11y_collapse_label">Daralt, Uyarlanabilir Pil</string>
+    <string name="smart_battery_a11y_expand_label">Genişlet, Uyarlanabilir Pil</string>
     <string name="smart_battery_footer">Uyarlanabilir Pil özelliği, pil ömrünü uzatmak için performansı düşürebilir ve arka plan etkinliğini azaltabilir. Bazı bildirimler gecikebilir.</string>
     <string name="smart_battery_manager_title">Uyarlanabilir tercihler</string>
     <string name="smart_battery_title">Uyarlanabilir Pil</string>
@@ -307,6 +347,8 @@ Not: Bu cihazın kilidini açmak için parmak izinizi kullanamazsınız. Daha fa
     <string name="software_update_up_to_specific_date_summary">%1$s olarak güncellendi</string>
     <string name="software_update_update_available_summary">Güncelleme var</string>
     <string name="sound_dashboard_summary">Ses seviyesi, dokunma teknolojisi, Rahatsız Etmeyin</string>
+    <string name="spatial_audio_head_tracking_available">Kafa hareketi izleme özelliği kullanılabilir</string>
+    <string name="spatial_audio_head_tracking_unavailable">Kafa hareketi izleme özelliği kullanılamıyor</string>
     <string name="spatial_audio_title">Üç boyutlu ses</string>
     <string name="speed_boost_summary_off">Kapalı</string>
     <string name="speed_boost_summary_on">Açık</string>
@@ -319,6 +361,9 @@ Not: Bu cihazın kilidini açmak için parmak izinizi kullanamazsınız. Daha fa
     <string name="suw_warranty_positive_button_text">Kapat</string>
     <string name="system_update_entry_title">Sistem güncellemesi</string>
     <string name="system_updates_group_title">Pixel güncellemeleri</string>
+    <string name="touch_category_title">Dokunma</string>
+    <string name="touch_sensitivity_settings_summary">Dokunmatik ekran hassasiyetini ayarlayın</string>
+    <string name="touch_sensitivity_settings_title">Dokunma hassasiyeti</string>
     <string name="touch_sensitivity_summary">Ekran koruyucu kullanırken dokunma hassasiyetini artırır ve dokunma işlevini iyileştirir.</string>
     <string name="touch_sensitivity_title">Ekran koruyucu modu</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Telefonu yüzünüzün önünde tutun</string>

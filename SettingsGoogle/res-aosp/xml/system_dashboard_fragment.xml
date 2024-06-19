@@ -45,7 +45,8 @@
         android:order="-254"
         android:summary="@string/trackpad_settings_summary"
         android:title="@string/trackpad_settings"
-        settings:controller="com.android.settings.inputmethod.TrackpadSettingsController" />
+        settings:controller="com.android.settings.inputmethod.TrackpadSettingsController"
+        settings:keywords="@string/keywords_touchpad" />
 
     <Preference
         android:fragment="com.android.settings.gestures.GestureSettings"
@@ -54,37 +55,6 @@
         android:order="-250"
         android:title="@string/gesture_preference_title"
         settings:controller="com.android.settings.gestures.GesturesSettingPreferenceController" />
-
-    <!-- Button Settings -->
-    <Preference
-        android:key="button_settings"
-        android:title="@string/button_pref_title"
-        android:icon="@drawable/ic_button_settings"
-        android:order="-249"
-        android:fragment="com.android.settings.custom.buttons.ButtonSettings"/>
-
-    <!-- Statusbar Settings -->
-    <Preference
-        android:key="statusbar_settings"
-        android:title="@string/status_bar_title"
-        android:icon="@drawable/ic_settings_statusbar"
-        android:order="-248"
-        android:fragment="com.android.settings.custom.statusbar.StatusBarSettings" />
-
-    <Preference
-        android:key="default_usb_configuration"
-        android:fragment="com.android.settings.connecteddevice.usb.UsbDefaultFragment"
-        android:icon="@drawable/ic_usb_24"
-        android:order="-245"
-        android:title="@string/usb_default_config_title"/>
-
-    <!-- Custom Advanced Settings -->
-    <Preference
-        android:key="advanced_settings"
-        android:title="@string/advanced_pref_title"
-        android:icon="@drawable/ic_advanced_settings"
-        android:order="-242"
-        android:fragment="com.android.settings.custom.advanced.AdvancedSettings"/>
 
     <Preference
         android:fragment="com.android.settings.datetime.DateTimeSettings"
@@ -113,13 +83,20 @@
         android:order="-58"
         android:summary="@string/summary_placeholder"
         android:title="@string/system_update_settings_list_item_title"
-        settings:controller="com.android.settings.system.SystemUpdatePreferenceController"
+        settings:controller="com.google.android.settings.update.GoogleSystemUpdatePreferenceController"
         settings:keywords="@string/keywords_system_update_settings">
 
         <intent
             android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
 
     </Preference>
+
+    <com.android.settings.spa.preference.ComposePreference
+        android:key="software_update_settings"
+        android:order="-57"
+        android:title="@string/software_update_entry_title"
+        settings:controller="com.google.android.settings.update.SoftwareUpdateController"
+        settings:keywords="@string/keywords_system_update_settings" />
 
     <Preference
         android:fragment="com.android.settings.users.UserSettings"
@@ -134,7 +111,7 @@
         android:order="-40"
         settings:controller="com.android.settings.system.DeveloperOptionsController" />
 
-    <!-- <Preference
+    <Preference
         android:icon="@drawable/ic_repair_mode"
         android:key="repair_mode_settings"
         android:order="-35"
@@ -146,7 +123,7 @@
             android:action="com.google.android.intent.action.REPAIR_MODE_SETTINGS"
             android:targetPackage="com.google.android.repairmode" />
 
-    </Preference> -->
+    </Preference>
 
     <Preference
         android:fragment="com.android.settings.system.ResetDashboardFragment"

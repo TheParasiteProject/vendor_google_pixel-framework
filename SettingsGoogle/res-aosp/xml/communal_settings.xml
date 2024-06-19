@@ -30,6 +30,18 @@
             android:summary="@string/communal_lock_screen_summary"
             android:title="@string/lockscreen_settings_title" />
 
+        <SwitchPreferenceCompat
+            android:key="enable_glanceable_hub_toggle"
+            android:order="30"
+            android:title="@string/enable_glanceable_hub_toggle"
+            settings:controller="com.google.android.settings.communal.GlanceableHubTogglePreferenceController" />
+
+        <SwitchPreferenceCompat
+            android:key="hub_mode_content_setting"
+            android:order="40"
+            android:title="@string/hub_mode_content_setting"
+            settings:controller="com.google.android.settings.communal.HubModeContentPreferenceController" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

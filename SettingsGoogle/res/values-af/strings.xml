@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">Fisiese sleutelbordterugvoer</string>
+    <string name="accessibility_screen_magnifier_summary">Gebruik jou kamera om details rondom jou te vergroot</string>
+    <string name="accessibility_screen_magnifier_title">Vergrootglas</string>
     <string name="adaptive_alert_vibration_summary">Verminder vibrasiesterkte terwyl jou foon stil is en die skerm boontoe wys</string>
     <string name="adaptive_alert_vibration_title">Aanpasbare kennisgewingvibrasie</string>
     <string name="adaptive_battery_switch_des">Om batterylewe te verleng, kan Aanpasbare Battery werkverrigting en agtergrondaktiwiteit beperk. Sommige kennisgewings kan vertraag word.</string>
@@ -8,10 +10,12 @@
     <string name="adaptive_charging">Aanpasbare laaiproses</string>
     <string name="adaptive_charging_description">Verleng battery se lewensduur deur geleidelik te laai en oor langer tye te laai. Geaktiveer op grond van jou gebruiksiklus.</string>
     <string name="adaptive_charging_footer">Om te help om die batteryleeftyd te verleng, leer jou foon jou laairoetine ken, en wag totdat jy dit nodig het om vol te laai.</string>
-    <string name="adaptive_charging_link_a11y">Kom meer te wete oor Aanpasbare Laai</string>
+    <string name="adaptive_charging_link_a11y">Meer inligting oor Aanpasbare Laai</string>
     <string name="adaptive_charging_main_switch_title">Gebruik Aanpasbare Laai</string>
     <string name="adaptive_charging_time_estimate"><b>Aanpasbare laaiproses</b> • Vol teen %1$s</string>
     <string name="adaptive_charging_title">Aanpasbare Laai</string>
+    <string name="adaptive_touch_sensitivity_summary">Raaksensitiwiteit sal outomaties aanpas by jou omgewing, aktiwiteite en skermbeskermer</string>
+    <string name="adaptive_touch_sensitivity_title">Aanpasbare aanraking</string>
     <string name="add_bypassed_application_hint">Geen programme bygevoeg nie</string>
     <string name="advanced_vpn_preference_group_title">Ingebou</string>
     <string name="all_apps_category_title">Alle apps</string>
@@ -23,6 +27,16 @@ As jy toegang gee, sal hierdie app "<b>foutverslae outomaties kan insamel en opl
 
 As jy toegang herroep, sal hierdie app jou toestemming moet vra om ’n foutverslag vir elke individuele kwessie in te samel en op te laai."</string>
     <string name="app_and_notification_dashboard_summary">Assistent, onlangse apps, verstekapps</string>
+    <string name="audio_sharing_switch_title">Deel oudio</string>
+    <string name="audio_sharing_title">Oudiodeling</string>
+    <string name="audio_streams_category_title">Koppel aan ’n LE-oudiostroom</string>
+    <string name="audio_streams_connect">Koppel</string>
+    <string name="audio_streams_disconnect">Ontkoppel</string>
+    <string name="audio_streams_pref_title">Oudiostrome naby</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">QR-kode is nie ’n geldige formaat nie</string>
+    <string name="audio_streams_qr_code_scanner">Plaas die QR-kode hieronder in die middel om te begin luister</string>
+    <string name="audio_streams_qr_code_summary">Koppel aan ’n oudiostroom met gebruik van ’n QR-kode</string>
+    <string name="audio_streams_title">Oudiostrome</string>
     <string name="automatic_storage_manager_activation_warning">"Wanneer jy gekoppel is, kan jy steeds toegang kry tot foto's en video's teen die gehalte wat jy vir rugsteun gekies het"</string>
     <string name="automatic_storage_manager_days_title">"Verwyder gerugsteunde foto's en video's"</string>
     <string name="automatic_storage_manager_deactivation_warning">"Skakel Slimberging af? 
@@ -49,8 +63,20 @@ Slimberging sal nie spasie beskikbaar maak wanneer jou berging amper vol is nie.
     <string name="battery_tip_battery_health_learn_more_description">Kry meer inligting oor batterygesondheid</string>
     <string name="battery_tip_battery_health_reduced_title">Batterykapasiteit is verminder</string>
     <string name="battery_tip_battery_health_unknown_title">Kan nie batterygesondheid bespeur nie</string>
+    <string name="battery_tip_dock_defender_active_summary">Om die batteryleeftyd te help verleng, word laai op 90% onderbreek terwyl jou tablet gedok is</string>
+    <string name="battery_tip_dock_defender_active_title">Laai is onderbreek om battery te beskerm</string>
+    <string name="battery_tip_dock_defender_button_learn_more">Meer inligting</string>
+    <string name="battery_tip_dock_defender_button_override">Ignoreer</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">Om die batteryleeftyd te help verleng, sal laai op 90% onderbreek word terwyl jou tablet gedok is</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">Laai tans tot 90%</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">Wanneer jou tablet weer gedok word, sal laai op 90% onderbreek word om die battery te beskerm</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">Word tans tot vol gelaai</string>
     <string name="battery_tip_limited_temporarily_extra_summary">Om jou battery te beskerm, word die laaiproses op %1$s onderbreek terwyl jou tablet gedok is</string>
     <string name="battery_tip_smart_battery_summary">Skakel Aanpasbare Battery aan</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">Meer inligting oor draadlose batterylaai</string>
+    <string name="battery_tip_wireless_charging_summary">As jy jou foon draadloos laai, kan dit dalk meer krag as ander laaimetodes gebruik</string>
+    <string name="battery_tip_wireless_charging_title">Draadlose batterylaai</string>
+    <string name="calls_and_alarms_device_title">Oproepe en alarms</string>
     <string name="clear_calling_footer">"Belhelderheid stuur nie oudio of gesprekke na Google toe nie om jou privaatheid te beskerm.
 
 Belhelderheid werk vir wi-fi-oproepe en op die meeste netwerke, maar is nie vir 3G-netwerke beskikbaar nie."</string>
@@ -89,10 +115,10 @@ Belhelderheid werk vir wi-fi-oproepe en op die meeste netwerke, maar is nie vir 
     <string name="columbus_setting_action_flashlight_title">Wissel flitslig</string>
     <string name="columbus_setting_action_launch_summary_no_selection">Geen program is gekies nie</string>
     <string name="columbus_setting_action_launch_summary_not_installed">Program is nie geïnstalleer nie</string>
-    <string name="columbus_setting_action_launch_title">Maak program oop</string>
+    <string name="columbus_setting_action_launch_title">Maak app oop</string>
     <string name="columbus_setting_action_notification_title">Wys kennisgewings</string>
-    <string name="columbus_setting_action_open_app_title">Maak program oop</string>
-    <string name="columbus_setting_action_overview_title">Sien onlangse programme</string>
+    <string name="columbus_setting_action_open_app_title">Maak app oop</string>
+    <string name="columbus_setting_action_overview_title">Sien onlangse apps</string>
     <string name="columbus_setting_action_play_pause_title">Speel of onderbreek media</string>
     <string name="columbus_setting_action_screenshot_title">Neem skermkiekie</string>
     <string name="columbus_setting_actions_title">Tik twee keer op agterkant van foon en</string>
@@ -102,7 +128,7 @@ Belhelderheid werk vir wi-fi-oproepe en op die meeste netwerke, maar is nie vir 
     <string name="columbus_setting_enable_switch_title">Gebruik Dubbeltik</string>
     <string name="columbus_setting_sensitivity_title">Vereis harder tikke</string>
     <string name="columbus_title">Dubbeltik om handelinge te begin</string>
-    <string name="communal_lock_screen_summary">Privaatheid, kennisgewings en huiskontroles</string>
+    <string name="communal_lock_screen_summary">Privaatheid, kennisgewings en Home-kontroles</string>
     <string name="communal_other">Ander</string>
     <string name="communal_settings_summary">Opsies op dok- en sluitskerm</string>
     <string name="communal_settings_title">Sentrummodus</string>
@@ -116,17 +142,20 @@ Belhelderheid werk vir wi-fi-oproepe en op die meeste netwerke, maar is nie vir 
     <string name="connectivity_helper_d2d_summary">Stel die ander persoon in kennis as jou foon verbindingprobleme ervaar tydens oproepe</string>
     <string name="connectivity_helper_d2d_title">Deel verbindinginligting</string>
     <string name="connectivity_helper_footnote">"Jy kan verbindinginligting deel wanneer die ander beller 'n gesteunde toestel en netwerk gebruik"</string>
-    <string name="content_capture">Gebruik programdata om te personaliseer</string>
+    <string name="content_capture">Gebruik appdata om te personaliseer</string>
     <string name="content_protection_preference_subpage_info">"Dit is ’n beskermde sekuriteitskenmerk. Geen toestel of persoonlike inligting word met Google gedeel nie. 
 
 Uitvissing is ’n poging om aanmeldeiebewyse of ander persoonlike inligting te steel."</string>
     <string name="content_protection_preference_subpage_summary">Skandering word privaat direk op jou toestel gedoen en gaan appaktiwiteit na vir uitvissing of ander misleidende optrede. As dit bespeur word, word sekere inligting na Google Play Beskerming toe gestuur om die bedreiging te bevestig en appgebruikers te waarsku.</string>
+    <string name="contextual_timeout_description">Dit skakel jou skerm outomaties vroeg af as jy nie jou toestel gebruik nie</string>
+    <string name="contextual_timeout_title">Aanpasbare uitteltyd</string>
     <string name="dark_ui_text">"Donkertema gebruik 'n swart agtergrond om te help om jou battery langer te laat hou. Donkertemaskedules wag totdat jou skerm af is om aan te skakel."</string>
     <string name="debugging_data_title">Ontfoutingdata</string>
     <string name="discover_tips_button">Ontdek wenke</string>
     <string name="dock_summary_charging_phone">Laai tans foon</string>
     <string name="double_twist_for_camera_mode_summary">Wanneer jy in Google Kamera is, kan jy jou pols twee keer draai om in en uit selfiemodus te wissel.</string>
     <string name="duration_less_than_one_minute">Minder as 1 minuut</string>
+    <string name="enable_glanceable_hub_toggle">Sentrummodus</string>
     <string name="extreme_battery_saver_summary">Sluit alle veranderinge wat hier bo gelys word, in. Onderbreek ook nienoodsaaklike apps en hul kennisgewings.</string>
     <string name="extreme_battery_saver_title">Superbatterybespaarder</string>
     <string name="face_confirmation_hide_illustration_description">Jy kan nou jou gesig gebruik om jou foon te ontsluit wanneer jy dit optel of op die skerm tik.</string>
@@ -164,7 +193,6 @@ Uitvissing is ’n poging om aanmeldeiebewyse of ander persoonlike inligting te 
     <string name="firmware_update_status_category">Toestelfermwarestatus</string>
     <string name="firmware_update_status_title">Fermwareopdatering is beskikbaar</string>
     <string name="firmware_update_version_number_category">Toestelfermwareweergawe</string>
-    <string name="firmware_update_version_number_title">Pixel-sleutelbordfermware</string>
     <string name="fullbackup_data_summary">"Rugsteun toesteldata (soos Wi-Fi-wagwoorde en oproepgeskiedenis) en programdata (soos instellings en lêers wat deur programme geberg is) outomaties in Google Drive.
 
 Wanneer jy outomatiese rugsteun aanskakel, word toestel- en programdata van tyd tot tyd in 'n private vouer in Google Drive gestoor. Programdata kan enige data wees wat 'n program gestoor het (op grond van ontwikkelaarinstellings), insluitend potensieel sensitiewe data, soos kontakte, boodskappe en foto's.
@@ -172,17 +200,20 @@ Wanneer jy outomatiese rugsteun aanskakel, word toestel- en programdata van tyd 
 Rugsteundata sal nie deel vorm van jou Drive-bergingkwota nie. Groot lêers, of lêers wat ontwikkelaars gekies het om van die diens uit te sluit, sal nie gerugsteun word nie."</string>
     <string name="fullbackup_erase_dialog_message">Staak die rugsteun van toesteldata (soos Wi-Fi-wagwoorde en oproepgeskiedenis) en programdata (soos instellings en lêers wat deur programme geberg is), en vee ook alle kopieë in Google Drive uit?</string>
     <string name="gesture_settings_activity_title">Gebaarnavigasie</string>
+    <string name="hub_mode_content_setting">Laat enige legstuk toe in sentrummodus</string>
     <string name="install_unknown_applications">Laat die installering van programme vanaf ander bronne as die Play Winkel toe</string>
     <string name="keywords_accessibility_menu">motories, kitskieslys, bystandskieslys, aanraking, handigheid, artritis, rsi, beroerte, bewing, verspreide sklerose, serebrale verlamming, knoppie, hardeware, druk, ooreisingbesering, hand, pyn, toeganklik, hulp</string>
     <string name="keywords_adaptive_alert_vibration">tasbare terugvoer, vibreer, foon, oproep, lui, opletberig, kennisgewings, hard, stil, geraas, houer, aanpasbaar</string>
     <string name="keywords_adaptive_charging">laai, laaiproses, slimlaaiproses, aanpasbare laaiproses, battery, batterygesondheid</string>
     <string name="keywords_battery_share">batterydeling, draadlose batterylaai</string>
     <string name="keywords_battery_share_settings">batterydeling, omgekeerde draadlose batterylaai</string>
+    <string name="keywords_contextual_screen_timeout">skerm, uitteltyd, aanpasbaar, kontekstueel</string>
     <string name="keywords_gesture">gebaar, bewegings</string>
     <string name="keywords_hearing_devices">hardhorend, gehoorverlies, PSAP</string>
     <string name="keywords_limited_warranty">waarborg, garansie, beperkte waarborg, belofte, herstel, RMA, vervanging</string>
     <string name="keywords_live_caption">Onderskrifte, CC, Kitstranskripsie, hardhorend, gehoorverlies, CART, spraak-na-teks</string>
     <string name="keywords_live_transcribe">Onderskrifte, onderskrifte, CC, intydse onderskrifte, hardhorend, gehoorverlies, CART, spraak-na-teks, onderskrifte</string>
+    <string name="keywords_magnifier">Zoem, Vergroting, Swak Sig, Vergroot, maak groter</string>
     <string name="keywords_reverse_charging_stop_threshold">Hou op om battery te deel wanneer foon die volgende vlak bereik:</string>
     <string name="keywords_select_to_speak">Hoor teks, lees hardop, lees op skerm, skermleser</string>
     <string name="keywords_sound_amplifier">PSAP, versterk, klankversterker, hardhorend, gehoorverlies, versterking</string>
@@ -190,6 +221,7 @@ Rugsteundata sal nie deel vorm van jou Drive-bergingkwota nie. Groot lêers, of 
     <string name="keywords_switch_access">motories, skakelaar, hand, AT, bystandtegnologie, verlamming, ALS, skandering, stapskandering</string>
     <string name="keywords_talkback">Skermleser, stembeskrywing, stembystand, blind, swak sig, TTS, teks na spraak, gesproke terugvoer</string>
     <string name="keywords_touch_sensitivity">raak, sensitiwiteit, sensitief, skermbeskermer, bedekking, reagerend, reaksie</string>
+    <string name="keywords_touch_sensitivity_settings">raak, aanpasbaar, sensitiwiteit, sensitief, skermbeskermer, bedekking, reagerend, reaksie</string>
     <string name="keywords_voice_access">stem, stembeheer, motories, hand, mikrofoon, dikteer, praat, beheer</string>
     <string name="led_preference_title">LED-aanduierpatrone</string>
     <string name="legal_source_code_description">Besonderhede oor die bronkode vir komponente wat as oopbron beskikbaar gestel is, kan in die Pixel-hulpsentrum gevind word.</string>
@@ -203,7 +235,7 @@ Rugsteundata sal nie deel vorm van jou Drive-bergingkwota nie. Groot lêers, of 
     <string name="permit_debugging_data">Laat foutverslagtoegang toe</string>
     <string name="play_application_detail_indication_summary">Kyk vir opdaterings</string>
     <string name="play_application_update_entry_title">Appopdaterings</string>
-    <string name="privatespace_retry_summary">Jy moet by ’n Google-rekening aanmeld om Privaat Ruimte op te stel</string>
+    <string name="private_space_retry_summary">Meld aan by ’n Google-rekening om saam met jou privaat ruimte te gebruik</string>
     <string name="repair_mode_active_summary">In herstelmodus</string>
     <string name="repair_mode_summary">Veilige omgewing vir toestelherstel</string>
     <string name="repair_mode_title">Herstelmodus</string>
@@ -241,9 +273,9 @@ Keer jou foon om om te probeer."</string>
     <string name="screen_time_summary_usage_today">%1$s vandag</string>
     <string name="search_bar_account_avatar_content_description">Profielprent; dubbeltik om Google-rekening oop te maak</string>
     <string name="search_gesture_category_title">Soek</string>
-    <string name="search_gesture_feature_title">Sirkel om te soek</string>
-    <string name="search_long_press_home_button_summary">Raak en hou die tuisknoppie onderaan die skerm, en sirkel of verhelder dan enigiets om te soek</string>
-    <string name="search_press_hold_gesture_summary">Raak en hou die handvatsel onderaan die skerm, en sirkel of verhelder dan enigiets om te soek</string>
+    <string name="search_gesture_feature_title">Omkring om te soek</string>
+    <string name="search_long_press_home_button_summary">Raak en hou die tuisknoppie onderaan die skerm, en omkring of merk dan enigiets om te soek</string>
+    <string name="search_press_hold_gesture_summary">Raak en hou die handvatsel onderaan die skerm, en omkring of merk dan enigiets om te soek</string>
     <string name="security_dismiss_dialog_dismiss_button">Maak toe</string>
     <string name="security_dismiss_dialog_title">Maak hierdie opletberig toe?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Tik om op te stel</string>
@@ -251,9 +283,15 @@ Keer jou foon om om te probeer."</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">Gesiginskrywing-tydlimiet is bereik. Probeer weer.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Opstelling van Gesigslot het uitgetel</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Jy kan nou jou gesig gebruik om jou foon te ontsluit of te verifieer dat dit jy is, soos wanneer jy by apps aanmeld of ’n aankoop goedkeur</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp_full">"Jy kan nou jou gesig gebruik om jou foon te ontsluit of te verifieer dat dit jy is, soos wanneer jy by apps aanmeld of ’n aankoop goedkeur.
+
+Gesigslot werk die beste wanneer daar genoeg lig is en jy nie ’n masker of donkerbril dra nie."</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Jy kan nou jou gesig gebruik om jou foon te ontsluit wanneer jy dit optel of op die skerm tik.
 
 Gesigslot werk die beste wanneer dit lig genoeg is en wanneer jy nie ’n masker of donkerbril dra nie."</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp_folded">"Jy kan nou jou gesig gebruik om jou foon te ontsluit wanneer jy dit optel of op die skerm tik. Jou foon moet gevou wees om Gesigslot te gebruik.
+
+Gesigslot werk die beste wanneer daar genoeg lig is en jy nie ’n masker of donkerbril dra nie."</string>
     <string name="security_settings_face_enroll_finish_title">Lyk goed!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Opstelling vir beperkte visie of kopbeweging</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Vereis oop oë</string>
@@ -293,6 +331,8 @@ Let wel: Jy kan nie jou vingerafdruk gebruik om hierdie toestel te ontsluit nie.
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint vir werk</string>
     <string name="setup_suggestion_summary">Net nog ’n paar stappe</string>
     <string name="setup_suggestion_title">Stel klaar op</string>
+    <string name="smart_battery_a11y_collapse_label">Vou in, Aanpasbare Battery</string>
+    <string name="smart_battery_a11y_expand_label">Vou uit, Aanpasbare Battery</string>
     <string name="smart_battery_footer">Om batterylewe te verleng, kan Aanpasbare Battery werkverrigting en agtergrondaktiwiteit beperk. Sommige kennisgewings kan vertraag word.</string>
     <string name="smart_battery_manager_title">Verstelbare voorkeure</string>
     <string name="smart_battery_title">Aanpasbare Battery</string>
@@ -309,6 +349,8 @@ Let wel: Jy kan nie jou vingerafdruk gebruik om hierdie toestel te ontsluit nie.
     <string name="software_update_up_to_specific_date_summary">Opgedateer op %1$s</string>
     <string name="software_update_update_available_summary">Opdatering is gereed</string>
     <string name="sound_dashboard_summary">Volume, fisiese terugvoer, Moenie Steur Nie</string>
+    <string name="spatial_audio_head_tracking_available">Kopnasporing is beskikbaar</string>
+    <string name="spatial_audio_head_tracking_unavailable">Kopnasporing is nie beskikbaar nie</string>
     <string name="spatial_audio_title">Ruimtelike oudio</string>
     <string name="speed_boost_summary_off">Af</string>
     <string name="speed_boost_summary_on">Aan</string>
@@ -321,11 +363,14 @@ Let wel: Jy kan nie jou vingerafdruk gebruik om hierdie toestel te ontsluit nie.
     <string name="suw_warranty_positive_button_text">Maak toe</string>
     <string name="system_update_entry_title">Stelselopdatering</string>
     <string name="system_updates_group_title">Pixel-opdaterings</string>
+    <string name="touch_category_title">Raak</string>
+    <string name="touch_sensitivity_settings_summary">Pas raakskermsensitiwiteit aan</string>
+    <string name="touch_sensitivity_settings_title">Raaksensitiwiteit</string>
     <string name="touch_sensitivity_summary">Vergroot raaksensitiwiteit en verbeter aanraking wanneer ’n skermbeskermer gebruik word</string>
     <string name="touch_sensitivity_title">Skermbeskermermodus</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Hou foon voor jou gesig</string>
     <string name="unified_battery_saver_page_intro">Bespaar krag om te help dat jou foon se battery langer tussen laaiprosesse hou</string>
-    <string name="usb_use_file_transfers">Lêeroordrag / Android Auto</string>
+    <string name="usb_use_file_transfers">Lêeroordrag/Android Auto</string>
     <string name="vpn_app_bypass">Sluit gekose apps uit</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">Huidige diensverskafferapps</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">Sluit %1$d diensverskaffer-apps van VPN uit?</string>

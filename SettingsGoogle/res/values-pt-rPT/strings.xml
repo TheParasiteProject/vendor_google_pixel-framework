@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">Funcionalidade tátil do teclado</string>
+    <string name="accessibility_screen_magnifier_summary">Use a sua câmara para ampliar os detalhes à sua volta</string>
+    <string name="accessibility_screen_magnifier_title">Lupa</string>
     <string name="adaptive_alert_vibration_summary">Reduz a intensidade da vibração enquanto o telemóvel está parado e o ecrã está voltado para cima</string>
     <string name="adaptive_alert_vibration_title">Vibração de alerta adaptável</string>
     <string name="adaptive_battery_switch_des">Para prolongar a autonomia da bateria, a bateria adaptável pode reduzir o desempenho e a atividade em segundo plano. Algumas notificações podem sofrer atrasos.</string>
@@ -12,17 +14,29 @@
     <string name="adaptive_charging_main_switch_title">Usar carregamento adaptável</string>
     <string name="adaptive_charging_time_estimate"><b>Carregamento adaptável</b> • Completo até à(s) %1$s</string>
     <string name="adaptive_charging_title">Carregamento adaptável</string>
+    <string name="adaptive_touch_sensitivity_summary">A sensibilidade ao toque vai ajustar-se automaticamente ao ambiente, atividades e protetor de ecrã</string>
+    <string name="adaptive_touch_sensitivity_title">Toque adaptável</string>
     <string name="add_bypassed_application_hint">Nenhuma app adicionada</string>
     <string name="advanced_vpn_preference_group_title">Integrada</string>
     <string name="all_apps_category_title">Todas as apps</string>
     <string name="allow_debugging_data_description">A Google usa relatórios de erros para diagnosticar problemas em apps e dispositivos de acordo com a respetiva <a href="https://policies.google.com/privacy">Política de Privacidade</a>".
 
-"<b>Os relatórios de erros contêm registos do sistema e da app</b>" e podem incluir informações pessoais e do dispositivo, como nomes, endereços de email, números de telemóvel, dados de localização, identificadores do dispositivo, dispositivos ligados e informações sobre a rede. Os relatórios podem ser partilhados com parceiros de engenharia potencialmente afetados pelo seu problema.
+"<b>Os relatórios de erros contêm registos do sistema e das apps</b>" e podem incluir informações pessoais e do dispositivo, como nomes, endereços de email, números de telemóvel, dados de localização, identificadores do dispositivo, dispositivos ligados e informações sobre a rede. Os relatórios podem ser partilhados com parceiros de engenharia potencialmente afetados pelo seu problema.
 
-Conceder acesso vai permitir que esta app "<b>recolha e carregue relatórios de erros automaticamente</b>", incluindo registos do sistema e da app de perfis pessoais e de trabalho, para todos os relatórios de problemas que enviar.
+Conceder acesso aos relatórios de erro vai permitir que esta app "<b>recolha e carregue relatórios de erros automaticamente</b>", incluindo registos do sistema e da app provenientes dos perfis pessoais e de trabalho, para todos os relatórios de problemas que enviar.
 
-Revogar o acesso vai exigir que a app peça a sua autorização para recolher e carregar um relatório de erro para cada relatório de problema individual."</string>
+Revogar o acesso aos relatórios de erro vai exigir que a app peça a sua autorização para recolher e carregar um relatório de erro para cada relatório de problema individual."</string>
     <string name="app_and_notification_dashboard_summary">Assistente, apps recentes, apps predefinidas</string>
+    <string name="audio_sharing_switch_title">Partilhar áudio</string>
+    <string name="audio_sharing_title">Partilha de áudio</string>
+    <string name="audio_streams_category_title">Ligue-se a uma stream de LE Audio</string>
+    <string name="audio_streams_connect">Ligar</string>
+    <string name="audio_streams_disconnect">Desligar</string>
+    <string name="audio_streams_pref_title">Streams de áudio próximas</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">O código QR não é um formato válido</string>
+    <string name="audio_streams_qr_code_scanner">Para começar a ouvir, centre o código QR abaixo</string>
+    <string name="audio_streams_qr_code_summary">Ligue-se a uma stream de áudio através do código QR</string>
+    <string name="audio_streams_title">Streams de áudio</string>
     <string name="automatic_storage_manager_activation_warning">Quando estiver ligado, pode continuar a aceder às fotos e aos vídeos com a qualidade selecionada para a cópia de segurança</string>
     <string name="automatic_storage_manager_days_title">Remover fotos e vídeos com cópia de segurança</string>
     <string name="automatic_storage_manager_deactivation_warning">"Desativar o Armazenamento inteligente? 
@@ -49,8 +63,20 @@ O Armazenamento inteligente não libertará espaço quando o armazenamento estiv
     <string name="battery_tip_battery_health_learn_more_description">Saiba mais acerca do estado da bateria</string>
     <string name="battery_tip_battery_health_reduced_title">A capacidade da bateria é reduzida</string>
     <string name="battery_tip_battery_health_unknown_title">Não é possível detetar o estado da bateria</string>
+    <string name="battery_tip_dock_defender_active_summary">Para ajudar a aumentar a vida útil da bateria, o carregamento é colocado em espera a 90% enquanto o seu tablet estiver a carregar</string>
+    <string name="battery_tip_dock_defender_active_title">Carregamento em espera para proteger a bateria</string>
+    <string name="battery_tip_dock_defender_button_learn_more">Saber mais</string>
+    <string name="battery_tip_dock_defender_button_override">Substituir</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">Para ajudar a aumentar a vida útil da bateria, o carregamento vai ser colocado em espera a 90% enquanto o seu tablet estiver a carregar</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">A carregar até 90%</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">Da próxima vez que o seu tablet estiver a carregar, o carregamento é colocado em espera a 90% para proteger a bateria</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">A carregar até à capacidade máxima</string>
     <string name="battery_tip_limited_temporarily_extra_summary">Para proteger a bateria, o carregamento é pausado a %1$s enquanto o tablet estiver na estação de carregamento</string>
     <string name="battery_tip_smart_battery_summary">Ative a funcionalidade Bateria adaptável.</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">Saiba mais sobre o carregamento sem fios</string>
+    <string name="battery_tip_wireless_charging_summary">O carregamento do telemóvel sem fios pode consumir mais energia do que outros métodos de carregamento</string>
+    <string name="battery_tip_wireless_charging_title">Carregamento sem fios</string>
+    <string name="calls_and_alarms_device_title">Chamadas e alarmes</string>
     <string name="clear_calling_footer">"Para proteger a sua privacidade, a funcionalidade de chamadas nítidas não envia áudio nem conversas para a Google.
 
 A funcionalidade de chamadas nítidas está disponível nas Chamadas Wi-Fi e na maioria das redes, mas não em redes 3G."</string>
@@ -89,8 +115,8 @@ A funcionalidade de chamadas nítidas está disponível nas Chamadas Wi-Fi e na 
     <string name="columbus_setting_action_flashlight_title">Ativar/desativar lanterna</string>
     <string name="columbus_setting_action_launch_summary_no_selection">Nenhuma app selecionada</string>
     <string name="columbus_setting_action_launch_summary_not_installed">App não instalada</string>
-    <string name="columbus_setting_action_launch_title">Abra a app</string>
-    <string name="columbus_setting_action_notification_title">Mostre as notificações</string>
+    <string name="columbus_setting_action_launch_title">Abrir apps</string>
+    <string name="columbus_setting_action_notification_title">Ver notificações</string>
     <string name="columbus_setting_action_open_app_title">Abrir app</string>
     <string name="columbus_setting_action_overview_title">Ver apps recentes</string>
     <string name="columbus_setting_action_play_pause_title">Abrir ou pausar conteúdo multimédia</string>
@@ -100,8 +126,8 @@ A funcionalidade de chamadas nítidas está disponível nas Chamadas Wi-Fi e na 
     <string name="columbus_setting_app_selection_help_text">Selecione uma app para abrir quando tocar duas vezes na parte posterior do telemóvel. Se desinstalar a app, o Quick Tap fica desativado até selecionar uma app diferente.</string>
     <string name="columbus_setting_app_shortcut_selection_help_text">Selecione o que acontece quando abre esta app com o Quick Tap.</string>
     <string name="columbus_setting_enable_switch_title">Usar o Quick Tap</string>
-    <string name="columbus_setting_sensitivity_title">Exija tocar com mais força</string>
-    <string name="columbus_title">Use o Quick Tap para iniciar ações</string>
+    <string name="columbus_setting_sensitivity_title">Exigir toques mais fortes</string>
+    <string name="columbus_title">Usar o Quick Tap para iniciar ações</string>
     <string name="communal_lock_screen_summary">Privacidade, notificações e controlos domésticos</string>
     <string name="communal_other">Outras</string>
     <string name="communal_settings_summary">Opções do ecrã de bloqueio e estação de carregamento</string>
@@ -116,17 +142,20 @@ A funcionalidade de chamadas nítidas está disponível nas Chamadas Wi-Fi e na 
     <string name="connectivity_helper_d2d_summary">Notifique a outra pessoa quando o seu telemóvel tiver problemas de ligação durante as chamadas</string>
     <string name="connectivity_helper_d2d_title">Partilhe informações de ligação</string>
     <string name="connectivity_helper_footnote">Pode partilhar informações de ligação quando o outro autor da chamada estiver a utilizar um dispositivo e uma rede suportados</string>
-    <string name="content_capture">Personalizar ao usar dados de apps</string>
+    <string name="content_capture">Personalizar com dados de apps</string>
     <string name="content_protection_preference_subpage_info">"Esta é uma funcionalidade de segurança protegida. Não são partilhadas informações pessoais nem do dispositivo com a Google. 
 
 O phishing é uma tentativa de roubar credenciais de início de sessão ou outras informações pessoais."</string>
     <string name="content_protection_preference_subpage_summary">A análise é executada em privado diretamente no seu dispositivo, verificando a atividade de apps para detetar phishing ou outro comportamento enganador. Se for detetado algum destes comportamentos, algumas informações das apps são enviadas para o Google Play Protect de modo a confirmar a ameaça e avisar os utilizadores das apps.</string>
-    <string name="dark_ui_text">O tema escuro utiliza um fundo preto para ajudar a prolongar a duração da bateria. Os horários do tema escuro só são ativados quando o ecrã está desligado.</string>
+    <string name="contextual_timeout_description">Desliga automaticamente o ecrã de forma antecipada se não estiver a usar o dispositivo</string>
+    <string name="contextual_timeout_title">Limite de tempo adaptável</string>
+    <string name="dark_ui_text">O tema escuro usa um fundo preto para ajudar a prolongar a duração da bateria. Os horários do tema escuro só são ativados quando o ecrã está desligado.</string>
     <string name="debugging_data_title">Dados de depuração</string>
     <string name="discover_tips_button">Descobrir sugestões</string>
     <string name="dock_summary_charging_phone">Carregar o telemóvel</string>
-    <string name="double_twist_for_camera_mode_summary">Para entrar e sair do modo selfie na Câmara Google, rode duas vezes quando estiver na aplicação.</string>
+    <string name="double_twist_for_camera_mode_summary">Para entrar e sair do modo selfie na Câmara Google, rode duas vezes quando estiver na app.</string>
     <string name="duration_less_than_one_minute">Menos de 1 minuto</string>
+    <string name="enable_glanceable_hub_toggle">Modo Hub</string>
     <string name="extreme_battery_saver_summary">Inclui todas as alterações indicadas acima. Também pausa apps não essenciais e as respetivas notificações.</string>
     <string name="extreme_battery_saver_title">Poupança de bateria extrema</string>
     <string name="face_confirmation_hide_illustration_description">Agora, quando pegar no seu telemóvel ou tocar no ecrã, pode usar o rosto para o desbloquear.</string>
@@ -164,7 +193,6 @@ O phishing é uma tentativa de roubar credenciais de início de sessão ou outra
     <string name="firmware_update_status_category">Estado do firmware do dispositivo</string>
     <string name="firmware_update_status_title">Atualização de firmware disponível</string>
     <string name="firmware_update_version_number_category">Versão do firmware do dispositivo</string>
-    <string name="firmware_update_version_number_title">Firmware do teclado do Pixel</string>
     <string name="fullbackup_data_summary">"Faça uma cópia de segurança automática dos dados do dispositivo (como palavras-passe de Wi-Fi e o histórico de chamadas) e dos dados das aplicações (como as definições e os ficheiros armazenados pelas aplicações) no Google Drive.
 
 Quando ativa a cópia de segurança automática, os dados do dispositivo e das aplicações são guardados periodicamente numa pasta privada no Google Drive. Os dados das aplicações podem ser quaisquer dados que as aplicações tenham guardado (consoante as definições do programador), incluindo dados potencialmente sensíveis como contactos, mensagens e fotos.
@@ -172,17 +200,20 @@ Quando ativa a cópia de segurança automática, os dados do dispositivo e das a
 Os dados das cópias de segurança não contam para a quota de armazenamento do Drive. Não são feitas cópias de segurança de ficheiros de grandes dimensões ou de ficheiros que os programadores tenham optado por excluir do serviço."</string>
     <string name="fullbackup_erase_dialog_message">Quer parar de fazer cópias de segurança dos dados do dispositivo (como palavras-passe de Wi-Fi e o histórico de chamadas) e dos dados das aplicações (como as definições e os ficheiros armazenados pelas aplicações) e apagar todas as cópias no Google Drive?</string>
     <string name="gesture_settings_activity_title">Navegação por gestos</string>
+    <string name="hub_mode_content_setting">Permitir todos os widgets no modo Hub</string>
     <string name="install_unknown_applications">Permitir a instalação de aplicações a partir de outras fontes que não a Play Store</string>
     <string name="keywords_accessibility_menu">limitação motora, menu rápido, menu de assistência, toque destreza, artrite, LER, derrame, tremor, esclerose múltipla, paralisia cerebral, botão, hardware, premir, lesão por esforço repetitivo, mão, dor, acessível, ajuda</string>
     <string name="keywords_adaptive_alert_vibration">funcionalidade tátil, vibrar, telemóvel, ligar, tocar, alerta, notificações, alto, silêncio, capa, adaptável</string>
     <string name="keywords_adaptive_charging">carregar, carregamento, carregamento inteligente, carregamento adaptável, bateria, estado da bateria</string>
     <string name="keywords_battery_share">partilha de bateria, carregamento sem fios</string>
     <string name="keywords_battery_share_settings">Partilha de bateria, carregamento sem fios invertido</string>
+    <string name="keywords_contextual_screen_timeout">ecrã, limite de tempo, adaptável, contextual</string>
     <string name="keywords_gesture">gesto, movimentos</string>
     <string name="keywords_hearing_devices">dificuldade de audição, perda de audição, PSAP</string>
     <string name="keywords_limited_warranty">garantia, garantia comercial, promessa, reparação, RMA, substituição</string>
     <string name="keywords_live_caption">Legendas, Transcrição instantânea, dificuldade de audição, perda de audição, CART, conversão de voz em texto</string>
     <string name="keywords_live_transcribe">Legendas, Legendas instantâneas, dificuldade de audição, perda de audição, CART, conversão de voz para texto</string>
+    <string name="keywords_magnifier">Zoom, ampliação, visão reduzida, ampliar e aumentar</string>
     <string name="keywords_reverse_charging_stop_threshold">Parar de partilhar a bateria quando o telemóvel alcançar:</string>
     <string name="keywords_select_to_speak">Ouvir texto, ler em voz alta, ler ecrã, leitor de ecrã</string>
     <string name="keywords_sound_amplifier">PSAP, amplificar, amplificação do som, dificuldade de audição, perda de audição, amplificação</string>
@@ -190,6 +221,7 @@ Os dados das cópias de segurança não contam para a quota de armazenamento do 
     <string name="keywords_switch_access">incapacidade motora, interruptor, mão, TA, tecnologia de assistência, paralisia, ELA, análise, análise passo a passo</string>
     <string name="keywords_talkback">Leitor de ecrã, locução, VoiceOver, assistência por voz, pessoa cega, visão reduzida, TTS, conversão de texto em voz, feedback de voz</string>
     <string name="keywords_touch_sensitivity">toque, sensibilidade, sensível, protetor de ecrã, película, capacidade de resposta</string>
+    <string name="keywords_touch_sensitivity_settings">toque, adaptável, sensibilidade, sensível, protetor de ecrã, película, dinâmico, capacidade de resposta</string>
     <string name="keywords_voice_access">voz, controlo por voz, incapacidade motora, mão, micro, microfone, ditado, falar, controlar</string>
     <string name="led_preference_title">Padrões do indicador LED</string>
     <string name="legal_source_code_description">Pode encontrar detalhes sobre o código-fonte para os componentes disponibilizados como código aberto no Centro de Ajuda do Pixel.</string>
@@ -203,12 +235,12 @@ Os dados das cópias de segurança não contam para a quota de armazenamento do 
     <string name="permit_debugging_data">Permitir acesso a relatórios de erros</string>
     <string name="play_application_detail_indication_summary">Procure atualizações</string>
     <string name="play_application_update_entry_title">Atualizações de apps</string>
-    <string name="privatespace_retry_summary">Tem de iniciar sessão numa Conta Google para configurar o espaço privado</string>
+    <string name="private_space_retry_summary">Inicie sessão numa Conta Google para usar com o seu espaço privado</string>
     <string name="repair_mode_active_summary">No modo de reparação</string>
     <string name="repair_mode_summary">Ambiente seguro para a reparação do dispositivo</string>
     <string name="repair_mode_title">Modo de reparação</string>
     <string name="request_google_account_summary">Adicione uma Conta Google</string>
-    <string name="reverse_charging_auto_turn_on_subtitle">É ativado automaticamente por um curto período quando o telemóvel estiver ligado a um carregador</string>
+    <string name="reverse_charging_auto_turn_on_subtitle">É ativada automaticamente por um curto período quando o telemóvel estiver ligado a um carregador</string>
     <string name="reverse_charging_auto_turn_on_title">Ativar automaticamente</string>
     <string name="reverse_charging_charging_wirelessly_message">Indisponível porque o telemóvel está a carregar sem fios.</string>
     <string name="reverse_charging_detail_charging_overheat_message">A Partilha de bateria não está disponível porque o Pixel está demasiado quente. Espere que o dispositivo arrefeça e tente novamente.</string>
@@ -216,7 +248,7 @@ Os dados das cópias de segurança não contam para a quota de armazenamento do 
     <string name="reverse_charging_detail_footer_title">A bateria do seu telemóvel irá descarregar mais rapidamente se utilizar a Partilha de bateria. A Partilha de bateria funciona com auriculares, relógios, telemóveis e outros dispositivos compatíveis. Para carregar melhor, remova a capa do seu telemóvel.</string>
     <string name="reverse_charging_detail_footer_title_advanced">"A Partilha de bateria funciona com auriculares, telemóveis e outros dispositivos compatíveis.
 
-A bateria do seu telemóvel irá descarregar mais rapidamente se usar esta funcionalidade. Caso não seja detetado outro dispositivo, a Partilha de bateria é automaticamente desativada após alguns minutos. Para carregar melhor, remova a capa do seu telemóvel e outros artigos que possam causar interferência, como objetos metálicos."</string>
+A bateria do seu telemóvel vai esgotar-se mais rapidamente se usar esta funcionalidade. Caso não seja detetado outro dispositivo, a Partilha de bateria é automaticamente desativada após alguns minutos. Para um carregamento mais eficiente, remova a capa do seu telemóvel e outros artigos que possam causar interferência, como objetos metálicos."</string>
     <string name="reverse_charging_detail_power_save_mode_is_on_message">A Partilha de bateria não está disponível porque a Poupança de bateria está ativada.</string>
     <string name="reverse_charging_detail_unplug_usb_cable_message">A Partilha de bateria não está disponível porque o dispositivo USB-C está ligado.</string>
     <string name="reverse_charging_instructions_title">"Carregue outros dispositivos com o seu Pixel.
@@ -229,7 +261,7 @@ Vire o telemóvel para experimentar."</string>
     <string name="reverse_charging_overheat_summary">Indisponível porque o Pixel está demasiado quente. Espere que o dispositivo arrefeça e tente novamente.</string>
     <string name="reverse_charging_power_save_mode_is_on_message">Indisponível porque a Poupança de bateria está ativada</string>
     <string name="reverse_charging_sharing_level_message">Indisponível porque a bateria está abaixo do nível de partilha.</string>
-    <string name="reverse_charging_switch_title">Carregue outros dispositivos ao colocá-los sobre a parte posterior do Pixel</string>
+    <string name="reverse_charging_switch_title">Coloque outros dispositivos sobre a parte posterior do Pixel para carregá-los</string>
     <string name="reverse_charging_title">Partilha de bateria</string>
     <string name="reverse_charging_unplug_usb_cable_message">Indisponível porque o dispositivo está ligado por USB-C.</string>
     <string name="reverse_charging_warning_summary">Indisponível porque a carga da bateria é inferior a %1$s.</string>
@@ -242,18 +274,25 @@ Vire o telemóvel para experimentar."</string>
     <string name="search_bar_account_avatar_content_description">Imagem do perfil, toque duas vezes para abrir a Conta Google.</string>
     <string name="search_gesture_category_title">Pesquisa</string>
     <string name="search_gesture_feature_title">Fazer um círculo para pesquisar</string>
-    <string name="search_long_press_home_button_summary">Toque sem soltar no botão página inicial na parte inferior do ecrã e, em seguida, realce ou faça um círculo à volta de algo para pesquisar</string>
-    <string name="search_press_hold_gesture_summary">Toque sem soltar no indicador na parte inferior do ecrã e, em seguida, realce ou faça um círculo à volta de algo para pesquisar</string>
+    <string name="search_long_press_home_button_summary">Toque sem soltar no botão do ecrã principal na parte inferior do ecrã e, em seguida, realce ou faça um círculo à volta de um item para pesquisar</string>
+    <string name="search_press_hold_gesture_summary">Tocar sem soltar no indicador na parte inferior do ecrã e, em seguida, realce ou faça um círculo à volta de um item para pesquisar</string>
     <string name="security_dismiss_dialog_dismiss_button">Ignorar</string>
     <string name="security_dismiss_dialog_title">Quer ignorar este aviso?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Toque para configurar</string>
     <string name="security_settings_face_enroll_consent_introduction_title">Permita o Desbloqueio facial</string>
+    <string name="security_settings_face_enroll_done">Concluir</string>
     <string name="security_settings_face_enroll_education_message">No ecrã seguinte, rode a cabeça para capturar todos os ângulos do seu rosto.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">A configuração do Desbloqueio facial expirou</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Já pode usar o seu rosto para desbloquear o telemóvel ou validar a sua identidade, como quando inicia sessão em apps ou aprova uma compra</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp_full">"Já pode usar o rosto para desbloquear o telemóvel ou validar a sua identidade, como quando inicia sessão em apps ou aprova uma compra.
+
+O Desbloqueio facial funciona melhor quando há luz suficiente e não está a usar uma máscara ou óculos escuros."</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Agora, quando pegar no seu telemóvel ou tocar no ecrã, pode usar o rosto para desbloquear.
 
 O Desbloqueio facial funciona melhor quando existe luz suficiente e quando não está a usar uma máscara ou óculos escuros."</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp_folded">"Agora, quando pegar no seu telemóvel ou tocar no ecrã, pode usar o rosto para o desbloquear. O telemóvel tem de estar dobrado para usar o Desbloqueio facial.
+
+O Desbloqueio facial funciona melhor quando há luz suficiente e não está a usar uma máscara ou óculos escuros."</string>
     <string name="security_settings_face_enroll_finish_title">Tudo OK!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Definir para visão/mobilidade limitada</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Exigir olhos abertos</string>
@@ -287,12 +326,14 @@ Nota: não é possível utilizar a sua impressão digital para desbloquear este 
     <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Desbloq. c/ Nexus Imprint</string>
     <string name="security_settings_fingerprint_preference_summary_none">Toque para configurar a impressão digital</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
-    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">O Pixel Imprint cria um modelo único da sua impressão digital para validar a sua identidade. Para criar este modelo de impressão digital durante a configuração, é necessário capturar imagens da impressão digital de posições diferentes.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">O Pixel Imprint cria um modelo único da sua impressão digital para validar a sua identidade. Para criar este modelo de impressão digital durante a configuração, é necessário captar imagens da impressão digital de posições diferentes.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">O Pixel Imprint cria um modelo único da impressão digital da criança para validar a respetiva identidade. Para criar este modelo de impressão digital durante a configuração, é necessário tirar fotos da impressão digital da criança de posições diferentes.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Saiba mais sobre o Desbloqueio por impressão digital do Pixel em &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint para o trabalho</string>
     <string name="setup_suggestion_summary">Só mais alguns passos</string>
     <string name="setup_suggestion_title">Concluir configuração</string>
+    <string name="smart_battery_a11y_collapse_label">Reduzir, bateria adaptável</string>
+    <string name="smart_battery_a11y_expand_label">Expandir, bateria adaptável</string>
     <string name="smart_battery_footer">Para prolongar a autonomia da bateria, a bateria adaptável pode reduzir o desempenho e a atividade em segundo plano. Algumas notificações poderão sofrer atrasos.</string>
     <string name="smart_battery_manager_title">Preferências adaptáveis</string>
     <string name="smart_battery_title">Bateria adaptável</string>
@@ -309,6 +350,8 @@ Nota: não é possível utilizar a sua impressão digital para desbloquear este 
     <string name="software_update_up_to_specific_date_summary">Atualizado a %1$s</string>
     <string name="software_update_update_available_summary">Atualização disponível</string>
     <string name="sound_dashboard_summary">Volume, funcionalidade tátil, Não incomodar</string>
+    <string name="spatial_audio_head_tracking_available">O head tracking está disponível</string>
+    <string name="spatial_audio_head_tracking_unavailable">O head tracking não está disponível</string>
     <string name="speed_boost_summary_off">Desativado</string>
     <string name="speed_boost_summary_on">Ativado</string>
     <string name="speed_boost_title">Otimização da velocidade de espetro</string>
@@ -320,11 +363,14 @@ Nota: não é possível utilizar a sua impressão digital para desbloquear este 
     <string name="suw_warranty_positive_button_text">Fechar</string>
     <string name="system_update_entry_title">Atualização do sistema</string>
     <string name="system_updates_group_title">Atualizações do Pixel</string>
+    <string name="touch_category_title">Ecrã tátil</string>
+    <string name="touch_sensitivity_settings_summary">Ajusta a sensibilidade do ecrã tátil</string>
+    <string name="touch_sensitivity_settings_title">Sensibilidade ao toque</string>
     <string name="touch_sensitivity_summary">Aumenta a sensibilidade do toque e melhora o toque quando usa um protetor de ecrã</string>
     <string name="touch_sensitivity_title">Modo de protetor de ecrã</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Mantenha o telemóvel à frente do seu rosto</string>
     <string name="unified_battery_saver_page_intro">Poupe energia para ajudar a prolongar a duração da bateria do telemóvel entre carregamentos</string>
-    <string name="usb_use_file_transfers">Transf. ficheiros/Android Auto</string>
+    <string name="usb_use_file_transfers">Transferência de ficheiros/Android Auto</string>
     <string name="vpn_app_bypass">Excluir apps selecionadas</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">Apps do operador atuais</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">Excluir %1$d apps de operador da VPN (rede privada virtual)?</string>

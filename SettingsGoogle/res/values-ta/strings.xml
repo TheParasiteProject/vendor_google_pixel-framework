@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">கீபோர்டு ஹாப்டிக்ஸ்</string>
+    <string name="accessibility_screen_magnifier_summary">உங்களைச் சுற்றியுள்ள விவரங்களைப் பெரிதாக்க கேமராவைப் பயன்படுத்துங்கள்</string>
+    <string name="accessibility_screen_magnifier_title">Magnifier</string>
     <string name="adaptive_alert_vibration_summary">உங்கள் மொபைல் இயக்கப்பட்டு அதன் திரை மேல்நோக்கி இருக்கும்போது அதிர்வைக் குறைக்கும்</string>
     <string name="adaptive_alert_vibration_title">சூழல்சார் விழிப்பூட்டல் அதிர்வு</string>
     <string name="adaptive_battery_switch_des">பேட்டரி ஆயுளை நீட்டிக்க, செயல்திறனையும் பின்னணிச் செயல்பாட்டையும் அடாப்டிவ் பேட்டரி குறைக்கக்கூடும். சில அறிவிப்புகள் தாமதமாகலாம்.</string>
@@ -12,6 +14,8 @@
     <string name="adaptive_charging_main_switch_title">அடாப்டிவ் சார்ஜிங்கைப் பயன்படுத்துதல்</string>
     <string name="adaptive_charging_time_estimate"><b>அடாப்டிவ் சார்ஜிங்</b> • %1$sக்கு முழுமையாகச் சார்ஜாகும்</string>
     <string name="adaptive_charging_title">அடாப்டிவ் சார்ஜிங்</string>
+    <string name="adaptive_touch_sensitivity_summary">உங்கள் சுற்றுச்சூழல், செயல்பாடுகள், ஸ்கிரீன் கார்டு ஆகியவற்றுக்கு ஏற்றவாறு தொடு உணர்திறன் தானாகவே சரிசெய்துகொள்ளும்</string>
+    <string name="adaptive_touch_sensitivity_title">சூழல்சார் தொடுதல்</string>
     <string name="add_bypassed_application_hint">ஆப்ஸ் எதுவும் சேர்க்கப்படவில்லை</string>
     <string name="advanced_vpn_preference_group_title">உள்ளமைக்கப்பட்டவை</string>
     <string name="all_apps_category_title">அனைத்து ஆப்ஸும்</string>
@@ -23,6 +27,16 @@
 
 அணுகலை வழங்கவில்லை எனில், ஒவ்வொரு சிக்கல் அறிக்கைக்கும் ஒரு பிழை அறிக்கையைச் சேகரித்துப் பதிவேற்ற ஆப்ஸ் உங்களிடம் அனுமதி கேட்கும்."</string>
     <string name="app_and_notification_dashboard_summary">Assistant, சமீபத்திய ஆப்ஸ், இயல்பான ஆப்ஸ்</string>
+    <string name="audio_sharing_switch_title">ஆடியோவைப் பகிர்</string>
+    <string name="audio_sharing_title">ஆடியோவைப் பகிர்தல்</string>
+    <string name="audio_streams_category_title">LE ஆடியோ ஸ்ட்ரீமுடன் இணைத்தல்</string>
+    <string name="audio_streams_connect">இணை</string>
+    <string name="audio_streams_disconnect">இணைப்பை நீக்கும்</string>
+    <string name="audio_streams_pref_title">அருகிலுள்ள ஆடியோ ஸ்ட்ரீம்கள்</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">QR குறியீடு சரியான வடிவமைப்பில் இல்லை</string>
+    <string name="audio_streams_qr_code_scanner">ஆடியோவைக் கேட்க, கீழுள்ள QR குறியீட்டை மையப்படுத்திக் காட்டுங்கள்</string>
+    <string name="audio_streams_qr_code_summary">QR குறியீட்டைப் பயன்படுத்தி ஆடியோ ஸ்ட்ரீமுடன் இணைக்கலாம்</string>
+    <string name="audio_streams_title">ஆடியோ ஸ்ட்ரீம்கள்</string>
     <string name="automatic_storage_manager_activation_warning">இணைய இணைப்பு கிடைத்ததும், காப்புப் பிரதி எடுப்பதற்குத் தேர்ந்தெடுத்த தரத்திலேயே படங்களையும் வீடியோக்களையும் தொடர்ந்து அணுகலாம்</string>
     <string name="automatic_storage_manager_days_title">காப்புப் பிரதி எடுத்தவைகளை அகற்று</string>
     <string name="automatic_storage_manager_deactivation_warning">"ஸ்மார்ட் சேமிப்பகத்தை முடக்கவா? 
@@ -49,8 +63,20 @@
     <string name="battery_tip_battery_health_learn_more_description">பேட்டரி நிலை குறித்து மேலும் அறிக</string>
     <string name="battery_tip_battery_health_reduced_title">பேட்டரியின் திறன் குறைந்துவிட்டது</string>
     <string name="battery_tip_battery_health_unknown_title">பேட்டரி நிலையைக் கண்டறிய முடியவில்லை</string>
+    <string name="battery_tip_dock_defender_active_summary">பேட்டரி ஆயுட்காலத்தை நீட்டிக்க உதவ, டாக்கில் இணைக்கப்பட்டுள்ள உங்கள் டேப்லெட் 90% அடைந்தவுடன் சார்ஜிங் நிறுத்தி வைக்கப்பட்டது</string>
+    <string name="battery_tip_dock_defender_active_title">பேட்டரியைப் பாதுகாப்பதற்காகச் சார்ஜிங் நிறுத்தி வைக்கப்பட்டுள்ளது</string>
+    <string name="battery_tip_dock_defender_button_learn_more">மேலும் அறிக</string>
+    <string name="battery_tip_dock_defender_button_override">மீறிச் செயல்படுதல்</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">பேட்டரி ஆயுட்காலத்தை நீட்டிக்க உதவ, உங்கள் டேப்லெட் டாக்கில் இணைக்கப்பட்டுள்ளபோது 90% அடைந்ததும் சார்ஜிங் நிறுத்தி வைக்கப்படும்</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">90% வரை சார்ஜ் செய்யப்படுகிறது</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">அடுத்த முறை உங்கள் டேப்லெட் டாக்கில் இணைக்கப்படும்போது பேட்டரியைப் பாதுகாப்பதற்காக 90% அடைந்ததும் சார்ஜிங் நிறுத்தி வைக்கப்படும்</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">முழுமையாகச் சார்ஜ் செய்யப்படுகிறது</string>
     <string name="battery_tip_limited_temporarily_extra_summary">டேப்லெட் டாக் செய்யப்பட்டிருக்கும்போது பேட்டரியைப் பாதுகாக்க, சார்ஜிங் %1$s இல் இடைநிறுத்தப்பட்டுள்ளது</string>
     <string name="battery_tip_smart_battery_summary">அடாப்டிவ் பேட்டரியை ஆன் செய்க</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">வயர்லெஸ் சார்ஜிங் பற்றி மேலும் அறிக</string>
+    <string name="battery_tip_wireless_charging_summary">உங்கள் மொபைலை வயர்லெஸ் முறையில் சார்ஜ் செய்வது, சார்ஜ் செய்யும் மற்ற முறைகளை விட அதிக ஆற்றலைப் பயன்படுத்தக்கூடும்</string>
+    <string name="battery_tip_wireless_charging_title">வயர்லெஸ் முறையில் சார்ஜ் செய்தல்</string>
+    <string name="calls_and_alarms_device_title">அழைப்புகளும் அலாரங்களும்</string>
     <string name="clear_calling_footer">"உங்கள் தனியுரிமையைப் பாதுகாக்க 'தெளிவான அழைப்பு' அம்சம் ஆடியோ/உரையாடல்களை Googleளுக்கு அனுப்பாது.
 
 பெரும்பாலான நெட்வொர்க்குகளிலும் வைஃபை அழைப்பிலும் ‘தெளிவான அழைப்பு’ அம்சம் இயங்கும், 3ஜி நெட்வொர்க்குகளில் இயங்காது."</string>
@@ -92,7 +118,7 @@
     <string name="columbus_setting_action_launch_title">ஆப்ஸைத் திறத்தல்</string>
     <string name="columbus_setting_action_notification_title">அறிவிப்புகளைக் காட்டுதல்</string>
     <string name="columbus_setting_action_open_app_title">ஆப்ஸைத் திற</string>
-    <string name="columbus_setting_action_overview_title">சமீபத்திய ஆப்ஸைப் பாருங்கள்</string>
+    <string name="columbus_setting_action_overview_title">சமீபத்திய ஆப்ஸைப் பார்த்தல்</string>
     <string name="columbus_setting_action_play_pause_title">மீடியாவைப் பிளே செய்தல்/இடைநிறுத்துதல்</string>
     <string name="columbus_setting_action_screenshot_title">ஸ்கிரீன்ஷாட் எடு</string>
     <string name="columbus_setting_actions_title">மொபைலின் பின்புறத்தை இருமுறை தட்டி</string>
@@ -121,12 +147,15 @@
 
 ஃபிஷிங் என்பது உள்நுழைவு அனுமதிச் சான்றுகளையோ பிற தனிப்பட்ட தகவல்களையோ திருடுவதற்கான ஒரு முயற்சியாகும்."</string>
     <string name="content_protection_preference_subpage_summary">ஸ்கேனிங் தனிப்பட்ட முறையில் உங்கள் சாதனத்திலேயே மேற்கொள்ளப்படும். ஃபிஷிங் அல்லது பிற ஏமாற்றுச் செயலுக்காக ஆப்ஸ் உபயோகம் சரிபார்க்கப்படும். அப்படிக் கண்டறியப்பட்டால், அபாயத்தை உறுதிசெய்யவும் ஆப்ஸை உபயோகிக்கும் பயனர்களை எச்சரிக்கவும் ஆப்ஸின் சில தகவல்கள் Google Play Protectடிற்கு அனுப்பப்படும்.</string>
+    <string name="contextual_timeout_description">நீங்கள் சாதனத்தைப் பயன்படுத்தாதபோது அதன் திரை தானாகவே விரைவாக முடக்கப்படும்</string>
+    <string name="contextual_timeout_title">அடாப்டிவ் அணைவு நேரம்</string>
     <string name="dark_ui_text">உங்கள் பேட்டரி நீண்ட நேரம் நீடித்திருக்க, கருப்பு நிறப் பின்னணியை டார்க் தீம் பயன்படுத்துகிறது. உங்கள் திரை ஆஃப் ஆகும் வரை டார்க் தீம் ஆனில் இருக்குமாறு அமைக்கப்பட்டிருக்கும்.</string>
     <string name="debugging_data_title">பிழைதிருத்தத் தரவு</string>
     <string name="discover_tips_button">உதவிக்குறிப்புகளைக் கண்டறி</string>
     <string name="dock_summary_charging_phone">மொபைலைச் சார்ஜ் செய்கிறது</string>
     <string name="double_twist_for_camera_mode_summary">Google கேமராவின் செல்ஃபி பயன்முறையை இயக்க மற்றும் முடக்க, ஆப்ஸில் இருக்கும் போது இருமுறை திருப்பவும்.</string>
     <string name="duration_less_than_one_minute">ஒரு நிமிடத்திற்கும் குறைவு</string>
+    <string name="enable_glanceable_hub_toggle">ஹப் பயன்முறை</string>
     <string name="extreme_battery_saver_summary">மேலே பட்டியலிடப்பட்டுள்ள அனைத்து மாற்றங்களும் அடங்கும். அத்துடன், அத்தியாவசியமற்ற ஆப்ஸையும் அவற்றின் அறிவிப்புகளையும் இடைநிறுத்தும்.</string>
     <string name="extreme_battery_saver_title">மேம்பட்ட பேட்டரி சேமிப்பு</string>
     <string name="face_confirmation_hide_illustration_description">இப்போது மொபைலைக் கையில் எடுக்கும்போதோ அதன் திரையைத் தட்டும்போதோ உங்கள் முகத்தைக் காட்டி அன்லாக் செய்யலாம்.</string>
@@ -164,7 +193,6 @@
     <string name="firmware_update_status_category">சாதன நிலைபொருளின் நிலை</string>
     <string name="firmware_update_status_title">நிலைபொருள் புதுப்பிப்பு உள்ளது</string>
     <string name="firmware_update_version_number_category">சாதன நிலைபொருளின் பதிப்பு</string>
-    <string name="firmware_update_version_number_title">Pixel கீபோர்டு நிலைபொருள்</string>
     <string name="fullbackup_data_summary">"Google இயக்ககத்தில் சாதனத் தரவையும் (வைஃபை கடவுச்சொற்கள், அழைப்பு விவரங்கள் போன்றவை) ஆப்ஸ் டேட்டாவையும் (ஆப்ஸ்களில் சேமிக்கப்பட்டிருக்கும் அமைப்புகள், ஃபைல்கள்  போன்றவை) சேமிக்கும்.
 
 தானியங்கு காப்புப் பிரதியை இயக்கும் போது, சாதனம் மற்றும் ஆப்ஸ் டேட்டாவானது குறிப்பிட்ட கால இடைவெளியில் Google இயக்ககத்தில் உள்ள தனிப்பட்ட ஃபோல்டரில் சேமிக்கப்படும். ஆப்ஸ் டேட்டா என்பது தொடர்புகள், செய்திகள், படங்கள் போன்ற மிக பாதுகாக்கப்பட வேண்டிய தனிப்பட்ட தரவு உட்பட, ஆப்ஸ் சேமித்த (டெவெலப்பர் அமைப்புகளைப் பொருத்து) எந்தத் தரவாகவும் இருக்கலாம்.
@@ -172,17 +200,20 @@
 காப்புப் பிரதித் தரவானது, உங்கள் இயக்ககச் சேமிப்பக அளவில் எந்தப் பாதிப்பையும் ஏற்படுத்தாது. பெரிய ஃபைல்கள்  அல்லது சேவையிலிருந்து டெவெலப்பர்கள் விலக்கிய ஃபைல்கள்  காப்புப் பிரதி எடுக்கப்படாது."</string>
     <string name="fullbackup_erase_dialog_message">"சாதனத் தரவையும் (வைஃபை கடவுச்சொற்கள், அழைப்புப் பதிவு போன்றவை) ஆப்ஸ் டேட்டாவையும் (பயன்பாடுகளில் சேமிக்கப்பட்டிருக்கும் அமைப்புகள், ஃபைல்கள்  போன்றவை) காப்புப் பிரதி எடுப்பதை நிறுத்தி, Google இயக்ககத்தில் உள்ள எல்லா நகல்களையும் அழிக்கவா?"</string>
     <string name="gesture_settings_activity_title">சைகை வழிசெலுத்தல்</string>
+    <string name="hub_mode_content_setting">ஹப் பயன்முறையில் எந்த விட்ஜெட்டையும் அனுமதி</string>
     <string name="install_unknown_applications">Play Store அல்லாத, பிற மூலங்களிலிருந்து ஆப்ஸை நிறுவ அனுமதி</string>
     <string name="keywords_accessibility_menu">உடலியக்கம், விரைவு மெனு, அசிஸ்ட்டிவ் மெனு, தொடுதல், கைத்திறன், கீல்வாதம், rsi, பக்கவாதம், நடுக்கம், மல்ட்டிபில் ஸ்க்லரோசிஸ், செரிப்ரல் பால்சி, பட்டன், வன்பொருள், அழுத்துதல், திரும்பத் திரும்ப ஏற்படும் காயம், கை, வலி, அணுகக்கூடியது, உதவி</string>
     <string name="keywords_adaptive_alert_vibration">ஹாப்டிக்ஸ், அதிர்வு, மொபைல், அழைப்பு, ரிங்டோன், விழிப்பூட்டல், அறிவிப்புகள், சத்தம், அமைதி, இரைச்சல், கேஸ், சூழல்சார்</string>
     <string name="keywords_adaptive_charging">சார்ஜ், சார்ஜாகிறது, ஸ்மார்ட்டாகச் சார்ஜாகிறது, சூழலுக்கேற்பச் சார்ஜாகிறது, பேட்டரி, பேட்டரி நிலை</string>
     <string name="keywords_battery_share">பேட்டரி பகிர்வு, வயர்லெஸ் சார்ஜிங்</string>
     <string name="keywords_battery_share_settings">பேட்டரி பகிர்வு, ரிவர்ஸ் வயர்லெஸ் சார்ஜிங்</string>
+    <string name="keywords_contextual_screen_timeout">திரை, அணைவு நேரம், அடாப்டிவ், சூழமைவு</string>
     <string name="keywords_gesture">சைகை, அசைவுகள்</string>
     <string name="keywords_hearing_devices">செவித்திறன் குறைபாடு, செவித்திறன் இழப்பு, PSAP</string>
     <string name="keywords_limited_warranty">உத்திரவாதம், வரம்பிற்குட்பட்ட உத்திரவாதம், வாக்குறுதி, சரிசெய்தல், RMA, மாற்றுதல்</string>
     <string name="keywords_live_caption">வசனங்கள், விவரிப்பு சப்டைட்டில்கள், CC, Live Transcribe, செவித்திறன் குறைபாடு, செவித்திறன் இழப்பு, CART, பேச்சிலிருந்து எழுத்து, சப்டைட்டில்</string>
     <string name="keywords_live_transcribe">வசனங்கள், விவரிப்பு சப்டைட்டில்கள், CC, கேட்பதில் சிரமம், கேட்கும் திறன் இன்மை, CART, பேச்சிலிருந்து உரை, சப்டைட்டில்</string>
+    <string name="keywords_magnifier">அளவை மாற்றுதல், பெரிதாக்கல், குறைந்த பார்வைத் திறன், பெரிதாக்கல், பெரிதாக்குதல்</string>
     <string name="keywords_reverse_charging_stop_threshold">மொபைல் பேட்டரி இந்த அளவை அடையும்போது பேட்டரியைப் பகிர்வதை நிறுத்து:</string>
     <string name="keywords_select_to_speak">உரையைக் கேட்டல், சத்தமாக வாசித்தல், பேசும் திரை, ஸ்கிரீன் ரீடர்</string>
     <string name="keywords_sound_amplifier">PSAP, அதிகரி, ஒலியைப் பெருக்குதல், கேட்பதில் சிரமம், கேட்கும் திறன் இன்மை, அதிகரித்தல்</string>
@@ -190,6 +221,7 @@
     <string name="keywords_switch_access">உடல் இயக்கத் திறன், ஸ்விட்ச், கை, AT, உதவிகரமான தொழில்நுட்பம், பக்கவாதம், ALS, ஸ்கேனிங், படிப்படியாக ஸ்கேன் செய்தல்</string>
     <string name="keywords_talkback">ஸ்கிரீன் ரீடர், பின்னணிக் குரல், பின்னணிக்குரல், குரல் உதவி, பார்வையின்மை, குறைந்த பார்வைத் திறன், TTS, உரையிலிருந்து பேச்சுக்கு மாற்றுதல், பேச்சுவடிவ விளக்கம்</string>
     <string name="keywords_touch_sensitivity">தொடுதல், உணர்திறன், உணர்தல்திறன், திரைக் காப்பான், ஃபிலிம், இணங்குதல், இணக்கத்தன்மை</string>
+    <string name="keywords_touch_sensitivity_settings">தொடுதல், அடாப்டிவ், உணர்திறன், உணர்தல்திறன், ஸ்கிரீன் கார்டு, ஃபிலிம், இணங்குதல், இணக்கத்தன்மை</string>
     <string name="keywords_voice_access">குரல், குரல் கட்டுப்பாடு, உடல் இயக்கத் திறன், கை, மைக், மைக்ரோஃபோன், சொல்வதை எழுதும் வசதி, பேசு, கட்டுப்பாடு</string>
     <string name="led_preference_title">LED இண்டிகேட்டர் பேட்டர்ன்கள்</string>
     <string name="legal_source_code_description">கூறுகளுக்கான மூலக் குறியீடு குறித்த விவரங்கள் ஓப்பன் சோர்ஸாக உள்ளன, அவற்றை Pixel உதவி மையத்தில் கண்டறியலாம்.</string>
@@ -203,7 +235,7 @@
     <string name="permit_debugging_data">பிழை அறிக்கை அணுகலை வழங்குதல்</string>
     <string name="play_application_detail_indication_summary">புதுப்பிப்புகள் உள்ளனவா என்று பாருங்கள்</string>
     <string name="play_application_update_entry_title">ஆப்ஸ் புதுப்பிப்புகள்</string>
-    <string name="privatespace_retry_summary">தனிப்பட்ட சேமிப்பிடத்தை அமைக்க, நீங்கள் Google கணக்கில் உள்நுழைய வேண்டும்</string>
+    <string name="private_space_retry_summary">ரகசிய இடத்தைப் பயன்படுத்த Google கணக்கில் உள்நுழையுங்கள்</string>
     <string name="repair_mode_active_summary">பழுதுபார்ப்புப் பயன்முறையில் உள்ளது</string>
     <string name="repair_mode_summary">சாதனத்தைப் பழுதுபார்ப்பதற்கான பாதுகாப்பான சூழல்</string>
     <string name="repair_mode_title">பழுதுபார்ப்புப் பயன்முறை</string>
@@ -252,9 +284,15 @@
     <string name="security_settings_face_enroll_error_timeout_dialog_message">முகத்தைப் பதிவுசெய்தலுக்கான நேர வரம்பை அடைந்துவிட்டீர்கள். மீண்டும் முயல்க.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">"'முகம் காட்டி திறத்தல்' அமைவுக்கான நேரம் முடிந்தது"</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">இப்போது உங்கள் முகத்தைக் காட்டி மொபைலை அன்லாக் செய்யலாம் அல்லது ஆப்ஸில் உள்நுழைதல், பர்ச்சேஸை அங்கீகரித்தல் போன்ற செயல்பாடுகளின்போது அதைச் செய்வது நீங்கள்தான் என்பதை உறுதிப்படுத்தலாம்</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp_full">"இப்போது உங்கள் முகத்தைப் பயன்படுத்தி மொபைலை அன்லாக் செய்யலாம் அல்லது ஆப்ஸில் உள்நுழைதல், பர்ச்சேஸை அங்கீகரித்தல் போன்ற செயல்பாடுகளின்போது அவற்றைச் செய்வது நீங்கள்தான் என்பதை உறுதிப்படுத்தலாம்.
+
+மாஸ்க்கோ அடர் நிறக் கண்ணாடியோ அணியாமல் போதுமான வெளிச்சத்தில் இருந்தால் முகம் காட்டித் திறத்தல் அம்சம் சிறப்பாகச் செயல்படும்."</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"இப்போது மொபைலைக் கையில் எடுக்கும்போதோ திரையைத் தட்டும்போதோ முகத்தைக் காட்டி அன்லாக் செய்யலாம்.
 
 மாஸ்க்கோ அடர் நிறக் கண்ணாடியோ அணியாமல் போதுமான வெளிச்சத்தில் இருந்தால் முகம் காட்டித் திறத்தல் அம்சம் நன்றாகச் செயல்படும்."</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp_folded">"இப்போது மொபைலைக் கையில் எடுக்கும்போதோ அதன் திரையைத் தட்டும்போதோ உங்கள் முகத்தைக் காட்டி அன்லாக் செய்யலாம். முகம் காட்டித் திறத்தல் அம்சத்தைப் பயன்படுத்த உங்கள் மொபைல் மடக்கப்பட்டிருக்க வேண்டும்.
+
+மாஸ்க்கோ அடர் நிறக் கண்ணாடியோ அணியாமல் போதுமான வெளிச்சத்தில் இருந்தால் முகம் காட்டித் திறத்தல் அம்சம் சிறப்பாகச் செயல்படும்."</string>
     <string name="security_settings_face_enroll_finish_title">அற்புதம்!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">பார்வைக் குறைபாடு/தலையை அசைக்க இயலாமைக்கு ஏற்ப அமை</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">கண்கள் திறந்திருக்க வேண்டும்</string>
@@ -294,6 +332,8 @@
     <string name="security_settings_work_fingerprint_preference_title">பணிக் கணக்குக்கான Pixel Imprint</string>
     <string name="setup_suggestion_summary">இன்னும் சில படிகளே உள்ளன</string>
     <string name="setup_suggestion_title">அமைவை நிறைவுசெய்க</string>
+    <string name="smart_battery_a11y_collapse_label">அடாப்டிவ் பேட்டரியைச் சுருக்கும்</string>
+    <string name="smart_battery_a11y_expand_label">அடாப்டிவ் பேட்டரியை விரிவாக்கும்</string>
     <string name="smart_battery_footer">பேட்டரி ஆயுளை நீட்டிக்க, செயல்திறனையும் பின்னணிச் செயல்பாட்டையும் சூழலுக்கேற்ற பேட்டரி குறைக்கக்கூடும். சில அறிவிப்புகள் தாமதமாகலாம்.</string>
     <string name="smart_battery_manager_title">சூழலுக்கேற்ற விருப்பத்தேர்வுகள்</string>
     <string name="smart_battery_title">அடாப்டிவ் பேட்டரி</string>
@@ -311,6 +351,8 @@
     <string name="software_update_update_available_summary">புதுப்பிப்பு கிடைக்கிறது</string>
     <string name="sound_dashboard_summary">ஒலி, ஹாப்டிக்ஸ், தொந்தரவு செய்ய வேண்டாம்</string>
     <string name="sound_settings">ஒலி &amp; அதிர்வு</string>
+    <string name="spatial_audio_head_tracking_available">ஹெட் டிராக்கிங் கிடைக்கிறது</string>
+    <string name="spatial_audio_head_tracking_unavailable">ஹெட் டிராக்கிங் கிடைக்கவில்லை</string>
     <string name="speed_boost_summary_off">ஆஃப்</string>
     <string name="speed_boost_summary_on">ஆன்</string>
     <string name="speed_boost_title">Spectrum வேகத்தை அதிகரித்தல்</string>
@@ -322,6 +364,9 @@
     <string name="suw_warranty_positive_button_text">மூடுக</string>
     <string name="system_update_entry_title">சிஸ்டம் புதுப்பிப்பு</string>
     <string name="system_updates_group_title">Pixel புதுப்பிப்புகள்</string>
+    <string name="touch_category_title">தொடுதல்</string>
+    <string name="touch_sensitivity_settings_summary">தொடுதிரையின் உணர்திறனைச் சரிசெய்யலாம்</string>
+    <string name="touch_sensitivity_settings_title">தொடுதல் உணர்திறன்</string>
     <string name="touch_sensitivity_summary">ஸ்கிரீன் கார்டைப் பயன்படுத்தும்போது தொடுதல் உணர்திறனை அதிகரிக்கும் மற்றும் தொடுதலை மேம்படுத்தும்</string>
     <string name="touch_sensitivity_title">ஸ்கிரீன் கார்டுப் பயன்முறை</string>
     <string name="traffic_light_face_enrolling_title_accessibility">உங்கள் முகத்துக்கு முன் நேராக மொபைலைப் பிடியுங்கள்</string>

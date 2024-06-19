@@ -1,17 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">Công nghệ cảm ứng xúc giác qua bàn phím</string>
+    <string name="accessibility_screen_magnifier_summary">Dùng camera để phóng to các chi tiết xung quanh bạn</string>
+    <string name="accessibility_screen_magnifier_title">Kính lúp</string>
     <string name="adaptive_alert_vibration_summary">Giảm độ rung khi điện thoại của bạn nằm yên và màn hình hướng lên trên</string>
     <string name="adaptive_alert_vibration_title">Chế độ rung khi có cảnh báo thích ứng</string>
     <string name="adaptive_battery_switch_des">Để kéo dài thời lượng pin, tính năng Pin thích ứng có thể làm giảm hiệu suất thiết bị và ảnh hưởng đến hoạt động ở chế độ nền. Một số thông báo có thể bị trì hoãn.</string>
-    <string name="adaptive_battery_switch_title">Dùng Pin thích ứng</string>
+    <string name="adaptive_battery_switch_title">Sử dụng Pin thích ứng</string>
     <string name="adaptive_charging">Sạc thích ứng</string>
     <string name="adaptive_charging_description">Kéo dài thời lượng pin bằng cách sạc đều đặn trong thời gian dài hơn. Tính năng này được kích hoạt dựa trên chu kỳ sử dụng của bạn.</string>
-    <string name="adaptive_charging_footer">Để giúp kéo dài thời lượng pin, điện thoại tìm hiểu thói quen sạc của bạn và chờ cho đến khi bạn cần sạc đầy.</string>
+    <string name="adaptive_charging_footer">Để giúp kéo dài thời lượng pin, điện thoại sẽ tìm hiểu thói quen sạc của bạn và chờ cho đến khi bạn cần sạc đầy.</string>
     <string name="adaptive_charging_link_a11y">Tìm hiểu thêm về tính năng Sạc thích ứng</string>
     <string name="adaptive_charging_main_switch_title">Sử dụng tính năng Sạc thích ứng</string>
     <string name="adaptive_charging_time_estimate"><b>Đang sạc thích ứng</b> • Pin sẽ đầy vào %1$s</string>
     <string name="adaptive_charging_title">Sạc thích ứng</string>
+    <string name="adaptive_touch_sensitivity_summary">Hệ thống sẽ tự động điều chỉnh độ nhạy cảm ứng theo môi trường, hoạt động, và miếng bảo vệ màn hình của bạn</string>
+    <string name="adaptive_touch_sensitivity_title">Cảm ứng thích ứng</string>
     <string name="add_bypassed_application_hint">Chưa thêm ứng dụng nào</string>
     <string name="advanced_vpn_preference_group_title">Có sẵn</string>
     <string name="all_apps_category_title">Tất cả ứng dụng</string>
@@ -23,6 +27,16 @@ Việc cấp quyền truy cập sẽ cho phép ứng dụng này "<b>tự độn
 
 Việc thu hồi quyền truy cập sẽ khiến ứng dụng phải yêu cầu bạn cấp quyền thu thập và tải báo cáo lỗi lên đối với từng báo cáo vấn đề."</string>
     <string name="app_and_notification_dashboard_summary">Trợ lý, ứng dụng gần đây, ứng dụng mặc định</string>
+    <string name="audio_sharing_switch_title">Chia sẻ âm thanh</string>
+    <string name="audio_sharing_title">Chia sẻ âm thanh</string>
+    <string name="audio_streams_category_title">Kết nối với luồng Âm thanh năng lượng thấp</string>
+    <string name="audio_streams_connect">Kết nối</string>
+    <string name="audio_streams_disconnect">Ngắt kết nối</string>
+    <string name="audio_streams_pref_title">Luồng âm thanh ở gần</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">Định dạng của mã QR không hợp lệ</string>
+    <string name="audio_streams_qr_code_scanner">Để bắt đầu nghe, hãy căn sao cho mã QR ở bên dưới nằm chính giữa</string>
+    <string name="audio_streams_qr_code_summary">Kết nối với một luồng âm thanh bằng mã QR</string>
+    <string name="audio_streams_title">Luồng âm thanh</string>
     <string name="automatic_storage_manager_activation_warning">Khi kết nối với Internet, bạn vẫn có thể truy cập vào ảnh và video ở chất lượng bạn đã chọn để sao lưu</string>
     <string name="automatic_storage_manager_days_title">Xóa ảnh và video đã sao lưu</string>
     <string name="automatic_storage_manager_deactivation_warning">"Tắt Bộ nhớ thông minh? 
@@ -48,8 +62,20 @@ Bộ nhớ thông minh sẽ không giải phóng dung lượng khi bộ nhớ c�
     <string name="battery_tip_battery_health_learn_more_description">Tìm hiểu thêm về tình trạng pin</string>
     <string name="battery_tip_battery_health_reduced_title">Dung lượng pin giảm</string>
     <string name="battery_tip_battery_health_unknown_title">Không phát hiện được tình trạng pin</string>
+    <string name="battery_tip_dock_defender_active_summary">Để giúp kéo dài thời lượng pin, khi được gắn vào đế sạc thì máy tính bảng sẽ sạc đến 90% rồi tạm dừng</string>
+    <string name="battery_tip_dock_defender_active_title">Đang tạm ngưng sạc để bảo vệ pin</string>
+    <string name="battery_tip_dock_defender_button_learn_more">Tìm hiểu thêm</string>
+    <string name="battery_tip_dock_defender_button_override">Ghi đè</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">Để giúp kéo dài tuổi thọ pin, quá trình sạc sẽ tạm dừng lúc sạc đến 90% khi máy tính bảng được gắn vào đế sạc</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">Sạc đến 90%</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">Vào lần tới bạn gắn máy tính bảng vào đế sạc, quá trình sạc sẽ tạm dừng lúc sạc đến 90% để bảo vệ pin</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">Sạc đến khi đầy</string>
     <string name="battery_tip_limited_temporarily_extra_summary">Trong trường hợp máy tính bảng được gắn vào đế, quá trình sạc sẽ tạm dừng khi pin đạt mức %1$s để bảo vệ pin</string>
     <string name="battery_tip_smart_battery_summary">Bật tùy chọn Pin thích ứng</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">Tìm hiểu thêm về quy trình sạc không dây</string>
+    <string name="battery_tip_wireless_charging_summary">Phương thức sạc không dây cho điện thoại có thể dùng nhiều năng lượng hơn các cách sạc khác</string>
+    <string name="battery_tip_wireless_charging_title">Sạc không dây</string>
+    <string name="calls_and_alarms_device_title">Cuộc gọi và chuông báo</string>
     <string name="clear_calling_footer">"Để bảo vệ quyền riêng tư của bạn, tính năng Khử tiếng ồn không gửi âm thanh hay cuộc trò chuyện cho Google.
 
 Tính năng này hoạt động với tính năng Gọi qua Wi-Fi và hầu hết các mạng (không hoạt động với mạng 3G)."</string>
@@ -98,7 +124,7 @@ Tính năng này hoạt động với tính năng Gọi qua Wi-Fi và hầu hế
     <string name="columbus_setting_additional_settings_title">Cường độ cho chế độ Chạm nhanh</string>
     <string name="columbus_setting_app_selection_help_text">Chọn một ứng dụng sẽ mở khi bạn chạm vào mặt sau của điện thoại hai lần. Nếu bạn gỡ cài đặt ứng dụng đó, chế độ Chạm nhanh sẽ tắt cho tới khi bạn chọn một ứng dụng khác.</string>
     <string name="columbus_setting_app_shortcut_selection_help_text">Chọn hành động sẽ diễn ra khi bạn mở ứng dụng này bằng chế độ Chạm nhanh.</string>
-    <string name="columbus_setting_enable_switch_title">Dùng chế độ Chạm nhanh</string>
+    <string name="columbus_setting_enable_switch_title">Sử dụng chế độ Chạm nhanh</string>
     <string name="columbus_setting_sensitivity_title">Yêu cầu chạm mạnh hơn</string>
     <string name="columbus_title">Chạm nhanh để bắt đầu các thao tác</string>
     <string name="communal_lock_screen_summary">Quyền riêng tư, thông báo và điều khiển nhà</string>
@@ -120,11 +146,14 @@ Tính năng này hoạt động với tính năng Gọi qua Wi-Fi và hầu hế
 
 Tấn công giả mạo là hành vi tìm cách đánh cắp thông tin đăng nhập hoặc thông tin cá nhân khác."</string>
     <string name="content_protection_preference_subpage_summary">Tính năng quét sẽ chạy ở chế độ riêng tư ngay trên thiết bị của bạn, kiểm tra hoạt động trong ứng dụng để phát hiện hành vi tấn công giả mạo hoặc hành vi lừa đảo khác. Nếu có hành vi như vậy bị phát hiện, một số thông tin ứng dụng sẽ được gửi đến Google Play Protect để xác nhận mối đe doạ và cảnh báo người dùng ứng dụng.</string>
+    <string name="contextual_timeout_description">Tự động tắt màn hình sớm nếu bạn không dùng thiết bị</string>
+    <string name="contextual_timeout_title">Thời gian chờ thích ứng</string>
     <string name="debugging_data_title">Gỡ lỗi dữ liệu</string>
     <string name="discover_tips_button">Khám phá mẹo</string>
     <string name="dock_summary_charging_phone">Đang sạc điện thoại</string>
-    <string name="double_twist_for_camera_mode_summary">Để chuyển sang và thoát khỏi chế độ tự chụp ảnh chân dung trong Google Máy ảnh, hãy xoay cổ tay hai lần khi bạn đang sử dụng ứng dụng này.</string>
+    <string name="double_twist_for_camera_mode_summary">Để chuyển sang và thoát khỏi chế độ selfie trong Google Máy ảnh, hãy xoay cổ tay hai lần khi bạn đang sử dụng ứng dụng này.</string>
     <string name="duration_less_than_one_minute">Dưới 1 phút</string>
+    <string name="enable_glanceable_hub_toggle">Chế độ thiết bị trung tâm</string>
     <string name="extreme_battery_saver_summary">Chế độ này sẽ thực hiện mọi thay đổi nêu trên. Đồng thời tạm dừng các ứng dụng không thiết yếu và thông báo của những ứng dụng đó.</string>
     <string name="extreme_battery_saver_title">Trình siêu tiết kiệm pin</string>
     <string name="face_confirmation_hide_illustration_description">Giờ đây, bạn có thể dùng khuôn mặt để mở khoá mỗi khi nhấc điện thoại lên hoặc nhấn vào màn hình.</string>
@@ -162,7 +191,6 @@ Tấn công giả mạo là hành vi tìm cách đánh cắp thông tin đăng n
     <string name="firmware_update_status_category">Trạng thái chương trình cơ sở của thiết bị</string>
     <string name="firmware_update_status_title">Đã có bản cập nhật chương trình cơ sở</string>
     <string name="firmware_update_version_number_category">Phiên bản chương trình cơ sở của thiết bị</string>
-    <string name="firmware_update_version_number_title">Chương trình cơ sở của bàn phím Pixel</string>
     <string name="fullbackup_data_summary">"Tự động sao lưu dữ liệu thiết bị (chẳng hạn như mật khẩu Wi-Fi và lịch sử cuộc gọi) và dữ liệu ứng dụng (chẳng hạn như cài đặt và tệp được ứng dụng lưu trữ) vào Google Drive.
 
 Khi bạn bật sao lưu tự động, dữ liệu thiết bị và dữ liệu ứng dụng được lưu vào một thư mục riêng trong Google Drive theo định kỳ. Dữ liệu ứng dụng có thể là bất kỳ dữ liệu nào mà ứng dụng đã lưu (dựa trên cài đặt của nhà phát triển), bao gồm dữ liệu có thể nhạy cảm chẳng hạn như danh bạ, tin nhắn và ảnh.
@@ -170,17 +198,20 @@ Khi bạn bật sao lưu tự động, dữ liệu thiết bị và dữ liệu 
 Dữ liệu sao lưu sẽ không tính vào phần bộ nhớ trên Drive của bạn. Các tệp lớn hoặc các tệp mà nhà phát triển đã chọn để loại trừ khỏi dịch vụ sẽ không được sao lưu."</string>
     <string name="fullbackup_erase_dialog_message">Dừng sao lưu dữ liệu thiết bị (chẳng hạn như mật khẩu Wi-Fi và lịch sử cuộc gọi) và dữ liệu ứng dụng (chẳng hạn như cài đặt và tệp được ứng dụng lưu trữ), đồng thời xóa tất cả các bản sao trên Google Drive?</string>
     <string name="gesture_settings_activity_title">Thao tác bằng cử chỉ</string>
+    <string name="hub_mode_content_setting">Cho phép mọi tiện ích ở chế độ thiết bị trung tâm</string>
     <string name="install_unknown_applications">Cho phép cài đặt ứng dụng từ những nguồn khác ngoài Cửa hàng Play</string>
     <string name="keywords_accessibility_menu">vận động, trình đơn nhanh, trình đơn hỗ trợ, cảm ứng chạm, linh hoạt, viêm khớp, RSI, đột quỵ, run rẩy, bệnh đa xơ cứng, bại não, nút, phần cứng, nhấn, chấn thương do căng cơ lặp đi lặp lại, tay, đau, hỗ trợ tiếp cận, trợ giúp</string>
     <string name="keywords_adaptive_alert_vibration">xúc giác, rung, điện thoại, cuộc gọi, chuông, cảnh báo, thông báo, tiếng to, yên lặng, tiếng ồn, ốp lưng, thích ứng</string>
     <string name="keywords_adaptive_charging">sạc, sạc pin, sạc thông minh, sạc thích ứng, pin, tình trạng pin</string>
     <string name="keywords_battery_share">chia sẻ pin, sạc không dây</string>
     <string name="keywords_battery_share_settings">chia sẻ pin, sạc đảo chiều không dây</string>
+    <string name="keywords_contextual_screen_timeout">màn hình, thời gian chờ, thích ứng, theo ngữ cảnh</string>
     <string name="keywords_gesture">cử chỉ, di chuyển</string>
     <string name="keywords_hearing_devices">người có thính giác kém, suy giảm thính lực, trung tâm nhận cuộc gọi cứu hộ công cộng</string>
     <string name="keywords_limited_warranty">bảo hành, bảo đảm, bảo hành có giới hạn, cam kết, sửa chữa, rma (uỷ quyền trả lại hàng hoá), thay thế</string>
     <string name="keywords_live_caption">Phụ đề, phụ đề chi tiết, CC, Chép lời trực tiếp, nặng tai, suy giảm thính lực, chép lời theo thời gian thực bằng máy tính, chuyển lời nói thành văn bản</string>
     <string name="keywords_live_transcribe">Phụ đề, phụ đề chi tiết, CC, Phụ đề trực tiếp, nặng tai, suy giảm thính lực, chép lời theo thời gian thực bằng máy tính (CART), chuyển lời nói thành văn bản</string>
+    <string name="keywords_magnifier">Thu phóng, Phóng to, Thị lực kém, Tăng kích cỡ, làm cho lớn hơn</string>
     <string name="keywords_reverse_charging_stop_threshold">Ngừng chia sẻ pin khi mức pin điện thoại còn:</string>
     <string name="keywords_select_to_speak">Nghe văn bản, đọc to, đọc màn hình, trình đọc màn hình</string>
     <string name="keywords_sound_amplifier">sản phẩm khuếch đại âm thanh cá nhân (PSAP), khuếch đại, khuếch đại âm thanh, nặng tai, suy giảm thính lực, tăng âm</string>
@@ -188,6 +219,7 @@ Dữ liệu sao lưu sẽ không tính vào phần bộ nhớ trên Drive của 
     <string name="keywords_switch_access">vận động, công tắc, tay, AT, công nghệ hỗ trợ, bại liệt, xơ cứng teo cơ một bên (ALS), quét, quét theo từng bước</string>
     <string name="keywords_talkback">Trình đọc màn hình, Thuyết minh, VoiceOver, Trợ lý thoại, Mù, Mất thị lực, Thị lực kém, TTS, chuyển văn bản sang lời nói, phản hồi bằng giọng nói</string>
     <string name="keywords_touch_sensitivity">chạm, độ nhạy, nhạy, miếng dán màn hình, màng dán, phản hồi, khả năng phản hồi</string>
+    <string name="keywords_touch_sensitivity_settings">chạm, thích ứng, độ nhạy, nhạy, miếng bảo vệ màn hình, màng dán, phản hồi, khả năng phản hồi</string>
     <string name="keywords_voice_access">giọng nói, điều khiển bằng giọng nói, vận động, tay, mic, micrô, nhập bằng giọng nói, nói chuyện, điều khiển</string>
     <string name="led_preference_title">Mẫu chỉ báo bằng đèn LED</string>
     <string name="legal_source_code_description">Bạn có thể tìm thấy thông tin chi tiết về mã nguồn dành cho các thành phần được cung cấp dưới dạng nguồn mở tại trung tâm trợ giúp của Pixel.</string>
@@ -201,7 +233,7 @@ Dữ liệu sao lưu sẽ không tính vào phần bộ nhớ trên Drive của 
     <string name="permit_debugging_data">Cho phép truy cập báo cáo lỗi</string>
     <string name="play_application_detail_indication_summary">Kiểm tra để tìm bản cập nhật</string>
     <string name="play_application_update_entry_title">Bản cập nhật ứng dụng</string>
-    <string name="privatespace_retry_summary">Bạn cần đăng nhập vào một Tài khoản Google để thiết lập Không gian riêng tư</string>
+    <string name="private_space_retry_summary">Hãy đăng nhập vào một Tài khoản Google mà bạn sẽ sử dụng cho không gian riêng tư của mình</string>
     <string name="repair_mode_active_summary">Ở chế độ sửa chữa</string>
     <string name="repair_mode_summary">Môi trường bảo mật để sửa chữa thiết bị</string>
     <string name="repair_mode_title">Chế độ sửa chữa</string>
@@ -223,7 +255,7 @@ Hãy lật điện thoại để thử."</string>
     <string name="reverse_charging_is_on_and_charging_summary">Đang chia sẻ pin và pin đang sạc</string>
     <string name="reverse_charging_is_on_and_discharging_summary">Đang chia sẻ pin</string>
     <string name="reverse_charging_is_on_summary">Đang bật / Sạc các thiết bị khác</string>
-    <string name="reverse_charging_main_switch">Dùng tính năng Chia sẻ pin</string>
+    <string name="reverse_charging_main_switch">Sử dụng tính năng Chia sẻ pin</string>
     <string name="reverse_charging_overheat_summary">Không dùng được vì Pixel quá nóng. Hãy chờ điện thoại nguội bớt rồi thử lại.</string>
     <string name="reverse_charging_power_save_mode_is_on_message">Không dùng được vì Trình tiết kiệm pin đang bật</string>
     <string name="reverse_charging_sharing_level_message">Không dùng được vì pin dưới mức chia sẻ</string>
@@ -248,9 +280,15 @@ Hãy lật điện thoại để thử."</string>
     <string name="security_settings_face_enroll_education_message">Trên màn hình tiếp theo, hãy xoay đầu để chụp mọi góc cạnh khuôn mặt bạn</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Đã hết giờ thiết lập Mở khóa bằng khuôn mặt</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Giờ đây, bạn có thể dùng khuôn mặt để mở khoá điện thoại hoặc xác minh danh tính, chẳng hạn như khi đăng nhập vào ứng dụng hoặc phê duyệt giao dịch mua hàng</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp_full">"Giờ đây, bạn có thể dùng khuôn mặt để mở khoá điện thoại hoặc xác minh danh tính, chẳng hạn như khi bạn đăng nhập vào các ứng dụng hoặc phê duyệt giao dịch mua.
+
+Tính năng Mở khoá bằng khuôn mặt hoạt động tốt nhất khi có đủ ánh sáng và bạn không đeo khẩu trang hoặc kính đen."</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Giờ đây, bạn có thể dùng khuôn mặt để mở khoá mỗi lần nhấc điện thoại lên hoặc nhấn vào màn hình.
 
 Tính năng Mở khoá bằng khuôn mặt hoạt động hiệu quả nhất khi có đủ ánh sáng và bạn không đeo khẩu trang hoặc kính râm."</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp_folded">"Giờ đây, bạn có thể dùng khuôn mặt để mở khoá mỗi khi nhấc điện thoại lên hoặc nhấn vào màn hình. Bạn phải gập điện thoại của mình lại thì mới có thể sử dụng tính năng Mở khoá bằng khuôn mặt.
+
+Tính năng Mở khoá bằng khuôn mặt hoạt động tốt nhất khi có đủ ánh sáng và bạn không đeo khẩu trang hoặc kính đen."</string>
     <string name="security_settings_face_enroll_finish_title">Vậy là xong!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Cho người có thị lực/cử động đầu hạn chế</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Bạn phải mở mắt</string>
@@ -291,6 +329,8 @@ Lưu ý: Bạn không thể sử dụng vân tay của mình để mở khóa th
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint cho công việc</string>
     <string name="setup_suggestion_summary">Chỉ một vài bước nữa thôi</string>
     <string name="setup_suggestion_title">Hoàn tất việc thiết lập</string>
+    <string name="smart_battery_a11y_collapse_label">Thu gọn, Pin thích ứng</string>
+    <string name="smart_battery_a11y_expand_label">Mở rộng, Pin thích ứng</string>
     <string name="smart_battery_footer">Để kéo dài thời lượng pin, tính năng Pin thích ứng có thể làm giảm hiệu suất thiết bị và hoạt động ở chế độ nền. Một số thông báo có thể đến chậm.</string>
     <string name="smart_battery_manager_title">Lựa chọn ưu tiên về tính năng thích ứng</string>
     <string name="smart_battery_title">Pin thích ứng</string>
@@ -302,11 +342,13 @@ Lưu ý: Bạn không thể sử dụng vân tay của mình để mở khóa th
     <string name="software_update_entry_up_to_date_summary">Cập nhật Pixel của bạn lên phiên bản mới nhất</string>
     <string name="software_update_pending_update_summary">Bản cập nhật đang chờ xử lý</string>
     <string name="software_update_unknown_state_summary">Hãy kiểm tra lại sau</string>
-    <string name="software_update_up_to_date_header">Thiết bị Pixel của bạn đã cập nhật</string>
+    <string name="software_update_up_to_date_header">Chiếc Pixel của bạn đang chạy phiên bản mới nhất</string>
     <string name="software_update_up_to_date_summary">Đã cập nhật</string>
     <string name="software_update_up_to_specific_date_summary">Đã cập nhật ngày %1$s</string>
     <string name="software_update_update_available_summary">Có bản cập nhật</string>
     <string name="sound_dashboard_summary">Âm lượng, xúc giác, Không làm phiền</string>
+    <string name="spatial_audio_head_tracking_available">Có thể sử dụng tính năng Theo dõi chuyển động của đầu</string>
+    <string name="spatial_audio_head_tracking_unavailable">Không dùng được tính năng Theo dõi chuyển động của đầu</string>
     <string name="speed_boost_summary_off">Đang tắt</string>
     <string name="speed_boost_summary_on">Đang bật</string>
     <string name="speed_boost_title">Tăng tốc độ dùng mạng Spectrum</string>
@@ -318,6 +360,9 @@ Lưu ý: Bạn không thể sử dụng vân tay của mình để mở khóa th
     <string name="suw_warranty_positive_button_text">Đóng</string>
     <string name="system_update_entry_title">Bản cập nhật hệ thống</string>
     <string name="system_updates_group_title">Bản cập nhật cho Pixel</string>
+    <string name="touch_category_title">Cảm ứng</string>
+    <string name="touch_sensitivity_settings_summary">Điều chỉnh độ nhạy của màn hình cảm ứng</string>
+    <string name="touch_sensitivity_settings_title">Độ nhạy cảm ứng</string>
     <string name="touch_sensitivity_summary">Tăng độ nhạy cảm ứng và cải thiện cảm ứng khi sử dụng miếng dán bảo vệ màn hình</string>
     <string name="touch_sensitivity_title">Chế độ miếng dán bảo vệ màn hình</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Giơ điện thoại ra trước mặt</string>

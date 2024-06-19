@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">(M)‏‮Keyboard‬‏ ‏‮haptics‬‏</string>
+    <string name="accessibility_screen_magnifier_summary">(M)‏‮Use‬‏ ‏‮your‬‏ ‏‮camera‬‏ ‏‮to‬‏ ‏‮enlarge‬‏ ‏‮details‬‏ ‏‮around‬‏ ‏‮you‬‏</string>
+    <string name="accessibility_screen_magnifier_title">(M)‏‮Magnifier‬‏</string>
     <string name="adaptive_alert_vibration_summary">(M)‏‮Reduces‬‏ ‏‮vibration‬‏ ‏‮strength‬‏ ‏‮while‬‏ ‏‮your‬‏ ‏‮phone‬‏ ‏‮is‬‏ ‏‮still‬‏ ‏‮and‬‏ ‏‮the‬‏ ‏‮screen‬‏ ‏‮is‬‏ ‏‮facing‬‏ ‏‮up‬‏</string>
     <string name="adaptive_alert_vibration_title">(M)‏‮Adaptive‬‏ ‏‮alert‬‏ ‏‮vibration‬‏</string>
     <string name="adaptive_battery_switch_des">(M)‏‮To‬‏ ‏‮extend‬‏ ‏‮battery‬‏ ‏‮life,‬‏ ‏‮Adaptive‬‏ ‏‮Battery‬‏ ‏‮may‬‏ ‏‮reduce‬‏ ‏‮performance‬‏ ‏‮and‬‏ ‏‮background‬‏ ‏‮activity.‬‏ ‏‮Some‬‏ ‏‮notifications‬‏ ‏‮may‬‏ ‏‮be‬‏ ‏‮delayed.‬‏</string>
@@ -12,6 +14,8 @@
     <string name="adaptive_charging_main_switch_title">(M)‏‮Use‬‏ ‏‮Adaptive‬‏ ‏‮Charging‬‏</string>
     <string name="adaptive_charging_time_estimate"><b>(M)‏‮Adaptive‬‏ ‏‮Chargin</b>g‬‏ ‏‮•‬‏ ‏‮Full‬‏ ‏‮by‬‏ ‏‮%1‬‏$s</string>
     <string name="adaptive_charging_title">(M)‏‮Adaptive‬‏ ‏‮Charging‬‏</string>
+    <string name="adaptive_touch_sensitivity_summary">(M)‏‮Touch‬‏ ‏‮sensitivity‬‏ ‏‮will‬‏ ‏‮automatically‬‏ ‏‮adjust‬‏ ‏‮to‬‏ ‏‮your‬‏ ‏‮environment,‬‏ ‏‮activities‬‏ ‏‮and‬‏ ‏‮screen‬‏ ‏‮protector‬‏</string>
+    <string name="adaptive_touch_sensitivity_title">(M)‏‮Adaptive‬‏ ‏‮touch‬‏</string>
     <string name="add_bypassed_application_hint">(M)‏‮No‬‏ ‏‮apps‬‏ ‏‮added‬‏</string>
     <string name="advanced_vpn_preference_group_title">(M)‏‮Built-in‬‏</string>
     <string name="all_apps_category_title">(M)‏‮All‬‏ ‏‮apps‬‏</string>
@@ -23,6 +27,16 @@
 
 ‏‮Revoking‬‏ ‏‮access‬‏ ‏‮will‬‏ ‏‮require‬‏ ‏‮the‬‏ ‏‮app‬‏ ‏‮to‬‏ ‏‮request‬‏ ‏‮your‬‏ ‏‮permission‬‏ ‏‮to‬‏ ‏‮collect‬‏ ‏‮and‬‏ ‏‮upload‬‏ ‏‮a‬‏ ‏‮bug‬‏ ‏‮report‬‏ ‏‮for‬‏ ‏‮each‬‏ ‏‮individual‬‏ ‏‮issue‬‏ ‏‮report.‬‏"</string>
     <string name="app_and_notification_dashboard_summary">(M)‏‮Assistant,‬‏ ‏‮recent‬‏ ‏‮apps,‬‏ ‏‮default‬‏ ‏‮apps‬‏</string>
+    <string name="audio_sharing_switch_title">(M)‏‮Share‬‏ ‏‮audio‬‏</string>
+    <string name="audio_sharing_title">(M)‏‮Audio‬‏ ‏‮sharing‬‏</string>
+    <string name="audio_streams_category_title">(M)‏‮Connect‬‏ ‏‮to‬‏ ‏‮a‬‏ ‏‮LE‬‏ ‏‮audio‬‏ ‏‮stream‬‏</string>
+    <string name="audio_streams_connect">(M)‏‮Connect‬‏</string>
+    <string name="audio_streams_disconnect">(M)‏‮Disconnect‬‏</string>
+    <string name="audio_streams_pref_title">(M)‏‮Nearby‬‏ ‏‮audio‬‏ ‏‮streams‬‏</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">"(M)‏‮QR‬‏ ‏‮code‬‏ ‏‮isn't‬‏ ‏‮a‬‏ ‏‮valid‬‏ ‏‮format‬‏"</string>
+    <string name="audio_streams_qr_code_scanner">(M)‏‮To‬‏ ‏‮start‬‏ ‏‮listening,‬‏ ‏‮center‬‏ ‏‮the‬‏ ‏‮QR‬‏ ‏‮code‬‏ ‏‮below‬‏</string>
+    <string name="audio_streams_qr_code_summary">(M)‏‮Connect‬‏ ‏‮to‬‏ ‏‮an‬‏ ‏‮audio‬‏ ‏‮stream‬‏ ‏‮using‬‏ ‏‮QR‬‏ ‏‮code‬‏</string>
+    <string name="audio_streams_title">(M)‏‮Audio‬‏ ‏‮streams‬‏</string>
     <string name="automatic_storage_manager_activation_warning">"(M)‏‮When‬‏ ‏‮you're‬‏ ‏‮connected,‬‏ ‏‮you‬‏ ‏‮can‬‏ ‏‮still‬‏ ‏‮access‬‏ ‏‮photos‬‏ ‏‮and‬‏ ‏‮videos‬‏ ‏‮at‬‏ ‏‮the‬‏ ‏‮quality‬‏ ‏‮you‬‏ ‏‮selected‬‏ ‏‮for‬‏ ‏‮backup‬‏"</string>
     <string name="automatic_storage_manager_days_title">(M)‏‮Remove‬‏ ‏‮backed‬‏ ‏‮up‬‏ ‏‮photos‬‏ ‏‮&amp;‬‏ ‏‮videos‬‏</string>
     <string name="automatic_storage_manager_deactivation_warning">"(M)‏‮Turn‬‏ ‏‮off‬‏ ‏‮Smart‬‏ ‏‮Storage?‬‏ 
@@ -49,8 +63,20 @@
     <string name="battery_tip_battery_health_learn_more_description">(M)‏‮Learn‬‏ ‏‮more‬‏ ‏‮about‬‏ ‏‮battery‬‏ ‏‮health‬‏</string>
     <string name="battery_tip_battery_health_reduced_title">(M)‏‮Battery‬‏ ‏‮capacity‬‏ ‏‮is‬‏ ‏‮reduced‬‏</string>
     <string name="battery_tip_battery_health_unknown_title">(M)‏‮Can’t‬‏ ‏‮detect‬‏ ‏‮battery‬‏ ‏‮health‬‏</string>
+    <string name="battery_tip_dock_defender_active_summary">(M)‏‮To‬‏ ‏‮help‬‏ ‏‮extend‬‏ ‏‮battery‬‏ ‏‮lifespan,‬‏ ‏‮charging‬‏ ‏‮is‬‏ ‏‮on‬‏ ‏‮hold‬‏ ‏‮at‬‏ ‏‮90%‬‏ ‏‮while‬‏ ‏‮your‬‏ ‏‮tablet‬‏ ‏‮is‬‏ ‏‮docked‬‏</string>
+    <string name="battery_tip_dock_defender_active_title">(M)‏‮Charging‬‏ ‏‮on‬‏ ‏‮hold‬‏ ‏‮to‬‏ ‏‮protect‬‏ ‏‮battery‬‏</string>
+    <string name="battery_tip_dock_defender_button_learn_more">(M)‏‮Learn‬‏ ‏‮more‬‏</string>
+    <string name="battery_tip_dock_defender_button_override">(M)‏‮Override‬‏</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">(M)‏‮To‬‏ ‏‮help‬‏ ‏‮extend‬‏ ‏‮battery‬‏ ‏‮lifespan,‬‏ ‏‮charging‬‏ ‏‮will‬‏ ‏‮be‬‏ ‏‮put‬‏ ‏‮on‬‏ ‏‮hold‬‏ ‏‮at‬‏ ‏‮90%‬‏ ‏‮while‬‏ ‏‮your‬‏ ‏‮tablet‬‏ ‏‮was‬‏ ‏‮docked‬‏</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">(M)‏‮Charging‬‏ ‏‮to‬‏ ‏‮90%‬‏</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">(M)‏‮The‬‏ ‏‮next‬‏ ‏‮time‬‏ ‏‮your‬‏ ‏‮tablet‬‏ ‏‮is‬‏ ‏‮docked,‬‏ ‏‮charging‬‏ ‏‮will‬‏ ‏‮be‬‏ ‏‮put‬‏ ‏‮on‬‏ ‏‮hold‬‏ ‏‮at‬‏ ‏‮90%‬‏ ‏‮to‬‏ ‏‮protect‬‏ ‏‮the‬‏ ‏‮battery‬‏</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">(M)‏‮Charging‬‏ ‏‮to‬‏ ‏‮full‬‏</string>
     <string name="battery_tip_limited_temporarily_extra_summary">(M)‏‮To‬‏ ‏‮protect‬‏ ‏‮your‬‏ ‏‮battery,‬‏ ‏‮charging‬‏ ‏‮is‬‏ ‏‮paused‬‏ ‏‮at‬‏ %1$s ‏‮while‬‏ ‏‮your‬‏ ‏‮tablet‬‏ ‏‮is‬‏ ‏‮docked‬‏</string>
     <string name="battery_tip_smart_battery_summary">(M)‏‮Turn‬‏ ‏‮on‬‏ ‏‮Adaptive‬‏ ‏‮Battery‬‏</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">(M)‏‮Learn‬‏ ‏‮more‬‏ ‏‮about‬‏ ‏‮wireless‬‏ ‏‮charging‬‏</string>
+    <string name="battery_tip_wireless_charging_summary">(M)‏‮Charging‬‏ ‏‮your‬‏ ‏‮phone‬‏ ‏‮wirelessly‬‏ ‏‮may‬‏ ‏‮use‬‏ ‏‮more‬‏ ‏‮energy‬‏ ‏‮than‬‏ ‏‮other‬‏ ‏‮charging‬‏ ‏‮methods‬‏</string>
+    <string name="battery_tip_wireless_charging_title">(M)‏‮Wirelessly‬‏ ‏‮charging‬‏</string>
+    <string name="calls_and_alarms_device_title">(M)‏‮Calls‬‏ ‏‮and‬‏ ‏‮alarms‬‏</string>
     <string name="clear_calling_footer">"(M)‏‮To‬‏ ‏‮protect‬‏ ‏‮your‬‏ ‏‮privacy,‬‏ ‏‮Clear‬‏ ‏‮Calling‬‏ ‏‮does‬‏ ‏‮not‬‏ ‏‮send‬‏ ‏‮audio‬‏ ‏‮or‬‏ ‏‮conversations‬‏ ‏‮to‬‏ ‏‮Google.‬‏
 
 ‏‮Clear‬‏ ‏‮Calling‬‏ ‏‮works‬‏ ‏‮on‬‏ ‏‮Wi‑Fi‬‏ ‏‮calling‬‏ ‏‮and‬‏ ‏‮most‬‏ ‏‮networks,‬‏ ‏‮not‬‏ ‏‮available‬‏ ‏‮for‬‏ ‏‮3G‬‏ ‏‮networks.‬‏"</string>
@@ -121,6 +147,8 @@
 
 ‏‮Phishing‬‏ ‏‮is‬‏ ‏‮an‬‏ ‏‮attempt‬‏ ‏‮to‬‏ ‏‮steal‬‏ ‏‮sign-in‬‏ ‏‮credentials‬‏ ‏‮or‬‏ ‏‮other‬‏ ‏‮personal‬‏ ‏‮info.‬‏"</string>
     <string name="content_protection_preference_subpage_summary">(M)‏‮Scanning‬‏ ‏‮runs‬‏ ‏‮privately‬‏ ‏‮right‬‏ ‏‮on‬‏ ‏‮your‬‏ ‏‮device,‬‏ ‏‮checking‬‏ ‏‮app‬‏ ‏‮activity‬‏ ‏‮for‬‏ ‏‮phishing‬‏ ‏‮or‬‏ ‏‮other‬‏ ‏‮deceptive‬‏ ‏‮behavior.‬‏ ‏‮If‬‏ ‏‮it’s‬‏ ‏‮detected,‬‏ ‏‮some‬‏ ‏‮app‬‏ ‏‮info‬‏ ‏‮is‬‏ ‏‮sent‬‏ ‏‮to‬‏ ‏‮Google‬‏ ‏‮Play‬‏ ‏‮Protect‬‏ ‏‮to‬‏ ‏‮confirm‬‏ ‏‮the‬‏ ‏‮threat‬‏ ‏‮and‬‏ ‏‮warn‬‏ ‏‮app‬‏ ‏‮users.‬‏</string>
+    <string name="contextual_timeout_description">(M)‏‮Automatically‬‏ ‏‮turns‬‏ ‏‮off‬‏ ‏‮your‬‏ ‏‮screen‬‏ ‏‮early‬‏ ‏‮if‬‏ ‏‮you’re‬‏ ‏‮not‬‏ ‏‮using‬‏ ‏‮your‬‏ ‏‮device‬‏</string>
+    <string name="contextual_timeout_title">(M)‏‮Adaptive‬‏ ‏‮timeout‬‏</string>
     <string name="dark_ui_text">(M)‏‮Dark‬‏ ‏‮theme‬‏ ‏‮uses‬‏ ‏‮a‬‏ ‏‮black‬‏ ‏‮background‬‏ ‏‮to‬‏ ‏‮help‬‏ ‏‮keep‬‏ ‏‮your‬‏ ‏‮battery‬‏ ‏‮alive‬‏ ‏‮longer.‬‏ ‏‮Dark‬‏ ‏‮theme‬‏ ‏‮schedules‬‏ ‏‮wait‬‏ ‏‮to‬‏ ‏‮turn‬‏ ‏‮on‬‏ ‏‮until‬‏ ‏‮your‬‏ ‏‮screen‬‏ ‏‮is‬‏ ‏‮off.‬‏</string>
     <string name="debugging_data_title">(M)‏‮Debugging‬‏ ‏‮data‬‏</string>
     <string name="discover_tips_button">(M)‏‮Discover‬‏ ‏‮tips‬‏</string>
@@ -132,6 +160,7 @@
     <string name="dream_no_screen_saver_preview_caption">(M)</string>
     <string name="dream_secondary_button_title">(M)</string>
     <string name="duration_less_than_one_minute">(M)‏‮Less‬‏ ‏‮than‬‏ ‏‮1‬‏ ‏‮minute‬‏</string>
+    <string name="enable_glanceable_hub_toggle">(M)‏‮Hub‬‏ ‏‮mode‬‏</string>
     <string name="extreme_battery_saver_summary">(M)‏‮Includes‬‏ ‏‮all‬‏ ‏‮changes‬‏ ‏‮listed‬‏ ‏‮above.‬‏ ‏‮Also‬‏ ‏‮pauses‬‏ ‏‮non-essential‬‏ ‏‮apps‬‏ ‏‮and‬‏ ‏‮their‬‏ ‏‮notifications.‬‏</string>
     <string name="extreme_battery_saver_title">(M)‏‮Extreme‬‏ ‏‮Battery‬‏ ‏‮Saver‬‏</string>
     <string name="face_confirmation_hide_illustration_description">(M)‏‮Now‬‏ ‏‮when‬‏ ‏‮you‬‏ ‏‮pick‬‏ ‏‮up‬‏ ‏‮your‬‏ ‏‮phone‬‏ ‏‮or‬‏ ‏‮tap‬‏ ‏‮the‬‏ ‏‮screen,‬‏ ‏‮you‬‏ ‏‮can‬‏ ‏‮use‬‏ ‏‮your‬‏ ‏‮face‬‏ ‏‮to‬‏ ‏‮unlock.‬‏</string>
@@ -169,7 +198,6 @@
     <string name="firmware_update_status_category">(M)‏‮Device‬‏ ‏‮firmware‬‏ ‏‮status‬‏</string>
     <string name="firmware_update_status_title">(M)‏‮Firmware‬‏ ‏‮update‬‏ ‏‮available‬‏</string>
     <string name="firmware_update_version_number_category">(M)‏‮Device‬‏ ‏‮firmware‬‏ ‏‮version‬‏</string>
-    <string name="firmware_update_version_number_title">(M)‏‮Pixel‬‏ ‏‮keyboard‬‏ ‏‮firmware‬‏</string>
     <string name="fullbackup_data_summary">"(M)‏‮Automatically‬‏ ‏‮back‬‏ ‏‮up‬‏ ‏‮device‬‏ ‏‮data‬‏ ‏‮(such‬‏ ‏‮as‬‏ ‏‮Wi-Fi‬‏ ‏‮passwords‬‏ ‏‮and‬‏ ‏‮call‬‏ ‏‮history)‬‏ ‏‮and‬‏ ‏‮app‬‏ ‏‮data‬‏ ‏‮(such‬‏ ‏‮as‬‏ ‏‮settings‬‏ ‏‮and‬‏ ‏‮files‬‏ ‏‮stored‬‏ ‏‮by‬‏ ‏‮apps)‬‏ ‏‮to‬‏ ‏‮Google‬‏ ‏‮Drive.‬‏
 
 ‏‮When‬‏ ‏‮you‬‏ ‏‮turn‬‏ ‏‮on‬‏ ‏‮automatic‬‏ ‏‮backup,‬‏ ‏‮device‬‏ ‏‮and‬‏ ‏‮app‬‏ ‏‮data‬‏ ‏‮is‬‏ ‏‮periodically‬‏ ‏‮saved‬‏ ‏‮to‬‏ ‏‮a‬‏ ‏‮private‬‏ ‏‮folder‬‏ ‏‮in‬‏ ‏‮Google‬‏ ‏‮Drive.‬‏ ‏‮App‬‏ ‏‮data‬‏ ‏‮can‬‏ ‏‮be‬‏ ‏‮any‬‏ ‏‮data‬‏ ‏‮that‬‏ ‏‮an‬‏ ‏‮app‬‏ ‏‮has‬‏ ‏‮saved‬‏ ‏‮(based‬‏ ‏‮on‬‏ ‏‮developer‬‏ ‏‮settings),‬‏ ‏‮including‬‏ ‏‮potentially‬‏ ‏‮sensitive‬‏ ‏‮data‬‏ ‏‮such‬‏ ‏‮as‬‏ ‏‮contacts,‬‏ ‏‮messages,‬‏ ‏‮and‬‏ ‏‮photos.‬‏
@@ -177,16 +205,19 @@
 ‏‮Backup‬‏ ‏‮data‬‏ ‏‮will‬‏ ‏‮not‬‏ ‏‮count‬‏ ‏‮towards‬‏ ‏‮your‬‏ ‏‮Drive‬‏ ‏‮storage‬‏ ‏‮quota.‬‏ ‏‮Large‬‏ ‏‮files,‬‏ ‏‮or‬‏ ‏‮files‬‏ ‏‮developers‬‏ ‏‮have‬‏ ‏‮chosen‬‏ ‏‮to‬‏ ‏‮exclude‬‏ ‏‮from‬‏ ‏‮the‬‏ ‏‮service‬‏ ‏‮will‬‏ ‏‮not‬‏ ‏‮be‬‏ ‏‮backed‬‏ ‏‮up.‬‏"</string>
     <string name="fullbackup_erase_dialog_message">(M)‏‮Stop‬‏ ‏‮backing‬‏ ‏‮up‬‏ ‏‮device‬‏ ‏‮data‬‏ ‏‮(such‬‏ ‏‮as‬‏ ‏‮Wi-Fi‬‏ ‏‮passwords‬‏ ‏‮and‬‏ ‏‮call‬‏ ‏‮history)‬‏ ‏‮and‬‏ ‏‮app‬‏ ‏‮data‬‏ ‏‮(such‬‏ ‏‮as‬‏ ‏‮settings‬‏ ‏‮and‬‏ ‏‮files‬‏ ‏‮stored‬‏ ‏‮by‬‏ ‏‮apps),‬‏ ‏‮plus‬‏ ‏‮erase‬‏ ‏‮all‬‏ ‏‮copies‬‏ ‏‮on‬‏ ‏‮Google‬‏ ‏‮Drive?‬‏</string>
     <string name="gesture_settings_activity_title">(M)‏‮Gesture‬‏ ‏‮Navigation‬‏</string>
+    <string name="hub_mode_content_setting">(M)‏‮Allow‬‏ ‏‮any‬‏ ‏‮widget‬‏ ‏‮in‬‏ ‏‮hub‬‏ ‏‮mode‬‏</string>
     <string name="install_unknown_applications">(M)‏‮Allow‬‏ ‏‮installation‬‏ ‏‮of‬‏ ‏‮apps‬‏ ‏‮from‬‏ ‏‮sources‬‏ ‏‮other‬‏ ‏‮than‬‏ ‏‮the‬‏ ‏‮Play‬‏ ‏‮Store‬‏</string>
     <string name="keywords_accessibility_menu">(M)‏‮motor,‬‏ ‏‮quick‬‏ ‏‮menu,‬‏ ‏‮assistive‬‏ ‏‮menu,‬‏ ‏‮touch,‬‏ ‏‮dexterity,‬‏ ‏‮arthritis,‬‏ ‏‮rsi,‬‏ ‏‮stroke,‬‏ ‏‮tremor,‬‏ ‏‮multiple‬‏ ‏‮sclerosis,‬‏ ‏‮cerebral‬‏ ‏‮palsy,‬‏ ‏‮button,‬‏ ‏‮hardware,‬‏ ‏‮press,‬‏ ‏‮repetitive‬‏ ‏‮strain‬‏ ‏‮injury,‬‏ ‏‮hand,‬‏ ‏‮pain,‬‏ ‏‮accessible,‬‏ ‏‮help‬‏</string>
     <string name="keywords_adaptive_alert_vibration">(M)‏‮haptics,‬‏ ‏‮vibrate,‬‏ ‏‮phone,‬‏ ‏‮call,‬‏ ‏‮ring,‬‏ ‏‮alert,‬‏ ‏‮notifications,‬‏ ‏‮loud,‬‏ ‏‮quiet,‬‏ ‏‮noise,‬‏ ‏‮case,‬‏ ‏‮adaptive‬‏</string>
     <string name="keywords_adaptive_charging">(M)‏‮charge,‬‏ ‏‮charging,‬‏ ‏‮smart‬‏ ‏‮charging,‬‏ ‏‮adaptive‬‏ ‏‮charging,‬‏ ‏‮battery,‬‏ ‏‮battery‬‏ ‏‮health‬‏</string>
     <string name="keywords_battery_share">(M)‏‮battery‬‏ ‏‮share,‬‏ ‏‮wireless‬‏ ‏‮charging‬‏</string>
     <string name="keywords_battery_share_settings">(M)‏‮battery‬‏ ‏‮share,‬‏ ‏‮reverse‬‏ ‏‮wireless‬‏ ‏‮charging‬‏</string>
+    <string name="keywords_contextual_screen_timeout">(M)‏‮screen,‬‏ ‏‮timeout,‬‏ ‏‮adaptive,‬‏ ‏‮contextual‬‏</string>
     <string name="keywords_gesture">(M)‏‮gesture,‬‏ ‏‮moves‬‏</string>
     <string name="keywords_hearing_devices">(M)‏‮hard‬‏ ‏‮of‬‏ ‏‮hearing,‬‏ ‏‮hearing‬‏ ‏‮loss,‬‏ ‏‮PSAP‬‏</string>
     <string name="keywords_limited_warranty">(M)‏‮warranty,‬‏ ‏‮guarantee,‬‏ ‏‮limited‬‏ ‏‮warranty,‬‏ ‏‮promise,‬‏ ‏‮repair,‬‏ ‏‮rma,‬‏ ‏‮replacement‬‏</string>
     <string name="keywords_live_transcribe">(M)‏‮Captions,‬‏ ‏‮closed‬‏ ‏‮captions,‬‏ ‏‮CC,‬‏ ‏‮Live‬‏ ‏‮Caption,‬‏ ‏‮hard‬‏ ‏‮of‬‏ ‏‮hearing,‬‏ ‏‮hearing‬‏ ‏‮loss,‬‏ ‏‮CART,‬‏ ‏‮speech‬‏ ‏‮to‬‏ ‏‮text,‬‏ ‏‮subtitle‬‏</string>
+    <string name="keywords_magnifier">(M)‏‮Zoom,‬‏ ‏‮Magnification,‬‏ ‏‮Low‬‏ ‏‮vision,‬‏ ‏‮Enlarge,‬‏ ‏‮make‬‏ ‏‮bigger‬‏</string>
     <string name="keywords_reverse_charging_stop_threshold">(M)‏‮Stop‬‏ ‏‮sharing‬‏ ‏‮battery‬‏ ‏‮when‬‏ ‏‮phone‬‏ ‏‮reaches:‬‏</string>
     <string name="keywords_select_to_speak">(M)‏‮Hear‬‏ ‏‮text,‬‏ ‏‮read‬‏ ‏‮aloud,‬‏ ‏‮speak‬‏ ‏‮screen,‬‏ ‏‮screen‬‏ ‏‮reader‬‏</string>
     <string name="keywords_sound_amplifier">(M)‏‮PSAP,‬‏ ‏‮amplify,‬‏ ‏‮sound‬‏ ‏‮amplification,‬‏ ‏‮hard‬‏ ‏‮of‬‏ ‏‮hearing,‬‏ ‏‮hearing‬‏ ‏‮loss,‬‏ ‏‮amplification‬‏</string>
@@ -194,6 +225,7 @@
     <string name="keywords_switch_access">(M)‏‮motor,‬‏ ‏‮switch,‬‏ ‏‮hand,‬‏ ‏‮AT,‬‏ ‏‮assistive‬‏ ‏‮technology,‬‏ ‏‮paralysis,‬‏ ‏‮ALS,‬‏ ‏‮scanning,‬‏ ‏‮step‬‏ ‏‮scanning‬‏</string>
     <string name="keywords_talkback">(M)‏‮Screen‬‏ ‏‮reader,‬‏ ‏‮Voice‬‏ ‏‮Over,‬‏ ‏‮VoiceOver,‬‏ ‏‮Voice‬‏ ‏‮Assistance,‬‏ ‏‮Blind,‬‏ ‏‮Low‬‏ ‏‮Vision,‬‏ ‏‮TTS,‬‏ ‏‮text‬‏ ‏‮to‬‏ ‏‮speech,‬‏ ‏‮spoken‬‏ ‏‮feedback‬‏</string>
     <string name="keywords_touch_sensitivity">(M)‏‮touch,‬‏ ‏‮sensitivity,‬‏ ‏‮sensitive,‬‏ ‏‮screen‬‏ ‏‮protector,‬‏ ‏‮film,‬‏ ‏‮responsive,‬‏ ‏‮responsiveness‬‏</string>
+    <string name="keywords_touch_sensitivity_settings">(M)‏‮touch,‬‏ ‏‮adaptive,‬‏ ‏‮sensitivity,‬‏ ‏‮sensitive,‬‏ ‏‮screen‬‏ ‏‮protector,‬‏ ‏‮film,‬‏ ‏‮responsive,‬‏ ‏‮responsiveness‬‏</string>
     <string name="keywords_voice_access">(M)‏‮voice,‬‏ ‏‮voice‬‏ ‏‮control,‬‏ ‏‮motor,‬‏ ‏‮hand,‬‏ ‏‮mic,‬‏ ‏‮microphone,‬‏ ‏‮dictation,‬‏ ‏‮talk,‬‏ ‏‮control‬‏</string>
     <string name="led_preference_title">(M)‏‮LED‬‏ ‏‮indicator‬‏ ‏‮patterns‬‏</string>
     <string name="legal_source_code_description">(M)‏‮Details‬‏ ‏‮about‬‏ ‏‮the‬‏ ‏‮source‬‏ ‏‮code‬‏ ‏‮for‬‏ ‏‮components‬‏ ‏‮made‬‏ ‏‮available‬‏ ‏‮as‬‏ ‏‮open‬‏ ‏‮source‬‏ ‏‮can‬‏ ‏‮be‬‏ ‏‮found‬‏ ‏‮at‬‏ ‏‮the‬‏ ‏‮Pixel‬‏ ‏‮help‬‏ ‏‮center.‬‏</string>
@@ -207,7 +239,7 @@
     <string name="permit_debugging_data">(M)‏‮Allow‬‏ ‏‮bug‬‏ ‏‮report‬‏ ‏‮access‬‏</string>
     <string name="play_application_detail_indication_summary">(M)‏‮Check‬‏ ‏‮for‬‏ ‏‮updates‬‏</string>
     <string name="play_application_update_entry_title">(M)‏‮App‬‏ ‏‮updates‬‏</string>
-    <string name="privatespace_retry_summary">(M)‏‮You‬‏ ‏‮need‬‏ ‏‮to‬‏ ‏‮sign‬‏ ‏‮in‬‏ ‏‮to‬‏ ‏‮a‬‏ ‏‮Google‬‏ ‏‮Account‬‏ ‏‮to‬‏ ‏‮set‬‏ ‏‮up‬‏ ‏‮Private‬‏ ‏‮Space‬‏</string>
+    <string name="private_space_retry_summary">(M)‏‮Sign‬‏ ‏‮in‬‏ ‏‮to‬‏ ‏‮a‬‏ ‏‮Google‬‏ ‏‮Account‬‏ ‏‮to‬‏ ‏‮use‬‏ ‏‮with‬‏ ‏‮your‬‏ ‏‮private‬‏ ‏‮space‬‏</string>
     <string name="repair_mode_active_summary">(M)‏‮In‬‏ ‏‮repair‬‏ ‏‮mode‬‏</string>
     <string name="repair_mode_summary">(M)‏‮Secure‬‏ ‏‮environment‬‏ ‏‮for‬‏ ‏‮device‬‏ ‏‮repair‬‏</string>
     <string name="repair_mode_title">(M)‏‮Repair‬‏ ‏‮mode‬‏</string>
@@ -303,14 +335,20 @@
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"(M)‏‮Learn‬‏ ‏‮more‬‏ ‏‮about‬‏ ‏‮Pixel‬‏ ‏‮fingerprint‬‏ ‏‮unlock‬‏ ‏‮at‬‏ ‏‮&lt;a‬‏ ‏‮href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;.‬‏"</string>
     <string name="security_settings_sfps_enroll_finger_center_title_immobile_overlay">(M)</string>
     <string name="security_settings_sfps_enroll_fingertip_title_immobile_overlay">(M)</string>
+    <string name="security_settings_sfps_enroll_finish_rest_to_unlock_desc">(M)</string>
+    <string name="security_settings_sfps_enroll_finish_rest_to_unlock_title">(M)</string>
     <string name="security_settings_sfps_enroll_left_edge_title_immobile_overlay">(M)</string>
     <string name="security_settings_sfps_enroll_right_edge_title_immobile_overlay">(M)</string>
+    <string name="security_settings_sfps_settings_rest_to_unlock_summary">(M)</string>
+    <string name="security_settings_sfps_settings_rest_to_unlock_title">(M)</string>
     <string name="security_settings_work_fingerprint_preference_title">(M)‏‮Pixel‬‏ ‏‮Imprint‬‏ ‏‮for‬‏ ‏‮work‬‏</string>
     <string name="setup_fingerprint_enroll_immobile_help_continue">(M)</string>
     <string name="setup_fingerprint_enroll_immobile_help_subtitle">(M)</string>
     <string name="setup_fingerprint_enroll_immobile_help_title">(M)</string>
     <string name="setup_suggestion_summary">(M)‏‮Just‬‏ ‏‮a‬‏ ‏‮few‬‏ ‏‮more‬‏ ‏‮steps‬‏</string>
     <string name="setup_suggestion_title">(M)‏‮Finish‬‏ ‏‮setting‬‏ ‏‮up‬‏</string>
+    <string name="smart_battery_a11y_collapse_label">(M)‏‮Collapse,‬‏ ‏‮Adaptive‬‏ ‏‮Battery‬‏</string>
+    <string name="smart_battery_a11y_expand_label">(M)‏‮Expand,‬‏ ‏‮Adaptive‬‏ ‏‮Battery‬‏</string>
     <string name="smart_battery_footer">(M)‏‮To‬‏ ‏‮extend‬‏ ‏‮battery‬‏ ‏‮life,‬‏ ‏‮Adaptive‬‏ ‏‮Battery‬‏ ‏‮may‬‏ ‏‮reduce‬‏ ‏‮performance‬‏ ‏‮and‬‏ ‏‮background‬‏ ‏‮activity.‬‏ ‏‮Some‬‏ ‏‮notifications‬‏ ‏‮may‬‏ ‏‮be‬‏ ‏‮delayed.‬‏</string>
     <string name="smart_battery_manager_title">(M)‏‮Adaptive‬‏ ‏‮preferences‬‏</string>
     <string name="smart_battery_title">(M)‏‮Adaptive‬‏ ‏‮Battery‬‏</string>
@@ -327,6 +365,8 @@
     <string name="software_update_up_to_specific_date_summary">(M)‏‮Updated‬‏ ‏‮to‬‏ %1$s</string>
     <string name="software_update_update_available_summary">(M)‏‮Update‬‏ ‏‮available‬‏</string>
     <string name="sound_dashboard_summary">(M)‏‮Volume,‬‏ ‏‮haptics,‬‏ ‏‮Do‬‏ ‏‮Not‬‏ ‏‮Disturb‬‏</string>
+    <string name="spatial_audio_head_tracking_available">(M)‏‮Head‬‏ ‏‮tracking‬‏ ‏‮is‬‏ ‏‮available‬‏</string>
+    <string name="spatial_audio_head_tracking_unavailable">(M)‏‮Head‬‏ ‏‮tracking‬‏ ‏‮is‬‏ ‏‮not‬‏ ‏‮available‬‏</string>
     <string name="spatial_audio_title">(M)‏‮Spatial‬‏ ‏‮audio‬‏</string>
     <string name="speed_boost_summary_off">(M)‏‮Off‬‏</string>
     <string name="speed_boost_summary_on">(M)‏‮On‬‏</string>
@@ -339,6 +379,9 @@
     <string name="suw_warranty_positive_button_text">(M)‏‮Close‬‏</string>
     <string name="system_update_entry_title">(M)‏‮System‬‏ ‏‮update‬‏</string>
     <string name="system_updates_group_title">(M)‏‮Pixel‬‏ ‏‮updates‬‏</string>
+    <string name="touch_category_title">(M)‏‮Touch‬‏</string>
+    <string name="touch_sensitivity_settings_summary">(M)‏‮Adjust‬‏ ‏‮touch‬‏ ‏‮screen‬‏ ‏‮sensitivity‬‏</string>
+    <string name="touch_sensitivity_settings_title">(M)‏‮Touch‬‏ ‏‮sensitivity‬‏</string>
     <string name="touch_sensitivity_summary">(M)‏‮Increase‬‏ ‏‮touch‬‏ ‏‮sensitivity‬‏ ‏‮and‬‏ ‏‮improve‬‏ ‏‮touch‬‏ ‏‮when‬‏ ‏‮using‬‏ ‏‮a‬‏ ‏‮screen‬‏ ‏‮protector‬‏</string>
     <string name="touch_sensitivity_title">(M)‏‮Screen‬‏ ‏‮protector‬‏ ‏‮mode‬‏</string>
     <string name="traffic_light_face_enrolling_title_accessibility">(M)‏‮Hold‬‏ ‏‮phone‬‏ ‏‮in‬‏ ‏‮front‬‏ ‏‮of‬‏ ‏‮your‬‏ ‏‮face‬‏</string>

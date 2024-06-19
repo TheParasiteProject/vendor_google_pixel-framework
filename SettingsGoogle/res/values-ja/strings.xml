@@ -1,7 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">キーボードのハプティクス</string>
-    <string name="adaptive_alert_vibration_summary">スマートフォンの画面が上に向いて安定した状態になっている間、バイブレーションを弱くします</string>
+    <string name="accessibility_screen_magnifier_summary">カメラを使って、周囲を拡大して細部を調べます</string>
+    <string name="accessibility_screen_magnifier_title">拡大鏡</string>
+    <string name="adaptive_alert_vibration_summary">スマートフォンが静止して画面が上に向いている間は、バイブレーションを弱くします</string>
     <string name="adaptive_alert_vibration_title">アラート バイブレーション自動調整</string>
     <string name="adaptive_battery_switch_des">自動調整バッテリーは、バッテリーを長持ちさせるために、パフォーマンスやバックグラウンド アクティビティを制限することがあります。一部の通知が遅れる場合もあります。</string>
     <string name="adaptive_battery_switch_title">自動調整バッテリーを使用</string>
@@ -12,17 +14,29 @@
     <string name="adaptive_charging_main_switch_title">アダプティブ充電を使用</string>
     <string name="adaptive_charging_time_estimate"><b>アダプティブ充電中</b> • %1$s までにフル充電</string>
     <string name="adaptive_charging_title">アダプティブ充電</string>
+    <string name="adaptive_touch_sensitivity_summary">ご利用の環境、操作、画面保護シートなどに応じて、タップの感度が自動的に調整されます</string>
+    <string name="adaptive_touch_sensitivity_title">アダプティブ タッチ</string>
     <string name="add_bypassed_application_hint">アプリは追加されていません</string>
     <string name="advanced_vpn_preference_group_title">搭載</string>
     <string name="all_apps_category_title">すべてのアプリ</string>
     <string name="allow_debugging_data_description">Google はバグレポートを使用して、<a href="https://policies.google.com/privacy">プライバシー ポリシー</a>"に沿ってアプリやデバイスの問題を診断します。
 
-"<b>バグレポートにはアプリとシステムのログ（</b>"）が含まれます。また、名前、メールアドレス、電話番号、位置情報、デバイス ID、接続されたデバイス、ネットワーク情報など、個人情報やデバイス情報が含まれることもあります。レポートは、問題の影響を受ける可能性があるエンジニアリング パートナーと共有されることがあります。
+"<b>バグレポートにはアプリとシステムのログ</b>"が含まれます。また、名前、メールアドレス、電話番号、位置情報、デバイス ID、接続されたデバイス、ネットワーク情報など、個人情報やデバイス情報も含まれることがあります。レポートは、問題の影響を受ける可能性があるエンジニアリング パートナーと共有されることがあります。
 
 アクセスを許可すると、このアプリは、ユーザーが送信するすべての問題レポートで、"<b>バグレポートを自動的に収集してアップロードする</b>"ことができます。これには、個人用プロファイルと仕事用プロファイルのアプリとシステムのログが含まれます。
 
 アクセスを取り消すと、このアプリはバグレポートを収集してアップロードする権限を、問題レポートごとに求める必要があります。"</string>
     <string name="app_and_notification_dashboard_summary">アシスタント、最近使ったアプリ、デフォルトのアプリ</string>
+    <string name="audio_sharing_switch_title">音声を共有</string>
+    <string name="audio_sharing_title">音声の共有</string>
+    <string name="audio_streams_category_title">LE Audio ストリームへの接続</string>
+    <string name="audio_streams_connect">接続</string>
+    <string name="audio_streams_disconnect">接続を解除</string>
+    <string name="audio_streams_pref_title">付近の音声ストリーム</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">QR コードの形式が無効です</string>
+    <string name="audio_streams_qr_code_scanner">再生を開始するには、下の枠に QR コードを合わせてください</string>
+    <string name="audio_streams_qr_code_summary">QR コードを使用して音声ストリームに接続します</string>
+    <string name="audio_streams_title">音声ストリーム</string>
     <string name="automatic_storage_manager_activation_warning">写真や動画が削除された後も、選択したバックアップ画質にてオンライン環境でお楽しみいただけます</string>
     <string name="automatic_storage_manager_days_title">バックアップ済みの写真と動画の削除</string>
     <string name="automatic_storage_manager_deactivation_warning">"スマート ストレージを OFF にしますか？
@@ -49,8 +63,20 @@
     <string name="battery_tip_battery_health_learn_more_description">バッテリーの健全性の詳細</string>
     <string name="battery_tip_battery_health_reduced_title">バッテリー容量が少なくなっています</string>
     <string name="battery_tip_battery_health_unknown_title">バッテリーの健全性を確認できません</string>
+    <string name="battery_tip_dock_defender_active_summary">バッテリーを長持ちさせるため、タブレットをホルダーに置いている間は充電を 90% で一時停止します</string>
+    <string name="battery_tip_dock_defender_active_title">充電を一時停止してバッテリーを保護</string>
+    <string name="battery_tip_dock_defender_button_learn_more">詳細</string>
+    <string name="battery_tip_dock_defender_button_override">オーバーライド</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">バッテリーを長持ちさせるため、タブレットをホルダーに置いている間は充電を 90% で一時停止します</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">90% まで充電</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">次回タブレットをホルダーに置いたときから、充電を 90% で一時停止してバッテリーを保護します</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">フル充電する</string>
     <string name="battery_tip_limited_temporarily_extra_summary">バッテリーを保護するため、タブレットをホルダーに置いている間は充電が %1$s で一時停止します</string>
     <string name="battery_tip_smart_battery_summary">自動調整バッテリーを ON にしてください</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">ワイヤレス充電の詳細</string>
+    <string name="battery_tip_wireless_charging_summary">スマートフォンをワイヤレスで充電すると、他の充電方法より電力使用量が増えることがあります</string>
+    <string name="battery_tip_wireless_charging_title">ワイヤレス充電中</string>
+    <string name="calls_and_alarms_device_title">通話とアラーム</string>
     <string name="clear_calling_footer">"プライバシーを保護するため、クリア音声通話から Google に音声や会話が送信されることはありません。
 
 クリア音声通話は、Wi-Fi 通話とほとんどのネットワークで機能しますが、3G ネットワークでは利用できません。"</string>
@@ -121,13 +147,16 @@
 
 フィッシングとは、ログイン認証情報などの個人情報を不正に入手しようとする試みのことです。"</string>
     <string name="content_protection_preference_subpage_summary">お使いのデバイス上でスキャンを非公開で実行し、フィッシングなどの不正な動作をアプリが行っていないか確認します。不正な動作を確認した場合は、一部のアプリ情報を Google Play プロテクトに送信し、危険度を判別して、アプリのユーザーに警告を行います。</string>
+    <string name="contextual_timeout_description">デバイスを使用していないと、自動的に画面が早めに OFF になります</string>
+    <string name="contextual_timeout_title">自動消灯</string>
     <string name="dark_ui_text">ダークモードでは黒地の背景を使用するため、バッテリーが長持ちします。スケジュールを設定した場合、時刻を過ぎても画面が OFF になるまではダークモードに切り替わりません。</string>
     <string name="debugging_data_title">データのデバッグ</string>
     <string name="discover_tips_button">ヒントを見る</string>
     <string name="dock_summary_charging_phone">スマートフォンの充電</string>
     <string name="double_twist_for_camera_mode_summary">Google カメラを起動した状態で 2 回ひねる動作を行うことで、前面カメラと背面カメラを切り替えられます。</string>
     <string name="duration_less_than_one_minute">1 分未満</string>
-    <string name="extreme_battery_saver_summary">上記の変更がすべて反映されます。また、必須ではないアプリやその通知が一時停止されます。</string>
+    <string name="enable_glanceable_hub_toggle">ハブモード</string>
+    <string name="extreme_battery_saver_summary">上記の変更がすべて反映されるほか、必須ではないアプリやその通知が一時停止されます。</string>
     <string name="extreme_battery_saver_title">スーパー バッテリー セーバー</string>
     <string name="face_confirmation_hide_illustration_description">スマートフォンを持ち上げるか画面をタップしたときに、顔認証を使用してロック解除できるようになりました。</string>
     <string name="face_confirmation_info_enough_light">顔認証は、十分に明るい環境で、マスクやサングラスを着けていない場合に最適に動作します。</string>
@@ -164,7 +193,6 @@
     <string name="firmware_update_status_category">デバイスのファームウェアのステータス</string>
     <string name="firmware_update_status_title">ファームウェアのアップデート利用可能</string>
     <string name="firmware_update_version_number_category">デバイスのファームウェア バージョン</string>
-    <string name="firmware_update_version_number_title">Google Pixel キーボードのファームウェア</string>
     <string name="fullbackup_data_summary">"デバイスのデータ（Wi-Fi のパスワードや通話履歴など）とアプリのデータ（アプリで保存された設定やファイルなど）を自動的に Google ドライブにバックアップします。
 
 自動バックアップを ON にすると、デバイスのデータとアプリのデータは定期的に Google ドライブの非公開フォルダに保存されます。アプリのデータとしては、連絡先、メッセージ、写真など、機密と見なされるデータを含め、（デベロッパーの設定に基づいて）アプリで保存されたすべてのデータがバックアップされる可能性があります。
@@ -172,17 +200,20 @@
 バックアップデータは Google ドライブ ストレージの容量には合算されません。大容量のファイルや、デベロッパーがサービスから除外することを選択したファイルはバックアップされません。"</string>
     <string name="fullbackup_erase_dialog_message">デバイスのデータ（Wi-Fi のパスワードや通話履歴など）とアプリのデータ（アプリで保存された設定やファイルなど）のバックアップを停止し、Google ドライブ上のすべてのコピーを消去しますか？</string>
     <string name="gesture_settings_activity_title">ジェスチャー ナビゲーション</string>
+    <string name="hub_mode_content_setting">ハブモードでのウィジェットを許可する</string>
     <string name="install_unknown_applications">提供元が Play ストアではないアプリのインストールを許可する</string>
     <string name="keywords_accessibility_menu">運動, クイック メニュー, アシスト メニュー, タップ, 運動機能, 関節炎, RSI, 脳卒中, 振戦, 多発性硬化症, 脳性麻痺, ボタン, ハードウェア, 押す, 反復運動損傷, 腕, 痛み, バリアフリー, サポート</string>
     <string name="keywords_adaptive_alert_vibration">ハプティクス, バイブレーション, 電話, 通話, 着信, アラート, 通知, 騒がしい, 静か, ノイズ, ケース, 自動調整</string>
     <string name="keywords_adaptive_charging">充電, 充電中, スマート充電, アダプティブ充電, 電池, 電池の状態</string>
     <string name="keywords_battery_share">バッテリー シェア, ワイヤレス充電</string>
     <string name="keywords_battery_share_settings">バッテリー シェア、リバース ワイヤレス充電</string>
+    <string name="keywords_contextual_screen_timeout">画面、自動消灯、自動、状況</string>
     <string name="keywords_gesture">操作 移動</string>
     <string name="keywords_hearing_devices">難聴, 聴力の喪失, PSAP</string>
     <string name="keywords_limited_warranty">保証, 保険, 限定保証, 契約, 修理, RMA, 交換</string>
     <string name="keywords_live_caption">キャプション, クローズド キャプション, CC, 音声文字変換, 難聴, 聴覚 障がい, CART, 音声 入力, 字幕</string>
     <string name="keywords_live_transcribe">キャプション, クローズド キャプション, CC, 自動 字幕起こし, 難聴, 聴覚 障がい, CART, 音声 入力, 字幕</string>
+    <string name="keywords_magnifier">ズーム, 拡大, ロービジョン, 大きくする, 切り替え 大きく</string>
     <string name="keywords_reverse_charging_stop_threshold">スマートフォンのバッテリーが以下の残量になったらバッテリー シェアを停止する:</string>
     <string name="keywords_select_to_speak">聴く テキスト, 読み上げ, 読み上げ 画面, スクリーン リーダー</string>
     <string name="keywords_sound_amplifier">PSAP, 増幅, 音声 増幅, 難聴, 聴覚 障がい, 増幅機能</string>
@@ -190,6 +221,7 @@
     <string name="keywords_switch_access">運動, スイッチ, 手, AT, 支援 技術, 麻痺, ALS, スキャン, 手順 スキャン</string>
     <string name="keywords_talkback">スクリーン リーダー, Voice Over, VoiceOver, 音声 アシスト, 目の見えない, ロー ビジョン, TTS, テキスト 読み上げ, 音声 フィードバック</string>
     <string name="keywords_touch_sensitivity">タップ, 感度, 敏感, 画面保護シート, フィルム, 反応, 反応性</string>
+    <string name="keywords_touch_sensitivity_settings">タップ, 自動調整, 感度, 敏感, 画面保護シート, フィルム, 反応, 反応性</string>
     <string name="keywords_voice_access">音声, 音声 操作, 運動, 手, マイク, マイクロフォン, 音声入力, 読み上げ, コントロール</string>
     <string name="led_preference_title">LED インジケーターのパターン</string>
     <string name="legal_source_code_description">オープンソースとして提供されているコンポーネントのソースコードについて詳しくは、Google Pixel ヘルプセンターをご覧ください。</string>
@@ -203,12 +235,12 @@
     <string name="permit_debugging_data">バグレポートへのアクセスを許可</string>
     <string name="play_application_detail_indication_summary">更新を確認しましょう</string>
     <string name="play_application_update_entry_title">アプリのアップデート</string>
-    <string name="privatespace_retry_summary">プライベート スペースを設定するには、Google アカウントにログインする必要があります</string>
+    <string name="private_space_retry_summary">プライベート スペースで使用するには Google アカウントにログインしてください</string>
     <string name="repair_mode_active_summary">修理モード使用中</string>
     <string name="repair_mode_summary">デバイス修理のための安全な環境です</string>
     <string name="repair_mode_title">修理モード</string>
     <string name="request_google_account_summary">Google アカウントを追加してください</string>
-    <string name="reverse_charging_auto_turn_on_subtitle">スマートフォンが充電器に接続されると自動的に短時間 ON になります</string>
+    <string name="reverse_charging_auto_turn_on_subtitle">スマートフォンを充電器に接続した際に、自動的に短時間 ON にします</string>
     <string name="reverse_charging_auto_turn_on_title">自動的に ON</string>
     <string name="reverse_charging_charging_wirelessly_message">スマートフォンのワイヤレス充電中のため利用できません</string>
     <string name="reverse_charging_detail_charging_overheat_message">Pixel が過熱しているため、バッテリー シェアはご利用いただけません。スマートフォンの温度が下がってから、もう一度お試しください。</string>
@@ -241,7 +273,7 @@
     <string name="screen_time_summary_usage_today">今日: %1$s</string>
     <string name="search_bar_account_avatar_content_description">プロフィール写真、ダブルタップすると Google アカウントが開きます</string>
     <string name="search_gesture_category_title">検索</string>
-    <string name="search_gesture_feature_title">円で囲んで検索</string>
+    <string name="search_gesture_feature_title">かこって検索</string>
     <string name="search_long_press_home_button_summary">画面下部のホームボタンを長押しして、検索対象を円で囲むかハイライト表示します</string>
     <string name="search_press_hold_gesture_summary">画面下部のハンドルを長押しして、検索対象を円で囲むかハイライト表示します</string>
     <string name="security_dismiss_dialog_dismiss_button">閉じる</string>
@@ -250,14 +282,20 @@
     <string name="security_settings_face_enroll_education_message">次の画面で、首を振ってさまざまな角度から顔を撮影してください</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">顔認証設定のタイムアウト</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">顔認証を使用して、スマートフォンのロック解除や本人確認（アプリへのログインや購入の承認など）を行えるようになりました</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp_full">"顔認証を使用して、スマートフォンのロック解除や本人確認（アプリへのログインや購入の承認など）を行えるようになりました。
+
+顔認証は、十分に明るい環境で、マスクやサングラスを着けていない場合に最適に動作します。"</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"スマートフォンを持ち上げるか画面をタップしたときに、顔認証を使用してロック解除できるようになりました。
 
 顔が十分に照らされていて、マスクやサングラスを着けていない場合は、顔認証が特に便利です。"</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp_folded">"スマートフォンを持ち上げるか画面をタップしたときに、顔認証を使用してロック解除できるようになりました。顔認証を使用するには、スマートフォンを折りたたむ必要があります。
+
+顔認証は、十分に明るい環境で、マスクやサングラスを着けていない場合に最適に動作します。"</string>
     <string name="security_settings_face_enroll_finish_title">完了です</string>
     <string name="security_settings_face_enroll_introduction_accessibility">視覚や頭の動きに制限がある場合の設定</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">目を開けてください</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">あなたとお子様が管理できます</string>
-    <string name="security_settings_face_enroll_introduction_control_title">データはデバイス内だけに保存</string>
+    <string name="security_settings_face_enroll_introduction_control_title">データは自分で管理</string>
     <string name="security_settings_face_enroll_introduction_how_title">仕組み</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">お子様が眼鏡を普段かけている場合は、設定の際にかけていても構いません。</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">メガネやサングラス（薄い色）をかけていても大丈夫です。</string>
@@ -292,6 +330,8 @@
     <string name="security_settings_work_fingerprint_preference_title">仕事用の Pixel Imprint</string>
     <string name="setup_suggestion_summary">あともう少しで完了です</string>
     <string name="setup_suggestion_title">設定を完了してください</string>
+    <string name="smart_battery_a11y_collapse_label">閉じる、自動調整バッテリー</string>
+    <string name="smart_battery_a11y_expand_label">開く、自動調整バッテリー</string>
     <string name="smart_battery_footer">自動調整バッテリーは、バッテリーを長持ちさせるために、パフォーマンスやバックグラウンド アクティビティを制限することがあります。一部の通知が遅れる場合もあります。</string>
     <string name="smart_battery_manager_title">アダプティブの設定</string>
     <string name="smart_battery_title">自動調整バッテリー</string>
@@ -308,6 +348,8 @@
     <string name="software_update_up_to_specific_date_summary">%1$sに更新しました</string>
     <string name="software_update_update_available_summary">アップデートが利用可能です</string>
     <string name="sound_dashboard_summary">音量、ハプティクス、サイレント モード</string>
+    <string name="spatial_audio_head_tracking_available">ヘッド トラッキングを利用できます</string>
+    <string name="spatial_audio_head_tracking_unavailable">ヘッド トラッキングを利用できません</string>
     <string name="speed_boost_summary_off">OFF</string>
     <string name="speed_boost_summary_on">ON</string>
     <string name="speed_boost_title">Spectrum スピード ブースト</string>
@@ -319,6 +361,9 @@
     <string name="suw_warranty_positive_button_text">閉じる</string>
     <string name="system_update_entry_title">システム アップデート</string>
     <string name="system_updates_group_title">Google Pixel のアップデート</string>
+    <string name="touch_category_title">タップ</string>
+    <string name="touch_sensitivity_settings_summary">タッチ スクリーンの感度を調整します</string>
+    <string name="touch_sensitivity_settings_title">タップの感度</string>
     <string name="touch_sensitivity_summary">タップの感度を上げ、画面保護シートを使用しているときの操作性を改善します</string>
     <string name="touch_sensitivity_title">画面保護シート モード</string>
     <string name="traffic_light_face_enrolling_title_accessibility">スマートフォンを顔の前で持ちます</string>

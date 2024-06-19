@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">Klaviaturada sezgir aloqa</string>
+    <string name="accessibility_screen_magnifier_summary">Kamera bilan atrofga yaqindan nazar soling</string>
+    <string name="accessibility_screen_magnifier_title">Lupa</string>
     <string name="adaptive_alert_vibration_summary">Telefon ekrani tepaga qaragan holatda qimirlamay turganda tebranish kuchini pasaytiradi</string>
     <string name="adaptive_alert_vibration_title">Molashuvchan signal tebranishi</string>
     <string name="adaptive_battery_switch_des">Batareya quvvatini uzaytirish uchun Adaptive Battery rejimida unumdorlik va fondagi amallar cheklanishi mumkin. Ayrim bildirishnomalar kechikishi mumkin.</string>
@@ -12,6 +14,8 @@
     <string name="adaptive_charging_main_switch_title">Moslashuvchan quvvatlash ishlatilsin</string>
     <string name="adaptive_charging_time_estimate"><b>Moslashuvchan quvvatlash</b> • Qoldi: %1$s</string>
     <string name="adaptive_charging_title">Moslashuvchan quvvatlash</string>
+    <string name="adaptive_touch_sensitivity_summary">Ekran sezgirligi atrof-muhit sharoitlari, harakatlaringiz va ekran himoyasi mavjudligiga qarab avtomatik ravishda sozlanadi</string>
+    <string name="adaptive_touch_sensitivity_title">Moslashuvchan teginish</string>
     <string name="add_bypassed_application_hint">Ilovalar kiritilmagan</string>
     <string name="advanced_vpn_preference_group_title">Oldindan oʻrnatilgan</string>
     <string name="all_apps_category_title">Barcha ilovalar</string>
@@ -23,6 +27,16 @@ Ruxsat berilsa, bu ilovaga siz yuborgan barcha xatolik hisobotlari uchun "<b>sha
 
 Ruxsatni bekor qilish uchun ilova sizdan har bir muammo hisoboti uchun xato hisobotini toʻplash va yuklash uchun ruxsat soʻrashini talab qiladi."</string>
     <string name="app_and_notification_dashboard_summary">Assistent, oxirgi ilovalar, birlamchi ilovalar</string>
+    <string name="audio_sharing_switch_title">Audioni ulashish</string>
+    <string name="audio_sharing_title">Audio ulashuvi</string>
+    <string name="audio_streams_category_title">LE audio oqimiga ulanish</string>
+    <string name="audio_streams_connect">Ulanish</string>
+    <string name="audio_streams_disconnect">Uzish</string>
+    <string name="audio_streams_pref_title">Atrofdagi audio oqimlar</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">QR kodi xato formatda</string>
+    <string name="audio_streams_qr_code_scanner">Tinglashni boshlash uchun quyidagi QR kodni markazga joylang</string>
+    <string name="audio_streams_qr_code_summary">Audio oqimga QR kod orqali ulanish</string>
+    <string name="audio_streams_title">Audio oqimlar</string>
     <string name="automatic_storage_manager_activation_warning">Internetga ulangan vaqtda surat va videolarni yuklab olish paytida tanlangan sifatda tomosha qilishingiz mumkin.</string>
     <string name="automatic_storage_manager_days_title">Zaxiralangan surat va videolarni o‘chirish</string>
     <string name="automatic_storage_manager_deactivation_warning">"Smart xotira o‘chirib qo‘yilsinmi? 
@@ -49,8 +63,20 @@ Agar xotirangiz deyarli to‘lgan bo‘lsa, Smart xotira joy bo‘shatmaydi."</s
     <string name="battery_tip_battery_health_learn_more_description">Quvvat darajasi haqida batafsil</string>
     <string name="battery_tip_battery_health_reduced_title">Batareya sigʻimi kamayadi</string>
     <string name="battery_tip_battery_health_unknown_title">Batareya holati aniqlanmadi</string>
+    <string name="battery_tip_dock_defender_active_summary">Batareyaning ishlash muddatini kengaytirishga yordam berish maqsadida planshet dokka ulanganda quvvatlash 90% da tutib turiladi</string>
+    <string name="battery_tip_dock_defender_active_title">Batareyani himoyalash uchun quvvatlash toʻxtatildi</string>
+    <string name="battery_tip_dock_defender_button_learn_more">Batafsil</string>
+    <string name="battery_tip_dock_defender_button_override">Eʼtiborsiz qoldirish</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">Batareyaning ishlash muddatini kengaytirishga yordam berish maqsadida planshet dokka ulanganda quvvatlash 90% da tutib turiladi</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">90% gacha quvvatlash</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">Keyingi safar planshet dokka ulanganda, batareyani himoyalash maqsadida quvvatlash 90% da tutib turiladi</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">Toʻliq quvvatlash</string>
     <string name="battery_tip_limited_temporarily_extra_summary">Planshet dokka joylanganda batareyani himoyalash maqsadida quvvatlanish %1$s holatida pauza qilindi</string>
     <string name="battery_tip_smart_battery_summary">Adaptive Battery funksiyasini yoqing</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">Simsiz quvvatlash haqida batafsil</string>
+    <string name="battery_tip_wireless_charging_summary">Telefonni simsiz quvvatlash boshqa quvvatlash usullariga qaraganda koʻproq energiya sarflashi mumkin</string>
+    <string name="battery_tip_wireless_charging_title">Simsiz quvvat olmoqda</string>
+    <string name="calls_and_alarms_device_title">Chaqiruvlar va signallar</string>
     <string name="clear_calling_footer">"Maxfiylikni himoyalash maqsadida Tiniq ovoz funksiyasi audio va suhbatlarni Googlega yubormaydi.
 
 Tiniq ovoz Wi‑Fi va aksariyat tarmoqlarda ishlaydi, 3G tarmoqlarida ishlamaydi."</string>
@@ -121,12 +147,15 @@ Tiniq ovoz Wi‑Fi va aksariyat tarmoqlarda ishlaydi, 3G tarmoqlarida ishlamaydi
 
 Fishing – kirish maʼlumotlari yoki boshqa shaxsiy maʼlumotlarni oʻgʻirlashga urinish."</string>
     <string name="content_protection_preference_subpage_summary">Skanerlash bevosita qurilmangizda maxfiy ishlaydi, ilovadagi faoliyatni fishing yoki boshqa aldamchi xatti-harakatlar uchun tekshiradi. Xavf aniqlansa, tasdiqlash va ilova foydalanuvchilarini ogohlantirish uchun ayrim ilova maʼlumotlari Google Play Protect xizmatiga yuboriladi.</string>
+    <string name="contextual_timeout_description">Qurilmadan foydalanmasangiz, ekran ertaroq oʻchadi</string>
+    <string name="contextual_timeout_title">Adaptiv taym-aut</string>
     <string name="dark_ui_text">Tungi mavzu batareya quvvatini tejash uchun qora fondan foydalanadi. Bundan tashqari, tungi mavzuning qachon ishga tushishi va faolsizlanishni tanlashingiz mumkin.</string>
     <string name="debugging_data_title">Debaglash maʼlumotlari</string>
     <string name="discover_tips_button">Maslahatlar bilan tanishish</string>
     <string name="dock_summary_charging_phone">Telefon quvvat olmoqda</string>
     <string name="double_twist_for_camera_mode_summary">Google Kamera ilovasida selfi rejimga o‘tish uchun ilova ochiqligida qurilmani ikki marta silkiting.</string>
     <string name="duration_less_than_one_minute">1 daqiqadan kamroq</string>
+    <string name="enable_glanceable_hub_toggle">Hub rejimi</string>
     <string name="extreme_battery_saver_summary">Yuqorida roʻyxatga kiritilgan barcha oʻzgartirishlarni oʻz ichiga oladi. Shuningdek, muhim boʻlmagan ilovalar va ularning bildirishnomalarini pauza qiladi.</string>
     <string name="extreme_battery_saver_title">Batareyani qattiq tejash</string>
     <string name="face_confirmation_hide_illustration_description">Endi telefonni qoʻlingizga olganingizda yoki ekranga teginganingizda, qulfdan chiqarish uchun yuzingizdan foydalanishingiz mumkin.</string>
@@ -164,7 +193,6 @@ Fishing – kirish maʼlumotlari yoki boshqa shaxsiy maʼlumotlarni oʻgʻirlash
     <string name="firmware_update_status_category">Qurilma mikrodasturi holati</string>
     <string name="firmware_update_status_title">Yangilanish chiqdi</string>
     <string name="firmware_update_version_number_category">Qurilma mikrodasturi versiyasi</string>
-    <string name="firmware_update_version_number_title">Pixel klaviaturasi mikrodasturi</string>
     <string name="fullbackup_data_summary">"Qurilmadagi ma’lumotlar (m-n, Wi-Fi parollari va qo‘ng‘iroqlar tarixi) va ilovalarga oid ma’lumotlar (m-n, sozlamalar va ilovalar tomonidan saqlangan fayllar) zaxira nusxasini Google Drive xizmatiga avtomatik saqlang.
 
 Agar avtomatik zaxiralash funksiyasi yoqilsa, qurilma va ilova ma’lumotlarining zaxira nusxasi vaqti-vaqti bilan Google Drive xizmatidagi shaxsiy jildga saqlab turiladi. Ilova ma’lumotlariga ilova tomonidan saqlangan har qanday ma’lumot (dasturchi sozlamalari asosida), jumladan, kontaktlar, xabar va rasmlar kabi maxfiy ma’lumotlar ham kiradi.
@@ -172,16 +200,19 @@ Agar avtomatik zaxiralash funksiyasi yoqilsa, qurilma va ilova ma’lumotlarinin
 Zaxiralangan ma’lumotlar egallagan joy Google Drive xizmatidagi sizga ajratilgan joyga ta’sir qilmaydi. Yirik fayllar yoki dasturchilar xizmatdan chiqarib tashlagan fayllarning zaxira nusxasi saqlanmaydi."</string>
     <string name="fullbackup_erase_dialog_message">Qurilmadagi ma’lumotlar (m-n, Wi-Fi parollari va qo‘ng‘iroqlar tarixi) va ilova ma’lumotlarining (m-n, sozlamalar va ilovalar tomonidan saqlangan fayllar) zaxira nusxasini saqlash to‘xtatililib, ularning Google Drive xizmatidagi barcha nusxalari o‘chirib tashlansinmi?</string>
     <string name="gesture_settings_activity_title">Imo-ishorali navigatsiya</string>
+    <string name="hub_mode_content_setting">Hub rejimida istalgan vidjetga ruxsat berish</string>
     <string name="install_unknown_applications">Play Marketdan boshqa manbalardan olingan ilovalarni o‘rnatishga ruxsat berish</string>
     <string name="keywords_accessibility_menu">"motorika, tezkor menyu, yordamchi menyu, teginish, tezkorlik, artrit, rsi, insult, tremor, surunkali skleroz, bolalar falaji, tugma, apparat, bosish, qayta shikastlanish, dastak, og'riq, qulay, yordam"</string>
     <string name="keywords_adaptive_alert_vibration">sezish, tebranish, telefon, chaqiruv, jiringlash, signal, bildirishnomalar, baland, past, shovqin, jild, moslashuvchan</string>
     <string name="keywords_adaptive_charging">quvvatlash, quvvatlanmoqda, smart quvvatlash, moslashuvchan quvvatlagich, batareya, batareya yaroqliligi</string>
     <string name="keywords_battery_share">quvvat ulashish, simsiz quvvatlash</string>
     <string name="keywords_battery_share_settings">quvvat ulashish, simsiz teskari quvvatlash</string>
+    <string name="keywords_contextual_screen_timeout">ekran, taym-aut, adaptiv, matnga oid</string>
     <string name="keywords_gesture">imo-ishora, surishlar</string>
     <string name="keywords_hearing_devices">nuqsonli eshitish, karlik, PSAP</string>
     <string name="keywords_limited_warranty">kafolat, garantiya, cheklangan kafolat, vaʼda, taʼmirlash, rma, almashtirish</string>
     <string name="keywords_live_transcribe">Taglavhalar, yopiq taglavhalar, CC, Jonli izoh, nuqsonli eshitish, karlik, CART, nutq sintezatori, taglavha</string>
+    <string name="keywords_magnifier">Zum, kattalashtirish, zaif koʻrish, kattalashtirish, katta qilish</string>
     <string name="keywords_reverse_charging_stop_threshold">Batareya quvvati shu darajaga yetsa, funksiya faolsizlantirilsin:</string>
     <string name="keywords_select_to_speak">Matnni eshitish, baland ovoz bilan oʻqish, ekranni eshitish, ekrandan oʻqish</string>
     <string name="keywords_sound_amplifier">PSAP, kuchaytirish, tovush kuchaytirish, nuqsonli eshitish, karlik, amplifikatsiya</string>
@@ -189,6 +220,7 @@ Zaxiralangan ma’lumotlar egallagan joy Google Drive xizmatidagi sizga ajratilg
     <string name="keywords_switch_access">motor, kalit, qoʻl, AT, yordamchi texnologya, paralich, ALS, skanerlash, qadam skaneri</string>
     <string name="keywords_talkback">Ekrandan oʻqish, ovozli, VoiceOver, ovozli assistent, koʻrlik, zaif koʻrish, TTS, nutq sintezatori, oʻqib eshittirish</string>
     <string name="keywords_touch_sensitivity">tegish, sezuvchanlik, sezuvchan, ekran himoyasi, himoya oynasi, tez, tezlik</string>
+    <string name="keywords_touch_sensitivity_settings">sensor, adaptiv, sezuvchanlik, sezuvchan, ekran himoyasi, himoya oynasi, tez, tezlik</string>
     <string name="keywords_voice_access">ovoz, ovozli boshqaruv, motor, qoʻl, mik, mikrofon, ovoz bilan yozish, gapirish, boshqarish</string>
     <string name="led_preference_title">LED indikatori andozalari</string>
     <string name="legal_source_code_description">Ommaga ochiq kodli DT shaklida joylangan komponentlar birlamchi kodi haqida batafsil axborotni Pixel yordam markazidan olish mumkin.</string>
@@ -202,7 +234,7 @@ Zaxiralangan ma’lumotlar egallagan joy Google Drive xizmatidagi sizga ajratilg
     <string name="permit_debugging_data">Xato haqida xabar berish ruxsatini berish</string>
     <string name="play_application_detail_indication_summary">Yangilanish mavjudligini tekshiring</string>
     <string name="play_application_update_entry_title">Ilova yangilanishlari</string>
-    <string name="privatespace_retry_summary">Maxfiy joyni sozlash uchun Google hisobingizga kirishingiz kerak</string>
+    <string name="private_space_retry_summary">Maxfiy makon bilan foydalanish uchun Google hisobingizga kiring</string>
     <string name="repair_mode_active_summary">Tuzatish rejimida</string>
     <string name="repair_mode_summary">Qurilmani tuzatish uchun xavfsiz muhit</string>
     <string name="repair_mode_title">Tuzatish rejimi</string>
@@ -250,9 +282,15 @@ Boshlash uchun telefonni teskari qiling."</string>
     <string name="security_settings_face_enroll_error_dialog_title">Yuzingiz qayd qilinmadi</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Yuz bilan ochishni sozlashda kutish vaqti tugadi</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Endi telefonni qulfdan chiqarish, ilovaga kirish yoki xaridni tasdiqlash kabi hisob tekshiruvida yuzingizdan foydalanishingiz mumkin</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp_full">"Endi telefonni qulfdan chiqarish, ilovaga kirish yoki xaridni tasdiqlash kabi hisob tekshiruvida yuzingizdan foydalanishingiz mumkin.
+
+Yuz bilan ochish funksiyasi yorugʻlik yetarli boʻlganda va maska yoki qora koʻzoynak taqmaganingizda yaxshi ishlaydi."</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Endi telefonni qoʻlingizga olganingizda yoki ekranga teginganingizda qulfdan chiqarish uchun yuzingizdan foydalanishingiz mumkin.
 
 Yuz bilan ochish funksiyasi yorugʻlik yetarli boʻlganda va niqob yoki qora koʻzoynak taqmaganingizda yaxshi ishlaydi."</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp_folded">"Endi telefonni qoʻlingizga olganingizda yoki ekranga teginganingizda, qulfdan chiqarish uchun yuzingizdan foydalanishingiz mumkin. Telefon yuz bilan ochilishi uchun buklangan boʻlishi kerak.
+
+Yuz bilan ochish funksiyasi yorugʻlik yetarli boʻlganda va maska yoki qora koʻzoynak taqmaganingizda yaxshi ishlaydi."</string>
     <string name="security_settings_face_enroll_finish_title">Ajoyib!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Maxsus imkoniyatlarni yoqish</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Koʻz yumilmasligi kerak</string>
@@ -292,6 +330,8 @@ Eslatma: barmoq izi orqali qurilmani qulfdan chiqara olmaysiz. Batafsil axborot 
     <string name="security_settings_work_fingerprint_preference_title">Ish uchun Pixel Imprint</string>
     <string name="setup_suggestion_summary">Yana bir nechta qadam qoldi</string>
     <string name="setup_suggestion_title">Sozlashni tugallang</string>
+    <string name="smart_battery_a11y_collapse_label">Yigʻish, Adaptiv batareya</string>
+    <string name="smart_battery_a11y_expand_label">Yoyish, Adaptiv batareya</string>
     <string name="smart_battery_footer">Batareya quvvatini uzaytirish uchun Adaptive Battery rejimida unumdorlik va fondagi amallar cheklanishi mumkin. Ayrim bildirishnomalar kechikishi mumkin.</string>
     <string name="smart_battery_manager_title">Moslashuvchan sozlamalar</string>
     <string name="smart_battery_title">Moslashuvchan batareya</string>
@@ -308,6 +348,8 @@ Eslatma: barmoq izi orqali qurilmani qulfdan chiqara olmaysiz. Batafsil axborot 
     <string name="software_update_up_to_specific_date_summary">Yangilandi: %1$s</string>
     <string name="software_update_update_available_summary">Yangilanish chiqdi</string>
     <string name="sound_dashboard_summary">Tovush balandligi, sezuvchanlik, Bezovta qilinmasin</string>
+    <string name="spatial_audio_head_tracking_available">Boshni kuzatish mavjud.</string>
+    <string name="spatial_audio_head_tracking_unavailable">Boshni kuzatish mavjud emas.</string>
     <string name="speed_boost_summary_off">Oʻchiq</string>
     <string name="speed_boost_summary_on">Yoniq</string>
     <string name="speed_boost_title">Spektr tezligini oshirish</string>
@@ -319,6 +361,9 @@ Eslatma: barmoq izi orqali qurilmani qulfdan chiqara olmaysiz. Batafsil axborot 
     <string name="suw_warranty_positive_button_text">Yopish</string>
     <string name="system_update_entry_title">Tizim yangilanishi</string>
     <string name="system_updates_group_title">Pixel yangilanishlari</string>
+    <string name="touch_category_title">Sensor</string>
+    <string name="touch_sensitivity_settings_summary">Sensorli ekran sezuvchanligini rostlash</string>
+    <string name="touch_sensitivity_settings_title">Sensor sezuvchanligi</string>
     <string name="touch_sensitivity_summary">Ekran himoyasidan foydalanganda sensor sezgirligini oshirish va teginishni aniqlashni yaxshilash</string>
     <string name="touch_sensitivity_title">Ekran himoyasi rejimi</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Telefonni yuzingizga qaratib tutib turing</string>

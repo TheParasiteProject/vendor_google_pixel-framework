@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">키보드 햅틱 반응</string>
+    <string name="accessibility_screen_magnifier_summary">카메라를 사용하여 주변 확대하기</string>
+    <string name="accessibility_screen_magnifier_title">돋보기</string>
     <string name="adaptive_alert_vibration_summary">휴대전화가 움직이지 않고 화면이 위를 향하고 있으면 진동 강도를 줄입니다.</string>
     <string name="adaptive_alert_vibration_title">적응형 알림 진동</string>
     <string name="adaptive_battery_switch_des">배터리 자동 조절 기능은 배터리 수명을 늘리기 위해 성능 및 백그라운드 활동을 제한할 수 있습니다. 일부 알림이 지연될 수 있습니다.</string>
@@ -12,6 +14,8 @@
     <string name="adaptive_charging_main_switch_title">자동 조절 충전 사용</string>
     <string name="adaptive_charging_time_estimate"><b>자동 조절 충전</b> • %1$s에 충전 완료</string>
     <string name="adaptive_charging_title">자동 조절 충전</string>
+    <string name="adaptive_touch_sensitivity_summary">터치 민감도가 환경, 활동, 화면 보호필름에 맞춰 자동으로 조정됩니다</string>
+    <string name="adaptive_touch_sensitivity_title">터치 자동 조정</string>
     <string name="add_bypassed_application_hint">추가된 앱 없음</string>
     <string name="advanced_vpn_preference_group_title">내장됨</string>
     <string name="all_apps_category_title">모든 앱</string>
@@ -23,6 +27,16 @@
 
 액세스 권한을 취소하면 앱이 개별 문제마다 버그 신고를 수집 및 업로드하기 위한 권한을 요청해야 합니다."</string>
     <string name="app_and_notification_dashboard_summary">어시스턴트, 최근 앱, 기본 앱</string>
+    <string name="audio_sharing_switch_title">오디오 공유</string>
+    <string name="audio_sharing_title">오디오 공유</string>
+    <string name="audio_streams_category_title">LE 오디오 스트림에 연결</string>
+    <string name="audio_streams_connect">연결</string>
+    <string name="audio_streams_disconnect">연결 해제</string>
+    <string name="audio_streams_pref_title">주변 오디오 스트림</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">QR 코드가 유효한 형식이 아닙니다.</string>
+    <string name="audio_streams_qr_code_scanner">오디오를 들으려면 아래의 QR 코드가 가운데에 오도록 스캔하세요.</string>
+    <string name="audio_streams_qr_code_summary">QR 코드를 사용해 오디오 스트림에 연결</string>
+    <string name="audio_streams_title">오디오 스트림</string>
     <string name="automatic_storage_manager_activation_warning">연결되면 백업 시 선택한 품질로 사진 및 동영상에 계속 액세스할 수 있습니다.</string>
     <string name="automatic_storage_manager_days_title">백업된 사진과 동영상 삭제</string>
     <string name="automatic_storage_manager_deactivation_warning">"스마트 저장용량을 사용 중지하시겠습니까? 
@@ -40,7 +54,7 @@
     <string name="battery_saver_reminder_category">리마인더</string>
     <string name="battery_saver_reminder_switch_summary">배터리가 부족할 때 알림을 받습니다.</string>
     <string name="battery_saver_reminder_switch_title">절전 모드 알림</string>
-    <string name="battery_saver_schedule_category">예약</string>
+    <string name="battery_saver_schedule_category">일정</string>
     <string name="battery_saver_schedule_switch_summary">배터리 잔량이 설정한 수준까지 떨어지면 절전 모드 시작</string>
     <string name="battery_saver_schedule_switch_title">배터리 잔량에 따라 시작</string>
     <string name="battery_schedule_summary">절전 모드가 켜지는 시점 관리</string>
@@ -48,8 +62,20 @@
     <string name="battery_tip_battery_health_learn_more_description">배터리 상태에 관해 자세히 알아보기</string>
     <string name="battery_tip_battery_health_reduced_title">배터리 용량이 감소함</string>
     <string name="battery_tip_battery_health_unknown_title">배터리 성능 상태를 감지할 수 없음</string>
+    <string name="battery_tip_dock_defender_active_summary">배터리 수명을 연장하기 위해 태블릿이 도킹되어 있는 동안 90%에서 충전이 일시중지됨</string>
+    <string name="battery_tip_dock_defender_active_title">배터리 보호를 위해 충전 일시중지</string>
+    <string name="battery_tip_dock_defender_button_learn_more">자세히 알아보기</string>
+    <string name="battery_tip_dock_defender_button_override">재정의</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">배터리 수명을 연장하기 위해 태블릿이 도킹되어 있는 동안 90%에서 충전이 일시중지됨</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">90%까지 충전 중</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">다음에 태블릿이 도킹되면 배터리를 보호하기 위해 90%에서 충전이 일시중지됨</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">완전 충전</string>
     <string name="battery_tip_limited_temporarily_extra_summary">배터리 절약을 위해 태블릿이 도킹되어 있는 동안 충전이 %1$s에서 일시중지됩니다.</string>
     <string name="battery_tip_smart_battery_summary">배터리 자동 조절을 사용 설정하세요</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">무선 충전에 관해 자세히 알아보기</string>
+    <string name="battery_tip_wireless_charging_summary">휴대전화를 무선으로 충전하면 다른 충전 방법보다 더 많은 에너지를 사용할 수 있습니다.</string>
+    <string name="battery_tip_wireless_charging_title">무선 충전</string>
+    <string name="calls_and_alarms_device_title">통화 및 알람</string>
     <string name="clear_calling_footer">"개인 정보 보호를 위해 선명한 통화 음질은 Google로 오디오 또는 대화를 전송하지 않습니다.
 
 선명한 통화 음질은 Wi-Fi 통화 및 대부분의 네트워크에서 작동하며 3G 네트워크에서는 사용할 수 없습니다."</string>
@@ -120,12 +146,15 @@
 
 피싱은 로그인 사용자 인증 정보 또는 기타 개인 정보를 도용하려는 시도입니다."</string>
     <string name="content_protection_preference_subpage_summary">기기에서 바로 검사가 실행되어 앱 활동에서 피싱 또는 기타 사기 행위를 확인합니다. 피싱 또는 기타 사기 행위가 감지되는 경우, 위협을 확인하고 앱 사용자에게 경고를 표시할 수 있도록 일부 앱 정보가 Google Play 프로텍트로 전송됩니다.</string>
+    <string name="contextual_timeout_description">기기를 사용하지 않으면 화면이 자동으로 빠르게 꺼집니다.</string>
+    <string name="contextual_timeout_title">자동 조절 자동 잠금 시간</string>
     <string name="dark_ui_text">어두운 테마는 검은색 배경을 사용하므로 배터리 사용 시간이 늘어납니다. 어두운 테마 일정은 화면이 꺼질 때까지 기다린 후 켜집니다.</string>
     <string name="debugging_data_title">디버깅 데이터</string>
     <string name="discover_tips_button">도움말 확인</string>
     <string name="dock_summary_charging_phone">휴대전화 충전 중</string>
     <string name="double_twist_for_camera_mode_summary">Google 카메라에서 셀카 모드를 시작하거나 종료하려면 앱을 실행한 상태에서 두 번 돌립니다.</string>
     <string name="duration_less_than_one_minute">1분 미만</string>
+    <string name="enable_glanceable_hub_toggle">허브 모드</string>
     <string name="extreme_battery_saver_summary">위의 모든 변경사항을 포함합니다. 필수 앱 및 알림을 제외하고 모두 일시중지합니다.</string>
     <string name="extreme_battery_saver_title">최대 절전 모드</string>
     <string name="face_confirmation_hide_illustration_description">이제 휴대전화를 들어 올리거나 화면을 탭하면 얼굴 인식을 사용해 잠금 해제할 수 있습니다.</string>
@@ -163,7 +192,6 @@
     <string name="firmware_update_status_category">기기 펌웨어 상태</string>
     <string name="firmware_update_status_title">펌웨어 업데이트 사용 가능</string>
     <string name="firmware_update_version_number_category">기기 펌웨어 버전</string>
-    <string name="firmware_update_version_number_title">Pixel 키보드 펌웨어</string>
     <string name="fullbackup_data_summary">"기기 데이터(예: Wi-Fi 비밀번호, 통화 기록)와 앱 데이터(예: 앱에 저장된 설정 및 파일)를 Google Drive에 자동으로 백업하세요.
 
 자동 백업을 사용하면 기기 데이터와 앱 데이터가 Google Drive의 비공개 폴더에 정기적으로 저장됩니다. 앱 데이터는 개발자 설정에 따라 앱에서 저장하며 민감할 수 있는 모든 데이터(예: 주소록, 메시지, 사진)를 가리킵니다.
@@ -171,17 +199,20 @@
 백업 데이터는 드라이브 저장용량 계산에 포함되지 않습니다. 대용량 파일이나 개발자가 자동 백업 서비스에서 제외하도록 선택한 파일은 백업되지 않습니다."</string>
     <string name="fullbackup_erase_dialog_message">기기 데이터(예: Wi-Fi 비밀번호, 통화 기록)와 앱 데이터(예: 앱에서 저장한 설정 및 파일) 백업을 중단하고 Google Drive에 있는 모든 사본을 삭제하시겠습니까?</string>
     <string name="gesture_settings_activity_title">동작 탐색</string>
+    <string name="hub_mode_content_setting">허브 모드에서 모든 위젯 허용</string>
     <string name="install_unknown_applications">Play 스토어 외 출처의 앱 설치 허용</string>
     <string name="keywords_accessibility_menu">거동, 빠른 메뉴, 보조 메뉴, 터치, 민첩성, 관절염, RSI, 뇌졸중, 떨림, 다발성 경화증, 뇌성마비, 버튼, 하드웨어, 누르기, 반복성 긴장 장애, 손, 통증, 접근성, 지원</string>
     <string name="keywords_adaptive_alert_vibration">햅틱, 진동, 휴대전화, 통화, 벨소리, 경고, 알림, 크게, 작게, 소음, 케이스, 적응형</string>
     <string name="keywords_adaptive_charging">충전, 충전하기, 스마트 충전, 자동 조절 충전, 배터리, 배터리 상태</string>
     <string name="keywords_battery_share">배터리 공유, 무선 충전</string>
     <string name="keywords_battery_share_settings">배터리 공유, 역무선 충전</string>
+    <string name="keywords_contextual_screen_timeout">화면, 자동 잠금 시간, 자동 조절, 맥락 기반</string>
     <string name="keywords_gesture">동작, 빠른 동작</string>
     <string name="keywords_hearing_devices">난청, 청력 손실, PSAP</string>
     <string name="keywords_limited_warranty">보증, 보장, 한정 보증, 약속, 수리, RMA, 교환</string>
     <string name="keywords_live_caption">캡션, 자막, CC, 음성 자막 변환, 난청, 청력 손실, CART, 음성 텍스트 변환, 자막</string>
     <string name="keywords_live_transcribe">캡션, 폐쇄 자막, CC, 실시간 자막, 난청, 청력 손실, CART, 음성 텍스트 변환, 자막</string>
+    <string name="keywords_magnifier">확대/축소, 확대, 저시력, 크게, 화면 크게</string>
     <string name="keywords_reverse_charging_stop_threshold">배터리 공유를 중지할 휴대전화 배터리 잔량:</string>
     <string name="keywords_select_to_speak">텍스트 듣기, 소리 내 읽기, 화면 읽기, 스크린 리더</string>
     <string name="keywords_sound_amplifier">PSAP, 증폭, 청각 보조 기능, 난청, 청력 손실, 증폭</string>
@@ -189,6 +220,7 @@
     <string name="keywords_switch_access">거동, 스위치, 손, AT, 보조 기술, 마비, ALS, 스캔, 단계 스캔</string>
     <string name="keywords_talkback">스크린 리더, 보이스오버, VoiceOver, 음성 보조, 시각장애, 저시력, TTS, 텍스트 음성 변환, 음성 피드백</string>
     <string name="keywords_touch_sensitivity">터치, 민감도, 민감한, 화면 보호 필름, 필름, 반응성, 반응 속도</string>
+    <string name="keywords_touch_sensitivity_settings">터치, 자동 조정, 민감도, 민감한, 화면 보호필름, 필름, 반응성, 반응 속도</string>
     <string name="keywords_voice_access">음성, 음성 제어, 거동, 손, 마이크, 받아쓰기, 말하기, 제어</string>
     <string name="led_preference_title">LED 표시기 패턴</string>
     <string name="legal_source_code_description">구성요소의 소스 코드에 관한 세부정보는 Pixel 고객센터에서 오픈소스를 확인할 수 있게 되면 제공됩니다.</string>
@@ -202,7 +234,7 @@
     <string name="permit_debugging_data">버그 신고 액세스 허용</string>
     <string name="play_application_detail_indication_summary">업데이트 확인</string>
     <string name="play_application_update_entry_title">앱 업데이트</string>
-    <string name="privatespace_retry_summary">비공개 스페이스를 설정하려면 Google 계정에 로그인해야 합니다.</string>
+    <string name="private_space_retry_summary">비공개 스페이스에서 사용할 Google 계정에 로그인</string>
     <string name="repair_mode_active_summary">수리 모드 사용 중</string>
     <string name="repair_mode_summary">기기 수리를 위한 안전한 환경</string>
     <string name="repair_mode_title">수리 모드</string>
@@ -240,7 +272,7 @@
     <string name="screen_time_summary_usage_today">%1$s(오늘)</string>
     <string name="search_bar_account_avatar_content_description">프로필 사진, 두 번 탭하여 Google 계정 열기</string>
     <string name="search_gesture_category_title">검색</string>
-    <string name="search_gesture_feature_title">원을 그려 검색</string>
+    <string name="search_gesture_feature_title">서클 투 서치</string>
     <string name="search_long_press_home_button_summary">화면 하단의 홈 버튼을 길게 터치한 다음 검색할 항목에 원을 그리거나 강조 표시하세요.</string>
     <string name="search_press_hold_gesture_summary">화면 하단의 핸들을 길게 터치한 다음 검색할 항목에 원을 그리거나 강조 표시하세요.</string>
     <string name="security_dismiss_dialog_dismiss_button">닫기</string>
@@ -251,9 +283,15 @@
     <string name="security_settings_face_enroll_error_timeout_dialog_message">얼굴 등록 시간제한이 초과되었습니다. 다시 시도해 보세요.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">얼굴 인식 잠금 해제 설정 시간 초과</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">이제 얼굴 인식을 사용하여 휴대전화를 잠금 해제하거나 앱 로그인, 구매 승인 등을 위해 본인 인증을 진행할 수 있습니다.</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp_full">"이제 얼굴로 휴대전화를 잠금 해제할 수 있습니다. 또는 앱에 로그인하거나 구매를 승인할 때 얼굴 인식으로 본인을 인증할 수도 있습니다.
+
+얼굴 인식 잠금 해제는 조명이 충분히 밝고 마스크나 어두운 색의 안경을 쓰고 있지 않을 때 가장 잘 작동합니다."</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"이제 휴대전화를 들어 올리거나 화면을 탭하면 얼굴 인식을 사용해 잠금 해제할 수 있습니다.
 
 얼굴 인식 잠금 해제 기능은 주변이 밝고 마스크 또는 렌즈에 색이 들어간 안경을 쓰고 있지 않아야 잘 작동합니다."</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp_folded">"이제 휴대전화를 들어 올리거나 화면을 탭한 후 얼굴 인식을 사용해 잠금 해제할 수 있습니다. 얼굴 인식 잠금 해제를 사용하려면 휴대전화가 접힌 상태여야 합니다.
+
+얼굴 인식 잠금 해제는 조명이 충분히 밝고 마스크나 어두운 색의 안경을 쓰고 있지 않을 때 가장 잘 작동합니다."</string>
     <string name="security_settings_face_enroll_finish_title">설정 완료</string>
     <string name="security_settings_face_enroll_introduction_accessibility">시력이 나쁘거나 고개 움직임이 제한된 경우의 설정</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">눈을 뜨고 있어야 설정 가능</string>
@@ -293,6 +331,8 @@
     <string name="security_settings_work_fingerprint_preference_title">직장용 Pixel Imprint</string>
     <string name="setup_suggestion_summary">몇 단계밖에 남지 않았습니다.</string>
     <string name="setup_suggestion_title">설정을 완료하세요</string>
+    <string name="smart_battery_a11y_collapse_label">접기, 배터리 자동 조절</string>
+    <string name="smart_battery_a11y_expand_label">펼치기, 배터리 자동 조절</string>
     <string name="smart_battery_footer">배터리 자동 조절 기능은 배터리 수명을 늘리기 위해 성능 및 백그라운드 활동을 제한할 수 있습니다. 일부 알림이 지연될 수 있습니다.</string>
     <string name="smart_battery_manager_title">환경설정 자동 조절</string>
     <string name="smart_battery_title">배터리 자동 조절</string>
@@ -309,6 +349,8 @@
     <string name="software_update_up_to_specific_date_summary">%1$s 업데이트되었습니다</string>
     <string name="software_update_update_available_summary">업데이트 가능</string>
     <string name="sound_dashboard_summary">볼륨, 햅틱, 방해 금지 모드</string>
+    <string name="spatial_audio_head_tracking_available">머리 추적을 사용할 수 있음</string>
+    <string name="spatial_audio_head_tracking_unavailable">머리 추적을 사용할 수 없음</string>
     <string name="speed_boost_summary_off">사용 안함</string>
     <string name="speed_boost_summary_on">사용</string>
     <string name="speed_boost_title">스펙트럼 속도 부스트</string>
@@ -320,6 +362,9 @@
     <string name="suw_warranty_positive_button_text">닫기</string>
     <string name="system_update_entry_title">시스템 업데이트</string>
     <string name="system_updates_group_title">Pixel 업데이트</string>
+    <string name="touch_category_title">터치</string>
+    <string name="touch_sensitivity_settings_summary">터치 스크린 민감도 조정</string>
+    <string name="touch_sensitivity_settings_title">터치 민감도</string>
     <string name="touch_sensitivity_summary">화면 보호필름 사용 시 터치 감도 및 터치 반응 개선</string>
     <string name="touch_sensitivity_title">화면 보호필름 모드</string>
     <string name="traffic_light_face_enrolling_title_accessibility">휴대전화가 얼굴을 향하도록 들어 주세요</string>

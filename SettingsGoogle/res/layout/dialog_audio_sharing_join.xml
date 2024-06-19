@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="?android:dialogPreferredPadding"
+    android:paddingHorizontal="?android:dialogPreferredPadding">
+
+    <TextView
+        android:id="@id/share_audio_subtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="24.0dip"
+        android:textFontWeight="400"
+        style="@style/DeviceAudioSharingText" />
+
+    <Button
+        android:id="@id/share_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/audio_sharing_rounded_bg_ripple"
+        android:layout_gravity="center"
+        android:layout_marginTop="4.0dip"
+        style="@style/SettingsLibActionButton" />
+
+    <Button
+        android:id="@id/cancel_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/audio_sharing_rounded_bg_ripple"
+        android:layout_gravity="center"
+        android:layout_marginTop="4.0dip"
+        android:text="Not now"
+        style="@style/SettingsLibActionButton" />
+
+</LinearLayout>

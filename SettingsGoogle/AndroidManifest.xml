@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
-          package="com.android.settings"
-          coreApp="true"
-          android:sharedUserId="android.uid.system">
+    xmlns:tools="http://schemas.android.com/tools"
+    coreApp="true"
+    package="com.android.settings"
+    android:sharedUserId="android.uid.system">
 
     <permission
         android:name="com.google.android.settings.routines.ROUTINES_ACTIONS"
@@ -26,6 +26,7 @@
 
     <uses-permission android:name="android.permission.MANAGE_GAME_MODE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="com.google.android.settings.routines.ROUTINES_ACTIONS" />
     <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
     <uses-permission android:name="com.google.android.settings.intelligence.BATTERY_DATA" />
@@ -36,26 +37,14 @@
     <uses-permission android:name="com.google.android.wildlife.permission.ADVANCED_VPN_CONFIG" />
     <uses-permission android:name="com.google.android.apps.scone.speedboost.settings.READ_PREFERENCES" />
     <uses-permission android:name="android.permission.MANAGE_SAFETY_CENTER" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <protected-broadcast android:name="com.google.android.settings.PRE_INDEX_SEARCH" />
-    <permission
-        android:name="com.android.settings.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-        android:protectionLevel="signature" />
-    <uses-permission android:name="com.android.settings.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <original-package android:name="com.android.settings" />
-
-    <queries>
-        <intent>
-            <action android:name="com.android.setupwizard.action.PARTNER_CUSTOMIZATION" />
-        </intent>
-    </queries>
 
     <application
         android:name="com.google.android.settings.SettingsGoogleApplication"
         tools:replace="android:name">
-
         <activity
             android:name="com.google.android.settings.gestures.columbus.ColumbusGestureTrainingIntroActivity"
             android:enabled="true"
@@ -133,6 +122,7 @@
             android:excludeFromRecents="true"
             android:exported="true"
             android:permission="com.google.android.settings.biometrics.face.POSTURE_GUIDANCE"
+            android:screenOrientation="nosensor"
             android:theme="@style/SudThemeGlif.Light" />
         <activity
             android:name="com.google.android.settings.biometrics.face.FaceEnrollEnrolling"
@@ -147,7 +137,9 @@
         <activity
             android:name="com.google.android.settings.biometrics.face.FaceEnrollConfirmation"
             android:exported="true"
-            android:permission="com.google.android.settings.biometrics.face.POSTURE_GUIDANCE">
+            android:permission="com.google.android.settings.biometrics.face.POSTURE_GUIDANCE"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.Settings.Clips">
             <intent-filter>
                 <action android:name="com.google.android.settings.action.CONFIRM_FACE_ENROLLMENT" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -294,7 +286,7 @@
             android:excludeFromRecents="true"
             android:exported="false"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait"
+            android:screenOrientation="behind"
             android:theme="@style/VpnBottomSheetStyle" />
         <activity
             android:name="com.google.android.settings.fuelgauge.PowerUsageAdvancedActivity"
@@ -326,6 +318,75 @@
             android:exported="true"
             android:label="@string/adaptive_charging_title"
             android:permission="com.google.android.settings.fuelgauge.BATTERY_SETTING" />
+        <activity
+            android:name="com.google.android.settings.connecteddevice.audiosharing.AudioSharingActivity"
+            android:exported="true"
+            android:label="@string/audio_sharing_title">
+            <intent-filter>
+                <action android:name="com.google.android.settings.BLUETOOTH_AUDIO_SHARING_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.google.android.settings.connecteddevice.audiosharing.AudioSharingDashboardFragment" />
+        </activity>
+        <activity
+            android:name="com.google.android.settings.connecteddevice.audiosharing.audiostreams.qrcode.QrCodeScanModeActivity"
+            android:exported="false"
+            android:permission="android.permission.BLUETOOTH_CONNECT">
+            <intent-filter>
+                <action android:name="android.settings.BLUETOOTH_LE_AUDIO_QR_CODE_SCANNER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.settings.connecteddevice.audiosharing.audiostreams.AudioStreamConfirmDialogActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:permission="android.permission.BLUETOOTH_CONNECT"
+            android:theme="@style/Transparent">
+            <intent-filter android:priority="1">
+                <action android:name="android.settings.AUDIO_STREAM_DIALOG" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.google.android.settings.connecteddevice.audiosharing.audiostreams.AudioStreamConfirmDialog" />
+        </activity>
+
+        <receiver
+            android:name="com.google.android.settings.connecteddevice.audiosharing.AudioSharingReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.android.settings.action.BLUETOOTH_LE_AUDIO_SHARING_STATE_CHANGE" />
+                <action android:name="com.google.android.settings.action.BLUETOOTH_LE_AUDIO_SHARING_STOP" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.google.android.settings.accessibility.KeyboardVibrationSettingsActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.settings.KEYBOARD_VIBRATION_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.accessibility.VibrationIntensitySettingsFragment" />
+        </activity>
+        <activity
+            android:name="com.google.android.settings.touch.TouchSensitivitySettingsActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.google.android.settings.touch.TOUCH_SENSITIVITY_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.google.android.settings.touch.TouchSensitivitySettings" />
+        </activity>
 
         <provider
             android:name="com.google.android.settings.external.ExternalSettingsProvider"
@@ -398,6 +459,7 @@
                 <action android:name="com.google.android.settings.action.UPDATE_PREDEFINED_APP_EXCLUSION_LIST" />
                 <action android:name="com.google.android.settings.action.UPDATE_CARRIER_APP_LIST" />
                 <action android:name="com.google.android.settings.action.NOTIFY_PACKAGE_ADDED" />
+                <action android:name="com.google.android.settings.action.RESTORE_APP_BYPASS_SETTINGS" />
             </intent-filter>
         </receiver>
         <receiver
@@ -428,21 +490,6 @@
             android:exported="false" />
 
         <activity-alias
-            android:name="com.google.android.settings.DebuggingDataActivity"
-            android:exported="true"
-            android:targetActivity="com.android.settings.spa.SpaBridgeActivity">
-            <intent-filter>
-                <action android:name="android.settings.MANAGE_DEBUGGING_DATA_PERMISSION" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data
-                android:name="com.android.settings.spa.DESTINATION"
-                android:value="TogglePermissionAppList/DebuggingData" />
-            <meta-data
-                android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
-                android:value="@string/menu_key_apps" />
-        </activity-alias>
-        <activity-alias
             android:name="com.google.android.settings.AppDebuggingDataActivity"
             android:exported="true"
             android:targetActivity="com.android.settings.spa.SpaAppBridgeActivity">
@@ -459,39 +506,6 @@
                 android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
                 android:value="@string/menu_key_apps" />
         </activity-alias>
-
-        <receiver
-            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-            android:directBootAware="false"
-            android:enabled="true"
-            android:exported="true"
-            android:permission="android.permission.DUMP">
-            <intent-filter>
-                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-            </intent-filter>
-        </receiver>
-        <receiver android:name="androidx.remotecallback.ProviderRelayReceiver" />
-
-        <activity
-            android:name="androidx.slice.compat.SlicePermissionActivity"
-            android:excludeFromRecents="true" />
-        <activity
-            android:name="com.android.settingslib.users.AvatarPickerActivity"
-            android:theme="@style/SudThemeGlifV2.DayNight" />
-
-        <service
-            android:name="androidx.room.MultiInstanceInvalidationService"
-            android:directBootAware="true"
-            android:exported="false" />
 
         <receiver
             android:name="com.google.android.wifitrackerlib.WsuPostProvisioningReceiver"

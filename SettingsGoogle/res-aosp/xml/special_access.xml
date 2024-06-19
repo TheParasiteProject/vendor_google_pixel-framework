@@ -149,6 +149,13 @@
     </Preference>
 
     <Preference
+        android:key="run_backup_tasks"
+        android:order="-750"
+        android:title="@string/run_backup_tasks_title"
+        settings:controller="com.android.settings.spa.app.specialaccess.BackupTasksAppsPreferenceController"
+        settings:keywords="@string/keywords_run_backup_tasks" />
+
+    <Preference
         android:fragment="com.android.settings.applications.manageapplications.ManageApplications"
         android:key="manage_external_sources"
         android:order="-700"

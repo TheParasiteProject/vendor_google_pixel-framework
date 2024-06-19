@@ -11,6 +11,5 @@
     <color name="sfps_enroll_immobile_continue_btn_bg_color">#ffc4cd7b</color>
     <color name="sfps_enroll_immobile_continue_btn_text_color">#ff2e3300</color>
     <color name="sfps_enroll_immobile_subtitle_text_color">#ffc8c7b7</color>
-    <color name="sfps_enroll_immobile_title_exclamation_color">#fff2b8b5</color>
     <color name="sfps_enroll_immobile_title_text_color">#ffe5e3d6</color>
 </resources>

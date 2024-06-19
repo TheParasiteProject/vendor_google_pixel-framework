@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">صفحه‌کلید لمسی</string>
+    <string name="accessibility_screen_magnifier_summary">برای بزرگ کردن جزئیات اطراف از دوربین استفاده می‌شود</string>
+    <string name="accessibility_screen_magnifier_title">ذره‌بین</string>
     <string name="adaptive_alert_vibration_summary">وقتی تلفنتان بدون حرکت و صفحه‌نمایش آن روبه بالا باشد، لرزش را کاهش می‌دهد</string>
     <string name="adaptive_alert_vibration_title">لرزش هشدار تطبیقی</string>
     <string name="adaptive_battery_switch_des">برای افزایش عمر باتری، «باتری تطبیقی» می‌تواند عملکرد و فعالیت پس‌زمینه را کاهش دهد. ممکن است بعضی‌از اعلان‌ها تأخیر داشته باشد.</string>
@@ -12,6 +14,8 @@
     <string name="adaptive_charging_main_switch_title">استفاده از «شارژ تطبیقی»</string>
     <string name="adaptive_charging_time_estimate"><b>شارژ تطبیقی</b> • تا %1$s کامل می‌شود</string>
     <string name="adaptive_charging_title">شارژ تطبیقی</string>
+    <string name="adaptive_touch_sensitivity_summary">حساسیت لمس به‌طور خودکار با محیط، فعالیت‌ها، و محافظ صفحه تنظیم می‌شود</string>
+    <string name="adaptive_touch_sensitivity_title">لمس تطبیقی</string>
     <string name="add_bypassed_application_hint">برنامه‌ای اضافه نشده است</string>
     <string name="advanced_vpn_preference_group_title">داخلی</string>
     <string name="all_apps_category_title">همه برنامه‌ها</string>
@@ -23,6 +27,16 @@
 
 با لغو کردن این دسترسی، برنامه برای جمع‌آوری و بارگذاری گزارش اشکال مربوط به هر گزارش مشکل باید از شما اجازه بخواهد."</string>
     <string name="app_and_notification_dashboard_summary">دستیار، برنامه‌های اخیر، برنامه‌های پیش‌فرض</string>
+    <string name="audio_sharing_switch_title">هم‌رسانی صدا</string>
+    <string name="audio_sharing_title">اشتراک صدا</string>
+    <string name="audio_streams_category_title">اتصال به جاری‌سازی صوتی کم‌مصرف</string>
+    <string name="audio_streams_connect">اتصال</string>
+    <string name="audio_streams_disconnect">قطع اتصال</string>
+    <string name="audio_streams_pref_title">جاری‌سازی‌های صوتی اطراف</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">قالب رمزینه پاسخ‌سریع نامعتبر است</string>
+    <string name="audio_streams_qr_code_scanner">برای گوش دادن، رمزینه پاسخ‌سریع زیر را در مرکز کادر قرار دهید</string>
+    <string name="audio_streams_qr_code_summary">اتصال به جاری‌سازی صوتی با رمزینه پاسخ‌سریع</string>
+    <string name="audio_streams_title">جاری‌سازی‌های صوتی</string>
     <string name="automatic_storage_manager_activation_warning">وقتی به اینترنت متصل باشید، همچنان می‌توانید به عکس‌ها و ویدیوها با کیفیتی که برای پشتیبان‌گیری انتخاب کرده‌اید دسترسی داشته باشید</string>
     <string name="automatic_storage_manager_days_title">حذف عکس‌ها و ویدیوهای پشتیبان‌گیری‌شده</string>
     <string name="automatic_storage_manager_deactivation_warning">"«ذخیره‌سازی هوشمند» خاموش شود؟ 
@@ -49,8 +63,20 @@
     <string name="battery_tip_battery_health_learn_more_description">درباره سلامت باتری بیشتر بدانید</string>
     <string name="battery_tip_battery_health_reduced_title">ظرفیت باتری کاهش یافته است</string>
     <string name="battery_tip_battery_health_unknown_title">نمی‌توان سلامت باتری را تشخیص داد</string>
+    <string name="battery_tip_dock_defender_active_summary">برای کمک به افزایش طول عمر باتری، وقتی رایانه لوحی به پایه متصل است، شارژ روی ۹۰٪ موقتاً متوقف می‌شود</string>
+    <string name="battery_tip_dock_defender_active_title">برای محافظت از باتری، شارژ موقتاً متوقف شده است</string>
+    <string name="battery_tip_dock_defender_button_learn_more">بیشتر بدانید</string>
+    <string name="battery_tip_dock_defender_button_override">ملغی کردن</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">برای کمک به افزایش طول عمر باتری، وقتی رایانه لوحی به پایه متصل است، شارژ روی ۹۰٪ متوقف خواهد شد</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">درحال شارژ تا ۹۰٪</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">دفعه بعدی که رایانه لوحی به پایه متصل شود، شارژ برای محافظت از باتری روی ۹۰٪ متوقف خواهد شد</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">درحال شارژ تا حد کامل</string>
     <string name="battery_tip_limited_temporarily_extra_summary">برای محافظت از باتری، وقتی رایانه لوحی‌تان روی پایه باشد شارژ به‌طور موقت در %1$s متوقف می‌شود</string>
     <string name="battery_tip_smart_battery_summary">«باتری تطبیقی» را روشن کنید</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">درباره شارژ بی‌سیم بیشتر بدانید</string>
+    <string name="battery_tip_wireless_charging_summary">شارژ بی‌سیم تلفن ممکن است در مقایسه با روش‌های دیگر شارژ کردن از برق بیشتری استفاده کند</string>
+    <string name="battery_tip_wireless_charging_title">درحال شارژ شدن به‌صورت بی‌سیم</string>
+    <string name="calls_and_alarms_device_title">تماس‌ها و زنگ‌های هشدار</string>
     <string name="clear_calling_footer">"‏برای محافظت از حریم خصوصی‌تان، «تماس واضح» صداها یا مکالمه‌ها را به Google ارسال نمی‌کند.
 
 «تماس واضح» در «تماس ازطریق Wi-Fi» و اکثر شبکه‌ها کار می‌کند، اما در شبکه‌های 3G دردسترس نیست."</string>
@@ -119,14 +145,17 @@
     <string name="content_capture">شخصی‌سازی با استفاده از داده‌های برنامه</string>
     <string name="content_protection_preference_subpage_info">"‏این یک ویژگی امنیتی محافظت‌شده است. هیچ‌گونه اطلاعات دستگاه یا اطلاعات شخصی با Google هم‌رسانی نمی‌شود. 
 
-رمزگیری تلاشی برای سرقت اطلاعات اعتباری ورود به سیستم یا سایر اطلاعات شخصی است."</string>
+رمزگیری تلاشی برای سرقت اعتبارنامه ورود به سیستم یا سایر اطلاعات شخصی است."</string>
     <string name="content_protection_preference_subpage_summary">‏اسکن به‌صورت خصوصی روی دستگاهتان اجرا می‌شود و فعالیت برنامه‌ها را ازنظر رمزگیری یا سایر رفتارهای گمراه‌کننده بررسی می‌کند. درصورت شناسایی، برخی‌از اطلاعات برنامه برای تأیید تهدید و ارسال هشدار به کاربران برنامه به «سپر ایمنی Google Play» ارسال می‌شود.</string>
+    <string name="contextual_timeout_description">اگر از دستگاهتان استفاده نکنید، صفحه‌نمایش شما را به‌طور خودکار زودتر خاموش می‌کند</string>
+    <string name="contextual_timeout_title">درنگ تطبیقی</string>
     <string name="dark_ui_text">«زمینه تیره» از پس‌زمینه‌ای سیاه استفاده می‌کند تا شارژ باتری برای مدت طولانی‌تری حفظ شود. «زمینه تیره» تا زمانی که صفحه خاموش باشد، زمان انتظاری برای روشن شدن تنظیم می‌کند.</string>
     <string name="debugging_data_title">داده‌های عیب‌یابی</string>
     <string name="discover_tips_button">نکته‌های کاوش</string>
     <string name="dock_summary_charging_phone">درحال شارژ تلفن</string>
     <string name="double_twist_for_camera_mode_summary">‏برای رفتن به حالت سلفی و خارج شدن از آن در «دوربین Google»، وقتی در برنامه هستید دستگاه را دو بار بچرخانید.</string>
     <string name="duration_less_than_one_minute">کمتر از ۱ دقیقه</string>
+    <string name="enable_glanceable_hub_toggle">حالت متصل</string>
     <string name="extreme_battery_saver_summary">شامل همه تغییرات فهرست‌شده در بالا می‌شود. همچنین برنامه‌های غیرضروری و اعلان‌هایشان را موقتاً متوقف می‌کند.</string>
     <string name="extreme_battery_saver_title">نهایت بهینه‌سازی باتری</string>
     <string name="face_confirmation_hide_illustration_description">اکنون می‌توانید هنگام بلند کردن تلفن یا ضربه زدن روی صفحه‌نمایش، با چهره‌تان قفل تلفن را باز کنید.</string>
@@ -164,7 +193,6 @@
     <string name="firmware_update_status_category">وضعیت سفت‌افزار دستگاه</string>
     <string name="firmware_update_status_title">به‌روزرسانی سفت‌افزار موجود است</string>
     <string name="firmware_update_version_number_category">نسخه سفت‌افزار دستگاه</string>
-    <string name="firmware_update_version_number_title">‏سفت‌افزار صفحه‌کلید Pixel</string>
     <string name="fullbackup_data_summary">"‏پشتیبان‌گیری خودکار از داده‌های دستگاه (مانند گذرواژه‌های Wi-Fi و سابقه تماس) و داده‌های برنامه (مثل تنظیمات و فایل‌های ذخیره‌شده توسط برنامه‌ها) در Google Drive.‏
 
 وقتی پشتیبان‌گیری خودکار را روشن می‌کنید، داده‌های دستگاه و برنامه به‌صورت دوره‌ای در یک پوشه خصوصی در Google Drive ذخیره می‌‌شود. داده‌های برنامه می‌تواند هر داده‌ای باشد که برنامه (براساس تنظیمات تولیدکننده) ذخیره کرده است، از جمله داده‌های بالقوه حساس مانند مخاطبین، پیام‌ها و عکس‌ها.
@@ -172,17 +200,20 @@
 داده‌های پشتیبان‌گیری شده در سهمیه فضای ذخیره‌سازی Drive شما حساب نمی‌شوند. فایل‌های بزرگ یا فایل‌هایی که بنابر انتخاب تولیدکننده در سرویس وارد نمی‌شوند، پشتیبان‌گیری نمی‌شوند."</string>
     <string name="fullbackup_erase_dialog_message">‏پشتیبان‌گیری از داده‌های دستگاه (مانند گذرواژه‌های Wi-Fi و سابقه تماس) و داده‌های برنامه (مثل تنظیمات و فایل‌های ذخیره‌شده توسط برنامه‌ها) متوقف شود و همچنین همه رونوشت‌ها در Google Drive پاک شوند؟</string>
     <string name="gesture_settings_activity_title">پیمایش اشاره‌ای</string>
+    <string name="hub_mode_content_setting">مجاز کردن همه ابزارک‌ها در حالت متصل</string>
     <string name="install_unknown_applications">‏اجازه نصب برنامه‌ها از منابعی غیراز «فروشگاه Play»</string>
     <string name="keywords_accessibility_menu">حرکتی، منوِ سریع، منوِ یاری‌رسان، لمس، دست‌ورزی، ورم مفاصل، آرآس‌آی، سکته، رعشه، اسکلروز چندگانه، فلج مغزی، دکمه، سخت‌افزار، فشردن، آسیب فشار تکراری، دست، درد، مخصوص معلولین، کمک</string>
     <string name="keywords_adaptive_alert_vibration">لمسی، لرزش، تلفن، تماس، زنگ، هشدار، اعلان، بلند، بی‌صدا، سروصدا، قاب، تطبیقی</string>
     <string name="keywords_adaptive_charging">شارژ، شارژ کردن، شارژ هوشمند، شارژ تطبیقی، باتری، سلامت باتری</string>
     <string name="keywords_battery_share">اشتراک باتری، شارژ بی‌سیم</string>
     <string name="keywords_battery_share_settings">اشتراک باتری، شارژ بی‌سیم معکوس</string>
+    <string name="keywords_contextual_screen_timeout">صفحه‌نمایش، درنگ، تطبیقی، بافتی</string>
     <string name="keywords_gesture">اشاره، حرکت‌ها</string>
     <string name="keywords_hearing_devices">کم‌شنوا، ازدست دادن شنوایی، پاسخگوی ایمنی عمومی</string>
     <string name="keywords_limited_warranty">ضمانت‌نامه، گارانتی، ضمانت‌نامه محدود، تعهد، تعمیر، مجوز پس دادن کالا، تعویض</string>
     <string name="keywords_live_caption">‏زیرنویس، زیرنویس ناشنوایان، CC، ترانویسی هم‌زمان، کم‌شنوا، ازدست دادن شنوایی، ترجمه هم‌زمان، گفتار به نوشتار، زیرنوشت</string>
     <string name="keywords_live_transcribe">‏زیرنویس، زیرنویس ناشنوایان، CC، زیرنویس ناشنوایان زنده، کم‌شنوا، ازدست دادن شنوایی، CART، گفتار به نوشتار، زیرنویس</string>
+    <string name="keywords_magnifier">بزرگ‌نمایی، درشت‌نمایی، کم‌بینا، بزرگ کردن، بزرگ‌تر کردن</string>
     <string name="keywords_reverse_charging_stop_threshold">توقف اشتراک‌گذاری باتری وقتی شارژ باتری تلفن به این میزان می‌رسد:</string>
     <string name="keywords_select_to_speak">شنیدن نوشتار، بلند خواندن، خواندن صفحه‌نمایش، صفحه‌خوان</string>
     <string name="keywords_sound_amplifier">‏PSAP، تقویت کردن، ‏تقویت کردن صدا، کم‌شنوا، ازدست دادن شنوایی، تقویت</string>
@@ -190,6 +221,7 @@
     <string name="keywords_switch_access">‏حرکت، کلید، دست، AT، فناوری یاری‌رسان، فلج، ALS، اسکن کردن، اسکن مرحله‌ای</string>
     <string name="keywords_talkback">‏صفحه‌خوان، صدا گذاری، صداگذاری، دستیار صوتی، نابینا، کم‌بینا، TTS، نوشتار به گفتار، بازخورد گفتاری</string>
     <string name="keywords_touch_sensitivity">لمسی، حساسیت، حساس، محافظ صفحه‌نمایش،پوشش محافظ، پاسخگو، پاسخ‌گویی</string>
+    <string name="keywords_touch_sensitivity_settings">لمسی، تطبیقی، حساسیت، حساس، محافظ صفحه‌نمایش، پوشش محافظ، پاسخگو، پاسخ‌گویی</string>
     <string name="keywords_voice_access">گفتار، دستورات صوتی، حرکت، دست، میکروفون، میکروفون، تایپ صوتی، صحبت، کنترل</string>
     <string name="led_preference_title">‏الگوهای نشانگر LED</string>
     <string name="legal_source_code_description">‏جزئیات مربوط به کد منبع عناصری که به‌عنوان متن‌باز دردسترس قرار گرفته‌اند در مرکز راهنمایی Pixel موجود است.</string>
@@ -203,7 +235,7 @@
     <string name="permit_debugging_data">مجاز کردن دسترسی به گزارش اشکال</string>
     <string name="play_application_detail_indication_summary">به‌روزرسانی‌ها را بررسی کنید</string>
     <string name="play_application_update_entry_title">به‌روزرسانی‌های برنامه</string>
-    <string name="privatespace_retry_summary">‏برای راه‌اندازی «فضای خصوصی»، باید با «حساب Google» به سیستم وارد شوید</string>
+    <string name="private_space_retry_summary">‏به سیستم «حساب Google» مدنظرتان برای استفاده با فضای خصوصی وارد شوید</string>
     <string name="remove">برداشتن</string>
     <string name="repair_mode_active_summary">در حالت تعمیر</string>
     <string name="repair_mode_summary">محیط امن برای تعمیر دستگاه</string>
@@ -252,9 +284,15 @@
     <string name="security_settings_face_enroll_error_timeout_dialog_message">مهلت ثبت چهره به پایان رسید. دوباره امتحان کنید.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">مهلت راه‌اندازی «قفل‌گشایی با چهره» تمام شد</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">اکنون می‌توانید از چهره‌تان برای باز کردن قفل تلفن یا به‌تأیید رساندن هویتتان (مثلاً هنگام ورود به سیستم برنامه‌ها یا تأیید خریدها) استفاده کنید</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp_full">"اکنون می‌توانید از چهره‌تان برای باز کردن قفل تلفن یا تأیید هویت خود مثلاً وقتی به سیستم برنامه‌ها وارد می‌شوید یا برای تأیید خریدها استفاده کنید.
+
+«قفل‌گشایی با چهره» در نور کافی و هنگامی که ماسک یا عینک تیره نداشته باشید بهترین عملکرد را خواهد داشت."</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"اکنون وقتی تلفنتان را برمی‌دارید یا روی صفحه‌نمایش آن ضربه می‌زنید، می‌توانید از چهره‌تان برای باز کردن قفل آن استفاده کنید.
 
 «قفل‌گشایی با چهره» زمانی بهترین عملکرد را دارد که نور کافی وجود داشته باشد و از ماسک یا عینک‌های تیره استفاده نکنید."</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp_folded">"اکنون می‌توانید هنگام بلند کردن تلفن یا ضربه زدن روی صفحه‌نمایش، با چهره‌تان قفل تلفن را باز کنید. برای استفاده از «قفل‌گشایی با چهره» باید تلفن را تا کنید.
+
+«قفل‌گشایی با چهره» در نور کافی و هنگامی که ماسک یا عینک تیره نداشته باشید بهترین عملکرد را خواهد داشت."</string>
     <string name="security_settings_face_enroll_finish_title">خوب به نظر می‌رسد!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">راه‌اندازی برای افراد با دید/حرکت سر محدود</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">به چشمان باز نیاز دارد</string>
@@ -280,6 +318,7 @@
     <string name="security_settings_face_enroll_too_hot_skip_face_unlock">رد شدن از «قفل‌گشایی با چهره»</string>
     <string name="security_settings_face_enroll_too_hot_title">تلفن خیلی داغ است</string>
     <string name="security_settings_face_preference_summary_none">برای راه‌اندازی چهره، ضربه بزنید</string>
+    <string name="security_settings_fingerprint_enroll_find_sensor_message">در پشت تلفن قرار دارد. از انگشت اشاره استفاده کنید.</string>
     <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"‏با Nexus Imprint می‌توانید از اثر انگشتتان برای اجازه دادن به خریدها یا ورود به سیستم برنامه‌ها استفاده می‌کند.
 
 مراقب باشید اثر انگشت چه کسی را اضافه می‌کنید. هر اثر انگشت اضافه‌شده می‌تواند این کارها را انجام دهد.
@@ -294,6 +333,8 @@
     <string name="security_settings_work_fingerprint_preference_title">‏Pixel Imprint برای نمایه کاری</string>
     <string name="setup_suggestion_summary">تنها چند مرحله دیگر باقی مانده</string>
     <string name="setup_suggestion_title">اتمام راه‌اندازی</string>
+    <string name="smart_battery_a11y_collapse_label">جمع کردن، باتری تطبیقی</string>
+    <string name="smart_battery_a11y_expand_label">ازهم بازکردن، باتری تطبیقی</string>
     <string name="smart_battery_footer">برای افزایش عمر باتری، «باتری تطبیقی» می‌تواند عملکرد و فعالیت پس‌زمینه را کاهش دهد. ممکن است بعضی از اعلان‌ها تأخیر داشته باشد.</string>
     <string name="smart_battery_manager_title">اولویت‌های تطبیقی</string>
     <string name="smart_battery_title">باتری تطبیقی</string>
@@ -310,6 +351,8 @@
     <string name="software_update_up_to_specific_date_summary">‫%1$s به‌روز شد</string>
     <string name="software_update_update_available_summary">به‌روزرسانی دردسترس است</string>
     <string name="sound_dashboard_summary">صدا، لمسی، «مزاحم نشوید»</string>
+    <string name="spatial_audio_head_tracking_available">ردیابی سر دردسترس است</string>
+    <string name="spatial_audio_head_tracking_unavailable">ردیابی سر دردسترس نیست</string>
     <string name="speed_boost_summary_off">خاموش</string>
     <string name="speed_boost_summary_on">روشن</string>
     <string name="speed_boost_title">تقویت سرعت طیف</string>
@@ -321,6 +364,9 @@
     <string name="suw_warranty_positive_button_text">بستن</string>
     <string name="system_update_entry_title">به‌روزرسانی سیستم</string>
     <string name="system_updates_group_title">‏به‌روزرسانی‌های Pixel</string>
+    <string name="touch_category_title">لمس</string>
+    <string name="touch_sensitivity_settings_summary">می‌توانید حساسیت صفحه لمسی را تنظیم کنید</string>
+    <string name="touch_sensitivity_settings_title">حساسیت لمس</string>
     <string name="touch_sensitivity_summary">افزایش حساسیت لمس و بهبود لمس هنگام استفاده از محافظ صفحه‌نمایش</string>
     <string name="touch_sensitivity_title">حالت محافظ صفحه‌نمایش</string>
     <string name="traffic_light_face_enrolling_title_accessibility">تلفن را جلوی صورتتان نگه دارید</string>
@@ -346,7 +392,7 @@
     <string name="vpn_exclude_ntf_content">‏برنامه‌های شرکت مخابراتی جدیداً نصب‌شده‌ای دارید که ممکن است با VPN سازگار نباشند</string>
     <string name="vpn_exclude_ntf_title">‏برنامه‌های جدید از VPN مستثنی شود؟</string>
     <string name="vpn_preference_group_title">موارد دیگر</string>
-    <string name="wallpaper_dashboard_summary">رنگ‌ها، نمادهای دارای زمینه، شبکه برنامه‌ها</string>
+    <string name="wallpaper_dashboard_summary">رنگ‌ها، نمادهای موضوعی، شبکه برنامه‌ها</string>
     <string name="warranty_country_information">%1$s (%2$s)</string>
     <string name="wifi_subscription_summary">‏مشاهده یا تغییر اشتراک OpenRoaming</string>
     <string name="wifitrackerlib_connected_with_wsu_authenticator">با %1$s متصل شد</string>

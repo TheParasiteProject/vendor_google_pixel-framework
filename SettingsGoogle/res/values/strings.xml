@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">Keyboard haptics</string>
+    <string name="accessibility_screen_magnifier_summary">Use your camera to enlarge details around you</string>
+    <string name="accessibility_screen_magnifier_title">Magnifier</string>
     <string name="account_confirmation_class">com.google.android.gms.auth.uiflows.factoryreset.PreFactoryResetActivity</string>
     <string name="account_confirmation_package">com.google.android.gms</string>
     <string name="account_type">com.google</string>
@@ -15,6 +17,8 @@
     <string name="adaptive_charging_main_switch_title">Use Adaptive Charging</string>
     <string name="adaptive_charging_time_estimate"><b>Adaptive Charging</b> • Full by %1$s</string>
     <string name="adaptive_charging_title">Adaptive Charging</string>
+    <string name="adaptive_touch_sensitivity_summary">Touch sensitivity will automatically adjust to your environment, activities and screen protector</string>
+    <string name="adaptive_touch_sensitivity_title">Adaptive touch</string>
     <string name="add_bypassed_application_hint">No apps added</string>
     <string name="advanced_vpn_preference_group_title">Built-in</string>
     <string name="all_apps_category_title">All apps</string>
@@ -26,6 +30,16 @@ Granting access will allow this app to "<b>automatically collect and upload bug 
 
 Revoking access will require the app to request your permission to collect and upload a bug report for each individual issue report."</string>
     <string name="app_and_notification_dashboard_summary">Assistant, recent apps, default apps</string>
+    <string name="audio_sharing_switch_title">Share audio</string>
+    <string name="audio_sharing_title">Audio sharing</string>
+    <string name="audio_streams_category_title">Connect to a LE audio stream</string>
+    <string name="audio_streams_connect">Connect</string>
+    <string name="audio_streams_disconnect">Disconnect</string>
+    <string name="audio_streams_pref_title">Nearby audio streams</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">"QR code isn't a valid format"</string>
+    <string name="audio_streams_qr_code_scanner">To start listening, center the QR code below</string>
+    <string name="audio_streams_qr_code_summary">Connect to an audio stream using QR code</string>
+    <string name="audio_streams_title">Audio streams</string>
     <string name="automatic_storage_manager_activation_warning">"When you're connected, you can still access photos and videos at the quality you selected for backup"</string>
     <string name="automatic_storage_manager_days_title">Remove backed up photos &amp; videos</string>
     <string name="automatic_storage_manager_deactivation_warning">"Turn off Smart Storage? 
@@ -52,8 +66,20 @@ Smart Storage won't free up space when your storage is almost full."</string>
     <string name="battery_tip_battery_health_learn_more_description">Learn more about battery health</string>
     <string name="battery_tip_battery_health_reduced_title">Battery capacity is reduced</string>
     <string name="battery_tip_battery_health_unknown_title">Can’t detect battery health</string>
+    <string name="battery_tip_dock_defender_active_summary">To help extend battery lifespan, charging is on hold at 90% while your tablet is docked</string>
+    <string name="battery_tip_dock_defender_active_title">Charging on hold to protect battery</string>
+    <string name="battery_tip_dock_defender_button_learn_more">Learn more</string>
+    <string name="battery_tip_dock_defender_button_override">Override</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">To help extend battery lifespan, charging will be put on hold at 90% while your tablet was docked</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">Charging to 90%</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">The next time your tablet is docked, charging will be put on hold at 90% to protect the battery</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">Charging to full</string>
     <string name="battery_tip_limited_temporarily_extra_summary">To protect your battery, charging is paused at %1$s while your tablet is docked</string>
     <string name="battery_tip_smart_battery_summary">Turn on Adaptive Battery</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">Learn more about wireless charging</string>
+    <string name="battery_tip_wireless_charging_summary">Charging your phone wirelessly may use more energy than other charging methods</string>
+    <string name="battery_tip_wireless_charging_title">Wirelessly charging</string>
+    <string name="calls_and_alarms_device_title">Calls and alarms</string>
     <string name="clear_calling_footer">"To protect your privacy, Clear Calling does not send audio or conversations to Google.
 
 Clear Calling works on Wi‑Fi calling and most networks, not available for 3G networks."</string>
@@ -125,6 +151,7 @@ Clear Calling works on Wi‑Fi calling and most networks, not available for 3G n
     <string name="config_account_intent_uri">intent:#Intent;action=com.android.settings.action.VIEW_ACCOUNT;category=android.intent.category.DEFAULT;launchFlags=0x8000;S.extra.callingPackageName=com.android.settings;end</string>
     <string name="config_alternative_advanced_security_category_key">com.google.android.settings.category.ia.advanced_security</string>
     <string name="config_app_locale_intent_action">com.google.android.apps.pixel.globalintl.localenotification.action.APP_NOTIFICATION</string>
+    <string name="config_avatar_picker_package">com.google.android.avatarpicker</string>
     <string name="config_battery_prediction_authority">com.google.android.apps.turbo.bluetooth.estimated_time_remaining</string>
     <string name="config_bluetooth_device_settings_uri">content://com.google.android.apps.wearables.maestro.companion/settings_slice?addr=%1$s</string>
     <string name="config_bt_slice_extra_intent">com.google.android.gms.nearby.discovery.EXTRA_INTENT</string>
@@ -160,6 +187,8 @@ Clear Calling works on Wi‑Fi calling and most networks, not available for 3G n
 
 Phishing is an attempt to steal sign-in credentials or other personal info."</string>
     <string name="content_protection_preference_subpage_summary">Scanning runs privately right on your device, checking app activity for phishing or other deceptive behavior. If it’s detected, some app info is sent to Google Play Protect to confirm the threat and warn app users.</string>
+    <string name="contextual_timeout_description">Automatically turns off your screen early if you’re not using your device</string>
+    <string name="contextual_timeout_title">Adaptive timeout</string>
     <string name="dark_ui_text">Dark theme uses a black background to help keep your battery alive longer. Dark theme schedules wait to turn on until your screen is off.</string>
     <string name="debugging_data_title">Debugging data</string>
     <string name="discover_tips_button">Discover tips</string>
@@ -172,6 +201,7 @@ Phishing is an attempt to steal sign-in credentials or other personal info."</st
     <string name="dream_secondary_button_title"/>
     <string name="duration_less_than_one_minute">Less than 1 minute</string>
     <string name="emergency_gesture_settings_package">com.google.android.apps.safetyhub</string>
+    <string name="enable_glanceable_hub_toggle">Hub mode</string>
     <string name="extreme_battery_saver_summary">Includes all changes listed above. Also pauses non-essential apps and their notifications.</string>
     <string name="extreme_battery_saver_title">Extreme Battery Saver</string>
     <string name="face_confirmation_hide_illustration_description">Now when you pick up your phone or tap the screen, you can use your face to unlock.</string>
@@ -218,7 +248,6 @@ If you volunteer to participate, data collected from unlock attempts (e.g. facia
     <string name="firmware_update_status_category">Device firmware status</string>
     <string name="firmware_update_status_title">Firmware update available</string>
     <string name="firmware_update_version_number_category">Device firmware version</string>
-    <string name="firmware_update_version_number_title">Pixel keyboard firmware</string>
     <string name="fullbackup_data_summary">"Automatically back up device data (such as Wi-Fi passwords and call history) and app data (such as settings and files stored by apps) to Google Drive.
 
 When you turn on automatic backup, device and app data is periodically saved to a private folder in Google Drive. App data can be any data that an app has saved (based on developer settings), including potentially sensitive data such as contacts, messages, and photos.
@@ -327,16 +356,19 @@ Backup data will not count towards your Drive storage quota. Large files, or fil
     <string name="help_url_vpn" formatted="false">intent:#Intent;action=com.google.android.gms.googlehelp.LAUNCH;S.EXTRA_CONTEXT=android_vpn;S.EXTRA_BACKUP_URI=https%3A%2F%2Fsupport.google.com%2Fmobile%2F%3Fp%3Dsettings_vpn;end</string>
     <string name="help_url_wifi" formatted="false">intent:#Intent;action=com.google.android.gms.googlehelp.LAUNCH;S.EXTRA_CONTEXT=android_wi_fi;S.EXTRA_BACKUP_URI=https%3A%2F%2Fsupport.google.com%2Fmobile%2F%3Fp%3Dsettings_wifi;end</string>
     <string name="help_url_wifi_p2p" formatted="false">intent:#Intent;action=com.google.android.gms.googlehelp.LAUNCH;S.EXTRA_CONTEXT=android_wi_fi_p2p;S.EXTRA_BACKUP_URI=https%3A%2F%2Fsupport.google.com%2Fmobile%2F%3Fp%3Dsettings_wifi_p2p;end</string>
+    <string name="hub_mode_content_setting">Allow any widget in hub mode</string>
     <string name="install_unknown_applications">Allow installation of apps from sources other than the Play Store</string>
     <string name="keywords_accessibility_menu">motor, quick menu, assistive menu, touch, dexterity, arthritis, rsi, stroke, tremor, multiple sclerosis, cerebral palsy, button, hardware, press, repetitive strain injury, hand, pain, accessible, help</string>
     <string name="keywords_adaptive_alert_vibration">haptics, vibrate, phone, call, ring, alert, notifications, loud, quiet, noise, case, adaptive</string>
     <string name="keywords_adaptive_charging">charge, charging, smart charging, adaptive charging, battery, battery health</string>
     <string name="keywords_battery_share">battery share, wireless charging</string>
     <string name="keywords_battery_share_settings">battery share, reverse wireless charging</string>
+    <string name="keywords_contextual_screen_timeout">screen, timeout, adaptive, contextual</string>
     <string name="keywords_gesture">gesture, moves</string>
     <string name="keywords_hearing_devices">hard of hearing, hearing loss, PSAP</string>
     <string name="keywords_limited_warranty">warranty, guarantee, limited warranty, promise, repair, rma, replacement</string>
     <string name="keywords_live_transcribe">Captions, closed captions, CC, Live Caption, hard of hearing, hearing loss, CART, speech to text, subtitle</string>
+    <string name="keywords_magnifier">Zoom, Magnification, Low vision, Enlarge, make bigger</string>
     <string name="keywords_reverse_charging_stop_threshold">Stop sharing battery when phone reaches:</string>
     <string name="keywords_select_to_speak">Hear text, read aloud, speak screen, screen reader</string>
     <string name="keywords_sound_amplifier">PSAP, amplify, sound amplification, hard of hearing, hearing loss, amplification</string>
@@ -344,6 +376,7 @@ Backup data will not count towards your Drive storage quota. Large files, or fil
     <string name="keywords_switch_access">motor, switch, hand, AT, assistive technology, paralysis, ALS, scanning, step scanning</string>
     <string name="keywords_talkback">Screen reader, Voice Over, VoiceOver, Voice Assistance, Blind, Low Vision, TTS, text to speech, spoken feedback</string>
     <string name="keywords_touch_sensitivity">touch, sensitivity, sensitive, screen protector, film, responsive, responsiveness</string>
+    <string name="keywords_touch_sensitivity_settings">touch, adaptive, sensitivity, sensitive, screen protector, film, responsive, responsiveness</string>
     <string name="keywords_voice_access">voice, voice control, motor, hand, mic, microphone, dictation, talk, control</string>
     <string name="led_preference_title">LED indicator patterns</string>
     <string name="legal_source_code_description">Details about the source code for components made available as open source can be found at the Pixel help center.</string>
@@ -352,17 +385,19 @@ Backup data will not count towards your Drive storage quota. Large files, or fil
     <string name="limited_warranty_title">Limited Warranty</string>
     <string name="lockscreen_show_weather_summary">See current weather conditions</string>
     <string name="lockscreen_show_weather_title">Show weather</string>
+    <string name="more_info_satellite_messaging_link">https://www.t-mobile.com/satellitecoverage</string>
     <string name="my_device_info_account_preference_title">Google Account</string>
     <string name="oem_preferred_feedback_reporter">com.google.android.gms</string>
     <string name="owner_info_settings_edit_text_hint">E.g., Joe’s Pixel.</string>
     <string name="permit_debugging_data">Allow bug report access</string>
     <string name="play_application_detail_indication_summary">Check for updates</string>
     <string name="play_application_update_entry_title">App updates</string>
-    <string name="privatespace_retry_summary">You need to sign in to a Google Account to set up Private Space</string>
+    <string name="private_space_retry_summary">Sign in to a Google Account to use with your private space</string>
     <string name="repair_mode_active_summary">In repair mode</string>
     <string name="repair_mode_summary">Secure environment for device repair</string>
     <string name="repair_mode_title">Repair mode</string>
     <string name="request_google_account_summary">Add a Google account</string>
+    <string name="reset_telephony_stack_content_provider_authority">com.google.android.telephony</string>
     <string name="reverse_charging_auto_turn_on_subtitle">Will turn on automatically for a short period when your phone is plugged into a charger</string>
     <string name="reverse_charging_auto_turn_on_title">Turn on automatically</string>
     <string name="reverse_charging_charging_wirelessly_message">Unavailable because phone charging wirelessly</string>
@@ -454,14 +489,21 @@ Note: You can’t use your fingerprint to unlock this device. For more informati
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Learn more about Pixel fingerprint unlock at &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_sfps_enroll_finger_center_title_immobile_overlay"/>
     <string name="security_settings_sfps_enroll_fingertip_title_immobile_overlay"/>
+    <string name="security_settings_sfps_enroll_finish_rest_to_unlock_desc"/>
+    <string name="security_settings_sfps_enroll_finish_rest_to_unlock_title"/>
     <string name="security_settings_sfps_enroll_left_edge_title_immobile_overlay"/>
     <string name="security_settings_sfps_enroll_right_edge_title_immobile_overlay"/>
+    <string name="security_settings_sfps_settings_rest_to_unlock_summary"/>
+    <string name="security_settings_sfps_settings_rest_to_unlock_title"/>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint for work</string>
+    <string name="settingslib_config_headlineFontFamily">google-sans</string>
     <string name="setup_fingerprint_enroll_immobile_help_continue"/>
     <string name="setup_fingerprint_enroll_immobile_help_subtitle"/>
     <string name="setup_fingerprint_enroll_immobile_help_title"/>
     <string name="setup_suggestion_summary">Just a few more steps</string>
     <string name="setup_suggestion_title">Finish setting up</string>
+    <string name="smart_battery_a11y_collapse_label">Collapse, Adaptive Battery</string>
+    <string name="smart_battery_a11y_expand_label">Expand, Adaptive Battery</string>
     <string name="smart_battery_footer">To extend battery life, Adaptive Battery may reduce performance and background activity. Some notifications may be delayed.</string>
     <string name="smart_battery_manager_title">Adaptive preferences</string>
     <string name="smart_battery_title">Adaptive Battery</string>
@@ -478,6 +520,8 @@ Note: You can’t use your fingerprint to unlock this device. For more informati
     <string name="software_update_up_to_specific_date_summary">Updated to %1$s</string>
     <string name="software_update_update_available_summary">Update available</string>
     <string name="sound_dashboard_summary">Volume, haptics, Do Not Disturb</string>
+    <string name="spatial_audio_head_tracking_available">Head tracking is available</string>
+    <string name="spatial_audio_head_tracking_unavailable">Head tracking is not available</string>
     <string name="spatial_audio_title">Spatial audio</string>
     <string name="speed_boost_summary_off">Off</string>
     <string name="speed_boost_summary_on">On</string>
@@ -490,6 +534,9 @@ Note: You can’t use your fingerprint to unlock this device. For more informati
     <string name="suw_warranty_positive_button_text">Close</string>
     <string name="system_update_entry_title">System update</string>
     <string name="system_updates_group_title">Pixel updates</string>
+    <string name="touch_category_title">Touch</string>
+    <string name="touch_sensitivity_settings_summary">Adjust touch screen sensitivity</string>
+    <string name="touch_sensitivity_settings_title">Touch sensitivity</string>
     <string name="touch_sensitivity_summary">Increase touch sensitivity and improve touch when using a screen protector</string>
     <string name="touch_sensitivity_title">Screen protector mode</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Hold phone in front of your face</string>

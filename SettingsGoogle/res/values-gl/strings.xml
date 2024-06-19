@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">Tecnoloxía háptica do teclado</string>
+    <string name="accessibility_screen_magnifier_summary">Usa a cámara para agrandar os detalles que tes ao redor</string>
+    <string name="accessibility_screen_magnifier_title">Lupa</string>
     <string name="adaptive_alert_vibration_summary">Reduce a intensidade da vibración cando o teléfono está estable e coa pantalla cara arriba</string>
     <string name="adaptive_alert_vibration_title">Vibración de alerta intelixente</string>
     <string name="adaptive_battery_switch_des">Para aumentar a duración da batería, a función Batería intelixente pode reducir o rendemento e a actividade en segundo plano. Pódense atrasar algunhas notificacións.</string>
@@ -12,6 +14,8 @@
     <string name="adaptive_charging_main_switch_title">Usar carga intelixente</string>
     <string name="adaptive_charging_time_estimate"><b>Carga intelixente</b> • Hora á que se completará: %1$s</string>
     <string name="adaptive_charging_title">Carga intelixente</string>
+    <string name="adaptive_touch_sensitivity_summary">A sensibilidade táctil axustarase de forma automática ao ambiente, actividades e protector de pantalla</string>
+    <string name="adaptive_touch_sensitivity_title">Toque intelixente</string>
     <string name="add_bypassed_application_hint">Non se engadiu ningunha aplicación</string>
     <string name="advanced_vpn_preference_group_title">Integrada</string>
     <string name="all_apps_category_title">Todas as aplicacións</string>
@@ -23,6 +27,16 @@ Ao conceder o acceso, esta aplicación poderá "<b>recompilar e cargar de forma 
 
 Se revogas o acceso, a aplicación terá que pedirche permiso para recompilar e cargar un informe de erros cada vez que informes dun fallo."</string>
     <string name="app_and_notification_dashboard_summary">Asistente, aplicacións recentes, aplicacións predeterminadas</string>
+    <string name="audio_sharing_switch_title">Compartir audio</string>
+    <string name="audio_sharing_title">Audio compartido</string>
+    <string name="audio_streams_category_title">Conectar a unha emisión de audio de baixo consumo</string>
+    <string name="audio_streams_connect">Conectar</string>
+    <string name="audio_streams_disconnect">Desconectar</string>
+    <string name="audio_streams_pref_title">Emisións de audio próximas</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">O formato do código QR non é válido</string>
+    <string name="audio_streams_qr_code_scanner">Para comezar a escoitar audio, encadra o seguinte código QR</string>
+    <string name="audio_streams_qr_code_summary">Conéctate a unha emisión de audio por medio dun código QR</string>
+    <string name="audio_streams_title">Emisións de audio</string>
     <string name="automatic_storage_manager_activation_warning">Cando te conectes, seguirás podendo acceder ás fotos e aos vídeos coa calidade que seleccionaches para a copia de seguranza</string>
     <string name="automatic_storage_manager_days_title">Quitar fotos/vídeos con copia de seguranza</string>
     <string name="automatic_storage_manager_deactivation_warning">"Queres desactivar o almacenamento intelixente? 
@@ -49,13 +63,25 @@ Esta función non liberará espazo cando o almacenamento estea case cheo."</stri
     <string name="battery_tip_battery_health_learn_more_description">Máis información sobre o estado da batería</string>
     <string name="battery_tip_battery_health_reduced_title">A batería ten unha capacidade reducida</string>
     <string name="battery_tip_battery_health_unknown_title">Non se puido detectar o estado da batería</string>
+    <string name="battery_tip_dock_defender_active_summary">Para axudar a aumentar a vida útil da batería, a carga ponse en pausa no 90 % mentres a tableta estea na base</string>
+    <string name="battery_tip_dock_defender_active_title">A carga púxose en pausa para protexer a batería</string>
+    <string name="battery_tip_dock_defender_button_learn_more">Máis información</string>
+    <string name="battery_tip_dock_defender_button_override">Ignorar</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">Para axudar a aumentar a vida útil da batería, a carga porase en pausa no 90 % mentres a tableta estea na base</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">Cargando ata o 90 %</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">A próxima vez que a tableta estea na base, a carga porase en pausa no 90 % para protexer a batería</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">Cargando ao máximo</string>
     <string name="battery_tip_limited_temporarily_extra_summary">Para protexer a batería, a carga ponse en pausa ao chegar ao %1$s cando a tableta está colocada na base</string>
     <string name="battery_tip_smart_battery_summary">Activa a batería intelixente</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">Máis información sobre a carga sen fíos</string>
+    <string name="battery_tip_wireless_charging_summary">Cargar o teléfono sen fíos pode consumir máis enerxía que outros métodos de carga</string>
+    <string name="battery_tip_wireless_charging_title">Carga sen fíos</string>
+    <string name="calls_and_alarms_device_title">Chamadas e alarmas</string>
     <string name="clear_calling_footer">"Para protexer a túa privacidade, coa función Chamadas nítidas non se lle envían a Google conversas nin audio.
 
 Chamadas nítidas é compatible coa función Chamadas por wifi e coa maioría das redes. Non está dispoñible para redes 3G."</string>
-    <string name="clear_calling_title">Chamadas de audio nítido</string>
-    <string name="clear_calling_toggle">Usar Chamadas de audio nítido</string>
+    <string name="clear_calling_title">Chamadas nítidas</string>
+    <string name="clear_calling_toggle">Usar Chamadas nítidas</string>
     <string name="clear_calling_topintro">Reduce o ruído de fondo durante as chamadas</string>
     <string name="columbus_gesture_detected">Detectouse o xesto Toque rápido.</string>
     <string name="columbus_gesture_enrollment_complete">Feito</string>
@@ -95,7 +121,7 @@ Chamadas nítidas é compatible coa función Chamadas por wifi e coa maioría da
     <string name="columbus_setting_action_overview_title">Ver aplicacións recentes</string>
     <string name="columbus_setting_action_play_pause_title">Reproducir ou pór en pausa contido multimedia</string>
     <string name="columbus_setting_action_screenshot_title">Facer captura de pantalla</string>
-    <string name="columbus_setting_actions_title">Tocar a parte traseira do teléfono dúas veces para</string>
+    <string name="columbus_setting_actions_title">Toca a parte traseira do teléfono dúas veces para</string>
     <string name="columbus_setting_additional_settings_title">Forza coa que debes realizar o xesto Toque rápido</string>
     <string name="columbus_setting_app_selection_help_text">Selecciona a aplicación que queres que se abra cando toques a parte traseira do teléfono dúas veces. Se desinstalas a aplicación, o xesto Toque rápido desactivarase ata que selecciones outra.</string>
     <string name="columbus_setting_app_shortcut_selection_help_text">Selecciona o que queres que pase cando abras esta aplicación co xesto Toque rápido.</string>
@@ -121,12 +147,15 @@ Chamadas nítidas é compatible coa función Chamadas por wifi e coa maioría da
 
 O phishing é unha práctica que consiste en tentar roubar credenciais de inicio de sesión ou outra información persoal."</string>
     <string name="content_protection_preference_subpage_summary">As análises execútanse de modo privado no teu dispositivo e nelas compróbase a actividade das aplicacións para detectar se hai phishing ou outros comportamentos enganosos. No caso de que se detecten, enviarase algunha información da aplicación en cuestión a Google Play Protect para confirmar a ameaza e avisar os usuarios.</string>
+    <string name="contextual_timeout_description">Desactiva automaticamente a pantalla de modo anticipado se non estás usando o dispositivo</string>
+    <string name="contextual_timeout_title">Tempo de espera intelixente</string>
     <string name="dark_ui_text">O tema escuro utiliza un fondo negro para axudar a que a batería dure máis. As planificacións deste tema actívanse cando a pantalla está desactivada.</string>
     <string name="debugging_data_title">Datos de depuración</string>
     <string name="discover_tips_button">Descubrir consellos</string>
     <string name="dock_summary_charging_phone">Cargando teléfono</string>
     <string name="double_twist_for_camera_mode_summary">Para activar e desactivar o modo autofoto na Cámara de Google, xira o dispositivo dúas veces cando esteas utilizando a aplicación.</string>
     <string name="duration_less_than_one_minute">Menos de 1 minuto</string>
+    <string name="enable_glanceable_hub_toggle">Modo Hub</string>
     <string name="extreme_battery_saver_summary">Inclúense todos os cambios indicados anteriormente. Tamén pon en pausa as aplicacións non esenciais e as súas notificacións.</string>
     <string name="extreme_battery_saver_title">Aforro de batería extremo</string>
     <string name="face_confirmation_hide_illustration_description">Agora, cando collas o teléfono ou toques a pantalla, podes usar o desbloqueo facial.</string>
@@ -164,7 +193,6 @@ O phishing é unha práctica que consiste en tentar roubar credenciais de inicio
     <string name="firmware_update_status_category">Estado do firmware do dispositivo</string>
     <string name="firmware_update_status_title">Hai dispoñible unha actualización do firmware</string>
     <string name="firmware_update_version_number_category">Versión do firmware do dispositivo</string>
-    <string name="firmware_update_version_number_title">Firmware do teclado de Pixel</string>
     <string name="fullbackup_data_summary">"Realiza unha copia de seguranza automática dos datos do teu dispositivo (como os contrasinais das redes wifi e o historial de chamadas) e dos datos das aplicacións (como a configuración e os ficheiros almacenados polas aplicacións) en Google Drive.
 
 Cando activas a copia de seguranza automática, os datos das aplicacións e do dispositivo gárdanse periodicamente nun cartafol privado en Google Drive. Os datos das aplicacións poden ser calquera tipo de datos que gardase unha aplicación, baseándose na configuración do programador, e incluíndo datos potencialmente sensibles, como os contactos, as mensaxes e as fotos.
@@ -172,17 +200,20 @@ Cando activas a copia de seguranza automática, os datos das aplicacións e do d
 Os datos da copia de seguranza non contarán na cota de almacenamento de Drive. Non se realizará unha copia de seguranza dos ficheiros grandes nin dos que decidiron excluír do servizo os programadores."</string>
     <string name="fullbackup_erase_dialog_message">Queres deixar de crear copias de seguranza dos datos do dispositivo (como os contrasinais das redes wifi e o historial de chamadas) e dos datos das aplicacións (como a configuración e os ficheiros almacenados polas aplicacións), e borrar todas as copias presentes en Google Drive?</string>
     <string name="gesture_settings_activity_title">Navegación con xestos</string>
+    <string name="hub_mode_content_setting">Permitir calquera widget no modo Hub</string>
     <string name="install_unknown_applications">Permitir a instalación de aplicacións de fontes distintas a Play Store</string>
     <string name="keywords_accessibility_menu">motricidade, menú rápido, menú asistencial, toque, destreza, artrite, LER, derramo, tremor, esclerose múltiple, parálise cerebral, botón, hardware, premer, lesión por esforzo repetitivo, man, dor, accesibilidade, axuda</string>
     <string name="keywords_adaptive_alert_vibration">tecnoloxía háptica, vibrar, teléfono, chamada, soar, alerta, notificacións, alto, silencioso, funda, intelixente</string>
     <string name="keywords_adaptive_charging">carga, cargar, carga intelixente, batería, estado da batería</string>
     <string name="keywords_battery_share">compartir batería, carga sen fíos</string>
     <string name="keywords_battery_share_settings">compartir batería, carga inversa sen fíos</string>
+    <string name="keywords_contextual_screen_timeout">pantalla, tempo de espera, intelixente, contextual</string>
     <string name="keywords_gesture">xestos, movementos</string>
     <string name="keywords_hearing_devices">problemas auditivos, perda de audición, amplificador de sons</string>
     <string name="keywords_limited_warranty">garantía, garantía limitada, promesa, reparación, autorización de devolución de mercadoría, substitución</string>
     <string name="keywords_live_caption">Subtítulos, subtitulado, Transcrición instantánea, problemas auditivos, perda de audición, subtitulado en tempo real, conversión de voz a texto, subtítulo</string>
     <string name="keywords_live_transcribe">Subtítulos, subtitulado, Subtítulos instantáneos, problemas auditivos, perda de audición, subtitulado en tempo real, CART, conversión de voz a texto, subtítulo</string>
+    <string name="keywords_magnifier">Zoom, ampliación, visión reducida, aumentar tamaño, agrandar</string>
     <string name="keywords_reverse_charging_stop_threshold">Deixar de compartir batería cando o teléfono chegue ao:</string>
     <string name="keywords_select_to_speak">Escoitar texto, lectura en voz alta, escoitar contido da pantalla, lector de pantalla</string>
     <string name="keywords_sound_amplifier">Amplificadores de son persoais, amplificar, amplificación do son, problemas auditivos, perda de audición, amplificación</string>
@@ -190,6 +221,7 @@ Os datos da copia de seguranza non contarán na cota de almacenamento de Drive. 
     <string name="keywords_switch_access">motor, cambiar, modo manual, tecnoloxía asistencial, parálise, ELA, exploración, exploración por pasos</string>
     <string name="keywords_talkback">Lector de pantalla, voz en off, asistencia por voz, persoas cegas, visión reducida, texto a voz, comentarios de voz</string>
     <string name="keywords_touch_sensitivity">tocar, sensibilidade, sensible, protector de pantalla, película, resposta, capacidade de resposta</string>
+    <string name="keywords_touch_sensitivity_settings">tocar, adaptable, sensibilidade, sensible, protector de pantalla, película, resposta, capacidade de resposta</string>
     <string name="keywords_voice_access">voz, control por voz, motor, modo manual, micrófono, ditado, fala, control</string>
     <string name="led_preference_title">Padróns do indicador LED</string>
     <string name="legal_source_code_description">Os detalles sobre o código fonte dos compoñentes dispoñible como código aberto poden consultarse no centro de axuda de Pixel.</string>
@@ -203,7 +235,7 @@ Os datos da copia de seguranza non contarán na cota de almacenamento de Drive. 
     <string name="permit_debugging_data">Permitir acceso aos informes de erros</string>
     <string name="play_application_detail_indication_summary">Busca actualizacións</string>
     <string name="play_application_update_entry_title">Actualizacións de aplicacións</string>
-    <string name="privatespace_retry_summary">Debes iniciar sesión nunha Conta de Google para configurar o espazo privado</string>
+    <string name="private_space_retry_summary">Inicia sesión nunha Conta de Google para usala co teu espazo privado</string>
     <string name="repair_mode_active_summary">En modo de reparación</string>
     <string name="repair_mode_summary">Contorno seguro para a reparación do dispositivo</string>
     <string name="repair_mode_title">Modo de reparación</string>
@@ -252,7 +284,13 @@ Voltea o teléfono para probar a función."</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">Acadouse o límite de tempo para o rexistro facial. Téntao de novo.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Tempo esgotado para configurar o desbloqueo facial</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Agora podes desbloquear o teléfono ou verificar a túa identidade co recoñecemento facial (por exemplo, cando queiras iniciar sesión nunha aplicación ou aprobar unha compra)</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp_full">"Agora podes utilizar a cara para desbloquear o teléfono ou verificar a túa identidade (por exemplo, cando queiras iniciar sesión nunha aplicación ou aprobar unha compra).
+
+O desbloqueo facial funciona mellor cando hai luz suficiente e non levas máscara nin lentes escuras."</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Agora, cando collas o teléfono ou toques a pantalla, podes usar o desbloqueo facial.
+
+O desbloqueo facial funciona mellor cando hai luz suficiente e non levas máscara nin lentes escuras."</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp_folded">"Agora, cando collas o teléfono ou toques a pantalla, poderás usar o desbloqueo facial. Para usar esta función, o teléfono ten que esta pregado.
 
 O desbloqueo facial funciona mellor cando hai luz suficiente e non levas máscara nin lentes escuras."</string>
     <string name="security_settings_face_enroll_finish_title">Moi ben!</string>
@@ -294,6 +332,8 @@ Nota: Non podes usar a túa impresión dixital para desbloquear este dispositivo
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint para o traballo</string>
     <string name="setup_suggestion_summary">Só faltan uns poucos pasos máis</string>
     <string name="setup_suggestion_title">Finaliza a configuración</string>
+    <string name="smart_battery_a11y_collapse_label">Contraer, Batería intelixente</string>
+    <string name="smart_battery_a11y_expand_label">Despregar, Batería intelixente</string>
     <string name="smart_battery_footer">Para aumentar a duración da batería, a función Batería intelixente pode reducir o rendemento e a actividade en segundo plano. Pódense atrasar algunhas notificacións.</string>
     <string name="smart_battery_manager_title">Preferencias de funcións intelixentes</string>
     <string name="smart_battery_title">Batería intelixente</string>
@@ -310,6 +350,8 @@ Nota: Non podes usar a túa impresión dixital para desbloquear este dispositivo
     <string name="software_update_up_to_specific_date_summary">Actualizouse o %1$s</string>
     <string name="software_update_update_available_summary">Hai dispoñible unha actualización</string>
     <string name="sound_dashboard_summary">Volume, tecnoloxía háptica, modo Non molestar</string>
+    <string name="spatial_audio_head_tracking_available">Está dispoñible a opción de seguimento da cabeza</string>
+    <string name="spatial_audio_head_tracking_unavailable">Non está dispoñible a opción de seguimento da cabeza</string>
     <string name="speed_boost_summary_off">Preferencia desactivada</string>
     <string name="speed_boost_summary_on">Preferencia activada</string>
     <string name="speed_boost_title">Speed Boost de Spectrum</string>
@@ -321,7 +363,10 @@ Nota: Non podes usar a túa impresión dixital para desbloquear este dispositivo
     <string name="suw_warranty_positive_button_text">Pechar</string>
     <string name="system_update_entry_title">Actualización do sistema</string>
     <string name="system_updates_group_title">Actualizacións de Pixel</string>
-    <string name="touch_sensitivity_summary">Aumenta a sensibilidade ao tacto e mellora o tacto ao usar un protector de pantalla</string>
+    <string name="touch_category_title">Resposta táctil</string>
+    <string name="touch_sensitivity_settings_summary">Axusta a sensibilidade da pantalla táctil</string>
+    <string name="touch_sensitivity_settings_title">Sensibilidade táctil</string>
+    <string name="touch_sensitivity_summary">Aumenta a sensibilidade táctil e mellora o tacto ao usar un protector de pantalla</string>
     <string name="touch_sensitivity_title">Modo de protector de pantalla</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Coloca o teléfono diante da cara</string>
     <string name="unified_battery_saver_page_intro">Aforra enerxía para que a batería do teléfono dure máis tempo entre cargas</string>

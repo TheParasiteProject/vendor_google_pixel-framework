@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">Осезателна обратна връзка от клавиатурата</string>
+    <string name="accessibility_screen_magnifier_summary">Използвайте камерата си, за да увеличавате елементи от заобикалящата ви среда</string>
+    <string name="accessibility_screen_magnifier_title">Лупа</string>
     <string name="adaptive_alert_vibration_summary">Намалява силата на вибрирането, когато телефонът ви е неподвижен и с насочен нагоре екран</string>
     <string name="adaptive_alert_vibration_title">Адаптивно вибриране за сигналите</string>
     <string name="adaptive_battery_switch_des">За да удължи живота на батерията, режимът за адаптивна батерия може да намали ефективността и активността на заден план. Може да има забавяне на някои известия.</string>
@@ -12,6 +14,8 @@
     <string name="adaptive_charging_main_switch_title">Използване на адаптивното зареждане</string>
     <string name="adaptive_charging_time_estimate"><b>Адаптивно зареждане</b> • Ще се зареди напълно до %1$s</string>
     <string name="adaptive_charging_title">Адаптивно зареждане</string>
+    <string name="adaptive_touch_sensitivity_summary">Чувствителността при докосване ще се коригира автоматично според средата, активностите и защитния слой на екрана</string>
+    <string name="adaptive_touch_sensitivity_title">Адаптивно докосване</string>
     <string name="add_bypassed_application_hint">Няма добавени приложения</string>
     <string name="advanced_vpn_preference_group_title">Вградено</string>
     <string name="all_apps_category_title">Всички приложения</string>
@@ -23,6 +27,16 @@
 
 Отмяната на достъпа ще задължи приложението да иска разрешението ви при всеки индивидуален сигнал за проблем, за да събере и качи сигнал за програмна грешка."</string>
     <string name="app_and_notification_dashboard_summary">Асистент, скорошни приложения, приложения по подразбиране</string>
+    <string name="audio_sharing_switch_title">Споделяне на аудио</string>
+    <string name="audio_sharing_title">Споделяне на аудио</string>
+    <string name="audio_streams_category_title">Свързване с аудиопоток от LE</string>
+    <string name="audio_streams_connect">Свързване</string>
+    <string name="audio_streams_disconnect">Прекратяване на връзката</string>
+    <string name="audio_streams_pref_title">Аудиопотоци в близост</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">Невалиден формат на QR кода</string>
+    <string name="audio_streams_qr_code_scanner">За да започнете да слушате, центрирайте QR кода по-долу</string>
+    <string name="audio_streams_qr_code_summary">Свързване с аудиопоток чрез QR код</string>
+    <string name="audio_streams_title">Аудиопотоци</string>
     <string name="automatic_storage_manager_activation_warning">Когато е установена връзка, ще имате достъп до снимките и видеоклиповете с качеството, което сте избрали за резервното копие</string>
     <string name="automatic_storage_manager_days_title">Премахване на снимки и видеоклипове с резервно копие</string>
     <string name="automatic_storage_manager_deactivation_warning">"Да се изключи ли Интелигентно хранилище?
@@ -49,8 +63,20 @@
     <string name="battery_tip_battery_health_learn_more_description">Научете повече за състоянието на батерията</string>
     <string name="battery_tip_battery_health_reduced_title">Капацитетът на батерията е намален</string>
     <string name="battery_tip_battery_health_unknown_title">Състоянието на батерията не може да се установи</string>
+    <string name="battery_tip_dock_defender_active_summary">С цел удължаване на живота на батерията зареждането е поставено на пауза при достигане на 90%, докато таблетът ви е свързан с докинг станция</string>
+    <string name="battery_tip_dock_defender_active_title">Зареждането е поставено на пауза с цел запазване на батерията</string>
+    <string name="battery_tip_dock_defender_button_learn_more">Научете повече</string>
+    <string name="battery_tip_dock_defender_button_override">Отмяна</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">С цел удължаване на живота на батерията зареждането ще бъде поставено на пауза при достигане на 90%, докато таблетът ви е свързан с докинг станция</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">Зарежда се до 90%</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">Следващия път, когато таблетът ви е свързан с докинг станция, зареждането ще бъде поставено на пауза при достигане на 90% с цел защита на батерията</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">Зарежда се докрай</string>
     <string name="battery_tip_limited_temporarily_extra_summary">С цел запазване на батерията ви зареждането се поставя на пауза при достигане на %1$s, когато таблетът ви е свързан с докинг станция</string>
     <string name="battery_tip_smart_battery_summary">Включете режима за адаптивна батерия</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">Научете повече за безжичното зареждане</string>
+    <string name="battery_tip_wireless_charging_summary">При безжичното зареждане на телефона ви може да се изразходва повече енергия, отколкото при другите начини за зареждане</string>
+    <string name="battery_tip_wireless_charging_title">Безжично зареждане</string>
+    <string name="calls_and_alarms_device_title">Обаждания и будилници</string>
     <string name="clear_calling_footer">"С цел защита на поверителността ви функцията за обаждане със звук без фонов шум не изпраща до Google аудио, нито разговори.
 
 Тази функция работи с обаждания през Wi-Fi и повечето мрежи, но не е налице за 3G мрежи."</string>
@@ -121,12 +147,15 @@
 
 Фишинг се нарича опитът за кражба на идентификационни данни за вход или друга лична информация."</string>
     <string name="content_protection_preference_subpage_summary">Сканирането се изпълнява частно на устройството ви, като активността в приложенията се проверява за фишинг или друго подвеждащо поведение. Ако бъде установено такова поведение, до Google Play Protect се изпраща информация за приложението с цел потвърждаване на заплахата и предупреждаване на потребителите му.</string>
+    <string name="contextual_timeout_description">Автоматично изключва екрана ви по-рано, ако не използвате устройството си</string>
+    <string name="contextual_timeout_title">Адаптивно време за изчакване</string>
     <string name="dark_ui_text">Тъмната тема използва черен фон с цел удължаване на живота на батерията ви. Графиците за нея изчакват с включването, докато екранът ви не се изключи.</string>
     <string name="debugging_data_title">Данни за отстраняване на грешки</string>
     <string name="discover_tips_button">Открийте съвети</string>
     <string name="dock_summary_charging_phone">Зареждане на телефона</string>
     <string name="double_twist_for_camera_mode_summary">За да включите или изключите режима за селфи в Google Камера, завъртете устройството два пъти, когато сте в приложението.</string>
     <string name="duration_less_than_one_minute">По-малко от 1 минута</string>
+    <string name="enable_glanceable_hub_toggle">Режим „Контролен център“</string>
     <string name="extreme_battery_saver_summary">Включва всички посочени по-горе промени. Също така поставя на пауза маловажните приложения и съответните известия.</string>
     <string name="extreme_battery_saver_title">Екстремен режим за запазване на батерията</string>
     <string name="face_confirmation_hide_illustration_description">Сега, когато вземете телефона си или докоснете екрана, можете да използвате лицето си за отключване.</string>
@@ -164,7 +193,6 @@
     <string name="firmware_update_status_category">Състояние на фърмуера на устройството</string>
     <string name="firmware_update_status_title">Налице е актуализация на фърмуера</string>
     <string name="firmware_update_version_number_category">Версия на фърмуера на устройството</string>
-    <string name="firmware_update_version_number_title">Фърмуер на клавиатурата за Pixel</string>
     <string name="fullbackup_data_summary">"В Google Диск автоматично се създава резервно копие на данните на устройството (например пароли за Wi-Fi и история на обажданията) и тези на приложенията (например настройки и съхранявани от приложенията файлове).
 
 Когато включите автоматичното създаване на резервно копие, данните на устройството и на приложенията периодично се запазват в частна папка в Google Диск. Данните на приложенията могат да бъдат всяка запазвана от тях информация (въз основа на настройките на програмиста), включително потенциално поверителната, като например контакти, съобщения и снимки.
@@ -172,16 +200,19 @@
 Данните в резервното копие няма да заемат от квотата ви за хранилището в Диск. Няма да се създава резервно копие на големите файлове, нито на тези, които програмистите са избрали да не включат в услугата."</string>
     <string name="fullbackup_erase_dialog_message">Искате ли да спрете създаването на резервно копие на данните на устройството (например пароли за Wi-Fi и история на обажданията) и тези на приложенията (например настройки и съхранявани от приложенията файлове), както и да изтриете всички копия в Google Диск?</string>
     <string name="gesture_settings_activity_title">Навигиране с жестове</string>
+    <string name="hub_mode_content_setting">Разрешаване на всички приспособления в режим „Контролен център“</string>
     <string name="install_unknown_applications">Разрешаване на инсталирането на приложения от източници, различни от Google Play Магазин</string>
     <string name="keywords_accessibility_menu">моторно, бързо меню, помощно меню, докосване, двигателно, артрит, повтарящо се нараняване на щама (RSI), удар, тремор, множествена склероза, церебрална парализа, бутон, хардуер, натискане, ръка, болка, достъпно, помощ</string>
     <string name="keywords_adaptive_alert_vibration">осезателна обратна връзка, вибриране, телефон, обаждане, звънене, сигнал, известия, силно, тихо, шум, калъф, адаптивно</string>
     <string name="keywords_adaptive_charging">зареждане, зарежда се, интелигентно зареждане, адаптивно зареждане, батерия, състояние на батерията</string>
     <string name="keywords_battery_share">споделяне на батерията, безжично зареждане</string>
     <string name="keywords_battery_share_settings">споделяне на батерията, безжично зареждане на други устройства</string>
+    <string name="keywords_contextual_screen_timeout">екран, време за изчакване, адаптивно, контекстуално</string>
     <string name="keywords_gesture">жестове, движения</string>
     <string name="keywords_hearing_devices">лице с увреден слух, загуба на слуха, PSAP</string>
     <string name="keywords_limited_warranty">гаранция, ограничена гаранция, обещание, ремонт, rma, замяна</string>
     <string name="keywords_live_transcribe">Надписи, субтитри, „Надписи на живо“, увреден слух, загуба на слуха, надписи в реално време (CART), транскрибиране на говор</string>
+    <string name="keywords_magnifier">промяна на мащаба, увеличение, слабо зрение, уголемяване, приближаване</string>
     <string name="keywords_reverse_charging_stop_threshold">Спиране на споделянето на батерията, когато нивото ѝ достигне:</string>
     <string name="keywords_select_to_speak">слушане на текст, четене на глас, изговаряне на елементите на екрана, екранен четец</string>
     <string name="keywords_sound_amplifier">център за приемане на спешни обаждания, усилване, звукоусилвател, увреден слух, загуба на слуха, усилвател</string>
@@ -189,11 +220,12 @@
     <string name="keywords_switch_access">двигателна система, превключвател, ръка, помощна технология, парализа, АЛС, сканиране, постъпково сканиране</string>
     <string name="keywords_talkback">екранен четец, гласов запис, озвучаване, гласов асистент, незрящо лице, слабо зрение, TTS, синтезиран говор, обратна връзка с говор</string>
     <string name="keywords_touch_sensitivity">докосване, чувствителност, чувствително, защитен слой за екрана, филм, адаптивно, реагиране</string>
+    <string name="keywords_touch_sensitivity_settings">докосване, адаптивност, чувствителност, чувствително, защитен слой на екрана, филм, адаптивно, реагиране</string>
     <string name="keywords_voice_access">глас, гласов контрол, двигателна система, ръка, микрофон, диктуване, говорене, управление</string>
     <string name="led_preference_title">Режим на светодиодния индикатор</string>
     <string name="legal_source_code_description">Подробности за изходния код на компонентите, достъпни под формата на отворен код, можете да намерите в Помощния център на Pixel.</string>
     <string name="legal_source_code_title">Изходен код</string>
-    <string name="limited_warranty_introduction">За да прегледате гаранцията за това устройство, докоснете държавата, в която е закупено. Тя е налице и на адрес g.co/devicewarranty</string>
+    <string name="limited_warranty_introduction">За да прегледате гаранцията за това устройство, докоснете държавата, в която е закупено. Гаранцията е налице и на адрес g.co/devicewarranty</string>
     <string name="limited_warranty_title">Ограничена гаранция</string>
     <string name="lockscreen_show_weather_summary">Вижте текущите метеорологични условия</string>
     <string name="lockscreen_show_weather_title">Показване на времето</string>
@@ -202,7 +234,7 @@
     <string name="permit_debugging_data">Разрешаване на достъпа до сигналите за грешки</string>
     <string name="play_application_detail_indication_summary">Проверка за актуализации</string>
     <string name="play_application_update_entry_title">Актуализации на приложения</string>
-    <string name="privatespace_retry_summary">Трябва да влезете в профил в Google, за да настроите личното пространство</string>
+    <string name="private_space_retry_summary">Влезте в профил в Google, който да използвате с частното си пространство</string>
     <string name="repair_mode_active_summary">В режим за ремонт</string>
     <string name="repair_mode_summary">Сигурна среда за ремонт на устройството</string>
     <string name="repair_mode_title">Режим за ремонт</string>
@@ -250,7 +282,13 @@
     <string name="security_settings_face_enroll_error_timeout_dialog_message">Достигнато е времевото ограничение за регистриране на лице. Опитайте отново.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Настройването на откл. с лице не завърши навреме</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Вече можете да използвате лицето си, за да отключвате телефона или да потвърждавате самоличността си, например при влизане в приложения или одобряване на покупки</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp_full">"Вече можете да използвате лицето си, за да отключвате телефона си и да удостоверявате самоличността си, например при влизане в приложения или одобряване на покупка.
+
+Функцията „Отключване с лице“ работи най-добре, когато има достатъчно светлина и не носите маска или тъмни очила."</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Сега, когато вземете телефона си или докоснете екрана, можете да използвате лицето си за отключване.
+
+Функцията „Отключване с лице“ работи най-добре, когато има достатъчно светлина и не носите маска или тъмни очила."</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp_folded">"Сега, когато вземете телефона си или докоснете екрана, можете да използвате лицето си за отключване. Телефонът ви трябва да е затворен, за да използвате функцията „Отключване с лице“.
 
 Функцията „Отключване с лице“ работи най-добре, когато има достатъчно светлина и не носите маска или тъмни очила."</string>
     <string name="security_settings_face_enroll_finish_title">Всичко изглежда наред!</string>
@@ -292,6 +330,8 @@
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint за служебни цели</string>
     <string name="setup_suggestion_summary">Само още няколко стъпки</string>
     <string name="setup_suggestion_title">Завършете настройването</string>
+    <string name="smart_battery_a11y_collapse_label">Свиване, функция за адаптивна батерия</string>
+    <string name="smart_battery_a11y_expand_label">Разгъване, функция за адаптивна батерия</string>
     <string name="smart_battery_footer">За да удължи живота на батерията, режимът за адаптивна батерия може да намали ефективността и активността на заден план. Може да има забавяне на някои известия.</string>
     <string name="smart_battery_manager_title">Предпочитания за адаптивните функции</string>
     <string name="smart_battery_title">Адаптивна батерия</string>
@@ -308,6 +348,8 @@
     <string name="software_update_up_to_specific_date_summary">Актуализирано на %1$s</string>
     <string name="software_update_update_available_summary">Налице е актуализация</string>
     <string name="sound_dashboard_summary">Сила на звука, осезателна обратна връзка, режим „Не безпокойте“</string>
+    <string name="spatial_audio_head_tracking_available">Проследяването на движенията на главата е налице</string>
+    <string name="spatial_audio_head_tracking_unavailable">Проследяването на движенията на главата не е налице</string>
     <string name="speed_boost_summary_off">Изкл.</string>
     <string name="speed_boost_summary_on">Вкл.</string>
     <string name="speed_boost_title">Spectrum Speed Boost</string>
@@ -319,6 +361,9 @@
     <string name="suw_warranty_positive_button_text">Затваряне</string>
     <string name="system_update_entry_title">Системна актуализация</string>
     <string name="system_updates_group_title">Актуализации за Pixel</string>
+    <string name="touch_category_title">Докосване</string>
+    <string name="touch_sensitivity_settings_summary">Коригиране на чувствителността на сензорния екран</string>
+    <string name="touch_sensitivity_settings_title">Чувствителност при докосване</string>
     <string name="touch_sensitivity_summary">Увеличаване на чувствителността и подобряване на точността при докосване, когато използвате защитен слой на екрана</string>
     <string name="touch_sensitivity_title">Режим при защитен слой на екрана</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Дръжте телефона пред лицето си</string>

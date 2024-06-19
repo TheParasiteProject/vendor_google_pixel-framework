@@ -56,6 +56,14 @@
             settings:controller="com.android.settings.accessibility.MagnificationPreferenceController"
             settings:keywords="@string/keywords_magnification" />
 
+        <Preference
+            android:icon="@drawable/ic_magnifier"
+            android:key="magnifier_preference"
+            android:persistent="false"
+            android:title="@string/accessibility_screen_magnifier_title"
+            settings:controller="com.google.android.settings.accessibility.MagnifierPreferenceController"
+            settings:keywords="@string/keywords_magnifier" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -117,6 +125,38 @@
             android:title="@string/rtt_settings_title"
             settings:controller="com.android.settings.accessibility.RTTSettingPreferenceController"
             settings:keywords="@string/keywords_rtt" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="physical_keyboard_options_category"
+        android:persistent="false"
+        android:title="@string/keyboard_category_title">
+
+        <SwitchPreferenceCompat
+            android:icon="@drawable/ic_sticky_keys"
+            android:key="toggle_keyboard_sticky_keys"
+            android:persistent="false"
+            android:summary="@string/sticky_keys_summary"
+            android:title="@string/sticky_keys"
+            settings:controller="com.android.settings.accessibility.KeyboardStickyKeyPreferenceController"
+            settings:searchable="true" />
+
+        <SwitchPreferenceCompat
+            android:icon="@drawable/ic_bounce_keys"
+            android:key="toggle_keyboard_bounce_keys"
+            android:persistent="false"
+            android:title="@string/bounce_keys"
+            settings:controller="com.android.settings.accessibility.KeyboardBounceKeyPreferenceController"
+            settings:searchable="true" />
+
+        <SwitchPreferenceCompat
+            android:icon="@drawable/ic_slow_keys"
+            android:key="toggle_keyboard_slow_keys"
+            android:persistent="false"
+            android:title="@string/slow_keys"
+            settings:controller="com.android.settings.accessibility.KeyboardSlowKeyPreferenceController"
+            settings:searchable="true" />
 
     </PreferenceCategory>
 

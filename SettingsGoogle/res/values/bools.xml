@@ -1,8 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <bool name="config_adaptive_alert_vibration_enabled">false</bool>
+    <bool name="config_adaptive_touch_sensitivity_enabled">false</bool>
+    <bool name="config_app_battery_usage_list_enabled">true</bool>
     <bool name="config_auto_data_switch_enables_cross_sim_calling">true</bool>
     <bool name="config_battery_first_use_date_enabled">true</bool>
+    <bool name="config_can_enable_sfps_rest_to_unlock">false</bool>
     <bool name="config_clear_calling_enabled">false</bool>
     <bool name="config_connectivity_helper_call_quality_default_value">true</bool>
     <bool name="config_connectivity_helper_d2d_default_value">false</bool>
@@ -13,7 +16,6 @@
     <bool name="config_face_settings_should_manage_preview">true</bool>
     <bool name="config_fingerprint_enroll_calibration">false</bool>
     <bool name="config_handle_sim_slot_change">true</bool>
-    <bool name="config_hspa_data_distinguishable">false</bool>
     <bool name="config_keyboard_vibration_supported">true</bool>
     <bool name="config_night_light_suggestion_enabled">false</bool>
     <bool name="config_privatespace_account_login_enabled">true</bool>
@@ -25,10 +27,11 @@
     <bool name="config_show_device_header_in_device_info">false</bool>
     <bool name="config_show_reverse_charging">false</bool>
     <bool name="config_show_smart_storage_toggle">false</bool>
-    <!-- <bool name="config_show_smooth_display">true</bool> -->
+    <bool name="config_show_smooth_display">true</bool>
     <bool name="config_show_touch_sensitivity">false</bool>
     <bool name="config_storage_manager_settings_enabled">true</bool>
     <bool name="config_suc_use_partner_resource">true</bool>
-    <!-- <bool name="config_support_enabled">true</bool> -->
+    <bool name="config_support_enabled">true</bool>
     <bool name="config_use_legacy_suggestion">false</bool>
+    <bool name="config_wireless_charging_warning_tip_enabled">false</bool>
 </resources>

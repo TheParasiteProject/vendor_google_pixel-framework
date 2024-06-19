@@ -34,6 +34,23 @@
             settings:controller="com.android.settings.network.telephony.SmsDefaultSubscriptionController" />
 
         <Preference
+            android:key="mobile_network_spn"
+            android:selectable="false"
+            android:summary="@string/summary_placeholder"
+            android:title="@string/mobile_network_spn_title"
+            settings:allowDividerAbove="true"
+            settings:controller="com.android.settings.network.telephony.MobileNetworkSpnPreferenceController" />
+
+        <Preference
+            android:key="phone_number"
+            android:selectable="false"
+            android:summary="@string/summary_placeholder"
+            android:title="@string/status_number"
+            settings:allowDividerBelow="true"
+            settings:controller="com.android.settings.network.telephony.MobileNetworkPhoneNumberPreferenceController"
+            settings:enableCopying="true" />
+
+        <Preference
             android:key="cdma_lte_data_service_key"
             android:title="@string/cdma_lte_data_service"
             settings:allowDividerAbove="true"
@@ -64,7 +81,7 @@
 
         <Preference
             android:key="data_usage_summary"
-            android:title="@string/mobile_data_usage_title"
+            android:title="@string/app_cellular_data_usage"
             settings:controller="com.android.settings.network.telephony.DataUsagePreferenceController" />
 
         <com.android.settings.datausage.BillingCyclePreference
@@ -105,14 +122,6 @@
             android:title="@string/enhanced_4g_lte_mode_title_4g_calling"
             settings:controller="com.android.settings.network.telephony.Enhanced4gCallingPreferenceController"
             settings:keywords="@string/keywords_enhance_4g_lte" />
-
-        <SwitchPreference
-            android:key="nr_advanced_calling"
-            android:persistent="false"
-            android:summary="@string/nr_advanced_calling_summary"
-            android:title="@string/nr_advanced_calling_title"
-            settings:controller="com.android.settings.network.telephony.NrAdvancedCallingPreferenceController"
-            settings:keywords="@string/keywords_nr_advanced_calling" />
 
         <SwitchPreferenceCompat
             android:key="advance_call"
@@ -160,6 +169,23 @@
             android:key="speed_boost_settings"
             android:title="@string/speed_boost_title"
             settings:controller="com.google.android.settings.network.telephony.SpeedBoostPreferenceController" />
+
+        <Preference
+            android:key="network_mode_imei_info"
+            android:summary="@string/summary_placeholder"
+            android:title="@string/status_imei"
+            settings:controller="com.android.settings.network.telephony.MobileNetworkImeiPreferenceController"
+            settings:enableCopying="true"
+            settings:keywords="@string/keywords_imei_info" />
+
+        <com.android.settingslib.CustomDialogPreferenceCompat
+            android:dialogLayout="@layout/dialog_eid_status"
+            android:key="network_mode_eid_info"
+            android:positiveButtonText="@string/dlg_ok"
+            android:summary="@string/device_info_protected_single_press"
+            android:title="@string/status_eid"
+            settings:controller="com.android.settings.network.telephony.MobileNetworkEidPreferenceController"
+            settings:enableCopying="true" />
 
         <PreferenceCategory
             android:key="calling_category"
@@ -214,9 +240,10 @@
         <PreferenceCategory
             android:key="network_operators_category_key"
             android:title="@string/network_operator_category"
+            settings:allowDividerBelow="true"
             settings:controller="com.android.settings.network.telephony.NetworkPreferenceCategoryController">
 
-            <SwitchPreferenceCompat
+            <com.android.settings.spa.preference.ComposePreference
                 android:key="auto_select_key"
                 android:title="@string/select_automatically"
                 settings:controller="com.android.settings.network.telephony.gsm.AutoSelectPreferenceController" />
@@ -229,10 +256,16 @@
         </PreferenceCategory>
 
         <com.android.settingslib.RestrictedPreference
+            android:key="telephony_satellite_setting_key"
+            android:persistent="false"
+            android:title="@string/satellite_setting_title"
+            settings:controller="com.android.settings.network.telephony.SatelliteSettingPreferenceController"
+            settings:keywords="@string/keywords_satellite_setting" />
+
+        <com.android.settingslib.RestrictedPreference
             android:key="telephony_apn_key"
             android:persistent="false"
             android:title="@string/mobile_network_apn_title"
-            settings:allowDividerAbove="true"
             settings:controller="com.android.settings.network.telephony.ApnPreferenceController"
             settings:keywords="@string/keywords_access_point_names" />
 
@@ -254,6 +287,15 @@
             android:summary="@string/require_cellular_encryption_summary"
             android:title="@string/require_cellular_encryption_title"
             settings:controller="com.android.settings.network.telephony.NullAlgorithmsPreferenceController" />
+
+        <SwitchPreferenceCompat
+            android:key="nr_advanced_calling"
+            android:persistent="false"
+            android:summary="@string/nr_advanced_calling_summary"
+            android:title="@string/nr_advanced_calling_title"
+            settings:controller="com.android.settings.network.telephony.NrAdvancedCallingPreferenceController"
+            settings:keywords="@string/keywords_nr_advanced_calling" />
+
     </PreferenceCategory>
 
     <Preference

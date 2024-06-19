@@ -1,8 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">键盘触感反馈</string>
+    <string name="accessibility_screen_magnifier_summary">使用相机放大周遭细节</string>
+    <string name="accessibility_screen_magnifier_title">放大镜</string>
     <string name="adaptive_alert_vibration_summary">当手机平稳不动且屏幕朝上时，系统就会降低振动强度</string>
-    <string name="adaptive_alert_vibration_title">自动调整振动强度</string>
+    <string name="adaptive_alert_vibration_title">自适应提醒振动</string>
     <string name="adaptive_battery_switch_des">为延长电池续航时间，“自适应电池”功能可能会降低性能并减少后台活动。部分通知可能会延迟。</string>
     <string name="adaptive_battery_switch_title">使用自适应电池</string>
     <string name="adaptive_charging">自适应充电</string>
@@ -12,17 +14,29 @@
     <string name="adaptive_charging_main_switch_title">使用自适应充电</string>
     <string name="adaptive_charging_time_estimate"><b>正在自适应充电</b> • %1$s前充满</string>
     <string name="adaptive_charging_title">自适应充电</string>
+    <string name="adaptive_touch_sensitivity_summary">系统将根据环境、活动和屏幕保护膜自动调整触控灵敏度</string>
+    <string name="adaptive_touch_sensitivity_title">自适应触控</string>
     <string name="add_bypassed_application_hint">未添加任何应用</string>
     <string name="advanced_vpn_preference_group_title">内置</string>
     <string name="all_apps_category_title">所有应用</string>
-    <string name="allow_debugging_data_description">Google 会使用错误报告来诊断应用和设备问题，且相关使用行为都会遵守<a href="https://policies.google.com/privacy">隐私权政策</a>"。
+    <string name="allow_debugging_data_description">Google 会根据其<a href="https://policies.google.com/privacy">隐私权政策</a>"使用错误报告来诊断应用和设备问题。
 
-"<b>错误报告包含应用和系统日志</b>"，还可能包含个人和设备信息，比如姓名、电子邮件地址、电话号码、位置数据、设备标识符、已连接的设备以及网络信息。系统或许会将报告共享给可能受您的问题影响的工程合作伙伴。
+"<b>错误报告包含应用和系统日志</b>"，可能还包含个人和设备信息，比如姓名、电子邮件地址、电话号码、位置数据、设备标识符、已连接的设备，以及网络信息。系统或许会将报告共享给可能受您的问题影响的工程合作伙伴。
 
-获得访问权限后，此应用将能"<b>针对您提交的所有问题报告自动收集并上传错误报告</b>"，包括个人资料和工作资料中的应用和系统日志。
+获得访问权限后，此应用将能针对您提交的所有问题报告"<b>自动收集并上传错误报告</b>"，包括个人资料和工作资料中的应用和系统日志。
 
 若被撤消访问权限，此应用将会在每次报告问题时，向您请求权限，获得授权后才能收集并上传对应的错误报告。"</string>
     <string name="app_and_notification_dashboard_summary">Google 助理、最近使用的应用、默认应用</string>
+    <string name="audio_sharing_switch_title">分享音频</string>
+    <string name="audio_sharing_title">音频分享</string>
+    <string name="audio_streams_category_title">连接到 LE 音频流</string>
+    <string name="audio_streams_connect">连接</string>
+    <string name="audio_streams_disconnect">断开连接</string>
+    <string name="audio_streams_pref_title">附近的音频流</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">二维码的格式无效</string>
+    <string name="audio_streams_qr_code_scanner">将取景框对准下方的二维码，即可开始收听</string>
+    <string name="audio_streams_qr_code_summary">使用二维码连接到音频流</string>
+    <string name="audio_streams_title">音频流</string>
     <string name="automatic_storage_manager_activation_warning">连接到网络后，您仍可以按备份时选择的分辨率来查看照片和视频</string>
     <string name="automatic_storage_manager_days_title">移除已备份的照片和视频</string>
     <string name="automatic_storage_manager_deactivation_warning">"要关闭智能存储功能吗？
@@ -49,13 +63,25 @@
     <string name="battery_tip_battery_health_learn_more_description">详细了解电池健康度</string>
     <string name="battery_tip_battery_health_reduced_title">电池容量缩小了</string>
     <string name="battery_tip_battery_health_unknown_title">无法检测电池健康度</string>
+    <string name="battery_tip_dock_defender_active_summary">为了延长电池寿命，当已插入基座时，您的平板电脑会在充电至 90% 时暂停充电</string>
+    <string name="battery_tip_dock_defender_active_title">为保护电池，充电已暂停</string>
+    <string name="battery_tip_dock_defender_button_learn_more">了解详情</string>
+    <string name="battery_tip_dock_defender_button_override">覆盖</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">为了延长电池寿命，当已插入基座时，您的平板电脑将会在充电至 90% 时暂停充电</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">充电至 90%</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">为保护电池，下次插入基座时，您的平板电脑将会在充电至 90% 时暂停充电</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">充满</string>
     <string name="battery_tip_limited_temporarily_extra_summary">为保护您的电池，在您的平板电脑已插入基座期间，电池充电进程会在电量达到 %1$s 后暂停</string>
     <string name="battery_tip_smart_battery_summary">开启自适应电池</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">详细了解无线充电</string>
+    <string name="battery_tip_wireless_charging_summary">手机无线充电或许会比其他充电方式更耗能</string>
+    <string name="battery_tip_wireless_charging_title">正在无线充电</string>
+    <string name="calls_and_alarms_device_title">来电和闹钟</string>
     <string name="clear_calling_footer">"为保护您的隐私，“清晰通话”功能不会将音频或对话内容发送给 Google。
 
 “清晰通话”功能适用于 WLAN 通话和大多数网络，不适用于 3G 网络。"</string>
     <string name="clear_calling_title">清晰通话</string>
-    <string name="clear_calling_toggle">使用“清晰通话”功能</string>
+    <string name="clear_calling_toggle">使用清晰通话</string>
     <string name="clear_calling_topintro">在通话期间降低背景噪声</string>
     <string name="columbus_gesture_detected">检测到“快速轻触”手势！</string>
     <string name="columbus_gesture_enrollment_complete">完成</string>
@@ -121,12 +147,15 @@
 
 钓鱼式攻击是试图窃取登录凭据或其他个人信息的行为。"</string>
     <string name="content_protection_preference_subpage_summary">系统会直接在您的设备上以私密方式运行扫描，以检查应用活动是否存在钓鱼式攻击或其他欺骗性行为。如果检测到此类行为，系统会将部分应用信息发送给 Google Play 保护机制，以确认威胁并向应用用户发出警告。</string>
-    <string name="dark_ui_text">深色主题使用黑色背景，有助于延长电池续航时间。深色主题开启时间设置会等到屏幕进入关闭状态后才应用。</string>
+    <string name="contextual_timeout_description">如果您未在使用设备，提早自动关闭屏幕</string>
+    <string name="contextual_timeout_title">自动调节屏幕超时</string>
+    <string name="dark_ui_text">深色主题使用黑色背景，有助于延长电池续航时间。深色主题时间表会等到屏幕进入关闭状态后才应用。</string>
     <string name="debugging_data_title">调试数据</string>
-    <string name="discover_tips_button">Discover tips</string>
+    <string name="discover_tips_button">浏览提示</string>
     <string name="dock_summary_charging_phone">正在为手机充电</string>
     <string name="double_twist_for_camera_mode_summary">使用 Google 相机时，只需转动两次设备，即可开启或关闭自拍模式。</string>
     <string name="duration_less_than_one_minute">不到 1 分钟</string>
+    <string name="enable_glanceable_hub_toggle">基座接入模式</string>
     <string name="extreme_battery_saver_summary">包含上方所列的所有更改。还会暂停非必需应用及其通知。</string>
     <string name="extreme_battery_saver_title">超级省电模式</string>
     <string name="face_confirmation_hide_illustration_description">现在，当您拿起手机或点按屏幕时，可以通过刷脸来解锁手机。</string>
@@ -164,7 +193,6 @@
     <string name="firmware_update_status_category">设备固件状态</string>
     <string name="firmware_update_status_title">有可用的固件更新</string>
     <string name="firmware_update_version_number_category">设备固件版本</string>
-    <string name="firmware_update_version_number_title">Pixel 键盘固件</string>
     <string name="fullbackup_data_summary">"将设备数据（例如 WLAN 密码和通话记录）和应用数据（例如应用存储的设置和文件）自动备份到 Google 云端硬盘。
 
 启用自动备份功能后，系统会定期将设备和应用数据保存到您在 Google 云端硬盘上的私人文件夹中。应用数据可以是应用根据开发者设置保存的任何数据，包括通讯录、邮件、消息、照片等可能具有敏感性的数据。
@@ -172,23 +200,27 @@
 备份数据不会计入云端硬盘存储空间配额。此外，系统不会备份大型文件或开发者已选择从备份服务中排除的文件。"</string>
     <string name="fullbackup_erase_dialog_message">要停止备份设备数据（例如 WLAN 密码和通话记录）和应用数据（例如应用存储的设置和文件），并清除 Google 云端硬盘上的所有副本吗？</string>
     <string name="gesture_settings_activity_title">手势导航</string>
+    <string name="hub_mode_content_setting">在基座接入模式下允许使用任何微件</string>
     <string name="install_unknown_applications">允许安装来自 Play 商店以外其他来源的应用</string>
     <string name="keywords_accessibility_menu">运动, 快捷菜单, 辅助菜单, 轻触, 灵敏性, 关节炎, 中风, 震颤, 多发性硬化症, 脑瘫, 按钮, 硬件, 按, 重复性劳损, 手, 疼痛, 无障碍, 帮助, motor, quick menu, assistive menu, touch, dexterity, arthritis, rsi, stroke, tremor, multiple sclerosis, cerebral palsy, button, hardware, press, repetitive strain injury, hand, pain, accessible, help</string>
     <string name="keywords_adaptive_alert_vibration">触感反馈, 振动, 手机, 通话, 铃声, 提醒, 通知, 大音量, 静音, 噪音, 保护壳, 自适应, haptics, vibrate, phone, call, ring, alert, notifications, loud, quiet, noise, case, adaptive</string>
     <string name="keywords_adaptive_charging">充电, 设备充电, 智能充电, 自适应充电, 电池, 电池状况</string>
     <string name="keywords_battery_share">电池共享, 无线充电, battery share, wireless charging</string>
     <string name="keywords_battery_share_settings">电池共享，反向无线充电</string>
+    <string name="keywords_contextual_screen_timeout">屏幕, 超时, 自适应, 情境, screen, timeout, adaptive, contextual</string>
     <string name="keywords_hearing_devices">听障, 听力减退, 个人扩音产品, hard of hearing, hearing loss, PSAP</string>
     <string name="keywords_limited_warranty">保修, 保证, 有限保修, 承诺, 维修, 更换, warranty, guarantee, limited warranty, promise, repair, rma, replacement</string>
     <string name="keywords_live_caption">字幕, 实时转写, 听障, 听力减退, 语音转文字, Captions, closed captions, CC, Live Transcribe, hard of hearing, hearing loss, CART, speech to text, subtitle</string>
     <string name="keywords_live_transcribe">字幕, 实时字幕, 听障, 听力受损, 语音转文字, Captions, closed captions, CC, Live Caption, hard of hearing, hearing loss, CART, speech to text, subtitle</string>
+    <string name="keywords_magnifier">缩放, 放大, 低视力, 增大, 加大, Zoom, Magnification, Low vision, Enlarge, make bigger</string>
     <string name="keywords_reverse_charging_stop_threshold">当手机电量降至以下值时，停止共享电池：</string>
     <string name="keywords_select_to_speak">听文字, 朗读, 朗读屏幕内容, 屏幕阅读器, Hear text, read aloud, speak screen, screen reader</string>
     <string name="keywords_sound_amplifier">公共安全应答点, 扩大, 声音扩大, 听障, 听力受损, 扩声, PSAP, amplify, sound amplification, hard of hearing, hearing loss, amplification</string>
     <string name="keywords_sound_notifications">通知, 听障, 听力受损, 告知, Notifications, hard of hearing, hearing loss, notify</string>
     <string name="keywords_switch_access">电机, 切换, 手, 辅助技术, 瘫痪, 渐冻症, 扫描, 循序扫描, motor, switch, hand, AT, assistive technology, paralysis, ALS, scanning, step scanning</string>
-    <string name="keywords_talkback">屏幕阅读器, 旁白, 配音, 语音辅助, 盲人, 弱视, 文字转语音, 语音反馈, Screen reader, Voice Over, VoiceOver, Voice Assistance, Blind, Low Vision, TTS, text to speech, spoken feedback</string>
+    <string name="keywords_talkback">屏幕阅读器, 旁白, 配音, 语音辅助, 盲人, 低视力, 文字转语音, 语音反馈, Screen reader, Voice Over, VoiceOver, Voice Assistance, Blind, Low Vision, TTS, text to speech, spoken feedback</string>
     <string name="keywords_touch_sensitivity">轻触, 灵敏度, 灵敏, 屏幕保护膜, 电影, 响应, 响应度</string>
+    <string name="keywords_touch_sensitivity_settings">轻触, 自适应, 灵敏度, 灵敏, 屏幕保护膜, 屏幕保护贴, 响应, 响应度, touch, adaptive, sensitivity, sensitive, screen protector, film, responsive, responsiveness</string>
     <string name="keywords_voice_access">语音, 语音控制, 电机, 手, 麦克, 麦克风, 语音输入, 说话, 控制, voice, voice control, motor, hand, mic, microphone, dictation, talk, control</string>
     <string name="led_preference_title">LED 指示灯模式</string>
     <string name="legal_source_code_description">如需详细了解以开源方式提供的组件的源代码，您可前往 Pixel 帮助中心。</string>
@@ -202,7 +234,7 @@
     <string name="permit_debugging_data">允许访问错误报告</string>
     <string name="play_application_detail_indication_summary">检查更新</string>
     <string name="play_application_update_entry_title">应用更新</string>
-    <string name="privatespace_retry_summary">您需要登录 Google 账号才能设置私密空间</string>
+    <string name="private_space_retry_summary">登录 Google 账号才能搭配使用您的私密空间</string>
     <string name="repair_mode_active_summary">处于维修模式</string>
     <string name="repair_mode_summary">适合设备维修的安全环境</string>
     <string name="repair_mode_title">维修模式</string>
@@ -215,7 +247,7 @@
     <string name="reverse_charging_detail_footer_title">使用电池共享功能时，手机耗电速度将变快。电池共享功能适用于兼容的入耳式耳机、手表、手机等设备。为提升充电效率，请取下手机保护套。</string>
     <string name="reverse_charging_detail_footer_title_advanced">"电池共享功能适用于兼容的入耳式耳机、手机等设备。
 
-使用此功能时，手机耗电速度将变快。如果系统未检测到其他设备，电池共享功能会在几分钟后自动关闭。为提升充电效率，请取下手机保护套以及其他可能会干扰电池共享的物品（例如金属物体）。"</string>
+使用此功能时，手机耗电速度将变快。如果系统未检测到其他设备，电池共享功能会在几分钟后自动关闭。为提升充电效率，请取下手机保护套以及其他可能会干扰充电的物品，例如金属物体。"</string>
     <string name="reverse_charging_detail_power_save_mode_is_on_message">电池共享功能无法使用，因为省电模式已开启</string>
     <string name="reverse_charging_detail_unplug_usb_cable_message">电池共享功能无法使用，因为手机已连接 USB-C 设备</string>
     <string name="reverse_charging_instructions_title">"您可使用 Pixel 为其他设备充电。
@@ -240,7 +272,7 @@
     <string name="screen_time_summary_usage_today">今天使用了%1$s</string>
     <string name="search_bar_account_avatar_content_description">个人资料照片，点按两次即可打开 Google 账号</string>
     <string name="search_gesture_category_title">搜索</string>
-    <string name="search_gesture_feature_title">圆圈搜索</string>
+    <string name="search_gesture_feature_title">圈定即搜</string>
     <string name="search_long_press_home_button_summary">轻触并按住屏幕底部的主屏幕按钮，然后圈出或突出显示要搜索的内容</string>
     <string name="search_press_hold_gesture_summary">轻触并按住屏幕底部的手柄，然后圈出或突出显示要搜索的内容</string>
     <string name="security_dismiss_dialog_dismiss_button">关闭</string>
@@ -250,10 +282,16 @@
     <string name="security_settings_face_enroll_error_timeout_dialog_message">面孔注册操作超时。请重试。</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">人脸解锁设置操作已超时</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">现在您可以用脸部解锁手机或在需要时验证自己的身份，例如在登录应用或批准购买交易时</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp_full">"现在您可以通过刷脸来解锁手机或在需要时验证自己的身份，例如在登录应用或批准购买交易时。
+
+当光线充足并且您未戴口罩或墨镜时，人脸解锁功能的效果最好。"</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"现在，当您拿起手机或点按屏幕时，可以通过刷脸来解锁手机。
 
 当光线充足并且您未戴口罩或墨镜时，人脸解锁功能的效果最好。"</string>
-    <string name="security_settings_face_enroll_finish_title">圆满完成！</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp_folded">"现在，当您拿起手机或点按屏幕时，可以通过刷脸来解锁手机。要使用人脸解锁功能，手机必须处于折叠状态。
+
+当光线充足并且您未戴口罩或墨镜时，人脸解锁功能的效果最好。"</string>
+    <string name="security_settings_face_enroll_finish_title">大功告成！</string>
     <string name="security_settings_face_enroll_introduction_accessibility">适合视觉受限或头部无法正常转动者的设置</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">需要睁眼</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">一切由您和您的孩子掌握</string>
@@ -292,8 +330,10 @@
     <string name="security_settings_work_fingerprint_preference_title">工作资料的 Pixel Imprint</string>
     <string name="setup_suggestion_summary">只需再执行几个步骤</string>
     <string name="setup_suggestion_title">完成设置</string>
+    <string name="smart_battery_a11y_collapse_label">收起，自适应电池</string>
+    <string name="smart_battery_a11y_expand_label">展开，自适应电池</string>
     <string name="smart_battery_footer">为延长电池续航时间，“自适应电池”功能可能会降低性能并减少后台活动。部分通知可能会延迟。</string>
-    <string name="smart_battery_manager_title">自适应功能偏好设置</string>
+    <string name="smart_battery_manager_title">自动调节功能偏好设置</string>
     <string name="smart_battery_title">自适应电池</string>
     <string name="software_update_can_be_updated_header">让您的 Pixel 更臻完善</string>
     <string name="software_update_detail_indication_1_update_available">有 1 项可用更新</string>
@@ -308,6 +348,8 @@
     <string name="software_update_up_to_specific_date_summary">更新日期：%1$s</string>
     <string name="software_update_update_available_summary">有可用的更新</string>
     <string name="sound_dashboard_summary">音量、触感反馈、勿扰</string>
+    <string name="spatial_audio_head_tracking_available">头部跟踪功能可用</string>
+    <string name="spatial_audio_head_tracking_unavailable">头部跟踪功能不可用</string>
     <string name="speed_boost_summary_off">已关闭</string>
     <string name="speed_boost_summary_on">已开启</string>
     <string name="speed_boost_title">Spectrum Speed Boost</string>
@@ -319,7 +361,10 @@
     <string name="suw_warranty_positive_button_text">关闭</string>
     <string name="system_update_entry_title">系统更新</string>
     <string name="system_updates_group_title">Pixel 更新</string>
-    <string name="touch_sensitivity_summary">在使用屏幕保护膜时提升轻触灵敏度和改进轻触效果</string>
+    <string name="touch_category_title">触控</string>
+    <string name="touch_sensitivity_settings_summary">调整触摸屏灵敏度</string>
+    <string name="touch_sensitivity_settings_title">触控灵敏度</string>
+    <string name="touch_sensitivity_summary">在使用屏幕保护膜时提升触控灵敏度和改进触控效果</string>
     <string name="touch_sensitivity_title">屏幕保护膜模式</string>
     <string name="traffic_light_face_enrolling_title_accessibility">请将手机举到您脸部的正前方</string>
     <string name="unified_battery_saver_page_intro">节省电量，以帮助延长手机在每次充电后的续航能力</string>
@@ -344,7 +389,7 @@
     <string name="vpn_exclude_ntf_content">您最近新安装的运营商应用可能无法使用 VPN</string>
     <string name="vpn_exclude_ntf_title">要从 VPN 中排除新应用吗？</string>
     <string name="vpn_preference_group_title">其他</string>
-    <string name="wallpaper_dashboard_summary">颜色、带主题的图标、应用网格</string>
+    <string name="wallpaper_dashboard_summary">颜色、图标匹配主题、应用网格</string>
     <string name="warranty_country_information">%1$s（%2$s）</string>
     <string name="wifi_subscription_summary">查看或更改 OpenRoaming 订阅</string>
     <string name="wifitrackerlib_connected_with_wsu_authenticator">已通过“%1$s”连接</string>

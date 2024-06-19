@@ -35,9 +35,9 @@
     <color name="security_red">#ffd93025</color>
     <color name="security_status_unfilled_wedge">#ffdadce0</color>
     <color name="security_yellow">#fff9ab00</color>
+    <color name="sfps_enroll_grey300_light">#ffbdc1c6</color>
     <color name="sfps_enroll_immobile_continue_btn_bg_color">#ff5a631e</color>
     <color name="sfps_enroll_immobile_continue_btn_text_color">#ffffffff</color>
     <color name="sfps_enroll_immobile_subtitle_text_color">#ff47483b</color>
-    <color name="sfps_enroll_immobile_title_exclamation_color">#ffb3261e</color>
     <color name="sfps_enroll_immobile_title_text_color">#ff1b1c14</color>
 </resources>

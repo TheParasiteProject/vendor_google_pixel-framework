@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:title="@string/audio_sharing_title">
+
+    <com.android.settingslib.widget.TopIntroPreference
+        android:key="audio_sharing_top_intro"
+        android:title="Let others listen to your media along with you using their own compatible headphones"
+        settings:searchable="false" />
+
+    <PreferenceCategory
+        android:key="audio_sharing_device_volume_group"
+        android:title="Devices listening"
+        settings:controller="com.google.android.settings.connecteddevice.audiosharing.AudioSharingDeviceVolumeGroupController" />
+
+    <Preference
+        android:icon="@drawable/ic_audio_calls_and_alarms"
+        android:key="calls_and_alarms"
+        android:summary=""
+        android:title="@string/calls_and_alarms_device_title"
+        settings:controller="com.google.android.settings.connecteddevice.audiosharing.CallsAndAlarmsPreferenceController" />
+
+    <Preference
+        android:icon="@drawable/ic_audio_play_sample"
+        android:key="audio_sharing_play_sound"
+        android:summary="Everyone listening should hear it"
+        android:title="Play a test sound"
+        settings:controller="com.google.android.settings.connecteddevice.audiosharing.AudioSharingPlaySoundPreferenceController" />
+
+    <PreferenceCategory
+        android:key="audio_sharing_stream_settings_category"
+        android:title="Stream settings"
+        settings:controller="com.google.android.settings.connecteddevice.audiosharing.StreamSettingsCategoryController">
+
+        <com.google.android.settings.connecteddevice.audiosharing.AudioSharingNamePreference
+            android:key="audio_sharing_stream_name"
+            android:title="Name"
+            settings:controller="com.google.android.settings.connecteddevice.audiosharing.AudioSharingNamePreferenceController" />
+
+        <com.android.settings.widget.ValidatedEditTextPreference
+            android:key="audio_sharing_stream_password"
+            android:summary="********"
+            android:title="Password"
+            settings:controller="com.google.android.settings.connecteddevice.audiosharing.AudioSharingPasswordPreferenceController" />
+
+        <SwitchPreferenceCompat
+            android:key="audio_sharing_stream_compatibility"
+            android:title="Improve compatibility"
+            settings:controller="com.google.android.settings.connecteddevice.audiosharing.AudioSharingCompatibilityPreferenceController" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="audio_streams_settings_category"
+        android:title="@string/audio_streams_category_title"
+        settings:controller="com.google.android.settings.connecteddevice.audiosharing.audiostreams.AudioStreamsCategoryController">
+
+        <Preference
+            android:fragment="com.google.android.settings.connecteddevice.audiosharing.audiostreams.AudioStreamsDashboardFragment"
+            android:icon="@drawable/ic_chevron_right_24dp"
+            android:key="audio_streams_settings"
+            android:title="@string/audio_streams_pref_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

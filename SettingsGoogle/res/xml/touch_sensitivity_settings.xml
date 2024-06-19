@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
+    android:key="touch_sensitivity_settings_page"
+    android:title="@string/touch_sensitivity_settings_title"
+    settings:keywords="@string/keywords_touch_sensitivity_settings">
+
+    <com.android.settingslib.widget.TopIntroPreference
+        android:key="touch_sensitivity_settings_top_intro"
+        android:title="@string/touch_sensitivity_settings_summary"
+        settings:searchable="false" />
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="touch_sensitivity_illustration"
+        android:selectable="false"
+        settings:lottie_rawRes="@drawable/touch_sensitivity"
+        settings:searchable="false" />
+
+    <SwitchPreferenceCompat
+        android:key="adaptive_touch_sensitivity"
+        android:summary="@string/adaptive_touch_sensitivity_summary"
+        android:title="@string/adaptive_touch_sensitivity_title"
+        settings:controller="com.google.android.settings.touch.AdaptiveTouchSensitivityPreferenceController"
+        settings:keywords="@string/keywords_touch_sensitivity_settings" />
+
+    <SwitchPreferenceCompat
+        android:key="touch_sensitivity"
+        android:summary="@string/touch_sensitivity_summary"
+        android:title="@string/touch_sensitivity_title"
+        settings:controller="com.google.android.settings.touch.TouchSensitivityPreferenceController"
+        settings:keywords="@string/keywords_touch_sensitivity" />
+
+</PreferenceScreen>

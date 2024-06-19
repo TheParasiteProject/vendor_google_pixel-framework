@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="?android:dialogPreferredPadding"
+    android:paddingHorizontal="?android:dialogPreferredPadding">
+
+    <TextView
+        android:id="@id/share_audio_subtitle1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="14.0dip"
+        android:textFontWeight="500"
+        android:visibility="gone"
+        style="@style/DeviceAudioSharingText" />
+
+    <TextView
+        android:id="@id/share_audio_subtitle2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="24.0dip"
+        android:textFontWeight="400"
+        style="@style/DeviceAudioSharingText" />
+
+    <ImageView
+        android:id="@id/share_audio_guidance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/audio_sharing_guidance"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/btn_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@id/share_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/audio_sharing_rounded_bg_ripple"
+        android:layout_gravity="center"
+        android:layout_marginTop="4.0dip"
+        android:visibility="gone"
+        style="@style/SettingsLibActionButton" />
+
+    <Button
+        android:id="@id/cancel_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/audio_sharing_rounded_bg_ripple"
+        android:layout_gravity="center"
+        android:layout_marginTop="4.0dip"
+        android:text="Not now"
+        android:visibility="gone"
+        style="@style/SettingsLibActionButton" />
+
+</LinearLayout>

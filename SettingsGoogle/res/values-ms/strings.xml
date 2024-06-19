@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">Haptik papan kekunci</string>
+    <string name="accessibility_screen_magnifier_summary">Gunakan kamera anda untuk membesarkan butiran di sekeliling anda</string>
+    <string name="accessibility_screen_magnifier_title">Kanta Pembesar</string>
     <string name="adaptive_alert_vibration_summary">Mengurangkan kekuatan getaran semasa telefon anda tidak bergerak dan skrin menghadap ke atas</string>
     <string name="adaptive_alert_vibration_title">Getaran makluman boleh suai</string>
     <string name="adaptive_battery_switch_des">Untuk melanjutkan hayat bateri, Bateri Boleh Suai boleh mengurangkan prestasi dan aktiviti latar. Sesetengah pemberitahuan mungkin tertangguh.</string>
@@ -12,6 +14,8 @@
     <string name="adaptive_charging_main_switch_title">Gunakan Pengecasan Boleh Suai</string>
     <string name="adaptive_charging_time_estimate"><b>Pengecasan Boleh Suai</b> • Penuh pada %1$s</string>
     <string name="adaptive_charging_title">Pengecasan Boleh Suai</string>
+    <string name="adaptive_touch_sensitivity_summary">Kepekaan sentuhan akan dilaraskan secara automatik mengikut persekitaran, aktiviti dan pelindung skrin anda</string>
+    <string name="adaptive_touch_sensitivity_title">Sentuhan boleh suai</string>
     <string name="add_bypassed_application_hint">Tiada apl ditambah</string>
     <string name="advanced_vpn_preference_group_title">Terbina dalam</string>
     <string name="all_apps_category_title">Semua apl</string>
@@ -23,6 +27,16 @@ Tindakan memberikan akses akan membolehkan apl ini "<b>mengumpulkan dan memuat n
 
 Tindakan membatalkan akses akan memerlukan apl meminta kebenaran anda untuk mengumpulkan dan memuat naik laporan pepijat bagi setiap laporan masalah."</string>
     <string name="app_and_notification_dashboard_summary">Assistant, apl terbaharu, apl lalai</string>
+    <string name="audio_sharing_switch_title">Kongsi audio</string>
+    <string name="audio_sharing_title">Perkongsian audio</string>
+    <string name="audio_streams_category_title">Sambung kepada strim LE Audio</string>
+    <string name="audio_streams_connect">Sambung</string>
+    <string name="audio_streams_disconnect">Putuskan sambungan</string>
+    <string name="audio_streams_pref_title">Strim audio berdekatan</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">Kod QR bukan dalam format yang sah</string>
+    <string name="audio_streams_qr_code_scanner">Untuk mula mendengar, pusatkan kod QR di bawah</string>
+    <string name="audio_streams_qr_code_summary">Sambung kepada strim audio menggunakan kod QR</string>
+    <string name="audio_streams_title">Strim audio</string>
     <string name="automatic_storage_manager_activation_warning">Apabila anda disambungkan, anda masih dapat mengakses foto dan video pada kualiti yang dipilih untuk sandaran</string>
     <string name="automatic_storage_manager_days_title">Alih keluar foto &amp; video yang disandarkan</string>
     <string name="automatic_storage_manager_deactivation_warning">"Matikan Storan Pintar? 
@@ -48,8 +62,20 @@ Storan Pintar tidak akan mengosongkan ruang apabila storan anda hampir penuh."</
     <string name="battery_tip_battery_health_learn_more_description">Ketahui lebih lanjut tentang kesihatan bateri</string>
     <string name="battery_tip_battery_health_reduced_title">Kapasiti bateri berkurangan</string>
     <string name="battery_tip_battery_health_unknown_title">Tidak dapat mengesan kesihatan bateri</string>
+    <string name="battery_tip_dock_defender_active_summary">Untuk melanjutkan jangka hayat bateri, pengecasan ditunda pada 90% semasa tablet anda didok</string>
+    <string name="battery_tip_dock_defender_active_title">Pengecasan ditunda untuk melindungi bateri</string>
+    <string name="battery_tip_dock_defender_button_learn_more">Ketahui lebih lanjut</string>
+    <string name="battery_tip_dock_defender_button_override">Tolak</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">Untuk melanjutkan jangka hayat bateri, pengecasan akan ditunda pada 90% semasa tablet anda didok</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">Mengecas hingga 90%</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">Apabila tablet anda didok selepas ini, pengecasan akan ditunda pada 90% untuk melindungi bateri</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">Mengecas sehingga penuh</string>
     <string name="battery_tip_limited_temporarily_extra_summary">Untuk melindungi bateri anda, pengecasan dijeda pada %1$s semasa tablet anda didok</string>
     <string name="battery_tip_smart_battery_summary">Hidupkan Bateri Boleh Suai</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">Ketahui lebih lanjut tentang pengecasan wayarles</string>
+    <string name="battery_tip_wireless_charging_summary">Mengecas telefon anda secara wayarles mungkin menggunakan lebih banyak tenaga berbanding dengan kaedah pengecasan yang lain</string>
+    <string name="battery_tip_wireless_charging_title">Pengecasan secara wayarles</string>
+    <string name="calls_and_alarms_device_title">Panggilan dan penggera</string>
     <string name="clear_calling_footer">"Untuk melindungi privasi anda, Panggilan Jelas tidak menghantar audio atau perbualan kepada Google.
 
 Panggilan Jelas berfungsi pada panggilan Wi‑Fi dan kebanyakan rangkaian, tidak tersedia untuk rangkaian 3G."</string>
@@ -120,12 +146,15 @@ Panggilan Jelas berfungsi pada panggilan Wi‑Fi dan kebanyakan rangkaian, tidak
 
 Pancingan data ialah percubaan untuk mencuri bukti kelayakan log masuk atau maklumat peribadi lain."</string>
     <string name="content_protection_preference_subpage_summary">Pengimbasan dijalankan secara peribadi terus pada peranti anda, menyemak aktiviti apl untuk mengesan pancingan data atau gelagat mengelirukan yang lain. Jika aktiviti itu dikesan, sesetengah maklumat apl dihantar kepada Google Play Protect untuk mengesahkan ancaman dan memberikan amaran kepada pengguna apl.</string>
-    <string name="dark_ui_text">Tema gelap menggunakan latar belakang hitam untuk memastikan bateri anda tahan lebih lama. Jadual tema gelap menunggu untuk dihidupkan sehingga skrin anda dimatikan.</string>
+    <string name="contextual_timeout_description">Skrin anda dimatikan secara automatik lebih awal jika anda tidak menggunakan peranti anda</string>
+    <string name="contextual_timeout_title">Tamat masa boleh suai</string>
+    <string name="dark_ui_text">Tema gelap menggunakan latar belakang hitam agar bateri tahan lebih lama. Jadual tema gelap akan diaktifkan setelah skrin dimatikan.</string>
     <string name="debugging_data_title">Data penyahpepijatan</string>
     <string name="discover_tips_button">Terokai petua</string>
     <string name="dock_summary_charging_phone">Mengecas telefon</string>
-    <string name="double_twist_for_camera_mode_summary">Untuk beralih masuk dan keluar daripada mod swafoto dalam Kamera Google, pusing dua kali semasa anda menggunakan apl itu.</string>
+    <string name="double_twist_for_camera_mode_summary">Untuk masuk dan keluar daripada mod swafoto dalam Google Camera, balikkan dua kali semasa dalam apl itu.</string>
     <string name="duration_less_than_one_minute">Kurang daripada seminit</string>
+    <string name="enable_glanceable_hub_toggle">Mod hab</string>
     <string name="extreme_battery_saver_summary">Termasuk semua perubahan yang disenaraikan di atas. Juga menjeda apl tidak penting dan pemberitahuan apl tersebut.</string>
     <string name="extreme_battery_saver_title">Penjimat Bateri Ekstrem</string>
     <string name="face_confirmation_hide_illustration_description">Kini anda boleh menggunakan wajah anda untuk membuka kunci apabila anda memegang telefon anda atau mengetik skrin.</string>
@@ -163,7 +192,6 @@ Pancingan data ialah percubaan untuk mencuri bukti kelayakan log masuk atau makl
     <string name="firmware_update_status_category">Status perisian tegar peranti</string>
     <string name="firmware_update_status_title">Kemaskinian perisian tegar tersedia</string>
     <string name="firmware_update_version_number_category">Versi perisian tegar peranti</string>
-    <string name="firmware_update_version_number_title">Perisian tegar papan kekunci Pixel</string>
     <string name="fullbackup_data_summary">"Sandarkan data peranti secara automatik (seperti kata laluan Wi-Fi dan sejarah panggilan) dan data apl (seperti tetapan dan fail yang disimpan oleh apl) pada Google Drive.
 
 Apabila anda menghidupkan sandaran automatik, data peranti dan apl disimpan secara berkala pada folder peribadi di Google Drive. Data apl boleh merangkumi sebarang data yang telah disimpan oleh apl (berdasarkan tetapan pembangun), termasuk data yang berkemungkinan sensitif, seperti kenalan, mesej dan foto.
@@ -171,16 +199,19 @@ Apabila anda menghidupkan sandaran automatik, data peranti dan apl disimpan seca
 Data sandaran tidak dikira dalam kuota storan Drive anda. Fail yang besar atau fail yang telah dipilih oleh pembangun supaya dikecualikan daripada perkhidmatan itu, tidak akan disandarkan."</string>
     <string name="fullbackup_erase_dialog_message">Berhenti menyandarkan data peranti (seperti kata laluan Wi-Fi dan sejarah panggilan) dan data apl (seperti tetapan dan fail yang disimpan oleh apl), serta padamkan semua salinan di Google Drive?</string>
     <string name="gesture_settings_activity_title">Navigasi Gerak Isyarat</string>
+    <string name="hub_mode_content_setting">Benarkan sebarang widget dalam mod hab</string>
     <string name="install_unknown_applications">Benarkan pemasangan apl daripada sumber selain Gedung Play</string>
     <string name="keywords_accessibility_menu">motor, menu pantas, menu bantu, sentuh, kecekatan, artritis, rsi, strok, geletar, berbilang sklerosis, palsi serebrum, butang, perkakasan, tekan, kecederaan tegang berulang, tangan, sakit, boleh akses, bantu</string>
     <string name="keywords_adaptive_alert_vibration">haptik, getaran, telefon, panggilan, deringan, makluman, pemberitahuan, kuat, senyap, bunyi bising, sarung, mudah suai</string>
     <string name="keywords_adaptive_charging">cas, mengecas, pengecasan pintar, pengecasan boleh suai, bateri, kesihatan bateri</string>
     <string name="keywords_battery_share">perkongsian bateri, pengecasan wayarles</string>
     <string name="keywords_battery_share_settings">perkongsian bateri, pengecasan wayarles balikan</string>
+    <string name="keywords_contextual_screen_timeout">skrin, tamat masa, boleh suai, kontekstual</string>
     <string name="keywords_gesture">gerak isyarat, pergerakan</string>
     <string name="keywords_hearing_devices">pekak labang, kehilangan pendengaran, PSAP</string>
     <string name="keywords_limited_warranty">waranti, jaminan, jaminan terhad, janji, pembaikan, rma, penggantian</string>
     <string name="keywords_live_transcribe">Sari kata, SK, Sari Kata Langsung, pekak labang, kehilangan pendengaran, CART, pertuturan kepada teks, sari kata</string>
+    <string name="keywords_magnifier">Zum, Pembesaran, Rabun, Besarkan, jadikan lebih besar</string>
     <string name="keywords_reverse_charging_stop_threshold">Berhenti berkongsi kuasa bateri apabila telefon mencapai:</string>
     <string name="keywords_select_to_speak">Dengar teks, baca dengan lantang, skrin tutur, pembaca skrin</string>
     <string name="keywords_sound_amplifier">PSAP, kuatkan, penguatan bunyi, pekak labang, kehilangan pendengaran, penguatan</string>
@@ -188,6 +219,7 @@ Data sandaran tidak dikira dalam kuota storan Drive anda. Fail yang besar atau f
     <string name="keywords_switch_access">motor, suis, tangan, AT, teknologi bantuan, lumpuh, ALS, pengimbasan, pengimbasan langkah</string>
     <string name="keywords_talkback">Pembaca skrin, Suara Latar, VoiceOver, Bantuan Suara, Orang Buta, Rabun, TTS, teks kepada pertuturan, maklum balas yang dituturkan</string>
     <string name="keywords_touch_sensitivity">sentuh, kepekaan, sensitif, pelindung skrin, filem, responsif, keresponsifan</string>
+    <string name="keywords_touch_sensitivity_settings">sentuh, boleh suai, kepekaan, sensitif, pelindung skrin, filem, responsif, keresponsifan</string>
     <string name="keywords_voice_access">suara, kawalan suara, motor, tangan, mik, mikrofon, pengimlakan, cakap, kawalan</string>
     <string name="led_preference_title">Corak penunjuk LED</string>
     <string name="legal_source_code_description">Butiran tentang kod sumber untuk komponen yang disediakan sebagai sumber terbuka boleh ditemukan di pusat bantuan Pixel.</string>
@@ -201,7 +233,7 @@ Data sandaran tidak dikira dalam kuota storan Drive anda. Fail yang besar atau f
     <string name="permit_debugging_data">Benarkan akses laporan pepijat</string>
     <string name="play_application_detail_indication_summary">Semak kemaskinian</string>
     <string name="play_application_update_entry_title">Kemaskinian apl</string>
-    <string name="privatespace_retry_summary">Anda perlu log masuk ke Google Account untuk menyediakan Ruang Peribadi</string>
+    <string name="private_space_retry_summary">Log masuk ke Google Account untuk menggunakan ruang privasi anda</string>
     <string name="repair_mode_active_summary">Dalam mod pembaikan</string>
     <string name="repair_mode_summary">Persekitaran selamat untuk pembaikan peranti</string>
     <string name="repair_mode_title">Mod pembaikan</string>
@@ -214,7 +246,7 @@ Data sandaran tidak dikira dalam kuota storan Drive anda. Fail yang besar atau f
     <string name="reverse_charging_detail_footer_title">Bateri telefon anda akan habis dengan lebih pantas apabila menggunakan Perkongsian Bateri. Perkongsian Bateri berfungsi dengan fon telinga, jam tangan, telefon dan pelbagai lagi yang serasi. Untuk pengecasan yang lebih baik, tanggalkan bekas telefon anda.</string>
     <string name="reverse_charging_detail_footer_title_advanced">"Perkongsian Bateri berfungsi dengan fon telinga, telefon dan peranti lain yang serasi.
 
-Bateri telefon akan habis dengan lebih pantas apabila menggunakan ciri ini. Perkongsian Bateri dimatikan secara automatik selepas beberapa minit jika peranti lain tidak dikesan. Untuk pengecasan yang lebih baik, tanggalkan sarung telefon dan item lain yang boleh membawa gangguan, seperti barang logam."</string>
+Bateri telefon akan habis dengan lebih cepat apabila menggunakan ciri ini. Perkongsian Bateri dimatikan secara automatik selepas beberapa minit jika peranti lain tidak dikesan. Untuk pengecasan yang lebih baik, tanggalkan sarung telefon dan item lain yang boleh mengganggu, seperti barang logam."</string>
     <string name="reverse_charging_detail_power_save_mode_is_on_message">Perkongsian Bateri tidak tersedia kerana Penjimat Bateri dihidupkan</string>
     <string name="reverse_charging_detail_unplug_usb_cable_message">Perkongsian Bateri tidak tersedia kerana peranti USB-C dipalamkan</string>
     <string name="reverse_charging_instructions_title">"Caskan peranti lain dengan Pixel anda.
@@ -250,9 +282,15 @@ Balikkan telefon anda untuk mencuba."</string>
     <string name="security_settings_face_enroll_error_generic_dialog_message">Pendaftaran wajah tidak berfungsi.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Persediaan Buka Kunci Wajah sudah tamat masa</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Kini anda boleh menggunakan wajah untuk membuka kunci telefon atau mengesahkan identiti anda, seperti ketika anda log masuk ke apl atau meluluskan pembelian</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp_full">"Kini anda boleh menggunakan wajah anda untuk membuka kunci telefon atau mengesahkan identiti anda, misalnya ketika anda log masuk ke apl atau meluluskan pembelian.
+
+Buka Kunci Wajah berfungsi paling sesuai apabila terdapat cahaya yang mencukupi dan anda tidak memakai pelitup muka atau cermin mata hitam."</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Kini anda boleh menggunakan wajah anda untuk membuka kunci apabila anda memegang telefon anda atau mengetik skrin.
 
 Buka Kunci Wajah paling sesuai digunakan apabila terdapat cahaya yang mencukupi dan anda tidak memakai pelitup muka atau cermin mata hitam."</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp_folded">"Kini anda boleh menggunakan wajah anda untuk membuka kunci apabila anda memegang telefon anda atau mengetik skrin. Telefon anda perlu dilipat untuk menggunakan Buka Kunci Wajah.
+
+Buka Kunci Wajah berfungsi paling sesuai apabila terdapat cahaya yang mencukupi dan anda tidak memakai pelitup muka atau cermin mata hitam."</string>
     <string name="security_settings_face_enroll_finish_title">Nampak bagus!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Persediaan untuk pandangan/gerakan kepala terbatas</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Mata perlu dibuka</string>
@@ -292,6 +330,8 @@ Perhatian: Anda tidak boleh menggunakan cap jari untuk membuka kunci peranti ini
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint untuk kerja</string>
     <string name="setup_suggestion_summary">Hanya beberapa langkah lagi</string>
     <string name="setup_suggestion_title">Selesaikan persediaan</string>
+    <string name="smart_battery_a11y_collapse_label">Kuncup, Bateri Boleh Suai</string>
+    <string name="smart_battery_a11y_expand_label">Kembang, Bateri Boleh Suai</string>
     <string name="smart_battery_footer">Untuk melanjutkan hayat bateri, Bateri Boleh Suai mungkin mengurangkan prestasi dan aktiviti latar belakang. Sesetengah pemberitahuan mungkin tertangguh.</string>
     <string name="smart_battery_manager_title">Pilihan boleh suai</string>
     <string name="smart_battery_title">Bateri Boleh Suai</string>
@@ -309,6 +349,8 @@ Perhatian: Anda tidak boleh menggunakan cap jari untuk membuka kunci peranti ini
     <string name="software_update_update_available_summary">Kemaskinian tersedia</string>
     <string name="sound_dashboard_summary">Kelantangan, haptik, Jangan Ganggu</string>
     <string name="sound_settings">Bunyi &amp; getaran</string>
+    <string name="spatial_audio_head_tracking_available">Penjejakan kepala tersedia</string>
+    <string name="spatial_audio_head_tracking_unavailable">Penjejakan kepala tidak tersedia</string>
     <string name="spatial_audio_title">Audio ruang</string>
     <string name="speed_boost_summary_off">Dimatikan</string>
     <string name="speed_boost_summary_on">Dihidupkan</string>
@@ -321,6 +363,9 @@ Perhatian: Anda tidak boleh menggunakan cap jari untuk membuka kunci peranti ini
     <string name="suw_warranty_positive_button_text">Tutup</string>
     <string name="system_update_entry_title">Kemaskinian sistem</string>
     <string name="system_updates_group_title">Kemaskinian Pixel</string>
+    <string name="touch_category_title">Sentuh</string>
+    <string name="touch_sensitivity_settings_summary">Laraskan kepekaan skrin sentuh</string>
+    <string name="touch_sensitivity_settings_title">Kepekaan sentuhan</string>
     <string name="touch_sensitivity_summary">Tingkatkan kepekaan sentuhan dan tingkatkan sentuhan semasa menggunakan pelindung skrin</string>
     <string name="touch_sensitivity_title">Mod pelindung skrin</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Pegang telefon di hadapan wajah anda</string>

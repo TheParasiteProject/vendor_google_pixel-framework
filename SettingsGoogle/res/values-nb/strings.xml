@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">Fysisk tilbakemelding på tastaturet</string>
+    <string name="accessibility_screen_magnifier_summary">Bruk kameraet til å forstørre detaljer rundt deg</string>
+    <string name="accessibility_screen_magnifier_title">Lupe</string>
     <string name="adaptive_alert_vibration_summary">Reduserer vibreringsstyrken når telefonen er i ro og skjermen er vendt oppover</string>
     <string name="adaptive_alert_vibration_title">Tilpasset varselsvibrering</string>
     <string name="adaptive_battery_switch_des">Tilpasset batteri kan redusere ytelse og bakgrunnsaktivitet for å forlenge batterilevetiden. Noen varsler kan bli utsatt.</string>
@@ -12,6 +14,8 @@
     <string name="adaptive_charging_main_switch_title">Bruk tilpasset lading</string>
     <string name="adaptive_charging_time_estimate"><b>Tilpasset lading</b> • Fullt etter %1$s</string>
     <string name="adaptive_charging_title">Tilpasset lading</string>
+    <string name="adaptive_touch_sensitivity_summary">Berøringsfølsomheten justeres automatisk etter omgivelsene, aktivitetene og skjermbeskytteren.</string>
+    <string name="adaptive_touch_sensitivity_title">Tilpasset berøring</string>
     <string name="add_bypassed_application_hint">Ingen apper er lagt til</string>
     <string name="advanced_vpn_preference_group_title">Innebygd</string>
     <string name="all_apps_category_title">Alle apper</string>
@@ -23,6 +27,16 @@ Hvis du gir tilgang, kan denne appen "<b>automatisk samle inn og laste opp feilr
 
 Hvis du opphever tilgangen, må appen be deg om tillatelse for å samle inn og laste opp en feilrapport hver gang du sender inn en rapport om en feil."</string>
     <string name="app_and_notification_dashboard_summary">Assistent, nylige apper, standardapper</string>
+    <string name="audio_sharing_switch_title">Del lyd</string>
+    <string name="audio_sharing_title">Lyddeling</string>
+    <string name="audio_streams_category_title">Koble til en LE-lydstrøm</string>
+    <string name="audio_streams_connect">Koble til</string>
+    <string name="audio_streams_disconnect">Koble fra</string>
+    <string name="audio_streams_pref_title">Lydstrømmer i nærheten</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">QR-koden er ikke i et gyldig format</string>
+    <string name="audio_streams_qr_code_scanner">For å begynne å lytte, midtstill QR-koden nedenfor</string>
+    <string name="audio_streams_qr_code_summary">Koble til en lydstrøm med en QR-kode</string>
+    <string name="audio_streams_title">Lydstrømmer</string>
     <string name="automatic_storage_manager_activation_warning">Når du er på nettet, har du fremdeles tilgang til bilder og videoer med den kvaliteten du har valgt for sikkerhetskopiering</string>
     <string name="automatic_storage_manager_days_title">Fjern sikkerhetskopierte bilder og videoer</string>
     <string name="automatic_storage_manager_deactivation_warning">"Vil du slå av Smart lagring? 
@@ -48,8 +62,20 @@ Smart lagring kommer ikke til å frigjøre plass når du nesten er tom for ledig
     <string name="battery_tip_battery_health_learn_more_description">Finn ut mer om batteritilstand</string>
     <string name="battery_tip_battery_health_reduced_title">Batterikapasiteten er redusert</string>
     <string name="battery_tip_battery_health_unknown_title">Kan ikke registrere batteritilstand</string>
+    <string name="battery_tip_dock_defender_active_summary">For å bidra til å forlenge brukstiden for batteriet er lading på vent på 90 % mens nettbrettet er dokket</string>
+    <string name="battery_tip_dock_defender_active_title">Ladingen er satt på vent for å beskytte batteriet</string>
+    <string name="battery_tip_dock_defender_button_learn_more">Finn ut mer</string>
+    <string name="battery_tip_dock_defender_button_override">Overstyr</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">For å forlenge brukstiden for batteriet blir ladingen satt på vent på 90 % mens nettbrettet er dokket</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">Lader til 90 %</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">Den neste gangen nettbrettet er dokket, blir ladingen satt på vent på 90 % for å beskytte batteriet</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">Lader batteriet helt opp</string>
     <string name="battery_tip_limited_temporarily_extra_summary">For å beskytte batteriet settes lading på pause ved %1$s når nettbrettet er i dokken</string>
     <string name="battery_tip_smart_battery_summary">Slå på Tilpasset batteri</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">Finn ut mer om trådløs lading</string>
+    <string name="battery_tip_wireless_charging_summary">Trådløs lading av telefonen kan bruke mer strøm enn andre lademetoder</string>
+    <string name="battery_tip_wireless_charging_title">Lader trådløst</string>
+    <string name="calls_and_alarms_device_title">Anrop og alarmer</string>
     <string name="clear_calling_footer">"For å ivareta personvernet ditt sender Klare samtaler aldri lyd eller samtaler til Google.
 
 Klare samtaler fungerer med wifi-anrop og de fleste nettverk, men er ikke tilgjengelig for 3G-nettverk."</string>
@@ -85,7 +111,7 @@ Klare samtaler fungerer med wifi-anrop og de fleste nettverk, men er ikke tilgje
     <string name="columbus_name">Hurtigtrykk</string>
     <string name="columbus_radio_button_extra_widget_a11y_label">Innstillinger for %1$s</string>
     <string name="columbus_setting_action_assistant_title">Åpne den digitale assistenten</string>
-    <string name="columbus_setting_action_flashlight_title">Slå lommelykten av/på</string>
+    <string name="columbus_setting_action_flashlight_title">Slå lommelykten på/av</string>
     <string name="columbus_setting_action_launch_summary_no_selection">Ingen app er valgt</string>
     <string name="columbus_setting_action_launch_summary_not_installed">Appen er ikke installert</string>
     <string name="columbus_setting_action_launch_title">Åpne app</string>
@@ -120,12 +146,15 @@ Klare samtaler fungerer med wifi-anrop og de fleste nettverk, men er ikke tilgje
 
 Nettfisking er et forsøk på å stjele påloggingslegitimasjon eller andre personopplysninger."</string>
     <string name="content_protection_preference_subpage_summary">Skanningen kjøres privat, direkte på enheten din, og kontrollerer appaktivitet for å oppdage nettfisking og annen villedende funksjonalitet. Hvis noe av dette blir funnet, sender funksjonen noe appinformasjon til Google Play Protect for å bekrefte trusselen og advare appbrukere.</string>
+    <string name="contextual_timeout_description">Slår av skjermen automatisk tidlig hvis du ikke bruker enheten</string>
+    <string name="contextual_timeout_title">Tilpasset tidsavbrudd</string>
     <string name="dark_ui_text">Mørkt tema bruker en svart bakgrunn for å få batteriet til å vare lenger. Tidsplaner for mørkt tema blir ikke slått på før skjermen er slått av.</string>
     <string name="debugging_data_title">Feilsøkingsdata</string>
     <string name="discover_tips_button">Se tips</string>
     <string name="dock_summary_charging_phone">Lader telefonen</string>
     <string name="double_twist_for_camera_mode_summary">Start eller avslutt selfie-modus i Google Kamera ved å vri to ganger når du er i appen.</string>
     <string name="duration_less_than_one_minute">Under ett minutt</string>
+    <string name="enable_glanceable_hub_toggle">Hub-modus</string>
     <string name="extreme_battery_saver_summary">Inkluderer alle endringene ovenfor. Setter også apper som ikke er nødvendige, og tilhørende varsler, på pause.</string>
     <string name="extreme_battery_saver_title">Ekstrem batterisparing</string>
     <string name="face_confirmation_hide_illustration_description">Nå kan du låse opp telefonen med ansiktet når du løfter den opp eller trykker på skjermen.</string>
@@ -163,7 +192,6 @@ Nettfisking er et forsøk på å stjele påloggingslegitimasjon eller andre pers
     <string name="firmware_update_status_category">Status for fastvare på enheten</string>
     <string name="firmware_update_status_title">En fastvareoppdatering er tilgjengelig</string>
     <string name="firmware_update_version_number_category">Fastvareversjonen på enheten:</string>
-    <string name="firmware_update_version_number_title">Fastvare for Pixel-tastatur</string>
     <string name="fullbackup_data_summary">"Sikkerhetskopiér enhetsdata automatisk (for eksempel wifi-passord og anropslogg) og appdata (for eksempel innstillinger og filer lagret av apper) på Google Disk.
 
 Når du slår på automatisk sikkerhetskopiering, lagres app- og enhetsdata regelmessig i en privat mappe på Google Disk. Appdata kan være alle slags data som er lagret av apper (basert på utviklerinnstillingene). Dette inkluderer potensielt sensitive data, for eksempel kontakter, meldinger og bilder.
@@ -171,16 +199,19 @@ Når du slår på automatisk sikkerhetskopiering, lagres app- og enhetsdata rege
 Sikkerhetskopierte data teller ikke mot lagringsgrensen i Disk. Store filer eller filer utviklere har valgt å ekskludere fra tjenesten, sikkerhetskopieres ikke."</string>
     <string name="fullbackup_erase_dialog_message">Vil du stoppe automatisk sikkerhetskopiering av enhetsdata (for eksempel wifi-passord og anropslogg) og appdata (for eksempel innstillinger og filer lagret av apper), og i tillegg slette alle kopier på Google Disk?</string>
     <string name="gesture_settings_activity_title">Navigasjon med bevegelser</string>
+    <string name="hub_mode_content_setting">Tillat alle moduler i hub-modus</string>
     <string name="install_unknown_applications">Tillat installasjon av apper fra andre kilder enn Play-butikken</string>
     <string name="keywords_accessibility_menu">motorikk, hurtigmeny, assisterende meny, berøring, førlighet, artritt, musesyke, slag, risting, multippel sklerose, cerebral parese, knapp, maskinvare, trykk, hånd, smerte, tilgjengelig, hjelp</string>
     <string name="keywords_adaptive_alert_vibration">haptisk teknologi, vibrering, telefon, anrop, ring, varsel, varslinger, høy, stille, støy, etui, tilpasset</string>
     <string name="keywords_adaptive_charging">lad, lading, smart lading, tilpasset lading, batteri, batterihelse</string>
     <string name="keywords_battery_share">batterideling, trådløs lading</string>
     <string name="keywords_battery_share_settings">batterideling, omvendt trådløs lading</string>
+    <string name="keywords_contextual_screen_timeout">skjerm, tidsavbrudd, tilpasset, kontekstbasert</string>
     <string name="keywords_gesture">bevegelse, bevegelser</string>
     <string name="keywords_hearing_devices">hørselshemmet, hørselstap, nødsentral</string>
     <string name="keywords_limited_warranty">garanti, begrenset garanti, løfte, reparasjon, rma, erstatning, retur</string>
     <string name="keywords_live_transcribe">Teksting, teksting for hørselshemmede, CC, Direkteteksting, hørselshemmet, hørselstap, CART, tale til tekst, undertekst</string>
+    <string name="keywords_magnifier">Zoom, forstørring, nedsatt synsevne, forstørr, gjør større</string>
     <string name="keywords_reverse_charging_stop_threshold">Slutt å dele batteri når telefonen når:</string>
     <string name="keywords_select_to_speak">Hør tekst, høytlesing, les opp skjermen, skjermleser</string>
     <string name="keywords_sound_amplifier">nødsentral, forsterk, lydforsterker, hørselshemmet, hørselstap, forsterking</string>
@@ -188,6 +219,7 @@ Sikkerhetskopierte data teller ikke mot lagringsgrensen i Disk. Store filer elle
     <string name="keywords_switch_access">motor, bryter, hånd, AT, assisterende teknologi, lammelse, ALS, skanning, trinnvis skanning</string>
     <string name="keywords_talkback">Skjermleser, kommentator, VoiceOver, Talehjelp, blind, nedsatt synsevne, TTS, tekst til tale, taletilbakemelding</string>
     <string name="keywords_touch_sensitivity">trykk, sensitivitet, sensitiv, skjermbeskytter, film, responsiv, følsomhet</string>
+    <string name="keywords_touch_sensitivity_settings">berøring, adaptiv, sensitivitet, sensitiv, skjermbeskytter, film, responsiv, følsomhet</string>
     <string name="keywords_voice_access">tale, stemmestyring, motor, hånd, mik., mikrofon, diktering, snakk, kontroll</string>
     <string name="led_preference_title">Mønstre for LED-indikatoren</string>
     <string name="legal_source_code_description">Detaljer om kildekoden for komponenter som gjøres tilgjengelige som åpen kildekode, finnes i Pixel-brukerstøtten.</string>
@@ -201,7 +233,7 @@ Sikkerhetskopierte data teller ikke mot lagringsgrensen i Disk. Store filer elle
     <string name="permit_debugging_data">Gi tilgang til feilrapporter</string>
     <string name="play_application_detail_indication_summary">Se etter oppdateringer</string>
     <string name="play_application_update_entry_title">Appoppdateringer</string>
-    <string name="privatespace_retry_summary">Du må logge på en Google-konto for å konfigurere Private Space</string>
+    <string name="private_space_retry_summary">Logg på en Google-konto som skal brukes med det private området ditt</string>
     <string name="repair_mode_active_summary">I reparasjonsmodus</string>
     <string name="repair_mode_summary">Trygt miljø for enhetsreparasjon</string>
     <string name="repair_mode_title">Reparasjonsmodus</string>
@@ -239,9 +271,9 @@ Vend telefonen for å prøve."</string>
     <string name="screen_time_summary_usage_today">%1$s i dag</string>
     <string name="search_bar_account_avatar_content_description">Profilbilde – dobbelttrykk for å åpne Google-kontoen</string>
     <string name="search_gesture_category_title">Søk</string>
-    <string name="search_gesture_feature_title">Tegn sirkel for å søke</string>
-    <string name="search_long_press_home_button_summary">Trykk og hold på hjemknappen nederst på skjermen, og sirkle rundt eller fremhev det du vil søke etter</string>
-    <string name="search_press_hold_gesture_summary">Trykk og hold på håndtaket nederst på skjermen, og sirkle rundt eller fremhev det du vil søke etter</string>
+    <string name="search_gesture_feature_title">Circle to Search</string>
+    <string name="search_long_press_home_button_summary">Trykk og hold på hjemknappen nederst på skjermen, og tegn rundt eller merk det du vil søke etter</string>
+    <string name="search_press_hold_gesture_summary">Trykk og hold på håndtaket nederst på skjermen, og tegn rundt eller merk det du vil søke etter</string>
     <string name="security_dismiss_dialog_dismiss_button">Lukk</string>
     <string name="security_dismiss_dialog_title">Vil du lukke dette varselet?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Trykk for å konfigurere</string>
@@ -249,9 +281,15 @@ Vend telefonen for å prøve."</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">Tidsgrensen for ansiktsregistrering er nådd. Prøv på nytt.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Konfigureringen av ansiktslås ble tidsavbrutt</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Nå kan du bruke ansiktet til å låse opp telefonen eller bekrefte at du er deg, for eksempel når du logger på apper eller godkjenner kjøp</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp_full">"Nå kan du bruke ansiktet til å låse opp telefonen eller bekrefte at det er deg, for eksempel når du logger på apper eller godkjenner kjøp.
+
+Ansiktslås fungerer best når det er tilstrekkelig lys og du ikke bruker munnbind eller mørke briller."</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Når du løfter telefonen eller trykker på skjermen, kan du nå bruke ansiktet til å låse opp.
 
 Ansiktslås fungerer best når det er nok lys og du ikke bruker munnbind eller mørke briller."</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp_folded">"Nå kan du låse opp telefonen med ansiktet når du løfter den opp eller trykker på skjermen. Telefonen må være sammenlagt for å bruke ansiktslås.
+
+Ansiktslås fungerer best når det er tilstrekkelig lys og du ikke bruker munnbind eller mørke briller."</string>
     <string name="security_settings_face_enroll_finish_title">Dette ser bra ut</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Oppsett for nedsatt syn eller hodemobilitet</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Krever at øynene er åpne</string>
@@ -291,6 +329,8 @@ Merk: Du kan ikke bruke fingeravtrykket ditt til å låse opp dette enheten. For
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint for jobb</string>
     <string name="setup_suggestion_summary">Bare noen trinn til</string>
     <string name="setup_suggestion_title">Fullfør konfigureringen</string>
+    <string name="smart_battery_a11y_collapse_label">Skjul, tilpasset batteri</string>
+    <string name="smart_battery_a11y_expand_label">Vis, tilpasset batteri</string>
     <string name="smart_battery_footer">Tilpasset batteri kan redusere ytelse og bakgrunnsaktivitet for å forlenge batterilevetiden. Noen varsler kan bli utsatt.</string>
     <string name="smart_battery_manager_title">Alternativer for selvjustering</string>
     <string name="smart_battery_title">Tilpasset batteri</string>
@@ -307,6 +347,8 @@ Merk: Du kan ikke bruke fingeravtrykket ditt til å låse opp dette enheten. For
     <string name="software_update_up_to_specific_date_summary">Oppdatert %1$s</string>
     <string name="software_update_update_available_summary">En oppdatering er tilgjengelig</string>
     <string name="sound_dashboard_summary">Volum, fysisk tilbakemelding, Ikke forstyrr</string>
+    <string name="spatial_audio_head_tracking_available">Hodesporing er tilgjengelig</string>
+    <string name="spatial_audio_head_tracking_unavailable">Hodesporing er ikke tilgjengelig</string>
     <string name="speed_boost_summary_off">Av</string>
     <string name="speed_boost_summary_on">På</string>
     <string name="speed_boost_title">Spectrum Speed Boost</string>
@@ -318,6 +360,9 @@ Merk: Du kan ikke bruke fingeravtrykket ditt til å låse opp dette enheten. For
     <string name="suw_warranty_positive_button_text">Lukk</string>
     <string name="system_update_entry_title">Systemoppdatering</string>
     <string name="system_updates_group_title">Pixel-oppdateringer</string>
+    <string name="touch_category_title">Berøring</string>
+    <string name="touch_sensitivity_settings_summary">Juster følsomheten for berøringsskjermen</string>
+    <string name="touch_sensitivity_settings_title">Berøringsfølsomhet</string>
     <string name="touch_sensitivity_summary">Øk berøringsfølsomheten og trykkresponsen når du bruker en skjermbeskytter</string>
     <string name="touch_sensitivity_title">Skjermbeskyttermodus</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Hold telefonen foran ansiktet</string>

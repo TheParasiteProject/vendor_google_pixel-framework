@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="?android:dialogPreferredPadding"
+    android:paddingHorizontal="?android:dialogPreferredPadding">
+
+    <TextView
+        android:id="@id/share_audio_disconnect_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="24.0dip"
+        style="@style/DeviceAudioSharingText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@id/device_btn_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never" />
+
+    <Button
+        android:id="@id/cancel_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/audio_sharing_rounded_bg_ripple"
+        android:layout_gravity="center"
+        android:layout_marginTop="4.0dip"
+        android:text="@string/cancel"
+        style="@style/SettingsLibActionButton" />
+
+</LinearLayout>

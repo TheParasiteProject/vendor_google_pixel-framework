@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">Vibrācija, pieskaroties tastatūrai</string>
+    <string name="accessibility_screen_magnifier_summary">Izmantojiet kameru, lai palielinājumā detalizēti skatītu apkārtni.</string>
+    <string name="accessibility_screen_magnifier_title">Lupa</string>
     <string name="adaptive_alert_vibration_summary">Samazina vibrāciju stiprumu, kamēr tālrunis ir nekustīgs un ekrāns ir pavērsts augšup.</string>
     <string name="adaptive_alert_vibration_title">Adaptīva vibrācija brīdinājumiem</string>
     <string name="adaptive_battery_switch_des">Lai paildzinātu akumulatora darbību, adaptīvā akumulatora funkcija var ierobežot veiktspēju un fonā veiktās darbības. Daži paziņojumi var darboties ar aizkavi.</string>
@@ -12,6 +14,8 @@
     <string name="adaptive_charging_main_switch_title">Izmantot adaptīvo uzlādi</string>
     <string name="adaptive_charging_time_estimate"><b>Adaptīvā uzlāde</b> • Tiks pabeigta līdz: %1$s</string>
     <string name="adaptive_charging_title">Adaptīvā uzlāde</string>
+    <string name="adaptive_touch_sensitivity_summary">Skārienjutība tiks automātiski pielāgota jūsu videi, darbībām un ekrāna aizsargplēvei.</string>
+    <string name="adaptive_touch_sensitivity_title">Adaptīvais skāriens</string>
     <string name="add_bypassed_application_hint">Neviena lietotne netika pievienota</string>
     <string name="advanced_vpn_preference_group_title">Iebūvēts</string>
     <string name="all_apps_category_title">Visas lietotnes</string>
@@ -23,6 +27,16 @@ Ja tiks piešķirta piekļuve, šī lietotne varēs "<b>automātiski vākt un au
 
 Ja piekļuve tiks atsaukta, lietotne lūgs jūsu atļauju vākt un augšupielādēt kļūdas pārskatu katram atsevišķam ziņojumam par problēmu."</string>
     <string name="app_and_notification_dashboard_summary">Asistents, pēdējās izmantotās lietotnes, noklusējuma lietotnes</string>
+    <string name="audio_sharing_switch_title">Kopīgot audio</string>
+    <string name="audio_sharing_title">Audio kopīgošana</string>
+    <string name="audio_streams_category_title">Pievienošanās LE audio straumei</string>
+    <string name="audio_streams_connect">Izveidot savienojumu</string>
+    <string name="audio_streams_disconnect">Pārtraukt savienojumu</string>
+    <string name="audio_streams_pref_title">Audio straumes tuvumā</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">Kvadrātkoda formāts nav derīgs.</string>
+    <string name="audio_streams_qr_code_scanner">Lai sāktu klausīties, centrējiet tālāk norādīto kvadrātkodu.</string>
+    <string name="audio_streams_qr_code_summary">Pievienojieties audio straumei, izmantojot kvadrātkodu.</string>
+    <string name="audio_streams_title">Audio straumes</string>
     <string name="automatic_storage_manager_activation_warning">Kad būsiet izveidojis savienojumu, joprojām varēsiet piekļūt fotoattēliem un videoklipiem tādā kvalitātē, ko atlasījāt dublējumam.</string>
     <string name="automatic_storage_manager_days_title">Noņemt dublētos fotoattēlus un videoklipus</string>
     <string name="automatic_storage_manager_deactivation_warning">"Vai izslēgt viedo krātuvi? 
@@ -49,8 +63,20 @@ Viedā krātuve neatbrīvos vietu, ja krātuve ir gandrīz pilna."</string>
     <string name="battery_tip_battery_health_learn_more_description">Uzzināt vairāk par akumulatora stāvokli</string>
     <string name="battery_tip_battery_health_reduced_title">Akumulatora ietilpība ir samazināta</string>
     <string name="battery_tip_battery_health_unknown_title">Nevar noteikt akumulatora stāvokli</string>
+    <string name="battery_tip_dock_defender_active_summary">Lai paildzinātu akumulatora darbmūžu, kad planšetdators ir dokots, uzlāde tiek apturēta pie 90%</string>
+    <string name="battery_tip_dock_defender_active_title">Uzlāde apturēta, lai aizsargātu akumulatoru</string>
+    <string name="battery_tip_dock_defender_button_learn_more">Uzzināt vairāk</string>
+    <string name="battery_tip_dock_defender_button_override">Ignorēt</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">Lai paildzinātu akumulatora darbmūžu, kad planšetdators būs dokots, uzlāde tiks apturēta pie 90%</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">Tiks uzlādēts līdz 90%</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">Nākamajā reizē, kad planšetdators būs dokots, uzlāde tiks apturēta pie 90%, lai aizsargātu akumulatoru</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">Pilnīga uzlāde</string>
     <string name="battery_tip_limited_temporarily_extra_summary">Lai taupītu akumulatora enerģiju, kad planšetdators ir dokots, uzlāde tiek pārtraukta, sasniedzot %1$s uzlādes līmeni.</string>
     <string name="battery_tip_smart_battery_summary">Ieslēgt režīmu Adaptīvais akumulators</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">Uzzināt vairāk par bezvadu uzlādi</string>
+    <string name="battery_tip_wireless_charging_summary">Tālruņa uzlāde bezvadu režīmā var patērēt vairāk enerģijas nekā citas uzlādes metodes.</string>
+    <string name="battery_tip_wireless_charging_title">Notiek bezvadu uzlāde</string>
+    <string name="calls_and_alarms_device_title">Zvani un signāli</string>
     <string name="clear_calling_footer">"Lai aizsargātu jūsu konfidencialitāti, funkcija Skaidri zvani nesūta audio vai sarunas uzņēmumam Google.
 
 Funkcija Skaidri zvani darbojas Wi-Fi zvanos un vairumā tīklu, taču nav pieejama 3G tīklos."</string>
@@ -99,7 +125,7 @@ Funkcija Skaidri zvani darbojas Wi-Fi zvanos un vairumā tīklu, taču nav piee
     <string name="columbus_setting_additional_settings_title">Ātrā pieskāriena stiprums</string>
     <string name="columbus_setting_app_selection_help_text">Atlasiet lietotni, kas jāatver, kad ātri veicat dubultskārienu uz tālruņa aizmugures. Ja atinstalēsiet lietotni, ātrais pieskāriens tiks izslēgts, līdz atlasīsiet citu lietotni.</string>
     <string name="columbus_setting_app_shortcut_selection_help_text">Atlasiet darbību, kas jāveic, ja atverat šo lietotni, izmantojot ātro pieskārienu.</string>
-    <string name="columbus_setting_enable_switch_title">Ātrā pieskāriena izmantošana</string>
+    <string name="columbus_setting_enable_switch_title">Izmantot ātro pieskārienu</string>
     <string name="columbus_setting_sensitivity_title">Reaģēt tikai uz stiprākiem pieskārieniem</string>
     <string name="columbus_title">Ātri pieskarieties, lai sāktu darbības</string>
     <string name="communal_lock_screen_summary">Konfidencialitāte, paziņojumi un mājas viedierīču pārvaldība</string>
@@ -121,12 +147,15 @@ Funkcija Skaidri zvani darbojas Wi-Fi zvanos un vairumā tīklu, taču nav piee
 
 Pikšķerēšana ir mēģinājums nozagt pierakstīšanās akreditācijas datus vai citu personas informāciju."</string>
     <string name="content_protection_preference_subpage_summary">Pārbaude tiek veikta privāti tieši jūsu ierīcē, nosakot, vai lietotnēs tiek veikta pikšķerēšana vai citas maldinošas darbības. Ja tās tiek konstatētas, noteikta lietotnes informācija tiek nosūtīta pakalpojumam Google Play Protect, lai apstiprinātu apdraudējumu un brīdinātu lietotājus.</string>
+    <string name="contextual_timeout_description">Ekrāns tiek automātiski izslēgts agrāk, ja neizmantojat ierīci.</string>
+    <string name="contextual_timeout_title">Adaptīvā noildze</string>
     <string name="dark_ui_text">Tumšajā motīvā tiek izmantots melns fons, lai paildzinātu akumulatora darbību. Turklāt jūs varat iestatīt, kad ieslēgt un izslēgt tumšo motīvu.</string>
     <string name="debugging_data_title">Atkļūdošanas dati</string>
     <string name="discover_tips_button">Skatīt padomus</string>
     <string name="dock_summary_charging_phone">Tālruņa uzlādēšana</string>
     <string name="double_twist_for_camera_mode_summary">Lai ieslēgtu vai izslēgtu pašbilžu režīmu lietotnē Google kamera, divreiz pagrieziet ierīci, kad ir atvērta šī lietotne.</string>
     <string name="duration_less_than_one_minute">Mazāk par 1 minūti</string>
+    <string name="enable_glanceable_hub_toggle">Centra režīms</string>
     <string name="extreme_battery_saver_summary">Ietver visas iepriekš norādītās izmaiņas. Tiek arī pārtraukta nesvarīgu lietotņu darbība un to paziņojumi.</string>
     <string name="extreme_battery_saver_title">Akumulatora enerģijas maksimālas taupīšanas režīms</string>
     <string name="face_confirmation_hide_illustration_description">Tagad, paņemot tālruni vai pieskaroties tā ekrānam, varat izmantot autorizāciju pēc sejas.</string>
@@ -164,7 +193,6 @@ Pikšķerēšana ir mēģinājums nozagt pierakstīšanās akreditācijas datus 
     <string name="firmware_update_status_category">Ierīces aparātprogrammatūras statuss</string>
     <string name="firmware_update_status_title">Pieejams aparātprogrammatūras atjauninājums</string>
     <string name="firmware_update_version_number_category">Ierīces aparātprogrammatūras versija</string>
-    <string name="firmware_update_version_number_title">Pixel tastatūras aparātprogrammatūra</string>
     <string name="fullbackup_data_summary">"Automātiski dublējiet ierīces datus (piemēram, Wi-Fi paroles un zvanu vēsturi) un lietotņu datus (piemēram, lietotņu iestatījumus un saglabātos failus) Google diskā.
 
 Ieslēdzot automātisko dublēšanu, ierīces un lietotņu dati tiek periodiski saglabāti privātā Google diska mapē. Lietotņu dati var būt jebkādi dati, ko lietotne ir saglabājusi (atbilstoši izstrādātāja iestatījumiem), tostarp iespējami sensitīvi dati, piemēram, kontaktpersonas, ziņojumi un fotoattēli.
@@ -172,17 +200,20 @@ Ieslēdzot automātisko dublēšanu, ierīces un lietotņu dati tiek periodiski 
 Dublētie dati netiks ieskaitīti Google diska krātuves kvotā. Netiks dublēti lieli faili, kā arī faili, kurus izstrādātāji ir izvēlējušies izslēgt no pakalpojuma."</string>
     <string name="fullbackup_erase_dialog_message">Vai pārtraukt ierīces datu (piemēram, Wi-Fi paroļu un zvanu vēstures) un lietotņu datu (piemēram, lietotņu iestatījumu un saglabāto failu) dublēšanu un dzēst visas to kopijas Google diskā?</string>
     <string name="gesture_settings_activity_title">Žestu navigācija</string>
+    <string name="hub_mode_content_setting">Atļaut jebkuru logrīku Centra režīmā</string>
     <string name="install_unknown_applications">Atļaut instalēt lietotnes no avotiem, kas nav Play veikals</string>
     <string name="keywords_accessibility_menu">motorika, ātrā izvēlne, papildu darbību izvēlne, pieskāriens, roku koordinācija, artrīts, insults, roku trīce, multiplā skleroze, cerebrālā trieka, poga, aparatūra, nospiest, atkārtotas slodzes traumas, roka, sāpes, pieejams, palīdzība</string>
     <string name="keywords_adaptive_alert_vibration">haptiskā tehnoloģija, vibrācija, tālrunis, zvans, zvanīt, brīdinājums, paziņojumi, skaļš, kluss, troksnis, aizsargvāciņš, adaptīvs</string>
     <string name="keywords_adaptive_charging">uzlādēt, uzlāde, viedā uzlāde, adaptīvā uzlāde, akumulators, akumulatora stāvoklis</string>
     <string name="keywords_battery_share">akumulatora dalīšana, bezvadu uzlāde</string>
     <string name="keywords_battery_share_settings">akumulatora dalīšana, apgrieztā bezvadu uzlāde</string>
+    <string name="keywords_contextual_screen_timeout">ekrāns, noildze, adaptīvā, kontekstuālā</string>
     <string name="keywords_gesture">žesti, kustības</string>
     <string name="keywords_hearing_devices">vājdzirdība, nedzirdība, personīgie skaņas pastiprināšanas produkti</string>
     <string name="keywords_limited_warranty">garantija, garantijas, ierobežotā garantija, solījums, remonts, RMA, aizvietošana</string>
     <string name="keywords_live_caption">subtitri, tieša transkripcija, vājdzirdība, nedzirdība, stenogrāfija reāllaikā, runas pārvēršana tekstā</string>
     <string name="keywords_live_transcribe">Titri, slēptie subtitri, subtitri, subtitri reāllaikā, vājdzirdība, nedzirdība, stenogrāfija reāllaikā, runas pārvēršana tekstā, runas teksts</string>
+    <string name="keywords_magnifier">Tālummaiņa, palielinājums, vājredzība, palielināt, padarīt lielāku</string>
     <string name="keywords_reverse_charging_stop_threshold">Pārtraukt akumulatora koplietošanu, kad tālrunī tiek sasniegts:</string>
     <string name="keywords_select_to_speak">Atskaņot tekstu, lasīt skaļi, ekrāna satura atskaņošana, ekrāna lasītājs</string>
     <string name="keywords_sound_amplifier">Personīgie skaņas pastiprināšanas produkti, pastiprināt, skaņas pastiprināšana, vājdzirdība, nedzirdība, pastiprināšana</string>
@@ -190,6 +221,7 @@ Dublētie dati netiks ieskaitīti Google diska krātuves kvotā. Netiks dublēt
     <string name="keywords_switch_access">motorika, slēdži, roka, AT, atbalsta tehnoloģija, paralīze, ALS, pārlūkošana, darbību pārlūkošana</string>
     <string name="keywords_talkback">Ekrāna lasītājs, balss paziņojumi, VoiceOver, balss palīgs, akls, vājredzība, TTS, teksta pārvēršana runā, balss komentāri</string>
     <string name="keywords_touch_sensitivity">skāriens, jutīgums, jutīgs, ekrāna aizsargplēve, filma, adaptīvs, reaģētspēja</string>
+    <string name="keywords_touch_sensitivity_settings">skāriens, adaptīvs, jutīgums, jutīgs, ekrāna aizsargplēve, filma, adaptīva, reaģētspēja</string>
     <string name="keywords_voice_access">balss, balss vadība, motorika, roka, mikrofons, diktēšana, runa, kontrole</string>
     <string name="led_preference_title">LED indikatoru signāli</string>
     <string name="legal_source_code_description">Pixel palīdzības centrā varat skatīt informāciju par to komponentu pirmkodu, kuri ir pieejami kā atklātais pirmkods.</string>
@@ -203,7 +235,7 @@ Dublētie dati netiks ieskaitīti Google diska krātuves kvotā. Netiks dublēt
     <string name="permit_debugging_data">Atļaut piekļuvi kļūdu pārskatiem</string>
     <string name="play_application_detail_indication_summary">Pārbaudiet, vai ir pieejami atjauninājumi.</string>
     <string name="play_application_update_entry_title">Lietotņu atjauninājumi</string>
-    <string name="privatespace_retry_summary">Jums ir jāpierakstās Google kontā, lai iestatītu privātu telpu</string>
+    <string name="private_space_retry_summary">Pierakstieties Google kontā, ko izmantot ar privāto telpu</string>
     <string name="repair_mode_active_summary">Remonta režīmā</string>
     <string name="repair_mode_summary">Droša vide ierīces remontēšanai</string>
     <string name="repair_mode_title">Remonta režīms</string>
@@ -241,7 +273,7 @@ Apvērsiet tālruni otrādi, lai to izmēģinātu."</string>
     <string name="screen_time_summary_usage_today">%1$s šodien</string>
     <string name="search_bar_account_avatar_content_description">Profila attēls; veiciet dubultskārienu, lai atvērtu Google kontu</string>
     <string name="search_gesture_category_title">Meklēšana</string>
-    <string name="search_gesture_feature_title">Circle to Search</string>
+    <string name="search_gesture_feature_title">Apvilkt un meklēt</string>
     <string name="search_long_press_home_button_summary">Ekrāna apakšdaļā pieskarieties pogai Sākums un turiet. Pēc tam jebko apvelciet vai atzīmējiet, lai meklētu.</string>
     <string name="search_press_hold_gesture_summary">Ekrāna apakšdaļā pieskarieties turim un turiet. Pēc tam jebko apvelciet vai atzīmējiet, lai meklētu.</string>
     <string name="security_dismiss_dialog_dismiss_button">Nerādīt</string>
@@ -252,7 +284,13 @@ Apvērsiet tālruni otrādi, lai to izmēģinātu."</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">Sasniegts sejas reģistrēšanas reižu skaits. Mēģiniet vēlreiz.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Iestatot autorizāciju pēc sejas, iestājās noildze</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Tagad varat izmantot seju, lai atbloķētu tālruni vai apstiprinātu savu identitāti, piemēram, pierakstoties lietotnēs vai apstiprinot pirkumu.</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp_full">"Tagad varat izmantot autorizāciju pēc sejas, lai atbloķētu tālruni vai apstiprinātu savu identitāti, piemēram, pierakstoties lietotnēs vai apstiprinot pirkumu.
+
+Autorizācija pēc sejas vislabāk darbojas, ja ir pietiekams apgaismojums un jūs nevalkājat masku vai tumšas brilles."</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Tagad, paņemot tālruni vai pieskaroties ekrānam, varat izmantot seju, lai atbloķētu tālruni.
+
+Autorizācija pēc sejas vislabāk darbojas, ja ir pietiekams apgaismojums un jūs nevalkājat masku vai tumšas brilles."</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp_folded">"Tagad, paņemot tālruni vai pieskaroties tā ekrānam, varat izmantot autorizāciju pēc sejas. Tālrunim jābūt salocītam, lai varētu izmantot autorizāciju pēc sejas.
 
 Autorizācija pēc sejas vislabāk darbojas, ja ir pietiekams apgaismojums un jūs nevalkājat masku vai tumšas brilles."</string>
     <string name="security_settings_face_enroll_finish_title">Gatavs!</string>
@@ -294,6 +332,8 @@ Piezīme. Pirksta nospiedumu nevar izmantot šīs ierīces atbloķēšanai. Lai 
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint darbam</string>
     <string name="setup_suggestion_summary">Vēl tikai dažas darbības</string>
     <string name="setup_suggestion_title">Iestatīšanas pabeigšana</string>
+    <string name="smart_battery_a11y_collapse_label">Sakļaut, adaptīvais akumulators</string>
+    <string name="smart_battery_a11y_expand_label">Izvērst, adaptīvais akumulators</string>
     <string name="smart_battery_footer">Lai paildzinātu akumulatora darbību, adaptīvā akumulatora funkcija var ierobežot veiktspēju un fonā veiktās darbības. Daži paziņojumi var darboties ar aizkavi.</string>
     <string name="smart_battery_manager_title">Adaptīvās preferences</string>
     <string name="smart_battery_title">Adaptīvais akumulators</string>
@@ -309,7 +349,9 @@ Piezīme. Pirksta nospiedumu nevar izmantot šīs ierīces atbloķēšanai. Lai 
     <string name="software_update_up_to_date_summary">Atjaunināta</string>
     <string name="software_update_up_to_specific_date_summary">Atjaunināta šādā datumā: %1$s.</string>
     <string name="software_update_update_available_summary">Ir pieejams atjauninājums</string>
-    <string name="sound_dashboard_summary">Skaļums, vibrācija pieskaroties, Netraucēt</string>
+    <string name="sound_dashboard_summary">Skaļums, vibrācija pieskaroties, funkcija Netraucēt</string>
+    <string name="spatial_audio_head_tracking_available">Galvas kustību reģistrēšana ir pieejama</string>
+    <string name="spatial_audio_head_tracking_unavailable">Galvas kustību reģistrēšana nav pieejama</string>
     <string name="speed_boost_summary_off">Izslēgta</string>
     <string name="speed_boost_summary_on">Ieslēgta</string>
     <string name="speed_boost_title">Spectrum Speed Boost</string>
@@ -321,11 +363,14 @@ Piezīme. Pirksta nospiedumu nevar izmantot šīs ierīces atbloķēšanai. Lai 
     <string name="suw_warranty_positive_button_text">Aizvērt</string>
     <string name="system_update_entry_title">Sistēmas atjauninājums</string>
     <string name="system_updates_group_title">Pixel atjauninājumi</string>
+    <string name="touch_category_title">Skāriens</string>
+    <string name="touch_sensitivity_settings_summary">Pielāgot skārienekrāna jutīgumu</string>
+    <string name="touch_sensitivity_settings_title">Skārienjutība</string>
     <string name="touch_sensitivity_summary">Palielināt skārienjutību un uzlabot skārienievadi caur ekrāna aizsargplēvi</string>
     <string name="touch_sensitivity_title">Ekrāna aizsargplēves režīms</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Turiet tālruni sejas priekšā</string>
     <string name="unified_battery_saver_page_intro">Ietaupiet enerģiju, lai tālruni varētu ilgāk izmantot no vienas akumulatora uzlādes reizes līdz otrai.</string>
-    <string name="usb_use_file_transfers">Failu pārsūtīšana/ Android Auto</string>
+    <string name="usb_use_file_transfers">Failu pārsūtīšana / Android Auto</string>
     <string name="vpn_app_bypass">Izslēgt atlasītajās lietotnēs</string>
     <string name="vpn_bypass_bottom_sheet_current_carrier_app">Pašreizējās mobilo sakaru operatora lietotnes</string>
     <string name="vpn_bypass_bottom_sheet_more_than_one_carrier_app_title">Vai izslēgt %1$d mobilo sakaru operatora lietotnes no VPN tīkla?</string>

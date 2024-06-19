@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">കീബോർഡ് സ്‌പർശനങ്ങൾ</string>
+    <string name="accessibility_screen_magnifier_summary">നിങ്ങളുടെ ചുറ്റുമുള്ള വിശദാംശങ്ങൾ വലുതാക്കാൻ നിങ്ങളുടെ ക്യാമറ ഉപയോഗിക്കുക</string>
+    <string name="accessibility_screen_magnifier_title">Magnifier</string>
     <string name="adaptive_alert_vibration_summary">നിങ്ങളുടെ ഫോൺ നിശ്ചലമായിരിക്കുമ്പോഴും അതിന്റെ സ്‌ക്രീൻ മുകളിലേക്ക് തിരിഞ്ഞിരിക്കുമ്പോഴും വൈബ്രേഷൻ ശക്തി കുറയ്‌ക്കുന്നു</string>
     <string name="adaptive_alert_vibration_title">അനുയോജ്യമായ മുന്നറിയിപ്പ് വൈബ്രേഷൻ</string>
     <string name="adaptive_battery_switch_des">ബാറ്ററി ലെെഫ് വർദ്ധിപ്പിക്കുന്നതിന് അഡാപ്റ്റീവ് ബാറ്ററി, പ്രകടനവും പശ്ചാത്തല ആക്‌റ്റിവിറ്റിയും കുറച്ചേക്കാം. ചില അറിയിപ്പുകൾ വെെകിയേക്കാം.</string>
@@ -12,6 +14,8 @@
     <string name="adaptive_charging_main_switch_title">അഡാപ്റ്റീവ് ചാർജിംഗ് ഉപയോഗിക്കുക</string>
     <string name="adaptive_charging_time_estimate"><b>അഡാപ്റ്റീവ് ചാർജിംഗ്</b> • %1$s-ന് പൂർത്തിയാകും</string>
     <string name="adaptive_charging_title">അഡാപ്റ്റീവ് ചാർജിംഗ്</string>
+    <string name="adaptive_touch_sensitivity_summary">ടച്ച് സെൻസിറ്റിവിറ്റി നിങ്ങളുടെ പരിസ്ഥിതി, പ്രവർത്തനങ്ങൾ, സ്‌ക്രീൻ പ്രൊട്ടക്ടർ എന്നിവയ്‌ക്ക് അനുയോജ്യമായി സ്വയമേവ ക്രമീകരിക്കും</string>
+    <string name="adaptive_touch_sensitivity_title">അഡാപ്‌റ്റീവ് ടച്ച്</string>
     <string name="add_bypassed_application_hint">ആപ്പുകളൊന്നും ചേർത്തിട്ടില്ല</string>
     <string name="advanced_vpn_preference_group_title">ബിൽറ്റ് ഇൻ</string>
     <string name="all_apps_category_title">എല്ലാ ആപ്പുകളും</string>
@@ -23,6 +27,16 @@
 
 ആക്സസ് റദ്ദാക്കിയാൽ, ഓരോ പ്രത്യേക പ്രശ്ന റിപ്പോർട്ടിനും, ബഗ് റിപ്പോർട്ട് ശേഖരിക്കാനും അപ്‌ലോഡ് ചെയ്യാനും നിങ്ങളുടെ അനുമതി അഭ്യർത്ഥിക്കാൻ ആപ്പിനോട് ആവശ്യപ്പെടും."</string>
     <string name="app_and_notification_dashboard_summary">Assistant, സമീപകാലത്തുള്ള ആപ്പുകൾ, ഡിഫോൾട്ട് ആപ്പുകൾ</string>
+    <string name="audio_sharing_switch_title">ഓഡിയോ പങ്കിടൂ</string>
+    <string name="audio_sharing_title">ഓഡിയോ പങ്കിടൽ</string>
+    <string name="audio_streams_category_title">LE ഓഡിയോ സ്ട്രീമിലേക്ക് കണക്റ്റ് ചെയ്യുക</string>
+    <string name="audio_streams_connect">കണക്റ്റ് ചെയ്യുക</string>
+    <string name="audio_streams_disconnect">വിച്ഛേദിക്കുക</string>
+    <string name="audio_streams_pref_title">സമീപത്തെ ഓഡിയോ സ്ട്രീമുകൾ</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">QR കോഡ് ഫോർമാറ്റ് അസാധുവാണ്</string>
+    <string name="audio_streams_qr_code_scanner">കേട്ട് തുടങ്ങാൻ ചുവടെയുള്ള QR കോഡിലേക്ക് കേന്ദ്രീകരിക്കുക</string>
+    <string name="audio_streams_qr_code_summary">QR കോഡ് ഉപയോഗിച്ച് ഓഡിയോ സ്ട്രീമിലേക്ക് കണക്റ്റ് ചെയ്യുക</string>
+    <string name="audio_streams_title">ഓഡിയോ സ്ട്രീമുകൾ</string>
     <string name="automatic_storage_manager_activation_warning">നിങ്ങൾ കണക്റ്റ് ചെയ്തിരിക്കുമ്പോൾ, ബാക്കപ്പിനായി നിങ്ങൾ തിരഞ്ഞെടുത്ത ഗുണനിലവാരത്തിൽ ഫോട്ടോകളും വീഡിയോകളും ആക്‌സസ് ചെയ്യാവുന്നതാണ്.</string>
     <string name="automatic_storage_manager_days_title">ബാക്കപ്പ് ചെയ്ത ഫോട്ടോകളും വീഡിയോകളും നീക്കം ചെയ്യുക</string>
     <string name="automatic_storage_manager_deactivation_warning">"സ്മാർട്ട് സ്റ്റോറേജ് ഓഫാക്കണോ?  
@@ -48,8 +62,20 @@
     <string name="battery_tip_battery_health_learn_more_description">ബാറ്ററി ക്ഷമതയെക്കുറിച്ച് കൂടുതലറിയുക</string>
     <string name="battery_tip_battery_health_reduced_title">ബാറ്ററി കപ്പാസിറ്റി കുറഞ്ഞു</string>
     <string name="battery_tip_battery_health_unknown_title">ബാറ്ററി ക്ഷമത തിരിച്ചറിയാനാകുന്നില്ല</string>
+    <string name="battery_tip_dock_defender_active_summary">ബാറ്ററിയുടെ ആയുസ് വർദ്ധിപ്പിക്കാൻ സഹായിക്കുന്നതിന്, നിങ്ങളുടെ ടാബ്‌ലെറ്റ് ഡോക്ക് ചെയ്‌തിരിക്കുമ്പോൾ 90% ചാർജ് ആയപ്പോൾ ചാർജിംഗ് ഹോൾഡ് ചെയ്‌തു</string>
+    <string name="battery_tip_dock_defender_active_title">ബാറ്ററി പരിരക്ഷിക്കാൻ ചാർജിംഗ് ഹോൾഡ് ചെയ്‌തു</string>
+    <string name="battery_tip_dock_defender_button_learn_more">കൂടുതലറിയുക</string>
+    <string name="battery_tip_dock_defender_button_override">അസാധുവാക്കുക</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">ബാറ്ററിയുടെ ആയുസ് വർദ്ധിപ്പിക്കാൻ സഹായിക്കുന്നതിന്, നിങ്ങളുടെ ടാബ്‌ലെറ്റ് ഡോക്ക് ചെയ്‌തിരിക്കുമ്പോൾ 90% ചാർജ് ആകുമ്പോൾ ചാർജിംഗ് ഹോൾഡ് ചെയ്യും</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">90% വരെ ചാർജ് ചെയ്യുന്നു</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">അടുത്ത തവണ നിങ്ങളുടെ ടാബ്‌ലെറ്റ് ഡോക്ക് ചെയ്യുമ്പോൾ, ബാറ്ററി പരിരക്ഷിക്കാൻ 90% ചാർജ് ആകുമ്പോൾ ചാർജിംഗ് ഹോൾഡ് ചെയ്യും</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">പൂർണ്ണമായും ചാർജ് ചെയ്യുന്നു</string>
     <string name="battery_tip_limited_temporarily_extra_summary">നിങ്ങളുടെ ബാറ്ററി പരിരക്ഷിക്കാൻ, ടാബ്‌ലെറ്റ് ഡോക്ക് ചെയ്തിരിക്കുമ്പോൾ %1$s ചാർജ് ആയപ്പോൾ ചാർജ് ചെയ്യൽ താൽക്കാലികമായി നിർത്തി</string>
     <string name="battery_tip_smart_battery_summary">അഡാപ്റ്റീവ് ബാറ്ററി ഓണാക്കുക</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">വയർലെസ്സായി ചാർജ്ജ് ചെയ്യുന്നതിനെ കുറിച്ച് കൂടുതലറിയുക</string>
+    <string name="battery_tip_wireless_charging_summary">നിങ്ങളുടെ ഫോൺ വയർലെസ്സായി ചാർജ് ചെയ്യുന്നതിലൂടെ മറ്റ് ചാർജിംഗ് രീതികളിൽ നിന്ന് വ്യത്യസ്‌തമായി കൂടുതൽ വൈദ്യുതി ഉപയോഗിച്ചേക്കാം</string>
+    <string name="battery_tip_wireless_charging_title">വയർലെസ്സായി ചാർജ് ചെയ്യുന്നു</string>
+    <string name="calls_and_alarms_device_title">കോളുകളും അലാറങ്ങളും</string>
     <string name="clear_calling_footer">"നിങ്ങളുടെ സ്വകാര്യത പരിരക്ഷിക്കാൻ, ക്ലിയർ കോളിംഗ് Google-ലേക്ക് ഓഡിയോയോ സംഭാഷണങ്ങളോ അയയ്‌ക്കുന്നില്ല.
 
 വൈഫൈ കോളിംഗിലും മിക്ക നെറ്റ്‌വർക്കുകളിലും ക്ലിയർ കോളിംഗ് പ്രവർത്തിക്കുന്നു, 3G നെറ്റ്‌വർക്കുകളിൽ ലഭ്യമല്ല."</string>
@@ -120,12 +146,15 @@
 
 സൈൻ ഇൻ ക്രെഡൻഷ്യലുകളോ മറ്റ് വ്യക്തിപരമായ വിവരങ്ങളോ മോഷ്ടിക്കാനുള്ള ശ്രമമാണ് ഫിഷിംഗ്."</string>
     <string name="content_protection_preference_subpage_summary">നിങ്ങളുടെ ഉപകരണത്തിൽ സ്വകാര്യമായാണ് സ്‌കാൻ ചെയ്യൽ നടക്കുന്നത്, ഫിഷിംഗ് ആണോയെന്ന് അറിയാനും വഞ്ചനാപരമായ മറ്റ് സ്വഭാവങ്ങൾ കണ്ടെത്താനുമായി ആപ്പ് ആക്റ്റിവിറ്റി പരിശോധിക്കുന്നു. അവ കണ്ടെത്തുകയാണെങ്കിൽ, ഭീഷണി സ്ഥിരീകരിക്കാനും ആപ്പ് ഉപയോക്താക്കൾക്ക് മുന്നറിയിപ്പ് നൽകാനുമായി ചില ആപ്പ് വിവരങ്ങൾ Google Play Protect-ലേക്ക് അയയ്ക്കുന്നു.</string>
+    <string name="contextual_timeout_description">നിങ്ങൾ ഉപകരണം ഉപയോഗിക്കുന്നില്ലെങ്കിൽ നേരത്തെ തന്നെ നിങ്ങളുടെ സ്ക്രീൻ സ്വയമേവ ഓഫാകുന്നു</string>
+    <string name="contextual_timeout_title">അഡാപ്റ്റീവ് ടൈംഔട്ട്</string>
     <string name="dark_ui_text">"നിങ്ങളുടെ ബാറ്ററി കൂടുതൽ സമയം നിൽക്കാനായി 'ഡാർക്ക് തീം' കറുപ്പ് പശ്ചാത്തലം ഉപയോഗിക്കുന്നു. സ്ക്രീൻ ഓഫാകുന്നത് വരെ ഡാർക്ക് തീം ഷെഡ്യൂളുകൾ ഓണാകാൻ കാത്തിരിക്കുന്നു."</string>
     <string name="debugging_data_title">ഡാറ്റ ഡീബഗ് ചെയ്യൽ</string>
     <string name="discover_tips_button">നുറുങ്ങുകൾ കണ്ടെത്തൂ</string>
     <string name="dock_summary_charging_phone">ഫോൺ ചാർജ് ചെയ്യുന്നു</string>
     <string name="double_twist_for_camera_mode_summary">നിങ്ങൾ ആപ്പ് തുറന്നിരിക്കുമ്പോൾ, Google Camera-യിൽ സെൽഫി മോഡിലേക്ക് പോകാനും പുറത്തുവരാനും, രണ്ടുതവണ തിരിക്കുക.</string>
     <string name="duration_less_than_one_minute">ഒരു മിനിറ്റിൽ താഴെ</string>
+    <string name="enable_glanceable_hub_toggle">ഹബ് മോഡ്</string>
     <string name="extreme_battery_saver_summary">മുകളിൽ ലിസ്റ്റ് ചെയ്ത എല്ലാ മാറ്റങ്ങളും ഉൾപ്പെടുന്നു. അത്യാവശ്യമല്ലാത്ത ആപ്പുകളും അവയുടെ അറിയിപ്പുകളും താൽക്കാലികമായി നിർത്തുകയും ചെയ്യുന്നു.</string>
     <string name="extreme_battery_saver_title">പരമാവധി ബാറ്ററി ലാഭിക്കൽ</string>
     <string name="face_confirmation_hide_illustration_description">ഫോൺ കയ്യിലെടുക്കുമ്പോഴോ സ്ക്രീനിൽ ടാപ്പ് ചെയ്യുമ്പോഴോ അൺലോക്ക് ചെയ്യുന്നതിന് ഇപ്പോൾ നിങ്ങളുടെ മുഖം ഉപയോഗിക്കാനാകും.</string>
@@ -163,7 +192,6 @@
     <string name="firmware_update_status_category">ഉപകരണ ഫേംവെയറിന്റെ നില</string>
     <string name="firmware_update_status_title">ഫേംവെയർ അപ്‌ഡേറ്റ് ലഭ്യമാണ്</string>
     <string name="firmware_update_version_number_category">ഉപകരണ ഫേംവെയർ പതിപ്പ്</string>
-    <string name="firmware_update_version_number_title">Pixel കീബോർഡ് ഫേംവെയർ</string>
     <string name="fullbackup_data_summary">"ഉപകരണ വിവരങ്ങളും (വൈഫൈ പാസ്‌വേഡുകളും കോൾ ചരിത്രവും പോലുള്ളവ) ആപ്പ് വിവരങ്ങളും (ക്രമീകരണവും ആപ്പുകൾ സംഭരിച്ച ഫയലുകളും പോലുള്ളവ) Google Drive-ൽ സ്വയമേവ ബാക്കപ്പെടുക്കുന്നു.
 
 നിങ്ങൾ സ്വയമേയുള്ള ബാക്കപ്പ് ഓണാക്കുമ്പോൾ, Google Drive-ലെ ഒരു സ്വകാര്യ ഫോൾഡറിൽ ഉപകരണവും ആപ്പ് വിവരങ്ങളും നിശ്ചിത ഇടവേളകളിൽ സംരക്ഷിക്കും. ആപ്പ് വിവരങ്ങൾ എന്നത് കോൺടാക്റ്റുകൾ, സന്ദേശങ്ങൾ, ഫോട്ടോകൾ എന്നിവ പോലുള്ള രഹസ്യസ്വഭാവമുള്ളവ ഉൾപ്പെടെ ആപ്പ് സംരക്ഷിച്ചിട്ടുള്ള ഏതൊരു വിവരങ്ങളും (ഡെവലപ്പർ ക്രമീകരണം അടിസ്ഥാനമാക്കി) ആകാം.
@@ -171,17 +199,20 @@
 ബാക്കപ്പ് വിവരങ്ങൾക്ക് നിങ്ങളുടെ Drive സ്റ്റോറേജ് ക്വാട്ടയിലെ ഇടം ഉപയോഗിക്കുകയില്ല. ബാക്കപ്പ് വിവരങ്ങൾക്കുള്ള ഇടവും നിങ്ങളുടെ Drive സ്റ്റോറേജ് ക്വാട്ടയും വെവ്വേറെയായിരിക്കും. വലിയ ഫയലുകളോ സേവനത്തിൽ ഉൾപ്പെടുത്തേണ്ടെന്ന് ഡെവലപ്പർമാർ തീരുമാനിച്ചിട്ടുള്ള ഫയലുകളോ ബാക്കപ്പ് ചെയ്യുകയില്ല."</string>
     <string name="fullbackup_erase_dialog_message">ഉപകരണ വിവരവും (വൈഫൈ പാസ്‌വേഡുകളും കോൾ ചരിത്രവും) ആപ്പ് വിവരവും (ആപ്പുകൾ സംഭരിച്ച ക്രമീകരണവും പോലുള്ളവ) ബാക്കപ്പുചെയ്യുന്നത് നിർത്തുകയും Google ഡ്രൈവിലെ എല്ലാ പകർപ്പുകളും മായ്‌ക്കുകയും ചെയ്യണോ?</string>
     <string name="gesture_settings_activity_title">ജെസ്ച്ചർ നാവിഗേഷൻ</string>
+    <string name="hub_mode_content_setting">ഹബ് മോഡിൽ ഏത് വിജറ്റും അനുവദിക്കുക</string>
     <string name="install_unknown_applications">Play സ്റ്റോറിന് പുറമെയുള്ള ഉറവിടങ്ങളിൽ നിന്നുള്ള ആപ്‌സ് ഇൻസ്റ്റാളുചെയ്യാൻ അനുവദിക്കുക</string>
     <string name="keywords_accessibility_menu">ചലനശേഷി, ദ്രുത മെനു, സഹായകരമായ മെനു, സ്‌പർശനം, കഴിവ്, സന്ധിവാതം, rsi, പക്ഷാഘാതം, വിറയൽ, മൾട്ടിപ്പിൾ സ്‌ക്ലീറോസിസ്, സെറിബ്രൽ പാൾസി, ബട്ടൺ, ഹാർഡ്‌വെയർ, പ്രസ്സ്, ആവർത്തിച്ചുള്ള സ്‌ട്രെയിൻ പരുക്ക്, കൈ, വേദന, ആക്‌സസ് ചെയ്യാവുന്നത്, സഹായം</string>
     <string name="keywords_adaptive_alert_vibration">സ്‌പർശനങ്ങൾ, വൈബ്രേറ്റ് ചെയ്യൽ, ഫോൺ, കോൾ, റിംഗ് ചെയ്യൽ, അറിയിപ്പുകൾ, ഉച്ചത്തിൽ, നിശബ്‌ദം, ശബ്‌ദം, കെയ്‌സ്, അനുയോജ്യം</string>
     <string name="keywords_adaptive_charging">ചാർജ് ചെയ്യുക, ചാർജ് ചെയ്യുന്നു, സ്മാർട്ട് ചാർജ് ചെയ്യൽ, അഡാപ്റ്റീവ് ചാർജിംഗ്, ബാറ്ററി, ബാറ്ററി നില</string>
     <string name="keywords_battery_share">ബാറ്ററി പങ്കിടൽ, വയർലെസ്സായി ചാർജ്ജ് ചെയ്യൽ</string>
     <string name="keywords_battery_share_settings">ബാറ്ററി പങ്കിടൽ, റിവേഴ്‌സ് വയർലെസ് ചാർജിംഗ്</string>
+    <string name="keywords_contextual_screen_timeout">സ്ക്രീൻ, ടൈംഔട്ട്, അഡാപ്റ്റീവ്, സന്ദർഭോചിതം</string>
     <string name="keywords_gesture">ജെസ്‌റ്ററുകളും ‌ചലനങ്ങളും</string>
     <string name="keywords_hearing_devices">കേൾവിക്ക് തകരാർ, കേൾവി നഷ്‌ടമാകൽ, PSAP</string>
     <string name="keywords_limited_warranty">വാറന്റി, ഗ്യാരണ്ടി, പരിമിത വാറന്റി, വാഗ്ദാനം, റിപ്പയർ, rma, റീപ്ലേസ്‌മെന്റ്</string>
     <string name="keywords_live_caption">അടിക്കുറിപ്പുകൾ, സബ്‌ടൈറ്റിലുകൾ, CC, Live Transcribe, കേൾവിക്ക് തകരാർ, കേൾവി നഷ്‌ടമാകൽ, CART, സ്‌പീച്ച് ടു ടെക്‌സ്റ്റ്, സബ്‌ടൈറ്റിൽ</string>
     <string name="keywords_live_transcribe">അടിക്കുറിപ്പുകൾ, സബ്‌ടൈറ്റിലുകൾ, CC, തത്സമയ ക്യാപ്ഷൻ, കേൾവിക്ക് തകരാർ, കേൾവിക്കുറവ്, CART, സ്‌പീച്ച് ടു ടെക്‌സ്‌റ്റ്, സബ്‌ടൈറ്റിൽ</string>
+    <string name="keywords_magnifier">സൂം, മാഗ്നിഫിക്കേഷൻ, കുറഞ്ഞ കാഴ്ച, വലുതാക്കുക, വലുപ്പം കൂട്ടുക</string>
     <string name="keywords_reverse_charging_stop_threshold">ഫോൺ ഇനിപ്പറയുന്ന നിലയിൽ എത്തുമ്പോൾ ബാറ്ററി പങ്കിടുന്നത് നിർത്തുക:</string>
     <string name="keywords_select_to_speak">ടെക്‌സ്റ്റ് കേൾക്കുക, ഉറക്കെ വായിക്കുക, സ്പീക്ക് സ്ക്രീൻ, സ്‌ക്രീൻ റീഡർ</string>
     <string name="keywords_sound_amplifier">PSAP, ആംപ്ലിഫൈ, സൗണ്ട് ആംപ്ലിഫിക്കേഷൻ, കേൾവിക്ക് തകരാർ, കേൾവിക്കുറവ്, ആംപ്ലിഫിക്കേഷൻ</string>
@@ -189,6 +220,7 @@
     <string name="keywords_switch_access">ചലനക്ഷമത, മാറുക, കൈ, AT, സഹായകരമായ സാങ്കേതികവിദ്യ, പക്ഷാഘാതം, ALS, സ്‌കാനിംഗ്, സ്റ്റെപ്പ് സ്കാനിംഗ്</string>
     <string name="keywords_talkback">സ്ക്രീൻ റീഡർ, വോയ്‌സ് ഓവർ, വോയ്‌സ് ഓവർ, ശബ്ദ സഹായം, കാഴ്ചാ വൈകല്യം, കുറഞ്ഞ കാഴ്ച, TTS, ടെക്‌സ്റ്റ് ടു സ്‌പീച്ച്, സംഭാഷണ ഫീഡ്‌ബാക്ക്</string>
     <string name="keywords_touch_sensitivity">സ്പർശിക്കുക, സെൻസിറ്റിവിറ്റി, സൂക്ഷ്‌മമായി കൈകാര്യം ചെയ്യേണ്ടത്, സ്ക്രീൻ പ്രൊട്ടക്റ്റർ, ഫിലിം, പ്രതികരിക്കുന്നത്, പ്രതികരണം</string>
+    <string name="keywords_touch_sensitivity_settings">സ്പർശിക്കുക, അനുയോജ്യം, സെൻസിറ്റിവിറ്റി, സെൻസിറ്റീവ്, സ്‌ക്രീൻ പ്രൊട്ടക്റ്റർ, ഫിലിം, പ്രതികരണാത്മകം, പ്രതികരണശേഷി</string>
     <string name="keywords_voice_access">ശബ്ദം, ശബ്‌ദ നിയന്ത്രണം, ചലനക്ഷമത, കൈ, മൈക്ക്, മൈക്രോഫോൺ, കേട്ടെഴുത്ത്, സംസാരം, നിയന്ത്രണം</string>
     <string name="led_preference_title">LED ഇൻഡിക്കേറ്റർ പാറ്റേണുകൾ</string>
     <string name="legal_source_code_description">ഓപ്പൺ സോഴ്‌സ് ആയി ലഭ്യമാക്കിയിരിക്കുന്ന ഘടകങ്ങളുടെ സോഴ്‌സ് കോഡിനെ കുറിച്ചുള്ള വിശദാംശങ്ങൾ Pixel സഹായ കേന്ദ്രത്തിൽ കാണാവുന്നതാണ്.</string>
@@ -202,7 +234,7 @@
     <string name="permit_debugging_data">ബഗ് റിപ്പോർട്ട് ആക്സസ് അനുവദിക്കുക</string>
     <string name="play_application_detail_indication_summary">അപ്‌ഡേറ്റുകൾ പരിശോധിക്കുക</string>
     <string name="play_application_update_entry_title">ആപ്പ് അപ്ഡേറ്റുകൾ</string>
-    <string name="privatespace_retry_summary">സ്വകാര്യ സ്പേസ് സജ്ജീകരിക്കാൻ നിങ്ങൾ ഒരു Google Account-ലേക്ക് സൈൻ ഇൻ ചെയ്യേണ്ടതുണ്ട്</string>
+    <string name="private_space_retry_summary">നിങ്ങളുടെ സ്വകാര്യ സ്പേസിൽ ഉപയോഗിക്കാൻ ഒരു Google Account-ലേക്ക് സൈൻ ഇൻ ചെയ്യുക</string>
     <string name="remove">നീക്കം ചെയ്യുക</string>
     <string name="repair_mode_active_summary">റിപ്പയർ മോഡിൽ</string>
     <string name="repair_mode_summary">ഉപകരണത്തിന്റെ റിപ്പയറിനുള്ള സുരക്ഷിത അന്തരീക്ഷം</string>
@@ -252,9 +284,15 @@
     <string name="security_settings_face_enroll_error_timeout_dialog_message">മുഖം എൻറോൾ ചെയ്യലിന്‍റെ സമയ പരിധി എത്തി. വീണ്ടും ശ്രമിക്കൂ.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">ഫെയ്‌സ് അൺലോക്ക് സജ്ജീകരണം ടൈംഔട്ടായി</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">ഫോൺ അൺലോക്ക് ചെയ്യാനോ ആപ്പുകളിലേക്ക് സൈൻ ഇൻ ചെയ്യുക, വാങ്ങൽ അംഗീകരിക്കുക പോലുള്ള സന്ദർഭങ്ങളിൽ ഇത് നിങ്ങൾ തന്നെയാണെന്ന് പരിശോധിച്ചുറപ്പിക്കാനോ ഇപ്പോൾ നിങ്ങളുടെ മുഖം ഉപയോഗിക്കാനാകും</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp_full">"ആപ്പുകളിലേക്ക് സൈൻ ഇൻ ചെയ്യുന്നതും വാങ്ങൽ അംഗീകരിക്കുന്നതും പോലുള്ള സന്ദർഭങ്ങളിൽ, നിങ്ങളുടെ ഫോൺ അൺലോക്ക് ചെയ്യാനോ ഇത് നിങ്ങൾ തന്നെയാണെന്ന് പരിശോധിച്ചുറപ്പിക്കാനോ ഇനി നിങ്ങളുടെ മുഖം ഉപയോഗിക്കാം
+
+ഫെയ്‌സ് അൺലോക്ക് നന്നായി പ്രവർത്തിക്കുന്നതിന് ആവശ്യത്തിന് വെളിച്ചമുണ്ടായിരിക്കണം, കൂടാതെ നിങ്ങൾ മാസ്‌ക് അല്ലെങ്കിൽ കറുത്ത ഗ്ലാസ് ധരിക്കുകയോ ചെയ്യരുത്."</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"ഫോൺ കയ്യിലെടുക്കുമ്പോഴോ സ്ക്രീനിൽ ടാപ്പ് ചെയ്യുമ്പോഴോ അൺലോക്ക് ചെയ്യുന്നതിന് ഇപ്പോൾ നിങ്ങളുടെ മുഖം ഉപയോഗിക്കാനാകും.
 
 ആവശ്യത്തിന് വെളിച്ചമുള്ളപ്പോഴും നിങ്ങൾ മാസ്‌ക്കോ ഇരുണ്ട നിറത്തിലുള്ള കണ്ണടയോ ധരിക്കാത്ത സമയത്തുമാണ് ഫെയ്‌സ് അൺലോക്ക് മികച്ച രീതിയിൽ പ്രവർത്തിക്കുന്നത്."</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp_folded">"ഫോൺ കയ്യിലെടുക്കുമ്പോഴോ സ്ക്രീനിൽ ടാപ്പ് ചെയ്യുമ്പോഴോ അൺലോക്ക് ചെയ്യുന്നതിന് ഇപ്പോൾ നിങ്ങളുടെ മുഖം ഉപയോഗിക്കാനാകും. ഫെയ്‌സ് അൺലോക്ക് ഉപയോഗിക്കുന്നതിന് നിങ്ങളുടെ ഫോൺ ഫോൾഡ് ചെയ്തിരിക്കണം
+
+ഫെയ്‌സ് അൺലോക്ക് നന്നായി പ്രവർത്തിക്കുന്നതിന് ആവശ്യത്തിന് വെളിച്ചമുണ്ടായിരിക്കണം, കൂടാതെ നിങ്ങൾ മാസ്‌ക് അല്ലെങ്കിൽ കറുത്ത ഗ്ലാസ് ധരിക്കുകയോ ചെയ്യരുത്."</string>
     <string name="security_settings_face_enroll_finish_title">നന്നായിരിക്കുന്നു!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">കാഴ്‌ചക്കുറവോ തല തിരിക്കാൻ പ്രയാസമോ ഉള്ളവർക്കുള്ള സജ്ജീകരണം</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">ശ്രദ്ധിക്കേണ്ടത് ആവശ്യമാണ്</string>
@@ -295,6 +333,8 @@
     <string name="security_settings_work_fingerprint_preference_title">ഔദ്യോഗിക പ്രൊഫൈലിനുള്ള Pixel Imprint</string>
     <string name="setup_suggestion_summary">കുറച്ച് ഘട്ടങ്ങൾ കൂടി മാത്രം</string>
     <string name="setup_suggestion_title">സജ്ജീകരിക്കൽ പൂർത്തിയാക്കുക</string>
+    <string name="smart_battery_a11y_collapse_label">ചുരുക്കുക, അഡാപ്റ്റീവ് ബാറ്ററി</string>
+    <string name="smart_battery_a11y_expand_label">വികസിപ്പിക്കുക, അഡാപ്റ്റീവ് ബാറ്ററി</string>
     <string name="smart_battery_footer">ബാറ്ററി ലെെഫ് വർദ്ധിപ്പിക്കുന്നതിന് അഡാപ്റ്റീവ് ബാറ്ററി, പ്രകടനവും പശ്ചാത്തല ആക്‌റ്റിവിറ്റിയും കുറച്ചേക്കാം. ചില അറിയിപ്പുകൾ വെെകിയേക്കാം.</string>
     <string name="smart_battery_manager_title">അഡാപ്റ്റീവ് മുൻഗണനകൾ</string>
     <string name="smart_battery_title">അഡാപ്റ്റീവ് ബാറ്ററി</string>
@@ -312,6 +352,8 @@
     <string name="software_update_update_available_summary">അപ്‌ഡേറ്റ് ലഭ്യമാണ്</string>
     <string name="sound_dashboard_summary">ശബ്‌ദം, സ്‌പർശനങ്ങൾ, ശല്യപ്പെടുത്തരുത് എന്നിവ</string>
     <string name="sound_settings">ശബ്ദവും വൈബ്രേഷനും</string>
+    <string name="spatial_audio_head_tracking_available">ഹെഡ് ട്രാക്കിംഗ് ലഭ്യമാണ്</string>
+    <string name="spatial_audio_head_tracking_unavailable">ഹെഡ് ട്രാക്കിംഗ് ലഭ്യമല്ല</string>
     <string name="speed_boost_summary_off">ഓഫാണ്</string>
     <string name="speed_boost_summary_on">ഓണാണ്</string>
     <string name="speed_boost_title">സ്പെക്ട്രം സ്പീഡ് ബൂസ്റ്റ് ചെയ്യൽ</string>
@@ -323,6 +365,9 @@
     <string name="suw_warranty_positive_button_text">അടയ്ക്കുക</string>
     <string name="system_update_entry_title">സിസ്റ്റം അപ്‌ഡേറ്റ്</string>
     <string name="system_updates_group_title">Pixel അപ്ഡേറ്റുകൾ</string>
+    <string name="touch_category_title">സ്‌പർശിക്കുക</string>
+    <string name="touch_sensitivity_settings_summary">ടച്ച് സ്‌ക്രീൻ സെൻസിറ്റിവിറ്റി ക്രമീകരിക്കുക</string>
+    <string name="touch_sensitivity_settings_title">ടച്ച് സെൻസിറ്റിവിറ്റി</string>
     <string name="touch_sensitivity_summary">സ്പർശന സെൻസിറ്റിവിറ്റി വർദ്ധിപ്പിക്കുക, സ്ക്രീൻ പ്രൊട്ടക്ടർ ഉപയോഗിക്കുമ്പോൾ സ്പർശനം മെച്ചപ്പെടുത്തുക</string>
     <string name="touch_sensitivity_title">സ്ക്രീൻ പ്രൊട്ടക്ടർ മോഡ്</string>
     <string name="traffic_light_face_enrolling_title_accessibility">നിങ്ങളുടെ മുഖത്തിന് അഭിമുഖമായി ഫോൺ പിടിക്കുക</string>

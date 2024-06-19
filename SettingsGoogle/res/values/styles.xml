@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
-
     <style name="BiometricEnrollIntroMessage">
         <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">?android:textColorPrimary</item>
@@ -30,17 +29,14 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
-
     <style name="ContextualSuggestionCardStyle">
         <item name="cardBackgroundColor">?androidprv:attr/colorAccentPrimary</item>
         <item name="cardCornerRadius">@dimen/suggestion_card_corner_radius</item>
         <item name="cardElevation">0.0dip</item>
     </style>
-
     <style name="ContextualSuggestionCardStyle.TwoPane" parent="@style/ContextualSuggestionCardStyle">
         <item name="cardBackgroundColor">?androidprv:attr/colorSurface</item>
     </style>
-
     <style name="DreamSudCardStyle" parent="@style/DreamCardStyle">
         <item name="cardBackgroundColor">@color/dream_card_suw_color_state_list</item>
     </style>
@@ -91,6 +87,10 @@
     </style>
     <style name="TextAppearance.SuggestionCardTitle.TwoPane" parent="@style/TextAppearance.SuggestionCardTitle">
         <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="Theme.Settings.Clips" parent="@style/Theme.Settings">
+        <item name="android:clipChildren">true</item>
+        <item name="android:clipToPadding">true</item>
     </style>
     <style name="VpnBottomSheetStyle" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
         <item name="android:windowBackground">@android:color/transparent</item>

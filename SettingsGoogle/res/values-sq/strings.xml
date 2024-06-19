@@ -1,6 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">Prekja e tastierës</string>
+    <string name="accessibility_screen_magnifier_summary">Përdor kamerën për të zmadhuar detajet rreth teje</string>
+    <string name="accessibility_screen_magnifier_title">Zmadhuesi</string>
     <string name="adaptive_alert_vibration_summary">Zvogëlon forcën e dridhjeve kur telefoni është i palëvizur dhe ekrani është i kthyer lart</string>
     <string name="adaptive_alert_vibration_title">Dridhja sinjalizuese me përshtatje</string>
     <string name="adaptive_battery_switch_des">Për të rritur kohëzgjatjen e baterisë, \"Bateria me përshtatje\" mund të reduktojë performancën dhe aktivitetin në sfond. Disa njoftime mund të vonohen.</string>
@@ -12,6 +14,8 @@
     <string name="adaptive_charging_main_switch_title">Përdor karikimin me përshtatje</string>
     <string name="adaptive_charging_time_estimate"><b>Karikim me përshtatje</b> • Plot deri në %1$s</string>
     <string name="adaptive_charging_title">Karikimi me përshtatje</string>
+    <string name="adaptive_touch_sensitivity_summary">Ndjeshmëria e prekjes do të rregullohet automatikisht sipas mjedisit, aktiviteteve dhe mbrojtësit të ekranit</string>
+    <string name="adaptive_touch_sensitivity_title">Prekja me përshtatje</string>
     <string name="add_bypassed_application_hint">Nuk u shtua asnjë aplikacion</string>
     <string name="advanced_vpn_preference_group_title">Integruar</string>
     <string name="all_apps_category_title">Të gjitha aplikacionet</string>
@@ -23,6 +27,16 @@ Dhënia e qasjes do ta lejojë këtë aplikacion që "<b>të mbledhë dhe të ng
 
 Revokimi i qasjes do t'i kërkojë aplikacionit që të kërkojë lejen tënde për të mbledhur dhe ngarkuar një raport të defekteve në kod për çdo raport individual të problemeve."</string>
     <string name="app_and_notification_dashboard_summary">Asistenti, aplikacionet e fundit, aplikacionet e parazgjedhura</string>
+    <string name="audio_sharing_switch_title">Ndaj audion</string>
+    <string name="audio_sharing_title">Ndarja e audios</string>
+    <string name="audio_streams_category_title">Lidh me një transmetim audio LE</string>
+    <string name="audio_streams_connect">Lidh</string>
+    <string name="audio_streams_disconnect">Shkëput</string>
+    <string name="audio_streams_pref_title">Transmetimet audio në afërsi</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">Kodi QR nuk është në format të vlefshëm</string>
+    <string name="audio_streams_qr_code_scanner">Që të fillosh të dëgjosh, vendos në qendër kodin QR më poshtë</string>
+    <string name="audio_streams_qr_code_summary">Lidh me një transmetim audio duke përdorur kodin QR</string>
+    <string name="audio_streams_title">Transmetimet audio</string>
     <string name="automatic_storage_manager_activation_warning">Kur të jesh i lidhur, mund të kesh përsëri qasje te fotografitë dhe videot me cilësinë që ke zgjedhur për rezervimin</string>
     <string name="automatic_storage_manager_days_title">Fotografitë dhe videot e rezervuara</string>
     <string name="automatic_storage_manager_deactivation_warning">"Të çaktivizohet \"Hapësira ruajtëse inteligjente\"? 
@@ -48,8 +62,20 @@ Revokimi i qasjes do t'i kërkojë aplikacionit që të kërkojë lejen tënde p
     <string name="battery_tip_battery_health_learn_more_description">Mëso më shumë për gjendjen e baterisë</string>
     <string name="battery_tip_battery_health_reduced_title">Kapaciteti i baterisë është reduktuar</string>
     <string name="battery_tip_battery_health_unknown_title">Gjendja e baterisë nuk mund të zbulohet</string>
+    <string name="battery_tip_dock_defender_active_summary">Për të ndihmuar në zgjatjen e jetëgjatësisë së baterisë, karikimi është vendosur në pritje në 90% ndërsa tableti është i lidhur me stacionin</string>
+    <string name="battery_tip_dock_defender_active_title">Karikimi është vendosur në pritje për të mbrojtur baterinë</string>
+    <string name="battery_tip_dock_defender_button_learn_more">Mëso më shumë</string>
+    <string name="battery_tip_dock_defender_button_override">Anulo</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">Për të ndihmuar në zgjatjen e jetëgjatësisë së baterisë, karikimi do të vendoset në pritje në 90% ndërsa tableti është i lidhur me stacionin</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">Karikimi deri në 90%</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">Herën tjetër që tableti yt do të jetë i lidhur me stacionin, karikimi do të vendoset në pritje në 90% për të mbrojtur baterinë</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">Karikimi i plotë</string>
     <string name="battery_tip_limited_temporarily_extra_summary">Për të mbrojtur baterinë tënde, karikimi vendoset në pauzë në %1$s kur tableti yt është i lidhur me stacionin</string>
     <string name="battery_tip_smart_battery_summary">Aktivizo \"Baterinë me përshtatje\"</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">Mëso më shumë rreth karikimit wireless</string>
+    <string name="battery_tip_wireless_charging_summary">Karikimi i telefonit tënd në mënyrë wireless mund të përdorë më shumë energji se mënyrat e tjera të karikimit</string>
+    <string name="battery_tip_wireless_charging_title">Po karikohet në mënyrë wireless</string>
+    <string name="calls_and_alarms_device_title">Telefonatat dhe alarmet</string>
     <string name="clear_calling_footer">"Për të mbrojtur privatësinë tënde, \"Telefonata e qartë\" nuk dërgon audio apo biseda te Google.
 
 \"Telefonata e qartë\" funksionon në telefonatat Wi‑Fi dhe në shumicën e rrjeteve, nuk ofrohet për rrjetet 3G."</string>
@@ -120,11 +146,14 @@ Revokimi i qasjes do t'i kërkojë aplikacionit që të kërkojë lejen tënde p
 
 Mashtrimi është një përpjekje për të vjedhur kredencialet e identifikimit ose informacione të tjera personale."</string>
     <string name="content_protection_preference_subpage_summary">Skanimi ekzekutohet në mënyrë private pikërisht në pajisjen tënde, duke kontrolluar aktivitetin e aplikacioneve për mashtrime ose sjellje të tjera mashtruese. Nëse zbulohen, disa informacione të aplikacionit dërgohen te Google Play Protect për të konfirmuar kërcënimin dhe për të paralajmëruar përdoruesit e tjerë të aplikacionit.</string>
+    <string name="contextual_timeout_description">Fik automatikisht herët ekranin nëse nuk po e përdor pajisjen</string>
+    <string name="contextual_timeout_title">Koha e pritjes me përshtatje</string>
     <string name="debugging_data_title">Të dhënat e korrigjimit të gabimeve</string>
     <string name="discover_tips_button">Zbulo këshilla</string>
     <string name="dock_summary_charging_phone">Telefoni po karikohet</string>
     <string name="double_twist_for_camera_mode_summary">Për të hyrë dhe dalë nga modaliteti për \"selfie\" në \"Kamerën e Google\", përdridhe dy herë kur je në aplikacion.</string>
     <string name="duration_less_than_one_minute">Më pak se 1 minutë</string>
+    <string name="enable_glanceable_hub_toggle">Modaliteti Hub</string>
     <string name="extreme_battery_saver_summary">Përfshin të gjitha ndryshimet e listuara më sipër. Vendos në pauzë edhe aplikacionet jothelbësore dhe njoftimet e tyre.</string>
     <string name="extreme_battery_saver_title">Kursyesi ekstrem i baterisë</string>
     <string name="face_confirmation_hide_illustration_description">Tani kur ngre telefonin ose troket në ekran, mund të përdorësh fytyrën tënde për ta shkyçur.</string>
@@ -162,7 +191,6 @@ Mashtrimi është një përpjekje për të vjedhur kredencialet e identifikimit 
     <string name="firmware_update_status_category">Statusi i firmuerit të pajisjes</string>
     <string name="firmware_update_status_title">Ofrohet përditësimi i firmuerit</string>
     <string name="firmware_update_version_number_category">Versioni i firmuerit të pajisjes</string>
-    <string name="firmware_update_version_number_title">Firmueri i tastierës së Pixel</string>
     <string name="fullbackup_data_summary">"Rezervo automatikisht te \"Disku i Google\" të dhënat e pajisjes (si p.sh. fjalëkalimet e Wi-Fi dhe historikun e telefonatave) dhe të dhënat e aplikacioneve (si p.sh. cilësimet dhe skedarët e ruajtur nga aplikacionet).
 
 Kur aktivizon rezervimin automatik, të dhënat e pajisjes dhe të aplikacioneve ruhen periodikisht te një dosje private në \"Diskun e Google\". Të dhënat e aplikacioneve mund të jenë çdo e dhënë që ka ruajtur një aplikacion (bazuar në cilësimet e zhvilluesit), duke përfshirë të dhëna ndoshta delikate, si p.sh. kontaktet, mesazhet dhe fotografitë.
@@ -170,17 +198,20 @@ Kur aktivizon rezervimin automatik, të dhënat e pajisjes dhe të aplikacioneve
 Të dhënat e rezervimit nuk do të ndikojnë në kuotat e hapësirës ruajtëse të \"Diskut të Google\". Skedarët e mëdhenj ose skedarët që zhvilluesit kanë zgjedhur t'i përjashtojnë nga shërbimi nuk do të rezervohen."</string>
     <string name="fullbackup_erase_dialog_message">Ndalo rezervimin e të dhënave të pajisjes (si p.sh. fjalëkalimet e Wi-Fi dhe historikun e telefonatave) dhe të dhënat e aplikacioneve (si p.sh. cilësimet dhe skedarët e ruajtur nga aplikacionet) dhe spastro të gjitha kopjet në Diskun e Google?</string>
     <string name="gesture_settings_activity_title">Navigimi me gjeste</string>
+    <string name="hub_mode_content_setting">Lejo çdo miniaplikacion në modalitetin Hub</string>
     <string name="install_unknown_applications">Lejo instalimin e aplikacioneve nga burime të ndryshme nga Dyqani \"Luaj\"</string>
     <string name="keywords_accessibility_menu">motorik, meny e shpejtë, meny ndihmëse, prekje, shkathtësi, artrit, rsi, goditje në tru, dridhje, sklerozë multiple, paralizë cerebrale, buton, harduer, shtyp, lëndim nga sforcim i përsëritur, dorë, dhimbje, e qasshme, ndihmë</string>
     <string name="keywords_adaptive_alert_vibration">prekje, dridhje, telefon, telefonatë, zile, sinjalizim, njoftime, i lartë, i qetë, zhurmë, kasa, me përshtatje</string>
     <string name="keywords_adaptive_charging">kariko, karikim, karikim inteligjent, karikim me përshtatje, bateri, integriteti i baterisë</string>
     <string name="keywords_battery_share">ndarja e baterisë, karikimi wireless</string>
     <string name="keywords_battery_share_settings">ndarja e baterisë, karikimi wireless në të kundërt</string>
+    <string name="keywords_contextual_screen_timeout">ekrani, koha e pritjes, me përshtatje, kontekstuale</string>
     <string name="keywords_gesture">gjest, lëvizje</string>
     <string name="keywords_hearing_devices">vështirësi në dëgjim, humbje dëgjimi, PSAP</string>
     <string name="keywords_limited_warranty">garanci, siguri, garanci e kufizuar, premtim, riparim, AKM, zëvendësim</string>
     <string name="keywords_live_caption">Titrat, titra, CC, \"Transkriptim në çast\", vështirësi në dëgjim, humbje e dëgjimit, CART, ligjërimi në tekst, titra</string>
     <string name="keywords_live_transcribe">Titrat, CC, Titrat në çast, vështirësi në dëgjim, humbje e dëgjimit, CART, ligjërimi në tekst, nëntitull</string>
+    <string name="keywords_magnifier">Zmadho, zmadhimi, shikim i dobët, bëje më të madh</string>
     <string name="keywords_reverse_charging_stop_threshold">Ndalo ndarjen e baterisë kur telefoni arrin:</string>
     <string name="keywords_select_to_speak">Dëgjo tekst, lexo me zë të lartë, lexo ekranin, lexuesi i ekranit</string>
     <string name="keywords_sound_amplifier">PSAP, amplifiko, amplifikimi i tingujve, vështirësi në dëgjim, humbje e dëgjimit, amplifikim</string>
@@ -188,6 +219,7 @@ Të dhënat e rezervimit nuk do të ndikojnë në kuotat e hapësirës ruajtëse
     <string name="keywords_switch_access">aftësitë motorike, çelësi, dora, AT, teknologjia ndihmëse, paralizë, ALS, skanim, skanim me hapa</string>
     <string name="keywords_talkback">Lexuesi i ekranit, regjistrimi i zërit, VoiceOver, Ndihma zanore, i verbër, shikim i dobët, TTS, teksti-në-ligjërim, komentet me zë</string>
     <string name="keywords_touch_sensitivity">prekje, ndjeshmëri, i ndjeshëm, mbrojtësi i ekranit, shtresë plastike, reagues, reagueshmëria</string>
+    <string name="keywords_touch_sensitivity_settings">prekje, me përshtatje, ndjeshmëri, i ndjeshëm, mbrojtësi i ekranit, shtresë plastike, reagues, reagueshmëria</string>
     <string name="keywords_voice_access">zëri, kontrolli zanor, aftësitë motorike, dora, mikrofoni, mikrofon, diktim, flas, kontrolloj</string>
     <string name="led_preference_title">Motivet e treguesit LED</string>
     <string name="legal_source_code_description">Detajet për kodin e burimit për përbërësit e ofruar si me burim të hapur mund të gjendjen në qendrën e ndihmës të Pixel.</string>
@@ -201,7 +233,7 @@ Të dhënat e rezervimit nuk do të ndikojnë në kuotat e hapësirës ruajtëse
     <string name="permit_debugging_data">Lejo qasjen te raportet e defekteve në kod</string>
     <string name="play_application_detail_indication_summary">Kontrollo për përditësime</string>
     <string name="play_application_update_entry_title">Përditësimet e aplikacioneve</string>
-    <string name="privatespace_retry_summary">Duhet të identifikohesh në një \"Llogari të Google\" për të konfiguruar \"Hapësirën private\"</string>
+    <string name="private_space_retry_summary">Identifikohu në një \"Llogari të Google\" për ta përdorur me hapësirën tënde private</string>
     <string name="repair_mode_active_summary">Në modalitetin e riparimit</string>
     <string name="repair_mode_summary">Mjedis i sigurt për riparimin e pajisjes</string>
     <string name="repair_mode_title">Modaliteti i riparimit</string>
@@ -252,9 +284,15 @@ Ktheje telefonin nga ana tjetër dhe provo."</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">U arrit afati i regjistrimit. Provo sërish.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Konfigurimit të \"Shkyçjes me fytyrë\" i mbaroi koha</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Tani mund të përdorësh fytyrën tënde për të shkyçur telefonin ose për të verifikuar që je ti, p.sh. kur identifikohesh në aplikacione ose kur miraton një blerje</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp_full">"Tani mund të përdorësh fytyrën për të shkyçur telefonin ose për të verifikuar që je ti, si p.sh. kur identifikohesh në aplikacione ose kur miraton një blerje.
+
+\"Shkyçja me fytyrë\" funksionon më mirë kur ka ndriçim të mjaftueshëm dhe nuk ke vënë një maskë ose syze të errëta."</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"Tani kur ngre telefonin ose troket ekranin, mund të përdorësh fytyrën tënde për ta shkyçur.
 
 \"Shkyçja me fytyrë\" funksionon më mirë kur ka mjaftueshëm ndriçim dhe nuk ke vënë një maskë ose syze të errëta."</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp_folded">"Tani kur ngre telefonin ose troket në ekran, mund të përdorësh fytyrën tënde për ta shkyçur. Telefoni yt duhet të jetë i palosur për të përdorur \"Shkyçjen me fytyrë\".
+
+\"Shkyçja me fytyrë\" funksionon më mirë kur ka ndriçim të mjaftueshëm dhe nuk ke vënë një maskë ose syze të errëta."</string>
     <string name="security_settings_face_enroll_finish_title">Duket mirë!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Konfigurimi për kufizime me shikimin ose lëvizjen e kokës</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Kërko sy të hapur</string>
@@ -294,6 +332,8 @@ Shënim. Nuk mund ta përdorësh gjurmën tënde të gishtit për ta shkyçur k�
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint për punën</string>
     <string name="setup_suggestion_summary">Vetëm edhe disa hapa</string>
     <string name="setup_suggestion_title">Përfundo konfigurimin</string>
+    <string name="smart_battery_a11y_collapse_label">Palos, \"Bateria me përshtatje\"</string>
+    <string name="smart_battery_a11y_expand_label">Zgjero, \"Bateria me përshtatje\"</string>
     <string name="smart_battery_footer">Për të rritur kohëzgjatjen e baterisë, \"Bateria me përshtatje\" mund të reduktojë cilësinë e funksionimit dhe aktivitetin në sfond. Disa njoftime mund të vonohen.</string>
     <string name="smart_battery_manager_title">Preferencat me përshtatje</string>
     <string name="smart_battery_title">Bateria me përshtatje</string>
@@ -310,6 +350,8 @@ Shënim. Nuk mund ta përdorësh gjurmën tënde të gishtit për ta shkyçur k�
     <string name="software_update_up_to_specific_date_summary">Përditësuar më %1$s</string>
     <string name="software_update_update_available_summary">Ofrohet një përditësim</string>
     <string name="sound_dashboard_summary">Volumi, prekja, \"Mos shqetëso\"</string>
+    <string name="spatial_audio_head_tracking_available">Ofrohet ndjekja e lëvizjes së kokës</string>
+    <string name="spatial_audio_head_tracking_unavailable">Ndjekja e lëvizjes së kokës nuk ofrohet</string>
     <string name="spatial_audio_title">Audio hapësinore</string>
     <string name="speed_boost_summary_off">Çaktivizuar</string>
     <string name="speed_boost_summary_on">Aktive</string>
@@ -322,6 +364,9 @@ Shënim. Nuk mund ta përdorësh gjurmën tënde të gishtit për ta shkyçur k�
     <string name="suw_warranty_positive_button_text">Mbyll</string>
     <string name="system_update_entry_title">Përditësimi i sistemit</string>
     <string name="system_updates_group_title">Përditësimet e Pixel</string>
+    <string name="touch_category_title">Prekja</string>
+    <string name="touch_sensitivity_settings_summary">Rregullo ndjeshmërinë e ekranit me prekje</string>
+    <string name="touch_sensitivity_settings_title">Ndjeshmëria e prekjes</string>
     <string name="touch_sensitivity_summary">Rrit ndjeshmërinë e prekjes dhe përmirëso prekjen kur përdor një mbrojtës ekrani</string>
     <string name="touch_sensitivity_title">Modaliteti i mbrojtësit të ekranit</string>
     <string name="traffic_light_face_enrolling_title_accessibility">Mbaje telefonin përpara fytyrës sate</string>

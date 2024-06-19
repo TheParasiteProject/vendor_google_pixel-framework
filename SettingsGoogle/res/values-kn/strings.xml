@@ -1,7 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
     <string name="accessibility_keyboard_haptics_title">ಕೀಬೋರ್ಡ್ ಹ್ಯಾಪ್ಟಿಕ್ಸ್</string>
-    <string name="adaptive_alert_vibration_summary">ನಿಮ್ಮ ಫೋನ್ ಸ್ಥಿರವಾಗಿರುವಾಗ ಹಾಗೂ ಸ್ಕ್ರೀನ್ ಮೇಲ್ಮುಖವಾಗಿರುವಾಗ ವೈಬ್ರೇಷನ್‌ನ ತೀವ್ರತೆಯನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ</string>
+    <string name="accessibility_screen_magnifier_summary">ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಪ್ರದೇಶಗಳನ್ನು ಝೂಮ್‌ ಮಾಡಲು ನಿಮ್ಮ ಕ್ಯಾಮರಾವನ್ನು ಬಳಸಿ</string>
+    <string name="accessibility_screen_magnifier_title">ಮ್ಯಾಗ್ನಿಫೈಯರ್</string>
+    <string name="adaptive_alert_vibration_summary">ನಿಮ್ಮ ಫೋನ್ ಸ್ಥಿರವಾಗಿರುವಾಗ ಹಾಗೂ ಸ್ಕ್ರೀನ್ ಮೇಲಕ್ಕೆ ಮುಖ ಮಾಡಿರುವಾಗ ವೈಬ್ರೇಷನ್‌ನ ತೀವ್ರತೆಯನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ</string>
     <string name="adaptive_alert_vibration_title">ಅಡಾಪ್ಟಿವ್ ಅಲರ್ಟ್ ವೈಬ್ರೇಷನ್</string>
     <string name="adaptive_battery_switch_des">ಬ್ಯಾಟರಿ ಬಾಳಿಕೆಯನ್ನು ವಿಸ್ತರಿಸಲು, ಅಡಾಪ್ಟಿವ್ ಬ್ಯಾಟರಿಯು ಕಾರ್ಯಕ್ಷಮತೆ ಮತ್ತು ಹಿನ್ನೆಲೆ ಚಟುವಟಿಕೆಯನ್ನು ಕಡಿಮೆ ಮಾಡಬಹುದು. ಕೆಲವು ಅಧಿಸೂಚನೆಗಳು ತಡವಾಗಬಹುದು.</string>
     <string name="adaptive_battery_switch_title">ಅಡಾಪ್ಟಿವ್ ಬ್ಯಾಟರಿಯನ್ನು ಬಳಸಿ</string>
@@ -12,17 +14,29 @@
     <string name="adaptive_charging_main_switch_title">ಅಡಾಪ್ಟಿವ್ ಚಾರ್ಜಿಂಗ್ ಅನ್ನು ಬಳಸಿ</string>
     <string name="adaptive_charging_time_estimate"><b>ಅಡಾಪ್ಟಿವ್ ಚಾರ್ಜಿಂಗ್</b> • %1$s ಸಮಯದಲ್ಲಿ ಪೂರ್ಣಗೊಳ್ಳುತ್ತದೆ</string>
     <string name="adaptive_charging_title">ಅಡಾಪ್ಟಿವ್ ಚಾರ್ಜಿಂಗ್</string>
+    <string name="adaptive_touch_sensitivity_summary">ಸ್ಪರ್ಶ ಸಂವೇದನೆಯು ನಿಮ್ಮ ಪರಿಸರ, ಚಟುವಟಿಕೆಗಳು ಮತ್ತು ಸ್ಕ್ರೀನ್ ಗಾರ್ಡ್‌ಗೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸರಿಹೊಂದಿಕೊಳ್ಳುತ್ತದೆ</string>
+    <string name="adaptive_touch_sensitivity_title">ಅಡಾಪ್ಟಿವ್ ಟಚ್</string>
     <string name="add_bypassed_application_hint">ಯಾವುದೇ ಆ್ಯಪ್‌ಗಳನ್ನು ಸೇರಿಸಿಲ್ಲ</string>
     <string name="advanced_vpn_preference_group_title">ಬಿಲ್ಟ್-ಇನ್</string>
     <string name="all_apps_category_title">ಎಲ್ಲಾ ಆ್ಯಪ್‌ಗಳು</string>
-    <string name="allow_debugging_data_description">ನಮ್ಮ <a href="https://policies.google.com/privacy">ಗೌಪ್ಯತೆ ನೀತಿ</a>" ಗೆ ಅನುಗುಣವಾಗಿ ಆ್ಯಪ್ ಮತ್ತು ಸಾಧನದ ಸಮಸ್ಯೆಗಳನ್ನು ಪತ್ತೆಹಚ್ಚಲು Google ಬಗ್ ವರದಿಗಳನ್ನು ಬಳಸುತ್ತದೆ.
+    <string name="allow_debugging_data_description">ನಮ್ಮ <a href="https://policies.google.com/privacy">ಗೌಪ್ಯತೆ ನೀತಿ</a>"ಗೆ ಅನುಗುಣವಾಗಿ ಆ್ಯಪ್ ಮತ್ತು ಸಾಧನದ ಸಮಸ್ಯೆಗಳನ್ನು ಪತ್ತೆಹಚ್ಚಲು Google ಬಗ್ ವರದಿಗಳನ್ನು ಬಳಸುತ್ತದೆ.
 
-"<b>ದೋಷ ವರದಿಗಳು ಆ್ಯಪ್ ಮತ್ತು ಸಿಸ್ಟಂ ಲಾಗ್‌ಗಳನ್ನು</b>" ಒಳಗೊಂಡಿರುತ್ತವೆ ಮತ್ತು ಹೆಸರುಗಳು, ಇಮೇಲ್ ವಿಳಾಸಗಳು, ಫೋನ್ ಸಂಖ್ಯೆಗಳು, ಸ್ಥಳ ಡೇಟಾ, ಸಾಧನ ಗುರುತಿಸುವಿಕೆಗಳು, ಕನೆಕ್ಟ್ ಮಾಡಿರುವ ಸಾಧನಗಳು ಮತ್ತು ನೆಟ್‌ವರ್ಕ್ ಮಾಹಿತಿಯಂತಹ ವೈಯಕ್ತಿಕ ಮತ್ತು ಸಾಧನ ಮಾಹಿತಿಯನ್ನು ಒಳಗೊಂಡಿರಬಹುದು. ನಿಮ್ಮ ಸಮಸ್ಯೆಯಿಂದ ಸಂಭಾವ್ಯವಾಗಿ ಪ್ರಭಾವಿತವಾಗಿರುವ ಎಂಜಿನಿಯರಿಂಗ್ ಪಾಲುದಾರರ ಜೊತೆಗೆ ವರದಿಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಬಹುದು.
+"<b>ಬಗ್ ವರದಿಗಳು ಆ್ಯಪ್ ಮತ್ತು ಸಿಸ್ಟಂ ಲಾಗ್‌ಗಳನ್ನು</b>" ಒಳಗೊಂಡಿರುತ್ತವೆ ಮತ್ತು ಹೆಸರುಗಳು, ಇಮೇಲ್ ವಿಳಾಸಗಳು, ಫೋನ್ ಸಂಖ್ಯೆಗಳು, ಸ್ಥಳ ಡೇಟಾ, ಸಾಧನ ಗುರುತಿಸುವಿಕೆಗಳು, ಕನೆಕ್ಟ್ ಮಾಡಿರುವ ಸಾಧನಗಳು ಮತ್ತು ನೆಟ್‌ವರ್ಕ್ ಮಾಹಿತಿಯಂತಹ ವೈಯಕ್ತಿಕ ಮತ್ತು ಸಾಧನ ಮಾಹಿತಿಯನ್ನು ಒಳಗೊಂಡಿರಬಹುದು. ವರದಿಗಳನ್ನು ನಿಮ್ಮ ಸಮಸ್ಯೆಯಿಂದ ಸಂಭಾವ್ಯವಾಗಿ ಪ್ರಭಾವಿತವಾಗಿರುವ ಎಂಜಿನಿಯರಿಂಗ್ ಪಾಲುದಾರರ ಜೊತೆಗೆ ಹಂಚಿಕೊಳ್ಳಬಹುದು.
  
 ಆ್ಯಕ್ಸೆಸ್ ಅನ್ನು ನೀಡುವುದರಿಂದ ನೀವು ಸಲ್ಲಿಸುವ ಎಲ್ಲಾ ದೋಷ ವರದಿಗಳಿಗಾಗಿ ವೈಯಕ್ತಿಕ ಮತ್ತು ಕೆಲಸದ ಪ್ರೊಫೈಲ್‌ಗಳಿಂದ ಆ್ಯಪ್ ಮತ್ತು ಸಿಸ್ಟಂ ಲಾಗ್‌ಗಳು ಸೇರಿದಂತೆ "<b>ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸಂಗ್ರಹಿಸಲು ಮತ್ತು ಅಪ್‌ಲೋಡ್ ಮಾಡಲು</b>" ಈ ಆ್ಯಪ್ ಅನುಮತಿಸುತ್ತದೆ.
 
-ಆ್ಯಕ್ಸೆಸ್ ಅನ್ನು ಹಿಂತೆಗೆದುಕೊಳ್ಳುವುದರಿಂದ ಪ್ರತಿಯೊಂದು ಸಮಸ್ಯೆಯ ವರದಿಗಾಗಿ ಬಗ್ ವರದಿಯನ್ನು ಸಂಗ್ರಹಿಸಲು ಮತ್ತು ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ನಿಮ್ಮ ಅನುಮತಿಯನ್ನು ವಿನಂತಿಸಲು ಆ್ಯಪ್ ಅಗತ್ಯವಿರುತ್ತದೆ."</string>
+ಆ್ಯಕ್ಸೆಸ್ ಅನ್ನು ಹಿಂತೆಗೆದುಕೊಳ್ಳುವುದರಿಂದ ಪ್ರತಿಯೊಂದು ಸಮಸ್ಯೆಯ ವರದಿಗಾಗಿ ಬಗ್ ವರದಿಯನ್ನು ಸಂಗ್ರಹಿಸಲು ಮತ್ತು ಅಪ್‌ಲೋಡ್ ಮಾಡಲು ನಿಮ್ಮ ಅನುಮತಿಯನ್ನು ಆ್ಯಪ್‍ ಅಗತ್ಯವಾಗಿ ವಿನಂತಿಸಬೇಕಾಗುತ್ತದೆ."</string>
     <string name="app_and_notification_dashboard_summary">Assistant, ಇತ್ತೀಚಿನ ಆ್ಯಪ್‌ಗಳು, ಡೀಫಾಲ್ಟ್ ಆ್ಯಪ್‌ಗಳು</string>
+    <string name="audio_sharing_switch_title">ಆಡಿಯೋ ಹಂಚಿಕೊಳ್ಳಿ</string>
+    <string name="audio_sharing_title">ಆಡಿಯೋ ಹಂಚಿಕೊಳ್ಳುವಿಕೆ</string>
+    <string name="audio_streams_category_title">LE ಆಡಿಯೋ ಸ್ಟ್ರೀಮ್‌ಗೆ ಕನೆಕ್ಟ್ ಮಾಡಿ</string>
+    <string name="audio_streams_connect">ಕನೆಕ್ಟ್ ಮಾಡಿ</string>
+    <string name="audio_streams_disconnect">ಡಿಸ್‌ಕನೆಕ್ಟ್ ಮಾಡಿ</string>
+    <string name="audio_streams_pref_title">ಸಮೀಪದ ಆಡಿಯೋ ಸ್ಟ್ರೀಮ್‌ಗಳು</string>
+    <string name="audio_streams_qr_code_is_not_valid_format">QR ಕೋಡ್ ಮಾನ್ಯ ಫಾರ್ಮ್ಯಾಟ್‌ನಲ್ಲಿಲ್ಲ</string>
+    <string name="audio_streams_qr_code_scanner">ಆಲಿಸುವುದಕ್ಕೆ ಪ್ರಾರಂಭಿಸಲು, ಕ್ಯಾಮರಾವನ್ನು ಕೆಳಗಿನ QR ಕೋಡ್ ಮೇಲೆ ಕೇಂದ್ರೀಕರಿಸಿ</string>
+    <string name="audio_streams_qr_code_summary">QR ಕೋಡ್ ಅನ್ನು ಬಳಸಿಕೊಂಡು ಆಡಿಯೋ ಸ್ಟ್ರೀಮ್‌ಗೆ ಕನೆಕ್ಟ್ ಮಾಡಿ</string>
+    <string name="audio_streams_title">ಆಡಿಯೋ ಸ್ಟ್ರೀಮ್‌ಗಳು</string>
     <string name="automatic_storage_manager_activation_warning">ನೀವು ಸಂಪರ್ಕಗೊಳಿಸಿದಾಗ, ನೀವು ಬ್ಯಾಕಪ್‍‍ಗಾಗಿ ಆಯ್ಕೆಮಾಡಿದ ಗುಣಮಟ್ಟದಲ್ಲಿ ಫೋಟೋಗಳು ಮತ್ತು ವೀಡಿಯೊಗಳನ್ನು ಈಗಲೂ ಪ್ರವೇಶಿಸಬಹುದು</string>
     <string name="automatic_storage_manager_days_title">ಬ್ಯಾಕಪ್ ಮಾಡಿದ ಫೋಟೋ, ವೀಡಿಯೊ ತೆಗೆದುಹಾಕಿ</string>
     <string name="automatic_storage_manager_deactivation_warning">"ಸ್ಮಾರ್ಟ್ ಸಂಗ್ರಹಣೆ ಆಫ್ ಮಾಡಬೇಕೆ? 
@@ -49,8 +63,20 @@
     <string name="battery_tip_battery_health_learn_more_description">ಬ್ಯಾಟರಿ ಹೆಲ್ತ್ ಕುರಿತು ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</string>
     <string name="battery_tip_battery_health_reduced_title">ಬ್ಯಾಟರಿ ಸಾಮರ್ಥ್ಯ ಕಡಿಮೆಯಾಗಿದೆ</string>
     <string name="battery_tip_battery_health_unknown_title">ಬ್ಯಾಟರಿ ಹೆಲ್ತ್ ಅನ್ನು ಪತ್ತೆಹಚ್ಚಲು ಸಾಧ್ಯವಿಲ್ಲ</string>
+    <string name="battery_tip_dock_defender_active_summary">ಬ್ಯಾಟರಿ ಬಾಳಿಕೆಯನ್ನು ವಿಸ್ತರಿಸಲು ಸಹಾಯ ಮಾಡುವುದಕ್ಕಾಗಿ, ನಿಮ್ಮ ಟ್ಯಾಬ್ಲೆಟ್ ಡಾಕ್ ಆಗಿರುವಾಗ 90% ರಷ್ಟು ಚಾರ್ಜಿಂಗ್ ಅನ್ನು ಹೋಲ್ಡ್ ಮಾಡಲಾಗಿರುತ್ತದೆ</string>
+    <string name="battery_tip_dock_defender_active_title">ಬ್ಯಾಟರಿಯನ್ನು ರಕ್ಷಿಸಲು ಚಾರ್ಜಿಂಗ್ ಅನ್ನು ಹೋಲ್ಡ್‌ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="battery_tip_dock_defender_button_learn_more">ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</string>
+    <string name="battery_tip_dock_defender_button_override">ಅತಿಕ್ರಮಿಸಿ</string>
+    <string name="battery_tip_dock_defender_future_bypass_summary">ಬ್ಯಾಟರಿ ಬಾಳಿಕೆಯನ್ನು ವಿಸ್ತರಿಸಲು ಸಹಾಯ ಮಾಡಲು, ನಿಮ್ಮ ಟ್ಯಾಬ್ಲೆಟ್ ಡಾಕ್ ಆಗಿರುವಾಗ 90% ನಲ್ಲಿ ಚಾರ್ಜಿಂಗ್ ಅನ್ನು ಹೋಲ್ಡ್ ಮಾಡಲಾಗುತ್ತದೆ</string>
+    <string name="battery_tip_dock_defender_future_bypass_title">90% ವರೆಗೆ ಚಾರ್ಜ್ ಮಾಡಲಾಗುತ್ತಿದೆ</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_summary">ಮುಂದಿನ ಬಾರಿ ನಿಮ್ಮ ಟ್ಯಾಬ್ಲೆಟ್ ಅನ್ನು ಡಾಕ್ ಮಾಡಿದಾಗ, ಬ್ಯಾಟರಿಯನ್ನು ರಕ್ಷಿಸಲು 90% ನಲ್ಲಿ ಚಾರ್ಜಿಂಗ್ ಅನ್ನು ಹೋಲ್ಡ್ ಮಾಡಲಾಗುತ್ತದೆ</string>
+    <string name="battery_tip_dock_defender_temporarily_bypass_title">ಪೂರ್ಣವಾಗಿ ಚಾರ್ಜ್ ಮಾಡಲಾಗುತ್ತಿದೆ</string>
     <string name="battery_tip_limited_temporarily_extra_summary">ನಿಮ್ಮ ಬ್ಯಾಟರಿಯನ್ನು ರಕ್ಷಿಸಲು, ನಿಮ್ಮ ಟ್ಯಾಬ್ಲೆಟ್ ಅನ್ನು ಡಾಕ್ ಮಾಡಿರುವಾಗ %1$s ನಲ್ಲಿ ಚಾರ್ಜಿಂಗ್ ಅನ್ನು ವಿರಾಮಗೊಳಿಸಲಾಗುತ್ತದೆ</string>
     <string name="battery_tip_smart_battery_summary">ಅಡಾಪ್ಟಿವ್‌ ಬ್ಯಾಟರಿಯನ್ನು ಆನ್ ಮಾಡಿ</string>
+    <string name="battery_tip_wireless_charging_learn_more_description">ವೈರ್‌ಲೆಸ್ ಚಾರ್ಜಿಂಗ್ ಕುರಿತು ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</string>
+    <string name="battery_tip_wireless_charging_summary">ನಿಮ್ಮ ಫೋನ್ ಅನ್ನು ವೈರ್‌ಲೆಸ್‌ ಮೂಲಕ ಚಾರ್ಜ್ ಮಾಡುವುದು ಇತರ ಚಾರ್ಜಿಂಗ್ ವಿಧಾನಗಳಿಗಿಂತ ಹೆಚ್ಚಿನ ಎನರ್ಜಿಯನ್ನು ಬಳಸುತ್ತದೆ</string>
+    <string name="battery_tip_wireless_charging_title">ವೈರ್‌ಲೆಸ್ ಚಾರ್ಜಿಂಗ್</string>
+    <string name="calls_and_alarms_device_title">ಕರೆಗಳು ಮತ್ತು ಅಲಾರಾಂಗಳು</string>
     <string name="clear_calling_footer">"ನಿಮ್ಮ ಗೌಪ್ಯತೆಯನ್ನು ರಕ್ಷಿಸಲು, ಕ್ಲಿಯರ್ ಕಾಲಿಂಗ್ ಆಡಿಯೊ ಅಥವಾ ಸಂಭಾಷಣೆಗಳನ್ನು Google ಗೆ ಕಳುಹಿಸುವುದಿಲ್ಲ.
 
 ಕ್ಲಿಯರ್ ಕಾಲಿಂಗ್ ವೈಫೈ ಕರೆ ಮಾಡುವಿಕೆ ಮತ್ತು ಬಹುತೇಕ ನೆಟ್‌ವರ್ಕ್‌ಗಳಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ, 3G ನೆಟ್‌ವರ್ಕ್‌ಗಳಿಗೆ ಲಭ್ಯವಿರುವುದಿಲ್ಲ."</string>
@@ -85,12 +111,12 @@
     <string name="columbus_launch_settings_activity_title">ಕ್ವಿಕ್ ಟ್ಯಾಪ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
     <string name="columbus_name">ಕ್ವಿಕ್ ಟ್ಯಾಪ್</string>
     <string name="columbus_radio_button_extra_widget_a11y_label">%1$s ಸೆಟ್ಟಿಂಗ್‌ಗಳು</string>
-    <string name="columbus_setting_action_assistant_title">ನಿಮ್ಮ ಡಿಜಿಟಲ್ ಅಸಿಸ್ಟೆಂಟ್ ಅನ್ನು ಪ್ರವೇಶಿಸಿ</string>
+    <string name="columbus_setting_action_assistant_title">ನಿಮ್ಮ ಡಿಜಿಟಲ್ ಅಸಿಸ್ಟೆಂಟ್ ಅನ್ನು ಆ್ಯಕ್ಸೆಸ್ ಮಾಡಿ</string>
     <string name="columbus_setting_action_flashlight_title">ಫ್ಲ್ಯಾಶ್‌ಲೈಟ್ ಟಾಗಲ್ ಮಾಡಿ</string>
     <string name="columbus_setting_action_launch_summary_no_selection">ಯಾವುದೇ ಆ್ಯಪ್ ಅನ್ನು ಆಯ್ಕೆಮಾಡಲಾಗಿಲ್ಲ</string>
     <string name="columbus_setting_action_launch_summary_not_installed">ಆ್ಯಪ್‌ ಇನ್‌ಸ್ಟಾಲ್‌ ಮಾಡಲಾಗಿಲ್ಲ</string>
     <string name="columbus_setting_action_launch_title">ಆ್ಯಪ್ ತೆರೆಯಿರಿ</string>
-    <string name="columbus_setting_action_notification_title">ಅಧಿಸೂಚನೆಗಳನ್ನು ತೋರಿಸಿ</string>
+    <string name="columbus_setting_action_notification_title">ನೋಟಿಫಿಕೇಶನ್‌ಗಳನ್ನು ತೋರಿಸಿ</string>
     <string name="columbus_setting_action_open_app_title">ಆ್ಯಪ್ ತೆರೆಯಿರಿ</string>
     <string name="columbus_setting_action_overview_title">ಇತ್ತೀಚಿನ ಆ್ಯಪ್‌ಗಳನ್ನು ನೋಡಿ</string>
     <string name="columbus_setting_action_play_pause_title">ಮಾಧ್ಯಮವನ್ನು ಪ್ಲೇ ಮಾಡಿ ಅಥವಾ ವಿರಾಮಗೊಳಿಸಿ</string>
@@ -121,12 +147,15 @@
 
 ಫಿಶಿಂಗ್ ಎನ್ನುವುದು ಸೈನ್-ಇನ್ ರುಜುವಾತುಗಳು ಅಥವಾ ಇತರ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನು ಕದಿಯುವ ಪ್ರಯತ್ನವಾಗಿದೆ."</string>
     <string name="content_protection_preference_subpage_summary">ಸ್ಕ್ಯಾನಿಂಗ್ ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ಖಾಸಗಿಯಾಗಿ ನಡೆಯುತ್ತದೆ, ಫಿಶಿಂಗ್ ಮತ್ತು ಇತರ ಮೋಸದ ನಡವಳಿಕೆಗಾಗಿ ಆ್ಯಪ್‌ನ ಚಟುವಟಿಕೆಯನ್ನು ಪರಿಶೀಲಿಸುತ್ತದೆ. ಫಿಶಿಂಗ್ ಪತ್ತೆಯಾದರೆ, ಅಪಾಯವನ್ನು ಖಚಿತಪಡಿಸಲು ಮತ್ತು ಆ್ಯಪ್ ಬಳಕೆದಾರರನ್ನು ಎಚ್ಚರಿಸಲು ಕೆಲವು ಆ್ಯಪ್ ಮಾಹಿತಿಯನ್ನು Google Play Protect ಗೆ ಕಳುಹಿಸಲಾಗುತ್ತದೆ.</string>
-    <string name="dark_ui_text">ಡಾರ್ಕ್ ಥೀಮ್ ಕಪ್ಪು ಬಣ್ಣವನ್ನು ಬಳಸುತ್ತದೆ, ಆದ್ದರಿಂದ ಬ್ಯಾಟರಿ ದೀರ್ಘ ಕಾಲ ಬಾಳಿಕೆ ಬರಲು ಸಹಾಯವಾಗುತ್ತದೆ. ನೀವು ಸ್ಕ್ರೀನ್ ಆಫ್ ಮಾಡಿದ ನಂತರ, ಡಾರ್ಕ್‌ ಥೀಮ್ ವೇಳಾಪಟ್ಟಿಗಳು ಆನ್ ಆಗುತ್ತವೆ.</string>
+    <string name="contextual_timeout_description">ನಿಮ್ಮ ಸಾಧನವು ಬಳಕೆಯಲ್ಲಿಲ್ಲದಿದ್ದರೆ, ನಿಮ್ಮ ಸಾಧನದ ಸ್ಕ್ರೀನ್ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಬೇಗನೆ ಆಫ್ ಆಗುತ್ತದೆ</string>
+    <string name="contextual_timeout_title">ಅಡಾಪ್ಟಿವ್ ಟೈಮ್‌ಔಟ್</string>
+    <string name="dark_ui_text">ನಿಮ್ಮ ಬ್ಯಾಟರಿ ದೀರ್ಘ ಕಾಲ ಬಾಳಿಕೆ ಬರುವುದಕ್ಕಾಗಿ ಸಹಾಯವಾಗಲು ಡಾರ್ಕ್ ಥೀಮ್ ಕಪ್ಪು ಹಿನ್ನೆಲೆಯನ್ನು ಬಳಸುತ್ತದೆ. ಡಾರ್ಕ್‌ ಥೀಮ್ ವೇಳಾಪಟ್ಟಿಗಳು ಆನ್ ಆಗಲು ನಿಮ್ಮ ಸ್ಕ್ರೀನ್ ಆಫ್ ಆಗುವವರೆಗೆ ಕಾಯುತ್ತವೆ.</string>
     <string name="debugging_data_title">ಡೀಬಗ್ ಮಾಡುವಿಕೆ ಡೇಟಾ</string>
     <string name="discover_tips_button">ಸಲಹೆಗಳನ್ನು ಕಂಡುಕೊಳ್ಳಿ</string>
     <string name="dock_summary_charging_phone">ಫೋನ್‌ ಚಾರ್ಜಿಂಗ್‌ ಆಗುತ್ತಿದೆ</string>
-    <string name="double_twist_for_camera_mode_summary">Google Camera ದಲ್ಲಿ ಸೆಲ್ಫೀ ಮೋಡ್‌ಗೆ ಪ್ರವೇಶಿಸಲು ಮತ್ತು ಅದರಿಂದ ನಿರ್ಗಮಿಸಲು, ನೀವು ಅಪ್ಲಿಕೇಶನ್‍ನಲ್ಲಿರುವಾಗ ಡಬಲ್-ಟ್ವಿಸ್ಟ್ ಮಾಡಿ.</string>
+    <string name="double_twist_for_camera_mode_summary">Google Camera ದಲ್ಲಿ ಸೆಲ್ಫೀ ಮೋಡ್‌ಗೆ ಪ್ರವೇಶಿಸಲು ಮತ್ತು ಅದರಿಂದ ನಿರ್ಗಮಿಸಲು, ನೀವು ಆ್ಯಪ್‌ನಲ್ಲಿರುವಾಗ ಡಬಲ್-ಟ್ವಿಸ್ಟ್ ಮಾಡಿ.</string>
     <string name="duration_less_than_one_minute">1 ನಿಮಿಷಕ್ಕಿಂತ ಕಡಿಮೆ</string>
+    <string name="enable_glanceable_hub_toggle">ಹಬ್ ಮೋಡ್</string>
     <string name="extreme_battery_saver_summary">ಮೇಲೆ ಪಟ್ಟಿ ಮಾಡಲಾದ ಎಲ್ಲಾ ಬದಲಾವಣೆಗಳನ್ನು ಒಳಗೊಂಡಿದೆ. ಅನಗತ್ಯ ಆ್ಯಪ್‌ಗಳು ಹಾಗೂ ಅವುಗಳ ಅಧಿಸೂಚನೆಗಳನ್ನು ವಿರಾಮಗೊಳಿಸುತ್ತದೆ.</string>
     <string name="extreme_battery_saver_title">ಎಕ್ಸ್‌ಟ್ರೀಮ್ ಬ್ಯಾಟರಿ ಸೇವರ್</string>
     <string name="face_confirmation_hide_illustration_description">ಈಗ ನಿಮ್ಮ ಫೋನ್ ಅನ್ನು ನೀವು ಎತ್ತಿಕೊಂಡಾಗ ಅಥವಾ ಸ್ಕ್ರೀನ್ ಅನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿದಾಗ, ಅನ್‌ಲಾಕ್ ಮಾಡಲು ನಿಮ್ಮ ಮುಖವನ್ನು ಬಳಸಬಹುದು.</string>
@@ -164,7 +193,6 @@
     <string name="firmware_update_status_category">ಸಾಧನದ ಫರ್ಮ್‌ವೇರ್ ಸ್ಥಿತಿ</string>
     <string name="firmware_update_status_title">ಫರ್ಮ್‌ವೇರ್ ಅಪ್‌ಡೇಟ್ ಲಭ್ಯವಿದೆ</string>
     <string name="firmware_update_version_number_category">ಸಾಧನದ ಫರ್ಮ್‌‌ವೇರ್‌‌ ಆವೃತ್ತಿ</string>
-    <string name="firmware_update_version_number_title">Pixel ಕೀಬೋರ್ಡ್ ಫರ್ಮ್‌ವೇರ್</string>
     <string name="fullbackup_data_summary">"ಸಾಧನ ಡೇಟಾ (ವೈ-ಫೈ ಪಾಸ್‌ವರ್ಡ್‌ಗಳು ಮತ್ತು ಕರೆ ಇತಿಹಾಸದಂತಹ) ಹಾಗೂ ಅಪ್ಲಿಕೇಶನ್ ಡೇಟಾವನ್ನು (ಅಪ್ಲಿಕೇಶನ್‌ಗಳ ಮೂಲಕ ಸಂಗ್ರಹಿಸಲಾದ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಮತ್ತು ಫೈಲ್‌ಗಳಂತಹ) ಸ್ವಯಂಚಾಲಿತವಾಗಿ Google ಡ್ರೈವ್‌ಗೆ ಬ್ಯಾಕಪ್ ಮಾಡಿ.
 
 ನೀವು ಸ್ವಯಂಚಾಲಿತ ಬ್ಯಾಕಪ್ ಅನ್ನು ಆನ್ ಮಾಡಿದಾಗ, Google ಡ್ರೈವ್‌ನ ಖಾಸಗಿ ಫೋಲ್ಡರ್‌ಗೆ ಸಾಧನ ಮತ್ತು ಅಪ್ಲಿಕೇಶನ್ ಡೇಟಾವನ್ನು ನಿಯಮಿತವಾಗಿ ಉಳಿಸಲಾಗುವುದು. ಅಪ್ಲಿಕೇಶನ್ ಡೇಟಾ ಎಂದರೆ ಅಪ್ಲಿಕೇಶನ್ ಮೂಲಕ ಉಳಿಸಲಾಗಿರುವ (ಡೆವಲಪರ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಆಧರಿಸಿದ) ಯಾವುದೇ ಡೇಟಾ ಆಗಿರುತ್ತದೆ, ಇದು ಸಂಪರ್ಕಗಳು, ಸಂದೇಶಗಳು ಮತ್ತು ಫೋಟೋಗಳಂತಹ ಸಂಭವನೀಯ ಸೂಕ್ಷ್ಮ ಡೇಟಾವನ್ನು ಒಳಗೊಂಡಿರುತ್ತದೆ.
@@ -172,16 +200,19 @@
 ಬ್ಯಾಕಪ್ ಡೇಟಾವನ್ನು ನಿಮ್ಮ ಡ್ರೈವ್ ಸಂಗ್ರಹಣೆಯ ಪ್ರಮಾಣದಲ್ಲಿ ಪರಿಗಣಿಸಲಾಗುವುದಿಲ್ಲ. ಸೇವೆಯಿಂದ ಹೊರಗುಳಿಯಲು ಆಯ್ಕೆ ಮಾಡಲಾದ ದೊಡ್ಡ ಫೈಲ್‌ಗಳು ಅಥವಾ ಫೈಲ್‌ಗಳ ಡೆವಲಪರ್‌ಗಳನ್ನು ಬ್ಯಾಕಪ್ ಮಾಡಲಾಗುವುದಿಲ್ಲ."</string>
     <string name="fullbackup_erase_dialog_message">ಸಾಧನ ಡೇಟಾ (ವೈ-ಫೈ ಪಾಸ್‌ವರ್ಡ್‌ಗಳು ಮತ್ತು ಕರೆ ಇತಿಹಾಸದಂತಹ) ಮತ್ತು ಅಪ್ಲಿಕೇಶನ್ ಡೇಟಾವನ್ನು (ಅಪ್ಲಿಕೇಶನ್‌ಗಳ ಮೂಲಕ ಸಂಗ್ರಹಿಸಲಾದ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಮತ್ತು ಫೈಲ್‌ಗಳಂತಹ) ಬ್ಯಾಕಪ್ ಮಾಡುವುದನ್ನು ನಿಲ್ಲಿಸುವುದೇ ಹಾಗೂ Google ಡ್ರೈವ್‌ನಲ್ಲಿನ ಎಲ್ಲಾ ನಕಲುಗಳನ್ನು ಅಳಿಸುವುದೇ?</string>
     <string name="gesture_settings_activity_title">ಗೆಸ್ಚರ್ ನ್ಯಾವಿಗೇಶನ್</string>
+    <string name="hub_mode_content_setting">ಹಬ್ ಮೋಡ್‌ನಲ್ಲಿ ಯಾವುದೇ ವಿಜೆಟ್ ಅನ್ನು ಅನುಮತಿಸಿ</string>
     <string name="install_unknown_applications">Play Store ಹೊರಗಿನ ಬೇರೆ ಮೂಲಗಳ ಅಪ್ಲಿಕೇಶನ್‌‌ ಸ್ಥಾಪನೆಯನ್ನು ಅನುಮತಿಸಿ</string>
     <string name="keywords_accessibility_menu">ಮೋಟಾರ್, ತ್ವರಿತ ಮೆನು, ಅಸಿಸ್ಟೀವ್ ಮೆನು, ಸ್ಪರ್ಶ, ದಕ್ಷತೆ, ಸಂಧಿವಾತ, rsi, ಸ್ಟ್ರೋಕ್‌‌, ನಡುಕ, ಮಲ್ಟಿಪಲ್ ಸ್ಕ್ಲೆರೋಸಿಸ್, ಸೆರೆಬ್ರಲ್ ಪಾಲ್ಸಿ, ಬಟನ್, ಹಾರ್ಡ್‌ವೇರ್, ಪ್ರೆಸ್, ಪುನರಾವರ್ತಿತ ಒತ್ತಡದ ಗಾಯ, ಹ್ಯಾಂಡ್, ನೋವು, ಆ್ಯಕ್ಸೆಸ್ ಮಾಡಬಹುದಾದ, ಸಹಾಯ</string>
     <string name="keywords_adaptive_alert_vibration">ಹ್ಯಾಪ್ಟಿಕ್ಸ್, ವೈಬ್ರೇಟ್, ಫೋನ್, ಕರೆ, ರಿಂಗ್, ಅಲರ್ಟ್, ಅಧಿಸೂಚನೆಗಳು, ಜೋರಾಗಿ, ನಿಶ್ಶಬ್ದ, ಗದ್ದಲ, ಕೇಸ್, ಅಡಾಪ್ಟಿವ್</string>
     <string name="keywords_adaptive_charging">ಚಾರ್ಜ್, ಚಾರ್ಜಿಂಗ್, ಸ್ಮಾರ್ಟ್ ಚಾರ್ಜಿಂಗ್, ಅಡಾಪ್ಟಿವ್ ಚಾರ್ಜಿಂಗ್, ಬ್ಯಾಟರಿ, ಬ್ಯಾಟರಿ ಬಾಳಿಕೆ</string>
     <string name="keywords_battery_share">ಬ್ಯಾಟರಿ ಶೇರ್, ವೈರ್‌ಲೆಸ್ ಚಾರ್ಜಿಂಗ್</string>
     <string name="keywords_battery_share_settings">ಬ್ಯಾಟರಿ ಶೇರ್, ರಿವರ್ಸ್ ವೈರ್‌ಲೆಸ್ ಚಾರ್ಜಿಂಗ್</string>
+    <string name="keywords_contextual_screen_timeout">ಸ್ಕ್ರೀನ್, ಟೈಮ್‌ಔಟ್, ಅಡಾಪ್ಟಿವ್, ಸಂದರ್ಭೋಚಿತ</string>
     <string name="keywords_gesture">ಗೆಸ್ಚರ್, ಚಲನೆಗಳು</string>
     <string name="keywords_hearing_devices">ಕಿವುಡುತನ, ಶ್ರವಣ ದೋಷ, PSAP</string>
     <string name="keywords_limited_warranty">ವಾರೆಂಟಿ, ಗ್ಯಾರಂಟಿ, ಸೀಮಿತ ವಾರೆಂಟಿ, ಭರವಸೆ, ರಿಪೇರಿ, RMA, ಬದಲಿಸುವಿಕೆ</string>
     <string name="keywords_live_transcribe">ಶೀರ್ಷಿಕೆಗಳು, ಉಪಶೀರ್ಷಿಕೆಗಳು, CC, ಲೈವ್ ಕ್ಯಾಪ್ಶನ್, ಕಿವುಡುತನ, ಶ್ರವಣ ದೋಷ, ಕಾರ್ಟ್, ಧ್ವನಿಯಿಂದ ಪಠ್ಯ, ಉಪಶೀರ್ಷಿಕೆ</string>
+    <string name="keywords_magnifier">ಝೂಮ್‌, ಹಿಗ್ಗಿಸುವಿಕೆ, ಕಡಿಮೆ ವಿಷನ್‌, ಹಿಗ್ಗಿಸಿ, ದೊಡ್ಡದಾಗಿಸಿ</string>
     <string name="keywords_reverse_charging_stop_threshold">ಫೋನ್ ಈ ಕೆಳಗಿನ ಹಂತ ತಲುಪಿದಾಗ ಬ್ಯಾಟರಿ ಹಂಚಿಕೊಳ್ಳುವುದನ್ನು ನಿಲ್ಲಿಸಿ:</string>
     <string name="keywords_select_to_speak">ಪಠ್ಯವನ್ನು ಕೇಳಿ, ಗಟ್ಟಿಯಾಗಿ ಓದಿ, ಮಾತನಾಡುವ ಸ್ಕ್ರೀನ್, ಸ್ಕ್ರೀನ್ ರೀಡರ್</string>
     <string name="keywords_sound_amplifier">PSAP, ವರ್ಧಿಸುವಿಕೆ, ಸೌಂಡ್ ಆಂಪ್ಲಿಫಿಕೇಶನ್, ಕಿವುಡುತನ, ಶ್ರವಣ ದೋಷ, ಆಂಪ್ಲಿಫಿಕೇಶನ್</string>
@@ -189,11 +220,12 @@
     <string name="keywords_switch_access">ಮೋಟಾರ್, ಸ್ವಿಚ್, ಹ್ಯಾಂಡ್, AT, ಸಹಾಯಕ ತಂತ್ರಜ್ಞಾನ, ಪಾರ್ಶ್ವವಾಯು, ALS, ಸ್ಕ್ಯಾನಿಂಗ್, ಸ್ಟೆಪ್ ಸ್ಕ್ಯಾನಿಂಗ್</string>
     <string name="keywords_talkback">ಸ್ಕ್ರೀನ್ ರೀಡರ್, ವಾಯ್ಸ್ ಓವರ್, ವಾಯ್ಸ್‌ಓವರ್, ಧ್ವನಿ ಸಹಾಯಕ, ಕುರುಡು, ಕಡಿಮೆ ವಿಷನ್‌, TTS, ಪಠ್ಯದಿಂದ ಧ್ವನಿ, ಮಾತಿನ ಪ್ರತಿಕ್ರಿಯೆ</string>
     <string name="keywords_touch_sensitivity">ಸ್ಪರ್ಶ, ಸೂಕ್ಷ್ಮತೆ, ಸೂಕ್ಷ್ಮ, ಸ್ಕ್ರೀನ್ ರಕ್ಷಕ, ಚಲನಚಿತ್ರ, ಪ್ರತಿಕ್ರಿಯೆ, ಪ್ರತಿಕ್ರಿಯಾತ್ಮಕತೆ</string>
+    <string name="keywords_touch_sensitivity_settings">ಸ್ಪರ್ಶ, ಅಡಾಪ್ಟಿವ್, ಸೂಕ್ಷ್ಮತೆ, ಸೂಕ್ಷ್ಮ, ಸ್ಕ್ರೀನ್ ಗಾರ್ಡ್, ಚಲನಚಿತ್ರ, ಪ್ರತಿಕ್ರಿಯೆ, ಪ್ರತಿಕ್ರಿಯಾತ್ಮಕತೆ</string>
     <string name="keywords_voice_access">ಧ್ವನಿ, ಧ್ವನಿ ನಿಯಂತ್ರಣ, ಮೋಟಾರ್, ಹ್ಯಾಂಡ್, ಮೈಕ್, ಮೈಕ್ರೊಫೋನ್, ಡಿಕ್ಟೇಷನ್, ಮಾತು, ನಿಯಂತ್ರಣ</string>
     <string name="led_preference_title">LED ಇಂಡಿಕೇಟರ್ ಪ್ಯಾಟರ್ನ್‌ಗಳು</string>
     <string name="legal_source_code_description">ಓಪನ್ ಸೋರ್ಸ್ ಆಗಿ ಲಭ್ಯವಿರುವ ಕಾಂಪೊನೆಂಟ್‌ಗಳ ಸೋರ್ಸ್ ಕೋಡ್ ಕುರಿತಾದ ವಿವರಗಳನ್ನು Pixel ಸಹಾಯ ಕೇಂದ್ರದಲ್ಲಿ ಕಂಡುಕೊಳ್ಳಬಹುದು.</string>
     <string name="legal_source_code_title">ಸೋರ್ಸ್ ಕೋಡ್</string>
-    <string name="limited_warranty_introduction">ಈ ಸಾಧನದ ವಾರೆಂಟಿಯನ್ನು ವೀಕ್ಷಿಸಲು ಖರೀದಿಸಿದ ದೇಶವನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ. g.co/devicewarranty ಯಲ್ಲೂ ಸಹ ವಾರೆಂಟಿ ಕುರಿತ ಮಾಹಿತಿ ಲಭ್ಯವಿದೆ</string>
+    <string name="limited_warranty_introduction">ಈ ಸಾಧನದ ವಾರೆಂಟಿಯನ್ನು ವೀಕ್ಷಿಸಲು ನೀವು ಯಾವ ದೇಶದಲ್ಲಿ ಖರೀದಿಸಿದ್ದೀರೋ ಆ ದೇಶದ ಮೇಲೆ ಟ್ಯಾಪ್ ಮಾಡಿ. g.co/devicewarranty ಯಲ್ಲೂ ಸಹ ವಾರೆಂಟಿ ಕುರಿತ ಮಾಹಿತಿ ಲಭ್ಯವಿದೆ</string>
     <string name="limited_warranty_title">ಸೀಮಿತ ವಾರೆಂಟಿ</string>
     <string name="lockscreen_show_weather_summary">ಪ್ರಸ್ತುತ ಹವಾಮಾನ ಪರಿಸ್ಥಿತಿಗಳನ್ನು ವೀಕ್ಷಿಸಿ</string>
     <string name="lockscreen_show_weather_title">ಹವಾಮಾನವನ್ನು ತೋರಿಸಿ</string>
@@ -202,7 +234,7 @@
     <string name="permit_debugging_data">ಬಗ್ ವರದಿ ಆ್ಯಕ್ಸೆಸ್ ಅನ್ನು ಅನುಮತಿಸಿ</string>
     <string name="play_application_detail_indication_summary">ಅಪ್‌ಡೇಟ್‌ಗಳಿಗಾಗಿ ಪರಿಶೀಲಿಸಿ</string>
     <string name="play_application_update_entry_title">ಆ್ಯಪ್ ಅಪ್‌ಡೇಟ್‌ಗಳು</string>
-    <string name="privatespace_retry_summary">ಖಾಸಗಿ ಸ್ಪೇಸ್ ಅನ್ನು ಸೆಟಪ್ ಮಾಡಲು ನೀವು Google ಖಾತೆಗೆ ಸೈನ್ ಇನ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ</string>
+    <string name="private_space_retry_summary">ನಿಮ್ಮ ಪ್ರೈವೆಟ್ ಸ್ಪೇಸ್‌ನಲ್ಲಿ ಬಳಸಲು Google ಖಾತೆಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿ</string>
     <string name="repair_mode_active_summary">ರಿಪೇರ್ ಮೋಡ್‌ನಲ್ಲಿದೆ</string>
     <string name="repair_mode_summary">ಸಾಧನ ರಿಪೇರಿಗಾಗಿ ಸುರಕ್ಷಿತ ಪರಿಸರವಾಗಿದೆ</string>
     <string name="repair_mode_title">ರಿಪೇರ್ ಮೋಡ್</string>
@@ -240,7 +272,7 @@
     <string name="screen_time_summary_usage_today">ಇಂದಿನ ಬಳಕೆ %1$s</string>
     <string name="search_bar_account_avatar_content_description">ಪ್ರೊಫೈಲ್ ಚಿತ್ರ, Google ಖಾತೆಯನ್ನು ತೆರೆಯಲು ಡಬಲ್ ಟ್ಯಾಪ್ ಮಾಡಿ</string>
     <string name="search_gesture_category_title">ಹುಡುಕಾಟ</string>
-    <string name="search_gesture_feature_title">ಹುಡುಕಾಟಕ್ಕೆ ಸರ್ಕಲ್ ಮಾಡಿ</string>
+    <string name="search_gesture_feature_title">ಹುಡುಕಲು ಒಂದು ಸರ್ಕಲ್ ರಚಿಸಿ</string>
     <string name="search_long_press_home_button_summary">ಸ್ಕ್ರೀನ್‌ನ ಕೆಳಭಾಗದಲ್ಲಿರುವ ಹೋಮ್ ಬಟನ್ ಅನ್ನು ಸ್ಪರ್ಶಿಸಿ ಮತ್ತು ಒತ್ತಿ ಹಿಡಿಯಿರಿ, ನಂತರ ಹುಡುಕುವುದಕ್ಕೆ ಯಾವುದನ್ನಾದರೂ ಸರ್ಕಲ್ ಮಾಡಿ ಅಥವಾ ಹೈಲೈಟ್ ಮಾಡಿ</string>
     <string name="search_press_hold_gesture_summary">ಸ್ಕ್ರೀನ್‌ನ ಕೆಳಭಾಗದಲ್ಲಿರುವ ಹ್ಯಾಂಡಲ್ ಅನ್ನು ಸ್ಪರ್ಶಿಸಿ ಮತ್ತು ಒತ್ತಿ ಹಿಡಿಯಿರಿ, ನಂತರ ಹುಡುಕುವುದಕ್ಕೆ ಯಾವುದನ್ನಾದರೂ ಸರ್ಕಲ್ ಮಾಡಿ ಅಥವಾ ಹೈಲೈಟ್ ಮಾಡಿ</string>
     <string name="security_dismiss_dialog_dismiss_button">ವಜಾಗೊಳಿಸಿ</string>
@@ -251,9 +283,15 @@
     <string name="security_settings_face_enroll_error_timeout_dialog_message">ಮುಖ ನೋಂದಣಿ ಸಮಯದ ಮಿತಿಯನ್ನು ಮೀರಿದೆ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">ಫೇಸ್ ಅನ್‌ಲಾಕ್ ಸೆಟಪ್ ಅವಧಿ ಮೀರಿದೆ</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">ನಿಮ್ಮ ಫೋನ್ ಅನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಲು ಅಥವಾ ನೀವು ಆ್ಯಪ್‌ಗಳಿಗೆ ಸೈನ್ ಇನ್ ಮಾಡುವಾಗ ಅಥವಾ ಖರೀದಿಯೊಂದನ್ನು ಅನುಮೋದಿಸುವಾಗ ನಿಮ್ಮ ಗುರುತನ್ನು ದೃಢೀಕರಿಸಲು ನಿಮ್ಮ ಮುಖವನ್ನು ನೀವೀಗ ಬಳಸಬಹುದು</string>
+    <string name="security_settings_face_enroll_finish_description_with_bp_full">"ನೀವು ಆ್ಯಪ್‌ಗಳಿಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿದಾಗ ಅಥವಾ ಖರೀದಿಯೊಂದನ್ನು ಅನುಮೋದಿಸಿದಂತಹ ಸನ್ನಿವೇಶಗಳಲ್ಲಿ, ನಿಮ್ಮ ಫೋನ್ ಅನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಲು ಅಥವಾ ಇದು ನೀವೇ ಎಂಬುದನ್ನು ದೃಢೀಕರಿಸಲು ಈಗ ನೀವು ನಿಮ್ಮ ಮುಖವನ್ನು ಬಳಸಬಹುದು.
+
+ಸಾಕಷ್ಟು ಬೆಳಕಿದ್ದಾಗ ಮತ್ತು ನೀವು ಮಾಸ್ಕ್ ಅಥವಾ ಗಾಢ ಬಣ್ಣದ ಕನ್ನಡಕ ಧರಿಸದಿರುವಾಗ ಫೇಸ್ ಅನ್‌ಲಾಕ್ ಅತ್ಯುತ್ತಮವಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ."</string>
     <string name="security_settings_face_enroll_finish_description_without_bp">"ಈಗ ನಿಮ್ಮ ಫೋನ್ ಅನ್ನು ನೀವು ಎತ್ತಿಕೊಂಡಾಗ ಅಥವಾ ಸ್ಕ್ರೀನ್ ಅನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿದಾಗ, ಅನ್‌ಲಾಕ್ ಮಾಡಲು ನಿಮ್ಮ ಮುಖವನ್ನು ಬಳಸಬಹುದು.
 
 ಸಾಕಷ್ಟು ಬೆಳಕಿದ್ದಾಗ ಮತ್ತು ನೀವು ಮಾಸ್ಕ್ ಅಥವಾ ಗಾಢ ಬಣ್ಣದ ಕನ್ನಡಕ ಧರಿಸದಿರುವಾಗ ಫೇಸ್ ಅನ್‌ಲಾಕ್ ಅತ್ಯುತ್ತಮವಾಗಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ."</string>
+    <string name="security_settings_face_enroll_finish_description_without_bp_folded">"ಈಗ ನಿಮ್ಮ ಫೋನ್ ಅನ್ನು ನೀವು ಎತ್ತಿಕೊಂಡಾಗ ಅಥವಾ ಸ್ಕ್ರೀನ್ ಅನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿದಾಗ, ಅನ್‌ಲಾಕ್ ಮಾಡಲು ನಿಮ್ಮ ಮುಖವನ್ನು ಬಳಸಬಹುದು. ಫೇಸ್ ಅನ್‌ಲಾಕ್ ಫೀಚರ್ ಅನ್ನು ಬಳಸಲು ನಿಮ್ಮ ಫೋನ್ ಅನ್ನು ಫೋಲ್ಡ್ ಮಾಡುವ ಅಗತ್ಯವಿದೆ.
+
+ಸಾಕಷ್ಟು ಬೆಳಕು ಇರುವಾಗ ಮತ್ತು ಮಾಸ್ಕ್ ಅಥವಾ ಗಾಢ ಬಣ್ಣದ ಕನ್ನಡಕ ಧರಿಸದಿರುವಾಗ ಫೇಸ್ ಅನ್‌ಲಾಕ್ ಫೀಚರ್ ಉತ್ತಮವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ."</string>
     <string name="security_settings_face_enroll_finish_title">ಸರಿಯಾಗಿದೆ!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">ದೃಷ್ಟಿ ದುರ್ಬಲವಾಗಿದ್ದರೆ ಅಥವಾ ತಲೆ ಅಲುಗಾಡುವ ಸಮಸ್ಯೆ ಇರುವಾಗ ಸೆಟ್ ಮಾಡಿ</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">ಕಣ್ಣುಗಳನ್ನು ತೆರೆದಿರಬೇಕು</string>
@@ -293,6 +331,8 @@
     <string name="security_settings_work_fingerprint_preference_title">ಕೆಲಸಕ್ಕಾಗಿ Pixel Imprint</string>
     <string name="setup_suggestion_summary">ಇನ್ನು ಕೆಲವೇ ಹಂತಗಳು</string>
     <string name="setup_suggestion_title">ಸೆಟ್ ಮಾಡುವುದನ್ನು ಪೂರ್ಣಗೊಳಿಸಿ</string>
+    <string name="smart_battery_a11y_collapse_label">ಕುಗ್ಗಿಸಿ, ಅಡಾಪ್ಟಿವ್‌ ಬ್ಯಾಟರಿ</string>
+    <string name="smart_battery_a11y_expand_label">ವಿಸ್ತೃತಗೊಳಿಸಿ, ಅಡಾಪ್ಟಿವ್‌ ಬ್ಯಾಟರಿ</string>
     <string name="smart_battery_footer">ಬ್ಯಾಟರಿ ಅವಧಿಯನ್ನು ವಿಸ್ತರಿಸಲು, ಅಡಾಪ್ಟಿವ್ ಬ್ಯಾಟರಿಯು ಕಾರ್ಯಕ್ಷಮತೆ ಮತ್ತು ಹಿನ್ನೆಲೆ ಚಟುವಟಿಕೆಯನ್ನು ಕಡಿಮೆ ಮಾಡಬಹುದು. ಕೆಲವು ಅಧಿಸೂಚನೆಗಳು ತಡವಾಗಬಹುದು.</string>
     <string name="smart_battery_manager_title">ಅಡಾಪ್ಟಿವ್ ಆದ್ಯತೆಗಳು</string>
     <string name="smart_battery_title">ಅಡಾಪ್ಟಿವ್‌ ಬ್ಯಾಟರಿ</string>
@@ -306,11 +346,12 @@
     <string name="software_update_unknown_state_summary">ನಂತರ ಪುನಃ ಪ್ರಯತ್ನಿಸಿ</string>
     <string name="software_update_up_to_date_header">ನಿಮ್ಮ Pixel ಅಪ್ ಟು ಡೇಟ್ ಆಗಿದೆ</string>
     <string name="software_update_up_to_date_summary">ಅಪ್ ಟು ಡೇಟ್ ಆಗಿದೆ</string>
-    <string name="software_update_up_to_specific_date_summary">%1$s ಗೆ ಅಪ್‌ಡೇಟ್‌ ಮಾಡಲಾಗಿದೆ</string>
+    <string name="software_update_up_to_specific_date_summary">%1$s ಕ್ಕೆ ಅಪ್‌ಡೇಟ್‌ ಮಾಡಲಾಗಿದೆ</string>
     <string name="software_update_update_available_summary">ಅಪ್‌ಡೇಟ್ ಲಭ್ಯವಿದೆ</string>
     <string name="sound_dashboard_summary">ವಾಲ್ಯೂಮ್, ಹ್ಯಾಪ್ಟಿಕ್ಸ್, ಅಡಚಣೆ ಮಾಡಬೇಡಿ</string>
     <string name="sound_settings">ಧ್ವನಿ ಮತ್ತು ವೈಬ್ರೇಷನ್‌</string>
-    <string name="spatial_audio_title">ಸ್ಪೇಶಿಯಲ್ ಆಡಿಯೋ</string>
+    <string name="spatial_audio_head_tracking_available">ಹೆಡ್ ಟ್ರ್ಯಾಕಿಂಗ್ ಲಭ್ಯವಿದೆ</string>
+    <string name="spatial_audio_head_tracking_unavailable">ಹೆಡ್ ಟ್ರ್ಯಾಕಿಂಗ್ ಲಭ್ಯವಿಲ್ಲ</string>
     <string name="speed_boost_summary_off">ಆಫ್ ಆಗಿದೆ</string>
     <string name="speed_boost_summary_on">ಆನ್ ಆಗಿದೆ</string>
     <string name="speed_boost_title">Spectrum ಸ್ಪೀಡ್ ಬೂಸ್ಟ್</string>
@@ -322,6 +363,9 @@
     <string name="suw_warranty_positive_button_text">ಮುಚ್ಚಿರಿ</string>
     <string name="system_update_entry_title">ಸಿಸ್ಟಂ ಅಪ್‌ಡೇಟ್</string>
     <string name="system_updates_group_title">Pixel ಅಪ್‌ಡೇಟ್‌ಗಳು</string>
+    <string name="touch_category_title">ಸ್ಪರ್ಶ</string>
+    <string name="touch_sensitivity_settings_summary">ಟಚ್‌ಸ್ಕ್ರೀನ್ ಸಂವೇದನೆಯನ್ನು ಸರಿಹೊಂದಿಸಿ</string>
+    <string name="touch_sensitivity_settings_title">ಸ್ಪರ್ಶ ಸಂವೇದನೆ</string>
     <string name="touch_sensitivity_summary">ಸ್ಕ್ರೀನ್ ಗಾರ್ಡ್ ಅನ್ನು ಬಳಸುವಾಗ ಟಚ್‌ ಸ್ಕ್ರೀನ್‌ನ ಸಂವೇದನೆಯನ್ನು ಹೆಚ್ಚಿಸಿ ಮತ್ತು ಟಚ್‌ ಸ್ಕ್ರೀನ್‌ನ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಸುಧಾರಿಸಿ</string>
     <string name="touch_sensitivity_title">ಸ್ಕ್ರೀನ್ ಗಾರ್ಡ್ ಮೋಡ್</string>
     <string name="traffic_light_face_enrolling_title_accessibility">ಫೋನ್ ಅನ್ನು ಮುಖದ ಮುಂದೆ ಹಿಡಿದುಕೊಳ್ಳಿ</string>
