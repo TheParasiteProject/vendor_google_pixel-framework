@@ -114,7 +114,7 @@
         android:order="-58"
         android:summary="@string/summary_placeholder"
         android:title="@string/system_update_settings_list_item_title"
-        settings:controller="com.google.android.settings.update.GoogleSystemUpdatePreferenceController"
+        settings:controller="com.android.settings.system.SystemUpdatePreferenceController"
         settings:keywords="@string/keywords_system_update_settings">
 
         <intent
@@ -122,12 +122,12 @@
 
     </Preference>
 
-    <com.android.settings.spa.preference.ComposePreference
+    <!-- <com.android.settings.spa.preference.ComposePreference
         android:key="software_update_settings"
         android:order="-57"
         android:title="@string/software_update_entry_title"
         settings:controller="com.google.android.settings.update.SoftwareUpdateController"
-        settings:keywords="@string/keywords_system_update_settings" />
+        settings:keywords="@string/keywords_system_update_settings" /> -->
 
     <Preference
         android:fragment="com.android.settings.users.UserSettings"
@@ -142,7 +142,7 @@
         android:order="-40"
         settings:controller="com.android.settings.system.DeveloperOptionsController" />
 
-    <Preference
+    <!-- <Preference
         android:icon="@drawable/ic_repair_mode"
         android:key="repair_mode_settings"
         android:order="-35"
@@ -154,7 +154,7 @@
             android:action="com.google.android.intent.action.REPAIR_MODE_SETTINGS"
             android:targetPackage="com.google.android.repairmode" />
 
-    </Preference>
+    </Preference> -->
 
     <Preference
         android:fragment="com.android.settings.system.ResetDashboardFragment"
