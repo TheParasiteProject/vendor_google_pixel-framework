@@ -43,12 +43,12 @@ import javax.inject.Inject;
 
 @SysUISingleton
 public class OpaEnabledReceiver {
-    private final Executor mBgExecutor;
+    private final @Background Executor mBgExecutor;
     private final BroadcastDispatcher mBroadcastDispatcher;
     private final ContentObserver mContentObserver;
     private final ContentResolver mContentResolver;
     private final Context mContext;
-    private final Executor mFgExecutor;
+    private final @Main Executor mFgExecutor;
     private final OpaEnabledSettings mOpaEnabledSettings;
     private final BroadcastReceiver mBroadcastReceiver = new OpaEnabledBroadcastReceiver();
     private final List<OpaEnabledListener> mListeners = new ArrayList();
