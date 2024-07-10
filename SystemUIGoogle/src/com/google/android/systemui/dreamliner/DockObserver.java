@@ -62,8 +62,6 @@ import com.android.systemui.statusbar.policy.ConfigurationController;
 import com.android.systemui.statusbar.policy.KeyguardStateController;
 import com.android.systemui.util.concurrency.DelayableExecutor;
 
-import com.google.android.systemui.elmyra.gates.KeyguardVisibility;
-
 import dagger.Lazy;
 
 import java.time.Duration;
@@ -543,7 +541,7 @@ public class DockObserver extends DockManagerImpl {
             intent.putExtra("type", i);
             intent.putExtra("orientation", i2);
             intent.putExtra("id", i3);
-            intent.putExtra("occluded", new KeyguardVisibility(context).isKeyguardOccluded());
+            intent.putExtra("occluded", false);
             try {
                 DreamlinerServiceConn dreamlinerServiceConn = new DreamlinerServiceConn(context);
                 mDreamlinerServiceConn = dreamlinerServiceConn;
