@@ -21,7 +21,10 @@ android_library {
 
 android_app {
     name: "SettingsGoogle",
-    defaults: ["platform_app_defaults"],
+    defaults: [
+        "platform_app_defaults",
+        "SpaPrivilegedLib-defaults",
+    ],
     platform_apis: true,
     certificate: "platform",
     system_ext_specific: true,
@@ -32,6 +35,8 @@ android_app {
     ],
     static_libs: ["SettingsGoogle-core"],
     uses_libs: ["org.apache.http.legacy"],
+    use_resource_processor: true,
+    resource_dirs: [],
     optimize: {
         proguard_flags_files: [
             ":Settings_proguard_flags",
