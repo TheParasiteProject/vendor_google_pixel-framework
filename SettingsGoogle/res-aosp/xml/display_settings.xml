@@ -140,6 +140,20 @@
             settings:controller="com.google.android.settings.touch.TouchSensitivitySettingsPreferenceController"
             settings:keywords="@string/keywords_touch_sensitivity_settings" />
 
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="high_touch_polling_rate_enable"
+            android:title="@string/high_touch_polling_rate_title"
+            android:summary="@string/high_touch_polling_rate_summary"
+            android:defaultValue="false"
+            settings:controller="com.android.settings.custom.touch.HighTouchPollingRateSettingsPreferenceController" />
+
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+            android:key="high_touch_sensitivity_enable"
+            android:title="@string/high_touch_sensitivity_title"
+            android:summary="@string/high_touch_sensitivity_summary"
+            android:defaultValue="false"
+            settings:controller="com.android.settings.custom.touch.HighTouchSensitivitySettingsPreferenceController" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -226,20 +240,6 @@
             android:title="@string/proximity_wake_title"
             android:summary="@string/proximity_wake_summary"
             android:defaultValue="@*lineageos.platform:bool/config_proximityCheckOnWakeEnabledByDefault" />
-
-        <com.android.settings.custom.preference.SystemSettingSwitchPreference
-            android:key="high_touch_polling_rate_enable"
-            android:title="@string/high_touch_polling_rate_title"
-            android:summary="@string/high_touch_polling_rate_summary"
-            android:defaultValue="false"
-            settings:controller="com.android.settings.custom.touch.HighTouchPollingRateSettingsPreferenceController" />
-
-        <com.android.settings.custom.preference.SystemSettingSwitchPreference
-            android:key="high_touch_sensitivity_enable"
-            android:title="@string/high_touch_sensitivity_title"
-            android:summary="@string/high_touch_sensitivity_summary"
-            android:defaultValue="false"
-            settings:controller="com.android.settings.custom.touch.HighTouchSensitivitySettingsPreferenceController" />
 
         <ListPreference
             android:key="theme"
