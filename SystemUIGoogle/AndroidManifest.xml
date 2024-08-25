@@ -80,7 +80,7 @@
     <application
         android:appComponentFactory="com.google.android.systemui.SystemUIGoogleAppComponentFactory"
         android:backupAgent="com.google.android.systemui.backup.BackupHelperGoogle"
-        tools:replace="android:appComponentFactory">
+        tools:replace="android:appComponentFactory,android:backupAgent">
 
         <profileable android:shell="true" />
 
