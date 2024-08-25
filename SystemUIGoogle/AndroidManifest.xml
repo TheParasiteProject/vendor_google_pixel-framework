@@ -85,11 +85,6 @@
         <profileable android:shell="true" />
 
         <service
-            android:name="com.google.android.systemui.elmyra.ElmyraServiceProxy"
-            android:exported="true"
-            android:permission="com.google.android.elmyra.permission.CONFIGURE_ASSIST_GESTURE" />
-
-        <service
             android:name="com.google.android.systemui.columbus.ColumbusServiceProxy"
             android:exported="true"
             android:permission="com.google.android.columbus.permission.CONFIGURE_COLUMBUS_GESTURE" />
