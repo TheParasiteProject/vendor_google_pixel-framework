@@ -1,250 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:sharedUserId="android.uid.systemui"
     coreApp="true"
-    package="com.android.systemui">
+    package="com.android.systemui"
+    android:sharedUserId="android.uid.systemui">
 
-    <uses-permission
-        android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <original-package android:name="com.android.systemui" />
 
-    <uses-permission
-        android:name="android.permission.SET_WALLPAPER_COMPONENT" />
-
-    <uses-permission
-        android:name="android.permission.ACCESS_CONTEXT_HUB" />
-
-    <uses-permission
-        android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
-
-    <uses-permission
-        android:name="android.permission.USE_COLORIZED_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_COMPONENT" />
+    <uses-permission android:name="android.permission.ACCESS_CONTEXT_HUB" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.USE_COLORIZED_NOTIFICATIONS" />
 
     <permission
         android:name="com.android.systemui.permission.SEND_ALERT_BROADCASTS"
         android:protectionLevel="preinstalled|signature" />
 
-    <uses-permission
-        android:name="com.google.android.deskclock.permission.RECEIVE_ALERT_BROADCASTS" />
+    <uses-permission android:name="com.google.android.deskclock.permission.RECEIVE_ALERT_BROADCASTS" />
 
     <permission
         android:name="com.google.android.columbus.permission.CONFIGURE_COLUMBUS_GESTURE"
         android:protectionLevel="preinstalled|signature" />
 
-    <uses-permission
-        android:name="com.google.android.columbus.permission.CONFIGURE_COLUMBUS_GESTURE" />
-
-    <uses-permission
-        android:name="com.google.restricted_assist_gesture.permission.RESTRICTED_ASSIST_GESTURE_PROVIDER" />
+    <uses-permission android:name="com.google.android.columbus.permission.CONFIGURE_COLUMBUS_GESTURE" />
+    <uses-permission android:name="com.google.restricted_assist_gesture.permission.RESTRICTED_ASSIST_GESTURE_PROVIDER" />
 
     <permission
         android:name="com.google.android.ambientindication.permission.AMBIENT_INDICATION"
         android:protectionLevel="privileged|signature" />
 
+    <uses-permission android:name="com.google.android.apps.nexuslauncher.permission.QSB" />
+
     <uses-permission
-        android:name="com.google.android.apps.nexuslauncher.permission.QSB" />
+        android:name="com.google.android.systemui.permission.SCREEN_PROTECTOR_NOTIFICATION"
+        android:protectionLevel="privileged|signature" />
 
     <permission
         android:name="com.google.android.systemui.permission.WIRELESS_CHARGER_STATUS"
         android:protectionLevel="privileged|signature" />
 
-    <protected-broadcast
-        android:name="com.google.android.apps.dreamliner.SETTINGS" />
+    <protected-broadcast android:name="com.google.android.apps.dreamliner.SETTINGS" />
 
-    <protected-broadcast
-        android:name="com.google.android.systemui.smartspace.ENABLE_UPDATE" />
+    <uses-permission android:name="com.google.android.apps.dreamliner.permission.DREAMLINER_SERVICE" />
+    <uses-permission android:name="com.android.systemui.permission.PLUGIN" />
+    <uses-permission android:name="android.permission.REGISTER_STATS_PULL_ATOM" />
+    <uses-permission android:name="com.google.android.settings.setup.dock.RUN_DOCK_SETUP" />
+    <uses-permission android:name="com.google.android.wildlife.permission.VPN_APP_EXCLUSION_LAUNCH" />
+    <uses-permission android:name="com.google.android.wildlife.permission.UPDATE_PACKAGE_MONITOR" />
 
-    <uses-permission
-        android:name="com.google.android.apps.dreamliner.permission.DREAMLINER_SERVICE" />
+    <protected-broadcast android:name="com.google.android.systemui.smartspace.EXPIRE_EVENT" />
+    <protected-broadcast android:name="com.google.android.systemui.smartspace.CLICK_EVENT" />
+    <protected-broadcast android:name="com.google.android.systemui.dreamliner.ALIGNMENT_CHANGE" />
+    <protected-broadcast android:name="com.google.android.systemui.dreamliner.TOUCH_EVENT" />
+    <protected-broadcast android:name="com.google.android.systemui.dreamliner.FLING_EVENT" />
+    <protected-broadcast android:name="com.google.android.systemui.dreamliner.ASSISTANT_POODLE" />
+    <protected-broadcast android:name="com.google.android.systemui.dreamliner.ACTION_UPDATE_FAN_LEVEL" />
+    <protected-broadcast android:name="com.google.android.systemui.dreamliner.PHOTO_EVENT" />
+    <protected-broadcast android:name="PNW.defenderResumeCharging.settings" />
+    <protected-broadcast android:name="PNW.batteryStatusChanged" />
+    <protected-broadcast android:name="PNW.bluetoothStatusChanged" />
+    <protected-broadcast android:name="com.breel.wallpapers.NOTIFICATION_RECEIVED" />
+    <protected-broadcast android:name="com.google.android.apps.privacy.wildlife.WIFI_STATE_CHANGED" />
 
-    <uses-permission
-        android:name="com.android.systemui.permission.PLUGIN" />
+    <uses-permission android:name="com.google.android.wildlife.permission.UPDATE_NETWORK_MONITOR" />
 
-    <uses-permission
-        android:name="android.permission.REGISTER_STATS_PULL_ATOM" />
+    <permission android:name="com.breel.wallpapers.notifications" />
 
-    <uses-permission
-        android:name="com.google.android.settings.setup.dock.RUN_DOCK_SETUP" />
-
-    <protected-broadcast
-        android:name="com.google.android.systemui.smartspace.EXPIRE_EVENT" />
-
-    <protected-broadcast
-        android:name="com.google.android.systemui.smartspace.CLICK_EVENT" />
-
-    <protected-broadcast
-        android:name="com.google.android.systemui.dreamliner.ALIGNMENT_CHANGE" />
-
-    <protected-broadcast
-        android:name="com.google.android.systemui.dreamliner.TOUCH_EVENT" />
-
-    <protected-broadcast
-        android:name="com.google.android.systemui.dreamliner.FLING_EVENT" />
-
-    <protected-broadcast
-        android:name="com.google.android.systemui.dreamliner.ASSISTANT_POODLE" />
-
-    <protected-broadcast
-        android:name="com.google.android.systemui.dreamliner.ACTION_UPDATE_FAN_LEVEL" />
-
-    <protected-broadcast
-        android:name="com.google.android.systemui.dreamliner.PHOTO_EVENT" />
-
-    <protected-broadcast
-        android:name="PNW.defenderResumeCharging.settings" />
-
-    <protected-broadcast
-        android:name="PNW.batteryStatusChanged" />
-
-    <protected-broadcast
-        android:name="PNW.bluetoothStatusChanged" />
-
-    <protected-broadcast
-        android:name="com.breel.wallpapers.NOTIFICATION_RECEIVED" />
-
-    <protected-broadcast
-        android:name="com.google.android.apps.privacy.wildlife.WIFI_STATE_CHANGED" />
-
-    <uses-permission
-        android:name="com.google.android.wildlife.permission.UPDATE_NETWORK_MONITOR" />
-
-    <permission
-        android:name="com.breel.wallpapers.notifications" />
-
-    <uses-permission
-        android:name="com.breel.wallpapers.notifications" />
-
-    <uses-permission
-        android:name="android.permission.VIBRATE_ALWAYS_ON" />
-
-    <uses-permission
-        android:name="android.permission.BATTERY_STATS" />
-
-    <uses-permission
-        android:name="android.permission.MANAGE_GAME_MODE" />
-
-    <uses-permission
-        android:name="android.permission.MANAGE_SMARTSPACE" />
-
-    <uses-permission
-        android:name="android.permission.ACCESS_FPS_COUNTER" />
-
-    <uses-permission
-        android:name="android.permission.FORCE_STOP_PACKAGES" />
-
-    <uses-permission
-        android:name="com.google.android.apps.nest.DOCK_MANAGER_SERVICE" />
-
-    <uses-permission
-        android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS" />
-
-    <uses-permission
-        android:name="android.permission.INTERNET" />
-
-    <original-package
-        android:name="com.android.systemui" />
-
-    <protected-broadcast
-        android:name="com.google.android.apps.dreamliner.SETTINGS" />
-
-    <protected-broadcast
-        android:name="com.google.android.systemui.smartspace.EXPIRE_EVENT" />
-
-    <protected-broadcast
-        android:name="com.google.android.systemui.smartspace.CLICK_EVENT" />
-
-    <protected-broadcast
-        android:name="com.google.android.systemui.dreamliner.ALIGNMENT_CHANGE" />
-
-    <protected-broadcast
-        android:name="com.google.android.systemui.dreamliner.TOUCH_EVENT" />
-
-    <protected-broadcast
-        android:name="com.google.android.systemui.dreamliner.FLING_EVENT" />
-
-    <protected-broadcast
-        android:name="com.google.android.systemui.dreamliner.ASSISTANT_POODLE" />
-
-    <protected-broadcast
-        android:name="com.google.android.systemui.dreamliner.ACTION_UPDATE_FAN_LEVEL" />
-
-    <protected-broadcast
-        android:name="com.google.android.systemui.dreamliner.PHOTO_EVENT" />
-
-    <protected-broadcast
-        android:name="PNW.defenderResumeCharging.settings" />
-
-    <protected-broadcast
-        android:name="PNW.batteryStatusChanged" />
-
-    <protected-broadcast
-        android:name="PNW.bluetoothStatusChanged" />
-
-    <protected-broadcast
-        android:name="com.breel.wallpapers.NOTIFICATION_RECEIVED" />
-
-    <protected-broadcast
-        android:name="com.google.android.apps.privacy.wildlife.WIFI_STATE_CHANGED" />
-
-    <uses-permission
-        android:name="com.google.android.ambientindication.permission.AMBIENT_INDICATION" />
-
-    <uses-permission
-        android:name="com.google.android.apps.nexuslauncher.permission.QSB" />
-
-    <permission
-        android:name="com.android.systemui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-        android:protectionLevel="signature" />
-
-    <uses-permission
-        android:name="com.android.systemui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-
-    <uses-permission
-        android:name="android.permission.CAPTURE_BLACKOUT_CONTENT" />
-
-    <uses-permission
-        android:name="android.permission.ROTATE_SURFACE_FLINGER" />
-
-    <uses-permission
-        android:name="android.permission.WAKEUP_SURFACE_FLINGER" />
-
-    <!-- Ambient pulse event -->
-    <protected-broadcast
-        android:name="com.android.systemui.doze.pulse" />
+    <uses-permission android:name="com.breel.wallpapers.notifications" />
+    <uses-permission android:name="android.permission.VIBRATE_ALWAYS_ON" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.MANAGE_USB" />
+    <uses-permission android:name="android.permission.MANAGE_GAME_MODE" />
+    <uses-permission android:name="android.permission.ACCESS_FPS_COUNTER" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <uses-permission android:name="com.google.android.apps.nest.DOCK_MANAGER_SERVICE" />
+    <uses-permission android:name="com.google.android.setupwizard.READ_DEVICE_ORIGIN_FIRST_PARTY" />
+    <uses-permission android:name="com.google.android.ambientindication.permission.AMBIENT_INDICATION" />
 
     <application
         android:appComponentFactory="com.google.android.systemui.SystemUIGoogleAppComponentFactory"
+        android:backupAgent="com.google.android.systemui.backup.BackupHelperGoogle"
         tools:replace="android:appComponentFactory">
 
+        <profileable android:shell="true" />
+
         <service
+            android:name="com.google.android.systemui.elmyra.ElmyraServiceProxy"
             android:exported="true"
+            android:permission="com.google.android.elmyra.permission.CONFIGURE_ASSIST_GESTURE" />
+
+        <service
             android:name="com.google.android.systemui.columbus.ColumbusServiceProxy"
+            android:exported="true"
             android:permission="com.google.android.columbus.permission.CONFIGURE_COLUMBUS_GESTURE" />
 
         <service
+            android:name="com.google.android.systemui.columbus.legacy.ColumbusTargetRequestService"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action android:name="com.google.android.systemui.QUICK_TAP_TARGET_REQUEST" />
+
+            </intent-filter>
+
+        </service>
+
+        <service
+            android:name="org.pixelexperience.systemui.columbus.ColumbusTargetRequestServiceWrapper"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="com.google.android.systemui.QUICK_TAP_TARGET_REQUEST" />
+            </intent-filter>
+
+        </service>
+
+        <service
+            android:name="com.google.android.systemui.power.batteryhealth.HealthService"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.google.android.systemui.power.batteryhealth.HealthUpdateReceiver"
+            android:exported="true" />
+
+        <service
+            android:name="com.google.android.systemui.lowlightclock.LowLightClockDreamService"
+            android:directBootAware="true"
+            android:enabled="false"
+            android:exported="false"
+            android:permission="android.permission.BIND_DREAM_SERVICE">
+
+            <intent-filter>
+                <action android:name="android.service.dreams.DreamService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.google.android.systemui.dreams.LockscreenWallpaperDreamService"
+            android:description="@string/dream_lockscreen_wallpaper_description"
+            android:enabled="false"
             android:exported="true"
-            android:name="org.pixelexperience.systemui.columbus.ColumbusTargetRequestServiceWrapper">
+            android:label="@string/dream_lockscreen_wallpaper_label"
+            android:permission="android.permission.BIND_DREAM_SERVICE">
 
             <intent-filter>
-
-                <action
-                    android:name="com.google.android.systemui.QUICK_TAP_TARGET_REQUEST" />
-
+                <action android:name="android.service.dreams.DreamService" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 
+            <meta-data
+                android:name="android.service.dream"
+                android:resource="@xml/lockscreen_wallpaper_dream_metadata" />
         </service>
 
-        <!--service android:exported="true" android:name="com.google.android.systemui.power.batteryhealth.HealthService"/>
-        <receiver android:exported="true" android:name="com.google.android.systemui.power.batteryhealth.HealthUpdateReceiver"/>
-        <service android:enabled="false" android:exported="false" android:name="com.google.android.systemui.lowlightclock.LowLightClockDreamService" android:permission="android.permission.BIND_DREAM_SERVICE">
+        <service
+            android:name="com.google.android.systemui.qs.launcher.LauncherTileService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+
             <intent-filter>
-                <action android:name="android.service.dreams.DreamService"/>
-                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.google.android.systemui.qs.launcher.LauncherTileService" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </service>
-        <service android:exported="false" android:name="com.google.android.systemui.communal.dock.setup.notification.DockSetupNotificationTimeoutService" android:permission="android.permission.BIND_JOB_SERVICE"/-->
+
+        <service
+            android:name="com.google.android.systemui.power.batteryevent.domain.BatteryEventService"
+            android:exported="true" />
+
+        <activity
+            android:name="com.google.android.systemui.screenprotector.ScreenProtectorNotificationActivity"
+            android:excludeFromRecents="true"
+            android:finishOnCloseSystemDialogs="true"
+            android:permission="com.google.android.systemui.permission.SCREEN_PROTECTOR_NOTIFICATION"
+            android:theme="@style/Theme.SystemUI.Dialog.Alert" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
+
     </application>
 
 </manifest>
