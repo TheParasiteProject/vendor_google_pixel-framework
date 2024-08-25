@@ -1,0 +1,11 @@
+java_import  {
+    name: "columbus-lib",
+    sdk_version: "current",
+    jars: ["columbus-lib.jar"],
+}
+
+java_import  {
+    name: "SystemUIGoogle-lib",
+    sdk_version: "current",
+    jars: ["SystemUIGoogle-lib.jar"],
+}
