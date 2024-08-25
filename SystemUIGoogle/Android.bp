@@ -21,6 +21,7 @@ android_library {
         "guava",
         "smartspace-proto-java",
         "SystemUI-core",
+        "SystemUIGoogle-lib",
         "tensorflowlite_java",
         "vendor-pixelatoms-java",
         "vendor.google.google_battery-V1-java",
