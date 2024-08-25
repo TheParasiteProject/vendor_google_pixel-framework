@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <attr name="database" format="string"/>
+    <attr name="entityMatchRequired" format="boolean"/>
+    <attr name="namespace" format="string"/>
+    <attr name="schemaType" format="string"/>
+    <attr name="smartspaceSubtitleTextSize" format="dimension"/>
+    <attr name="smartspaceTitleTextSize" format="dimension"/>
+</resources>

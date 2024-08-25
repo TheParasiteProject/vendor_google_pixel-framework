@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/standard_option_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20.0dip">
+
+        <RadioButton
+            android:id="@id/standard_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:checked="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="8.0dip" />
+
+        <TextView
+            android:id="@id/standard_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4.0dip"
+            android:layout_toEndOf="@id/standard_button"
+            android:text="@string/saver_confirmation_dialog_title_standard_mode"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="?android:textColorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/standard_title"
+            android:layout_toEndOf="@id/standard_button"
+            android:text="@string/saver_confirmation_dialog_summary_standard_mode"
+            android:textAppearance="?android:textAppearanceListItemSecondary"
+            android:textColor="?android:textColorSecondary" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/extreme_option_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20.0dip">
+
+        <RadioButton
+            android:id="@id/extreme_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="8.0dip" />
+
+        <TextView
+            android:id="@id/extreme_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4.0dip"
+            android:layout_toEndOf="@id/extreme_button"
+            android:text="@string/saver_confirmation_dialog_title_extreme_mode"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="?android:textColorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/extreme_title"
+            android:layout_toEndOf="@id/extreme_button"
+            android:text="@string/saver_confirmation_dialog_summary_extreme_mode"
+            android:textAppearance="?android:textAppearanceListItemSecondary"
+            android:textColor="?android:textColorSecondary" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@id/setup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/columbus_chip_background"
+        android:layout_marginEnd="@dimen/columbus_target_request_dialog_button_to_button_space"
+        android:layout_marginStart="48.0dip"
+        android:layout_marginTop="10.0dip"
+        android:lineHeight="@dimen/columbus_target_request_dialog_content_line_height"
+        android:paddingEnd="@dimen/columbus_target_request_dialog_button_background_radius"
+        android:paddingStart="@dimen/columbus_target_request_dialog_button_background_radius"
+        android:text="@string/face_reenroll_dialog_confirm"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="@dimen/columbus_target_request_dialog_content_text_size" />
+
+</LinearLayout>

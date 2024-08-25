@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <bool name="config_adaptive_charging_warning_enabled">true</bool>
+    <bool name="config_battery_defender_warning_enabled">true</bool>
+    <bool name="config_battery_health_periodic_update_enabled">false</bool>
+    <bool name="config_battery_index_enabled">false</bool>
+    <bool name="config_extra_battery_saver_confirmation">true</bool>
+    <bool name="config_incompatible_charging_warning_enabled">true</bool>
+    <bool name="config_nfc_conflict_with_usb_audio">false</bool>
+    <bool name="config_nfc_conflict_with_wlc">false</bool>
+    <bool name="config_pixel_vpn_enabled">false</bool>
+    <bool name="config_request_pre_auth_refresh_rate">false</bool>
+    <bool name="config_screen_protector_notification_enabled">false</bool>
+    <bool name="config_show_low_light_clock_when_docked">false</bool>
+    <bool name="config_tablet_device">false</bool>
+    <bool name="config_touch_context_enabled">false</bool>
+    <bool name="config_wireless_charging_warning_enabled">false</bool>
+    <bool name="config_wlc_support_enabled">false</bool>
+    <bool name="custom_lockscreen_shortcuts_enabled">true</bool>
+    <bool name="long_press_keyguard_customize_lockscreen_enabled">true</bool>
+</resources>
