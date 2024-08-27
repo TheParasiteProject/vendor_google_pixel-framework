@@ -29,23 +29,21 @@
         android:name="com.google.android.settings.biometrics.face.POSTURE_GUIDANCE"
         android:protectionLevel="privileged|signature" />
 
-    <uses-permission android:name="android.permission.MANAGE_GAME_MODE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="com.google.android.settings.routines.ROUTINES_ACTIONS" />
-    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
-    <uses-permission android:name="com.google.android.settings.intelligence.BATTERY_DATA" />
-    <uses-permission android:name="com.google.android.settings.setup.dock.RUN_DOCK_SETUP" />
     <uses-permission android:name="android.permission.MANAGE_ACTIVITY_TASKS" />
-    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
-    <uses-permission android:name="com.google.android.wildlife.permission.VPN_APP_EXCLUSION_LAUNCH" />
-    <uses-permission android:name="com.google.android.wildlife.permission.ADVANCED_VPN_CONFIG" />
-    <uses-permission android:name="com.google.android.apps.scone.speedboost.settings.READ_PREFERENCES" />
+    <uses-permission android:name="android.permission.MANAGE_GAME_MODE" />
     <uses-permission android:name="android.permission.MANAGE_SAFETY_CENTER" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.apps.scone.speedboost.settings.READ_PREFERENCES" />
+    <uses-permission android:name="com.google.android.settings.intelligence.BATTERY_DATA" />
+    <uses-permission android:name="com.google.android.settings.routines.ROUTINES_ACTIONS" />
+    <uses-permission android:name="com.google.android.settings.setup.dock.RUN_DOCK_SETUP" />
+    <uses-permission android:name="com.google.android.wildlife.permission.ADVANCED_VPN_CONFIG" />
+    <uses-permission android:name="com.google.android.wildlife.permission.VPN_APP_EXCLUSION_LAUNCH" />
 
     <protected-broadcast android:name="com.google.android.settings.PRE_INDEX_SEARCH" />
-
-    <original-package android:name="com.android.settings" />
 
     <application
         android:name="com.google.android.settings.SettingsGoogleApplication"
@@ -61,13 +59,19 @@
             android:theme="@style/SudThemeGlif.Light">
 
             <intent-filter>
+
                 <action android:name="com.google.android.settings.COLUMBUS_GESTURE_TRAINING" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
 
             <intent-filter>
+
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="com.android.settings.suggested.category.COLUMBUS_GESTURE" />
+
             </intent-filter>
 
             <meta-data
@@ -81,6 +85,7 @@
             <meta-data
                 android:name="com.android.settings.icon_tintable"
                 android:value="true" />
+
         </activity>
 
         <activity
@@ -120,13 +125,17 @@
             android:exported="true">
 
             <intent-filter android:priority="1">
+
                 <action android:name="com.google.android.settings.gestures.QUICK_TAP_SETTINGS" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
 
             <meta-data
                 android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.google.android.settings.gestures.columbus.ColumbusSettings" />
+
         </activity>
 
         <activity
@@ -164,9 +173,13 @@
             android:theme="@style/Theme.Settings.Clips">
 
             <intent-filter>
+
                 <action android:name="com.google.android.settings.action.CONFIRM_FACE_ENROLLMENT" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
+
         </activity>
 
         <activity
@@ -176,8 +189,11 @@
             android:theme="@android:style/Theme.NoDisplay">
 
             <intent-filter android:priority="1">
+
                 <action android:name="android.settings.REVERSE_CHARGING_SETTINGS" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
 
         </activity>
@@ -199,8 +215,11 @@
             android:theme="@style/BottomSheetStyle">
 
             <intent-filter android:priority="1">
+
                 <action android:name="android.settings.REVERSE_CHARGING_BOTTOM_SHEET" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
 
         </activity>
@@ -211,9 +230,13 @@
             android:theme="@android:style/Theme.NoDisplay">
 
             <intent-filter android:priority="1">
+
                 <action android:name="com.google.android.settings.fuelgauge.REVERSE_CHARGING_TOOL_SETTINGS" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
+
         </activity>
 
         <activity
@@ -223,13 +246,17 @@
             android:taskAffinity="com.android.settings.root">
 
             <intent-filter android:priority="1">
+
                 <action android:name="com.google.android.settings.security.SECURITY_ADVANCED_SETTINGS" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
 
             <meta-data
                 android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.security.SecurityAdvancedSettings" />
+
         </activity>
 
         <activity
@@ -243,8 +270,11 @@
             android:theme="@style/SudThemeGlif.DayNight">
 
             <intent-filter>
+
                 <action android:name="com.android.settings.action.SCREEN_SAVER" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
 
             <meta-data
@@ -262,6 +292,7 @@
             <meta-data
                 android:name="com.android.settings.icon_tintable"
                 android:value="true" />
+
         </activity>
 
         <activity
@@ -270,8 +301,11 @@
             android:label="@string/limited_warranty_title">
 
             <intent-filter>
+
                 <action android:name="android.settings.WARRANTY" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
 
             <meta-data
@@ -286,13 +320,17 @@
             android:label="@string/limited_warranty_title">
 
             <intent-filter>
+
                 <action android:name="android.settings.WARRANTY_DETAILS" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
 
             <meta-data
                 android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.google.android.settings.warranty.WarrantyDetailsFragment" />
+
         </activity>
 
         <activity
@@ -301,9 +339,13 @@
             android:theme="@style/SudThemeGlif.DayNight">
 
             <intent-filter>
+
                 <action android:name="com.google.android.settings.warranty.SUW_DIGITAL_WARRANTY" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
+
         </activity>
 
         <activity
@@ -316,8 +358,11 @@
             android:theme="@style/VpnSettingsTheme">
 
             <intent-filter>
+
                 <action android:name="com.google.android.settings.action.LAUNCH_VPN_APP_EXCLUSION" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
 
         </activity>
@@ -327,13 +372,17 @@
             android:exported="true">
 
             <intent-filter>
+
                 <action android:name="com.google.android.settings.notification.CLEAR_CALLING" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
 
             <meta-data
                 android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.google.android.settings.notification.ClearCallingSettings" />
+
         </activity>
 
         <activity
@@ -353,13 +402,17 @@
             android:permission="com.google.android.settings.intelligence.BATTERY_DATA">
 
             <intent-filter>
+
                 <action android:name="com.google.android.settings.action.LAUNCH_POWER_USAGE_ADVANCED" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
 
             <meta-data
                 android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.fuelgauge.batteryusage.PowerUsageAdvanced" />
+
         </activity>
 
         <activity
@@ -369,9 +422,13 @@
             android:theme="@android:style/Theme.NoDisplay">
 
             <intent-filter>
+
                 <action android:name="com.google.android.settings.action.RETAIL_DEMO_LOCALE_SETUP" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
+
         </activity>
 
         <activity
@@ -386,13 +443,17 @@
             android:label="@string/audio_sharing_title">
 
             <intent-filter>
+
                 <action android:name="com.google.android.settings.BLUETOOTH_AUDIO_SHARING_SETTINGS" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
 
             <meta-data
                 android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.google.android.settings.connecteddevice.audiosharing.AudioSharingDashboardFragment" />
+
         </activity>
 
         <activity
@@ -401,9 +462,13 @@
             android:permission="android.permission.BLUETOOTH_CONNECT">
 
             <intent-filter>
+
                 <action android:name="android.settings.BLUETOOTH_LE_AUDIO_QR_CODE_SCANNER" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
+
         </activity>
 
         <activity
@@ -414,13 +479,17 @@
             android:theme="@style/Transparent">
 
             <intent-filter android:priority="1">
+
                 <action android:name="android.settings.AUDIO_STREAM_DIALOG" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
 
             <meta-data
                 android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.google.android.settings.connecteddevice.audiosharing.audiostreams.AudioStreamConfirmDialog" />
+
         </activity>
 
         <receiver
@@ -428,9 +497,13 @@
             android:exported="false">
 
             <intent-filter>
+
                 <action android:name="com.android.settings.action.BLUETOOTH_LE_AUDIO_SHARING_STATE_CHANGE" />
+
                 <action android:name="com.google.android.settings.action.BLUETOOTH_LE_AUDIO_SHARING_STOP" />
+
             </intent-filter>
+
         </receiver>
 
         <activity
@@ -438,13 +511,17 @@
             android:exported="true">
 
             <intent-filter>
+
                 <action android:name="android.settings.KEYBOARD_VIBRATION_SETTINGS" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
 
             <meta-data
                 android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.accessibility.VibrationIntensitySettingsFragment" />
+
         </activity>
 
         <activity
@@ -454,13 +531,17 @@
             android:launchMode="singleTask">
 
             <intent-filter>
+
                 <action android:name="com.google.android.settings.touch.TOUCH_SENSITIVITY_SETTINGS" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
             </intent-filter>
 
             <meta-data
                 android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.google.android.settings.touch.TouchSensitivitySettings" />
+
         </activity>
 
         <provider
@@ -476,8 +557,11 @@
             android:permission="com.google.android.settings.routines.ROUTINES_ACTIONS">
 
             <intent-filter>
+
                 <action android:name="com.google.android.settings.routines.RoutinesActionBroadcastReceiver.RINGER_MODE_SILENCE_ACTION" />
+
             </intent-filter>
+
         </receiver>
 
         <provider
@@ -513,8 +597,11 @@
             android:permission="android.permission.BLUETOOTH_CONNECT">
 
             <intent-filter>
+
                 <action android:name="settings.intelligence.battery.action.FETCH_BLUETOOTH_BATTERY_DATA" />
+
             </intent-filter>
+
         </receiver>
 
         <receiver
@@ -523,8 +610,11 @@
             android:exported="true">
 
             <intent-filter>
+
                 <action android:name="com.google.android.settings.action.DUMP_POWER_CONSUMPTION_DATA" />
+
             </intent-filter>
+
         </receiver>
 
         <receiver
@@ -532,8 +622,11 @@
             android:exported="true">
 
             <intent-filter>
+
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+
             </intent-filter>
+
         </receiver>
 
         <receiver
@@ -542,12 +635,19 @@
             android:permission="com.google.android.wildlife.permission.VPN_APP_EXCLUSION_LAUNCH">
 
             <intent-filter>
+
                 <action android:name="com.google.android.settings.action.REMOVE_UNINSTALLED_APP" />
+
                 <action android:name="com.google.android.settings.action.UPDATE_PREDEFINED_APP_EXCLUSION_LIST" />
+
                 <action android:name="com.google.android.settings.action.UPDATE_CARRIER_APP_LIST" />
+
                 <action android:name="com.google.android.settings.action.NOTIFY_PACKAGE_ADDED" />
+
                 <action android:name="com.google.android.settings.action.RESTORE_APP_BYPASS_SETTINGS" />
+
             </intent-filter>
+
         </receiver>
 
         <receiver
@@ -559,8 +659,11 @@
             android:exported="true">
 
             <intent-filter>
+
                 <action android:name="com.google.android.setupwizard.SETUP_WIZARD_FINISHED" />
+
             </intent-filter>
+
         </receiver>
 
         <provider
@@ -582,14 +685,41 @@
             android:exported="false" />
 
         <activity-alias
+            android:name="com.google.android.settings.DebuggingDataActivity"
+            android:exported="true"
+            android:targetActivity="com.android.settings.spa.SpaBridgeActivity">
+
+            <intent-filter>
+
+                <action android:name="android.settings.MANAGE_DEBUGGING_DATA_PERMISSION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+
+            <meta-data
+                android:name="com.android.settings.spa.DESTINATION"
+                android:value="TogglePermissionAppList/DebuggingData" />
+
+            <meta-data
+                android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
+                android:value="@string/menu_key_apps" />
+
+        </activity-alias>
+
+        <activity-alias
             android:name="com.google.android.settings.AppDebuggingDataActivity"
             android:exported="true"
             android:targetActivity="com.android.settings.spa.SpaAppBridgeActivity">
 
             <intent-filter>
+
                 <action android:name="android.settings.MANAGE_APP_DEBUGGING_DATA_PERMISSION" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:scheme="package" />
+
             </intent-filter>
 
             <meta-data
@@ -599,6 +729,7 @@
             <meta-data
                 android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
                 android:value="@string/menu_key_apps" />
+
         </activity-alias>
 
         <receiver
@@ -608,7 +739,9 @@
             android:permission="android.permission.NETWORK_CARRIER_PROVISIONING">
 
             <intent-filter>
+
                 <action android:name="android.net.wifi.wsu.action.WSU_POST_PROVISIONING" />
+
             </intent-filter>
 
         </receiver>
