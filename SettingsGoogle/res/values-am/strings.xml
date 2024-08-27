@@ -149,6 +149,7 @@
     <string name="content_protection_preference_subpage_summary">መቃኘት ማስገርን ወይም ሌላ አታላይ ባህሪን በተመለከተ የመተግበሪያ እንቅስቃሴ እየፈተሸ በመሣሪያዎ ላይ በግል ይሄዳል። ከታወቀ ስጋቱን ለማረጋገጥ እና የመተግበሪያ ተጠቃሚዎችን ለማስጠንቀቅ አንዳንድ የመተግበሪያ መረጃ ወደ የGoogle Play ጥቃት መከላከያ ይላካል።</string>
     <string name="contextual_timeout_description">መሣሪያዎን የማይጠቀሙ ከሆነ በራስ-ሰር ማያ ገጹን ቀደም ብሎ ያጠፋል</string>
     <string name="contextual_timeout_title">የሚለምድ የእረፍት ጊዜ</string>
+    <string name="credentials_install_summary" product="default">ከማከማቻ ምስክሮች ጫን</string>
     <string name="dark_ui_text">ጨለማ ገጽታ የባትሪዎን ዕድሜ ለማራዘም እንዲያግዝ ጥቁር ጀርባን ይጠቀማል። የጨለማ ገጽታ መርሐግብሮች ለመብራት ማያ ገጽዎ እስኪጠፋ ድረስ ይጠብቃሉ።</string>
     <string name="debugging_data_title">የውሂብ ስህተትን በማረም ላይ</string>
     <string name="discover_tips_button">ጠቃሚ ምክሮችን ያግኙ</string>
@@ -156,6 +157,8 @@
     <string name="double_twist_for_camera_mode_summary">በGoogle ካሜራ ውስጥ ወደ የራስ ፎቶ ሁነታ ለመግባት እና ከእሱ ለመውጣት በመተግበሪያው ውስጥ ሲሆኑ ሁለቴ ጠምዘዝ ያድርጉ</string>
     <string name="duration_less_than_one_minute">ከ1 ደቂቃ ያነሰ</string>
     <string name="enable_glanceable_hub_toggle">የመገናኛ ሁነታ</string>
+    <string name="erase_external_storage" product="default">USB ማከማቻ አጥፋ</string>
+    <string name="erase_external_storage_description" product="default">እንደ ሙዚቃ እና ፎቶዎች፣ ሁሉንም ውሂብ በውስጥ USB ማከማቻ አጥፋ።</string>
     <string name="extreme_battery_saver_summary">ከላይ የተዘረዘሩትን ሁሉንም ለውጦች ያካትታል። እንዲሁም መሠረታዊ ያልሆኑ መተግበሪያዎችን እና ማሳወቂያዎቻቸውን ባሉበት ያቆማል።</string>
     <string name="extreme_battery_saver_title">ከፍተኛ ባትሪ ቆጣቢ</string>
     <string name="face_confirmation_hide_illustration_description">አሁን ስልክዎን ሲያነሱ ወይም የማያ ገጹን መታ ሲያደርጉ ለመክፈት መልክዎን መጠቀም ይችላሉ።</string>
@@ -230,6 +233,9 @@
     <string name="limited_warranty_title">የተወሰነ የዋስትና ማረጋገጫ</string>
     <string name="lockscreen_show_weather_summary">የአሁኑን የአየር ሁኔታዎች ይመልከቱ</string>
     <string name="lockscreen_show_weather_title">የአየር ሁኔታን ያሳዩ</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"ሙዚቃ፣ ምስሎች እና ሌላ ተጠቃሚ ውሂብን 
+
+ለማጥራት "<b>የዩኤስቢ ማከማቻ</b> መደምሰስ አለበት።</string>
     <string name="my_device_info_account_preference_title">የGoogle መለያ</string>
     <string name="owner_info_settings_edit_text_hint">ለምሳሌ፦ የአበበ Pixel</string>
     <string name="permit_debugging_data">የሳንካ ሪፖርት መዳረሻ ይፍቀዱ</string>
@@ -280,6 +286,7 @@
     <string name="security_dismiss_dialog_title">ይህ ማስጠንቀቂያ ይሰናበት?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">ለማዋቀር መታ ያድርጉ</string>
     <string name="security_settings_face_enroll_education_message">በሚቀጥለው ማያ ገፅ ላይ ሁሉንም የመልክዎ ማዕዘኖች ለማግኘት ጭንቅላትዎን ያሽከርክሩት</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">በሚቀጥለው ማያ ገፅ ላይ ስልክዎን በዓይንዎ ልክ ይያዙት</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">የፊት ማስመዘገቢያ ጊዜ ገደብ ላይ ተደርሷል። እንደገና ይሞክሩ።</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">የበመልክ መክፈት ውቅረት ጊዜ አብቅቷል</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">ስልክዎን ለመክፈት ወይም ለምሳሌ ወደ መተግበሪያዎች በመለያ ሲገቡ ወይም አንድን ግዢ ሲያጸድቁ እርስዎ መሆንዎን ለማረጋገጥ ከአሁን በኋላ መልክዎን መጠቀም ይችላሉ</string>
@@ -294,13 +301,29 @@
 በቂ ብርሃን ሲኖር እና ጭምብል ወይም ጠቆር ያሉ መነፅሮችን ሳይለብሱ ሲቀር በመልክ መክፈት በተሻለ ሁኔታ ይሰራል።"</string>
     <string name="security_settings_face_enroll_finish_title">ጥሩ ይመስላል!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">ለተገደበ ዕይታ ወይም የጭንቅላት እንቅስቃሴ ያቀናብሩ</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">በመልክ መክፈትን ሲጠቀሙ የእርስዎ ጭንቅላት ይበልጥ ከስልክዎ ፊት ለፊት መሆን ሊያስፈልገው ይችላል።</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">በዓይኖች መክፈትን ጠይቅ</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"እርስዎ እና ልጅዎ በማንኛውም ጊዜ በቅንብሮች ውስጥ የመልክ ሞዴላቸውን መሰረዝ ወይም በመልክ መክፈትን ማጥፋት ትችላላችሁ። የመልክ ሞዴሎች እስኪሰረዙ ድረስ በስልኩ ላይ ይከማቻሉ።&lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; ላይ &lt;br&gt;&lt;br&gt;የበለጠ ይወቁ።"</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">እርስዎ እና ልጅዎ ተቆጣጣሪ ናችሁ</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"በማንኛውም ጊዜ በቅንብሮች ውስጥ የእርስዎን የመልክ ሞዴል መሰረዝ ወይም በመልክ መክፈትን ማጥፋት ይችላሉ። የመልክ ሞዴሎች እርስዎ እስኪሰርዟቸው ድረስ በስልኩ ላይ ይከማቻሉ።&lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; ላይ &lt;br&gt;&lt;br&gt;የበለጠ ይወቁ።"</string>
     <string name="security_settings_face_enroll_introduction_control_title">እርስዎ የሚቆጣጠሩት ነው</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"በመልክ መክፈት እሳቸው መሆናቸውን ለማረጋገጥ ልዩ የልጅዎን መልክ ሞዴል ይፈጥራል። በማዋቀር ወቅት ይህን የመልክ ሞዴል ለመፍጠር ልጅዎ የመልካቸውን ምስሎች ከተለያዩ ማዕዘናት ያነሳሉ።
+
+በመልክ መክፈትን ሲጠቀሙ ምስሎች የመልክ ሞዴላቸውን ለማዘመን ሥራ ላይ ይውላሉ። የመልክ ሞዴላቸውን ለመፍጠር ሥራ ላይ የዋሉ ምስሎች በጭራሽ አይከማቹም ነገር ግን የመልክ ሞዴሉ በስልኩ ላይ ደህንነቱ በተጠበቀ ሁኔታ የሚከማች ሲሆን በጭራሽ ከስልኩ አይወጣም። ሁሉም ማሰናዳት በስልኩ ላይ ደህንነቱ በተጠበቀ ሁኔታ ይከናወናል።"</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"እርስዎ መሆንዎን ለማረጋገጥ በመልክ መክፈት የመልክዎን ልዩ ሞዴል ይፈጥራል። በማዋቀር ወቅት ይህን የመልክ ሞዴል ለመፍጠር እርስዎ የመልክዎን ምስሎች ከተለያዩ ማዕዘናት ያነሳሉ።
+
+በመልክ መክፈትን ሲጠቀሙ ምስሎች የመልክዎን ሞዴል ለማዘመን ሥራ ላይ ይውላሉ። የመልክዎን ሞዴል ለመፍጠር ጥቅም ላይ የዋሉ ምስሎች በጭራሽ አይከማቹም ነገር ግን የመልክ ሞዴሉ በስልክዎ ላይ ደህንነቱ በተጠበቀ ሁኔታ የሚከማች ሲሆን በጭራሽ ከስልኩ አይወጣም። ሁሉም ማሰናዳት በስልክዎ ላይ ደህንነቱ በተጠበቀ ሁኔታ ይከናወናል።"</string>
     <string name="security_settings_face_enroll_introduction_how_title">እንዴት እንደሚሠራ</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">በመልክ መክፈት ስልኩን ለመክፈት ወይም እነሱ መሆናቸውን ለማረጋገጥ የልጅዎ ዓይኖች ክፍት እንዲሆኑ ሊጠይቅ ይችላል። እርስዎ እና ልጅዎ በማንኛውም ጊዜ በቅንብሮች ውስጥ ይህን አማራጭ ማብራት ይችላሉ።</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">ልጅዎ በመደበኛነት የዓይን መነፅር የሚያደርግ ከሆነ በሚያቀናብሩበት ጊዜ ሊያደርጓቸው ይችላሉ።</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">የልጅዎን ስልክ ለመክፈት መልካቸውን መጠቀም ከጠንካራ ሥርዓተ ጥለት፣ ፒን ወይም የይለፍ ቃል ያነሰ ደህንነት ሊኖረው ይችላል</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">እነሱ ሳይፈልጉም እንኳ ስልኩን መመልከት ስልኩን ሊከፍተው ይችላል። ስልካቸው እንዲሁም እንደ ተመሳሳይ ወንድም/እህት ያለ እነሱን በጣም በሚመስል ሰው ወይም አንድ ሰው ፊታቸው ላይ ከያዘው ሊከፈት ይችላል።</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">በመልክ መክፈት ስልኩን ለመክፈት ወይም እርስዎ መሆንዎን ለማረጋገጥ የእርስዎ ዓይኖች ክፍት እንዲሆኑ ሊጠይቅ ይችላል። በማንኛውም ጊዜ በቅንብሮች ውስጥ ይህን አማራጭ ማብራት ይችላሉ።</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">መነጽር ወይም ትንሽ ቅልም ያላቸው የፀሐይ መነጽሮች ችግር የላቸውም።</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">ስልክዎን ለመክፈት መልክዎን መጠቀሙ ከጠንካራ ሥርዓተ ጥለት፣ ፒን ወይም የይለፍ ቃል ያነሰ ደህንነት ሊኖረው ይችላል</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">እርስዎ ሳይፈልጉም እንኳ ስልኩን መመልከት ስልኩን ሊከፍተው ይችላል። ስልክዎ እንዲሁም እንደ ተመሳሳይ ወንድም/እህት ያለ እርስዎን በጣም በሚመስል ሰው ወይም አንድ ሰው ፊትዎ ላይ ከያዘው ሊከፈት ይችላል።</string>
     <string name="security_settings_face_enroll_introduction_info_title">ከግምት ውስጥ ያስገቡ</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">ስልክዎን ለመክፈት ወይም እርስዎ መሆንዎን ለማረጋገጥ፣ ለምሳሌ ወደ መተግበሪያዎች ሲገቡ ወይም አንድን ግዢ ሲያጸድቁ፣ መልክዎን ይጠቀሙ።</string>
     <string name="security_settings_face_enroll_introduction_title">በመልክ መክፈትን አቀናብር</string>
     <string name="security_settings_face_enroll_next">ቀጣይ</string>
     <string name="security_settings_face_enroll_partial_message">አፈጻጸምን ለማሻሻል በቅንብሮች ውስጥ በመልክ መክፈትን እንደገና ማዋቀር ይችላሉ</string>
@@ -326,7 +349,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">የጣት አሻራን ለማቀናበር መታ ያድርጉ</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint እርስዎ መሆንዎን ለማረጋገጥ የጣት አሻራዎን ልዩ ሞዴል ይፈጥራል። በሚቀናበርበት ጊዜ ይህን የጣት አሻራ ሞዴል ለመፍጠር የጣት አሻራዎ ምስሎችን ከተለያዩ ቦታዎች ያነሳሉ።</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Pixel Imprintን ሲጠቀሙ ምስሎች የጣት አሻራዎን ሞዴል ለማዘመን ሥራ ላይ ይውላሉ። የእርስዎን የጣት አሻራ ሞዴል ለመፍጠር ሥራ ላይ የዋሉ ምስሎች በጭራሽ አይከማቹም ነገር ግን የጣት አሻራ ሞዴሉ በስልክዎ ላይ ደህንነቱ በተጠበቀ ሁኔታ ይከማቻል እና በጭራሽ ከስልኩ አይወጣም። ሁሉም ማሰናዳት በስልክዎ ላይ ደህንነቱ በተጠበቀ ሁኔታ ይከናወናል።</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">እርስዎ በማንኛውም ጊዜ በቅንብሮች ውስጥ የጣት አሻራ ሞዴልዎን መሰረዝ ወይም Pixel Imprintን ማጥፋት ይችላሉ። የጣት አሻራ ሞዴሎች እስኪሰርዟቸው ድረስ በስልኩ ላይ ይከማቻሉ።</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint እነሱ መሆናቸውን ለማረጋገጥ የልጅዎን የጣት አሻራ ልዩ ሞዴል ይፈጥራል። በሚቀናበቀርበት ጊዜ ይህን የጣት አሻራ ሞዴል ለመፍጠር የጣት አሻራቸው ምስሎችን ከተለያዩ ቦታዎች ያነሳሉ።</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">Pixel Imprintን ሲጠቀሙ ምስሎች የጣት አሻራቸውን ሞዴል ለማዘመን ሥራ ላይ ይውላሉ። የልጅዎን የጣት አሻራ ሞዴል ለመፍጠር ሥራ ላይ የዋሉ ምስሎች በጭራሽ አይከማቹም ነገር ግን የጣት አሻራ ሞዴሉ በስልኩ ላይ ደህንነቱ በተጠበቀ ሁኔታ ይከማቻል እና በጭራሽ ከስልኩ አይወጣም። ሁሉም ማሰናዳት በስልኩ ላይ ደህንነቱ በተጠበቀ ሁኔታ ይከናወናል።</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">እርስዎ እና ልጅዎ በማንኛውም ጊዜ በቅንብሮች ውስጥ የጣት አሻራ ሞዴላቸውን መሰረዝ ወይም Pixel Imprintን ማጥፋት ትችላላችሁ። የጣት አሻራ ሞዴሎች እስኪሰረዙ ድረስ በስልኩ ላይ ይከማቻሉ።</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"&lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt; ላይ ስለPixel በጣት አሻራ መክፈቻ የበለጠ ይወቁ።"</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint ለሥራ</string>
     <string name="setup_suggestion_summary">ጥቂት ተጨማሪ እርምጃዎች ብቻ</string>
@@ -335,6 +362,7 @@
     <string name="smart_battery_a11y_expand_label">ዘርጋ፣ ተለማማጅ ባትሪ</string>
     <string name="smart_battery_footer">የባትሪ ዕድሜን ለማራዘም የተስማሚ ባትሪ የአፈፃፀምን እና የጀርባ እንቅስቃሴን ሊቀንስ ይችላል። አንዳንድ ማሳወቂያዎች ሊዘገዩ ይችላሉ</string>
     <string name="smart_battery_manager_title">ተስማሚ ምርጫዎች</string>
+    <string name="smart_battery_summary" product="default">ተለማማጅ ባትሪ መተግበሪያዎች ባትሪውን እንዴት እንደሚጠቀሙ በተከታታይ ለማመቻቸት ከስልክዎ አጠቃቀም ይማራል። የባትሪ ዕድሜን ለማራዘም፣ አፈጻጸሙን ሊቀንስ እና ማሳወቂያዎችን ሊያዘገይ ይችላል።</string>
     <string name="smart_battery_title">ተለማማጅ ባትሪ</string>
     <string name="software_update_can_be_updated_header">የእርስዎን Pixel ይበልጥ የተሻለ ያድርጉ</string>
     <string name="software_update_detail_indication_1_update_available">1 ዝማኔ ይገኛል</string>

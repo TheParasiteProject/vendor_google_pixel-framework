@@ -149,6 +149,7 @@
     <string name="content_protection_preference_subpage_summary">Սկանավորումը գաղտնի է և կատարվում է անմիջապես ձեր սարքում։ Հավելվածի օգտագործման պատմությունը ստուգվում է՝ ֆիշինգ կամ խաբեություն հայտնաբերելու նպատակով։ Հայտնաբերման դեպքում հավելվածի որոշ տեղեկություններ ուղարկվում են Google Play Protect-ին՝ հաստատելու վտանգը և զգուշացնելու հավելվածի օգտատերերին։</string>
     <string name="contextual_timeout_description">Ժամանակից շուտ ավտոմատ անջատում է էկրանը, եթե չեք օգտագործում սարքը</string>
     <string name="contextual_timeout_title">Հարմարվող սպասման ժամանակ</string>
+    <string name="credentials_install_summary" product="default">Տեղադրել հավաստագրերը պահոցից</string>
     <string name="dark_ui_text">Մուգ թեման օգտագործում է սև ֆոնը՝ մարտկոցի աշխատանքի տևողությունը երկարացնելու համար։ Մուգ թեմայի ժամանակացույցները չեն միանա, մինչև էկրանը չանջատվի։</string>
     <string name="debugging_data_title">Տվյալների վրիպազերծում</string>
     <string name="discover_tips_button">Ստանալ խորհուրդներ</string>
@@ -156,6 +157,8 @@
     <string name="double_twist_for_camera_mode_summary">Google Տեսախցիկում սելֆիի ռեժիմը միացնելու և անջատելու համար բացեք հավելվածը և կրկնակի շրջեք դաստակը:</string>
     <string name="duration_less_than_one_minute">1 րոպեից պակաս</string>
     <string name="enable_glanceable_hub_toggle">Հանգույցի ռեժիմ</string>
+    <string name="erase_external_storage" product="default">Ջնջել USB կրիչը</string>
+    <string name="erase_external_storage_description" product="default">Ջնջել ներքին USB կրիչի բոլոր տվյալները, ինչպիսիք են երաժշտությունը կամ լուսանկարները</string>
     <string name="extreme_battery_saver_summary">Ներառում է վերը թվարկված բոլոր փոփոխությունները։ Ինչպես նաև դադարեցնում է երկրորդական հավելվածների աշխատանքը և անջատում դրանց ծանուցումները։</string>
     <string name="extreme_battery_saver_title">Մարտկոցի առավելագույն տնտեսում</string>
     <string name="face_confirmation_hide_illustration_description">Այժմ, երբ դուք վերցնում եք ձեր հեռախոսը կամ հպում եք էկրանին, դուք կարող եք ապակողպել այն ձեր դեմքի միջոցով։</string>
@@ -230,6 +233,9 @@
     <string name="limited_warranty_title">Սահմանափակ երաշխիք</string>
     <string name="lockscreen_show_weather_summary">Տեսնել ընթացիկ եղանակային պայմանները</string>
     <string name="lockscreen_show_weather_title">Եղանակի ցուցադրում</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Երաժշտությունը, նկարները և մյուս տվյալները հեռացնելու համար անհրաժեշտ է մաքրել "<b>USB կրիչը </b>։</string>
     <string name="my_device_info_account_preference_title">Google հաշիվ</string>
     <string name="owner_info_settings_edit_text_hint">Օրինակ՝ Վարդանի Pixel-ը</string>
     <string name="permit_debugging_data">Հասանելի դարձնել վրիպակների հաղորդումները</string>
@@ -280,6 +286,7 @@
     <string name="security_dismiss_dialog_title">Փակե՞լ այս զգուշացումը</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Հպեք կարգավորելու համար</string>
     <string name="security_settings_face_enroll_education_message">Հաջորդ էկրանին պտտեք գլուխը՝ ձեր դեմքը բոլոր անկյուններից նկարելու համար</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Հաջորդ էկրանին հեռախոսը պահեք աչքերի մակարդակում</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Կարգավորման ժամանակը սպառվեց</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Այժմ կարող եք օգտագործել ձեր դեմքը՝ հեռախոսն ապակողպելու կամ ձեր ինքնությունը հաստատելու համար (օրինակ՝ հավելվածներ մտնելիս կամ գնումներ հաստատելիս)</string>
     <string name="security_settings_face_enroll_finish_description_with_bp_full">"Այժմ կարող եք դեմքով ապակողպել ձեր հեռախոսը կամ հաստատել ձեր ինքնությունը, օր․՝ հավելվածներում մուտք գործելիս կամ գնումներ հաստատելիս։
@@ -293,13 +300,29 @@
 Դեմքով ապակողպումը լավագույնս աշխատում է լավ լուսավորության պայմաններում, և երբ դուք չեք կրում դիմակ կամ մուգ ակնոց։"</string>
     <string name="security_settings_face_enroll_finish_title">Հոյակապ է</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Միացնել հատուկ գործառույթները</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Դեմքով ապակողպման համար կարող է պահանջվել, որ գլուխն ավելի ուղիղ պահեք հեռախոսի առջև։</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Աչքերը պետք է բաց լինեն</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Դուք և ձեր երեխան ցանկացած պահի կարող եք ջնջել իր դեմքի նմուշը կամ անջատել դեմքով ապակողպումը սարքի կարգավորումներում։ Դեմքի նմուշները պահվում են հեռախոսում, մինչև ինքներդ ջնջեք դրանք։&lt;br&gt;&lt;br&gt;Իմացեք ավելին &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; էջում։"</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Դուք և երեխան եք կառավարում կարգավորումները</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Դուք ցանկացած պահի կարող եք ջնջել ձեր դեմքի նմուշը կամ անջատել դեմքով ապակողպումը սարքի կարգավորումներում։ Դեմքի նմուշները պահվում են սարքում մինչև ինքներդ ջնջեք դրանք։&lt;br&gt;&lt;br&gt;Իմացեք ավելին &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; էջում։"</string>
     <string name="security_settings_face_enroll_introduction_control_title">Ամեն ինչ դուք եք վերահսկում</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Դեմքով ապակողպումը ստեղծում է ձեր երեխայի դեմքի եզակի նմուշը՝ նրա ինքնությունը հաստատելու համար։ Կարգավորման ժամանակ դեմքի նմուշը ստեղծելու համար երեխան պետք է լուսանկարի իր դեմքը մի քանի անկյուններից։
+
+Երեխայի դեմքի նմուշը թարմացվում է դեմքով ապակողպման ընթացքում ստացված պատկերների հիման վրա։ Դեմքի նմուշը ստեղծելու ժամանակ արված լուսանկարները չեն պահվում, իսկ դեմքի նմուշը պահվում է միայն հեռախոսում։ Բոլոր մշակումները կատարվում են անմիջապես հեռախոսում։"</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Դեմքով ապակողպումը ստեղծում է ձեր դեմքի եզակի նմուշ՝ ձեր ինքնությունը հաստատելու համար։ Կարգավորման ժամանակ դեմքի նմուշը ստեղծելու համար դուք պետք է լուսանկարեք ձեր դեմքը մի քանի անկյուններից։
+
+Ձեր դեմքի նմուշը թարմացվում է դեմքով ապակողպման ընթացքում ստացված պատկերների հիման վրա։ Դեմքի նմուշը ստեղծելու ժամանակ արված լուսանկարները չեն պահվում, իսկ դեմքի նմուշը պահվում է միայն ձեր հեռախոսում։ Բոլոր մշակումները կատարվում են անմիջապես ձեր հեռախոսում։"</string>
     <string name="security_settings_face_enroll_introduction_how_title">Ինչպես է դա աշխատում</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Դեմքով ապակողպման միջոցով հեռախոսն ապակողպելու կամ ինքնությունը հաստատելու համար կարող է պահանջվել, որ ձեր երեխայի աչքերը բաց լինեն։ Դուք և ձեր երեխան ցանկացած ժամանակ կարող եք միացնել այս գործառույթը կարգավորումներում։</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Եթե ձեր երեխան սովորաբար ակնոց է կրում, կարող է չհանել այն կարգավորման ժամանակ։</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Երեխայի հեռախոսում ապակողպման հուսալի նախշը, PIN կոդը կամ գաղտնաբառը կարող է դեմքով ապակողպումից ավելի ապահով լինել</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Նայելով հեռախոսին՝ երեխան կարող է պատահաբար ապակողպել սարքը։ Երեխայի հեռախոսը կարող է ապակողպվել նրան շատ նման մեկ ուրիշի (օրինակ՝ հարազատ եղբոր կամ քրոջ) կողմից կամ եթե էկրանը նրա դեմքին է ուղղված։</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Դեմքով ապակողպման միջոցով հեռախոսն ապակողպելու կամ ինքնությունը հաստատելու համար կարող է պահանջվել, որ ձեր աչքերը բաց լինեն։ Դուք ցանկացած ժամանակ կարող եք միացնել այս գործառույթը կարգավորումներում։</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Օպտիկական կամ թույլ մգացված արևային ակնոցը չի խանգարի։</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Ձեր հեռախոսում ապակողպման հուսալի նախշը, PIN կոդը կամ գաղտնաբառը կարող է դեմքով ապակողպումից ավելի ապահով լինել</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Նայելով հեռախոսին՝ դուք կարող եք պատահաբար ապակողպել սարքը։ Ձեր հեռախոսը կարող է ապակողպվել ձեզ շատ նման մեկ ուրիշի (օրինակ՝ ձեր հարազատ եղբոր կամ քրոջ) կողմից կամ եթե էկրանը ձեր դեմքին է ուղղված։</string>
     <string name="security_settings_face_enroll_introduction_info_title">Հիշեք</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Օգտագործեք ձեր դեմքը՝ հեռախոսն ապակողպելու կամ ձեր ինքնությունը հաստատելու համար (օր․՝ հավելվածներ մտնելիս կամ գնումներ հաստատելիս)։</string>
     <string name="security_settings_face_enroll_introduction_title">Դեմքով ապակողպման կարգավորում</string>
     <string name="security_settings_face_enroll_next">Առաջ</string>
     <string name="security_settings_face_enroll_partial_message">Կարգավորումներում դուք կարող եք նորից կարգավորել դեմքով ապակողպումը։</string>
@@ -325,7 +348,9 @@
     <string name="security_settings_fingerprint_preference_summary_none">Հպեք` մատնահետքը կարգավորելու համար</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint-ը ստեղծում է ձեր մատնահետքի եզակի նմուշը՝ նույնականացման ժամանակ ձեզ ճանաչելու համար։ Կարգավորման ժամանակ նմուշը ստեղծելու համար պետք է սկանավորեք ձեր մատնահետքը տարբեր դիրքերից։</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Դուք ցանկացած ժամանակ կարող եք ջնջել ձեր մատնահետքի նմուշը կամ անջատել Pixel Imprint-ը Կարգավորումներում։ Մատնահետքի նմուշները պահվում են հեռախոսում, մինչև ինքներդ ջնջեք դրանք։</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint-ը ստեղծում է ձեր երեխայի մատնահետքի եզակի նմուշը՝ նույնականացման ժամանակ նրան ճանաչելու համար։ Կարգավորման ժամանակ նմուշը ստեղծելու համար նա պետք է լուսանկարի իր մատնահետքը տարբեր դիրքերից։</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Դուք և ձեր երեխան ցանկացած պահի կարող եք ջնջել իր մատնահետքի նմուշը կամ անջատել Pixel Imprint-ը սարքի կարգավորումներում։ Մատնահետքի նմուշները կպահվեն հեռախոսում, մինչև որ ջնջեք դրանք։</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Իմացեք ավելին Pixel-ի մատնահետքով ապակողպման մասին &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt; էջում։"</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint աշխատանքի համար</string>
     <string name="setup_suggestion_summary">Մնացել է ընդամենը մի քանի քայլ</string>
@@ -334,6 +359,7 @@
     <string name="smart_battery_a11y_expand_label">Ծավալել, Հարմարվող մարտկոց</string>
     <string name="smart_battery_footer">Մարտկոցի աշխատաժամանակը երկարացնելու համար «Հարմարվող մարտկոց» գործառույթը կարող է նվազեցնել արդյունավետությունը և ֆոնային գործողությունները։ Որոշ ծանուցումներ կարող են հետաձգվել։</string>
     <string name="smart_battery_manager_title">Հարմարվող մարտկոցի կարգավորումներ</string>
+    <string name="smart_battery_summary" product="default">Հարմարվող մարտկոցն օգտվում է հեռախոսի օգտագործման տվյալներից, որպեսզի շարունակաբար օպտիմալացնի հավելվածների կողմից մարտկոցի օգտագործումը։ Մարտկոցի աշխատաժամանակը երկարացնելու համար այն կարող է նվազեցնել սարքի արտադրողականությունը և ցուցադրել ծանուցումները հապահղումով։</string>
     <string name="smart_battery_title">Հարմարվող մարտկոց</string>
     <string name="software_update_can_be_updated_header">Ավելի լավը դարձրեք ձեր Pixel-ը</string>
     <string name="software_update_detail_indication_1_update_available">Հասանելի է 1 թարմացում</string>

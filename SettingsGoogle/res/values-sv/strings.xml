@@ -149,12 +149,15 @@ Nätfiske är ett försök att stjäla inloggningsuppgifter eller andra personli
     <string name="content_protection_preference_subpage_summary">Genomsökningen görs privat direkt på enheten. Appaktivitet kontrolleras för att upptäcka nätfiske och annat bedrägligt beteende. Om sådant upptäcks skickas viss appinformation till Google Play Protect för att bekräfta att det finns ett hot och varna appanvändare.</string>
     <string name="contextual_timeout_description">Stänger automatiskt av skärmen tidigt om du inte använder enheten</string>
     <string name="contextual_timeout_title">Självjusterande tidsgräns</string>
+    <string name="credentials_install_summary" product="default">Installera certifikat från lagringsenhet</string>
     <string name="debugging_data_title">Felsökningsdata</string>
     <string name="discover_tips_button">Upptäck tips</string>
     <string name="dock_summary_charging_phone">Ladda mobilen</string>
     <string name="double_twist_for_camera_mode_summary">Byt till och från selfieläget i Google Kamera genom att vrida snabbt två gånger när appen är öppen.</string>
     <string name="duration_less_than_one_minute">Mindre än 1 minut</string>
     <string name="enable_glanceable_hub_toggle">Hubbläge</string>
+    <string name="erase_external_storage" product="default">Radera USB-lagring</string>
+    <string name="erase_external_storage_description" product="default">Radera alla data på den interna USB-lagringsenheten, som musik och foton.</string>
     <string name="extreme_battery_saver_summary">Omfattar alla ändringar som anges ovan. Appar som inte är viktiga och deras aviseringar pausas också.</string>
     <string name="extreme_battery_saver_title">Effektivare batterisparläge</string>
     <string name="face_confirmation_hide_illustration_description">Nu kan du låsa upp telefonen med ditt ansikte när du tar upp den eller trycker på skärmen.</string>
@@ -228,6 +231,9 @@ Säkerhetskopierad data räknas inte in i ditt lagringsutrymme på Drive. Stora 
     <string name="limited_warranty_title">Begränsad garanti</string>
     <string name="lockscreen_show_weather_summary">Se aktuella väderförhållanden</string>
     <string name="lockscreen_show_weather_title">Visa väder</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Om du vill ta bort musik, bilder och annan användardata måste du rensa "<b>USB-lagringsenheten</b>.</string>
     <string name="my_device_info_account_preference_title">Google-konto</string>
     <string name="owner_info_settings_edit_text_hint">T.ex. Jonas Pixel.</string>
     <string name="permit_debugging_data">Tillåt åtkomst till felrapporter</string>
@@ -278,6 +284,7 @@ Vänd på telefonen om du vill testa."</string>
     <string name="security_dismiss_dialog_title">Vill du ignorera varningen?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Tryck för att ställa in</string>
     <string name="security_settings_face_enroll_education_message">Vrid på huvudet på nästa skärm så att ditt ansikte kan registreras ur olika vinklar</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Håll telefonen i ögonhöjd när du kommer till nästa skärm</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">Tidsgränsen för ansiktsregistrering har uppnåtts. Försök igen.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Konfigureringen av ansiktslås har nått tidsgränsen</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Nu kan du låsa upp telefonen eller verifiera din identitet med ditt ansikte, till exempel när du loggar in i appar eller godkänner ett köp</string>
@@ -292,13 +299,29 @@ Ansiktslås fungerar bäst när det finns tillräckligt med ljus och du inte har
 Ansiktslås fungerar bäst när det finns tillräckligt med ljus och du inte har munskydd eller mörka glasögon på dig."</string>
     <string name="security_settings_face_enroll_finish_title">Det ser bra ut!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Konfigurering vid nedsatt syn eller rörelseförmåga</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">När du använder ansiktslås kan du behöva ha huvudet mer rakt framför telefonen.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Du måste ha ögonen öppna</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Du och ditt barn kan radera ansiktsmodellen eller inaktivera ansiktslås när som helst i inställningarna. Ansiktsmodeller lagras på telefonen tills de raderas.&lt;br&gt;&lt;br&gt;Läs mer på &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Det är du och ditt barn som har kontrollen</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Du kan radera ansiktsmodellen eller inaktivera ansiktslås när som helst i inställningarna. Ansiktsmodeller lagras på telefonen tills du raderar dem.&lt;br&gt;&lt;br&gt;Läs mer på &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Du bestämmer själv</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Med ansiktslås skapas en unik modell av ditt barns ansikte så att barnet kan verifiera sin identitet. Ansiktsmodellen skapas under konfigureringen genom att bilder tas av ansiktet från olika vinklar.
+
+När barnet använder ansiktslås uppdateras ansiktsmodellen med hjälp av bilder. De bilder som används för att skapa ansiktsmodellen lagras inte, men ansiktsmodellen lagras säkert på telefonen och lämnar den aldrig. All behandling görs säkert på telefonen."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Med ansiktslås skapas en unik modell av ditt ansikte så att du kan verifiera din identitet. Ansiktsmodellen skapas under konfigureringen genom att bilder tas av ansiktet från olika vinklar.
+
+När du använder ansiktslås uppdateras ansiktsmodellen med hjälp av bilder. De bilder som används för att skapa ansiktsmodellen lagras inte, men ansiktsmodellen lagras säkert på telefonen och lämnar den aldrig. All behandling görs säkert på telefonen."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Så fungerar det</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Ditt barn kan behöva ha öppna ögon för att låsa upp telefonen eller verifiera sin identitet med ansiktslåset. Du och ditt barn kan när som helst aktivera alternativet i inställningarna.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Om ditt barn vanligen använder glasögon kan barnet ha dem på sig under konfigureringen.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Det kan vara mindre säkert att använda ditt barns ansikte för att låsa upp telefonen än att ha ett starkt mönster, en stark pinkod eller ett starkt lösenord</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Om ditt barn tittar på telefonen kan barnet oavsiktligt låsa upp den. Telefonen kanske kan låsas upp av någon som är mycket lik ditt barn, till exempel ett syskon, eller om någon håller upp den framför barnets ansikte.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Du kan behöva ha öppna ögon för att låsa upp telefonen eller verifiera din identitet med ansiktslåset. Du kan när som helst aktivera alternativet i inställningarna.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Glasögon eller solglasögon i en ljus ton är okej.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Att låsa upp telefonen med ansiktet kan vara mindre säkert än ett starkt mönster, en stark pinkod eller ett starkt lösenord</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Om du tittar på telefonen kan du oavsiktligt låsa upp den. Telefonen kanske kan låsas upp av någon som är mycket lik dig, till exempel ett syskon, eller om någon håller upp den framför ditt ansikte.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Kom ihåg</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Lås upp telefonen eller verifiera din identitet med ditt ansikte, till exempel när du loggar in i appar eller godkänner ett köp.</string>
     <string name="security_settings_face_enroll_introduction_title">Konfigurera ansiktslås</string>
     <string name="security_settings_face_enroll_next">Nästa</string>
     <string name="security_settings_face_enroll_partial_message">Du kan göra om konfigureringen av ansiktslås i inställningarna och få bättre prestanda</string>
@@ -324,7 +347,10 @@ Obs! Det går inte att låsa upp den här enheten med ett fingeravtryck. Kontakt
     <string name="security_settings_fingerprint_preference_summary_none">Tryck för att konfigurera fingeravtryck</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">"Med Pixel Imprint skapas en unik bildmodell av ditt fingeravtryck så att din  identitet kan verifieras. Fingeravtrycksmodellen skapas genom att flera bilder tas av fingeravtrycket i olika positioner."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">När du använder Pixel Imprint uppdateras fingeravtrycksmodellen med hjälp av bilder. De bilder som används för att skapa fingeravtrycksmodellen lagras aldrig, men fingeravtrycksmodellen lagras säkert på telefonen och lämnar den aldrig. All behandling görs säkert på telefonen.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Du kan radera fingeravtrycksmodellen eller inaktivera Pixel Imprint när som helst i inställningarna. Fingeravtrycksmodeller lagras på telefonen tills du raderar dem.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Med Pixel Imprint skapas en unik modell av ditt barns fingeravtryck så att barnet kan verifiera din identitet. Fingeravtrycksmodellen skapas under konfigureringen genom att bilder tas av fingeravtrycket i olika positioner.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Du och ditt barn kan radera fingeravtrycksmodellen eller inaktivera Pixel Imprint när som helst i inställningarna. Fingeravtrycksmodeller lagras på telefonen tills du raderar dem.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Läs mer om fingeravtryckslås för Pixel på &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint för jobbet</string>
     <string name="setup_suggestion_summary">Bara några steg till</string>
@@ -333,6 +359,7 @@ Obs! Det går inte att låsa upp den här enheten med ett fingeravtryck. Kontakt
     <string name="smart_battery_a11y_expand_label">Utöka, Smart batteri</string>
     <string name="smart_battery_footer">Med funktionen Smart batteri kan prestandan och bakgrundsaktiviteten begränsas i syfte att förlänga batteritiden. Vissa aviseringar kan fördröjas.</string>
     <string name="smart_battery_manager_title">Smarta batterifunktioner</string>
+    <string name="smart_battery_summary" product="default">Det smarta batteriet optimerar kontinuerligt apparnas batterianvändning baserat på din användning av telefonen. Prestandan kan begränsas och aviseringar försenas i syfte att förlänga batteritiden.</string>
     <string name="smart_battery_title">Smart batteri</string>
     <string name="software_update_can_be_updated_header">Gör din Pixel ännu bättre</string>
     <string name="software_update_detail_indication_1_update_available">Det finns en uppdatering</string>

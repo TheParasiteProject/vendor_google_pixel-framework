@@ -149,6 +149,7 @@
     <string name="content_protection_preference_subpage_summary">အယောင်ဆောင် ဖြားယောင်းခြင်း (သို့) အခြားလှည့်ဖြားသော အပြုအမူအတွက် အက်ပ်အသုံးပြုမှုကို စစ်ဆေးနေသည့် သင်၏စက်ပစ္စည်းတွင် စကင်ဖတ်ခြင်း သီးသန့်လုပ်ဆောင်သည်။ ၎င်းကို တွေ့ရှိပါက ခြိမ်းခြောက်မှုကို အတည်ပြုရန်နှင့် အက်ပ်အသုံးပြုသူများအား သတိပေးရန် Google Play Protect သို့ အက်ပ်အချက်အလက်အချို့ကို ပို့သည်။</string>
     <string name="contextual_timeout_description">သင့်စက်ကို သုံးမနေပါက ဖန်သားပြင်ကို စောပြီး အလိုအလျောက်ပိတ်သည်</string>
     <string name="contextual_timeout_title">အလိုက်သင့် အချိန်ကုန်သွားခြင်း</string>
+    <string name="credentials_install_summary" product="default">သိုလှောင်နေရာမှ အသိအမှတ်ပြုလက်မှတ်များကို ထည့်သွင်းရန်</string>
     <string name="dark_ui_text">"သင့်ဘက်ထရီသက်တမ်း ပိုမိုကြာရှည်စွာ ခံနိုင်ရန် 'အမှောင်နောက်ခံ' က အမည်းရောင်ကို နောက်ခံအဖြစ် သုံးသည်။ သင့်ဖန်သားပြင်ပိတ်သည်အထိ စောင့်ပြီးမှ အမှောင်နောက်ခံ စတင်သည်။"</string>
     <string name="debugging_data_title">အမှားရှာပြင်ခြင်း ဒေတာ</string>
     <string name="discover_tips_button">အကြံပြုချက်များ ရှာရန်</string>
@@ -156,6 +157,8 @@
     <string name="double_twist_for_camera_mode_summary">Google Camera တွင် ဆယ်လ်ဖီမုဒ်သို့ အဝင်အထွက်ကူးပြောင်းရန် အက်ပ်အတွင်းရှိနေစဉ် နှစ်ချက် လှည့်ပါ။</string>
     <string name="duration_less_than_one_minute">၁ မိနစ်အောက်</string>
     <string name="enable_glanceable_hub_toggle">ထိန်းချုပ်စင်တာမုဒ်</string>
+    <string name="erase_external_storage" product="default">USBသိုလှောင်ကိရိယာအား ဖျက်ခြင်း</string>
+    <string name="erase_external_storage_description" product="default">USBသိုလှောင်မှုထဲမှ သီချင်းနှင့် ဓါတ်ပုံကဲ့သို့ စက်တွင်းဒေတာအားလုံးအားဖျက်မည်</string>
     <string name="extreme_battery_saver_summary">အထက်ဖော်ပြပါ အပြောင်းအလဲအားလုံး ပါဝင်သည်။ မရှိမဖြစ်မဟုတ်သည့် အက်ပ်များနှင့် ၎င်းတို့၏ အကြောင်းကြားချက်များကိုလည်း ခဏရပ်ပေးသည်။</string>
     <string name="extreme_battery_saver_title">လွန်ကဲ ဘက်ထရီအားထိန်း</string>
     <string name="face_confirmation_hide_illustration_description">ဖုန်းကိုင်လိုက်ချိန် (သို့) ဖန်သားပြင်တို့လိုက်ချိန်တွင် ဖွင့်ရန် သင့်မျက်နှာကို သုံးနိုင်ပါပြီ။</string>
@@ -230,6 +233,9 @@
     <string name="limited_warranty_title">ကန့်သတ်အာမခံ</string>
     <string name="lockscreen_show_weather_summary">လက်ရှိမိုးလေဝသအခြေအနေများ ကြည့်ရန်</string>
     <string name="lockscreen_show_weather_title">မိုးလေဝသ ပြပါ</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+သီချင်း၊ ပုံများနှင့် အသုံးပြုသူ၏အခြားဒေတာများကို ရှင်းလင်းရန်အတွက်"<b>USB သိုလှောင်ကိရိယာ</b>အား ဖျက်ရန်လိုအပ်ပါသည်။</string>
     <string name="my_device_info_account_preference_title">Google Account</string>
     <string name="owner_info_settings_edit_text_hint">ဥပမာ- Joe ၏ Pixel</string>
     <string name="permit_debugging_data">ချွတ်ယွင်းမှုအစီရင်ခံစာ သုံးခွင့်ပြုရန်</string>
@@ -282,6 +288,7 @@
     <string name="security_settings_face_enroll_consent_introduction_title">‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ ကို ခွင့်ပြုရန်</string>
     <string name="security_settings_face_enroll_done">ပြီးပြီ</string>
     <string name="security_settings_face_enroll_education_message">နောက်စာမျက်နှာတွင် သင့်မျက်နှာ၏ ရှုထောင့်ပေါင်းစုံကို ရိုက်ယူရန် သင့်ဦးခေါင်းကို လှည့်ပါ</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">လာမည့်ဖန်သားပြင်တွင် သင့်ဖုန်းကို မျက်လုံးနှင့် တစ်တန်းတည်းထား၍ ကိုင်ပါ</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">မျက်နှာပြ လော့ခ်ဖွင့်ခြင်းထည့်သွင်းချိန် ကုန်သွားပါပြီ</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">အက်ပ်များသို့ လက်မှတ်ထိုးဝင်သောအခါ (သို့) ပစ္စည်းဝယ်ယူသောအခါ သင်ဖြစ်ကြောင်းအတည်ပြုရန် (သို့) သင့်ဖုန်းကိုဖွင့်ရန် သင့်မျက်နှာကို ယခုသုံးနိုင်ပါပြီ</string>
     <string name="security_settings_face_enroll_finish_description_with_bp_full">"အက်ပ်များသို့ လက်မှတ်ထိုးဝင်ခြင်း (သို့) ဝယ်ယူမှု အတည်ပြုခြင်း ကဲ့သို့သောအခါမျိုးတွင် သင်ဖြစ်ကြောင်းအတည်ပြုရန် (သို့) ဖုန်းလော့ခ်ဖွင့်ရန် သင့်မျက်နှာကို သုံးနိုင်ပါပြီ။
@@ -295,13 +302,29 @@
 အလင်းရောင်အလုံအလောက်ရပြီး နှာခေါင်းစည်း (သို့) မျက်မှန်အနက် တပ်မထားသောအခါ ‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ အကောင်းဆုံးအလုပ်လုပ်သည်။"</string>
     <string name="security_settings_face_enroll_finish_title">အဆင်ပြေပါသည်။</string>
     <string name="security_settings_face_enroll_introduction_accessibility">မျက်လုံးအားနည်း၊ ခေါင်းသိပ်မလှုပ်နိုင်သူအတွက်</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ အသုံးပြုသည့်အခါ သင့်ခေါင်းသည် ဖုန်းရှေ့တည့်တည့်တွင် ရှိရမည်။</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">မျက်လုံးများ ဖွင့်ထားရန် လိုအပ်သည်</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"သင်နှင့် သင့်ကလေးက ဆက်တင်များတွင် မျက်နှာနမူနာကို ဖျက်ခြင်း (သို့) ‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ ကို ပိတ်ခြင်းတို့ အချိန်မရွေး လုပ်နိုင်သည်။ မျက်နှာနမူနာများကို မဖျက်မချင်း ဖုန်းတွင်သိမ်းသည်။&lt;br&gt;&lt;br&gt;&lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; တွင် ပိုမိုလေ့လာနိုင်သည်။"</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">သင်နှင့် သင့်ကလေး၏ ထိန်းချုပ်မှုအောက်တွင် ရှိပါသည်</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"ဆက်တင်များတွင် မျက်နှာနမူနာကို ဖျက်ခြင်း (သို့) ‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ ကို ပိတ်ခြင်းတို့ အချိန်မရွေး လုပ်နိုင်သည်။ မျက်နှာနမူနာများကို သင်မဖျက်မချင်း ဖုန်းတွင် သိမ်းထားသည်။&lt;br&gt;&lt;br&gt;ပိုမိုလေ့လာရန်- &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;"</string>
     <string name="security_settings_face_enroll_introduction_control_title">သင့်ထိန်းချုပ်မှုအောက်တွင် ရှိပါသည်</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ က သင့်ကလေးကို သူဖြစ်ကြောင်းအတည်ပြုရန် သူ့မျက်နှာ၏ သီးခြားနမူနာကို ပြုလုပ်သည်။ စနစ်ထည့်သွင်းနေစဉ် ဤမျက်နှာနမူနာကို ပြုလုပ်ရန်အတွက် သင့်ကလေး၏မျက်နှာကို ရှုထောင့်အမျိုးမျိုးမှ ပုံများရိုက်ကူးမည်။
+
+သူက ‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ သုံးသောအခါ သူ၏မျက်နှာနမူနာကို အပ်ဒိတ်လုပ်ရန် ပုံများကို သုံးသည်။ သူ၏မျက်နှာနမူနာပြုလုပ်ရန် သုံးထားသောပုံများကို မသိမ်းပါ။ သို့သော် မျက်နှာနမူနာကို ဖုန်းတွင် လုံခြုံစွာသိမ်းပြီး ဖုန်းအတွင်း၌သာ ထားပါသည်။ လုပ်ဆောင်ချက်အားလုံး ဖုန်းတွင် လုံခြုံစွာ ဖြစ်ပေါ်သည်။"</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ က သင်ဖြစ်ကြောင်းအတည်ပြုရန် သင့်မျက်နှာ၏ သီးခြားနမူနာကို ပြုလုပ်သည်။ စနစ်ထည့်သွင်းနေစဉ် ဤမျက်နှာနမူနာကို ပြုလုပ်ရန်အတွက် သင့်မျက်နှာကို ရှုထောင့်အမျိုးမျိုးမှ ပုံများရိုက်ကူးရပါမည်။
+
+‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ သုံးသောအခါ သင့်မျက်နှာနမူနာကို အပ်ဒိတ်လုပ်ရန် ပုံများကို သုံးသည်။ သင်၏မျက်နှာနမူနာပြုလုပ်ရန် သုံးသောပုံများကို မသိမ်းသော်လည်း မျက်နှာနမူနာကိုဖုန်းတွင် လုံခြုံစွာသိမ်းပြီး ဖုန်းတွင်သာ ထားသည်။ လုပ်ဆောင်ချက်အားလုံး သင့်ဖုန်းတွင် လုံခြုံစွာ ဖြစ်ပေါ်သည်။"</string>
     <string name="security_settings_face_enroll_introduction_how_title">အလုပ်လုပ်ပုံ</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">ဖုန်းကိုဖွင့်ရန် (သို့) သင့်ကလေးဖြစ်ကြောင်း အတည်ပြုရန်အတွက် သူ၏မျက်လုံးများဖွင့်ရန် ‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ က သတ်မှတ်နိုင်သည်။ သင်နှင့် သင့်ကလေးက ဤနည်းလမ်းကို ဆက်တင်များတွင် အချိန်မရွေးဖွင့်နိုင်သည်။</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">သင့်ကလေးသည် မျက်မှန်တပ်လေ့ရှိသူဖြစ်လျှင် စနစ်ထည့်သွင်းစဉ်တွင် မျက်မှန်တပ်ထားနိုင်သည်။</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">သင့်ကလေး၏ မျက်နှာသုံး၍ ဖုန်းကိုလော့ခ်ဖွင့်ခြင်းသည် ခိုင်မာသည့်ပုံဖော်ခြင်း၊ ပင်နံပါတ် (သို့) စကားဝှက်လောက် မလုံခြုံနိုင်ပါ</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">ဖုန်းကို ကြည့်မိရုံဖြင့် မရည်ရွယ်ဘဲ ပွင့်သွားနိုင်သည်။ အမြွှာကဲ့သို့ သူနှင့်အလွန်တူသူကလည်း သူ့ဖုန်းကို လော့ခ်ဖွင့်နိုင်သည် (သို့) တစ်စုံတစ်ယောက်က ဖုန်းကို သူ့မျက်နှာရှေ့ကိုင်ထားလျှင် ပွင့်နိုင်သည်။</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">ဖုန်းကိုဖွင့်ရန် (သို့) သင်ဖြစ်ကြောင်း အတည်ပြုရန်အတွက် သင်၏မျက်လုံးများဖွင့်ရန် ‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ က သတ်မှတ်နိုင်သည်။ ဤနည်းလမ်းကို ဆက်တင်များတွင် အချိန်မရွေးဖွင့်နိုင်သည်။</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">မျက်မှန် (သို့) အရောင်အနည်းငယ်ပါသည့် နေကာမျက်မှန်များ သုံးနိုင်သည်။</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">သင့်မျက်နှာသုံး၍ ဖုန်းကိုဖွင့်ခြင်းသည် ခိုင်မာသည့်ပုံဖော်ခြင်း၊ ပင်နံပါတ် (သို့) စကားဝှက်လောက် မလုံခြုံနိုင်ပါ</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">ဖုန်းကို ကြည့်မိရုံဖြင့် မရည်ရွယ်ဘဲ ပွင့်သွားနိုင်သည်။ အမြွှာကဲ့သို့ သင်နှင့်အလွန်တူသူကလည်း သင့်ဖုန်းကိုဖွင့်နိုင်သည် (သို့) တစ်စုံတစ်ယောက်က စက်ပစ္စည်းကို သင့်မျက်နှာရှေ့ကိုင်ထားလျှင် ပွင့်နိုင်သည်။</string>
     <string name="security_settings_face_enroll_introduction_info_title">သတိပြုရန်</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">အက်ပ်များသို့ လက်မှတ်ထိုးဝင်ချိန် (သို့) ဝယ်ယူမှုအတည်ပြုချိန်များတွင် သင်ဖြစ်ကြောင်းအတည်ပြုရန် (သို့) သင့်ဖုန်းကိုဖွင့်ရန် သင့်မျက်နှာကို သုံးနိုင်သည်။</string>
     <string name="security_settings_face_enroll_introduction_title">မျက်နှာပြ လော့ခ်ဖွင့်ခြင်းစနစ် ထည့်ရန်</string>
     <string name="security_settings_face_enroll_next">ရှေ့သို့</string>
     <string name="security_settings_face_enroll_partial_message">စွမ်းဆောင်ရည် ပိုမိုကောင်းမွန်စေရန် မျက်နှာပြ လော့ခ်ဖွင့်ခြင်းကို ဆက်တင်များတွင် ထပ်မံထည့်သွင်းနိုင်ပါသည်</string>
@@ -327,7 +350,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">လက်ဗွေစနစ် သတ်မှတ်ရန် တို့ပါ</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint က သင်ဖြစ်ကြောင်း အတည်ပြုရန် သင့်လက်ဗွေ၏ သီးခြားနမူနာတစ်ခုကို ပြုလုပ်သည်။ စနစ်ထည့်သွင်းနေစဉ် ဤလက်ဗွေနမူနာကို ပြုလုပ်ရန်အတွက် သင့်လက်ဗွေကို ရှုထောင့်အမျိုးမျိုးမှ ပုံများရိုက်ကူးမည်။</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Pixel Imprint သုံးသောအခါ သင်၏လက်ဗွေနမူနာ အပ်ဒိတ်လုပ်ရန် ပုံများကို သုံးသည်။ သင်၏လက်ဗွေနမူနာပြုလုပ်ရန် သုံးထားသောပုံများကို မည်သည့်အခါမှ မသိမ်းပါ။ သို့သော် လက်ဗွေနမူနာကို သင့်ဖုန်းတွင် လုံခြုံစွာသိမ်းပြီး ဖုန်းအတွင်း၌သာ ထားပါသည်။ လုပ်ဆောင်ချက်အားလုံး သင့်ဖုန်းတွင် လုံခြုံစွာ ဖြစ်ပေါ်သည်။</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">ဆက်တင်များတွင် သင့်လက်ဗွေနမူနာကို ဖျက်ခြင်း (သို့) Pixel Imprint ကို ပိတ်ခြင်းတို့ အချိန်မရွေး လုပ်နိုင်သည်။ လက်ဗွေနမူနာများကို သင်မဖျက်မချင်း ဖုန်းတွင်သိမ်းသည်။</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint က သင့်ကလေးကို သူဖြစ်ကြောင်း အတည်ပြုရန်အတွက် သူ့လက်ဗွေ၏ သီးခြားနမူနာတစ်ခုကို ပြုလုပ်သည်။ စနစ်ထည့်သွင်းနေစဉ် ဤလက်ဗွေနမူနာကို ပြုလုပ်ရန်အတွက် သူ့လက်ဗွေကို ရှုထောင့်အမျိုးမျိုးမှ ပုံများရိုက်ကူးမည်။</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">သူက Pixel Imprint သုံးသောအခါ သူ၏လက်ဗွေနမူနာ အပ်ဒိတ်လုပ်ရန် ပုံများကို သုံးသည်။ သင့်ကလေး၏ လက်ဗွေနမူနာပြုလုပ်ရန် သုံးထားသောပုံများကို မည်သည့်အခါမှ မသိမ်းပါ။ သို့သော် လက်ဗွေနမူနာကို ဖုန်းတွင် လုံခြုံစွာသိမ်းပြီး ဖုန်းအတွင်း၌သာ ထားပါသည်။ လုပ်ဆောင်ချက်အားလုံး ဖုန်းတွင် လုံခြုံစွာ ဖြစ်ပေါ်သည်။</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">သင်နှင့် သင့်ကလေးက ဆက်တင်များတွင် လက်ဗွေနမူနာကို ဖျက်ခြင်း (သို့) Pixel Imprint ကို ပိတ်ခြင်းတို့ အချိန်မရွေး လုပ်နိုင်သည်။ လက်ဗွေနမူနာများကို မဖျက်မချင်း ဖုန်းတွင် သိမ်းထားသည်။</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Pixel လက်ဗွေသုံး လော့ခ်ဖွင့်ခြင်းအကြောင်း ဤတွင်ပိုမိုလေ့လာနိုင်သည်- &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;"</string>
     <string name="security_settings_work_fingerprint_preference_title">အလုပ်အတွက် Pixel Imprint</string>
     <string name="setup_suggestion_summary">နောက်ထပ်အဆင့်အနည်းငယ်သာ ကျန်သည်</string>
@@ -336,6 +363,7 @@
     <string name="smart_battery_a11y_expand_label">ချဲ့ထားသည်၊ အလိုက်အထိုက် ဘက်ထရီအားထိန်း</string>
     <string name="smart_battery_footer">ဘက်ထရီသက်တမ်း ပိုရှည်စေရန် ‘အလိုက်အထိုက် ဘက်ထရီအားထိန်း’ က စွမ်းဆောင်ရည်နှင့် နောက်ခံလုပ်ဆောင်ချက်ကို လျှော့ချနိုင်သည်။ အချို့အကြောင်းကြားချက်များ ကြန့်ကြာနိုင်ပါသည်။</string>
     <string name="smart_battery_manager_title">အလိုက်သင့် သတ်မှတ်ချက်များ</string>
+    <string name="smart_battery_summary" product="default">‘အလိုက်အထိုက် ဘက်ထရီအားထိန်း’ သည် အက်ပ်များ ဘက်ထရီအသုံးပြုပုံ စဉ်ဆက်မပြတ်ပိုကောင်းအောင်လုပ်ရန် သင့်ဖုန်းအသုံးပြုမှုမှ လေ့လာသည်။ ဘက်ထရီ သက်တမ်းရှည်စေရန် ၎င်းသည် စွမ်းဆောင်ရည်ကို လျှော့ချပြီး အကြောင်းကြားချက်များကို ရွှေ့ဆိုင်းနိုင်သည်။</string>
     <string name="smart_battery_title">အလိုက်အထိုက် ဘက်ထရီအားထိန်း</string>
     <string name="software_update_can_be_updated_header">သင့် Pixel ပိုကောင်းအောင်လုပ်ခြင်း</string>
     <string name="software_update_detail_indication_1_update_available">အပ်ဒိတ် ၁ ခု ရနိုင်သည်</string>

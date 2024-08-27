@@ -149,6 +149,7 @@
     <string name="content_protection_preference_subpage_summary">ஸ்கேனிங் தனிப்பட்ட முறையில் உங்கள் சாதனத்திலேயே மேற்கொள்ளப்படும். ஃபிஷிங் அல்லது பிற ஏமாற்றுச் செயலுக்காக ஆப்ஸ் உபயோகம் சரிபார்க்கப்படும். அப்படிக் கண்டறியப்பட்டால், அபாயத்தை உறுதிசெய்யவும் ஆப்ஸை உபயோகிக்கும் பயனர்களை எச்சரிக்கவும் ஆப்ஸின் சில தகவல்கள் Google Play Protectடிற்கு அனுப்பப்படும்.</string>
     <string name="contextual_timeout_description">நீங்கள் சாதனத்தைப் பயன்படுத்தாதபோது அதன் திரை தானாகவே விரைவாக முடக்கப்படும்</string>
     <string name="contextual_timeout_title">அடாப்டிவ் அணைவு நேரம்</string>
+    <string name="credentials_install_summary" product="default">சேமிப்பிடத்திலிருந்து சான்றிதழ்களை நிறுவலாம்</string>
     <string name="dark_ui_text">உங்கள் பேட்டரி நீண்ட நேரம் நீடித்திருக்க, கருப்பு நிறப் பின்னணியை டார்க் தீம் பயன்படுத்துகிறது. உங்கள் திரை ஆஃப் ஆகும் வரை டார்க் தீம் ஆனில் இருக்குமாறு அமைக்கப்பட்டிருக்கும்.</string>
     <string name="debugging_data_title">பிழைதிருத்தத் தரவு</string>
     <string name="discover_tips_button">உதவிக்குறிப்புகளைக் கண்டறி</string>
@@ -156,6 +157,8 @@
     <string name="double_twist_for_camera_mode_summary">Google கேமராவின் செல்ஃபி பயன்முறையை இயக்க மற்றும் முடக்க, ஆப்ஸில் இருக்கும் போது இருமுறை திருப்பவும்.</string>
     <string name="duration_less_than_one_minute">ஒரு நிமிடத்திற்கும் குறைவு</string>
     <string name="enable_glanceable_hub_toggle">ஹப் பயன்முறை</string>
+    <string name="erase_external_storage" product="default">USB சேமிப்பிடத்தை அழி</string>
+    <string name="erase_external_storage_description" product="default">இசை அல்லது படங்கள் போன்று அக USB சேமிப்பிடத்தில் உள்ள எல்லா தரவையும் அழி</string>
     <string name="extreme_battery_saver_summary">மேலே பட்டியலிடப்பட்டுள்ள அனைத்து மாற்றங்களும் அடங்கும். அத்துடன், அத்தியாவசியமற்ற ஆப்ஸையும் அவற்றின் அறிவிப்புகளையும் இடைநிறுத்தும்.</string>
     <string name="extreme_battery_saver_title">மேம்பட்ட பேட்டரி சேமிப்பு</string>
     <string name="face_confirmation_hide_illustration_description">இப்போது மொபைலைக் கையில் எடுக்கும்போதோ அதன் திரையைத் தட்டும்போதோ உங்கள் முகத்தைக் காட்டி அன்லாக் செய்யலாம்.</string>
@@ -230,6 +233,9 @@
     <string name="limited_warranty_title">வரம்பிற்குட்பட்ட உத்திரவாதம்</string>
     <string name="lockscreen_show_weather_summary">தற்போதைய வானிலை நிலவரங்களைப் பாருங்கள்</string>
     <string name="lockscreen_show_weather_title">வானிலையைக் காட்டு</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+இசை, படங்கள் மற்றும் பிற பயனர் தரவை அழிக்க "<b>USB சேமிப்பகத்தில்</b> உள்ளவை அழிக்கப்பட வேண்டும்.</string>
     <string name="my_device_info_account_preference_title">Google கணக்கு</string>
     <string name="owner_info_settings_edit_text_hint">எ.கா., வித்யாவின் Pixel.</string>
     <string name="permit_debugging_data">பிழை அறிக்கை அணுகலை வழங்குதல்</string>
@@ -280,6 +286,7 @@
     <string name="security_dismiss_dialog_title">இந்த எச்சரிக்கையை நிராகரிக்கவா?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">அமைக்க தட்டவும்</string>
     <string name="security_settings_face_enroll_education_message">அடுத்த திரையில் உங்கள் முகத்தை அனைத்துக் கோணங்களிலும் படமெடுக்க தலையை மெதுவாகத் திருப்பவும்</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">அடுத்த திரையில், மொபைலைக் கண்களுக்கு நேராகப் பிடிக்கவும்</string>
     <string name="security_settings_face_enroll_error_generic_dialog_message">முகத்தைப் பதிவுசெய்ய இயலவில்லை.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">முகத்தைப் பதிவுசெய்தலுக்கான நேர வரம்பை அடைந்துவிட்டீர்கள். மீண்டும் முயல்க.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">"'முகம் காட்டி திறத்தல்' அமைவுக்கான நேரம் முடிந்தது"</string>
@@ -295,13 +302,29 @@
 மாஸ்க்கோ அடர் நிறக் கண்ணாடியோ அணியாமல் போதுமான வெளிச்சத்தில் இருந்தால் முகம் காட்டித் திறத்தல் அம்சம் சிறப்பாகச் செயல்படும்."</string>
     <string name="security_settings_face_enroll_finish_title">அற்புதம்!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">பார்வைக் குறைபாடு/தலையை அசைக்க இயலாமைக்கு ஏற்ப அமை</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">முகம் காட்டித் திறத்தல் அம்சத்தைப் பயன்படுத்தும்போது உங்கள் முகத்தை மொபைலுக்கு முன் நேராக வைக்க வேண்டியிருக்கும்.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">கண்கள் திறந்திருக்க வேண்டும்</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"அமைப்புகளில் எப்போது வேண்டுமானாலும் உங்கள் பிள்ளையின் முகத் தோற்றப் பதிவை நீங்களும் அவரும் நீக்கலாம் அல்லது முகம் காட்டித் திறத்தல் அம்சத்தை முடக்கலாம். முகத் தோற்றப் பதிவுகள் நீக்கப்படும் வரை அவை மொபைலிலேயே சேமிக்கப்பட்டிருக்கும்.&lt;br&gt;&lt;br&gt;மேலும் அறிந்துகொள்ள &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; இணைப்பிற்குச் செல்லுங்கள்."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">நீங்களும் உங்கள் பிள்ளையும் கட்டுப்பாட்டைக் கொண்டிருப்பீர்கள்</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"அமைப்புகளில் எப்போது வேண்டுமானாலும் உங்கள் முகத் தோற்றப் பதிவை நீங்கள் நீக்கலாம் அல்லது முகம் காட்டித் திறத்தல் அம்சத்தை முடக்கலாம். முகத் தோற்றப் பதிவுகளை நீங்கள் நீக்கும் வரை அவை மொபைலிலேயே சேமிக்கப்பட்டிருக்கும்.&lt;br&gt;&lt;br&gt;மேலும் அறிந்துகொள்ள &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; இணைப்பிற்குச் செல்லுங்கள்."</string>
     <string name="security_settings_face_enroll_introduction_control_title">முழுமையான கட்டுப்பாட்டைப் பெற்றுள்ளீர்கள்</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"உங்கள் பிள்ளைதான் என்பதை உறுதிப்படுத்த, முகம் காட்டித் திறத்தல் அம்சம் அவரின் தனித்துவமான முகத் தோற்றப் பதிவை உருவாக்கும். அமைவின்போது இந்த முகத் தோற்றப் பதிவை உருவாக்க, உங்கள் பிள்ளை தனது முகத்தை வெவ்வேறு கோணங்களில் படமெடுப்பார்.
+
+முகம் காட்டித் திறத்தல் அம்சத்தைப் பயன்படுத்தும்போது அவரின் முகத் தோற்றப் பதிவைப் புதுப்பிப்பதற்கு அந்தப் படங்கள் பயன்படுத்தப்படும். முகத் தோற்றப் பதிவை உருவாக்கப் பயன்படுத்தப்படும் படங்கள் சேமிக்கப்படாது. ஆனால் முகத் தோற்றப் பதிவு உங்கள் மொபைலில் பாதுகாப்பாகச் சேமிக்கப்படும், அது ஒருபோதும் பகிரப்படாது. செயலாக்கம் முழுவதும் மொபைலிலேயே பாதுகாப்பாக நடைபெறும்."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"நீங்கள்தான் என்பதை உறுதிப்படுத்த, முகம் காட்டித் திறத்தல் அம்சம் உங்கள் முகத்தின் தனித்துவமான பதிவை உருவாக்கும். அமைவின்போது இந்த முகத் தோற்றப் பதிவை உருவாக்க, பல்வேறு கோணங்களில் உங்கள் முகத்தைப் படமெடுப்பீர்கள்.
+
+முகம் காட்டித் திறத்தல் அம்சத்தைப் பயன்படுத்தும்போது முகத் தோற்றப் பதிவைப் புதுப்பிப்பதற்கு அந்தப் படங்கள் பயன்படுத்தப்படும். முகத் தோற்றப் பதிவை உருவாக்கப் பயன்படுத்தப்படும் படங்கள் சேமிக்கப்படாது. ஆனால் முகத் தோற்றப் பதிவு உங்கள் மொபைலில் பாதுகாப்பாகச் சேமிக்கப்படும், அது ஒருபோதும் பகிரப்படாது. செயலாக்கம் முழுவதும் உங்கள் மொபைலிலேயே பாதுகாப்பாக நடைபெறும்."</string>
     <string name="security_settings_face_enroll_introduction_how_title">இது எவ்வாறு வேலை செய்கிறது?</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">முகம் காட்டித் திறத்தல் அம்சம் மூலம் மொபைலை அன்லாக் செய்யவோ உங்கள் பிள்ளையின் அடையாளத்தைச் சரிபார்க்கவோ அவர் தனது கண்களைத் திறந்த நிலையில் வைக்க வேண்டியிருக்கலாம். அமைப்புகளில் எப்போது வேண்டுமானாலும் நீங்களும் உங்கள் பிள்ளையும் இந்த விருப்பத்தை இயக்கலாம்.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">உங்கள் பிள்ளை வழக்கமாகக் கண்ணாடி அணிபவராக இருந்தால் அமைவின்போது அதை அணிந்துகொள்ளலாம்.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">உங்கள் பிள்ளையின் மொபைலை அன்லாக் செய்ய அவரின் முகத்தைப் பயன்படுத்துவது வலுவான பேட்டர்ன், பின் (PIN) அல்லது கடவுச்சொல்லைப் பயன்படுத்துவதைவிட பாதுகாப்பு குறைவானதாக இருக்கலாம்</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">தற்செயலாக மொபைலைப் பார்க்கும்போதும் அது அன்லாக் ஆகிவிடலாம். மேலும் உங்கள் பிள்ளையின் சாயலில் இருப்பவரோ (எ.கா. ஒரே தோற்றமுடைய உடன்பிறந்தவர்) வேறொருவர் உங்கள் பிள்ளையின் முகத்திற்கு நேராக மொபைலைக் காட்டியோ அதை அன்லாக் செய்துவிடலாம்.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">முகம் காட்டித் திறத்தல் அம்சம் மூலம் மொபைலை அன்லாக் செய்யவோ உங்கள் அடையாளத்தைச் சரிபார்க்கவோ உங்களின் கண்களைத் திறந்த நிலையில் வைக்க வேண்டியிருக்கலாம். அமைப்புகளில் இந்த விருப்பத்தை நீங்கள் எப்போது வேண்டுமானாலும் இயக்கிக்கொள்ளலாம்.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">கண்கண்ணாடி/மென்னிறமான சன்கிளாஸ் அணிந்திருப்பது பிரச்சனையில்லை</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">மொபைலை அன்லாக் செய்ய முகத்தைப் பயன்படுத்துவது வலுவான பேட்டர்ன், பின் (PIN), கடவுச்சொல் போன்றவற்றைப் பயன்படுத்துவதைவிட பாதுகாப்பு குறைவானதாக இருக்கலாம்</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">தற்செயலாக மொபைலைப் பார்க்கும்போதும் அது அன்லாக் ஆகிவிடலாம். மேலும் உங்கள் சாயலில் இருப்பவரோ (எ.கா. ஒரே தோற்றமுடைய உடன்பிறந்தவர்) வேறொருவர் உங்கள் முகத்திற்கு நேராக மொபைலைக் காட்டியோ அதை அன்லாக் செய்துவிடலாம்.</string>
     <string name="security_settings_face_enroll_introduction_info_title">கவனத்திற்கு</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">உங்கள் முகத்தைக் காட்டி மொபைலை அன்லாக் செய்யலாம் அல்லது ஆப்ஸில் உள்நுழைதல், பர்ச்சேஸை அங்கீகரித்தல் போன்ற செயல்பாடுகளின்போது அதைச் செய்வது நீங்கள்தான் என்பதை உறுதிப்படுத்தலாம்.</string>
     <string name="security_settings_face_enroll_introduction_title">‘முகம் காட்டித் திறத்தலை’ அமைத்தல்</string>
     <string name="security_settings_face_enroll_next">அடுத்து</string>
     <string name="security_settings_face_enroll_partial_message">"செயல்திறனை மேம்படுத்த, அமைப்புகளில் 'முகம் காட்டித் திறத்தல்' அம்சத்தை மீண்டும் அமைக்கலாம்"</string>
@@ -327,7 +350,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">கைரேகையை அமைக்க தட்டவும்</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">இது நீங்கள்தான் என்பதை உறுதிப்படுத்த, உங்கள் கைரேகையின் தனித்துவமான பதிவை Pixel Imprint அம்சம் உருவாக்கிடும். அமைவின்போது இந்தக் கைரேகைப் பதிவை உருவாக்க, வெவ்வேறு நிலைகளில் உங்கள் கைரேகையைப் படமெடுப்பீர்கள்.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Pixel Imprint அம்சத்தைப் பயன்படுத்தும்போது உங்கள் கைரேகைப் பதிவைப் புதுப்பிப்பதற்கு அந்தப் படங்கள் பயன்படுத்தப்படும். கைரேகைப் பதிவை உருவாக்கப் பயன்படுத்தப்படும் படங்கள் ஒருபோதும் சேமிக்கப்படாது. ஆனால் கைரேகைப் பதிவு உங்கள் மொபைலில் பாதுகாப்பாகச் சேமிக்கப்படும், அது ஒருபோதும் பகிரப்படாது. செயலாக்கம் முழுவதும் உங்கள் மொபைலிலேயே பாதுகாப்பாக நடைபெறும்.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">அமைப்புகளில் எப்போது வேண்டுமானாலும் உங்கள் கைரேகைப் பதிவை நீங்கள் நீக்கிக்கொள்ளலாம் அல்லது Pixel Imprint அம்சத்தை முடக்கிக்கொள்ளலாம். கைரேகைப் பதிவுகளை நீங்கள் நீக்கும் வரை அவை மொபைலிலேயே சேமிக்கப்பட்டிருக்கும்.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">உங்கள் பிள்ளைதான் என்பதை உறுதிப்படுத்த அவரது கைரேகையின் தனித்துவமான பதிவை Pixel Imprint அம்சம் உருவாக்கிடும். அமைவின்போது இந்தக் கைரேகைப் பதிவை உருவாக்க, அவர் தனது கைரேகையை வெவ்வேறு நிலைகளில் படமெடுப்பார்.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">Pixel Imprint அம்சத்தை அவர் பயன்படுத்தும்போது அவரின் கைரேகைப் பதிவைப் புதுப்பிப்பதற்கு அந்தப் படங்கள் பயன்படுத்தப்படும். உங்கள் பிள்ளையின் கைரேகைப் பதிவை உருவாக்குவதற்குப் பயன்படுத்தப்படும் படங்கள் ஒருபோதும் சேமிக்கப்படாது. ஆனால் கைரேகைப் பதிவு மொபைலில் பாதுகாப்பாகச் சேமிக்கப்படும், அது ஒருபோதும் பகிரப்படாது. செயலாக்கம் முழுவதும் மொபைலிலேயே பாதுகாப்பாக நடைபெறும்.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">அமைப்புகளில் எப்போது வேண்டுமானாலும் உங்கள் பிள்ளையின் கைரேகைப் பதிவை நீங்களும் அவரும் நீக்கலாம் அல்லது Pixel Imprint அம்சத்தை முடக்கலாம். நீக்கப்படும் வரை கைரேகைப் பதிவுகள் மொபைலிலேயே சேமிக்கப்பட்டிருக்கும்.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Pixel சாதனத்தின் ‘கைரேகை அன்லாக்’ அம்சம் குறித்து மேலும் அறிய &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt; என்ற இணைப்பிற்குச் செல்லுங்கள்."</string>
     <string name="security_settings_work_fingerprint_preference_title">பணிக் கணக்குக்கான Pixel Imprint</string>
     <string name="setup_suggestion_summary">இன்னும் சில படிகளே உள்ளன</string>
@@ -336,6 +363,7 @@
     <string name="smart_battery_a11y_expand_label">அடாப்டிவ் பேட்டரியை விரிவாக்கும்</string>
     <string name="smart_battery_footer">பேட்டரி ஆயுளை நீட்டிக்க, செயல்திறனையும் பின்னணிச் செயல்பாட்டையும் சூழலுக்கேற்ற பேட்டரி குறைக்கக்கூடும். சில அறிவிப்புகள் தாமதமாகலாம்.</string>
     <string name="smart_battery_manager_title">சூழலுக்கேற்ற விருப்பத்தேர்வுகள்</string>
+    <string name="smart_battery_summary" product="default">பேட்டரியை ஆப்ஸ் பயன்படுத்தும் விதத்தைத் தொடர்ந்து மேம்படுத்த, உங்கள் மொபைல் உபயோகத்தில் இருந்து அடாப்டிவ் பேட்டரி கற்றுக்கொள்கிறது. பேட்டரி ஆயுளை நீட்டிக்க, இது செயல்திறனைக் குறைத்து அறிவிப்புகளைத் தாமதப்படுத்தலாம்.</string>
     <string name="smart_battery_title">அடாப்டிவ் பேட்டரி</string>
     <string name="software_update_can_be_updated_header">உங்கள் Pixelலை மேலும் சிறப்பாக்குங்கள்</string>
     <string name="software_update_detail_indication_1_update_available">1 புதுப்பிப்பு உள்ளது</string>

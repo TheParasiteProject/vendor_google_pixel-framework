@@ -150,6 +150,7 @@
     <string name="content_protection_preference_subpage_summary">ফিশ্বিং বা অন্য প্ৰতাৰণামূলক আচৰণৰ বাবে এপৰ কাৰ্যকলাপ পৰীক্ষা কৰি থাকিবলৈ আপোনাৰ ডিভাইচত ব্যক্তিগতভাৱে স্কেনিং চলি থাকে। যদি এইটো ধৰা পৰে, ভাবুকিটো নিশ্চিত কৰিবলৈ আৰু এপৰ ব্যৱহাৰকাৰীসকলক সতৰ্ক কৰিবলৈ কিছুমান এপৰ তথ্য Google Play Protectলৈ প্ৰেৰণ কৰা হয়।</string>
     <string name="contextual_timeout_description">যদি আপুনি আপোনাৰ ডিভাইচ ব্যৱহাৰ কৰা নাই তেন্তে স্বয়ংক্ৰিয়ভাৱে আপোনাৰ স্ক্ৰীন আগতীয়াকৈ বন্ধ কৰে</string>
     <string name="contextual_timeout_title">অভিযোজিত সময় উকলা</string>
+    <string name="credentials_install_summary" product="default">ষ্ট’ৰেজৰ পৰা প্ৰমাণপত্ৰ ইনষ্টল কৰক</string>
     <string name="dark_ui_text">আপোনাৰ বেটাৰীটোত চাৰ্জ অধিক সময়ৰ বাবে ৰখাত সহায় কৰিবলৈ গাঢ় ৰঙৰ থীমে এখন ক’লা ৰঙৰ পটভূমি ব্যৱহাৰ কৰে। গাঢ় ৰঙৰ থীমে আপোনাৰ স্ক্রীনখন অফ হোৱালৈ অপেক্ষা কৰিবলগীয়া সময়সূচী নিৰ্ধাৰণ কৰে।</string>
     <string name="debugging_data_title">ডেটা ডিবাগ কৰা</string>
     <string name="discover_tips_button">পৰামৰ্শ বিচাৰি পাওক</string>
@@ -157,6 +158,8 @@
     <string name="double_twist_for_camera_mode_summary">"Google Cameraত ছেল্ফী ম'ড খুলিবলৈ বা বন্ধ কৰিবলৈ আপুনি এপ্‌ ব্যৱহাৰ কৰাৰ সময়ত কেমেৰাটো দুবাৰ ঘূৰাওক।"</string>
     <string name="duration_less_than_one_minute">১ মিনিটতকৈ কম</string>
     <string name="enable_glanceable_hub_toggle">হাব ম’ড</string>
+    <string name="erase_external_storage" product="default">ইউএছবি ষ্ট’ৰেজ মচক</string>
+    <string name="erase_external_storage_description" product="default">সংগীত, ফট’ আদিকে ধৰি আভ্যন্তৰীণ ইউএছবি ষ্ট’ৰেজত থকা আটাইখিনি ডেটা মচক</string>
     <string name="extreme_battery_saver_summary">ওপৰত সূচীবদ্ধ কৰা আটাইবোৰ সালসলনি অন্তৰ্ভুক্ত কৰে। অত্যাৱশ্যকীয় নোহোৱা এপ্‌ আৰু সেইবোৰৰ জাননীও পজ কৰে।</string>
     <string name="extreme_battery_saver_title">চৰম বেটাৰী সঞ্চয়কাৰী</string>
     <string name="face_confirmation_hide_illustration_description">এতিয়া আপুনি নিজৰ ফ’নটো হাতত তুলি লওঁতে অথবা স্ক্ৰীনত টিপোঁতে, আনলক কৰিবলৈ আপোনাৰ মুখাৱয়ব ব্যৱহাৰ কৰিব পাৰে।</string>
@@ -230,6 +233,9 @@
     <string name="limited_warranty_title">সীমিত ৱাৰেণ্টী</string>
     <string name="lockscreen_show_weather_summary">বৰ্তমান বতৰৰ অৱস্থা চাওক</string>
     <string name="lockscreen_show_weather_title">বতৰৰ তথ্য দেখুৱাওক</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+সংগীত, চিত্ৰ আৰু অন্য ব্যৱহাৰকাৰীৰ ডেটা মচিবলৈ, "<b>USB ষ্ট’ৰেজ</b> মচিব লাগিব।</string>
     <string name="my_device_info_account_preference_title">Google একাউণ্ট</string>
     <string name="owner_info_settings_edit_text_hint">যেনে, মনোজৰ Pixel ফ’ন</string>
     <string name="permit_debugging_data">বাগ ৰিপ’ৰ্ট এক্সেছ কৰাৰ অনুমতি দিয়ক</string>
@@ -281,6 +287,7 @@
     <string name="security_settings_biometric_preference_summary_none_enrolled">ছেট আপ কৰিবলৈ টিপক</string>
     <string name="security_settings_face_enroll_done">কৰা হ’ল</string>
     <string name="security_settings_face_enroll_education_message">পৰৱর্তী স্ক্ৰীনখনত আপোনাৰ মুখাৱয়বৰ আটাইবোৰ দিশ কেপচাৰ কৰিবলৈ আপোনাৰ মূৰটো ঘূৰাওক</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">পৰৱৰ্তী স্ক্ৰীনখনত, আপোনাৰ ফ’নটো চকুৰ স্তৰত ধৰি ৰাখক</string>
     <string name="security_settings_face_enroll_error_generic_dialog_message">মুখমণ্ডল অন্তৰ্ভুক্তিকৰণে কাম নকৰিলে।</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">মুখমণ্ডল অন্তৰ্ভুক্তিকৰণৰ সময়সীমা সম্পূৰ্ণ হৈছে। আকৌ চেষ্টা কৰক।</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">ফেচ আনলক ছেটআপ কৰাৰ সময় উকলি গৈছে</string>
@@ -296,13 +303,29 @@
 ফেচ আনলকে পৰ্যাপ্ত পোহৰ থকা আৰু আপুনি মুখ ঢকা বন্ধনী অথবা ডাঠ ৰঙৰ চশমা পিন্ধি নথকা অৱস্থাত আটাইতকৈ ভালকৈ কাম কৰে।"</string>
     <string name="security_settings_face_enroll_finish_title">ঠিকেই লাগিছে!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">কম দৃষ্টিসম্পন্ন বা মূৰটো স্থিৰকৈ ৰাখিব নোৱৰা লোকৰ বাবে ছেট আপ</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">ফেচ আনলক ব্যৱহাৰ কৰোঁতে আপোনাৰ মূৰটো পোনপটীয়াকৈ আপোনাৰ ফ’নটোৰ সন্মুখত ৰাখিবলগীয়া হ’ব পাৰে।</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">চকু মেলি ৰখাৰ প্ৰয়োজন</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">আপুনি আৰু আপোনাৰ শিশুৱে যিকোনো সময়তে ছেটিঙলৈ গৈ তেওঁৰ মুখাৱয়বৰ মডেলটো মচিব পাৰে অথবা ফে’চ আনলকৰ সুবিধাটো অফ কৰিব পাৰে। মচি নেপেলোৱা পৰ্যন্ত মুখাৱয়বৰ মডেলসমূহ ফ’নটোত ষ্ট’ৰ কৰা হয়।&lt;br&gt;&lt;br&gt;এই লিংকটোত অধিক জানক &lt;a href=’http://g.co/pixel/faceunlock’&gt;g.co/pixel/faceunlock&lt;/a&gt;.</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">আপোনাৰ আৰু আপোনাৰ শিশুৰ হাতত নিয়ন্ত্ৰণ আছে</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">আপুনি যিকোনো সময়তে ছেটিঙলৈ গৈ নিজৰ মুখাৱয়বৰ মডেলটো মচিব পাৰে অথবা ফে’চ আনলকৰ সুবিধাটো অফ কৰিব পাৰে। আপুনি মচি নেপেলোৱা পৰ্যন্ত মুখাৱয়বৰ মডেলসমূহ ফ’নটোত ষ্ট’ৰ কৰা হয়।&lt;br&gt;&lt;br&gt;&lt;a href=’http://g.co/pixel/faceunlock’&gt;g.co/pixel/faceunlock&lt;/a&gt;ত অধিক জানক।</string>
     <string name="security_settings_face_enroll_introduction_control_title">আপোনাৰ হাতত নিয়ন্ত্ৰণ আছে</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"মুখাৱয়বৰ দ্বাৰা আনলক কৰাৰ সুবিধাটোৱে সেইয়া তেৱেঁই বুলি সত্যাপন কৰিবলৈ আপোনাৰ শিশুৰ মুখাৱয়বৰ এটা অদ্বিতীয় মডেল সৃষ্টি কৰে। ছেটআপৰ সময়ত এই মুখাৱয়বৰ মডেলটো সৃষ্টি কৰিবলৈ আপোনাৰ শিশুৱে বেলেগ বেলেগ কোণৰ পৰা তেওঁৰ মুখাৱয়বৰ ফট’ তুলিব লাগিব।
+
+তেওঁ ফেচ আনলক কৰাৰ সুবিধাটো ব্যৱহাৰ কৰাৰ সময়ত, তেওঁৰ মুখাৱয়বৰ মডেলটো আপডে’ট কৰিবলৈ প্ৰতিচ্ছবিসমূহ ব্যৱহাৰ কৰা হয়। তেওঁৰ মুখাৱয়বৰ মডেলটো সৃষ্টি কৰিবলৈ ব্যৱহাৰ কৰা প্ৰতিচ্ছবি ষ্ট’ৰ কৰা নহয়, কিন্তু মুখাৱয়বৰ মডেলটো ফ’নটোত সুৰক্ষিতভাৱে ষ্ট’ৰ কৰা হয় আৰু সেইয়া কেতিয়াও ফ’নটোৰ পৰা আঁতৰি নাযায়। আটাইবোৰ প্ৰক্ৰিয়া আপোনাৰ ফ’নটোত সুৰক্ষিতভাৱে সম্পাদন কৰা হয়।"</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"ফেচ আনলক কৰাৰ সুবিধাটোৱে এইয়া আপুনিয়েই বুলি সত্যাপন কৰিবলৈ আপোনাৰ মুখাৱয়বৰ এটা অদ্বিতীয় মডেল সৃষ্টি কৰে। ছেটআপৰ সময়ত এই মুখাৱয়বৰ মডেলটো সৃষ্টি কৰিবলৈ আপুনি বেলেগ বেলেগ কোণৰ পৰা নিজৰ মুখাৱয়বৰ ফট’ তুলিব লাগিব।
+
+আপুনি ফেচ আনলক কৰাৰ সুবিধাটো ব্যৱহাৰ কৰাৰ সময়ত, আপোনাৰ মুখাৱয়বৰ মডেলটো আপডে’ট কৰিবলৈ প্ৰতিচ্ছবিসমূহ ব্যৱহাৰ কৰা হয়। আপোনাৰ মুখাৱয়বৰ মডেলটো সৃষ্টি কৰিবলৈ ব্যৱহাৰ কৰা প্ৰতিচ্ছবি ষ্ট’ৰ কৰা নহয়, কিন্তু মুখাৱয়বৰ মডেলটো আপোনাৰ ফ’নত সুৰক্ষিতভাৱে ষ্ট’ৰ কৰা হয় আৰু সেইয়া কেতিয়াও ফ’নটোৰ পৰা আঁতৰি নাযায়। আটাইবোৰ প্ৰক্ৰিয়া আপোনাৰ ফ’নত সুৰক্ষিতভাৱে সম্পাদন কৰা হয়।"</string>
     <string name="security_settings_face_enroll_introduction_how_title">এইটোৱে কিদৰে কাম কৰে</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">মুখাৱয়বৰ দ্বাৰা আনলক কৰাৰ সুবিধাটোৰে ফ’নটো আনলক কৰিবলৈ অথবা এইয়া তেৱেঁই বুলি সত্যাপন কৰিবলৈ আপোনাৰ শিশুৰ চকু দুটা খোল খাই থাকিব লাগিব। আপুনি আৰু আপোনাৰ শিশুৱে যিকোনো সময়তে ছেটিঙলৈ গৈ এই বিকল্পটো অন কৰিব পাৰে।</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">আপোনাৰ শিশুৱে সচৰাচৰ চশমা পিন্ধিলে, ছেটআপৰ সময়ত তেওঁ সেইয়া পিন্ধি থাকিব পাৰে।</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">আপোনাৰ শিশুটিৰ ফ’নটো আনলক কৰিবলৈ তেওঁৰ মুখাৱয়ব ব্যৱহাৰ কৰাটো এটা সবল আৰ্হি, পিন অথবা পাছৱৰ্ডতকৈ কম সুৰক্ষিত হ’ব পাৰে</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">তেওঁ ফ’নটো আনলক কৰিবলৈ ইচ্ছা নকৰিলেও তেওঁ ফ’নটোলৈ চালে সেইটো আনলক হ’ব পাৰে। তেওঁৰ ফ’নটো এনে কোনো লোকেও আনলক কৰিব পাৰে যি দেখাত প্ৰায় তেওঁৰ দৰে হয়, যেনে তেওঁৰ যমজ ভাতৃ-ভগ্নী, অথবা যদি কোনোবাই সেইটো তেওঁৰ মুখাৱয়বৰ সন্মুখত ধৰি ৰাখে।</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">মুখাৱয়বৰ দ্বাৰা আনলক কৰাৰ সুবিধাটোৰে ফ’নটো আনলক কৰিবলৈ অথবা এইয়া আপুনিয়েই বুলি সত্যাপন কৰিবলৈ আপোনাৰ চকু দুটা খোল খাই থাকিব লাগিব। আপুনি যিকোনো সময়তে ছেটিঙলৈ গৈ এই বিকল্পটো অন কৰিব পাৰে।</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">চশমা অথবা পাতল ৰঙীন ছানগ্লাছ ব্যৱহাৰ কৰাত অসুবিধা নাই।</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">আপোনাৰ ফ’নটো আনলক কৰিবলৈ আপোনাৰ মুখাৱয়ব ব্যৱহাৰ কৰাটো এটা সবল আৰ্হি, পিন অথবা পাছৱৰ্ড ব্যৱহাৰ কৰাতকৈ কম সুৰক্ষিত হ’ব পাৰে</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">আপুনি ফ’নটো আনলক কৰিবলৈ ইচ্ছা নকৰিলেও ফ’নটোলৈ চালে ই আনলক হ’ব পাৰে। আপোনাৰ ফ’নটো এনে কোনো লোকেও আনলক কৰিব পাৰে যি দেখাত প্ৰায় আপোনাৰ দৰে হয়, যেনে আপোনাৰ যমজ ভাতৃ-ভগ্নী, অথবা যদি কোনোবাই সেইটো আপোনাৰ মুখাৱয়বৰ সন্মুখত ধৰি ৰাখে।</string>
     <string name="security_settings_face_enroll_introduction_info_title">মনত ৰাখিব</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">আপোনাৰ ফ’নটো আনলক কৰিবলৈ অথবা আপুনি এপত ছাইন ইন কৰা অথবা কোনো ক্ৰয়ৰ অনুমোদন জনোৱা আদিৰ দৰে কাৰ্য কৰোঁতে এইয়া আপুনিয়েই বুলি সত্যাপন কৰিবলৈ নিজৰ মুখাৱয়ব ব্যৱহাৰ কৰক।</string>
     <string name="security_settings_face_enroll_introduction_title">ফেচ আনলক ছেট আপ কৰক</string>
     <string name="security_settings_face_enroll_next">পৰৱৰ্তী</string>
     <string name="security_settings_face_enroll_partial_message">কাৰ্যক্ষমতা উন্নত কৰাৰ বাবে আপুনি ছেটিঙত ফেচ আনলক পুনৰ ছেট আপ কৰিব পাৰে</string>
@@ -329,7 +352,9 @@
     <string name="security_settings_fingerprint_preference_summary_none">ফিংগাৰপ্ৰিণ্ট ছেট আপ কৰিবলৈ টিপক</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprintএ এইয়া আপুনিয়েই বুলি সত্যাপন কৰিবলৈ আপোনাৰ ফিংগাৰপ্ৰিণ্টৰ এটা অদ্বিতীয় মডেল সৃষ্টি কৰে। ছেটআপৰ সময়ত এই ফিংগাৰপ্ৰিণ্টৰ মডেলটো সৃষ্টি কৰিবলৈ, আপুনি ভিন্ন দিশৰ পৰা নিজৰ ফিংগাৰপ্ৰিণ্টটোৰ প্ৰতিচ্ছবি ল’ব লাগিব।</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">আপুনি যিকোনো সময়তে ছেটিঙত আপোনাৰ ফিংগাৰপ্ৰিণ্টৰ মডেল মচিব অথবা Pixel Imprint অফ কৰিব পাৰে। আপুনি নমচা পৰ্যন্ত ফিংগাৰপ্ৰিণ্টৰ মডেলসমূহ ফ’নটোত ষ্ট’ৰ কৰি ৰখা হয়।</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprintএ সেইয়া তেৱেঁই বুলি সত্যাপন কৰিবলৈ আপোনাৰ শিশুৰ ফিংগাৰপ্ৰিণ্টৰ এটা অদ্বিতীয় মডেল সৃষ্টি কৰে। ছেটআপৰ সময়ত এই ফিংগাৰপ্ৰিণ্টৰ মডেলটো সৃষ্টি কৰিবলৈ, তেওঁ ভিন্ন দিশৰ পৰা নিজৰ ফিংগাৰপ্ৰিণ্টটোৰ প্ৰতিচ্ছবি ল’ব লাগিব।</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">আপুনি আৰু আপোনাৰ শিশুৱে যিকোনো সময়তে ছেটিঙলৈ গৈ তেওঁৰ ফিংগাৰপ্ৰিণ্টৰ মডেলটো মচিব পাৰে অথবা Pixel Imprint অফ কৰিব পাৰে। ফিংগাৰপ্ৰিণ্টৰ মডেলসমূহ মচি নেপেলোৱালৈকে ফ’নটোত ষ্ট’ৰ হৈ থাকে।</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">Pixelৰ ফিংগাৰপ্ৰিন্ট আনলকৰ বিষয়ে &lt;a href=’http://g.co/pixel/fingerprintunlock’&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;ত অধিক জানক।</string>
     <string name="security_settings_work_fingerprint_preference_title">কৰ্মস্থানৰ বাবে Pixel সাঁচ</string>
     <string name="setup_suggestion_summary">মাত্ৰ আৰু কেইটামান পদক্ষেপ বাকী আছে</string>
@@ -338,6 +363,7 @@
     <string name="smart_battery_a11y_expand_label">বিস্তাৰ কৰক, অভিযোজিত বেটাৰী</string>
     <string name="smart_battery_footer">বেটাৰীৰ জীৱনকাল বৃদ্ধি কৰিবলৈ অভিযোজিত বেটাৰীয়ে কাৰ্যদক্ষতা অথবা নেপথ্যৰ কাৰ্যকলাপ হ্ৰাস কৰিব পাৰে। কিছুমান জাননী লাভ কৰাত পলম হ’ব পাৰে।</string>
     <string name="smart_battery_manager_title">অভিযোজিত অগ্ৰাধিকাৰ</string>
+    <string name="smart_battery_summary" product="default">অভিযোজিত বেটাৰীয়ে আপোনাৰ ফ’নৰ ব্যৱহাৰৰ পৰা এপে বেটাৰী ব্যৱহাৰ কৰাৰ ধৰণ ধাৰাবাহিকভাৱে অপ্টিমাইজ কৰিবলৈ শিকে। বেটাৰীৰ জীৱনকাল বৃদ্ধি কৰিবলৈ ই পাৰদৰ্শিতা নিম্নমানৰ কৰিব পাৰে আৰু জাননী পলমকৈ দিব পাৰে।</string>
     <string name="smart_battery_title">অভিযোজিত বেটাৰী</string>
     <string name="software_update_can_be_updated_header">আপোনাৰ Pixel আৰু উন্নত কৰক</string>
     <string name="software_update_detail_indication_1_update_available">১ টা আপডে’ট উপলব্ধ</string>

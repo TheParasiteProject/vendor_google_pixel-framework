@@ -148,6 +148,7 @@
     <string name="content_protection_preference_subpage_summary">系統會在保護私隱的情況下執行裝置掃瞄功能，檢查應用程式活動是否有仿冒詐騙或其他欺詐行為。如果偵測到這類行為，會將部分應用程式資料傳送給 Google Play Protect，確認威脅並向應用程式使用者發出警告。</string>
     <string name="contextual_timeout_description">系統可自動在裝置閒置時提早關閉螢幕</string>
     <string name="contextual_timeout_title">自動調節逾時時間</string>
+    <string name="credentials_install_summary" product="default">從儲存裝置安裝憑證</string>
     <string name="dark_ui_text">「深色主題背景」使用黑色背景，有助延長電池壽命。「深色主題背景」時間表會等待啟動，直至螢幕關閉。</string>
     <string name="debugging_data_title">偵錯資料</string>
     <string name="discover_tips_button">探索提示</string>
@@ -155,6 +156,8 @@
     <string name="double_twist_for_camera_mode_summary">使用「Google 相機」時轉動裝置兩次，即可開啟或關閉自拍模式。</string>
     <string name="duration_less_than_one_minute">少於 1 分鐘</string>
     <string name="enable_glanceable_hub_toggle">插座模式</string>
+    <string name="erase_external_storage" product="default">清除 USB 儲存裝置資料</string>
+    <string name="erase_external_storage_description" product="default">清除內部 USB 儲存裝置中的所有資料，例如音樂或相片</string>
     <string name="extreme_battery_saver_summary">包括上述所有變更。系統亦會暫停非必要的應用程式及其通知。</string>
     <string name="extreme_battery_saver_title">超慳電模式</string>
     <string name="face_confirmation_hide_illustration_description">現在拿起手機或輕按螢幕，即可使用面孔解鎖。</string>
@@ -229,6 +232,9 @@
     <string name="limited_warranty_title">有限保養</string>
     <string name="lockscreen_show_weather_summary">查看目前天氣狀況</string>
     <string name="lockscreen_show_weather_title">顯示天氣</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+如要一併清除音樂、圖片及其他使用者資料，則需清除 "<b>USB 儲存裝置</b>資料。</string>
     <string name="my_device_info_account_preference_title">Google 帳戶</string>
     <string name="owner_info_settings_edit_text_hint">例如：Joe 的 Pixel。</string>
     <string name="permit_debugging_data">允許存取錯誤報告</string>
@@ -279,6 +285,7 @@
     <string name="security_dismiss_dialog_title">要關閉此警告嗎？</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">輕按即可設定</string>
     <string name="security_settings_face_enroll_education_message">在下一個畫面，請轉動頭部，從所有角度拍攝面孔</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">在下一個畫面中，請將手機舉起到視線水平</string>
     <string name="security_settings_face_enroll_error_generic_dialog_message">無法登記面孔。</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">「面孔解鎖」設定已逾時</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">你現可使用面孔解鎖手機或驗證身分，例如用來登入應用程式或核准購買交易</string>
@@ -293,13 +300,29 @@
 在光線充足，且你沒有戴著口罩或深色眼鏡的情況下，「面孔解鎖」就能發揮最佳效果。"</string>
     <string name="security_settings_face_enroll_finish_title">大功告成！</string>
     <string name="security_settings_face_enroll_introduction_accessibility">視力或頭部活動能力受限人士的設定方式</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">使用「面孔解鎖」時，請盡量將面孔對正手機。</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">需要睜眼</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"你和子女隨時可以前往「設定」刪除面部模型或停用「指紋解鎖」。面部模型會儲存在手機上，直至其刪除為止。&lt;br&gt;&lt;br&gt;詳情請參閱 &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;。"</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">一切由你和子女做主</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"你隨時可以前往「設定」刪除面部模型或停用「面孔解鎖」。面部模型會儲存在手機上，直到你刪除為止。&lt;br&gt;&lt;br&gt;詳情請參閱 &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;。"</string>
     <string name="security_settings_face_enroll_introduction_control_title">一切由你掌控</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"「面孔解鎖」功能會為子女建立獨一無二的面部模型，以便系統驗證其身分。如要在設定過程中建立此面部模型，子女需要從不同角度拍攝面孔。
+
+子女使用「面孔解鎖」時產生的圖片會作為系統更新面部模型的依據。系統不會儲存子女用來建立面部模型的圖片，只會將面部模型安全地存放在手機上，但絕不會傳送到手機以外的地方。整個處理過程都會安全地在手機上進行。"</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"「面孔解鎖」功能會為你建立獨一無二的面部模型，以便系統驗證你的身分。如要在設定過程中建立此面部模型，你需要從不同角度拍攝面孔。
+
+你使用「面孔解鎖」時產生的圖片會作為系統更新面部模型的依據。系統不會儲存你用來建立面部模型的圖片，只會將面部模型安全地存放在手機上，但絕不會傳送到手機以外的地方。整個處理過程都會安全地在手機上進行。"</string>
     <string name="security_settings_face_enroll_introduction_how_title">運作方式</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">如果使用「面孔解鎖」功能，系統可能會要求你的子女睜開雙眼才能解鎖手機或驗證身分。你和子女隨時可以前往「設定」開啟此選項。</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">如果你的子女平時佩戴眼鏡，可在設定過程中如常佩戴。</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">使用複雜的上鎖圖案、PIN 或密碼，會比使用子女的面孔解鎖手機更安全</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">即使子女不想解鎖手機，但查看手機仍會解鎖。樣貌與子女十分相似的人 (例如孿生兄弟姊妹)，或有人將手機拿到他們面前，都可以解鎖手機。</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">如果使用「面孔解鎖」功能，系統可能會要求你睜開雙眼才能解鎖手機或驗證身分。你隨時可以前往「設定」開啟此選項。</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">可佩戴眼鏡或淺色太陽眼鏡。</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">使用複雜的上鎖圖案、PIN 或密碼解鎖手機，會比使用面孔解鎖更安全。</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">即使你並非想解鎖手機，但望向手機仍會解鎖。樣貌與你十分相似的人 (例如孿生兄弟姊妹) 或將手機拿到你的面前時，你的手機都可能會解鎖。</string>
     <string name="security_settings_face_enroll_introduction_info_title">注意事項</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">你可使用面孔解鎖手機或驗證身分，例如用來登入應用程式或核准購買交易。</string>
     <string name="security_settings_face_enroll_introduction_title">設定「面孔解鎖」</string>
     <string name="security_settings_face_enroll_next">繼續</string>
     <string name="security_settings_face_enroll_partial_message">如要提升效能，你可以在「設定」中再次設定「面孔解鎖」</string>
@@ -325,7 +348,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">輕按即可設定指紋</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint 會為你建立獨一無二的指紋模型，以便系統驗證你的身分。在設定期間，你必須拍攝指紋的各個部位，才能建立這個指紋模型。</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">你使用 Pixel Imprint 時產生的圖片會作為系統更新指紋模型的依據。系統不會儲存你用來建立指紋模型的圖片，只會將指紋模型安全地存放在手機上，但絕不會傳送到手機以外的地方。整個處理過程都會安全地在手機上進行。</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">你隨時可以前往「設定」刪除指紋模型或停用 Pixel Imprint。指紋模型會儲存在手機上，直到你刪除為止。</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint 會為你的子女建立獨一無二的指紋模型，以便系統驗證其身分。在設定期間，他們必須拍攝指紋的各個部位，才能建立這個指紋模型。</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">子女使用 Pixel Imprint 時產生的圖片會作為系統更新指紋模型的依據。系統不會儲存子女用來建立指紋模型的圖片，只會將指紋模型安全地存放在手機上，但絕不會傳送到手機以外的地方。整個處理過程都會安全地在手機上進行。</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">你和子女隨時可以前往「設定」刪除指紋模型或停用 Pixel Imprint。指紋模型會儲存在手機上，直到你或子女刪除為止。</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"如要進一步瞭解 Pixel 指紋解鎖，請前往 &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;。"</string>
     <string name="security_settings_work_fingerprint_preference_title">工作設定檔的 Pixel Imprint</string>
     <string name="setup_suggestion_summary">只需幾個步驟即可完成設定</string>
@@ -334,6 +361,7 @@
     <string name="smart_battery_a11y_expand_label">打開，自動調節電池用量</string>
     <string name="smart_battery_footer">為延長電池壽命，「自動調節電池用量」功能可能會降低效能及減少背景活動。部分通知可能會延遲。</string>
     <string name="smart_battery_manager_title">自動調節偏好設定</string>
+    <string name="smart_battery_summary" product="default">「自動調節電池用量」功能可根據手機使用情況，持續調整各應用程式的用電量。為延長電池壽命，系統可能會降低效能及延遲通知。</string>
     <string name="smart_battery_title">自動調節電池用量</string>
     <string name="software_update_can_be_updated_header">讓 Pixel 更臻完善</string>
     <string name="software_update_detail_indication_1_update_available">1 項更新</string>

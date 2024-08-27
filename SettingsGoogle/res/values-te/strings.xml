@@ -149,6 +149,7 @@
     <string name="content_protection_preference_subpage_summary">స్కానింగ్ మీ పరికరంలో ప్రైవేట్‌గా జరుగుతుంది, ఇది ఫిషింగ్, ఇతర మోసపూరిత ప్రవర్తన కోసం యాప్ యాక్టివిటీని చెక్ చేస్తుంది. ఫిషింగ్ గుర్తించబడితే, ప్రమాదాన్ని నిర్ధారించి, యాప్ యూజర్‌లను అప్రమత్తం చేయడానికి కొంత యాప్ సమాచారం Google Play Protectకు పంపబడుతుంది.</string>
     <string name="contextual_timeout_description">మీ పరికరాన్ని ఉపయోగించకుంటే, మీ పరికర స్క్రీన్ ఆటోమేటిక్‌గా ముందుగానే ఆఫ్ అవుతుంది</string>
     <string name="contextual_timeout_title">అడాప్టివ్ టైమ్‌అవుట్</string>
+    <string name="credentials_install_summary" product="default">స్టోరేజ్ నుండి స‌ర్టిఫికెట్‌ల‌ను ఇన్‌స్టాల్ చేయండి</string>
     <string name="dark_ui_text">మీ బ్యాటరీ ఎక్కువ సేపు పని చేయడానికి ముదురు రంగు థీమ్ నలుపు బ్యాక్‌గ్రౌండ్‌ను ఉపయోగిస్తుంది. ముదురు రంగు థీమ్, మీ స్క్రీన్ ఆఫ్ అయ్యే వరకు వేచి ఉండాల్సిన సమయాన్ని షెడ్యూల్ చేస్తుంది.</string>
     <string name="debugging_data_title">డీబగ్గింగ్ డేటా</string>
     <string name="discover_tips_button">చిట్కాలను అన్వేషించండి</string>
@@ -156,6 +157,8 @@
     <string name="double_twist_for_camera_mode_summary">Google Cameraలో సెల్ఫీ మోడ్‌లోకి స్విచ్ అవడానికి, నిష్క్రమించడానికి, మీరు యాప్ ఉపయోగించేటప్పుడు ఫోన్ పట్టుకున్న చేతిని రెండుసార్లు అటుఇటూ కదపండి.</string>
     <string name="duration_less_than_one_minute">1 నిమిషం కంటే తక్కువ</string>
     <string name="enable_glanceable_hub_toggle">హబ్ మోడ్</string>
+    <string name="erase_external_storage" product="default">USB నిల్వను ఎరేజ్ చేయి</string>
+    <string name="erase_external_storage_description" product="default">అంతర్గత USB స్టోరేజ్‌లోని డేటా అంతటినీ అనగా మ్యూజిక్ లేదా ఫోటోల వంటివి ఎరేజ్ చేయి</string>
     <string name="extreme_battery_saver_summary">పైన లిస్ట్ చేసిన అన్ని మార్పులు ఇందులో ఉంటాయి. అనవసరమైన యాప్‌లను, వాటి నోటిఫికేషన్‌లను కూడా పాజ్ చేస్తుంది.</string>
     <string name="extreme_battery_saver_title">అధునాతన బ్యాటరీ సేవర్</string>
     <string name="face_confirmation_hide_illustration_description">ఇప్పుడు మీరు మీ ఫోన్‌ను పట్టుకున్నా, లేదా స్క్రీన్‌పై ట్యాప్ చేసినా, అన్‌లాక్ చేయడానికి మీ ముఖాన్ని ఉపయోగించవచ్చు.</string>
@@ -230,6 +233,9 @@
     <string name="limited_warranty_title">పరిమిత వారెంటీ</string>
     <string name="lockscreen_show_weather_summary">ప్రస్తుత వాతావరణ పరిస్థితులను చూడండి</string>
     <string name="lockscreen_show_weather_title">వాతావరణాన్ని చూపు</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+సంగీతం, ఫోటోలు, ఇతర యూజర్ డేటాను క్లియర్ చేయడానికి, "<b>USB స్టోరేజ్</b>ను తొలగించాల్సి ఉంటుంది.</string>
     <string name="my_device_info_account_preference_title">Google ఖాతా</string>
     <string name="owner_info_settings_edit_text_hint">ఉదా. జో యొక్క Pixel.</string>
     <string name="permit_debugging_data">బగ్ రిపోర్ట్ యాక్సెస్‌ను అనుమతించండి</string>
@@ -280,6 +286,7 @@
     <string name="security_dismiss_dialog_title">ఈ హెచ్చరికను విస్మరించాలా?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">సెటప్ చేయడానికి ట్యాప్ చేయండి</string>
     <string name="security_settings_face_enroll_education_message">తర్వాతి స్క్రీన్‌లో, మీ ముఖం యొక్క అన్ని కోణాలను క్యాప్చర్ చేయడానికి మీ తలను తిప్పండి</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">తదుపరి స్క్రీన్‌లో, మీ ఫోన్‌ను కంటి స్థాయిలో పట్టుకోండి</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">ఫేస్ అన్‌లాక్ సెటప్ సమయం ముగిసింది</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">ఇప్పుడు మీ ఫోన్‌ను అన్‌లాక్ చేయడానికి లేదా మీరు యాప్‌లకు సైన్ ఇన్ చేయడం లేదా కొనుగోలును ఆమోదించడం వంటివి చేసినప్పుడు, అది మీరేనని వెరిఫై చేయడానికి మీ ముఖాన్ని ఉపయోగించవచ్చు</string>
     <string name="security_settings_face_enroll_finish_description_with_bp_full">"ఇప్పుడు మీరు మీ ఫోన్‌ను అన్‌లాక్ చేయడానికి లేదా మీరు యాప్‌లకు సైన్ ఇన్ చేయడం లేదా కొనుగోలును ఆమోదించడం వంటివి చేసినప్పుడు, అది మీరేనని వెరిఫై చేయడానికి మీ ముఖాన్ని ఉపయోగించవచ్చు.
@@ -293,13 +300,29 @@
 తగినంత వెలుతురు ఉండి, మీరు మాస్క్ గానీ, నల్ల కళ్లద్దాలు గానీ ధరించి లేనప్పుడు, ఫేస్ అన్‌లాక్ అత్యుత్తమంగా పని చేస్తుంది."</string>
     <string name="security_settings_face_enroll_finish_title">బాగుంది!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">చూపు తక్కువ/తల కదలిక కోసం సెటప్</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">ఫేస్ అన్‌లాక్‌ను ఉపయోగిస్తున్నప్పుడు, మీ తల భాగం నేరుగా మీ ఫోన్ వైపు చూసేలా ఉండాలి.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">కళ్లు తెరిచి ఉంచాలి</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"మీరు, అలాగే మీ చిన్నారి ఎప్పుడైనా సెట్టింగ్‌లలో వారి ఫేస్ మోడల్‌ను తొలగించవచ్చు లేదా ఫేస్ అన్‌లాక్‌ను ఆఫ్ చేయవచ్చు. ఫేస్ మోడల్స్ తొలగింపబడే వరకు అవి ఫోన్‌లోనే స్టోర్ చేయబడి ఉంటాయి.&lt;br&gt;&lt;br&gt;&lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; లింక్‌లో దీని గురించి మరింత తెలుసుకోండి."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">మీరు అలాగే మీ చిన్నారి కంట్రోల్‌లో ఉన్నారు</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"మీరు సెట్టింగ్‌లలో ఎప్పుడైనా మీ ఫేస్ మోడల్‌ను తొలగించవచ్చు లేదా ఫేస్ అన్‌లాక్‌ను ఆఫ్ చేయవచ్చు. మీరు ఫేస్ మోడల్స్‌ను తొలగించే వరకు అవి ఫోన్‌లోనే స్టోర్ చేయబడి ఉంటాయి.&lt;br&gt;&lt;br&gt;&lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; లింక్‌లో దీని గురించి మరింత తెలుసుకోండి."</string>
     <string name="security_settings_face_enroll_introduction_control_title">కంట్రోల్ మీ చేతిలో ఉంది</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"ఫేస్ అన్‌లాక్ అనేది మీ చిన్నారిని వెరిఫై చేయడానికి, వారి ముఖానికి సంబంధించిన, ఒక ప్రత్యేకమైన మోడల్‌ను క్రియేట్ చేస్తుంది. సెటప్ సమయంలో ఈ ఫేస్ మోడల్‌ను క్రియేట్ చేయడానికి, మీ చిన్నారి వేర్వేరు కోణాలలో వారి ముఖానికి సంబంధించిన ఇమేజ్‌లను క్యాప్చర్ చేస్తారు.
+
+వారు ఫేస్ అన్‌లాక్‌ను ఉపయోగించినప్పుడు, వారి ఫేస్ మోడల్‌ను అప్‌డేట్ చేయడానికి ఇమేజ్‌లు ఉపయోగించబడతాయి. వారి ఫేస్ మోడల్‌ను క్రియేట్ చేయడానికి ఉపయోగించిన ఇమేజ్‌లు స్టోర్ చేయబడవు, కానీ ఆ ఫేస్ మోడల్ ఫోన్‌లో సురక్షితంగా స్టోర్ చేయబడుతుంది, ఫోన్ నుండి బయటకు పంపబడదు. ప్రాసెసింగ్ అంతా ఫోన్‌లో సురక్షితంగా జరుగుతుంది."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"ఫేస్ అన్‌లాక్ అనేది మిమ్మల్ని వెరిఫై చేయడానికి, మీ ముఖానికి సంబంధించిన, ఒక ప్రత్యేకమైన మోడల్‌ను క్రియేట్ చేస్తుంది. సెటప్ చేసే సమయంలో ఈ ఫేస్ మోడల్‌ను క్రియేట్ చేయడానికి, మీరు వేర్వేరు కోణాలలో మీ ముఖానికి సంబంధించిన ఇమేజ్‌లను క్యాప్చర్ చేస్తారు.
+
+మీరు ఫేస్ అన్‌లాక్‌ను ఉపయోగించినప్పుడు, మీ ఫేస్ మోడల్‌ను అప్‌డేట్ చేయడానికి ఇమేజ్‌లు ఉపయోగించబడతాయి. మీ ఫేస్ మోడల్‌ను క్రియేట్ చేయడానికి ఉపయోగించిన ఇమేజ్‌లు స్టోర్ చేయబడవు, కానీ ఆ ఫేస్ మోడల్ మీ ఫోన్‌లో సురక్షితంగా స్టోర్ చేయబడుతుంది, ఫోన్ నుండి బయటకు పంపబడదు. ప్రాసెసింగ్ అంతా మీ ఫోన్‌లో సురక్షితంగా జరుగుతుంది."</string>
     <string name="security_settings_face_enroll_introduction_how_title">ఇది ఎలా పని చేస్తుంది</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">ఫోన్‌ను అన్‌లాక్ చేయడానికి లేదా మీ చిన్నారి గుర్తింపును వెరిఫై చేయడానికి, ఫేస్ అన్‌లాక్ కోసం మీ చిన్నారి కళ్లు తెరిచి ఉంచాల్సి రావచ్చు. మీరు, మీ చిన్నారి ఈ ఆప్షన్‌ను సెట్టింగ్‌లలో ఎప్పుడైనా ఆన్ చేసుకోవచ్చు.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">మీ చిన్నారి సాధారణంగా కళ్లద్దాలు ధరిస్తే, వారు వాటిని సెటప్ చేసే సమయంలో కూడా ధరించవచ్చు.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">మీ చిన్నారి ఫోన్‌ను అన్‌లాక్ చేయడానికి వారి ముఖాన్ని ఉపయోగించడం అనేది శక్తివంతమైన ఆకృతి, PIN, లేదా పాస్‌వర్డ్‌తో పోలిస్తే తక్కువ సురక్షితమైనది కావచ్చు</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">వారికి అన్‌లాక్ చేయాలనే ఉద్దేశం లేనప్పటికీ, అనుకోకుండా ఫోన్ వైపు చూసినా కూడా అది అన్‌లాక్ అయ్యే అవకాశం ఉంది. చాలా వరకు వారిలానే ఉండే వ్యక్తి, ఉదాహరణకు, వారిలానే ఉండే తోబుట్టువు కూడా వారి ఫోన్‌ను అన్‌లాక్ చేయగలిగే అవకాశం ఉంది, లేదా ఎవరైనా వారి ముఖాన్ని స్క్రీన్ వైపు చూపినా కూడా వారి ఫోన్ అన్‌లాక్ అయ్యే అవకాశం ఉంది.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">ఫోన్‌ను అన్‌లాక్ చేయడానికి లేదా మీ గుర్తింపును వెరిఫై చేయడానికి, ఫేస్ అన్‌లాక్ కోసం మీరు కళ్లు తెరిచి ఉంచాల్సి రావచ్చు. మీరు ఈ ఆప్షన్‌ను సెట్టింగ్‌లలో ఎప్పుడైనా ఆన్ చేసుకోవచ్చు.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">కళ్లద్దాలు గానీ, కొద్దిగా లేత రంగులోని చలువ కళ్లద్దాలు గానీ ఫర్వాలేదు.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">మీ ఫోన్‌ను అన్‌లాక్ చేయడానికి మీ ముఖాన్ని ఉపయోగించడం అనేది శక్తివంతమైన ఆకృతి, PIN, లేదా పాస్‌వర్డ్‌తో పోలిస్తే తక్కువ సురక్షితమైనది కావచ్చు</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">మీకు అన్‌లాక్ చేయాలనే ఉద్దేశం లేనప్పటికీ, అనుకోకుండా ఫోన్ వైపు చూసినా కూడా అది అన్‌లాక్ అయ్యే అవకాశం ఉంది. చాలా వరకు మీలానే ఉండే వ్యక్తి, ఉదాహరణకు, మీలానే ఉండే తోబుట్టువు కూడా మీ ఫోన్‌ను అన్‌లాక్ చేయగలిగే అవకాశం ఉంది, లేదా ఎవరైనా స్క్రీన్‌ను మీ ముఖం ముందు పెట్టినా కూడా మీ ఫోన్ అన్‌లాక్ అయ్యే అవకాశం ఉంది.</string>
     <string name="security_settings_face_enroll_introduction_info_title">గుర్తుంచుకోండి</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">మీ ఫోన్‌ను అన్‌లాక్ చేయడానికి లేదా మీరు యాప్‌లకు సైన్ ఇన్ చేయడం లేదా కొనుగోలును ఆమోదించడం వంటివి చేసినప్పుడు, అది మీరేనని వెరిఫై చేయడానికి మీ ముఖాన్ని ఉపయోగించండి.</string>
     <string name="security_settings_face_enroll_introduction_title">ఫేస్ అన్‌లాక్‌ను సెటప్ చేయండి</string>
     <string name="security_settings_face_enroll_next">తర్వాత</string>
     <string name="security_settings_face_enroll_partial_message">పనితీరును మెరుగుపరచడానికి, మళ్ళీ సెట్టింగ్‌లలో మీరు ఫేస్ అన్‌లాక్‌ను సెటప్ చేయవచ్చు</string>
@@ -325,7 +348,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">వేలిముద్రను సెటప్ చేయడానికి ట్యాప్ చేయండి</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">ఇది మీరేనని వెరిఫై చేయడానికి Pixel Imprint మీ వేలిముద్ర తాలూకు ప్రత్యేకమైన మోడల్‌ను క్రియేట్ చేస్తుంది. సెటప్ సమయంలో ఈ వేలిముద్ర మోడల్‌ను క్రియేట్ చేయడానికి, మీరు మీ వేలిముద్ర తాలూకు ఇమేజ్‌లను వివిధ స్థానాల నుండి తీసుకుంటారు.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">మీరు Pixel Imprintను ఉపయోగించినప్పుడు, మీ వేలిముద్ర మోడల్‌ను అప్‌డేట్ చేయడానికి ఇమేజ్‌లు ఉపయోగించబడతాయి. మీ వేలిముద్ర మోడల్‌ను క్రియేట్ చేయడానికి ఉపయోగించిన ఇమేజ్‌లు ఎప్పుడూ స్టోర్ చేయబడవు, కానీ ఆ వేలిముద్ర మోడల్ మీ ఫోన్‌లో సురక్షితంగా స్టోర్ చేయబడుతుంది, ఫోన్ నుండి బయటకు పంపబడదు. ప్రాసెసింగ్ అంతా మీ ఫోన్‌లో సురక్షితంగా జరుగుతుంది.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">మీరు సెట్టింగ్‌లలో ఎప్పుడైనా మీ వేలిముద్ర మోడల్‌ను తొలగించవచ్చు లేదా Pixel Imprintను ఆఫ్ చేయవచ్చు. మీరు వేలిముద్ర మోడల్స్‌ను తొలగించే వరకు అవి ఫోన్‌లోనే స్టోర్ అయ్యి ఉంటాయి.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">అది వారేనని వెరిఫై చేయడానికి, Pixel Imprint మీ చిన్నారి వేలిముద్ర ప్రత్యేకమైన మోడల్‌ను క్రియేట్ చేస్తుంది. సెటప్ సమయంలో ఈ వేలిముద్ర మోడల్‌ను క్రియేట్ చేయడానికి, వారి వేలిముద్ర తాలూకు ఇమేజ్‌లను వారు వివిధ స్థానాల నుండి తీసుకుంటారు.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">వారు Pixel Imprintను ఉపయోగించినప్పుడు, వారి వేలిముద్ర మోడల్‌ను అప్‌డేట్ చేయడానికి ఇమేజ్‌లు ఉపయోగించబడతాయి. మీ చిన్నారి వేలిముద్ర మోడల్‌ను క్రియేట్ చేయడానికి ఉపయోగించిన ఇమేజ్‌లు ఎప్పుడూ స్టోర్ చేయబడవు, కానీ ఆ వేలిముద్ర మోడల్ ఫోన్‌లో సురక్షితంగా స్టోర్ చేయబడుతుంది, ఫోన్ నుండి బయటకు పంపబడదు. ప్రాసెసింగ్ అంతా ఫోన్‌లో సురక్షితంగా జరుగుతుంది.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">మీరు, అలాగే మీ చిన్నారి ఎప్పుడైనా సెట్టింగ్‌లలో వారి వేలిముద్ర మోడల్‌ను తొలగించవచ్చు లేదా Pixel Imprintను ఆఫ్ చేయవచ్చు. వేలిముద్ర మోడల్స్‌ను తొలగించే వరకు అవి ఫోన్‌లోనే స్టోర్ అయ్యి ఉంటాయి.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"&lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt; లింక్‌లో Pixel వేలిముద్ర అన్‌లాక్ గురించి మరింత తెలుసుకోండి."</string>
     <string name="security_settings_work_fingerprint_preference_title">ఆఫీస్ కోసం Pixel Imprint</string>
     <string name="setup_suggestion_summary">మరికొన్ని దశలు మాత్రమే</string>
@@ -334,6 +361,7 @@
     <string name="smart_battery_a11y_expand_label">అనుకూల బ్యాటరీని విస్తరించండి</string>
     <string name="smart_battery_footer">బ్యాటరీ జీవితకాలాన్ని పొడిగించడానికి, అనుకూల బ్యాటరీ అనేది బ్యాక్‌గ్రౌండ్ యాక్టివిటీతో పాటు పనితీరును తగ్గించవచ్చు. కొన్ని నోటిఫికేషన్‌లు రావడం ఆలస్యం కావచ్చు.</string>
     <string name="smart_battery_manager_title">అనుకూల ప్రాధాన్యతలు</string>
+    <string name="smart_battery_summary" product="default">మీ ఫోన్ వినియోగం ఆధారంగా అనుకూల బ్యాటరీ, డేటాను సేకరిస్తుంది. తద్వారా యాప్‌లు, బ్యాటరీ వినియోగించే తీరును నిరంతరం ఆప్టిమైజ్ చేస్తుంది. బ్యాట‌రీ లైఫ్‌ను పొడిగించ‌డానికి ఫోన్ ప‌నితీరు నెమ్మదించేలా, నోటిఫికేషన్‌లు ఆలస్యం అయ్యేలా చేసే అవకాశం ఉంది.</string>
     <string name="smart_battery_title">అనుకూల బ్యాటరీ</string>
     <string name="software_update_can_be_updated_header">మీ Pixelను మరింత మెరుగుపరచండి</string>
     <string name="software_update_detail_indication_1_update_available">1 అప్‌డేట్ అందుబాటులో ఉంది</string>

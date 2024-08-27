@@ -149,6 +149,7 @@
     <string name="content_protection_preference_subpage_summary">Скандоо түзмөгүңүздө жеке иштетилип, колдонмолордо жасалган аракеттерде фишинг же башка алдамчы аракеттер текшерилет. Эгер мындай аракеттер аныкталса, коркунучту ырастоо жана колдонмонун колдонуучуларына эскертүү берүү үчүн колдонмонун айрым маалыматы Google Play Protect кызматына жөнөтүлөт.</string>
     <string name="contextual_timeout_description">Түзмөгүңүздү колдонбой турганыңызда экранды автоматтык түрдө эртерээк өчүрүп коёт</string>
     <string name="contextual_timeout_title">Ыңгайлашуучу таймаут</string>
+    <string name="credentials_install_summary" product="default">Тастыктамалар сактагычтан орнотулат</string>
     <string name="dark_ui_text">Түзмөгүңүздүн батареясын көпкө жеткирүү үчүн караңгы темада кара фон колдонулат. Караңгы тема күйгүзүлө турган маалда телефонуңузду колдонуп жаткан болсоңуз, ал экраныңыз кийинки жолу күйгөндө иштейт.</string>
     <string name="debugging_data_title">Мүчүлүштүктөрдү оңдоо маалыматы</string>
     <string name="discover_tips_button">Кеңештерди карап чыгуу</string>
@@ -156,6 +157,8 @@
     <string name="double_twist_for_camera_mode_summary">Google Камерада селфи режимин күйгүзүп же өчүрүү үчүн колдонмо ачылып турганда билегиңизди айландырып коюңуз.</string>
     <string name="duration_less_than_one_minute">1 мүнөткө жеткен жок</string>
     <string name="enable_glanceable_hub_toggle">Түйүн режими</string>
+    <string name="erase_external_storage" product="default">USB сактагычты тазалоо</string>
+    <string name="erase_external_storage_description" product="default">Ички USB сактагычтагы музыка же сүрөттөр сыяктуу бардык берилиштерди тазалоо</string>
     <string name="extreme_battery_saver_summary">Жогорудагы өзгөрүүлөрдөн тышкары, кереги жок колдонмолорду токтотуп, алардын билдирмелерин тындырат.</string>
     <string name="extreme_battery_saver_title">Батареяны кескин үнөмдөө режими</string>
     <string name="face_confirmation_hide_illustration_description">Эми телефонуңузду колуңузга алганда же экранына тийгенде, анын кулпусун жүзүңүз менен ача аласыз.</string>
@@ -230,6 +233,9 @@
     <string name="limited_warranty_title">Чектелген кепилдик</string>
     <string name="lockscreen_show_weather_summary">Учурдагы аба ырайынын шарттарын көрүү</string>
     <string name="lockscreen_show_weather_title">Аба ырайын көрсөтүү</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Музыканы, сүрөттөрдү, жана колдонуучунун башка дайындарын өчүрүү үчүн "<b>USB эстутумун</b> тазалоо керек.</string>
     <string name="my_device_info_account_preference_title">Google аккаунту</string>
     <string name="owner_info_settings_edit_text_hint">Мисалы, Асандын Pixel түзмөгү.</string>
     <string name="permit_debugging_data">Мүчүлүштүк тууралуу кабарга уруксат берүү</string>
@@ -280,6 +286,7 @@
     <string name="security_dismiss_dialog_title">Бул эскертүүнү жабасызбы?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Коюу үчүн басыңыз</string>
     <string name="security_settings_face_enroll_education_message">Кийинки экран ачылганда башыңызды буруп, жүзүңүздү ар кайсы тараптан тартыңыз</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Кийинки экранда телефонуңузду көзүңүздүн деңгээлинде кармаңыз</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Жүзүнөн таанып ачууну коюу убактысы бүтүп калды</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Эми манжаңыздын изи менен телефонуңуздун кулпусун ачып же колдонмолорго кирүүдө өзүңүздү ырастап, керектүү нерселерди сатып ала аласыз</string>
     <string name="security_settings_face_enroll_finish_description_with_bp_full">"Эми жүзүңүз менен телефонуңуздун кулпусун ачып же колдонмолорго кирүүдө же кандайдыр бир нерсени сатып алууда өзүңүздү ырастай аласыз.
@@ -293,13 +300,29 @@
 Жүзүнөн таанып ачуу жарык жерде жана беткап же кара көз айнек тагынбай турганда иштейт."</string>
     <string name="security_settings_face_enroll_finish_title">Баары жайында!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Атайын мүмкүнчүлүктөрдү иштетүү</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Телефондун кулпусун жүзүңүз менен ачканда, телефонду жүзүңүзгө алып келишиңиз керек.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Көзүңүз ачык болушу керек</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Балаңыз жүзүнүн үлгүсүн же Жүзүнөн таанып ачуу функциясын Параметрлерден каалаган убакта өчүрө алат. Жүздүн үлгүлөрү өчүрүлмөйүнчө телефондо сакталат.&lt;br&gt;&lt;br&gt;Кеңири маалымат: &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Баарын өзүңүз жана балаңыз көзөмөлдөйт</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Жүзүңүздүн үлгүсүн же Жүзүнөн таанып ачуу функциясын Параметрлерден каалаган убакта өчүрсөңүз болот. Жүздүн үлгүлөрү өчүрүлмөйүнчө телефондо сакталат.&lt;br&gt;&lt;br&gt;Кеңири маалымат: &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Баары өзүңүздүн колуңузда</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Жүзүнөн таанып ачуу функциясы балаңыздын жүзүнүн үлгүсү аркылуу аны тааныйт. Мындай үлгүнү түзүү үчүн балаңыздын жүзүн ар тараптан сүрөткө тартуу керек.
+
+Жүзүнөн таанып ачуу функциясы колдонулган сайын алынган сүрөттөр менен үлгү жаңырып турат. Анын жүзүнүн үлгүсүн түзүү үчүн колдонулган сүрөттөр сакталбайт, ал эми жүзүнүн үлгүсү телефондо гана сакталат. Сүрөттөр телефондо гана иштетилет."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Жүзүнөн таанып ачуу функциясы сизди ырастоо үчүн жүзүңүздүн үлгүсүн алат. Жүздүн үлгүсүн алуу үчүн жүзүңүздү ар тараптан сүрөткө тартышыңыз керек.
+
+Жүзүңүздүн үлгүсү жүзүнөн таанып ачуу функциясын колдонгондо алынган сүрөттөрдүн негизинде жаңырып турат. Сүрөттөр менен жүзүңүздүн үлгүсү телефонуңузда гана иштелип, сакталат жана эч кимге жөнөтүлбөйт."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Кантип иштейт</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Жүзүнөн таанып ачуу функциясы телефондун кулпусун ачуу үчүн балаңыздан көздөрүн ачып туруусун талап кылышы мүмкүн, же болбосо, аныктыгын ырастоо керек болот. Бул функцияны Параметрлерге өтүп, өзүңүз же балаңыз каалаган убакта өчүрүп коё аласыңар.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Эгер балаңыз көз айнек тагынса, жөндөп жатканда аны тагып алса болот.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Балаңыздын телефонунун кулпусун Жүзүнөн таанып ачуу функциясы менен ачуу татаал графикалык ачкыч, PIN код же сырсөз менен ачкандагыдай коопсуз болбошу мүмкүн</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Ал телефонду карап койсо эле кулпусу ачылат. Анын телефонунун кулпусун ага аябай окшош адам (мисалы, эгизи), ошондой эле кимдир бирөө телефонун анын жүзүнө жакын алып келип ачып алышы мүмкүн.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Көздөрүңүз жабык болгондо жүзүнөн таанып ачуу функциясынын параметрлеринен телефондун кулпусун ачууга же өзүңүздү аныктаганга тыюу салсаңыз болот.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Көз айнегиңизди чечпей эле койсоңуз болот (күндөн коргогон көз айнегиңизди да, эгер өтө капкара болбосо).</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Жүзүнөн таанып ачуу функциясына караганда телефонуңузду графикалык ачкыч, PIN код же сырсөз менен коргоо бир кыйла коопсуз</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Телефонду карап койсоңуз эле кулпусу ачылат. Телефонуңуздун кулпусун сизге аябай окшош адам (мисалы, эгизиңиз), ошондой эле кимдир бирөө телефонуңузду жүзүңүзгө жакын алып келип ачып алышы мүмкүн.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Көңүл буруңуз</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Манжаңыздын изи менен телефонуңуздун кулпусун ачыңыз же өзүңүздү ырастаңыз (мисалы, колдонмолорго кирүүдө же кандайдыр бир нерсе сатып алып жатканда).</string>
     <string name="security_settings_face_enroll_introduction_title">Жүзүнөн таанып ачууну коюу</string>
     <string name="security_settings_face_enroll_next">Кийинки</string>
     <string name="security_settings_face_enroll_partial_message">Майнаптуулугун жакшыртуу үчүн жүзүнөн таанып ачууну Параметрлерден кайра коюп алсаңыз болот</string>
@@ -325,7 +348,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">Манжа изин кошуу үчүн таптап коюңуз</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint функциясы сизди таануу үчүн манжаңыздын изинин уникалдуу үлгүсүн түзөт. Үлгүнү түзүү үчүн манжаңызды ар кайсы абалдан скандашыңыз керек.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">"Сиз Pixel Imprint'ти колдонгондо манжаңыздын изинин үлгүсү сүрөттөр боюнча жаңыртылат. Манжа изинин үлгүсүн түзүү үчүн колдонулган сүрөттөр эч качан сакталбайт, ал эми манжаңыздын изинин үлгүсү телефонуңузда гана сакталат. Сүрөттөр телефонуңузда гана иштетилет."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Манжаңыздын изинин үлгүсүн, же болбосо Pixel Imprint функциясын каалаган убакта Параметрлерге өтүп, өчүрсөңүз болот. Манжа изинин үлгүлөрү өчүрүлмөйүнчө телефонуңузда сакталат.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint функциясы балаңызды таануу үчүн манжа изинин кайталанбас үлгүсүн түзөт. Манжа изинин үлгүсүн түзүү үчүн ал манжасынын изин ар кайсы абалдан сүрөткө тартышы керек.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">"Ал Pixel Imprint'ти колдонгондо манжа изинин үлгүсү сүрөттөр боюнча жаңыртылат. Балаңыздын манжа изинин үлгүсүн түзүү үчүн колдонулган сүрөттөр эч качан сакталбайт, ал эми манжа изинин үлгүсү телефондо гана сакталат. Сүрөттөр телефондо гана иштетилет."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Балаңыз экөөңөр манжа изинин үлгүлөрүн же Pixel Imprint функциясын каалаган убакта Параметрлерге өтүп, өчүрүп койсоңор болот. Манжа изинин үлгүлөрү өчүрүлмөйүнчө телефондо сакталат.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Pixel'ди манжа изи менен ачуу жөнүндө кененирээк маалымат алыңыз: &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Жумуш профили үчүн Pixel Imprint</string>
     <string name="setup_suggestion_summary">Дагы бир нече кадам калды</string>
@@ -334,6 +361,7 @@
     <string name="smart_battery_a11y_expand_label">Жайып көрсөтүү, Adaptive Battery</string>
     <string name="smart_battery_footer">Батареяны көбүрөөк убакытка жеткирүү үчүн Adaptive Battery функциясы түзмөктүн иштешин жана фондогу аракеттерди чектеп коёт. Айрым колдонмолордун билдирмелери кечигүү менен келиши мүмкүн.</string>
     <string name="smart_battery_manager_title">Ыңгайлаштырылуучу параметрлер</string>
+    <string name="smart_battery_summary" product="default">Adaptive Battery телефонуңуздун колдонулушун талдап, колдонмолордун батареяны сарпташын оптималдаштырып турат. Бул функция батареянын кубатынын мөөнөтүн узартуу үчүн майнаптуулукту азайтып, билдирмелерди кечиктириши мүмкүн.</string>
     <string name="smart_battery_title">Adaptive Battery</string>
     <string name="software_update_can_be_updated_header">Pixel түзмөгүңүздү жакшыртыңыз</string>
     <string name="software_update_detail_indication_1_update_available">1 жаңыртуу бар</string>

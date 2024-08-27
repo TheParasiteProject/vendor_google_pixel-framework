@@ -148,6 +148,7 @@
     <string name="content_protection_preference_subpage_summary">Η σάρωση εκτελείται ιδιωτικά απευθείας στη συσκευή σας, ελέγχοντας τη δραστηριότητα σε εφαρμογές για ηλεκτρονικό ψάρεμα (phishing) ή άλλη παραπλανητική συμπεριφορά. Αν εντοπιστεί κάτι από τα παραπάνω, ορισμένες πληροφορίες εφαρμογής αποστέλλονται στο Google Play Protect για να επιβεβαιωθεί η απειλή και να ειδοποιηθούν οι χρήστες της εφαρμογής.</string>
     <string name="contextual_timeout_description">Απενεργοποιεί αυτόματα και νωρίτερα την οθόνη, αν δεν χρησιμοποιείτε τη συσκευή σας</string>
     <string name="contextual_timeout_title">Προσαρμοστικό χρονικό όριο</string>
+    <string name="credentials_install_summary" product="default">Εγκατάσταση πιστοποιητικών από συσκευή αποθήκευσης</string>
     <string name="dark_ui_text">Το Σκούρο θέμα χρησιμοποιεί μαύρο φόντο, για να επεκτείνει τη διάρκεια ζωής της μπαταρίας σας. Τα χρονοδιαγράμματα για το Σκούρο θέμα περιμένουν να σβήσει η οθόνη, για να ενεργοποιηθούν.</string>
     <string name="debugging_data_title">Δεδομένα εντοπισμού και διόρθ. σφαλμάτων</string>
     <string name="discover_tips_button">Ανακαλύψτε συμβουλές</string>
@@ -155,6 +156,8 @@
     <string name="double_twist_for_camera_mode_summary">Για να εισέλθετε στη λειτουργία selfie και να εξέλθετε από αυτή στο Google Camera, κάντε διπλή περιστροφή ενώ βρίσκεστε εντός της εφαρμογής.</string>
     <string name="duration_less_than_one_minute">Λιγότερο από 1 λεπτό</string>
     <string name="enable_glanceable_hub_toggle">Λειτουργία Hub</string>
+    <string name="erase_external_storage" product="default">Διαγρ. αποθ. χώρου USB</string>
+    <string name="erase_external_storage_description" product="default">Διαγράψτε όλα τα δεδομένα που υπάρχουν στον εσωτερικό αποθηκευτικό χώρο USB του τηλεφώνου σας, όπως αρχεία μουσικής και φωτογραφίες</string>
     <string name="extreme_battery_saver_summary">Περιλαμβάνει όλες τις αλλαγές που αναφέρονται παραπάνω. Επίσης, θέτει σε παύση τις μη βασικές εφαρμογές και τις ειδοποιήσεις τους.</string>
     <string name="extreme_battery_saver_title">Μέγιστη εξοικονόμηση μπαταρίας</string>
     <string name="face_confirmation_hide_illustration_description">Πλέον, όταν σηκώνετε το τηλέφωνο ή πατάτε την οθόνη, μπορείτε να χρησιμοποιείτε το πρόσωπό σας για ξεκλείδωμα.</string>
@@ -229,6 +232,9 @@
     <string name="limited_warranty_title">Περιορισμένη εγγύηση</string>
     <string name="lockscreen_show_weather_summary">Εμφάνιση τρεχουσών καιρικών συνθηκών</string>
     <string name="lockscreen_show_weather_title">Εμφάνιση καιρού</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Πρέπει να γίνει διαγραφή του "<b>αποθηκευτικού χώρου USB</b> για να γίνει, επίσης, διαγραφή της μουσικής, των φωτογραφιών και άλλων δεδομένων χρήστη.</string>
     <string name="my_device_info_account_preference_title">Λογαριασμός Google</string>
     <string name="owner_info_settings_edit_text_hint">Π.χ. Το Pixel του Λευτέρη.</string>
     <string name="permit_debugging_data">Επιτρέπεται η πρόσβαση σε αναφορές σφαλμάτων</string>
@@ -280,6 +286,7 @@
     <string name="security_settings_biometric_preference_summary_none_enrolled">Πατήστε για ρύθμιση</string>
     <string name="security_settings_face_enroll_dialog_ok">OK</string>
     <string name="security_settings_face_enroll_education_message">Στην επόμενη οθόνη, περιστρέψτε το κεφάλι σας για να καταγράψετε όλες τις γωνίες του προσώπου.</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Στην επόμενη οθόνη, κρατήστε το τηλέφωνό σας στο ύψος των ματιών</string>
     <string name="security_settings_face_enroll_error_generic_dialog_message">Η καταχώριση προσώπου απέτυχε.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">Λήξη χρονικού ορίου καταχώρισης προσώπου. Δοκιμάστε ξανά.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Λήξη χρον. ορίου ρύθμισης Ξεκλείδωμ. με το πρόσωπο</string>
@@ -295,13 +302,29 @@
 Το Ξεκλείδωμα με το πρόσωπο λειτουργεί καλύτερα όταν υπάρχει αρκετό φως και δεν φοράτε μάσκα ή σκούρα γυαλιά."</string>
     <string name="security_settings_face_enroll_finish_title">Όλα εντάξει!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Περιορισμένη όραση ή κίνηση κεφαλιού</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Όταν χρησιμοποιείτε τη λειτουργία Ξεκλείδωμα με το πρόσωπο, ίσως χρειαστεί να μετακινηθείτε έτσι ώστε το κεφάλι σας να είναι ακριβώς μπροστά στο τηλέφωνό σας.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Να είναι απαραίτητο να έχετε τα μάτια ανοικτά</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Εσείς και το παιδί σας μπορείτε να διαγράψετε το μοντέλο προσώπου του ή να απενεργοποιήσετε το Ξεκλείδωμα με το πρόσωπο ανά πάσα στιγμή στις Ρυθμίσεις. Τα μοντέλα προσώπων αποθηκεύονται στο τηλέφωνο μέχρι να διαγραφούν.&lt;br&gt;&lt;br&gt;Μάθετε περισσότερα στη διεύθυνση &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Εσείς και το παιδί σας έχετε τον έλεγχο</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Μπορείτε να διαγράψετε το μοντέλο προσώπου σας ή να απενεργοποιήσετε το Ξεκλείδωμα με το πρόσωπο ανά πάσα στιγμή στις Ρυθμίσεις. Τα μοντέλα προσώπων αποθηκεύονται στο τηλέφωνο μέχρι να τα διαγράψετε.&lt;br&gt;&lt;br&gt;Μάθετε περισσότερα στη διεύθυνση &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Έχετε τον έλεγχο</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Το Ξεκλείδωμα με το πρόσωπο δημιουργεί ένα μοναδικό μοντέλο του προσώπου του παιδιού σας για να επαληθεύει την ταυτότητά του. Για τη δημιουργία αυτού του μοντέλου προσώπου κατά τη ρύθμιση, θα πρέπει να ληφθούν εικόνες του προσώπου του παιδιού σας από διαφορετικές γωνίες.
+
+Κατά τη χρήση του Ξεκλειδώματος με το πρόσωπο, οι εικόνες χρησιμοποιούνται για την ενημέρωση του μοντέλου προσώπου του. Οι εικόνες που χρησιμοποιούνται για τη δημιουργία του μοντέλου προσώπου του δεν αποθηκεύονται, αλλά το μοντέλο προσώπου αποθηκεύεται με ασφάλεια στο τηλέφωνο και παραμένει πάντα εκεί. Όλη η επεξεργασία πραγματοποιείται με ασφάλεια στο τηλέφωνο."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Το Ξεκλείδωμα με το πρόσωπο δημιουργεί ένα μοναδικό μοντέλο του προσώπου σας για να επαληθεύει την ταυτότητά σας. Για τη δημιουργία αυτού του μοντέλου προσώπου κατά τη ρύθμιση, θα ληφθούν εικόνες του προσώπου σας από διαφορετικές οπτικές γωνίες.
+
+Κατά τη χρήση του Ξεκλειδώματος με το πρόσωπο, οι εικόνες χρησιμοποιούνται για την ενημέρωση του μοντέλου προσώπου σας. Οι εικόνες που χρησιμοποιούνται για τη δημιουργία του μοντέλου προσώπου σας δεν αποθηκεύονται, αλλά το μοντέλο προσώπου αποθηκεύεται με ασφάλεια στο τηλέφωνό σας και παραμένει πάντα εκεί. Όλη η επεξεργασία πραγματοποιείται με ασφάλεια στο τηλέφωνό σας."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Πώς λειτουργεί</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Το παιδί σας θα πρέπει να έχει τα μάτια του ανοικτά προκειμένου η λειτουργία Ξεκλείδωμα με το πρόσωπο να ξεκλειδώσει το τηλέφωνο ή να επαληθεύσει την ταυτότητά του. Εσείς και το παιδί σας μπορείτε να ενεργοποιήσετε αυτή την επιλογή ανά πάσα στιγμή στις Ρυθμίσεις.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Εάν το παιδί σας φορά γυαλιά συνήθως, μπορεί να τα φορά κατά τη ρύθμιση.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Η χρήση του προσώπου του παιδιού σας για το ξεκλείδωμα του τηλεφώνου του μπορεί να είναι λιγότερο ασφαλής μέθοδος σε σχέση με ένα ισχυρό μοτίβο, PIN ή κωδικό πρόσβασης</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Το τηλέφωνο μπορεί να ξεκλειδώσει όταν το κοιτά ακόμη και αν δεν σκοπεύει να το ξεκλειδώσει. Το τηλέφωνο του παιδιού σας μπορεί επίσης να ξεκλειδωθεί από κάποιο άτομο που του μοιάζει πολύ, όπως για παράδειγμα, τον δίδυμο αδελφό του, ή σε περίπτωση που κάποιος το κρατήσει μπροστά στο πρόσωπό του.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Θα πρέπει να έχετε τα μάτια σας ανοικτά προκειμένου η λειτουργία Ξεκλείδωμα με το πρόσωπο να ξεκλειδώσει το τηλέφωνο ή να επαληθεύσει την ταυτότητά σας. Μπορείτε να ενεργοποιήσετε αυτή την επιλογή ανά πάσα στιγμή στις Ρυθμίσεις.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Η χρήση γυαλιών όρασης και γυαλιών ηλίου με ελαφριά απόχρωση είναι αποδεκτή.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Η χρήση του προσώπου σας για το ξεκλείδωμα του τηλεφώνου σας μπορεί να είναι λιγότερο ασφαλής μέθοδος σε σχέση με ένα ισχυρό μοτίβο, PIN ή κωδικό πρόσβασης</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Το τηλέφωνο μπορεί να ξεκλειδώσει όταν το κοιτάτε ακόμη και αν δεν σκοπεύετε να το ξεκλειδώσετε. Το τηλέφωνό σας μπορεί επίσης να ξεκλειδωθεί από κάποιο άτομο που σας μοιάζει πολύ, όπως για παράδειγμα, τον δίδυμο αδελφό σας, ή σε περίπτωση που κάποιος το κρατήσει μπροστά στο πρόσωπό σας.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Έχετε υπόψη τα εξής</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Χρησιμοποιήστε το πρόσωπό σας για να ξεκλειδώσετε το τηλέφωνό σας ή να επαληθεύσετε την ταυτότητά σας, για παράδειγμα κατά τη σύνδεση σε εφαρμογές ή την έγκριση μιας αγοράς.</string>
     <string name="security_settings_face_enroll_introduction_title">Ρύθμιση Ξεκλειδώματος με το πρόσωπο</string>
     <string name="security_settings_face_enroll_next">Επόμενο</string>
     <string name="security_settings_face_enroll_partial_message">Για να βελτιώσετε την απόδοση, μπορείτε να επαναλάβετε τη ρύθμιση της λειτουργίας Ξεκλείδωμα με το πρόσωπο στις Ρυθμίσεις.</string>
@@ -327,7 +350,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">Πατήστε για ρύθμιση δακτυλικού αποτυπώματος</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Το Pixel Imprint δημιουργεί ένα μοναδικό μοντέλο του δακτυλικού σας αποτυπώματος για να επαληθεύει την ταυτότητά σας. Για τη δημιουργία αυτού του μοντέλου δακτυλικού αποτυπώματος κατά τη ρύθμιση, θα ληφθούν εικόνες του δακτυλικού σας αποτυπώματος από διάφορες θέσεις.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Κατά τη χρήση του Pixel Imprint, χρησιμοποιούνται εικόνες για την ενημέρωση του μοντέλου του δακτυλικού σας αποτυπώματος. Οι εικόνες που χρησιμοποιούνται για τη δημιουργία του μοντέλου του δακτυλικού σας αποτυπώματος δεν αποθηκεύονται ποτέ, αλλά το μοντέλο δακτυλικού αποτυπώματος αποθηκεύεται με ασφάλεια στο τηλέφωνό σας και παραμένει πάντα εκεί. Όλη η επεξεργασία πραγματοποιείται με ασφάλεια στο τηλέφωνό σας.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Μπορείτε να διαγράψετε το μοντέλο του δακτυλικού σας αποτυπώματος ή να απενεργοποιήσετε το Pixel Imprint ανά πάσα στιγμή από τις Ρυθμίσεις. Τα μοντέλα δακτυλικών αποτυπωμάτων αποθηκεύονται στο τηλέφωνο μέχρι να τα διαγράψετε.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Το Pixel Imprint δημιουργεί ένα μοναδικό μοντέλο του δακτυλικού αποτυπώματος του παιδιού σας για να επαληθεύει την ταυτότητά του. Για τη δημιουργία αυτού του μοντέλου δακτυλικού αποτυπώματος κατά τη ρύθμιση, θα ληφθούν εικόνες του δακτυλικού του αποτυπώματος από διάφορες θέσεις.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">Κατά τη χρήση του Pixel Imprint, χρησιμοποιούνται εικόνες για την ενημέρωση του μοντέλου του δακτυλικού του αποτυπώματος. Οι εικόνες που χρησιμοποιούνται για τη δημιουργία του μοντέλου του δακτυλικού αποτυπώματος του παιδιού σας δεν αποθηκεύονται ποτέ, αλλά το μοντέλο δακτυλικού αποτυπώματος αποθηκεύεται με ασφάλεια στο τηλέφωνο και παραμένει πάντα εκεί. Όλη η επεξεργασία πραγματοποιείται με ασφάλεια στο τηλέφωνο.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Εσείς και το παιδί σας μπορείτε να διαγράψετε το δακτυλικό του αποτύπωμα ή να απενεργοποιήσετε το Pixel Imprint ανά πάσα στιγμή στις Ρυθμίσεις. Τα μοντέλα δακτυλικού αποτυπώματος αποθηκεύονται στο τηλέφωνο μέχρι να διαγραφούν.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Μάθετε περισσότερα για το Ξεκλείδωμα με δακτυλικό αποτύπωμα του Pixel στη διεύθυνση &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint για επαγγελματική χρήση</string>
     <string name="setup_suggestion_summary">Απομένουν λίγα μόνο βήματα</string>
@@ -336,6 +363,7 @@
     <string name="smart_battery_a11y_expand_label">Ανάπτυξη, Προσαρμοστική μπαταρία</string>
     <string name="smart_battery_footer">Για να επεκτείνετε τη διάρκεια ζωής της μπαταρίας, η Προσαρμοστική μπαταρία ενδέχεται να μειώσει την απόδοση και τη δραστηριότητα στο παρασκήνιο. Ορισμένες ειδοποιήσεις ενδέχεται να εμφανίζονται με καθυστέρηση.</string>
     <string name="smart_battery_manager_title">Προσαρμοστικές προτιμήσεις</string>
+    <string name="smart_battery_summary" product="default">Η Προσαρμοστική μπαταρία μαθαίνει από τη χρήση του τηλεφώνου σας, ώστε να βελτιστοποιεί συνεχώς τον τρόπο που οι εφαρμογές χρησιμοποιούν την μπαταρία. Για να επεκταθεί η διάρκεια ζωής της μπαταρίας, ενδέχεται να μειωθεί η απόδοση και να καθυστερούν οι ειδοποιήσεις.</string>
     <string name="smart_battery_title">Προσαρμοστική μπαταρία</string>
     <string name="software_update_can_be_updated_header">Κάντε το Pixel ακόμα καλύτερο</string>
     <string name="software_update_detail_indication_1_update_available">1 διαθέσιμη ενημέρωση</string>

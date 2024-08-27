@@ -148,6 +148,7 @@ Pancingan data ialah percubaan untuk mencuri bukti kelayakan log masuk atau makl
     <string name="content_protection_preference_subpage_summary">Pengimbasan dijalankan secara peribadi terus pada peranti anda, menyemak aktiviti apl untuk mengesan pancingan data atau gelagat mengelirukan yang lain. Jika aktiviti itu dikesan, sesetengah maklumat apl dihantar kepada Google Play Protect untuk mengesahkan ancaman dan memberikan amaran kepada pengguna apl.</string>
     <string name="contextual_timeout_description">Skrin anda dimatikan secara automatik lebih awal jika anda tidak menggunakan peranti anda</string>
     <string name="contextual_timeout_title">Tamat masa boleh suai</string>
+    <string name="credentials_install_summary" product="default">Pasang sijil daripada storan</string>
     <string name="dark_ui_text">Tema gelap menggunakan latar belakang hitam agar bateri tahan lebih lama. Jadual tema gelap akan diaktifkan setelah skrin dimatikan.</string>
     <string name="debugging_data_title">Data penyahpepijatan</string>
     <string name="discover_tips_button">Terokai petua</string>
@@ -155,6 +156,8 @@ Pancingan data ialah percubaan untuk mencuri bukti kelayakan log masuk atau makl
     <string name="double_twist_for_camera_mode_summary">Untuk masuk dan keluar daripada mod swafoto dalam Google Camera, balikkan dua kali semasa dalam apl itu.</string>
     <string name="duration_less_than_one_minute">Kurang daripada seminit</string>
     <string name="enable_glanceable_hub_toggle">Mod hab</string>
+    <string name="erase_external_storage" product="default">Padamkan storan USB</string>
+    <string name="erase_external_storage_description" product="default">Padamkan semua data pada storan USB dalaman, seperti muzik atau foto</string>
     <string name="extreme_battery_saver_summary">Termasuk semua perubahan yang disenaraikan di atas. Juga menjeda apl tidak penting dan pemberitahuan apl tersebut.</string>
     <string name="extreme_battery_saver_title">Penjimat Bateri Ekstrem</string>
     <string name="face_confirmation_hide_illustration_description">Kini anda boleh menggunakan wajah anda untuk membuka kunci apabila anda memegang telefon anda atau mengetik skrin.</string>
@@ -228,6 +231,9 @@ Data sandaran tidak dikira dalam kuota storan Drive anda. Fail yang besar atau f
     <string name="limited_warranty_title">Jaminan Terhad</string>
     <string name="lockscreen_show_weather_summary">Lihat keadaan cuaca semasa</string>
     <string name="lockscreen_show_weather_title">Tunjukkan cuaca</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Untuk memadam bersih muzik, gambar dan data pengguna lain, "<b>storan USB</b> perlu dipadamkan.</string>
     <string name="my_device_info_account_preference_title">Google Account</string>
     <string name="owner_info_settings_edit_text_hint">Mis., Pixel Johari.</string>
     <string name="permit_debugging_data">Benarkan akses laporan pepijat</string>
@@ -279,6 +285,7 @@ Balikkan telefon anda untuk mencuba."</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Ketik untuk membuat persediaan</string>
     <string name="security_settings_face_enroll_consent_introduction_title">Benarkan Buka Kunci Wajah</string>
     <string name="security_settings_face_enroll_education_message">Pada skrin seterusnya, pusingkan kepala agar semua sudut wajah anda dapat dirakam</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Pada skrin seterusnya, pegang telefon anda pada paras mata</string>
     <string name="security_settings_face_enroll_error_generic_dialog_message">Pendaftaran wajah tidak berfungsi.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Persediaan Buka Kunci Wajah sudah tamat masa</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Kini anda boleh menggunakan wajah untuk membuka kunci telefon atau mengesahkan identiti anda, seperti ketika anda log masuk ke apl atau meluluskan pembelian</string>
@@ -293,13 +300,29 @@ Buka Kunci Wajah paling sesuai digunakan apabila terdapat cahaya yang mencukupi 
 Buka Kunci Wajah berfungsi paling sesuai apabila terdapat cahaya yang mencukupi dan anda tidak memakai pelitup muka atau cermin mata hitam."</string>
     <string name="security_settings_face_enroll_finish_title">Nampak bagus!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Persediaan untuk pandangan/gerakan kepala terbatas</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Apabila menggunakan Buka Kunci Wajah, kepala anda mungkin perlu berada betul-betul di hadapan telefon anda.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Mata perlu dibuka</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Anda dan anak anda boleh memadamkan model wajah anak anda atau mematikan Buka Kunci Wajah pada bila-bila masa dalam Tetapan. Model wajah disimpan pada telefon sehingga dipadamkan.&lt;br&gt;&lt;br&gt;Ketahui lebih lanjut di &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Anda dan anak anda berada dalam kawalan</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Anda boleh memadamkan model wajah anda atau mematikan Buka Kunci Wajah pada bila-bila masa dalam Tetapan. Model wajah disimpan pada telefon sehingga anda memadamkan model wajah tersebut.&lt;br&gt;&lt;br&gt;Ketahui lebih lanjut di &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Kawalan di tangan anda</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Buka Kunci Wajah menghasilkan model unik wajah anak anda untuk mengesahkan identiti anak anda. Untuk menghasilkan model wajah ini semasa persediaan, anak anda akan mengambil imej wajahnya dari sudut yang berbeza.
+
+Apabila anak anda menggunakan Buka Kunci Wajah, imej digunakan untuk mengemas kini model wajah anak anda. Imej yang digunakan untuk menghasilkan model wajah anak anda tidak disimpan, tetapi model wajah disimpan dengan selamat pada telefon dan tidak akan keluar daripada telefon itu. Semua pemprosesan berlaku dengan selamat pada telefon."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Buka Kunci Wajah menghasilkan model unik wajah anda untuk mengesahkan identiti anda. Untuk menghasilkan model wajah ini semasa persediaan, anda perlu mengambil imej wajah anda dari pelbagai sudut.
+
+Apabila anda menggunakan Buka Kunci Wajah, imej akan digunakan untuk mengemaskinikan model wajah anda. Imej yang digunakan untuk menghasilkan model wajah anda tidak disimpan, tetapi model wajah disimpan dengan selamat pada telefon dan tidak akan keluar daripada telefon anda. Semua pemprosesan berlaku dengan selamat pada telefon anda."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Caranya</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Buka Kunci Wajah memerlukan mata anak anda dibuka untuk membuka kunci telefon atau mengesahkan identiti anak anda. Anda dan anak anda boleh menghidupkan pilihan ini pada bila-bila masa dalam Tetapan.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Jika anak anda biasanya memakai cermin mata, mereka boleh memakai cermin mata semasa persediaan.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Penggunaan wajah anak anda untuk membuka kunci telefon anak anda mungkin kurang selamat berbanding dengan corak, PIN atau kata laluan yang kukuh.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Tindakan melihat telefon boleh membuka kunci telefon itu meskipun anak anda tidak bermaksud untuk berbuat demikian. Telefon anak anda juga boleh dibuka kunci oleh seseorang yang berwajah seiras anak anda, seperti adik-beradik seiras, atau jika seseorang menghalakan telefon rapat ke wajah anak anda.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Buka Kunci Wajah memerlukan mata anda dibuka untuk membuka kunci telefon atau mengesahkan identiti anda. Anda boleh menghidupkan pilihan ini pada bila-bila masa dalam Tetapan.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Anda boleh memakai cermin mata atau kaca mata hitam yang tidak begitu gelap.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Penggunaan wajah anda untuk membuka kunci telefon anda mungkin kurang selamat berbanding dengan corak, PIN atau kata laluan yang kukuh</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Tindakan melihat telefon boleh membuka kunci telefon itu meskipun anda tidak bermaksud untuk berbuat demikian. Telefon anda juga boleh dibuka kunci oleh seseorang yang berwajah seiras anda, seperti adik-beradik seiras, atau jika seseorang menghalakan telefon rapat ke wajah anda.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Jangan lupa</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Gunakan wajah untuk membuka kunci telefon atau mengesahkan identiti anda, seperti ketika anda log masuk ke apl atau meluluskan pembelian.</string>
     <string name="security_settings_face_enroll_introduction_title">Sediakan Buka Kunci Wajah</string>
     <string name="security_settings_face_enroll_next">Seterusnya</string>
     <string name="security_settings_face_enroll_partial_message">Untuk meningkatkan prestasi, anda boleh menyediakan semula Buka Kunci Wajah dalam Tetapan</string>
@@ -325,7 +348,11 @@ Perhatian: Anda tidak boleh menggunakan cap jari untuk membuka kunci peranti ini
     <string name="security_settings_fingerprint_preference_summary_none">Ketik untuk menyediakan cap jari</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint menghasilkan model unik cap jari anda untuk mengesahkan sama ada itulah anda atau tidak. Untuk menghasilkan model cap jari ini semasa persediaan, anda akan mengambil imej cap jari anda daripada kedudukan yang berbeza.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Apabila anda menggunakan Pixel Imprint, imej digunakan untuk mengemas kini model cap jari anda. Imej yang digunakan untuk menghasilkan model cap jari anda tidak akan disimpan, tetapi model cap jari disimpan dengan selamat pada telefon anda dan tidak akan keluar daripada telefon. Semua pemprosesan berlaku dengan selamat pada telefon anda.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Anda boleh memadamkan model cap jari anda atau mematikan Pixel Imprint pada bila-bila masa dalam Tetapan. Model cap jari akan disimpan pada telefon sehingga anda memadamkan model tersebut.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint menghasilkan model unik cap jari anak anda untuk mengesahkan sama ada itulah mereka atau tidak. Untuk menghasilkan model cap jari ini semasa persediaan, mereka akan mengambil imej cap jari mereka daripada kedudukan yang berbeza.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">Apabila anak anda menggunakan Pixel Imprint, imej digunakan untuk mengemas kini model cap jari anak anda. Imej yang digunakan untuk menghasilkan model cap jari anak anda tidak akan disimpan, tetapi model cap jari disimpan dengan selamat pada telefon dan tidak akan keluar daripada telefon. Semua pemprosesan berlaku dengan selamat pada telefon.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Anda dan anak anda boleh memadamkan model cap jari anak anda atau mematikan Pixel Imprint pada bila-bila masa dalam Tetapan. Model cap jari akan disimpan dalam telefon sehingga model itu dipadamkan.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Ketahui lebih lanjut tentang buka kunci cap jari Pixel di &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint untuk kerja</string>
     <string name="setup_suggestion_summary">Hanya beberapa langkah lagi</string>
@@ -334,6 +361,7 @@ Perhatian: Anda tidak boleh menggunakan cap jari untuk membuka kunci peranti ini
     <string name="smart_battery_a11y_expand_label">Kembang, Bateri Boleh Suai</string>
     <string name="smart_battery_footer">Untuk melanjutkan hayat bateri, Bateri Boleh Suai mungkin mengurangkan prestasi dan aktiviti latar belakang. Sesetengah pemberitahuan mungkin tertangguh.</string>
     <string name="smart_battery_manager_title">Pilihan boleh suai</string>
+    <string name="smart_battery_summary" product="default">Bateri Boleh Suai mempelajari penggunaan telefon untuk terus mengoptimumkan cara apl menggunakan bateri. Untuk melanjutkan hayat bateri, ciri ini mungkin mengurangkan prestasi dan melewatkan pemberitahuan.</string>
     <string name="smart_battery_title">Bateri Boleh Suai</string>
     <string name="software_update_can_be_updated_header">Kemas kinikan Pixel anda</string>
     <string name="software_update_detail_indication_1_update_available">1 kemaskinian tersedia</string>

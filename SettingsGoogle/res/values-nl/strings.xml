@@ -149,6 +149,7 @@ Phishing is een poging om inloggegevens of andere persoonlijke informatie te ste
     <string name="content_protection_preference_subpage_summary">Scans worden privé uitgevoerd op je apparaat, waarbij de app-activiteit wordt gecheckt op phishing of ander misleidend gedrag. Als er iets wordt gevonden, worden bepaalde app-gegevens naar Google Play Protect gestuurd om de dreiging te bevestigen en app-gebruikers te waarschuwen.</string>
     <string name="contextual_timeout_description">Zet je scherm automatisch vroegtijdig uit als je het apparaat niet gebruikt</string>
     <string name="contextual_timeout_title">Aanpasbare time-out</string>
+    <string name="credentials_install_summary" product="default">Installeer certificaten vanuit opslag</string>
     <string name="dark_ui_text">"Het donkere thema gebruikt een zwarte achtergrond zodat je batterij langer meegaat. Schema's voor het donkere thema worden pas aangezet als je scherm uitstaat."</string>
     <string name="debugging_data_title">Fouten in gegevens opsporen</string>
     <string name="discover_tips_button">Tips ontdekken</string>
@@ -156,6 +157,8 @@ Phishing is een poging om inloggegevens of andere persoonlijke informatie te ste
     <string name="double_twist_for_camera_mode_summary">Als je de selfiemodus wilt aan- of uitzetten in Google Camera, draai je 2 keer vanuit je pols terwijl de app is geopend</string>
     <string name="duration_less_than_one_minute">Minder dan een minuut</string>
     <string name="enable_glanceable_hub_toggle">Hub-modus</string>
+    <string name="erase_external_storage" product="default">USB-opslag wissen</string>
+    <string name="erase_external_storage_description" product="default">"Alle gegevens in de interne USB-opslag wissen, zoals muziek en foto's"</string>
     <string name="extreme_battery_saver_summary">Bevat alle hierboven vermelde wijzigingen. Onderbreekt ook niet-essentiële apps en de meldingen daarvan.</string>
     <string name="extreme_battery_saver_title">Extreme batterijbesparing</string>
     <string name="face_confirmation_hide_illustration_description">Als je nu je telefoon oppakt of op het scherm tikt, kun je de telefoon ontgrendelen met je gezicht.</string>
@@ -229,6 +232,9 @@ Back-upgegevens tellen niet mee voor je Drive-opslagquotum. Er wordt geen back-u
     <string name="limited_warranty_title">Beperkte Garantie</string>
     <string name="lockscreen_show_weather_summary">Bekijk het actuele weerbericht</string>
     <string name="lockscreen_show_weather_title">Weerbericht tonen</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Als je muziek, foto's en andere gebruikersgegevens wilt wissen, moet de "<b>USB-opslag</b> worden gewist.</string>
     <string name="my_device_info_account_preference_title">Google-account</string>
     <string name="owner_info_settings_edit_text_hint">Bijvoorbeeld Pixel van Jan.</string>
     <string name="permit_debugging_data">Toegang tot bugrapport toestaan</string>
@@ -279,6 +285,7 @@ Draai je telefoon om en probeer het uit."</string>
     <string name="security_dismiss_dialog_title">Deze waarschuwing sluiten?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Tik om in te stellen</string>
     <string name="security_settings_face_enroll_education_message">Draai je hoofd op het volgende scherm om je gezicht onder alle hoeken vast te leggen</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Op het volgende scherm houd je je telefoon op ooghoogte</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">Tijdslimiet voor gezichtsregistratie bereikt. Probeer het opnieuw.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Time-out bij instellen Ontgrendelen via gezicht</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Je kunt nu je gezicht gebruiken om je telefoon te ontgrendelen of om te laten verifiëren dat jij het bent, bijvoorbeeld als je inlogt bij apps of een aankoop goedkeurt</string>
@@ -293,13 +300,29 @@ Ontgrendelen via gezichtsherkenning werkt het best als er genoeg licht is en je 
 Ontgrendelen via gezichtsherkenning werkt het best als er genoeg licht is en je geen mondkapje of donkere bril draagt."</string>
     <string name="security_settings_face_enroll_finish_title">Ziet er goed uit!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Instellen voor visuele beperking of beperkte hoofdbeweging</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Als je Ontgrendelen via gezichtsherkenning gebruikt, moet je je hoofd misschien dichter bij je telefoon houden.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Vereisen dat ogen open zijn</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Jij en je kind kunnen op elk moment het gezichtsmodel van het kind verwijderen of Ontgrendelen via gezichtsherkenning uitzetten in Instellingen. Gezichtsmodellen worden opgeslagen op de telefoon totdat ze worden verwijderd.&lt;br&gt;&lt;br&gt;Bekijk meer informatie op &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Jij en je kind hebben de controle</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Je kunt op elk moment je gezichtsmodel verwijderen of Ontgrendelen via gezichtsherkenning uitzetten in Instellingen. Gezichtsmodellen worden opgeslagen op de telefoon totdat je ze verwijdert.&lt;br&gt;&lt;br&gt;Ga voor meer informatie naar &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Jij hebt het voor het zeggen</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Ontgrendelen via gezichtsherkenning maakt een uniek model van het gezicht van je kind voor verificatie. Dit gezichtsmodel wordt tijdens het instellen gemaakt door vanuit verschillende hoeken foto's van het gezicht van je kind te maken.
+
+Als je kind Ontgrendelen via gezichtsherkenning gebruikt, worden foto's gebruikt om het gezichtsmodel van je kind te updaten. De foto's die worden gebruikt om je gezichtsmodel te maken, worden niet opgeslagen, maar het gezichtsmodel zelf wordt beveiligd opgeslagen op de telefoon en verlaat deze nooit. Alle verwerking vindt beveiligd plaats op de telefoon."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Ontgrendelen via gezichtsherkenning maakt een uniek model van je gezicht om te verifiëren dat jij het bent. Dit gezichtsmodel wordt tijdens het instellen gemaakt door vanuit verschillende hoeken foto's van je gezicht te maken.
+
+Als je Ontgrendelen via gezichtsherkenning gebruikt, worden foto's gebruikt om je gezichtsmodel te updaten. De foto's die worden gebruikt om je gezichtsmodel te maken, worden niet opgeslagen, maar het gezichtsmodel zelf wordt beveiligd opgeslagen op je telefoon en verlaat deze nooit. Alle verwerking vindt beveiligd plaats op je telefoon."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Hoe het werkt</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Ontgrendelen via gezichtsherkenning kan vereisen dat de ogen van je kind open zijn om de telefoon te ontgrendelen of voor verificatie. Jij en je kind kunnen deze optie op elk moment aanzetten via Instellingen.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Draagt je kind normaal een bril, dan kan het deze dragen tijdens het instellen.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Het gezicht van je kind gebruiken om de telefoon te ontgrendelen zorgt misschien voor minder goede beveiliging dan een sterk patroon, een sterke pincode of een sterk wachtwoord</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Je kind kan de telefoon ontgrendelen door ernaar te kijken, ook als dat niet de bedoeling was. De telefoon van je kind kan ook worden ontgrendeld door iemand anders die veel op je kind lijkt, zoals een tweelingbroer of -zus, of als iemand de telefoon voor het gezicht van je kind houdt.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Ontgrendelen via gezichtsherkenning kan vereisen dat je ogen open zijn om de telefoon te ontgrendelen of voor verificatie. Je kunt deze optie op elk moment aanzetten via Instellingen.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Brillen of lichte zonnebrillen zijn geen probleem.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Je telefoon ontgrendelen met je gezicht is misschien minder veilig dan een sterk patroon of wachtwoord, of een sterke pincode.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">De telefoon kan worden ontgrendeld als je ernaar kijkt, ook als dat niet je bedoeling was. Je telefoon kan ook worden ontgrendeld door iemand anders die veel op je lijkt, zoals een tweelingbroer of -zus, of als iemand de telefoon voor je gezicht houdt.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Houd rekening met het volgende</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Gebruik je gezicht om je telefoon te ontgrendelen of om te bevestigen dat jij het bent, bijvoorbeeld als je inlogt bij apps of een aankoop goedkeurt</string>
     <string name="security_settings_face_enroll_introduction_title">Ontgrendelen via gezichtsherkenning instellen</string>
     <string name="security_settings_face_enroll_next">Volgende</string>
     <string name="security_settings_face_enroll_partial_message">Als je de prestaties wilt verbeteren, kun je Ontgrendelen via gezichtsherkenning instellen via Instellingen</string>
@@ -325,7 +348,11 @@ Opmerking: Je kunt je vingerafdruk niet gebruiken om dit apparaat te ontgrendele
     <string name="security_settings_fingerprint_preference_summary_none">Tik om vingerafdruk in te stellen</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint maakt een uniek model van je vingerafdruk om je te herkennen tijdens verificatie. Tijdens het instelproces maak je afbeeldingen van je vingerafdruk in verschillende posities om een vingerafdrukmodel te maken.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">"Pixel Imprint gebruikt foto's om je vingerafdrukmodel te updaten. De foto's die worden gebruikt voor je vingerafdrukmodel, worden nooit opgeslagen. Het vingerafdrukmodel zelf wordt beveiligd opgeslagen op je apparaat en verlaat dit nooit. Alle verwerking vindt beveiligd plaats op je telefoon."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Je kunt op elk moment je vingerafdrukmodel verwijderen of Pixel Imprint uitzetten via Instellingen. Vingerafdrukmodellen worden opgeslagen op de telefoon totdat je ze verwijdert.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">"Pixel Imprint maakt een uniek model van de vingerafdruk van je kind voor verificatie. Tijdens het instelproces maakt je kind foto's van de vingerafdruk in verschillende posities om een vingerafdrukmodel te maken."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">"Als je kind Pixel Imprint gebruikt, worden foto's gebruikt om het vingerafdrukmodel van je kind te updaten. De foto's die worden gebruikt om het vingerafdrukmodel van je kind te maken, worden nooit opgeslagen. Het vingerafdrukmodel zelf wordt beveiligd opgeslagen op de telefoon en verlaat deze nooit. Alle verwerking vindt beveiligd plaats op de telefoon."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Jij en je kind kunnen op elk moment het vingerafdrukmodel van je kind verwijderen of Pixel Imprint uitzetten in Instellingen. Vingerafdrukmodellen worden opgeslagen op de telefoon totdat ze worden verwijderd.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Ga voor meer informatie over Ontgrendelen met vingerafdruk op de Pixel naar &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint voor werk</string>
     <string name="setup_suggestion_summary">Nog een paar stappen</string>
@@ -334,6 +361,7 @@ Opmerking: Je kunt je vingerafdruk niet gebruiken om dit apparaat te ontgrendele
     <string name="smart_battery_a11y_expand_label">Uitvouwen, Aangepast batterijgebruik</string>
     <string name="smart_battery_footer">Aangepast batterijgebruik kan achtergrondactiviteit uitzetten of beperken om de batterijduur te verlengen. Sommige meldingen kunnen vertraagd zijn.</string>
     <string name="smart_battery_manager_title">Aangepaste voorkeuren</string>
+    <string name="smart_battery_summary" product="default">Aangepast batterijgebruik leert van je telefoongebruik om voortdurend te optimaliseren hoe apps de batterij gebruiken. De functie kan de prestaties beperken en meldingen vertragen om de levensduur van de batterij te verlengen.</string>
     <string name="smart_battery_title">Aangepast batterijgebruik</string>
     <string name="software_update_can_be_updated_header">Maak je Pixel nog beter</string>
     <string name="software_update_detail_indication_1_update_available">1 update beschikbaar</string>

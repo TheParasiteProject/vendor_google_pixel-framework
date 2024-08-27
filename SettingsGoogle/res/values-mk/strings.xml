@@ -149,6 +149,7 @@
     <string name="content_protection_preference_subpage_summary">Скенирањето се извршува приватно директно на вашиот уред за да се провери активноста во апликациите за фишинг или друго измамничко однесување. Ако се открие, некои податоци за апликацијата се испраќаат до Google Play Protect за да се потврди заканата и да се предупредат корисниците на апликацијата.</string>
     <string name="contextual_timeout_description">Автоматски го гаси екранот набрзо ако не го користите уредот</string>
     <string name="contextual_timeout_title">Адаптивно гасење на екранот</string>
+    <string name="credentials_install_summary" product="default">Инсталирајте сертификати од мемориски уред</string>
     <string name="dark_ui_text">Темната тема користи црна заднина за подолго траење на батеријата. Распоредите за темната тема не се вклучуваат додека не се исклучи екранот.</string>
     <string name="debugging_data_title">Податоци за отстранување грешки</string>
     <string name="discover_tips_button">Откријте совети</string>
@@ -156,6 +157,8 @@
     <string name="double_twist_for_camera_mode_summary">За да го вклучите или исклучите режимот за селфи во „Камерата на Google“, завртете го уредот двапати додека сте во апликацијата.</string>
     <string name="duration_less_than_one_minute">Помалку од 1 минута</string>
     <string name="enable_glanceable_hub_toggle">Режим Hub</string>
+    <string name="erase_external_storage" product="default">Избриши USB меморија</string>
+    <string name="erase_external_storage_description" product="default">Избриши ги сите податоци во внатрешната USB меморија, како што се музика или фотографии</string>
     <string name="extreme_battery_saver_summary">Ги вклучува сите промени наведени погоре. Ги паузира и апликациите што не се неопходни и нивните известувања.</string>
     <string name="extreme_battery_saver_title">Екстремен штедач на батерија</string>
     <string name="face_confirmation_hide_illustration_description">Отсега ќе може да го отклучувате телефонот со вашиот лик кога ќе го земете телефонот или ќе допрете на екранот.</string>
@@ -230,6 +233,9 @@
     <string name="limited_warranty_title">Ограничена гаранција</string>
     <string name="lockscreen_show_weather_summary">Видете ги моменталните временски услови</string>
     <string name="lockscreen_show_weather_title">Прикажувај временска прогноза</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+За да исчистите музика, слики и други податоци на корисникот, "<b>меморијата</b> треба да се избрише.</string>
     <string name="my_device_info_account_preference_title">Сметка на Google</string>
     <string name="owner_info_settings_edit_text_hint">На пр. Pixel-от на Миле.</string>
     <string name="permit_debugging_data">Дозволете пристап за пријави за грешки</string>
@@ -280,6 +286,7 @@
     <string name="security_dismiss_dialog_title">Да се отфрли опоменава?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Допрете за да поставите</string>
     <string name="security_settings_face_enroll_education_message">На следниот екран, ротирајте ја главата за да се снимат сите агли на вашето лице</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">На следниот екран, држете го телефонот во висина на очите</string>
     <string name="security_settings_face_enroll_error_generic_dialog_message">„Регистрацијата на лик“ не успеа.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">Достигнато е временското ограничување на „Регистрација на лик“. Обидете се повторно.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Времето за поставување „Отклучување со лик“ истече</string>
@@ -295,13 +302,29 @@
 „Отклучување со лик“ функционира најдобро кога има доволно светлина и не носите маска или темни очила."</string>
     <string name="security_settings_face_enroll_finish_title">Добро е!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Поставување за лица со слаб вид или ограничено движење на главата</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Кога користите „Отклучување со лик“, можеби ќе треба да ја поставите главата подиректно пред телефонот.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Потребни се отворени очи</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Вие и вашето дете може да го избришете неговиот модел на лик или да го исклучите „Отклучувањето со лик“ во секое време во „Поставки“. Моделите на лик се складираат во телефонот додека не се избришат.&lt;br&gt;&lt;br&gt;Дознајте повеќе на &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Вие и вашето дете сте во контрола</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Може да го избришете моделот на лик или да го исклучите „Отклучувањето со лик“ во секое време во „Поставки“. Моделите на лик се складираат во телефонот додека не ги избришете.&lt;br&gt;&lt;br&gt;Дознајте повеќе на &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Контролата е во ваши раце</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"„Отклучувањето со лик“ создава уникатен модел на ликот на вашето дете заради потврда на неговиот идентитет. За да го создаде моделов на лик при поставувањето, детето ќе сними слики од својот лик од различни агли.
+
+Кога го користи „Отклучувањето со лик“, сликите се користат за ажурирање на неговиот модел на лик. Сликите што се користат за создавање на моделот на лик на детето не се складираат, а самиот модел се складира безбедно во телефонот и никогаш не го напушта. Целата обработка се одвива безбедно во телефонот."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"„Отклучувањето со лик“ создава уникатен модел од вашиот лик заради потврда на вашиот идентитет. За да го создадете моделов на лик при поставувањето, ќе снимите слики од вашиот лик од различни агли.
+
+Кога користите „Отклучување со лик“, моделот на вашиот лик се ажурира со слики. Сликите што се користат за создавање на моделот на вашиот лик не се складираат, а самиот модел се складира безбедно во телефонот и никогаш не го напушта. Целата обработка се одвива безбедно во телефонот."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Како функционира</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">„Отклучување со лик“ може да бара очите на детето да бидат отворени за да го отклучи телефонот или да го потврди неговиот идентитет. Вие и вашето дете може да ја вклучите опцијава во „Поставки“ во секое време.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Ако вашето дете вообичаено носи очила, може да ги носи при поставувањето.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Користењето на ликот на детето за отклучување на телефонот може да биде помалку безбедно од силна шема, PIN или лозинка</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Ако гледа во телефонот, тој може да се отклучи дури и ако детето нема таква намера. Телефонот може да го отклучи и некој што многу наликува на детето, на пример, идентичен близнак или ако некој го задржи пред ликот на детето.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">„Отклучување со лик“ може да бара очите да ви бидат отворени за да го отклучи телефонот или да го потврди вашиот идентитет. Може да ја вклучите опцијава во „Поставки“ во секое време.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Очила или малку затемнети очила за сонце се во ред.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Користењето на вашиот лик за отклучување на телефонот може да биде помалку безбедно од силна шема, PIN или лозинка</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Поглед кон телефонот може да го отклучи и кога немате таква намера. Телефонот може да го отклучи и некој што многу наликува на вас, на пример, идентичен близнак или ако некој го доближи до вашиот лик.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Имајте предвид</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Користете го вашиот лик за да го отклучувате телефонот или да потврдувате дека сте вие, како кога се најавувате на апликации или одобрувате купување.</string>
     <string name="security_settings_face_enroll_introduction_title">Поставете „Отклучување со лик“</string>
     <string name="security_settings_face_enroll_next">Следно</string>
     <string name="security_settings_face_enroll_partial_message">За да ја подобрите изведбата, може повторно да поставите „Отклучување со лик“ во „Поставки“</string>
@@ -327,7 +350,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">Допрете за да поставите отпечаток</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint создава единствен модел на вашиот отпечаток за да потврди дека сте вие. За да го создадете моделов на отпечаток при поставувањето, ќе снимите слики од отпечатокот од различни положби.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Кога користите Pixel Imprint, моделот на отпечатокот се ажурира со слики. Сликите што се користат за создавање на вашиот модел на отпечаток никогаш не се складираат, а самиот модел се складира безбедно во телефонот и никогаш не го напушта. Целата обработка се одвива безбедно во телефонот.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Може да го избришете моделот на отпечатокот или да го исклучите Pixel Imprint во секое време во „Поставки“. Моделите на отпечатокот се складирани во телефонот додека не ги избришете.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint создава единствен модел од отпечатокот на вашето дете за да потврди дека е тоа. За да го создаде моделот на отпечаток за време на поставувањето, детето ќе направи неколку слики од отпечатокот од различни положби.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">Кога детето користи Pixel Imprint, неговиот модел на отпечаток се ажурира со слики. Сликите што се користат за создавање на моделот на отпечаток на детето никогаш не се складираат, а самиот модел се складира безбедно во телефонот и никогаш не го напушта. Целата обработка се одвива безбедно во телефонот.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Вие и вашето дете може да го избришете неговиот модел на отпечаток или да ја исклучите Pixel Imprint во секое време во „Поставки“. Моделите на отпечаток се складираат во телефонот додека не се избришат.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Дознајте повеќе за „Отклучување со отпечаток“ на Pixel на &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint за работа</string>
     <string name="setup_suggestion_summary">Само уште неколку чекори</string>
@@ -336,6 +363,7 @@
     <string name="smart_battery_a11y_expand_label">„Адаптивна батерија“, проширено</string>
     <string name="smart_battery_footer">За да го продолжи траењето на батеријата, „Адаптивна батерија“ може да ги намали изведбата и активноста во заднина. Можно е некои известувања да бидат одложени.</string>
     <string name="smart_battery_manager_title">Поставки за адаптивност</string>
+    <string name="smart_battery_summary" product="default">„Адаптивната батерија“ учи од користењето на вашиот телефон за континуирано оптимизирање на начинот на кој апликациите ја користат батеријата. За да се продолжи траењето на батеријата, може да ја намали изведбата и да ги одложи известувањата.</string>
     <string name="smart_battery_title">Адаптивна батерија</string>
     <string name="software_update_can_be_updated_header">Направете го Pixel уште подобар</string>
     <string name="software_update_detail_indication_1_update_available">Достапно е 1 ажурирање</string>

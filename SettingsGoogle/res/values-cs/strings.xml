@@ -149,6 +149,7 @@ Phishingem se rozumí pokus o odcizení přihlašovacích nebo jiných osobníc
     <string name="content_protection_preference_subpage_summary">Kontrola probíhá soukromě přímo v zařízení. Kontrolujte se případná phishingová nebo jiná podvodná aktivita v aplikacích. Pokud na něco takového narazíme, určité informace o aplikaci se odešlou do funkce Google Play Protect, abychom potvrdili hrozbu a varovali uživatele.</string>
     <string name="contextual_timeout_description">Pokud zařízení nepoužíváte, automaticky předčasně vypne obrazovku</string>
     <string name="contextual_timeout_title">Adaptivní časový limit</string>
+    <string name="credentials_install_summary" product="default">Nainstalovat certifikáty z úložiště</string>
     <string name="dark_ui_text">Tmavý motiv používá černé pozadí, a pomáhá tak prodloužit výdrž baterie. Plány tmavého motivu se zapnou až po vypnutí obrazovky.</string>
     <string name="debugging_data_title">Ladicí data</string>
     <string name="discover_tips_button">Prozkoumejte tipy</string>
@@ -156,6 +157,8 @@ Phishingem se rozumí pokus o odcizení přihlašovacích nebo jiných osobníc
     <string name="double_twist_for_camera_mode_summary">Režim selfie ve Fotoaparátu Google aktivujete či deaktivujete tak, že dvakrát pootočíte zápěstím, když máte fotoaparát otevřený.</string>
     <string name="duration_less_than_one_minute">méně než 1 minuta</string>
     <string name="enable_glanceable_hub_toggle">Režim centra</string>
+    <string name="erase_external_storage" product="default">Smazat úložiště USB</string>
+    <string name="erase_external_storage_description" product="default">Smazat všechna data v interním úložišti USB, například hudbu a fotografie.</string>
     <string name="extreme_battery_saver_summary">Zahrnuje všechny výše uvedené změny. Pozastaví také méně důležité aplikace a jejich oznámení.</string>
     <string name="extreme_battery_saver_title">Super spořič baterie</string>
     <string name="face_confirmation_hide_illustration_description">Když teď zvednete telefon nebo klepnete na obrazovku, můžete k odemknutí použít obličej.</string>
@@ -229,6 +232,9 @@ Zálohovaná data se do kvóty úložiště na Disku nezapočítávají. Velké 
     <string name="limited_warranty_title">Omezená záruka</string>
     <string name="lockscreen_show_weather_summary">Zobrazit aktuální počasí</string>
     <string name="lockscreen_show_weather_title">Ukázat počasí</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Chcete-li smazat také hudbu, obrázky a další uživatelská data, je potřeba vymazat "<b>úložiště USB</b>.</string>
     <string name="my_device_info_account_preference_title">Účet Google</string>
     <string name="owner_info_settings_edit_text_hint">Např. Terčin Pixel</string>
     <string name="permit_debugging_data">Povolit přístup k hlášení chyb</string>
@@ -279,6 +285,7 @@ Otočte telefon a zkuste to."</string>
     <string name="security_dismiss_dialog_title">Zavřít upozornění?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Nastavíte klepnutím</string>
     <string name="security_settings_face_enroll_education_message">Na další obrazovce bude potřeba, abyste otáčeli hlavou a obličej nechali zachytit ze všech úhlů</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Na další obrazovce držte telefon v úrovni očí</string>
     <string name="security_settings_face_enroll_error_generic_dialog_message">Registrace obličeje nefungovala.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">Bylo dosaženo časového limitu registrace obličeje. Zkuste to znovu.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Časový limit vypršel</string>
@@ -294,13 +301,29 @@ Odemknutí obličejem funguje nejlépe v dobře osvětleném prostoru. Nemějte
 Odemknutí obličejem funguje nejlépe v dobře osvětleném prostoru. Nemějte zakrytý obličej ani nasazené tmavé brýle."</string>
     <string name="security_settings_face_enroll_finish_title">A je to.</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Nastavení pro omezené vidění nebo hybnost hlavy</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Je možné, že při odemykání obličejem bude muset být vaše hlava přímo před telefonem.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Musíte mít otevřené oči</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"V Nastavení můžete vy nebo vaše dítě model obličeje kdykoli smazat, případně odemknutí obličejem vypnout. Modely obličeje jsou v telefonu uloženy, dokud je nesmažete.&lt;br&gt;&lt;br&gt;Další informace najdete na adrese &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Vy a dítě máte vše pod kontrolou</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"V Nastavení můžete model obličeje kdykoli smazat nebo odemknutí obličejem vypnout. Modely obličeje jsou v telefonu uloženy, dokud je nesmažete.&lt;br&gt;&lt;br&gt;Další informace najdete na adrese &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Vše máte ve svých rukou</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Odemknutí obličejem vytváří jedinečný model obličeje dítěte, podle kterého ho při ověření poznáme. Model obličeje vytvoříme při nastavování na základě snímků obličeje dítěte z různých úhlů.
+
+Když dítě používá odemknutí obličejem, snímky slouží k aktualizaci modelu jeho obličeje. Snímky použité k vytvoření modelu obličeje se neukládají, ale model obličeje je bezpečně uložen v telefonu (a nikdy ho neopouští). Veškeré zpracování probíhá bezpečně v telefonu."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Funkce Odemknutí obličejem vytváří jedinečný model vašeho obličeje k ověření vaší identity. Model obličeje se vytvoří při nastavování na základě snímků vašeho obličeje z různých úhlů.
+
+Při odemykání obličejem slouží snímky k aktualizaci modelu vašeho obličeje. Snímky použité k vytvoření tohoto modelu se neukládají, ale model obličeje je bezpečně uložen v telefonu a nikdy ho neopouští. Ke zpracování dochází bezpečně v telefonu."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Jak to funguje</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">K odemknutí telefonu nebo ověření totožnosti může funkce odemknutí obličejem vyžadovat, aby dítě mělo otevřené oči. Tuto možnost můžete vy nebo vaše dítě kdykoliv zapnout v Nastavení.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Pokud dítě běžně nosí brýle, může je mít i při nastavování.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Odemykání telefonu dítěte obličejem může být méně bezpečné než silné gesto, PIN nebo heslo</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Může se stát, že dítě telefon odemkne pohledem, i když zrovna nechce. Telefon by mohl odemknout také někdo, kdo je dítěti hodně podobný, například jeho dvojče, nebo někdo, kdo mu telefon podrží před obličejem.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">K odemknutí telefonu nebo ověření totožnosti může funkce odemknutí obličejem vyžadovat, abyste měli otevřené oči. Tuto možnost můžete kdykoliv zapnout v Nastavení.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Brýle nebo lehce zabarvené sluneční brýle jsou v pořádku.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Odemykání telefonu obličejem může být méně bezpečné než silné gesto, PIN nebo heslo.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Může se stát, že telefon odemknete pohledem, i když zrovna nechcete. Telefon by mohl odemknout také někdo, kdo je vám hodně podobný, například vaše dvojče, nebo někdo, kdo vám telefon podrží před obličejem.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Upozornění</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Odemykejte telefon a ověřujte svoji totožnost v aplikacích (např. při přihlašování nebo schvalování nákupů) pomocí obličeje.</string>
     <string name="security_settings_face_enroll_introduction_title">Nastavení odemknutí obličejem</string>
     <string name="security_settings_face_enroll_next">Další</string>
     <string name="security_settings_face_enroll_partial_message">Za účelem zvýšení výkonu můžete odemknutí obličejem nastavit znovu v Nastavení</string>
@@ -326,7 +349,11 @@ Poznámka: Otisk prstu nelze použít k odemykání tohoto zařízení. Další
     <string name="security_settings_fingerprint_preference_summary_none">Po klepnutí nastavíte otisk prstu</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Funkce Pixel Imprint vytvoří jedinečný model vašeho otisku prstu k ověření vaší totožnosti. Model otisku prstu se vytvoří tak, že si při nastavování nasnímáte prst z různých úhlů.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Když používáte Pixel Imprint, snímky slouží k aktualizaci modelu vašeho otisku prstu. Snímky použité k vytvoření modelu otisku prstu se nikdy neukládají, ale model otisku prstu je bezpečně uložen v telefonu (a nikdy ho neopouští). Veškeré zpracování probíhá bezpečně v telefonu.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">V Nastavení můžete model otisku prstu kdykoli smazat, případně funkci Pixel Imprint vypnout. Modely otisků prstů zůstanou v telefonu uloženy, dokud je nesmažete.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Funkce Pixel Imprint vytvoří jedinečný model otisku prstu dítěte k ověření jeho totožnosti. Model otisku prstu se při nastavování vytvoří tak, že dítě nasnímá svůj prst z různých úhlů.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">Když dítě používá Pixel Imprint, snímky slouží k aktualizaci modelu jeho otisku prstu. Snímky použité k vytvoření modelu otisku prstu se nikdy neukládají, ale model otisku prstu je bezpečně uložen v telefonu (a nikdy ho neopouští). Veškeré zpracování probíhá bezpečně v telefonu.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">V Nastavení můžete vy nebo vaše dítě model otisku prstu kdykoli smazat, případně funkci Pixel Imprint vypnout. Modely otisku prstu jsou v telefonu uloženy, dokud je nesmažete.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Další informace o odemknutí otiskem prstu v telefonu Pixel najdete na stránce &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint pro práci</string>
     <string name="setup_suggestion_summary">Ještě pár kroků</string>
@@ -335,6 +362,7 @@ Poznámka: Otisk prstu nelze použít k odemykání tohoto zařízení. Další
     <string name="smart_battery_a11y_expand_label">Rozbalit, adaptivní baterie</string>
     <string name="smart_battery_footer">Adaptivní baterie může za účelem prodloužení výdrže baterie omezit výkon a aktivitu na pozadí. Některá oznámení se mohou zpožďovat.</string>
     <string name="smart_battery_manager_title">Adaptivní předvolby</string>
+    <string name="smart_battery_summary" product="default">Adaptivní baterie se učí z používání telefonu a neustále optimalizuje využití baterie aplikacemi. Kvůli prodloužení výdrže baterie může snížit výkon a zpozdit oznámení.</string>
     <string name="smart_battery_title">Adaptivní baterie</string>
     <string name="software_update_can_be_updated_header">Váš Pixel bude ještě lepší</string>
     <string name="software_update_detail_indication_1_update_available">Je dostupná 1 aktualizace</string>

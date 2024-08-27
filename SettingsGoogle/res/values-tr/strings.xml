@@ -148,6 +148,7 @@ Kimlik avı, oturum açma kimlik bilgilerini veya diğer kişisel bilgileri çal
     <string name="content_protection_preference_subpage_summary">"Doğrudan cihazınızda gizli olarak yürütülen tarama işlemi, uygulama etkinliğini kimlik avı veya diğer yanıltıcı davranışlar açısından kontrol eder. Böyle bir durum tespit edilirse tehdidi onaylamak ve uygulama kullanıcılarını uyarmak için bazı uygulama bilgileri Google Play Protect'e gönderilir."</string>
     <string name="contextual_timeout_description">Cihazınızı kullanmadığınızda ekranınızı otomatik olarak erkenden kapatır</string>
     <string name="contextual_timeout_title">Uyarlanabilir zaman aşımı</string>
+    <string name="credentials_install_summary" product="default">Sertifikaları depolama biriminden yükleyin</string>
     <string name="dark_ui_text">Koyu tema, pilinizin daha uzun süre dayanmasına yardımcı olmak için siyah arka plan kullanır. Koyu tema, açılmak için ekranınızın kapanmasını beklemeye programlanır.</string>
     <string name="debugging_data_title">Hata ayıklama verileri</string>
     <string name="discover_tips_button">İpuçlarını keşfedin</string>
@@ -155,6 +156,8 @@ Kimlik avı, oturum açma kimlik bilgilerini veya diğer kişisel bilgileri çal
     <string name="double_twist_for_camera_mode_summary">"Google Kamera'da selfie moduna geçmek ve bu moddan çıkmak için uygulama içindeyken cihazı iki kez döndürün."</string>
     <string name="duration_less_than_one_minute">1 dakikadan az</string>
     <string name="enable_glanceable_hub_toggle">Hub Modu</string>
+    <string name="erase_external_storage" product="default">USB belleği sil</string>
+    <string name="erase_external_storage_description" product="default">Dahili USB bellekteki müzik veya fotoğraf gibi tüm verileri sil</string>
     <string name="extreme_battery_saver_summary">Yukarıda listelenen tüm değişiklikleri içerir. Bunun yanı sıra, gerekli olmayan uygulamaları ve bildirimlerini duraklatır.</string>
     <string name="extreme_battery_saver_title">Ekstra Pil Tasarrufu</string>
     <string name="face_confirmation_hide_illustration_description">Artık telefonunuzu elinize aldığınızda veya ekranına dokunduğunuzda kilidini açmak için yüzünüzü kullanabilirsiniz.</string>
@@ -228,6 +231,9 @@ Yedek veriler Drive depolama kotanıza dahil edilmez. Büyük dosyalar veya geli
     <string name="limited_warranty_title">Sınırlı Garanti</string>
     <string name="lockscreen_show_weather_summary">Güncel hava durumunu göster</string>
     <string name="lockscreen_show_weather_title">Hava durumunu göster</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Müzik, resimler ve diğer kullanıcı verilerinin temizlenmesi için "<b>USB belleğin</b> silinmesi gerekir.</string>
     <string name="my_device_info_account_preference_title">Google Hesabı</string>
     <string name="owner_info_settings_edit_text_hint">"Ör. Can'ın Pixel'i"</string>
     <string name="permit_debugging_data">Hata raporu erişimine izin ver</string>
@@ -279,6 +285,7 @@ Denemek için telefonunuzu çevirin."</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Ayarlamak için dokunun</string>
     <string name="security_settings_face_enroll_consent_introduction_title">"Yüz Tanıma Kilidi'ne izin verin"</string>
     <string name="security_settings_face_enroll_education_message">Bir sonraki ekranda, yüzünüzün tüm açılardan fotoğrafını çekmek için başınızı çevirin.</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Sonraki ekranda telefonunuzu göz hizasında tutun.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Yüz Tanıma Kilidi kurulumu zaman aşımına uğradı</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Artık telefonunuzun kilidini açmak veya uygulamalarda oturum açma ya da satın alma işlemlerini onaylama gibi durumlarda kimliğinizi doğrulamak için yüzünüzü kullanabilirsiniz.</string>
     <string name="security_settings_face_enroll_finish_description_with_bp_full">"Artık telefonunuzun kilidini açarken veya uygulamalarda oturum açmak ya da satın alma işlemlerini onaylamak gibi işlemler için kimliğinizi doğrularken yüzünüzü kullanabilirsiniz.
@@ -292,13 +299,29 @@ Yüz Tanıma Kilidi'nin iyi bir şekilde çalışabilmesi için yeterli ışık 
 Yüz Tanıma Kilidi'nin iyi bir şekilde çalışabilmesi için yeterli ışık olması ve maske ya da koyu renk gözlük takmıyor olmanız gerekir."</string>
     <string name="security_settings_face_enroll_finish_title">Her şey hazır</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Görme veya başını hareket ettirme yeteneği kısıtlı olanlar için kurulum</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">"Yüz Tanıma Kilidi'ni kullanırken başınızın doğrudan telefonunuzun karşısında olması gerekebilir."</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Gözlerin açık olması gerekir</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Siz ve çocuğunuz, istediğiniz zaman Ayarlar'dan Yüz Tanıma Kilidi'ni devre dışı bırakabilir veya çocuğunuzun yüz modelini silebilirsiniz. Yüz modelleri, silinene kadar telefonda saklanır.&lt;br&gt;&lt;br&gt;Daha fazla bilgiyi &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; adresinde bulabilirsiniz."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Kontrol sizde ve çocuğunuzdadır</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"İstediğiniz zaman Ayarlar'dan Yüz Tanıma Kilidi'ni devre dışı bırakabilir veya yüz modelinizi silebilirsiniz. Yüz modelleri, siz silene kadar telefonda saklanır.&lt;br&gt;&lt;br&gt;Daha fazla bilgiyi &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; adresinde bulabilirsiniz."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Kontrol sizde</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Yüz Tanıma Kilidi, çocuğunuzun kimliğini doğrulamak için yüzünün benzersiz bir modelini oluşturur. Çocuğunuz, kurulum sırasında bu yüz modelini oluşturmak için yüzünün farklı açılardan resimlerini çeker.
+
+Çocuğunuz Yüz Tanıma Kilidi'ni kullandığında resimler, yüz modelini güncellemek için kullanılır. Çocuğunuzun yüz modelini oluşturmak için kullanılan resimler saklanmaz ancak yüz modeli, telefonda güvenli bir şekilde saklanıp hiçbir zaman telefondan dışarı çıkmaz. Tüm işlemler, güvenli bir şekilde telefonda gerçekleşir."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Yüz Tanıma Kilidi, kimliğinizi doğrulamak için yüzünüzün benzersiz bir modelini oluşturur. Kurulum sırasında bu yüz modelini oluşturmak için yüzünüzün farklı açılardan resimlerini çekersiniz.
+
+Yüz Tanıma Kilidi'ni kullandığınızda resimler, yüz modelinizi güncellemek için kullanılır. Yüz modelinizi oluşturmak için kullanılan resimler saklanmaz ancak yüz modeli, telefonunuzda güvenli bir şekilde saklanıp cihazdan dışarı çıkarılmaz. Tüm işlemler, güvenli bir şekilde telefonunuzda gerçekleşir."</string>
     <string name="security_settings_face_enroll_introduction_how_title">İşleyiş şekli</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">"Yüz Tanıma Kilidi, telefon kilidini açmak veya kimliğini doğrulamak için çocuğunuzun gözlerinin açık olmasını isteyebilir. Siz ve çocuğunuz, istediğiniz zaman Ayarlar'dan bu seçeneği açabilirsiniz."</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Çocuğunuz normalde gözlük takıyorsa kurulum sırasında da takabilir.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Çocuğunuzun telefon kilidini açmak için yüzünü kullanmak, güçlü bir desen, PIN veya şifreden daha az güvenli olabilir.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Çocuğunuz telefona baktığında istemese bile kilidi açılabilir. Telefon kilidi, çocuğunuza çok benzeyen birisi (ör. ikiz kardeşi) tarafından veya telefonu yüzüne tutularak da açılabilir.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">"Yüz Tanıma Kilidi, telefon kilidini açmak veya kimliğinizi doğrulamak için gözlerinizin açık olmasını isteyebilir. İstediğiniz zaman Ayarlar'dan bu seçeneği açabilirsiniz."</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Gözlük veya camı açık renkli olan güneş gözlüğü kullanılabilir.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Telefonunuzun kilidini yüzünüzle açmak, güçlü bir desen, PIN veya şifre kullanmak kadar güvenli olmayabilir.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Telefona baktığınızda istemeseniz bile kilidi açılabilir. Telefonunuzun kilidi, size çok benzeyen (örneğin ikiz kardeşiniz gibi) birisi tarafından veya birisi telefonunuzu yüzünüze tuttuğunda da açılabilir.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Unutmayın</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Telefonunuzun kilidini açmak veya uygulamalarda oturum açma ya da satın alma işlemlerini onaylama gibi durumlarda kimliğinizi doğrulamak için yüzünüzü kullanın.</string>
     <string name="security_settings_face_enroll_introduction_title">"Yüz Tanıma Kilidi'ni ayarlama"</string>
     <string name="security_settings_face_enroll_next">İleri</string>
     <string name="security_settings_face_enroll_partial_message">"Performansı artırmak için Yüz Tanıma Kilidi'ni Ayarlar'dan tekrar kurabilirsiniz."</string>
@@ -324,7 +347,9 @@ Not: Bu cihazın kilidini açmak için parmak izinizi kullanamazsınız. Daha fa
     <string name="security_settings_fingerprint_preference_summary_none">Parmak izi ayarlarını yapmak için dokunun</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint, kimliğinizi doğrulamak için parmak izinizin benzersiz bir modelini oluşturur. Kurulum sırasında bu parmak izi modelini oluşturmak için parmak izinizin farklı pozisyonlardan resmini çekersiniz.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">"İstediğiniz zaman parmak izi modelinizi silebilir veya Ayarlar'da Pixel Imprint'i devre dışı bırakabilirsiniz. Parmak izi modelleri, siz silene kadar telefonda saklanır."</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint, çocuğunuzun kimliğini doğrulamak için parmak izinin benzersiz bir modelini oluşturur. Çocuğunuz, kurulum sırasında bu parmak izi modelini oluşturmak için parmak izinin farklı konumlardan resimlerini çeker.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">"Siz ve çocuğunuz, istediğiniz zaman Ayarlar'dan Pixel Imprint'i devre dışı bırakabilir veya çocuğunuzun parmak izi modelini silebilirsiniz. Parmak izi modelleri, silinene kadar telefonda saklanır."</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Pixel parmak izi kilidi hakkında daha fazla bilgiyi &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt; adresinde bulabilirsiniz."</string>
     <string name="security_settings_work_fingerprint_preference_title">İş profili için Pixel Imprint</string>
     <string name="setup_suggestion_summary">Yalnızca birkaç adım kaldı</string>
@@ -333,6 +358,7 @@ Not: Bu cihazın kilidini açmak için parmak izinizi kullanamazsınız. Daha fa
     <string name="smart_battery_a11y_expand_label">Genişlet, Uyarlanabilir Pil</string>
     <string name="smart_battery_footer">Uyarlanabilir Pil özelliği, pil ömrünü uzatmak için performansı düşürebilir ve arka plan etkinliğini azaltabilir. Bazı bildirimler gecikebilir.</string>
     <string name="smart_battery_manager_title">Uyarlanabilir tercihler</string>
+    <string name="smart_battery_summary" product="default">Uyarlanabilir Pil özelliği, telefon kullanımınızdan bilgi edinerek uygulamaların pili kullanma şeklini sürekli optimize eder. Pil ömrünü uzatmak için performansı düşürebilir ve bildirimleri gecikmeli gönderebilir.</string>
     <string name="smart_battery_title">Uyarlanabilir Pil</string>
     <string name="software_update_can_be_updated_header">"Pixel'inizi daha da iyi hale getirin"</string>
     <string name="software_update_detail_indication_1_update_available">1 güncelleme var</string>

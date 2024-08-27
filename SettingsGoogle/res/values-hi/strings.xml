@@ -149,6 +149,7 @@
     <string name="content_protection_preference_subpage_summary">स्कैनिंग आपके डिवाइस में चलती रहती है. इसमें ऐप्लिकेशन में की गई गतिविधि की जांच की जाती है, ताकि फ़िशिंग या धोखाधड़ी वाले दूसरे व्यवहार का पता लगाया जा सके. ऐप्लिकेशन में इस तरह के व्यवहार का पता चलने पर, Google Play Protect के साथ ऐप्लिकेशन की जानकारी शेयर की जाती है. इससे इस तरह के व्यवहार की पुष्टि की जाती है और उपयोगकर्ताओं को चेतावनी दी जाती है.</string>
     <string name="contextual_timeout_description">इस सुविधा की मदद से, डिवाइस का इस्तेमाल न करने पर उसकी स्क्रीन अपने-आप बंद हो जाती है</string>
     <string name="contextual_timeout_title">अडैप्टिव टाइम आउट</string>
+    <string name="credentials_install_summary" product="default">स्टोरेज से सर्टिफ़िकेट इंस्‍टॉल करें</string>
     <string name="dark_ui_text">गहरे रंग वाली थीम चालू हाेने पर, स्क्रीन का बैकग्राउंड काला हो जाता है. इससे आपके डिवाइस की बैटरी ज़्यादा देर तक चलती है. स्क्रीन की रोशनी बंद होने पर यह थीम चालू होती है.</string>
     <string name="debugging_data_title">डेटा डीबग करना</string>
     <string name="discover_tips_button">सलाह पाएं</string>
@@ -156,6 +157,8 @@
     <string name="double_twist_for_camera_mode_summary">ऐप्लिकेशन इस्तेमाल करते समय, Google Camera में सेल्फ़ी मोड को चालू और बंद करने के लिए डिवाइस को दो बार घुमाएं.</string>
     <string name="duration_less_than_one_minute">1 मिनट से कम</string>
     <string name="enable_glanceable_hub_toggle">Hub Mode</string>
+    <string name="erase_external_storage" product="default">USB मेमोरी मिटाएं</string>
+    <string name="erase_external_storage_description" product="default">आंतरिक USB मेमोरी का सभी डेटा, जैसे संगीत या फ़ोटो, मिटाएं</string>
     <string name="extreme_battery_saver_summary">इसमें ऊपर बताए गए सभी बदलाव शामिल हैं. इसके अलावा, यह ग़ैर-ज़रूरी ऐप्लिकेशन की गतिविधियों और उनसे मिलने वाली सूचनाओं को रोक देता है.</string>
     <string name="extreme_battery_saver_title">एक्स्ट्रीम बैटरी सेवर</string>
     <string name="face_confirmation_hide_illustration_description">अब फ़ोन का इस्तेमाल करते समय या स्क्रीन पर टैप करके, अपने चेहरे से उसे अनलॉक किया जा सकता है.</string>
@@ -229,6 +232,9 @@
     <string name="limited_warranty_title">सीमित वारंटी</string>
     <string name="lockscreen_show_weather_summary">मौसम की मौजूदा स्थिति देखें</string>
     <string name="lockscreen_show_weather_title">मौसम की जानकारी देखें</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+संगीत, तस्वीर, और उपयोगकर्ता का अन्य डेटा मिटाने के लिए "<b>यूएसबी स्टोरेज</b> के डेटा को हमेशा के लिए मिटाना होगा.</string>
     <string name="my_device_info_account_preference_title">Google खाता</string>
     <string name="owner_info_settings_edit_text_hint">जैसे, सुधीर का Pixel फ़ोन.</string>
     <string name="permit_debugging_data">गड़बड़ी की रिपोर्ट ऐक्सेस करने की अनुमति दें</string>
@@ -280,6 +286,7 @@
     <string name="security_settings_biometric_preference_summary_none_enrolled">सेट अप करने के लिए टैप करें</string>
     <string name="security_settings_face_enroll_consent_introduction_title">चेहरे की मदद से अनलॉक करने की सुविधा इस्तेमाल करने की अनुमति दें</string>
     <string name="security_settings_face_enroll_education_message">अगली स्क्रीन पर, अपने चेहरे को हर तरफ़ से कैप्चर करने के लिए सिर घुमाएं</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">अगली स्क्रीन पर जाकर, फ़ोन को अपनी आंखों के ठीक सामने रखें</string>
     <string name="security_settings_face_enroll_error_dialog_title">चेहरा जोड़ने की प्रक्रिया पूरी नहीं हो सकी</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">चेहरा रजिस्टर करने की समय सीमा खत्म हो गई. फिर से कोशिश करें.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">फ़ेस अनलॉक की सुविधा सेट अप करने का तय समय खत्म</string>
@@ -295,13 +302,29 @@
 फ़ेस अनलॉक की सुविधा तब बेहतरीन तरीके से काम करती है, जब रोशनी अच्छी हो और आपने मास्क या गहरे रंग का चश्मा न पहना हो."</string>
     <string name="security_settings_face_enroll_finish_title">सब ठीक लग रहा है!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">नज़र कमज़ोर होने या सिर हिलने की समस्या होने पर यहां सेटअप करें</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">फ़ेस अनलॉक की सुविधा का इस्तेमाल करने के दौरान, आपका चेहरा फ़ोन के ठीक सामने होना चाहिए.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">आंखें खुली रखना ज़रूरी है</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"आपके और आपके बच्चे के पास किसी भी समय, सेटिंग में जाकर चेहरे के मॉडल को मिटाने या फ़ेस अनलॉक की सुविधा को बंद करने का विकल्प है. चेहरे के मॉडल, फ़ोन में तब तक सेव रहते हैं, जब तक उन्हें मिटाया नहीं जाता.&lt;br&gt;&lt;br&gt;ज़्यादा जानकारी के लिए, &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; पर जाएं."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">आपका बच्चा और आप, इन सेटिंग को कंट्रोल कर सकते हैं</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"आपके पास किसी भी समय, सेटिंग में जाकर चेहरे के मॉडल को मिटाने या फ़ेस अनलॉक की सुविधा को बंद करने का विकल्प है. चेहरे के मॉडल, फ़ोन में तब तक सेव रहते हैं, जब तक उन्हें मिटाया नहीं जाता.&lt;br&gt;&lt;br&gt;ज़्यादा जानकारी के लिए, &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; पर जाएं."</string>
     <string name="security_settings_face_enroll_introduction_control_title">इस सुविधा का कंट्रोल आपके पास है</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"फ़ेस अनलॉक की सुविधा की मदद से, आपके बच्चे के चेहरे का एक खास मॉडल बनाया जाता है. इससे, बच्चे के चेहरे की पहचान की पुष्टि करने में मदद मिलती है. फ़ेस अनलॉक की सुविधा सेट अप करते समय, चेहरे का यह मॉडल बनाने के लिए आपके बच्चे को अलग-अलग ऐंगल से, अपने चेहरे की इमेज कैप्चर करनी होंगी.
+
+जब आपका बच्चा फ़ेस अनलॉक की सुविधा का इस्तेमाल करता है, तब उसके चेहरे के मॉडल को अपडेट करने के लिए उसके चेहरे की इमेज इस्तेमाल की जाती हैं. आपके बच्चे के चेहरे का मॉडल बनाते समय इस्तेमाल की गई इमेज सेव नहीं की जाती हैं. हालांकि, चेहरे का मॉडल फ़ोन में सुरक्षित तरीके से सेव किया जाता है और इसे किसी के साथ शेयर नहीं किया जाता है. इसकी पूरी प्रोसेस, आपके फ़ोन में सुरक्षित तरीके से होती है."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"फ़ेस अनलॉक की मदद से, आपके चेहरे का एक खास मॉडल बनाया जाता है. इससे आपकी पहचान की पुष्टि करने में मदद मिलती है. फ़ेस अनलॉक की सुविधा सेटअप करते समय, चेहरे का यह मॉडल बनाने के लिए, आपको अलग-अलग ऐंगल से अपने चेहरे की इमेज कैप्चर करनी होंगी.
+
+जब फ़ेस अनलॉक की सुविधा का इस्तेमाल किया जाता है, तब चेहरे के मॉडल को अपडेट करने के लिए आपके चेहरे की इमेज इस्तेमाल की जाती हैं. आपके चेहरे का मॉडल बनाते समय इस्तेमाल की गई इमेज सेव नहीं की जाती हैं. हालांकि, चेहरे का मॉडल आपके फ़ोन में सुरक्षित तरीके से सेव किया जाता है और इसे किसी के साथ शेयर नहीं किया जाता है. इसकी पूरी प्रोसेस, आपके फ़ोन में सुरक्षित तरीके से होती है."</string>
     <string name="security_settings_face_enroll_introduction_how_title">फ़ेस अनलॉक की सुविधा कैसे काम करती है</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">फ़ेस अनलॉक की सुविधा का इस्तेमाल करते समय, आपके बच्चे की आंखों का खुला रहना ज़रूरी हो सकता है. ऐसा, फ़ोन अनलॉक करने या बच्चे की पहचान की पुष्टि करने के लिए ज़रूरी है. आपके और आपके बच्चे के पास किसी भी समय सेटिंग में जाकर, इस विकल्प को चालू करने की अनुमति है.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">अगर आपका बच्चा आम तौर पर चश्मा पहनता है, तो वह सेट अप के दौरान भी चश्मा पहन सकता है.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">फ़ोन को अनलॉक करने के लिए अपने बच्चे का चेहरा दिखाना, किसी मज़बूत पैटर्न, पिन या पासवर्ड का इस्तेमाल करने के मुकाबले कम सुरक्षित हो सकता है</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">फ़ोन को सामने से देखने पर, आपके बच्चे के न चाहते हुए भी फ़ोन अनलॉक हो सकता है. आपके बच्चे के फ़ोन को ऐसा कोई भी व्यक्ति अनलॉक कर सकता है जिसका चेहरा बच्चे से मिलता-जुलता हो, जैसे कि जुड़वां भाई या बहन. इसके अलावा, फ़ोन को बच्चे के चेहरे के सामने लाकर भी अनलॉक किया जा सकता है.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">फ़ेस अनलॉक की सुविधा का इस्तेमाल करते समय, आपकी आंखों का खुला रहना ज़रूरी हो सकता है. ऐसा, फ़ोन अनलॉक करने या आपकी पहचान की पुष्टि करने के लिए ज़रूरी है. किसी भी समय, सेटिंग में जाकर इस विकल्प को चालू किया जा सकता है.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">चश्मे या हल्के रंग वाले धूप के चश्मे पहने जा सकते हैं.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">फ़ोन को अनलॉक करने के लिए अपना चेहरा दिखाना, किसी मज़बूत पैटर्न, पिन या पासवर्ड के इस्तेमाल के मुकाबले कम सुरक्षित हो सकता है</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">फ़ोन को सामने से देखने पर, आपके न चाहते हुए भी फ़ोन अनलॉक हो सकता है. आपका फ़ोन ऐसा कोई भी व्यक्ति अनलॉक कर सकता है जिसका चेहरा आपसे बहुत मिलता-जुलता हो, जैसे कि जुड़वां भाई या बहन. इसके अलावा, कोई भी व्यक्ति फ़ोन को आपके चेहरे के सामने लाकर भी अनलॉक कर सकता है.</string>
     <string name="security_settings_face_enroll_introduction_info_title">ध्यान रखें</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">अपने चेहरे का इस्तेमाल करके, फ़ोन को अनलॉक करें या किसी ऐप्लिकेशन में साइन इन करने और किसी खरीदारी की मंज़ूरी देने जैसे काम करने के दौरान, अपनी पहचान की पुष्टि करें.</string>
     <string name="security_settings_face_enroll_introduction_title">फे़स अनलॉक की सुविधा सेट अप करें</string>
     <string name="security_settings_face_enroll_next">आगे बढ़ें</string>
     <string name="security_settings_face_enroll_partial_message">फ़ेस अनलॉक की सुविधा की परफ़ॉर्मेंस बेहतर बनाने के लिए, आप सेटिंग में जाकर इसे दोबारा सेट अप कर सकते हैं</string>
@@ -328,7 +351,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">फ़िंगरप्रिंट रजिस्टर करने के लिए टैप करें</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint की मदद से, आपके फ़िंगरप्रिंट का एक खास मॉडल बनाया जाता है. इससे आपकी पहचान की पुष्टि की जाती है. फ़िंगरप्रिंट से अनलॉक करने की सुविधा सेट अप करते समय, फ़िंगरप्रिंट का यह मॉडल बनाने के लिए, आपको अलग-अलग तरीकों से अपने फ़िंगरप्रिंट की इमेज कैप्चर करनी होंगी.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">जब Pixel की फ़िंगरप्रिंट से पुष्टि करने की सुविधा का इस्तेमाल किया जाता है, तब आपके फ़िंगरप्रिंट के मॉडल को अपडेट करने के लिए, आपके फ़िंगरप्रिंट की इमेज इस्तेमाल की जाती हैं. आपके फ़िंगरप्रिंट का मॉडल बनाते समय इस्तेमाल की गई इमेज कभी भी सेव नहीं की जाती हैं. हालांकि, फ़िंगरप्रिंट के मॉडल को आपके फ़ोन में सुरक्षित तरीके से सेव किया जाता है और इसे किसी के साथ शेयर नहीं किया जाता है. इसकी पूरी प्रोसेस, आपके फ़ोन में सुरक्षित तरीके से होती है.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">किसी भी समय, सेटिंग में जाकर अपने फ़िंगरप्रिंट के मॉडल को मिटाया जा सकता है. इसके अलावा, Pixel की फ़िंगरप्रिंट से पुष्टि करने की सुविधा किसी भी समय बंद की जा सकती है. फ़िंगरप्रिंट के मॉडल, फ़ोन में तब तक सेव रहते हैं, जब तक उन्हें मिटाया नहीं जाता.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint की मदद से, आपके बच्चे के फ़िंगरप्रिंट का एक खास मॉडल बनाया जाता है. इससे, पुष्टि करते समय उसके फ़िंगरप्रिंट की पहचान करने में मदद मिलती है. फ़िंगरप्रिंट से अनलॉक करने की सुविधा सेट अप करते समय, फ़िंगरप्रिंट का यह मॉडल बनाने के लिए आपके बच्चे को अलग-अलग ऐंगल से अपने फ़िंगरप्रिंट कैप्चर करने होंगे.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">जब आपका बच्चा Pixel की फ़िंगरप्रिंट से पुष्टि करने की सुविधा का इस्तेमाल करता है, तब उसके फ़िंगरप्रिंट के मॉडल को अपडेट करने के लिए, उसके फ़िंगरप्रिंट की इमेज इस्तेमाल की जाती हैं. आपके बच्चे के फ़िंगरप्रिंट का मॉडल बनाते समय इस्तेमाल की गई इमेज कभी भी सेव नहीं की जाती हैं. हालांकि, फ़िंगरप्रिंट के मॉडल को फ़ोन में सुरक्षित तरीके से सेव किया जाता है और इसे किसी के साथ शेयर नहीं किया जाता है. इसकी पूरी प्रोसेस, आपके फ़ोन में सुरक्षित तरीके से होती है.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">आपके और आपके बच्चे के पास किसी भी समय, सेटिंग में जाकर फ़िंगरप्रिंट के मॉडल को मिटाने या Pixel की फ़िंगरप्रिंट से पुष्टि करने की सुविधा को बंद करने का विकल्प है. फ़िंगरप्रिंट के मॉडल, फ़ोन में तब तक सेव रहते हैं, जब तक उन्हें नहीं मिटाया जाता.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Pixel की फ़िंगरप्रिंट अनलॉक सुविधा के बारे में ज़्यादा जानने के लिए &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt; पर जाएं."</string>
     <string name="security_settings_work_fingerprint_preference_title">वर्क प्रोफ़ाइल के लिए Pixel Imprint की सुविधा</string>
     <string name="setup_suggestion_summary">बस कुछ ही चरण बाकी हैं</string>
@@ -337,6 +364,7 @@
     <string name="smart_battery_a11y_expand_label">ज़रूरत के हिसाब से बैटरी का इस्तेमाल करने की सुविधा चालू करें</string>
     <string name="smart_battery_footer">बैटरी लाइफ़ बढ़ाने के लिए, ज़रूरत के हिसाब से बैटरी का इस्तेमाल करने की सुविधा, परफ़ॉर्मेंस और बैकग्राउंड में होने वाली गतिविधि को कम कर सकती है. इसलिए, कुछ सूचनाएं देरी से मिल सकती हैं.</string>
     <string name="smart_battery_manager_title">इस्तेमाल के हिसाब से बैटरी खर्च होने की सेटिंग</string>
+    <string name="smart_battery_summary" product="default">"'ज़रूरत के हिसाब से बैटरी का इस्तेमाल' सुविधा, आपके फ़ोन के इस्तेमाल से जुड़े डेटा की मदद से ऐप्लिकेशन के बैटरी इस्तेमाल करने के तरीके को लगातार बेहतर बनाती है. बैटरी लाइफ़ बढ़ाने के लिए, यह सुविधा ऐप्लिकेशन की परफ़ॉर्मेंस को कम कर सकती है और उससे जुड़ी सूचनाएं देने में देरी कर सकती है."</string>
     <string name="smart_battery_title">ज़रूरत के हिसाब से बैटरी का इस्तेमाल</string>
     <string name="software_update_can_be_updated_header">अपने Pixel को पहले से बेहतर बनाएं</string>
     <string name="software_update_detail_indication_1_update_available">एक अपडेट उपलब्ध है</string>

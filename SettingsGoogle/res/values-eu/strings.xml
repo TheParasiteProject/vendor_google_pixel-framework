@@ -149,6 +149,7 @@ Saioa hasteko kredentzialak edo bestelako informazio pertsonala lapurtzeko helbu
     <string name="content_protection_preference_subpage_summary">Gailuan bertan eta modu pribatuan aztertzen dira aplikazioetako jarduerak, phishinga edo bestelako azpikeriazko jarrerak bilatzeko. Zerbait hautematen bada, aplikazioari buruzko datu batzuk bidaliko zaizkio Google Play Protect-i, mehatxua berresteko eta aplikazioaren erabiltzaileei abisu bat bidaltzeko.</string>
     <string name="contextual_timeout_description">Pantaila goizago itzaltzen du automatikoki, gailua erabiltzen ari ez bazara</string>
     <string name="contextual_timeout_title">Denbora-muga egokitua</string>
+    <string name="credentials_install_summary" product="default">Instalatu ziurtagiriak biltegitik</string>
     <string name="dark_ui_text">Gai ilunak atzeko plano beltza erabiltzen du bateriak gehiago iraun dezan. Gai ilunaren programazioak ez dira aktibatzen pantaila itzaltzen den arte.</string>
     <string name="debugging_data_title">Arazketa-datuak</string>
     <string name="discover_tips_button">Ikusi aholkuak</string>
@@ -156,6 +157,8 @@ Saioa hasteko kredentzialak edo bestelako informazio pertsonala lapurtzeko helbu
     <string name="double_twist_for_camera_mode_summary">Google-ren Kamera aplikazioaren autoargazki modua aktibatu eta desaktibatzeko, biratu birritan eskumuturra.</string>
     <string name="duration_less_than_one_minute">1 minutu baino gutxiago</string>
     <string name="enable_glanceable_hub_toggle">Kontrol-zentro modua</string>
+    <string name="erase_external_storage" product="default">Ezabatu USB bidezko memoria</string>
+    <string name="erase_external_storage_description" product="default">Ezabatu USB bidezko barneko memoriako datu guztiak; adibidez, musika edo argazkiak</string>
     <string name="extreme_battery_saver_summary">Goiko aukeran aipatutakoa aplikatzen zaio. Gainera, ezinbestekoak ez diren aplikazioak eta haien jakinarazpenak pausatzen ditu.</string>
     <string name="extreme_battery_saver_title">Muturreko bateria-aurreztailea</string>
     <string name="face_confirmation_hide_illustration_description">Orain, telefonoa hartzen duzunean edo pantaila sakatzen duzunean, aurpegia erabil dezakezu telefonoa desblokeatzeko.</string>
@@ -229,6 +232,9 @@ Babeskopiek ez dute eraginik Drive-ko biltegiratze-kuotan. Fitxategiak handiak b
     <string name="limited_warranty_title">Berme mugatua</string>
     <string name="lockscreen_show_weather_summary">Ikusi une honetako eguraldi-ezaugarriak</string>
     <string name="lockscreen_show_weather_title">Erakutsi eguraldia</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Musika, irudiak eta bestelako erabiltzaile-datuak garbitzeko, "<b>USB bidezko memoriako</b> eduki guztia ezabatu behar da.</string>
     <string name="my_device_info_account_preference_title">Google-ko kontua</string>
     <string name="owner_info_settings_edit_text_hint">Adibidez, Jonen Pixel gailua.</string>
     <string name="permit_debugging_data">Eman akatsen txostenak erabiltzeko baimena</string>
@@ -279,6 +285,7 @@ Probatzeko, irauli telefonoa."</string>
     <string name="security_dismiss_dialog_title">Abisua baztertu nahi duzu?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Konfiguratzeko, sakatu hau</string>
     <string name="security_settings_face_enroll_education_message">Hurrengo pantailan, biratu burua aurpegiaren angelu guztiak hauteman daitezen</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Hurrengo pantailan, eutsi telefonoari begien parean</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Gainditu da eginbidea konfiguratzeko denbora-muga</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Orain, aurpegia erabil dezakezu telefonoa desblokeatzeko edo zeu zarela egiaztatzeko, hala nola aplikazioetan saioa hastean edo erosketak onartzean</string>
     <string name="security_settings_face_enroll_finish_description_with_bp_full">"Orain, aurpegia erabil dezakezu telefonoa desblokeatzeko edo zeu zarela egiaztatzeko, hala nola aplikazioetan saioa hastean edo erosketak onartzean.
@@ -292,13 +299,29 @@ Behar adina argi dagoenean eta maskararik edo betaurreko ilunik ez daramazunean 
 Behar adina argi dagoenean eta maskararik edo betaurreko ilunik ez daramazunean funtzionatzen du hoberen aurpegi bidez desblokeatzeko eginbideak."</string>
     <string name="security_settings_face_enroll_finish_title">Dena prest duzu!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Konfiguratu ikusmena mugatuta edo buruaren mugimendua murriztuta daukatenentzat</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Aurpegi bidez desblokeatzeko eginbidea erabiltzen duzunean, litekeena da telefonoari zuzenago begiratu behar izatea.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Begiak irekita eduki behar dituzu</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Haurrak eta zuk haren aurpegi-eredua ezabatu nahi baduzue edo aurpegi bidez desblokeatzeko eginbidea desaktibatu nahi baduzue, joan ezarpenetara. Ezabatu arte, telefonoan biltegiratuta egongo dira aurpegi-ereduak.&lt;br&gt;&lt;br&gt;Lortu informazio gehiago hemen: &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Haurrak eta zeuk duzue kontrola</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Aurpegi-eredua ezabatzeko edo aurpegi bidez desblokeatzeko eginbidea desaktibatzeko, joan ezarpenetara. Ezabatu arte, telefonoan biltegiratuta egongo dira aurpegi-ereduak.&lt;br&gt;&lt;br&gt;Lortu informazio gehiago hemen: &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Zure esku dago</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Aurpegi bidez desblokeatzeko eginbideak haurraren aurpegiaren eredu esklusibo bat sortzen du hura dela egiaztatzeko. Konfigurazio-prozesuan aurpegi-eredu hori sortzeko, aurpegiaren argazkiak aterako ditu haurrak, ikuspegi batetik baino gehiagotatik.
+
+Aurpegi bidez desblokeatzeko eginbidea erabiltzen duenean, haren aurpegi-eredua eguneratzeko erabiltzen dira irudiak. Aurpegi-eredua sortzeko erabilitako irudiak ez dira biltegiratzen, baina aurpegi-eredua telefonoan biltegiratzen da segurtasun osoz, eta ez da inoiz ateratzen bertatik. Guztia telefonoan prozesatzen da, modu seguruan."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Aurpegi bidez desblokeatzeko eginbideak zure aurpegiaren eredu esklusibo bat sortzen du zeu zarela egiaztatzeko. Konfigurazio-prozesuan aurpegi-eredu hori sortzeko, aurpegiaren argazkiak aterako dituzu, ikuspegi batetik baino gehiagotatik.
+
+Aurpegi bidez desblokeatzeko eginbidea erabiltzen duzunean, zure aurpegi-eredua eguneratzeko erabiltzen dira irudiak. Aurpegi-eredua sortzeko erabilitako irudiak ez dira biltegiratzen, baina aurpegi-eredua telefonoan biltegiratzen da segurtasun osoz, eta ez da inoiz ateratzen bertatik. Guztia telefonoan prozesatzen da, modu seguruan."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Nola funtzionatzen du?</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Baliteke haurrak begiak irekita edukitzeko eskatzea aurpegi bidez desblokeatzeko eginbideak, telefonoa desblokeatze edo hura dela egiaztatze aldera. Ezarpenetan aktibatu edo desaktiba dezakezue aukera hori bai zuk, bai haurrak berak.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Haurrak betaurrekoak erabili ohi baditu, konfigurazio-prozesuan jantzita eduki ditzake.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Baliteke haurraren telefonoa haren aurpegiaren bidez desblokeatzea ez izatea eredu, PIN edo pasahitz konplexu bat erabiltzea bezain segurua</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Telefonoari begiratuz gero, desblokeatu egin daiteke, halako asmorik izan ez arren. Haren antz handia duen norbaitek ere (biki batek, esaterako) desblokea dezake telefonoa, edo telefonoa aurpegiaren parean jartzen badiote.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Baliteke begiak irekita edukitzeko eskatzea aurpegi bidez desblokeatzeko eginbideak, telefonoa desblokeatze edo zeu zarela egiaztatze aldera. Ezarpenetan aktibatu edo desaktiba dezakezu aukera hori.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Betaurrekoak jantzita utz daitezke, baita kristalak leunki tindatuta badituzte ere.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Baliteke telefonoa aurpegi bidez desblokeatzeko eginbidea ez izatea eredu, PIN edo pasahitz konplexu bat bezain segurua.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Telefonoari begiratuz gero, desblokeatu egin daiteke, halako asmorik izan ez arren. Zure antz handia duen norbaitek ere (biki batek, esaterako) desblokea dezake telefonoa. Halaber, telefonoa aurpegiaren parean jartzen badizute, baliteke hura desblokeatzea.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Gogoan izan</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Erabili aurpegia telefonoa desblokeatzeko edo zeu zarela egiaztatzeko, hala nola aplikazioetan saioa hastean edo erosketak onartzean.</string>
     <string name="security_settings_face_enroll_introduction_title">Konfiguratu Aurpegi bidez desblokeatzea</string>
     <string name="security_settings_face_enroll_next">Hurrengoa</string>
     <string name="security_settings_face_enroll_partial_message">Errendimendua hobetu nahi baduzu, konfiguratu aurpegi bidez desblokeatzeko eginbidea berriro Ezarpenak atalean</string>
@@ -324,7 +347,11 @@ Oharra: ezin duzu erabili hatz-marka gailua desblokeatzeko. Informazio gehiago l
     <string name="security_settings_fingerprint_preference_summary_none">Hatz-marka konfiguratzeko, sakatu hau</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint-ek zure hatz-markaren eredu esklusibo bat sortzen du zeu zarela egiaztatzeko. Konfigurazio-prozesuan hatz-markaren eredu hori sortzeko, hatz-markaren irudiak aterako dituzu, hainbat posiziotan.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Pixel Imprint erabiltzen duzunean, zure hatz-markaren eredua eguneratzeko erabiltzen dira irudiak. Hatz-markaren eredua sortzeko erabilitako irudiak ez dira inoiz biltegiratzen, baina hatz-markaren eredua telefonoan gordetzen da segurtasun osoz, eta ez da inoiz ateratzen bertatik. Guztia telefonoan prozesatzen da, modu seguruan.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Hatz-markaren eredua ezabatzeko edo Pixel Imprint desaktibatzeko, joan ezarpenetara. Ezabatu arte, telefonoan gordeko dira hatz-markaren ereduak.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint-ek haurraren hatz-markaren eredu esklusibo bat sortzen du hura dela egiaztatzeko. Konfigurazio-prozesuan hatz-markaren eredu hori sortzeko, hatz-markaren argazkiak aterako ditu haurrak, hainbat posiziotan.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">Pixel Imprint erabiltzen duenean, haren hatz-markaren eredua eguneratzeko erabiltzen dira irudiak. Haurraren hatz-markaren eredua sortzeko erabilitako irudiak ez dira inoiz biltegiratzen, baina hatz-markaren eredua telefonoan gordetzen da segurtasun osoz, eta ez da inoiz ateratzen bertatik. Guztia telefonoan prozesatzen da, modu seguruan.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Haurrak eta zuk haren hatz-markaren eredua ezabatu nahi baduzue edo Pixel Imprint desaktibatu nahi baduzue, joan ezarpenetara. Ezabatu arte, telefonoan gordeko dira hatz-markaren ereduak.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Lortu informazio gehiago hatz-marka bidez desblokeatzeko Pixel-en eginbideari buruz hemen: &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Laneko profilerako Pixel Imprint</string>
     <string name="setup_suggestion_summary">Beste urrats gutxi batzuk egin behar dituzu</string>
@@ -333,6 +360,7 @@ Oharra: ezin duzu erabili hatz-marka gailua desblokeatzeko. Informazio gehiago l
     <string name="smart_battery_a11y_expand_label">Zabaldu, Bateria egokitua</string>
     <string name="smart_battery_footer">Bateriaren iraupena luzatzeko, baliteke Bateria egokitua eginbideak errendimendua eta atzeko planoko jarduerak mugatzea. Beharbada, jakinarazpen batzuk atzeratu egingo dira.</string>
     <string name="smart_battery_manager_title">Hobespen egokituak</string>
+    <string name="smart_battery_summary" product="default">Bateria egokitua eginbideak telefonoaren erabileratik ikasten du aplikazioek bateria erabiltzeko duten modua etengabe optimizatzeko. Bateriaren iraupena luzatzeko, baliteke errendimendua okertzea eta jakinarazpenak atzeratzea.</string>
     <string name="smart_battery_title">Bateria egokitua</string>
     <string name="software_update_can_be_updated_header">Hobetu Pixel-a</string>
     <string name="software_update_detail_indication_1_update_available">Eguneratze bat dago</string>

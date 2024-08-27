@@ -149,6 +149,7 @@ Wizi wa data binafsi ni jaribio la kuiba vitambulisho vya kuingia katika akaunti
     <string name="content_protection_preference_subpage_summary">Ukaguzi huendeshwa kwa faragha kwenye kifaa chako kukagua shughuli kwenye programu ili kubaini iwapo kuna wizi wa data binafsi au tabia nyingine ya udanganyifu. Ikitambuliwa, maelezo fulani ya programu hutumwa kwa Google Play Protect ili kuthibitisha tishio na kutoa tahadhari kwa watumiaji wa programu.</string>
     <string name="contextual_timeout_description">Huzima skrini yako mapema kiotomatiki wakati hutumii kifaa chako</string>
     <string name="contextual_timeout_title">Muda wa skrini kujizima unaojibadilisha</string>
+    <string name="credentials_install_summary" product="default">Sakinisha vyeti kutoka kwenye hifadhi</string>
     <string name="dark_ui_text">Mandhari meusi hutumia mandharinyuma meusi ili kuboresha muda wa matumizi ya betri. Ratiba za Mandhari meusi hujiwasha hadi skrini ya simu yako inapozima.</string>
     <string name="debugging_data_title">Data ya utatuzi</string>
     <string name="discover_tips_button">Gundua vidokezo</string>
@@ -156,6 +157,8 @@ Wizi wa data binafsi ni jaribio la kuiba vitambulisho vya kuingia katika akaunti
     <string name="double_twist_for_camera_mode_summary">"Ili uweke na uondoe hali ya kupiga picha ya 'selfi' kwenye Kamera ya Google, geuza mara mbili ukiwa umefungua kamera."</string>
     <string name="duration_less_than_one_minute">Chini ya dakika 1</string>
     <string name="enable_glanceable_hub_toggle">Kutumia ikiwa imepachikwa</string>
+    <string name="erase_external_storage" product="default">Futa hifadhi ya USB</string>
+    <string name="erase_external_storage_description" product="default">Futa data zote kwenye hifadhi ya ndani ya USB, kama vile muziki au picha</string>
     <string name="extreme_battery_saver_summary">Inajumuisha mabadiliko yote yaliyoorodheshwa hapo juu. Pia husitisha programu zisizo muhimu na arifa zake.</string>
     <string name="extreme_battery_saver_title">Kiokoa Betri kwa Kina</string>
     <string name="face_confirmation_hide_illustration_description">Sasa unapochukua simu yako au kugusa skrini, unaweza kutumia uso wako kuifungua.</string>
@@ -230,6 +233,9 @@ Data ya nakala haitajumuishwa katika kiwango cha nafasi yako kwenye Hifadhi ya G
     <string name="limited_warranty_title">Dhamana yenye Kikomo</string>
     <string name="lockscreen_show_weather_summary">Angalia hali za hewa za sasa</string>
     <string name="lockscreen_show_weather_title">Onyesha hali ya hewa</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Ili kufuta muziki, picha na data nyingine ya mtumiaji, data iliyo kwenye "<b>hifadhi ya USB</b> inahitaji kufutwa.</string>
     <string name="my_device_info_account_preference_title">Akaunti ya Google</string>
     <string name="owner_info_settings_edit_text_hint">Kwa mfano, Pixel ya Juma.</string>
     <string name="permit_debugging_data">Ruhusu idhini ya ripoti ya hitilafu</string>
@@ -281,6 +287,7 @@ Geuza simu yako ili ujaribu."</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Gusa ili uweke mipangilio</string>
     <string name="security_settings_face_enroll_consent_introduction_title">Ruhusu kipengele cha Kufungua kwa Uso</string>
     <string name="security_settings_face_enroll_education_message">Kwenye skrini inayofuata, zungusha kichwa chako ili upige picha ya pande zote za uso wako</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Kwenye skrini inayofuata, shikilia simu yako usawa wa macho</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Muda wa kuweka mipangilio ya Kufungua kwa uso umekwisha</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Sasa unaweza kutumia uso wako kufungua simu yako au kuthibitisha kuwa ni wewe, kama vile unapoingia katika akaunti kwenye programu au unapoidhinisha ununuzi</string>
     <string name="security_settings_face_enroll_finish_description_with_bp_full">"Sasa unaweza kutumia uso wako kufungua simu yako au kuthibitisha kuwa ni wewe, kama vile unapoingia katika akaunti kwenye programu au unapoidhinisha ununuzi.
@@ -294,13 +301,29 @@ Kipengele cha Kufungua kwa Uso hufanya kazi vizuri zaidi kukiwa na mwangaza wa k
 Kipengele cha kufungua kwa uso hufanya kazi vyema zaidi wakati kuna mwangaza wa kutosha na hujavaa barakoa au miwani mieusi."</string>
     <string name="security_settings_face_enroll_finish_title">Kila kitu ni shwari!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Mipangilio ya wasioona au kuzungusha kichwa vizuri</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Unapotumia kipengele cha Kufungua kwa uso, huenda ukahitaji kuelekeza kichwa chako moja kwa moja mbele ya simu yako.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Inahitaji ufungue macho</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Wewe na mtoto wako mnaweza kufuta muundo wa uso wake au kuzima kipengele cha Kufungua kwa Uso wakati wowote katika Mipangilio. Miundo ya uso inahifadhiwa kwenye simu hadi itakapofutwa.&lt;br&gt;&lt;br&gt;Pata maelezo zaidi kwenye &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Uamuzi ni wako na mtoto wako</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Unaweza kufuta muundo wa uso wako au kuzima kipengele cha Kufungua kwa uso wakati wowote katika Mipangilio. Miundo ya uso inahifadhiwa kwenye simu hadi utakapoifuta.&lt;br&gt;&lt;br&gt;Pata maelezo zaidi kwenye &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Uamuzi ni wako</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Kipengele cha Kufungua kwa Uso huunda muundo wa kipekee wa uso wa mtoto wako ili kuthibitisha kuwa ni yeye. Ili kuunda muundo huu wa uso wakati wa kuweka mipangilio, mtoto wako atapiga picha za uso wake kutoka pande tofauti.
+
+Anapotumia kipengele cha Kufungua kwa Uso, picha zinatumiwa ili kusasisha muundo wa uso wake. Picha zinazotumiwa kuunda muundo wa uso wake hazihifadhiwi, ila muundo wa uso unahifadhiwa kwa njia salama na husalia kwenye simu. Mchakato wote hufanyika kwenye simu kwa njia salama."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Kipengele cha Kufungua kwa Uso huunda muundo wa kipekee wa uso wako ili kuthibitisha kuwa ni wewe. Ili uunde muundo huu wa uso wakati wa kuweka mipangilio, utapiga picha za uso wako kutoka pande tofauti.
+
+Unapotumia kipengele cha Kufungua kwa Uso, picha zinatumiwa ili kusasisha muundo wa uso wako. Picha zinazotumiwa kuunda muundo wa uso wako hazihifadhiwi, ila muundo wa uso unahifadhiwa kwa njia salama na kusalia kwenye simu yako. Mchakato wote hufanyika kwenye simu yako kwa njia salama."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Jinsi kinavyofanya kazi</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Kipengele cha Kufungua kwa Uso kinaweza kuhitaji mtoto wako afungue macho ili kufungua simu au kuthibitisha kuwa ni yeye. Wewe na mtoto wako mnaweza kuwasha chaguo hili wakati wowote katika Mipangilio.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Ikiwa kwa kawaida mtoto wako anavaa miwani, anaweza kuivaa wakati wa kuweka mipangilio.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Kutumia uso wa mtoto wako kufungua simu yake huenda kusiwe salama ikilinganishwa na mchoro, PIN au nenosiri thabiti</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Kuangalia simu kunaweza kuifungua hata ikiwa hana lengo la kufanya hivyo. Simu yake inaweza pia kufunguliwa na mtu anayefanana naye, kama vile ndugu anayefanana naye au mtu mwingine akiishikilia mbele ya uso wake.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Kipengele cha Kufungua kwa Uso kinaweza kuhitaji ufungue macho ili kufungua simu au kuthibitisha kuwa ni wewe. Unaweza kuwasha chaguo hili wakati wowote katika Mipangilio.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Miwani au miwani ya jua iliyowekwa rangi maalum kidogo ni sawa.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Huenda kiwango cha usalama wa kufungua simu yako kwa uso kikawa kidogo kikilinganishwa na kufungua kwa mchoro, PIN au nenosiri thabiti</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Kuangalia simu kunaweza kuifungua hata ikiwa huna lengo la kufanya hivyo. Simu yako inaweza pia kufunguliwa na mtu unayefanana naye, kama vile ndugu unayefanana naye sana au mtu mwingine akiishikilia mbele ya uso wako.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Kumbuka</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Tumia uso wako kufungua simu yako au kuthibitisha kuwa ni wewe, kama vile unapoingia katika akaunti kwenye programu au unapoidhinisha ununuzi.</string>
     <string name="security_settings_face_enroll_introduction_title">Weka mipangilio ya Kufungua kwa Uso</string>
     <string name="security_settings_face_enroll_next">Inayofuata</string>
     <string name="security_settings_face_enroll_partial_message">Ili uboreshe utendaji, unaweza kuweka tena kipengele cha Kufungua kwa uso katika Mipangilio</string>
@@ -326,7 +349,11 @@ Kumbuka: Huwezi kutumia alama ya kidole chako kufungua kifaa hiki. Wasiliana na 
     <string name="security_settings_fingerprint_preference_summary_none">Gusa ili uweke mipangilio ya alama ya kidole</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint huunda muundo wa kipekee wa alama ya kidole chako ili kuthibitisha kuwa ni wewe. Ili uunde muundo wa alama ya kidole wakati wa kuweka mipangilio, utanasa picha za alama ya kidole chako kutoka pembe tofauti.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Unapotumia Pixel Imprint, picha zinatumiwa ili kusasisha muundo wa alama ya kidole chako. Picha zinazotumiwa kuunda muundo wa alama ya kidole chako hazihifadhiwi, ila muundo wa alama ya kidole unahifadhiwa kwa njia salama kwenye simu yako na husalia kwenye simu. Mchakato wote hufanyika kwenye simu yako kwa njia salama.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Unaweza kufuta muundo wa alama ya kidole chako au uzime kipengele cha Pixel Imprint wakati wowote katika Mipangilio. Miundo ya alama ya kidole inahifadhiwa kwenye simu hadi utakapoifuta.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint huunda muundo wa kipekee wa alama ya kidole cha mtoto wako ili kuthibitisha kuwa ni yeye. Ili kuunda muundo huu wa alama ya kidole wakati wa kuweka mipangilio, atapiga picha za alama ya kidole chake kutoka pembe tofauti.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">Anapotumia Pixel Imprint, picha zinatumiwa ili kusasisha muundo wa alama ya kidole chake. Picha zinazotumiwa kuunda muundo wa alama ya kidole cha mtoto wako hazihifadhiwi, ila muundo wa alama ya kidole unahifadhiwa kwenye simu kwa njia salama na husalia mle. Mchakato wote hufanyika kwenye simu kwa njia salama.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Wewe na mtoto wako mnaweza kufuta muundo wa alama ya kidole chake au kuzima kipengele cha Pixel Imprint wakati wowote katika Mipangilio. Miundo ya alama ya kidole inahifadhiwa kwenye simu hadi itakapofutwa.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Pata maelezo zaidi kuhusu kufungua Pixel kwa alama ya kidole kwenye &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint kwenye wasifu wa kazini</string>
     <string name="setup_suggestion_summary">Zimesalia hatua chache</string>
@@ -335,6 +362,7 @@ Kumbuka: Huwezi kutumia alama ya kidole chako kufungua kifaa hiki. Wasiliana na 
     <string name="smart_battery_a11y_expand_label">Panua, Betri Inayojirekebisha</string>
     <string name="smart_battery_footer">Ili uboreshe muda wa matumizi ya betri, kipengele cha Betri Inayojirekebisha kinaweza kupunguza utendaji na shughuli za chinichini. Huenda baadhi ya arifa zikachelewa.</string>
     <string name="smart_battery_manager_title">Mapendeleo yanayojirekebisha</string>
+    <string name="smart_battery_summary" product="default">Betri Inayojirekebisha hujifunza kutokana na matumizi ya simu yako ili kuboresha kwa njia endelevu jinsi programu zinavyotumia betri. Ili kuongeza muda wa matumizi ya betri, inaweza kupunguza arifa za utendaji na kucheleweshwa.</string>
     <string name="smart_battery_title">Betri Inayojirekebisha</string>
     <string name="software_update_can_be_updated_header">Boresha Pixel yako hata zaidi</string>
     <string name="software_update_detail_indication_1_update_available">Sasisho 1 linapatikana</string>

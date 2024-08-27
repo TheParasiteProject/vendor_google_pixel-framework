@@ -149,6 +149,7 @@
     <string name="content_protection_preference_subpage_summary">ಸ್ಕ್ಯಾನಿಂಗ್ ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ಖಾಸಗಿಯಾಗಿ ನಡೆಯುತ್ತದೆ, ಫಿಶಿಂಗ್ ಮತ್ತು ಇತರ ಮೋಸದ ನಡವಳಿಕೆಗಾಗಿ ಆ್ಯಪ್‌ನ ಚಟುವಟಿಕೆಯನ್ನು ಪರಿಶೀಲಿಸುತ್ತದೆ. ಫಿಶಿಂಗ್ ಪತ್ತೆಯಾದರೆ, ಅಪಾಯವನ್ನು ಖಚಿತಪಡಿಸಲು ಮತ್ತು ಆ್ಯಪ್ ಬಳಕೆದಾರರನ್ನು ಎಚ್ಚರಿಸಲು ಕೆಲವು ಆ್ಯಪ್ ಮಾಹಿತಿಯನ್ನು Google Play Protect ಗೆ ಕಳುಹಿಸಲಾಗುತ್ತದೆ.</string>
     <string name="contextual_timeout_description">ನಿಮ್ಮ ಸಾಧನವು ಬಳಕೆಯಲ್ಲಿಲ್ಲದಿದ್ದರೆ, ನಿಮ್ಮ ಸಾಧನದ ಸ್ಕ್ರೀನ್ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಬೇಗನೆ ಆಫ್ ಆಗುತ್ತದೆ</string>
     <string name="contextual_timeout_title">ಅಡಾಪ್ಟಿವ್ ಟೈಮ್‌ಔಟ್</string>
+    <string name="credentials_install_summary" product="default">ಸಂಗ್ರಹಣೆಯಿಂದ ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿ</string>
     <string name="dark_ui_text">ನಿಮ್ಮ ಬ್ಯಾಟರಿ ದೀರ್ಘ ಕಾಲ ಬಾಳಿಕೆ ಬರುವುದಕ್ಕಾಗಿ ಸಹಾಯವಾಗಲು ಡಾರ್ಕ್ ಥೀಮ್ ಕಪ್ಪು ಹಿನ್ನೆಲೆಯನ್ನು ಬಳಸುತ್ತದೆ. ಡಾರ್ಕ್‌ ಥೀಮ್ ವೇಳಾಪಟ್ಟಿಗಳು ಆನ್ ಆಗಲು ನಿಮ್ಮ ಸ್ಕ್ರೀನ್ ಆಫ್ ಆಗುವವರೆಗೆ ಕಾಯುತ್ತವೆ.</string>
     <string name="debugging_data_title">ಡೀಬಗ್ ಮಾಡುವಿಕೆ ಡೇಟಾ</string>
     <string name="discover_tips_button">ಸಲಹೆಗಳನ್ನು ಕಂಡುಕೊಳ್ಳಿ</string>
@@ -156,6 +157,8 @@
     <string name="double_twist_for_camera_mode_summary">Google Camera ದಲ್ಲಿ ಸೆಲ್ಫೀ ಮೋಡ್‌ಗೆ ಪ್ರವೇಶಿಸಲು ಮತ್ತು ಅದರಿಂದ ನಿರ್ಗಮಿಸಲು, ನೀವು ಆ್ಯಪ್‌ನಲ್ಲಿರುವಾಗ ಡಬಲ್-ಟ್ವಿಸ್ಟ್ ಮಾಡಿ.</string>
     <string name="duration_less_than_one_minute">1 ನಿಮಿಷಕ್ಕಿಂತ ಕಡಿಮೆ</string>
     <string name="enable_glanceable_hub_toggle">ಹಬ್ ಮೋಡ್</string>
+    <string name="erase_external_storage" product="default">USB ಸಂಗ್ರಹಣೆಯನ್ನು ಅಳಿಸಿ</string>
+    <string name="erase_external_storage_description" product="default">ಆಂತರಿಕ USB ಸಂಗ್ರಹಣೆಯಲ್ಲಿರುವ ಸಂಗೀತ ಅಥವಾ ಫೋಟೋಗಳಂಥ ಎಲ್ಲ ಡೇಟಾವನ್ನು ಅಳಿಸಿ</string>
     <string name="extreme_battery_saver_summary">ಮೇಲೆ ಪಟ್ಟಿ ಮಾಡಲಾದ ಎಲ್ಲಾ ಬದಲಾವಣೆಗಳನ್ನು ಒಳಗೊಂಡಿದೆ. ಅನಗತ್ಯ ಆ್ಯಪ್‌ಗಳು ಹಾಗೂ ಅವುಗಳ ಅಧಿಸೂಚನೆಗಳನ್ನು ವಿರಾಮಗೊಳಿಸುತ್ತದೆ.</string>
     <string name="extreme_battery_saver_title">ಎಕ್ಸ್‌ಟ್ರೀಮ್ ಬ್ಯಾಟರಿ ಸೇವರ್</string>
     <string name="face_confirmation_hide_illustration_description">ಈಗ ನಿಮ್ಮ ಫೋನ್ ಅನ್ನು ನೀವು ಎತ್ತಿಕೊಂಡಾಗ ಅಥವಾ ಸ್ಕ್ರೀನ್ ಅನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿದಾಗ, ಅನ್‌ಲಾಕ್ ಮಾಡಲು ನಿಮ್ಮ ಮುಖವನ್ನು ಬಳಸಬಹುದು.</string>
@@ -229,6 +232,9 @@
     <string name="limited_warranty_title">ಸೀಮಿತ ವಾರೆಂಟಿ</string>
     <string name="lockscreen_show_weather_summary">ಪ್ರಸ್ತುತ ಹವಾಮಾನ ಪರಿಸ್ಥಿತಿಗಳನ್ನು ವೀಕ್ಷಿಸಿ</string>
     <string name="lockscreen_show_weather_title">ಹವಾಮಾನವನ್ನು ತೋರಿಸಿ</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+ಸಂಗೀತ, ಚಿತ್ರಗಳು, ಮತ್ತು ಬಳಕೆದಾರರ ಇತರ ಡೇಟಾವನ್ನು ತೆರವುಗೊಳಿಸಲು, "<b>USB ಸಂಗ್ರಹಣೆಯನ್ನು</b> ಅಳಿಸಬೇಕಾಗುತ್ತದೆ.</string>
     <string name="my_device_info_account_preference_title">Google ಖಾತೆ</string>
     <string name="owner_info_settings_edit_text_hint">ಉದಾ. ಜೋ ಅವರ Pixel.</string>
     <string name="permit_debugging_data">ಬಗ್ ವರದಿ ಆ್ಯಕ್ಸೆಸ್ ಅನ್ನು ಅನುಮತಿಸಿ</string>
@@ -279,6 +285,7 @@
     <string name="security_dismiss_dialog_title">ಈ ಎಚ್ಚರಿಕೆಯನ್ನು ವಜಾಗೊಳಿಸಬೇಕೇ?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">ಸೆಟಪ್ ಮಾಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ</string>
     <string name="security_settings_face_enroll_education_message">ಮುಂದಿನ ಸ್ಕ್ರೀನ್‌ನಲ್ಲಿ, ನಿಮ್ಮ ಮುಖವನ್ನು ಎಲ್ಲಾ ಕೋನಗಳಲ್ಲಿ ಕ್ಯಾಪ್ಚರ್ ಮಾಡಲು ನಿಮ್ಮ ತಲೆಯನ್ನು ತಿರುಗಿಸಿ.</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">ಮುಂದಿನ ಸ್ಕ್ರೀನ್‌ನಲ್ಲಿ, ನಿಮ್ಮ ಫೋನ್ ಅನ್ನು ಕಣ್ಣಿನ ನೇರಕ್ಕೆ ಹಿಡಿದುಕೊಳ್ಳಿ</string>
     <string name="security_settings_face_enroll_error_generic_dialog_message">ಮುಖ ನೋಂದಣಿ ಮಾಡುವಿಕೆಯು ಕಾರ್ಯ ನಿರ್ವಹಿಸಲಿಲ್ಲ.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">ಮುಖ ನೋಂದಣಿ ಸಮಯದ ಮಿತಿಯನ್ನು ಮೀರಿದೆ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">ಫೇಸ್ ಅನ್‌ಲಾಕ್ ಸೆಟಪ್ ಅವಧಿ ಮೀರಿದೆ</string>
@@ -294,13 +301,29 @@
 ಸಾಕಷ್ಟು ಬೆಳಕು ಇರುವಾಗ ಮತ್ತು ಮಾಸ್ಕ್ ಅಥವಾ ಗಾಢ ಬಣ್ಣದ ಕನ್ನಡಕ ಧರಿಸದಿರುವಾಗ ಫೇಸ್ ಅನ್‌ಲಾಕ್ ಫೀಚರ್ ಉತ್ತಮವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ."</string>
     <string name="security_settings_face_enroll_finish_title">ಸರಿಯಾಗಿದೆ!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">ದೃಷ್ಟಿ ದುರ್ಬಲವಾಗಿದ್ದರೆ ಅಥವಾ ತಲೆ ಅಲುಗಾಡುವ ಸಮಸ್ಯೆ ಇರುವಾಗ ಸೆಟ್ ಮಾಡಿ</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">ಫೇಸ್ ಅನ್‌ಲಾಕ್ ಬಳಸುವಾಗ, ನಿಮ್ಮ ತಲೆಯು ನಿಮ್ಮ ಫೋನ್‌ ಎದುರು ನೇರವಾಗಿ ಇರಬೇಕಾಗಬಹುದು.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">ಕಣ್ಣುಗಳನ್ನು ತೆರೆದಿರಬೇಕು</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"ನೀವು ಮತ್ತು ನಿಮ್ಮ ಮಗು ತಮ್ಮ ಫೇಸ್ ಮಾಡೆಲ್ ಅನ್ನು ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಯಾವಾಗ ಬೇಕಾದರೂ ಅಳಿಸಬಹುದು ಅಥವಾ ಫೇಸ್ ಅನ್‌ಲಾಕ್ ಅನ್ನು ಆಫ್ ಮಾಡಬಹುದು. ಫೇಸ್ ಮಾಡೆಲ್‌ಗಳನ್ನು ಅಳಿಸುವವರೆಗೂ ಅವುಗಳನ್ನು ಫೋನ್‌ನಲ್ಲಿ ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ.&lt;br&gt;&lt;br&gt;&lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; ನಲ್ಲಿ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">ನೀವು ಮತ್ತು ನಿಮ್ಮ ಮಗು ನಿಯಂತ್ರಣದಲ್ಲಿದ್ದೀರಿ</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"ನೀವು ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಯಾವಾಗ ಬೇಕಾದರೂ ನಿಮ್ಮ ಫೇಸ್ ಮಾಡೆಲ್ ಅನ್ನು ಅಳಿಸಬಹುದು ಅಥವಾ ಫೇಸ್ ಅನ್‌ಲಾಕ್ ಅನ್ನು ಆಫ್ ಮಾಡಬಹುದು. ಫೇಸ್ ಮಾಡೆಲ್‌ಗಳನ್ನು ನೀವು ಅಳಿಸುವವರೆಗೂ ಫೋನ್‌ನಲ್ಲಿ ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ.&lt;br&gt;&lt;br&gt;ಇಲ್ಲಿ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ: &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">ನಿಯಂತ್ರಣ ನಿಮ್ಮ ಕೈಯಲ್ಲಿದೆ</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"ಫೇಸ್ ಅನ್‌ಲಾಕ್ ನಿಮ್ಮ ಮಗುವನ್ನು ಗುರುತಿಸಲು ಅವರ ಮುಖದ ವಿಶಿಷ್ಟ ಮಾಡೆಲ್ ಅನ್ನು ರಚಿಸುತ್ತದೆ. ಸೆಟಪ್ ಮಾಡುವ ಸಮಯದಲ್ಲಿ ಈ ಫೇಸ್ ಮಾಡೆಲ್ ಅನ್ನು ರಚಿಸಲು, ನಿಮ್ಮ ಮಗು ವಿವಿಧ ಕೋನಗಳಿಂದ ತಮ್ಮ ಮುಖದ ಚಿತ್ರಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳುತ್ತಾರೆ.
+
+ಅವರು ಫೇಸ್ ಅನ್‌ಲಾಕ್ ಬಳಸುವಾಗ, ಅವರ ಫೇಸ್ ಮಾಡೆಲ್ ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ಚಿತ್ರಗಳನ್ನು ಬಳಸಲಾಗುತ್ತದೆ. ಅವರ ಫೇಸ್ ಮಾಡೆಲ್ ಅನ್ನು ರಚಿಸಲು ಬಳಸುವ ಚಿತ್ರಗಳನ್ನು ಸಂಗ್ರಹಿಸಲಾಗುವುದಿಲ್ಲ, ಆದರೆ ಫೇಸ್ ಮಾಡೆಲ್ ಅನ್ನು ಫೋನ್‌ನಲ್ಲಿ ಸುರಕ್ಷಿತವಾಗಿ ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಅದು ಫೋನ್‌ನಲ್ಲೇ ಉಳಿಯುತ್ತದೆ. ಎಲ್ಲಾ ಪ್ರಕ್ರಿಯೆಗಳು ಫೋನ್‌ನಲ್ಲಿ ಸುರಕ್ಷಿತವಾಗಿ ಸಂಭವಿಸುತ್ತವೆ."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"ಫೇಸ್ ಅನ್‌ಲಾಕ್ ನಿಮ್ಮನ್ನು ಗುರುತಿಸಲು ನಿಮ್ಮ ಮುಖದ ವಿಶಿಷ್ಟ ಮಾಡೆಲ್ ಅನ್ನು ರಚಿಸುತ್ತದೆ. ಸೆಟಪ್ ಮಾಡುವ ಸಮಯದಲ್ಲಿ ಈ ಫೇಸ್ ಮಾಡೆಲ್ ಅನ್ನು ರಚಿಸಲು, ನೀವು ವಿವಿಧ ಕೋನಗಳಿಂದ ನಿಮ್ಮ ಮುಖದ ಚಿತ್ರಗಳನ್ನು ತೆಗೆಯುತ್ತೀರಿ.
+
+ನೀವು ಫೇಸ್ ಅನ್‌ಲಾಕ್ ಬಳಸುವಾಗ, ನಿಮ್ಮ ಫೇಸ್ ಮಾಡೆಲ್ ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ಚಿತ್ರಗಳನ್ನು ಬಳಸಲಾಗುತ್ತದೆ. ನಿಮ್ಮ ಫೇಸ್ ಮಾಡೆಲ್ ಅನ್ನು ರಚಿಸಲು ಬಳಸುವ ಚಿತ್ರಗಳನ್ನು ಸಂಗ್ರಹಿಸಲಾಗುವುದಿಲ್ಲ, ಆದರೆ ಫೇಸ್ ಮಾಡೆಲ್ ಅನ್ನು ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ಸುರಕ್ಷಿತವಾಗಿ ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಅದು ಫೋನ್‌ನಲ್ಲೇ ಉಳಿಯುತ್ತದೆ. ಎಲ್ಲಾ ಪ್ರಕ್ರಿಯೆಗಳು ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ಸುರಕ್ಷಿತವಾಗಿ ಸಂಭವಿಸುತ್ತವೆ."</string>
     <string name="security_settings_face_enroll_introduction_how_title">ಇದು ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">ಫೇಸ್ ಅನ್‌ಲಾಕ್ ಅನ್ನು ಬಳಸುವಾಗ ಫೋನ್ ಅನ್‌ಲಾಕ್ ಮಾಡಲು ಅಥವಾ ಮಗುವಿನ ಗುರುತನ್ನು ದೃಢೀಕರಿಸಲು ನಿಮ್ಮ ಮಗುವಿನ ಕಣ್ಣುಗಳು ತೆರೆದಿರಬೇಕಾಗುತ್ತದೆ. ನೀವು ಮತ್ತು ನಿಮ್ಮ ಮಗು ಈ ಆಯ್ಕೆಯನ್ನು ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಆನ್ ಮಾಡಬಹುದು.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">ನಿಮ್ಮ ಮಗು ಸಾಮಾನ್ಯವಾಗಿ ಕನ್ನಡಕವನ್ನು ಧರಿಸಿದರೆ, ಅವರು ಸೆಟಪ್ ಸಮಯದಲ್ಲಿ ಅವುಗಳನ್ನು ಧರಿಸಬಹುದು.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">ನಿಮ್ಮ ಮಗುವಿನ ಫೋನ್ ಅನ್‌ಲಾಕ್ ಮಾಡಲು ಅವರ ಮುಖವನ್ನು ಬಳಸುವುದು ಶಕ್ತಿಶಾಲಿ ಪ್ಯಾಟರ್ನ್, ಪಿನ್ ಅಥವಾ ಪಾಸ್‌ವರ್ಡ್‌ಗಿಂತ ಕಡಿಮೆ ಸುರಕ್ಷಿತ ವಿಧಾನವಾಗಿರಬಹುದು</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">ಫೋನ್ ಕಡೆ ನೋಡಿದಾಗ, ಅವರಿಗೆ ಅಗತ್ಯವಿಲ್ಲದಿದ್ದರೂ ಫೋನ್ ಆನ್ ಆಗಬಹುದು. ಅವರನ್ನು ತುಂಬಾ ಹೋಲುವ ವ್ಯಕ್ತಿ, ಉದಾಹರಣೆಗೆ ತದ್ರೂಪಿ ಸಹೋದರ/ಸಹೋದರಿಯೂ ಅವರ ಫೋನ್ ಅನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಬಹುದು ಅಥವಾ ಅದನ್ನು ಅವರ ಮುಖದ ಎದುರು ಹಿಡಿದೂ ಸಹ ಯಾರಾದರೂ ಅನ್‌ಲಾಕ್ ಮಾಡಬಹುದು.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">ಫೇಸ್ ಅನ್‌ಲಾಕ್ ಅನ್ನು ಬಳಸುವಾಗ ಫೋನ್ ಅನ್‌ಲಾಕ್ ಮಾಡಲು ಅಥವಾ ನಿಮ್ಮ ಗುರುತನ್ನು ದೃಢೀಕರಿಸಲು ನಿಮ್ಮ ಕಣ್ಣುಗಳು ತೆರೆದಿರಬೇಕಾಗುತ್ತದೆ. ನೀವು ಈ ಆಯ್ಕೆಯನ್ನು ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಆನ್ ಮಾಡಬಹುದು.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">ಕನ್ನಡಕಗಳು ಅಥವಾ ತಿಳಿಬಣ್ಣದ ಸನ್ ಗ್ಲಾಸ್‌ಗಳನ್ನು ಧರಿಸಬಹುದು.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">ನಿಮ್ಮ ಮುಖದ ಮೂಲಕ ನಿಮ್ಮ ಫೋನ್ ಅನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡುವುದು ಬಲವಾದ ಪ್ಯಾಟರ್ನ್, ಪಿನ್ ಅಥವಾ ಪಾಸ್‌ವರ್ಡ್‌ಗಿಂತ ಕಡಿಮೆ ಸುರಕ್ಷಿತ ವಿಧಾನವಾಗಿರಬಹುದು</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">ಫೋನ್ ಕಡೆ ನೋಡಿದಾಗ, ನಿಮಗೆ ಅಗತ್ಯವಿಲ್ಲದಿದ್ದರೂ ಫೋನ್ ಅನ್‌ಲಾಕ್‌ ಆಗಬಹುದು. ನಿಮ್ಮನ್ನು ತುಂಬಾ ಹೋಲುವ ವ್ಯಕ್ತಿ, ಉದಾಹರಣೆಗೆ ತದ್ರೂಪಿ ಸಹೋದರ/ಸಹೋದರಿಯೂ ನಿಮ್ಮ ಫೋನ್ ಅನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಬಹುದು ಅಥವಾ ಅದನ್ನು ನಿಮ್ಮ ಮುಖದ ಎದುರು ಹಿಡಿದೂ ಸಹ ಯಾರಾದರೂ ಅನ್‌ಲಾಕ್ ಮಾಡಬಹುದು.</string>
     <string name="security_settings_face_enroll_introduction_info_title">ನೆನಪಿನಲ್ಲಿಡಿ</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">ನಿಮ್ಮ ಫೋನ್‌ ಅನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಲು ಅಥವಾ ನಿಮ್ಮ ಆ್ಯಪ್‌ಗಳಿಗೆ ಸೈನ್ ಇನ್ ಮಾಡಿದಾಗ ಅಥವಾ ಖರೀದಿಯನ್ನು ಅನುಮತಿಸಿದಾಗ ನಿಮ್ಮ ಗುರುತನ್ನು ಪರಿಶೀಲಿಸಲು ನಿಮ್ಮ ಮುಖವನ್ನು ಬಳಸಿ.</string>
     <string name="security_settings_face_enroll_introduction_title">ಫೇಸ್ ಅನ್‌ಲಾಕ್ ಅನ್ನು ಸೆಟಪ್ ಮಾಡಿ</string>
     <string name="security_settings_face_enroll_next">ಮುಂದಿನದು</string>
     <string name="security_settings_face_enroll_partial_message">ಕೆಲಸ ನಿರ್ವಹಣೆಯನ್ನು ಸುಧಾರಿಸಲು, ನೀವು ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಫೇಸ್ ಅನ್‌ಲಾಕ್ ವೈಶಿಷ್ಟ್ಯವನ್ನು ಮರುಹೊಂದಿಸಬಹುದು</string>
@@ -326,7 +349,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">ಫಿಂಗರ್‌ಪ್ರಿಂಟ್ ಸೆಟಪ್ ಮಾಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">ದೃಢೀಕರಣದ ಸಮಯದಲ್ಲಿ ನಿಮ್ಮನ್ನು ಗುರುತಿಸಲು Pixel Imprint ನಿಮ್ಮ ಫಿಂಗರ್‌ಪ್ರಿಂಟ್‌ನ ವಿಶಿಷ್ಟ ಮಾಡೆಲ್ ಅನ್ನು ರಚಿಸುತ್ತದೆ. ಸೆಟಪ್ ಮಾಡುವ ಸಮಯದಲ್ಲಿ ಈ ಫಿಂಗರ್‌ಪ್ರಿಂಟ್ ಮಾಡೆಲ್ ಅನ್ನು ರಚಿಸಲು, ನಿಮ್ಮ ಫಿಂಗರ್‌ಪ್ರಿಂಟ್‌ನ ಚಿತ್ರಗಳನ್ನು ನೀವು ವಿವಿಧ ಕೋನಗಳಲ್ಲಿ ತೆಗೆದುಕೊಳ್ಳುತ್ತೀರಿ.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">ನೀವು Pixel Imprint ಬಳಸುವಾಗ, ನಿಮ್ಮ ಫಿಂಗರ್‌ ಪ್ರಿಂಟ್ ಮಾಡೆಲ್ ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ಚಿತ್ರಗಳನ್ನು ಬಳಸಲಾಗುತ್ತದೆ. ನಿಮ್ಮ ಫಿಂಗರ್‌ಪ್ರಿಂಟ್ ಮಾಡೆಲ್ ಅನ್ನು ರಚಿಸಲು ಬಳಸುವ ಚಿತ್ರಗಳನ್ನು ಎಂದಿಗೂ ಸಂಗ್ರಹಿಸಲಾಗುವುದಿಲ್ಲ, ಆದರೆ ಫಿಂಗರ್‌ಪ್ರಿಂಟ್ ಮಾಡೆಲ್ ಅನ್ನು ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ಸುರಕ್ಷಿತವಾಗಿ ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಅದು ಫೋನ್‌ನಲ್ಲಿಯೇ ಉಳಿಯುತ್ತದೆ. ಎಲ್ಲಾ ಪ್ರಕ್ರಿಯೆಗಳು ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ಸುರಕ್ಷಿತವಾಗಿ ಸಂಭವಿಸುತ್ತವೆ.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">ನಿಮ್ಮ ಫಿಂಗರ್‌ ಪ್ರಿಂಟ್ ಮಾಡೆಲ್ ಅನ್ನು ನೀವು ಅಳಿಸಬಹುದು ಅಥವಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಯಾವಾಗ ಬೇಕಾದರೂ Pixel Imprint ಅನ್ನು ಆಫ್ ಮಾಡಬಹುದು. ಫಿಂಗರ್‌ಪ್ರಿಂಟ್ ಮಾಡೆಲ್‌ಗಳನ್ನು ನೀವು ಅಳಿಸುವವರೆಗೂ ಫೋನ್‌ನಲ್ಲಿಯೇ ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint ನಿಮ್ಮ ಮಗುವಿನ ಫಿಂಗರ್‌ ಪ್ರಿಂಟ್ ಅವರ ವಿಶಿಷ್ಟ ಮಾಡೆಲ್ ಅನ್ನು ರಚಿಸುತ್ತದೆ. ಸೆಟಪ್ ಸಮಯದಲ್ಲಿ ಈ ಫಿಂಗರ್‌ಪ್ರಿಂಟ್ ಮಾಡೆಲ್ ಅನ್ನು ರಚಿಸಲು, ಅವರು ತಮ್ಮ ಫಿಂಗರ್‌ಪ್ರಿಂಟ್ ಚಿತ್ರಗಳನ್ನು ವಿವಿಧ ಆಯಾಮಗಳಲ್ಲಿ ತೆಗೆದುಕೊಳ್ಳುತ್ತಾರೆ.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">ಅವರು Pixel Imprint ಬಳಸುವಾಗ, ಅವರ ಫಿಂಗರ್‌ ಪ್ರಿಂಟ್ ಮಾಡೆಲ್ ಅನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ಚಿತ್ರಗಳನ್ನು ಬಳಸಲಾಗುತ್ತದೆ. ನಿಮ್ಮ ಮಗುವಿನ ಫಿಂಗರ್‌ ಪ್ರಿಂಟ್ ಅನ್ನು ರಚಿಸಲು ಬಳಸುವ ಚಿತ್ರಗಳನ್ನು ಎಂದಿಗೂ ಸಂಗ್ರಹಿಸಲಾಗುವುದಿಲ್ಲ, ಆದರೆ ಫಿಂಗರ್‌ ಪ್ರಿಂಟ್ ಮಾಡೆಲ್ ಅನ್ನು ಫೋನ್‌ನಲ್ಲಿ ಸುರಕ್ಷಿತವಾಗಿ ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಅದು ಫೋನ್‌ನಲ್ಲಿಯೇ ಉಳಿಯುತ್ತದೆ. ಎಲ್ಲಾ ಪ್ರಕ್ರಿಯೆಗಳು ಫೋನ್‌ನಲ್ಲಿ ಸುರಕ್ಷಿತವಾಗಿ ಸಂಭವಿಸುತ್ತವೆ.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">ನೀವು ಮತ್ತು ನಿಮ್ಮ ಮಗು ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ತಮ್ಮ ಫಿಂಗರ್‌ಪ್ರಿಂಟ್ ಮಾಡೆಲ್ ಅನ್ನು ಅಳಿಸಬಹುದು ಅಥವಾ Pixel Imprint ಅನ್ನು ಆಫ್ ಮಾಡಬಹುದು. ಫಿಂಗರ್‌ಪ್ರಿಂಟ್ ಮಾಡೆಲ್‌ಗಳನ್ನು ಅಳಿಸುವವರೆಗೆ ಫೋನ್‌ನಲ್ಲಿ ಸಂಗ್ರಹಿಸಲಾಗುತ್ತದೆ.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"&lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt; ನಲ್ಲಿ Pixel ಫಿಂಗರ್‌ಪ್ರಿಂಟ್ ಅನ್‌ಲಾಕ್ ಕುರಿತು ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ."</string>
     <string name="security_settings_work_fingerprint_preference_title">ಕೆಲಸಕ್ಕಾಗಿ Pixel Imprint</string>
     <string name="setup_suggestion_summary">ಇನ್ನು ಕೆಲವೇ ಹಂತಗಳು</string>
@@ -335,6 +362,7 @@
     <string name="smart_battery_a11y_expand_label">ವಿಸ್ತೃತಗೊಳಿಸಿ, ಅಡಾಪ್ಟಿವ್‌ ಬ್ಯಾಟರಿ</string>
     <string name="smart_battery_footer">ಬ್ಯಾಟರಿ ಅವಧಿಯನ್ನು ವಿಸ್ತರಿಸಲು, ಅಡಾಪ್ಟಿವ್ ಬ್ಯಾಟರಿಯು ಕಾರ್ಯಕ್ಷಮತೆ ಮತ್ತು ಹಿನ್ನೆಲೆ ಚಟುವಟಿಕೆಯನ್ನು ಕಡಿಮೆ ಮಾಡಬಹುದು. ಕೆಲವು ಅಧಿಸೂಚನೆಗಳು ತಡವಾಗಬಹುದು.</string>
     <string name="smart_battery_manager_title">ಅಡಾಪ್ಟಿವ್ ಆದ್ಯತೆಗಳು</string>
+    <string name="smart_battery_summary" product="default">ಆ್ಯಪ್‌ಗಳು ಬ್ಯಾಟರಿಯನ್ನು ಹೇಗೆ ಬಳಸುತ್ತವೆ ಎಂಬುದನ್ನು ನಿರಂತರವಾಗಿ ಆಪ್ಟಿಮೈಜ್ ಮಾಡಲು ನಿಮ್ಮ ಫೋನ್‌ನ ಬಳಕೆಯಿಂದ ಅಡಾಪ್ಟಿವ್ ಬ್ಯಾಟರಿ ಕಲಿಯುತ್ತದೆ. ಬ್ಯಾಟರಿ ಬಾಳಿಕೆಯನ್ನು ಹೆಚ್ಚಿಸಲು, ಇದು ಕಾರ್ಯಕ್ಷಮತೆಯನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ ಮತ್ತು ನೋಟಿಫಿಕೇಶನ್‌ಗಳನ್ನು ವಿಳಂಬಗೊಳಿಸುತ್ತದೆ.</string>
     <string name="smart_battery_title">ಅಡಾಪ್ಟಿವ್‌ ಬ್ಯಾಟರಿ</string>
     <string name="software_update_can_be_updated_header">ನಿಮ್ಮ Pixel ಅನ್ನು ಇನ್ನಷ್ಟು ಉತ್ತಮಗೊಳಿಸಿ</string>
     <string name="software_update_detail_indication_1_update_available">1 ಅಪ್‌ಡೇಟ್ ಲಭ್ಯವಿದೆ</string>

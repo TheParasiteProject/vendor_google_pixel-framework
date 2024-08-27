@@ -149,6 +149,7 @@
     <string name="content_protection_preference_subpage_summary">Скан хийх нь таны төхөөрөмжид шууд нууцлалтайгаар ажиллах бөгөөд фишинг эсвэл бусад хууран мэхлэх зан авир байгаа эсэхийг үйл ажиллагаанаас шалгадаг. Хэрэв энэ нь илэрвэл аюул заналыг баталгаажуулж, аппын хэрэглэгчдэд сануулахын тулд зарим аппын мэдээллийг Google Play Хамгаалалт руу илгээдэг.</string>
     <string name="contextual_timeout_description">Таныг төхөөрөмжөө ашиглахгүй байвал таны дэлгэцийг автоматаар эрт унтраадаг</string>
     <string name="contextual_timeout_title">Дасан зохицох хугацаа</string>
+    <string name="credentials_install_summary" product="default">Сертификатыг сангаас суулгах</string>
     <string name="dark_ui_text">Бараан загвар нь таны батарейн ашиглалтын хугацааг уртасгахад туслахын тулд хар өнгийн дэвсгэр ашигладаг. Бараан загварын хуваарьт төлөв нь таны дэлгэц унтрах хүртэл хүлээж байгаад асдаг.</string>
     <string name="debugging_data_title">Дебагийн өгөгдөл</string>
     <string name="discover_tips_button">Зөвлөгөөнүүдтэй танилцах</string>
@@ -156,6 +157,8 @@
     <string name="double_twist_for_camera_mode_summary">Google Камерын сельфи хийх горимыг унтрааж асаахын тулд аппыг ашиглах үедээ бугуйгаа хоёр эргүүлнэ үү.</string>
     <string name="duration_less_than_one_minute">1 минутаас бага</string>
     <string name="enable_glanceable_hub_toggle">Hub горим</string>
+    <string name="erase_external_storage" product="default">USB санг арилгах</string>
+    <string name="erase_external_storage_description" product="default">Дотоод USB сан дээрх хөгжим буюу зураг гэх мэт бүх өгөгдлийг арилгах</string>
     <string name="extreme_battery_saver_summary">Дээр жагсаасан бүх өөрчлөлт багтсан. Мөн чухал бус аппууд болон тэдгээрийн мэдэгдлүүдийг түр зогсооно.</string>
     <string name="extreme_battery_saver_title">Дээд зэргээр батарей хэмнэгч</string>
     <string name="face_confirmation_hide_illustration_description">Одоо та утсаа авах эсвэл дэлгэцийг нь товших үедээ царайгаараа түгжээг тайлах боломжтой.</string>
@@ -229,6 +232,9 @@
     <string name="limited_warranty_title">Хязгаарлагдмал баталгаа</string>
     <string name="lockscreen_show_weather_summary">Одоогийн цаг агаарын нөхцөл байдлыг харах</string>
     <string name="lockscreen_show_weather_title">Цаг агаар харуулах</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Хөгжим, зураг болон бусад хэрэглэгчийн өгөгдлийг цэвэрлэхийн тулд "<b>USB санг</b> устгах хэрэгтэй.</string>
     <string name="my_device_info_account_preference_title">Google Бүртгэл</string>
     <string name="owner_info_settings_edit_text_hint">Жишээ нь Joe-н Pixel.</string>
     <string name="permit_debugging_data">Алдааны мэдээний хандалтыг зөвшөөрөх</string>
@@ -280,6 +286,7 @@
     <string name="security_settings_biometric_preference_summary_none_enrolled">Тохируулахын тулд товшино уу</string>
     <string name="security_settings_face_enroll_done">Дууссан</string>
     <string name="security_settings_face_enroll_education_message">Дараагийн дэлгэц дээр царайныхаа бүхий л өнцгийн зургийг авахын тулд толгойгоо эргүүлнэ үү</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Дараагийн дэлгэц дээр утсаа нүднийхээ түвшинд барина уу</string>
     <string name="security_settings_face_enroll_error_dialog_title">Бүртгэлийг гүйцээж чадсангүй</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Царайгаар түгжээ тайлах завсарласан</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Одоо та утасныхаа түгжээг тайлахад эсвэл аппуудад нэвтрэх, худалдан авалтыг зөвшөөрөх үед өөрийгөө мөн болохыг баталгаажуулахад царайгаа ашиглах боломжтой</string>
@@ -294,13 +301,29 @@
 Царайгаар түгжээ тайлах нь хангалттай гэрэлтэй, таныг амны хаалт, бараан нүдний шил зүүгээгүй үед хамгийн сайн ажиллана."</string>
     <string name="security_settings_face_enroll_finish_title">Ямар ч асуудалгүй байна!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Харааны бэрхшээлтэй эсвэл толгойгоо хөдөлгөх боломжгүй хэрэглэгчийн тохируулга</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Царайгаар түгжээ тайлахыг ашиглах үед та толгойгоо утасныхаа урд аль болох эгц байлгах шаардлагатай.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Нүд нээлттэй байх шаардлагатай</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Та болон таны хүүхэд хүссэн үедээ Тохиргоо хэсэгт түүний нүүрний загварыг устгах эсвэл Царайгаар түгжээ тайлах онцлогийг унтраах боломжтой. Нүүрний загваруудыг устгах хүртэл утсанд хадгална. href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; дээрээс &lt;br&gt;&lt;br&gt;нэмэлт мэдээлэл авна уу&lt;a."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Хяналт танд болон таны хүүхдэд байна</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Та хүссэн үедээ Тохиргоо хэсэгт нүүрний загвараа устгах эсвэл Царайгаар түгжээ тайлах онцлогийг унтраах боломжтой. Та нүүрний загваруудыг устгах хүртэл тэдгээрийг утсанд хадгална.&lt;br&gt;&lt;br&gt; &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; нэмэлт мэдээлэл авна уу."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Хяналт таны гарт</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Царайгаар түгжээ тайлах онцлог нь таны хүүхдийг мөн болохыг баталгаажуулахын тулд түүний нүүрний өвөрмөц загварыг үүсгэдэг. Тохируулгын үед энэ нүүрний загварыг үүсгэхийн тулд таны хүүхэд нүүрнийхээ зургийг өөр өнцгөөс авна.
+
+Түүнийг Царайгаар түгжээ тайлах онцлогийг ашиглах үед зургийг түүний нүүрний загварыг шинэчлэхэд ашиглана. Түүний нүүрний загвараа үүсгэхэд ашигласан зургийг хадгалахгүй хэдий ч нүүрнийх нь загварыг утсанд аюулгүйгээр бүрмөсөн хадгална. Бүх боловсруулалт утсан дээр аюулгүйгээр хийгдэнэ."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Царайгаар түгжээ тайлах онцлог нь таныг мөн болохыг баталгаажуулахын тулд таны нүүрний өвөрмөц загварыг үүсгэдэг. Тохируулгын үеэр энэ нүүрний загварыг үүсгэхийн тулд та нүүрнийхээ зургийг өөр өнцгөөс авна.
+
+Та Царайгаар түгжээ тайлах онцлогийг ашиглах үед зургийг таны нүүрний загварыг шинэчлэхэд ашиглана. Таны нүүрний загвараа үүсгэхэд ашигласан зургийг хадгалахгүй хэдий ч нүүрний загварыг утсанд тань аюулгүйгээр бүрмөсөн хадгална. Бүх боловсруулалт таны утсанд аюулгүйгээр хийгдэнэ."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Энэ нь хэрхэн ажилладаг вэ?</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Царайгаар түгжээ тайлах онцлог нь утасны түгжээг тайлах эсвэл таны хүүхдийг мөн болохыг баталгаажуулахын тулд түүнээс нүдээ нээлттэй байлгахыг шаардаж болно. Та болон таны хүүхэд энэ сонголтыг хүссэн үедээ Тохиргоо хэсэгт асаах боломжтой.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Хэрэв таны хүүхэд ердийн үед нүдний шил зүүдэг бол тохируулгын үеэр шилээ зүүж болно.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Хүүхдийнхээ царайг утасных нь түгжээг тайлахад ашиглах нь сайн хээ, ПИН эсвэл нууц үгээс хамгаалалт сул байж магадгүй</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Тэрээр утас руу санамсаргүй харснаар түгжээг нь тайлах боломжтой. Таны хүүхдийн утасны түгжээг мөн түүний ихэр зэрэг түүнтэй маш адилхан харагддаг хүн эсвэл хэн нэгэн үүнийг түүний нүүрний өмнө барьсан тохиолдолд тайлах боломжтой.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Царайгаар түгжээ тайлах онцлог нь утасны түгжээг тайлах эсвэл таныг мөн болохыг баталгаажуулахын тулд танаас нүдээ нээлттэй байлгахыг шаардаж болно. Та энэ сонголтыг хүссэн үедээ Тохиргоо хэсэгт асаах боломжтой.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Нүдний шил эсвэл үл ялиг өнгө оруулсан нарны шил зүүж болно.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Царайгаа ашиглан утасныхаа түгжээг тайлах нь хүчтэй хээ, ПИН эсвэл нууц үгээс хамгаалалт багатай байж магадгүй</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Та утас руу санамсаргүй харснаар түгжээг нь тайлах боломжтой. Таны утасны түгжээг мөн таны ихэр зэрэг тантай маш адилхан харагддаг хүн эсвэл хэн нэгэн утсыг таны нүүрний өмнө барьсан тохиолдолд тайлах боломжтой.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Санамж</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Утасныхаа түгжээг тайлах эсвэл аппуудад нэвтрэх, худалдан авалтыг зөвшөөрөх зэргээр өөрийгөө мөн болохыг баталгаажуулахын тулд царайгаа ашиглана уу.</string>
     <string name="security_settings_face_enroll_introduction_title">Царайгаар түгжээ тайлахыг тохируулах</string>
     <string name="security_settings_face_enroll_next">Дараах</string>
     <string name="security_settings_face_enroll_partial_message">Гүйцэтгэлийг сайжруулахын тулд та Царайгаар түгжээ тайлахыг Тохиргоонд дахин тохируулж болно</string>
@@ -326,7 +349,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">Хурууны хээ тохируулахын тулд товшино уу</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint нь таныг мөн болохыг баталгаажуулахын тулд таны хурууны хээний өвөрмөц загварыг үүсгэнэ. Тохируулгын үеэр энэ хурууны хээний загварыг үүсгэхийн тулд та хурууныхаа хээний зургийг өөр өөр байрлалаас авна.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Таныг Pixel Imprint-г ашиглах үед зургийг таны хурууны хээний загварыг шинэчлэхэд ашиглана. Таны хурууны хээний загварыг үүсгэхэд ашигласан зургийг хэзээ ч хадгалахгүй хэдий ч хурууны хээний загварыг утсанд тань аюулгүйгээр бүрмөсөн хадгална. Бүх боловсруулалт таны утсанд аюулгүйгээр хийгдэнэ.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Та хүссэн үедээ Тохиргоо хэсэгт хурууны хээний загварыг устгах эсвэл Pixel Imprint-г унтраах боломжтой. Таныг хурууны хээний загваруудыг устгах хүртэл тэдгээрийг утсанд хадгална.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint нь таны хүүхдийг мөн болохыг баталгаажуулахын тулд түүний хурууны хээний өвөрмөц загварыг үүсгэнэ. Тохируулгын үеэр энэ хурууны хээний загварыг үүсгэхийн тулд таны хүүхэд хурууныхаа хээний зургийг өөр өөр байрлалаас авна.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">Таны хүүхэд Pixel Imprint-г ашиглах үед зургийг түүний хурууны хээний загварыг шинэчлэхэд ашиглана. Таны хүүхдийн хурууны хээний загвараа үүсгэхэд ашигласан зургийг хэзээ ч хадгалахгүй хэдий ч хурууны хээний загварыг түүний утсанд аюулгүйгээр бүрмөсөн хадгална. Бүх боловсруулалт утсан дээр аюулгүйгээр хийгдэнэ.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Та болон таны хүүхэд хүссэн үедээ Тохиргоо хэсэгт түүний хурууны хээг устгах эсвэл Pixel Imprint-г унтраах боломжтой. Хурууны хээний загваруудыг устгах хүртэл утсанд хадгална.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"&lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt; дээрээс Pixel-н Хурууны хээгээр түгжээ тайлах талаар нэмэлт мэдээлэл авна уу."</string>
     <string name="security_settings_work_fingerprint_preference_title">Ажлын зориулалттай Pixel Imprint</string>
     <string name="setup_suggestion_summary">Ердөө цөөн хэдэн алхам үлдлээ</string>
@@ -335,6 +362,7 @@
     <string name="smart_battery_a11y_expand_label">Дэлгэх, Дасан зохицох батарей</string>
     <string name="smart_battery_footer">Батарейн ажиллах хугацааг уртасгахын тулд Дасан зохицох батарей нь гүйцэтгэл болон дэвсгэрийн үйл ажиллагааг багасгаж болно. Зарим мэдэгдэл саатаж болзошгүй.</string>
     <string name="smart_battery_manager_title">Орчинтой тохируулах сонголт</string>
+    <string name="smart_battery_summary" product="default">Дасан зохицох батарей нь аппууд батарейг хэрхэн ашигладаг болохыг тасралтгүй оновчлохын тулд таны утасны ашиглалтаас суралцдаг. Батарейн ажиллах хугацааг уртасгахын тулд энэ нь гүйцэтгэлийг багасгаж, мэдэгдлүүдийг саатуулж болно.</string>
     <string name="smart_battery_title">Дасан зохицох батарей</string>
     <string name="software_update_can_be_updated_header">Pixel-ээ илүү сайжруулаарай</string>
     <string name="software_update_detail_indication_1_update_available">1 шинэчлэлт боломжтой</string>

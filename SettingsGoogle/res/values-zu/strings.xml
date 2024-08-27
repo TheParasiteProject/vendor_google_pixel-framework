@@ -149,6 +149,7 @@ Ubugebengu bokweba imininingwane ebucayi kuwumzamo wokweba izimfanelo zokungena 
     <string name="content_protection_preference_subpage_summary">Ukuskena kusebenza ngokuyimfihlo khona kanye kudivayisi yakho, kubheka umsebenzi we-app ukuthola ubugebengu bokweba imininingwane ebucayi noma okunye ukuziphatha okukhohlisayo. Uma kutholwa, olunye ulwazi lwe-app luthunyelwa ku-Google Play Protect ukuze kuqinisekiswe usongo nokuxwayisa abasebenzisi be-app.</string>
     <string name="contextual_timeout_description">Ivala isikrini sakho ngokuzenzakalelayo ngaphambi kwesikhathi uma ungasebenzisi idivayisi yakho</string>
     <string name="contextual_timeout_title">Isikhathi sokuvala esiguqukayo</string>
+    <string name="credentials_install_summary" product="default">Faka izitifiketi kusuka ekugcineni</string>
     <string name="dark_ui_text">Itimu emnyama isebenzisa ingemuva elimnyama ukuze isize ukugcina ibhethri lakho liphilile isikhathi eside. Itimu emnyama ihlelelwe ukulinga ukuvula isikrini sakho size sivale.</string>
     <string name="debugging_data_title">Idatha yokususa iphutha</string>
     <string name="discover_tips_button">Thola amathiphu</string>
@@ -156,6 +157,8 @@ Ubugebengu bokweba imininingwane ebucayi kuwumzamo wokweba izimfanelo zokungena 
     <string name="double_twist_for_camera_mode_summary">Ukuze ungene uphinde uphume kumodi yesithombe ozishuthe sona kukhamera ye-Google, jikisa kabili uma ukuhlelo lokusebenza.</string>
     <string name="duration_less_than_one_minute">Ngaphansi kweminithi elingu-1</string>
     <string name="enable_glanceable_hub_toggle">Imodi yehabhu</string>
+    <string name="erase_external_storage" product="default">Susa isitoreji se-USB</string>
+    <string name="erase_external_storage_description" product="default">Sula yonke idatha ekusitoreji se-USB , njengomculo noma izithombe.</string>
     <string name="extreme_battery_saver_summary">Kufaka phakathi zonke izinguquko ezibalwe ngenhla. Iphinde imise ama-app angabalulekile kanye nezaziso zawo.</string>
     <string name="extreme_battery_saver_title">Isilondolozi Sebhethri Esikhulu</string>
     <string name="face_confirmation_hide_illustration_description">Manje uma uthatha ifoni yakho noma uthepha isikrini, ungasebenzisa ubuso bakho ukuze uvule.</string>
@@ -229,6 +232,9 @@ Idatha eyenziwe isipele ngeke ibalwe ngokubhekiswe ku-quota yesitoreji sakho seD
     <string name="limited_warranty_title">Ukuqinisekisa Okukhawulelwe</string>
     <string name="lockscreen_show_weather_summary">Bona izimo zezulu zamanje</string>
     <string name="lockscreen_show_weather_title">Bonisa isimo sezulu</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Ukuze usule umculo, izithombe, nedatha yomunye umsebenzisi, "<b>isitoreji se-USB</b>kudingeka sisulwe.</string>
     <string name="my_device_info_account_preference_title">I-akhawunti ye-Google</string>
     <string name="owner_info_settings_edit_text_hint">Isb., i-Pixel ka-Sipho.</string>
     <string name="permit_debugging_data">Vumela ukufinyelela kombiko wesiphazamisi</string>
@@ -280,6 +286,7 @@ Phenya ifoni yakho ukuzama."</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Thepha ukuze usethe</string>
     <string name="security_settings_face_enroll_consent_introduction_title">Vumela i-Face Unlock</string>
     <string name="security_settings_face_enroll_education_message">Esikrinini esilandelayo, phendukisa ikhanda lakho ukuze uthwebule onke ama-engeli ebusweni bakho</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Esikrinini esilandelayo, bamba ifoni yakho iqondane namehlo</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Ukusethwa Kokuvula ngobuso kuphelelwe isikhathi</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Manje ungasebenzisa ubuso bakho ukuvula ifoni yakho noma ukuqinisekisa ukuthi nguwe, njengalapho ungena ngemvume kuma-app noma ugunyaza ukuthenga</string>
     <string name="security_settings_face_enroll_finish_description_with_bp_full">"Manje usungasebenzisa ubuso bakho ukuze uvule ifoni yakho noma uqinisekise ukuthi nguwe oyisebenzisayo, njengalapho ungena ngemvume kuma-app noma ugunyaza okuthengwayo.
@@ -293,13 +300,29 @@ Ukuvula Ngobuso kusebenza kahle kakhulu uma kunokukhanya okwanele futhi ungafaka
 Ukuvula Ngobuso kusebenza kangcono uma kunokukhanya okwanele futhi ungagqokile isifonyo noma izibuko ezimnyama."</string>
     <string name="security_settings_face_enroll_finish_title">Kubukeka kukuhle!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Ukusetha kokubuka okukhawulelwe noma ukunyakaza kwekhanda</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Uma usebenzisa Ukuvula Ngobuso, ikhanda lakho kungenzeka kumele liqonde kakhulu phambi kwefoni yakho.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Idinga ukuvuleka kwamehlo</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Wena nengane yakho ningasula imodeli yobuso bayo noma nivale Ukuvula Ngobuso noma kunini Kumasethingi. Amamodeli obuso agcinwa kwifoni uze uwasule.&lt;br&gt;&lt;br&gt;Funda kabanzi ku-&lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Wena nengane yakho niyalawula</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Ungasusa imodeli yobuso bakho noma uvale Ukuvula Ngobuso noma nini Kumasethingi. Amamodeli obuso agcinwa kwifoni uze uwasule.&lt;br&gt;&lt;br&gt;Funda kabanzi ku-&lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Uwena olawulayo</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Ukuvula Ngobuso kusungula imodeli ehlukile yobuso bengane yakho ukuqinisekisa ukuthi yiyo. Ukuze usungule le modeli yobuso ngesikhathi sokusetha, ingane yakho izothatha imifanekiso yobuso bayo ngezindlela ezihlukile.
+
+Lapho isebenzisa Ukuvula Ngobuso, imifanekiso isetshenziselwa ukuvuselela imodeli yayo yobuso. Imifanekiso esetshenziselwe ukusungula imodeli yobuso bayo ayigcinwa, kodwa imodeli yobuso igcinwa ngokuphephile kwifoni yayo futhi ayilokothi ishiye ifoni. Konke ukucubungula kwenzeka ngokuphepha kwifoni."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Ukuvula Ngobuso kusungula imodeli ehlukile yobuso bakho ukuqinisekisa ukuthi nguwe. Ukuze usungule le modeli yobuso phakathi nokusetha, uzothatha imifanekiso yobuso bakho kuma engeli ahlukile.
+
+Uma usebenzisa Ukuvula Ngobuso, imifanekiso isetshenziselwa ukuvuselela imodeli yakho yobuso. Imifanekiso esetshenziselwe ukwenza imodeli yobuso bakho ayigcinwa, kodwa imodeli yobuso igcinwa ngokuphephile kwifoni yakho futhi ayilokothi ishiye ifoni. Konke ukucubungula kwenzeka ngokuphepha kufoni yakho."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Isebenza kanjani</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Ukuvula Ngobuso kungadinga ukuthi amehlo engane yakho avuleke ukuze ivule ifoni noma iqinisekise ukuthi yiyo. Wena nengane yakho ningavula lokhu okungakhethwa kukho noma kunini Kumasethingi.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Uma ingane yakho ifaka izibuko zamehlo ngokuvamile, ingazigqoka ngesikhathi sokusetha.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Ukusebenzisa ubuso bengane yakho ukuze uvule ifoni yayo kungase kuvikeleke kancane kunephethini eqinile noma iphasiwedi.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Ukubheka efonini kungayivula ngisho noma ingahlosile. Ifoni yayo ingaphinda ivulwe ngomunye umuntu ofana ncamashi nayo, njengowakubo onjengayo, noma uma othile eyibambela ebusweni bayo.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Ukuvula Ngobuso kungadinga ukuthi amehlo akho avuleke ukuze uvule ifoni noma uqinisekise ukuthi nguwe. Ungavula lokhu ongakhetha kokho nganoma yisiphi isikhathi Kumasethingi.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Izibuko noma izibuko zelanga ezenziwe mnyama kancane ZILUNGILE.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Ukusebenzisa ubuso bakho ukuze uvule ifoni yakho kungase kungavikeleki kakhulu kunephetheni eqinile, Iphinikhodi, noma iphasiwedi.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Ukubheka efonini kungayivula ngisho noma ungahlosile. Ifoni yakho ingaphinda ivulwe ngomunye umuntu ofana ncamashi nawe, njengowakini oyiwele, noma uma othile eyibambela ebusweni bakho.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Khumbula</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Sebenzisa ubuso bakho ukuze uvule ifoni yakho noma uqinisekise ukuthi nguwe, njengalapho ungena ngemvume kuma-app noma ukugunyaza ukuthenga.</string>
     <string name="security_settings_face_enroll_introduction_title">Setha Ukuvula ngobuso</string>
     <string name="security_settings_face_enroll_next">Okulandelayo</string>
     <string name="security_settings_face_enroll_partial_message">Ukuze uthuthukise ukusebenza, ungasetha Ukuvula ngobuso futhi kokuthi Amasethingi</string>
@@ -325,7 +348,11 @@ Yazi: Awukwazi ukusebenzisa izigxivizo zakho zeminwe ukuze uvule le divayisi. Uk
     <string name="security_settings_fingerprint_preference_summary_none">Thepha ukuze usethe izigxivizo zeminwe</string>
     <string name="security_settings_fingerprint_preference_title">I-Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">I-Pixel Imprint idala imodeli ehlukile yesigxivizo sakho seminwe ukuqinisekisa ukuthi nguwe. Ukuze kudalwe le modeli yesigxivizo seminwe ngesikhathi sokusethwa, uzothatha izithombe zesigxivizo sakho seminwe kusukela kuzimo ezihlukile.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Uma usebenzisa i-Pixel Imprint, izithombe zisetshenziselwa ukubuyekeza imodeli yakho yesigxivizo somunwe. Imifanekiso esetshenziselwe ukusungula imodeli yesigxivizo somunwe wakho ayilokothi igcinwe, kodwa imodeli yesigxivizo somunwe igcinwa ngokuphephile kufoni yakho futhi ayilokothi ishiye ifoni. Konke ukucubungula kwenzeka ngokuphepha kufoni yakho.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Ungasula amamodeli akho esigxivizo somunwe, noma uvale i-Pixel Imprint noma kunini Kumasethingi. Amamodeli esigxivizo somunwe namamodeli kugcinwa kwifoni kuze kube yilapho uzisula.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">I-Pixel Imprint idala imodeli ehlukile yeminwe yengane yakho ukuqinisekisa ukuthi yiyo. Ukudala le modeli yesigxivizo seminwe ngesikhathi sokusetha, bazothatha izithombe zesigxivizo sabo seminwe kusukela kuzimo ezihlukile.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">Uma isebenzisa i-Pixel Imprint, imifanekiso isetshenziselwa ukubuyekeza imodeli yayo yesigxivizo somunwe. Imifanekiso esetshenziselwe ukusungula imodeli yesigxivizo somunwe yengane yakho ayilokothi igcinwe, kodwa imodeli yesigxivizo seminwe igcinwa ngokuphephile kwifoni futhi ayilokothi ishiye ifoni. Konke ukucubungula kwenzeka ngokuphepha kwifoni.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Wena nengane yakho ningasula imodeli yayo yesigxivizo sominwe, noma nivale i-Pixel Imprint noma kunini Kumasethingi. Amamodeli esigxivizo somunwe agcinwa efonini aze asulwe.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Funda kabanzi ngokuvula ngesigxivizo somunwe se-Pixel ku-&lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">I-Pixel Imprint yomsebenzi</string>
     <string name="setup_suggestion_summary">Izinyathelo ezimbalwa nje ezengeziwe</string>
@@ -334,6 +361,7 @@ Yazi: Awukwazi ukusebenzisa izigxivizo zakho zeminwe ukuze uvule le divayisi. Uk
     <string name="smart_battery_a11y_expand_label">Nweba, i-Adaptive Battery</string>
     <string name="smart_battery_footer">Ukuze unwebe impilo yebhethri, i-Adaptive Battery inganciphisa ukusebenza kanye nomsebenzi wangemuva. Ezinye izaziso zingabambezeleka.</string>
     <string name="smart_battery_manager_title">Okuncanyelwayo okuzivumelanisa nezimo</string>
+    <string name="smart_battery_summary" product="default">I-Adaptive Battery ifunda ekusetshenzisweni kwefoni yakho ukuthuthukisa ngokuqhubekayo ukuthi ama-app ayisebenzisa kanjani ibhethri. Ukuze kunwetshwe impilo yebhethri, kungehlisa ukusebenza futhi kulibaziseke izaziso</string>
     <string name="smart_battery_title">I-Adaptive Battery</string>
     <string name="software_update_can_be_updated_header">Yenza i-Pixel yakho ibe ngcono</string>
     <string name="software_update_detail_indication_1_update_available">Kunesibuyekezo esisodwa</string>

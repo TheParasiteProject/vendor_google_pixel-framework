@@ -149,6 +149,7 @@
     <string name="content_protection_preference_subpage_summary">Сканування здійснюється локально на пристрої. Перевіряються дії в додатках на предмет фішингу чи іншої оманливої поведінки. У разі їх виявлення деяка інформація про додаток надсилається в Google Play Захист, щоб підтвердити загрозу й попередити користувачів додатка.</string>
     <string name="contextual_timeout_description">Екран автоматично вимикається раніше, якщо ви не користуєтеся пристроєм</string>
     <string name="contextual_timeout_title">Адаптивний час вимкнення</string>
+    <string name="credentials_install_summary" product="default">Установити сертифікати з носія</string>
     <string name="dark_ui_text">У темній темі використовується чорний фон, щоб економити заряд акумулятора. Її розклад буде активовано після вимкнення екрана.</string>
     <string name="debugging_data_title">Дані налагодження</string>
     <string name="discover_tips_button">Переглянути поради</string>
@@ -156,6 +157,8 @@
     <string name="double_twist_for_camera_mode_summary">Перемикатися між основною і фронтальною камерами можна подвійним обертом зап’ястя.</string>
     <string name="duration_less_than_one_minute">Менше 1 хвилини</string>
     <string name="enable_glanceable_hub_toggle">Режим центру керування</string>
+    <string name="erase_external_storage" product="default">Очистити носій USB</string>
+    <string name="erase_external_storage_description" product="default">Стерти всі дані на внутрішньому носії USB, як-от музику чи фото</string>
     <string name="extreme_battery_saver_summary">Включає всі вказані вище зміни. Також призупиняються неважливі додатки й сповіщення з них.</string>
     <string name="extreme_battery_saver_title">Режим екстремального енергозбереження</string>
     <string name="face_confirmation_hide_illustration_description">Тепер, коли ви берете телефон у руки або торкаєтесь екрана, його можна розблокувати за допомогою фейс-контролю.</string>
@@ -230,6 +233,9 @@
     <string name="limited_warranty_title">Обмежена гарантія</string>
     <string name="lockscreen_show_weather_summary">Переглядайте поточні погодні умови</string>
     <string name="lockscreen_show_weather_title">Показувати погоду</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Щоб видалити музику, зображення й інші дані користувача, треба стерти "<b>носій USB</b>.</string>
     <string name="my_device_info_account_preference_title">Обліковий запис Google</string>
     <string name="owner_info_settings_edit_text_hint">Приклад: Pixel Олега.</string>
     <string name="permit_debugging_data">Надати доступ до звітів про помилки</string>
@@ -280,6 +286,7 @@
     <string name="security_dismiss_dialog_title">Закрити це попередження?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Натисніть, щоб налаштувати</string>
     <string name="security_settings_face_enroll_education_message">На наступному екрані повертайте голову, щоб зняти обличчя з усіх боків</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Коли відкриється наступний екран, утримуйте телефон на рівні очей</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">Час на сканування обличчя вичерпано. Повторіть спробу.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Час очікування налаштування фейс-контролю минув</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Тепер за допомогою фейс-контролю можна розблоковувати телефон або підтверджувати свою особу (наприклад, щоб входити в додатки чи схвалювати покупки)</string>
@@ -294,13 +301,29 @@
 Фейс-контроль найкраще працює за належного освітлення й за відсутності на обличчі маски чи темних окулярів."</string>
     <string name="security_settings_face_enroll_finish_title">Чудово!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Налаштувати без повороту голови</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Під час використання фейс-контролю телефон потрібно тримати просто перед обличчям.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Відкриті очі</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Ви та дитина будь-коли можете видалити модель обличчя або вимкнути фейс-контроль у налаштуваннях. Моделі облич зберігаються на телефоні, доки ви їх не видалите.&lt;br&gt;&lt;br&gt;Докладніше читайте на сторінці &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Ви та дитина керуєте налаштуваннями</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Ви будь-коли можете видалити свою модель обличчя або вимкнути фейс-контроль у налаштуваннях. Моделі облич зберігаються на телефоні, доки ви їх не видалите.&lt;br&gt;&lt;br&gt;Докладніше: &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Усе під вашим контролем</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Фейс-контроль створює унікальну модель обличчя вашої дитини, щоб підтверджувати її особу. Для цього дитині потрібно сфотографувати своє обличчя під різними кутами.
+
+Коли дитина користується фейс-контролем, отримані зображення використовуються для оновлення моделі обличчя. Ці зображення не залишаються на телефоні, але сама модель надійно зберігається та нікуди не передається. Усі процедури обробки безпечно відбуваються на телефоні."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Фейс-контроль створює унікальну модель вашого обличчя, щоб підтверджувати вашу особу. Для цього під час налаштування потрібно сфотографувати своє обличчя під різними кутами.
+
+Коли ви користуєтеся фейс-контролем, модель обличчя постійно оновлюється на основі отриманих зображень. Ці зображення не залишаються на телефоні, але сама модель надійно зберігається на ньому та нікуди не передається. Усі дані безпечно обробляються на телефоні."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Як це працює</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Фейс-контроль можна налаштувати так, щоб він спрацьовував, лише коли очі вашої дитини розплющені. Ви та дитина будь-коли можете ввімкнути цю опцію в налаштуваннях.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Якщо дитина зазвичай носить окуляри, вона може не знімати їх під час налаштування.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Розблокування телефона дитини за допомогою фейс-контролю може бути менш надійним захистом, ніж ключ, PIN-код або пароль</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Дитина може випадково розблокувати телефон, ненароком поглянувши на нього. Крім того, телефон може розблокувати хтось дуже схожий на неї (наприклад, близнюк) або інша особа, яка піднесе пристрій до її обличчя.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Фейс-контроль можна налаштувати так, щоб він спрацьовував, лише коли ваші очі розплющені. Ви будь-коли можете ввімкнути цю опцію в налаштуваннях.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Можна не знімати звичайні або слабозатінені сонцезахисні окуляри.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Розблокування телефона за допомогою фейс-контролю може бути менш надійним захистом, ніж ключ, PIN-код або пароль.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Ви можете випадково розблокувати телефон у недоречний момент, ненароком поглянувши на нього. Крім того, телефон може розблокувати хтось дуже схожий на вас (наприклад, ваш близнюк) або інша особа, яка піднесе пристрій до вашого обличчя.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Зверніть увагу</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">За допомогою фейс-контролю можна розблоковувати телефон або підтверджувати свою особу, наприклад, щоб входити в додатки або схвалювати покупки.</string>
     <string name="security_settings_face_enroll_introduction_title">Налаштування фейс-контролю</string>
     <string name="security_settings_face_enroll_next">Далі</string>
     <string name="security_settings_face_enroll_partial_message">Щоб покращити роботу фейсконтролю, налаштуйте його знову</string>
@@ -326,7 +349,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">Торкніться, щоб додати відбиток пальця</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Функція Pixel Imprint створює унікальну модель вашого відбитка пальця, щоб підтверджувати вашу особу. Для цього збережіть зображення свого відбитка пальця в різних положеннях.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Коли ви користуєтеся функцією Pixel Imprint, ваша модель відбитка пальця оновлюється на основі отриманих зображень. Ці зображення ніколи не залишаються на телефоні, але сама модель надійно зберігається та нікуди не передається. Усі процедури обробки безпечно відбуваються на телефоні.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Ви будь-коли можете видалити модель свого відбитка пальця або вимкнути функцію Pixel Imprint у налаштуваннях. Моделі відбитків пальців зберігаються на телефоні, доки ви їх не видалите.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Функція Pixel Imprint створює унікальну модель відбитка вашої дитини, щоб підтверджувати її особу. Для цього дитині потрібно зберегти зображення свого відбитка пальця в різних положеннях.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">Коли дитина користується функцією Pixel Imprint, модель відбитка пальця оновлюється на основі отриманих зображень. Ці зображення ніколи не залишаються на телефоні, але сама модель надійно зберігається та нікуди не передається. Усі процедури обробки безпечно відбуваються на телефоні.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Ви та дитина будь-коли можете видалити модель відбитка пальця або вимкнути Pixel Imprint у налаштуваннях. Моделі відбитків пальців зберігаються на телефоні, доки ви їх не видалите.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Докладніше про розблокування телефона Pixel відбитком пальця читайте на сторінці &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint для роботи</string>
     <string name="setup_suggestion_summary">Залишилося ще кілька дій</string>
@@ -335,6 +362,7 @@
     <string name="smart_battery_a11y_expand_label">Розгорнуто, адаптивне енергоспоживання</string>
     <string name="smart_battery_footer">Щоб заощадити заряд, функція \"Адаптивне енергоспоживання\" може обмежувати швидкодію пристрою й роботу додатків у фоновому режимі. Деякі сповіщення можуть з’являтись із затримкою.</string>
     <string name="smart_battery_manager_title">Адаптивні налаштування</string>
+    <string name="smart_battery_summary" product="default">Адаптивне енергоспоживання аналізує використання телефона, щоб постійно оптимізувати споживання заряду акумулятора додатками. Щоб збільшувати час роботи акумулятора, ця функція може обмежувати продуктивність, а сповіщення можуть з’являтись із затримкою.</string>
     <string name="smart_battery_title">Адаптивне енергоспоживання</string>
     <string name="software_update_can_be_updated_header">Покращте роботу свого пристрою Pixel</string>
     <string name="software_update_detail_indication_1_update_available">Доступне 1 оновлення</string>

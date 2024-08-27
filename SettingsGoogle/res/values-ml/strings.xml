@@ -148,6 +148,7 @@
     <string name="content_protection_preference_subpage_summary">നിങ്ങളുടെ ഉപകരണത്തിൽ സ്വകാര്യമായാണ് സ്‌കാൻ ചെയ്യൽ നടക്കുന്നത്, ഫിഷിംഗ് ആണോയെന്ന് അറിയാനും വഞ്ചനാപരമായ മറ്റ് സ്വഭാവങ്ങൾ കണ്ടെത്താനുമായി ആപ്പ് ആക്റ്റിവിറ്റി പരിശോധിക്കുന്നു. അവ കണ്ടെത്തുകയാണെങ്കിൽ, ഭീഷണി സ്ഥിരീകരിക്കാനും ആപ്പ് ഉപയോക്താക്കൾക്ക് മുന്നറിയിപ്പ് നൽകാനുമായി ചില ആപ്പ് വിവരങ്ങൾ Google Play Protect-ലേക്ക് അയയ്ക്കുന്നു.</string>
     <string name="contextual_timeout_description">നിങ്ങൾ ഉപകരണം ഉപയോഗിക്കുന്നില്ലെങ്കിൽ നേരത്തെ തന്നെ നിങ്ങളുടെ സ്ക്രീൻ സ്വയമേവ ഓഫാകുന്നു</string>
     <string name="contextual_timeout_title">അഡാപ്റ്റീവ് ടൈംഔട്ട്</string>
+    <string name="credentials_install_summary" product="default">സ്റ്റോറേജിൽനിന്ന് സർട്ടിഫിക്കറ്റുകൾ ഇൻസ്റ്റാൾ ചെയ്യുക</string>
     <string name="dark_ui_text">"നിങ്ങളുടെ ബാറ്ററി കൂടുതൽ സമയം നിൽക്കാനായി 'ഡാർക്ക് തീം' കറുപ്പ് പശ്ചാത്തലം ഉപയോഗിക്കുന്നു. സ്ക്രീൻ ഓഫാകുന്നത് വരെ ഡാർക്ക് തീം ഷെഡ്യൂളുകൾ ഓണാകാൻ കാത്തിരിക്കുന്നു."</string>
     <string name="debugging_data_title">ഡാറ്റ ഡീബഗ് ചെയ്യൽ</string>
     <string name="discover_tips_button">നുറുങ്ങുകൾ കണ്ടെത്തൂ</string>
@@ -155,6 +156,8 @@
     <string name="double_twist_for_camera_mode_summary">നിങ്ങൾ ആപ്പ് തുറന്നിരിക്കുമ്പോൾ, Google Camera-യിൽ സെൽഫി മോഡിലേക്ക് പോകാനും പുറത്തുവരാനും, രണ്ടുതവണ തിരിക്കുക.</string>
     <string name="duration_less_than_one_minute">ഒരു മിനിറ്റിൽ താഴെ</string>
     <string name="enable_glanceable_hub_toggle">ഹബ് മോഡ്</string>
+    <string name="erase_external_storage" product="default">"USB സ്റ്റോറേജ്  മായ്ക്കുക"</string>
+    <string name="erase_external_storage_description" product="default">ആന്തരിക USB സംഭരണത്തിലെ സംഗീതമോ ഫോട്ടോകളോ പോലുള്ള എല്ലാ ഡാറ്റയും മായ്ക്കുക</string>
     <string name="extreme_battery_saver_summary">മുകളിൽ ലിസ്റ്റ് ചെയ്ത എല്ലാ മാറ്റങ്ങളും ഉൾപ്പെടുന്നു. അത്യാവശ്യമല്ലാത്ത ആപ്പുകളും അവയുടെ അറിയിപ്പുകളും താൽക്കാലികമായി നിർത്തുകയും ചെയ്യുന്നു.</string>
     <string name="extreme_battery_saver_title">പരമാവധി ബാറ്ററി ലാഭിക്കൽ</string>
     <string name="face_confirmation_hide_illustration_description">ഫോൺ കയ്യിലെടുക്കുമ്പോഴോ സ്ക്രീനിൽ ടാപ്പ് ചെയ്യുമ്പോഴോ അൺലോക്ക് ചെയ്യുന്നതിന് ഇപ്പോൾ നിങ്ങളുടെ മുഖം ഉപയോഗിക്കാനാകും.</string>
@@ -229,6 +232,9 @@
     <string name="limited_warranty_title">പരിമിത വാറന്റി</string>
     <string name="lockscreen_show_weather_summary">നിലവിലെ കാലാവസ്ഥ കാണുക</string>
     <string name="lockscreen_show_weather_title">കാലാവസ്ഥ കാണിക്കുക</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+സംഗീതം, ചിത്രങ്ങൾ, മറ്റ് ഉപയോക്തൃ ഡാറ്റ എന്നിവ മായ്ക്കുന്നതിന്, "<b>USB സ്‌റ്റോറേജ് </b> മായ്ക്കേണ്ടതുണ്ട്.</string>
     <string name="my_device_info_account_preference_title">Google Account</string>
     <string name="owner_info_settings_edit_text_hint">ഉദാ, ജോയുടെ Pixel.</string>
     <string name="permit_debugging_data">ബഗ് റിപ്പോർട്ട് ആക്സസ് അനുവദിക്കുക</string>
@@ -280,6 +286,7 @@
     <string name="security_dismiss_dialog_title">ഈ മുന്നറിയിപ്പ് ഡിസ്‌മിസ് ചെയ്യണോ?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">സജ്ജീകരിക്കാൻ ടാപ്പ് ചെയ്യുക</string>
     <string name="security_settings_face_enroll_education_message">അടുത്ത സ്‌ക്രീനിൽ, നിങ്ങളുടെ മുഖത്തിന്റെ എല്ലാ ആംഗിളുകളും പകർത്താൻ തല റൊട്ടേറ്റ് ചെയ്യുക</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">അടുത്ത സ്ക്രീനിൽ നിങ്ങളുടെ ഫോൺ കണ്ണിന് നേരെ പിടിക്കുക</string>
     <string name="security_settings_face_enroll_error_dialog_title">എൻറോൾ ചെയ്യൽ പൂർത്തിയായിട്ടില്ല</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">മുഖം എൻറോൾ ചെയ്യലിന്‍റെ സമയ പരിധി എത്തി. വീണ്ടും ശ്രമിക്കൂ.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">ഫെയ്‌സ് അൺലോക്ക് സജ്ജീകരണം ടൈംഔട്ടായി</string>
@@ -295,13 +302,29 @@
 ഫെയ്‌സ് അൺലോക്ക് നന്നായി പ്രവർത്തിക്കുന്നതിന് ആവശ്യത്തിന് വെളിച്ചമുണ്ടായിരിക്കണം, കൂടാതെ നിങ്ങൾ മാസ്‌ക് അല്ലെങ്കിൽ കറുത്ത ഗ്ലാസ് ധരിക്കുകയോ ചെയ്യരുത്."</string>
     <string name="security_settings_face_enroll_finish_title">നന്നായിരിക്കുന്നു!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">കാഴ്‌ചക്കുറവോ തല തിരിക്കാൻ പ്രയാസമോ ഉള്ളവർക്കുള്ള സജ്ജീകരണം</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">ഫെയ്‌സ് അൺലോക്ക് ഉപയോഗിക്കുമ്പോൾ, നിങ്ങളുടെ തല കൃത്യമായും ഫോണിന് അഭിമുഖമായിരിക്കണം.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">ശ്രദ്ധിക്കേണ്ടത് ആവശ്യമാണ്</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"നിങ്ങൾക്കും കുട്ടിക്കും ക്രമീകരണത്തിൽ ഏതുസമയത്തും അവരുടെ മുഖ മോഡൽ ഇല്ലാതാക്കാനോ ഫെയ്‌സ് അൺലോക്ക് ഓഫാക്കാനോ കഴിയും. മുഖ മോഡലുകൾ ഇല്ലാതാക്കുന്നത് വരെ അവ ഫോണിൽ സംഭരിക്കുന്നു.&lt;br&gt;&lt;br&gt;ഇതിൽ നിന്ന് കൂടുതലറിയുക &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">നിങ്ങൾക്കും നിങ്ങളുടെ കുട്ടിക്കും നിയന്ത്രിക്കാനാകും</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"നിങ്ങൾക്ക് ക്രമീകരണത്തിൽ ഏതുസമയത്തും മുഖ മോഡൽ ഇല്ലാതാക്കാനോ ഫെയ്‌സ് അൺലോക്ക് ഓഫാക്കാനോ കഴിയും. നിങ്ങൾ മുഖ മോഡലുകൾ ഇല്ലാതാക്കുന്നത് വരെ അവ ഫോണിൽ സംഭരിക്കുന്നു.&lt;br&gt;&lt;br&gt;ഇതിൽ നിന്ന് കൂടുതലറിയുക &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">നിയന്ത്രണം നിങ്ങൾക്കാണ്</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"ഇത് നിങ്ങളുടെ കുട്ടി തന്നെയാണെന്ന് പരിശോധിച്ചുറപ്പിക്കാൻ ഫെയ്‌സ് അൺലോക്ക് അവരുടെ മുഖത്തിന്റെ തനത് മോഡൽ സൃഷ്‌ടിക്കുന്നു. ഈ മുഖ മോഡൽ സൃഷ്ടിക്കാൻ, സജ്ജീകരണ സമയത്ത് നിങ്ങളുടെ കുട്ടിയുടെ മുഖത്തിന്റെ വ്യത്യസ്‌ത ആംഗിളുകളിൽ നിന്നുള്ള ചിത്രങ്ങളെടുക്കണം.
+
+അവർ ഫെയ്‌സ് അൺലോക്ക് ഉപയോഗിക്കുമ്പോൾ, അവരുടെ മുഖ മോഡൽ അപ്ഡേറ്റ് ചെയ്യാൻ ചിത്രങ്ങൾ ഉപയോഗിക്കുന്നു. അവരുടെ മുഖ മോഡൽ സൃഷ്‌ടിക്കാൻ ഉപയോഗിക്കുന്ന ചിത്രങ്ങൾ സംഭരിക്കില്ലെങ്കിലും മുഖ മോഡൽ സുരക്ഷിതമായി ഫോണിൽ സംഭരിക്കുന്നു, അത് ഒരിക്കലും ഫോണിൽ നിന്ന് പുറത്ത് പോകില്ല. എല്ലാ പ്രോസസിംഗും ഫോണിൽ സുരക്ഷിതമായി നടക്കുന്നു."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"ഇത് നിങ്ങൾ തന്നെയാണെന്ന് പരിശോധിച്ചുറപ്പിക്കുന്നതിന് ഫെയ്‌സ് അൺലോക്ക് നിങ്ങളുടെ മുഖത്തിന്റെ ഒരു തനത് മോഡൽ സൃഷ്ടിക്കുന്നു. ഈ മുഖ മോഡൽ സൃഷ്ടിക്കാൻ, സജ്ജീകരണ സമയത്ത് നിങ്ങളുടെ മുഖത്തിന്റെ വ്യത്യസ്‌ത ആംഗിളുകളിൽ നിന്നുള്ള ചിത്രങ്ങളെടുക്കണം.
+
+നിങ്ങൾ ഫെയ്‌സ് അൺലോക്ക് ഉപയോഗിക്കുമ്പോൾ നിങ്ങളുടെ മുഖ മോഡൽ അപ്ഡേറ്റ് ചെയ്യാൻ ചിത്രങ്ങൾ ഉപയോഗിക്കുന്നു. മുഖ മോഡൽ സൃഷ്‌ടിക്കാൻ ഉപയോഗിക്കുന്ന ചിത്രങ്ങൾ സംഭരിക്കില്ലെങ്കിലും മുഖ മോഡൽ സുരക്ഷിതമായി നിങ്ങളുടെ ഫോണിൽ സംഭരിക്കുന്നു, അത് ഒരിക്കലും ഫോണിൽ നിന്ന് പുറത്ത് പോകില്ല. എല്ലാ പ്രോസസിംഗും നിങ്ങളുടെ ഫോണിൽ സുരക്ഷിതമായി നടക്കുന്നു."</string>
     <string name="security_settings_face_enroll_introduction_how_title">ഇത് എങ്ങനെ പ്രവർത്തിക്കുന്നു</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">ഫോൺ അൺലോക്ക് ചെയ്യാനോ ഇത് നിങ്ങളുടെ കുട്ടി തന്നെയാണെന്ന് പരിശോധിച്ചുറപ്പിക്കാനോ അവരുടെ കണ്ണ് തുറന്നിരിക്കാൻ ഫെയ്‌സ് അൺലോക്കിന് ആവശ്യപ്പെടാം. നിങ്ങൾക്കും നിങ്ങളുടെ കുട്ടിക്കും എപ്പോൾ വേണമെങ്കിലും ക്രമീകരണത്തിൽ ഈ ഓപ്ഷൻ ഓണാക്കാനാകും.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">നിങ്ങളുടെ കുട്ടി സാധാരണ കണ്ണട ധരിക്കാറുണ്ടെങ്കിൽ, സജ്ജീകരിക്കുമ്പോൾ അവ ധരിക്കാം.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">നിങ്ങളുടെ കുട്ടിയുടെ മുഖം ഉപയോഗിച്ച് അവരുടെ ഫോൺ അൺലോക്ക് ചെയ്യുന്നത്, ശക്തമായ പാറ്റേൺ, പിൻ അല്ലെങ്കിൽ പാസ്‌വേഡ് ഉപയോഗിച്ച് അൺലോക്ക് ചെയ്യുന്നത് പോലുള്ള സുരക്ഷ നൽകുന്നില്ല</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">തുറക്കാൻ ഉദ്ദേശിക്കാതെ അവർ വെറുതെ ഫോണിലേക്ക് നോക്കിയാൽ പോലും അത് അൺലോക്കാകും. ഒരേ മുഖച്ഛായയുള്ള സഹോദരങ്ങളെ പോലെ, അവരുമായി വളരെയധികം സാമ്യമുള്ള ആർക്കും ഫോൺ അൺലോക്ക് ചെയ്യാനാകും, മാത്രമല്ല ഫോൺ അവരുടെ മുഖത്തിന് നേരെ നീട്ടിയും മറ്റൊരാൾക്ക് അൺലോക്ക് ചെയ്യാനാകും.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">ഫോൺ അൺലോക്ക് ചെയ്യാനോ ഇത് നിങ്ങൾ തന്നെയാണെന്ന് പരിശോധിച്ചുറപ്പിക്കാനോ നിങ്ങളുടെ കണ്ണ് തുറന്നിരിക്കാൻ ഫെയ്‌സ് അൺലോക്കിന് ആവശ്യപ്പെടാം. നിങ്ങൾക്ക് ക്രമീകരണത്തിൽ ഏതുസമയത്തും ഈ ഓപ്ഷൻ ഓണാക്കാനാകും.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">ഗ്ലാസുകളോ ഇളം നിറമുള്ള സൺ ഗ്ലാസുകളോ കുഴപ്പമില്ല.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">ഫോൺ അൺലോക്ക് ചെയ്യാൻ മുഖം ഉപയോഗിക്കുന്നത് ശക്തമായ പാറ്റേണോ പിൻ നമ്പറോ പാസ്‌വേഡോ ഉപയോഗിക്കുന്നത്ര സുരക്ഷിതമായിരിക്കണമെന്നില്ല</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">തുറക്കാൻ ഉദ്ദേശിക്കാതെ നിങ്ങൾ വെറുതെ ഫോണിലേക്ക് നോക്കിയാൽ പോലും അത് അൺലോക്കാകും. ഒരേ മുഖച്ഛായയുള്ള സഹോദരങ്ങളെ പോലെ, നിങ്ങളുമായി വളരെയധികം സാമ്യമുള്ള ആർക്കും ഫോൺ അൺലോക്ക് ചെയ്യാനാകും, മാത്രമല്ല ഫോൺ നിങ്ങളുടെ മുഖത്തിനു നേരെ നീട്ടിയും മറ്റൊരാൾക്ക് അൺലോക്ക് ചെയ്യാനാകും.</string>
     <string name="security_settings_face_enroll_introduction_info_title">ശ്രദ്ധിക്കുക</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">നിങ്ങളുടെ ഫോൺ അൺലോക്ക് ചെയ്യാനോ ആപ്പുകളിലേക്ക് സൈൻ ഇൻ ചെയ്യുകയോ വാങ്ങൽ അംഗീകരിക്കുകയോ ചെയ്യുന്നത് പോലുള്ള സാഹചര്യങ്ങളിൽ ഇത് നിങ്ങൾ തന്നെയാണെന്ന് പരിശോധിച്ചുറപ്പിക്കാനോ നിങ്ങളുടെ മുഖം ഉപയോഗിക്കുക.</string>
     <string name="security_settings_face_enroll_introduction_title">ഫെയ്‌സ് അൺലോക്ക് സജ്ജീകരിക്കൂ</string>
     <string name="security_settings_face_enroll_next">അടുത്തത്</string>
     <string name="security_settings_face_enroll_partial_message">പ്രകടനം മെച്ചപ്പെടുത്താൻ, ക്രമീകരണത്തിൽ ഫെയ്‌സ് അൺലോക്ക് നിങ്ങൾക്ക് വീണ്ടും സജ്ജീകരിക്കാം</string>
@@ -328,7 +351,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">ഫിംഗർപ്രിന്റ് സജ്ജീകരിക്കാൻ ടാപ്പ് ചെയ്യുക</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">ഇത് നിങ്ങൾ തന്നെയാണെന്ന് പരിശോധിച്ചുറപ്പിക്കുന്നതിന് Pixel Imprint നിങ്ങളുടെ ഫിംഗർപ്രിന്റിന്റെ ഒരു തനത് മോഡൽ സൃഷ്ടിക്കുന്നു. ഈ ഫിംഗർപ്രിന്റ് മോഡൽ സൃഷ്ടിക്കാൻ, സജ്ജീകരണ സമയത്ത് നിങ്ങളുടെ ഫിംഗർപ്രിന്റിന്റെ വ്യത്യസ്‌ത വശങ്ങളിൽ നിന്നുള്ള ചിത്രങ്ങളെടുക്കണം.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Pixel Imprint ഉപയോഗിക്കുമ്പോൾ, നിങ്ങളുടെ ഫിംഗർപ്രിന്റ് മോഡൽ അപ്ഡേറ്റ് ചെയ്യാൻ ചിത്രങ്ങൾ ഉപയോഗിക്കുന്നു. നിങ്ങളുടെ ഫിംഗർപ്രിന്റ് മോഡൽ സൃഷ്ടിക്കാൻ ഉപയോഗിക്കുന്ന ചിത്രങ്ങൾ സംഭരിക്കില്ലെങ്കിലും ഫിംഗർപ്രിന്റ് മോഡൽ സുരക്ഷിതമായി നിങ്ങളുടെ ഫോണിൽ സംഭരിക്കുന്നു, അത് ഒരിക്കലും ഫോണിൽ നിന്ന് പുറത്ത് പോകുകയുമില്ല. എല്ലാ പ്രോസസിംഗും നിങ്ങളുടെ ഫോണിൽ സുരക്ഷിതമായി നടക്കുന്നു.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">നിങ്ങൾക്ക് എപ്പോൾ വേണമെങ്കിലും ക്രമീകരണത്തിൽ നിങ്ങളുടെ ഫിംഗർപ്രിന്റ് മോഡൽ ഇല്ലാതാക്കാനോ Pixel Imprint ഓഫാക്കാനോ കഴിയും. നിങ്ങൾ ഇല്ലാതാക്കുന്നത് വരെ ഫിംഗർപ്രിന്റ് മോഡലുകൾ ഫോണിൽ സംഭരിക്കുന്നു.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">ഇത് നിങ്ങളുടെ കുട്ടി തന്നെയാണെന്ന് പരിശോധിച്ചുറപ്പിക്കുന്നതിന് Pixel Imprint കുട്ടിയുടെ ഫിംഗർപ്രിന്റിന്റെ ഒരു തനത് മോഡൽ സൃഷ്ടിക്കുന്നു. ഈ ഫിംഗർപ്രിന്റ് മോഡൽ സൃഷ്ടിക്കാൻ, സജ്ജീകരണ സമയത്ത് അവരുടെ ഫിംഗർപ്രിന്റിന്റെ വ്യത്യസ്‌ത വശങ്ങളിൽ നിന്നുള്ള ചിത്രങ്ങളെടുക്കണം.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">അവർ Pixel Imprint ഉപയോഗിക്കുമ്പോൾ, അവരുടെ ഫിംഗർപ്രിന്റ് മോഡൽ അപ്ഡേറ്റ് ചെയ്യാൻ ചിത്രങ്ങൾ ഉപയോഗിക്കുന്നു. നിങ്ങളുടെ കുട്ടിയുടെ ഫിംഗർപ്രിന്റ് മോഡൽ സൃഷ്‌ടിക്കാൻ ഉപയോഗിക്കുന്ന ചിത്രങ്ങൾ സംഭരിക്കില്ലെങ്കിലും ഫിംഗർപ്രിന്റ് മോഡൽ സുരക്ഷിതമായി ഫോണിൽ സംഭരിക്കുന്നു, അത് ഒരിക്കലും ഫോണിൽ നിന്ന് പുറത്ത് പോകുകയുമില്ല. എല്ലാ പ്രോസസിംഗും ഫോണിൽ സുരക്ഷിതമായി നടക്കുന്നു.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">നിങ്ങൾക്കും കുട്ടിക്കും ക്രമീകരണത്തിൽ ഏതുസമയത്തും അവരുടെ ഫിംഗർപ്രിന്റ് മോഡൽ ഇല്ലാതാക്കാനോ Pixel Imprint ഓഫാക്കാനോ കഴിയും. ഫിംഗർപ്രിന്റ് മോഡലുകൾ ഇല്ലാതാക്കുന്നത് വരെ അവ ഫോണിൽ സംഭരിക്കുന്നു.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Pixel ഫിംഗർപ്രിന്റ് അൺലോക്കിനെ കുറിച്ച് ഇതിൽ നിന്ന് കൂടുതലറിയുക &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">ഔദ്യോഗിക പ്രൊഫൈലിനുള്ള Pixel Imprint</string>
     <string name="setup_suggestion_summary">കുറച്ച് ഘട്ടങ്ങൾ കൂടി മാത്രം</string>
@@ -337,6 +364,7 @@
     <string name="smart_battery_a11y_expand_label">വികസിപ്പിക്കുക, അഡാപ്റ്റീവ് ബാറ്ററി</string>
     <string name="smart_battery_footer">ബാറ്ററി ലെെഫ് വർദ്ധിപ്പിക്കുന്നതിന് അഡാപ്റ്റീവ് ബാറ്ററി, പ്രകടനവും പശ്ചാത്തല ആക്‌റ്റിവിറ്റിയും കുറച്ചേക്കാം. ചില അറിയിപ്പുകൾ വെെകിയേക്കാം.</string>
     <string name="smart_battery_manager_title">അഡാപ്റ്റീവ് മുൻഗണനകൾ</string>
+    <string name="smart_battery_summary" product="default">ആപ്പുകൾ ബാറ്ററി ഉപയോഗിക്കുന്നത് എങ്ങനെയെന്ന് തുടർച്ചയായി ഒപ്റ്റിമൈസ് ചെയ്യാൻ നിങ്ങളുടെ ഫോൺ ഉപയോഗത്തിൽ നിന്ന് അഡാപ്റ്റീവ് ബാറ്ററി മനസ്സിലാക്കുന്നു. ബാറ്ററി ലൈഫ് കൂട്ടാൻ, ഇത് പ്രകടനം കുറയ്ക്കുകയും അറിയിപ്പുകൾ വൈകിപ്പിക്കുകയും ചെയ്തേക്കാം.</string>
     <string name="smart_battery_title">അഡാപ്റ്റീവ് ബാറ്ററി</string>
     <string name="software_update_can_be_updated_header">നിങ്ങളുടെ Pixel കൂടുതൽ മികച്ചതാക്കൂ</string>
     <string name="software_update_detail_indication_1_update_available">ഒരു അപ്‌ഡേറ്റ് ലഭ്യമാണ്</string>

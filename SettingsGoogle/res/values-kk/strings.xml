@@ -149,6 +149,7 @@
     <string name="content_protection_preference_subpage_summary">Құрылғыңыздағы қолданбаларды пайдалану тарихында фишинг әрекетінің не басқа да жалған әрекеттердің бар-жоғы тексеріледі. Тексеру процесі тек құрылғыңызда әрі құпия жүргізіледі. Ондай әрекеттердің бары анықталса, қауіп жағдайын растау және қолданба пайдаланушыларын ескерту үшін қолданба туралы кейбір ақпарат Google Play Protect қызметіне жіберіледі.</string>
     <string name="contextual_timeout_description">Құрылғыңызды пайдаланбасаңыз, экранды уақытынан бұрын өшіреді.</string>
     <string name="contextual_timeout_title">Бейімделетін күт уақыты</string>
+    <string name="credentials_install_summary" product="default">Сертификаттарды қоймадан орнату</string>
     <string name="dark_ui_text">Қараңғы режимде қара фон тұратындықтан, батарея заряды үнемделеді. Кесте бойынша уақыты келіп тұрса да, экран өшпейінше, қараңғы режим қойылмайды.</string>
     <string name="debugging_data_title">Түзету туралы деректер</string>
     <string name="discover_tips_button">Кеңестерді көру</string>
@@ -156,6 +157,8 @@
     <string name="double_twist_for_camera_mode_summary">Google Camera қолданбасында селфи режимін қосу/өшіру үшін білегіңізді екі рет айналдырыңыз.</string>
     <string name="duration_less_than_one_minute">1 минутқа жетпейді.</string>
     <string name="enable_glanceable_hub_toggle">Хаб режимі</string>
+    <string name="erase_external_storage" product="default">USB жадын өшіру</string>
+    <string name="erase_external_storage_description" product="default">Ішкі USB жадындағы музыка немесе фотолар сияқты барлық деректерді өшіру</string>
     <string name="extreme_battery_saver_summary">Жоғарыда берілген барлық өзгерісті қамтиды. Сондай-ақ қосалқы қолданбалар мен олардың хабарландыруларын кідіртіп қояды.</string>
     <string name="extreme_battery_saver_title">Батареяны барынша үнемдеу режимі</string>
     <string name="face_confirmation_hide_illustration_description">Енді телефонды қолыңызға алғанда немесе экранды түрткенде, оның құлпын ашу үшін бет тану функциясын пайдалана аласыз.</string>
@@ -230,6 +233,9 @@
     <string name="limited_warranty_title">Шектелген кепілдік</string>
     <string name="lockscreen_show_weather_summary">Қазіргі ауа райын көру</string>
     <string name="lockscreen_show_weather_title">Ауа райын көрсету</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Музыканы, фотосуреттерді және басқа деректерді өшіру үшін "<b>USB жады</b> тазартылуы қажет.</string>
     <string name="my_device_info_account_preference_title">Google аккаунты</string>
     <string name="owner_info_settings_edit_text_hint">Мысалы, Жандостың Pixel құрылғысы</string>
     <string name="permit_debugging_data">Қате туралы есептерге кіруге рұқсат беру</string>
@@ -280,6 +286,7 @@
     <string name="security_dismiss_dialog_title">Ескерту жабылсын ба?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Реттеу үшін түртіңіз.</string>
     <string name="security_settings_face_enroll_education_message">Келесі экранда бетіңізді барлық бұрыштан түсіру керек болады. Басыңызды ары-бері бұрасыз.</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Келесі экранда телефонды көз деңгейінде ұстаңыз.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Бет тану функциясын реттеу уақыты өтіп кетті</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Енді телефон құлпын ашу немесе жеке басыңызды растау үшін (мысалы, қолданбаларға кіргенде немесе бірдеңе сатып алғанда) бет тану функциясын пайдалана аласыз.</string>
     <string name="security_settings_face_enroll_finish_description_with_bp_full">"Телефон құлпын ашу немесе жеке басыңызды растау үшін (мысалы, қолданбаларға кіру не бірдеңе сатып алу кезінде) енді бет тану үлгісін пайдалануға болады.
@@ -293,13 +300,29 @@
 Бет тану функциясы жеткілікті жарық болған кезде және бетперде не қою түсті көзілдірік кимеген кезде жақсы жұмыс істейді."</string>
     <string name="security_settings_face_enroll_finish_title">Жақсы!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Көру қабілеті не басты қозғалту мүмкіндігі шектеулі болған жағдайдағы реттеу</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Бет тану функциясын пайдалану кезінде басты телефонның алдында тік ұстау қажет.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Көзді ашып тұру керек.</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Кез келген уақытта \"Параметрлер\" бөлімінен бет үлгісін жоюға немесе бет тану функциясын өшіріп қоюға болады. Мұны өзіңіз де, балаңыз да жасай алады. Бет үлгілері жойылғанша телефонда сақталып тұрады.&lt;br&gt;&lt;br&gt;Толық ақпарат: &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Бәрін балаңыз екеуіңіз басқарасыздар</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Кез келген уақытта \"Параметрлер\" бөлімінен бет үлгісін жоюға немесе бет тану функциясын өшіріп қоюға болады. Бет үлгілері өзіңіз жойғанша телефонда сақталып тұрады.&lt;br&gt;&lt;br&gt;Толық ақпарат: &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Барлығы өз қолыңызда</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Балаңыздың жеке басын растау үшін бет тану функциясы оның бетінің қайталанбас үлгісін жасайды. Реттеу кезінде бет үлгісін жасау үшін балаңыз бетін жан-жағынан суретке түсіреді.
+
+Оның бет тану функциясын қолданған кездегі суреттері бет үлгісін жаңарту үшін пайдаланылады. Бет үлгісін жасау үшін қолданылған суреттер сақталмайды, бірақ үлгінің өзі телефонда қауіпсіз сақталады және басқа ешқайда жіберілмейді. Барлық өңдеу жұмысы қауіпсіз түрде телефонда орындалады."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Жеке басыңызды растау үшін бет тану функциясы бетіңіздің қайталанбас үлгісін жасайды. Реттеу кезінде бет үлгісін жасау үшін бетіңізді жан-жағынан суретке түсіресіз.
+
+Бет тану функциясын қолданған кездегі суреттер бетіңіздің үлгісін жаңарту үшін пайдаланылады. Бет үлгісін жасау үшін қолданылған суреттер сақталмайды, бірақ үлгінің өзі телефонда қауіпсіз сақталады және басқа ешқайда жіберілмейді. Барлық өңдеу жұмысы қауіпсіз түрде телефонда орындалады."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Бұл қалай жұмыс істейді?</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Бет тану функциясы телефонның құлпын ашу немесе балаңыздың жеке басын растау үшін оның көзінің ашық болуын талап ете алады. Балаңыз екеуіңіз бұл функцияны \"Параметрлер\" бөлімінен кез келген уақытта қоса аласыздар.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Балаңыз әдетте көзілдірік тағатын болса, реттеу кезінде оны шешпесе де болады.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Телефон құлпын баланың бетін пайдаланып ашу қауіпсіздік тұрғысынан PIN кодына, құпия сөзге немесе күрделі өрнекке қарағанда әлсіздеу болуы мүмкін.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Ашқысы келмесе де, телефонға қараған кезде, ол ашылып кетуі мүмкін. Құлыпты оған ұқсайтын біреу (мысалы, оның егіз бауыры) ашып алуы мүмкін. Басқа адам телефонды баланың бетіне тақаған кезде де құлып ашылады.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Бет тану функциясы телефонның құлпын ашу немесе жеке басыңызды растау үшін көзіңіздің ашық болуын талап ете алады. Бұл функцияны \"Параметрлер\" бөлімінен кез келген уақытта қоса аласыз.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Түссіз немесе сәл күңгірттелген көзілдірікті шешпеуге болады.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Телефон құлпын бетті пайдаланып ашу қауіпсіздік тұрғысынан PIN кодына, құпия сөзге немесе күрделі өрнекке қарағанда әлсіздеу болуы мүмкін.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Ашқыңыз келмесе де, телефонға қараған кезде, оның құлпы ашылып кетуі мүмкін. Құлыпты өзіңізге ұқсайтын біреу (мысалы, егіз бауырыңыз) ашып алуы мүмкін. Басқа адам телефонды бетіңізге тақаған кезде де құлып ашылады.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Есте сақтаңыз</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Телефон құлпын ашу немесе жеке басыңызды растау үшін (мысалы, қолданбаларға кіргенде не бірдеңе сатып алғанда) бет тану функциясын пайдаланыңыз.</string>
     <string name="security_settings_face_enroll_introduction_title">Бет тану функциясын реттеу</string>
     <string name="security_settings_face_enroll_next">Келесі</string>
     <string name="security_settings_face_enroll_partial_message">Бет тану функциясы жақсырақ жұмыс істеуі үшін, оны \"Параметрлер\" бөлімінен қайта реттей аласыз.</string>
@@ -325,7 +348,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">Саусақ ізін орнату үшін түртіңіз.</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Жеке басыңызды растау үшін Pixel Imprint функциясы саусақ ізінің қайталанбас үлгісін жасайды. Реттеу кезінде саусақ ізінің үлгісін жасау үшін оны жан-жағынан суретке түсіресіз.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Pixel Imprint функциясын қолданған кезде, суреттер саусақ ізінің үлгісін жаңарту үшін пайдаланылады. Саусақ ізінің үлгісін жасау үшін қолданылған суреттер ешқашан сақталмайды, бірақ үлгінің өзі телефонда қауіпсіз сақталады және басқа ешқайда жіберілмейді. Барлық өңдеу жұмысы қауіпсіз түрде телефонда орындалады.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Кез келген уақытта \"Параметрлер\" бөлімінен саусақ ізінің үлгісін жоюға немесе Pixel Imprint функциясын өшіріп қоюға болады. Саусақ ізінің үлгілері өзіңіз жойғанша телефонда сақталып тұрады.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Жеке басын растау үшін Pixel Imprint функциясы балаңыздың саусақ ізінің қайталанбас үлгісін жасайды. Реттеу кезінде саусақ ізінің үлгісін жасау үшін балаңыз саусағын жан-жағынан суретке түсіреді.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">Балаңыз Pixel Imprint функциясын қолданған кезде, суреттер саусақ ізінің үлгісін жаңарту үшін пайдаланылады. Балаңыздың саусақ ізінің үлгісін жасау үшін қолданылған суреттер ешқашан сақталмайды, бірақ үлгінің өзі телефонда қауіпсіз түрде сақталады және басқа ешқайда жіберілмейді. Барлық өңдеу жұмысы қауіпсіз түрде телефонда орындалады.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Кез келген уақытта \"Параметрлер\" бөлімінен саусақ ізінің үлгісін жоюға немесе Pixel Imprint функциясын өшіріп қоюға болады. Мұны өзіңіз де, балаңыз да жасай алады. Саусақ ізінің үлгілері жойылғанша телефонда сақталып тұрады.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Pixel-дің саусақ ізімен ашу функциясы туралы толық ақпарат: &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Жұмысқа арналған Pixel Imprint</string>
     <string name="setup_suggestion_summary">Бірнеше қадамнан ғана өту керек.</string>
@@ -334,6 +361,7 @@
     <string name="smart_battery_a11y_expand_label">Жаю, батарея шығынын бейімдеу</string>
     <string name="smart_battery_footer">Батарея жұмысын ұзарту үшін батарея шығынын бейімдеу функциясы жұмыс өнімділігі мен фондық белсенділікті төмендетеді. Кейбір хабарландырулар кешігіп келуі мүмкін.</string>
     <string name="smart_battery_manager_title">Бейімделмелі параметрлер</string>
+    <string name="smart_battery_summary" product="default">Батарея шығынын бейімдеу функциясы телефонды пайдалану деректерін зерттеп, қолданбалардың батареяны пайдалануын оңтайландырады. Батареяның жұмыс уақытын ұзарту үшін телефонның жұмыс өнімділігі төмендеп, хабарландырулар кідіртілуі мүмкін.</string>
     <string name="smart_battery_title">Батарея шығынын бейімдеу</string>
     <string name="software_update_can_be_updated_header">Pixel-ді одан сайын жақсартыңыз</string>
     <string name="software_update_detail_indication_1_update_available">1 жаңа нұсқа қолжетімді</string>

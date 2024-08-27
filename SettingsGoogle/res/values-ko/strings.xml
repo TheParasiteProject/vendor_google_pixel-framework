@@ -148,6 +148,7 @@
     <string name="content_protection_preference_subpage_summary">기기에서 바로 검사가 실행되어 앱 활동에서 피싱 또는 기타 사기 행위를 확인합니다. 피싱 또는 기타 사기 행위가 감지되는 경우, 위협을 확인하고 앱 사용자에게 경고를 표시할 수 있도록 일부 앱 정보가 Google Play 프로텍트로 전송됩니다.</string>
     <string name="contextual_timeout_description">기기를 사용하지 않으면 화면이 자동으로 빠르게 꺼집니다.</string>
     <string name="contextual_timeout_title">자동 조절 자동 잠금 시간</string>
+    <string name="credentials_install_summary" product="default">저장소에서 인증서 설치</string>
     <string name="dark_ui_text">어두운 테마는 검은색 배경을 사용하므로 배터리 사용 시간이 늘어납니다. 어두운 테마 일정은 화면이 꺼질 때까지 기다린 후 켜집니다.</string>
     <string name="debugging_data_title">디버깅 데이터</string>
     <string name="discover_tips_button">도움말 확인</string>
@@ -155,6 +156,8 @@
     <string name="double_twist_for_camera_mode_summary">Google 카메라에서 셀카 모드를 시작하거나 종료하려면 앱을 실행한 상태에서 두 번 돌립니다.</string>
     <string name="duration_less_than_one_minute">1분 미만</string>
     <string name="enable_glanceable_hub_toggle">허브 모드</string>
+    <string name="erase_external_storage" product="default">USB 저장소 지우기</string>
+    <string name="erase_external_storage_description" product="default">내부 USB 저장소에 있는 모든 데이터(예: 음악 또는 사진)를 지웁니다.</string>
     <string name="extreme_battery_saver_summary">위의 모든 변경사항을 포함합니다. 필수 앱 및 알림을 제외하고 모두 일시중지합니다.</string>
     <string name="extreme_battery_saver_title">최대 절전 모드</string>
     <string name="face_confirmation_hide_illustration_description">이제 휴대전화를 들어 올리거나 화면을 탭하면 얼굴 인식을 사용해 잠금 해제할 수 있습니다.</string>
@@ -229,6 +232,9 @@
     <string name="limited_warranty_title">한정 보증</string>
     <string name="lockscreen_show_weather_summary">현재 기상 상황 보기</string>
     <string name="lockscreen_show_weather_title">날씨 표시</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+음악이나 사진, 기타 사용자 데이터를 지우려면 "<b>USB 저장소</b>를 삭제해야 합니다.</string>
     <string name="my_device_info_account_preference_title">Google 계정</string>
     <string name="owner_info_settings_edit_text_hint">예: 수지의 Pixel</string>
     <string name="permit_debugging_data">버그 신고 액세스 허용</string>
@@ -279,6 +285,7 @@
     <string name="security_dismiss_dialog_title">경고를 닫으시겠습니까?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">탭하여 설정</string>
     <string name="security_settings_face_enroll_education_message">다음 화면이 표시되면 모든 각도에서 얼굴을 촬영할 수 있도록 고개를 돌리세요.</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">다음 화면에서 눈높이에 맞춰 휴대전화를 들어 주세요.</string>
     <string name="security_settings_face_enroll_error_dialog_title">등록이 완료되지 않음</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">얼굴 등록 시간제한이 초과되었습니다. 다시 시도해 보세요.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">얼굴 인식 잠금 해제 설정 시간 초과</string>
@@ -294,13 +301,29 @@
 얼굴 인식 잠금 해제는 조명이 충분히 밝고 마스크나 어두운 색의 안경을 쓰고 있지 않을 때 가장 잘 작동합니다."</string>
     <string name="security_settings_face_enroll_finish_title">설정 완료</string>
     <string name="security_settings_face_enroll_introduction_accessibility">시력이 나쁘거나 고개 움직임이 제한된 경우의 설정</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">얼굴 인식 잠금 해제를 사용할 때는 휴대전화가 더 확실하게 얼굴 정면에 위치하도록 해야 합니다.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">눈을 뜨고 있어야 설정 가능</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"부모와 자녀 모두 언제든지 설정에서 얼굴 모델을 삭제하거나 얼굴 인식 잠금 해제를 사용 중지할 수 있습니다. 얼굴 모델은 삭제하기 전까지 휴대전화에 저장됩니다.&lt;br&gt;&lt;br&gt;&lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;에서 자세히 알아보세요."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">부모와 자녀가 함께 설정</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"언제든지 설정에서 얼굴 모델을 삭제하거나 얼굴 인식 잠금 해제를 사용 중지할 수 있습니다. 얼굴 모델은 삭제하기 전까지 휴대전화에 저장됩니다.&lt;br&gt;&lt;br&gt;&lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;에서 자세히 알아보세요."</string>
     <string name="security_settings_face_enroll_introduction_control_title">사용자가 직접 관리 가능</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"얼굴 인식 잠금 해제를 사용하면 자녀의 본인 인증을 위한 고유한 얼굴 모델이 생성됩니다. 설정 단계에서 얼굴 모델을 만들기 위해 다양한 각도에서 자녀의 얼굴을 촬영하게 됩니다.
+
+얼굴 인식 잠금 해제를 사용하면 자녀의 얼굴 모델을 업데이트하는 데 이미지가 활용됩니다. 자녀의 얼굴 모델을 만드는 데 사용된 이미지는 저장되지 않으나 얼굴 모델은 휴대전화에 안전하게 저장되며 휴대전화 외부로 전송되지 않습니다. 모든 처리는 휴대전화 내에서 안전하게 이뤄집니다."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"얼굴 인식 잠금 해제를 사용하면 본인 인증을 위한 고유한 얼굴 모델이 생성됩니다. 설정 단계에서 얼굴 모델을 만들기 위해 다양한 각도에서 얼굴을 촬영하게 됩니다.
+
+얼굴 인식 잠금 해제를 사용하면 얼굴 모델을 업데이트하는 데 이미지가 활용됩니다. 얼굴 모델을 만드는 데 사용된 이미지는 저장되지 않으나 얼굴 모델은 휴대전화에 안전하게 저장되며 휴대전화 외부로 전송되지 않습니다. 모든 처리는 휴대전화 내에서 안전하게 이뤄집니다."</string>
     <string name="security_settings_face_enroll_introduction_how_title">작동 방식</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">휴대전화를 잠금 해제하거나 본인 인증을 위해 얼굴 인식 잠금 해제를 사용할 때 자녀에게 눈을 뜨도록 요구할 수 있습니다. 부모와 자녀는 언제든지 설정에서 이 옵션을 사용 설정할 수 있습니다.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">평소 자녀가 안경을 쓰는 경우 설정 중 안경을 착용할 수 있습니다.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">자녀의 얼굴 인식을 통한 휴대전화 잠금 해제는 강력한 패턴, PIN 또는 비밀번호보다 보안 취약할 수 있습니다.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">자녀가 휴대전화를 바라보면 의도치 않게 잠금이 해제될 수 있습니다. 일란성 쌍둥이와 같이 자녀와 닮은 사람이 자녀의 휴대전화 잠금을 해제하거나 다른 사람이 자녀의 얼굴에 휴대전화를 가져다 대어 잠금을 해제할 수 있습니다.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">휴대전화를 잠금 해제하거나 본인 인증을 위해 얼굴 인식 잠금 해제를 사용할 때 눈을 뜨도록 요구할 수 있습니다. 언제든지 설정에서 이 옵션을 사용 설정할 수 있습니다.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">안경이나 옅은 색의 선글라스는 괜찮습니다.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">얼굴 인식을 통한 휴대전화 잠금 해제는 강력한 패턴, PIN 또는 비밀번호보다 보안이 취약할 수 있습니다.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">휴대전화를 바라보면 의도치 않게 잠금이 해제될 수 있습니다. 일란성 쌍둥이와 같이 나와 닮은 사람이 휴대전화의 잠금을 해제하거나 다른 사람이 내 얼굴에 휴대전화를 가져다 대어 잠금을 해제할 수 있습니다.</string>
     <string name="security_settings_face_enroll_introduction_info_title">주의사항</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">얼굴 인식을 사용하여 휴대전화를 잠금 해제하거나 앱 로그인, 구매 승인 등을 위해 본인을 인증하세요.</string>
     <string name="security_settings_face_enroll_introduction_title">얼굴 인식 잠금 해제 설정</string>
     <string name="security_settings_face_enroll_next">다음</string>
     <string name="security_settings_face_enroll_partial_message">인식 성능을 높이려면 설정에서 얼굴 인식 잠금 해제를 다시 설정하세요.</string>
@@ -326,7 +349,9 @@
     <string name="security_settings_fingerprint_preference_summary_none">지문을 설정하려면 탭하세요.</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint를 사용하면 본인 인증을 위한 고유한 지문 모델이 생성됩니다. 설정 중 지문 모델을 만들기 위해 다양한 위치에서 지문 이미지를 촬영합니다.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">언제든지 설정에서 지문 모델을 삭제하거나 Pixel Imprint를 사용 중지할 수 있습니다. 지문 모델은 삭제하기 전까지 휴대전화에 저장됩니다.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint를 사용하면 자녀의 본인 인증을 위한 고유한 지문 모델이 생성됩니다. 설정 중 지문 모델을 만들기 위해 다양한 위치에서 자녀의 지문 이미지를 촬영합니다.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">부모와 자녀는 언제든지 설정에서 자녀의 지문 모델을 삭제하거나 Pixel Imprint를 사용 중지할 수 있습니다. 지문 모델은 삭제하기 전까지 휴대전화에 저장됩니다.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"&lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;에서 Pixel 지문 잠금 해제에 관해 자세히 알아보세요."</string>
     <string name="security_settings_work_fingerprint_preference_title">직장용 Pixel Imprint</string>
     <string name="setup_suggestion_summary">몇 단계밖에 남지 않았습니다.</string>
@@ -335,6 +360,7 @@
     <string name="smart_battery_a11y_expand_label">펼치기, 배터리 자동 조절</string>
     <string name="smart_battery_footer">배터리 자동 조절 기능은 배터리 수명을 늘리기 위해 성능 및 백그라운드 활동을 제한할 수 있습니다. 일부 알림이 지연될 수 있습니다.</string>
     <string name="smart_battery_manager_title">환경설정 자동 조절</string>
+    <string name="smart_battery_summary" product="default">배터리 자동 조절 기능은 사용자의 휴대전화 사용 방식을 학습하여 지속적으로 앱의 배터리 사용을 최적화합니다. 배터리 수명을 늘리기 위해 성능이 낮아지고 알림이 지연될 수 있습니다.</string>
     <string name="smart_battery_title">배터리 자동 조절</string>
     <string name="software_update_can_be_updated_header">Pixel 더 효과적으로 사용하기</string>
     <string name="software_update_detail_indication_1_update_available">업데이트 1개 가능</string>

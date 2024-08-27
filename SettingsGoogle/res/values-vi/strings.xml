@@ -148,12 +148,15 @@ Tấn công giả mạo là hành vi tìm cách đánh cắp thông tin đăng n
     <string name="content_protection_preference_subpage_summary">Tính năng quét sẽ chạy ở chế độ riêng tư ngay trên thiết bị của bạn, kiểm tra hoạt động trong ứng dụng để phát hiện hành vi tấn công giả mạo hoặc hành vi lừa đảo khác. Nếu có hành vi như vậy bị phát hiện, một số thông tin ứng dụng sẽ được gửi đến Google Play Protect để xác nhận mối đe doạ và cảnh báo người dùng ứng dụng.</string>
     <string name="contextual_timeout_description">Tự động tắt màn hình sớm nếu bạn không dùng thiết bị</string>
     <string name="contextual_timeout_title">Thời gian chờ thích ứng</string>
+    <string name="credentials_install_summary" product="default">Cài đặt chứng chỉ từ bộ nhớ</string>
     <string name="debugging_data_title">Gỡ lỗi dữ liệu</string>
     <string name="discover_tips_button">Khám phá mẹo</string>
     <string name="dock_summary_charging_phone">Đang sạc điện thoại</string>
     <string name="double_twist_for_camera_mode_summary">Để chuyển sang và thoát khỏi chế độ selfie trong Google Máy ảnh, hãy xoay cổ tay hai lần khi bạn đang sử dụng ứng dụng này.</string>
     <string name="duration_less_than_one_minute">Dưới 1 phút</string>
     <string name="enable_glanceable_hub_toggle">Chế độ thiết bị trung tâm</string>
+    <string name="erase_external_storage" product="default">Xóa bộ nhớ USB</string>
+    <string name="erase_external_storage_description" product="default">Xóa tất cả dữ liệu trên bộ nhớ trong USB, chẳng hạn như nhạc hoặc ảnh</string>
     <string name="extreme_battery_saver_summary">Chế độ này sẽ thực hiện mọi thay đổi nêu trên. Đồng thời tạm dừng các ứng dụng không thiết yếu và thông báo của những ứng dụng đó.</string>
     <string name="extreme_battery_saver_title">Trình siêu tiết kiệm pin</string>
     <string name="face_confirmation_hide_illustration_description">Giờ đây, bạn có thể dùng khuôn mặt để mở khoá mỗi khi nhấc điện thoại lên hoặc nhấn vào màn hình.</string>
@@ -228,6 +231,9 @@ Dữ liệu sao lưu sẽ không tính vào phần bộ nhớ trên Drive của 
     <string name="limited_warranty_title">Bảo hành có giới hạn</string>
     <string name="lockscreen_show_weather_summary">Xem tình trạng thời tiết hiện tại</string>
     <string name="lockscreen_show_weather_title">Hiện thông tin thời tiết</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Để xóa nhạc, ảnh và dữ liệu khác của người dùng, thì cần phải xóa "<b>bộ lưu trữ USB</b>.</string>
     <string name="my_device_info_account_preference_title">Tài khoản Google</string>
     <string name="owner_info_settings_edit_text_hint">Ví dụ: Pixel của Tuấn</string>
     <string name="permit_debugging_data">Cho phép truy cập báo cáo lỗi</string>
@@ -278,6 +284,7 @@ Hãy lật điện thoại để thử."</string>
     <string name="security_dismiss_dialog_title">Đóng cảnh báo này?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Nhấn để thiết lập</string>
     <string name="security_settings_face_enroll_education_message">Trên màn hình tiếp theo, hãy xoay đầu để chụp mọi góc cạnh khuôn mặt bạn</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Trên màn hình tiếp theo, hãy cầm điện thoại ngang tầm mắt</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Đã hết giờ thiết lập Mở khóa bằng khuôn mặt</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Giờ đây, bạn có thể dùng khuôn mặt để mở khoá điện thoại hoặc xác minh danh tính, chẳng hạn như khi đăng nhập vào ứng dụng hoặc phê duyệt giao dịch mua hàng</string>
     <string name="security_settings_face_enroll_finish_description_with_bp_full">"Giờ đây, bạn có thể dùng khuôn mặt để mở khoá điện thoại hoặc xác minh danh tính, chẳng hạn như khi bạn đăng nhập vào các ứng dụng hoặc phê duyệt giao dịch mua.
@@ -291,13 +298,29 @@ Tính năng Mở khoá bằng khuôn mặt hoạt động hiệu quả nhất kh
 Tính năng Mở khoá bằng khuôn mặt hoạt động tốt nhất khi có đủ ánh sáng và bạn không đeo khẩu trang hoặc kính đen."</string>
     <string name="security_settings_face_enroll_finish_title">Vậy là xong!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Cho người có thị lực/cử động đầu hạn chế</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Khi dùng tính năng Mở khoá bằng khuôn mặt, bạn có thể phải hướng thẳng đầu về phía trước điện thoại.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Bạn phải mở mắt</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Bạn và con bạn có thể xoá mẫu khuôn mặt của con hoặc tắt tính năng Mở khoá bằng khuôn mặt trong phần Cài đặt bất cứ khi nào. Các mẫu khuôn mặt được lưu trữ trên điện thoại này cho đến khi bị xoá.&lt;br&gt;&lt;br&gt;Tìm hiểu thêm tại &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Bạn và con bạn nắm quyền kiểm soát</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Bạn có thể xoá mẫu khuôn mặt hoặc tắt tính năng Mở khoá bằng khuôn mặt trong phần Cài đặt bất cứ khi nào. Các mẫu khuôn mặt được lưu trữ trên điện thoại này cho đến khi bạn xoá.&lt;br&gt;&lt;br&gt;Tìm hiểu thêm tại &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Bạn nắm quyền kiểm soát</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Tính năng Mở khoá bằng khuôn mặt tạo một mẫu khuôn mặt riêng để xác minh danh tính của con bạn. Để tạo mẫu khuôn mặt này trong quá trình thiết lập, con bạn cần chụp ảnh khuôn mặt mình ở nhiều góc độ.
+
+Khi con dùng tính năng Mở khoá bằng khuôn mặt, các hình ảnh sẽ được dùng để cập nhật mẫu khuôn mặt. Các hình ảnh dùng để tạo mẫu khuôn mặt không được lưu trữ. Tuy nhiên, mẫu khuôn mặt sẽ được lưu trữ an toàn trên điện thoại của con bạn và chỉ lưu trên điện thoại này. Toàn bộ quá trình xử lý được tiến hành trên điện thoại một cách an toàn."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Tính năng Mở khoá bằng khuôn mặt tạo một mẫu khuôn mặt riêng để xác minh danh tính của bạn. Để tạo mẫu khuôn mặt trong quá trình thiết lập, bạn cần chụp ảnh khuôn mặt mình ở nhiều góc độ.
+
+Khi bạn dùng tính năng Mở khoá bằng khuôn mặt, các hình ảnh sẽ được dùng để cập nhật mẫu khuôn mặt. Các hình ảnh dùng để tạo mẫu khuôn mặt không được lưu trữ. Tuy nhiên, mẫu khuôn mặt sẽ được lưu trữ an toàn trên điện thoại của bạn và chỉ lưu trên điện thoại này. Toàn bộ quá trình xử lý được tiến hành trên điện thoại một cách an toàn."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Cách thức hoạt động</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Tính năng Mở khoá bằng khuôn mặt có thể yêu cầu con bạn mở mắt để mở khoá điện thoại hoặc xác minh danh tính. Bạn và con có thể bật tuỳ chọn này trong phần Cài đặt bất cứ khi nào.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Nếu thường đeo kính, con bạn có thể đeo kính trong khi thiết lập.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Việc sử dụng khuôn mặt của con bạn để mở khoá điện thoại có thể kém an toàn hơn hình mở khoá, mã PIN hoặc mật khẩu mạnh.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Việc nhìn vào điện thoại có thể khiến điện thoại mở khoá ngay cả khi con bạn không định làm vậy. Người khác có thể mở khoá điện thoại của con nếu họ giơ chiếc điện thoại đó ra trước mặt con. Việc này cũng xảy ra trong trường hợp người mở khoá trông giống con, chẳng hạn như anh chị em ruột giống hệt con.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Tính năng Mở khoá bằng khuôn mặt có thể yêu cầu bạn mở mắt để mở khoá điện thoại hoặc xác minh danh tính. Bạn có thể bật tuỳ chọn này trong phần Cài đặt bất cứ khi nào.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Bạn có thể đeo kính hoặc kính râm màu nhạt.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Việc sử dụng khuôn mặt để mở khoá điện thoại có thể kém an toàn hơn hình mở khoá, mã PIN hoặc mật khẩu mạnh</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Việc nhìn vào điện thoại có thể khiến điện thoại mở khoá ngay cả khi bạn không định làm vậy. Người khác có thể mở khoá điện thoại của bạn nếu họ giơ chiếc điện thoại đó ra trước mặt bạn. Việc này cũng xảy ra trong trường hợp người mở khoá trông giống bạn, chẳng hạn như anh chị em ruột giống hệt bạn.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Lưu ý</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Bạn có thể dùng khuôn mặt để mở khoá điện thoại hoặc xác minh danh tính, chẳng hạn như khi đăng nhập vào ứng dụng hoặc phê duyệt giao dịch mua hàng.</string>
     <string name="security_settings_face_enroll_introduction_title">Thiết lập tính năng Mở khóa bằng khuôn mặt</string>
     <string name="security_settings_face_enroll_next">Tiếp theo</string>
     <string name="security_settings_face_enroll_partial_message">Để cải thiện hiệu suất, bạn có thể thiết lập lại tính năng Mở khóa bằng khuôn mặt trong phần Cài đặt</string>
@@ -324,7 +347,11 @@ Lưu ý: Bạn không thể sử dụng vân tay của mình để mở khóa th
     <string name="security_settings_fingerprint_preference_summary_none">Nhấn để thiết lập vân tay</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint sẽ tạo một mẫu vân tay duy nhất để xác minh danh tính của bạn. Để tạo mẫu vân tay này trong khi thiết lập, bạn cần chụp ảnh vân tay của mình ở nhiều vị trí.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Khi bạn dùng Pixel Imprint, các hình ảnh sẽ được dùng để cập nhật mẫu vân tay của bạn. Các hình ảnh dùng để tạo mẫu vân tay không bao giờ được lưu trữ. Tuy nhiên, mẫu vân tay sẽ được lưu trữ an toàn trên điện thoại mà bạn đang sử dụng và chỉ lưu trên chiếc điện thoại đó. Toàn bộ quá trình xử lý được tiến hành trên điện thoại một cách an toàn.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Bạn có thể xoá mẫu vân tay của mình hoặc tắt Pixel Imprint trong phần Cài đặt bất cứ khi nào. Các mẫu vân tay được lưu trữ trên điện thoại này cho đến khi bạn xoá đi.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint sẽ tạo một mẫu vân tay duy nhất để xác minh danh tính của con bạn. Để tạo mẫu vân tay này trong khi thiết lập, con bạn cần chụp ảnh vân tay của mình ở nhiều vị trí.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">Khi con bạn dùng Pixel Imprint, các hình ảnh sẽ được dùng để cập nhật mẫu vân tay của con. Các hình ảnh dùng để tạo mẫu vân tay của con không bao giờ được lưu trữ. Tuy nhiên, mẫu vân tay đó sẽ được lưu trữ an toàn trên điện thoại của con bạn và chỉ lưu trên điện thoại này. Toàn bộ quá trình xử lý được tiến hành trên điện thoại một cách an toàn.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Bạn và con bạn có thể xoá mẫu vân tay của con hoặc tắt Pixel Imprint trong phần Cài đặt bất cứ khi nào. Các mẫu vân tay được lưu trữ trên điện thoại này cho đến khi bị xoá.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Tìm hiểu thêm về cách mở khoá Pixel bằng vân tay tại &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint cho công việc</string>
     <string name="setup_suggestion_summary">Chỉ một vài bước nữa thôi</string>
@@ -333,6 +360,7 @@ Lưu ý: Bạn không thể sử dụng vân tay của mình để mở khóa th
     <string name="smart_battery_a11y_expand_label">Mở rộng, Pin thích ứng</string>
     <string name="smart_battery_footer">Để kéo dài thời lượng pin, tính năng Pin thích ứng có thể làm giảm hiệu suất thiết bị và hoạt động ở chế độ nền. Một số thông báo có thể đến chậm.</string>
     <string name="smart_battery_manager_title">Lựa chọn ưu tiên về tính năng thích ứng</string>
+    <string name="smart_battery_summary" product="default">Tính năng Pin thích ứng sẽ tìm hiểu cách bạn dùng điện thoại để liên tục tối ưu hoá cách ứng dụng sử dụng pin. Để kéo dài thời lượng pin, tính năng này có thể sẽ giảm mức hiệu suất và gửi thông báo chậm hơn.</string>
     <string name="smart_battery_title">Pin thích ứng</string>
     <string name="software_update_can_be_updated_header">Nâng cao hiệu suất của Pixel bằng các bản cập nhật</string>
     <string name="software_update_detail_indication_1_update_available">Có 1 bản cập nhật</string>

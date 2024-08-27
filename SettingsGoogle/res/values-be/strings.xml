@@ -149,6 +149,7 @@
     <string name="content_protection_preference_subpage_summary">Сканіраванне выконваецца канфідэнцыяльна непасрэдна на вашай прыладзе. У часе сканіравання дзеянні ў праграме правяраюцца на фішынг або іншыя падманныя паводзіны. Пры выяўленні такіх пагроз некаторыя звесткі пра праграму адпраўляюцца ў Google Play Абарону, каб пацвердзіць пагрозу і папярэдзіць карыстальнікаў праграмы.</string>
     <string name="contextual_timeout_description">Аўтаматычна выключае экран хутчэй, калі вы не карыстаецеся прыладай</string>
     <string name="contextual_timeout_title">Адаптыўны час чакання</string>
+    <string name="credentials_install_summary" product="default">Усталяваць сертыфікаты са сховішча</string>
     <string name="dark_ui_text">У цёмнай тэме выкарыстоўваецца чорны фон, які эканоміць зарад акумулятара. Акрамя таго, вы можаце вызначыць, калі цёмная тэма павінна ўключацца і выключацца.</string>
     <string name="debugging_data_title">Адладка даных</string>
     <string name="discover_tips_button">Паглядзець парады</string>
@@ -156,6 +157,8 @@
     <string name="double_twist_for_camera_mode_summary">Пераключайцеся паміж асноўнай і франтальнай камерай двайным рухам запясця</string>
     <string name="duration_less_than_one_minute">менш за 1 хвіліну</string>
     <string name="enable_glanceable_hub_toggle">Рэжым хаба</string>
+    <string name="erase_external_storage" product="default">Ачысціць USB-назапашвальнiк</string>
+    <string name="erase_external_storage_description" product="default">Выдаліць з унутранага USB-назапашвальнiка ўсе дадзеныя, напрыклад музыку i фатаграфіі</string>
     <string name="extreme_battery_saver_summary">Уключае ўсе змяненні, пералічаныя вышэй, і прыпыняе другарадныя праграмы і іх апавяшчэнні.</string>
     <string name="extreme_battery_saver_title">Рэжым экстрэмальнага энергазберажэння</string>
     <string name="face_confirmation_hide_illustration_description">Цяпер вы можаце выкарыстоўваць свой твар для разблакіроўкі тэлефона.</string>
@@ -230,6 +233,9 @@
     <string name="limited_warranty_title">Абмежаваная гарантыя</string>
     <string name="lockscreen_show_weather_summary">"Паказваць інфармацыю пра бягучае надвор'е"</string>
     <string name="lockscreen_show_weather_title">"Паказваць інфармацыю пра надвор'е"</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Каб выдаліць музыку, фатаграфіі і іншую інфармацыю карыстальніка, трэба сцерці даныя з "<b>USB-сховішча</b>.</string>
     <string name="my_device_info_account_preference_title">Уліковы запіс Google</string>
     <string name="owner_info_settings_edit_text_hint">Напрыклад, Pixel Джо.</string>
     <string name="permit_debugging_data">Дазволіць доступ да справаздач пра памылку</string>
@@ -280,6 +286,7 @@
     <string name="security_dismiss_dialog_title">Закрыць гэта папярэджанне?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Дакраніцеся, каб наладзіць</string>
     <string name="security_settings_face_enroll_education_message">На наступным экране паварочвайце галаву, каб зрабіць здымкі твару ва ўсіх ракурсах</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Калі адкрыецца наступны экран, трымайце тэлефон на ўзроўні вачэй</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">Час сканіравання твару скончыўся. Паспрабуйце яшчэ раз.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Пры наладжванні распазнавання твару перавышаны час чакання</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Цяпер вы можаце выкарыстоўваць функцыю распазнавання твару для разблакіроўкі тэлефона ці спраўджання вашай асобы, напрыклад падчас уваходу ў праграмы ці ўхвалення куплі</string>
@@ -294,13 +301,29 @@
 Лепш за ўсё распазнаванне твару працуе пры добрым асвятленні, калі на вас няма маскі або цёмных акуляраў."</string>
     <string name="security_settings_face_enroll_finish_title">Усё добра!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Абмежаванні зроку ці руху галавы</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Падчас выкарыстання функцыі распазнавання твару трымайце галаву непасрэдна перад экранам тэлефона.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Трэба адкрыць вочы</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Вы і ваша дзіця можаце ў любы час выдаліць мадэль твару ці выключыць распазнаванне твару ў Наладах. Мадэлі твару захоўваюцца на тэлефоне, пакуль не будуць выдалены.&lt;br&gt;&lt;br&gt;Даведайцеся больш на старонцы &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Доступ ёсць у вас і вашага дзіцяці</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Вы можаце ў любы час выдаліць мадэль твару ці выключыць распазнаванне твару ў Наладах. Мадэлі твару захоўваюцца на тэлефоне, пакуль вы іх не выдаліце.&lt;br&gt;&lt;br&gt;Даведайцеся больш на старонцы &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Усё пад кантролем</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Каб спраўджваць асобу дзіцяці, функцыя распазнавання твару стварае ўнікальную мадэль яго твару. Для стварэння мадэлі трэба зрабіць здымкі твару дзіцяці з розных ракурсаў.
+
+Калі дзіця ўжывае функцыю распазнавання твару, відарысы выкарыстоўваюцца для абнаўлення мадэлі твару. Відарысы, якія выкарыстоўваліся для стварэння мадэлі твару, не захоўваюцца. На тэлефоне бяспечна захоўваецца толькі сама мадэль, і яна нікуды не адпраўляецца. Уся апрацоўка выконваецца толькі на тэлефоне."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Каб спраўджваць вашу асобу, функцыя распазнавання твару стварае ўнікальную мадэль вашага твару. Для стварэння мадэлі зрабіце здымкі свайго твару з розных ракурсаў.
+
+Калі вы ўжываеце функцыю распазнавання твару, відарысы выкарыстоўваюцца для абнаўлення мадэлі вашага твару. Відарысы, якія выкарыстоўваліся для стварэння мадэлі твару, не захоўваюцца. На вашым тэлефоне бяспечна захоўваецца толькі сама мадэль, і яна нікуды не адпраўляецца. Уся апрацоўка выконваецца толькі на вашым тэлефоне."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Як гэта працуе</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Для разблакіроўкі тэлефона ці спраўджання асобы дзіцяці з дапамогай распазнавання твару можна запатрабаваць, каб у дзіцяці былі адкрыты вочы. Вы і ваша дзіця можаце ў любы час уключыць гэты параметр у Наладах.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Калі ваша дзіця звычайна носіць акуляры, падчас наладжвання яно можа не здымаць іх.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Разблакіроўка тэлефона вашага дзіцяці з дапамогай твару можа быць менш бяспечнай, чым з выкарыстаннем надзейнага ўзору разблакіроўкі, PIN-кода ці пароля.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Зірнуўшы на тэлефон, дзіця можа разблакіраваць яго, нават не маючы такога намеру. Акрамя таго, тэлефон можа быць разблакіраваны кімсьці, хто падобны на ваша дзіця (напрыклад, гэта можа быць брат ці сястра), ці чалавекам, які паднясе тэлефон да твару дзіцяці.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Для разблакіроўкі тэлефона ці спраўджання вашай асобы з дапамогай распазнавання твару можна запатрабаваць, каб у вас былі адкрыты вочы. Вы можаце ў любы час уключыць гэты параметр у Наладах.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Акуляры з празрыстымі лінзамі ці крыху зацемненым шклом не перашкодзяць распазнаванню твару.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Выкарыстанне функцыі распазнавання твару для разблакіроўкі тэлефона можа быць менш бяспечным, чым складаны ўзор, PIN-код або пароль</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Зірнуўшы на тэлефон, вы можаце разблакіраваць яго, нават не маючы такога намеру. Акрамя таго, ваш тэлефон можа быць разблакіраваны кімсьці, хто падобны на вас (напрыклад, гэта можа быць ваш брат ці сястра), ці чалавекам, які паднясе тэлефон да вашага твару.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Майце на ўвазе</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Твар можна выкарыстоўваць для разблакіроўкі тэлефона ці спраўджання вашай асобы, напрыклад падчас уваходу ў праграмы ці ўхвалення куплі.</string>
     <string name="security_settings_face_enroll_introduction_title">Наладзіць распазнаванне твару</string>
     <string name="security_settings_face_enroll_next">Далей</string>
     <string name="security_settings_face_enroll_partial_message">Для лепшай прадукцыйнасці можна нанава задаць функцыю распазнавання твару ў Наладах</string>
@@ -326,7 +349,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">Націсніце, каб зарэгістраваць адбітак пальца</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Каб спраўджваць вашу асобу, функцыя Pixel Imprint стварае ўнікальную мадэль вашага адбітка пальца. Для стварэння мадэлі адсканіруйце свой палец у розных паставах.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Калі вы ўжываеце Pixel Imprint, створаныя відарысы выкарыстоўваюцца для абнаўлення мадэлі адбітка пальца. Відарысы, якія выкарыстоўваліся для стварэння мадэлі адбітка пальца, ніколі не захоўваюцца. На вашым тэлефоне бяспечна захоўваецца толькі сама мадэль, і яна нікуды не адпраўляецца. Уся апрацоўка выконваецца толькі на вашым тэлефоне.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Вы можаце ў любы час выдаліць мадэль адбітка пальца ці выключыць Pixel Imprint у Наладах. Мадэлі адбітка пальца будуць захоўвацца на тэлефоне, пакуль вы іх не выдаліце.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Каб спраўджваць асобу дзіцяці, функцыя Pixel Imprint стварае ўнікальную мадэль адбітка яго пальца. Для стварэння мадэлі трэба адсканіраваць палец дзіцяці ў розных паставах.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">Калі дзіця ўжывае функцыю Pixel Imprint, створаныя відарысы выкарыстоўваюцца для абнаўлення мадэлі адбітка пальца. Відарысы, якія выкарыстоўваліся для стварэння мадэлі адбітка пальца дзіцяці, ніколі не захоўваюцца. На тэлефоне бяспечна захоўваецца толькі сама мадэль, і яна нікуды не адпраўляецца. Уся апрацоўка выконваецца толькі на тэлефоне.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Вы і ваша дзіця можаце ў любы час выдаліць мадэль адбітка пальца ці выключыць Pixel Imprint у Наладах. Мадэлі адбітка пальца захоўваюцца на тэлефоне, пакуль не будуць выдалены.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Даведайцеся больш пра разблакіроўку Pixel адбіткам пальца на старонцы &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint для працы</string>
     <string name="setup_suggestion_summary">Яшчэ некалькі крокаў</string>
@@ -335,6 +362,7 @@
     <string name="smart_battery_a11y_expand_label">Разгарнуць; адаптацыя акумулятара</string>
     <string name="smart_battery_footer">Каб падоўжыць час працы ад акумулятара, функцыя яго адаптацыі можа панізіць прадукцыйнасць праграм і абмежаваць фонавыя працэсы. Некаторыя апавяшчэнні могуць прыходзіць з затрымкай.</string>
     <string name="smart_battery_manager_title">Адаптыўныя налады</string>
+    <string name="smart_battery_summary" product="default">Адаптацыя акумулятара бесперапынна аптымізуе спажыванне зараду праграмамі на падставе даных пра выкарыстанне тэлефона. Каб прадоўжыць час працы ад акумулятара, гэта функцыя можа зніжаць прадукцыйнасць і адкладваць апавяшчэнні.</string>
     <string name="smart_battery_title">Адаптацыя акумулятара</string>
     <string name="software_update_can_be_updated_header">Зрабіце прыладу Pixel яшчэ лепшай</string>
     <string name="software_update_detail_indication_1_update_available">Ёсць 1 абнаўленне</string>

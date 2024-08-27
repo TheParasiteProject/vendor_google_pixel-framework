@@ -149,12 +149,15 @@
     <string name="content_protection_preference_subpage_summary">ସ୍କାନିଂ ପ୍ରାଇଭେବ ଭାବେ ଆପଣଙ୍କ ଡିଭାଇସରେ ହିଁ ଚାଲିଥାଏ, ଏହା ଫିସିଂ କିମ୍ବା ଅନ୍ୟ ପ୍ରତାରଣାପୂର୍ଣ୍ଣ ଆଚରଣ ପାଇଁ ଆପ କାର୍ଯ୍ୟକଳାପକୁ ଯାଞ୍ଚ କରୁଛି। ଯଦି ଏହା ଚିହ୍ନଟ କରାଯାଏ, ତେବେ ଧମକ ସୁନିଶ୍ଚିତ କରି ଆପ ୟୁଜରମାନଙ୍କୁ ଚେତାବନୀ ଦେବା ପାଇଁ କିଛି ଆପ ସୂଚନା Google Playକୁ ପଠାଯାଏ।</string>
     <string name="contextual_timeout_description">ଯଦି ଆପଣ ଆପଣଙ୍କ ଡିଭାଇସ ବ୍ୟବହାର କରୁନାହାଁନ୍ତି ତେବେ ଏହା ଶୀଘ୍ର ଆପଣଙ୍କର ସ୍କ୍ରିନକୁ ସ୍ୱତଃ ବନ୍ଦ କରେ</string>
     <string name="contextual_timeout_title">ଆଡେପ୍ଟିଭ ଟାଇମଆଉଟ</string>
+    <string name="credentials_install_summary" product="default">ଷ୍ଟୋରେଜରୁ ସାର୍ଟିଫିକେଟ ଇନଷ୍ଟଲ କରନ୍ତୁ</string>
     <string name="debugging_data_title">ଡିବଗିଂ ଡାଟା</string>
     <string name="discover_tips_button">ଟିପ୍ସ ଡିସ୍କଭର କରନ୍ତୁ</string>
     <string name="dock_summary_charging_phone">ଫୋନ୍ ଚାର୍ଜ ହେଉଛି</string>
     <string name="double_twist_for_camera_mode_summary">Google Cameraରେ ସେଲଫି ମୋଡକୁ ସ୍ୱିଚ୍ ଇନ୍‌ କିମ୍ବା ଆଉଟ୍‌ କରିବା ପାଇଁ, ଆପ୍‌ ବ୍ୟବହାର କରୁଥିବା ସମୟରେ ଦୁଇଥର-ଟ୍ୱିଷ୍ଟ କରନ୍ତୁ।</string>
     <string name="duration_less_than_one_minute">1 ମିନିଟରୁ କମ୍‌</string>
     <string name="enable_glanceable_hub_toggle">ହବ ମୋଡ</string>
+    <string name="erase_external_storage" product="default">USB ଷ୍ଟୋରେଜ୍‌କୁ ଲିଭାନ୍ତୁ</string>
+    <string name="erase_external_storage_description" product="default">ଇଣ୍ଟର୍‌ନଲ୍ USB ଷ୍ଟୋରେଜ୍‌ରେ ସମସ୍ତ ଡାଟା ଲିଭାନ୍ତୁ, ଯେପରିକି ମ୍ୟୁଜିକ୍‌ କିମ୍ବା ଫଟୋଗୁଡ଼ିକ</string>
     <string name="extreme_battery_saver_summary">ଉପରେ ତାଲିକାଭୁକ୍ତ ସମସ୍ତ ପରିବର୍ତ୍ତନକୁ ଅନ୍ତର୍ଭୁକ୍ତ କରେ। ଏହା ସହିତ ଅତ୍ୟାବଶ୍ୟକ-ହୋଇନଥିବା ଆପ୍ସ ଏବଂ ସେଗୁଡ଼ିକର ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକୁ ବିରତ କରେ।</string>
     <string name="extreme_battery_saver_title">ଏକ୍ସଟ୍ରିମ ବେଟେରୀ ସେଭର</string>
     <string name="face_confirmation_hide_illustration_description">ବର୍ତ୍ତମାନ ଆପଣ ଆପଣଙ୍କ ଫୋନ ଉଠାଇବା ବା ସ୍କ୍ରିନରେ ଟାପ କରିବା ସମୟରେ ଏହାକୁ ଅନଲକ କରିବା ପାଇଁ ଆପଣ ଆପଣଙ୍କର ଫେସ ବ୍ୟବହାର କରିପାରିବେ।</string>
@@ -228,6 +231,9 @@
     <string name="limited_warranty_title">ସୀମିତ ୱାରେଣ୍ଟି</string>
     <string name="lockscreen_show_weather_summary">ବର୍ତ୍ତମାନର ପାଣିପାଗ ଅବସ୍ଥା ଦେଖନ୍ତୁ</string>
     <string name="lockscreen_show_weather_title">ପାଣିପାଗ ଦେଖାନ୍ତୁ</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+ମ୍ୟୁଜିକ, ଛବି ଓ ଅନ୍ୟ ୟୁଜର ଡାଟାକୁ ଖାଲି କରିବାକୁ "<b>USB ଷ୍ଟୋରେଜ</b>କୁ ଇରେଜ କରିବା ଆବଶ୍ୟକ।</string>
     <string name="my_device_info_account_preference_title">Google ଆକାଉଣ୍ଟ</string>
     <string name="owner_info_settings_edit_text_hint">ଯେପରି ରାଜୁର Pixel।</string>
     <string name="permit_debugging_data">ବଗ ରିପୋର୍ଟ ଆକ୍ସେସ ପାଇଁ ଅନୁମତି ଦିଅନ୍ତୁ</string>
@@ -278,6 +284,7 @@
     <string name="security_dismiss_dialog_title">ଏହି ଚେତାବନୀ ଖାରଜ କରିବେ?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">ସେଟ ଅପ କରିବାକୁ ଟାପ କରନ୍ତୁ</string>
     <string name="security_settings_face_enroll_education_message">ପରବର୍ତ୍ତୀ ସ୍କ୍ରିନ୍‌ରେ, ଆପଣଙ୍କ ମୁହଁକୁ ସବୁ ଦିଗରୁ କ୍ୟାପ୍ଚର୍ କରିବା ପାଇଁ ଆପଣଙ୍କ ମୁଣ୍ଡ ବୁଲାନ୍ତୁ</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">ପରବର୍ତ୍ତୀ ସ୍କ୍ରିନରେ, ଆପଣଙ୍କ ଫୋନକୁ ଆଖି ସିଧାରେ ଧରି ରଖନ୍ତୁ</string>
     <string name="security_settings_face_enroll_error_generic_dialog_message">ମୁହଁ ମାଧ୍ୟମରେ ଚିହ୍ନଟ ହୋଇପାରିଲା ନାହିଁ।</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">ମୁହଁ ମାଧ୍ୟମରେ ଚିହ୍ନଟର ସମୟ ସୀମା ସମ୍ପୂର୍ଣ୍ଣ ହୋଇଛି। ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">ଫେସ ଅନଲକ ସେଟଅପ ସମୟସୀମା ସମାପ୍ତ ହୋଇଯାଇଛି</string>
@@ -293,13 +300,29 @@
 ପର୍ଯ୍ୟାପ୍ତ ଆଲୋକ ଥିବା ସମୟରେ ଏବଂ ଆପଣ କୌଣସି ମାସ୍କ ବା ଗାଢ଼ା ରଙ୍ଗର ଚଷମା ପିନ୍ଧି ନଥିଲେ ଫେସ ଅନଲକ ସବୁଠାରୁ ଭଲ କାମ କରେ।"</string>
     <string name="security_settings_face_enroll_finish_title">ଠିକ ଥିବା ପରି ଲାଗୁଛି!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">ସୀମିତ ଭିଜନ ବା ହେଡ ମୋସନ ପାଇଁ ସେଟଅପ କରନ୍ତୁ</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">ଫେସ ଅନଲକ ବ୍ୟବହାର କରିବା ସମୟରେ ଆପଣଙ୍କ ମୁଣ୍ଡ ଆପଣଙ୍କ ଫୋନ ସାମ୍ନାରେ ସମ୍ପୂର୍ଣ୍ଣ ସିଧା ରହିବା ଆବଶ୍ୟକ।</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">ଆଖି ଖୋଲା ରଖିବା ଆବଶ୍ୟକ</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"ଆପଣଙ୍କ ପିଲାର ଫେସ ମଡେଲକୁ ଆପଣ ଏବଂ ସେ ଡିଲିଟ କରିପାରିବେ କିମ୍ବା ଯେ କୌଣସି ସମୟରେ ସେଟିଂସରେ ଫେସ ଅନଲକକୁ ବନ୍ଦ କରିପାରିବେ। ଫେସ ମଡେଲଗୁଡ଼ିକୁ ଡିଲିଟ କରାନଯିବା ପର୍ଯ୍ୟନ୍ତ ସେଗୁଡ଼ିକ ଫୋନରେ ଷ୍ଟୋର ହୋଇ ରହିଥାଏ।&lt;br&gt;&lt;br&gt;&lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;ରେ ଅଧିକ ଜାଣନ୍ତୁ।"</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">ଆପଣଙ୍କ ଏବଂ ଆପଣଙ୍କ ପିଲା ପାଖରେ ନିୟନ୍ତ୍ରଣ ଅଛି</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"ଆପଣ ଆପଣଙ୍କ ଫେସ ମଡେଲକୁ ଡିଲିଟ କରିପାରିବେ କିମ୍ବା ଯେ କୌଣସି ସମୟରେ ସେଟିଂସରେ ଫେସ ଅନଲକକୁ ବନ୍ଦ କରିପାରିବେ। ଫେସ ମଡେଲଗୁଡ଼ିକୁ ଆପଣ ଡିଲିଟ ନକରିବା ପର୍ଯ୍ୟନ୍ତ ସେଗୁଡ଼ିକ ଫୋନରେ ଷ୍ଟୋର ହୋଇ ରହିଥାଏ।&lt;br&gt;&lt;br&gt;&lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;ରେ ଅଧିକ ଜାଣନ୍ତୁ।"</string>
     <string name="security_settings_face_enroll_introduction_control_title">ଆପଣଙ୍କ ନିୟନ୍ତ୍ରଣରେ ଅଛି</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"ଏହା ଆପଣଙ୍କ ପିଲା ଅଟେ ବୋଲି ଯାଞ୍ଚ କରିବା ପାଇଁ ଫେସ ଅନଲକ ତା'ର ଫେସର ଏକ ସ୍ୱତନ୍ତ୍ର ମଡେଲ ତିଆରି କରିଥାଏ। ସେଟଅପ ସମୟରେ ଏହି ଫେସ ମଡେଲ ତିଆରି କରିବା ପାଇଁ, ଆପଣଙ୍କ ପିଲା ବିଭିନ୍ନ ଆଙ୍ଗେଲରୁ ତା’ର ଫେସର ଇମେଜ ନେବ।
+
+ସେ ଫେସ ଅନଲକ ବ୍ୟବହାର କରିବା ସମୟରେ, ତା’ର ଫେସ ମଡେଲକୁ ଅପଡେଟ କରିବା ପାଇଁ ଇମେଜଗୁଡ଼ିକୁ ବ୍ୟବହାର କରାଯାଏ। ତା’ର ଫେସ ମଡେଲ ତିଆରି କରିବା ପାଇଁ ବ୍ୟବହୃତ ଇମେଜଗୁଡ଼ିକୁ ଷ୍ଟୋର କରାଯାଏ ନାହିଁ, କିନ୍ତୁ ଫେସ ମଡେଲକୁ ଫୋନରେ ସୁରକ୍ଷିତ ଭାବେ ଷ୍ଟୋର କରାଯାଇଥାଏ ଏବଂ ଏହାକୁ କେବେ ବି ଫୋନରୁ କାଢ଼ି ଦିଆଯାଏ ନାହିଁ। ସମସ୍ତ ପ୍ରକ୍ରିୟାକରଣ ସୁରକ୍ଷିତ ଭାବେ ଫୋନରେ କରାଯାଇଥାଏ।"</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"ଏହା ଆପଣ ବୋଲି ଯାଞ୍ଚ କରିବା ପାଇଁ ଫେସ ଅନଲକ ଆପଣଙ୍କ ଫେସର ଏକ ସ୍ୱତନ୍ତ୍ର ମଡେଲ ତିଆରି କରିଥାଏ। ସେଟଅପ ସମୟରେ ଏହି ଫେସ ମଡେଲ ତିଆରି କରିବାକୁ, ଆପଣ ବିଭିନ୍ନ ଏଙ୍ଗଲରୁ ଆପଣଙ୍କ ଫେସର ଇମେଜ ନେବେ।
+
+ଆପଣ ଫେସ ଅନଲକ ବ୍ୟବହାର କରିବା ସମୟରେ, ଆପଣଙ୍କ ଫେସ ମଡେଲକୁ ଅପଡେଟ କରିବା ପାଇଁ ଇମେଜଗୁଡ଼ିକୁ ବ୍ୟବହାର କରାଯାଏ। ଆପଣଙ୍କ ଫେସ ମଡେଲ ତିଆରି କରିବା ପାଇଁ ବ୍ୟବହୃତ ଇମେଜଗୁଡ଼ିକୁ ଷ୍ଟୋର କରାଯାଏ ନାହିଁ, କିନ୍ତୁ ଫେସ ମଡେଲ ଆପଣଙ୍କ ଫୋନରେ ସୁରକ୍ଷିତ ଭାବେ ଷ୍ଟୋର କରାଯାଇଥାଏ ଏବଂ ଏହାକୁ କେବେ ବି ଫୋନରୁ କାଢ଼ି ଦିଆଯାଏ ନାହିଁ। ସମସ୍ତ ପ୍ରକ୍ରିୟାକରଣ ସୁରକ୍ଷିତ ଭାବେ ଆପଣଙ୍କ ଫୋନରେ କରାଯାଏ।"</string>
     <string name="security_settings_face_enroll_introduction_how_title">ଏହା କିପରି କାମ କରେ</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">ଫୋନକୁ ଅନଲକ କରିବା କିମ୍ବା ଆପଣଙ୍କ ପିଲାର ପରିଚୟ ଯାଞ୍ଚ କରିବା ପାଇଁ ଫେସ ଅନଲକ ନିମନ୍ତେ ଆପଣଙ୍କ ପିଲାର ଆଖି ଖୋଲା ରହିବା ଆବଶ୍ୟକ ହୋଇପାରେ। ଆପଣ ଏବଂ ଆପଣଙ୍କ ପିଲା ଯେ କୌଣସି ସମୟରେ ସେଟିଂସରେ ଏହି ବିକଳ୍ପକୁ ବନ୍ଦ କରିପାରିବେ।</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">ଯଦି ଆପଣଙ୍କ ପିଲା ସାଧାରଣତଃ ଚଷମା ପିନ୍ଧେ, ତେବେ ସେଟଅପ୍ ସମୟରେ ସେ ତାହା ପିନ୍ଧିପାରିବ।</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">"ଏକ ଜଟିଳ ପାଟର୍ନ, PIN କିମ୍ବା ପାସୱାର୍ଡ ଅପେକ୍ଷା ଆପଣଙ୍କ ପିଲାର ଫେସ ବ୍ୟବହାର କରି ତା'ର ଫୋନକୁ ଅନଲକ କରିବା କମ ସୁରକ୍ଷିତ ହୋଇପାରେ"</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">ସେ ଅଜାଣତରେ ମଧ୍ୟ ତା’ର ଫୋନକୁ ଦେଖିଲେ ଏହା ଅନଲକ ହୋଇପାରିବ। ତା ପରି ଦେଖାଯାଉଥିବା କେହି ଜଣେ ଯେପରି ଯାଆଁଳା ଭାଇ/ଭଉଣୀଙ୍କ ଦ୍ୱାରା କିମ୍ବା କୌଣସି ବ୍ୟକ୍ତି ତା’ର ଫୋନକୁ ତା’ର ଫେସ ସାମ୍ନାରେ ରଖିଲେ ମଧ୍ୟ ଏହାକୁ ଅନଲକ କରାଯାଇପାରିବ।</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">ଫୋନକୁ ଅନଲକ କରିବା କିମ୍ବା ଏହା ଆପଣ ଅଟନ୍ତି ବୋଲି ଯାଞ୍ଚ କରିବା ପାଇଁ ଫେସ ଅନଲକ ନିମନ୍ତେ ଆପଣଙ୍କ ଆଖି ଖୋଲା ରହିବା ଆବଶ୍ୟକ ହୋଇପାରେ। ଆପଣ ଯେ କୌଣସି ସମୟରେ ସେଟିଂସରେ ଏହି ବିକଳ୍ପକୁ ବନ୍ଦ କରିପାରିବେ।</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">ଚଷମା କିମ୍ବା ହାଲୁକା ରଙ୍ଗର ସନଗ୍ଲାସ୍ ଠିକ୍ ଅଟେ।</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">ଆପଣଙ୍କ ଫୋନକୁ ଅନଲକ କରିବା ପାଇଁ ଏକ ଜଟିଳ ପାଟର୍ନ, PIN କିମ୍ବା ପାସୱାର୍ଡ ଅପେକ୍ଷା ଆପଣଙ୍କର ଫେସ ବ୍ୟବହାର କରିବା କମ ସୁରକ୍ଷିତ ହୋଇପାରେ</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">ଆପଣ ଅଜାଣତରେ ମଧ୍ୟ ଆପଣଙ୍କ ଫୋନକୁ ଦେଖିଲେ ଏହା ଅନଲକ ହୋଇପାରିବ। ଆପଣଙ୍କ ପରି ଦେଖାଯାଉଥିବା କୌଣସି ବ୍ୟକ୍ତି ଯେପରି ଯାଆଁଳା ଭାଇ/ଭଉଣୀ କିମ୍ବା କେହି ଜଣେ ଆପଣଙ୍କ ଫୋନକୁ ଆପଣଙ୍କ ଫେସ ସାମ୍ନାରେ ରଖି ମଧ୍ୟ ଏହାକୁ ଅନଲକ କରିପାରିବେ।</string>
     <string name="security_settings_face_enroll_introduction_info_title">ମନେ ରଖନ୍ତୁ</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">ଆପଣ ଆପ୍ସରେ ସାଇନ ଇନ କରିବା କିମ୍ବା କୌଣସି କ୍ରୟକୁ ଅନୁମୋଦନ ଦେବା ବେଳେ, ଆପଣଙ୍କ ଫୋନକୁ ଅନଲକ କରିବା କିମ୍ବା ଏହା ଆପଣ ବୋଲି ଯାଞ୍ଚ କରିବା ପାଇଁ ଆପଣଙ୍କ ଫେସ ବ୍ୟବହାର କରନ୍ତୁ।</string>
     <string name="security_settings_face_enroll_introduction_title">ଫେସ ଅନଲକ ସେଟ ଅପ କରନ୍ତୁ</string>
     <string name="security_settings_face_enroll_next">ପରବର୍ତ୍ତୀ</string>
     <string name="security_settings_face_enroll_partial_message">ପରଫରମାନ୍ସରେ ଉନ୍ନତି ଆଣିବାକୁ, ଆପଣ ସେଟିଂସରେ ପୁଣି ଫେସ୍ ଅନଲକ ସେଟ ଅପ କରିପାରିବେ</string>
@@ -326,7 +349,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">ଟିପଚିହ୍ନ ସେଟ ଅପ କରିବା ପାଇଁ ଟାପ କରନ୍ତୁ</string>
     <string name="security_settings_fingerprint_preference_title">Nexus ଇମପ୍ରିଣ୍ଟ</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">ଏହା ଆପଣ ବୋଲି ଯାଞ୍ଚ କରିବା ପାଇଁ Pixel Imprint ଆପଣଙ୍କ ଟିପଚିହ୍ନର ଏକ ସ୍ୱତନ୍ତ୍ର ମଡେଲ୍ ତିଆରି କରିଥାଏ। ସେଟଅପ୍ ସମୟରେ ଏହି ଟିପଚିହ୍ନ ମଡେଲ୍ ତିଆରି କରିବାକୁ, ଆପଣ ବିଭିନ୍ନ ଅବସ୍ଥିତିରୁ ଆପଣଙ୍କ ଟିପଚିହ୍ନର ଛବି ନେବେ।</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">ଆପଣ Pixel ଇମପ୍ରିଣ୍ଟ ବ୍ୟବହାର କରିବା ସମୟରେ, ଆପଣଙ୍କ ଟିପଚିହ୍ନ ମଡେଲକୁ ଅପଡେଟ କରିବା ପାଇଁ ଇମେଜଗୁଡ଼ିକୁ ବ୍ୟବହାର କରାଯାଏ। ଆପଣଙ୍କ ଟିପଚିହ୍ନ ମଡେଲ ତିଆରି କରିବା ପାଇଁ ବ୍ୟବହୃତ ଇମେଜଗୁଡ଼ିକୁ କେବେ ବି ଷ୍ଟୋର କରାଯାଏ ନାହିଁ, କିନ୍ତୁ ଟିପଚିହ୍ନ ମଡେଲ ଆପଣଙ୍କ ଫୋନରେ ସୁରକ୍ଷିତ ଭାବେ ଷ୍ଟୋର କରାଯାଇଥାଏ ଏବଂ ଏହାକୁ କେବେ ବି ଫୋନରୁ କାଢ଼ି ଦିଆଯାଏ ନାହିଁ। ସମସ୍ତ ପ୍ରକ୍ରିୟାକରଣ ସୁରକ୍ଷିତ ଭାବେ ଆପଣଙ୍କ ଫୋନରେ କରାଯାଇଥାଏ।</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">ଆପଣ ଆପଣଙ୍କ ଟିପଚିହ୍ନ ମଡେଲକୁ ଡିଲିଟ କରିପାରିବେ କିମ୍ବା ଯେ କୌଣସି ସମୟରେ ସେଟିଂସରେ Pixel ଇମପ୍ରିଣ୍ଟକୁ ବନ୍ଦ କରିପାରିବେ। ଟିପଚିହ୍ନ ମଡେଲଗୁଡ଼ିକୁ ଆପଣ ଡିଲିଟ ନକରିବା ପର୍ଯ୍ୟନ୍ତ ସେଗୁଡ଼ିକ ଫୋନରେ ଷ୍ଟୋର ହୋଇ ରହିଥାଏ।</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">"ଏହା ଆପଣଙ୍କ ପିଲା ବୋଲି ଯାଞ୍ଚ କରିବା ପାଇଁ Pixel Imprint ତା’ର ଟିପଚିହ୍ନର ଏକ ସ୍ୱତନ୍ତ୍ର ମଡେଲ୍ ତିଆରି କରିଥାଏ। ସେଟଅପ୍ ସମୟରେ ଏହି ଟିପଚିହ୍ନ ମଡେଲ୍ ତିଆରି କରିବାକୁ, ସେ ବିଭିନ୍ନ ଅବସ୍ଥିତିରୁ ତା'ର ଟିପଚିହ୍ନର ଛବି ନେବ।"</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">"ସେ Pixel ଇମପ୍ରିଣ୍ଟ ବ୍ୟବହାର କରିବା ସମୟରେ, ତା'ର ଟିପଚିହ୍ନ ମଡେଲକୁ ଅପଡେଟ କରିବା ପାଇଁ ଇମେଜଗୁଡ଼ିକୁ ବ୍ୟବହାର କରାଯାଏ। ଆପଣଙ୍କ ପିଲାର ଟିପଚିହ୍ନ ମଡେଲ ତିଆରି କରିବା ପାଇଁ ବ୍ୟବହୃତ ଇମେଜଗୁଡ଼ିକୁ କେବେ ବି ଷ୍ଟୋର କରାଯାଏ ନାହିଁ, କିନ୍ତୁ ଟିପଚିହ୍ନ ମଡେଲକୁ ଫୋନରେ ସୁରକ୍ଷିତ ଭାବେ ଷ୍ଟୋର କରାଯାଇଥାଏ ଏବଂ ଏହାକୁ କେବେ ବି ଫୋନରୁ କାଢ଼ି ଦିଆଯାଏ ନାହିଁ। ସମସ୍ତ ପ୍ରକ୍ରିୟାକରଣ ସୁରକ୍ଷିତ ଭାବେ ଫୋନରେ କରାଯାଇଥାଏ।"</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">"ଆପଣ ଏବଂ ଆପଣଙ୍କ ପିଲା ତା'ର ଟିପଚିହ୍ନ ମଡେଲକୁ ଡିଲିଟ କରିପାରିବେ କିମ୍ବା ଯେ କୌଣସି ସମୟରେ ସେଟିଂସରେ Pixel Imprintକୁ ବନ୍ଦ କରିପାରିବେ। ଟିପଚିହ୍ନ ମଡେଲଗୁଡ଼ିକୁ ଡିଲିଟ୍ କରାନଯିବା ପର୍ଯ୍ୟନ୍ତ ସେଗୁଡ଼ିକ ଫୋନରେ ଷ୍ଟୋର୍ ହୋଇ ରହିଥାଏ।"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"&lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;ରେ Pixel ଫିଙ୍ଗରପ୍ରିଣ୍ଟ ଅନଲକ ବିଷୟରେ ଅଧିକ ଜାଣନ୍ତୁ।"</string>
     <string name="security_settings_work_fingerprint_preference_title">କାର୍ଯ୍ୟ ପାଇଁ Pixel ଇମପ୍ରିଣ୍ଟ</string>
     <string name="setup_suggestion_summary">କେବଳ ଆଉ କିଛି ଅଧିକ ଷ୍ଟେପ</string>
@@ -335,6 +362,7 @@
     <string name="smart_battery_a11y_expand_label">ବିସ୍ତାର କରନ୍ତୁ, ଆଡେପ୍ଟିଭ ବେଟେରୀ</string>
     <string name="smart_battery_footer">ବ୍ୟାଟେରୀ ଲାଇଫ୍ ବଢ଼ାଇବାକୁ, ପରଫରମାନ୍ସ ଏବଂ ପୃଷ୍ଠପଟର କାର୍ଯ୍ୟକଳାପକୁ ଆଡେପ୍ଟିଭ୍ ବ୍ୟାଟେରୀ କମ୍ କରିପାରେ। କିଛି ବିଜ୍ଞପ୍ତି ପାଇଁ ବିଳମ୍ବ ହୋଇପାରେ।</string>
     <string name="smart_battery_manager_title">ଆଡେପ୍ଟିଭ ପସନ୍ଦଗୁଡ଼ିକ</string>
+    <string name="smart_battery_summary" product="default">ଆପ୍ସ ବେଟେରୀକୁ କିପରି ବ୍ୟବହାର କରେ ତାହାକୁ ନିରନ୍ତର ଭାବେ ଅପ୍ଟିମାଇଜ କରିବା ପାଇଁ ଆଡେପ୍ଟିଭ ବେଟେରୀ ଆପଣଙ୍କ ଫୋନ ବ୍ୟବହାରରୁ ଜାଣିଥାଏ। ବେଟେରୀ ଲାଇଫ ବଢ଼ାଇବା ପାଇଁ ଏହା ପରଫରମାନ୍ସକୁ ହ୍ରାସ କରିପାରେ ଏବଂ ବିଜ୍ଞପ୍ତିକୁ ବିଳମ୍ବ କରିପାରେ।</string>
     <string name="smart_battery_title">ଆଡେପ୍ଟିଭ ବେଟେରୀ</string>
     <string name="software_update_can_be_updated_header">ଆପଣଙ୍କ Pixelକୁ ଆହୁରି ଉନ୍ନତ କରନ୍ତୁ</string>
     <string name="software_update_detail_indication_1_update_available">1 ଅପଡେଟ ଉପଲବ୍ଧ ଅଛି</string>

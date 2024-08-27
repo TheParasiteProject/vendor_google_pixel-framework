@@ -148,12 +148,15 @@ Mashtrimi është një përpjekje për të vjedhur kredencialet e identifikimit 
     <string name="content_protection_preference_subpage_summary">Skanimi ekzekutohet në mënyrë private pikërisht në pajisjen tënde, duke kontrolluar aktivitetin e aplikacioneve për mashtrime ose sjellje të tjera mashtruese. Nëse zbulohen, disa informacione të aplikacionit dërgohen te Google Play Protect për të konfirmuar kërcënimin dhe për të paralajmëruar përdoruesit e tjerë të aplikacionit.</string>
     <string name="contextual_timeout_description">Fik automatikisht herët ekranin nëse nuk po e përdor pajisjen</string>
     <string name="contextual_timeout_title">Koha e pritjes me përshtatje</string>
+    <string name="credentials_install_summary" product="default">Instalo certifikatat nga hapësira ruajtëse</string>
     <string name="debugging_data_title">Të dhënat e korrigjimit të gabimeve</string>
     <string name="discover_tips_button">Zbulo këshilla</string>
     <string name="dock_summary_charging_phone">Telefoni po karikohet</string>
     <string name="double_twist_for_camera_mode_summary">Për të hyrë dhe dalë nga modaliteti për \"selfie\" në \"Kamerën e Google\", përdridhe dy herë kur je në aplikacion.</string>
     <string name="duration_less_than_one_minute">Më pak se 1 minutë</string>
     <string name="enable_glanceable_hub_toggle">Modaliteti Hub</string>
+    <string name="erase_external_storage" product="default">Fshi hapësirën ruajtëse të USB-së</string>
+    <string name="erase_external_storage_description" product="default">Spastro të gjitha të dhënat në hapësirën ruajtëse të brendshme të USB-së, si muzikën ose fotografitë</string>
     <string name="extreme_battery_saver_summary">Përfshin të gjitha ndryshimet e listuara më sipër. Vendos në pauzë edhe aplikacionet jothelbësore dhe njoftimet e tyre.</string>
     <string name="extreme_battery_saver_title">Kursyesi ekstrem i baterisë</string>
     <string name="face_confirmation_hide_illustration_description">Tani kur ngre telefonin ose troket në ekran, mund të përdorësh fytyrën tënde për ta shkyçur.</string>
@@ -228,6 +231,9 @@ Të dhënat e rezervimit nuk do të ndikojnë në kuotat e hapësirës ruajtëse
     <string name="limited_warranty_title">Garancia e kufizuar</string>
     <string name="lockscreen_show_weather_summary">Shiko kushtet aktuale të motit</string>
     <string name="lockscreen_show_weather_title">Shfaq motin</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Për të hequr muzikën, fotografitë dhe të dhëna të tjera të përdoruesit, "<b>hapësira ruajtëse e USB-së</b> duhet të spastrohet.</string>
     <string name="my_device_info_account_preference_title">Llogaria e Google</string>
     <string name="owner_info_settings_edit_text_hint">P.sh. pajisja Pixel e Admirit</string>
     <string name="permit_debugging_data">Lejo qasjen te raportet e defekteve në kod</string>
@@ -280,6 +286,7 @@ Ktheje telefonin nga ana tjetër dhe provo."</string>
     <string name="security_settings_face_enroll_consent_introduction_title">Lejo \"Shkyçjen me fytyrë\"</string>
     <string name="security_settings_face_enroll_dialog_ok">Në rregull</string>
     <string name="security_settings_face_enroll_education_message">Në ekranin tjetër, rrotullo kokën për të regjistruar të gjitha këndet e fytyrës sate</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Në ekranin tjetër, mbaje telefonin në nivelin e syve</string>
     <string name="security_settings_face_enroll_error_generic_dialog_message">Regjistrimi me fytyrë nuk funksionoi.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">U arrit afati i regjistrimit. Provo sërish.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Konfigurimit të \"Shkyçjes me fytyrë\" i mbaroi koha</string>
@@ -295,13 +302,29 @@ Ktheje telefonin nga ana tjetër dhe provo."</string>
 \"Shkyçja me fytyrë\" funksionon më mirë kur ka ndriçim të mjaftueshëm dhe nuk ke vënë një maskë ose syze të errëta."</string>
     <string name="security_settings_face_enroll_finish_title">Duket mirë!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Konfigurimi për kufizime me shikimin ose lëvizjen e kokës</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Kur përdor \"Shkyçjen me fytyrë\", mund të jetë e nevojshme që koka jote të jetë më drejtpërdrejt përpara telefonit tënd.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Kërko sy të hapur</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Ti dhe fëmija yt mund ta fshini modelin e fytyrës së tij ose ta çaktivizoni \"Shkyçjen me fytyrë\" në çdo kohë te \"Cilësimet\". Modelet e fytyrës ruhen në telefon derisa të fshihen.&lt;br&gt;&lt;br&gt;Mëso më shumë në &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Kontrollin e ke ti dhe fëmija yt</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Mund ta fshish modelin e fytyrës sate ose ta çaktivizosh \"Shkyçjen me fytyrë\" në çdo kohë te \"Cilësimet\". Modelet e fytyrës ruhen në telefon derisa t'i fshish.&lt;br&gt;&lt;br&gt;Mëso më shumë në &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Kontrolli është në duart e tua</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"\"Shkyçja me fytyrë\" krijon një model unik të fytyrës së fëmijës tënd për të verifikuar që është ai. Për ta krijuar këtë model të fytyrës gjatë konfigurimit, fëmija nxjerr imazhe të fytyrës së tij nga kënde të ndryshme.
+
+Kur të përdorë \"Shkyçjen me fytyrë\", imazhet përdoren për të përditësuar modelin e fytyrës së tij. Imazhet e përdorura për të krijuar modelin e fytyrës së fëmijës nuk ruhen, por modeli i fytyrës ruhet në mënyrë të sigurt në telefon dhe nuk largohet asnjëherë nga telefoni. I gjithë përpunimi ndodh në mënyrë të sigurt në telefon."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"\"Shkyçja me fytyrë\" krijon një model unik të fytyrës sate për të verifikuar që je ti. Për ta krijuar këtë model të fytyrës gjatë konfigurimit, do të nxjerrësh imazhe të fytyrës sate nga kënde të ndryshme.
+
+Kur përdor \"Shkyçjen me fytyrë\", imazhet përdoren për të përditësuar modelin e fytyrës sate. Imazhet e përdorura për të krijuar modelin e fytyrës sate nuk ruhen, por modeli i fytyrës sate ruhet në mënyrë të sigurt në telefonin tënd dhe nuk largohet asnjëherë nga telefoni. I gjithë përpunimi ndodh në mënyrë të sigurt në telefonin tënd."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Si funksionon</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">\"Shkyçja me fytyrë\" mund të kërkojë që sytë e fëmijës tënd të jenë të hapur për të shkyçur telefonin ose për të verifikuar që është ai fëmijë. Ti dhe fëmija yt mund ta aktivizoni këtë opsion në çdo kohë te \"Cilësimet\".</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">"Nëse fëmija yt normalisht mban syze, mund t'i mbajë dhe gjatë konfigurimit."</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Përdorimi i fytyrës së fëmijës për të shkyçur telefonin e tij mund të jetë më pak i sigurt sesa një motiv, kod PIN apo fjalëkalim i fortë.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Shikimi drejt telefonit mund ta shkyçë atë edhe nëse nuk kishte për qëllim ta bënte. Telefoni i tij mund të shkyçet dhe nga dikush që i ngjan shumë, si p.sh. një binjak identik, ose nëse dikush ia mban telefonin në nivelin e fytyrës.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">\"Shkyçja me fytyrë\" mund të kërkojë që sytë e tu të jenë të hapur për të shkyçur telefonin ose për të verifikuar që je ti. Mund ta aktivizosh këtë opsion në çdo kohë te \"Cilësimet\".</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Syzet optike dhe syzet e diellit me nuancë të lehtë janë të pranueshme.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Përdorimi i fytyrës sate për të shkyçur telefonin mund të jetë më pak i sigurt se një motiv, kod PIN ose fjalëkalim i fortë</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Shikimi te telefoni mund ta shkyçë atë edhe nëse nuk ke për qëllim ta bësh. Telefoni yt mund të shkyçet dhe nga dikush që të ngjan shumë, si p.sh. një binjak identik, ose nëse dikush e mban telefonin në nivelin e fytyrës sate.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Ki parasysh</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Përdor fytyrën tënde për të shkyçur telefonin tënd ose për të verifikuar që je ti, si p.sh. kur identifikohesh në aplikacione ose kur miraton një blerje.</string>
     <string name="security_settings_face_enroll_introduction_title">Konfiguro \"Shkyçjen me fytyrë\"</string>
     <string name="security_settings_face_enroll_next">Para</string>
     <string name="security_settings_face_enroll_partial_message">Për të përmirësuar cilësinë e funksionimit, mund ta konfigurosh \"Shkyçjen me fytyrë\" përsëri te \"Cilësimet\"</string>
@@ -327,7 +350,11 @@ Shënim. Nuk mund ta përdorësh gjurmën tënde të gishtit për ta shkyçur k�
     <string name="security_settings_fingerprint_preference_summary_none">Trokit për të konfiguruar gjurmën e gishtit</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">"Pixel Imprint krijon një model unik të gjurmës sate të gishtit për të verifikuar që je ti. Për ta krijuar këtë model të gjurmës së gishtit gjatë konfigurimit, duhet t'i regjistrosh nga pozicione të ndryshme imazhet e gjurmës sate të gishtit."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Kur përdor Pixel Imprint, imazhet përdoren për të përditësuar modelin tënd të gjurmës së gishtit. Imazhet e përdorura për të krijuar modelin e gjurmës sate të gishtit nuk ruhen asnjëherë, por modeli i gjurmës sate të gishtit ruhet në mënyrë të sigurt në telefonin tënd dhe nuk largohet kurrë nga telefoni. I gjithë përpunimi ndodh në mënyrë të sigurt në telefonin tënd.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">"Mund ta fshish modelin e gjurmës sate të gishtit ose ta çaktivizosh Pixel Imprint në çdo kohë te \"Cilësimet\". Modelet e gjurmëve të gishtave ruhen në telefon derisa t'i fshish."</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">"Pixel Imprint krijon një model unik të gjurmës së gishtit të fëmijës tënd për të verifikuar që është ai. Për ta krijuar këtë model të gjurmës së gishtit gjatë konfigurimit, ai duhet t'i regjistrojë nga pozicione të ndryshme imazhet e gjurmës sate të gishtit."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">Kur të përdorë Pixel Imprint, imazhet përdoren për të përditësuar modelin e tij të gjurmës së gishtit. Imazhet e përdorura për të krijuar modelin e gjurmës së gishtit të fëmijës tënd nuk ruhen asnjëherë, por modeli i gjurmës së gishtit ruhet në mënyrë të sigurt në telefon dhe nuk largohet kurrë nga telefoni. I gjithë përpunimi ndodh në mënyrë të sigurt në telefon.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Ti dhe fëmija mund ta fshini modelin e gjurmës së tij të gishtit, ose ta çaktivizoni Pixel Imprint në çfarëdo kohe te \"Cilësimet\". Modelet e gjurmës së gishtit ruhen në telefon derisa të fshihen.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Mëso më shumë për shkyçjen me gjurmën e gishtit në telefonin Pixel në &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint për punën</string>
     <string name="setup_suggestion_summary">Vetëm edhe disa hapa</string>
@@ -336,6 +363,7 @@ Shënim. Nuk mund ta përdorësh gjurmën tënde të gishtit për ta shkyçur k�
     <string name="smart_battery_a11y_expand_label">Zgjero, \"Bateria me përshtatje\"</string>
     <string name="smart_battery_footer">Për të rritur kohëzgjatjen e baterisë, \"Bateria me përshtatje\" mund të reduktojë cilësinë e funksionimit dhe aktivitetin në sfond. Disa njoftime mund të vonohen.</string>
     <string name="smart_battery_manager_title">Preferencat me përshtatje</string>
+    <string name="smart_battery_summary" product="default">\"Bateria me përshtatje\" mëson nga përdorimi i telefonit tënd për të optimizuar vazhdimisht mënyrën se si aplikacionet e përdorin baterinë. Për të rritur kohëzgjatjen e baterisë, ajo mund të reduktojë performancën dhe të vonojë njoftimet.</string>
     <string name="smart_battery_title">Bateria me përshtatje</string>
     <string name="software_update_can_be_updated_header">Bëje pajisjen tënde Pixel akoma më të mirë</string>
     <string name="software_update_detail_indication_1_update_available">Ofrohet 1 përditësim</string>

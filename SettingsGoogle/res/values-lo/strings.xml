@@ -149,6 +149,7 @@
     <string name="content_protection_preference_subpage_summary">ການສະແກນຈະເກີດຂຶ້ນແບບສ່ວນຕົວຢູ່ອຸປະກອນຂອງທ່ານເພື່ອກວດສອບການເຄື່ອນໄຫວແອັບສຳລັບການຫຼອກເອົາຂໍ້ມູນ ຫຼື ພຶດຕິກຳຫຼອກລວງອື່ນໆ. ຫາກມັນກວດພົບ, ຂໍ້ມູນແອັບບາງຢ່າງຈະຖືກສົ່ງໄປໃຫ້ Google Play Protect ເພື່ອຢືນຢັນໄພຄຸກຄາມ ແລະ ເຕືອນຜູ້ໃຊ້ແອັບ.</string>
     <string name="contextual_timeout_description">ປິດໜ້າຈໍຂອງທ່ານໂດຍອັດຕະໂນມັດໄວຂຶ້ນຫາກທ່ານບໍ່ໄດ້ໃຊ້ອຸປະກອນຂອງທ່ານ</string>
     <string name="contextual_timeout_title">ການໝົດເວລາປັບປ່ຽນໄດ້</string>
+    <string name="credentials_install_summary" product="default">ຕິດຕັ້ງໃບຮັບຮອງຈາກບ່ອນຈັດເກັບຂໍ້ມູນ</string>
     <string name="dark_ui_text">ຮູບແບບສີສັນມືດຈະໃຊ້ພື້ນຫຼັງສີດຳເພື່ອຊ່ວຍເຮັດໃຫ້ແບັດເຕີຣີຂອງທ່ານຢູ່ໄດ້ດົນຂຶ້ນ. ກຳນົດເວລາຮູບແບບສີສັນມືດຈະລໍຖ້າເປີດຈົນກວ່າໜ້າຈໍຂອງທ່ານຈະປິດ.</string>
     <string name="debugging_data_title">ຂໍ້ມູນການດີບັກ</string>
     <string name="discover_tips_button">ຄົ້ນພົບເຄັດລັບ</string>
@@ -156,6 +157,8 @@
     <string name="double_twist_for_camera_mode_summary">ເພື່ອສະຫຼັບເຂົ້າ ແລະ ອອກຈາກໂໝດເຊວຟີໃນກ້ອງຖ່າຍຮູບ Google, ໃຫ້ບິດມືຖືສອງເທື່ອເມື່ອທ່ານຢູ່ໃນແອັບກ້ອງ.</string>
     <string name="duration_less_than_one_minute">ໜ້ອຍກວ່າ 1 ນາທີ</string>
     <string name="enable_glanceable_hub_toggle">ໂໝດ Hub</string>
+    <string name="erase_external_storage" product="default">ລຶບພື້ນທີ່ຈັດເກັບຂໍ້ມູນ USB</string>
+    <string name="erase_external_storage_description" product="default">ລຶບຂໍ້ມູນທຸກຢ່າງທີ່ຢູ່ໃນພື້ນທີ່ຈັດເກັບຂໍ້ມູນ USB ພາຍໃນ ເຊັ່ນເພງ ຫຼືຮູບພາບ</string>
     <string name="extreme_battery_saver_summary">ຮວມທັງການປ່ຽນແປງທັງໝົດຕາມລາຍຊື່ດ້ານເທິງ. ນອກຈາກນັ້ນຍັງຢຸດແອັບທີ່ບໍ່ສຳຄັນ ແລະ ການແຈ້ງເຕືອນຂອງພວກມັນໄວ້ຊົ່ວຄາວນຳອີກ.</string>
     <string name="extreme_battery_saver_title">ຕົວປະຢັດແບັດເຕີຣີຂັ້ນສຸດຂີດ</string>
     <string name="face_confirmation_hide_illustration_description">ຕອນນີ້ທ່ານສາມາດຈັບໂທລະສັບຂອງທ່ານຂຶ້ນມາ ຫຼື ແຕະໃສ່ໜ້າຈໍໄດ້ແລ້ວ, ທ່ານສາມາດໃຊ້ໃບໜ້າຂອງທ່ານເພື່ອປົດລັອກໄດ້.</string>
@@ -229,6 +232,9 @@
     <string name="limited_warranty_title">ການຮັບປະກັນແບບຈຳກັດ</string>
     <string name="lockscreen_show_weather_summary">ເບິ່ງສະພາບອາກາດປັດຈຸບັນ</string>
     <string name="lockscreen_show_weather_title">ສະແດງສະພາບອາກາດ</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+ເພື່ອລຶບເພງ, ຮູບພາບ ແລະຂໍ້ມູນຜູ້ໃຊ້ອື່ນໆ, ຈະຕ້ອງລຶບ "<b>ບ່ອນຈັດເກັບຂໍ້ມູນ USB</b> ອອກນຳ.</string>
     <string name="my_device_info_account_preference_title">ບັນຊີ Google</string>
     <string name="owner_info_settings_edit_text_hint">ຕົວຢ່າງ: Pixel ຂອງ Joe.</string>
     <string name="permit_debugging_data">ອະນຸຍາດສິດເຂົ້າເຖິງລາຍງານຂໍ້ຜິດພາດ</string>
@@ -279,6 +285,7 @@
     <string name="security_dismiss_dialog_title">ປິດຄຳເຕືອນນີ້ໄວ້ບໍ?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">ແຕະເພື່ອຕັ້ງຄ່າ</string>
     <string name="security_settings_face_enroll_education_message">ຢູ່ໜ້າຈໍຕໍ່ໄປ, ໃຫ້ປິ່ນຫົວຂອງທ່ານເພື່ອບັນທຶກໃບໜ້າທ່ານທຸກອົງສາ</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">ຢູ່ໜ້າຈໍຕໍ່ໄປ, ໃຫ້ຖືໂທລະສັບຂອງທ່ານໄວ້ໃນລະດັບສາຍຕາ</string>
     <string name="security_settings_face_enroll_error_dialog_title">ການລົງທະບຽນບໍ່ສຳເລັດ</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">ຮອດຂີດຈຳກັດເວລາການລົງທະບຽນໃບໜ້າແລ້ວ ລອງໃໝ່.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">ໝົດເວລາຕັ້ງຄ່າການປົດລັອກດ້ວຍໜ້າ</string>
@@ -294,13 +301,29 @@
 ການປົດລັອກດ້ວຍໜ້າຈະເຮັດວຽກໄດ້ດີທີ່ສຸດເມື່ອມີແສງພຽງພໍ ແລະ ທ່ານບໍ່ໄດ້ໃສ່ຜ້າອັດປາກ ຫຼື ແວ່ນຕາດຳ."</string>
     <string name="security_settings_face_enroll_finish_title">ດີແລ້ວ!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">ຕັ້ງຄ່າສຳລັບການເບິ່ງ ຫຼື ການເຄື່ອນໄຫວຫົວທີ່ຈຳກັດ</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">ເມື່ອໃຊ້ການປົດລັອກດ້ວຍໜ້າ, ທ່ານອາດຕ້ອງປິ່ນໜ້າໃຫ້ຊື່ກັບໂທລະສັບຂອງທ່ານຫຼາຍຂຶ້ນ.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">ຕ້ອງເປີດຕາເບິ່ງ</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"ທ່ານ ແລະ ລູກຂອງທ່ານສາມາດລຶບຮູບແບບໃບໜ້າຂອງເຂົາເຈົ້າ ຫຼື ປິດການປົດລັອກດ້ວຍໜ້າຕອນໃດກໍໄດ້ໃນການຕັ້ງຄ່າ. ຮູບແບບໃບໜ້າແມ່ນຖືກຈັດເກັບໄວ້ຢູ່ໂທລະສັບຈົນກວ່າພວກມັນຈະຖືກລຶບອອກ.&lt;br&gt;&lt;br&gt;ສຶກສາເພີ່ມເຕີມຢູ່ &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">ທ່ານ ແລະ ລູກຂອງທ່ານຄວບຄຸມໄດ້</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"ທ່ານສາມາດລຶບຮູບແບບໃບໜ້າຂອງທ່ານ ຫຼື ປິດການປົດລັອກດ້ວຍໜ້າຕອນໃດກໍໄດ້ໃນການຕັ້ງຄ່າ. ຮູບແບບໃບໜ້າແມ່ນຖືກຈັດເກັບໄວ້ຢູ່ໂທລະສັບຈົນກວ່າທ່ານຈະລຶບພວກມັນອອກ.&lt;br&gt;&lt;br&gt;ສຶກສາເພີ່ມເຕີມຢູ່ &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">ທ່ານຄວບຄຸມໄດ້</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"ການປົດລັອກດ້ວຍໜ້າຈະສ້າງຮູບແບບໃບໜ້າທີ່ບໍ່ຊ້ຳກັນຂອງລູກທ່ານເພື່ອຢັ້ງຢືນວ່າແມ່ນເຂົາເຈົ້າແທ້. ເພື່ອສ້າງຮູບແບບໃບໜ້ານີ້ໃນລະຫວ່າງການຕັ້ງຄ່າ, ລູກຂອງທ່ານຈະຖ່າຍຮູບໃບໜ້າຂອງເຂົາເຈົ້າຈາກຫຼາຍໆມຸມ.
+
+ເມື່ອເຂົາເຈົ້າປົດລັອກດ້ວຍໜ້າ, ຮູບຈະຖືກໃຊ້ເພື່ອອັບເດດຮູບແບບໃບໜ້າຂອງເຂົາເຈົ້າ. ລະບົບຈະບໍ່ຈັດເກັບຮູບທີ່ໃຊ້ສ້າງຮູບແບບໃບໜ້າຂອງເຂົາເຈົ້າ, ແຕ່ຮູບແບບໃບໜ້າຈະຖືກຈັດເກັບໄວ້ຢ່າງປອດໄພຢູ່ໂທລະສັບ ແລະ ຈະບໍ່ຖືກສົ່ງອອກຈາກໂທລະສັບເດັດຂາດ. ການປະມວນຜົນທັງໝົດຈະເກີດຂຶ້ນຢ່າງປອດໄພຢູ່ໂທລະສັບ."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"ການປົດລັອກດ້ວຍໜ້າຈະສ້າງຮູບແບບໃບໜ້າທີ່ບໍ່ຊ້ຳກັນຂອງທ່ານເພື່ອຢັ້ງຢືນວ່າແມ່ນທ່ານແທ້. ເພື່ອສ້າງຮູບແບບໃບໜ້ານີ້ໃນລະຫວ່າງການຕັ້ງຄ່າ, ທ່ານຈະຖ່າຍຮູບໃບໜ້າຂອງທ່ານຈາກຫຼາຍໆມຸມ.
+
+ເມື່ອທ່ານປົດລັອກດ້ວຍໜ້າ, ຮູບຈະຖືກໃຊ້ເພື່ອອັບເດດຮູບແບບໃບໜ້າຂອງທ່ານ. ລະບົບຈະບໍ່ຈັດເກັບຮູບທີ່ໃຊ້ສ້າງຮູບແບບໃບໜ້າຂອງທ່ານ, ແຕ່ຮູບແບບໃບໜ້າຈະຖືກຈັດເກັບໄວ້ຢ່າງປອດໄພຢູ່ໂທລະສັບຂອງທ່ານ ແລະ ຈະບໍ່ຖືກສົ່ງອອກຈາກໂທລະສັບເດັດຂາດ. ການປະມວນຜົນທັງໝົດຈະເກີດຂຶ້ນຢ່າງປອດໄພຢູ່ໂທລະສັບຂອງທ່ານ."</string>
     <string name="security_settings_face_enroll_introduction_how_title">ມັນເຮັດວຽກແນວໃດ</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">ການປົດລັອກດ້ວຍໜ້າສາມາດກຳນົດໃຫ້ລູກຂອງທ່ານຕ້ອງມືນຕາເພື່ອປົດລັອກໂທລະສັບ ຫຼື ຢັ້ງຢືນວ່າແມ່ນເຂົາເຈົ້າແທ້. ທ່ານ ແລະ ລູກຂອງທ່ານສາມາດເປີດຕົວເລືອກນີ້ຕອນໃດກໍໄດ້ໃນການຕັ້ງຄ່າ.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">ຫາກປົກກະຕິລູກຂອງທ່ານໃສ່ແວ່ນຕາ, ເຂົາເຈົ້າສາມາດໃສ່ໃນຂະນະທີ່ກຳລັງຕັ້ງຄ່າໄດ້.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">ການໃຊ້ໜ້າຂອງລູກທ່ານເພື່ອປົດລັອກໂທລະສັບຂອງເຂົາເຈົ້າອາດມີຄວາມປອດໄພໜ້ອຍກວ່າຮູບແບບ, PIN ຫຼື ລະຫັດຜ່ານທີ່ເດົາຍາກ</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">ການເບິ່ງໂທລະສັບສາມາດປົດລັອກມັນໄດ້ເຖິງແມ່ນວ່າເຂົາເຈົ້າຈະບໍ່ຕັ້ງໃຈກໍຕາມ. ໂທລະສັບຂອງເຂົາເຈົ້າສາມາດຖືກປົດລັອກໄດ້ໂດຍຄົນທີ່ໜ້າຕາຄ້າຍເຂົາເຈົ້າຫຼາຍ ເຊັ່ນ: ຝາແຝດ ຫຼື ຫາກມີຄົນຖືໂທລະສັບໄປໃສ່ໜ້າຂອງເຂົາເຈົ້າ.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">ການປົດລັອກດ້ວຍໜ້າສາມາດກຳນົດໃຫ້ທ່ານຕ້ອງມືນຕາເພື່ອປົດລັອກໂທລະສັບ ຫຼື ຢັ້ງຢືນວ່າແມ່ນທ່ານແທ້. ທ່ານສາມາດເປີດຕົວເລືອກນີ້ຕອນໃດກໍໄດ້ໃນການຕັ້ງຄ່າ.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">ແວ່ນຕາ ຫຼື ແວ່ນກັນແດດທີ່ມີສີເລັກນ້ອຍແມ່ນໃຊ້ໄດ້.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">ການໃຊ້ໜ້າຂອງທ່ານເພື່ອປົດລັອກໂທລະສັບຂອງທ່ານອາດມີຄວາມປອດໄພໜ້ອຍກວ່າຮູບແບບ, PIN ຫຼື ລະຫັດຜ່ານທີ່ເດົາຍາກ</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">ການເບິ່ງໂທລະສັບຈະສາມາດປົດລັອກມັນໄດ້ເຖິງແມ່ນວ່າທ່ານຈະບໍ່ຕັ້ງໃຈກໍຕາມ. ໂທລະສັບຂອງທ່ານສາມາດຖືກປົດລັອກໄດ້ໂດຍຄົນທີ່ໜ້າຕາຄ້າຍທ່ານຫຼາຍ ເຊັ່ນ: ຝາແຝດ ຫຼື ຫາກມີຄົນຖືມັນໄປໃສ່ໜ້າຂອງທ່ານ.</string>
     <string name="security_settings_face_enroll_introduction_info_title">ຂໍ້ຄວນຈື່</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">ໃຊ້ໜ້າຂອງທ່ານເພື່ອປົດລັອກໂທລະສັບທ່ານ ຫຼື ຢັ້ງຢືນວ່າແມ່ນທ່ານແທ້ ເຊັ່ນ: ໃນເວລາທີ່ທ່ານເຂົ້າສູ່ລະບົບຫາແອັບ ຫຼື ອະນຸມັດການຊື້.</string>
     <string name="security_settings_face_enroll_introduction_title">ຕັ້ງຄ່າການປົດລັອກດ້ວຍໜ້າ</string>
     <string name="security_settings_face_enroll_next">ຕໍ່ໄປ</string>
     <string name="security_settings_face_enroll_partial_message">ເພື່ອປັບປຸງປະສິດທິພາບ, ທ່ານສາມາດຕັ້ງຄ່າການປົດລັອກດ້ວຍໜ້າຄືນໃໝ່ໄດ້ໃນການຕັ້ງຄ່າ</string>
@@ -326,7 +349,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">ແຕະເພື່ອຕັ້ງຄ່າລາຍນິ້ວມື</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint ຈະສ້າງຮູບແບບທີ່ບໍ່ຊ້ຳກັນຂອງລາຍນິ້ວມືຂອງທ່ານເພື່ອຢັ້ງຢືນວ່າແມ່ນທ່ານແທ້. ເພື່ອສ້າງຮູບແບບລາຍນິ້ວມືນີ້ໃນລະຫວ່າງການຕັ້ງຄ່າ, ທ່ານຈະຖ່າຍຮູບຂອງລາຍນິ້ວມືຂອງທ່ານຈາກຫຼາຍໆມຸມ.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">ເມື່ອທ່ານໃຊ້ Pixel Imprint, ຮູບຈະຖືກໃຊ້ເພື່ອອັບເດດຮູບແບບລາຍນິ້ວມືຂອງທ່ານ. ລະບົບຈະບໍ່ຈັດເກັບຮູບທີ່ໃຊ້ສ້າງຮູບແບບລາຍນິ້ວມືຂອງທ່ານ, ແຕ່ຮູບແບບລາຍນິ້ວມືຈະຖືກຈັດເກັບໄວ້ຢ່າງປອດໄພຢູ່ໂທລະສັບຂອງທ່ານ ແລະ ຈະບໍ່ຖືກສົ່ງອອກຈາກໂທລະສັບເດັດຂາດ. ການປະມວນຜົນທັງໝົດຈະເກີດຂຶ້ນຢ່າງປອດໄພຢູ່ໂທລະສັບຂອງທ່ານ.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">ທ່ານສາມາດລຶບຮູບແບບລາຍນິ້ວມືຂອງທ່ານ ຫຼື ປິດ Pixel Imprint ຕອນໃດກໍໄດ້ໃນການຕັ້ງຄ່າ. ຮູບແບບລາຍນິ້ວມືແມ່ນຈັດເກັບໄວ້ຢູ່ໂທລະສັບຈົນກວ່າທ່ານຈະລຶບພວກມັນອອກ.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint ຈະສ້າງຮູບແບບທີ່ບໍ່ຊ້ຳກັນຂອງລາຍນິ້ວມືຂອງລູກທ່ານເພື່ອຢັ້ງຢືນວ່າແມ່ນເຂົາເຈົ້າແທ້. ເພື່ອສ້າງຮູບແບບລາຍນິ້ວມືນີ້ໃນລະຫວ່າງການຕັ້ງຄ່າ, ເຂົາເຈົ້າຈະຖ່າຍຮູບລາຍນິ້ວມືຂອງເຂົາເຈົ້າຈາກມຸມຕ່າງໆ.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">ເມື່ອເຂົາເຈົ້າໃຊ້ Pixel Imprint, ຮູບຈະຖືກໃຊ້ເພື່ອອັບເດດຮູບແບບລາຍນິ້ວມືຂອງເຂົາເຈົ້າ. ລະບົບຈະບໍ່ຈັດເກັບຮູບທີ່ໃຊ້ສ້າງຮູບແບບລາຍນິ້ວມືຂອງລູກທ່ານ, ແຕ່ຮູບແບບລາຍນິ້ວມືຈະຖືກຈັດເກັບໄວ້ຢ່າງປອດໄພຢູ່ໂທລະສັບ ແລະ ຈະບໍ່ຖືກສົ່ງອອກຈາກໂທລະສັບເດັດຂາດ. ການປະມວນຜົນທັງໝົດຈະເກີດຂຶ້ນຢ່າງປອດໄພຢູ່ໂທລະສັບ.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">ທ່ານ ແລະ ລູກຂອງທ່ານສາມາດລຶບຮູບແບບລາຍນິ້ວມືຂອງເຂົາເຈົ້າອອກ ຫຼື ປິດ Pixel Imprint ຕອນໃດກໍໄດ້ໃນການຕັ້ງຄ່າ. ຮູບແບບລາຍນິ້ວມືແມ່ນຖືກຈັດເກັບໄວ້ຢູ່ໂທລະສັບຈົນກວ່າພວກມັນຈະຖືກລຶບອອກ.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"ສຶກສາເພີ່ມເຕີມກ່ຽວກັບປົດລັອກດ້ວຍລາຍນິ້ວມື Pixel ໄດ້ທີ່ &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint ສຳລັບວຽກ</string>
     <string name="setup_suggestion_summary">ອີກພຽງສອງສາມຂັ້ນຕອນ</string>
@@ -335,6 +362,7 @@
     <string name="smart_battery_a11y_expand_label">ຂະຫຍາຍ, ແບັດເຕີຣີແບບປັບຕົວໄດ້</string>
     <string name="smart_battery_footer">ເພື່ອຍືດອາຍຸແບັດເຕີຣີ, ຄຸນສົມບັດແບັດເຕີຣີແບບປັບຕົວໄດ້ອາດຫຼຸດປະສິດທິພາບ ແລະ ການເຄື່ອນໄຫວໃນພື້ນຫຼັງ. ການແຈ້ງເຕືອນບາງຢ່າງອາດຫຼ້າຊ້າ.</string>
     <string name="smart_battery_manager_title">ການຕັ້ງຄ່າແບບປັບແຕ່ງອັດຕະໂນມັດ</string>
+    <string name="smart_battery_summary" product="default">ແບັດເຕີຣີແບບປັບຕົວໄດ້ຈະຮຽນຮູ້ຈາກການນຳໃຊ້ໂທລະສັບຂອງທ່ານເພື່ອເພີ່ມປະສິດທິພາບການໃຊ້ແບັດເຕີຣີຂອງແອັບຢ່າງຕໍ່ເນື່ອງ. ເພື່ອຍືດອາຍຸແບັດເຕີຣີ, ມັນອາດຈະຫຼຸດປະສິດທິພາບ ແລະ ເລື່ອນການແຈ້ງເຕືອນອອກໄປ.</string>
     <string name="smart_battery_title">ແບັດເຕີຣີແບບປັບຕົວໄດ້</string>
     <string name="software_update_can_be_updated_header">ເຮັດໃຫ້ Pixel ຂອງທ່ານມີປະສິດທິພາບດີຍິ່ງຂຶ້ນ</string>
     <string name="software_update_detail_indication_1_update_available">ມີອັບເດດໃໝ່ 1 ລາຍການ</string>

@@ -148,6 +148,7 @@ Krađa identiteta pokušaj je krađe vjerodajnica za prijavu ili drugih osobnih 
     <string name="content_protection_preference_subpage_summary">Provjera se provodi privatno izravno na vašem uređaju, a njome se provjerava aktivnost u aplikaciji radi otkrivanja krađe identiteta ili drugih oblika obmanjujućeg djelovanja. U slučaju otkrivanja navedenog neki podaci o aplikaciji šalju se Google Play Protectu radi potvrde prijetnje i upozoravanja korisnika aplikacije.</string>
     <string name="contextual_timeout_description">Automatski ranije isključuje vaš zaslon ako ne upotrebljavate uređaj</string>
     <string name="contextual_timeout_title">Prilagodljivo vrijeme čekanja</string>
+    <string name="credentials_install_summary" product="default">Instaliranje certifikata iz pohrane</string>
     <string name="dark_ui_text">Tamna tema upotrebljava crnu pozadinu radi produljenja trajanja baterije. Rasporedi s tamnom temom čekaju s uključivanjem dok se zaslon ne isključi.</string>
     <string name="debugging_data_title">Podaci o otklanjanju pogrešaka</string>
     <string name="discover_tips_button">Otkrijte savjete</string>
@@ -155,6 +156,8 @@ Krađa identiteta pokušaj je krađe vjerodajnica za prijavu ili drugih osobnih 
     <string name="double_twist_for_camera_mode_summary">Za uključivanje i isključivanje načina za snimanje selfieja u Google kameri dvaput trznite uređajem dok ste u aplikaciji.</string>
     <string name="duration_less_than_one_minute">Manje od jedne minute</string>
     <string name="enable_glanceable_hub_toggle">Način Huba</string>
+    <string name="erase_external_storage" product="default">Izbriši USB memoriju</string>
+    <string name="erase_external_storage_description" product="default">Izbrisati sve podatke u unutarnjoj USB pohrani, poput glazbe ili fotografija</string>
     <string name="extreme_battery_saver_summary">Uključuje sve prethodno navedene promjene. Pauzira i aplikacije koje nisu nužne i njihove obavijesti.</string>
     <string name="extreme_battery_saver_title">Ekstremna štednja baterije</string>
     <string name="face_confirmation_hide_illustration_description">Sad svojim licem možete otključati telefon kada ga podignete ili dodirnete zaslon.</string>
@@ -228,6 +231,9 @@ Podaci sigurnosnih kopija ne uračunavaju se u kvotu pohrane na Disku. Velike da
     <string name="limited_warranty_title">Ograničeno jamstvo</string>
     <string name="lockscreen_show_weather_summary">Pogledajte trenutačne vremenske uvjete</string>
     <string name="lockscreen_show_weather_title">Prikaži meteorološke informacije</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Da biste izbrisali glazbu, slike i ostale korisničke podatke, trebate izbrisati "<b>USB pohranu</b>.</string>
     <string name="my_device_info_account_preference_title">Google račun</string>
     <string name="owner_info_settings_edit_text_hint">Na primjer, Markov Pixel.</string>
     <string name="permit_debugging_data">Omogući pristup izvješću o pogreškama</string>
@@ -278,6 +284,7 @@ Okrenite telefon i isprobajte."</string>
     <string name="security_dismiss_dialog_title">Odbaciti upozorenje?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Dodirnite za postavljanje</string>
     <string name="security_settings_face_enroll_education_message">Na sljedećem zaslonu zaokrećite glavu da biste snimili lice iz svih kutova</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Na sljedećem zaslonu držite telefon u razini očiju</string>
     <string name="security_settings_face_enroll_error_generic_dialog_message">Prijava lica nije uspjela.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">Isteklo je vrijeme za prijavu lica. Pokušajte ponovo.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Postavljanje otključavanja licem je isteklo</string>
@@ -293,13 +300,29 @@ Otključavanje licem najbolje funkcionira kada ima dovoljno svjetla i kada ne no
 Otključavanje licem najbolje funkcionira kada ima dovoljno svjetla i kada ne nosite masku ili tamne naočale."</string>
     <string name="security_settings_face_enroll_finish_title">U redu je!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Postavljanje za poteškoće s vidom/glavom</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Kada koristite otključavanje licem, trebate telefon držati točno ispred lica.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Oči trebaju biti otvorene</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Dijete i vi uvijek možete izbrisati njegov model lica ili isključiti otključavanje licem u postavkama. Modeli lica pohranjuju se na telefonu dok se ne izbrišu.&lt;br&gt;&lt;br&gt;Saznajte više na stranici &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Kontrola je u vašim rukama i rukama vašeg djeteta</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"U postavkama uvijek možete izbrisati model lica ili isključiti otključavanje licem. Modeli lica pohranjuju se na telefonu dok ih ne izbrišete.&lt;br&gt;&lt;br&gt;Saznajte više na stranici &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Kontrola je u vašim rukama</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Otključavanje licem izrađuje jedinstveni model lica vašeg djeteta radi potvrđivanja njegovog identiteta. Da bi izradilo model lica tijekom postavljanja, dijete će snimiti slike svojeg lica iz različitih kutova.
+
+Kad koristi otključavanje licem, slike se upotrebljavaju za ažuriranje modela njegovog lica. Slike koje se koriste za izradu modela djetetovog lica ne pohranjuju se, ali se model lica sigurno pohranjuje na telefonu i nikad se ne šalje s telefona. Sva se obrada vrši sigurno na telefonu."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Otključavanje licem izrađuje jedinstveni model vašeg lica radi potvrde vašeg identiteta. Da biste izradili model lica tijekom postavljanja, snimit ćete slike svojeg lica iz različitih kutova.
+
+Kad koristite otključavanje licem, slike se koriste za ažuriranje modela vašeg lica. Slike koje se koriste za izradu modela vašeg lica ne pohranjuju se, ali se model lica sigurno pohranjuje na vašem telefonu i nikad se ne šalje s telefona. Sva se obrada vrši sigurno na vašem uređaju."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Kako to funkcionira</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Za otključavanje licem oči djeteta trebaju biti otvorene kako bi se telefon otključao ili kako bi se potvrdilo da je to vaše dijete. Dijete i vi uvijek možete uključiti tu opciju u postavkama.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Ako dijete obično nosi naočale, može ih nositi tijekom postavljanja.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Otključavanje djetetovog telefona pomoću njegovog lica može biti manje sigurno od uzorka, PIN-a ili zaporke</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Gledajući telefon može ga otključati čak i kad to ne namjerava. Telefon može otključati i osoba koja mu je vrlo slična, na primjer jednojajčani blizanac, ili osoba koja prinese telefon njegovom licu.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Za otključavanje licem vaše oči trebaju biti otvorene kako biste otključali telefon ili potvrdili da ste to vi. Tu opciju uvijek možete uključiti u postavkama.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Možete imati dioptrijske ili lagano zatamnjene sunčane naočale.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Otključavanje telefona licem može biti nesigurnije od snažnog uzorka, PIN-a ili zaporke.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Telefon možete otključati kada gledate u njega, čak i ako to ne namjeravate. Vaš telefon može otključati i osoba koja vam je vrlo slična, na primjer vaš jednojajčani blizanac, ili osoba koja ga prinese vašem licu.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Napomena</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Pomoću lica možete otključati telefon ili potvrditi da ste to vi, na primjer prilikom prijave u aplikacije ili odobravanja kupnje.</string>
     <string name="security_settings_face_enroll_introduction_title">Postavite otključavanje licem</string>
     <string name="security_settings_face_enroll_next">Dalje</string>
     <string name="security_settings_face_enroll_partial_message">Da biste poboljšali uspješnost, možete ponovo postaviti otključavanje licem u postavkama</string>
@@ -325,7 +348,10 @@ Napomena: ovaj uređaj ne možete otključati otiskom prsta. Više informacija m
     <string name="security_settings_fingerprint_preference_summary_none">Dodirnite za postavljanje otiska prsta</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint izrađuje jedinstveni model vašeg otiska prsta radi potvrde vašeg identiteta. Da biste izradili model otiska prsta tijekom postavljanja, snimit ćete slike svojeg otiska prsta iz različitih položaja.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Kad koristite Pixel Imprint, slike se upotrebljavaju za ažuriranje modela vašeg otiska prsta. Slike koje se koriste za izradu modela vašeg otiska prsta nikad se ne pohranjuju, ali se model otiska prsta sigurno pohranjuje na vašem telefonu i nikad se ne šalje s telefona. Sva se obrada vrši sigurno na vašem uređaju.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">U postavkama uvijek možete izbrisati model otiska prsta ili isključiti Pixel Imprint. Modeli otiska prsta pohranjuju se na telefonu dok ih ne izbrišete.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint izrađuje jedinstveni model djetetovog otiska prsta radi potvrde njegovog identiteta. Da bi izradilo model otiska prsta tijekom postavljanja, dijete će snimiti slike svojeg otiska prsta iz različitih položaja.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Dijete i vi uvijek možete izbrisati model njegovog otiska prsta ili isključiti Pixel Imprint u postavkama. Modeli otiska prsta pohranjuju se na telefonu dok se ne izbrišu.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Saznajte više o otključavanje otiskom prsta na Pixelu na stranici &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint za posao</string>
     <string name="setup_suggestion_summary">Samo još nekoliko koraka</string>
@@ -334,6 +360,7 @@ Napomena: ovaj uređaj ne možete otključati otiskom prsta. Više informacija m
     <string name="smart_battery_a11y_expand_label">Proširi, adaptivna baterija</string>
     <string name="smart_battery_footer">Da bi se produljilo trajanje baterije, adaptivna baterija može smanjiti izvedbu i aktivnost u pozadini. Neke će se obavijesti možda odgoditi.</string>
     <string name="smart_battery_manager_title">Preferencije za adaptivne značajke</string>
+    <string name="smart_battery_summary" product="default">Adaptivna baterija prati upotrebu vašeg telefona i stalno optimizira način na koji aplikacije upotrebljavaju bateriju. Da bi se produljilo trajanje baterije, adaptivna baterija može smanjiti izvedbu i odgoditi obavijesti.</string>
     <string name="smart_battery_title">Adaptivna baterija</string>
     <string name="software_update_can_be_updated_header">Unaprijedite svoj Pixel</string>
     <string name="software_update_detail_indication_1_update_available">Dostupno je jedno ažuriranje</string>

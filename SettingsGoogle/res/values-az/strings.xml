@@ -149,12 +149,15 @@ Fişinq giriş məlumatları və digər şəxsi məlumatları oğurlamaq cəhdid
     <string name="content_protection_preference_subpage_summary">Skanlama cihazda gizli icra edilir. Tətbiq fəaliyyətində fişinq və ya digər aldadıcı davranışlar yoxlanır. Aşkarlansa, təhlükəni təsdiqləmək və tətbiq istifadəçilərini xəbərdar etmək üçün bəzi tətbiq məlumatları Google Play Protect-ə göndərilir.</string>
     <string name="contextual_timeout_description">Cihazdan istifadə etmədikdə ekran avtomatik olaraq erkən sönür</string>
     <string name="contextual_timeout_title">Adaptiv vaxt limiti</string>
+    <string name="credentials_install_summary" product="default">Sertifikatları yaddaşdan quraşdırın</string>
     <string name="debugging_data_title">Sazlama datası</string>
     <string name="discover_tips_button">Məsləhətlərə baxın</string>
     <string name="dock_summary_charging_phone">Telefon batareya yığır</string>
     <string name="double_twist_for_camera_mode_summary">Arxa kameradan ön kameraya və ya əksinə keçmək üçün biləyinizi iki dəfə çevirin.</string>
     <string name="duration_less_than_one_minute">1 dəqiqədən az</string>
     <string name="enable_glanceable_hub_toggle">Hab rejimi</string>
+    <string name="erase_external_storage" product="default">USB yaddaşı sil</string>
+    <string name="erase_external_storage_description" product="default">Daxili USB yaddaşında mahnı və ya şəkil kimi bütün datanı sil</string>
     <string name="extreme_battery_saver_summary">Yuxarıdakı bütün dəyişikliklər daxildir. Əsas olmayan tətbiqlərə və onların bildirişlərinə də pauza verir.</string>
     <string name="extreme_battery_saver_title">Yüksək Enerji Qənaəti</string>
     <string name="face_confirmation_hide_illustration_description">İndi telefonu götürəndə və ya ekrana toxunduqda kilidi açmaq üçün üzünüzdən istifadə edə bilərsiniz.</string>
@@ -229,6 +232,9 @@ Yedəkləmə datası Disk yaddaşının kvotasını azaltmayacaq. Xidmətdən ç
     <string name="limited_warranty_title">Məhdud Zəmanət</string>
     <string name="lockscreen_show_weather_summary">Cari hava şəraitinə baxın</string>
     <string name="lockscreen_show_weather_title">Hava proqnozunu göstərin</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Həmçinin musiqi, şəkil və digər istifadəçi datası təmizləmək üçün "<b>USB yaddaşı</b> silinməlidir.</string>
     <string name="my_device_info_account_preference_title">Google Hesabı</string>
     <string name="owner_info_settings_edit_text_hint">"Məs, Joe'nin Pixel'i."</string>
     <string name="permit_debugging_data">Baq hesabatına girişə icazə verin</string>
@@ -279,6 +285,7 @@ Sınamaq üçün telefonu tərsinə çevirin."</string>
     <string name="security_dismiss_dialog_title">Bu xəbərdarlıq qapadılsın?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Ayarlamaq üçün toxunun</string>
     <string name="security_settings_face_enroll_education_message">Növbəti ekranda üzünüzün bütün tərəflərini çəkmək üçün başınızı fırladın</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Növbəti ekranda telefonunuzu göz səviyyəsində saxlayın</string>
     <string name="security_settings_face_enroll_error_generic_dialog_message">Üz qeydiyyatı alınmadı.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Üz ilə kiliddən çıxarmanın ayarlanması vaxtı bitdi</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">İndi tətbiqlərə daxil olmaq və ya alışı təsdiqləmək kimi hallarda telefonu kiliddən çıxarmaq və ya kimlik doğrulaması üçün üzünüzdən istifadə edə bilərsiniz</string>
@@ -293,13 +300,29 @@ Kifayət qədər işıq olduqda, maska və ya tündrəngli eynək taxmadıqda Ü
 Kifayət qədər işıq olduqda, maska və ya tündrəngli eynək taxmadıqda Üz ilə Kiliddən Açma mükəmməl işləyir."</string>
     <string name="security_settings_face_enroll_finish_title">Qaydasındadır!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Məhdud görmə/baş hərəkətini qur</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Üz ilə Kiliddən Açmadan istifadə etdikdə başınızı telefonun qarşısında sabit saxlamalısınız.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Gözlərinizi açıq saxlayın</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Siz və övladınız ayarlarda istənilən vaxt üz modeli silə, yaxud Üz ilə kiliddən çıxarmanı deaktiv edə bilərsiniz. Üz modelləri silinənə qədər telefonda saxlanılır.&lt;br&gt;&lt;br&gt;Ətraflı məlumat: &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Siz və övladınız nəzarət edirsiniz</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Ayarlarda istənilən vaxt üz modelinizi silə, yaxud Üz ilə Kiliddən Çıxarmanı deaktiv edə bilərsiniz. Üz modelləri silinənə qədər telefonda saxlanılır.&lt;br&gt;&lt;br&gt;Ətraflı məlumat: &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Hər şey nəzarətinizdədir</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Üz ilə kiliddən çıxarma övladınızı doğrulamaq üçün onun üzünün unikal modelini yaradır. Ayarlama zamanı bu üz modelini yaratmaq üçün övladınız müxtəlif bucaqlardan üzünün şəkillərini çəkəcək.
+
+Üz ilə kiliddən çıxarmadan istifadə etdikdə, onun üz modelini güncəlləmək üçün şəkillərdən istifadə olunur. Onun üz modelini yaratmaq üçün istifadə edilən şəkillər saxlanılmır, lakin üz modeli telefonda təhlükəsiz qaydada saxlanılır və heç vaxt telefondan başqa yerə göndərilmir. Bütün emal prosesi telefonda təhlükəsiz qaydada baş verir."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Üz ilə kiliddən çıxarma funksiyası kimliyinizi doğrulamaq üçün üzünüzün unikal modelini yaradır. Ayarlama zamanı bu üz modelini yaratmaq üçün müxtəlif bucaqlardan üzünüzün şəkillərini çəkəcəksiniz.
+
+Üz ilə kiliddən çıxarmadan istifadə etdikdə, üz modelinizi güncəlləmək üçün şəkillərdən istifadə olunur. Üz modelinizi yaratmaq üçün istifadə edilən şəkillər saxlanılmır, lakin üz modeli telefonunuzda təhlükəsiz qaydada saxlanılır və heç vaxt telefondan başqa yerə göndərilmir. Bütün emal prosesi telefonunuzda təhlükəsiz qaydada baş verir."</string>
     <string name="security_settings_face_enroll_introduction_how_title">İşləmə qaydası</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Üz ilə kiliddən çıxarma telefonu kiliddən çıxarmaq, yaxud uşağınızın özü olduğunu doğrulamaq üçün onun gözlərinin açıq olmasını tələb edə bilər. Siz və uşağınız Ayarlarda bu seçimi istənilən vaxt yandıra bilərsiniz.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Övladınız normalda eynəkdən istifadə edirsə, ayarlama zamanı onu taxa bilər.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Övladınızın telefonunu kiliddən çıxarmaq üçün onun üzündən istifadə etmək güclü model, PIN kod və ya paroldan daha az güvənli ola bilər.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Övladınız telefona baxmaqla istəmədən telefonu kiliddən çıxara bilər. Övladınızın telefonu ona çox bənzəyən biri (məsələn, əkiz bacı/qardaş) tərəfindən, yaxud onün üzünə tutularaq də kiliddən çıxarıla bilər.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Üz ilə kiliddən çıxarma telefonu kiliddən çıxarmaq, yaxud kimliyinizi doğrulamaq üçün gözlərinizin açıq olmasını tələb edə bilər. Bu seçimi Ayarlarda istənilən vaxt yandıra bilərsiniz.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Eynək və ya solğun rəngli gün eynəyi taxa bilərsiniz.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Telefonunuzu kiliddən çıxarmaq üçün üzünüzdən istifadə etmək güclü model, PIN və ya parol qədər təhlükəsiz olmaya bilər.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Hətta telefon ekranına təsadüfən baxmaqla telefonu kiliddən çıxara bilərsiniz. Telefonunuz sizə çox bənzəyən biri (məsələn, əkiz bacı/qardaş) tərəfindən, yaxud sizə doğru yönəldilərək də kiliddən çıxarıla bilər.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Unutmayın</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Tətbiqlərə daxil olmaq və ya alışı təsdiqləmək kimi hallarda telefonu kiliddən çıxarmaq və ya kimlik doğrulaması üçün üzünüzü istifadə edin.</string>
     <string name="security_settings_face_enroll_introduction_title">Üz ilə kiliddən çıxarmanı ayarlayın</string>
     <string name="security_settings_face_enroll_next">Növbəti</string>
     <string name="security_settings_face_enroll_partial_message">Performansı yaxşılaşdırmaq üçün Ayarlarda Üz ilə kiliddən çıxarmanı yenidən ayarlaya bilərsiniz</string>
@@ -325,7 +348,9 @@ Qeyd: barmaq izinizi bu cihazın kildiini açmaq üçün istifadə edə bilməzs
     <string name="security_settings_fingerprint_preference_summary_none">Barmaq izi əlavə etmək üçün toxunun</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint kimliyinizi doğrulamaq üçün barmaq izinizin unikal modelini yaradır. Ayarlama zamanı bu barmaq izi modelini yaratmaq üçün müxtəlif bucaqlardan barmaq izinizin şəkillərini çəkəcəksiniz.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">"Ayarlarda istənilən vaxt barmaq izi modelinizi silə, yaxud Pixel Imprint'i deaktiv edə bilərsiniz. Barmaq izi modelləri siz onları silənə qədər telefonunuzda saxlanılır."</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint övladınızın kimliyini doğrulamaq üçün onun barmaq izinin unikal modelini yaradır. Ayarlama zamanı bu barmaq izi modelini yaratmaq üçün , müxtəlif bucaqlardan barmaq izinin şəkillərini çəkəcək.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">"Siz və övladınız ayarlarda istənilən vaxt barmaq izi modelinizi silə, yaxud Pixel Imprint'i deaktiv edə bilərsiniz. Barmaq izi modelləri silinənə qədər telefonda saxlanılır."</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Pixel barmaq izi ilə kiliddən çıxarma haqqında ətraflı məlumat: &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">İş üçün Pixel Imprint</string>
     <string name="setup_suggestion_summary">Bir neçə mərhələ qalıb</string>
@@ -334,6 +359,7 @@ Qeyd: barmaq izinizi bu cihazın kildiini açmaq üçün istifadə edə bilməzs
     <string name="smart_battery_a11y_expand_label">Genişləndirin, adaptiv batareya</string>
     <string name="smart_battery_footer">Enerjiyə qənaət etmək üçün enerjinin adaptiv istifadəsi performansı azalda və fondakı tətbiqlərin fəaliyyətini zəiflədə bilər. Bəzi bildirişlər gecikə bilər.</string>
     <string name="smart_battery_manager_title">Adaptiv tərcihlər</string>
+    <string name="smart_battery_summary" product="default">Adaptiv Batareya tətbiqlərin batareya istifadəsini davamlı optimallaşdırmaq üçün telefon istifadəsinə əsaslanır. Batareya ömrünü uzatmaq üçün performansı azalda və bildirişləri ləngidə bilər.</string>
     <string name="smart_battery_title">Enerjinin adaptiv istifadəsi</string>
     <string name="software_update_can_be_updated_header">Pixel-nizi daha da yaxşı edin</string>
     <string name="software_update_detail_indication_1_update_available">1 güncəllənmə əlçatandır</string>

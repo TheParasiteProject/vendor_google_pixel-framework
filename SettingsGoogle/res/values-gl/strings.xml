@@ -149,6 +149,7 @@ O phishing é unha práctica que consiste en tentar roubar credenciais de inicio
     <string name="content_protection_preference_subpage_summary">As análises execútanse de modo privado no teu dispositivo e nelas compróbase a actividade das aplicacións para detectar se hai phishing ou outros comportamentos enganosos. No caso de que se detecten, enviarase algunha información da aplicación en cuestión a Google Play Protect para confirmar a ameaza e avisar os usuarios.</string>
     <string name="contextual_timeout_description">Desactiva automaticamente a pantalla de modo anticipado se non estás usando o dispositivo</string>
     <string name="contextual_timeout_title">Tempo de espera intelixente</string>
+    <string name="credentials_install_summary" product="default">Instala certificados desde o almacenamento</string>
     <string name="dark_ui_text">O tema escuro utiliza un fondo negro para axudar a que a batería dure máis. As planificacións deste tema actívanse cando a pantalla está desactivada.</string>
     <string name="debugging_data_title">Datos de depuración</string>
     <string name="discover_tips_button">Descubrir consellos</string>
@@ -156,6 +157,8 @@ O phishing é unha práctica que consiste en tentar roubar credenciais de inicio
     <string name="double_twist_for_camera_mode_summary">Para activar e desactivar o modo autofoto na Cámara de Google, xira o dispositivo dúas veces cando esteas utilizando a aplicación.</string>
     <string name="duration_less_than_one_minute">Menos de 1 minuto</string>
     <string name="enable_glanceable_hub_toggle">Modo Hub</string>
+    <string name="erase_external_storage" product="default">Borrar almacenamento USB</string>
+    <string name="erase_external_storage_description" product="default">Borra todos os datos do almacenamento USB interno, como a música ou as fotos</string>
     <string name="extreme_battery_saver_summary">Inclúense todos os cambios indicados anteriormente. Tamén pon en pausa as aplicacións non esenciais e as súas notificacións.</string>
     <string name="extreme_battery_saver_title">Aforro de batería extremo</string>
     <string name="face_confirmation_hide_illustration_description">Agora, cando collas o teléfono ou toques a pantalla, podes usar o desbloqueo facial.</string>
@@ -230,6 +233,9 @@ Os datos da copia de seguranza non contarán na cota de almacenamento de Drive. 
     <string name="limited_warranty_title">Garantía limitada</string>
     <string name="lockscreen_show_weather_summary">Consulta as condicións meteorolóxicas actuais</string>
     <string name="lockscreen_show_weather_title">Mostrar o tempo</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Para borrar música, imaxes e outros datos do usuario, é necesario borrar o "<b>almacenamento USB</b>.</string>
     <string name="my_device_info_account_preference_title">Conta de Google</string>
     <string name="owner_info_settings_edit_text_hint">Por exemplo, Pixel de Brais.</string>
     <string name="permit_debugging_data">Permitir acceso aos informes de erros</string>
@@ -280,6 +286,7 @@ Voltea o teléfono para probar a función."</string>
     <string name="security_dismiss_dialog_title">Queres ignorar esta advertencia?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Toca para configuralo</string>
     <string name="security_settings_face_enroll_education_message">Na seguinte pantalla, xira a cabeza para capturar todos os ángulos da túa cara</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Na seguinte pantalla, coloca o teléfono á altura dos ollos</string>
     <string name="security_settings_face_enroll_error_generic_dialog_message">Produciuse un erro co rexistro facial.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">Acadouse o límite de tempo para o rexistro facial. Téntao de novo.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Tempo esgotado para configurar o desbloqueo facial</string>
@@ -295,13 +302,29 @@ O desbloqueo facial funciona mellor cando hai luz suficiente e non levas máscar
 O desbloqueo facial funciona mellor cando hai luz suficiente e non levas máscara nin lentes escuras."</string>
     <string name="security_settings_face_enroll_finish_title">Moi ben!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Configuración con visión ou mobilidade da cabeza limitadas</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Ao utilizar o desbloqueo facial, seguramente teñas que colocar a cabeza xusto en fronte do teléfono.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">É necesario abrir os ollos</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"A túa filla ou fillo e mais ti podedes eliminar o seu modelo facial ou desactivar o desbloqueo facial cando queirades en Configuración. Os modelos faciais almacénanse no teléfono ata que se eliminen.&lt;br&gt;&lt;br&gt;Obtén máis información en &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">A túa filla ou fillo e mais ti tedes o control</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Podes eliminar o teu modelo facial ou desactivar o desbloqueo facial cando queiras en Configuración. Os modelos faciais almacenaranse no teléfono ata que os elimines.&lt;br&gt;&lt;br&gt;Obtén máis información en &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Ti tes o control</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Co desbloqueo facial, créase un modelo único da cara da túa filla ou fillo para verificar a súa identidade. Para crear este modelo facial durante a configuración, a túa filla ou fillo deberá facer fotos da cara desde distintos ángulos.
+
+Cando usa o desbloqueo facial, utilízanse imaxes para actualizar o seu modelo facial. As imaxes que se utilizan para crear o modelo facial non se almacenan, pero este gárdase de maneira segura no teléfono e nunca sae del. Todo o procesamento ten lugar de maneira fiable no teléfono."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Co desbloqueo facial, créase un modelo único da túa cara para verificar a túa identidade. Para crear este modelo facial durante a configuración, deberás facer fotos da cara desde distintos ángulos.
+
+Cando usas o desbloqueo facial, utilízanse imaxes para actualizar o teu modelo facial. As imaxes que se utilizan para crear o modelo facial non se almacenan, pero este gárdase de maneira segura no teu teléfono e nunca sae del. Todo o procesamento ten lugar de maneira fiable no teu teléfono."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Como funciona?</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Para usar o desbloqueo facial, o teu fillo ou filla seguramente deba ter os ollos abertos a fin de desbloquear o teléfono ou verificar a súa identidade. A túa filla ou fillo e mais ti podedes activar esta opción en calquera momento en Configuración.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Se a túa filla ou fillo adoita levar lentes, pode poñelas durante a configuración.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">O desbloqueo facial do teléfono coa cara da túa filla ou fillo pode ser menos fiable que o uso dun padrón, PIN ou contrasinal seguro</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Ao mirar o teléfono, pode desbloquealo sen querer. Tamén poderán desbloquealo outras persoas se se parecen moito a el ou ela (por exemplo, un xemelgo) ou se lle poñen o teléfono diante da cara.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Para usar o desbloqueo facial, seguramente debas ter os ollos abertos a fin de desbloquear o teléfono ou verificar a túa identidade. Podes activar esta opción en calquera momento en Configuración.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">As lentes e as lentes de sol que non sexan moi escuras non supoñen ningún problema.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">O desbloqueo facial do teléfono pode ser menos fiable que un padrón, PIN ou contrasinal seguro.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Ao mirar o teléfono, podes desbloquealo sen querer. Tamén poderán desbloquealo outras persoas se se parecen moito a ti (por exemplo, un xemelgo) ou se che poñen o teléfono diante da cara.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Importante</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Utiliza o recoñecemento facial para desbloquear o teléfono ou verificar a túa identidade (por exemplo, cando queiras iniciar sesión nunha aplicación ou aprobar unha compra).</string>
     <string name="security_settings_face_enroll_introduction_title">Configura o desbloqueo facial</string>
     <string name="security_settings_face_enroll_next">Seguinte</string>
     <string name="security_settings_face_enroll_partial_message">Para mellorar o funcionamento, podes configurar de novo o desbloqueo facial en Configuración</string>
@@ -327,7 +350,10 @@ Nota: Non podes usar a túa impresión dixital para desbloquear este dispositivo
     <string name="security_settings_fingerprint_preference_summary_none">Toca aquí para configurar a impresión dixital</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Con Pixel Imprint, créase un modelo único da túa impresión dixital para verificar a túa identidade. Se queres crear este modelo durante a configuración, debes xerar imaxes da impresión dixital desde distintas posicións.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Cando usas Pixel Imprint, utilízanse imaxes para actualizar o modelo da túa impresión dixital. As imaxes que se utilizan para crear o modelo de impresión dixital non se almacenan en ningún caso, pero este gárdase de maneira segura no teu teléfono e nunca sae del. Todo o procesamento ten lugar de maneira fiable no teu teléfono.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Podes eliminar o teu modelo de impresión dixital ou desactivar Pixel Imprint en calquera momento desde Configuración. Os modelos de impresión dixital almacénanse no teléfono ata que os elimines.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Con Pixel Imprint, créase un modelo único da impresión dixital do teu fillo ou filla para verificar a súa identidade. Para crear este modelo durante a configuración, a túa filla ou fillo deberá facer fotos da impresión dixital en distintas posicións.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">A túa filla ou fillo e mais ti podedes eliminar o seu modelo de impresión dixital ou desactivar Pixel Imprint cando queirades en Configuración. Os modelos de impresión dixital almacenaranse no teléfono ata que se eliminen.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Obtén máis información sobre o desbloqueo dactilar de Pixel en &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint para o traballo</string>
     <string name="setup_suggestion_summary">Só faltan uns poucos pasos máis</string>
@@ -336,6 +362,7 @@ Nota: Non podes usar a túa impresión dixital para desbloquear este dispositivo
     <string name="smart_battery_a11y_expand_label">Despregar, Batería intelixente</string>
     <string name="smart_battery_footer">Para aumentar a duración da batería, a función Batería intelixente pode reducir o rendemento e a actividade en segundo plano. Pódense atrasar algunhas notificacións.</string>
     <string name="smart_battery_manager_title">Preferencias de funcións intelixentes</string>
+    <string name="smart_battery_summary" product="default">A función Batería intelixente aprende do uso que fas do teléfono para optimizar continuamente o consumo da batería por parte das aplicacións. Para prolongar a duración da batería, pode reducir o rendemento e atrasar as notificacións.</string>
     <string name="smart_battery_title">Batería intelixente</string>
     <string name="software_update_can_be_updated_header">Mellora o teu Pixel aínda máis</string>
     <string name="software_update_detail_indication_1_update_available">Hai dispoñible 1 actualización</string>

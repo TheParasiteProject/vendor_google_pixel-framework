@@ -149,12 +149,15 @@
     <string name="content_protection_preference_subpage_summary">‏הסריקה פועלת ישירות במכשיר באופן פרטי ובודקת את הפעילות באפליקציה לאיתור פישינג או התנהגות מטעה אחרת. במקרה שהתנהגות כזו אותרה, חלק מהמידע של האפליקציה נשלח אל Google Play Protect כדי לאשר שנמצא איום ולהזהיר את משתמשי האפליקציה.</string>
     <string name="contextual_timeout_description">המסך נכבה מוקדם יותר באופן אוטומטי אם לא משתמשים במכשיר</string>
     <string name="contextual_timeout_title">זמן קצוב דינמי לכיבוי המסך</string>
+    <string name="credentials_install_summary" product="default">התקנת אישורים מאמצעי אחסון</string>
     <string name="debugging_data_title">נתונים של ניפוי באגים</string>
     <string name="discover_tips_button">טיפים מועילים</string>
     <string name="dock_summary_charging_phone">טעינת הטלפון</string>
     <string name="double_twist_for_camera_mode_summary">‏כדי להיכנס למצב סלפי ולצאת ממנו במצלמת Google, צריך לאחוז במכשיר ולסובב אותו פעמיים מצד לצד כאשר משתמשים באפליקציה.</string>
     <string name="duration_less_than_one_minute">פחות מדקה</string>
     <string name="enable_glanceable_hub_toggle">‏מצב Hub</string>
+    <string name="erase_external_storage" product="default">‏מחיקת אחסון USB</string>
+    <string name="erase_external_storage_description" product="default">‏מחיקת כל הנתונים באחסון ה-USB הפנימי, כגון פריטי מוזיקה או תמונות</string>
     <string name="extreme_battery_saver_summary">כל השינויים שרשומים למעלה כלולים. בנוסף, אפליקציות לא חיוניות וההתראות שלהן יושהו.</string>
     <string name="extreme_battery_saver_title">חיסכון משמעותי בסוללה</string>
     <string name="face_confirmation_hide_illustration_description">עכשיו אפשר להרים את הטלפון או להקיש על המסך ולהשתמש בזיהוי פנים כדי לבטל את הנעילה</string>
@@ -229,6 +232,9 @@
     <string name="limited_warranty_title">אחריות מוגבלת</string>
     <string name="lockscreen_show_weather_summary">הצגת תנאי מזג האוויר הנוכחיים</string>
     <string name="lockscreen_show_weather_title">הצגת נתונים של מזג האוויר</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"‏
+
+כדי למחוק פריטי מוזיקה, תמונות ונתוני משתמש אחרים, יש למחוק את "<b>אחסון ה-USB</b>.</string>
     <string name="my_device_info_account_preference_title">‏חשבון Google</string>
     <string name="owner_info_settings_edit_text_hint">‏לדוגמה, ה-Pixel של יוסי.</string>
     <string name="permit_debugging_data">מתן גישה לדוח איתור באגים</string>
@@ -279,6 +285,7 @@
     <string name="security_dismiss_dialog_title">לסגור את האזהרה הזו?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">אפשר להקיש כדי להגדיר</string>
     <string name="security_settings_face_enroll_education_message">במסך הבא, עליך לסובב את הראש כדי לצלם את הפנים מכל הזוויות</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">במסך הבא יש להחזיק את הטלפון בגובה העיניים</string>
     <string name="security_settings_face_enroll_error_generic_dialog_message">הסריקה לצורך זיהוי פנים לא פעלה.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">הגעת למגבלת הזמן של סריקה לצורך זיהוי פנים. יש לנסות שוב.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">פג הזמן הקצוב להגדרה של הפתיחה</string>
@@ -294,13 +301,29 @@
 פתיחה ע\"י זיהוי הפנים פועלת בצורה הטובה ביותר כשיש מספיק אור, ללא מסכה וללא משקפיים כהים."</string>
     <string name="security_settings_face_enroll_finish_title">נראה טוב!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">מגבלה בראייה או בתנועת הראש</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">"כדי להשתמש בתכונה 'פתיחה ע\"י זיהוי הפנים', יכול להיות שיהיה צורך למקם את הראש ישירות מול הטלפון."</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">העיניים צריכות להיות פתוחות</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"‏לך ולילד או לילדה שלך יש אפשרות להיכנס בכל שלב להגדרות ולמחוק את התבנית לזיהוי הפנים, או להשבית את התכונה 'פתיחה ע\"י זיהוי הפנים'. התבניות לזיהוי הפנים נשמרות בטלפון עד שמוחקים אותן.&lt;br&gt;&lt;br&gt;מידע נוסף זמין בכתובת &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">השליטה נמצאת בידיים שלך ושל הילד או הילדה</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"‏בכל שלב אפשר להיכנס להגדרות ולמחוק את התבנית לזיהוי הפנים, או להשבית את התכונה 'פתיחה ע\"י זיהוי הפנים'. התבניות לזיהוי הפנים נשמרות בטלפון עד שמוחקים אותן.&lt;br&gt;&lt;br&gt;מידע נוסף זמין בכתובת &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">השליטה בידיים שלך</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"כשמפעילים את התכונה 'פתיחה ע\"י זיהוי הפנים' המערכת יוצרת תבנית ייחודית של הפנים של הילד או הילדה כדי לאמת את הזהות שלהם. כדי ליצור את התבנית הזו לזיהוי הפנים במהלך ההגדרה, הילד או הילדה יצטרכו לצלם את הפנים שלהם מזוויות שונות.
+
+כשהם ישתמשו בתכונה 'פתיחה ע\"י זיהוי הפנים', המערכת תיצור תמונות כדי לעדכן את התבנית לזיהוי הפנים שלהם. התמונות שמשמשות ליצירת התבנית לזיהוי הפנים שלהם לא נשמרות. התבנית לזיהוי הפנים נשמרת באופן מאובטח בטלפון ואף פעם לא נשלחת או מועברת ממנו. כל פעולות העיבוד מתבצעות בטלפון באופן מאובטח."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"הפעלה של התכונה 'פתיחה ע\"י זיהוי הפנים' יוצרת תבנית ייחודית של הפנים שהמערכת משתמשת בה כדי לאמת את הזהות שלך. כדי ליצור את התבנית הזו לזיהוי הפנים במהלך ההגדרה, עליך לצלם את הפנים שלך מזוויות שונות.
+
+כשמשתמשים בתכונה 'פתיחה ע\"י זיהוי הפנים', המערכת יוצרת תמונות כדי לעדכן את התבנית לזיהוי הפנים. התמונות המשמשות ליצירת התבנית לזיהוי הפנים שלך לא נשמרות. התבנית לזיהוי הפנים נשמרת באופן מאובטח בטלפון שלך ואף פעם לא נשלחת או מועברת ממנו. כל פעולות העיבוד מתבצעות בטלפון באופן מאובטח."</string>
     <string name="security_settings_face_enroll_introduction_how_title">איך זה עובד</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">"אחת האפשרויות בהגדרות של התכונה 'פתיחה ע\"י זיהוי הפנים' היא לדרוש שהעיניים של הילד או הילדה יהיו פקוחות כדי שהנעילה של הטלפון תתבטל או כדי שהזהות שלהם תאומת. גם ההורה וגם הילד או הילדה יכולים להפעיל את האפשרות הזו בכל שלב ב'הגדרות'."</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">אם הילד או הילדה שלך מרכיבים בדרך כלל משקפיים, הם יכולים להרכיב אותם במהלך ההגדרה.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">ביטול הנעילה של הטלפון באמצעות זיהוי הפנים של הילדים עלול להיות פחות בטוח משימוש בקו ביטול נעילה, בסיסמה או בקוד אימות חזקים</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">מבט לטלפון עשוי לבטל נעילה גם כשהם לא מתכוונים לבטל אותה. יכול להיות שהנעילה תתבטל גם אם מישהו שמאוד דומה להם (למשל אח או אחות תאומים) יסתכל לטלפון, או אם מישהו יחזיק את הטלפון מול הפנים שלהם.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">"אחת האפשרויות בהגדרות של התכונה 'פתיחה ע\"י זיהוי הפנים' היא להגדיר שהעיניים שלך צריכות להיות פקוחות כדי שהנעילה של הטלפון תתבטל או כדי שהזהות שלך תאומת. ניתן להפעיל את האפשרות הזו בכל שלב ב'הגדרות'."</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">אפשר להרכיב משקפיים או משקפי שמש בגוון בהיר.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">ביטול הנעילה של הטלפון באמצעות זיהוי הפנים עלול להיות פחות בטוח משימוש בקו ביטול נעילה, בסיסמה או בקוד אימות חזקים.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">מבט לטלפון עשוי לבטל את הנעילה בלי כוונה. יכול להיות שהנעילה תתבטל גם אם מישהו שמאוד דומה לך (למשל אח או אחות תאומים) יסתכל לטלפון, או אם מישהו יחזיק את הטלפון מול הפנים שלך.</string>
     <string name="security_settings_face_enroll_introduction_info_title">חשוב לזכור</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">אפשר להשתמש בזיהוי פנים כדי לבטל את הנעילה של הטלפון או כדי לאמת זהות, למשל בכניסה לאפליקציות או באישור רכישה.</string>
     <string name="security_settings_face_enroll_introduction_title">"הגדרת 'פתיחה ע\"י זיהוי הפנים'"</string>
     <string name="security_settings_face_enroll_next">הבא</string>
     <string name="security_settings_face_enroll_partial_message">"כדי לשפר את הביצועים, ניתן להגדיר שוב את התכונה 'פתיחה ע\"י זיהוי הפנים' ב'הגדרות'"</string>
@@ -326,7 +349,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">יש להקיש כדי להגדיר טביעת אצבע</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">"‏הפיצ'ר Pixel Imprint יוצר תבנית ייחודית של טביעת האצבע שלך כדי לאמת את זהותך. תהליך היצירה של תבנית לטביעת האצבע כולל צילום תמונות של טביעת האצבע שלך מזוויות שונות."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">‏כשמשתמשים ב-Pixel Imprint, התבנית של טביעת האצבע מתעדכנת באמצעות תמונות. התמונות שמשמשות ליצירת התבנית של טביעת האצבע אף פעם לא נשמרות, אבל התבנית של טביעת האצבע נשמרת באופן מאובטח בטלפון שלך ואף פעם לא נשלחת או מועברת ממנו. כל פעולות העיבוד מתבצעות בטלפון באופן מאובטח.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">‏בכל שלב אפשר להיכנס להגדרות ולמחוק את התבנית של טביעת האצבע, או להשבית את Pixel Imprint. התבניות של טביעת האצבע נשמרות בטלפון עד שמוחקים אותן.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">"‏הפיצ'ר Pixel Imprint יוצר תבנית ייחודית של טביעת האצבע של הילד או הילדה כדי לאמת את זהותם. כדי ליצור את התבנית הזו לטביעת האצבע במהלך ההגדרה, יהיה עליהם לצלם תמונות של טביעת האצבע מזוויות שונות."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">‏כשמשתמשים ב-Pixel Imprint, התבנית של טביעת האצבע מתעדכנת באמצעות תמונות. התמונות המשמשות ליצירת התבנית של טביעת האצבע של הילד או הילדה אף פעם לא נשמרות. התבנית של טביעת האצבע נשמרת באופן מאובטח בטלפון ואף פעם לא נשלחת או מועברת ממנו. כל פעולות העיבוד מתבצעות בטלפון באופן מאובטח.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">‏לך ולילד או לילדה שלך יש אפשרות להיכנס בכל שלב להגדרות ולמחוק את התבנית של טביעת האצבע, או להשבית את Pixel Imprint. התבניות של טביעת האצבע נשמרות בטלפון עד שהן נמחקות.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"‏מידע נוסף על ביטול הנעילה של Pixel בטביעת אצבע זמין בכתובת &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">‏Pixel Imprint לעבודה</string>
     <string name="setup_suggestion_summary">רק עוד כמה שלבים</string>
@@ -335,6 +362,7 @@
     <string name="smart_battery_a11y_expand_label">הרחבה, אופטימיזציה של ניצול הסוללה</string>
     <string name="smart_battery_footer">"כדי להאריך את חיי הסוללה, התכונה 'אופטימיזציה של ניצול הסוללה' עשויה להפחית את רמת הביצועים ואת הפעילות ברקע. ייתכן שיהיה עיכוב בקבלת התראות מסוימות."</string>
     <string name="smart_battery_manager_title">העדפות סוללה</string>
+    <string name="smart_battery_summary" product="default">"התכונה 'אופטימיזציה של ניצול הסוללה' נעזרת בנתוני השימוש בטלפון כדי לבצע ברציפות אופטימיזציה של האופן שבו אפליקציות משתמשות בסוללה. כדי להאריך את חיי הסוללה, התכונה עשויה לצמצם את רמת הביצועים ואת הפעילות ברקע."</string>
     <string name="smart_battery_title">אופטימיזציה של ניצול הסוללה</string>
     <string name="software_update_can_be_updated_header">‏רוצה לשפר את Pixel אפילו יותר?</string>
     <string name="software_update_detail_indication_1_update_available">יש עדכון זמין</string>

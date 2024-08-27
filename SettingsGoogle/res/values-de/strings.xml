@@ -148,6 +148,7 @@ Phishing ist der Versuch, Anmeldedaten oder andere personenbezogene Daten zu ste
     <string name="content_protection_preference_subpage_summary">Das Scannen von App-Aktivitäten auf Phishing oder andere irreführende Praktiken wird privat und direkt auf deinem Gerät ausgeführt. Werden solche Praktiken erkannt, so werden App-Informationen an Google Play Protect gesendet, um zu bestätigen, dass es eine Bedrohung gibt, und um App-Nutzer zu warnen.</string>
     <string name="contextual_timeout_description">Das Display schaltet sich automatisch früher aus, wenn das Gerät nicht verwendet wird</string>
     <string name="contextual_timeout_title">Intelligentes Zeitlimit</string>
+    <string name="credentials_install_summary" product="default">Zertifikate von Speicher installieren</string>
     <string name="dark_ui_text">Beim dunklen Design ist der Hintergrund schwarz, damit dein Akku länger hält. Zeitpläne für das dunkle Design werden erst aktiviert, wenn das Display aus ist.</string>
     <string name="debugging_data_title">Daten für die Fehlerbehebung</string>
     <string name="discover_tips_button">Tipps entdecken</string>
@@ -155,6 +156,8 @@ Phishing ist der Versuch, Anmeldedaten oder andere personenbezogene Daten zu ste
     <string name="double_twist_for_camera_mode_summary">Wenn du den Selfie-Modus deiner Kamera starten oder beenden möchtest, drehe zweimal dein Handgelenk, während die Google Kamera App geöffnet ist.</string>
     <string name="duration_less_than_one_minute">Weniger als 1 Minute</string>
     <string name="enable_glanceable_hub_toggle">Hub-Modus</string>
+    <string name="erase_external_storage" product="default">USB-Speicher löschen</string>
+    <string name="erase_external_storage_description" product="default">Alle Daten, z. B. Musik und Fotos, aus dem internen USB-Speicher löschen</string>
     <string name="extreme_battery_saver_summary">Übernimmt alle oben aufgeführten Änderungen. Außerdem werden weniger wichtige Apps und deren Benachrichtigungen pausiert.</string>
     <string name="extreme_battery_saver_title">Extrem-Energiesparmodus</string>
     <string name="face_confirmation_hide_illustration_description">Wenn du jetzt dein Smartphone zur Hand nimmst oder auf das Display tippst, kannst du es mit deinem Gesicht entsperren.</string>
@@ -228,6 +231,9 @@ Sicherungsdaten werden nicht auf dein Speicherkontingent bei Google Drive angere
     <string name="limited_warranty_title">Beschränkte Garantie</string>
     <string name="lockscreen_show_weather_summary">Aktuelles Wetter anzeigen</string>
     <string name="lockscreen_show_weather_title">Wetter anzeigen</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Um auch Musik, Bilder und sonstige Nutzerdaten zu löschen, muss der "<b>USB-Speicher</b> gelöscht werden.</string>
     <string name="my_device_info_account_preference_title">Google-Konto</string>
     <string name="owner_info_settings_edit_text_hint">Zum Beispiel „Peters Pixel“.</string>
     <string name="permit_debugging_data">Zugriff auf Fehlerberichte gewähren</string>
@@ -279,6 +285,7 @@ Drehe dein Phone hierzu um."</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Zum Einrichten tippen</string>
     <string name="security_settings_face_enroll_dialog_ok">OK</string>
     <string name="security_settings_face_enroll_education_message">Auf dem nächsten Bildschirm wirst du aufgefordert, deinen Kopf zu drehen, um dein Gesicht aus allen Blickwinkeln aufzunehmen.</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Auf dem nächsten Bildschirm musst du dein Smartphone auf Augenhöhe halten</string>
     <string name="security_settings_face_enroll_error_dialog_title">Scan wurde nicht abgeschlossen</string>
     <string name="security_settings_face_enroll_error_generic_dialog_message">Gesichtsscan ist fehlgeschlagen.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">Zeitüberschreitung bei der Anmeldung per Gesichtsscan. Versuch es noch einmal.</string>
@@ -295,13 +302,29 @@ Die Entsperrung per Gesichtserkennung funktioniert am besten, wenn die Umgebung 
 Die Entsperrung per Gesichtserkennung funktioniert am besten, wenn es hell genug ist und du keine Maske oder dunkle Brille trägst."</string>
     <string name="security_settings_face_enroll_finish_title">Sieht gut aus!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Einrichtung bei Einschränkung von Sehvermögen oder Kopfbeweglichkeit.</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Wenn du die Entsperrung per Gesichtserkennung verwendest, muss sich dein Kopf möglicherweise noch direkter vor dem Smartphone befinden.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Augen müssen geöffnet sein</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Du und dein Kind könnt jederzeit das Gesichtsmodell löschen oder die Funktion „Entsperrung per Gesichtserkennung“ in den Einstellungen deaktivieren. Gesichtsmodelle bleiben auf deinem Smartphone gespeichert, bis sie gelöscht werden.&lt;br&gt;&lt;br&gt;Weitere Informationen findest du unter &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Du und dein Kind habt die Kontrolle</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Du kannst jederzeit dein Gesichtsmodell löschen oder die Funktion „Entsperrung per Gesichtserkennung“ in den Einstellungen deaktivieren. Gesichtsmodelle bleiben auf deinem Smartphone gespeichert, bis du sie löschst.&lt;br&gt;&lt;br&gt;Weitere Informationen findest du unter &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Du hast die Kontrolle</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Wenn du die Funktion „Entsperrung per Gesichtserkennung“ nutzen willst, wird ein eindeutiges Modell des Gesichts deines Kindes erstellt, mit dem seine Identität bestätigt werden kann. Bei der Einrichtung macht dein Kind aus verschiedenen Blickwinkeln Fotos von seinem Gesicht. Daraus wird das Gesichtsmodell erstellt.
+
+Jedes Mal, wenn dein Kind sein Smartphone per Gesichtserkennung entsperrt, wird das Modell mithilfe neuer Bilder aktualisiert. Die verwendeten Fotos werden niemals gespeichert. Das Modell selbst wird auf dem Smartphone abgelegt, ohne es je zu verlassen. Die Verarbeitung der entsprechenden Daten findet unter Einhaltung aller Sicherheitsvorgaben ausschließlich auf dem Smartphone statt."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Wenn du die Funktion „Entsperrung per Gesichtserkennung“ nutzen willst, wird ein eindeutiges Modell deines Gesichts erstellt, mit dem deine Identität bestätigt werden kann. Bei der Einrichtung machst du aus verschiedenen Blickwinkeln Fotos von deinem Gesicht. Daraus wird das Gesichtsmodell erstellt.
+
+Jedes Mal, wenn du dein Smartphone per Gesichtserkennung entsperrst, wird das Modell mithilfe neuer Bilder aktualisiert. Die verwendeten Fotos werden niemals gespeichert. Das Modell selbst wird auf dem Smartphone abgelegt und verbleibt dort. Die Verarbeitung der entsprechenden Daten findet unter Einhaltung aller Sicherheitsvorgaben ausschließlich auf dem Smartphone statt."</string>
     <string name="security_settings_face_enroll_introduction_how_title">So gehts</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Bei der Entsperrung per Gesichtserkennung muss dein Kind möglicherweise die Augen offen haben, damit seine Identität bestätigt bzw. das Smartphone entsperrt werden kann. Du und dein Kind könnt diese Option jederzeit in den Einstellungen aktivieren.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Falls dein Kind eine Brille hat, kann es sie auch bei der Einrichtung tragen.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Das Entsperren des Smartphones deines Kindes mit seinem Gesicht kann weniger sicher sein als ein starkes Muster oder Passwort bzw. eine starke PIN</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Wenn dein Kind das Smartphone ansieht, kann es entsperrt werden, selbst wenn das nicht beabsichtigt ist. Das Smartphone kann eventuell auch von jemandem entsperrt werden, der deinem Kind sehr ähnlich sieht, etwa einem eineiigen Zwilling, oder wenn jemand das Smartphone vor das Gesicht deines Kindes hält.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Bei der Entsperrung per Gesichtserkennung musst du möglicherweise die Augen offen haben, damit deine Identität bestätigt bzw. das Smartphone entsperrt werden kann. Du kannst diese Option jederzeit in den Einstellungen aktivieren.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Eine Korrekturbrille oder eine leicht getönte Sonnenbrille sind in Ordnung.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Das Entsperren des Smartphones per Gesichtserkennung kann weniger sicher sein als ein starkes Muster oder Passwort bzw. eine starke PIN</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Wenn du das Smartphone ansiehst, kann es entsperrt werden, selbst wenn das nicht beabsichtigt ist. Dein Smartphone kann eventuell auch von jemandem entsperrt werden, der dir sehr ähnlich sieht, beispielsweise einem eineiigen Zwilling, oder wenn jemand das Smartphone vor dein Gesicht hält.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Hinweis</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Du kannst mit deinem Gesicht dein Smartphone entsperren oder deine Identität bestätigen, beispielsweise um dich in Apps anzumelden oder einen Kauf zu autorisieren.</string>
     <string name="security_settings_face_enroll_introduction_title">Entsperrung per Gesicht einrichten</string>
     <string name="security_settings_face_enroll_next">Weiter</string>
     <string name="security_settings_face_enroll_partial_message">Damit die Entsperrung per Gesichtserkennung optimal funktioniert, kannst du sie in den Einstellungen neu einrichten</string>
@@ -327,7 +350,11 @@ Hinweis: Dieses Gerät kann nicht mit deinem Fingerabdruck entsperrt werden. Wei
     <string name="security_settings_fingerprint_preference_summary_none">Zum Einrichten des Fingerabdrucks tippen</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">„Pixel Imprint“ erstellt ein eindeutiges Modell deines Fingerabdrucks, mit dem deine Identität bestätigt werden kann. Bei der Einrichtung legst du deinen Finger dazu immer wieder anders auf. Mit diesen Aufnahmen wird dann das Fingerabdruckmodell erstellt.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">Wenn du „Pixel Imprint“ nutzt, werden Bilder zum Aktualisieren deines Fingerabdruckmodells verwendet. Während die zur Erstellung deines Fingerabdruckmodells verwendeten Bilder niemals gespeichert werden, wird das Modell selbst auf deinem Smartphone abgelegt, ohne es je zu verlassen. Die Verarbeitung der entsprechenden Daten findet unter Einhaltung aller Sicherheitsvorgaben ausschließlich auf dem Smartphone statt.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Du kannst jederzeit dein Fingerabdruckmodell löschen oder „Pixel Imprint“ in den Einstellungen deaktivieren. Fingerabdruckmodelle bleiben auf deinem Smartphone gespeichert, bis du sie löschst.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">„Pixel Imprint“ erstellt ein eindeutiges Modell des Fingerabdrucks deines Kindes, mit dem seine Identität bestätigt werden kann. Bei der Einrichtung legt es seinen Finger dazu immer wieder anders auf. Mit diesen Aufnahmen wird dann das Fingerabdruckmodell erstellt.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">Wenn dein Kind „Pixel Imprint“ nutzt, werden Bilder zum Aktualisieren seines Fingerabdruckmodells verwendet. Während die zum Erstellen des Fingerabdruckmodells verwendeten Bilder niemals gespeichert werden, wird das Modell selbst auf dem Smartphone abgelegt, ohne es je zu verlassen. Die Verarbeitung der entsprechenden Daten findet unter Einhaltung aller Sicherheitsvorgaben ausschließlich auf dem Smartphone statt.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Du und dein Kind könnt das Fingerabdruckmodell jederzeit löschen oder „Pixel Imprint“ in den Einstellungen deaktivieren. Fingerabdruckmodelle bleiben auf dem Smartphone gespeichert, bis sie gelöscht werden.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Weitere Informationen zur Entsperrung per Fingerabdruck deines Pixel findest du unter &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint für die Arbeit</string>
     <string name="setup_suggestion_summary">Nur noch ein paar Schritte</string>
@@ -336,6 +363,7 @@ Hinweis: Dieses Gerät kann nicht mit deinem Fingerabdruck entsperrt werden. Wei
     <string name="smart_battery_a11y_expand_label">Maximieren, intelligenter Akku</string>
     <string name="smart_battery_footer">Zur Verlängerung der Akkulaufzeit kann die Funktion „Intelligenter Akku“ die Leistung und Hintergrundaktivitäten reduzieren. Einige Benachrichtigungen können sich verzögern.</string>
     <string name="smart_battery_manager_title">Intelligenter Akku und adaptives Laden</string>
+    <string name="smart_battery_summary" product="default">Die Funktion „Intelligenter Akku“ lernt anhand deiner Smartphone-Nutzung und optimiert fortlaufend, wie Apps den Akku verwenden. Zur Verlängerung der Akkulaufzeit kann die Funktion die Leistung verringern oder Benachrichtigungen verzögern.</string>
     <string name="smart_battery_title">Intelligenter Akku</string>
     <string name="software_update_can_be_updated_header">Dein Pixel kann gleich noch mehr</string>
     <string name="software_update_detail_indication_1_update_available">1 Update verfügbar</string>

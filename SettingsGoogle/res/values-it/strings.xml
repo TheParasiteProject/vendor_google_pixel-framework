@@ -149,6 +149,7 @@ Il phishing è un tentativo di furto delle credenziali di accesso o di altre inf
     <string name="content_protection_preference_subpage_summary">"La scansione viene eseguita privatamente sul dispositivo e viene controllata l'attività delle app alla ricerca di phishing o di altri comportamenti ingannevoli. Nel caso vengano rilevati comportamenti di questo tipo, alcune informazioni sull'app verranno inviate a Google Play Protect per confermare la minaccia e avvisare gli utenti dell'app."</string>
     <string name="contextual_timeout_description">Spegne automaticamente lo schermo in anticipo se non utilizzi il dispositivo</string>
     <string name="contextual_timeout_title">Timeout adattivo</string>
+    <string name="credentials_install_summary" product="default">Installa certificati da archivio</string>
     <string name="dark_ui_text">Il tema scuro usa uno sfondo nero per aumentare la durata della batteria. Le pianificazioni del tema scuro non si attivano finché lo schermo non viene spento.</string>
     <string name="debugging_data_title">Dati di debug</string>
     <string name="discover_tips_button">Scopri suggerimenti</string>
@@ -156,6 +157,8 @@ Il phishing è un tentativo di furto delle credenziali di accesso o di altre inf
     <string name="double_twist_for_camera_mode_summary">"Per attivare e disattivare la modalità selfie in Google Fotocamera, apri l'app e ruota due volte il polso."</string>
     <string name="duration_less_than_one_minute">meno di un minuto</string>
     <string name="enable_glanceable_hub_toggle">Modalità Hub</string>
+    <string name="erase_external_storage" product="default">Cancella archivio USB</string>
+    <string name="erase_external_storage_description" product="default">"Cancella tutti i dati nell'archivio USB interno, come musica o foto"</string>
     <string name="extreme_battery_saver_summary">Include tutte le modifiche elencate sopra. Mette inoltre in pausa le app non essenziali e le relative notifiche.</string>
     <string name="extreme_battery_saver_title">Risparmio Energetico Estremo</string>
     <string name="face_confirmation_hide_illustration_description">Ora quando sollevi lo smartphone o tocchi lo schermo, puoi sbloccarlo con il volto.</string>
@@ -230,6 +233,9 @@ I dati di backup non vengono considerati per la quota di spazio di archiviazione
     <string name="limited_warranty_title">Garanzia limitata</string>
     <string name="lockscreen_show_weather_summary">Visualizza le condizioni meteo attuali</string>
     <string name="lockscreen_show_weather_title">Mostra meteo</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Per cancellare musica, foto e altri dati utente, è necessario cancellare i dati dell'"<b>archivio USB</b>.</string>
     <string name="my_device_info_account_preference_title">Account Google</string>
     <string name="owner_info_settings_edit_text_hint">Esempio: telefono di Anna</string>
     <string name="permit_debugging_data">Consenti accesso a segnalazioni di bug</string>
@@ -280,6 +286,7 @@ Capovolgi il telefono per provare."</string>
     <string name="security_dismiss_dialog_title">Vuoi ignorare questo avviso?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Tocca per configurare</string>
     <string name="security_settings_face_enroll_education_message">Nella prossima schermata, ruota la testa per acquisire tutte le angolazioni del tuo volto</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">"Nella prossima schermata, tieni lo smartphone all'altezza degli occhi"</string>
     <string name="security_settings_face_enroll_error_generic_dialog_message">Registrazione volto non riuscita.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Timeout configurazione dello Sblocco con il Volto</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Ora puoi usare il volto per sbloccare il tuo smartphone o per verificare la tua identità, ad esempio per accedere alle app o approvare un acquisto</string>
@@ -294,13 +301,29 @@ Lo Sblocco con il Volto funziona meglio quando c'è abbastanza luce e non indoss
 Lo Sblocco con il Volto funziona meglio quando c'è abbastanza luce e non indossi una mascherina oppure occhiali scuri."</string>
     <string name="security_settings_face_enroll_finish_title">Perfetto!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Configurazione in caso di vista o mobilità della testa limitate</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Quando usi lo Sblocco con il Volto, è possibile che tu debba tenere la testa in posizione più frontale rispetto allo smartphone.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Gli occhi devono essere aperti</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Tu e tuo figlio potete eliminare il modello del volto o disattivare lo Sblocco con il Volto in qualsiasi momento nelle Impostazioni. I modelli del volto rimangono memorizzati sul telefono finché non vengono eliminati.&lt;br&gt;&lt;br&gt;Scopri di più all'indirizzo &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Tu e tuo figlio avete il controllo</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Puoi eliminare il modello del volto o disattivare lo Sblocco con il Volto in qualsiasi momento nelle Impostazioni. I modelli del volto rimangono memorizzati sullo smartphone finché non li elimini.&lt;br&gt;&lt;br&gt;Scopri di più all'indirizzo &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Sei tu ad avere il controllo</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"La funzionalità di Sblocco con il Volto crea un modello univoco del volto di tuo figlio per verificare la sua identità. Per creare il modello del volto durante la configurazione, tuo figlio dovrà acquisire immagini del suo volto da diverse angolazioni.
+
+Quando utilizza lo Sblocco con il Volto, le immagini vengono usate per aggiornare il modello del volto. Le immagini usate per creare il suo modello del volto non vengono archiviate, ma il modello del volto viene memorizzato in modo sicuro sul telefono e non viene mai spostato. L'intera elaborazione avviene in modo sicuro sul telefono."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Lo Sblocco con il Volto crea un modello univoco del tuo volto per verificare la tua identità. Per creare il modello del volto durante la configurazione, dovrai acquisire immagini del tuo volto da diverse angolazioni.
+
+Quando utilizzi lo Sblocco con il Volto, le immagini vengono usate per aggiornare il modello del volto. Le immagini usate per creare il modello del volto non vengono archiviate, ma il modello del volto viene memorizzato in modo sicuro sul tuo smartphone e non viene mai trasferito dal dispositivo. L'intera elaborazione avviene in modo sicuro sul tuo smartphone."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Come funziona</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">La funzionalità di Sblocco con il Volto può richiedere che gli occhi di tuo figlio siano aperti per sbloccare il telefono o verificare la sua identità. Tu e tuo figlio potete attivare questa opzione in qualsiasi momento nelle Impostazioni.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Se normalmente tuo figlio porta gli occhiali, potrà indossarli anche durante la configurazione.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">"L'uso del volto di tuo figlio per sbloccare il suo telefono potrebbe essere meno sicuro dell'uso di una sequenza, un PIN o una password efficaci"</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Se guarda direttamente il telefono, potrebbe sbloccarlo anche senza volerlo. Il suo telefono può essere sbloccato anche da qualcuno che assomiglia molto a tuo figlio, ad esempio un gemello, o se viene rivolto verso il suo volto.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">La funzionalità di Sblocco con il Volto può richiedere che i tuoi occhi siano aperti per sbloccare il telefono o verificare la tua identità. Puoi attivare questa opzione in qualsiasi momento nelle Impostazioni.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Sono consentiti occhiali da vista e occhiali da sole chiari.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">"L'uso del tuo volto per sbloccare lo smartphone potrebbe essere meno sicuro dell'uso di una sequenza, un PIN o una password efficaci."</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Se guardi direttamente lo smartphone, potresti sbloccarlo anche senza volerlo. Il tuo smartphone può essere sbloccato anche da qualcuno che ti assomiglia molto, ad esempio un gemello, o se viene rivolto verso il tuo viso.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Ricorda</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Usa il volto per sbloccare il telefono o per verificare la tua identità, ad esempio per accedere alle app o approvare un acquisto.</string>
     <string name="security_settings_face_enroll_introduction_title">Configura lo Sblocco con il Volto</string>
     <string name="security_settings_face_enroll_next">Avanti</string>
     <string name="security_settings_face_enroll_partial_message">Per migliorare le prestazioni, puoi riconfigurare lo Sblocco con il Volto nelle Impostazioni</string>
@@ -326,7 +349,11 @@ Nota. Non puoi utilizzare la tua impronta per sbloccare il dispositivo. Per ulte
     <string name="security_settings_fingerprint_preference_summary_none">"Tocca per configurare l'impronta"</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">"Pixel Imprint crea un modello univoco della tua impronta per poter verificare la tua identità. Per creare il modello dell'impronta durante la configurazione, dovrai acquisire immagini della tua impronta da diverse posizioni."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">"Quando utilizzi Pixel Imprint, le immagini vengono usate per aggiornare il modello dell'impronta. Le immagini usate per creare il modello dell'impronta non vengono mai archiviate, ma il modello viene memorizzato in modo sicuro sul tuo telefono e non viene mai spostato. L'intera elaborazione avviene in modo sicuro sul telefono."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">"Puoi eliminare il modello dell'impronta o disattivare Pixel Imprint in qualsiasi momento nelle Impostazioni. I modelli delle impronte rimangono memorizzati sul telefono finché non li elimini."</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">"Pixel Imprint crea un modello univoco dell'impronta di tuo figlio per verificare la sua identità. Per creare il modello dell'impronta durante la configurazione, dovrà acquisire immagini della sua impronta da diverse posizioni."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">"Quando utilizza Pixel Imprint, le immagini vengono usate per aggiornare il modello dell'impronta. Le immagini usate per creare il modello dell'impronta di tuo figlio non vengono mai archiviate, ma il modello viene memorizzato in modo sicuro sul telefono e non viene mai spostato. L'intera elaborazione avviene in modo sicuro sul telefono."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">"Tu e tuo figlio potete eliminare il modello dell'impronta o disattivare Pixel Imprint in qualsiasi momento nelle Impostazioni. I modelli delle impronte rimangono memorizzati sul telefono finché non vengono eliminati."</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Scopri di più sullo Sblocco con l'Impronta di Pixel all'indirizzo &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint per il profilo di lavoro</string>
     <string name="setup_suggestion_summary">Mancano solo pochi passaggi</string>
@@ -335,6 +362,7 @@ Nota. Non puoi utilizzare la tua impronta per sbloccare il dispositivo. Per ulte
     <string name="smart_battery_a11y_expand_label">Espandi, Batteria Adattiva</string>
     <string name="smart_battery_footer">"Per prolungare la durata della batteria, la funzionalità Batteria Adattiva potrebbe ridurre le prestazioni e l'attività in background. Alcune notifiche potrebbero subire dei ritardi."</string>
     <string name="smart_battery_manager_title">Preferenze adattive</string>
+    <string name="smart_battery_summary" product="default">"Batteria Adattiva apprende dall'utilizzo del tuo smartphone per ottimizzare continuamente il modo in cui le app usano la batteria. Per estendere la durata della batteria, potrebbe ridurre le prestazioni e ritardare le notifiche."</string>
     <string name="smart_battery_title">Batteria Adattiva</string>
     <string name="software_update_can_be_updated_header">Migliora ancora di più il tuo Pixel</string>
     <string name="software_update_detail_indication_1_update_available">1 aggiornamento disponibile</string>

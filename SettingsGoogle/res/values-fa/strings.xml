@@ -149,6 +149,7 @@
     <string name="content_protection_preference_subpage_summary">‏اسکن به‌صورت خصوصی روی دستگاهتان اجرا می‌شود و فعالیت برنامه‌ها را ازنظر رمزگیری یا سایر رفتارهای گمراه‌کننده بررسی می‌کند. درصورت شناسایی، برخی‌از اطلاعات برنامه برای تأیید تهدید و ارسال هشدار به کاربران برنامه به «سپر ایمنی Google Play» ارسال می‌شود.</string>
     <string name="contextual_timeout_description">اگر از دستگاهتان استفاده نکنید، صفحه‌نمایش شما را به‌طور خودکار زودتر خاموش می‌کند</string>
     <string name="contextual_timeout_title">درنگ تطبیقی</string>
+    <string name="credentials_install_summary" product="default">نصب گواهی‌ها از فضای ذخیره‌سازی</string>
     <string name="dark_ui_text">«زمینه تیره» از پس‌زمینه‌ای سیاه استفاده می‌کند تا شارژ باتری برای مدت طولانی‌تری حفظ شود. «زمینه تیره» تا زمانی که صفحه خاموش باشد، زمان انتظاری برای روشن شدن تنظیم می‌کند.</string>
     <string name="debugging_data_title">داده‌های عیب‌یابی</string>
     <string name="discover_tips_button">نکته‌های کاوش</string>
@@ -156,6 +157,8 @@
     <string name="double_twist_for_camera_mode_summary">‏برای رفتن به حالت سلفی و خارج شدن از آن در «دوربین Google»، وقتی در برنامه هستید دستگاه را دو بار بچرخانید.</string>
     <string name="duration_less_than_one_minute">کمتر از ۱ دقیقه</string>
     <string name="enable_glanceable_hub_toggle">حالت متصل</string>
+    <string name="erase_external_storage" product="default">‏پاک کردن حافظهٔ USB</string>
+    <string name="erase_external_storage_description" product="default">‏همه داده‌های موجود در حافظهٔ USB داخلی مانند موسیقی یا عکس‌ها را پاک کنید</string>
     <string name="extreme_battery_saver_summary">شامل همه تغییرات فهرست‌شده در بالا می‌شود. همچنین برنامه‌های غیرضروری و اعلان‌هایشان را موقتاً متوقف می‌کند.</string>
     <string name="extreme_battery_saver_title">نهایت بهینه‌سازی باتری</string>
     <string name="face_confirmation_hide_illustration_description">اکنون می‌توانید هنگام بلند کردن تلفن یا ضربه زدن روی صفحه‌نمایش، با چهره‌تان قفل تلفن را باز کنید.</string>
@@ -230,6 +233,9 @@
     <string name="limited_warranty_title">ضمانت‌نامه محدود</string>
     <string name="lockscreen_show_weather_summary">دیدن وضعیت آب‌وهوای کنونی</string>
     <string name="lockscreen_show_weather_title">نمایش آب‌وهوا</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"‏
+
+برای پاک کردن فایل‌های موسیقی، تصاویر، و دیگر داده‌های کاربر، "<b>حافظه USB</b> باید پاک شود.</string>
     <string name="my_device_info_account_preference_title">‏حساب Google</string>
     <string name="owner_info_settings_edit_text_hint">‏برای مثال، Ali’s Pixel (پیکسل علی)</string>
     <string name="permit_debugging_data">مجاز کردن دسترسی به گزارش اشکال</string>
@@ -281,6 +287,7 @@
     <string name="security_dismiss_dialog_title">این هشدار رد شود؟</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">برای راه‌اندازی ضربه بزنید</string>
     <string name="security_settings_face_enroll_education_message">در صفحه بعد، سرتان را بچرخانید تا همه زوایای صورتتان را ثبت کند</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">در صفحه بعدی، تلفن را هم‌سطح چشمانتان نگه دارید</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">مهلت ثبت چهره به پایان رسید. دوباره امتحان کنید.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">مهلت راه‌اندازی «قفل‌گشایی با چهره» تمام شد</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">اکنون می‌توانید از چهره‌تان برای باز کردن قفل تلفن یا به‌تأیید رساندن هویتتان (مثلاً هنگام ورود به سیستم برنامه‌ها یا تأیید خریدها) استفاده کنید</string>
@@ -295,13 +302,29 @@
 «قفل‌گشایی با چهره» در نور کافی و هنگامی که ماسک یا عینک تیره نداشته باشید بهترین عملکرد را خواهد داشت."</string>
     <string name="security_settings_face_enroll_finish_title">خوب به نظر می‌رسد!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">راه‌اندازی برای افراد با دید/حرکت سر محدود</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">هنگام استفاده از «قفل‌گشایی با چهره»، ممکن است لازم شود سرتان را مستقیم روبروی تلفن بگیرید.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">به چشمان باز نیاز دارد</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"‏شما و فرزندتان هرزمان بخواهید می‌توانید مدل چهره را حذف کنید، یا «قفل‌گشایی با چهره» را در «تنظیمات» خاموش کنید. تا وقتی مدل‌های چهره را حذف نکنید، در تلفن ذخیره خواهند بود.&lt;br&gt;&lt;br&gt;در &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; اطلاعات بیشتری کسب کنید."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">کنترل دراختیار شما و فرزندتان است</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"‏هرزمان بخواهید می‌توانید در «تنظیمات»، مدل چهره را حذف کنید یا «قفل‌گشایی با چهره» را خاموش کنید. تا وقتی مدل‌های چهره را حذف نکنید، در تلفن ذخیره خواهند بود.&lt;br&gt;&lt;br&gt;در &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; اطلاعات بیشتری کسب کنید."</string>
     <string name="security_settings_face_enroll_introduction_control_title">کنترل در دست شما است</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"«قفل‌گشایی با چهره» مدلی بی‌همتا از چهره فرزندتان ایجاد می‌کند که از آن برای تأیید هویت او استفاده می‌شود. برای ایجاد این مدل چهره درطول راه‌اندازی، فرزندتان چند تصویر از زاویه‌های مختلف از چهره‌اش می‌گیرد.
+
+وقتی فرزندتان از «قفل‌گشایی با چهره» استفاده می‌کند، مدل چهره او به‌کمک تصاویر به‌روز می‌شود. تصاویر استفاده‌شده برای ایجاد مدل چهره فرزندتان ذخیره نمی‌شوند، اما مدل چهره به‌طور ایمن در تلفن ذخیره می‌شود و هرگز از آن خارج نمی‌شود. همه پردازش‌ها به‌طور ایمن در تلفن انجام می‌شود."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"«قفل‌گشایی با چهره» مدلی بی‌همتا از چهره‌تان ایجاد می‌کند که از آن برای تأیید هویتتان استفاده می‌شود. برای ایجاد این مدل چهره درطول راه‌اندازی، چند تصویر از زاویه‌های مختلف از چهره‌تان می‌گیرید.
+
+وقتی از «قفل‌گشایی با چهره» استفاده می‌کنید، مدل چهره‌تان به‌کمک تصاویر به‌روز می‌شود. تصاویر استفاده‌شده برای ایجاد مدل چهره‌تان ذخیره نمی‌شوند، اما مدل چهره به‌طور ایمن در تلفنتان ذخیره می‌شود و هرگز از آن خارج نمی‌شود. همه پردازش‌ها به‌طور ایمن در تلفنتان انجام می‌شود."</string>
     <string name="security_settings_face_enroll_introduction_how_title">نحوه کار</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">«قفل‌گشایی با چهره» می‌تواند باز بودن چشم‌های فرزندتان را برای باز کردن قفل تلفن یا تأیید هویت او الزامی کند. شما و فرزندتان هروقت بخواهید می‌توانید این گزینه را در «تنظیمات» روشن کنید.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">اگر فرزندتان معمولاً از عینک استفاده می‌کند، می‌تواند درطول راه‌اندازی آن را به چشم بزند.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">استفاده از چهره فرزندتان برای باز کردن قفل تلفن او ممکن است نسبت به الگو، پین، یا گذرواژه قوی از امنیت کمتری برخوردار باشد</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">نگاه کردن به تلفن می‌تواند قفل آن را باز کند، حتی اگر فرزندتان چنین قصدی نداشته باشد. اگر فرد دیگری تلفن را در جلوی صورت فرزندتان نگه دارد یا شباهت زیادی به فرزندتان داشته باشد (مثل خواهر یا برادر دوقلو)، می‌تواند قفل تلفن را باز کند.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">«قفل‌گشایی با چهره» می‌تواند باز بودن چشم‌هایتان را برای باز کردن قفل تلفن یا تأیید هویتتان الزامی کند. هروقت بخواهید می‌توانید این گزینه را در «تنظیمات» روشن کنید.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">عینک یا عینک دودی با کمی سایه‌روشن قابل قبول است.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">استفاده از چهره برای باز کردن قفل تلفن می‌تواند ایمنی کمتری نسبت به الگو، پین، یا گذرواژه قوی داشته باشد</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">نگاه کردن به تلفن می‌تواند قفل آن را باز کند، حتی اگر چنین قصدی نداشته باشید. اگر فرد دیگری تلفنتان را جلوی صورتتان نگه دارد یا شباهت زیادی به شما داشته باشد (مثل خواهر یا برادر دوقلو)، می‌تواند قفل تلفنتان را باز کند.</string>
     <string name="security_settings_face_enroll_introduction_info_title">به‌خاطر داشته باشید</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">از چهره‌تان برای باز کردن قفل تلفن یا به‌تأیید رساندن هویتتان (مثلاً هنگام ورود به سیستم برنامه‌ها یا تأیید خریدها) استفاده کنید.</string>
     <string name="security_settings_face_enroll_introduction_title">راه‌اندازی «قفل‌گشایی با چهره»</string>
     <string name="security_settings_face_enroll_next">بعدی</string>
     <string name="security_settings_face_enroll_partial_message">برای بهبود عملکرد، می‌توانید «قفل‌گشایی با چهره» را در «تنظیمات» دوباره راه‌اندازی کنید</string>
@@ -328,7 +351,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">برای راه‌اندازی اثر انگشت ضربه بزنید</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">‏Pixel Imprint مدلی بی‌همتا از اثر انگشتتان ایجاد می‌کند که برای تأیید هویتتان استفاده می‌شود. برای ایجاد این مدل اثر انگشت درحین راه‌اندازی، چند تصویر از اثر انگشتتان در موقعیت‌های مختلف می‌گیرید.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">‏وقتی از Pixel Imprint استفاده می‌کنید، مدل اثر انگشتتان به‌کمک تصاویر به‌روز می‌شود. تصاویر استفاده‌شده برای ایجاد مدل اثر انگشت هرگز ذخیره نمی‌شوند، اما مدل اثر انگشت به‌طور ایمن در تلفنتان ذخیره می‌شود و هرگز از آن خارج نمی‌شود. همه پردازش‌ها به‌طور ایمن در تلفنتان انجام می‌شود.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">‏هرزمان بخواهید می‌توانید در «تنظیمات»، مدل اثر انگشتتان را حذف کنید یا Pixel Imprint را خاموش کنید. تا زمانی‌که مدل‌های اثر انگشت را حذف نکنید، در تلفنتان باقی می‌مانند.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">‏Pixel Imprint مدلی بی‌همتا از اثر انگشت فرزندتان ایجاد می‌کند که برای تأیید هویت او استفاده می‌شود. برای ایجاد این مدل اثر انگشت درحین راه‌اندازی، فرزندتان چند تصویر از اثر انگشتش در موقعیت‌های مختلف می‌گیرد.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">‏وقتی فرزندتان از Pixel Imprint استفاده می‌کند، مدل اثر انگشت او به‌کمک تصاویر به‌روز می‌شود. تصاویر استفاده‌شده برای ایجاد مدل اثر انگشت فرزندتان هرگز ذخیره نمی‌شوند، اما مدل اثر انگشت به‌طور ایمن در تلفن ذخیره می‌شود و هرگز از آن خارج نمی‌شود. همه پردازش‌ها به‌طور ایمن در تلفن انجام می‌شود.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">‏شما و فرزندتان هرزمان بخواهید می‌توانید در «تنظیمات»، مدل اثر انگشت فرزندتان را حذف کنید یا Pixel Imprint را خاموش کنید. تا وقتی مدل‌های اثر انگشت را حذف نکنید، در تلفن ذخیره خواهند بود.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"‏درباره «قفل‌گشایی با اثر انگشت Pixel» در &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt; اطلاعات بیشتری کسب کنید."</string>
     <string name="security_settings_work_fingerprint_preference_title">‏Pixel Imprint برای نمایه کاری</string>
     <string name="setup_suggestion_summary">تنها چند مرحله دیگر باقی مانده</string>
@@ -337,6 +364,7 @@
     <string name="smart_battery_a11y_expand_label">ازهم بازکردن، باتری تطبیقی</string>
     <string name="smart_battery_footer">برای افزایش عمر باتری، «باتری تطبیقی» می‌تواند عملکرد و فعالیت پس‌زمینه را کاهش دهد. ممکن است بعضی از اعلان‌ها تأخیر داشته باشد.</string>
     <string name="smart_battery_manager_title">اولویت‌های تطبیقی</string>
+    <string name="smart_battery_summary" product="default">«باتری تطبیقی» از میزان مصرف تلفنتان یاد می‌گیرد تا به‌طور مداوم نحوه استفاده برنامه‌ها از باتری را بهینه‌سازی کند. این ویژگی برای افزایش عمر باتری ممکن است عملکرد را کاهش دهد و اعلان‌ها را به‌تأخیر بیندازد.</string>
     <string name="smart_battery_title">باتری تطبیقی</string>
     <string name="software_update_can_be_updated_header">‏‫Pixel خود را از آنچه هست بهتر کنید</string>
     <string name="software_update_detail_indication_1_update_available">۱ به‌روزرسانی دردسترس است</string>

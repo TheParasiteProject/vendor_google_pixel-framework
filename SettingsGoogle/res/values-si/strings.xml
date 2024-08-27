@@ -149,6 +149,7 @@
     <string name="content_protection_preference_subpage_summary">ස්කෑන් කිරීම තතුබෑම් හෝ වෙනත් රැවටිලිකාර හැසිරීම් සඳහා යෙදුම් ක්‍රියාකාරකම් පරීක්ෂා කරමින්, ඔබේ උපාංගයෙහි පෞද්ගලිකව ධාවනය වේ. එය අනාවරණය වුවහොත්, තර්ජනය තහවුරු කිරීමට සහ යෙදුම් පරිශීලකයින්ට අනතුරු ඇඟවීමට සමහර යෙදුම් තතු Google Play Protect වෙත යවනු ලැබේ.</string>
     <string name="contextual_timeout_description">ඔබ ඔබේ උපාංගය භාවිත නොකරන්නේ නම් ඉක්මනින් ඔබේ තිරය ස්වයංක්‍රීයව ක්‍රියා විරහිත කරයි</string>
     <string name="contextual_timeout_title">අනුවර්තන කල් ඉකුත්වීම</string>
+    <string name="credentials_install_summary" product="default">සහතික ආචයනයෙන් ස්ථාපනය කරන්න</string>
     <string name="dark_ui_text">අඳුරු තේමාව ඔබේ බැටරිය දිගු කාලයක් සජීවිව තබා ගැනීම සඳහා සහාය වීමට කළු පසුබිමක් භාවිත කරයි. අඳුරු තේමා කාල සටහන් ක්‍රියාත්මක වීමට ඔබගේ තිරය ක්‍රියාවිරහිත වන තෙක් රැඳී සිටී.</string>
     <string name="debugging_data_title">දත්ත නිදොස් කිරීම</string>
     <string name="discover_tips_button">ඉඟි සොයා ගන්න</string>
@@ -156,6 +157,8 @@
     <string name="double_twist_for_camera_mode_summary">Google කැමරාව තුළ සෙල්ෆී ප්‍රකාරයට සහ එයින් ඉවතට මාරු වීමට, ඔබ යෙදුම තුළ සිටින විට දෙවරක් කරකවන්න.</string>
     <string name="duration_less_than_one_minute">1 විනාඩියකට වඩා අඩු</string>
     <string name="enable_glanceable_hub_toggle">හබ් ප්‍රකාරය</string>
+    <string name="erase_external_storage" product="default">USB ආචයනය මකන්න</string>
+    <string name="erase_external_storage_description" product="default">සංගීත හෝ ජායාරුප ආදී අභ්‍යන්තර USB ආචයනයේ සියලු දත්ත මකන්න</string>
     <string name="extreme_battery_saver_summary">ඉහත ලැයිස්තුගත කර ඇති සියලුම වෙනස්කම් ඇතුළත් වේ. අත්‍යවශ්‍ය නොවන යෙදුම් සහ ඒවායේ දැනුම්දීම් ද විරාම කරයි.</string>
     <string name="extreme_battery_saver_title">උපරිම බැටරි සුරැකුම</string>
     <string name="face_confirmation_hide_illustration_description">දැන් ඔබ ඔබේ දුරකථනය අතට ගන්නා විට හෝ තිරයට තට්ටු කරන විට, අගුළු හැරීම සඳහා ඔබට ඔබේ මුහුණ භාවිතා කළ හැක.</string>
@@ -229,6 +232,9 @@
     <string name="limited_warranty_title">සීමිත වගකීම</string>
     <string name="lockscreen_show_weather_summary">වත්මන් කාලගුණ තත්ත්වයන් බලන්න</string>
     <string name="lockscreen_show_weather_title">කාලගුණය පෙන්වන්න</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+සංගීතය, පින්තූර, සහ වෙනත් පරිශීලක දත්ත මැකීමට, "<b>USB ගබඩාව</b> මැකීමට අවශ්‍යය.</string>
     <string name="my_device_info_account_preference_title">Google ගිණුම</string>
     <string name="owner_info_settings_edit_text_hint">උදාහරණයක් ලෙස, ජෝගේ Pixel.</string>
     <string name="permit_debugging_data">දෝෂ වාර්තා ප්‍රවේශයට ඉඩ දෙන්න</string>
@@ -280,6 +286,7 @@
     <string name="security_settings_biometric_preference_summary_none_enrolled">පිහිටුවීමට තට්ටු කරන්න</string>
     <string name="security_settings_face_enroll_done">කළා</string>
     <string name="security_settings_face_enroll_education_message">ඊළඟ තිරයේ, ඔබේ මුහුණේ සියලු කෝණ ග්‍රහණය කිරීමට ඔබේ හිස කරකවන්න</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">ඊළඟ තිරයේ, ඔබේ දුරකථනය ඇස් මට්ටමේ තබා ගන්න</string>
     <string name="security_settings_face_enroll_error_dialog_title">ලියාපදිංචිය අවසන් නොකළා</string>
     <string name="security_settings_face_enroll_error_generic_dialog_message">මුහුණු ලියාපදිංචිය ක්‍රියා කළේ නැත.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">මුහුණු ලියාපදිංචි කාල සීමාව ළඟා විය. නැවත උත්සාහ කරන්න.</string>
@@ -296,13 +303,29 @@
 ප්‍රමාණවත් ආලෝකයක් ඇති විට සහ ඔබ මුහුණු වැස්මක් හෝ අඳුරු කණ්නාඩි පැළඳ නොසිටින විට මුහුණෙන් අගුළු හැරීම වඩාත් හොඳින් ක්‍රියා කරයි."</string>
     <string name="security_settings_face_enroll_finish_title">පෙනෙන විදිහට හොඳයි!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">සීමිත දෘෂ්ටිය හෝ හිසේ චලනය සඳහා සකසන්න</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">මුහුණෙන් අගුලු හැරීම භාවිත කරන විට, ඔබේ හිස ඔබේ දුරකථනය ඉදිරියේ තවත් ඍජුව තිබීමට අවශ්‍ය විය හැක.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">ඇස් ඇර තබා ගැනීම අවශ්‍ය කරයි</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"ඔබට සහ ඔබේ දරුවාට සැකසීම් තුළ ඕනෑම වේලාවක දී සිය මුහුණු ආකෘතිය මැකීමට හෝ මුහුණෙන් අගුලු හැරීම අක්‍රිය කළ හැක. මුහුණු ආකෘති ඒවා මකන තෙක් දුරකථනයෙහි ගබඩා කර ඇත.&lt;br&gt;&lt;br&gt;&lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; තුළින් තව දැන ගන්න."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">ඔබ සහ ඔබගේ දරුවා පාලනයේ සිටී</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"ඔබට සැකසීම් තුළ ඕනෑම වේලාවක ඔබේ මුහුණ ආකෘතිය මැකීමට හෝ මුහුණෙන් අගුලු හැරීම අක්‍රිය කළ හැක. මුහුණු ආකෘති ඔබ මකන තෙක් දුරකථනයෙහි ඒවා ගබඩා කර ඇත.&lt;br&gt;&lt;br&gt;&lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt; තුළින් තව දැන ගන්න."</string>
     <string name="security_settings_face_enroll_introduction_control_title">ඔබ සිටින්නේ පාලනයේය</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"ඒ ඔවුන් බව සත්‍යාපන කිරීමට මුහුණෙන් අගුලු හැරීම ඔබේ දරුවාගේ මුහුණෙහි අනන්‍ය ආකෘතියක් සාදයි. සැකසීම අතරතුර මෙම මුහුණු ආකෘතිය සෑදීම සඳහා, ඔබේ දරුවා විවිධ කෝණවලින් ඔවුන්ගේ මුහුණේ රූප ගනියි.
+
+ඔවුන් මුහුණෙන් අගුලු හැරීම භාවිත කරන විට, ඔවුන්ගේ මුහුණු ආකෘතිය යාවත්කාලීන කිරීමට රූප භාවිත කරනු ලැබේ. ඔවුන්ගේ මුහුණු ආකෘතිය සෑදීමට භාවිත කරන රූප ගබඩා නොකරන නමුත් මුහුණු ආකෘතිය ඔවුන්ගේ දුරකථනයේ ආරක්‍ෂිතව ගබඩා කර ඇති අතර කිසි විටෙක දුරකථනය හැර නොයයි. සියලු සැකසීම් දුරකථනයේ ආරක්‍ෂිතව සිදු වේ."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"ඒ ඔබ බව සත්‍යාපන කිරීමට මුහුණෙන් අගුලු හැරීම ඔබේ මුහුණේ අනන්‍ය ආකෘතියක් සාදයි. සැකසීම අතරතුර මෙම මුහුණු ආකෘතිය සෑදීම සඳහා, ඔබ විවිධ කෝණවලින් ඔබේ මුහුණේ රූප ගනියි.
+
+ඔබ මුහුණෙන් අගුලු හැරීම භාවිත කරන විට, ඔබේ මුහුණු ආකෘතිය යාවත්කාලීන කිරීමට රූප භාවිත කරනු ලැබේ. ඔබේ මුහුණු ආකෘතිය සෑදීමට භාවිත කරන රූප ගබඩා නොකරන නමුත් මුහුණු ආකෘතිය ඔබේ දුරකථනයේ ආරක්‍ෂිතව ගබඩා කර ඇති අතර කිසි විටෙක දුරකථනය හැර නොයයි. සියලු සැකසීම් ඔබේ දුරකථනයෙහි සුරක්‍ෂිතව සිදු වේ."</string>
     <string name="security_settings_face_enroll_introduction_how_title">එය ක්‍රියා කරන ආකාරය</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">මුහුණෙන් අගුලු ඇරීමට දුරකථනය අගුලු ඇරීමට හෝ ඒවා සත්‍යාපන කිරීමට ඔබේ දරුවාගේ දෑස් විවෘතව තිබීම අවශ්‍යය. ඔබට සහ ඔබේ දරුවාට ඕනෑම වේලාවකදී සැකසීම් තුළ මෙම විකල්පය සක්‍රීය කළ හැක.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">ඔබගේ දරුවා සාමාන්‍යයෙන් ඇස් කණ්ණාඩි පළඳින්නේ නම්, පිහිටුවීම අතරතුර ඔවුන්ට ඒවා පැළඳිය හැකිය.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">ඔබේ දරුවාගේ දුරකථනය අගුලු හැරීම සඳහා දරුවාගේ මුහුණ යොදා ගැනීම ප්‍රබල රටාවක් හෝ රහස් අංකයක් යොදා ගැනීමට වඩා ආරක්‍ෂිත බවින් අඩු විය හැක.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">දුරකථනය දෙස බැලීම ඔවුන් අදහස් නොකරන නමුත් අගුලු හැරිය හැකිය. ඔවුන්ගේ දුරකථනය බොහෝ දුරට පෙනුමෙන් ඔවුන්ට සමාන, සර්වසම සහෝදර සහෝදරියක් වැනි යමෙකු විසින්, හෝ එය යම් කෙනෙක් ඔවුන්ගේ මුහුණට අල්ලාගෙන සිටියහොත් අගුලු හැරිය හැකිය.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">මුහුණෙන් අගුලු ඇරීමට දුරකථනය අගුලු ඇරීමට හෝ ඒ ඔබ බව සත්‍යාපන කිරීමට ඔබේ දෑස් විවෘතව තිබීම අවශ්‍යය. ඔබට ඕනෑම වේලාවකදී සැකසීම් තුළ මෙම විකල්පය සක්‍රීය කළ හැක.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">කණ්ණාඩි හෝ සුළු වශයෙන් වර්ණ ගැන්වූ අවු කණ්ණාඩි කමක් නැත.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">අගුලු හැරීමට ඔබේ මුහුණ භාවිත කිරීම ප්‍රබල රටාවකට, PIN අංකයකට හෝ මුරපදයකට වඩා ආරක්‍ෂාකාරී බව අඩු විය හැකිය</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">දුරකථනය දෙස බැලීම ඔබ අදහස් නොකරන නමුත් අගුලු හැරිය හැකිය. ඔබේ දුරකථනය බොහෝ දුරට පෙනුමෙන් ඔබට සමාන, සර්වසම සහෝදර සහෝදරියක් වැනි යමෙකු විසින්, හෝ එය යම් කෙනෙක් ඔබේ මුහුණට අල්ලාගෙන සිටියහොත් අගුලු හැරිය හැකිය.</string>
     <string name="security_settings_face_enroll_introduction_info_title">මතක තබා ගන්න</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">ඔබේ දුරකථනය අගුලු හැරීමට හෝ ඔබ යෙදුම්වලට පුරන විට හෝ මිලදී ගැනීමක් අනුමත කරන විට වැනි අවස්ථාවල, ඒ ඔබ බව තහවුරු කිරීමට ඔබේ මුහුණ භාවිත කරන්න.</string>
     <string name="security_settings_face_enroll_introduction_title">මුහුණු අගුලු හැරීම සකසන්න</string>
     <string name="security_settings_face_enroll_next">මිළඟ</string>
     <string name="security_settings_face_enroll_partial_message">කාර්ය සාධනය වැඩිදියුණු කිරීමට, ඔබට මුහුණෙන් අගුළු හැරීම නැවතත් සැකසීම්වල පිහිටුවිය හැකිය.</string>
@@ -328,7 +351,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">ඇඟිලි සලකුණ පිහිටුවීමට තට්ටු කරන්න</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">ඒ ඔබ බව තහවුරු කිරීමට Pixel Imprint ඔබගේ ඇඟිලි සලකුණෙහි අනන්‍ය ආකෘතියක් තනයි. පිහිටුවීම අතරතුර මෙම ඇඟිලි සලකුණු ආකෘතිය තැනීම සඳහා, ඔබ විවිධ පිහිටීම්වලින් ඔබගේ ඇඟිලි සලකුණේ රූප ගනු ඇත.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">ඔබ Pixel Imprint භාවිත කරන විට, ඔබේ ඇඟිලි සලකුණු ආකෘතිය යාවත්කාලීන කිරීමට රූප භාවිත කරනු ලැබේ. ඔබේ ඇඟිලි සලකුණු ආකෘතිය සෑදීමට භාවිත කරන රූප කිසි විටෙක ගබඩා නොකරන නමුත් ඇඟිලි සලකුණු ආකෘතිය ඔබේ දුරකථනයෙහි සුරක්‍ෂිතව ගබඩා කර ඇති අතර කිසි විටෙක දුරකථනය හැර නොයයි. සියලු සැකසීම් ඔබේ දුරකථනයෙහි සුරක්‍ෂිතව සිදු වේ.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">ඔබට සැකසීම් තුළ ඕනෑම වේලාවක දී ඔබේ ඇඟිලි සලකුණු ආකෘතිය මැකීමට, හෝ Pixel Imprint අක්‍රිය කළ හැක. ඇඟිලි සලකුණු ආකෘති ඔබ මකන තෙක් දුරකථනයේ ගබඩා කර ඇත.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">ඒ ඔවුන් බව තහවුරු කිරීමට Pixel Imprint ඔබගේ දරුවාගේ ඇඟිලි සලකුණෙහි අනන්‍ය ආකෘතියක් තනයි. පිහිටුවීම අතරතුර මෙම ඇඟිලි සලකුණු ආකෘතිය තැනීම සඳහා, ඔවුන් විවිධ පිහිටීම්වලින් ඔවුන්ගේ ඇඟිලි සලකුණේ රූප ගනු ඇත.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">ඔවුන් Pixel Imprint භාවිත කරන විට, ඔවුන්ගේ ඇඟිලි සලකුණු ආකෘතිය යාවත්කාලීන කිරීමට රූප භාවිත කරනු ලැබේ. ඔබේ දරුවාගේ ඇඟිලි සලකුණු ආකෘතිය සෑදීමට භාවිත කරන රූප කිසි විටෙක ගබඩා නොකරන නමුත් ඇඟිලි සලකුණු ආකෘතිය දුරකථනයේ ආරක්‍ෂිතව ගබඩා කර ඇති අතර කිසි විටෙක දුරකථනය හැර නොයයි. සියලු සැකසීම් දුරකථනයේ ආරක්‍ෂිතව සිදු වේ.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">ඔබට සහ ඔබේ දරුවාට සැකසීම් තුළ ඕනෑම වේලාවක ඒ අයගේ ඇඟිලි සලකුණු ආකෘතිය මැකීමට හෝ Pixel Imprint අක්‍රිය කළ හැක. ඇඟිලි සලකුණු ආකෘති ඒ්වා මකන තෙක් දුරකථනයේ ගබඩා කර ඇත.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"&lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt; හි දී Pixel ඇඟිලි සලකුණු අගුළු හැරීම පිළිබඳව තව දැන ගන්න."</string>
     <string name="security_settings_work_fingerprint_preference_title">කාර්යාලය සඳහා Pixel Imprint</string>
     <string name="setup_suggestion_summary">තවත් පියවර කිහිපයක් පමණි</string>
@@ -337,6 +364,7 @@
     <string name="smart_battery_a11y_expand_label">දිග හරින්න, අනුවර්තනීය බැටරිය</string>
     <string name="smart_battery_footer">බැටරි ආයු කාලය දිගු කිරීමට, අනුවර්තනීය බැටරිය කාර්ය සාධනය සහ පසුබිම් ක්‍රියාකාරිත්වය අඩු කළ හැකිය. සමහර දැනුම්දීම් ප්‍රමාද විය හැකිය.</string>
     <string name="smart_battery_manager_title">අනුවර්තී මනාප</string>
+    <string name="smart_battery_summary" product="default">අනුවර්තනීය බැටරිය ඔබේ දුරකථනයෙන් යෙදුම් බැටරිය භාවිත කරන ආකාරය අඛණ්ඩව ප්‍රශස්ත කිරීමට ඉගෙන ගනියි. බැටරි ආයු කාලය දීර්ඝ කිරීමට, එහි කාර්යසාධන අඩු කර දැනුම්දීම් ප්‍රමාද කළ හැක.</string>
     <string name="smart_battery_title">අනුවර්තනීය බැටරිය</string>
     <string name="software_update_can_be_updated_header">ඔබේ Pixel වඩාත් හොඳ කරන්න</string>
     <string name="software_update_detail_indication_1_update_available">1 යාවත්කාලීනයක් ලබා ගත හැක</string>

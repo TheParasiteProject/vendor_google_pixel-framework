@@ -149,6 +149,7 @@ Ang phishing ay isang pagtatangkang magnakaw ng mga kredensyal sa pag-sign in o 
     <string name="content_protection_preference_subpage_summary">Pribadong tumatakbo ang pag-scan sa iyong device, na sumusuri sa aktibidad sa app para mag-detect ng phishing o iba pang mapanlinlang na gawi. Kung ma-detect ito, ipapadala ang ilang impormasyon ng app sa Google Play Protect para kumpirmahin ang banta at bigyan ng babala ang mga user ng app.</string>
     <string name="contextual_timeout_description">Awtomatikong ino-off nang maaga ang iyong screen kung hindi mo ginagamit ang device mo</string>
     <string name="contextual_timeout_title">Adaptive na timeout</string>
+    <string name="credentials_install_summary" product="default">Mag-install ng mga certificate mula sa storage</string>
     <string name="dark_ui_text">Gumagamit ng itim na background ang Madilim na tema para mas magtagal ang iyong baterya. Naghihintay ang mga iskedyul ng madilim na tema na ma-off ang iyong screen bago ma-on ang mga ito.</string>
     <string name="debugging_data_title">Pag-debug ng data</string>
     <string name="discover_tips_button">Tumuklas ng mga tip</string>
@@ -156,6 +157,8 @@ Ang phishing ay isang pagtatangkang magnakaw ng mga kredensyal sa pag-sign in o 
     <string name="double_twist_for_camera_mode_summary">Para pumunta at lumabas sa selfie mode sa Google Camera, mag-double twist kapag nasa app ka.</string>
     <string name="duration_less_than_one_minute">Wala pang 1 minuto</string>
     <string name="enable_glanceable_hub_toggle">Hub mode</string>
+    <string name="erase_external_storage" product="default">Burahin ang storage na USB</string>
+    <string name="erase_external_storage_description" product="default">Burahin ang lahat ng data sa panloob na USB storage, gaya ng musika o mga larawan</string>
     <string name="extreme_battery_saver_summary">Kasama ang lahat ng pagbabagong nakalista sa itaas. Pino-pause din ang hindi mahahalagang app at mga notification ng mga ito.</string>
     <string name="extreme_battery_saver_title">Max na Pantipid ng Baterya</string>
     <string name="face_confirmation_hide_illustration_description">Ngayon, kapag kinuha mo ang iyong telepono o nag-tap ka sa screen, puwede mong gamitin ang iyong mukha para mag-unlock.</string>
@@ -230,6 +233,9 @@ Ang data sa pag-backup ay hindi ibibilang sa iyong quota sa storage ng Drive. Hi
     <string name="limited_warranty_title">Limitadong Warranty</string>
     <string name="lockscreen_show_weather_summary">Tingnan ang mga kasalukuyang lagay ng panahon</string>
     <string name="lockscreen_show_weather_title">Ipakita ang lagay ng panahon</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Para i-clear ang musika, mga larawan at iba pang data ng user, kailangang mabura ang "<b>USB storage</b>.</string>
     <string name="my_device_info_account_preference_title">Google Account</string>
     <string name="owner_info_settings_edit_text_hint">Hal., Pixel ni Joe.</string>
     <string name="permit_debugging_data">Payagan ang access sa ulat ng bug</string>
@@ -281,6 +287,7 @@ Itaob ang iyong telepono para subukan."</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">I-tap para i-set up</string>
     <string name="security_settings_face_enroll_consent_introduction_title">Payagan ang Pag-unlock Gamit ang Mukha</string>
     <string name="security_settings_face_enroll_education_message">Sa susunod na screen, i-rotate ang iyong ulo para ma-capture ang lahat ng angle ng mukha mo</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Sa susunod na screen, hawakan ang iyong telepono nang kapantay ng mata</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">Naabot na ang limitasyon sa tagal ng pag-enroll ng mukha. Subukang muli.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Nag-time out ang pag-set up ng Pag-unlock Gamit ang Mukha</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Ngayon, magagamit mo na ang iyong mukha para i-unlock ang telepono mo o i-verify na ikaw ito, tulad ng kapag nagsa-sign in ka sa mga app o nag-aapruba ng pagbili</string>
@@ -295,13 +302,29 @@ Pinakamahusay na gumagana ang Pag-unlock Gamit ang Mukha kapag sapat ang liwanag
 Pinakamahusay na gumagana ang Pag-unlock Gamit ang Mukha kapag sapat ang liwanag at wala kang suot na mask o madilim na salamin sa mata."</string>
     <string name="security_settings_face_enroll_finish_title">OK na!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Kung may problema sa mata/galaw ng ulo</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Kapag gumagamit ng Pag-unlock Gamit ang Mukha, baka kailanganin mong mas direktang humarap sa iyong telepono.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Kailangang nakadilat ang mga mata</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Magagawa mo at ng iyong anak na i-delete ang kanyang face model o i-off ang Pag-unlock Gamit ang Mukha anumang oras sa Mga Setting. Naka-store sa telepono ang mga face model hanggang sa i-delete ang mga ito.&lt;br&gt;&lt;br&gt;Matuto pa sa &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Ikaw at ang iyong anak ang may kontrol</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Puwede mong i-delete ang iyong face model o i-off ang Pag-unlock Gamit ang Mukha anumang oras sa Mga Setting. Sino-store sa telepono ang mga face model hanggang sa i-delete mo ang mga ito.&lt;br&gt;&lt;br&gt;Matuto pa sa &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Ikaw ang may kontrol</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Gumagawa ang Pag-unlock Gamit ang Mukha ng natatanging modelo ng mukha ng iyong anak para i-verify na siya iyon. Para magawa ang face model na ito habang nagse-set up, kukuha ang iyong anak ng mga larawan ng kanyang mukha mula sa iba't ibang anggulo.
+
+Kapag ginamit niya ang Pag-unlock Gamit ang Mukha, gagamitin ang mga larawan para i-update ang kanyang face model. Hindi sino-store ang mga larawang ginamit para gawin ang kanyang face model, pero secure na naka-store ang face model sa telepono at hindi ito kailanman lalabas sa telepono. Sa telepono secure na nangyayari ang lahat ng pagpoproseso."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Gumagawa ang Pag-unlock Gamit ang Mukha ng natatanging modelo ng iyong mukha para i-verify na ikaw ito. Para magawa ang face model na ito habang nagse-set up, kukuha ka ng mga larawan ng iyong mukha mula sa iba't ibang anggulo.
+
+Kapag ginamit mo ang Pag-unlock Gamit ang Mukha, gagamitin ang mga larawan para i-update ang iyong face model. Hindi sino-store ang mga larawang ginamit para gawin ang iyong face model, pero secure na naka-store ang face model sa telepono mo at hindi ito kailanman lalabas sa telepono. Sa iyong telepono secure na nangyayari ang lahat ng pagpoproseso."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Paano ito gumagana</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Posibleng kailanganin ng Pag-unlock Gamit ang Mukha na bukas ang mga mata ng iyong anak para i-unlock ang telepono o i-verify na siya ito. Magagawa mo at ng iyong anak na i-on ang opsyong ito anumang oras sa Mga Setting.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Kung karaniwang nagsusuot ng salamin sa mata ang iyong anak, puwede niya itong isuot habang nagse-set up.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Posibleng hindi kasing-secure ng mahirap hulaang pattern, PIN, o password ang paggamit ng mukha ng iyong anak para i-unlock ang kanyang telepono.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Kapag tumingin siya sa telepono, puwede itong ma-unlock nang hindi sinasadya. Ang kanyang telepono ay puwede ring ma-unlock ng taong kamukha niya, tulad ng kanyang kapatid na kamukhang kamukha niya, o kung may magtatapat nito sa kanyang mukha.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Posibleng kailanganin ng Pag-unlock Gamit ang Mukha na bukas ang iyong mga mata para i-unlock ang telepono o i-verify na ikaw ito. Magagawa mong i-on ang opsyong ito anumang oras sa Mga Setting.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Ayos lang ang salamin o hindi madilim na sunglasses.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Posibleng hindi gaanong secure ang paggamit ng iyong mukha para i-unlock ang telepono mo kumpara sa malakas na pattern, PIN, o password</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Kapag tumingin ka sa telepono, puwede itong ma-unlock nang hindi sinasadya. Ang iyong telepono ay puwede ring ma-unlock ng taong kamukha mo, tulad ng iyong kapatid na kamukhang kamukha mo, o kung may magtatapat nito sa iyong mukha.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Tandaan</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Gamitin ang iyong mukha para i-unlock ang telepono mo o i-verify na ikaw ito, tulad ng kapag nagsa-sign in ka sa mga app o nag-aapruba ng pagbili.</string>
     <string name="security_settings_face_enroll_introduction_title">I-set up ang Pag-unlock Gamit ang Mukha</string>
     <string name="security_settings_face_enroll_next">Susunod</string>
     <string name="security_settings_face_enroll_partial_message">Para mapahusay ang performance, puwede mong i-set up ulit ang Pag-unlock Gamit ang Mukha sa Mga Setting</string>
@@ -327,7 +350,9 @@ Tandaan: Hindi mo magagamit ang iyong fingerprint upang ma-unlock ang device na 
     <string name="security_settings_fingerprint_preference_summary_none">I-tap upang mag-set up ng fingerprint</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">"Gumagawa ang Pixel Imprint ng natatanging modelo ng iyong fingerprint para i-verify na ikaw ito. Para magawa ang modelo ng fingerprint na ito habang nagse-set up, kukuha ka ng mga larawan ng iyong fingerprint mula sa iba't ibang posisyon."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Puwede mong i-delete ang modelo ng iyong fingerprint, o i-off ang Pixel Imprint anumang oras sa Mga Setting. Naka-store sa telepono ang mga modelo ng fingerprint hanggang sa i-delete mo ang mga ito.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">"Gumagawa ang Pixel Imprint ng natatanging modelo ng fingerprint ng iyong anak para i-verify na siya ito. Para magawa ang modelo ng fingerprint na ito habang nagse-set up, kukuha siya ng mga larawan ng kanyang fingerprint mula sa iba't ibang posisyon."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Magawa mo at ng iyong anak na i-delete ang modelo ng kanyang fingerprint, o i-off ang Pixel Imprint anumang oras sa Mga Setting. Naka-store sa telepono ang mga modelo ng fingerprint hanggang sa i-delete ang mga ito.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Matuto pa tungkol sa pag-unlock gamit ang fingerprint sa Pixel sa &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint para sa trabaho</string>
     <string name="setup_suggestion_summary">Ilang hakbang na lang</string>
@@ -336,6 +361,7 @@ Tandaan: Hindi mo magagamit ang iyong fingerprint upang ma-unlock ang device na 
     <string name="smart_battery_a11y_expand_label">Palawakin, Adaptive Battery</string>
     <string name="smart_battery_footer">Para patagalin ang baterya, posibleng bawasan ng Adaptive Battery ang performance at aktibidad sa background. Baka maantala ang ilang notification.</string>
     <string name="smart_battery_manager_title">Mga kagustuhan sa Adaptive</string>
+    <string name="smart_battery_summary" product="default">Natututo ang Adaptive Battery sa paggamit mo ng telepono para patuloy na i-optimize kung paano ginagamit ng mga app ang baterya. Para mapatagal ang baterya, posibleng bawasan nito ang performance at i-delay nito ang mga notification.</string>
     <string name="smart_battery_title">Adaptive Battery</string>
     <string name="software_update_can_be_updated_header">Gawing mas mahusay pa ang iyong Pixel</string>
     <string name="software_update_detail_indication_1_update_available">May 1 update</string>

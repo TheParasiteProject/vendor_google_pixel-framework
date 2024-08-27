@@ -149,6 +149,7 @@ Andmepüük on katse varastada sisselogimismandaate või muud isiklikku teavet."
     <string name="content_protection_preference_subpage_summary">Skannimine toimub privaatselt teie seadmes ja see kontrollib rakenduse tegevusi andmepüügi või muu petturliku käitumise suhtes. Kui see tuvastatakse, saadetakse Google Play Protectile teatud teavet, et oht kinnitada ja rakenduse kasutajaid hoiatada.</string>
     <string name="contextual_timeout_description">Lülitab teie ekraani automaatselt varakult välja, kui te oma seadet ei kasuta</string>
     <string name="contextual_timeout_title">Kohanduv ajalõpp</string>
+    <string name="credentials_install_summary" product="default">Sertifikaatide installimine salvestusseadmelt</string>
     <string name="dark_ui_text">Tume teema kasutab musta tausta, et teie aku kestaks kauem. Tumeda teema ajakava lülitatakse sisse siis, kui ekraan on väljas.</string>
     <string name="debugging_data_title">Silumisandmed</string>
     <string name="discover_tips_button">Avastage nõuandeid</string>
@@ -156,6 +157,8 @@ Andmepüük on katse varastada sisselogimismandaate või muud isiklikku teavet."
     <string name="double_twist_for_camera_mode_summary">"Google'i kaameras selfirežiimi sisse- ja väljalülitamiseks pöörake telefoni rakenduses olles kaks korda edasi-tagasi."</string>
     <string name="duration_less_than_one_minute">alla ühe minuti</string>
     <string name="enable_glanceable_hub_toggle">Kontrollerirežiim</string>
+    <string name="erase_external_storage" product="default">Kustuta USB-mäluseade</string>
+    <string name="erase_external_storage_description" product="default">Sisemiselt USB-mäluseadmelt kõikide andmete (nt muusika või fotode) kustutamine</string>
     <string name="extreme_battery_saver_summary">Hõlmab kõiki ülaltoodud muudatusi. Peatatakse ka ebaolulised rakendused ja nende märguanded.</string>
     <string name="extreme_battery_saver_title">Ekstreemne akusäästja</string>
     <string name="face_confirmation_hide_illustration_description">Nüüd saate telefoni kättevõtmisel või ekraani puudutamisel avamiseks oma nägu kasutada.</string>
@@ -230,6 +233,9 @@ Varundatud andmeid ei loeta teie Drive'i salvestuskvoodi hulka. Suuri faile ja f
     <string name="limited_warranty_title">Piiratud garantii</string>
     <string name="lockscreen_show_weather_summary">Vaadake praegust ilma</string>
     <string name="lockscreen_show_weather_title">Ilmateate kuvamine</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Muusika, piltide ja muude kasutajaandmete kustutamiseks tuleb tühjendada ka "<b>USB-mäluseade</b>.</string>
     <string name="my_device_info_account_preference_title">"Google'i konto"</string>
     <string name="owner_info_settings_edit_text_hint">Nt Karli Pixel.</string>
     <string name="permit_debugging_data">Luba juurdepääs veaaruandele</string>
@@ -280,6 +286,7 @@ Proovimiseks pöörake telefon ümber."</string>
     <string name="security_dismiss_dialog_title">Kas loobuda hoiatusest?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Seadistamiseks puudutage</string>
     <string name="security_settings_face_enroll_education_message">Pöörake järgmisel ekraanikuval oma pead, et nägu jäädvustada iga nurga alt.</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Hoidke järgmisel kuval telefoni silmade kõrgusel.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message">Näo registreerimise ajalimiit on täis. Proovige uuesti.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Näoga avamise seadistamine aegus</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Nüüd saate telefoni avamiseks või oma isiku kinnitamiseks (nt rakendustesse sisselogimisel või ostu kinnitamisel) oma nägu kasutada.</string>
@@ -294,13 +301,29 @@ Näoga avamine toimib kõige paremini, kui valgust on piisavalt ja te ei kanna m
 Näoga avamine toimib kõige paremini, kui valgust on piisavalt ja te ei kanna maski ega tumedaid prille."</string>
     <string name="security_settings_face_enroll_finish_title">Korras!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Seadistus piiratud nägemise või pealiikumise jaoks</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Kui kasutate funktsiooni Näoga avamine, peate võib-olla oma pead rohkem otse telefoni ees hoidma.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Silmad peavad avatud olema</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Seadetes saate (või saab laps) näomudeli alati kustutada või näoga avamise funktsiooni välja lülitada. Näomudelid salvestatakse telefoni, kuni need kustutatakse.&lt;br&gt;&lt;br&gt;Lisateave: &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Kontroll on teie ja teie lapse käes</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Seadetes saate oma näomudeli alati kustutada või näoga avamise funktsiooni välja lülitada. Näomudelid salvestatakse telefoni, kuni need kustutate.&lt;br&gt;&lt;br&gt;Lisateave: &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Teie juhite toimuvat</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Näoga avamise funktsioon loob teie lapse näost kordumatu mudeli, mille abil tema isik kinnitada. Näomudeli loomiseks jäädvustatakse seadistamise ajal kujutised tema näost eri nurkade all.
+
+Kui ta kasutab näoga avamist, kasutatakse kujutisi tema näomudeli värskendamiseks. Näomudeli loomiseks kasutatavaid kujutisi ei salvestata, kuid näomudel salvestatakse turvaliselt telefoni, kust seda välja ei saadeta. Kogu töötlus toimub turvaliselt telefonis."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Näoga avamise funktsioon loob teie näost kordumatu mudeli, mille abil teie isik kinnitada. Näomudeli loomiseks jäädvustatakse seadistamise ajal kujutised teie näost eri nurkade all.
+
+Kui kasutate näoga avamist, kasutatakse kujutisi teie näomudeli värskendamiseks. Näomudeli loomiseks kasutatavaid kujutisi ei salvestata, kuid näomudel salvestatakse turvaliselt teie telefoni, kust seda välja ei saadeta. Kogu töötlus toimub turvaliselt teie telefonis."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Tööpõhimõtted</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Näoga avamise funktsioon võib telefoni avamiseks või isiku kinnitamiseks nõuda, et teie lapse silmad oleksid lahti. Selle valiku saate (või saab laps) seadetes alati sisse lülitada.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Kui laps kannab tavaliselt prille, võib ta neid kanda ka seadistamise ajal.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Lapse telefoni avamiseks tema näo kasutamine võib olla vähem turvaline kui tugev muster, PIN-kood või parool.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Telefoni vaatamisel võib see avaneda ka siis, kui ta seda ei soovi. Temaga sarnane inimene, näiteks tema identne vend või õde, saab samuti tema telefoni avada. Telefoni saab avada ka nii, et keegi hoiab telefoni tema näo ees.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Näoga avamise funktsioon võib telefoni avamiseks või isiku kinnitamiseks nõuda, et teie silmad oleksid lahti. Selle valiku saate seadetes alati sisse lülitada.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Prille ja heledama klaasiga päikeseprille tohib kasutada.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Telefoni avamiseks näo kasutamine võib olla vähem turvaline kui tugev muster, PIN-kood või parool.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Telefoni vaatamisel võib see avaneda ka siis, kui te seda ei soovi. Teiega sarnane inimene, näiteks teie identne vend või õde, saab samuti teie telefoni avada. Telefoni saab avada ka nii, et keegi hoiab telefoni teie näo ees.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Pidage meeles</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Kasutage oma telefoni avamiseks või oma isiku kinnitamiseks (nt rakendustesse sisselogimisel või ostude kinnitamisel) oma nägu.</string>
     <string name="security_settings_face_enroll_introduction_title">Funktsiooni Näoga avamine seadistamine</string>
     <string name="security_settings_face_enroll_next">Järgmine</string>
     <string name="security_settings_face_enroll_partial_message">Toimivuse parandamiseks saate näoga avamise seadetes uuesti seadistada</string>
@@ -326,7 +349,9 @@ Märkus. Te ei saa sõrmejälge kasutada selle seadme avamiseks. Lisateabe saami
     <string name="security_settings_fingerprint_preference_summary_none">Puudutage sõrmejälje seadistamiseks</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint loob teie sõrmejäljest kordumatu mudeli, mille abil teie isik kinnitada. Sõrmejäljemudeli loomiseks jäädvustate seadistamise ajal kujutised oma sõrmejäljest eri asendites.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Seadetes saate oma sõrmejäljemudeli alati kustutada või Pixel Imprinti välja lülitada. Sõrmejäljemudelid salvestatakse telefoni, kuni need kustutate.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint loob teie lapse sõrmejäljest kordumatu mudeli, mille abil tema isik kinnitada. Sõrmejäljemudeli loomiseks jäädvustatakse seadistamise ajal kujutised tema sõrmejäljest eri asendites.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Seadetes saate (või saab laps) sõrmejäljemudeli alati kustutada või Pixel Imprinti välja lülitada. Sõrmejäljemudelid salvestatakse telefoni, kuni need kustutatakse.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Lisateave Pixeli sõrmejäljega avamise funktsiooni kohta: &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint töö jaoks</string>
     <string name="setup_suggestion_summary">Vaid mõned toimingud veel</string>
@@ -335,6 +360,7 @@ Märkus. Te ei saa sõrmejälge kasutada selle seadme avamiseks. Lisateabe saami
     <string name="smart_battery_a11y_expand_label">Laienda, kohanduv akuhaldur</string>
     <string name="smart_battery_footer">Aku tööea pikendamiseks võib kohanduv akuhaldur vähendada jõudlust ja taustategevusi. Mõni märguanne võib viibida.</string>
     <string name="smart_battery_manager_title">Kohanduvad eelistused</string>
+    <string name="smart_battery_summary" product="default">Kohanduv akuhaldur õpib teie telefoni kasutusest, et optimeerida pidevalt seda, kuidas rakendused akut kasutavad. Aku tööea pikendamiseks võib see vähendada jõudlust ja märguandeid edasi lükata.</string>
     <string name="smart_battery_title">Kohanduv akuhaldur</string>
     <string name="software_update_can_be_updated_header">Muutke oma Pixel veelgi paremaks</string>
     <string name="software_update_detail_indication_1_update_available">1 värskendus on saadaval</string>

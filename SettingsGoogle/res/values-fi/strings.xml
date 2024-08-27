@@ -149,6 +149,7 @@ Tietojenkalastelu on yritys varastaa kirjautumistietoja tai muita henkilökohtai
     <string name="content_protection_preference_subpage_summary">Tarkistus tapahtuu yksityisesti laitteellasi. Siinä tarkistetaan sovellustoiminta tietojenkalastelun tai muun petollisen toiminnan varalta. Jos sellaista havaitaan, joitakin sovelluksen tietoja lähetetään Google Play Protectille uhkien varmistamiseksi ja käyttäjien varoittamiseksi.</string>
     <string name="contextual_timeout_description">Näyttö laitetaan pois päältä aiemmin automaattisesti jos et käytä laitettasi</string>
     <string name="contextual_timeout_title">Mukautuva aikaraja</string>
+    <string name="credentials_install_summary" product="default">Asenna varmenteet tallennustilasta</string>
     <string name="dark_ui_text">Tumman teeman musta tausta auttaa pidentämään akunkestoa. Tumman teeman aikataulut otetaan käyttöön vasta, kun näyttö on sammutettu.</string>
     <string name="debugging_data_title">Virheenkorjausdata</string>
     <string name="discover_tips_button">Löydä vinkkejä</string>
@@ -156,6 +157,8 @@ Tietojenkalastelu on yritys varastaa kirjautumistietoja tai muita henkilökohtai
     <string name="double_twist_for_camera_mode_summary">Siirry Google Kameran selfie-tilaan tai poistu siitä kiertämällä laitetta kahdesti, kun käytät sovellusta.</string>
     <string name="duration_less_than_one_minute">Alle 1 minuutti</string>
     <string name="enable_glanceable_hub_toggle">Hubitila</string>
+    <string name="erase_external_storage" product="default">Tyhjennä USB-tallennustila</string>
+    <string name="erase_external_storage_description" product="default">Poista kaikki sisäisen USB-tallennustilan tiedot, kuten musiikki tai kuvat.</string>
     <string name="extreme_battery_saver_summary">Sisältää yllä mainitut muutokset. Keskeyttää myös toissijaiset sovellukset ja niiden ilmoitukset.</string>
     <string name="extreme_battery_saver_title">Akun tehosäästö</string>
     <string name="face_confirmation_hide_illustration_description">Voit nyt avata puhelimen lukituksen kasvoillasi, kun nostat sen tai napautat näyttöä.</string>
@@ -230,6 +233,9 @@ Varmuuskopioita ei vähennetä Drive-tallennustilan kiintiöstäsi. Suuria ja ke
     <string name="limited_warranty_title">Rajoitettu takuu</string>
     <string name="lockscreen_show_weather_summary">Näe tämänhetkinen sää</string>
     <string name="lockscreen_show_weather_title">Näytä sää</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Jos haluat poistaa musiikin, kuvat ja muun käyttäjädatan, tyhjennä "<b>USB-tallennustila</b>.</string>
     <string name="my_device_info_account_preference_title">Google-tili</string>
     <string name="owner_info_settings_edit_text_hint">Esim. Rikun Pixel</string>
     <string name="permit_debugging_data">Salli pääsy virheraportteihin</string>
@@ -281,6 +287,7 @@ Kokeile kääntämällä puhelin ympäri."</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Ota käyttöön napauttamalla</string>
     <string name="security_settings_face_enroll_consent_introduction_title">Salli Face Unlock</string>
     <string name="security_settings_face_enroll_education_message">Seuraavassa kohdassa käännä päätäsi, jotta kasvosi tallentuvat kaikista kuvakulmista.</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Seuraavassa näytössä pidä puhelinta silmien korkeudella</string>
     <string name="security_settings_face_enroll_error_dialog_title">Käyttöönotto ei ole valmis</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Kasvojentunnistusavauksen käyttöönotto aikakatkaistu</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Voit nyt käyttää kasvojasi puhelimen lukituksen avaamiseen tai henkilöllisyyden todentamiseen esim. kirjautuessasi sovelluksiin tai hyväksyessäsi ostoksen</string>
@@ -295,13 +302,29 @@ Kasvojentunnistusavaus toimii parhaiten, kun ympäristö on sopivan valoisa eik�
 Kasvojentunnistusavaus toimii parhaiten, kun ympäristö on sopivan valoisa eikä kasvoillasi ole maskia tai tummia laseja."</string>
     <string name="security_settings_face_enroll_finish_title">Hyvältä näyttää!</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Näkö- tai päänliikerajoitukset</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Kasvojentunnistusavauksen käyttö voi edellyttää, että pää on suoremmin puhelimen edessä.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Silmien on oltava auki</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Sinä ja lapsesi voitte poistaa kasvomallin tai laittaa kasvojentunnistusavauksen pois päältä milloin tahansa asetuksista. Kasvomallit säilytetään puhelimella, kunnes ne poistetaan.&lt;br&gt;&lt;br&gt;Lue lisää osoitteessa &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Sinä ja lapsesi päätätte</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"Voit poistaa kasvomallisi tai laittaa kasvojentunnistusavauksen pois päältä milloin tahansa asetuksista. Kasvomallit säilytetään puhelimella, kunnes ne poistetaan.&lt;br&gt;&lt;br&gt;Lue lisää osoitteessa &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Sinä päätät</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Kasvojentunnistusavaus luo lapsesi kasvoista yksilöllisen mallin, jonka avulla hänen henkilöllisyytensä voidaan todentaa. Lapsesi voi luoda kasvomallin käyttöönoton aikana ottamalla kasvoistaan kuvia eri kuvakulmista.
+
+Kun lapsi käyttää kasvojentunnistusavausta, kuvia käytetään kasvomallin päivittämiseen. Kasvomallin luontiin käytettäviä kuvia ei säilytetä, mutta itse kasvomalli säilytetään suojatusti puhelimella, eikä se poistu puhelimelta. Kaikki käsittely tapahtuu turvallisesti puhelimella."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Kasvojentunnistusavaus luo kasvoistasi yksilöllisen mallin, jonka avulla henkilöllisyytesi voidaan todentaa. Voit luoda kasvomallin käyttöönoton aikana ottamalla kasvoistasi kuvia eri kuvakulmista.
+
+Kun käytät kasvojentunnistusavausta, kuvia käytetään kasvomallin päivittämiseen. Kasvomallin luontiin käytettäviä kuvia ei säilytetä, mutta itse kasvomalli säilytetään suojatusti puhelimellasi, eikä se poistu puhelimelta. Kaikki käsittely tapahtuu turvallisesti puhelimellasi."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Näin se toimii</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Kasvojentunnistusavaus saattaa edellyttää, että lapsesi silmät ovat auki puhelimen avaamiseksi tai henkilöllisyyden vahvistamiseksi. Sinä ja lapsesi voitte laittaa ominaisuuden päälle asetuksista milloin tahansa.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Jos lapsi käyttää yleensä silmälaseja, hän voi käyttää niitä myös käyttöönoton aikana.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Puhelimen lukituksen avaaminen lapsen kasvojen avulla ei ehkä ole yhtä turvallista kuin vahvan kuvion, PIN-koodin tai salasanan käyttö</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Puhelimen katsominen voi avata sen lukituksen lapsen haluamatta. Joku muu voi myös avata lapsesi puhelimen lukituksen, jos hän näyttää lapselta (esim. identtinen kaksonen) tai pitää laitetta tämän kasvojen edessä.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Kasvojentunnistusavaus saattaa edellyttää, että silmäsi ovat auki puhelimen avaamiseksi tai henkilöllisyyden vahvistamiseksi. Voit laittaa ominaisuuden päälle asetuksista milloin tahansa.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Silmälasit tai kevyesti sävytetyt aurinkolasit eivät haittaa.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Puhelimen lukituksen avaaminen kasvoilla ei välttämättä ole yhtä turvallista kuin vahvan kuvion, PIN-koodin tai salasanan käyttäminen.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Puhelimen katsominen voi avata sen lukituksen haluamattasi. Joku muu voi myös avata puhelimesi lukituksen, jos hän näyttää sinulta (esim. identtinen kaksonen) tai pitää laitetta kasvojesi edessä.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Hyvä muistaa</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Käytä kasvojasi puhelimen lukituksen avaamiseen tai henkilöllisyyden todentamiseen esim. kirjautuessasi sovelluksiin tai hyväksyessäsi ostoksen.</string>
     <string name="security_settings_face_enroll_introduction_title">Ota kasvojentunnistusavaus käyttöön</string>
     <string name="security_settings_face_enroll_next">Seuraava</string>
     <string name="security_settings_face_enroll_partial_message">Voit parantaa kasvojentunnistusavauksen toimintaa ottamalla sen käyttöön uudelleen asetuksissa</string>
@@ -327,7 +350,9 @@ Huom. Tämän laitteen lukitusta ei voi avata sormenjäljellä. Saat lisätietoj
     <string name="security_settings_fingerprint_preference_summary_none">Määritä sormenjälki napauttamalla</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint luo sormenjäljestäsi yksilöllisen mallin, jonka avulla henkilöllisyytesi voidaan todentaa. Käyttöönoton aikana otat sormenjäljestäsi kuvia eri asennoissa sormenjälkimallin luomiseksi.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">Voit poistaa sormenjälkimallin tai laittaa Pixel Imprintin pois päältä milloin tahansa asetuksista. Sormenjälkimallit säilytetään puhelimellasi, kunnes poistat ne.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint luo lapsesi sormenjäljestä yksilöllisen mallin, jonka avulla hänen henkilöllisyytensä voidaan todentaa. Käyttöönoton aikana lapsi ottaa sormenjäljestään kuvia eri asennoissa sormenjälkimallin luomiseksi.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">Sinä ja lapsesi voitte poistaa sormenjälkimallin tai laittaa Pixel Imprintin pois päältä milloin tahansa asetuksista. Sormenjälkimallit säilytetään puhelimellasi, kunnes ne poistetaan.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Lue lisää Pixelin sormenjälkiavauksesta osoitteessa &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint työkäyttöön</string>
     <string name="setup_suggestion_summary">Vielä muutama vaihe</string>
@@ -336,6 +361,7 @@ Huom. Tämän laitteen lukitusta ei voi avata sormenjäljellä. Saat lisätietoj
     <string name="smart_battery_a11y_expand_label">Laajenna, mukautuva virta</string>
     <string name="smart_battery_footer">Mukautuva virta voi pidentää akun kestoa rajoittamalla suorituskykyä ja taustatoimintaa. Osa ilmoituksista voi näkyä viiveellä.</string>
     <string name="smart_battery_manager_title">Mukautuvat asetukset</string>
+    <string name="smart_battery_summary" product="default">Mukautuva virta oppii puhelimesi käytöstä ja optimoi sovellusten akun käyttöä jatkuvasti. Mukautuva virta voi alentaa suorituskykyä ja viivästyttää ilmoituksia akunkeston pidentämiseksi.</string>
     <string name="smart_battery_title">Mukautuva virta</string>
     <string name="software_update_can_be_updated_header">Tee Pixelistä entistä parempi</string>
     <string name="software_update_detail_indication_1_update_available">Yksi päivitys saatavilla</string>

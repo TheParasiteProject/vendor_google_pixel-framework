@@ -149,6 +149,7 @@
     <string name="content_protection_preference_subpage_summary">‏تُجرى عمليات الفحص بخصوصية تامة على جهازك مباشرةً للتحقُّق من النشاط على التطبيقات بحثًا عن محاولات التصيّد الاحتيالي أو السلوكيات المخادعة الأخرى. وفي حال رصد سلوك مريب بأحد التطبيقات، تُرسَل بيانات هذا التطبيق إلى ميزة \"Google Play للحماية\" من أجل تأكيد التهديد وتحذير مستخدمي ذلك التطبيق.</string>
     <string name="contextual_timeout_description">سيتم إطفاء الشاشة تلقائيًا في وقت مبكر في حال لم تكن تستخدم جهازك</string>
     <string name="contextual_timeout_title">المهلة التكيُّفية</string>
+    <string name="credentials_install_summary" product="default">تثبيت الشهادات من وحدة تخزين</string>
     <string name="dark_ui_text">يستخدِم \"المظهر الداكن\" خلفية سوداء لتوفير طاقة البطارية والحفاظ عليها لفترة أطول. لا يتم تفعيل الجداول الزمنية لعمل \"المظهر الداكن\" إلا بعد قفل الشاشة.</string>
     <string name="debugging_data_title">بيانات تصحيح الأخطاء</string>
     <string name="discover_tips_button">الاطّلاع على النصائح</string>
@@ -156,6 +157,8 @@
     <string name="double_twist_for_camera_mode_summary">‏لتفعيل وضع \"الصورة الذاتية\" أو إيقافه في \"كاميرا Google\"، لفّ الهاتف مرّتين بينما تستخدم التطبيق.</string>
     <string name="duration_less_than_one_minute">أقل من دقيقة واحدة</string>
     <string name="enable_glanceable_hub_toggle">وضع الإرساء</string>
+    <string name="erase_external_storage" product="default">‏محو وحدة تخزين USB</string>
+    <string name="erase_external_storage_description" product="default">‏محو جميع البيانات على وحدة تخزين USB الداخلية، مثل الموسيقى أو الصور</string>
     <string name="extreme_battery_saver_summary">يشمل جميع التغييرات المذكورة أعلاه. ويتم أيضًا إيقاف التطبيقات غير الأساسية وإشعاراتها مؤقتًا.</string>
     <string name="extreme_battery_saver_title">توفير شحن البطارية العالي</string>
     <string name="face_confirmation_hide_illustration_description">عندما تُمسك هاتفك أو تنقر على شاشته، يمكنك الآن استخدام وجهك لفتح قفله.</string>
@@ -230,6 +233,9 @@
     <string name="limited_warranty_title">الضمان المحدود</string>
     <string name="lockscreen_show_weather_summary">الاطّلاع على أحوال الطقس الحالية</string>
     <string name="lockscreen_show_weather_title">عرض الطقس</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"‏
+
+لمحو الموسيقى والصور وبيانات المستخدم الأخرى أيضًا، يجب محو بيانات "<b>وحدة تخزين USB</b>.</string>
     <string name="my_device_info_account_preference_title">‏حساب Google</string>
     <string name="owner_info_settings_edit_text_hint">‏جهاز Pixel الخاص بهاني مثلاً</string>
     <string name="permit_debugging_data">السماح بالوصول إلى تقرير الخطأ</string>
@@ -280,6 +286,7 @@
     <string name="security_dismiss_dialog_title">هل تريد إغلاق هذا التحذير؟</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">انقر لإعداد هذه الميزة</string>
     <string name="security_settings_face_enroll_education_message">على الشاشة التالية، حرّك رأسك بشكل دائري ليتسنى التقاط جميع زوايا وجهك.</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">في الشاشة التالية، ارفَع هاتفك إلى مستوى العينَين.</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">انتهت مهلة إعداد ميزة \"فتح الجهاز بالتعرف على الوجه\"</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">يمكنك الآن استخدام وجهك لفتح قفل هاتفك أو إثبات هويتك، مثلاً عند تسجيل الدخول إلى التطبيقات أو الموافقة على عملية شراء.</string>
     <string name="security_settings_face_enroll_finish_description_with_bp_full">"يمكنك الآن استخدام وجهك لفتح قفل هاتفك أو إثبات هويتك، مثلاً عند تسجيل الدخول إلى التطبيقات أو الموافقة على عملية شراء.
@@ -293,13 +300,29 @@
 تعمل هذه الميزة بشكل أفضل عند وجود إضاءة كافية وعدم ارتداء كمّامة أو نظارة شمسية."</string>
     <string name="security_settings_face_enroll_finish_title">تم الضبط بنجاح</string>
     <string name="security_settings_face_enroll_introduction_accessibility">صعوبة في الرؤية أو تحريك الرأس</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">عندما تستخدم ميزة \"فتح الجهاز بالتعرف على الوجه\"، قد تضطر إلى تثبيت رأسك أمام الهاتف مباشرةً.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">يتطلب فتح العينين.</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"‏يمكنك أنت وطفلك حذف نموذج وجهه أو إيقاف ميزة \"فتح الجهاز بالتعرف على الوجه\" في أي وقت من \"الإعدادات\". تظل نماذج الوجوه مخزّنة على الهاتف إلى أن يتم حذفها.&lt;br&gt;&lt;br&gt;تعرَّف على مزيد من المعلومات على الرابط &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">ستتحكّم في هذه الميزة أنت وطفلك</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"‏يمكنك حذف نموذج الوجه أو إيقاف ميزة \"فتح الجهاز بالتعرف على الوجه\" في أي وقت من \"الإعدادات\". تظل نماذج الوجه مخزّنة على هاتفك إلى أن تحذفها.&lt;br&gt;&lt;br&gt;تعرَّف على مزيد من المعلومات على الرابط &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">القرار لك</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"تنشئ ميزة \"فتح الجهاز بالتعرف على الوجه\" نموذجًا فريدًا من وجه طفلك لإثبات هويته. لإنشاء نموذج الوجه هذا أثناء عملية الإعداد، سيتم التقاط صور لوجه طفلك من زوايا مختلفة.
+
+عندما يستخدم الطفل ميزة \"فتح الجهاز بالتعرف على الوجه\"، سيتم استخدام الصور لتعديل نموذج وجهه. لا يتم تخزين الصور المستخدمة لإنشاء نموذج الوجه، ولكن يتم تخزين نموذج الوجه بأمان على الهاتف ولا يتم نقله خارج الهاتف مطلقًا. تتم كل عمليات المعالجة بأمان على الهاتف."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"تنشئ ميزة \"فتح الجهاز بالتعرف على الوجه\" نموذجًا فريدًا من وجهك لإثبات هويتك. لإنشاء نموذج الوجه هذا أثناء عملية الإعداد، سيتم التقاط صور لوجهك من زوايا مختلفة.
+
+عندما تستخدم ميزة \"فتح الجهاز بالتعرف على الوجه\"، سيتم استخدام الصور لتعديل نموذج الوجه. لا يتم تخزين الصور المستخدمة لإنشاء نموذج الوجه، ولكن يتم تخزين نموذج الوجه بأمان على هاتفك ولا يتم نقله خارج هاتفك مطلقًا. تتم كل عمليات المعالجة بأمان على هاتفك."</string>
     <string name="security_settings_face_enroll_introduction_how_title">آلية العمل</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">يمكن أن تطلب ميزة \"فتح الجهاز بالتعرف على الوجه\" أن تكون عينا الطفل مفتوحتين لفتح قفل الهاتف أو إثبات هويته. يمكنك أنت وطفلك تفعيل هذا الخيار في أي وقت من \"الإعدادات\".</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">إذا كان طفلك يرتدي نظارات في العادة، يمكنه ارتداؤها أثناء عملية الإعداد.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">قد يكون استخدام وجه طفلك لفتح قفل هاتفه أقل أمانًا من استخدام نقش أو رقم تعريف شخصي أو كلمة مرور قوية.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">يمكن أن يؤدي نظر الطفل للهاتف إلى فتح قفله حتى إذا كان لا يقصد ذلك. يستطيع أيضًا شخص آخر فتح قفل هاتف الطفل إذا كان يشبهه بدرجة كبيرة، مثلاً توأم متماثل أو شقيق شديد الشبه، أو إذا قرَّب شخص الهاتف وجه الطفل.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">يمكن أن تطلب ميزة \"فتح الجهاز بالتعرف على الوجه\" أن تكون عيناك مفتوحتين لفتح قفل الهاتف أو إثبات هويتك. يمكنك تفعيل هذا الخيار في أي وقت من \"الإعدادات\".</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">مسموح بالنظارات العادية أو النظارات الشمسية الغامقة قليلاً.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">قد يكون استخدام وجهك لفتح قفل هاتفك أقل أمانًا من استخدام نقش قوي أو رقم تعريف شخصي قوي أو كلمة مرور قوية.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">يمكن أن يؤدي النظر للهاتف إلى فتح قفله حتى إذا كنت لا تقصد ذلك. يستطيع أيضًا شخص آخر فتح قفل هاتفك إذا كان يشبهك بدرجة كبيرة، مثلاً توأم متماثل أو شقيق شديد الشبه، أو إذا قرَّب شخص الهاتف من وجهك.</string>
     <string name="security_settings_face_enroll_introduction_info_title">تنبيه</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">يمكنك استخدام وجهك لفتح قفل الهاتف أو لإثبات هويتك، مثلاً عند تسجيل الدخول إلى التطبيقات أو الموافقة على عملية شراء.</string>
     <string name="security_settings_face_enroll_introduction_title">إعداد \"فتح الجهاز بالتعرف على الوجه\"</string>
     <string name="security_settings_face_enroll_next">التالي</string>
     <string name="security_settings_face_enroll_partial_message">لتحسين الأداء، يمكنك إعداد ميزة \"فتح الجهاز بالتعرف على الوجه\" مرة أخرى من \"الإعدادات\".</string>
@@ -325,7 +348,11 @@
     <string name="security_settings_fingerprint_preference_summary_none">انقر لإعداد بصمة الإصبع</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">‏تنشئ ميزة Pixel Imprint نموذجًا فريدًا لبصمة إصبعك لإثبات هويتك. لإنشاء نموذج بصمة الإصبع هذا أثناء عملية الإعداد، عليك تسجيل صور لبصمة إصبعك من مواضع مختلفة.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_3" product="default">‏عندما تستخدم ميزة Pixel Imprint، تُستخدَم النُسخ لتعديل نموذج بصمة إصبعك. إن النُسخ المستخدمة لإنشاء نموذج بصمة الإصبع لا يتم مطلقًا تخزينها، بل يتم تخزين النموذج بأمان على هاتفك ولا يتم نقله خارج هاتفك مطلقًا. تتم كل عمليات المعالجة بأمان على هاتفك.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">‏يمكنك حذف نموذج بصمة الإصبع أو إيقاف ميزة Pixel Imprint في أي وقت في \"الإعدادات\". يتم تخزين نماذج بصمات الأصابع على هاتفك حتى تحذفها.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">‏تنشئ ميزة Pixel Imprint نموذجًا فريدًا لبصمة إصبع طفلك لإثبات هويته. لإنشاء نموذج بصمة الإصبع هذا أثناء الإعداد، على طفلك تسجيل نسخ لبصمة إصبعه من مواضع مختلفة.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_3" product="default">‏عندما يستخدم طفلك ميزة Pixel Imprint، تُستخدَم نُسخ بصمة إصبعه لتعديل نموذج بصمته. لا يتم مطلقًا تخزين النُسخ المستخدمة لإنشاء نموذج بصمة إصبع طفلك، ولكن يتم تخزين نموذج بصمة الإصبع بأمان على الهاتف ولا يتم نقله خارج الهاتف مطلقًا. تتم كل عمليات المعالجة بأمان على الهاتف.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">‏يمكنك أنت وطفلك حذف نموذج بصمة إصبعه أو إيقاف ميزة Pixel Imprint في أي وقت من \"الإعدادات\". يتم تخزين نماذج بصمة الإصبع على الهاتف حتى يتم حذفها.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"‏تعرَّف على مزيد من المعلومات عن فتح قفل هاتف Pixel باستخدام بصمة الإصبع على الرابط &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">‏Pixel Imprint للملف الشخصي للعمل</string>
     <string name="setup_suggestion_summary">تتبقى بضع خطوات أخرى.</string>
@@ -334,6 +361,7 @@
     <string name="smart_battery_a11y_expand_label">قسم \"البطارية التكيُّفية\" موسَّع</string>
     <string name="smart_battery_footer">لإطالة عمر البطارية، قد تعمل ميزة \"البطارية التكيُّفية\" على تقليل مستوى الأداء والنشاط في الخلفية، وبالتالي قد يتأخّر ظهور بعض الإشعارات.</string>
     <string name="smart_battery_manager_title">الإعدادات المفضّلة للميزات التكيُّفية</string>
+    <string name="smart_battery_summary" product="default">تطّلِع ميزة \"البطارية التكيُّفية\" على أنماط استخدام هاتفك من أجل تحسين كيفية استخدام التطبيقات للبطارية بشكل مستمر. لإطالة عمر البطارية، قد يؤدي ذلك إلى خفض الأداء وتأخير الإشعارات.</string>
     <string name="smart_battery_title">البطارية التكيُّفية</string>
     <string name="software_update_can_be_updated_header">‏تحسين أداء جهاز Pixel</string>
     <string name="software_update_detail_indication_1_update_available">يتوفّر تحديث واحد</string>

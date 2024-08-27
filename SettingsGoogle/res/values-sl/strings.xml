@@ -148,6 +148,7 @@ Lažno predstavljanje je poskus kraje poverilnic za prijavo ali drugih osebnih p
     <string name="content_protection_preference_subpage_summary">Pregledovanje poteka zasebno kar v napravi in v dejavnosti v aplikacijah išče znake lažnega predstavljanja ali drugega zavajajočega vedenja. Če so takšni znaki zaznani, se nekateri podatki o aplikacijah pošljejo v storitev Google Play Protect za potrditev grožnje in v opozorilo uporabnikom aplikacije.</string>
     <string name="contextual_timeout_description">Samodejno predčasno izklopi zaslon ob neuporabi naprave</string>
     <string name="contextual_timeout_title">Prilagodljiva časovna omejitev</string>
+    <string name="credentials_install_summary" product="default">Namestitev potrdil iz shrambe</string>
     <string name="dark_ui_text">Temna tema s črnim ozadjem podaljša čas delovanja baterije. Razporedi temne teme z vklopom počakajo, dokler se zaslon ne izklopi.</string>
     <string name="debugging_data_title">Podatki za odpravljanje napak</string>
     <string name="discover_tips_button">Odkrijte nasvete</string>
@@ -155,6 +156,8 @@ Lažno predstavljanje je poskus kraje poverilnic za prijavo ali drugih osebnih p
     <string name="double_twist_for_camera_mode_summary">Če želite v Google Fotoaparatu preklopiti v način za selfije in iz njega, napravo z odprto aplikacijo dvakrat zasukajte.</string>
     <string name="duration_less_than_one_minute">Manj kot ena minuta</string>
     <string name="enable_glanceable_hub_toggle">Način središča</string>
+    <string name="erase_external_storage" product="default">Izbriši pomnilnik USB</string>
+    <string name="erase_external_storage_description" product="default">Izbriši vse podatke v notranjem pomnilniku USB, na primer glasbo ali fotografije.</string>
     <string name="extreme_battery_saver_summary">Vključuje vse zgoraj navedene spremembe. Prav tako začasno zaustavi nenujne aplikacije in njihova obvestila.</string>
     <string name="extreme_battery_saver_title">Strogo varčevanje z energijo baterije</string>
     <string name="face_confirmation_hide_illustration_description">Zdaj lahko z obrazom odklenete telefon, ko ga primete ali se dotaknete zaslona.</string>
@@ -228,6 +231,9 @@ Varnostno kopirani podatki se ne bodo šteli v vašo omejitev prostora za shranj
     <string name="limited_warranty_title">Omejeno jamstvo</string>
     <string name="lockscreen_show_weather_summary">Prikaz trenutnih vremenskih razmer</string>
     <string name="lockscreen_show_weather_title">Pokaži vreme</string>
+    <string name="main_clear_desc_erase_external_storage" product="default">"
+
+Če želite izbrisati glasbo, slike in druge uporabniške podatke, morate izbrisati "<b>pomnilnik USB</b>.</string>
     <string name="my_device_info_account_preference_title">Račun Google</string>
     <string name="owner_info_settings_edit_text_hint">Npr. Janezov Pixel.</string>
     <string name="permit_debugging_data">Dovoli dostop do poročil o napakah</string>
@@ -278,6 +284,7 @@ Obrnite telefon, če želite poskusiti."</string>
     <string name="security_dismiss_dialog_title">Želite opustiti to opozorilo?</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled">Dotaknite se za nastavitev</string>
     <string name="security_settings_face_enroll_education_message">Na naslednjem zaslonu zasukajte glavo, da posnamete obraz z vseh možnih kotov.</string>
+    <string name="security_settings_face_enroll_education_message_accessibility" product="default">Ko bo prikazan naslednji zaslon, držite telefon v višini oči.</string>
     <string name="security_settings_face_enroll_error_dialog_title">Registracija ni bila dokončana</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_title">Čas za nastavitev odklepanja z obrazom je potekel</string>
     <string name="security_settings_face_enroll_finish_description_with_bp">Zdaj lahko z obrazom odklenete telefon ali potrdite svojo identiteto, na primer ob prijavi v aplikacije ali odobritvi nakupa.</string>
@@ -292,13 +299,29 @@ Odklepanje z obrazom najbolje deluje, ko je dovolj svetlo in ne nosite maske ali
 Odklepanje z obrazom najbolje deluje, ko je dovolj svetlo in ne nosite maske ali temnih očal."</string>
     <string name="security_settings_face_enroll_finish_title">Videti je v redu</string>
     <string name="security_settings_face_enroll_introduction_accessibility">Nastavitev za slabovidne ali osebe z omejenim gibanjem glave</string>
+    <string name="security_settings_face_enroll_introduction_accessibility_expanded" product="default">Ko uporabljate odklepanje z obrazom, boste morda morali glavo nastaviti naravnost pred telefon.</string>
     <string name="security_settings_face_enroll_introduction_accessibility_vision">Oči morajo biti odprte</string>
+    <string name="security_settings_face_enroll_introduction_control_consent_message" product="default">"Vi in otrok lahko v nastavitvah kadar koli izbrišete model obraza ali izklopite odklepanje z obrazom. Modeli obraza so shranjeni v telefonu, dokler niso izbrisani.&lt;br&gt;&lt;br&gt;Preberite več o tem na &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_consent_title">Vi in otrok imate nadzor</string>
+    <string name="security_settings_face_enroll_introduction_control_message" product="default">"V nastavitvah lahko kadar koli izbrišete model obraza ali izklopite odklepanje z obrazom. Modeli obraza so shranjeni v telefonu, dokler jih ne izbrišete.&lt;br&gt;&lt;br&gt;Preberite več o tem na &lt;a href='http://g.co/pixel/faceunlock'&gt;g.co/pixel/faceunlock&lt;/a&gt;."</string>
     <string name="security_settings_face_enroll_introduction_control_title">Vse imate pod nadzorom</string>
+    <string name="security_settings_face_enroll_introduction_how_consent_message" product="default">"Odklepanje z obrazom ustvari edinstven model otrokovega obraza, s katerim potrdi svojo identiteto. Za ustvarjanje modela obraza med postopkom nastavitve mora otrok posneti svoj obraz iz različnih kotov.
+
+Ko uporablja odklepanje z obrazom, se model obraza posodablja s slikami iz teh interakcij. Slike, iz katerih je ustvarjen model obraza, se ne shranijo, model obraza pa se varno shrani v telefon in ga nikoli ne zapusti. Celotna obdelava je izvedena varno v telefonu."</string>
+    <string name="security_settings_face_enroll_introduction_how_message" product="default">"Odklepanje z obrazom ustvari edinstven model vašega obraza, s katerim potrdite svojo identiteto. Za ustvarjanje modela obraza med postopkom nastavitve morate posneti svoj obraz iz različnih kotov.
+
+Ko uporabljate odklepanje z obrazom, se model obraza posodablja s slikami iz teh interakcij. Slike, iz katerih je ustvarjen model obraza, se ne shranijo, model obraza pa se varno shrani v telefon in ga nikoli ne zapusti. Celotna obdelava je izvedena varno v telefonu."</string>
     <string name="security_settings_face_enroll_introduction_how_title">Delovanje</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_gaze" product="default">Odklepanje z obrazom lahko za odklepanje telefona ali potrditev identitete zahteva, da so otrokove oči odprte. Vi in otrok lahko to možnost kadar koli vklopite v nastavitvah.</string>
     <string name="security_settings_face_enroll_introduction_info_consent_glasses">Če otrok običajno nosi očala, jih lahko nadene med postopkom nastavitve.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_less_secure" product="default">Če otrok odklepa telefon z obrazom, je to morda manj varno od zapletenega vzorca, kode PIN ali gesla.</string>
+    <string name="security_settings_face_enroll_introduction_info_consent_looking" product="default">Če pogleda proti telefonu, ga bo morda nenamerno odklenil. Telefon lahko odklene tudi nekdo, ki je otroku zelo podoben, na primer enojajčni dvojček, ali nekdo, ki telefon podrži pred njegovim obrazom.</string>
+    <string name="security_settings_face_enroll_introduction_info_gaze" product="default">Odklepanje z obrazom lahko za odklepanje telefona ali potrditev identitete zahteva, da so vaše oči odprte. To možnost lahko kadar koli vklopite v nastavitvah.</string>
     <string name="security_settings_face_enroll_introduction_info_glasses">Lahko nosite očala ali rahlo zatemnjena sončna očala.</string>
+    <string name="security_settings_face_enroll_introduction_info_less_secure" product="default">Odklepanje telefona z obrazom je morda manj varno od odklepanja z zapletenim vzorcem, kodo PIN ali geslom.</string>
+    <string name="security_settings_face_enroll_introduction_info_looking" product="default">Če pogledate proti telefonu, ga boste morda nenamerno odklenili. Telefon lahko odklene tudi nekdo, ki vam je zelo podoben, na primer enojajčni dvojček, ali nekdo, ki telefon podrži pred vašim obrazom.</string>
     <string name="security_settings_face_enroll_introduction_info_title">Upoštevajte</string>
+    <string name="security_settings_face_enroll_introduction_message" product="default">Z obrazom odklenite telefon ali potrdite svojo identiteto, na primer ob prijavi v aplikacije ali odobritvi nakupa.</string>
     <string name="security_settings_face_enroll_introduction_title">Nastavite odklepanje z obrazom</string>
     <string name="security_settings_face_enroll_next">Naprej</string>
     <string name="security_settings_face_enroll_partial_message">Če želite izboljšati učinkovitost delovanja, lahko odklepanje z obrazom znova nastavite v nastavitvah.</string>
@@ -325,7 +348,9 @@ Opomba: prstnega odtisa ne morete uporabiti za odklepanje naprave. Za več infor
     <string name="security_settings_fingerprint_preference_summary_none">Za nastavitev prstnega odtisa se dotaknite</string>
     <string name="security_settings_fingerprint_preference_title">Nexus Imprint</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2">Pixel Imprint ustvari edinstven model vašega prstnega odtisa, s katerim potrdite svojo identiteto. Za ustvarjanje modela prstnega odtisa med postopkom nastavitve morate posneti svoj prstni odtis v različnih položajih.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_4" product="default">V nastavitvah lahko kadar koli izbrišete model prstnega odtisa ali izklopite funkcijo Pixel Imprint. Modeli prstnih odtisov so shranjeni v telefonu, dokler jih ne izbrišete.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2">Pixel Imprint ustvari edinstven model otrokovega prstnega odtisa, s katerim potrdi svojo identiteto. Za ustvarjanje modela prstnega odtisa med postopkom nastavitve mora posneti svoj prstni odtis v različnih položajih.</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="default">V nastavitvah lahko vi in otrok kadar koli izbrišete model prstnega odtisa ali izklopite funkcijo Pixel Imprint. Modeli prstnih odtisov so shranjeni v telefonu, dokler niso izbrisani.</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_learn_more">"Več o odklepanju s prstnim odtisom v telefonu Pixel preberite na &lt;a href='http://g.co/pixel/fingerprintunlock'&gt;g.co/pixel/fingerprintunlock&lt;/a&gt;."</string>
     <string name="security_settings_work_fingerprint_preference_title">Pixel Imprint za službo</string>
     <string name="setup_suggestion_summary">Ostalo vam je samo še nekaj korakov.</string>
@@ -334,6 +359,7 @@ Opomba: prstnega odtisa ne morete uporabiti za odklepanje naprave. Za več infor
     <string name="smart_battery_a11y_expand_label">Razširitev, prilagodljivo varčevanje z energijo baterije</string>
     <string name="smart_battery_footer">Prilagodljivo varčevanje z energijo baterije lahko zmanjša zmogljivost in dejavnost v ozadju, da podaljša čas delovanja baterije. Nekatera obvestila bodo morda zakasnjena.</string>
     <string name="smart_battery_manager_title">Nastavitve prilagodljivega polnjenja</string>
+    <string name="smart_battery_summary" product="default">Prilagodljivo varčevanje z energijo baterije se uči na podlagi vaše uporabe telefona, da lahko nenehno optimizira, kako aplikacije porabljajo energijo baterije. Zaradi podaljšanja časa delovanja baterije bo zmogljivost delovanja morda zmanjšana, obvestila pa zakasnjena.</string>
     <string name="smart_battery_title">Prilagodljivo varčevanje z energijo baterije</string>
     <string name="software_update_can_be_updated_header">Pixel lahko še izboljšate</string>
     <string name="software_update_detail_indication_1_update_available">Na voljo je ena posodobitev</string>
