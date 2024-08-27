@@ -45,14 +45,16 @@ import com.android.systemui.settings.UserTracker;
 import com.android.systemui.statusbar.CommandQueue;
 import com.android.systemui.statusbar.NotificationShadeWindowController;
 import com.android.systemui.statusbar.commandline.CommandRegistry;
-import com.android.systemui.statusbar.phone.StatusBarKeyguardViewManager;
 import com.android.systemui.statusbar.phone.HeadsUpManagerPhone;
 import com.android.systemui.statusbar.phone.HeadsUpModule;
+import com.android.systemui.statusbar.phone.StatusBarKeyguardViewManager;
 import com.android.systemui.statusbar.policy.DeviceProvisionedController;
+import com.android.systemui.statusbar.policy.FlashlightController;
 import com.android.systemui.statusbar.policy.KeyguardStateController;
 import com.android.systemui.telephony.TelephonyListenerManager;
 import com.android.systemui.tuner.TunerService;
 import com.android.systemui.util.sensors.ProximitySensor;
+
 import com.google.android.systemui.columbus.ColumbusContentObserver;
 import com.google.android.systemui.columbus.ColumbusService;
 import com.google.android.systemui.columbus.ColumbusServiceWrapper;
@@ -103,8 +105,12 @@ import com.google.android.systemui.columbus.sensors.config.GestureConfiguration;
 import com.google.android.systemui.columbus.sensors.config.LowSensitivitySettingAdjustment;
 import com.google.android.systemui.columbus.sensors.config.SensorConfiguration;
 import com.google.android.systemui.statusbar.phone.CentralSurfacesGoogle;
+import com.google.android.systemui.statusbar.phone.StatusBarPhoneModuleGoogle;
 
-import com.google.android.systemui.statusbar.phone.dagger.StatusBarPhoneModule;
+import dagger.Lazy;
+import dagger.Module;
+import dagger.Provides;
+import dagger.multibindings.ElementsIntoSet;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -119,20 +125,17 @@ import java.util.concurrent.Executor;
 
 import javax.inject.Named;
 
-import dagger.Lazy;
-import dagger.Module;
-import dagger.Provides;
-import dagger.multibindings.ElementsIntoSet;
-
-@Module(includes = {
-        HeadsUpModule.class,
-        StatusBarPhoneModule.class,
-})
+@Module(
+        includes = {
+            HeadsUpModule.class,
+            StatusBarPhoneModuleGoogle.class,
+        })
 public class ColumbusModule {
 
     @Provides
     @SysUISingleton
-    static ColumbusStructuredDataManager provideColumbusStructuredDataManager(Context context, UserTracker userTracker, @Background Executor executor) {
+    static ColumbusStructuredDataManager provideColumbusStructuredDataManager(
+            Context context, UserTracker userTracker, @Background Executor executor) {
         return new ColumbusStructuredDataManager(context, userTracker, executor);
     }
 
@@ -144,13 +147,22 @@ public class ColumbusModule {
 
     @Provides
     @SysUISingleton
-    static ColumbusServiceWrapper provideColumbusServiceWrapper(ColumbusSettings columbusSettings, Lazy<ColumbusService> lazy, Lazy<SettingsAction> lazyB, Lazy<ColumbusStructuredDataManager> lazyC) {
+    static ColumbusServiceWrapper provideColumbusServiceWrapper(
+            ColumbusSettings columbusSettings,
+            Lazy<ColumbusService> lazy,
+            Lazy<SettingsAction> lazyB,
+            Lazy<ColumbusStructuredDataManager> lazyC) {
         return new ColumbusServiceWrapper(columbusSettings, lazy, lazyB, lazyC);
     }
 
     @Provides
     @SysUISingleton
-    static ColumbusService provideColumbusService(List<Action> list, Set<FeedbackEffect> set, @Named(COLUMBUS_GATES) Set<Gate> setB, GestureController gestureController, PowerManagerWrapper powerManagerWrapper) {
+    static ColumbusService provideColumbusService(
+            List<Action> list,
+            Set<FeedbackEffect> set,
+            @Named(COLUMBUS_GATES) Set<Gate> setB,
+            GestureController gestureController,
+            PowerManagerWrapper powerManagerWrapper) {
         return new ColumbusService(list, set, setB, gestureController, powerManagerWrapper);
     }
 
@@ -162,20 +174,28 @@ public class ColumbusModule {
 
     @Provides
     @SysUISingleton
-    static ColumbusSettings provideColumbusSettings(Context context, UserTracker userTracker, ColumbusContentObserver.Factory factory) {
+    static ColumbusSettings provideColumbusSettings(
+            Context context, UserTracker userTracker, ColumbusContentObserver.Factory factory) {
         return new ColumbusSettings(context, userTracker, factory);
     }
 
     @Provides
     @SysUISingleton
-    static ColumbusContentObserver.Factory provideColumbusContentObserver(ContentResolverWrapper contentResolverWrapper, UserTracker userTracker, @Main Handler handler, @Main Executor executor) {
-        return new ColumbusContentObserver.Factory(contentResolverWrapper, userTracker, handler, executor);
+    static ColumbusContentObserver.Factory provideColumbusContentObserver(
+            ContentResolverWrapper contentResolverWrapper,
+            UserTracker userTracker,
+            @Main Handler handler,
+            @Main Executor executor) {
+        return new ColumbusContentObserver.Factory(
+                contentResolverWrapper, userTracker, handler, executor);
     }
 
     @Provides
     @SysUISingleton
-    static com.google.android.systemui.columbus.feedback.AssistInvocationEffect provideAssistInvocationEffectColumbus(AssistManager assistManager) {
-        return new com.google.android.systemui.columbus.feedback.AssistInvocationEffect(assistManager);
+    static com.google.android.systemui.columbus.feedback.AssistInvocationEffect
+            provideAssistInvocationEffectColumbus(AssistManager assistManager) {
+        return new com.google.android.systemui.columbus.feedback.AssistInvocationEffect(
+                assistManager);
     }
 
     @Provides
@@ -192,25 +212,29 @@ public class ColumbusModule {
 
     @Provides
     @SysUISingleton
-    static KeyguardProximity provideKeyguardProximity(Context context, KeyguardVisibility keyguardVisibility, Proximity proximity) {
+    static KeyguardProximity provideKeyguardProximity(
+            Context context, KeyguardVisibility keyguardVisibility, Proximity proximity) {
         return new KeyguardProximity(context, keyguardVisibility, proximity);
     }
 
     @Provides
     @SysUISingleton
-    static KeyguardVisibility provideKeyguardVisibility(Context context, Lazy<KeyguardStateController> lazy) {
+    static KeyguardVisibility provideKeyguardVisibility(
+            Context context, Lazy<KeyguardStateController> lazy) {
         return new KeyguardVisibility(context, lazy);
     }
 
     @Provides
     @SysUISingleton
-    static ChargingState provideChargingState(Context context, Handler handler, @Named(COLUMBUS_TRANSIENT_GATE_DURATION) long j) {
+    static ChargingState provideChargingState(
+            Context context, Handler handler, @Named(COLUMBUS_TRANSIENT_GATE_DURATION) long j) {
         return new ChargingState(context, handler, j);
     }
 
     @Provides
     @SysUISingleton
-    static UsbState provideUsbState(Context context, Handler handler, @Named(COLUMBUS_TRANSIENT_GATE_DURATION) long j) {
+    static UsbState provideUsbState(
+            Context context, Handler handler, @Named(COLUMBUS_TRANSIENT_GATE_DURATION) long j) {
         return new UsbState(context, handler, j);
     }
 
@@ -222,25 +246,37 @@ public class ColumbusModule {
 
     @Provides
     @SysUISingleton
-    static SilenceAlertsDisabled provideSilenceAlertsDisabled(Context context, ColumbusSettings columbusSettings) {
+    static SilenceAlertsDisabled provideSilenceAlertsDisabled(
+            Context context, ColumbusSettings columbusSettings) {
         return new SilenceAlertsDisabled(context, columbusSettings);
     }
 
     @Provides
     @SysUISingleton
-    static FlagEnabled provideFlagEnabled(Context context, ColumbusSettings columbusSettings, Handler handler) {
+    static FlagEnabled provideFlagEnabled(
+            Context context, ColumbusSettings columbusSettings, Handler handler) {
         return new FlagEnabled(context, columbusSettings, handler);
     }
 
     @Provides
     @SysUISingleton
-    static CameraVisibility provideCameraVisibility(Context context, List<Action> list, KeyguardVisibility keyguardVisibility, PowerState powerState, IActivityManager iActivityManager, Handler handler) {
-        return new CameraVisibility(context, list, keyguardVisibility, powerState, iActivityManager, handler);
+    static CameraVisibility provideCameraVisibility(
+            Context context,
+            List<Action> list,
+            KeyguardVisibility keyguardVisibility,
+            PowerState powerState,
+            IActivityManager iActivityManager,
+            Handler handler) {
+        return new CameraVisibility(
+                context, list, keyguardVisibility, powerState, iActivityManager, handler);
     }
 
     @Provides
     @SysUISingleton
-    static SetupWizard provideSetupWizard(Context context, @Named(COLUMBUS_SETUP_WIZARD_ACTIONS) Set<Action> set, Lazy<DeviceProvisionedController> lazy) {
+    static SetupWizard provideSetupWizard(
+            Context context,
+            @Named(COLUMBUS_SETUP_WIZARD_ACTIONS) Set<Action> set,
+            Lazy<DeviceProvisionedController> lazy) {
         return new SetupWizard(context, set, lazy);
     }
 
@@ -252,7 +288,12 @@ public class ColumbusModule {
 
     @Provides
     @SysUISingleton
-    static SystemKeyPress provideSystemKeyPress(Context context, Handler handler, CommandQueue commandQueue, @Named(COLUMBUS_TRANSIENT_GATE_DURATION) long j, @Named(COLUMBUS_BLOCKING_SYSTEM_KEYS) Set<Integer> set) {
+    static SystemKeyPress provideSystemKeyPress(
+            Context context,
+            Handler handler,
+            CommandQueue commandQueue,
+            @Named(COLUMBUS_TRANSIENT_GATE_DURATION) long j,
+            @Named(COLUMBUS_BLOCKING_SYSTEM_KEYS) Set<Integer> set) {
         return new SystemKeyPress(context, handler, commandQueue, j, set);
     }
 
@@ -264,8 +305,13 @@ public class ColumbusModule {
 
     @Provides
     @SysUISingleton
-    static com.google.android.systemui.columbus.gates.TelephonyActivity provideTelephonyActivityColumbus(Context context, Lazy<TelephonyManager> lazy, Lazy<TelephonyListenerManager> lazyB) {
-        return new com.google.android.systemui.columbus.gates.TelephonyActivity(context, lazy, lazyB);
+    static com.google.android.systemui.columbus.gates.TelephonyActivity
+            provideTelephonyActivityColumbus(
+                    Context context,
+                    Lazy<TelephonyManager> lazy,
+                    Lazy<TelephonyListenerManager> lazyB) {
+        return new com.google.android.systemui.columbus.gates.TelephonyActivity(
+                context, lazy, lazyB);
     }
 
     @Provides
@@ -282,25 +328,43 @@ public class ColumbusModule {
 
     @Provides
     @SysUISingleton
-    static GestureSensorImpl provideGestureSensorImpl(Context context, QsEventLogger uiEventLogger, @Main Handler handler) {
+    static GestureSensorImpl provideGestureSensorImpl(
+            Context context, QsEventLogger uiEventLogger, @Main Handler handler) {
         return new GestureSensorImpl(context, uiEventLogger, handler);
     }
 
     @Provides
     @SysUISingleton
-    static GestureController provideGestureController(GestureSensor gestureSensor, @Named(COLUMBUS_SOFT_GATES) Set<Gate> set, CommandRegistry commandRegistry, QsEventLogger uiEventLogger) {
+    static GestureController provideGestureController(
+            GestureSensor gestureSensor,
+            @Named(COLUMBUS_SOFT_GATES) Set<Gate> set,
+            CommandRegistry commandRegistry,
+            QsEventLogger uiEventLogger) {
         return new GestureController(gestureSensor, set, commandRegistry, uiEventLogger);
     }
 
     @Provides
     @SysUISingleton
-    static CHREGestureSensor provideCHREGestureSensor(Context context, QsEventLogger uiEventLogger, GestureConfiguration gestureConfiguration, StatusBarStateController statusBarStateController, WakefulnessLifecycle wakefulnessLifecycle, @Main Handler handler) {
-        return new CHREGestureSensor(context, uiEventLogger, gestureConfiguration, statusBarStateController, wakefulnessLifecycle, handler);
+    static CHREGestureSensor provideCHREGestureSensor(
+            Context context,
+            QsEventLogger uiEventLogger,
+            GestureConfiguration gestureConfiguration,
+            StatusBarStateController statusBarStateController,
+            WakefulnessLifecycle wakefulnessLifecycle,
+            @Main Handler handler) {
+        return new CHREGestureSensor(
+                context,
+                uiEventLogger,
+                gestureConfiguration,
+                statusBarStateController,
+                wakefulnessLifecycle,
+                handler);
     }
 
     @Provides
     @SysUISingleton
-    static GestureConfiguration provideGestureConfiguration(List<Adjustment> list, SensorConfiguration sensorConfiguration) {
+    static GestureConfiguration provideGestureConfiguration(
+            List<Adjustment> list, SensorConfiguration sensorConfiguration) {
         return new GestureConfiguration(list, sensorConfiguration);
     }
 
@@ -312,79 +376,168 @@ public class ColumbusModule {
 
     @Provides
     @SysUISingleton
-    static LowSensitivitySettingAdjustment provideLowSensitivitySettingAdjustment(Context context, ColumbusSettings columbusSettings, SensorConfiguration sensorConfiguration) {
+    static LowSensitivitySettingAdjustment provideLowSensitivitySettingAdjustment(
+            Context context,
+            ColumbusSettings columbusSettings,
+            SensorConfiguration sensorConfiguration) {
         return new LowSensitivitySettingAdjustment(context, columbusSettings, sensorConfiguration);
     }
 
     @Provides
     @SysUISingleton
-    static SettingsAction provideSettingsActionColumbus(Context context, CentralSurfacesGoogle centralSurfacesGoogle, QsEventLogger uiEventLogger) {
+    static SettingsAction provideSettingsActionColumbus(
+            Context context,
+            CentralSurfacesGoogle centralSurfacesGoogle,
+            QsEventLogger uiEventLogger) {
         return new SettingsAction(context, centralSurfacesGoogle, uiEventLogger);
     }
 
     @Provides
     @SysUISingleton
-    static UserSelectedAction provideUserSelectedAction(Context context, ColumbusSettings columbusSettings, Map<String, UserAction> map, TakeScreenshot takeScreenshot, KeyguardStateController keyguardStateController, PowerManagerWrapper powerManagerWrapper, WakefulnessLifecycle wakefulnessLifecycle) {
-        return new UserSelectedAction(context, columbusSettings, map, takeScreenshot, keyguardStateController, powerManagerWrapper, wakefulnessLifecycle);
+    static UserSelectedAction provideUserSelectedAction(
+            Context context,
+            ColumbusSettings columbusSettings,
+            Map<String, UserAction> map,
+            TakeScreenshot takeScreenshot,
+            KeyguardStateController keyguardStateController,
+            PowerManagerWrapper powerManagerWrapper,
+            WakefulnessLifecycle wakefulnessLifecycle) {
+        return new UserSelectedAction(
+                context,
+                columbusSettings,
+                map,
+                takeScreenshot,
+                keyguardStateController,
+                powerManagerWrapper,
+                wakefulnessLifecycle);
     }
 
     @Provides
     @SysUISingleton
-    static DismissTimer provideDismissTimer(Context context, SilenceAlertsDisabled silenceAlertsDisabled, IActivityManager iActivityManager) {
+    static DismissTimer provideDismissTimer(
+            Context context,
+            SilenceAlertsDisabled silenceAlertsDisabled,
+            IActivityManager iActivityManager) {
         return new DismissTimer(context, silenceAlertsDisabled, iActivityManager);
     }
 
     @Provides
     @SysUISingleton
-    static com.google.android.systemui.columbus.actions.UnpinNotifications provideUnpinNotificationsColumbus(Context context, SilenceAlertsDisabled silenceAlertsDisabled, Optional<HeadsUpManagerPhone> optional) {
-        return new com.google.android.systemui.columbus.actions.UnpinNotifications(context, silenceAlertsDisabled, optional);
+    static com.google.android.systemui.columbus.actions.UnpinNotifications
+            provideUnpinNotificationsColumbus(
+                    Context context,
+                    SilenceAlertsDisabled silenceAlertsDisabled,
+                    Optional<HeadsUpManagerPhone> optional) {
+        return new com.google.android.systemui.columbus.actions.UnpinNotifications(
+                context, silenceAlertsDisabled, optional);
     }
 
     @Provides
     @SysUISingleton
-    static ManageMedia provideManageMedia(Context context, AudioManager audioManager, QsEventLogger uiEventLogger) {
+    static ManageMedia provideManageMedia(
+            Context context, AudioManager audioManager, QsEventLogger uiEventLogger) {
         return new ManageMedia(context, audioManager, uiEventLogger);
     }
 
     @Provides
     @SysUISingleton
-    static LaunchApp provideLaunchApp(Context context, LauncherApps launcherApps, ActivityStarter activityStarter, StatusBarKeyguardViewManager statusBarKeyguardViewManager, IActivityManager iActivityManager, UserManager userManager, ColumbusSettings columbusSettings, KeyguardVisibility keyguardVisibility, KeyguardUpdateMonitor keyguardUpdateMonitor, @Main Handler handler, @Background Handler handlerB, @Main Executor executor, QsEventLogger uiEventLogger, UserTracker userTracker) {
-        return new LaunchApp(context, launcherApps, activityStarter, statusBarKeyguardViewManager, iActivityManager, userManager, columbusSettings, keyguardVisibility, keyguardUpdateMonitor, handler, handlerB, executor, uiEventLogger, userTracker);
+    static LaunchApp provideLaunchApp(
+            Context context,
+            LauncherApps launcherApps,
+            ActivityStarter activityStarter,
+            StatusBarKeyguardViewManager statusBarKeyguardViewManager,
+            IActivityManager iActivityManager,
+            UserManager userManager,
+            ColumbusSettings columbusSettings,
+            KeyguardVisibility keyguardVisibility,
+            KeyguardUpdateMonitor keyguardUpdateMonitor,
+            @Main Handler handler,
+            @Background Handler handlerB,
+            @Main Executor executor,
+            QsEventLogger uiEventLogger,
+            UserTracker userTracker) {
+        return new LaunchApp(
+                context,
+                launcherApps,
+                activityStarter,
+                statusBarKeyguardViewManager,
+                iActivityManager,
+                userManager,
+                columbusSettings,
+                keyguardVisibility,
+                keyguardUpdateMonitor,
+                handler,
+                handlerB,
+                executor,
+                uiEventLogger,
+                userTracker);
     }
 
     @Provides
     @SysUISingleton
-    static com.google.android.systemui.columbus.actions.SilenceCall provideSilenceCallColumbus(Context context, SilenceAlertsDisabled silenceAlertsDisabled, Lazy<TelecomManager> lazy, Lazy<TelephonyManager> lazyB, Lazy<TelephonyListenerManager> lazyC) {
-        return new com.google.android.systemui.columbus.actions.SilenceCall(context, silenceAlertsDisabled, lazy, lazyB, lazyC);
+    static com.google.android.systemui.columbus.actions.SilenceCall provideSilenceCallColumbus(
+            Context context,
+            SilenceAlertsDisabled silenceAlertsDisabled,
+            Lazy<TelecomManager> lazy,
+            Lazy<TelephonyManager> lazyB,
+            Lazy<TelephonyListenerManager> lazyC) {
+        return new com.google.android.systemui.columbus.actions.SilenceCall(
+                context, silenceAlertsDisabled, lazy, lazyB, lazyC);
     }
 
     @Provides
     @SysUISingleton
-    static LaunchOverview provideLaunchOverview(Context context, Recents recents, QsEventLogger uiEventLogger) {
+    static LaunchOverview provideLaunchOverview(
+            Context context, Recents recents, QsEventLogger uiEventLogger) {
         return new LaunchOverview(context, recents, uiEventLogger);
     }
 
     @Provides
     @SysUISingleton
-    static com.google.android.systemui.columbus.actions.LaunchOpa provideLaunchOpaColumbus(Context context, CentralSurfacesGoogle centralSurfacesGoogle, Set<FeedbackEffect> set, AssistManager assistManager, Lazy<KeyguardManager> lazy, TunerService tunerService, ColumbusContentObserver.Factory factory, QsEventLogger uiEventLogger) {
-        return new com.google.android.systemui.columbus.actions.LaunchOpa(context, centralSurfacesGoogle, set, assistManager, lazy, tunerService, factory, uiEventLogger);
+    static com.google.android.systemui.columbus.actions.LaunchOpa provideLaunchOpaColumbus(
+            Context context,
+            CentralSurfacesGoogle centralSurfacesGoogle,
+            Set<FeedbackEffect> set,
+            AssistManager assistManager,
+            Lazy<KeyguardManager> lazy,
+            TunerService tunerService,
+            ColumbusContentObserver.Factory factory,
+            QsEventLogger uiEventLogger) {
+        return new com.google.android.systemui.columbus.actions.LaunchOpa(
+                context,
+                centralSurfacesGoogle,
+                set,
+                assistManager,
+                lazy,
+                tunerService,
+                factory,
+                uiEventLogger);
     }
 
     @Provides
     @SysUISingleton
-    static com.google.android.systemui.columbus.actions.SnoozeAlarm provideSnoozeAlarmColumbus(Context context, SilenceAlertsDisabled silenceAlertsDisabled, IActivityManager iActivityManager) {
-        return new com.google.android.systemui.columbus.actions.SnoozeAlarm(context, silenceAlertsDisabled, iActivityManager);
+    static com.google.android.systemui.columbus.actions.SnoozeAlarm provideSnoozeAlarmColumbus(
+            Context context,
+            SilenceAlertsDisabled silenceAlertsDisabled,
+            IActivityManager iActivityManager) {
+        return new com.google.android.systemui.columbus.actions.SnoozeAlarm(
+                context, silenceAlertsDisabled, iActivityManager);
     }
 
     @Provides
     @SysUISingleton
-    static OpenNotificationShade provideOpenNotificationShade(Context context, Lazy<NotificationShadeWindowController> lazy, Lazy<CentralSurfacesGoogle> lazyB, QsEventLogger uiEventLogger) {
+    static OpenNotificationShade provideOpenNotificationShade(
+            Context context,
+            Lazy<NotificationShadeWindowController> lazy,
+            Lazy<CentralSurfacesGoogle> lazyB,
+            QsEventLogger uiEventLogger) {
         return new OpenNotificationShade(context, lazy, lazyB, uiEventLogger);
     }
 
     @Provides
     @SysUISingleton
-    static TakeScreenshot provideTakeScreenshot(Context context, Handler handler, QsEventLogger uiEventLogger) {
+    static TakeScreenshot provideTakeScreenshot(
+            Context context, Handler handler, QsEventLogger uiEventLogger) {
         return new TakeScreenshot(context, handler, uiEventLogger);
     }
 
@@ -399,21 +552,49 @@ public class ColumbusModule {
     @SysUISingleton
     @ElementsIntoSet
     @Named(COLUMBUS_GATES)
-    static Set<Gate> provideColumbusGates(FlagEnabled flagEnabled, KeyguardProximity keyguardProximity, SetupWizard setupWizard, TelephonyActivity telephonyActivity, VrMode vrMode, CameraVisibility cameraVisibility, PowerSaveState powerSaveState, PowerState powerState) {
-        return new HashSet(Arrays.asList(flagEnabled, keyguardProximity, setupWizard, telephonyActivity, vrMode, cameraVisibility, powerSaveState, powerState));
+    static Set<Gate> provideColumbusGates(
+            FlagEnabled flagEnabled,
+            KeyguardProximity keyguardProximity,
+            SetupWizard setupWizard,
+            TelephonyActivity telephonyActivity,
+            VrMode vrMode,
+            CameraVisibility cameraVisibility,
+            PowerSaveState powerSaveState,
+            PowerState powerState) {
+        return new HashSet(
+                Arrays.asList(
+                        flagEnabled,
+                        keyguardProximity,
+                        setupWizard,
+                        telephonyActivity,
+                        vrMode,
+                        cameraVisibility,
+                        powerSaveState,
+                        powerState));
     }
 
     @Provides
     @SysUISingleton
     @ElementsIntoSet
     @Named(COLUMBUS_SOFT_GATES)
-    static Set<Gate> provideColumbusSoftGates(ChargingState chargingState, UsbState usbState, SystemKeyPress systemKeyPress, ScreenTouch screenTouch) {
+    static Set<Gate> provideColumbusSoftGates(
+            ChargingState chargingState,
+            UsbState usbState,
+            SystemKeyPress systemKeyPress,
+            ScreenTouch screenTouch) {
         return new HashSet(Arrays.asList(chargingState, usbState, systemKeyPress, screenTouch));
     }
 
     @Provides
     @SysUISingleton
-    static Map<String, UserAction> provideUserSelectedActions(LaunchOpa launchOpa, ManageMedia manageMedia, TakeScreenshot takeScreenshot, LaunchOverview launchOverview, OpenNotificationShade openNotificationShade, LaunchApp launchApp, ToggleFlashlight toggleFlashlight) {
+    static Map<String, UserAction> provideUserSelectedActions(
+            LaunchOpa launchOpa,
+            ManageMedia manageMedia,
+            TakeScreenshot takeScreenshot,
+            LaunchOverview launchOverview,
+            OpenNotificationShade openNotificationShade,
+            LaunchApp launchApp,
+            ToggleFlashlight toggleFlashlight) {
         Map<String, UserAction> result = new HashMap<>();
         result.put("assistant", launchOpa);
         result.put("media", manageMedia);
@@ -427,8 +608,13 @@ public class ColumbusModule {
 
     @Provides
     @SysUISingleton
-    static GestureSensor provideGestureSensor(Context context, ColumbusSettings columbusSettings, Lazy<CHREGestureSensor> gestureSensor, Lazy<GestureSensorImpl> apSensor) {
-        if (columbusSettings.useApSensor() || !context.getPackageManager().hasSystemFeature("android.hardware.context_hub")) {
+    static GestureSensor provideGestureSensor(
+            Context context,
+            ColumbusSettings columbusSettings,
+            Lazy<CHREGestureSensor> gestureSensor,
+            Lazy<GestureSensorImpl> apSensor) {
+        if (columbusSettings.useApSensor()
+                || !context.getPackageManager().hasSystemFeature("android.hardware.context_hub")) {
             Log.i("Columbus/Module", "Creating AP sensor");
             return apSensor.get();
         }
@@ -438,7 +624,10 @@ public class ColumbusModule {
 
     @Provides
     @SysUISingleton
-    static List<Action> provideColumbusActions(@Named(COLUMBUS_FULL_SCREEN_ACTIONS) List<Action> fullScreenActions, UnpinNotifications unpinNotifications, UserSelectedAction userSelectedAction) {
+    static List<Action> provideColumbusActions(
+            @Named(COLUMBUS_FULL_SCREEN_ACTIONS) List<Action> fullScreenActions,
+            UnpinNotifications unpinNotifications,
+            UserSelectedAction userSelectedAction) {
         List<Action> result = new ArrayList<>(fullScreenActions);
         result.add(unpinNotifications);
         result.add(userSelectedAction);
@@ -448,20 +637,26 @@ public class ColumbusModule {
     @Provides
     @SysUISingleton
     @Named(COLUMBUS_FULL_SCREEN_ACTIONS)
-    static List<Action> provideFullscreenActions(DismissTimer dismissTimer, SnoozeAlarm snoozeAlarm, SilenceCall silenceCall, SettingsAction settingsAction) {
+    static List<Action> provideFullscreenActions(
+            DismissTimer dismissTimer,
+            SnoozeAlarm snoozeAlarm,
+            SilenceCall silenceCall,
+            SettingsAction settingsAction) {
         return Arrays.asList(dismissTimer, snoozeAlarm, silenceCall, settingsAction);
     }
 
     @Provides
     @SysUISingleton
     @ElementsIntoSet
-    static Set<FeedbackEffect> provideColumbusEffects(HapticClick hapticClick, UserActivity userActivity) {
+    static Set<FeedbackEffect> provideColumbusEffects(
+            HapticClick hapticClick, UserActivity userActivity) {
         return new HashSet(Arrays.asList(hapticClick, userActivity));
     }
 
     @Provides
     @SysUISingleton
-    static List<Adjustment> provideGestureAdjustments(LowSensitivitySettingAdjustment lowSensitivitySettingAdjustment) {
+    static List<Adjustment> provideGestureAdjustments(
+            LowSensitivitySettingAdjustment lowSensitivitySettingAdjustment) {
         return Collections.singletonList(lowSensitivitySettingAdjustment);
     }
 
@@ -479,5 +674,12 @@ public class ColumbusModule {
     @ElementsIntoSet
     static Set<Action> provideSetupWizardActions(SettingsAction settingsAction) {
         return new HashSet(Arrays.asList(settingsAction));
+    }
+
+    @Provides
+    @SysUISingleton
+    static ToggleFlashlight provideToggleFlashlight(
+            Context context, FlashlightController flashlightController, Handler handler) {
+        return new ToggleFlashlight(context, flashlightController, handler);
     }
 }

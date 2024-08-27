@@ -1,83 +1,46 @@
 package com.google.android.systemui;
 
-import android.app.AlarmManager;
 import android.content.Context;
 
-import com.android.systemui.res.R;
-import com.android.systemui.qs.QsEventLogger;
 import com.android.systemui.VendorServices;
-import com.android.systemui.statusbar.phone.CentralSurfaces;
-import com.android.systemui.util.wakelock.DelayedWakeLock;
 
-import com.google.android.systemui.ambientmusic.AmbientIndicationContainer;
-import com.google.android.systemui.ambientmusic.AmbientIndicationService;
-import com.google.android.systemui.input.TouchContextService;
-import com.google.android.systemui.columbus.ColumbusContext;
 import com.google.android.systemui.columbus.ColumbusServiceWrapper;
-import com.google.android.systemui.elmyra.ElmyraContext;
-import com.google.android.systemui.elmyra.ElmyraService;
-import com.google.android.systemui.elmyra.ServiceConfigurationGoogle;
-
-import java.util.ArrayList;
-
-import javax.inject.Inject;
+import com.google.android.systemui.input.TouchContextService;
+import com.google.android.systemui.screenprotector.ScreenProtectorNotifierService;
 
 import dagger.Lazy;
 
-public class GoogleServices extends VendorServices {
-    private final Context mContext;
-    private final ArrayList<Object> mServices;
-    private final CentralSurfaces mCentralSurfaces;
-    private final AlarmManager mAlarmManager;
-    private final QsEventLogger mUiEventLogger;
-    private final Lazy<ServiceConfigurationGoogle> mServiceConfigurationGoogle;
-    private final Lazy<ColumbusServiceWrapper> mColumbusServiceLazy;
-    private final DelayedWakeLock.Factory mDelayedWakeLockFactory;
+import java.util.ArrayList;
 
-    @Inject
-    public GoogleServices(
-            Context context,
-            AlarmManager alarmManager,
-            CentralSurfaces centralSurfaces,
-            QsEventLogger uiEventLogger,
-            Lazy<ServiceConfigurationGoogle> serviceConfigurationGoogleLazy,
-            Lazy<ColumbusServiceWrapper> columbusServiceWrapperLazy,
-            DelayedWakeLock.Factory delayedWakeLockFactory) {
-        super();
+public final class GoogleServices extends VendorServices {
+    private static final String FEATURE_QUICK_TAP = "com.google.android.feature.QUICK_TAP";
+
+    private final Lazy<ColumbusServiceWrapper> mColumbusStarter;
+    private final Context mContext;
+    private final ArrayList mServices = new ArrayList();
+
+    public GoogleServices(Context context, Lazy<ColumbusServiceWrapper> columbusServiceLazy) {
         mContext = context;
-        mServices = new ArrayList<>();
-        mAlarmManager = alarmManager;
-        mCentralSurfaces = centralSurfaces;
-        mUiEventLogger = uiEventLogger;
-        mServiceConfigurationGoogle = serviceConfigurationGoogleLazy;
-        mColumbusServiceLazy = columbusServiceWrapperLazy;
-        mDelayedWakeLockFactory = delayedWakeLockFactory;
+        mColumbusStarter = columbusServiceLazy;
+    }
+
+    public final void addService(Object obj) {
+        if (obj != null) {
+            mServices.add(obj);
+        }
     }
 
     @Override
-    public void start() {
-        if (mContext.getPackageManager().hasSystemFeature("android.hardware.context_hub") && new ElmyraContext(mContext).isAvailable()) {
-            addService(new ElmyraService(mContext, mServiceConfigurationGoogle.get(), mUiEventLogger));
+    public final void start() {
+        if (mContext.getPackageManager().hasSystemFeature(FEATURE_QUICK_TAP)) {
+            addService(mColumbusStarter.get());
         }
-        if (new ColumbusContext(mContext).isAvailable()) {
-            addService(mColumbusServiceLazy.get());
+        if (mContext.getResources()
+                .getBoolean(R.bool.config_screen_protector_notification_enabled)) {
+            addService(new ScreenProtectorNotifierService(mContext));
         }
         if (mContext.getResources().getBoolean(R.bool.config_touch_context_enabled)) {
             addService(new TouchContextService(mContext));
-        }
-
-        final AmbientIndicationContainer ambientIndicationContainer =
-            (AmbientIndicationContainer) mCentralSurfaces
-                .getNotificationShadeWindowView()
-                    .findViewById(R.id.ambient_indication_container);
-        ambientIndicationContainer.initializeView(
-            mContext, mCentralSurfaces, ambientIndicationContainer, mDelayedWakeLockFactory);
-        addService(new AmbientIndicationService(mContext, ambientIndicationContainer, mAlarmManager));
-    }
-
-    private void addService(Object obj) {
-        if (obj != null) {
-            mServices.add(obj);
         }
     }
 }

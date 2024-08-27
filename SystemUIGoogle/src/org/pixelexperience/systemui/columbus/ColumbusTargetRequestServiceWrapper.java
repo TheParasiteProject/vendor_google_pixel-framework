@@ -24,9 +24,10 @@ import com.android.systemui.dagger.qualifiers.Background;
 import com.android.systemui.dagger.qualifiers.Main;
 import com.android.systemui.qs.QsEventLogger;
 import com.android.systemui.settings.UserTracker;
-import com.google.android.systemui.columbus.ColumbusTargetRequestService;
+
 import com.google.android.systemui.columbus.ColumbusSettings;
 import com.google.android.systemui.columbus.ColumbusStructuredDataManager;
+import com.google.android.systemui.columbus.ColumbusTargetRequestService;
 
 import javax.inject.Inject;
 
@@ -41,8 +42,22 @@ public class ColumbusTargetRequestServiceWrapper extends ColumbusTargetRequestSe
     private final Looper mLooper;
 
     @Inject
-    public ColumbusTargetRequestServiceWrapper(Context context, UserTracker userTracker, ColumbusSettings columbusSettings, ColumbusStructuredDataManager columbusStructuredDataManager, QsEventLogger uiEventLogger, @Main Handler handler, @Background Looper looper) {
-        super(context, userTracker, columbusSettings, columbusStructuredDataManager, uiEventLogger, handler, looper);
+    public ColumbusTargetRequestServiceWrapper(
+            Context context,
+            UserTracker userTracker,
+            ColumbusSettings columbusSettings,
+            ColumbusStructuredDataManager columbusStructuredDataManager,
+            QsEventLogger uiEventLogger,
+            @Main Handler handler,
+            @Background Looper looper) {
+        super(
+                context,
+                userTracker,
+                columbusSettings,
+                columbusStructuredDataManager,
+                uiEventLogger,
+                handler,
+                looper);
         mContext = context;
         mUserTracker = userTracker;
         mColumbusSettings = columbusSettings;

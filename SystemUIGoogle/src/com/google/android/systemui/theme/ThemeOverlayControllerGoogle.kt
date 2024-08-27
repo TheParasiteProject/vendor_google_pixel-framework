@@ -22,6 +22,7 @@ import android.app.UiModeManager
 import android.app.WallpaperManager
 import android.content.Context
 import android.content.res.Resources
+import android.graphics.Color
 import android.os.Handler
 import android.os.UserManager
 import android.util.Log
@@ -32,20 +33,23 @@ import com.android.systemui.dagger.qualifiers.Main
 import com.android.systemui.dump.DumpManager
 import com.android.systemui.flags.FeatureFlags
 import com.android.systemui.flags.SystemPropertiesHelper
-import com.android.systemui.keyguard.domain.interactor.KeyguardTransitionInteractor
 import com.android.systemui.keyguard.WakefulnessLifecycle
+import com.android.systemui.keyguard.domain.interactor.KeyguardTransitionInteractor
+import com.android.systemui.res.R
 import com.android.systemui.settings.UserTracker
 import com.android.systemui.statusbar.policy.ConfigurationController
 import com.android.systemui.statusbar.policy.DeviceProvisionedController
 import com.android.systemui.theme.ThemeOverlayApplier
 import com.android.systemui.theme.ThemeOverlayController
-import com.android.systemui.util.settings.SecureSettings
 import com.android.systemui.util.kotlin.JavaAdapter
+import com.android.systemui.util.settings.SecureSettings
 import java.util.concurrent.Executor
 import javax.inject.Inject
 
 @SysUISingleton
-class ThemeOverlayControllerGoogle @Inject constructor(
+class ThemeOverlayControllerGoogle
+@Inject
+constructor(
     private val context: Context,
     broadcastDispatcher: BroadcastDispatcher,
     @Background bgHandler: Handler,
@@ -68,35 +72,35 @@ class ThemeOverlayControllerGoogle @Inject constructor(
     configurationController: ConfigurationController,
     @param:Main private val mainResources: Resources,
     private val systemPropertiesHelper: SystemPropertiesHelper
-) : ThemeOverlayController(
-    context,
-    broadcastDispatcher,
-    bgHandler,
-    mainExecutor,
-    bgExecutor,
-    themeOverlayApplier,
-    secureSettings,
-    wallpaperManager,
-    userManager,
-    deviceProvisionedController,
-    userTracker,
-    dumpManager,
-    featureFlags,
-    resources,
-    wakefulnessLifecycle,
-    javaAdapter,
-    keyguardTransitionInteractor,
-    uiModeManager,
-    activityManager,
-    configurationController
-) {
+) :
+    ThemeOverlayController(
+        context,
+        broadcastDispatcher,
+        bgHandler,
+        mainExecutor,
+        bgExecutor,
+        themeOverlayApplier,
+        secureSettings,
+        wallpaperManager,
+        userManager,
+        deviceProvisionedController,
+        userTracker,
+        dumpManager,
+        featureFlags,
+        resources,
+        wakefulnessLifecycle,
+        javaAdapter,
+        keyguardTransitionInteractor,
+        uiModeManager,
+        activityManager,
+        configurationController) {
     init {
-        configurationController.addCallback(object :
-            ConfigurationController.ConfigurationListener {
-            override fun onThemeChanged() {
-                setBootColorSystemProps()
-            }
-        })
+        configurationController.addCallback(
+            object : ConfigurationController.ConfigurationListener {
+                override fun onThemeChanged() {
+                    setBootColorSystemProps()
+                }
+            })
 
         val bootColors = getBootColors()
         for (i in bootColors.indices) {
@@ -109,19 +113,34 @@ class ThemeOverlayControllerGoogle @Inject constructor(
             val bootColors = getBootColors()
             for (i in bootColors.indices) {
                 systemPropertiesHelper.set("persist.bootanim.color${i + 1}", bootColors[i])
-                Log.d("ThemeOverlayController", "Writing boot animation colors ${i + 1}: ${bootColors[i]}")
+                Log.d(
+                    "ThemeOverlayController",
+                    "Writing boot animation colors ${i + 1}: ${bootColors[i]}")
             }
         } catch (e: RuntimeException) {
-            Log.w("ThemeOverlayController", "Cannot set sysprop. Look for 'init' and 'dmesg' logs for more info.")
+            Log.w(
+                "ThemeOverlayController",
+                "Cannot set sysprop. Look for 'init' and 'dmesg' logs for more info.")
         }
     }
 
     private fun getBootColors(): IntArray {
-        return intArrayOf(
-            mainResources.getColor(android.R.color.system_accent3_100),
-            mainResources.getColor(android.R.color.system_accent1_300),
-            mainResources.getColor(android.R.color.system_accent2_500),
-            mainResources.getColor(android.R.color.system_accent1_100)
-        )
+        val color = context.getColor(android.R.color.background_floating_device_default_light)
+        val red = Color.red(color)
+        val green = Color.green(color)
+        return
+        if (red == green && Color.green(color) == Color.blue(color)) {
+            intArrayOf(
+                mainResources.getColor(R.color.super_g_primary_mono),
+                mainResources.getColor(R.color.super_g_tertiary_mono),
+                mainResources.getColor(R.color.super_g_quaternary_mono),
+                mainResources.getColor(R.color.super_g_secondary_mono))
+        } else {
+            intArrayOf(
+                mainResources.getColor(R.color.super_g_primary),
+                mainResources.getColor(R.color.super_g_tertiary),
+                mainResources.getColor(R.color.super_g_quaternary),
+                mainResources.getColor(R.color.super_g_secondary))
+        }
     }
 }

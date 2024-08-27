@@ -14,23 +14,20 @@
  * limitations under the License.
  */
 
-package com.google.android.systemui;
+package com.google.android.systemui.statusbar.phone
 
-import android.content.Context;
+import com.android.systemui.CoreStartable
+import com.android.systemui.statusbar.phone.CentralSurfaces
+import dagger.Binds
+import dagger.Module
+import dagger.multibindings.ClassKey
+import dagger.multibindings.IntoMap
 
-import com.android.systemui.SystemUIInitializer;
-import com.android.systemui.dagger.GlobalRootComponent;
-
-import com.google.android.systemui.dagger.DaggerSysUIGoogleGlobalRootComponent;
-
-public final class SystemUIGoogleInitializer extends SystemUIInitializer {
-
-    public SystemUIGoogleInitializer(Context context) {
-        super(context);
-    }
-
-    @Override
-    protected GlobalRootComponent.Builder getGlobalRootComponentBuilder() {
-        return DaggerSysUIGoogleGlobalRootComponent.builder();
-    }
+@Module
+interface StartCentralSurfacesGoogleModule {
+    /** Start the CentralSurfaces */
+    @Binds
+    @IntoMap
+    @ClassKey(CentralSurfaces::class)
+    abstract fun bindsCentralSurfaces(centralSurfaces: CentralSurfacesGoogle): CoreStartable
 }
