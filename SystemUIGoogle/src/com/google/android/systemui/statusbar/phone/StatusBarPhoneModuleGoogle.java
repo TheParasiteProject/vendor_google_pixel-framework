@@ -47,6 +47,7 @@ import dagger.Binds;
 import dagger.Module;
 import dagger.Provides;
 
+import java.util.Optional;
 import java.util.concurrent.Executor;
 
 @Module
@@ -70,7 +71,7 @@ public interface StatusBarPhoneModuleGoogle {
 
     @Provides
     @SysUISingleton
-    static HeadsUpManagerPhone provideHeadsUpManagerPhone(
+    static Optional<HeadsUpManagerPhone> provideHeadsUpManagerPhone(
             @NonNull final Context context,
             HeadsUpManagerLogger logger,
             StatusBarStateController statusBarStateController,
@@ -86,21 +87,22 @@ public interface StatusBarPhoneModuleGoogle {
             UiEventLogger uiEventLogger,
             JavaAdapter javaAdapter,
             ShadeInteractor shadeInteractor) {
-        return new HeadsUpManagerPhone(
-                context,
-                logger,
-                statusBarStateController,
-                bypassController,
-                groupMembershipManager,
-                visualStabilityProvider,
-                configurationController,
-                handler,
-                globalSettings,
-                systemClock,
-                executor,
-                accessibilityManagerWrapper,
-                uiEventLogger,
-                javaAdapter,
-                shadeInteractor);
+        return Optional.of(
+                new HeadsUpManagerPhone(
+                        context,
+                        logger,
+                        statusBarStateController,
+                        bypassController,
+                        groupMembershipManager,
+                        visualStabilityProvider,
+                        configurationController,
+                        handler,
+                        globalSettings,
+                        systemClock,
+                        executor,
+                        accessibilityManagerWrapper,
+                        uiEventLogger,
+                        javaAdapter,
+                        shadeInteractor));
     }
 }

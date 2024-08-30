@@ -8,6 +8,9 @@ import android.content.res.Resources;
 
 import com.android.systemui.broadcast.BroadcastDispatcher;
 import com.android.systemui.dagger.SysUISingleton;
+import com.android.systemui.dagger.qualifiers.Application;
+import com.android.systemui.dagger.qualifiers.Background;
+import com.android.systemui.dagger.qualifiers.Main;
 
 import dagger.Module;
 import dagger.Provides;
@@ -26,8 +29,8 @@ public abstract class BatteryHealthModuleGoogle {
             Context context,
             AlarmManager alarmManager,
             BroadcastDispatcher broadcastDispatcher,
-            CoroutineDispatcher coroutineDispatcher,
-            CoroutineScope coroutineScope) {
+            @Background CoroutineDispatcher coroutineDispatcher,
+            @Application CoroutineScope coroutineScope) {
         return new HealthManager(
                 context, alarmManager, broadcastDispatcher, coroutineDispatcher, coroutineScope);
     }
@@ -42,7 +45,7 @@ public abstract class BatteryHealthModuleGoogle {
     @Provides
     @SysUISingleton
     static HealthService provideHealthService(
-            Context context, HealthManager healthManager, Resources resources) {
+            Context context, HealthManager healthManager, @Main Resources resources) {
         return new HealthService(context, healthManager, resources);
     }
 

@@ -17,8 +17,22 @@
 
 package com.google.android.systemui.statusbar.policy;
 
+import android.content.Context;
+import android.os.Handler;
+import android.os.PowerManager;
+
+import com.android.systemui.broadcast.BroadcastDispatcher;
 import com.android.systemui.dagger.SysUISingleton;
+import com.android.systemui.dagger.qualifiers.Background;
+import com.android.systemui.dagger.qualifiers.Main;
+import com.android.systemui.demomode.DemoModeController;
+import com.android.systemui.dump.DumpManager;
+import com.android.systemui.power.EnhancedEstimates;
+import com.android.systemui.settings.UserTracker;
 import com.android.systemui.statusbar.policy.BatteryController;
+import com.android.systemui.statusbar.policy.BatteryControllerLogger;
+
+import com.google.android.systemui.reversecharging.ReverseChargingController;
 
 import dagger.Module;
 import dagger.Provides;
@@ -28,8 +42,32 @@ public class StatusBarPolicyModuleGoogle {
 
     @Provides
     @SysUISingleton
-    static BatteryController provideBatteryController(BatteryControllerImplGoogle impl) {
-        impl.init();
-        return impl;
+    static BatteryController provideBatteryController(
+            Context context,
+            EnhancedEstimates enhancedEstimates,
+            PowerManager powerManager,
+            BroadcastDispatcher broadcastDispatcher,
+            DemoModeController demoModeController,
+            DumpManager dumpManager,
+            BatteryControllerLogger logger,
+            @Main Handler mainHandler,
+            @Background Handler bgHandler,
+            UserTracker userTracker,
+            ReverseChargingController reverseChargingController) {
+        BatteryController bC =
+                new BatteryControllerImplGoogle(
+                        context,
+                        enhancedEstimates,
+                        powerManager,
+                        broadcastDispatcher,
+                        demoModeController,
+                        dumpManager,
+                        logger,
+                        mainHandler,
+                        bgHandler,
+                        userTracker,
+                        reverseChargingController);
+        bC.init();
+        return bC;
     }
 }

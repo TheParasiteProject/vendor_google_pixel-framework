@@ -21,6 +21,8 @@ import android.content.Context;
 
 import com.android.systemui.broadcast.BroadcastDispatcher;
 import com.android.systemui.dagger.SysUISingleton;
+import com.android.systemui.dagger.qualifiers.Application;
+import com.android.systemui.dagger.qualifiers.Background;
 import com.android.systemui.res.R;
 import com.android.systemui.statusbar.dagger.CentralSurfacesDependenciesModule;
 import com.android.systemui.statusbar.notification.dagger.NotificationsModule;
@@ -56,8 +58,8 @@ public interface CentralSurfacesGoogleModule {
             Context context,
             AlarmManager alarmManager,
             BroadcastDispatcher broadcastDispatcher,
-            CoroutineDispatcher coroutineDispatcher,
-            CoroutineScope coroutineScope) {
+            @Background CoroutineDispatcher coroutineDispatcher,
+            @Application CoroutineScope coroutineScope) {
         return context.getResources().getBoolean(R.bool.config_battery_index_enabled)
                 ? Optional.of(
                         new HealthManager(
@@ -73,8 +75,6 @@ public interface CentralSurfacesGoogleModule {
     @SysUISingleton
     static Optional<ReverseChargingViewController> provideReverseChargingViewControllerOptional(
             Context context, Lazy<ReverseChargingViewController> lazy) {
-        return batteryController.isReverseSupported()
-                ? Optional.of((ReverseChargingViewController) lazy.get())
-                : Optional.empty();
+        return Optional.of((ReverseChargingViewController) lazy.get());
     }
 }

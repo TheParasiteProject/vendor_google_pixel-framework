@@ -17,12 +17,16 @@
 package com.google.android.systemui.dagger;
 
 import com.android.systemui.keyguard.dagger.KeyguardModule;
+import com.android.systemui.power.PowerUI;
 import com.android.systemui.recents.RecentsModule;
+import com.android.systemui.statusbar.policy.ConfigurationController;
 
 import com.google.android.systemui.columbus.dagger.ColumbusBinderModule;
 import com.google.android.systemui.statusbar.phone.CentralSurfacesGoogleModule;
 
+import dagger.Binds;
 import dagger.Module;
+import dagger.multibindings.IntoSet;
 
 /**
  * SystemUI objects that are injectable should go here.
@@ -34,4 +38,10 @@ import dagger.Module;
             KeyguardModule.class,
             ColumbusBinderModule.class,
         })
-public abstract class SystemUIGoogleBinder {}
+public abstract class SystemUIGoogleBinder {
+
+    /** Listen to config changes for PowerUI.  */
+    @Binds
+    @IntoSet
+    abstract ConfigurationController.ConfigurationListener bindPowerUIConfigChanges(PowerUI impl);
+}

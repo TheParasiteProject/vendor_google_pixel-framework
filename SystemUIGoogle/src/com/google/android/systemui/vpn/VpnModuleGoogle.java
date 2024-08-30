@@ -24,7 +24,7 @@ public abstract class VpnModuleGoogle {
     @Provides
     @SysUISingleton
     static AdaptivePPNService provideAdaptivePPNService(
-            Resources resources,
+            @Main Resources resources,
             @Main Executor executor,
             Lazy<VpnNetworkMonitor> vpnNetworkMonitorLazy,
             Lazy<VpnPackageMonitor> vpnPackageMonitorLazy) {
@@ -34,19 +34,19 @@ public abstract class VpnModuleGoogle {
 
     @Provides
     @SysUISingleton
-    static VpnNetworkMonitor provideVpnNetworkMonitor(
+    static VpnPackageMonitor provideVpnPackageMonitor(
             Context context,
             BroadcastSender broadcastSender,
             BroadcastDispatcher broadcastDispatcher,
             UserFileManager userFileManager,
             UserTracker userTracker) {
-        return new VpnNetworkMonitor(
+        return new VpnPackageMonitor(
                 context, broadcastSender, broadcastDispatcher, userFileManager, userTracker);
     }
 
     @Provides
     @SysUISingleton
-    static VpnPackageMonitor provideVpnPackageMonitor(
+    static VpnNetworkMonitor provideVpnNetworkMonitor(
             ConnectivityManager connectivityManager,
             BroadcastSender broadcastSender,
             BroadcastDispatcher broadcastDispatcher,
@@ -54,7 +54,7 @@ public abstract class VpnModuleGoogle {
             @Background Executor executor,
             UserFileManager userFileManager,
             UserTracker userTracker) {
-        return new VpnPackageMonitor(
+        return new VpnNetworkMonitor(
                 connectivityManager,
                 broadcastSender,
                 broadcastDispatcher,

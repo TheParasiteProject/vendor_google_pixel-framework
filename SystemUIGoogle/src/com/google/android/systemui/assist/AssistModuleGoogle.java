@@ -62,12 +62,6 @@ public abstract class AssistModuleGoogle {
 
     @Provides
     @SysUISingleton
-    static AssistManager provideAssistManager(AssistManagerGoogle impl) {
-        return impl;
-    }
-
-    @Provides
-    @SysUISingleton
     static AssistManagerGoogle provideAssistManagerGoogle(
             DeviceProvisionedController deviceProvisionedController,
             Context context,

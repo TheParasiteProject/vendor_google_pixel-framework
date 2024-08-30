@@ -4,6 +4,7 @@ import android.app.Service;
 
 import com.android.systemui.broadcast.BroadcastSender;
 import com.android.systemui.dagger.SysUISingleton;
+import com.android.systemui.dagger.qualifiers.Background;
 
 import com.google.android.systemui.power.batteryevent.common.module.BatteryEventModuleProvider;
 import com.google.android.systemui.power.batteryevent.repository.EventSourceMonitor;
@@ -30,7 +31,7 @@ public abstract class BatteryEventDomainModuleGoogle {
     static BatteryEventService provideBatteryEventService(
             BatteryEventStateController batteryEventStateController,
             BroadcastSender broadcastSender,
-            CoroutineDispatcher coroutineDispatcher) {
+            @Background CoroutineDispatcher coroutineDispatcher) {
         return new BatteryEventService(
                 batteryEventStateController, broadcastSender, coroutineDispatcher);
     }

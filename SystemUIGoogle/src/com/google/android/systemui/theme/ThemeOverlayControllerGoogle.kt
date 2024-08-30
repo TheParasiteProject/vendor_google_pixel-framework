@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2022 The PixelExperience Project
  * Copyright (C) 2023 The risingOS Android Project
+ * Copyright (C) 2024 TheParasiteProject
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -125,11 +126,11 @@ constructor(
     }
 
     private fun getBootColors(): IntArray {
-        val color = context.getColor(android.R.color.background_floating_device_default_light)
+        val color =
+            context.getColor(android.R.color.system_neutral1_50)
         val red = Color.red(color)
         val green = Color.green(color)
-        return
-        if (red == green && Color.green(color) == Color.blue(color)) {
+        return if (red == green && Color.green(color) == Color.blue(color)) {
             intArrayOf(
                 mainResources.getColor(R.color.super_g_primary_mono),
                 mainResources.getColor(R.color.super_g_tertiary_mono),

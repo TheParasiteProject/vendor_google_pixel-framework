@@ -63,14 +63,14 @@ public abstract class AssistantUIHintsModule {
     @SysUISingleton
     static AssistantPresenceHandler provideAssistantPresenceHandler(
             Context context, AssistUtils assistUtils) {
-        return new AssistantPresenceHandler(navigationBarController, handler);
+        return new AssistantPresenceHandler(context, assistUtils);
     }
 
     @Provides
     @SysUISingleton
     @Named(OVERLAY_UI_HOST_PARENT_VIEW_GROUP)
     static ViewGroup provideParentViewGroup(OverlayUiHost overlayUiHost) {
-        return overlayUiHost.getParent();
+        return overlayUiHost.mRoot;
     }
 
     @Provides
@@ -196,7 +196,6 @@ public abstract class AssistantUIHintsModule {
             TouchInsideHandler touchInsideHandler,
             OverlayUiHost overlayUiHost,
             EdgeLightsController edgeLightsController,
-            AssistantPresenceHandler assistantPresenceHandler,
             GlowController glowController,
             ScrimController scrimController,
             TranscriptionController transcriptionController,
@@ -214,7 +213,6 @@ public abstract class AssistantUIHintsModule {
                 touchInsideHandler,
                 overlayUiHost,
                 edgeLightsController,
-                assistantPresenceHandler,
                 glowController,
                 scrimController,
                 transcriptionController,
@@ -291,10 +289,8 @@ public abstract class AssistantUIHintsModule {
     @Provides
     @SysUISingleton
     static EdgeLightsController provideEdgeLightsController(
-            Context context,
-            @Named(OVERLAY_UI_HOST_PARENT_VIEW_GROUP) ViewGroup viewGroup,
-            AssistLogger assistLogger) {
-        return new EdgeLightsController(context, viewGroup, assistLogger);
+            @Named(OVERLAY_UI_HOST_PARENT_VIEW_GROUP) ViewGroup viewGroup) {
+        return new EdgeLightsController(viewGroup);
     }
 
     @Provides

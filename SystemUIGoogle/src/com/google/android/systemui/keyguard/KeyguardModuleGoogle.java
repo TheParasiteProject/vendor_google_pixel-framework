@@ -4,6 +4,8 @@ import android.content.res.Resources;
 
 import com.android.keyguard.KeyguardUpdateMonitor;
 import com.android.systemui.dagger.SysUISingleton;
+import com.android.systemui.dagger.qualifiers.Application;
+import com.android.systemui.dagger.qualifiers.Main;
 import com.android.systemui.log.SessionTracker;
 import com.android.systemui.statusbar.policy.KeyguardStateController;
 import com.android.systemui.temporarydisplay.chipbar.ChipbarCoordinator;
@@ -45,7 +47,9 @@ public abstract class KeyguardModuleGoogle {
     @Provides
     @SysUISingleton
     static RefreshRateRequesterBinder provideRefreshRateRequesterBinder(
-            Resources resources, Lazy<RefreshRateInteractor> lazy, CoroutineScope coroutineScope) {
+            @Main Resources resources,
+            Lazy<RefreshRateInteractor> lazy,
+            @Application CoroutineScope coroutineScope) {
         return new RefreshRateRequesterBinder(resources, lazy, coroutineScope);
     }
 }

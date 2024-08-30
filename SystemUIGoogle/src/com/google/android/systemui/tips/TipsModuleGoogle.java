@@ -4,6 +4,9 @@ import android.content.Context;
 
 import com.android.systemui.assist.domain.interactor.AssistInteractor;
 import com.android.systemui.dagger.SysUISingleton;
+import com.android.systemui.dagger.qualifiers.Application;
+import com.android.systemui.dagger.qualifiers.Background;
+import com.android.systemui.dagger.qualifiers.Main;
 import com.android.systemui.globalactions.domain.interactor.GlobalActionsInteractor;
 import com.android.systemui.util.settings.GlobalSettings;
 
@@ -22,7 +25,7 @@ public abstract class TipsModuleGoogle {
     @Provides
     @SysUISingleton
     static ContextualTipsRepository provideContextualTipsRepository(
-            CoroutineDispatcher coroutineDispatcher, GlobalSettings globalSettings) {
+            @Background CoroutineDispatcher coroutineDispatcher, GlobalSettings globalSettings) {
         return new ContextualTipsRepository(coroutineDispatcher, globalSettings);
     }
 
@@ -30,8 +33,8 @@ public abstract class TipsModuleGoogle {
     @SysUISingleton
     static ContextualTipsInteractor provideContextualTipsInteractor(
             Context context,
-            CoroutineScope coroutineScope,
-            CoroutineDispatcher coroutineDispatcher,
+            @Application CoroutineScope coroutineScope,
+            @Main CoroutineDispatcher coroutineDispatcher,
             ContextualTipsRepository contextualTipsRepository,
             GlobalActionsInteractor globalActionsInteractor,
             AssistInteractor assistInteractor) {

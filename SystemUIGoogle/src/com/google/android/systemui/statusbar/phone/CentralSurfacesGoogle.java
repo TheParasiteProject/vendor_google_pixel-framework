@@ -21,6 +21,7 @@ import static com.android.systemui.Dependency.TIME_TICK_HANDLER_NAME;
 import android.app.AlarmManager;
 import android.app.WallpaperManager;
 import android.content.Context;
+import android.content.Intent;
 import android.content.IntentFilter;
 import android.hardware.devicestate.DeviceStateManager;
 import android.hardware.fingerprint.FingerprintManager;
@@ -36,7 +37,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import androidx.lifecycle.Lifecycle;
-import androidx.lifecycle.LifecycleRegistry;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.keyguard.KeyguardUpdateMonitor;
@@ -162,6 +162,7 @@ import dagger.Lazy;
 
 import java.util.Optional;
 import java.util.concurrent.Executor;
+import java.util.function.Consumer;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -219,6 +220,7 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
             FalsingManager falsingManager,
             FalsingCollector falsingCollector,
             BroadcastDispatcher broadcastDispatcher,
+            BroadcastSender broadcastSender,
             NotificationGutsManager notificationGutsManager,
             ShadeExpansionStateManager shadeExpansionStateManager,
             KeyguardViewMediator keyguardViewMediator,
@@ -293,6 +295,7 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
             WallpaperManager wallpaperManager,
             Optional<StartingSurface> startingSurfaceOptional,
             ActivityTransitionAnimator activityTransitionAnimator,
+            AlarmManager alarmManager,
             DeviceStateManager deviceStateManager,
             WiredChargingRippleController wiredChargingRippleController,
             IDreamManager dreamManager,
@@ -434,7 +437,7 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
                             Log.d(
                                     "CentralSurfacesGoogle",
                                     "onBatteryLevelChanged(): level="
-                                            + i
+                                            + level
                                             + ",wlc="
                                             + (mBatteryController.isWirelessCharging() ? 1 : 0)
                                             + ",wlcs="
@@ -450,7 +453,7 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
                     public void onReverseChanged(boolean isReverse, int level, String name) {
                         if (!isReverse
                                 && level >= 0
-                                && !TextUtils.isEmpty(str)
+                                && !TextUtils.isEmpty(name)
                                 && mBatteryController.isWirelessCharging()
                                 && mChargingAnimShown
                                 && !mReverseChargingAnimShown) {
@@ -469,7 +472,7 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
                                             + ",level="
                                             + level
                                             + ",name="
-                                            + str
+                                            + name
                                             + ",wlc="
                                             + (mBatteryController.isWirelessCharging() ? 1 : 0)
                                             + ",wlcs="
@@ -499,7 +502,7 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
 
     @Override
     public void start() {
-        super();
+        super.start();
         mBatteryController.observe(getLifecycle(), mBatteryStateChangeCallback);
         if (!mContext.getResources().getBoolean(R.bool.config_show_low_light_clock_when_docked)) {
             final ImageView dreamLinerImgView =
@@ -521,7 +524,6 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
                             mNotificationShadeWindowController);
             mDockObserver.mIndicationController = dockIndicationController;
             mDockObserver.mConfigurationController.addCallback(dockIndicationController);
-            mDockObserver.registerDockAlignInfo();
             if (mDockObserver.mWirelessCharger.isEmpty()) {
                 Log.w("DLObserver", "wirelessCharger is not present");
             } else {
@@ -536,20 +538,34 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
                         new DockObserverListenerImpl(mDockObserver));
             }
         }
-        mHealthManagerOptional.ifPresent(new HealthManager());
+        mHealthManagerOptional.ifPresent(
+                new Consumer<Object>() {
+                    public void accept(Object obj) {
+                        HealthManager healthManager = (HealthManager) obj;
+                        if (healthManager.periodicUpdateEnabled) {
+                            Log.i("HealthManager", "Enable BHI");
+                            healthManager.broadcastDispatcher.registerReceiver(
+                                    healthManager.bootCompletedReceiver,
+                                    new IntentFilter(Intent.ACTION_BOOT_COMPLETED),
+                                    null,
+                                    null,
+                                    0,
+                                    null);
+                        }
+                    }
+                    ;
+                });
         if (mReverseChargingViewControllerOptional.isPresent()) {
             ReverseChargingViewController rcvc =
                     (ReverseChargingViewController) mReverseChargingViewControllerOptional.get();
             rcvc.mBatteryController.observe(rcvc.mLifecycle, rcvc);
-            LifecycleRegistry lifecycleRegistry = rcvc.mLifecycle;
-            lifecycleRegistry.enforceMainThreadIfNeeded("markState");
-            lifecycleRegistry.setCurrentState(Lifecycle.State.RESUMED);
+            rcvc.mLifecycle.markState(Lifecycle.State.RESUMED);
             rcvc.mAmbientIndicationContainer =
                     (AmbientIndicationContainer)
                             ((NotificationShadeWindowControllerImpl)
                                             rcvc.mNotificationShadeWindowController)
-                                    .mWindowRootView.findViewById(
-                                            R.id.ambient_indication_container);
+                                    .getWindowRootView()
+                                    .findViewById(R.id.ambient_indication_container);
             IntentFilter intentFilter = new IntentFilter();
             intentFilter.addAction("android.intent.action.LOCALE_CHANGED");
             rcvc.mBroadcastDispatcher.registerReceiver(rcvc, intentFilter);
@@ -565,14 +581,14 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
                         getNotificationShadeWindowView()
                                 .findViewById(R.id.ambient_indication_container);
         ambientIndicationContainer.initializeView(
-                mShadeSurface,
+                getShadeViewController(),
                 mPowerInteractor,
                 mKeyguardUpdateMonitor,
                 mActivityStarter,
                 mDelayedWakeLockFactory);
         AmbientIndicationService ais =
                 new AmbientIndicationService(
-                        context,
+                        mContext,
                         ambientIndicationContainer,
                         mAlarmManager,
                         mSelectedUserInteractor);

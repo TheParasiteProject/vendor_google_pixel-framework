@@ -352,33 +352,46 @@ abstract class SystemUIGoogleCoreStartableModule {
     @ClassKey(GoogleServices::class)
     abstract fun bindGoogleServices(sysui: GoogleServices): CoreStartable
 
-    /** Inject into KeyguardSmartspaceStartable. */
-    @Provides
-    @IntoMap
-    @ClassKey(KeyguardSmartspaceStartable::class)
-    fun bindKeyguardSmartspaceStartable(sysui: KeyguardSmartspaceStartable): CoreStartable
+    @Module
+    companion object {
+        /** Inject into KeyguardSmartspaceStartable. */
+        @Provides
+        @IntoMap
+        @ClassKey(KeyguardSmartspaceStartable::class)
+        fun bindKeyguardSmartspaceStartable(sysui: KeyguardSmartspaceStartable): CoreStartable {
+            return sysui
+        }
 
-    /** Inject into ActiveUnlockChipbarManager. */
-    @Provides
-    @IntoMap
-    @ClassKey(ActiveUnlockChipbarManager::class)
-    fun bindActiveUnlockChipbarManager(sysui: ActiveUnlockChipbarManager): CoreStartable
+        /** Inject into ActiveUnlockChipbarManager. */
+        @Provides
+        @IntoMap
+        @ClassKey(ActiveUnlockChipbarManager::class)
+        fun bindActiveUnlockChipbarManager(sysui: ActiveUnlockChipbarManager): CoreStartable {
+            return sysui
+        }
 
-    /** Inject into RefreshRateRequesterBinder. */
-    @Provides
-    @IntoMap
-    @ClassKey(RefreshRateRequesterBinder::class)
-    fun bindRefreshRateRequesterBinder(sysui: RefreshRateRequesterBinder): CoreStartable
+        /** Inject into RefreshRateRequesterBinder. */
+        @Provides
+        @IntoMap
+        @ClassKey(RefreshRateRequesterBinder::class)
+        fun bindRefreshRateRequesterBinder(sysui: RefreshRateRequesterBinder): CoreStartable {
+            return sysui
+        }
 
-    /** Inject into ContextualTipsInteractor. */
-    @Provides
-    @IntoMap
-    @ClassKey(ContextualTipsInteractor::class)
-    fun bindContextualTipsInteractor(sysui: ContextualTipsInteractor): CoreStartable
+        /** Inject into ContextualTipsInteractor. */
+        @Provides
+        @IntoMap
+        @ClassKey(ContextualTipsInteractor::class)
+        fun bindContextualTipsInteractor(sysui: ContextualTipsInteractor): CoreStartable {
+            return sysui
+        }
 
-    /** Inject into AdaptivePPNService. */
-    @Provides
-    @IntoMap
-    @ClassKey(AdaptivePPNService::class)
-    fun bindAdaptivePPNService(sysui: AdaptivePPNService): CoreStartable
+        /** Inject into AdaptivePPNService. */
+        @Provides
+        @IntoMap
+        @ClassKey(AdaptivePPNService::class)
+        fun bindAdaptivePPNService(sysui: AdaptivePPNService): CoreStartable {
+            return sysui
+        }
+    }
 }
