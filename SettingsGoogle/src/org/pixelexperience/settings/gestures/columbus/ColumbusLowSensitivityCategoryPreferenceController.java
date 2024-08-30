@@ -17,8 +17,9 @@
 package org.pixelexperience.settings.gestures.columbus;
 
 import android.content.Context;
-import com.android.settings.core.BasePreferenceController;
 import android.os.SystemProperties;
+
+import com.android.settings.core.BasePreferenceController;
 
 public class ColumbusLowSensitivityCategoryPreferenceController extends BasePreferenceController {
     public ColumbusLowSensitivityCategoryPreferenceController(Context context, String key) {
@@ -27,6 +28,8 @@ public class ColumbusLowSensitivityCategoryPreferenceController extends BasePref
 
     @Override
     public int getAvailabilityStatus() {
-        return SystemProperties.getBoolean("persist.columbus.use_ap_sensor", true) ? UNSUPPORTED_ON_DEVICE : AVAILABLE;
+        return SystemProperties.getBoolean("persist.columbus.use_ap_sensor", true)
+                ? UNSUPPORTED_ON_DEVICE
+                : AVAILABLE;
     }
 }
