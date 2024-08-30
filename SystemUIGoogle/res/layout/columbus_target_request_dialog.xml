@@ -24,7 +24,7 @@
                 android:layout_height="@dimen/columbus_target_request_dialog_icon_size"
                 android:layout_gravity="center"
                 android:src="@drawable/ic_quick_tap"
-                android:tint="?android:^attr-private/materialColorPrimaryContainer"
+                android:tint="@*android:attr/materialColorPrimaryContainer"
                 android:tintMode="src_in" />
 
             <TextView
