@@ -5,12 +5,14 @@ android_library {
     srcs: ["src/**/*.java"],
     
     use_resource_processor: true,
-    static_libs: [
-        "android.frameworks.stats-V1-java",
-        "android.hidl.base-V1.0-java",
+    libs: [
         "android.test.base",
         "androidx.window.extensions",
         "androidx.window.sidecar",
+    ],
+    static_libs: [
+        "android.frameworks.stats-V1-java",
+        "android.hidl.base-V1.0-java",
         "Settings-core",
         "SettingsGoogle-lib",
         "vendor-pixelatoms-java",
