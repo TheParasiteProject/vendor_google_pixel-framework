@@ -1,9 +1,10 @@
 -include ../../../../frameworks/base/packages/SystemUI/proguard.flags
 
--keep,allowoptimization,allowaccessmodification class com.android.systemui.** { *; }
 -keep,allowoptimization class android.frameworks.** { *; }
 -keep,allowoptimization class android.hardware.** { *; }
--keep,allowoptimization,allowaccessmodification class com.google.** { *; }
--keep,allowoptimization,allowaccessmodification class kotlinx.coroutines.** { *; }
--keep,allowoptimization class vendor.** { *; }
+-keep,allowoptimization class androidx.** { *; }
+-keep,allowoptimization class com.android.systemui.** { *; }
+-keep,allowoptimization class com.google.** { *; }
+-keep,allowoptimization class kotlinx.coroutines.** { *; }
 -keep,allowoptimization class org.tensorflow.** { *; }
+-keep,allowoptimization class vendor.** { *; }
