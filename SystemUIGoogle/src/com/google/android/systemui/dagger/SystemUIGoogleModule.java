@@ -28,6 +28,7 @@ import com.android.systemui.ScreenDecorationsModule;
 import com.android.systemui.SystemUIAppComponentFactoryBase;
 import com.android.systemui.SystemUIInitializer;
 import com.android.systemui.accessibility.SystemActionsModule;
+import com.android.systemui.biometrics.dagger.BiometricsModule;
 import com.android.systemui.dagger.GlobalRootComponent;
 import com.android.systemui.dagger.SysUIComponent;
 import com.android.systemui.dagger.SysUISingleton;
@@ -100,6 +101,7 @@ import javax.inject.Named;
 @Module(
         includes = {
             AssistModuleGoogle.class,
+            BiometricsModule.class,
             CollapsedStatusBarFragmentStartableModule.class,
             ColumbusModule.class,
             ConnectingDisplayViewModel.StartableModule.class,
@@ -131,12 +133,12 @@ import javax.inject.Named;
             StatusBarModuleGoogle.class,
             SystemActionsModule.class,
             SysUIUnfoldStartableModule.class,
-            ToastModule.class,
             TipsModuleGoogle.class,
+            ToastModule.class,
             UnfoldTransitionModule.Startables.class,
             VolumeModule.class,
             VpnModuleGoogle.class,
-            WallpaperModule.class
+            WallpaperModule.class,
         })
 public abstract class SystemUIGoogleModule {
 
