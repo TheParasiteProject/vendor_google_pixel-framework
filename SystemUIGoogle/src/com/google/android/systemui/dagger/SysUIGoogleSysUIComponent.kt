@@ -23,7 +23,10 @@ import com.android.systemui.dagger.*
 import com.android.systemui.globalactions.ShutdownUiModule
 import com.android.systemui.keyguard.CustomizationProvider
 import com.android.systemui.keyguard.KeyguardSliceProvider
+import com.android.systemui.keyguard.dagger.KeyguardModule
 import com.android.systemui.people.PeopleProvider
+import com.android.systemui.recents.RecentsModule
+import com.android.systemui.scene.SceneContainerFrameworkModule
 import com.android.systemui.statusbar.NotificationInsetsModule
 import com.android.systemui.statusbar.QsFrameTranslateModule
 import dagger.Subcomponent
@@ -33,15 +36,21 @@ import dagger.Subcomponent
 @Subcomponent(
     modules =
         [
+            DefaultActivityBinder::class,
+            DefaultBroadcastReceiverBinder::class,
             DefaultComponentBinder::class,
+            DefaultServiceBinder::class,
             DependencyProvider::class,
+            KeyguardModule::class,
             NotificationInsetsModule::class,
             QsFrameTranslateModule::class,
+            RecentsModule::class,
+            SceneContainerFrameworkModule::class,
             ShutdownUiModule::class,
             SystemUIGoogleBinder::class,
-            SystemUIModule::class,
             SystemUIGoogleCoreStartableModule::class,
-            SystemUIGoogleModule::class])
+            SystemUIGoogleModule::class,
+            SystemUIModule::class])
 interface SysUIGoogleSysUIComponent : SysUIComponent {
     /** Builder for a SysUIComponent. */
     @Subcomponent.Builder
