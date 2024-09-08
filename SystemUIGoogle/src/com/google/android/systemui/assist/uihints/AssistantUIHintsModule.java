@@ -93,8 +93,12 @@ public abstract class AssistantUIHintsModule {
 
     @Provides
     @SysUISingleton
-    EdgeLightsListener provideEdgeLightsListener(GlowController controller) {
-        return controller;
+    static EdgeLightsListener provideEdgeLightsListener(
+            Context context,
+            @Named(OVERLAY_UI_HOST_PARENT_VIEW_GROUP) ViewGroup viewGroup,
+            TouchInsideHandler touchInsideHandler,
+            NavigationModeController navigationModeController) {
+        return new GlowController(context, viewGroup, touchInsideHandler, navigationModeController);
     }
 
     @Provides
@@ -115,8 +119,20 @@ public abstract class AssistantUIHintsModule {
 
     @Provides
     @SysUISingleton
-    DefaultUiController provideDefaultUiController(GoogleDefaultUiController controller) {
-        return controller;
+    static DefaultUiController provideDefaultUiController(
+            Context context,
+            GoogleAssistLogger googleAssistLogger,
+            WindowManager windowManager,
+            MetricsLogger metricsLogger,
+            Lazy<AssistManager> lazy,
+            NavigationBarControllerImpl navigationBarControllerImpl) {
+        return new GoogleDefaultUiController(
+                context,
+                googleAssistLogger,
+                windowManager,
+                metricsLogger,
+                lazy,
+                navigationBarControllerImpl);
     }
 
     @Provides

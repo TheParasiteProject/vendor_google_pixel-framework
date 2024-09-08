@@ -114,8 +114,20 @@ public abstract class AssistModuleGoogle {
 
     @Provides
     @SysUISingleton
-    AssistLogger provideAssistLogger(GoogleAssistLogger logger) {
-        return logger;
+    static AssistLogger provideAssistLogger(
+            Context context,
+            UiEventLogger uiEventLogger,
+            AssistUtils assistUtils,
+            PhoneStateMonitor phoneStateMonitor,
+            UserTracker userTracker,
+            AssistantPresenceHandler assistantPresenceHandler) {
+        return new GoogleAssistLogger(
+                context,
+                uiEventLogger,
+                assistUtils,
+                phoneStateMonitor,
+                userTracker,
+                assistantPresenceHandler);
     }
 
     @Provides
@@ -138,8 +150,8 @@ public abstract class AssistModuleGoogle {
 
     @Provides
     @SysUISingleton
-    OpaEnabledListener provideOpaEnabledListener(OpaEnabledDispatcher dispatcher) {
-        return dispatcher;
+    static OpaEnabledListener provideOpaEnabledListener(Lazy<CentralSurfaces> lazy) {
+        return new OpaEnabledDispatcher(lazy);
     }
 
     @Provides

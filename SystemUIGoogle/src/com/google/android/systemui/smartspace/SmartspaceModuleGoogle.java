@@ -1,8 +1,6 @@
 package com.google.android.systemui.smartspace;
 
 import static com.android.internal.config.sysui.SystemUiDeviceConfigFlags.*;
-import static com.android.systemui.smartspace.dagger.SmartspaceModule.Companion.DREAM_SMARTSPACE_DATA_PLUGIN;
-import static com.android.systemui.smartspace.dagger.SmartspaceModule.Companion.LOCKSCREEN_SMARTSPACE_TARGET_FILTER;
 
 import android.app.AlarmManager;
 import android.content.ContentResolver;
@@ -41,13 +39,15 @@ import javax.inject.Named;
 @Module
 public abstract class SmartspaceModuleGoogle {
 
+    private static final String DREAM_SMARTSPACE_DATA_PLUGIN = "dreams_smartspace_data_plugin";
+    private static final String LOCKSCREEN_SMARTSPACE_TARGET_FILTER = "lockscreen_smartspace_target_filter";
+
     @Provides
     @SysUISingleton
     @Named(DREAM_SMARTSPACE_DATA_PLUGIN)
     static BcSmartspaceDataPlugin bindDreamBcSmartspaceDataPlugin() {
         return new BcSmartspaceDataProvider();
     }
-    ;
 
     @Provides
     @SysUISingleton
@@ -62,7 +62,6 @@ public abstract class SmartspaceModuleGoogle {
         return new LockscreenTargetFilter(
                 secureSettings, userTracker, execution, handler, contentResolver, uiExecutor);
     }
-    ;
 
     @Provides
     @SysUISingleton
@@ -72,7 +71,7 @@ public abstract class SmartspaceModuleGoogle {
 
     @Provides
     @SysUISingleton
-    static BcSmartspaceConfigProvider provideBcSmartspaceConfigPlugin(FeatureFlags featureFlags) {
+    static  BcSmartspaceConfigProvider provideBcSmartspaceConfigPlugin(FeatureFlags featureFlags) {
         return new BcSmartspaceConfigProvider(featureFlags);
     }
 

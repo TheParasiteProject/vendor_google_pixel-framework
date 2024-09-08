@@ -22,8 +22,12 @@ public abstract class BatteryEventDomainModuleGoogle {
     @Provides
     @IntoMap
     @ClassKey(BatteryEventService.class)
-    Service bindBatteryEventService(BatteryEventService service) {
-        return service;
+    static Service bindBatteryEventService(
+            BatteryEventStateController batteryEventStateController,
+            BroadcastSender broadcastSender,
+            @Background CoroutineDispatcher coroutineDispatcher) {
+        return new BatteryEventService(
+                batteryEventStateController, broadcastSender, coroutineDispatcher);
     }
 
     @Provides

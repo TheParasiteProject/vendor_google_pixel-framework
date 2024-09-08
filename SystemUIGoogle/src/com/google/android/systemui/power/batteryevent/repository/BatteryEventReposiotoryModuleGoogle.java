@@ -50,7 +50,19 @@ public abstract class BatteryEventReposiotoryModuleGoogle {
 
     @Provides
     @SysUISingleton
-    EventSourceMonitor provideEventSourceMonitor(SystemEventDataSource source) {
-        return source;
+    static EventSourceMonitor provideEventSourceMonitor(
+            HalDataSource halDataSource,
+            SettingsDataSource settingsDataSource,
+            FrameworkDataSource frameworkDataSource,
+            BroadcastDispatcher broadcastDispatcher,
+            @Background CoroutineDispatcher coroutineDispatcher,
+            @Application CoroutineScope coroutineScope) {
+        return new SystemEventDataSource(
+                halDataSource,
+                settingsDataSource,
+                frameworkDataSource,
+                broadcastDispatcher,
+                coroutineDispatcher,
+                coroutineScope);
     }
 }

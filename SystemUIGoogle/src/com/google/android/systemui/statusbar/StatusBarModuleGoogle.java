@@ -47,9 +47,70 @@ public abstract class StatusBarModuleGoogle {
 
     @Provides
     @SysUISingleton
-    KeyguardIndicationController provideKeyguardIndicationController(
-            KeyguardIndicationControllerGoogle controller) {
-        return controller;
+    static KeyguardIndicationController provideKeyguardIndicationController(
+            Context context,
+            @Main Looper mainLooper,
+            WakeLock.Builder wakeLockBuilder,
+            KeyguardStateController keyguardStateController,
+            StatusBarStateController statusBarStateController,
+            KeyguardUpdateMonitor keyguardUpdateMonitor,
+            DockManager dockManager,
+            BroadcastDispatcher broadcastDispatcher,
+            DevicePolicyManager devicePolicyManager,
+            IBatteryStats iBatteryStats,
+            UserManager userManager,
+            TunerService tunerService,
+            DeviceConfigProxy deviceConfigProxy,
+            @Main DelayableExecutor executor,
+            @Background DelayableExecutor bgExecutor,
+            FalsingManager falsingManager,
+            AuthController authController,
+            LockPatternUtils lockPatternUtils,
+            ScreenLifecycle screenLifecycle,
+            KeyguardBypassController keyguardBypassController,
+            AccessibilityManager accessibilityManager,
+            FaceHelpMessageDeferralFactory faceHelpMessageDeferral,
+            KeyguardLogger keyguardLogger,
+            GlobalSettings globalSettings,
+            AlternateBouncerInteractor alternateBouncerInteractor,
+            AlarmManager alarmManager,
+            UserTracker userTracker,
+            BouncerMessageInteractor bouncerMessageInteractor,
+            FeatureFlags flags,
+            IndicationHelper indicationHelper,
+            KeyguardInteractor keyguardInteractor) {
+        return new KeyguardIndicationControllerGoogle(
+                context,
+                mainLooper,
+                wakeLockBuilder,
+                keyguardStateController,
+                statusBarStateController,
+                keyguardUpdateMonitor,
+                dockManager,
+                broadcastDispatcher,
+                devicePolicyManager,
+                iBatteryStats,
+                userManager,
+                tunerService,
+                deviceConfigProxy,
+                executor,
+                bgExecutor,
+                falsingManager,
+                authController,
+                lockPatternUtils,
+                screenLifecycle,
+                keyguardBypassController,
+                accessibilityManager,
+                faceHelpMessageDeferral,
+                keyguardLogger,
+                globalSettings,
+                alternateBouncerInteractor,
+                alarmManager,
+                userTracker,
+                bouncerMessageInteractor,
+                flags,
+                indicationHelper,
+                keyguardInteractor);
     }
 
     @Provides

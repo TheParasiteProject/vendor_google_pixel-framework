@@ -22,7 +22,8 @@ public abstract class AutoAddableModuleGoogle {
     @Provides
     @IntoMap
     @ClassKey(ReverseChargingAutoAddable.class)
-    AutoAddable bindReverseChargingAutoAddable(ReverseChargingAutoAddable addable) {
-        return addable;
+    static AutoAddable bindReverseChargingAutoAddable(
+            BatteryController batteryController) {
+        return new ReverseChargingAutoAddable(batteryController);
     }
 }

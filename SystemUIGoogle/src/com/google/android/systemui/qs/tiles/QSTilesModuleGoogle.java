@@ -67,8 +67,30 @@ public abstract class QSTilesModuleGoogle {
     @Provides
     @IntoMap
     @StringKey(BatterySaverTile.TILE_SPEC)
-    QSTileImpl<?> bindBatterySaverTile(BatterySaverTileGoogle batterySaverTile) {
-        return batterySaverTile;
+    static QSTileImpl<?> bindBatterySaverTile(
+            QSHost host,
+            QsEventLoggerImpl qsEventLoggerImpl,
+            @Background Looper backgroundLooper,
+            @Main Handler mainHandler,
+            FalsingManager falsingManager,
+            MetricsLogger metricsLogger,
+            StatusBarStateController statusBarStateController,
+            ActivityStarter activityStarter,
+            QSLogger qsLogger,
+            BatteryController batteryController,
+            SecureSettings secureSettings) {
+        return new BatterySaverTileGoogle(
+                host,
+                qsEventLoggerImpl,
+                backgroundLooper,
+                mainHandler,
+                falsingManager,
+                metricsLogger,
+                statusBarStateController,
+                activityStarter,
+                qsLogger,
+                batteryController,
+                secureSettings);
     }
 
     @Provides
@@ -102,7 +124,29 @@ public abstract class QSTilesModuleGoogle {
     @Provides
     @IntoMap
     @StringKey(REVERSE_CHARGING_TILE_TILE_SPEC)
-    QSTileImpl<?> bindReverseChargingTile(ReverseChargingTile reverseChargingTile) {
-        return reverseChargingTile;
+    static QSTileImpl<?> bindReverseChargingTile(
+            QSHost host,
+            QsEventLoggerImpl qsEventLoggerImpl,
+            @Background Looper backgroundLooper,
+            @Main Handler mainHandler,
+            FalsingManager falsingManager,
+            MetricsLogger metricsLogger,
+            StatusBarStateController statusBarStateController,
+            ActivityStarter activityStarter,
+            QSLogger qsLogger,
+            BatteryController batteryController,
+            IThermalService iThermalService) {
+        return new ReverseChargingTile(
+                host,
+                qsEventLoggerImpl,
+                backgroundLooper,
+                mainHandler,
+                falsingManager,
+                metricsLogger,
+                statusBarStateController,
+                activityStarter,
+                qsLogger,
+                batteryController,
+                iThermalService);
     }
 }
