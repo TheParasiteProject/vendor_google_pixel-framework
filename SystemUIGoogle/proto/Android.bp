@@ -1,10 +1,30 @@
 java_library {
-    name: "smartspace-proto-java",
+    name: "smartspace-proto-lite-java",
+    proto: {
+        type: "lite",
+    },
+    srcs: [
+        "smartspace_lite.proto",
+    ],
+    sdk_version: "current",
+}
+
+java_library {
+    name: "smartspace-proto-nano-java",
     proto: {
         type: "nano",
     },
     srcs: [
-        "smartspace.proto",
+        "smartspace_nano.proto",
+    ],
+    sdk_version: "current",
+}
+
+java_library {
+    name: "smartspace-proto-java",
+    static_libs: [
+        "smartspace-proto-lite-java",
+        "smartspace-proto-nano-java",
     ],
     sdk_version: "current",
 }

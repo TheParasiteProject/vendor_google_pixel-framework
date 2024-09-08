@@ -1,8 +1,11 @@
 package com.google.android.systemui.smartspace;
 
 import static com.android.internal.config.sysui.SystemUiDeviceConfigFlags.*;
+import static com.android.systemui.smartspace.dagger.SmartspaceModule.Companion.DREAM_SMARTSPACE_DATA_PLUGIN;
+import static com.android.systemui.smartspace.dagger.SmartspaceModule.Companion.LOCKSCREEN_SMARTSPACE_TARGET_FILTER;
 
 import android.app.AlarmManager;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Handler;
 
@@ -15,11 +18,15 @@ import com.android.systemui.dump.DumpManager;
 import com.android.systemui.flags.FeatureFlags;
 import com.android.systemui.plugins.BcSmartspaceDataPlugin;
 import com.android.systemui.settings.UserTracker;
+import com.android.systemui.smartspace.SmartspaceTargetFilter;
 import com.android.systemui.smartspace.config.BcSmartspaceConfigProvider;
+import com.android.systemui.smartspace.filters.LockscreenTargetFilter;
 import com.android.systemui.statusbar.NotificationMediaManager;
 import com.android.systemui.statusbar.policy.ZenModeController;
 import com.android.systemui.util.InitializationChecker;
 import com.android.systemui.util.concurrency.DelayableExecutor;
+import com.android.systemui.util.concurrency.Execution;
+import com.android.systemui.util.settings.SecureSettings;
 
 import dagger.Module;
 import dagger.Provides;
@@ -29,8 +36,33 @@ import kotlinx.coroutines.CoroutineScope;
 
 import java.util.concurrent.Executor;
 
+import javax.inject.Named;
+
 @Module
 public abstract class SmartspaceModuleGoogle {
+
+    @Provides
+    @SysUISingleton
+    @Named(DREAM_SMARTSPACE_DATA_PLUGIN)
+    static BcSmartspaceDataPlugin bindDreamBcSmartspaceDataPlugin() {
+        return new BcSmartspaceDataProvider();
+    }
+    ;
+
+    @Provides
+    @SysUISingleton
+    @Named(LOCKSCREEN_SMARTSPACE_TARGET_FILTER)
+    static SmartspaceTargetFilter bindLockscreenTargetFilter(
+            SecureSettings secureSettings,
+            UserTracker userTracker,
+            Execution execution,
+            @Main Handler handler,
+            ContentResolver contentResolver,
+            @Main Executor uiExecutor) {
+        return new LockscreenTargetFilter(
+                secureSettings, userTracker, execution, handler, contentResolver, uiExecutor);
+    }
+    ;
 
     @Provides
     @SysUISingleton

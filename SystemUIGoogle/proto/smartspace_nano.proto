@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+package SmartspaceProto;
+
+option java_package = "com.android.systemui.smartspace";
+option java_outer_classname = "SmartspaceProto";
+
+message SmartspaceCardDimensionalInfo {
+    repeated SmartspaceFeatureDimension featureDimensions = 1;
+}
+
+message SmartspaceFeatureDimension {
+    required int32 featureDimensionId = 1;
+    required int32 featureDimensionValue = 2;
+}
