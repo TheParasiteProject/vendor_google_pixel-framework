@@ -22,7 +22,7 @@ import java.util.Optional;
 public abstract class DreamlinerModule {
     @Provides
     @SysUISingleton
-    static DockManager provideDockManager(DockObserver observer) {
+    DockManager provideDockManager(DockObserver observer) {
         return observer;
     }
 

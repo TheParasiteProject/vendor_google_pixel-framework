@@ -22,7 +22,7 @@ public abstract class BatteryEventDomainModuleGoogle {
     @Provides
     @IntoMap
     @ClassKey(BatteryEventService.class)
-    static Service bindBatteryEventService(BatteryEventService service) {
+    Service bindBatteryEventService(BatteryEventService service) {
         return service;
     }
 

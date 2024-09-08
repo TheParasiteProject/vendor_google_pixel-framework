@@ -52,7 +52,7 @@ public abstract class PowerModuleGoogle {
 
     @Provides
     @SysUISingleton
-    static EnhancedEstimates bindEnhancedEstimates(EnhancedEstimatesGoogleImpl impl) {
+    EnhancedEstimates bindEnhancedEstimates(EnhancedEstimatesGoogleImpl impl) {
         return impl;
     }
 
@@ -64,7 +64,7 @@ public abstract class PowerModuleGoogle {
 
     @Provides
     @SysUISingleton
-    static PowerUI.WarningsUI provideWarningsUi(PowerNotificationWarningsGoogleImpl impl) {
+    PowerUI.WarningsUI provideWarningsUi(PowerNotificationWarningsGoogleImpl impl) {
         return impl;
     }
 

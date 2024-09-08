@@ -22,7 +22,7 @@ public abstract class AutoAddableModuleGoogle {
     @Provides
     @IntoMap
     @ClassKey(ReverseChargingAutoAddable.class)
-    static AutoAddable bindReverseChargingAutoAddable(ReverseChargingAutoAddable addable) {
+    AutoAddable bindReverseChargingAutoAddable(ReverseChargingAutoAddable addable) {
         return addable;
     }
 }

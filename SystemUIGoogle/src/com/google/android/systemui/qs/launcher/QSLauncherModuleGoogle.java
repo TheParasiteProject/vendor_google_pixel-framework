@@ -25,7 +25,7 @@ public abstract class QSLauncherModuleGoogle {
     @Provides
     @IntoMap
     @ClassKey(LauncherTileService.class)
-    static Service bindLauncherTileService(LauncherTileService service) {
+    Service bindLauncherTileService(LauncherTileService service) {
         return service;
     }
 }

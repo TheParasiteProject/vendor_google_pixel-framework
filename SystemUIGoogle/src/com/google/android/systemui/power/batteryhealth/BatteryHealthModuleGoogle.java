@@ -38,7 +38,7 @@ public abstract class BatteryHealthModuleGoogle {
     @Provides
     @IntoMap
     @ClassKey(HealthService.class)
-    static Service bindHealthService(HealthService service) {
+    Service bindHealthService(HealthService service) {
         return service;
     }
 
@@ -52,7 +52,7 @@ public abstract class BatteryHealthModuleGoogle {
     @Provides
     @IntoMap
     @ClassKey(HealthUpdateReceiver.class)
-    static BroadcastReceiver bindHealthUpdateReceiver(HealthUpdateReceiver receiver) {
+    BroadcastReceiver bindHealthUpdateReceiver(HealthUpdateReceiver receiver) {
         return receiver;
     }
 

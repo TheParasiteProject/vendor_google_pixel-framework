@@ -67,7 +67,7 @@ public abstract class QSTilesModuleGoogle {
     @Provides
     @IntoMap
     @StringKey(BatterySaverTile.TILE_SPEC)
-    static QSTileImpl<?> bindBatterySaverTile(BatterySaverTileGoogle batterySaverTile) {
+    QSTileImpl<?> bindBatterySaverTile(BatterySaverTileGoogle batterySaverTile) {
         return batterySaverTile;
     }
 
@@ -102,8 +102,7 @@ public abstract class QSTilesModuleGoogle {
     @Provides
     @IntoMap
     @StringKey(REVERSE_CHARGING_TILE_TILE_SPEC)
-    static QSTileImpl<?> bindReverseChargingTile(ReverseChargingTile reverseChargingTile) {
+    QSTileImpl<?> bindReverseChargingTile(ReverseChargingTile reverseChargingTile) {
         return reverseChargingTile;
     }
-    ;
 }

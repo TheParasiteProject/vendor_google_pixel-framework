@@ -47,7 +47,7 @@ public abstract class StatusBarModuleGoogle {
 
     @Provides
     @SysUISingleton
-    static KeyguardIndicationController provideKeyguardIndicationController(
+    KeyguardIndicationController provideKeyguardIndicationController(
             KeyguardIndicationControllerGoogle controller) {
         return controller;
     }

@@ -93,7 +93,7 @@ public abstract class AssistantUIHintsModule {
 
     @Provides
     @SysUISingleton
-    static EdgeLightsListener provideEdgeLightsListener(GlowController controller) {
+    EdgeLightsListener provideEdgeLightsListener(GlowController controller) {
         return controller;
     }
 
@@ -115,7 +115,7 @@ public abstract class AssistantUIHintsModule {
 
     @Provides
     @SysUISingleton
-    static DefaultUiController provideDefaultUiController(GoogleDefaultUiController controller) {
+    DefaultUiController provideDefaultUiController(GoogleDefaultUiController controller) {
         return controller;
     }
 

@@ -50,7 +50,7 @@ public abstract class BatteryEventReposiotoryModuleGoogle {
 
     @Provides
     @SysUISingleton
-    static EventSourceMonitor provideEventSourceMonitor(SystemEventDataSource source) {
+    EventSourceMonitor provideEventSourceMonitor(SystemEventDataSource source) {
         return source;
     }
 }
