@@ -30,6 +30,7 @@ import com.android.internal.logging.MetricsLogger;
 import com.android.systemui.assist.AssistLogger;
 import com.android.systemui.assist.AssistManager;
 import com.android.systemui.assist.ui.DefaultUiController;
+import com.android.systemui.assist.ui.InvocationLightsView;
 import com.android.systemui.dagger.SysUISingleton;
 import com.android.systemui.dagger.qualifiers.Main;
 import com.android.systemui.keyguard.domain.interactor.KeyguardBottomAreaInteractor;
@@ -324,5 +325,11 @@ public abstract class AssistantUIHintsModule {
             AssistantPresenceHandler assistantPresenceHandler,
             ConfigurationHandler configurationHandler) {
         return new HashSet(Arrays.asList(assistantPresenceHandler, configurationHandler));
+    }
+
+    @Provides
+    @SysUISingleton
+    static InvocationLightsView provideInvocationLightsView(AssistantInvocationLightsView view) {
+        return view;
     }
 }
