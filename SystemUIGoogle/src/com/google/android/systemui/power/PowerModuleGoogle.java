@@ -52,8 +52,8 @@ public abstract class PowerModuleGoogle {
 
     @Provides
     @SysUISingleton
-    static EnhancedEstimates bindEnhancedEstimates(Context context) {
-        return new EnhancedEstimatesGoogleImpl(context);
+    static EnhancedEstimates bindEnhancedEstimates(EnhancedEstimatesGoogleImpl impl) {
+        return impl;
     }
 
     @Provides
@@ -64,36 +64,8 @@ public abstract class PowerModuleGoogle {
 
     @Provides
     @SysUISingleton
-    static PowerUI.WarningsUI provideWarningsUi(
-            Context context,
-            ActivityStarter activityStarter,
-            BroadcastDispatcher broadcastDispatcher,
-            BroadcastSender broadcastSender,
-            UiEventLogger uiEventLogger,
-            GlobalSettings globalSettings,
-            Lazy<BatteryController> lazy,
-            DialogTransitionAnimator dialogTransitionAnimator,
-            EnhancedEstimates enhancedEstimates,
-            UserTracker userTracker,
-            BatteryEventClient batteryEventClient,
-            SystemUIDialog.Factory factory,
-            BatterySaverConfirmationDialog batterySaverConfirmationDialog,
-            Provider<SevereLowBatteryNotification> severeLowBatteryNotification) {
-        return new PowerNotificationWarningsGoogleImpl(
-                context,
-                activityStarter,
-                broadcastDispatcher,
-                broadcastSender,
-                uiEventLogger,
-                globalSettings,
-                lazy,
-                dialogTransitionAnimator,
-                enhancedEstimates,
-                userTracker,
-                batteryEventClient,
-                factory,
-                batterySaverConfirmationDialog,
-                severeLowBatteryNotification);
+    static PowerUI.WarningsUI provideWarningsUi(PowerNotificationWarningsGoogleImpl impl) {
+        return impl;
     }
 
     @Provides

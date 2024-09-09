@@ -22,28 +22,8 @@ import java.util.Optional;
 public abstract class DreamlinerModule {
     @Provides
     @SysUISingleton
-    static DockManager provideDockManager(
-            Context context,
-            Optional<WirelessCharger> optional,
-            WirelessChargerCommander wirelessChargerCommander,
-            StatusBarStateController statusBarStateController,
-            Lazy<VisualInterruptionDecisionProvider> lazy,
-            ConfigurationController configurationController,
-            @Background DelayableExecutor delayableExecutor,
-            KeyguardStateController keyguardStateController,
-            DockAlignmentController dockAlignmentController,
-            UserTracker userTracker) {
-        return new DockObserver(
-                context,
-                optional,
-                wirelessChargerCommander,
-                statusBarStateController,
-                lazy,
-                configurationController,
-                delayableExecutor,
-                keyguardStateController,
-                dockAlignmentController,
-                userTracker);
+    static DockManager provideDockManager(DockObserver observer) {
+        return observer;
     }
 
     @Provides

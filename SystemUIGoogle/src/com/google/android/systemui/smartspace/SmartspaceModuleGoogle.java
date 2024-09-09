@@ -71,7 +71,7 @@ public abstract class SmartspaceModuleGoogle {
 
     @Provides
     @SysUISingleton
-    static  BcSmartspaceConfigProvider provideBcSmartspaceConfigPlugin(FeatureFlags featureFlags) {
+    static BcSmartspaceConfigProvider provideBcSmartspaceConfigPlugin(FeatureFlags featureFlags) {
         return new BcSmartspaceConfigProvider(featureFlags);
     }
 
