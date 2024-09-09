@@ -5,8 +5,8 @@ import android.os.IThermalService;
 import android.os.Looper;
 
 import com.android.internal.logging.MetricsLogger;
-import com.android.systemui.dagger.SysUISingleton;
 import com.android.internal.logging.UiEventLogger;
+import com.android.systemui.dagger.SysUISingleton;
 import com.android.systemui.dagger.qualifiers.Background;
 import com.android.systemui.dagger.qualifiers.Main;
 import com.android.systemui.plugins.ActivityStarter;

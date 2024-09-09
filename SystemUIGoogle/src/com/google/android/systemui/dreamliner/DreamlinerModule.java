@@ -3,7 +3,7 @@ package com.google.android.systemui.dreamliner;
 import android.content.Context;
 
 import com.android.systemui.dagger.SysUISingleton;
-import com.android.systemui.dagger.qualifiers.Background;
+import com.android.systemui.dagger.qualifiers.Main;
 import com.android.systemui.dock.DockManager;
 import com.android.systemui.plugins.statusbar.StatusBarStateController;
 import com.android.systemui.settings.UserTracker;
@@ -35,7 +35,7 @@ public abstract class DreamlinerModule {
             StatusBarStateController statusBarStateController,
             Lazy<VisualInterruptionDecisionProvider> lazy,
             ConfigurationController configurationController,
-            @Background DelayableExecutor delayableExecutor,
+            @Main DelayableExecutor delayableExecutor,
             KeyguardStateController keyguardStateController,
             DockAlignmentController dockAlignmentController,
             UserTracker userTracker) {

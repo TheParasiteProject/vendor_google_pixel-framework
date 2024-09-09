@@ -40,7 +40,8 @@ import javax.inject.Named;
 public abstract class SmartspaceModuleGoogle {
 
     private static final String DREAM_SMARTSPACE_DATA_PLUGIN = "dreams_smartspace_data_plugin";
-    private static final String LOCKSCREEN_SMARTSPACE_TARGET_FILTER = "lockscreen_smartspace_target_filter";
+    private static final String LOCKSCREEN_SMARTSPACE_TARGET_FILTER =
+            "lockscreen_smartspace_target_filter";
 
     @Provides
     @SysUISingleton

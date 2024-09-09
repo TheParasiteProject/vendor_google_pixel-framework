@@ -25,10 +25,10 @@ import dagger.Lazy;
 import dagger.Module;
 import dagger.Provides;
 
-import javax.inject.Provider;
-
 import kotlinx.coroutines.CoroutineDispatcher;
 import kotlinx.coroutines.CoroutineScope;
+
+import javax.inject.Provider;
 
 @Module(
         includes = {

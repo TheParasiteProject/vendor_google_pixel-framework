@@ -30,11 +30,11 @@ import com.android.systemui.settings.UserTracker;
 import com.android.systemui.statusbar.KeyguardIndicationController;
 import com.android.systemui.statusbar.phone.KeyguardBypassController;
 import com.android.systemui.statusbar.policy.KeyguardStateController;
-import com.android.systemui.util.concurrency.DelayableExecutor;
-import com.android.systemui.util.wakelock.WakeLock;
 import com.android.systemui.tuner.TunerService;
 import com.android.systemui.util.DeviceConfigProxy;
+import com.android.systemui.util.concurrency.DelayableExecutor;
 import com.android.systemui.util.settings.GlobalSettings;
+import com.android.systemui.util.wakelock.WakeLock;
 
 import com.google.android.systemui.statusbar.phone.StatusBarPhoneModuleGoogle;
 import com.google.android.systemui.statusbar.policy.StatusBarPolicyModuleGoogle;

@@ -28,7 +28,6 @@ import com.android.internal.app.AssistUtils;
 import com.android.internal.logging.UiEventLogger;
 import com.android.keyguard.KeyguardUpdateMonitor;
 import com.android.systemui.assist.AssistLogger;
-import com.android.systemui.assist.AssistManager;
 import com.android.systemui.assist.AssistModule;
 import com.android.systemui.assist.PhoneStateMonitor;
 import com.android.systemui.assist.domain.interactor.AssistInteractor;
