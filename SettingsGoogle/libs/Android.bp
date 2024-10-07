@@ -1,4 +1,4 @@
-java_import  {
+java_import {
     name: "SettingsGoogle-lib",
     sdk_version: "current",
     jars: ["SettingsGoogle-lib.jar"],

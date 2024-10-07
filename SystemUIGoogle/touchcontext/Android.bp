@@ -1,4 +1,4 @@
-java_import  {
+java_import {
     name: "touchcontext-lib",
     sdk_version: "current",
     jars: ["libs/com.google.input.jar"],

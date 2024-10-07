@@ -3,7 +3,7 @@ android_library {
     platform_apis: true,
 
     srcs: ["src/**/*.java"],
-    
+
     use_resource_processor: true,
     static_libs: [
         "Settings-core",
