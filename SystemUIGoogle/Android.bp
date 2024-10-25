@@ -4,6 +4,9 @@ android_library {
         "src/**/*.kt",
         "src/**/*.java",
         "src/**/*.aidl",
+        "src-aosp/**/*.kt",
+        "src-aosp/**/*.java",
+        "src-aosp/**/*.aidl",
     ],
     resource_dirs: [
         "res",
