@@ -37,14 +37,14 @@ import java.util.concurrent.CompletableFuture;
  */
 public class ScreenshotNotificationSmartActionsProvider {
 
-    private static final String TAG = logTag(ScreenshotNotificationSmartActionsProvider.class);
+    public static final String TAG = logTag(ScreenshotNotificationSmartActionsProvider.class);
 
     /* Key provided in the notification action to get the type of smart action. */
     public static final String ACTION_TYPE = "action_type";
     public static final String DEFAULT_ACTION_TYPE = "Smart Action";
 
     /* Define phases of screenshot execution. */
-    protected enum ScreenshotOp {
+    public enum ScreenshotOp {
         OP_UNKNOWN,
         RETRIEVE_SMART_ACTIONS,
         REQUEST_SMART_ACTIONS,
@@ -52,7 +52,7 @@ public class ScreenshotNotificationSmartActionsProvider {
     }
 
     /* Enum to report success or failure for screenshot execution phases. */
-    protected enum ScreenshotOpStatus {
+    public enum ScreenshotOpStatus {
         OP_STATUS_UNKNOWN,
         SUCCESS,
         ERROR,

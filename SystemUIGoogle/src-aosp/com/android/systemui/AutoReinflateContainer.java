@@ -36,7 +36,7 @@ import java.util.Set;
  */
 public class AutoReinflateContainer extends FrameLayout {
 
-    private static final Set<Integer> SUPPORTED_CHANGES = Set.of(
+    public static final Set<Integer> SUPPORTED_CHANGES = Set.of(
             ActivityInfo.CONFIG_LOCALE,
             ActivityInfo.CONFIG_UI_MODE,
             ActivityInfo.CONFIG_ASSETS_PATHS,
@@ -44,10 +44,10 @@ public class AutoReinflateContainer extends FrameLayout {
             ActivityInfo.CONFIG_FONT_SCALE
     );
 
-    private final List<InflateListener> mInflateListeners = new ArrayList<>();
-    private final int mLayout;
+    public final List<InflateListener> mInflateListeners = new ArrayList<>();
+    public final int mLayout;
 
-    private final Configuration mLastConfig = new Configuration();
+    public final Configuration mLastConfig = new Configuration();
 
     public AutoReinflateContainer(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
@@ -62,7 +62,7 @@ public class AutoReinflateContainer extends FrameLayout {
     }
 
     @Override
-    protected void onConfigurationChanged(Configuration newConfig) {
+    public void onConfigurationChanged(Configuration newConfig) {
         int diff = mLastConfig.updateFrom(newConfig);
         for (int change: SUPPORTED_CHANGES) {
             if ((diff & change) != 0) {
@@ -72,7 +72,7 @@ public class AutoReinflateContainer extends FrameLayout {
         }
     }
 
-    protected void inflateLayoutImpl() {
+    public void inflateLayoutImpl() {
         LayoutInflater.from(getContext()).inflate(mLayout, this);
     }
 

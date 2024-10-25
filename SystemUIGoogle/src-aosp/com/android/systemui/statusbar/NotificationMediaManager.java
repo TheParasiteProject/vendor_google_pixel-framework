@@ -60,16 +60,16 @@ import java.util.Optional;
  * notification, which this class keeps track of.
  */
 public class NotificationMediaManager implements Dumpable {
-    private static final String TAG = "NotificationMediaManager";
+    public static final String TAG = "NotificationMediaManager";
     public static final boolean DEBUG_MEDIA = false;
 
-    private static final String ISLAND_NOTIFICATION =
+    public static final String ISLAND_NOTIFICATION =
             "system:" + Settings.System.ISLAND_NOTIFICATION;
-    private static final String ISLAND_NOTIFICATION_NOW_PLAYING =
+    public static final String ISLAND_NOTIFICATION_NOW_PLAYING =
             "system:" + Settings.System.ISLAND_NOTIFICATION_NOW_PLAYING;
 
-    private static final HashSet<Integer> PAUSED_MEDIA_STATES = new HashSet<>();
-    private static final HashSet<Integer> CONNECTING_MEDIA_STATES = new HashSet<>();
+    public static final HashSet<Integer> PAUSED_MEDIA_STATES = new HashSet<>();
+    public static final HashSet<Integer> CONNECTING_MEDIA_STATES = new HashSet<>();
     static {
         PAUSED_MEDIA_STATES.add(PlaybackState.STATE_NONE);
         PAUSED_MEDIA_STATES.add(PlaybackState.STATE_STOPPED);
@@ -79,26 +79,26 @@ public class NotificationMediaManager implements Dumpable {
         CONNECTING_MEDIA_STATES.add(PlaybackState.STATE_BUFFERING);
     }
 
-    private final NotificationVisibilityProvider mVisibilityProvider;
-    private final MediaDataManager mMediaDataManager;
-    private final NotifPipeline mNotifPipeline;
-    private final NotifCollection mNotifCollection;
+    public final NotificationVisibilityProvider mVisibilityProvider;
+    public final MediaDataManager mMediaDataManager;
+    public final NotifPipeline mNotifPipeline;
+    public final NotifCollection mNotifCollection;
 
-    private final Context mContext;
-    private final ArrayList<MediaListener> mMediaListeners;
+    public final Context mContext;
+    public final ArrayList<MediaListener> mMediaListeners;
 
-    protected NotificationPresenter mPresenter;
-    private MediaController mMediaController;
-    private String mMediaNotificationKey;
-    private MediaMetadata mMediaMetadata;
+    public NotificationPresenter mPresenter;
+    public MediaController mMediaController;
+    public String mMediaNotificationKey;
+    public MediaMetadata mMediaMetadata;
 
-    private StatusBarStateController mStatusBarStateController;
+    public StatusBarStateController mStatusBarStateController;
 
-    private boolean mIslandEnabled;
-    private boolean mIslandNowPlayingEnabled;
-    private NotificationUtils notifUtils;
+    public boolean mIslandEnabled;
+    public boolean mIslandNowPlayingEnabled;
+    public NotificationUtils notifUtils;
 
-    private final MediaController.Callback mMediaListener = new MediaController.Callback() {
+    public final MediaController.Callback mMediaListener = new MediaController.Callback() {
         @Override
         public void onPlaybackStateChanged(PlaybackState state) {
             super.onPlaybackStateChanged(state);
@@ -173,7 +173,7 @@ public class NotificationMediaManager implements Dumpable {
             ISLAND_NOTIFICATION_NOW_PLAYING);
     }
 
-    private final TunerService.Tunable mTunable = new TunerService.Tunable() {
+    public final TunerService.Tunable mTunable = new TunerService.Tunable() {
         @Override
         public void onTuningChanged(String key, String newValue) {
             switch (key) {
@@ -189,7 +189,7 @@ public class NotificationMediaManager implements Dumpable {
         }
     };
 
-    private void setupNotifPipeline() {
+    public void setupNotifPipeline() {
         mNotifPipeline.addCollectionListener(new NotifCollectionListener() {
             @Override
             public void onEntryAdded(@NonNull NotificationEntry entry) {
@@ -248,14 +248,14 @@ public class NotificationMediaManager implements Dumpable {
         });
     }
 
-    private DismissedByUserStats getDismissedByUserStats(NotificationEntry entry) {
+    public DismissedByUserStats getDismissedByUserStats(NotificationEntry entry) {
         return new DismissedByUserStats(
                 NotificationStats.DISMISSAL_SHADE, // Add DISMISSAL_MEDIA?
                 NotificationStats.DISMISS_SENTIMENT_NEUTRAL,
                 mVisibilityProvider.obtain(entry, /* visible= */ true));
     }
 
-    private void removeEntry(NotificationEntry entry) {
+    public void removeEntry(NotificationEntry entry) {
         onNotificationRemoved(entry.getKey());
         mMediaDataManager.onNotificationRemoved(entry.getKey());
     }
@@ -384,7 +384,7 @@ public class NotificationMediaManager implements Dumpable {
         clearCurrentMediaNotificationSession();
     }
 
-    private void dispatchUpdateMediaMetaData() {
+    public void dispatchUpdateMediaMetaData() {
         @PlaybackState.State int state = getMediaControllerPlaybackState(mMediaController);
         ArrayList<MediaListener> callbacks = new ArrayList<>(mMediaListeners);
         for (int i = 0; i < callbacks.size(); i++) {
@@ -410,12 +410,12 @@ public class NotificationMediaManager implements Dumpable {
         pw.println();
     }
 
-    private boolean isPlaybackActive(int state) {
+    public boolean isPlaybackActive(int state) {
         return state != PlaybackState.STATE_STOPPED && state != PlaybackState.STATE_ERROR
                 && state != PlaybackState.STATE_NONE;
     }
 
-    private boolean sameSessions(MediaController a, MediaController b) {
+    public boolean sameSessions(MediaController a, MediaController b) {
         if (a == b) {
             return true;
         }
@@ -425,7 +425,7 @@ public class NotificationMediaManager implements Dumpable {
         return a.controlsSameSession(b);
     }
 
-    private int getMediaControllerPlaybackState(MediaController controller) {
+    public int getMediaControllerPlaybackState(MediaController controller) {
         if (controller != null) {
             final PlaybackState playbackState = controller.getPlaybackState();
             if (playbackState != null) {
@@ -435,7 +435,7 @@ public class NotificationMediaManager implements Dumpable {
         return PlaybackState.STATE_NONE;
     }
 
-    private void clearCurrentMediaNotificationSession() {
+    public void clearCurrentMediaNotificationSession() {
         mMediaMetadata = null;
         if (mMediaController != null) {
             if (DEBUG_MEDIA) {

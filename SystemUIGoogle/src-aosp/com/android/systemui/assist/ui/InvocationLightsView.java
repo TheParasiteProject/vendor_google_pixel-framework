@@ -44,32 +44,32 @@ import java.util.ArrayList;
 public class InvocationLightsView extends View
         implements NavigationBarTransitions.DarkIntensityListener {
 
-    private static final String TAG = "InvocationLightsView";
+    public static final String TAG = "InvocationLightsView";
 
-    private static final int LIGHT_HEIGHT_DP = 3;
+    public static final int LIGHT_HEIGHT_DP = 3;
     // minimum light length as a fraction of the corner length
-    private static final float MINIMUM_CORNER_RATIO = .6f;
+    public static final float MINIMUM_CORNER_RATIO = .6f;
 
-    protected final ArrayList<EdgeLight> mAssistInvocationLights = new ArrayList<>();
-    protected final PerimeterPathGuide mGuide;
+    public final ArrayList<EdgeLight> mAssistInvocationLights = new ArrayList<>();
+    public final PerimeterPathGuide mGuide;
 
-    private final Paint mPaint = new Paint();
+    public final Paint mPaint = new Paint();
     // Path used to render lights. One instance is used to draw all lights and is cached to avoid
     // allocation on each frame.
-    private final Path mPath = new Path();
-    private final int mViewHeight;
-    private final int mStrokeWidth;
+    public final Path mPath = new Path();
+    public final int mViewHeight;
+    public final int mStrokeWidth;
     @ColorInt
-    private final int mLightColor;
+    public final int mLightColor;
     @ColorInt
-    private final int mDarkColor;
+    public final int mDarkColor;
     @Nullable
-    private NavigationBarController mNavigationBarController;
+    public NavigationBarController mNavigationBarController;
 
     // Allocate variable for screen location lookup to avoid memory alloc onDraw()
-    private int[] mScreenLocation = new int[2];
-    private boolean mRegistered = false;
-    private boolean mUseNavBarColor = true;
+    public int[] mScreenLocation = new int[2];
+    public boolean mRegistered = false;
+    public boolean mUseNavBarColor = true;
 
     public InvocationLightsView(Context context) {
         this(context, null);
@@ -200,13 +200,13 @@ public class InvocationLightsView extends View
 
 
     @Override
-    protected void onFinishInflate() {
+    public void onFinishInflate() {
         getLayoutParams().height = mViewHeight;
         requestLayout();
     }
 
     @Override
-    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+    public void onLayout(boolean changed, int left, int top, int right, int bottom) {
         super.onLayout(changed, left, top, right, bottom);
 
         int rotation = getContext().getDisplay().getRotation();
@@ -214,7 +214,7 @@ public class InvocationLightsView extends View
     }
 
     @Override
-    protected void onDraw(Canvas canvas) {
+    public void onDraw(Canvas canvas) {
         // If the view doesn't take up the whole screen, offset the canvas by its translation
         // distance such that PerimeterPathGuide's paths are drawn properly based upon the actual
         // screen edges.
@@ -236,7 +236,7 @@ public class InvocationLightsView extends View
         }
     }
 
-    protected void setLight(int index, float start, float end) {
+    public void setLight(int index, float start, float end) {
         if (index < 0 || index >= 4) {
             Log.w(TAG, "invalid invocation light index: " + index);
         }
@@ -248,7 +248,7 @@ public class InvocationLightsView extends View
      *
      * To render corners that aren't circular, override this method in a subclass.
      */
-    protected CornerPathRenderer createCornerPathRenderer(Context context) {
+    public CornerPathRenderer createCornerPathRenderer(Context context) {
         return new CircularCornerPathRenderer(context);
     }
 
@@ -256,7 +256,7 @@ public class InvocationLightsView extends View
      * Receives an intensity from 0 (lightest) to 1 (darkest) and sets the handle color
      * appropriately. Intention is to match the home handle color.
      */
-    protected void updateDarkness(float darkIntensity) {
+    public void updateDarkness(float darkIntensity) {
         if (mUseNavBarColor) {
             @ColorInt int invocationColor = (int) ArgbEvaluator.getInstance().evaluate(
                     darkIntensity, mLightColor, mDarkColor);
@@ -270,7 +270,7 @@ public class InvocationLightsView extends View
         }
     }
 
-    private void renderLight(EdgeLight light, Canvas canvas) {
+    public void renderLight(EdgeLight light, Canvas canvas) {
         if (light.getLength() > 0) {
             mGuide.strokeSegment(mPath, light.getStart(), light.getStart() + light.getLength());
             mPaint.setColor(light.getColor());
@@ -278,7 +278,7 @@ public class InvocationLightsView extends View
         }
     }
 
-    private void attemptRegisterNavBarListener() {
+    public void attemptRegisterNavBarListener() {
         if (!mRegistered) {
             if (mNavigationBarController == null) {
                 return;
@@ -294,7 +294,7 @@ public class InvocationLightsView extends View
         }
     }
 
-    private void attemptUnregisterNavBarListener() {
+    public void attemptUnregisterNavBarListener() {
         if (mRegistered) {
             if (mNavigationBarController == null) {
                 return;

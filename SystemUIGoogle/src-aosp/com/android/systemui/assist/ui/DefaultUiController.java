@@ -42,6 +42,8 @@ import com.android.systemui.dagger.SysUISingleton;
 import com.android.systemui.navigationbar.NavigationBarController;
 import com.android.systemui.res.R;
 
+import com.google.android.systemui.assist.uihints.AssistantInvocationLightsView;
+
 import dagger.Lazy;
 
 import java.util.Locale;
@@ -55,28 +57,28 @@ import javax.inject.Inject;
 @SysUISingleton
 public class DefaultUiController implements AssistManager.UiController {
 
-    private static final String TAG = "DefaultUiController";
+    public static final String TAG = "DefaultUiController";
 
-    private static final long ANIM_DURATION_MS = 200;
+    public static final long ANIM_DURATION_MS = 200;
 
-    private static final boolean VERBOSE = Build.TYPE.toLowerCase(Locale.ROOT).contains("debug")
+    public static final boolean VERBOSE = Build.TYPE.toLowerCase(Locale.ROOT).contains("debug")
             || Build.TYPE.toLowerCase(Locale.ROOT).equals("eng");
 
-    protected final FrameLayout mRoot;
-    protected InvocationLightsView mInvocationLightsView;
-    protected final AssistLogger mAssistLogger;
+    public final FrameLayout mRoot;
+    public AssistantInvocationLightsView mInvocationLightsView;
+    public final AssistLogger mAssistLogger;
 
-    private final WindowManager mWindowManager;
-    private final MetricsLogger mMetricsLogger;
-    private final Lazy<AssistManager> mAssistManagerLazy;
-    private final WindowManager.LayoutParams mLayoutParams;
-    private final PathInterpolator mProgressInterpolator = new PathInterpolator(.83f, 0, .84f, 1);
+    public final WindowManager mWindowManager;
+    public final MetricsLogger mMetricsLogger;
+    public final Lazy<AssistManager> mAssistManagerLazy;
+    public final WindowManager.LayoutParams mLayoutParams;
+    public final PathInterpolator mProgressInterpolator = new PathInterpolator(.83f, 0, .84f, 1);
 
-    private boolean mAttached = false;
-    private boolean mInvocationInProgress = false;
-    private float mLastInvocationProgress = 0;
+    public boolean mAttached = false;
+    public boolean mInvocationInProgress = false;
+    public float mLastInvocationProgress = 0;
 
-    private ValueAnimator mInvocationAnimator = new ValueAnimator();
+    public ValueAnimator mInvocationAnimator = new ValueAnimator();
 
     @Inject
     public DefaultUiController(Context context, AssistLogger assistLogger,
@@ -103,7 +105,7 @@ public class DefaultUiController implements AssistManager.UiController {
         mLayoutParams.setFitInsetsTypes(0 /* types */);
         mLayoutParams.setTitle("Assist");
 
-        mInvocationLightsView = (InvocationLightsView)
+        mInvocationLightsView = (AssistantInvocationLightsView)
                 LayoutInflater.from(context).inflate(R.layout.invocation_lights, mRoot, false);
         mInvocationLightsView.setNavigationBarController(navigationBarController);
         mRoot.addView(mInvocationLightsView);
@@ -145,7 +147,7 @@ public class DefaultUiController implements AssistManager.UiController {
         mInvocationInProgress = false;
     }
 
-    protected void logInvocationProgressMetrics(
+    public void logInvocationProgressMetrics(
             int type, float progress, boolean invocationWasInProgress) {
         // Logs assistant invocation start.
         if (progress == 1f) {
@@ -180,26 +182,26 @@ public class DefaultUiController implements AssistManager.UiController {
         }
     }
 
-    private void attach() {
+    public void attach() {
         if (!mAttached) {
             mWindowManager.addView(mRoot, mLayoutParams);
             mAttached = true;
         }
     }
 
-    private void detach() {
+    public void detach() {
         if (mAttached) {
             mWindowManager.removeViewImmediate(mRoot);
             mAttached = false;
         }
     }
 
-    private void setProgressInternal(int type, float progress) {
+    public void setProgressInternal(int type, float progress) {
         mInvocationLightsView.onInvocationProgress(
                 mProgressInterpolator.getInterpolation(progress));
     }
 
-    private void animateInvocationCompletion(int type, float velocity) {
+    public void animateInvocationCompletion(int type, float velocity) {
         mInvocationAnimator = ValueAnimator.ofFloat(mLastInvocationProgress, 1);
         mInvocationAnimator.setStartDelay(1);
         mInvocationAnimator.setDuration(ANIM_DURATION_MS);

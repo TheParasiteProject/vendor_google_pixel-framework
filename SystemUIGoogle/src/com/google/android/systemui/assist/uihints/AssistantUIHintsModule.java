@@ -326,10 +326,4 @@ public abstract class AssistantUIHintsModule {
             ConfigurationHandler configurationHandler) {
         return new HashSet(Arrays.asList(assistantPresenceHandler, configurationHandler));
     }
-
-    @Provides
-    @SysUISingleton
-    static InvocationLightsView provideInvocationLightsView(AssistantInvocationLightsView view) {
-        return view;
-    }
 }

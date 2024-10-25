@@ -51,9 +51,9 @@ public class BatterySaverTile extends QSTileImpl<BooleanState> implements
 
     public static final String TILE_SPEC = "battery";
 
-    private final BatteryController mBatteryController;
+    public final BatteryController mBatteryController;
     @VisibleForTesting
-    protected final UserSettingObserver mSetting;
+    public final UserSettingObserver mSetting;
 
     public int mLevel;
     public boolean mPowerSave;
@@ -86,7 +86,7 @@ public class BatterySaverTile extends QSTileImpl<BooleanState> implements
                 currentUser
         ) {
             @Override
-            protected void handleValueChanged(int value, boolean observedChange) {
+            public void handleValueChanged(int value, boolean observedChange) {
                 // mHandler is the background handler so calling this is OK
                 handleRefreshState(null);
             }
@@ -99,13 +99,13 @@ public class BatterySaverTile extends QSTileImpl<BooleanState> implements
     }
 
     @Override
-    protected void handleDestroy() {
+    public void handleDestroy() {
         super.handleDestroy();
         mSetting.setListening(false);
     }
 
     @Override
-    protected void handleUserSwitch(int newUserId) {
+    public void handleUserSwitch(int newUserId) {
         mSetting.setUserId(newUserId);
     }
 
@@ -131,7 +131,7 @@ public class BatterySaverTile extends QSTileImpl<BooleanState> implements
     }
 
     @Override
-    protected void handleClick(@Nullable View view) {
+    public void handleClick(@Nullable View view) {
         if (getState().state == Tile.STATE_UNAVAILABLE) {
             return;
         }
@@ -144,7 +144,7 @@ public class BatterySaverTile extends QSTileImpl<BooleanState> implements
     }
 
     @Override
-    protected void handleUpdateState(BooleanState state, Object arg) {
+    public void handleUpdateState(BooleanState state, Object arg) {
         state.state = mPluggedIn ? Tile.STATE_UNAVAILABLE
                 : mPowerSave ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE;
         state.icon = ResourceIcon.get(mPowerSave
