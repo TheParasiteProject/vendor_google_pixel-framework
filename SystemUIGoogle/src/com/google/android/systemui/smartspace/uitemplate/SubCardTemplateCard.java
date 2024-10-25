@@ -8,8 +8,10 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.android.systemui.res.R;
+
 import com.android.systemui.plugins.BcSmartspaceDataPlugin;
+import com.android.systemui.res.R;
+
 import com.google.android.systemui.smartspace.BcSmartSpaceUtil;
 import com.google.android.systemui.smartspace.BcSmartspaceCardSecondary;
 import com.google.android.systemui.smartspace.BcSmartspaceTemplateDataUtils;
@@ -33,7 +35,7 @@ public class SubCardTemplateCard extends BcSmartspaceCardSecondary {
     }
 
     public final void onFinishInflate() {
-        super/*android.view.ViewGroup*/.onFinishInflate();
+        super /*android.view.ViewGroup*/.onFinishInflate();
         this.mImageView = (ImageView) findViewById(R.id.image_view);
         this.mTextView = (TextView) findViewById(R.id.card_prompt);
     }
@@ -45,7 +47,10 @@ public class SubCardTemplateCard extends BcSmartspaceCardSecondary {
     }
 
     @Override // com.google.android.systemui.smartspace.BcSmartspaceCardSecondary
-    public final boolean setSmartspaceActions(SmartspaceTarget smartspaceTarget, BcSmartspaceDataPlugin.SmartspaceEventNotifier smartspaceEventNotifier, BcSmartspaceCardLoggingInfo bcSmartspaceCardLoggingInfo) {
+    public final boolean setSmartspaceActions(
+            SmartspaceTarget smartspaceTarget,
+            BcSmartspaceDataPlugin.SmartspaceEventNotifier smartspaceEventNotifier,
+            BcSmartspaceCardLoggingInfo bcSmartspaceCardLoggingInfo) {
         boolean z;
         SubCardTemplateData templateData = (SubCardTemplateData) smartspaceTarget.getTemplateData();
         if (templateData == null) {
@@ -65,7 +70,13 @@ public class SubCardTemplateCard extends BcSmartspaceCardSecondary {
             z = true;
         }
         if (z && templateData.getSubCardAction() != null) {
-            BcSmartSpaceUtil.setOnClickListener(this, smartspaceTarget, templateData.getSubCardAction(), smartspaceEventNotifier, "SubCardTemplateCard", bcSmartspaceCardLoggingInfo);
+            BcSmartSpaceUtil.setOnClickListener(
+                    this,
+                    smartspaceTarget,
+                    templateData.getSubCardAction(),
+                    smartspaceEventNotifier,
+                    "SubCardTemplateCard",
+                    bcSmartspaceCardLoggingInfo);
         }
         return z;
     }

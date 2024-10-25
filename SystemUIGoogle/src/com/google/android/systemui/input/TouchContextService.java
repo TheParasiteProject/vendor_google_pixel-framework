@@ -27,6 +27,7 @@ import android.view.Display;
 
 import com.android.internal.annotations.GuardedBy;
 import com.android.internal.os.BackgroundThread;
+
 import com.google.input.ContextPacket;
 import com.google.input.ITouchContextService;
 
@@ -34,15 +35,20 @@ public class TouchContextService implements DisplayManager.DisplayListener {
     private static final String INTERFACE = ITouchContextService.DESCRIPTOR + "/default";
     private final DisplayManager mDm;
     private final Object mLock = new Object();
+
     @GuardedBy({"mLock"})
     private ITouchContextService mService;
+
     private int mLastRotation = -1;
 
     public TouchContextService(Context context) {
-        DisplayManager displayManager = (DisplayManager) context.getSystemService(Context.DISPLAY_SERVICE);
+        DisplayManager displayManager =
+                (DisplayManager) context.getSystemService(Context.DISPLAY_SERVICE);
         mDm = displayManager;
         if (!isTouchContextServiceDeclared()) {
-            Log.d("TouchContextService", "No ITouchContextService declared in manifest, not sending input context");
+            Log.d(
+                    "TouchContextService",
+                    "No ITouchContextService declared in manifest, not sending input context");
             return;
         }
         Handler handler = BackgroundThread.getHandler();
@@ -54,7 +60,9 @@ public class TouchContextService implements DisplayManager.DisplayListener {
         try {
             return ServiceManager.isDeclared(INTERFACE);
         } catch (Exception e) {
-            Log.d("TouchContextService", "ITouchContextService is not supported, aborting initialization");
+            Log.d(
+                    "TouchContextService",
+                    "ITouchContextService is not supported, aborting initialization");
             return false;
         }
     }
@@ -65,26 +73,29 @@ public class TouchContextService implements DisplayManager.DisplayListener {
     }
 
     @Override
-    public void onDisplayAdded(int i) {
-    }
+    public void onDisplayAdded(int i) {}
 
     @Override
-    public void onDisplayRemoved(int i) {
-    }
+    public void onDisplayRemoved(int i) {}
 
     @Override
     public void onDisplayChanged(int i) {
         Display display;
         int rotation;
-        if (i != 0 || (display = mDm.getDisplay(i)) == null || (rotation = display.getRotation()) == mLastRotation) {
+        if (i != 0
+                || (display = mDm.getDisplay(i)) == null
+                || (rotation = display.getRotation()) == mLastRotation) {
             return;
         }
         Display.Mode mode = display.getMode();
         ContextPacket contextPacket = new ContextPacket();
-        contextPacket.orientation = toOrientation(rotation, mode.getPhysicalWidth(), mode.getPhysicalHeight());
+        contextPacket.orientation =
+                toOrientation(rotation, mode.getPhysicalWidth(), mode.getPhysicalHeight());
         ITouchContextService touchContextService = getTouchContextService();
         if (touchContextService == null) {
-            Log.e("TouchContextService", "Failed to get touch context service, dropping context packet.");
+            Log.e(
+                    "TouchContextService",
+                    "Failed to get touch context service, dropping context packet.");
             return;
         }
         try {
@@ -101,21 +112,28 @@ public class TouchContextService implements DisplayManager.DisplayListener {
         }
         final IBinder service = ServiceManager.getService(INTERFACE);
         if (service == null) {
-            Log.e("TouchContextService", "Failed to get ITouchContextService despite being declared.");
+            Log.e(
+                    "TouchContextService",
+                    "Failed to get ITouchContextService despite being declared.");
             return null;
         }
         try {
-            service.linkToDeath(() -> {
-                synchronized (mLock) {
-                    if (mService.asBinder() == service) {
-                        mService = null;
-                    }
-                }
-            }, 0);
+            service.linkToDeath(
+                    () -> {
+                        synchronized (mLock) {
+                            if (mService.asBinder() == service) {
+                                mService = null;
+                            }
+                        }
+                    },
+                    0);
             mService = ITouchContextService.Stub.asInterface(service);
             return mService;
         } catch (RemoteException e) {
-            Log.e("TouchContextService", "Failed to link to death on ITouchContextService. Binder is probably dead.", e);
+            Log.e(
+                    "TouchContextService",
+                    "Failed to link to death on ITouchContextService. Binder is probably dead.",
+                    e);
             return null;
         }
     }

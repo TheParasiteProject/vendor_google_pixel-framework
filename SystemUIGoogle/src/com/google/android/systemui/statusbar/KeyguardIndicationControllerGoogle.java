@@ -17,8 +17,8 @@
 
 package com.google.android.systemui.statusbar;
 
-import android.app.admin.DevicePolicyManager;
 import android.app.AlarmManager;
+import android.app.admin.DevicePolicyManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -33,15 +33,14 @@ import android.view.accessibility.AccessibilityManager;
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.internal.app.IBatteryStats;
 import com.android.internal.widget.LockPatternUtils;
-import com.android.systemui.bouncer.domain.interactor.AlternateBouncerInteractor;
-import com.android.systemui.bouncer.domain.interactor.BouncerMessageInteractor;
 import com.android.keyguard.KeyguardUpdateMonitor;
 import com.android.keyguard.KeyguardUpdateMonitorCallback;
 import com.android.keyguard.logging.KeyguardLogger;
 import com.android.settingslib.fuelgauge.BatteryStatus;
-import com.android.systemui.res.R;
 import com.android.systemui.biometrics.AuthController;
 import com.android.systemui.biometrics.FaceHelpMessageDeferralFactory;
+import com.android.systemui.bouncer.domain.interactor.AlternateBouncerInteractor;
+import com.android.systemui.bouncer.domain.interactor.BouncerMessageInteractor;
 import com.android.systemui.broadcast.BroadcastDispatcher;
 import com.android.systemui.dagger.SysUISingleton;
 import com.android.systemui.dagger.qualifiers.Background;
@@ -54,6 +53,7 @@ import com.android.systemui.keyguard.domain.interactor.KeyguardInteractor;
 import com.android.systemui.keyguard.util.IndicationHelper;
 import com.android.systemui.plugins.FalsingManager;
 import com.android.systemui.plugins.statusbar.StatusBarStateController;
+import com.android.systemui.res.R;
 import com.android.systemui.settings.UserTracker;
 import com.android.systemui.statusbar.KeyguardIndicationController;
 import com.android.systemui.statusbar.phone.KeyguardBypassController;
@@ -74,10 +74,11 @@ public class KeyguardIndicationControllerGoogle extends KeyguardIndicationContro
 
     private boolean mAdaptiveChargingActive;
     private boolean mAdaptiveChargingEnabledInSettings;
-    @VisibleForTesting
-    private AdaptiveChargingManager mAdaptiveChargingManager;
+    @VisibleForTesting private AdaptiveChargingManager mAdaptiveChargingManager;
+
     @VisibleForTesting
     private AdaptiveChargingManager.AdaptiveChargingStatusReceiver mAdaptiveChargingStatusReceiver;
+
     private int mBatteryLevel;
     private final BroadcastDispatcher mBroadcastDispatcher;
     private final BroadcastReceiver mBroadcastReceiver;
@@ -88,7 +89,8 @@ public class KeyguardIndicationControllerGoogle extends KeyguardIndicationContro
     private boolean mIsCharging;
     private KeyguardUpdateMonitorCallback mUpdateMonitorCallback;
 
-    protected class GoogleKeyguardCallback extends KeyguardIndicationController.BaseKeyguardCallback {
+    protected class GoogleKeyguardCallback
+            extends KeyguardIndicationController.BaseKeyguardCallback {
         protected GoogleKeyguardCallback() {
             super();
         }
@@ -138,44 +140,74 @@ public class KeyguardIndicationControllerGoogle extends KeyguardIndicationContro
             FeatureFlags featureFlags,
             IndicationHelper indicationHelper,
             KeyguardInteractor keyguardInteractor) {
-        super(context, mainLooper, wakeLockBuilder, keyguardStateController, statusBarStateController, keyguardUpdateMonitor,
-            dockManager, broadcastDispatcher, devicePolicyManager, iBatteryStats, userManager, executor, bgExecutor,
-            falsingManager, authController, lockPatternUtils, screenLifecycle, keyguardBypassController,
-            accessibilityManager, faceHelpMessageDeferral, keyguardLogger, alternateBouncerInteractor, alarmManager, userTracker, bouncerMessageInteractor,
-            featureFlags, indicationHelper, keyguardInteractor);
-        mBroadcastReceiver = new BroadcastReceiver() {
-            @Override
-            public final void onReceive(Context context, Intent intent) {
-                if ("com.google.android.systemui.adaptivecharging.ADAPTIVE_CHARGING_DEADLINE_SET".equals(intent.getAction())) {
-                    triggerAdaptiveChargingStatusUpdate();
-                } else if (Intent.ACTION_BATTERY_CHANGED.equals(intent.getAction())) {
-                    int status = intent.getIntExtra(BatteryManager.EXTRA_STATUS, -1);
-                    mIsCharging = status == BatteryManager.BATTERY_STATUS_CHARGING;
-                    int level = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
-                    int scale = intent.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
-                    float batterylvl = (level / (float) scale) * 100;
-                    mBatteryLevel = (int) batterylvl;
-                    updateDeviceEntryIndication(true);
-                }
-            }
-        };
-        mAdaptiveChargingStatusReceiver = new AdaptiveChargingManager.AdaptiveChargingStatusReceiver() {
-            @Override
-            public void onDestroyInterface() {}
+        super(
+                context,
+                mainLooper,
+                wakeLockBuilder,
+                keyguardStateController,
+                statusBarStateController,
+                keyguardUpdateMonitor,
+                dockManager,
+                broadcastDispatcher,
+                devicePolicyManager,
+                iBatteryStats,
+                userManager,
+                executor,
+                bgExecutor,
+                falsingManager,
+                authController,
+                lockPatternUtils,
+                screenLifecycle,
+                keyguardBypassController,
+                accessibilityManager,
+                faceHelpMessageDeferral,
+                keyguardLogger,
+                alternateBouncerInteractor,
+                alarmManager,
+                userTracker,
+                bouncerMessageInteractor,
+                featureFlags,
+                indicationHelper,
+                keyguardInteractor);
+        mBroadcastReceiver =
+                new BroadcastReceiver() {
+                    @Override
+                    public final void onReceive(Context context, Intent intent) {
+                        if ("com.google.android.systemui.adaptivecharging.ADAPTIVE_CHARGING_DEADLINE_SET"
+                                .equals(intent.getAction())) {
+                            triggerAdaptiveChargingStatusUpdate();
+                        } else if (Intent.ACTION_BATTERY_CHANGED.equals(intent.getAction())) {
+                            int status = intent.getIntExtra(BatteryManager.EXTRA_STATUS, -1);
+                            mIsCharging = status == BatteryManager.BATTERY_STATUS_CHARGING;
+                            int level = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
+                            int scale = intent.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
+                            float batterylvl = (level / (float) scale) * 100;
+                            mBatteryLevel = (int) batterylvl;
+                            updateDeviceEntryIndication(true);
+                        }
+                    }
+                };
+        mAdaptiveChargingStatusReceiver =
+                new AdaptiveChargingManager.AdaptiveChargingStatusReceiver() {
+                    @Override
+                    public void onDestroyInterface() {}
 
-            @Override
-            public void onReceiveStatus(int seconds, String stage) {
-                boolean wasActive = mAdaptiveChargingActive;
-                mAdaptiveChargingActive = AdaptiveChargingManager.isActive(stage, seconds);
-                long currentEstimation = mEstimatedChargeCompletion;
-                long currentTimeMillis = System.currentTimeMillis();
-                mEstimatedChargeCompletion = TimeUnit.SECONDS.toMillis(seconds + 29) + currentTimeMillis;
-                long abs = Math.abs(mEstimatedChargeCompletion - currentEstimation);
-                if (mAdaptiveChargingActive != wasActive || (mAdaptiveChargingActive && abs > TimeUnit.SECONDS.toMillis(30L))) {
-                    updateDeviceEntryIndication(true);
-                }
-            }
-        };
+                    @Override
+                    public void onReceiveStatus(int seconds, String stage) {
+                        boolean wasActive = mAdaptiveChargingActive;
+                        mAdaptiveChargingActive = AdaptiveChargingManager.isActive(stage, seconds);
+                        long currentEstimation = mEstimatedChargeCompletion;
+                        long currentTimeMillis = System.currentTimeMillis();
+                        mEstimatedChargeCompletion =
+                                TimeUnit.SECONDS.toMillis(seconds + 29) + currentTimeMillis;
+                        long abs = Math.abs(mEstimatedChargeCompletion - currentEstimation);
+                        if (mAdaptiveChargingActive != wasActive
+                                || (mAdaptiveChargingActive
+                                        && abs > TimeUnit.SECONDS.toMillis(30L))) {
+                            updateDeviceEntryIndication(true);
+                        }
+                    }
+                };
         mContext = context;
         mBroadcastDispatcher = broadcastDispatcher;
         mDeviceConfig = deviceConfigProxy;
@@ -185,8 +217,13 @@ public class KeyguardIndicationControllerGoogle extends KeyguardIndicationContro
     @Override
     public String computePowerIndication() {
         if (mIsCharging && mAdaptiveChargingActive) {
-            String formatTimeToFull = mAdaptiveChargingManager.formatTimeToFull(mEstimatedChargeCompletion);
-            return mContext.getResources().getString(R.string.adaptive_charging_time_estimate, NumberFormat.getPercentInstance().format(mBatteryLevel / 100.0f), formatTimeToFull);
+            String formatTimeToFull =
+                    mAdaptiveChargingManager.formatTimeToFull(mEstimatedChargeCompletion);
+            return mContext.getResources()
+                    .getString(
+                            R.string.adaptive_charging_time_estimate,
+                            NumberFormat.getPercentInstance().format(mBatteryLevel / 100.0f),
+                            formatTimeToFull);
         }
         return super.computePowerIndication();
     }
@@ -203,7 +240,14 @@ public class KeyguardIndicationControllerGoogle extends KeyguardIndicationContro
         if (TextUtils.isEmpty(charSequence)) {
             mRotateTextViewController.hideIndication(10);
         } else {
-            mRotateTextViewController.updateIndication(10, new KeyguardIndication.Builder().setMessage(charSequence).setIcon(mContext.getDrawable(R.anim.reverse_charging_animation)).setTextColor(mInitialTextColorState).build(), false);
+            mRotateTextViewController.updateIndication(
+                    10,
+                    new KeyguardIndication.Builder()
+                            .setMessage(charSequence)
+                            .setIcon(mContext.getDrawable(R.anim.reverse_charging_animation))
+                            .setTextColor(mInitialTextColorState)
+                            .build(),
+                    false);
         }
     }
 
@@ -224,17 +268,21 @@ public class KeyguardIndicationControllerGoogle extends KeyguardIndicationContro
         }
         mInited = true;
         DelayableExecutor delayableExecutor = mExecutor;
-        mDeviceConfig.addOnPropertiesChangedListener("adaptive_charging", delayableExecutor,
-            (properties) -> {
-                if (properties.getKeyset().contains("adaptive_charging_enabled")) {
-                    triggerAdaptiveChargingStatusUpdate();
-                }
-        });
+        mDeviceConfig.addOnPropertiesChangedListener(
+                "adaptive_charging",
+                delayableExecutor,
+                (properties) -> {
+                    if (properties.getKeyset().contains("adaptive_charging_enabled")) {
+                        triggerAdaptiveChargingStatusUpdate();
+                    }
+                });
         triggerAdaptiveChargingStatusUpdate();
         IntentFilter intentFilter = new IntentFilter();
-        intentFilter.addAction("com.google.android.systemui.adaptivecharging.ADAPTIVE_CHARGING_DEADLINE_SET");
+        intentFilter.addAction(
+                "com.google.android.systemui.adaptivecharging.ADAPTIVE_CHARGING_DEADLINE_SET");
         intentFilter.addAction(Intent.ACTION_BATTERY_CHANGED);
-        mBroadcastDispatcher.registerReceiver(mBroadcastReceiver, intentFilter, null, UserHandle.ALL);
+        mBroadcastDispatcher.registerReceiver(
+                mBroadcastReceiver, intentFilter, null, UserHandle.ALL);
     }
 
     public void triggerAdaptiveChargingStatusUpdate() {

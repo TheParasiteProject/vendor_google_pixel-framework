@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.ViewConfiguration;
+
 import androidx.viewpager.widget.ViewPager;
 
 public class InterceptingViewPager extends ViewPager {

@@ -18,18 +18,19 @@ package com.google.android.systemui.qs.tiles;
 
 import android.os.Handler;
 import android.os.Looper;
+
 import com.android.internal.logging.MetricsLogger;
 import com.android.systemui.dagger.qualifiers.Background;
 import com.android.systemui.dagger.qualifiers.Main;
-import com.android.systemui.res.R;
-import com.android.systemui.qs.QsEventLogger;
-import com.android.systemui.qs.QSHost;
-import com.android.systemui.qs.logging.QSLogger;
-import com.android.systemui.qs.tiles.BatterySaverTile;
 import com.android.systemui.plugins.ActivityStarter;
 import com.android.systemui.plugins.FalsingManager;
 import com.android.systemui.plugins.qs.QSTile;
 import com.android.systemui.plugins.statusbar.StatusBarStateController;
+import com.android.systemui.qs.QSHost;
+import com.android.systemui.qs.QsEventLogger;
+import com.android.systemui.qs.logging.QSLogger;
+import com.android.systemui.qs.tiles.BatterySaverTile;
+import com.android.systemui.res.R;
 import com.android.systemui.statusbar.policy.BatteryController;
 import com.android.systemui.util.settings.SecureSettings;
 
@@ -42,8 +43,30 @@ public class BatterySaverTileGoogle extends BatterySaverTile {
     private boolean mExtreme;
 
     @Inject
-    public BatterySaverTileGoogle(QSHost qSHost, QsEventLogger qsEventLogger, @Background Looper looper, @Main Handler handler, FalsingManager falsingManager, MetricsLogger metricsLogger, StatusBarStateController statusBarStateController, ActivityStarter activityStarter, QSLogger qSLogger, BatteryController batteryController, SecureSettings secureSettings) {
-        super(qSHost, qsEventLogger, looper, handler, falsingManager, metricsLogger, statusBarStateController, activityStarter, qSLogger, batteryController, secureSettings);
+    public BatterySaverTileGoogle(
+            QSHost qSHost,
+            QsEventLogger qsEventLogger,
+            @Background Looper looper,
+            @Main Handler handler,
+            FalsingManager falsingManager,
+            MetricsLogger metricsLogger,
+            StatusBarStateController statusBarStateController,
+            ActivityStarter activityStarter,
+            QSLogger qSLogger,
+            BatteryController batteryController,
+            SecureSettings secureSettings) {
+        super(
+                qSHost,
+                qsEventLogger,
+                looper,
+                handler,
+                falsingManager,
+                metricsLogger,
+                statusBarStateController,
+                activityStarter,
+                qSLogger,
+                batteryController,
+                secureSettings);
     }
 
     @Override

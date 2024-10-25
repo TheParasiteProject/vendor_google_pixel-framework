@@ -5,9 +5,9 @@ import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
 import com.android.systemui.res.R;
 
 public class PageIndicator extends LinearLayout {
@@ -44,7 +44,7 @@ public class PageIndicator extends LinearLayout {
     }
 
     public static int getAttrColor(Context context, int attr) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(new int[]{attr});
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(new int[] {attr});
         int color = obtainStyledAttributes.getColor(0, 0);
         obtainStyledAttributes.recycle();
         return color;
@@ -52,7 +52,9 @@ public class PageIndicator extends LinearLayout {
 
     public void setNumPages(int pages) {
         if (pages <= 0) {
-            Log.w("PageIndicator", "Total number of pages invalid: " + pages + ". Assuming 1 page.");
+            Log.w(
+                    "PageIndicator",
+                    "Total number of pages invalid: " + pages + ". Assuming 1 page.");
             pages = 1;
         }
         if (pages < 2) {
@@ -75,7 +77,9 @@ public class PageIndicator extends LinearLayout {
 
     public void setPageOffset(int position, float positionOffset) {
         int i4 = Float.compare(positionOffset, 0.0f);
-        if ((i4 != 0 || position != this.mCurrentPageIndex) && position >= 0 && position < getChildCount() - 1) {
+        if ((i4 != 0 || position != this.mCurrentPageIndex)
+                && position >= 0
+                && position < getChildCount() - 1) {
             ImageView imageView = (ImageView) getChildAt(position);
             int childIndex = position + 1;
             ImageView imageView2 = (ImageView) getChildAt(childIndex);
@@ -92,7 +96,8 @@ public class PageIndicator extends LinearLayout {
                     childIndex = position + 2;
                 }
                 Object[] offset = {Integer.valueOf(childIndex), Integer.valueOf(this.mNumPages)};
-                setContentDescription(getContext().getString(R.string.accessibility_smartspace_page, offset));
+                setContentDescription(
+                        getContext().getString(R.string.accessibility_smartspace_page, offset));
             }
         }
     }
@@ -103,10 +108,14 @@ public class PageIndicator extends LinearLayout {
         for (int i = 0; i < childCount; i++) {
             removeViewAt(0);
         }
-        int dimensionPixelSize = getContext().getResources().getDimensionPixelSize(R.dimen.page_indicator_dot_margin);
+        int dimensionPixelSize =
+                getContext()
+                        .getResources()
+                        .getDimensionPixelSize(R.dimen.page_indicator_dot_margin);
         int i2 = 0;
         while (i2 < this.mNumPages) {
-            ImageView imageView = i2 < getChildCount() ? (ImageView) getChildAt(i2) : new ImageView(getContext());
+            ImageView imageView =
+                    i2 < getChildCount() ? (ImageView) getChildAt(i2) : new ImageView(getContext());
             if (i2 < getChildCount()) {
                 lp = (LinearLayout.LayoutParams) imageView.getLayoutParams();
             } else {
@@ -125,7 +134,11 @@ public class PageIndicator extends LinearLayout {
             if (i2 < getChildCount()) {
                 imageView.setLayoutParams(lp);
             } else {
-                Drawable drawable = getContext().getResources().getDrawable(R.drawable.page_indicator_dot, getContext().getTheme());
+                Drawable drawable =
+                        getContext()
+                                .getResources()
+                                .getDrawable(
+                                        R.drawable.page_indicator_dot, getContext().getTheme());
                 drawable.setTint(this.mPrimaryColor);
                 imageView.setImageDrawable(drawable);
                 addView(imageView, lp);
@@ -142,6 +155,11 @@ public class PageIndicator extends LinearLayout {
             imageView.setAlpha(i2 == this.mCurrentPageIndex ? 1.0f : 0.4f);
             i2++;
         }
-        setContentDescription(getContext().getString(R.string.accessibility_smartspace_page, 1, Integer.valueOf(this.mNumPages)));
+        setContentDescription(
+                getContext()
+                        .getString(
+                                R.string.accessibility_smartspace_page,
+                                1,
+                                Integer.valueOf(this.mNumPages)));
     }
 }

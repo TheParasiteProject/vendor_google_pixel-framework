@@ -23,23 +23,24 @@ import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.UserHandle;
+
 import androidx.core.app.NotificationCompat;
+
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.systemui.res.R;
 import com.android.systemui.util.NotificationChannels;
+
 import com.google.android.systemui.googlebattery.AdaptiveChargingManager;
-import com.google.android.systemui.power.AdaptiveChargingNotification;
+
 import java.util.concurrent.TimeUnit;
 
 class AdaptiveChargingNotification {
     private final AdaptiveChargingManager mAdaptiveChargingManager;
-    @VisibleForTesting
-    boolean mAdaptiveChargingQueryInBackground;
+    @VisibleForTesting boolean mAdaptiveChargingQueryInBackground;
     private final Context mContext;
     private final Handler mHandler;
     private final NotificationManager mNotificationManager;
-    @VisibleForTesting
-    boolean mWasActive;
+    @VisibleForTesting boolean mWasActive;
 
     AdaptiveChargingNotification(Context context) {
         this(context, new AdaptiveChargingManager(context));
@@ -97,20 +98,22 @@ class AdaptiveChargingNotification {
         if (!mAdaptiveChargingManager.shouldShowNotification()) {
             return;
         }
-        final AdaptiveChargingStatusReceiver adaptiveChargingStatusReceiver = new AdaptiveChargingStatusReceiver(forceUpdate);
+        final AdaptiveChargingStatusReceiver adaptiveChargingStatusReceiver =
+                new AdaptiveChargingStatusReceiver(forceUpdate);
         if (!mAdaptiveChargingQueryInBackground) {
             mAdaptiveChargingManager.queryStatus(adaptiveChargingStatusReceiver);
         } else {
-            AsyncTask.execute(() -> mAdaptiveChargingManager.queryStatus(adaptiveChargingStatusReceiver));
+            AsyncTask.execute(
+                    () -> mAdaptiveChargingManager.queryStatus(adaptiveChargingStatusReceiver));
         }
     }
 
-    class AdaptiveChargingStatusReceiver implements AdaptiveChargingManager.AdaptiveChargingStatusReceiver {
+    class AdaptiveChargingStatusReceiver
+            implements AdaptiveChargingManager.AdaptiveChargingStatusReceiver {
         final boolean forceUpdate;
 
         @Override
-        public void onDestroyInterface() {
-        }
+        public void onDestroyInterface() {}
 
         AdaptiveChargingStatusReceiver(boolean forceUpdate) {
             this.forceUpdate = forceUpdate;
@@ -124,9 +127,30 @@ class AdaptiveChargingNotification {
 
     private void sendNotification(boolean z, int i) {
         if (!mWasActive || z) {
-            NotificationCompat.Builder addAction = new NotificationCompat.Builder(mContext, NotificationChannels.BATTERY).setShowWhen(false).setSmallIcon(R.drawable.ic_battery_charging).setContentTitle(mContext.getString(R.string.adaptive_charging_notify_title)).setContentText(mContext.getString(R.string.adaptive_charging_notify_des, mAdaptiveChargingManager.formatTimeToFull(System.currentTimeMillis() + TimeUnit.SECONDS.toMillis(i + 29)))).addAction(0, mContext.getString(R.string.adaptive_charging_notify_turn_off_once), PowerUtils.createNormalChargingIntent(mContext, "PNW.acChargeNormally"));
+            NotificationCompat.Builder addAction =
+                    new NotificationCompat.Builder(mContext, NotificationChannels.BATTERY)
+                            .setShowWhen(false)
+                            .setSmallIcon(R.drawable.ic_battery_charging)
+                            .setContentTitle(
+                                    mContext.getString(R.string.adaptive_charging_notify_title))
+                            .setContentText(
+                                    mContext.getString(
+                                            R.string.adaptive_charging_notify_des,
+                                            mAdaptiveChargingManager.formatTimeToFull(
+                                                    System.currentTimeMillis()
+                                                            + TimeUnit.SECONDS.toMillis(i + 29))))
+                            .addAction(
+                                    0,
+                                    mContext.getString(
+                                            R.string.adaptive_charging_notify_turn_off_once),
+                                    PowerUtils.createNormalChargingIntent(
+                                            mContext, "PNW.acChargeNormally"));
             PowerUtils.overrideNotificationAppName(mContext, addAction, 17039652);
-            mNotificationManager.notifyAsUser("adaptive_charging", PowerUtils.AC_NOTIFICATION_ID, addAction.build(), UserHandle.ALL);
+            mNotificationManager.notifyAsUser(
+                    "adaptive_charging",
+                    PowerUtils.AC_NOTIFICATION_ID,
+                    addAction.build(),
+                    UserHandle.ALL);
             mWasActive = true;
         }
     }
@@ -135,7 +159,8 @@ class AdaptiveChargingNotification {
         if (!mWasActive) {
             return;
         }
-        mNotificationManager.cancelAsUser("adaptive_charging", PowerUtils.AC_NOTIFICATION_ID, UserHandle.ALL);
+        mNotificationManager.cancelAsUser(
+                "adaptive_charging", PowerUtils.AC_NOTIFICATION_ID, UserHandle.ALL);
         mWasActive = false;
     }
 }

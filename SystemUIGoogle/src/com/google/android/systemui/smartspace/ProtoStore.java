@@ -2,8 +2,11 @@ package com.google.android.systemui.smartspace;
 
 import android.content.Context;
 import android.util.Log;
+
 import com.android.systemui.smartspace.nano.SmartspaceProto;
+
 import com.google.protobuf.nano.MessageNano;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

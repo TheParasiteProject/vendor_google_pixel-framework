@@ -21,8 +21,10 @@ public final class BcSmartspaceSubcardLoggingInfo {
         if (!(obj instanceof BcSmartspaceSubcardLoggingInfo)) {
             return false;
         }
-        BcSmartspaceSubcardLoggingInfo bcSmartspaceSubcardLoggingInfo = (BcSmartspaceSubcardLoggingInfo) obj;
-        if (this.mClickedSubcardIndex != bcSmartspaceSubcardLoggingInfo.mClickedSubcardIndex || !Objects.equals(this.mSubcards, bcSmartspaceSubcardLoggingInfo.mSubcards)) {
+        BcSmartspaceSubcardLoggingInfo bcSmartspaceSubcardLoggingInfo =
+                (BcSmartspaceSubcardLoggingInfo) obj;
+        if (this.mClickedSubcardIndex != bcSmartspaceSubcardLoggingInfo.mClickedSubcardIndex
+                || !Objects.equals(this.mSubcards, bcSmartspaceSubcardLoggingInfo.mSubcards)) {
             z = false;
         }
         return z;

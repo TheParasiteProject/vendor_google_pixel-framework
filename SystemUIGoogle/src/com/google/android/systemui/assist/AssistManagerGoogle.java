@@ -34,8 +34,8 @@ import com.android.keyguard.KeyguardUpdateMonitorCallback;
 import com.android.systemui.assist.AssistLogger;
 import com.android.systemui.assist.AssistManager;
 import com.android.systemui.assist.AssistantSessionEvent;
-import com.android.systemui.assist.domain.interactor.AssistInteractor;
 import com.android.systemui.assist.PhoneStateMonitor;
+import com.android.systemui.assist.domain.interactor.AssistInteractor;
 import com.android.systemui.assist.ui.DefaultUiController;
 import com.android.systemui.broadcast.BroadcastDispatcher;
 import com.android.systemui.dagger.SysUISingleton;
@@ -48,16 +48,17 @@ import com.android.systemui.settings.UserTracker;
 import com.android.systemui.shared.system.QuickStepContract;
 import com.android.systemui.statusbar.CommandQueue;
 import com.android.systemui.statusbar.policy.DeviceProvisionedController;
+import com.android.systemui.user.domain.interactor.SelectedUserInteractor;
+import com.android.systemui.util.settings.SecureSettings;
+
 import com.google.android.systemui.assist.uihints.AssistantPresenceHandler;
 import com.google.android.systemui.assist.uihints.GoogleDefaultUiController;
 import com.google.android.systemui.assist.uihints.NgaMessageHandler;
 import com.google.android.systemui.assist.uihints.NgaUiController;
-import com.android.systemui.user.domain.interactor.SelectedUserInteractor;
-import com.android.systemui.util.settings.SecureSettings;
-
-import javax.inject.Inject;
 
 import dagger.Lazy;
+
+import javax.inject.Inject;
 
 @SysUISingleton
 public class AssistManagerGoogle extends AssistManager {
@@ -104,12 +105,23 @@ public class AssistManagerGoogle extends AssistManager {
             NgaUiController ngaUiController,
             NgaMessageHandler ngaMessageHandler,
             IWindowManager iWindowManager) {
-        super(controller, context, assistUtils, commandQueue,
-                phoneStateMonitor, overviewProxyService,
-                sysUiState, defaultUiController,
-                assistLogger, uiHandler, userTracker,
-                displayTracker, secureSettings,
-                selectedUserInteractor, activityManager, interactor);
+        super(
+                controller,
+                context,
+                assistUtils,
+                commandQueue,
+                phoneStateMonitor,
+                overviewProxyService,
+                sysUiState,
+                defaultUiController,
+                assistLogger,
+                uiHandler,
+                userTracker,
+                displayTracker,
+                secureSettings,
+                selectedUserInteractor,
+                activityManager,
+                interactor);
         mUiHandler = uiHandler;
         mDefaultUiController = googleDefaultUiController;
         mUiController = googleDefaultUiController;
@@ -117,51 +129,56 @@ public class AssistManagerGoogle extends AssistManager {
         mWindowManagerService = iWindowManager;
         mOpaEnabledReceiver = opaEnabledReceiver;
         addOpaEnabledListener(opaEnabledDispatcher);
-        keyguardUpdateMonitor.registerCallback(new KeyguardUpdateMonitorCallback() {
-            @Override
-            public void onUserSwitching(int i) {
-                mOpaEnabledReceiver.onUserSwitching(i);
-            }
-        });
-        mNavigationMode = navigationModeController.addListener(new NavigationModeController.ModeChangedListener() {
-            @Override
-            public final void onNavigationModeChanged(int i) {
-                mNavigationMode = i;
-            }
-        });
-        mAssistantPresenceHandler = assistantPresenceHandler;
-        mAssistantPresenceHandler.registerAssistantPresenceChangeListener(new AssistantPresenceHandler.AssistantPresenceChangeListener() {
-            @Override
-            public final void onAssistantPresenceChanged(boolean isGoogleAssistant, boolean isNga) {
-
-
-                if (mGoogleIsAssistant != isGoogleAssistant || mNgaIsAssistant != isNga) {
-                    if (isNga) {
-                        if (!mUiController.equals(mNgaUiController)) {
-                            mUiController = mNgaUiController;
-                            mUiHandler.post(() -> mUiController.hide());
-                        }
-                    } else {
-                        if (!mUiController.equals(mDefaultUiController)) {
-                            mUiController = mDefaultUiController;
-                            mUiHandler.post(() -> mUiController.hide());
-                        }
-                        mDefaultUiController.setGoogleAssistant(isGoogleAssistant);
+        keyguardUpdateMonitor.registerCallback(
+                new KeyguardUpdateMonitorCallback() {
+                    @Override
+                    public void onUserSwitching(int i) {
+                        mOpaEnabledReceiver.onUserSwitching(i);
                     }
-                    mGoogleIsAssistant = isGoogleAssistant;
-                    mNgaIsAssistant = isNga;
-                }
-                mCheckAssistantStatus = false;
-            }
-        });
+                });
+        mNavigationMode =
+                navigationModeController.addListener(
+                        new NavigationModeController.ModeChangedListener() {
+                            @Override
+                            public final void onNavigationModeChanged(int i) {
+                                mNavigationMode = i;
+                            }
+                        });
+        mAssistantPresenceHandler = assistantPresenceHandler;
+        mAssistantPresenceHandler.registerAssistantPresenceChangeListener(
+                new AssistantPresenceHandler.AssistantPresenceChangeListener() {
+                    @Override
+                    public final void onAssistantPresenceChanged(
+                            boolean isGoogleAssistant, boolean isNga) {
+
+                        if (mGoogleIsAssistant != isGoogleAssistant || mNgaIsAssistant != isNga) {
+                            if (isNga) {
+                                if (!mUiController.equals(mNgaUiController)) {
+                                    mUiController = mNgaUiController;
+                                    mUiHandler.post(() -> mUiController.hide());
+                                }
+                            } else {
+                                if (!mUiController.equals(mDefaultUiController)) {
+                                    mUiController = mDefaultUiController;
+                                    mUiHandler.post(() -> mUiController.hide());
+                                }
+                                mDefaultUiController.setGoogleAssistant(isGoogleAssistant);
+                            }
+                            mGoogleIsAssistant = isGoogleAssistant;
+                            mNgaIsAssistant = isNga;
+                        }
+                        mCheckAssistantStatus = false;
+                    }
+                });
         mNgaMessageHandler = ngaMessageHandler;
-        mOnProcessBundle = new Runnable() {
-            @Override
-            public final void run() {
-                mAssistantPresenceHandler.requestAssistantPresenceUpdate();
-                mCheckAssistantStatus = false;
-            }
-        };
+        mOnProcessBundle =
+                new Runnable() {
+                    @Override
+                    public final void run() {
+                        mAssistantPresenceHandler.requestAssistantPresenceUpdate();
+                        mCheckAssistantStatus = false;
+                    }
+                };
     }
 
     public boolean shouldUseHomeButtonAnimations() {
@@ -170,39 +187,43 @@ public class AssistManagerGoogle extends AssistManager {
 
     @Override
     protected void registerVoiceInteractionSessionListener() {
-        mAssistUtils.registerVoiceInteractionSessionListener(new IVoiceInteractionSessionListener.Stub() {
-            @Override
-            public void onVoiceSessionShown() throws RemoteException {
-                mAssistLogger.reportAssistantSessionEvent(AssistantSessionEvent.ASSISTANT_SESSION_UPDATE);
-            }
-
-            @Override
-            public void onVoiceSessionHidden() throws RemoteException {
-                mAssistLogger.reportAssistantSessionEvent(AssistantSessionEvent.ASSISTANT_SESSION_CLOSE);
-            }
-
-            @Override
-            public final void onVoiceSessionWindowVisibilityChanged(boolean z) throws RemoteException {
-            }
-
-            @Override
-            public void onSetUiHints(Bundle bundle) {
-                String string = bundle.getString("action");
-                if ("set_assist_gesture_constrained".equals(string)) {
-                    mSysUiState.get()
-                            .setFlag(8192, bundle.getBoolean(CONSTRAINED_KEY, false))
-                            .commitUpdate(DEFAULT_DISPLAY);
-                } else if ("show_global_actions".equals(string)) {
-                    try {
-                        mWindowManagerService.showGlobalActions();
-                    } catch (RemoteException e) {
-                        Log.e("AssistManagerGoogle", "showGlobalActions failed", e);
+        mAssistUtils.registerVoiceInteractionSessionListener(
+                new IVoiceInteractionSessionListener.Stub() {
+                    @Override
+                    public void onVoiceSessionShown() throws RemoteException {
+                        mAssistLogger.reportAssistantSessionEvent(
+                                AssistantSessionEvent.ASSISTANT_SESSION_UPDATE);
                     }
-                } else {
-                    mNgaMessageHandler.processBundle(bundle, mOnProcessBundle);
-                }
-            }
-        });
+
+                    @Override
+                    public void onVoiceSessionHidden() throws RemoteException {
+                        mAssistLogger.reportAssistantSessionEvent(
+                                AssistantSessionEvent.ASSISTANT_SESSION_CLOSE);
+                    }
+
+                    @Override
+                    public final void onVoiceSessionWindowVisibilityChanged(boolean z)
+                            throws RemoteException {}
+
+                    @Override
+                    public void onSetUiHints(Bundle bundle) {
+                        String string = bundle.getString("action");
+                        if ("set_assist_gesture_constrained".equals(string)) {
+                            mSysUiState
+                                    .get()
+                                    .setFlag(8192, bundle.getBoolean(CONSTRAINED_KEY, false))
+                                    .commitUpdate(DEFAULT_DISPLAY);
+                        } else if ("show_global_actions".equals(string)) {
+                            try {
+                                mWindowManagerService.showGlobalActions();
+                            } catch (RemoteException e) {
+                                Log.e("AssistManagerGoogle", "showGlobalActions failed", e);
+                            }
+                        } else {
+                            mNgaMessageHandler.processBundle(bundle, mOnProcessBundle);
+                        }
+                    }
+                });
     }
 
     @Override
@@ -241,7 +262,10 @@ public class AssistManagerGoogle extends AssistManager {
     }
 
     private void checkSqueezeGestureStatus() {
-        boolean z = Settings.Secure.getInt(mContext.getContentResolver(), "assist_gesture_setup_complete", 0) == 1;
+        boolean z =
+                Settings.Secure.getInt(
+                                mContext.getContentResolver(), "assist_gesture_setup_complete", 0)
+                        == 1;
         mSqueezeSetUp = z;
     }
 }

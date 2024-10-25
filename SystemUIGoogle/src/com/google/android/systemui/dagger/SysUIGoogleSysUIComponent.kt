@@ -12,39 +12,37 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
-*/
+ */
 
 @file:Suppress("DEPRECATION")
+
 package com.google.android.systemui.dagger
 
+import com.android.systemui.SystemUIAppComponentFactoryBase
 import com.android.systemui.dagger.*
 import com.android.systemui.globalactions.ShutdownUiModule
 import com.android.systemui.keyguard.CustomizationProvider
+import com.android.systemui.keyguard.KeyguardSliceProvider
 import com.android.systemui.people.PeopleProvider
 import com.android.systemui.statusbar.NotificationInsetsModule
 import com.android.systemui.statusbar.QsFrameTranslateModule
-import com.android.systemui.SystemUIAppComponentFactoryBase
-import com.android.systemui.keyguard.KeyguardSliceProvider
 import com.google.android.systemui.smartspace.KeyguardSmartspaceStartable
-import com.google.android.systemui.smartspace.SmartSpaceController
-import com.google.android.systemui.statusbar.dagger.CentralSurfacesGoogleModule
 import dagger.Subcomponent
 
 /** Dagger Subcomponent for Core SysUI. */
 @SysUISingleton
 @Subcomponent(
-    modules = [
-        DefaultComponentBinder::class,
-        DependencyProvider::class,
-        NotificationInsetsModule::class,
-        QsFrameTranslateModule::class,
-        ShutdownUiModule::class,
-        SystemUIGoogleBinder::class,
-        SystemUIModule::class,
-        SystemUIGoogleCoreStartableModule::class,
-        SystemUIGoogleModule::class
-    ]
-)
+    modules =
+        [
+            DefaultComponentBinder::class,
+            DependencyProvider::class,
+            NotificationInsetsModule::class,
+            QsFrameTranslateModule::class,
+            ShutdownUiModule::class,
+            SystemUIGoogleBinder::class,
+            SystemUIModule::class,
+            SystemUIGoogleCoreStartableModule::class,
+            SystemUIGoogleModule::class])
 interface SysUIGoogleSysUIComponent : SysUIComponent {
     /** Builder for a SysUIComponent. */
     @Subcomponent.Builder

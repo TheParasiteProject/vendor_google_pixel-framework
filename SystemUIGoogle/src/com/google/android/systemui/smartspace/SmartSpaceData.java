@@ -17,6 +17,7 @@
 package com.google.android.systemui.smartspace;
 
 import android.util.Log;
+
 import androidx.annotation.NonNull;
 
 public class SmartSpaceData {
@@ -43,7 +44,8 @@ public class SmartSpaceData {
         long expiration;
         long currentTimeMillis = System.currentTimeMillis();
         if (hasCurrent() && hasWeather()) {
-            expiration = Math.min(this.mCurrentCard.getExpiration(), this.mWeatherCard.getExpiration());
+            expiration =
+                    Math.min(this.mCurrentCard.getExpiration(), this.mWeatherCard.getExpiration());
         } else if (hasCurrent()) {
             expiration = this.mCurrentCard.getExpiration();
         } else if (!hasWeather()) {

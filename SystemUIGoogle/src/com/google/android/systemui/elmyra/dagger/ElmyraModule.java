@@ -25,6 +25,7 @@ import com.android.systemui.statusbar.phone.HeadsUpManagerPhone;
 import com.android.systemui.statusbar.phone.HeadsUpModule;
 import com.android.systemui.statusbar.policy.KeyguardStateController;
 import com.android.systemui.telephony.TelephonyListenerManager;
+
 import com.google.android.systemui.assist.AssistManagerGoogle;
 import com.google.android.systemui.elmyra.ServiceConfigurationGoogle;
 import com.google.android.systemui.elmyra.actions.CameraAction;
@@ -39,89 +40,130 @@ import com.google.android.systemui.elmyra.feedback.OpaLockscreen;
 import com.google.android.systemui.elmyra.feedback.SquishyNavigationButtons;
 import com.google.android.systemui.elmyra.gates.TelephonyActivity;
 import com.google.android.systemui.statusbar.phone.CentralSurfacesGoogle;
-
 import com.google.android.systemui.statusbar.phone.dagger.StatusBarPhoneModule;
-
-import java.util.Optional;
 
 import dagger.Module;
 import dagger.Provides;
 
-@Module(includes = {
-        HeadsUpModule.class,
-        StatusBarPhoneModule.class,
-})
+import java.util.Optional;
+
+@Module(
+        includes = {
+            HeadsUpModule.class,
+            StatusBarPhoneModule.class,
+        })
 public class ElmyraModule {
 
     @Provides
     @SysUISingleton
-    static ServiceConfigurationGoogle provideServiceConfigurationGoogle(Context context, AssistInvocationEffect assistInvocationEffect, LaunchOpa.Builder builder, SettingsAction.Builder builderB, CameraAction.Builder builderC, SetupWizardAction.Builder builderD, SquishyNavigationButtons squishyNavigationButtons, UnpinNotifications unpinNotifications, SilenceCall silenceCall, TelephonyActivity telephonyActivity) {
-        return new ServiceConfigurationGoogle(context, assistInvocationEffect, builder, builderB, builderC, builderD, squishyNavigationButtons, unpinNotifications, silenceCall, telephonyActivity);
+    static ServiceConfigurationGoogle provideServiceConfigurationGoogle(
+            Context context,
+            AssistInvocationEffect assistInvocationEffect,
+            LaunchOpa.Builder builder,
+            SettingsAction.Builder builderB,
+            CameraAction.Builder builderC,
+            SetupWizardAction.Builder builderD,
+            SquishyNavigationButtons squishyNavigationButtons,
+            UnpinNotifications unpinNotifications,
+            SilenceCall silenceCall,
+            TelephonyActivity telephonyActivity) {
+        return new ServiceConfigurationGoogle(
+                context,
+                assistInvocationEffect,
+                builder,
+                builderB,
+                builderC,
+                builderD,
+                squishyNavigationButtons,
+                unpinNotifications,
+                silenceCall,
+                telephonyActivity);
     }
 
     @Provides
     @SysUISingleton
-    static AssistInvocationEffect provideAssistInvocationEffectElmyra(AssistManagerGoogle assistManagerGoogle, OpaHomeButton opaHomeButton, OpaLockscreen opaLockscreen) {
+    static AssistInvocationEffect provideAssistInvocationEffectElmyra(
+            AssistManagerGoogle assistManagerGoogle,
+            OpaHomeButton opaHomeButton,
+            OpaLockscreen opaLockscreen) {
         return new AssistInvocationEffect(assistManagerGoogle, opaHomeButton, opaLockscreen);
     }
 
     @Provides
     @SysUISingleton
-    static OpaHomeButton provideOpaHomeButton(KeyguardViewMediator keyguardViewMediator, CentralSurfacesGoogle centralSurfacesGoogle, NavigationModeController navigationModeController) {
-        return new OpaHomeButton(keyguardViewMediator, centralSurfacesGoogle, navigationModeController);
+    static OpaHomeButton provideOpaHomeButton(
+            KeyguardViewMediator keyguardViewMediator,
+            CentralSurfacesGoogle centralSurfacesGoogle,
+            NavigationModeController navigationModeController) {
+        return new OpaHomeButton(
+                keyguardViewMediator, centralSurfacesGoogle, navigationModeController);
     }
 
     @Provides
     @SysUISingleton
-    static OpaLockscreen provideOpaLockscreen(CentralSurfacesGoogle centralSurfacesGoogle, KeyguardStateController keyguardStateController) {
+    static OpaLockscreen provideOpaLockscreen(
+            CentralSurfacesGoogle centralSurfacesGoogle,
+            KeyguardStateController keyguardStateController) {
         return new OpaLockscreen(centralSurfacesGoogle, keyguardStateController);
     }
 
     @Provides
     @SysUISingleton
-    static SquishyNavigationButtons provideSquishyNavigationButtons(Context context, KeyguardViewMediator keyguardViewMediator, CentralSurfacesGoogle centralSurfacesGoogle, NavigationModeController navigationModeController) {
-        return new SquishyNavigationButtons(context, keyguardViewMediator, centralSurfacesGoogle, navigationModeController);
+    static SquishyNavigationButtons provideSquishyNavigationButtons(
+            Context context,
+            KeyguardViewMediator keyguardViewMediator,
+            CentralSurfacesGoogle centralSurfacesGoogle,
+            NavigationModeController navigationModeController) {
+        return new SquishyNavigationButtons(
+                context, keyguardViewMediator, centralSurfacesGoogle, navigationModeController);
     }
 
     @Provides
     @SysUISingleton
-    static TelephonyActivity provideTelephonyActivityElmyra(Context context, TelephonyListenerManager telephonyListenerManager) {
+    static TelephonyActivity provideTelephonyActivityElmyra(
+            Context context, TelephonyListenerManager telephonyListenerManager) {
         return new TelephonyActivity(context, telephonyListenerManager);
     }
 
     @Provides
     @SysUISingleton
-    static SetupWizardAction.Builder provideSetupWizardAction(Context context, CentralSurfacesGoogle centralSurfacesGoogle) {
+    static SetupWizardAction.Builder provideSetupWizardAction(
+            Context context, CentralSurfacesGoogle centralSurfacesGoogle) {
         return new SetupWizardAction.Builder(context, centralSurfacesGoogle);
     }
 
     @Provides
     @SysUISingleton
-    static UnpinNotifications provideUnpinNotificationsElmyra(Context context, Optional<HeadsUpManagerPhone> optional) {
+    static UnpinNotifications provideUnpinNotificationsElmyra(
+            Context context, Optional<HeadsUpManagerPhone> optional) {
         return new UnpinNotifications(context, optional);
     }
 
     @Provides
     @SysUISingleton
-    static LaunchOpa.Builder provideLaunchOpaElmyra(Context context, CentralSurfacesGoogle centralSurfacesGoogle) {
+    static LaunchOpa.Builder provideLaunchOpaElmyra(
+            Context context, CentralSurfacesGoogle centralSurfacesGoogle) {
         return new LaunchOpa.Builder(context, centralSurfacesGoogle);
     }
 
     @Provides
     @SysUISingleton
-    static SilenceCall provideSilenceCallElmyra(Context context, TelephonyListenerManager telephonyListenerManager) {
+    static SilenceCall provideSilenceCallElmyra(
+            Context context, TelephonyListenerManager telephonyListenerManager) {
         return new SilenceCall(context, telephonyListenerManager);
     }
 
     @Provides
     @SysUISingleton
-    static SettingsAction.Builder provideSettingsActionElmyra(Context context, CentralSurfacesGoogle centralSurfacesGoogle) {
+    static SettingsAction.Builder provideSettingsActionElmyra(
+            Context context, CentralSurfacesGoogle centralSurfacesGoogle) {
         return new SettingsAction.Builder(context, centralSurfacesGoogle);
     }
 
     @Provides
     @SysUISingleton
-    static CameraAction.Builder provideCameraAction(Context context, CentralSurfacesGoogle centralSurfacesGoogle) {
+    static CameraAction.Builder provideCameraAction(
+            Context context, CentralSurfacesGoogle centralSurfacesGoogle) {
         return new CameraAction.Builder(context, centralSurfacesGoogle);
     }
 }

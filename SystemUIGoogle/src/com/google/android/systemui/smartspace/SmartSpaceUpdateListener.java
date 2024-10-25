@@ -19,9 +19,7 @@ package com.google.android.systemui.smartspace;
 public interface SmartSpaceUpdateListener {
     void onSmartSpaceUpdated(SmartSpaceData smartSpaceData);
 
-    default void onSensitiveModeChanged(boolean hidePrivate, boolean hideWork) {
-    }
+    default void onSensitiveModeChanged(boolean hidePrivate, boolean hideWork) {}
 
-    default void onGsaChanged() {
-    }
+    default void onGsaChanged() {}
 }

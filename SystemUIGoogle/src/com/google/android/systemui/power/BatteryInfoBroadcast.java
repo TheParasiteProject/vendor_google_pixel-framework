@@ -27,40 +27,39 @@ import android.os.Handler;
 import android.os.PowerManager;
 import android.os.SystemClock;
 import android.os.UserHandle;
-import android.provider.Settings;
 import android.util.Log;
+
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.systemui.broadcast.BroadcastSender;
 
 class BatteryInfoBroadcast {
-    @VisibleForTesting
-    private static long sBroadcastDelayFromBoot = 2400000;
+    @VisibleForTesting private static long sBroadcastDelayFromBoot = 2400000;
     private final BroadcastSender mBroadcastSender;
-    @VisibleForTesting
-    private final ContentObserver mContentObserver;
+    @VisibleForTesting private final ContentObserver mContentObserver;
     private final Context mContext;
-    @VisibleForTesting
-    private final BluetoothAdapter.OnMetadataChangedListener mMetadataListener;
+    @VisibleForTesting private final BluetoothAdapter.OnMetadataChangedListener mMetadataListener;
     private final PowerManager mPowerManager;
-    @VisibleForTesting
-    private long mLastFullChargeHour = -1;
+    @VisibleForTesting private long mLastFullChargeHour = -1;
     private final Handler mHandler = new Handler();
 
     BatteryInfoBroadcast(Context context, BroadcastSender broadcastSender) {
         mContext = context;
         mPowerManager = context.getSystemService(PowerManager.class);
-        ContentObserver contentObserver = new ContentObserver(mHandler) {
-            @Override
-            public final void onChange(boolean selfChange) {
-                sendBroadcast(createIntent("PNW.batteryStatusChanged"));
-            }
-        };
+        ContentObserver contentObserver =
+                new ContentObserver(mHandler) {
+                    @Override
+                    public final void onChange(boolean selfChange) {
+                        sendBroadcast(createIntent("PNW.batteryStatusChanged"));
+                    }
+                };
         mContentObserver = contentObserver;
-        mMetadataListener = new BluetoothAdapter.OnMetadataChangedListener() {
-            public final void onMetadataChanged(BluetoothDevice bluetoothDevice, int i, byte[] bArr) {
-                sendBroadcast(createIntent("PNW.bluetoothStatusChanged"));
-            }
-        };
+        mMetadataListener =
+                new BluetoothAdapter.OnMetadataChangedListener() {
+                    public final void onMetadataChanged(
+                            BluetoothDevice bluetoothDevice, int i, byte[] bArr) {
+                        sendBroadcast(createIntent("PNW.bluetoothStatusChanged"));
+                    }
+                };
         mBroadcastSender = broadcastSender;
     }
 
@@ -83,7 +82,8 @@ class BatteryInfoBroadcast {
             Log.d("sendBatteryChangeIntent", "Intent: " + intent + " Intent string: " + str);
         }
         String action = intent.getAction();
-        if (action.equals("android.intent.action.BATTERY_CHANGED") || action.equals("android.os.action.POWER_SAVE_MODE_CHANGED")) {
+        if (action.equals("android.intent.action.BATTERY_CHANGED")
+                || action.equals("android.os.action.POWER_SAVE_MODE_CHANGED")) {
             Intent createIntent = createIntent("PNW.batteryStatusChanged");
             if ("android.intent.action.BATTERY_CHANGED".equals(action)) {
                 createIntent.putExtra("battery_changed_intent", intent);
@@ -97,30 +97,47 @@ class BatteryInfoBroadcast {
             if (z) {
                 long elapsedRealtime = sBroadcastDelayFromBoot - SystemClock.elapsedRealtime();
                 if (elapsedRealtime > 0) {
-                    Log.d("BatteryInfoBroadcast", "cancel sendBroadcastToFetchUsageData when broadcastDelay is" + elapsedRealtime + "ms.");
+                    Log.d(
+                            "BatteryInfoBroadcast",
+                            "cancel sendBroadcastToFetchUsageData when broadcastDelay is"
+                                    + elapsedRealtime
+                                    + "ms.");
                 } else {
                     long currentTimeMillis = System.currentTimeMillis() / 3600000;
                     if (isInTheDifferentInterval(currentTimeMillis)) {
-                        sendBroadcast(new Intent("settings.intelligence.battery.action.FETCH_BATTERY_USAGE_DATA").setComponent(new ComponentName("com.android.settings", "com.google.android.settings.fuelgauge.BatteryBroadcastReceiver")));
+                        sendBroadcast(
+                                new Intent(
+                                                "settings.intelligence.battery.action.FETCH_BATTERY_USAGE_DATA")
+                                        .setComponent(
+                                                new ComponentName(
+                                                        "com.android.settings",
+                                                        "com.google.android.settings.fuelgauge.BatteryBroadcastReceiver")));
                         mLastFullChargeHour = currentTimeMillis;
-                        Log.d("BatteryInfoBroadcast", "Fetch battery usage data for full charge status.");
+                        Log.d(
+                                "BatteryInfoBroadcast",
+                                "Fetch battery usage data for full charge status.");
                     }
                 }
             }
             boolean isPowerSaveMode = mPowerManager.isPowerSaveMode();
             createIntent.putExtra("battery_save", isPowerSaveMode);
             sendBroadcast(createIntent);
-            Log.d("BatteryInfoBroadcast", "onReceive: " + action + " isPowerSaveMode: " + isPowerSaveMode);
-        } else if (action.equals("android.bluetooth.adapter.action.STATE_CHANGED") 
-            || action.equals("android.bluetooth.hearingaid.profile.action.CONNECTION_STATE_CHANGED") 
-            || action.equals("android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED") 
-            || action.equals("android.bluetooth.device.action.BATTERY_LEVEL_CHANGED") 
-            || action.equals("android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED") 
-            || action.equals("android.bluetooth.device.action.ALIAS_CHANGED") 
-            || action.equals("android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED")) {
-                Intent btStatusChangeIntent = createIntent("PNW.bluetoothStatusChanged");
-                btStatusChangeIntent.putExtra(action, intent);
-                sendBroadcast(btStatusChangeIntent);
+            Log.d(
+                    "BatteryInfoBroadcast",
+                    "onReceive: " + action + " isPowerSaveMode: " + isPowerSaveMode);
+        } else if (action.equals("android.bluetooth.adapter.action.STATE_CHANGED")
+                || action.equals(
+                        "android.bluetooth.hearingaid.profile.action.CONNECTION_STATE_CHANGED")
+                || action.equals(
+                        "android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED")
+                || action.equals("android.bluetooth.device.action.BATTERY_LEVEL_CHANGED")
+                || action.equals("android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED")
+                || action.equals("android.bluetooth.device.action.ALIAS_CHANGED")
+                || action.equals(
+                        "android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED")) {
+            Intent btStatusChangeIntent = createIntent("PNW.bluetoothStatusChanged");
+            btStatusChangeIntent.putExtra(action, intent);
+            sendBroadcast(btStatusChangeIntent);
         }
     }
 

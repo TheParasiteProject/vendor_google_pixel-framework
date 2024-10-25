@@ -20,8 +20,8 @@ import static com.android.systemui.Dependency.TIME_TICK_HANDLER_NAME;
 
 import android.app.WallpaperManager;
 import android.content.Context;
-import android.hardware.fingerprint.FingerprintManager;
 import android.hardware.devicestate.DeviceStateManager;
+import android.hardware.fingerprint.FingerprintManager;
 import android.os.Handler;
 import android.os.PowerManager;
 import android.os.SystemClock;
@@ -35,6 +35,7 @@ import android.widget.ImageView;
 import com.android.internal.logging.MetricsLogger;
 import com.android.keyguard.KeyguardUpdateMonitor;
 import com.android.keyguard.ViewMediatorCallback;
+import com.android.systemui.InitController;
 import com.android.systemui.accessibility.floatingmenu.AccessibilityFloatingMenuController;
 import com.android.systemui.animation.ActivityTransitionAnimator;
 import com.android.systemui.assist.AssistManager;
@@ -46,18 +47,17 @@ import com.android.systemui.charging.WiredChargingRippleController;
 import com.android.systemui.classifier.FalsingCollector;
 import com.android.systemui.colorextraction.SysuiColorExtractor;
 import com.android.systemui.communal.domain.interactor.CommunalInteractor;
+import com.android.systemui.dagger.SysUISingleton;
 import com.android.systemui.dagger.qualifiers.Main;
 import com.android.systemui.dagger.qualifiers.UiBackground;
-import com.android.systemui.dagger.SysUISingleton;
 import com.android.systemui.demomode.DemoModeController;
 import com.android.systemui.flags.FeatureFlags;
 import com.android.systemui.fragments.FragmentService;
-import com.android.systemui.InitController;
 import com.android.systemui.keyguard.KeyguardUnlockAnimationController;
 import com.android.systemui.keyguard.KeyguardViewMediator;
 import com.android.systemui.keyguard.ScreenLifecycle;
-import com.android.systemui.keyguard.ui.viewmodel.LightRevealScrimViewModel;
 import com.android.systemui.keyguard.WakefulnessLifecycle;
+import com.android.systemui.keyguard.ui.viewmodel.LightRevealScrimViewModel;
 import com.android.systemui.model.SysUiState;
 import com.android.systemui.navigationbar.NavigationBarController;
 import com.android.systemui.notetask.NoteTaskController;
@@ -66,14 +66,12 @@ import com.android.systemui.plugins.FalsingManager;
 import com.android.systemui.plugins.PluginDependencyProvider;
 import com.android.systemui.plugins.PluginManager;
 import com.android.systemui.power.domain.interactor.PowerInteractor;
-import com.android.systemui.recents.ScreenPinningRequest;
 import com.android.systemui.res.R;
 import com.android.systemui.scene.domain.interactor.WindowRootViewVisibilityInteractor;
 import com.android.systemui.scene.shared.flag.SceneContainerFlags;
-import com.android.systemui.settings.brightness.BrightnessSliderController;
 import com.android.systemui.settings.UserTracker;
+import com.android.systemui.settings.brightness.BrightnessSliderController;
 import com.android.systemui.shade.CameraLauncher;
-import com.android.systemui.shade.NotificationShadeWindowView;
 import com.android.systemui.shade.NotificationShadeWindowViewController;
 import com.android.systemui.shade.QuickSettingsController;
 import com.android.systemui.shade.ShadeController;
@@ -81,26 +79,23 @@ import com.android.systemui.shade.ShadeExpansionStateManager;
 import com.android.systemui.shade.ShadeLogger;
 import com.android.systemui.shade.ShadeSurface;
 import com.android.systemui.statusbar.CommandQueue;
-import com.android.systemui.statusbar.core.StatusBarInitializer;
-import com.android.systemui.statusbar.data.repository.StatusBarModeRepositoryStore;
-import com.android.systemui.statusbar.KeyguardIndicationController;
 import com.android.systemui.statusbar.LightRevealScrim;
 import com.android.systemui.statusbar.LockscreenShadeTransitionController;
-import com.android.systemui.statusbar.notification.init.NotificationsController;
-import com.android.systemui.statusbar.notification.interruption.NotificationInterruptStateProvider;
-import com.android.systemui.statusbar.notification.logging.NotificationLogger;
-import com.android.systemui.statusbar.notification.NotificationActivityStarter;
-import com.android.systemui.statusbar.notification.NotificationLaunchAnimatorControllerProvider;
-import com.android.systemui.statusbar.notification.NotificationLaunchAnimatorControllerProvider;
-import com.android.systemui.statusbar.notification.NotificationWakeUpCoordinator;
-import com.android.systemui.statusbar.notification.row.NotificationGutsManager;
-import com.android.systemui.statusbar.notification.stack.NotificationStackScrollLayoutController;
-import com.android.systemui.statusbar.NotificationLockscreenUserManager;
 import com.android.systemui.statusbar.NotificationMediaManager;
 import com.android.systemui.statusbar.NotificationPresenter;
 import com.android.systemui.statusbar.NotificationRemoteInputManager;
 import com.android.systemui.statusbar.NotificationShadeDepthController;
 import com.android.systemui.statusbar.NotificationShadeWindowController;
+import com.android.systemui.statusbar.PulseExpansionHandler;
+import com.android.systemui.statusbar.SysuiStatusBarStateController;
+import com.android.systemui.statusbar.core.StatusBarInitializer;
+import com.android.systemui.statusbar.data.repository.StatusBarModeRepositoryStore;
+import com.android.systemui.statusbar.notification.NotificationActivityStarter;
+import com.android.systemui.statusbar.notification.NotificationLaunchAnimatorControllerProvider;
+import com.android.systemui.statusbar.notification.NotificationWakeUpCoordinator;
+import com.android.systemui.statusbar.notification.init.NotificationsController;
+import com.android.systemui.statusbar.notification.row.NotificationGutsManager;
+import com.android.systemui.statusbar.notification.stack.NotificationStackScrollLayoutController;
 import com.android.systemui.statusbar.phone.*;
 import com.android.systemui.statusbar.phone.AutoHideController;
 import com.android.systemui.statusbar.phone.BiometricUnlockController;
@@ -110,7 +105,6 @@ import com.android.systemui.statusbar.phone.DozeServiceHost;
 import com.android.systemui.statusbar.phone.KeyguardBypassController;
 import com.android.systemui.statusbar.phone.LightBarController;
 import com.android.systemui.statusbar.phone.NotificationIconAreaController;
-import com.android.systemui.statusbar.phone.ongoingcall.OngoingCallController;
 import com.android.systemui.statusbar.phone.PhoneStatusBarPolicy;
 import com.android.systemui.statusbar.phone.StatusBarHideIconsForBouncerManager;
 import com.android.systemui.statusbar.phone.StatusBarKeyguardViewManager;
@@ -125,15 +119,13 @@ import com.android.systemui.statusbar.policy.FlashlightController;
 import com.android.systemui.statusbar.policy.HeadsUpManager;
 import com.android.systemui.statusbar.policy.KeyguardStateController;
 import com.android.systemui.statusbar.policy.UserInfoControllerImpl;
-import com.android.systemui.statusbar.PulseExpansionHandler;
-import com.android.systemui.statusbar.SysuiStatusBarStateController;
 import com.android.systemui.statusbar.window.StatusBarWindowController;
 import com.android.systemui.statusbar.window.StatusBarWindowStateController;
 import com.android.systemui.tuner.TunerService;
+import com.android.systemui.util.WallpaperController;
 import com.android.systemui.util.concurrency.DelayableExecutor;
 import com.android.systemui.util.concurrency.MessageRouter;
 import com.android.systemui.util.kotlin.JavaAdapter;
-import com.android.systemui.util.WallpaperController;
 import com.android.systemui.volume.VolumeComponent;
 import com.android.wm.shell.bubbles.Bubbles;
 import com.android.wm.shell.startingsurface.StartingSurface;
@@ -145,14 +137,14 @@ import com.google.android.systemui.reversecharging.ReverseChargingViewController
 import com.google.android.systemui.smartspace.SmartSpaceController;
 import com.google.android.systemui.statusbar.KeyguardIndicationControllerGoogle;
 
+import dagger.Lazy;
+
 import java.util.Optional;
 import java.util.concurrent.Executor;
 
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.inject.Provider;
-
-import dagger.Lazy;
 
 @SysUISingleton
 public class CentralSurfacesGoogle extends CentralSurfacesImpl {
@@ -287,55 +279,178 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
             Optional<ReverseChargingViewController> reverseChargingViewControllerOptional,
             WallpaperNotifier wallpaperNotifier,
             SmartSpaceController smartSpaceController,
-            DockObserver dockObserver
-    ) {
-        super(context, notificationsController, fragmentService, lightBarController, autoHideController, statusBarInitializer, 
-                statusBarWindowController, statusBarWindowStateController, statusBarModeRepository, keyguardUpdateMonitor, 
-                statusBarSignalPolicy, pulseExpansionHandler, notificationWakeUpCoordinator, keyguardBypassController, keyguardStateController, 
-                headsUpManager, falsingManager, falsingCollector, broadcastDispatcher, notificationGutsManager, shadeExpansionStateManager, keyguardViewMediator, displayMetrics, metricsLogger, shadeLogger, 
-                javaAdapter, uiBgExecutor, shadeSurface, notificationMediaManager, notificationLockscreenUserManagerGoogle, remoteInputManager, 
-                quickSettingsController, batteryController, colorExtractor, screenLifecycle, wakefulnessLifecycle, 
-                powerInteractor, communalInteractor, statusBarStateController, bubblesOptional, noteTaskControllerLazy, deviceProvisionedController, 
-                navigationBarController, accessibilityFloatingMenuController, assistManagerLazy, flashlightController, configurationController, notificationShadeWindowController, 
-                notificationShadeWindowViewControllerLazy, notificationStackScrollLayoutController, notificationPresenterLazy, notificationActivityStarterLazy, 
-                notifTransitionAnimatorControllerProvider, dozeParameters, scrimController, biometricUnlockControllerLazy, authRippleController, 
-                dozeServiceHost, backActionInteractor, powerManager, dozeScrimController, volumeComponent, commandQueue, commandQueueCallbacksLazy, 
-                pluginManager, shadeController, windowRootViewVisibilityInteractor, statusBarKeyguardViewManager, viewMediatorCallback, initController, timeTickHandler, 
-                pluginDependencyProvider, extensionController, userInfoControllerImpl, phoneStatusBarPolicy, keyguardIndicationControllerGoogle, demoModeController, 
-                notificationShadeDepthControllerLazy, statusBarTouchableRegionManager, notificationIconAreaController, brightnessSliderFactory, 
-                screenOffAnimationController, wallpaperController, statusBarHideIconsForBouncerManager, lockscreenShadeTransitionController, featureFlags, 
-                keyguardUnlockAnimationController, delayableExecutor, messageRouter, wallpaperManager, startingSurfaceOptional, activityTransitionAnimator, 
-                deviceStateManager, wiredChargingRippleController, dreamManager, cameraLauncherLazy, lightRevealScrimViewModelLazy, lightRevealScrim, 
-                alternateBouncerInteractor, userTracker, fingerprintManager, activityStarter, sceneContainerFlags, tunerService, refreshNavbarHandler, burnInProtectionController, sysUiState);
+            DockObserver dockObserver) {
+        super(
+                context,
+                notificationsController,
+                fragmentService,
+                lightBarController,
+                autoHideController,
+                statusBarInitializer,
+                statusBarWindowController,
+                statusBarWindowStateController,
+                statusBarModeRepository,
+                keyguardUpdateMonitor,
+                statusBarSignalPolicy,
+                pulseExpansionHandler,
+                notificationWakeUpCoordinator,
+                keyguardBypassController,
+                keyguardStateController,
+                headsUpManager,
+                falsingManager,
+                falsingCollector,
+                broadcastDispatcher,
+                notificationGutsManager,
+                shadeExpansionStateManager,
+                keyguardViewMediator,
+                displayMetrics,
+                metricsLogger,
+                shadeLogger,
+                javaAdapter,
+                uiBgExecutor,
+                shadeSurface,
+                notificationMediaManager,
+                notificationLockscreenUserManagerGoogle,
+                remoteInputManager,
+                quickSettingsController,
+                batteryController,
+                colorExtractor,
+                screenLifecycle,
+                wakefulnessLifecycle,
+                powerInteractor,
+                communalInteractor,
+                statusBarStateController,
+                bubblesOptional,
+                noteTaskControllerLazy,
+                deviceProvisionedController,
+                navigationBarController,
+                accessibilityFloatingMenuController,
+                assistManagerLazy,
+                flashlightController,
+                configurationController,
+                notificationShadeWindowController,
+                notificationShadeWindowViewControllerLazy,
+                notificationStackScrollLayoutController,
+                notificationPresenterLazy,
+                notificationActivityStarterLazy,
+                notifTransitionAnimatorControllerProvider,
+                dozeParameters,
+                scrimController,
+                biometricUnlockControllerLazy,
+                authRippleController,
+                dozeServiceHost,
+                backActionInteractor,
+                powerManager,
+                dozeScrimController,
+                volumeComponent,
+                commandQueue,
+                commandQueueCallbacksLazy,
+                pluginManager,
+                shadeController,
+                windowRootViewVisibilityInteractor,
+                statusBarKeyguardViewManager,
+                viewMediatorCallback,
+                initController,
+                timeTickHandler,
+                pluginDependencyProvider,
+                extensionController,
+                userInfoControllerImpl,
+                phoneStatusBarPolicy,
+                keyguardIndicationControllerGoogle,
+                demoModeController,
+                notificationShadeDepthControllerLazy,
+                statusBarTouchableRegionManager,
+                notificationIconAreaController,
+                brightnessSliderFactory,
+                screenOffAnimationController,
+                wallpaperController,
+                statusBarHideIconsForBouncerManager,
+                lockscreenShadeTransitionController,
+                featureFlags,
+                keyguardUnlockAnimationController,
+                delayableExecutor,
+                messageRouter,
+                wallpaperManager,
+                startingSurfaceOptional,
+                activityTransitionAnimator,
+                deviceStateManager,
+                wiredChargingRippleController,
+                dreamManager,
+                cameraLauncherLazy,
+                lightRevealScrimViewModelLazy,
+                lightRevealScrim,
+                alternateBouncerInteractor,
+                userTracker,
+                fingerprintManager,
+                activityStarter,
+                sceneContainerFlags,
+                tunerService,
+                refreshNavbarHandler,
+                burnInProtectionController,
+                sysUiState);
         mContext = context;
-        mBatteryStateChangeCallback = new BatteryController.BatteryStateChangeCallback() {
-            @Override
-            public void onBatteryLevelChanged(int i, boolean z, boolean z2) {
-                mReceivingBatteryLevel = i;
-                if (!mBatteryController.isWirelessCharging()) {
-                    if (SystemClock.uptimeMillis() - mAnimStartTime > 1500) {
-                        mChargingAnimShown = false;
+        mBatteryStateChangeCallback =
+                new BatteryController.BatteryStateChangeCallback() {
+                    @Override
+                    public void onBatteryLevelChanged(int i, boolean z, boolean z2) {
+                        mReceivingBatteryLevel = i;
+                        if (!mBatteryController.isWirelessCharging()) {
+                            if (SystemClock.uptimeMillis() - mAnimStartTime > 1500) {
+                                mChargingAnimShown = false;
+                            }
+                            mReverseChargingAnimShown = false;
+                        }
+                        if (DEBUG) {
+                            Log.d(
+                                    "CentralSurfacesGoogle",
+                                    "onBatteryLevelChanged(): level="
+                                            + i
+                                            + ",wlc="
+                                            + (mBatteryController.isWirelessCharging() ? 1 : 0)
+                                            + ",wlcs="
+                                            + mChargingAnimShown
+                                            + ",rtxs="
+                                            + mReverseChargingAnimShown
+                                            + ",this="
+                                            + this);
+                        }
                     }
-                    mReverseChargingAnimShown = false;
-                }
-                if (DEBUG) {
-                    Log.d("CentralSurfacesGoogle", "onBatteryLevelChanged(): level=" + i + ",wlc=" + (mBatteryController.isWirelessCharging() ? 1 : 0) + ",wlcs=" + mChargingAnimShown + ",rtxs=" + mReverseChargingAnimShown + ",this=" + this);
-                }
-            }
 
-            @Override
-            public void onReverseChanged(boolean z, int i, String str) {
-                if (!z && i >= 0 && !TextUtils.isEmpty(str) && mBatteryController.isWirelessCharging() && mChargingAnimShown && !mReverseChargingAnimShown) {
-                    mReverseChargingAnimShown = true;
-                    long uptimeMillis = SystemClock.uptimeMillis() - mAnimStartTime;
-                    long j = uptimeMillis > 1500 ? 0L : 1500 - uptimeMillis;
-                    showChargingAnimation(mReceivingBatteryLevel, i, j);
-                }
-                if (DEBUG) {
-                    Log.d("CentralSurfacesGoogle", "onReverseChanged(): rtx=" + (z ? 1 : 0) + ",rxlevel=" + mReceivingBatteryLevel + ",level=" + i + ",name=" + str + ",wlc=" + (mBatteryController.isWirelessCharging() ? 1 : 0) + ",wlcs=" + mChargingAnimShown + ",rtxs=" + mReverseChargingAnimShown + ",this=" + this);
-                }
-            }
-        };
+                    @Override
+                    public void onReverseChanged(boolean z, int i, String str) {
+                        if (!z
+                                && i >= 0
+                                && !TextUtils.isEmpty(str)
+                                && mBatteryController.isWirelessCharging()
+                                && mChargingAnimShown
+                                && !mReverseChargingAnimShown) {
+                            mReverseChargingAnimShown = true;
+                            long uptimeMillis = SystemClock.uptimeMillis() - mAnimStartTime;
+                            long j = uptimeMillis > 1500 ? 0L : 1500 - uptimeMillis;
+                            showChargingAnimation(mReceivingBatteryLevel, i, j);
+                        }
+                        if (DEBUG) {
+                            Log.d(
+                                    "CentralSurfacesGoogle",
+                                    "onReverseChanged(): rtx="
+                                            + (z ? 1 : 0)
+                                            + ",rxlevel="
+                                            + mReceivingBatteryLevel
+                                            + ",level="
+                                            + i
+                                            + ",name="
+                                            + str
+                                            + ",wlc="
+                                            + (mBatteryController.isWirelessCharging() ? 1 : 0)
+                                            + ",wlcs="
+                                            + mChargingAnimShown
+                                            + ",rtxs="
+                                            + mReverseChargingAnimShown
+                                            + ",this="
+                                            + this);
+                        }
+                    }
+                };
         mReverseChargingViewControllerOptional = reverseChargingViewControllerOptional;
         mKeyguardIndicationController = keyguardIndicationControllerGoogle;
         mStatusBarStateController = statusBarStateController;
@@ -350,9 +465,13 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
         super.start();
         mWallpaperNotifier.attach();
         mBatteryController.observe(getLifecycle(), mBatteryStateChangeCallback);
-        mDockObserver.setDreamlinerGear((ImageView) getNotificationShadeWindowView().findViewById(R.id.dreamliner_gear));
-        mDockObserver.setPhotoPreview((FrameLayout) getNotificationShadeWindowView().findViewById(R.id.photo_preview));
-        mDockObserver.setIndicationController(new DockIndicationController(mContext, mKeyguardIndicationController, mStatusBarStateController, this));
+        mDockObserver.setDreamlinerGear(
+                (ImageView) getNotificationShadeWindowView().findViewById(R.id.dreamliner_gear));
+        mDockObserver.setPhotoPreview(
+                (FrameLayout) getNotificationShadeWindowView().findViewById(R.id.photo_preview));
+        mDockObserver.setIndicationController(
+                new DockIndicationController(
+                        mContext, mKeyguardIndicationController, mStatusBarStateController, this));
         mDockObserver.registerDockAlignInfo();
         if (mReverseChargingViewControllerOptional.isPresent()) {
             mReverseChargingViewControllerOptional.get().initialize();

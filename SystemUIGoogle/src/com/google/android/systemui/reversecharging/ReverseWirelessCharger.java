@@ -21,14 +21,16 @@ import android.os.Bundle;
 import android.os.IHwBinder;
 import android.os.RemoteException;
 import android.util.Log;
-import java.util.ArrayList;
-import java.util.Iterator;
+
 import vendor.google.wireless_charger.V1_2.IWirelessCharger;
 import vendor.google.wireless_charger.V1_2.IWirelessChargerRtxStatusCallback;
 import vendor.google.wireless_charger.V1_2.RtxStatusInfo;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 
-public class ReverseWirelessCharger extends IWirelessChargerRtxStatusCallback.Stub implements IHwBinder.DeathRecipient {
+public class ReverseWirelessCharger extends IWirelessChargerRtxStatusCallback.Stub
+        implements IHwBinder.DeathRecipient {
     private static final boolean DEBUG = Log.isLoggable("ReverseWirelessCharger", 3);
     private Context mContext;
     private IWirelessCharger mWirelessCharger;
@@ -36,7 +38,8 @@ public class ReverseWirelessCharger extends IWirelessChargerRtxStatusCallback.St
     private final ArrayList<RtxInformationCallback> mRtxInformationCallbacks = new ArrayList<>();
     private final ArrayList<RtxStatusCallback> mRtxStatusCallbacks = new ArrayList<>();
     private final Object mLock = new Object();
-    private final LocalRtxInformationCallback mLocalRtxInformationCallback = new LocalRtxInformationCallback();
+    private final LocalRtxInformationCallback mLocalRtxInformationCallback =
+            new LocalRtxInformationCallback();
 
     public interface IsDockPresentCallback {
         void onIsDockPresentChanged(boolean z, byte b, byte b2, boolean z2, int i);
@@ -88,7 +91,10 @@ public class ReverseWirelessCharger extends IWirelessChargerRtxStatusCallback.St
                 mWirelessCharger.linkToDeath(this, 0L);
                 mWirelessCharger.registerRtxCallback(this);
             } catch (Exception e) {
-                Log.i("ReverseWirelessCharger", "no wireless charger hal found: " + e.getMessage(), e);
+                Log.i(
+                        "ReverseWirelessCharger",
+                        "no wireless charger hal found: " + e.getMessage(),
+                        e);
                 mWirelessCharger = null;
             }
         }
@@ -112,7 +118,8 @@ public class ReverseWirelessCharger extends IWirelessChargerRtxStatusCallback.St
         }
     }
 
-    public void addIsDockPresentChangeListener(IsDockPresentChangeListener isDockPresentChangeListener) {
+    public void addIsDockPresentChangeListener(
+            IsDockPresentChangeListener isDockPresentChangeListener) {
         addIsDockPresentCallback(isDockPresentChangeListener);
     }
 
@@ -144,7 +151,8 @@ public class ReverseWirelessCharger extends IWirelessChargerRtxStatusCallback.St
         }
     }
 
-    public void addReverseChargingInformationChangeListener(ReverseChargingInformationChangeListener reverseChargingInformationChangeListener) {
+    public void addReverseChargingInformationChangeListener(
+            ReverseChargingInformationChangeListener reverseChargingInformationChangeListener) {
         addRtxInformationCallback(reverseChargingInformationChangeListener);
     }
 
@@ -176,7 +184,8 @@ public class ReverseWirelessCharger extends IWirelessChargerRtxStatusCallback.St
         }
     }
 
-    public void addReverseChargingChangeListener(ReverseChargingChangeListener reverseChargingChangeListener) {
+    public void addReverseChargingChangeListener(
+            ReverseChargingChangeListener reverseChargingChangeListener) {
         addRtxStatusCallback(reverseChargingChangeListener);
     }
 
@@ -202,7 +211,18 @@ public class ReverseWirelessCharger extends IWirelessChargerRtxStatusCallback.St
         @Override
         default void onIsDockPresentChanged(boolean z, byte b, byte b2, boolean z2, int i) {
             if (DEBUG) {
-                Log.d("ReverseWirelessCharger", "onIsDockPresentChanged(): docked=" + (z ? 1 : 0) + " type=" + ((int) b) + " orient=" + ((int) b2) + " isGetI=" + (z2 ? 1 : 0) + " id=" + i);
+                Log.d(
+                        "ReverseWirelessCharger",
+                        "onIsDockPresentChanged(): docked="
+                                + (z ? 1 : 0)
+                                + " type="
+                                + ((int) b)
+                                + " orient="
+                                + ((int) b2)
+                                + " isGetI="
+                                + (z2 ? 1 : 0)
+                                + " id="
+                                + i);
             }
             onDockPresentChanged(buildDockPresentBundle(z, b, b2, z2, i));
         }
@@ -214,7 +234,9 @@ public class ReverseWirelessCharger extends IWirelessChargerRtxStatusCallback.St
         @Override
         default void onRtxInformationChanged(RtxStatusInfo rtxStatusInfo) {
             if (DEBUG) {
-                Log.d("ReverseWirelessCharger", "onRtxInformationChanged() RtxStatusInfo : " + rtxStatusInfo.toString());
+                Log.d(
+                        "ReverseWirelessCharger",
+                        "onRtxInformationChanged() RtxStatusInfo : " + rtxStatusInfo.toString());
             }
             onReverseInformationChanged(buildReverseStatusBundle(rtxStatusInfo));
         }
@@ -226,28 +248,40 @@ public class ReverseWirelessCharger extends IWirelessChargerRtxStatusCallback.St
         @Override
         default void onRtxStatusChanged(RtxStatusInfo rtxStatusInfo) {
             if (DEBUG) {
-                Log.d("ReverseWirelessCharger", "onRtxStatusChanged() RtxStatusInfo : " + rtxStatusInfo.toString());
+                Log.d(
+                        "ReverseWirelessCharger",
+                        "onRtxStatusChanged() RtxStatusInfo : " + rtxStatusInfo.toString());
             }
             onReverseStatusChanged(buildReverseStatusBundle(rtxStatusInfo));
         }
     }
 
-    class LocalIsDockPresentCallback implements vendor.google.wireless_charger.V1_0.IWirelessCharger.isDockPresentCallback {
-        LocalIsDockPresentCallback() {
-        }
+    class LocalIsDockPresentCallback
+            implements vendor.google.wireless_charger.V1_0.IWirelessCharger.isDockPresentCallback {
+        LocalIsDockPresentCallback() {}
 
         @Override
         public void onValues(boolean z, byte b, byte b2, boolean z2, int i) {
             if (DEBUG) {
-                Log.d("ReverseWirelessCharger", "LocalIsDockPresentCallback::onValues(): docked=" + (z ? 1 : 0) + " type=" + ((int) b) + " orient=" + ((int) b2) + " isGetI=" + (z2 ? 1 : 0) + " id=" + i);
+                Log.d(
+                        "ReverseWirelessCharger",
+                        "LocalIsDockPresentCallback::onValues(): docked="
+                                + (z ? 1 : 0)
+                                + " type="
+                                + ((int) b)
+                                + " orient="
+                                + ((int) b2)
+                                + " isGetI="
+                                + (z2 ? 1 : 0)
+                                + " id="
+                                + i);
             }
             dispatchIsDockPresentCallbacks(z, b, b2, z2, i);
         }
     }
 
     class LocalRtxInformationCallback implements IWirelessCharger.getRtxInformationCallback {
-        LocalRtxInformationCallback() {
-        }
+        LocalRtxInformationCallback() {}
 
         @Override
         public void onValues(byte b, RtxStatusInfo rtxStatusInfo) {

@@ -20,13 +20,17 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.util.Size;
 import android.widget.ImageView;
+
 import androidx.constraintlayout.widget.ConstraintLayout;
-import com.android.systemui.res.R;
+
 import com.android.systemui.plugins.BcSmartspaceDataPlugin;
+import com.android.systemui.res.R;
+
 import com.google.android.systemui.smartspace.BcSmartSpaceUtil;
 import com.google.android.systemui.smartspace.BcSmartspaceCardSecondary;
 import com.google.android.systemui.smartspace.logging.BcSmartspaceCardLoggingInfo;
 import com.google.android.systemui.smartspace.logging.LogBuilder;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.ref.WeakReference;
@@ -36,7 +40,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.TreeMap;
-import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
@@ -47,7 +50,8 @@ public class SubImageTemplateCard extends BcSmartspaceCardSecondary {
     public final int mImageHeight;
     public ImageView mImageView;
 
-    public static final class LoadUriTask extends AsyncTask<DrawableWrapper, Void, DrawableWrapper> {
+    public static final class LoadUriTask
+            extends AsyncTask<DrawableWrapper, Void, DrawableWrapper> {
         @Override // android.os.AsyncTask
         public final void onPostExecute(DrawableWrapper drawableWrapper) {
             DrawableWrapper drawableWrapper2 = drawableWrapper;
@@ -62,23 +66,34 @@ public class SubImageTemplateCard extends BcSmartspaceCardSecondary {
             if (drawableWrapperArr2.length > 0) {
                 DrawableWrapper drawableWrapper2 = drawableWrapperArr2[0];
                 try {
-                    InputStream openInputStream = drawableWrapper2.mContentResolver.openInputStream(drawableWrapper2.mUri);
+                    InputStream openInputStream =
+                            drawableWrapper2.mContentResolver.openInputStream(
+                                    drawableWrapper2.mUri);
                     final int i = drawableWrapper2.mHeightInPx;
                     try {
-                        drawable = ImageDecoder.decodeDrawable(ImageDecoder.createSource((Resources) null, openInputStream), new ImageDecoder.OnHeaderDecodedListener() { // from class: com.google.android.systemui.smartspace.uitemplate.SubImageTemplateCard$$ExternalSyntheticLambda2
-                            @Override // android.graphics.ImageDecoder.OnHeaderDecodedListener
-                            public final void onHeaderDecoded(ImageDecoder imageDecoder, ImageDecoder.ImageInfo imageInfo, ImageDecoder.Source source) {
-                                float f;
-                                imageDecoder.setAllocator(3);
-                                Size size = imageInfo.getSize();
-                                if (size.getHeight() != 0) {
-                                    f = size.getWidth() / size.getHeight();
-                                } else {
-                                    f = 0.0f;
-                                }
-                                imageDecoder.setTargetSize((int) (i * f), i);
-                            }
-                        });
+                        drawable =
+                                ImageDecoder.decodeDrawable(
+                                        ImageDecoder.createSource(
+                                                (Resources) null, openInputStream),
+                                        new ImageDecoder
+                                                .OnHeaderDecodedListener() { // from class:
+                                                                             // com.google.android.systemui.smartspace.uitemplate.SubImageTemplateCard$$ExternalSyntheticLambda2
+                                            @Override // android.graphics.ImageDecoder.OnHeaderDecodedListener
+                                            public final void onHeaderDecoded(
+                                                    ImageDecoder imageDecoder,
+                                                    ImageDecoder.ImageInfo imageInfo,
+                                                    ImageDecoder.Source source) {
+                                                float f;
+                                                imageDecoder.setAllocator(3);
+                                                Size size = imageInfo.getSize();
+                                                if (size.getHeight() != 0) {
+                                                    f = size.getWidth() / size.getHeight();
+                                                } else {
+                                                    f = 0.0f;
+                                                }
+                                                imageDecoder.setTargetSize((int) (i * f), i);
+                                            }
+                                        });
                     } catch (IOException e) {
                         StringBuilder sb = new StringBuilder();
                         sb.append("Unable to decode stream: ");
@@ -105,8 +120,7 @@ public class SubImageTemplateCard extends BcSmartspaceCardSecondary {
     }
 
     @Override // com.google.android.systemui.smartspace.BcSmartspaceCardSecondary
-    public final void setTextColor(int i) {
-    }
+    public final void setTextColor(int i) {}
 
     public static final class DrawableWrapper {
         public final ContentResolver mContentResolver;
@@ -115,7 +129,11 @@ public class SubImageTemplateCard extends BcSmartspaceCardSecondary {
         public final Icon.OnDrawableLoadedListener mListener;
         public final Uri mUri;
 
-        public DrawableWrapper(Uri uri, ContentResolver contentResolver, int i, Icon.OnDrawableLoadedListener listener) {
+        public DrawableWrapper(
+                Uri uri,
+                ContentResolver contentResolver,
+                int i,
+                Icon.OnDrawableLoadedListener listener) {
             this.mUri = uri;
             this.mHeightInPx = i;
             this.mContentResolver = contentResolver;
@@ -127,7 +145,8 @@ public class SubImageTemplateCard extends BcSmartspaceCardSecondary {
         super(context, attributeSet);
         this.mIconDrawableCache = new HashMap();
         this.mHandler = new Handler();
-        this.mImageHeight = getResources().getDimensionPixelOffset(R.dimen.enhanced_smartspace_card_height);
+        this.mImageHeight =
+                getResources().getDimensionPixelOffset(R.dimen.enhanced_smartspace_card_height);
     }
 
     @Override // com.google.android.systemui.smartspace.BcSmartspaceCardSecondary
@@ -145,23 +164,35 @@ public class SubImageTemplateCard extends BcSmartspaceCardSecondary {
     }
 
     @Override // com.google.android.systemui.smartspace.BcSmartspaceCardSecondary
-    public final boolean setSmartspaceActions(SmartspaceTarget smartspaceTarget, BcSmartspaceDataPlugin.SmartspaceEventNotifier smartspaceEventNotifier, BcSmartspaceCardLoggingInfo bcSmartspaceCardLoggingInfo) {
+    public final boolean setSmartspaceActions(
+            SmartspaceTarget smartspaceTarget,
+            BcSmartspaceDataPlugin.SmartspaceEventNotifier smartspaceEventNotifier,
+            BcSmartspaceCardLoggingInfo bcSmartspaceCardLoggingInfo) {
         String sb;
-        SubImageTemplateData templateData = (SubImageTemplateData) smartspaceTarget.getTemplateData();
-        if (templateData != null && templateData.getSubImages() != null && !templateData.getSubImages().isEmpty()) {
+        SubImageTemplateData templateData =
+                (SubImageTemplateData) smartspaceTarget.getTemplateData();
+        if (templateData != null
+                && templateData.getSubImages() != null
+                && !templateData.getSubImages().isEmpty()) {
             final List subImages = templateData.getSubImages();
             TapAction subImageAction = templateData.getSubImageAction();
             if (this.mImageView == null) {
-                Log.w("SubImageTemplateCard", "No image view can be updated. Skipping background update...");
+                Log.w(
+                        "SubImageTemplateCard",
+                        "No image view can be updated. Skipping background update...");
             } else if (subImageAction != null && subImageAction.getExtras() != null) {
                 Bundle extras = subImageAction.getExtras();
                 String string = extras.getString("imageDimensionRatio", "");
                 if (!TextUtils.isEmpty(string)) {
                     this.mImageView.getLayoutParams().width = 0;
-                    ((ConstraintLayout.LayoutParams) this.mImageView.getLayoutParams()).dimensionRatio = string;
+                    ((ConstraintLayout.LayoutParams) this.mImageView.getLayoutParams())
+                                    .dimensionRatio =
+                            string;
                 }
                 if (extras.getBoolean("shouldShowBackground", false)) {
-                    this.mImageView.setBackgroundTintList(ColorStateList.valueOf(getContext().getColor(R.color.smartspace_button_background)));
+                    this.mImageView.setBackgroundTintList(
+                            ColorStateList.valueOf(
+                                    getContext().getColor(R.color.smartspace_button_background)));
                 }
             }
             int i = 200;
@@ -172,12 +203,14 @@ public class SubImageTemplateCard extends BcSmartspaceCardSecondary {
                     i = subImageAction.getExtras().getInt("GifFrameDurationMillis", 200);
                 }
             }
-            ContentResolver contentResolver = getContext().getApplicationContext().getContentResolver();
+            ContentResolver contentResolver =
+                    getContext().getApplicationContext().getContentResolver();
             final TreeMap treeMap = new TreeMap();
             final WeakReference weakReference = new WeakReference(this.mImageView);
             final String str = this.mPrevSmartspaceTargetId;
             for (int i2 = 0; i2 < subImages.size(); i2++) {
-                android.app.smartspace.uitemplatedata.Icon icon = (android.app.smartspace.uitemplatedata.Icon) subImages.get(i2);
+                android.app.smartspace.uitemplatedata.Icon icon =
+                        (android.app.smartspace.uitemplatedata.Icon) subImages.get(i2);
                 if (icon != null && icon.getIcon() != null) {
                     Icon icon2 = icon.getIcon();
                     StringBuilder sb2 = new StringBuilder(icon2.getType());
@@ -208,66 +241,110 @@ public class SubImageTemplateCard extends BcSmartspaceCardSecondary {
                     final String str2 = sb;
                     final int i3 = i2;
                     final int i4 = i;
-                    Icon.OnDrawableLoadedListener listener = new Icon.OnDrawableLoadedListener() { // from class: com.google.android.systemui.smartspace.uitemplate.SubImageTemplateCard$$ExternalSyntheticLambda0
-                        @Override // android.graphics.drawable.Icon.OnDrawableLoadedListener
-                        public final void onDrawableLoaded(Drawable drawable) {
-                            SubImageTemplateCard subImageTemplateCard = SubImageTemplateCard.this;
-                            String str3 = str;
-                            String str4 = str2;
-                            Map map = treeMap;
-                            int i5 = i3;
-                            List list = subImages;
-                            final int i6 = i4;
-                            WeakReference weakReference2 = weakReference;
-                            if (!str3.equals(subImageTemplateCard.mPrevSmartspaceTargetId)) {
-                                Log.d("SubImageTemplateCard", "SmartspaceTarget has changed. Skip the loaded result...");
-                                return;
-                            }
-                            subImageTemplateCard.mIconDrawableCache.put(str4, drawable);
-                            map.put(Integer.valueOf(i5), drawable);
-                            if (map.size() == list.size()) {
-                                final AnimationDrawable animationDrawable = new AnimationDrawable();
-                                List list2 = (List) map.values().stream().filter(new Predicate() { // from class: com.google.android.systemui.smartspace.uitemplate.SubImageTemplateCard$$ExternalSyntheticLambda3
-                                    @Override // java.util.function.Predicate
-                                    public final boolean test(Object obj) {
-                                        return Objects.nonNull((Drawable) obj);
-                                    }
-                                }).collect(Collectors.toList());
-                                if (list2.isEmpty()) {
-                                    Log.w("SubImageTemplateCard", "All images are failed to load. Reset imageView");
-                                    ImageView imageView = subImageTemplateCard.mImageView;
-                                    if (imageView != null) {
-                                        imageView.getLayoutParams().width = -2;
-                                        subImageTemplateCard.mImageView.setImageDrawable(null);
-                                        subImageTemplateCard.mImageView.setBackgroundTintList(null);
+                    Icon.OnDrawableLoadedListener listener =
+                            new Icon.OnDrawableLoadedListener() { // from class:
+                                // com.google.android.systemui.smartspace.uitemplate.SubImageTemplateCard$$ExternalSyntheticLambda0
+                                @Override // android.graphics.drawable.Icon.OnDrawableLoadedListener
+                                public final void onDrawableLoaded(Drawable drawable) {
+                                    SubImageTemplateCard subImageTemplateCard =
+                                            SubImageTemplateCard.this;
+                                    String str3 = str;
+                                    String str4 = str2;
+                                    Map map = treeMap;
+                                    int i5 = i3;
+                                    List list = subImages;
+                                    final int i6 = i4;
+                                    WeakReference weakReference2 = weakReference;
+                                    if (!str3.equals(
+                                            subImageTemplateCard.mPrevSmartspaceTargetId)) {
+                                        Log.d(
+                                                "SubImageTemplateCard",
+                                                "SmartspaceTarget has changed. Skip the loaded"
+                                                    + " result...");
                                         return;
                                     }
-                                    return;
+                                    subImageTemplateCard.mIconDrawableCache.put(str4, drawable);
+                                    map.put(Integer.valueOf(i5), drawable);
+                                    if (map.size() == list.size()) {
+                                        final AnimationDrawable animationDrawable =
+                                                new AnimationDrawable();
+                                        List list2 =
+                                                (List)
+                                                        map.values().stream()
+                                                                .filter(
+                                                                        new Predicate() { // from
+                                                                            // class:
+                                                                            // com.google.android.systemui.smartspace.uitemplate.SubImageTemplateCard$$ExternalSyntheticLambda3
+                                                                            @Override // java.util.function.Predicate
+                                                                            public final boolean
+                                                                                    test(
+                                                                                            Object
+                                                                                                    obj) {
+                                                                                return Objects
+                                                                                        .nonNull(
+                                                                                                (Drawable)
+                                                                                                        obj);
+                                                                            }
+                                                                        })
+                                                                .collect(Collectors.toList());
+                                        if (list2.isEmpty()) {
+                                            Log.w(
+                                                    "SubImageTemplateCard",
+                                                    "All images are failed to load. Reset"
+                                                        + " imageView");
+                                            ImageView imageView = subImageTemplateCard.mImageView;
+                                            if (imageView != null) {
+                                                imageView.getLayoutParams().width = -2;
+                                                subImageTemplateCard.mImageView.setImageDrawable(
+                                                        null);
+                                                subImageTemplateCard.mImageView
+                                                        .setBackgroundTintList(null);
+                                                return;
+                                            }
+                                            return;
+                                        }
+                                        list2.forEach(
+                                                obj ->
+                                                        animationDrawable.addFrame(
+                                                                (Drawable) obj, i6));
+                                        ImageView imageView2 = (ImageView) weakReference2.get();
+                                        imageView2.setImageDrawable(animationDrawable);
+                                        int intrinsicWidth = animationDrawable.getIntrinsicWidth();
+                                        if (imageView2.getLayoutParams().width != intrinsicWidth) {
+                                            Log.d(
+                                                    "SubImageTemplateCard",
+                                                    "imageView requestLayout");
+                                            imageView2.getLayoutParams().width = intrinsicWidth;
+                                            imageView2.requestLayout();
+                                        }
+                                        animationDrawable.start();
+                                    }
                                 }
-                                list2.forEach(obj -> animationDrawable.addFrame((Drawable) obj, i6));
-                                ImageView imageView2 = (ImageView) weakReference2.get();
-                                imageView2.setImageDrawable(animationDrawable);
-                                int intrinsicWidth = animationDrawable.getIntrinsicWidth();
-                                if (imageView2.getLayoutParams().width != intrinsicWidth) {
-                                    Log.d("SubImageTemplateCard", "imageView requestLayout");
-                                    imageView2.getLayoutParams().width = intrinsicWidth;
-                                    imageView2.requestLayout();
-                                }
-                                animationDrawable.start();
-                            }
-                        }
-                    };
-                    if (this.mIconDrawableCache.containsKey(sb) && this.mIconDrawableCache.get(sb) != null) {
+                            };
+                    if (this.mIconDrawableCache.containsKey(sb)
+                            && this.mIconDrawableCache.get(sb) != null) {
                         listener.onDrawableLoaded((Drawable) this.mIconDrawableCache.get(sb));
                     } else if (icon2.getType() == 4) {
-                        new LoadUriTask().execute(new DrawableWrapper(icon2.getUri(), contentResolver, this.mImageHeight, listener));
+                        new LoadUriTask()
+                                .execute(
+                                        new DrawableWrapper(
+                                                icon2.getUri(),
+                                                contentResolver,
+                                                this.mImageHeight,
+                                                listener));
                     } else {
                         icon2.loadDrawableAsync(getContext(), listener, this.mHandler);
                     }
                 }
             }
             if (subImageAction != null) {
-                BcSmartSpaceUtil.setOnClickListener(this, smartspaceTarget, subImageAction, smartspaceEventNotifier, "SubImageTemplateCard", bcSmartspaceCardLoggingInfo);
+                BcSmartSpaceUtil.setOnClickListener(
+                        this,
+                        smartspaceTarget,
+                        subImageAction,
+                        smartspaceEventNotifier,
+                        "SubImageTemplateCard",
+                        bcSmartspaceCardLoggingInfo);
                 return true;
             }
             return true;
@@ -277,7 +354,7 @@ public class SubImageTemplateCard extends BcSmartspaceCardSecondary {
     }
 
     public final void onFinishInflate() {
-        super/*android.view.ViewGroup*/.onFinishInflate();
+        super /*android.view.ViewGroup*/.onFinishInflate();
         this.mImageView = (ImageView) findViewById(R.id.image_view);
     }
 }

@@ -26,24 +26,27 @@ import android.os.Handler;
 import android.os.PowerManager;
 import android.util.Log;
 
+import com.android.systemui.broadcast.BroadcastDispatcher;
 import com.android.systemui.dagger.qualifiers.Background;
 import com.android.systemui.dagger.qualifiers.Main;
-import com.android.systemui.broadcast.BroadcastDispatcher;
 import com.android.systemui.demomode.DemoModeController;
 import com.android.systemui.dump.DumpManager;
 import com.android.systemui.power.EnhancedEstimates;
 import com.android.systemui.settings.UserContentResolverProvider;
 import com.android.systemui.statusbar.policy.BatteryController;
-import com.android.systemui.statusbar.policy.BatteryControllerLogger;
 import com.android.systemui.statusbar.policy.BatteryControllerImpl;
-import com.google.android.systemui.reversecharging.ReverseChargingController;
+import com.android.systemui.statusbar.policy.BatteryControllerLogger;
+
 import com.google.android.systemui.reversecharging.ReverseChargingChangeCallback;
+import com.google.android.systemui.reversecharging.ReverseChargingController;
 
 import java.util.ArrayList;
 
-public class BatteryControllerImplGoogle extends BatteryControllerImpl implements ReverseChargingChangeCallback {
+public class BatteryControllerImplGoogle extends BatteryControllerImpl
+        implements ReverseChargingChangeCallback {
     static final String EBS_STATE_AUTHORITY = "com.google.android.flipendo.api";
-    static final Uri IS_EBS_ENABLED_OBSERVABLE_URI = Uri.parse("content://com.google.android.flipendo.api/get_flipendo_state");
+    static final Uri IS_EBS_ENABLED_OBSERVABLE_URI =
+            Uri.parse("content://com.google.android.flipendo.api/get_flipendo_state");
     private static final boolean DEBUG = Log.isLoggable("BatteryControllerGoogle", 3);
     protected final ContentObserver mContentObserver;
     private final UserContentResolverProvider mContentResolverProvider;
@@ -65,18 +68,30 @@ public class BatteryControllerImplGoogle extends BatteryControllerImpl implement
             @Background Handler bgHandler,
             UserContentResolverProvider userContentResolverProvider,
             ReverseChargingController reverseChargingController) {
-        super(context, enhancedEstimates, powerManager, broadcastDispatcher, demoModeController, dumpManager, logger, mainHandler, bgHandler);
+        super(
+                context,
+                enhancedEstimates,
+                powerManager,
+                broadcastDispatcher,
+                demoModeController,
+                dumpManager,
+                logger,
+                mainHandler,
+                bgHandler);
         mReverseChargingController = reverseChargingController;
         mContentResolverProvider = userContentResolverProvider;
-        mContentObserver = new ContentObserver(bgHandler) {
-            @Override
-            public void onChange(boolean z, Uri uri) {
-                if (BatteryControllerImplGoogle.DEBUG) {
-                    Log.d("BatteryControllerGoogle", "Change in EBS value " + uri.toSafeString());
-                }
-                setExtremeSaver(isExtremeBatterySaving());
-            }
-        };
+        mContentObserver =
+                new ContentObserver(bgHandler) {
+                    @Override
+                    public void onChange(boolean z, Uri uri) {
+                        if (BatteryControllerImplGoogle.DEBUG) {
+                            Log.d(
+                                    "BatteryControllerGoogle",
+                                    "Change in EBS value " + uri.toSafeString());
+                        }
+                        setExtremeSaver(isExtremeBatterySaving());
+                    }
+                };
     }
 
     @Override
@@ -101,13 +116,23 @@ public class BatteryControllerImplGoogle extends BatteryControllerImpl implement
         mRtxLevel = i;
         mName = str;
         if (DEBUG) {
-            Log.d("BatteryControllerGoogle", "onReverseChargingChanged(): rtx=" + (z ? 1 : 0) + " level=" + i + " name=" + str + " this=" + this);
+            Log.d(
+                    "BatteryControllerGoogle",
+                    "onReverseChargingChanged(): rtx="
+                            + (z ? 1 : 0)
+                            + " level="
+                            + i
+                            + " name="
+                            + str
+                            + " this="
+                            + this);
         }
         fireReverseChanged();
     }
 
     @Override
-    public void addCallback(BatteryController.BatteryStateChangeCallback batteryStateChangeCallback) {
+    public void addCallback(
+            BatteryController.BatteryStateChangeCallback batteryStateChangeCallback) {
         super.addCallback(batteryStateChangeCallback);
         batteryStateChangeCallback.onReverseChanged(mReverse, mRtxLevel, mName);
         batteryStateChangeCallback.onExtremeBatterySaverChanged(mExtremeSaver);
@@ -162,7 +187,8 @@ public class BatteryControllerImplGoogle extends BatteryControllerImpl implement
             ArrayList arrayList = new ArrayList(mChangeCallbacks);
             int size = arrayList.size();
             for (int i = 0; i < size; i++) {
-                ((BatteryController.BatteryStateChangeCallback) arrayList.get(i)).onReverseChanged(mReverse, mRtxLevel, mName);
+                ((BatteryController.BatteryStateChangeCallback) arrayList.get(i))
+                        .onReverseChanged(mReverse, mRtxLevel, mName);
             }
         }
     }
@@ -170,7 +196,14 @@ public class BatteryControllerImplGoogle extends BatteryControllerImpl implement
     private boolean isExtremeBatterySaving() {
         Bundle bundle;
         try {
-            bundle = mContentResolverProvider.getUserContentResolver().call(EBS_STATE_AUTHORITY, "get_flipendo_state", (String) null, new Bundle());
+            bundle =
+                    mContentResolverProvider
+                            .getUserContentResolver()
+                            .call(
+                                    EBS_STATE_AUTHORITY,
+                                    "get_flipendo_state",
+                                    (String) null,
+                                    new Bundle());
         } catch (IllegalArgumentException unused) {
             bundle = new Bundle();
         }

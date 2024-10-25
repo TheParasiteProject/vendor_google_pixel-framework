@@ -9,7 +9,9 @@ import android.icu.text.DisplayContext;
 import android.os.Handler;
 import android.os.SystemClock;
 import android.util.AttributeSet;
+
 import com.android.systemui.res.R;
+
 import java.util.Locale;
 import java.util.Objects;
 
@@ -27,12 +29,15 @@ public class IcuDateTextView extends DoubleShadowTextView {
     public IcuDateTextView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet, 0);
         this.mTicker = this::onTimeTick;
-        this.mIntentReceiver = new BroadcastReceiver() { // from class: com.google.android.systemui.smartspace.IcuDateTextView.1
-            @Override // android.content.BroadcastReceiver
-            public void onReceive(Context context2, Intent intent) {
-                IcuDateTextView.this.onTimeChanged(!"android.intent.action.TIME_TICK".equals(intent.getAction()));
-            }
-        };
+        this.mIntentReceiver =
+                new BroadcastReceiver() { // from class:
+                                          // com.google.android.systemui.smartspace.IcuDateTextView.1
+                    @Override // android.content.BroadcastReceiver
+                    public void onReceive(Context context2, Intent intent) {
+                        IcuDateTextView.this.onTimeChanged(
+                                !"android.intent.action.TIME_TICK".equals(intent.getAction()));
+                    }
+                };
     }
 
     @Override // android.widget.TextView, android.view.View
@@ -79,7 +84,10 @@ public class IcuDateTextView extends DoubleShadowTextView {
             return;
         }
         if (this.mFormatter == null || force) {
-            DateFormat format = DateFormat.getInstanceForSkeleton(getContext().getString(R.string.smartspace_icu_date_pattern), Locale.getDefault());
+            DateFormat format =
+                    DateFormat.getInstanceForSkeleton(
+                            getContext().getString(R.string.smartspace_icu_date_pattern),
+                            Locale.getDefault());
             this.mFormatter = format;
             format.setContext(DisplayContext.CAPITALIZATION_FOR_BEGINNING_OF_SENTENCE);
         }

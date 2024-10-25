@@ -23,7 +23,6 @@ import android.provider.Settings;
 
 import com.android.internal.app.AssistUtils;
 import com.android.systemui.dagger.SysUISingleton;
-import com.google.android.systemui.assist.uihints.NgaMessageHandler;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -34,7 +33,8 @@ import javax.inject.Inject;
 public class AssistantPresenceHandler implements NgaMessageHandler.ConfigInfoListener {
     private final AssistUtils mAssistUtils;
     private final ContentResolver mContentResolver;
-    private final Set<AssistantPresenceChangeListener> mAssistantPresenceChangeListeners = new HashSet();
+    private final Set<AssistantPresenceChangeListener> mAssistantPresenceChangeListeners =
+            new HashSet();
     private final Set<SysUiIsNgaUiChangeListener> mSysUiIsNgaUiChangeListeners = new HashSet();
     private boolean mGoogleIsAssistant;
     private boolean mNgaIsAssistant;
@@ -46,20 +46,34 @@ public class AssistantPresenceHandler implements NgaMessageHandler.ConfigInfoLis
         mContentResolver = contentResolver;
         mAssistUtils = assistUtils;
         boolean z = false;
-        mNgaIsAssistant = Settings.Secure.getInt(contentResolver, "com.google.android.systemui.assist.uihints.NGA_IS_ASSISTANT", 0) != 0;
-        mSysUiIsNgaUi = Settings.Secure.getInt(contentResolver, "com.google.android.systemui.assist.uihints.SYS_UI_IS_NGA_UI", 0) != 0 || z;
+        mNgaIsAssistant =
+                Settings.Secure.getInt(
+                                contentResolver,
+                                "com.google.android.systemui.assist.uihints.NGA_IS_ASSISTANT",
+                                0)
+                        != 0;
+        mSysUiIsNgaUi =
+                Settings.Secure.getInt(
+                                        contentResolver,
+                                        "com.google.android.systemui.assist.uihints.SYS_UI_IS_NGA_UI",
+                                        0)
+                                != 0
+                        || z;
     }
 
     @Override
     public void onConfigInfo(NgaMessageHandler.ConfigInfo configInfo) {
-        updateAssistantPresence(fetchIsGoogleAssistant(), configInfo.ngaIsAssistant, configInfo.sysUiIsNgaUi);
+        updateAssistantPresence(
+                fetchIsGoogleAssistant(), configInfo.ngaIsAssistant, configInfo.sysUiIsNgaUi);
     }
 
-    public void registerAssistantPresenceChangeListener(AssistantPresenceChangeListener assistantPresenceChangeListener) {
+    public void registerAssistantPresenceChangeListener(
+            AssistantPresenceChangeListener assistantPresenceChangeListener) {
         mAssistantPresenceChangeListeners.add(assistantPresenceChangeListener);
     }
 
-    public void registerSysUiIsNgaUiChangeListener(SysUiIsNgaUiChangeListener sysUiIsNgaUiChangeListener) {
+    public void registerSysUiIsNgaUiChangeListener(
+            SysUiIsNgaUiChangeListener sysUiIsNgaUiChangeListener) {
         mSysUiIsNgaUiChangeListeners.add(sysUiIsNgaUiChangeListener);
     }
 
@@ -86,17 +100,26 @@ public class AssistantPresenceHandler implements NgaMessageHandler.ConfigInfoLis
             mNgaIsAssistant = z5;
             int i = z5 ? 1 : 0;
             int i2 = z5 ? 1 : 0;
-            Settings.Secure.putInt(mContentResolver, "com.google.android.systemui.assist.uihints.NGA_IS_ASSISTANT", i);
-            for (AssistantPresenceChangeListener assistantPresenceChangeListener : mAssistantPresenceChangeListeners) {
-                assistantPresenceChangeListener.onAssistantPresenceChanged(mGoogleIsAssistant, mNgaIsAssistant);
+            Settings.Secure.putInt(
+                    mContentResolver,
+                    "com.google.android.systemui.assist.uihints.NGA_IS_ASSISTANT",
+                    i);
+            for (AssistantPresenceChangeListener assistantPresenceChangeListener :
+                    mAssistantPresenceChangeListeners) {
+                assistantPresenceChangeListener.onAssistantPresenceChanged(
+                        mGoogleIsAssistant, mNgaIsAssistant);
             }
         }
         if (mSysUiIsNgaUi != z4) {
             mSysUiIsNgaUi = z4;
             int i3 = z4 ? 1 : 0;
             int i4 = z4 ? 1 : 0;
-            Settings.Secure.putInt(mContentResolver, "com.google.android.systemui.assist.uihints.SYS_UI_IS_NGA_UI", i3);
-            for (SysUiIsNgaUiChangeListener sysUiIsNgaUiChangeListener : mSysUiIsNgaUiChangeListeners) {
+            Settings.Secure.putInt(
+                    mContentResolver,
+                    "com.google.android.systemui.assist.uihints.SYS_UI_IS_NGA_UI",
+                    i3);
+            for (SysUiIsNgaUiChangeListener sysUiIsNgaUiChangeListener :
+                    mSysUiIsNgaUiChangeListeners) {
                 sysUiIsNgaUiChangeListener.onSysUiIsNgaUiChanged(mSysUiIsNgaUi);
             }
         }
@@ -104,7 +127,9 @@ public class AssistantPresenceHandler implements NgaMessageHandler.ConfigInfoLis
 
     private boolean fetchIsGoogleAssistant() {
         ComponentName assistComponentForUser = mAssistUtils.getAssistComponentForUser(-2);
-        return assistComponentForUser != null && "com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService".equals(assistComponentForUser.flattenToString());
+        return assistComponentForUser != null
+                && "com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService"
+                        .equals(assistComponentForUser.flattenToString());
     }
 
     public interface AssistantPresenceChangeListener {

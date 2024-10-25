@@ -2,11 +2,13 @@ package com.google.android.systemui.columbus.actions;
 
 import android.content.Context;
 import android.os.Handler;
+
 import com.android.internal.logging.UiEventLogger;
 import com.android.internal.util.ScreenshotHelper;
+
 import com.google.android.systemui.columbus.ColumbusEvent;
 import com.google.android.systemui.columbus.sensors.GestureSensor;
-import java.util.function.Consumer;
+
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
 public final class TakeScreenshot extends UserAction {
@@ -39,7 +41,8 @@ public final class TakeScreenshot extends UserAction {
     }
 
     @Override
-    public String getTag$vendor__unbundled_google__packages__SystemUIGoogle__android_common__sysuig() {
+    public String
+            getTag$vendor__unbundled_google__packages__SystemUIGoogle__android_common__sysuig() {
         return tag;
     }
 

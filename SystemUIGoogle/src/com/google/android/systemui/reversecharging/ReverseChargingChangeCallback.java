@@ -1,4 +1,3 @@
-
 /*
  * Copyright (C) 2022 The PixelExperience Project
  *
@@ -18,6 +17,5 @@
 package com.google.android.systemui.reversecharging;
 
 public interface ReverseChargingChangeCallback {
-    default void onReverseChargingChanged(boolean z, int i, String str) {
-    }
+    default void onReverseChargingChanged(boolean z, int i, String str) {}
 }

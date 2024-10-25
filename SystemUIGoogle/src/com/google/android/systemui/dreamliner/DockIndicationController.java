@@ -32,20 +32,26 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.android.internal.annotations.VisibleForTesting;
-import com.android.systemui.res.R;
 import com.android.systemui.plugins.statusbar.StatusBarStateController;
+import com.android.systemui.res.R;
 import com.android.systemui.shade.NotificationShadeWindowView;
 import com.android.systemui.statusbar.KeyguardIndicationController;
 import com.android.systemui.statusbar.SysuiStatusBarStateController;
-import com.android.systemui.statusbar.phone.KeyguardIndicationTextView;
 import com.android.systemui.statusbar.phone.CentralSurfaces;
+import com.android.systemui.statusbar.phone.KeyguardIndicationTextView;
 import com.android.systemui.statusbar.policy.ConfigurationController;
 
 import java.util.concurrent.TimeUnit;
 
-public class DockIndicationController implements StatusBarStateController.StateListener, View.OnClickListener, View.OnAttachStateChangeListener, ConfigurationController.ConfigurationListener {
+public class DockIndicationController
+        implements StatusBarStateController.StateListener,
+                View.OnClickListener,
+                View.OnAttachStateChangeListener,
+                ConfigurationController.ConfigurationListener {
     @VisibleForTesting
-    static final String ACTION_ASSISTANT_POODLE = "com.google.android.systemui.dreamliner.ASSISTANT_POODLE";
+    static final String ACTION_ASSISTANT_POODLE =
+            "com.google.android.systemui.dreamliner.ASSISTANT_POODLE";
+
     private static final long KEYGUARD_INDICATION_TIMEOUT_MILLIS;
     private static final long PROMO_SHOWING_TIME_MILLIS;
 
@@ -63,12 +69,9 @@ public class DockIndicationController implements StatusBarStateController.StateL
     private final KeyguardIndicationController mKeyguardIndicationController;
     private final Animation mShowPromoAnimation;
     private final CentralSurfaces mCentralSurfaces;
-    @VisibleForTesting
-    FrameLayout mDockPromo;
-    @VisibleForTesting
-    ImageView mDockedTopIcon;
-    @VisibleForTesting
-    boolean mIconViewsValidated;
+    @VisibleForTesting FrameLayout mDockPromo;
+    @VisibleForTesting ImageView mDockedTopIcon;
+    @VisibleForTesting boolean mIconViewsValidated;
     private boolean mDocking;
     private boolean mDozing;
     private TextView mPromoText;
@@ -78,40 +81,50 @@ public class DockIndicationController implements StatusBarStateController.StateL
     private boolean mTopIconShowing;
     private KeyguardIndicationTextView mTopIndicationView;
 
-    public DockIndicationController(Context context, KeyguardIndicationController keyguardIndicationController, SysuiStatusBarStateController sysuiStatusBarStateController, CentralSurfaces centralSurfaces) {
+    public DockIndicationController(
+            Context context,
+            KeyguardIndicationController keyguardIndicationController,
+            SysuiStatusBarStateController sysuiStatusBarStateController,
+            CentralSurfaces centralSurfaces) {
         mContext = context;
         mCentralSurfaces = centralSurfaces;
         mKeyguardIndicationController = keyguardIndicationController;
         sysuiStatusBarStateController.addCallback(this);
         mHidePromoRunnable = this::hidePromo;
         mDisableLiveRegionRunnable = this::disableLiveRegion;
-        Animation loadAnimation = AnimationUtils.loadAnimation(context, R.anim.dock_promo_animation);
+        Animation loadAnimation =
+                AnimationUtils.loadAnimation(context, R.anim.dock_promo_animation);
         mShowPromoAnimation = loadAnimation;
-        loadAnimation.setAnimationListener(new PhotoAnimationListener() {
-            @Override
-            public void onAnimationEnd(Animation animation) {
-                mDockPromo.postDelayed(mHidePromoRunnable, getRecommendedTimeoutMillis(DockIndicationController.PROMO_SHOWING_TIME_MILLIS));
-            }
-        });
-        Animation loadAnimation2 = AnimationUtils.loadAnimation(context, R.anim.dock_promo_fade_out);
+        loadAnimation.setAnimationListener(
+                new PhotoAnimationListener() {
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        mDockPromo.postDelayed(
+                                mHidePromoRunnable,
+                                getRecommendedTimeoutMillis(
+                                        DockIndicationController.PROMO_SHOWING_TIME_MILLIS));
+                    }
+                });
+        Animation loadAnimation2 =
+                AnimationUtils.loadAnimation(context, R.anim.dock_promo_fade_out);
         mHidePromoAnimation = loadAnimation2;
-        loadAnimation2.setAnimationListener(new PhotoAnimationListener() {
-            @Override
-            public void onAnimationEnd(Animation animation) {
-                if (mShowPromoTimes < 3) {
-                    showPromoInner();
-                    return;
-                }
-                mKeyguardIndicationController.setVisible(true);
-                mDockPromo.setVisibility(8);
-            }
-        });
+        loadAnimation2.setAnimationListener(
+                new PhotoAnimationListener() {
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        if (mShowPromoTimes < 3) {
+                            showPromoInner();
+                            return;
+                        }
+                        mKeyguardIndicationController.setVisible(true);
+                        mDockPromo.setVisibility(8);
+                    }
+                });
         mAccessibilityManager = (AccessibilityManager) context.getSystemService("accessibility");
     }
 
     @Override
-    public void onViewAttachedToWindow(View view) {
-    }
+    public void onViewAttachedToWindow(View view) {}
 
     @Override
     public void onClick(View view) {
@@ -176,8 +189,10 @@ public class DockIndicationController implements StatusBarStateController.StateL
 
     @VisibleForTesting
     void initializeIconViews() {
-        NotificationShadeWindowView notificationShadeWindowView = mCentralSurfaces.getNotificationShadeWindowView();
-        ImageView imageView = (ImageView) notificationShadeWindowView.findViewById(R.id.docked_top_icon);
+        NotificationShadeWindowView notificationShadeWindowView =
+                mCentralSurfaces.getNotificationShadeWindowView();
+        ImageView imageView =
+                (ImageView) notificationShadeWindowView.findViewById(R.id.docked_top_icon);
         mDockedTopIcon = imageView;
         imageView.setImageResource(R.drawable.ic_assistant_logo);
         ImageView imageView2 = mDockedTopIcon;
@@ -186,11 +201,16 @@ public class DockIndicationController implements StatusBarStateController.StateL
         mDockedTopIcon.setTooltipText(mContext.getString(i));
         mDockedTopIcon.setOnClickListener(this);
         mDockPromo = (FrameLayout) notificationShadeWindowView.findViewById(R.id.dock_promo);
-        TextView textView = (TextView) notificationShadeWindowView.findViewById(R.id.photo_promo_text);
+        TextView textView =
+                (TextView) notificationShadeWindowView.findViewById(R.id.photo_promo_text);
         mPromoText = textView;
         textView.setAutoSizeTextTypeUniformWithConfiguration(10, 16, 1, 2);
-        notificationShadeWindowView.findViewById(R.id.ambient_indication).addOnAttachStateChangeListener(this);
-        mTopIndicationView = (KeyguardIndicationTextView) notificationShadeWindowView.findViewById(R.id.keyguard_indication_text);
+        notificationShadeWindowView
+                .findViewById(R.id.ambient_indication)
+                .addOnAttachStateChangeListener(this);
+        mTopIndicationView =
+                (KeyguardIndicationTextView)
+                        notificationShadeWindowView.findViewById(R.id.keyguard_indication_text);
         mIconViewsValidated = true;
     }
 
@@ -216,7 +236,13 @@ public class DockIndicationController implements StatusBarStateController.StateL
         }
         int[] iArr = new int[2];
         imageView.getLocationOnScreen(iArr);
-        boolean contains = new RectF(iArr[0], iArr[1], iArr[0] + mDockedTopIcon.getWidth(), iArr[1] + mDockedTopIcon.getHeight()).contains(motionEvent.getRawX(), motionEvent.getRawY());
+        boolean contains =
+                new RectF(
+                                iArr[0],
+                                iArr[1],
+                                iArr[0] + mDockedTopIcon.getWidth(),
+                                iArr[1] + mDockedTopIcon.getHeight())
+                        .contains(motionEvent.getRawX(), motionEvent.getRawY());
         Log.d("DLIndicator", "dockedTopIcon touched=" + contains);
         return contains;
     }
@@ -262,7 +288,9 @@ public class DockIndicationController implements StatusBarStateController.StateL
         int accessibilityLiveRegion = mTopIndicationView.getAccessibilityLiveRegion();
         if (mDozing && mDocking) {
             mTopIndicationView.removeCallbacks(mDisableLiveRegionRunnable);
-            mTopIndicationView.postDelayed(mDisableLiveRegionRunnable, getRecommendedTimeoutMillis(KEYGUARD_INDICATION_TIMEOUT_MILLIS));
+            mTopIndicationView.postDelayed(
+                    mDisableLiveRegionRunnable,
+                    getRecommendedTimeoutMillis(KEYGUARD_INDICATION_TIMEOUT_MILLIS));
         } else if (accessibilityLiveRegion != 1) {
             mTopIndicationView.setAccessibilityLiveRegion(1);
         }
@@ -276,23 +304,21 @@ public class DockIndicationController implements StatusBarStateController.StateL
     }
 
     private long getRecommendedTimeoutMillis(long j) {
-        return mAccessibilityManager == null ? j : mAccessibilityManager.getRecommendedTimeoutMillis(Math.toIntExact(j), 2);
+        return mAccessibilityManager == null
+                ? j
+                : mAccessibilityManager.getRecommendedTimeoutMillis(Math.toIntExact(j), 2);
     }
 
     private static class PhotoAnimationListener implements Animation.AnimationListener {
-        private PhotoAnimationListener() {
-        }
+        private PhotoAnimationListener() {}
 
         @Override
-        public void onAnimationRepeat(Animation animation) {
-        }
+        public void onAnimationRepeat(Animation animation) {}
 
         @Override
-        public void onAnimationStart(Animation animation) {
-        }
+        public void onAnimationStart(Animation animation) {}
 
         @Override
-        public void onAnimationEnd(Animation animation) {
-        }
+        public void onAnimationEnd(Animation animation) {}
     }
 }

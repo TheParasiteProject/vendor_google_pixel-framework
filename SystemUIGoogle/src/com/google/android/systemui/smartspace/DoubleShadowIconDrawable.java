@@ -12,6 +12,7 @@ import android.graphics.RenderNode;
 import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.InsetDrawable;
+
 import com.android.internal.graphics.ColorUtils;
 import com.android.systemui.res.R;
 
@@ -27,15 +28,22 @@ public class DoubleShadowIconDrawable extends Drawable {
     public boolean mShowShadow;
 
     public DoubleShadowIconDrawable(Context context) {
-        int dimensionPixelSize = context.getResources().getDimensionPixelSize(R.dimen.enhanced_smartspace_icon_size);
-        int dimensionPixelSize2 = context.getResources().getDimensionPixelSize(R.dimen.enhanced_smartspace_icon_inset);
+        int dimensionPixelSize =
+                context.getResources().getDimensionPixelSize(R.dimen.enhanced_smartspace_icon_size);
+        int dimensionPixelSize2 =
+                context.getResources()
+                        .getDimensionPixelSize(R.dimen.enhanced_smartspace_icon_inset);
         this.mIconInsetSize = dimensionPixelSize2;
         int i = (dimensionPixelSize2 * 2) + dimensionPixelSize;
         this.mCanvasSize = i;
-        this.mAmbientShadowRadius = context.getResources().getDimensionPixelSize(R.dimen.ambient_text_shadow_radius);
-        this.mKeyShadowRadius = context.getResources().getDimensionPixelSize(R.dimen.key_text_shadow_radius);
-        this.mKeyShadowOffsetX = context.getResources().getDimensionPixelSize(R.dimen.key_text_shadow_dx);
-        this.mKeyShadowOffsetY = context.getResources().getDimensionPixelSize(R.dimen.key_text_shadow_dy);
+        this.mAmbientShadowRadius =
+                context.getResources().getDimensionPixelSize(R.dimen.ambient_text_shadow_radius);
+        this.mKeyShadowRadius =
+                context.getResources().getDimensionPixelSize(R.dimen.key_text_shadow_radius);
+        this.mKeyShadowOffsetX =
+                context.getResources().getDimensionPixelSize(R.dimen.key_text_shadow_dx);
+        this.mKeyShadowOffsetY =
+                context.getResources().getDimensionPixelSize(R.dimen.key_text_shadow_dy);
         setBounds(0, 0, i, i);
     }
 
@@ -58,10 +66,20 @@ public class DoubleShadowIconDrawable extends Drawable {
             RenderNode renderNode2 = new RenderNode("DoubleShadowNode");
             int i2 = this.mCanvasSize;
             renderNode2.setPosition(0, 0, i2, i2);
-            RenderEffect createShadowRenderEffect = createShadowRenderEffect(this.mAmbientShadowRadius, 0, 0, 48);
-            RenderEffect createShadowRenderEffect2 = createShadowRenderEffect(this.mKeyShadowRadius, this.mKeyShadowOffsetX, this.mKeyShadowOffsetY, 72);
+            RenderEffect createShadowRenderEffect =
+                    createShadowRenderEffect(this.mAmbientShadowRadius, 0, 0, 48);
+            RenderEffect createShadowRenderEffect2 =
+                    createShadowRenderEffect(
+                            this.mKeyShadowRadius,
+                            this.mKeyShadowOffsetX,
+                            this.mKeyShadowOffsetY,
+                            72);
             if (createShadowRenderEffect != null && createShadowRenderEffect2 != null) {
-                renderNode2.setRenderEffect(RenderEffect.createBlendModeEffect(createShadowRenderEffect, createShadowRenderEffect2, BlendMode.DARKEN));
+                renderNode2.setRenderEffect(
+                        RenderEffect.createBlendModeEffect(
+                                createShadowRenderEffect,
+                                createShadowRenderEffect2,
+                                BlendMode.DARKEN));
                 renderNode = renderNode2;
             }
         }
@@ -69,7 +87,10 @@ public class DoubleShadowIconDrawable extends Drawable {
     }
 
     public static RenderEffect createShadowRenderEffect(int i, int i2, int i3, int i4) {
-        return RenderEffect.createColorFilterEffect(new PorterDuffColorFilter(Color.argb(i4, 0, 0, 0), PorterDuff.Mode.MULTIPLY), RenderEffect.createOffsetEffect(i2, i3, RenderEffect.createBlurEffect(i, i, Shader.TileMode.CLAMP)));
+        return RenderEffect.createColorFilterEffect(
+                new PorterDuffColorFilter(Color.argb(i4, 0, 0, 0), PorterDuff.Mode.MULTIPLY),
+                RenderEffect.createOffsetEffect(
+                        i2, i3, RenderEffect.createBlurEffect(i, i, Shader.TileMode.CLAMP)));
     }
 
     @Override // android.graphics.drawable.Drawable
@@ -93,7 +114,9 @@ public class DoubleShadowIconDrawable extends Drawable {
     @Override // android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
         RenderNode renderNode;
-        if (canvas.isHardwareAccelerated() && (renderNode = this.mDoubleShadowNode) != null && this.mShowShadow) {
+        if (canvas.isHardwareAccelerated()
+                && (renderNode = this.mDoubleShadowNode) != null
+                && this.mShowShadow) {
             if (!renderNode.hasDisplayList()) {
                 this.mIconDrawable.draw(this.mDoubleShadowNode.beginRecording());
                 this.mDoubleShadowNode.endRecording();

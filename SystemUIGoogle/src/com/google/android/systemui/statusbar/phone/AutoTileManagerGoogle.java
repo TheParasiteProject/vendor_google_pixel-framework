@@ -19,11 +19,10 @@ package com.google.android.systemui.statusbar.phone;
 import static com.android.systemui.qs.dagger.QSFlagsModule.RBC_AVAILABLE;
 
 import android.content.Context;
-import android.hardware.display.NightDisplayListener;
 import android.os.Handler;
 
-import com.android.systemui.dagger.qualifiers.Background;
 import com.android.systemui.dagger.NightDisplayListenerModule;
+import com.android.systemui.dagger.qualifiers.Background;
 import com.android.systemui.qs.AutoAddTracker;
 import com.android.systemui.qs.QSHost;
 import com.android.systemui.qs.ReduceBrightColorsController;
@@ -43,23 +42,28 @@ import javax.inject.Named;
 public class AutoTileManagerGoogle extends AutoTileManager {
     private final BatteryController mBatteryController;
 
-    private final BatteryController.BatteryStateChangeCallback mBatteryControllerCallback = new BatteryController.BatteryStateChangeCallback() {
-        @Override
-        public void onReverseChanged(boolean z, int i, String str) {
-            if (!mAutoTracker.isAdded("reverse") && z) {
-                mHost.addTile("reverse");
-                mAutoTracker.setTileAdded("reverse");
-                mHandler.post(new Runnable() {
-                    @Override
-                    public final void run() {
-                        mBatteryController.removeCallback(mBatteryControllerCallback);
+    private final BatteryController.BatteryStateChangeCallback mBatteryControllerCallback =
+            new BatteryController.BatteryStateChangeCallback() {
+                @Override
+                public void onReverseChanged(boolean z, int i, String str) {
+                    if (!mAutoTracker.isAdded("reverse") && z) {
+                        mHost.addTile("reverse");
+                        mAutoTracker.setTileAdded("reverse");
+                        mHandler.post(
+                                new Runnable() {
+                                    @Override
+                                    public final void run() {
+                                        mBatteryController.removeCallback(
+                                                mBatteryControllerCallback);
+                                    }
+                                });
                     }
-                });
-            }
-        }
-    };
+                }
+            };
 
-    public AutoTileManagerGoogle(Context context, AutoAddTracker.Builder autoAddTrackerBuilder,
+    public AutoTileManagerGoogle(
+            Context context,
+            AutoAddTracker.Builder autoAddTrackerBuilder,
             QSHost host,
             @Background Handler handler,
             SecureSettings secureSettings,
@@ -74,10 +78,22 @@ public class AutoTileManagerGoogle extends AutoTileManager {
             SafetyController safetyController,
             @Named(RBC_AVAILABLE) boolean isReduceBrightColorsAvailable,
             BatteryController batteryController) {
-        super(context, autoAddTrackerBuilder, host, handler, secureSettings,
-            hotspotController, dataSaverController, managedProfileController,
-            nightDisplayListenerBuilder, castController, reduceBrightColorsController,
-            deviceControlsController, walletController, safetyController, isReduceBrightColorsAvailable);
+        super(
+                context,
+                autoAddTrackerBuilder,
+                host,
+                handler,
+                secureSettings,
+                hotspotController,
+                dataSaverController,
+                managedProfileController,
+                nightDisplayListenerBuilder,
+                castController,
+                reduceBrightColorsController,
+                deviceControlsController,
+                walletController,
+                safetyController,
+                isReduceBrightColorsAvailable);
         mBatteryController = batteryController;
     }
 

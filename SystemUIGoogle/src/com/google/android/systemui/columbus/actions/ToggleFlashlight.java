@@ -22,7 +22,7 @@ import android.os.Handler;
 import com.android.systemui.dagger.SysUISingleton;
 import com.android.systemui.dagger.qualifiers.Main;
 import com.android.systemui.statusbar.policy.FlashlightController;
-import com.google.android.systemui.columbus.ColumbusEvent;
+
 import com.google.android.systemui.columbus.sensors.GestureSensor;
 
 import java.util.concurrent.TimeUnit;
@@ -35,42 +35,45 @@ public final class ToggleFlashlight extends UserAction {
     public final FlashlightController mFlashlightController;
     public final Handler mHandler;
     public final String mTag;
-    public final Runnable mTurnOffFlashlightRunnable = new Runnable() {
-        @Override
-        public void run() {
-            mFlashlightController.setFlashlight(false);
-        }
-    };
+    public final Runnable mTurnOffFlashlightRunnable =
+            new Runnable() {
+                @Override
+                public void run() {
+                    mFlashlightController.setFlashlight(false);
+                }
+            };
 
     @Inject
-    public ToggleFlashlight(Context context, FlashlightController flashlightController, @Main Handler handler) {
+    public ToggleFlashlight(
+            Context context, FlashlightController flashlightController, @Main Handler handler) {
         super(context, null, 2, null);
         mFlashlightController = flashlightController;
         mHandler = handler;
         mTag = "ToggleFlashlight";
-        FlashlightController.FlashlightListener flashlightListener = new FlashlightController.FlashlightListener() {
-            @Override
-            public void onFlashlightAvailabilityChanged(boolean z) {
-                if (!z) {
-                    mHandler.removeCallbacks(mTurnOffFlashlightRunnable);
-                }
-                updateAvailable();
-            }
+        FlashlightController.FlashlightListener flashlightListener =
+                new FlashlightController.FlashlightListener() {
+                    @Override
+                    public void onFlashlightAvailabilityChanged(boolean z) {
+                        if (!z) {
+                            mHandler.removeCallbacks(mTurnOffFlashlightRunnable);
+                        }
+                        updateAvailable();
+                    }
 
-            @Override
-            public void onFlashlightChanged(boolean z) {
-                if (!z) {
-                    mHandler.removeCallbacks(mTurnOffFlashlightRunnable);
-                }
-                updateAvailable();
-            }
+                    @Override
+                    public void onFlashlightChanged(boolean z) {
+                        if (!z) {
+                            mHandler.removeCallbacks(mTurnOffFlashlightRunnable);
+                        }
+                        updateAvailable();
+                    }
 
-            @Override
-            public void onFlashlightError() {
-                mHandler.removeCallbacks(mTurnOffFlashlightRunnable);
-                updateAvailable();
-            }
-        };
+                    @Override
+                    public void onFlashlightError() {
+                        mHandler.removeCallbacks(mTurnOffFlashlightRunnable);
+                        updateAvailable();
+                    }
+                };
         mFlashlightController.addCallback(flashlightListener);
         updateAvailable();
     }
@@ -95,7 +98,8 @@ public final class ToggleFlashlight extends UserAction {
     }
 
     @Override
-    public String getTag$vendor__unbundled_google__packages__SystemUIGoogle__android_common__sysuig() {
+    public String
+            getTag$vendor__unbundled_google__packages__SystemUIGoogle__android_common__sysuig() {
         return mTag;
     }
 }

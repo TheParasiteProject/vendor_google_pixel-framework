@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.google.android.systemui.qs.tileimpl;
+package com.google.android.systemui.qs.tileimpl
 
 import com.android.systemui.qs.tileimpl.QSTileImpl
-import com.google.android.systemui.qs.tiles.BatterySaverTileGoogle;
-import com.google.android.systemui.qs.tiles.ReverseChargingTile;
+import com.google.android.systemui.qs.tiles.BatterySaverTileGoogle
+import com.google.android.systemui.qs.tiles.ReverseChargingTile
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap

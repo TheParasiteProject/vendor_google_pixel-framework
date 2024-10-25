@@ -8,6 +8,7 @@ import com.android.systemui.res.R;
 import com.android.systemui.statusbar.phone.CentralSurfaces;
 import com.android.systemui.statusbar.phone.KeyguardBottomAreaView;
 import com.android.systemui.statusbar.policy.KeyguardStateController;
+
 import com.google.android.systemui.elmyra.sensors.GestureSensor;
 
 public class OpaLockscreen implements FeedbackEffect {
@@ -19,16 +20,19 @@ public class OpaLockscreen implements FeedbackEffect {
     private FeedbackEffect mLockscreenOpaLayout;
     private final CentralSurfaces mCentralSurfaces;
 
-    public OpaLockscreen(CentralSurfaces centralSurfaces, KeyguardStateController keyguardStateController) {
+    public OpaLockscreen(
+            CentralSurfaces centralSurfaces, KeyguardStateController keyguardStateController) {
         mCentralSurfaces = centralSurfaces;
         mKeyguardStateController = keyguardStateController;
         refreshLockscreenOpaLayout();
     }
 
     private void refreshLockscreenOpaLayout() {
-        KeyguardBottomAreaView keyguardBottomAreaView = mCentralSurfaces.getNotificationPanelViewController().getKeyguardBottomAreaView();
+        KeyguardBottomAreaView keyguardBottomAreaView =
+                mCentralSurfaces.getNotificationPanelViewController().getKeyguardBottomAreaView();
         if (keyguardBottomAreaView != null && mKeyguardStateController.isShowing()) {
-            if (mLockscreenOpaLayout == null || !keyguardBottomAreaView.equals(mKeyguardBottomAreaView)) {
+            if (mLockscreenOpaLayout == null
+                    || !keyguardBottomAreaView.equals(mKeyguardBottomAreaView)) {
                 mKeyguardBottomAreaView = keyguardBottomAreaView;
                 FeedbackEffect feedbackEffect = mLockscreenOpaLayout;
                 if (feedbackEffect != null) {

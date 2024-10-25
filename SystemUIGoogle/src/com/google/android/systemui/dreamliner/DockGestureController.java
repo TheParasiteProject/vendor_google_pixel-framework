@@ -32,10 +32,10 @@ import android.widget.TextView;
 
 import androidx.dynamicanimation.animation.DynamicAnimation;
 
-import com.android.internal.annotations.VisibleForTesting;
-import com.android.systemui.res.R;
 import com.android.app.animation.Interpolators;
+import com.android.internal.annotations.VisibleForTesting;
 import com.android.systemui.plugins.statusbar.StatusBarStateController;
+import com.android.systemui.res.R;
 import com.android.systemui.statusbar.CrossFadeHelper;
 import com.android.systemui.statusbar.policy.ConfigurationController;
 import com.android.systemui.statusbar.policy.KeyguardStateController;
@@ -43,7 +43,11 @@ import com.android.wm.shell.animation.PhysicsAnimator;
 
 import java.util.concurrent.TimeUnit;
 
-public class DockGestureController extends GestureDetector.SimpleOnGestureListener implements View.OnTouchListener, StatusBarStateController.StateListener, KeyguardStateController.Callback, ConfigurationController.ConfigurationListener {
+public class DockGestureController extends GestureDetector.SimpleOnGestureListener
+        implements View.OnTouchListener,
+                StatusBarStateController.StateListener,
+                KeyguardStateController.Callback,
+                ConfigurationController.ConfigurationListener {
     private static final long GEAR_VISIBLE_TIME_MILLIS;
     private static final long PREVIEW_DELAY_MILLIS;
 
@@ -63,10 +67,10 @@ public class DockGestureController extends GestureDetector.SimpleOnGestureListen
     private final ImageView mSettingsGear;
     private final StatusBarStateController mStatusBarStateController;
     private final View mTouchDelegateView;
-    private final PhysicsAnimator.SpringConfig mTargetSpringConfig = new PhysicsAnimator.SpringConfig(1500.0f, 1.0f);
+    private final PhysicsAnimator.SpringConfig mTargetSpringConfig =
+            new PhysicsAnimator.SpringConfig(1500.0f, 1.0f);
     private final PhysicsAnimator<View> mPreviewTargetAnimator;
-    @VisibleForTesting
-    GestureDetector mGestureDetector;
+    @VisibleForTesting GestureDetector mGestureDetector;
     private float mDiffX;
     private float mFirstTouchX;
     private float mFirstTouchY;
@@ -80,16 +84,24 @@ public class DockGestureController extends GestureDetector.SimpleOnGestureListen
     private VelocityTracker mVelocityTracker;
     private float mVelocityX;
     private final Runnable mHideGearRunnable = this::hideGear;
-    private final KeyguardStateController.Callback mKeyguardMonitorCallback = new KeyguardStateController.Callback() {
-        @Override
-        public void onKeyguardShowingChanged() {
-            if (mKeyguardStateController.isOccluded()) {
-                hidePhotoPreview(false);
-            }
-        }
-    };
+    private final KeyguardStateController.Callback mKeyguardMonitorCallback =
+            new KeyguardStateController.Callback() {
+                @Override
+                public void onKeyguardShowingChanged() {
+                    if (mKeyguardStateController.isOccluded()) {
+                        hidePhotoPreview(false);
+                    }
+                }
+            };
 
-    DockGestureController(Context context, ImageView imageView, FrameLayout frameLayout, View view, DockIndicationController dockIndicationController, StatusBarStateController statusBarStateController, KeyguardStateController keyguardStateController) {
+    DockGestureController(
+            Context context,
+            ImageView imageView,
+            FrameLayout frameLayout,
+            View view,
+            DockIndicationController dockIndicationController,
+            StatusBarStateController statusBarStateController,
+            KeyguardStateController keyguardStateController) {
         mDockIndicationController = dockIndicationController;
         mContext = context;
         mGestureDetector = new GestureDetector(context, this);
@@ -99,10 +111,12 @@ public class DockGestureController extends GestureDetector.SimpleOnGestureListen
         TextView textView = frameLayout.findViewById(R.id.photo_preview_text);
         mPhotoPreviewText = textView;
         textView.setText(context.getResources().getString(R.string.dock_photo_preview_text));
-        imageView.setOnClickListener(v -> {
-            hideGear();
-            sendProtectedBroadcast(new Intent("com.google.android.apps.dreamliner.SETTINGS"));
-        });
+        imageView.setOnClickListener(
+                v -> {
+                    hideGear();
+                    sendProtectedBroadcast(
+                            new Intent("com.google.android.apps.dreamliner.SETTINGS"));
+                });
         mAccessibilityManager = (AccessibilityManager) context.getSystemService("accessibility");
         mPhotoDiffThreshold = context.getResources().getDimensionPixelSize(R.dimen.dock_photo_diff);
         mStatusBarStateController = statusBarStateController;
@@ -122,7 +136,9 @@ public class DockGestureController extends GestureDetector.SimpleOnGestureListen
             mLaunchedPhoto = false;
             mFromRight = false;
             DockIndicationController dockIndicationController = mDockIndicationController;
-            boolean z = dockIndicationController == null || !dockIndicationController.isDockedTopIconTouched(motionEvent);
+            boolean z =
+                    dockIndicationController == null
+                            || !dockIndicationController.isDockedTopIconTouched(motionEvent);
             mShouldConsumeTouch = z;
             if (z && x > mPhotoPreview.getRight() - mPhotoDiffThreshold) {
                 mFromRight = true;
@@ -134,12 +150,22 @@ public class DockGestureController extends GestureDetector.SimpleOnGestureListen
         } else if (actionMasked == 1) {
             mVelocityTracker.computeCurrentVelocity(1000);
             mVelocityX = mVelocityTracker.getXVelocity();
-            if (Math.signum(mDiffX) == Math.signum(mVelocityX) || mLastTouchX > mPhotoPreview.getRight() - mPhotoDiffThreshold) {
+            if (Math.signum(mDiffX) == Math.signum(mVelocityX)
+                    || mLastTouchX > mPhotoPreview.getRight() - mPhotoDiffThreshold) {
                 mTriggerPhoto = false;
             }
             if (mTriggerPhoto && mPhotoPreview.getVisibility() == 0) {
-                sendProtectedBroadcast(new Intent("com.google.android.systemui.dreamliner.PHOTO_EVENT"));
-                mPhotoPreview.post(() -> mPreviewTargetAnimator.spring(DynamicAnimation.TRANSLATION_X, 0.0f, mVelocityX, mTargetSpringConfig).start());
+                sendProtectedBroadcast(
+                        new Intent("com.google.android.systemui.dreamliner.PHOTO_EVENT"));
+                mPhotoPreview.post(
+                        () ->
+                                mPreviewTargetAnimator
+                                        .spring(
+                                                DynamicAnimation.TRANSLATION_X,
+                                                0.0f,
+                                                mVelocityX,
+                                                mTargetSpringConfig)
+                                        .start());
                 mLaunchedPhoto = true;
                 mTriggerPhoto = false;
             } else {
@@ -164,7 +190,8 @@ public class DockGestureController extends GestureDetector.SimpleOnGestureListen
         mPhotoPreview.setTranslationX(f + (x - f));
         mVelocityTracker.addMovement(motionEvent);
         mDiffX = mFirstTouchX - x;
-        if (Math.abs(mDiffX) <= Math.abs(mFirstTouchY - motionEvent.getY()) || Math.abs(mDiffX) <= mPhotoDiffThreshold) {
+        if (Math.abs(mDiffX) <= Math.abs(mFirstTouchY - motionEvent.getY())
+                || Math.abs(mDiffX) <= mPhotoDiffThreshold) {
             return;
         }
         mTriggerPhoto = true;
@@ -175,10 +202,20 @@ public class DockGestureController extends GestureDetector.SimpleOnGestureListen
             return;
         }
         if (z) {
-            mPhotoPreview.post(() -> mPreviewTargetAnimator.spring(DynamicAnimation.TRANSLATION_X, mPhotoPreview.getRight(), mVelocityX, mTargetSpringConfig).withEndActions(() -> {
-                mPhotoPreview.setAlpha(0.0f);
-                mPhotoPreview.setVisibility(4);
-            }).start());
+            mPhotoPreview.post(
+                    () ->
+                            mPreviewTargetAnimator
+                                    .spring(
+                                            DynamicAnimation.TRANSLATION_X,
+                                            mPhotoPreview.getRight(),
+                                            mVelocityX,
+                                            mTargetSpringConfig)
+                                    .withEndActions(
+                                            () -> {
+                                                mPhotoPreview.setAlpha(0.0f);
+                                                mPhotoPreview.setVisibility(4);
+                                            })
+                                    .start());
             return;
         }
         mPhotoPreview.setAlpha(0.0f);
@@ -229,7 +266,8 @@ public class DockGestureController extends GestureDetector.SimpleOnGestureListen
 
     @Override
     public void onLocaleListChanged() {
-        mPhotoPreviewText.setText(mContext.getResources().getString(R.string.dock_photo_preview_text));
+        mPhotoPreviewText.setText(
+                mContext.getResources().getString(R.string.dock_photo_preview_text));
     }
 
     void setPhotoEnabled(boolean z) {
@@ -264,7 +302,11 @@ public class DockGestureController extends GestureDetector.SimpleOnGestureListen
         }
         if (!mSettingsGear.isVisibleToUser()) {
             mSettingsGear.setVisibility(0);
-            mSettingsGear.animate().setInterpolator(Interpolators.LINEAR_OUT_SLOW_IN).alpha(1.0f).start();
+            mSettingsGear
+                    .animate()
+                    .setInterpolator(Interpolators.LINEAR_OUT_SLOW_IN)
+                    .alpha(1.0f)
+                    .start();
         }
         mSettingsGear.removeCallbacks(mHideGearRunnable);
         mSettingsGear.postDelayed(mHideGearRunnable, getRecommendedTimeoutMillis());
@@ -273,7 +315,12 @@ public class DockGestureController extends GestureDetector.SimpleOnGestureListen
     private void hideGear() {
         if (mSettingsGear.isVisibleToUser()) {
             mSettingsGear.removeCallbacks(mHideGearRunnable);
-            mSettingsGear.animate().setInterpolator(Interpolators.LINEAR_OUT_SLOW_IN).alpha(0.0f).withEndAction(() -> mSettingsGear.setVisibility(4)).start();
+            mSettingsGear
+                    .animate()
+                    .setInterpolator(Interpolators.LINEAR_OUT_SLOW_IN)
+                    .alpha(0.0f)
+                    .withEndAction(() -> mSettingsGear.setVisibility(4))
+                    .start();
         }
     }
 
@@ -287,6 +334,9 @@ public class DockGestureController extends GestureDetector.SimpleOnGestureListen
 
     private long getRecommendedTimeoutMillis() {
         AccessibilityManager accessibilityManager = mAccessibilityManager;
-        return accessibilityManager == null ? GEAR_VISIBLE_TIME_MILLIS : accessibilityManager.getRecommendedTimeoutMillis(Math.toIntExact(GEAR_VISIBLE_TIME_MILLIS), 5);
+        return accessibilityManager == null
+                ? GEAR_VISIBLE_TIME_MILLIS
+                : accessibilityManager.getRecommendedTimeoutMillis(
+                        Math.toIntExact(GEAR_VISIBLE_TIME_MILLIS), 5);
     }
 }

@@ -24,7 +24,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.android.internal.app.AssistUtils;
 import com.android.systemui.assist.AssistLogger;
 import com.android.systemui.assist.AssistManager;
 import com.android.systemui.dagger.SysUISingleton;
@@ -35,8 +34,8 @@ import com.android.systemui.navigationbar.NavigationModeController;
 import com.android.systemui.plugins.statusbar.StatusBarStateController;
 import com.android.systemui.recents.OverviewProxyService;
 import com.android.systemui.statusbar.CommandQueue;
-import com.android.systemui.statusbar.phone.CentralSurfaces;
 import com.android.systemui.statusbar.policy.ConfigurationController;
+
 import com.google.android.systemui.assist.uihints.AssistantPresenceHandler;
 import com.google.android.systemui.assist.uihints.AssistantWarmer;
 import com.google.android.systemui.assist.uihints.ColorChangeHandler;
@@ -44,7 +43,6 @@ import com.google.android.systemui.assist.uihints.ConfigurationHandler;
 import com.google.android.systemui.assist.uihints.FlingVelocityWrapper;
 import com.google.android.systemui.assist.uihints.GlowController;
 import com.google.android.systemui.assist.uihints.GoBackHandler;
-import com.google.android.systemui.assist.uihints.GoogleDefaultUiController;
 import com.google.android.systemui.assist.uihints.IconController;
 import com.google.android.systemui.assist.uihints.KeyboardMonitor;
 import com.google.android.systemui.assist.uihints.LightnessProvider;
@@ -66,6 +64,11 @@ import com.google.android.systemui.assist.uihints.input.TouchActionRegion;
 import com.google.android.systemui.assist.uihints.input.TouchInsideRegion;
 import com.google.android.systemui.statusbar.phone.CentralSurfacesGoogle;
 
+import dagger.Lazy;
+import dagger.Module;
+import dagger.Provides;
+import dagger.multibindings.ElementsIntoSet;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
@@ -74,16 +77,12 @@ import java.util.Set;
 
 import javax.inject.Named;
 
-import dagger.Lazy;
-import dagger.Module;
-import dagger.Provides;
-import dagger.multibindings.ElementsIntoSet;
-
 @Module
 public abstract class AssistModule {
     @Provides
     @SysUISingleton
-    static NavBarFader provideNavBarFader(NavigationBarController navigationBarController, Handler handler) {
+    static NavBarFader provideNavBarFader(
+            NavigationBarController navigationBarController, Handler handler) {
         return new NavBarFader(navigationBarController, handler);
     }
 
@@ -95,13 +94,18 @@ public abstract class AssistModule {
 
     @Provides
     @SysUISingleton
-    static TouchInsideHandler provideTouchInsideHandler(Lazy<AssistManager> lazy, NavigationModeController navigationModeController, AssistLogger assistLogger) {
+    static TouchInsideHandler provideTouchInsideHandler(
+            Lazy<AssistManager> lazy,
+            NavigationModeController navigationModeController,
+            AssistLogger assistLogger) {
         return new TouchInsideHandler(lazy, navigationModeController, assistLogger);
     }
 
     @Provides
     @SysUISingleton
-    static OverlappedElementController provideOverlappedElementController(OverviewProxyService overviewProxyService, KeyguardBottomAreaInteractor keyguardBottomAreaInteractor) {
+    static OverlappedElementController provideOverlappedElementController(
+            OverviewProxyService overviewProxyService,
+            KeyguardBottomAreaInteractor keyguardBottomAreaInteractor) {
         return new OverlappedElementController(overviewProxyService, keyguardBottomAreaInteractor);
     }
 
@@ -113,10 +117,12 @@ public abstract class AssistModule {
 
     @Provides
     @SysUISingleton
-    static IconController provideIconController(LayoutInflater layoutInflater, @Named(OVERLAY_UI_HOST_PARENT_VIEW_GROUP) ViewGroup viewGroup, ConfigurationController configurationController) {
+    static IconController provideIconController(
+            LayoutInflater layoutInflater,
+            @Named(OVERLAY_UI_HOST_PARENT_VIEW_GROUP) ViewGroup viewGroup,
+            ConfigurationController configurationController) {
         return new IconController(layoutInflater, viewGroup, configurationController);
     }
-
 
     @Provides
     @SysUISingleton
@@ -126,8 +132,13 @@ public abstract class AssistModule {
 
     @Provides
     @SysUISingleton
-    static TranscriptionController provideTranscriptionController(@Named(OVERLAY_UI_HOST_PARENT_VIEW_GROUP) ViewGroup viewGroup, TouchInsideHandler touchInsideHandler, FlingVelocityWrapper flingVelocityWrapper, ConfigurationController configurationController) {
-        return new TranscriptionController(viewGroup, touchInsideHandler, flingVelocityWrapper, configurationController);
+    static TranscriptionController provideTranscriptionController(
+            @Named(OVERLAY_UI_HOST_PARENT_VIEW_GROUP) ViewGroup viewGroup,
+            TouchInsideHandler touchInsideHandler,
+            FlingVelocityWrapper flingVelocityWrapper,
+            ConfigurationController configurationController) {
+        return new TranscriptionController(
+                viewGroup, touchInsideHandler, flingVelocityWrapper, configurationController);
     }
 
     @Provides
@@ -144,7 +155,8 @@ public abstract class AssistModule {
 
     @Provides
     @SysUISingleton
-    static KeyboardMonitor provideKeyboardMonitor(Context context, Optional<CommandQueue> optional) {
+    static KeyboardMonitor provideKeyboardMonitor(
+            Context context, Optional<CommandQueue> optional) {
         return new KeyboardMonitor(context, optional);
     }
 
@@ -168,26 +180,110 @@ public abstract class AssistModule {
 
     @Provides
     @SysUISingleton
-    static NgaUiController provideNgaUiController(Context context, TimeoutManager timeoutManager, AssistantPresenceHandler assistantPresenceHandler, TouchInsideHandler touchInsideHandler, ColorChangeHandler colorChangeHandler, OverlayUiHost overlayUiHost, EdgeLightsController edgeLightsController, GlowController glowController, ScrimController scrimController, TranscriptionController transcriptionController, IconController iconController, LightnessProvider lightnessProvider, StatusBarStateController statusBarStateController, Lazy<AssistManager> lazy, FlingVelocityWrapper flingVelocityWrapper, AssistantWarmer assistantWarmer, NavBarFader navBarFader, AssistLogger assistLogger) {
-        return new NgaUiController(context, timeoutManager, assistantPresenceHandler, touchInsideHandler, colorChangeHandler, overlayUiHost, edgeLightsController, glowController, scrimController, transcriptionController, iconController, lightnessProvider, statusBarStateController, lazy, flingVelocityWrapper, assistantWarmer, navBarFader, assistLogger);
+    static NgaUiController provideNgaUiController(
+            Context context,
+            TimeoutManager timeoutManager,
+            AssistantPresenceHandler assistantPresenceHandler,
+            TouchInsideHandler touchInsideHandler,
+            ColorChangeHandler colorChangeHandler,
+            OverlayUiHost overlayUiHost,
+            EdgeLightsController edgeLightsController,
+            GlowController glowController,
+            ScrimController scrimController,
+            TranscriptionController transcriptionController,
+            IconController iconController,
+            LightnessProvider lightnessProvider,
+            StatusBarStateController statusBarStateController,
+            Lazy<AssistManager> lazy,
+            FlingVelocityWrapper flingVelocityWrapper,
+            AssistantWarmer assistantWarmer,
+            NavBarFader navBarFader,
+            AssistLogger assistLogger) {
+        return new NgaUiController(
+                context,
+                timeoutManager,
+                assistantPresenceHandler,
+                touchInsideHandler,
+                colorChangeHandler,
+                overlayUiHost,
+                edgeLightsController,
+                glowController,
+                scrimController,
+                transcriptionController,
+                iconController,
+                lightnessProvider,
+                statusBarStateController,
+                lazy,
+                flingVelocityWrapper,
+                assistantWarmer,
+                navBarFader,
+                assistLogger);
     }
 
     @Provides
     @SysUISingleton
-    static GlowController provideGlowController(Context context, @Named(OVERLAY_UI_HOST_PARENT_VIEW_GROUP) ViewGroup viewGroup, TouchInsideHandler touchInsideHandler) {
+    static GlowController provideGlowController(
+            Context context,
+            @Named(OVERLAY_UI_HOST_PARENT_VIEW_GROUP) ViewGroup viewGroup,
+            TouchInsideHandler touchInsideHandler) {
         return new GlowController(context, viewGroup, touchInsideHandler);
     }
 
     @Provides
     @SysUISingleton
-    static NgaMessageHandler provideNgaMessageHandler(NgaUiController ngaUiController, AssistantPresenceHandler assistantPresenceHandler, NavigationModeController navigationModeController, Set<NgaMessageHandler.KeepAliveListener> set, Set<NgaMessageHandler.AudioInfoListener> setB, Set<NgaMessageHandler.CardInfoListener> setC, Set<NgaMessageHandler.ConfigInfoListener> setD, Set<NgaMessageHandler.EdgeLightsInfoListener> setE, Set<NgaMessageHandler.TranscriptionInfoListener> setF, Set<NgaMessageHandler.GreetingInfoListener> setG, Set<NgaMessageHandler.ChipsInfoListener> setH, Set<NgaMessageHandler.ClearListener> setI, Set<NgaMessageHandler.StartActivityInfoListener> setJ, Set<NgaMessageHandler.KeyboardInfoListener> setK, Set<NgaMessageHandler.ZerostateInfoListener> set1B, Set<NgaMessageHandler.GoBackListener> set1C, Set<NgaMessageHandler.TakeScreenshotListener> set1D, Set<NgaMessageHandler.WarmingListener> set1E, Set<NgaMessageHandler.NavBarVisibilityListener> set1F, @Main Handler handler) {
-        return new NgaMessageHandler(ngaUiController, assistantPresenceHandler, navigationModeController, set, setB, setC, setD, setE, setF, setG, setH, setI, setJ, setK, set1B, set1C, set1D, set1E, set1F, handler);
+    static NgaMessageHandler provideNgaMessageHandler(
+            NgaUiController ngaUiController,
+            AssistantPresenceHandler assistantPresenceHandler,
+            NavigationModeController navigationModeController,
+            Set<NgaMessageHandler.KeepAliveListener> set,
+            Set<NgaMessageHandler.AudioInfoListener> setB,
+            Set<NgaMessageHandler.CardInfoListener> setC,
+            Set<NgaMessageHandler.ConfigInfoListener> setD,
+            Set<NgaMessageHandler.EdgeLightsInfoListener> setE,
+            Set<NgaMessageHandler.TranscriptionInfoListener> setF,
+            Set<NgaMessageHandler.GreetingInfoListener> setG,
+            Set<NgaMessageHandler.ChipsInfoListener> setH,
+            Set<NgaMessageHandler.ClearListener> setI,
+            Set<NgaMessageHandler.StartActivityInfoListener> setJ,
+            Set<NgaMessageHandler.KeyboardInfoListener> setK,
+            Set<NgaMessageHandler.ZerostateInfoListener> set1B,
+            Set<NgaMessageHandler.GoBackListener> set1C,
+            Set<NgaMessageHandler.TakeScreenshotListener> set1D,
+            Set<NgaMessageHandler.WarmingListener> set1E,
+            Set<NgaMessageHandler.NavBarVisibilityListener> set1F,
+            @Main Handler handler) {
+        return new NgaMessageHandler(
+                ngaUiController,
+                assistantPresenceHandler,
+                navigationModeController,
+                set,
+                setB,
+                setC,
+                setD,
+                setE,
+                setF,
+                setG,
+                setH,
+                setI,
+                setJ,
+                setK,
+                set1B,
+                set1C,
+                set1D,
+                set1E,
+                set1F,
+                handler);
     }
 
     @Provides
     @SysUISingleton
-    static ScrimController provideScrimController(@Named(OVERLAY_UI_HOST_PARENT_VIEW_GROUP) ViewGroup viewGroup, OverlappedElementController overlappedElementController, LightnessProvider lightnessProvider, TouchInsideHandler touchInsideHandler) {
-        return new ScrimController(viewGroup, overlappedElementController, lightnessProvider, touchInsideHandler);
+    static ScrimController provideScrimController(
+            @Named(OVERLAY_UI_HOST_PARENT_VIEW_GROUP) ViewGroup viewGroup,
+            OverlappedElementController overlappedElementController,
+            LightnessProvider lightnessProvider,
+            TouchInsideHandler touchInsideHandler) {
+        return new ScrimController(
+                viewGroup, overlappedElementController, lightnessProvider, touchInsideHandler);
     }
 
     @Provides
@@ -198,7 +294,8 @@ public abstract class AssistModule {
 
     @Provides
     @SysUISingleton
-    static OverlayUiHost provideOverlayUiHost(Context context, TouchOutsideHandler touchOutsideHandler) {
+    static OverlayUiHost provideOverlayUiHost(
+            Context context, TouchOutsideHandler touchOutsideHandler) {
         return new OverlayUiHost(context, touchOutsideHandler);
     }
 
@@ -217,127 +314,180 @@ public abstract class AssistModule {
 
     @Provides
     @SysUISingleton
-    static EdgeLightsController provideEdgeLightsController(Context context, @Named(OVERLAY_UI_HOST_PARENT_VIEW_GROUP) ViewGroup viewGroup, AssistLogger assistLogger) {
+    static EdgeLightsController provideEdgeLightsController(
+            Context context,
+            @Named(OVERLAY_UI_HOST_PARENT_VIEW_GROUP) ViewGroup viewGroup,
+            AssistLogger assistLogger) {
         return new EdgeLightsController(context, viewGroup, assistLogger);
     }
 
     @Provides
     @SysUISingleton
-    static NgaInputHandler provideNgaInputHandler(TouchInsideHandler touchInsideHandler, Set<TouchActionRegion> set, Set<TouchInsideRegion> setB) {
+    static NgaInputHandler provideNgaInputHandler(
+            TouchInsideHandler touchInsideHandler,
+            Set<TouchActionRegion> set,
+            Set<TouchInsideRegion> setB) {
         return new NgaInputHandler(touchInsideHandler, set, setB);
     }
 
     @Provides
     @ElementsIntoSet
-    static Set<NgaMessageHandler.AudioInfoListener> provideAudioInfoListeners(EdgeLightsController edgeLightsController, GlowController glowController) {
+    static Set<NgaMessageHandler.AudioInfoListener> provideAudioInfoListeners(
+            EdgeLightsController edgeLightsController, GlowController glowController) {
         return new HashSet(Arrays.asList(edgeLightsController, glowController));
     }
 
     @Provides
     @ElementsIntoSet
-    static Set<NgaMessageHandler.CardInfoListener> provideCardInfoListeners(GlowController glowController, ScrimController scrimController, TranscriptionController transcriptionController, LightnessProvider lightnessProvider) {
-        return new HashSet(Arrays.asList(glowController, scrimController, transcriptionController, lightnessProvider));
+    static Set<NgaMessageHandler.CardInfoListener> provideCardInfoListeners(
+            GlowController glowController,
+            ScrimController scrimController,
+            TranscriptionController transcriptionController,
+            LightnessProvider lightnessProvider) {
+        return new HashSet(
+                Arrays.asList(
+                        glowController,
+                        scrimController,
+                        transcriptionController,
+                        lightnessProvider));
     }
 
     @Provides
     @ElementsIntoSet
-    static Set<NgaMessageHandler.TranscriptionInfoListener> provideTranscriptionInfoListener(TranscriptionController transcriptionController) {
+    static Set<NgaMessageHandler.TranscriptionInfoListener> provideTranscriptionInfoListener(
+            TranscriptionController transcriptionController) {
         return new HashSet(Arrays.asList(transcriptionController));
     }
 
     @Provides
     @ElementsIntoSet
-    static Set<NgaMessageHandler.GreetingInfoListener> provideGreetingInfoListener(TranscriptionController transcriptionController) {
+    static Set<NgaMessageHandler.GreetingInfoListener> provideGreetingInfoListener(
+            TranscriptionController transcriptionController) {
         return new HashSet(Arrays.asList(transcriptionController));
     }
 
     @Provides
     @ElementsIntoSet
-    static Set<NgaMessageHandler.ChipsInfoListener> provideChipsInfoListener(TranscriptionController transcriptionController) {
+    static Set<NgaMessageHandler.ChipsInfoListener> provideChipsInfoListener(
+            TranscriptionController transcriptionController) {
         return new HashSet(Arrays.asList(transcriptionController));
     }
 
     @Provides
     @ElementsIntoSet
-    static Set<NgaMessageHandler.ClearListener> provideClearListener(TranscriptionController transcriptionController) {
+    static Set<NgaMessageHandler.ClearListener> provideClearListener(
+            TranscriptionController transcriptionController) {
         return new HashSet(Arrays.asList(transcriptionController));
     }
 
     @Provides
     @ElementsIntoSet
-    static Set<NgaMessageHandler.KeyboardInfoListener> provideKeyboardInfoListener(IconController iconController) {
+    static Set<NgaMessageHandler.KeyboardInfoListener> provideKeyboardInfoListener(
+            IconController iconController) {
         return new HashSet(Arrays.asList(iconController));
     }
 
     @Provides
     @ElementsIntoSet
-    static Set<NgaMessageHandler.ZerostateInfoListener> provideZerostateInfoListener(IconController iconController) {
+    static Set<NgaMessageHandler.ZerostateInfoListener> provideZerostateInfoListener(
+            IconController iconController) {
         return new HashSet(Arrays.asList(iconController));
     }
 
     @Provides
     @ElementsIntoSet
-    static Set<NgaMessageHandler.GoBackListener> provideGoBackListener(GoBackHandler goBackHandler) {
+    static Set<NgaMessageHandler.GoBackListener> provideGoBackListener(
+            GoBackHandler goBackHandler) {
         return new HashSet(Arrays.asList(goBackHandler));
     }
 
     @Provides
     @ElementsIntoSet
-    static Set<NgaMessageHandler.TakeScreenshotListener> provideTakeScreenshotListener(TakeScreenshotHandler takeScreenshotHandler) {
+    static Set<NgaMessageHandler.TakeScreenshotListener> provideTakeScreenshotListener(
+            TakeScreenshotHandler takeScreenshotHandler) {
         return new HashSet(Arrays.asList(takeScreenshotHandler));
     }
 
     @Provides
     @ElementsIntoSet
-    static Set<NgaMessageHandler.WarmingListener> provideWarmingListener(AssistantWarmer assistantWarmer) {
+    static Set<NgaMessageHandler.WarmingListener> provideWarmingListener(
+            AssistantWarmer assistantWarmer) {
         return new HashSet(Arrays.asList(assistantWarmer));
     }
 
     @Provides
     @ElementsIntoSet
-    static Set<NgaMessageHandler.NavBarVisibilityListener> provideNavBarVisibilityListener(NavBarFader navBarFader) {
+    static Set<NgaMessageHandler.NavBarVisibilityListener> provideNavBarVisibilityListener(
+            NavBarFader navBarFader) {
         return new HashSet(Arrays.asList(navBarFader));
     }
 
     @Provides
     @ElementsIntoSet
-    static Set<NgaMessageHandler.ConfigInfoListener> provideConfigInfoListeners(AssistantPresenceHandler assistantPresenceHandler, TouchInsideHandler touchInsideHandler, TouchOutsideHandler touchOutsideHandler, TaskStackNotifier taskStackNotifier, KeyboardMonitor keyboardMonitor, ColorChangeHandler colorChangeHandler, ConfigurationHandler configurationHandler) {
-        return new HashSet(Arrays.asList(assistantPresenceHandler, touchInsideHandler, touchOutsideHandler, taskStackNotifier, keyboardMonitor, colorChangeHandler, configurationHandler));
+    static Set<NgaMessageHandler.ConfigInfoListener> provideConfigInfoListeners(
+            AssistantPresenceHandler assistantPresenceHandler,
+            TouchInsideHandler touchInsideHandler,
+            TouchOutsideHandler touchOutsideHandler,
+            TaskStackNotifier taskStackNotifier,
+            KeyboardMonitor keyboardMonitor,
+            ColorChangeHandler colorChangeHandler,
+            ConfigurationHandler configurationHandler) {
+        return new HashSet(
+                Arrays.asList(
+                        assistantPresenceHandler,
+                        touchInsideHandler,
+                        touchOutsideHandler,
+                        taskStackNotifier,
+                        keyboardMonitor,
+                        colorChangeHandler,
+                        configurationHandler));
     }
 
     @Provides
     @ElementsIntoSet
-    static Set<NgaMessageHandler.EdgeLightsInfoListener> provideEdgeLightsInfoListeners(EdgeLightsController edgeLightsController, NgaInputHandler ngaInputHandler) {
+    static Set<NgaMessageHandler.EdgeLightsInfoListener> provideEdgeLightsInfoListeners(
+            EdgeLightsController edgeLightsController, NgaInputHandler ngaInputHandler) {
         return new HashSet(Arrays.asList(edgeLightsController, ngaInputHandler));
     }
 
     @Provides
     @ElementsIntoSet
-    static Set<NgaMessageHandler.KeepAliveListener> provideKeepAliveListener(TimeoutManager timeoutManager) {
+    static Set<NgaMessageHandler.KeepAliveListener> provideKeepAliveListener(
+            TimeoutManager timeoutManager) {
         return new HashSet(Arrays.asList(timeoutManager));
     }
 
     @Provides
     @ElementsIntoSet
-    static Set<NgaMessageHandler.StartActivityInfoListener> provideActivityStarter(final Lazy<CentralSurfacesGoogle> lazy) {
-        return new HashSet(Collections.singletonList((NgaMessageHandler.StartActivityInfoListener) (intent, z) -> {
-            if (intent == null) {
-                Log.e("ActivityStarter", "Null intent; cannot start activity");
-            } else {
-                lazy.get().startActivity(intent, z);
-            }
-        }));
+    static Set<NgaMessageHandler.StartActivityInfoListener> provideActivityStarter(
+            final Lazy<CentralSurfacesGoogle> lazy) {
+        return new HashSet(
+                Collections.singletonList(
+                        (NgaMessageHandler.StartActivityInfoListener)
+                                (intent, z) -> {
+                                    if (intent == null) {
+                                        Log.e(
+                                                "ActivityStarter",
+                                                "Null intent; cannot start activity");
+                                    } else {
+                                        lazy.get().startActivity(intent, z);
+                                    }
+                                }));
     }
 
     @Provides
     @ElementsIntoSet
-    static Set<TouchActionRegion> provideTouchActionRegions(IconController iconController, TranscriptionController transcriptionController) {
+    static Set<TouchActionRegion> provideTouchActionRegions(
+            IconController iconController, TranscriptionController transcriptionController) {
         return new HashSet(Arrays.asList(iconController, transcriptionController));
     }
 
     @Provides
     @ElementsIntoSet
-    static Set<TouchInsideRegion> provideTouchInsideRegions(GlowController glowController, ScrimController scrimController, TranscriptionController transcriptionController) {
+    static Set<TouchInsideRegion> provideTouchInsideRegions(
+            GlowController glowController,
+            ScrimController scrimController,
+            TranscriptionController transcriptionController) {
         return new HashSet(Arrays.asList(glowController, scrimController, transcriptionController));
     }
 }

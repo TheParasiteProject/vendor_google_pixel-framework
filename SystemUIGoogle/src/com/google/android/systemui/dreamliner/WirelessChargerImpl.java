@@ -23,10 +23,6 @@ import android.os.Looper;
 import android.util.Log;
 
 import com.android.internal.annotations.VisibleForTesting;
-import com.google.android.systemui.dreamliner.WirelessCharger;
-
-import java.util.ArrayList;
-import java.util.concurrent.TimeUnit;
 
 import vendor.google.wireless_charger.V1_0.KeyExchangeResponse;
 import vendor.google.wireless_charger.V1_1.AlignInfo;
@@ -35,21 +31,28 @@ import vendor.google.wireless_charger.V1_3.FanDetailedInfo;
 import vendor.google.wireless_charger.V1_3.FanInfo;
 import vendor.google.wireless_charger.V1_3.IWirelessCharger;
 
+import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
+
 import javax.inject.Inject;
 
-public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathRecipient, IWirelessCharger.isDockPresentCallback {
+public class WirelessChargerImpl
+        implements WirelessCharger,
+                IHwBinder.DeathRecipient,
+                IWirelessCharger.isDockPresentCallback {
     private static final boolean DEBUG = Log.isLoggable("Dreamliner-WLC_HAL", 3);
     private static final long MAX_POLLING_TIMEOUT_NS = TimeUnit.SECONDS.toNanos(5);
     private final Handler mHandler = new Handler(Looper.getMainLooper());
     private IWirelessCharger.isDockPresentCallback mCallback;
     private long mPollingStartedTimeNs;
     private vendor.google.wireless_charger.V1_3.IWirelessCharger mWirelessCharger;
-    private final Runnable mRunnable = new Runnable() {
-        @Override
-        public void run() {
-            isDockPresentInternal(mCallback);
-        }
-    };
+    private final Runnable mRunnable =
+            new Runnable() {
+                @Override
+                public void run() {
+                    isDockPresentInternal(mCallback);
+                }
+            };
 
     private static Bundle convertFanInfo(byte b, FanInfo fanInfo) {
         Bundle bundle = new Bundle();
@@ -72,8 +75,7 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
     }
 
     @Inject
-    public WirelessChargerImpl() {
-    }
+    public WirelessChargerImpl() {}
 
     @Override
     @VisibleForTesting(visibility = VisibleForTesting.Visibility.PACKAGE)
@@ -93,7 +95,8 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
         initHALInterface();
         if (mWirelessCharger != null) {
             try {
-                mWirelessCharger.getInformation(new GetInformationCallbackWrapper(getInformationCallback));
+                mWirelessCharger.getInformation(
+                        new GetInformationCallbackWrapper(getInformationCallback));
             } catch (Exception e) {
                 Log.i("Dreamliner-WLC_HAL", "getInformation fail: " + e.getMessage());
             }
@@ -106,7 +109,9 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
         initHALInterface();
         if (mWirelessCharger != null) {
             try {
-                mWirelessCharger.keyExchange(convertPrimitiveArrayToArrayList(bArr), new KeyExchangeCallbackWrapper(keyExchangeCallback));
+                mWirelessCharger.keyExchange(
+                        convertPrimitiveArrayToArrayList(bArr),
+                        new KeyExchangeCallbackWrapper(keyExchangeCallback));
             } catch (Exception e) {
                 Log.i("Dreamliner-WLC_HAL", "keyExchange fail: " + e.getMessage());
             }
@@ -115,11 +120,15 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
 
     @Override
     @VisibleForTesting(visibility = VisibleForTesting.Visibility.PACKAGE)
-    public void challenge(byte b, byte[] bArr, WirelessCharger.ChallengeCallback challengeCallback) {
+    public void challenge(
+            byte b, byte[] bArr, WirelessCharger.ChallengeCallback challengeCallback) {
         initHALInterface();
         if (mWirelessCharger != null) {
             try {
-                mWirelessCharger.challenge(b, convertPrimitiveArrayToArrayList(bArr), new ChallengeCallbackWrapper(challengeCallback));
+                mWirelessCharger.challenge(
+                        b,
+                        convertPrimitiveArrayToArrayList(bArr),
+                        new ChallengeCallbackWrapper(challengeCallback));
             } catch (Exception e) {
                 Log.i("Dreamliner-WLC_HAL", "challenge fail: " + e.getMessage());
             }
@@ -132,7 +141,8 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
         initHALInterface();
         if (mWirelessCharger != null) {
             try {
-                mWirelessCharger.registerCallback(new WirelessChargerInfoCallback(alignInfoListener));
+                mWirelessCharger.registerCallback(
+                        new WirelessChargerInfoCallback(alignInfoListener));
             } catch (Exception e) {
                 Log.i("Dreamliner-WLC_HAL", "register alignInfo callback fail: " + e.getMessage());
             }
@@ -141,12 +151,17 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
 
     @Override
     @VisibleForTesting(visibility = VisibleForTesting.Visibility.PACKAGE)
-    public void getFanSimpleInformation(byte b, WirelessCharger.GetFanSimpleInformationCallback getFanSimpleInformationCallback) {
+    public void getFanSimpleInformation(
+            byte b,
+            WirelessCharger.GetFanSimpleInformationCallback getFanSimpleInformationCallback) {
         initHALInterface();
         Log.d("Dreamliner-WLC_HAL", "command=3");
         if (mWirelessCharger != null) {
             try {
-                mWirelessCharger.getFan(b, new GetFanSimpleInformationCallbackWrapper(b, getFanSimpleInformationCallback));
+                mWirelessCharger.getFan(
+                        b,
+                        new GetFanSimpleInformationCallbackWrapper(
+                                b, getFanSimpleInformationCallback));
             } catch (Exception e) {
                 Log.i("Dreamliner-WLC_HAL", "command=3 fail: " + e.getMessage());
             }
@@ -155,12 +170,14 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
 
     @Override
     @VisibleForTesting(visibility = VisibleForTesting.Visibility.PACKAGE)
-    public void getFanInformation(byte b, WirelessCharger.GetFanInformationCallback getFanInformationCallback) {
+    public void getFanInformation(
+            byte b, WirelessCharger.GetFanInformationCallback getFanInformationCallback) {
         initHALInterface();
         Log.d("Dreamliner-WLC_HAL", "command=0");
         if (mWirelessCharger != null) {
             try {
-                mWirelessCharger.getFanInformation(b, new GetFanInformationCallbackWrapper(b, getFanInformationCallback));
+                mWirelessCharger.getFanInformation(
+                        b, new GetFanInformationCallbackWrapper(b, getFanInformationCallback));
             } catch (Exception e) {
                 Log.i("Dreamliner-WLC_HAL", "command=0 fail: " + e.getMessage());
             }
@@ -175,11 +192,15 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
         if (mWirelessCharger != null) {
             try {
                 long currentTimeMillis = System.currentTimeMillis();
-                mWirelessCharger.setFan(b, b2, (short) i, new SetFanCallbackWrapper(b, setFanCallback));
+                mWirelessCharger.setFan(
+                        b, b2, (short) i, new SetFanCallbackWrapper(b, setFanCallback));
                 if (!DEBUG) {
                     return;
                 }
-                Log.d("Dreamliner-WLC_HAL", "command=1 spending time: " + (System.currentTimeMillis() - currentTimeMillis));
+                Log.d(
+                        "Dreamliner-WLC_HAL",
+                        "command=1 spending time: "
+                                + (System.currentTimeMillis() - currentTimeMillis));
             } catch (Exception e) {
                 Log.i("Dreamliner-WLC_HAL", "command=1 fail: " + e.getMessage());
             }
@@ -187,11 +208,13 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
     }
 
     @Override
-    public void getWpcAuthDigests(byte b, WirelessCharger.GetWpcAuthDigestsCallback getWpcAuthDigestsCallback) {
+    public void getWpcAuthDigests(
+            byte b, WirelessCharger.GetWpcAuthDigestsCallback getWpcAuthDigestsCallback) {
         initHALInterface();
         if (mWirelessCharger != null) {
             try {
-                mWirelessCharger.getWpcAuthDigests(b, new GetWpcAuthDigestsCallbackWrapper(getWpcAuthDigestsCallback));
+                mWirelessCharger.getWpcAuthDigests(
+                        b, new GetWpcAuthDigestsCallbackWrapper(getWpcAuthDigestsCallback));
             } catch (Exception e) {
                 Log.i("Dreamliner-WLC_HAL", "get wpc digests fail: " + e.getMessage());
             }
@@ -199,11 +222,19 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
     }
 
     @Override
-    public void getWpcAuthCertificate(byte b, short s, short s2, WirelessCharger.GetWpcAuthCertificateCallback getWpcAuthCertificateCallback) {
+    public void getWpcAuthCertificate(
+            byte b,
+            short s,
+            short s2,
+            WirelessCharger.GetWpcAuthCertificateCallback getWpcAuthCertificateCallback) {
         initHALInterface();
         if (mWirelessCharger != null) {
             try {
-                mWirelessCharger.getWpcAuthCertificate(b, s, s2, new GetWpcAuthCertificateCallbackWrapper(getWpcAuthCertificateCallback));
+                mWirelessCharger.getWpcAuthCertificate(
+                        b,
+                        s,
+                        s2,
+                        new GetWpcAuthCertificateCallbackWrapper(getWpcAuthCertificateCallback));
             } catch (Exception e) {
                 Log.i("Dreamliner-WLC_HAL", "get wpc cert fail: " + e.getMessage());
             }
@@ -211,11 +242,19 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
     }
 
     @Override
-    public void getWpcAuthChallengeResponse(byte b, byte[] bArr, WirelessCharger.GetWpcAuthChallengeResponseCallback getWpcAuthChallengeResponseCallback) {
+    public void getWpcAuthChallengeResponse(
+            byte b,
+            byte[] bArr,
+            WirelessCharger.GetWpcAuthChallengeResponseCallback
+                    getWpcAuthChallengeResponseCallback) {
         initHALInterface();
         if (mWirelessCharger != null) {
             try {
-                mWirelessCharger.getWpcAuthChallengeResponse(b, convertPrimitiveArrayToArrayList(bArr), new GetWpcAuthChallengeResponseCallbackWrapper(getWpcAuthChallengeResponseCallback));
+                mWirelessCharger.getWpcAuthChallengeResponse(
+                        b,
+                        convertPrimitiveArrayToArrayList(bArr),
+                        new GetWpcAuthChallengeResponseCallbackWrapper(
+                                getWpcAuthChallengeResponseCallback));
             } catch (Exception e) {
                 Log.i("Dreamliner-WLC_HAL", "get wpc challenge response fail: " + e.getMessage());
             }
@@ -223,7 +262,8 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
     }
 
     @Override
-    public void setFeatures(long j, long j2, WirelessCharger.SetFeaturesCallback setFeaturesCallback) {
+    public void setFeatures(
+            long j, long j2, WirelessCharger.SetFeaturesCallback setFeaturesCallback) {
         initHALInterface();
         if (mWirelessCharger != null) {
             try {
@@ -239,7 +279,8 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
         initHALInterface();
         if (mWirelessCharger != null) {
             try {
-                mWirelessCharger.getFeatures(j, new GetFeaturesCallbackWrapper(getFeaturesCallback));
+                mWirelessCharger.getFeatures(
+                        j, new GetFeaturesCallbackWrapper(getFeaturesCallback));
             } catch (Exception e) {
                 Log.i("Dreamliner-WLC_HAL", "get features fail: " + e.getMessage());
             }
@@ -304,7 +345,8 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
     private void initHALInterface() {
         if (mWirelessCharger == null) {
             try {
-                mWirelessCharger = vendor.google.wireless_charger.V1_3.IWirelessCharger.getService();
+                mWirelessCharger =
+                        vendor.google.wireless_charger.V1_3.IWirelessCharger.getService();
                 mWirelessCharger.linkToDeath(this, 0L);
             } catch (Exception e) {
                 Log.i("Dreamliner-WLC_HAL", "no wireless charger hal found: " + e.getMessage());
@@ -313,35 +355,70 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
         }
     }
 
-    static final class GetFanSimpleInformationCallbackWrapper implements IWirelessCharger.getFanCallback {
+    static final class GetFanSimpleInformationCallbackWrapper
+            implements IWirelessCharger.getFanCallback {
         private final WirelessCharger.GetFanSimpleInformationCallback mCallback;
         private final byte mFanId;
 
-        GetFanSimpleInformationCallbackWrapper(byte b, WirelessCharger.GetFanSimpleInformationCallback getFanSimpleInformationCallback) {
+        GetFanSimpleInformationCallbackWrapper(
+                byte b,
+                WirelessCharger.GetFanSimpleInformationCallback getFanSimpleInformationCallback) {
             mFanId = b;
             mCallback = getFanSimpleInformationCallback;
         }
 
         @Override
         public void onValues(byte b, FanInfo fanInfo) {
-            Log.d("Dreamliner-WLC_HAL", "command=3, result=" + Byte.valueOf(b).intValue() + ", i=" + ((int) mFanId) + ", m=" + fanInfo.fanMode + ", cr=" + fanInfo.currentRpm);
-            mCallback.onCallback(Byte.valueOf(b).intValue(), WirelessChargerImpl.convertFanInfo(mFanId, fanInfo));
+            Log.d(
+                    "Dreamliner-WLC_HAL",
+                    "command=3, result="
+                            + Byte.valueOf(b).intValue()
+                            + ", i="
+                            + ((int) mFanId)
+                            + ", m="
+                            + fanInfo.fanMode
+                            + ", cr="
+                            + fanInfo.currentRpm);
+            mCallback.onCallback(
+                    Byte.valueOf(b).intValue(),
+                    WirelessChargerImpl.convertFanInfo(mFanId, fanInfo));
         }
     }
 
-    static final class GetFanInformationCallbackWrapper implements IWirelessCharger.getFanInformationCallback {
+    static final class GetFanInformationCallbackWrapper
+            implements IWirelessCharger.getFanInformationCallback {
         private final WirelessCharger.GetFanInformationCallback mCallback;
         private final byte mFanId;
 
-        public GetFanInformationCallbackWrapper(byte b, WirelessCharger.GetFanInformationCallback getFanInformationCallback) {
+        public GetFanInformationCallbackWrapper(
+                byte b, WirelessCharger.GetFanInformationCallback getFanInformationCallback) {
             mFanId = b;
             mCallback = getFanInformationCallback;
         }
 
         @Override
         public void onValues(byte b, FanDetailedInfo fanDetailedInfo) {
-            Log.d("Dreamliner-WLC_HAL", "command=0, result=" + Byte.valueOf(b).intValue() + ", i=" + ((int) mFanId) + ", m=" + fanDetailedInfo.fanMode + ", cr=" + fanDetailedInfo.currentRpm + ", mir=" + fanDetailedInfo.minimumRpm + ", mxr=" + fanDetailedInfo.maximumRpm + ", t=" + fanDetailedInfo.type + ", c=" + fanDetailedInfo.count);
-            mCallback.onCallback(Byte.valueOf(b).intValue(), WirelessChargerImpl.convertFanDetailedInfo(mFanId, fanDetailedInfo));
+            Log.d(
+                    "Dreamliner-WLC_HAL",
+                    "command=0, result="
+                            + Byte.valueOf(b).intValue()
+                            + ", i="
+                            + ((int) mFanId)
+                            + ", m="
+                            + fanDetailedInfo.fanMode
+                            + ", cr="
+                            + fanDetailedInfo.currentRpm
+                            + ", mir="
+                            + fanDetailedInfo.minimumRpm
+                            + ", mxr="
+                            + fanDetailedInfo.maximumRpm
+                            + ", t="
+                            + fanDetailedInfo.type
+                            + ", c="
+                            + fanDetailedInfo.count);
+            mCallback.onCallback(
+                    Byte.valueOf(b).intValue(),
+                    WirelessChargerImpl.convertFanDetailedInfo(mFanId, fanDetailedInfo));
         }
     }
 
@@ -356,15 +433,28 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
 
         @Override
         public void onValues(byte b, FanInfo fanInfo) {
-            Log.d("Dreamliner-WLC_HAL", "command=1, result=" + Byte.valueOf(b).intValue() + ", i=" + ((int) mFanId) + ", m=" + fanInfo.fanMode + ", cr=" + fanInfo.currentRpm);
-            mCallback.onCallback(Byte.valueOf(b).intValue(), WirelessChargerImpl.convertFanInfo(mFanId, fanInfo));
+            Log.d(
+                    "Dreamliner-WLC_HAL",
+                    "command=1, result="
+                            + Byte.valueOf(b).intValue()
+                            + ", i="
+                            + ((int) mFanId)
+                            + ", m="
+                            + fanInfo.fanMode
+                            + ", cr="
+                            + fanInfo.currentRpm);
+            mCallback.onCallback(
+                    Byte.valueOf(b).intValue(),
+                    WirelessChargerImpl.convertFanInfo(mFanId, fanInfo));
         }
     }
 
-    static final class GetWpcAuthDigestsCallbackWrapper implements IWirelessCharger.getWpcAuthDigestsCallback {
+    static final class GetWpcAuthDigestsCallbackWrapper
+            implements IWirelessCharger.getWpcAuthDigestsCallback {
         private final WirelessCharger.GetWpcAuthDigestsCallback mCallback;
 
-        GetWpcAuthDigestsCallbackWrapper(WirelessCharger.GetWpcAuthDigestsCallback getWpcAuthDigestsCallback) {
+        GetWpcAuthDigestsCallbackWrapper(
+                WirelessCharger.GetWpcAuthDigestsCallback getWpcAuthDigestsCallback) {
             mCallback = getWpcAuthDigestsCallback;
         }
 
@@ -374,10 +464,12 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
         }
     }
 
-    static final class GetWpcAuthCertificateCallbackWrapper implements IWirelessCharger.getWpcAuthCertificateCallback {
+    static final class GetWpcAuthCertificateCallbackWrapper
+            implements IWirelessCharger.getWpcAuthCertificateCallback {
         private final WirelessCharger.GetWpcAuthCertificateCallback mCallback;
 
-        GetWpcAuthCertificateCallbackWrapper(WirelessCharger.GetWpcAuthCertificateCallback getWpcAuthCertificateCallback) {
+        GetWpcAuthCertificateCallbackWrapper(
+                WirelessCharger.GetWpcAuthCertificateCallback getWpcAuthCertificateCallback) {
             mCallback = getWpcAuthCertificateCallback;
         }
 
@@ -387,15 +479,24 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
         }
     }
 
-    static final class GetWpcAuthChallengeResponseCallbackWrapper implements IWirelessCharger.getWpcAuthChallengeResponseCallback {
+    static final class GetWpcAuthChallengeResponseCallbackWrapper
+            implements IWirelessCharger.getWpcAuthChallengeResponseCallback {
         private final WirelessCharger.GetWpcAuthChallengeResponseCallback mCallback;
 
-        GetWpcAuthChallengeResponseCallbackWrapper(WirelessCharger.GetWpcAuthChallengeResponseCallback getWpcAuthChallengeResponseCallback) {
+        GetWpcAuthChallengeResponseCallbackWrapper(
+                WirelessCharger.GetWpcAuthChallengeResponseCallback
+                        getWpcAuthChallengeResponseCallback) {
             mCallback = getWpcAuthChallengeResponseCallback;
         }
 
         @Override
-        public void onValues(byte b, byte b2, byte b3, byte b4, ArrayList<Byte> arrayList, ArrayList<Byte> arrayList2) {
+        public void onValues(
+                byte b,
+                byte b2,
+                byte b3,
+                byte b4,
+                ArrayList<Byte> arrayList,
+                ArrayList<Byte> arrayList2) {
             mCallback.onCallback(Byte.valueOf(b).intValue(), b2, b3, b4, arrayList, arrayList2);
         }
     }
@@ -416,7 +517,8 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
     final class IsDockPresentCallbackWrapper implements IWirelessCharger.isDockPresentCallback {
         private final WirelessCharger.IsDockPresentCallback mCallback;
 
-        public IsDockPresentCallbackWrapper(WirelessCharger.IsDockPresentCallback isDockPresentCallback) {
+        public IsDockPresentCallbackWrapper(
+                WirelessCharger.IsDockPresentCallback isDockPresentCallback) {
             mCallback = isDockPresentCallback;
         }
 
@@ -429,7 +531,8 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
     final class GetInformationCallbackWrapper implements IWirelessCharger.getInformationCallback {
         private final WirelessCharger.GetInformationCallback mCallback;
 
-        public GetInformationCallbackWrapper(WirelessCharger.GetInformationCallback getInformationCallback) {
+        public GetInformationCallbackWrapper(
+                WirelessCharger.GetInformationCallback getInformationCallback) {
             mCallback = getInformationCallback;
         }
 
@@ -439,7 +542,11 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
         }
 
         private DockInfo convertDockInfo(vendor.google.wireless_charger.V1_0.DockInfo dockInfo) {
-            return new DockInfo(dockInfo.manufacturer, dockInfo.model, dockInfo.serial, Byte.valueOf(dockInfo.type).intValue());
+            return new DockInfo(
+                    dockInfo.manufacturer,
+                    dockInfo.model,
+                    dockInfo.serial,
+                    Byte.valueOf(dockInfo.type).intValue());
         }
     }
 
@@ -453,7 +560,10 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
         @Override
         public void onValues(byte b, KeyExchangeResponse keyExchangeResponse) {
             if (keyExchangeResponse != null) {
-                mCallback.onCallback(Byte.valueOf(b).intValue(), keyExchangeResponse.dockId, keyExchangeResponse.dockPublicKey);
+                mCallback.onCallback(
+                        Byte.valueOf(b).intValue(),
+                        keyExchangeResponse.dockId,
+                        keyExchangeResponse.dockPublicKey);
             } else {
                 mCallback.onCallback(Byte.valueOf(b).intValue(), (byte) -1, null);
             }
@@ -486,7 +596,9 @@ public class WirelessChargerImpl implements WirelessCharger, IHwBinder.DeathReci
         }
 
         private DockAlignInfo convertAlignInfo(AlignInfo alignInfo) {
-            return new DockAlignInfo(Byte.valueOf(alignInfo.alignState).intValue(), Byte.valueOf(alignInfo.alignPct).intValue());
+            return new DockAlignInfo(
+                    Byte.valueOf(alignInfo.alignState).intValue(),
+                    Byte.valueOf(alignInfo.alignPct).intValue());
         }
     }
 }

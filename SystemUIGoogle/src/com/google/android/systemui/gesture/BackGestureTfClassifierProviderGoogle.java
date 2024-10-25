@@ -46,7 +46,14 @@ public class BackGestureTfClassifierProviderGoogle extends BackGestureTfClassifi
         try {
             AssetFileDescriptor openFd = assetManager.openFd(str + ".tflite");
             mModelFileDescriptor = openFd;
-            mInterpreter = new Interpreter(openFd.createInputStream().getChannel().map(FileChannel.MapMode.READ_ONLY, mModelFileDescriptor.getStartOffset(), mModelFileDescriptor.getDeclaredLength()));
+            mInterpreter =
+                    new Interpreter(
+                            openFd.createInputStream()
+                                    .getChannel()
+                                    .map(
+                                            FileChannel.MapMode.READ_ONLY,
+                                            mModelFileDescriptor.getStartOffset(),
+                                            mModelFileDescriptor.getDeclaredLength()));
         } catch (Exception e) {
             Log.e("BackGestureTfClassifier", "Load TFLite file error:", e);
         }
@@ -61,7 +68,8 @@ public class BackGestureTfClassifierProviderGoogle extends BackGestureTfClassifi
     public Map<String, Integer> loadVocab(AssetManager assetManager) {
         HashMap hashMap = new HashMap();
         try {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(assetManager.open(mVocabFile)));
+            BufferedReader bufferedReader =
+                    new BufferedReader(new InputStreamReader(assetManager.open(mVocabFile)));
             int i = 0;
             while (true) {
                 String readLine = bufferedReader.readLine();

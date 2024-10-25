@@ -19,11 +19,10 @@ package com.google.android.systemui.qs.dagger;
 import static com.android.systemui.qs.dagger.QSFlagsModule.RBC_AVAILABLE;
 
 import android.content.Context;
-import android.hardware.display.NightDisplayListener;
 import android.os.Handler;
 
-import com.android.systemui.dagger.qualifiers.Background;
 import com.android.systemui.dagger.NightDisplayListenerModule;
+import com.android.systemui.dagger.qualifiers.Background;
 import com.android.systemui.media.dagger.MediaModule;
 import com.android.systemui.qs.AutoAddTracker;
 import com.android.systemui.qs.QSHost;
@@ -31,8 +30,13 @@ import com.android.systemui.qs.ReduceBrightColorsController;
 import com.android.systemui.qs.dagger.QSFlagsModule;
 import com.android.systemui.qs.dagger.QSFragmentComponent;
 import com.android.systemui.qs.dagger.QSHostModule;
-import com.android.systemui.qs.pipeline.dagger.QSPipelineModule;
+import com.android.systemui.qs.dagger.QSSceneComponent;
 import com.android.systemui.qs.external.QSExternalModule;
+import com.android.systemui.qs.pipeline.dagger.QSPipelineModule;
+import com.android.systemui.qs.tileimpl.QSTileImpl;
+import com.android.systemui.qs.tiles.di.QSTilesModule;
+import com.android.systemui.qs.ui.adapter.QSSceneAdapter;
+import com.android.systemui.qs.ui.adapter.QSSceneAdapterImpl;
 import com.android.systemui.statusbar.phone.AutoTileManager;
 import com.android.systemui.statusbar.phone.ManagedProfileController;
 import com.android.systemui.statusbar.policy.BatteryController;
@@ -43,37 +47,31 @@ import com.android.systemui.statusbar.policy.HotspotController;
 import com.android.systemui.statusbar.policy.SafetyController;
 import com.android.systemui.statusbar.policy.WalletController;
 import com.android.systemui.util.settings.SecureSettings;
-import com.android.systemui.qs.tileimpl.QSTileImpl;
-
-import com.android.systemui.qs.ui.adapter.QSSceneAdapter;
-import com.android.systemui.qs.ui.adapter.QSSceneAdapterImpl;
-import com.android.systemui.qs.dagger.QSFragmentComponent;
-import com.android.systemui.qs.dagger.QSSceneComponent;
-import com.android.systemui.qs.tiles.di.QSTilesModule;
 
 import com.google.android.systemui.statusbar.phone.AutoTileManagerGoogle;
-
-import java.util.Map;
-import javax.inject.Named;
 
 import dagger.Binds;
 import dagger.Module;
 import dagger.Provides;
 import dagger.multibindings.Multibinds;
 
+import java.util.Map;
+
+import javax.inject.Named;
+
 /**
  * Module for QS dependencies
  */
-@Module(subcomponents = {QSFragmentComponent.class, QSSceneComponent.class},
+@Module(
+        subcomponents = {QSFragmentComponent.class, QSSceneComponent.class},
         includes = {
-                MediaModule.class,
-                QSExternalModule.class,
-                QSFlagsModule.class,
-                QSHostModule.class,
-                QSPipelineModule.class,
-                QSTilesModule.class,
-        }
-)
+            MediaModule.class,
+            QSExternalModule.class,
+            QSFlagsModule.class,
+            QSHostModule.class,
+            QSPipelineModule.class,
+            QSTilesModule.class,
+        })
 public interface QSModuleGoogle {
 
     /** A map of internal QS tiles. Ensures that this can be injected even if
@@ -99,24 +97,24 @@ public interface QSModuleGoogle {
             SafetyController safetyController,
             @Named(RBC_AVAILABLE) boolean isReduceBrightColorsAvailable,
             BatteryController batteryController) {
-        AutoTileManager manager = new AutoTileManagerGoogle(
-                context,
-                autoAddTrackerBuilder,
-                host,
-                handler,
-                secureSettings,
-                hotspotController,
-                dataSaverController,
-                managedProfileController,
-                nightDisplayListenerBuilder,
-                castController,
-                reduceBrightColorsController,
-                deviceControlsController,
-                walletController,
-                safetyController,
-                isReduceBrightColorsAvailable,
-                batteryController
-        );
+        AutoTileManager manager =
+                new AutoTileManagerGoogle(
+                        context,
+                        autoAddTrackerBuilder,
+                        host,
+                        handler,
+                        secureSettings,
+                        hotspotController,
+                        dataSaverController,
+                        managedProfileController,
+                        nightDisplayListenerBuilder,
+                        castController,
+                        reduceBrightColorsController,
+                        deviceControlsController,
+                        walletController,
+                        safetyController,
+                        isReduceBrightColorsAvailable,
+                        batteryController);
         manager.init();
         return manager;
     }

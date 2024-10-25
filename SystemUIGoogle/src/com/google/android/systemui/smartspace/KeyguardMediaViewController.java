@@ -1,24 +1,24 @@
 package com.google.android.systemui.smartspace;
 
-import static java.util.Objects.requireNonNull;
 
-import androidx.annotation.NonNull;
 import android.app.smartspace.SmartspaceAction;
 import android.app.smartspace.SmartspaceTarget;
 import android.content.ComponentName;
 import android.content.Context;
 import android.media.MediaMetadata;
-import android.os.UserHandle;
 import android.os.Handler;
 import android.os.HandlerExecutor;
+import android.os.UserHandle;
 import android.text.TextUtils;
 import android.view.View;
 
-import com.android.systemui.res.R;
+import androidx.annotation.NonNull;
+
 import com.android.systemui.broadcast.BroadcastDispatcher;
 import com.android.systemui.dagger.SysUISingleton;
 import com.android.systemui.dagger.qualifiers.Main;
 import com.android.systemui.plugins.BcSmartspaceDataPlugin;
+import com.android.systemui.res.R;
 import com.android.systemui.settings.UserTracker;
 import com.android.systemui.statusbar.NotificationMediaManager;
 import com.android.systemui.util.concurrency.DelayableExecutor;

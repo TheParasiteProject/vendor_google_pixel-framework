@@ -18,8 +18,6 @@ package com.google.android.systemui.dreamliner;
 
 import android.util.Log;
 
-import com.google.android.systemui.dreamliner.WirelessCharger;
-
 import javax.inject.Inject;
 
 public class DockAlignmentController {
@@ -57,7 +55,12 @@ public class DockAlignmentController {
 
     private int getAlignmentState(DockAlignInfo dockAlignInfo) {
         if (DEBUG) {
-            Log.d("DockAlignmentController", "onAlignInfo, state: " + dockAlignInfo.getAlignState() + ", alignPct: " + dockAlignInfo.getAlignPct());
+            Log.d(
+                    "DockAlignmentController",
+                    "onAlignInfo, state: "
+                            + dockAlignInfo.getAlignState()
+                            + ", alignPct: "
+                            + dockAlignInfo.getAlignPct());
         }
         int i = mAlignmentState;
         int alignState = dockAlignInfo.getAlignState();
@@ -71,7 +74,9 @@ public class DockAlignmentController {
                     return alignPct < 100 ? 1 : 0;
                 }
             } else if (alignState != 3) {
-                Log.w("DockAlignmentController", "Unexpected state: " + dockAlignInfo.getAlignState());
+                Log.w(
+                        "DockAlignmentController",
+                        "Unexpected state: " + dockAlignInfo.getAlignState());
             }
             return -1;
         }
@@ -79,8 +84,7 @@ public class DockAlignmentController {
     }
 
     private final class RegisterAlignInfoListener implements WirelessCharger.AlignInfoListener {
-        private RegisterAlignInfoListener() {
-        }
+        private RegisterAlignInfoListener() {}
 
         @Override
         public void onAlignInfoChanged(DockAlignInfo dockAlignInfo) {

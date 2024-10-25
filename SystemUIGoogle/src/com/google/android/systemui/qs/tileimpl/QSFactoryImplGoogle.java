@@ -17,17 +17,17 @@
 package com.google.android.systemui.qs.tileimpl;
 
 import com.android.systemui.dagger.SysUISingleton;
-import com.android.systemui.plugins.qs.QSTile;
 import com.android.systemui.qs.QSHost;
 import com.android.systemui.qs.external.CustomTile;
 import com.android.systemui.qs.tileimpl.QSFactoryImpl;
 import com.android.systemui.qs.tileimpl.QSTileImpl;
 
+import dagger.Lazy;
+
+import java.util.Map;
+
 import javax.inject.Inject;
 import javax.inject.Provider;
-
-import dagger.Lazy;
-import java.util.Map;
 
 /**
  * A factory that creates Quick Settings tiles based on a tileSpec
@@ -40,7 +40,6 @@ import java.util.Map;
  * com.android.systemui.accessibility.AccessibilityModule}). If creating a new module, add your
  * module to the SystemUI dagger graph by including it in an appropriate module.
  */
-
 @SysUISingleton
 public class QSFactoryImplGoogle extends QSFactoryImpl {
 
@@ -49,7 +48,6 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
             Lazy<QSHost> qsHostLazy,
             Provider<CustomTile.Factory> customTileFactoryProvider,
             Map<String, Provider<QSTileImpl<?>>> tileMap) {
-        super(qsHostLazy,
-                customTileFactoryProvider, tileMap);
-   }
+        super(qsHostLazy, customTileFactoryProvider, tileMap);
+    }
 }

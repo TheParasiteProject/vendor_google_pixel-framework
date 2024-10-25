@@ -10,10 +10,14 @@ import android.util.Log;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import androidx.constraintlayout.widget.ConstraintLayout;
-import com.android.systemui.res.R;
+
 import com.android.systemui.plugins.BcSmartspaceDataPlugin;
+import com.android.systemui.res.R;
+
 import com.google.android.systemui.smartspace.logging.BcSmartspaceCardLoggingInfo;
+
 import java.util.List;
 
 public class BcSmartspaceCardCombination extends BcSmartspaceCardSecondary {
@@ -24,7 +28,12 @@ public class BcSmartspaceCardCombination extends BcSmartspaceCardSecondary {
         super(context);
     }
 
-    public final boolean fillSubCard(ConstraintLayout constraintLayout, SmartspaceTarget smartspaceTarget, SmartspaceAction smartspaceAction, BcSmartspaceDataPlugin.SmartspaceEventNotifier smartspaceEventNotifier, BcSmartspaceCardLoggingInfo bcSmartspaceCardLoggingInfo) {
+    public final boolean fillSubCard(
+            ConstraintLayout constraintLayout,
+            SmartspaceTarget smartspaceTarget,
+            SmartspaceAction smartspaceAction,
+            BcSmartspaceDataPlugin.SmartspaceEventNotifier smartspaceEventNotifier,
+            BcSmartspaceCardLoggingInfo bcSmartspaceCardLoggingInfo) {
         boolean z;
         CharSequence charSequence;
         TextView textView = (TextView) constraintLayout.findViewById(R.id.sub_card_text);
@@ -36,8 +45,16 @@ public class BcSmartspaceCardCombination extends BcSmartspaceCardSecondary {
             Log.w("BcSmartspaceCardCombination", "No sub-card image field to update");
             return false;
         } else {
-            BcSmartSpaceUtil.setOnClickListener(constraintLayout, smartspaceTarget, smartspaceAction, smartspaceEventNotifier, "BcSmartspaceCardCombination", bcSmartspaceCardLoggingInfo, 0);
-            Drawable iconDrawable = BcSmartSpaceUtil.getIconDrawable(getContext(), smartspaceAction.getIcon());
+            BcSmartSpaceUtil.setOnClickListener(
+                    constraintLayout,
+                    smartspaceTarget,
+                    smartspaceAction,
+                    smartspaceEventNotifier,
+                    "BcSmartspaceCardCombination",
+                    bcSmartspaceCardLoggingInfo,
+                    0);
+            Drawable iconDrawable =
+                    BcSmartSpaceUtil.getIconDrawable(getContext(), smartspaceAction.getIcon());
             boolean z2 = true;
             if (iconDrawable == null) {
                 BcSmartspaceTemplateDataUtils.updateVisibility(imageView, 8);
@@ -71,8 +88,7 @@ public class BcSmartspaceCardCombination extends BcSmartspaceCardSecondary {
     }
 
     @Override // com.google.android.systemui.smartspace.BcSmartspaceCardSecondary
-    public final void setTextColor(int i) {
-    }
+    public final void setTextColor(int i) {}
 
     public BcSmartspaceCardCombination(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
@@ -91,16 +107,34 @@ public class BcSmartspaceCardCombination extends BcSmartspaceCardSecondary {
     }
 
     @Override // com.google.android.systemui.smartspace.BcSmartspaceCardSecondary
-    public boolean setSmartspaceActions(SmartspaceTarget smartspaceTarget, BcSmartspaceDataPlugin.SmartspaceEventNotifier smartspaceEventNotifier, BcSmartspaceCardLoggingInfo bcSmartspaceCardLoggingInfo) {
+    public boolean setSmartspaceActions(
+            SmartspaceTarget smartspaceTarget,
+            BcSmartspaceDataPlugin.SmartspaceEventNotifier smartspaceEventNotifier,
+            BcSmartspaceCardLoggingInfo bcSmartspaceCardLoggingInfo) {
         SmartspaceAction smartspaceAction;
         boolean z3;
         List<SmartspaceAction> actionChips = smartspaceTarget.getActionChips();
-        if (actionChips == null || actionChips.size() < 1 || (smartspaceAction = actionChips.get(0)) == null) {
+        if (actionChips == null
+                || actionChips.size() < 1
+                || (smartspaceAction = actionChips.get(0)) == null) {
             return false;
         }
-        boolean z = this.mFirstSubCard != null && fillSubCard(this.mFirstSubCard, smartspaceTarget, smartspaceAction, smartspaceEventNotifier, bcSmartspaceCardLoggingInfo);
+        boolean z =
+                this.mFirstSubCard != null
+                        && fillSubCard(
+                                this.mFirstSubCard,
+                                smartspaceTarget,
+                                smartspaceAction,
+                                smartspaceEventNotifier,
+                                bcSmartspaceCardLoggingInfo);
         if (actionChips.size() > 1 && actionChips.get(1) != null) {
-            z3 = fillSubCard(this.mSecondSubCard, smartspaceTarget, actionChips.get(1), smartspaceEventNotifier, bcSmartspaceCardLoggingInfo);
+            z3 =
+                    fillSubCard(
+                            this.mSecondSubCard,
+                            smartspaceTarget,
+                            actionChips.get(1),
+                            smartspaceEventNotifier,
+                            bcSmartspaceCardLoggingInfo);
         } else {
             z3 = true;
         }

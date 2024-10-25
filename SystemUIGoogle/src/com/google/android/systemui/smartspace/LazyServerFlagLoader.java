@@ -12,14 +12,19 @@ public final class LazyServerFlagLoader {
 
     public boolean get() {
         if (this.mValue == null) {
-            this.mValue = Boolean.valueOf(DeviceConfig.getBoolean("launcher", this.mPropertyKey, true));
-            DeviceConfig.addOnPropertiesChangedListener("launcher", (v0) -> {
-                v0.run();
-            }, properties -> {
-                if (properties.getKeyset().contains(this.mPropertyKey)) {
-                    this.mValue = Boolean.valueOf(properties.getBoolean(this.mPropertyKey, true));
-                }
-            });
+            this.mValue =
+                    Boolean.valueOf(DeviceConfig.getBoolean("launcher", this.mPropertyKey, true));
+            DeviceConfig.addOnPropertiesChangedListener(
+                    "launcher",
+                    (v0) -> {
+                        v0.run();
+                    },
+                    properties -> {
+                        if (properties.getKeyset().contains(this.mPropertyKey)) {
+                            this.mValue =
+                                    Boolean.valueOf(properties.getBoolean(this.mPropertyKey, true));
+                        }
+                    });
         }
         return this.mValue.booleanValue();
     }

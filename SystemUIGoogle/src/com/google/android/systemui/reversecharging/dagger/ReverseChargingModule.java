@@ -21,30 +21,33 @@ import android.hardware.usb.UsbManager;
 import android.os.IThermalService;
 import android.os.ServiceManager;
 
-import com.android.systemui.res.R;
 import com.android.systemui.broadcast.BroadcastDispatcher;
 import com.android.systemui.dagger.SysUISingleton;
 import com.android.systemui.dagger.qualifiers.Main;
+import com.android.systemui.res.R;
 import com.android.systemui.statusbar.phone.CentralSurfaces;
 import com.android.systemui.statusbar.phone.StatusBarIconController;
 import com.android.systemui.statusbar.policy.BatteryController;
+
 import com.google.android.systemui.reversecharging.ReverseChargingViewController;
 import com.google.android.systemui.reversecharging.ReverseWirelessCharger;
 import com.google.android.systemui.statusbar.KeyguardIndicationControllerGoogle;
 
-import java.util.Optional;
-import java.util.concurrent.Executor;
-
 import dagger.Lazy;
 import dagger.Module;
 import dagger.Provides;
+
+import java.util.Optional;
+import java.util.concurrent.Executor;
 
 @Module
 public abstract class ReverseChargingModule {
     @Provides
     @SysUISingleton
     static Optional<ReverseWirelessCharger> provideReverseWirelessCharger(Context context) {
-        return context.getResources().getBoolean(R.bool.config_wlc_support_enabled) ? Optional.of(new ReverseWirelessCharger(context)) : Optional.empty();
+        return context.getResources().getBoolean(R.bool.config_wlc_support_enabled)
+                ? Optional.of(new ReverseWirelessCharger(context))
+                : Optional.empty();
     }
 
     @Provides
@@ -61,9 +64,24 @@ public abstract class ReverseChargingModule {
 
     @Provides
     @SysUISingleton
-    static Optional<ReverseChargingViewController> provideReverseChargingViewController(Context context, BatteryController batteryController, Lazy<CentralSurfaces> lazy, StatusBarIconController statusBarIconController, BroadcastDispatcher broadcastDispatcher, @Main Executor executor, KeyguardIndicationControllerGoogle keyguardIndicationControllerGoogle) {
+    static Optional<ReverseChargingViewController> provideReverseChargingViewController(
+            Context context,
+            BatteryController batteryController,
+            Lazy<CentralSurfaces> lazy,
+            StatusBarIconController statusBarIconController,
+            BroadcastDispatcher broadcastDispatcher,
+            @Main Executor executor,
+            KeyguardIndicationControllerGoogle keyguardIndicationControllerGoogle) {
         if (batteryController.isReverseSupported()) {
-            return Optional.of(new ReverseChargingViewController(context, batteryController, lazy, statusBarIconController, broadcastDispatcher, executor, keyguardIndicationControllerGoogle));
+            return Optional.of(
+                    new ReverseChargingViewController(
+                            context,
+                            batteryController,
+                            lazy,
+                            statusBarIconController,
+                            broadcastDispatcher,
+                            executor,
+                            keyguardIndicationControllerGoogle));
         }
         return Optional.empty();
     }

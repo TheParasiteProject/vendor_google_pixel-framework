@@ -10,7 +10,9 @@ import android.net.Uri;
 import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.util.Log;
+
 import com.android.systemui.smartspace.nano.SmartspaceProto;
+
 import java.io.ByteArrayOutputStream;
 
 public final class NewCardInfo {
@@ -20,7 +22,12 @@ public final class NewCardInfo {
     public final PackageInfo mPackageInfo;
     public final long mPublishTime;
 
-    public NewCardInfo(SmartspaceProto.SmartspaceUpdate.SmartspaceCard smartspaceCard, Intent intent, boolean z, long j, PackageInfo packageInfo) {
+    public NewCardInfo(
+            SmartspaceProto.SmartspaceUpdate.SmartspaceCard smartspaceCard,
+            Intent intent,
+            boolean z,
+            long j,
+            PackageInfo packageInfo) {
         this.mCard = smartspaceCard;
         this.mIsPrimary = z;
         this.mIntent = intent;
@@ -42,17 +49,24 @@ public final class NewCardInfo {
         }
         try {
             if (!TextUtils.isEmpty(this.mCard.icon.uri)) {
-                return MediaStore.Images.Media.getBitmap(context.getContentResolver(), Uri.parse(this.mCard.icon.uri));
+                return MediaStore.Images.Media.getBitmap(
+                        context.getContentResolver(), Uri.parse(this.mCard.icon.uri));
             }
             if (!TextUtils.isEmpty(this.mCard.icon.gsaResourceName)) {
-                Intent.ShortcutIconResource shortcutIconResource = new Intent.ShortcutIconResource();
+                Intent.ShortcutIconResource shortcutIconResource =
+                        new Intent.ShortcutIconResource();
                 shortcutIconResource.packageName = "com.google.android.googlequicksearchbox";
                 shortcutIconResource.resourceName = this.mCard.icon.gsaResourceName;
                 return createIconBitmap(shortcutIconResource, context);
             }
             return null;
         } catch (Exception e) {
-            Log.e("NewCardInfo", "retrieving bitmap uri=" + this.mCard.icon.uri + " gsaRes=" + this.mCard.icon.gsaResourceName);
+            Log.e(
+                    "NewCardInfo",
+                    "retrieving bitmap uri="
+                            + this.mCard.icon.uri
+                            + " gsaRes="
+                            + this.mCard.icon.gsaResourceName);
             return null;
         }
     }
@@ -82,11 +96,17 @@ public final class NewCardInfo {
         return (T) intent.getParcelableExtra(str);
     }
 
-    static Bitmap createIconBitmap(Intent.ShortcutIconResource shortcutIconResource, Context context) {
+    static Bitmap createIconBitmap(
+            Intent.ShortcutIconResource shortcutIconResource, Context context) {
         try {
-            Resources resourcesForApplication = context.getPackageManager().getResourcesForApplication(shortcutIconResource.packageName);
+            Resources resourcesForApplication =
+                    context.getPackageManager()
+                            .getResourcesForApplication(shortcutIconResource.packageName);
             if (resourcesForApplication != null) {
-                return BitmapFactory.decodeResource(resourcesForApplication, resourcesForApplication.getIdentifier(shortcutIconResource.resourceName, null, null));
+                return BitmapFactory.decodeResource(
+                        resourcesForApplication,
+                        resourcesForApplication.getIdentifier(
+                                shortcutIconResource.resourceName, null, null));
             }
             return null;
         } catch (Exception e) {

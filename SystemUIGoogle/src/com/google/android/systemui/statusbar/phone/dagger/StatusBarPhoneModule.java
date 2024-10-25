@@ -16,20 +16,19 @@
 
 package com.google.android.systemui.statusbar.phone.dagger;
 
-import androidx.annotation.NonNull;
-
-import com.android.systemui.dagger.SysUISingleton;
-import com.android.systemui.statusbar.phone.CentralSurfaces;
-import com.google.android.systemui.statusbar.phone.CentralSurfacesGoogle;
-
 import android.content.Context;
 import android.os.Handler;
+
+import androidx.annotation.NonNull;
+
 import com.android.internal.logging.UiEventLogger;
+import com.android.systemui.dagger.SysUISingleton;
 import com.android.systemui.dagger.qualifiers.Main;
 import com.android.systemui.plugins.statusbar.StatusBarStateController;
 import com.android.systemui.shade.domain.interactor.ShadeInteractor;
 import com.android.systemui.statusbar.notification.collection.provider.VisualStabilityProvider;
 import com.android.systemui.statusbar.notification.collection.render.GroupMembershipManager;
+import com.android.systemui.statusbar.phone.CentralSurfaces;
 import com.android.systemui.statusbar.phone.HeadsUpManagerPhone;
 import com.android.systemui.statusbar.phone.KeyguardBypassController;
 import com.android.systemui.statusbar.policy.AccessibilityManagerWrapper;
@@ -39,6 +38,8 @@ import com.android.systemui.util.concurrency.DelayableExecutor;
 import com.android.systemui.util.kotlin.JavaAdapter;
 import com.android.systemui.util.settings.GlobalSettings;
 import com.android.systemui.util.time.SystemClock;
+
+import com.google.android.systemui.statusbar.phone.CentralSurfacesGoogle;
 
 import dagger.Binds;
 import dagger.Module;
@@ -76,21 +77,22 @@ public interface StatusBarPhoneModule {
             UiEventLogger uiEventLogger,
             JavaAdapter javaAdapter,
             ShadeInteractor shadeInteractor) {
-        return Optional.of(new HeadsUpManagerPhone(
-                context,
-                logger,
-                statusBarStateController,
-                bypassController,
-                groupMembershipManager,
-                visualStabilityProvider,
-                configurationController,
-                handler,
-                globalSettings,
-                systemClock,
-                executor,
-                accessibilityManagerWrapper,
-                uiEventLogger,
-                javaAdapter,
-                shadeInteractor));
+        return Optional.of(
+                new HeadsUpManagerPhone(
+                        context,
+                        logger,
+                        statusBarStateController,
+                        bypassController,
+                        groupMembershipManager,
+                        visualStabilityProvider,
+                        configurationController,
+                        handler,
+                        globalSettings,
+                        systemClock,
+                        executor,
+                        accessibilityManagerWrapper,
+                        uiEventLogger,
+                        javaAdapter,
+                        shadeInteractor));
     }
 }

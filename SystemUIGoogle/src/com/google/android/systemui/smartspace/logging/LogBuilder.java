@@ -1,6 +1,7 @@
 package com.google.android.systemui.smartspace.logging;
 
 import android.util.Log;
+
 import java.io.PrintWriter;
 
 public class LogBuilder {
@@ -25,7 +26,8 @@ public class LogBuilder {
         Log.d(str, sb.toString());
     }
 
-    public static StringBuilder m(StringBuilder sb, boolean z, PrintWriter printWriter, String str) {
+    public static StringBuilder m(
+            StringBuilder sb, boolean z, PrintWriter printWriter, String str) {
         sb.append(z);
         printWriter.println(sb);
         StringBuilder sb2 = new StringBuilder();

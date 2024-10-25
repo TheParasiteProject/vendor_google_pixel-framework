@@ -22,17 +22,20 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewpager.widget.ViewPager;
-import com.android.systemui.res.R;
+
 import com.android.systemui.plugins.BcSmartspaceDataPlugin;
 import com.android.systemui.plugins.FalsingManager;
-import com.google.android.systemui.smartspace.CardPagerAdapter;
+import com.android.systemui.res.R;
+
 import com.google.android.systemui.smartspace.logging.BcSmartspaceCardLogger;
 import com.google.android.systemui.smartspace.logging.BcSmartspaceCardLoggerUtil;
 import com.google.android.systemui.smartspace.logging.BcSmartspaceCardLoggingInfo;
 import com.google.android.systemui.smartspace.logging.BcSmartspaceSubcardLoggingInfo;
 import com.google.android.systemui.smartspace.uitemplate.BaseTemplateCard;
+
 import java.time.DateTimeException;
 import java.time.Instant;
 import java.util.ArrayList;
@@ -41,7 +44,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlugin.SmartspaceTargetListener, BcSmartspaceDataPlugin.SmartspaceView {
+public class BcSmartspaceView extends FrameLayout
+        implements BcSmartspaceDataPlugin.SmartspaceTargetListener,
+                BcSmartspaceDataPlugin.SmartspaceView {
     public static final String TAG = "BcSmartspaceView";
     public static final boolean DEBUG = Log.isLoggable(TAG, 3);
     public final CardPagerAdapter mAdapter;
@@ -65,64 +70,87 @@ public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlu
         this.mCardPosition = 0;
         this.mAnimateSmartspaceUpdate = false;
         this.mScrollState = 0;
-        this.mAodObserver = new ContentObserver(new Handler()) { // from class: com.google.android.systemui.smartspace.BcSmartspaceView.1
-            @Override // android.database.ContentObserver
-            public void onChange(boolean z) {
-                BcSmartspaceView.this.onSettingsChanged();
-            }
-        };
-        this.mAdapter = new CardPagerAdapter(this);
-        this.mOnPageChangeListener = new ViewPager.OnPageChangeListener() { // from class: com.google.android.systemui.smartspace.BcSmartspaceView.2
-            public void onPageScrollStateChanged(int state) {
-                List<? extends Parcelable> list;
-                BcSmartspaceView.this.mScrollState = state;
-                if (state == 0 && (list = BcSmartspaceView.this.mPendingTargets) != null) {
-                    BcSmartspaceView.this.onSmartspaceTargetsUpdated(list);
-                }
-            }
-
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                if (BcSmartspaceView.this.mPageIndicator != null) {
-                    BcSmartspaceView.this.mPageIndicator.setPageOffset(position, positionOffset);
-                }
-            }
-
-            public void onPageSelected(int position) {
-                SmartspaceTarget targetAtPosition = BcSmartspaceView.this.mAdapter.getTargetAtPosition(BcSmartspaceView.this.mCardPosition);
-                BcSmartspaceView.this.mCardPosition = position;
-                SmartspaceTarget targetAtPosition2 = BcSmartspaceView.this.mAdapter.getTargetAtPosition(position);
-                BcSmartspaceView.this.logSmartspaceEvent(targetAtPosition2, BcSmartspaceView.this.mCardPosition, BcSmartspaceEvent.SMARTSPACE_CARD_SEEN);
-                if (BcSmartspaceView.this.mDataProvider == null) {
-                    Log.w(BcSmartspaceView.TAG, "Cannot notify target hidden/shown smartspace events: data provider null");
-                    return;
-                }
-                if (targetAtPosition == null) {
-                    Log.w(BcSmartspaceView.TAG, "Cannot notify target hidden smartspace event: previous target is null.");
-                } else {
-                    SmartspaceTargetEvent.Builder builder = new SmartspaceTargetEvent.Builder(3);
-                    builder.setSmartspaceTarget(targetAtPosition);
-                    SmartspaceAction baseAction = targetAtPosition.getBaseAction();
-                    if (baseAction != null) {
-                        builder.setSmartspaceActionId(baseAction.getId());
+        this.mAodObserver =
+                new ContentObserver(
+                        new Handler()) { // from class:
+                                         // com.google.android.systemui.smartspace.BcSmartspaceView.1
+                    @Override // android.database.ContentObserver
+                    public void onChange(boolean z) {
+                        BcSmartspaceView.this.onSettingsChanged();
                     }
-                    BcSmartspaceView.this.mDataProvider.notifySmartspaceEvent(builder.build());
-                }
-                SmartspaceTargetEvent.Builder builder2 = new SmartspaceTargetEvent.Builder(2);
-                builder2.setSmartspaceTarget(targetAtPosition2);
-                SmartspaceAction baseAction2 = targetAtPosition2.getBaseAction();
-                if (baseAction2 != null) {
-                    builder2.setSmartspaceActionId(baseAction2.getId());
-                }
-                BcSmartspaceView.this.mDataProvider.notifySmartspaceEvent(builder2.build());
-            }
-        };
+                };
+        this.mAdapter = new CardPagerAdapter(this);
+        this.mOnPageChangeListener =
+                new ViewPager.OnPageChangeListener() { // from class:
+                    // com.google.android.systemui.smartspace.BcSmartspaceView.2
+                    public void onPageScrollStateChanged(int state) {
+                        List<? extends Parcelable> list;
+                        BcSmartspaceView.this.mScrollState = state;
+                        if (state == 0 && (list = BcSmartspaceView.this.mPendingTargets) != null) {
+                            BcSmartspaceView.this.onSmartspaceTargetsUpdated(list);
+                        }
+                    }
+
+                    public void onPageScrolled(
+                            int position, float positionOffset, int positionOffsetPixels) {
+                        if (BcSmartspaceView.this.mPageIndicator != null) {
+                            BcSmartspaceView.this.mPageIndicator.setPageOffset(
+                                    position, positionOffset);
+                        }
+                    }
+
+                    public void onPageSelected(int position) {
+                        SmartspaceTarget targetAtPosition =
+                                BcSmartspaceView.this.mAdapter.getTargetAtPosition(
+                                        BcSmartspaceView.this.mCardPosition);
+                        BcSmartspaceView.this.mCardPosition = position;
+                        SmartspaceTarget targetAtPosition2 =
+                                BcSmartspaceView.this.mAdapter.getTargetAtPosition(position);
+                        BcSmartspaceView.this.logSmartspaceEvent(
+                                targetAtPosition2,
+                                BcSmartspaceView.this.mCardPosition,
+                                BcSmartspaceEvent.SMARTSPACE_CARD_SEEN);
+                        if (BcSmartspaceView.this.mDataProvider == null) {
+                            Log.w(
+                                    BcSmartspaceView.TAG,
+                                    "Cannot notify target hidden/shown smartspace events: data"
+                                        + " provider null");
+                            return;
+                        }
+                        if (targetAtPosition == null) {
+                            Log.w(
+                                    BcSmartspaceView.TAG,
+                                    "Cannot notify target hidden smartspace event: previous target"
+                                        + " is null.");
+                        } else {
+                            SmartspaceTargetEvent.Builder builder =
+                                    new SmartspaceTargetEvent.Builder(3);
+                            builder.setSmartspaceTarget(targetAtPosition);
+                            SmartspaceAction baseAction = targetAtPosition.getBaseAction();
+                            if (baseAction != null) {
+                                builder.setSmartspaceActionId(baseAction.getId());
+                            }
+                            BcSmartspaceView.this.mDataProvider.notifySmartspaceEvent(
+                                    builder.build());
+                        }
+                        SmartspaceTargetEvent.Builder builder2 =
+                                new SmartspaceTargetEvent.Builder(2);
+                        builder2.setSmartspaceTarget(targetAtPosition2);
+                        SmartspaceAction baseAction2 = targetAtPosition2.getBaseAction();
+                        if (baseAction2 != null) {
+                            builder2.setSmartspaceActionId(baseAction2.getId());
+                        }
+                        BcSmartspaceView.this.mDataProvider.notifySmartspaceEvent(builder2.build());
+                    }
+                };
     }
 
     @Override // android.view.View
     public void onVisibilityAggregated(boolean isVisible) {
         super.onVisibilityAggregated(isVisible);
         if (this.mDataProvider != null) {
-            this.mDataProvider.notifySmartspaceEvent(new SmartspaceTargetEvent.Builder(isVisible ? 6 : 7).build());
+            this.mDataProvider.notifySmartspaceEvent(
+                    new SmartspaceTargetEvent.Builder(isVisible ? 6 : 7).build());
         }
     }
 
@@ -140,7 +168,13 @@ public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlu
         this.mViewPager.addOnPageChangeListener(this.mOnPageChangeListener);
         this.mPageIndicator.setNumPages(this.mAdapter.getCount());
         try {
-            getContext().getContentResolver().registerContentObserver(Settings.Secure.getUriFor("doze_always_on"), false, this.mAodObserver, -1);
+            getContext()
+                    .getContentResolver()
+                    .registerContentObserver(
+                            Settings.Secure.getUriFor("doze_always_on"),
+                            false,
+                            this.mAodObserver,
+                            -1);
             this.mIsAodEnabled = isAodEnabled(getContext());
         } catch (Exception e) {
             Log.w(TAG, "Unable to register Doze Always on content observer.", e);
@@ -162,10 +196,16 @@ public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlu
     @Override // android.widget.FrameLayout, android.view.View
     protected void onMeasure(int i, int i2) {
         int size = View.MeasureSpec.getSize(i2);
-        int dimensionPixelSize = getContext().getResources().getDimensionPixelSize(R.dimen.enhanced_smartspace_height);
+        int dimensionPixelSize =
+                getContext()
+                        .getResources()
+                        .getDimensionPixelSize(R.dimen.enhanced_smartspace_height);
         if (size > 0 && size < dimensionPixelSize) {
             float f3 = size / dimensionPixelSize;
-            super.onMeasure(View.MeasureSpec.makeMeasureSpec(Math.round(View.MeasureSpec.getSize(i) / f3), 1073741824), View.MeasureSpec.makeMeasureSpec(dimensionPixelSize, 1073741824));
+            super.onMeasure(
+                    View.MeasureSpec.makeMeasureSpec(
+                            Math.round(View.MeasureSpec.getSize(i) / f3), 1073741824),
+                    View.MeasureSpec.makeMeasureSpec(dimensionPixelSize, 1073741824));
             setScaleX(f3);
             setScaleY(f3);
             setPivotX(0.0f);
@@ -189,7 +229,12 @@ public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlu
         BaseTemplateCard baseTemplateCard;
         BcSmartspaceCard bcSmartspaceCard;
         if (DEBUG) {
-            Log.d(TAG, "@" + Integer.toHexString(hashCode()) + ", onTargetsAvailable called. Callers = " + Debug.getCallers(5));
+            Log.d(
+                    TAG,
+                    "@"
+                            + Integer.toHexString(hashCode())
+                            + ", onTargetsAvailable called. Callers = "
+                            + Debug.getCallers(5));
             Log.d(TAG, "    targets.size() = " + list.size());
             Log.d(TAG, "    targets = " + list);
         }
@@ -224,28 +269,29 @@ public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlu
         this.mAdapter.mLockscreenTargets.clear();
         this.mAdapter.mHasDifferentTargets = false;
         this.mAdapter.mNextAlarmData.mHolidayAlarmsTarget = null;
-        list.forEach(obj -> {
-            int q;
-            SmartspaceTarget it = (SmartspaceTarget) obj;
-            if (it.getFeatureType() == 34) {
-                this.mAdapter.mNextAlarmData.mHolidayAlarmsTarget = it;
-                return;
-            }
-            if (it.getBaseAction() != null && it.getBaseAction().getExtras() != null) {
-                q = it.getBaseAction().getExtras().getInt("SCREEN_EXTRA", 3);
-            } else {
-                q = 3;
-            }
-            if ((q & 2) != 0) {
-                this.mAdapter.mAODTargets.add(it);
-            }
-            if ((q & 1) != 0) {
-                this.mAdapter.mLockscreenTargets.add(it);
-            }
-            if (q != 3) {
-                this.mAdapter.mHasDifferentTargets = true;
-            }
-        });
+        list.forEach(
+                obj -> {
+                    int q;
+                    SmartspaceTarget it = (SmartspaceTarget) obj;
+                    if (it.getFeatureType() == 34) {
+                        this.mAdapter.mNextAlarmData.mHolidayAlarmsTarget = it;
+                        return;
+                    }
+                    if (it.getBaseAction() != null && it.getBaseAction().getExtras() != null) {
+                        q = it.getBaseAction().getExtras().getInt("SCREEN_EXTRA", 3);
+                    } else {
+                        q = 3;
+                    }
+                    if ((q & 2) != 0) {
+                        this.mAdapter.mAODTargets.add(it);
+                    }
+                    if ((q & 1) != 0) {
+                        this.mAdapter.mLockscreenTargets.add(it);
+                    }
+                    if (q != 3) {
+                        this.mAdapter.mHasDifferentTargets = true;
+                    }
+                });
         this.mAdapter.addDefaultDateCardIfEmpty(this.mAdapter.mAODTargets);
         this.mAdapter.addDefaultDateCardIfEmpty(this.mAdapter.mLockscreenTargets);
         this.mAdapter.updateTargetVisibility();
@@ -267,7 +313,8 @@ public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlu
         for (int i3 = 0; i3 < count; i3++) {
             SmartspaceTarget targetAtPosition = this.mAdapter.getTargetAtPosition(i3);
             if (!this.mLastReceivedTargets.contains(targetAtPosition.getSmartspaceTargetId())) {
-                logSmartspaceEvent(targetAtPosition, i3, BcSmartspaceEvent.SMARTSPACE_CARD_RECEIVED);
+                logSmartspaceEvent(
+                        targetAtPosition, i3, BcSmartspaceEvent.SMARTSPACE_CARD_RECEIVED);
                 SmartspaceTargetEvent.Builder builder = new SmartspaceTargetEvent.Builder(8);
                 builder.setSmartspaceTarget(targetAtPosition);
                 SmartspaceAction baseAction = targetAtPosition.getBaseAction();
@@ -278,18 +325,28 @@ public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlu
             }
         }
         this.mLastReceivedTargets.clear();
-        this.mLastReceivedTargets.addAll((Collection) this.mAdapter.mSmartspaceTargets.stream().map((v0) -> {
-            return v0.getSmartspaceTargetId();
-        }).collect(Collectors.toList()));
+        this.mLastReceivedTargets.addAll(
+                (Collection)
+                        this.mAdapter.mSmartspaceTargets.stream()
+                                .map(
+                                        (v0) -> {
+                                            return v0.getSmartspaceTargetId();
+                                        })
+                                .collect(Collectors.toList()));
         this.mAdapter.notifyDataSetChanged();
     }
 
-    public void logSmartspaceEvent(SmartspaceTarget smartspaceTarget, int rank, BcSmartspaceEvent bcSmartspaceEvent) {
+    public void logSmartspaceEvent(
+            SmartspaceTarget smartspaceTarget, int rank, BcSmartspaceEvent bcSmartspaceEvent) {
         int i2;
         BcSmartspaceSubcardLoggingInfo createSubcardLoggingInfo;
         if (bcSmartspaceEvent == BcSmartspaceEvent.SMARTSPACE_CARD_RECEIVED) {
             try {
-                i2 = (int) Instant.now().minusMillis(smartspaceTarget.getCreationTimeMillis()).toEpochMilli();
+                i2 =
+                        (int)
+                                Instant.now()
+                                        .minusMillis(smartspaceTarget.getCreationTimeMillis())
+                                        .toEpochMilli();
             } catch (ArithmeticException | DateTimeException e) {
                 Log.e(TAG, "received_latency_millis will be -1 due to exception ", e);
                 i2 = -1;
@@ -302,22 +359,31 @@ public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlu
         builder.mFeatureType = smartspaceTarget.getFeatureType();
         String packageName = getContext().getPackageName();
         CardPagerAdapter cardPagerAdapter = this.mAdapter;
-        builder.mDisplaySurface = BcSmartSpaceUtil.getLoggingDisplaySurface(packageName, cardPagerAdapter.mIsDreaming, cardPagerAdapter.mDozeAmount);
+        builder.mDisplaySurface =
+                BcSmartSpaceUtil.getLoggingDisplaySurface(
+                        packageName, cardPagerAdapter.mIsDreaming, cardPagerAdapter.mDozeAmount);
         builder.mRank = rank;
         builder.mCardinality = this.mAdapter.getCount();
         builder.mReceivedLatency = i2;
-        builder.mUid = BcSmartspaceCardLoggerUtil.getUid(getContext().getPackageManager(), smartspaceTarget);
+        builder.mUid =
+                BcSmartspaceCardLoggerUtil.getUid(
+                        getContext().getPackageManager(), smartspaceTarget);
         if (smartspaceTarget.getTemplateData() != null) {
-            createSubcardLoggingInfo = BcSmartspaceCardLoggerUtil.createSubcardLoggingInfo(smartspaceTarget.getTemplateData());
+            createSubcardLoggingInfo =
+                    BcSmartspaceCardLoggerUtil.createSubcardLoggingInfo(
+                            smartspaceTarget.getTemplateData());
         } else {
-            createSubcardLoggingInfo = BcSmartspaceCardLoggerUtil.createSubcardLoggingInfo(smartspaceTarget);
+            createSubcardLoggingInfo =
+                    BcSmartspaceCardLoggerUtil.createSubcardLoggingInfo(smartspaceTarget);
         }
         builder.mSubcardInfo = createSubcardLoggingInfo;
-        BcSmartspaceCardLoggingInfo bcSmartspaceCardLoggingInfo = new BcSmartspaceCardLoggingInfo(builder);
+        BcSmartspaceCardLoggingInfo bcSmartspaceCardLoggingInfo =
+                new BcSmartspaceCardLoggingInfo(builder);
         if (smartspaceTarget.getTemplateData() != null) {
             BcSmartspaceCardLoggerUtil.tryForcePrimaryFeatureType(bcSmartspaceCardLoggingInfo);
         } else {
-            BcSmartspaceCardLoggerUtil.tryForcePrimaryFeatureTypeAndInjectWeatherSubcard(bcSmartspaceCardLoggingInfo, smartspaceTarget);
+            BcSmartspaceCardLoggerUtil.tryForcePrimaryFeatureTypeAndInjectWeatherSubcard(
+                    bcSmartspaceCardLoggingInfo, smartspaceTarget);
         }
         BcSmartspaceCardLogger.log(bcSmartspaceEvent, bcSmartspaceCardLoggingInfo);
     }
@@ -325,29 +391,49 @@ public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlu
     public void animateSmartspaceUpdate(final ConstraintLayout constraintLayout) {
         if (this.mRunningAnimation == null && constraintLayout.getParent() == null) {
             final ViewGroup viewGroup = (ViewGroup) this.mViewPager.getParent();
-            constraintLayout.measure(View.MeasureSpec.makeMeasureSpec(this.mViewPager.getWidth(), 1073741824), View.MeasureSpec.makeMeasureSpec(this.mViewPager.getHeight(), 1073741824));
-            constraintLayout.layout(this.mViewPager.getLeft(), this.mViewPager.getTop(), this.mViewPager.getRight(), this.mViewPager.getBottom());
+            constraintLayout.measure(
+                    View.MeasureSpec.makeMeasureSpec(this.mViewPager.getWidth(), 1073741824),
+                    View.MeasureSpec.makeMeasureSpec(this.mViewPager.getHeight(), 1073741824));
+            constraintLayout.layout(
+                    this.mViewPager.getLeft(),
+                    this.mViewPager.getTop(),
+                    this.mViewPager.getRight(),
+                    this.mViewPager.getBottom());
             AnimatorSet animatorSet = new AnimatorSet();
-            float dimension = getContext().getResources().getDimension(R.dimen.enhanced_smartspace_dismiss_margin);
-            animatorSet.play(ObjectAnimator.ofFloat(constraintLayout, View.TRANSLATION_Y, 0.0f, (-getHeight()) - dimension));
+            float dimension =
+                    getContext()
+                            .getResources()
+                            .getDimension(R.dimen.enhanced_smartspace_dismiss_margin);
+            animatorSet.play(
+                    ObjectAnimator.ofFloat(
+                            constraintLayout,
+                            View.TRANSLATION_Y,
+                            0.0f,
+                            (-getHeight()) - dimension));
             animatorSet.play(ObjectAnimator.ofFloat(constraintLayout, View.ALPHA, 1.0f, 0.0f));
-            animatorSet.play(ObjectAnimator.ofFloat(this.mViewPager, View.TRANSLATION_Y, getHeight() + dimension, 0.0f));
-            animatorSet.addListener(new AnimatorListenerAdapter() { // from class: com.google.android.systemui.smartspace.BcSmartspaceView.3
-                @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
-                public void onAnimationEnd(Animator animator) {
-                    constraintLayout.setTranslationY(0.0f);
-                    constraintLayout.setAlpha(1.0f);
-                    viewGroup.getOverlay().remove((View) constraintLayout);
-                    BcSmartspaceView bcSmartspaceView = BcSmartspaceView.this;
-                    bcSmartspaceView.mRunningAnimation = null;
-                    bcSmartspaceView.mAnimateSmartspaceUpdate = false;
-                }
+            animatorSet.play(
+                    ObjectAnimator.ofFloat(
+                            this.mViewPager, View.TRANSLATION_Y, getHeight() + dimension, 0.0f));
+            animatorSet.addListener(
+                    new AnimatorListenerAdapter() { // from class:
+                                                    // com.google.android.systemui.smartspace.BcSmartspaceView.3
+                        @Override // android.animation.AnimatorListenerAdapter,
+                                  // android.animation.Animator.AnimatorListener
+                        public void onAnimationEnd(Animator animator) {
+                            constraintLayout.setTranslationY(0.0f);
+                            constraintLayout.setAlpha(1.0f);
+                            viewGroup.getOverlay().remove((View) constraintLayout);
+                            BcSmartspaceView bcSmartspaceView = BcSmartspaceView.this;
+                            bcSmartspaceView.mRunningAnimation = null;
+                            bcSmartspaceView.mAnimateSmartspaceUpdate = false;
+                        }
 
-                @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
-                public void onAnimationStart(Animator animator) {
-                    viewGroup.getOverlay().add((View) constraintLayout);
-                }
-            });
+                        @Override // android.animation.AnimatorListenerAdapter,
+                                  // android.animation.Animator.AnimatorListener
+                        public void onAnimationStart(Animator animator) {
+                            viewGroup.getOverlay().add((View) constraintLayout);
+                        }
+                    });
             this.mRunningAnimation = animatorSet;
             animatorSet.start();
         }
@@ -356,7 +442,8 @@ public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlu
     public final int getCurrentCardTopPadding() {
         BcSmartspaceCard bcSmartspaceCard;
         BaseTemplateCard baseTemplateCard;
-        CardPagerAdapter.ViewHolder viewHolder = this.mAdapter.mViewHolders.get(this.mViewPager.getCurrentItem());
+        CardPagerAdapter.ViewHolder viewHolder =
+                this.mAdapter.mViewHolders.get(this.mViewPager.getCurrentItem());
         ViewGroup viewGroup = null;
         if (viewHolder == null) {
             bcSmartspaceCard = null;
@@ -364,20 +451,23 @@ public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlu
             bcSmartspaceCard = viewHolder.mLegacyCard;
         }
         if (bcSmartspaceCard != null) {
-            CardPagerAdapter.ViewHolder viewHolder2 = this.mAdapter.mViewHolders.get(this.mViewPager.getCurrentItem());
+            CardPagerAdapter.ViewHolder viewHolder2 =
+                    this.mAdapter.mViewHolders.get(this.mViewPager.getCurrentItem());
             if (viewHolder2 != null) {
                 viewGroup = viewHolder2.mLegacyCard;
             }
             return viewGroup.getPaddingTop();
         }
-        CardPagerAdapter.ViewHolder viewHolder3 = this.mAdapter.mViewHolders.get(this.mViewPager.getCurrentItem());
+        CardPagerAdapter.ViewHolder viewHolder3 =
+                this.mAdapter.mViewHolders.get(this.mViewPager.getCurrentItem());
         if (viewHolder3 == null) {
             baseTemplateCard = null;
         } else {
             baseTemplateCard = viewHolder3.mCard;
         }
         if (baseTemplateCard != null) {
-            CardPagerAdapter.ViewHolder viewHolder4 = this.mAdapter.mViewHolders.get(this.mViewPager.getCurrentItem());
+            CardPagerAdapter.ViewHolder viewHolder4 =
+                    this.mAdapter.mViewHolders.get(this.mViewPager.getCurrentItem());
             if (viewHolder4 != null) {
                 viewGroup = viewHolder4.mCard;
             }
@@ -400,14 +490,18 @@ public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlu
         ArrayList<SmartspaceTarget> arrayList = this.mAdapter.mSmartspaceTargets;
         this.mAdapter.setDozeAmount(f);
         CardPagerAdapter cardPagerAdapter2 = this.mAdapter;
-        if (cardPagerAdapter2.mHasDifferentTargets && cardPagerAdapter2.mSmartspaceTargets != arrayList && cardPagerAdapter2.getCount() > 0) {
+        if (cardPagerAdapter2.mHasDifferentTargets
+                && cardPagerAdapter2.mSmartspaceTargets != arrayList
+                && cardPagerAdapter2.getCount() > 0) {
             this.mViewPager.setCurrentItem(0, false);
             this.mPageIndicator.setPageOffset(0, 0.0f);
         }
         this.mPageIndicator.setNumPages(this.mAdapter.getCount());
         String packageName = getContext().getPackageName();
         CardPagerAdapter cardPagerAdapter3 = this.mAdapter;
-        int loggingDisplaySurface = BcSmartSpaceUtil.getLoggingDisplaySurface(packageName, cardPagerAdapter3.mIsDreaming, cardPagerAdapter3.mDozeAmount);
+        int loggingDisplaySurface =
+                BcSmartSpaceUtil.getLoggingDisplaySurface(
+                        packageName, cardPagerAdapter3.mIsDreaming, cardPagerAdapter3.mDozeAmount);
         if (loggingDisplaySurface == -1) {
             return;
         }
@@ -415,7 +509,12 @@ public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlu
             return;
         }
         if (DEBUG) {
-            Log.d(TAG, "@" + Integer.toHexString(hashCode()) + ", setDozeAmount: Logging SMARTSPACE_CARD_SEEN, currentSurface = " + loggingDisplaySurface);
+            Log.d(
+                    TAG,
+                    "@"
+                            + Integer.toHexString(hashCode())
+                            + ", setDozeAmount: Logging SMARTSPACE_CARD_SEEN, currentSurface = "
+                            + loggingDisplaySurface);
         }
         BcSmartspaceEvent bcSmartspaceEvent = BcSmartspaceEvent.SMARTSPACE_CARD_SEEN;
         SmartspaceTarget targetAtPosition = this.mAdapter.getTargetAtPosition(this.mCardPosition);
@@ -425,9 +524,18 @@ public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlu
             logSmartspaceEvent(targetAtPosition, this.mCardPosition, bcSmartspaceEvent);
         }
         if (this.mAdapter.mNextAlarmData.mImage != null) {
-            logSmartspaceEvent(new SmartspaceTarget.Builder("upcoming_alarm_card_94510_12684", new ComponentName(getContext(), getClass()), getContext().getUser()).setFeatureType(23).build(), 0, bcSmartspaceEvent);
+            logSmartspaceEvent(
+                    new SmartspaceTarget.Builder(
+                                    "upcoming_alarm_card_94510_12684",
+                                    new ComponentName(getContext(), getClass()),
+                                    getContext().getUser())
+                            .setFeatureType(23)
+                            .build(),
+                    0,
+                    bcSmartspaceEvent);
             if (!TextUtils.isEmpty(this.mAdapter.mNextAlarmData.getHolidayAlarmText(null))) {
-                logSmartspaceEvent(this.mAdapter.mNextAlarmData.mHolidayAlarmsTarget, 0, bcSmartspaceEvent);
+                logSmartspaceEvent(
+                        this.mAdapter.mNextAlarmData.mHolidayAlarmsTarget, 0, bcSmartspaceEvent);
             }
         }
     }
@@ -467,7 +575,9 @@ public class BcSmartspaceView extends FrameLayout implements BcSmartspaceDataPlu
     }
 
     private static boolean isAodEnabled(Context context) {
-        return Settings.Secure.getIntForUser(context.getContentResolver(), "doze_always_on", 0, context.getUserId()) == 1;
+        return Settings.Secure.getIntForUser(
+                        context.getContentResolver(), "doze_always_on", 0, context.getUserId())
+                == 1;
     }
 
     public void setFalsingManager(FalsingManager falsingManager) {

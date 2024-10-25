@@ -20,11 +20,12 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.util.AttributeSet;
 import android.util.MathUtils;
-import com.android.systemui.res.R;
+
 import com.android.systemui.assist.ui.CornerPathRenderer;
 import com.android.systemui.assist.ui.InvocationLightsView;
 import com.android.systemui.assist.ui.PathSpecCornerPathRenderer;
 import com.android.systemui.assist.ui.PerimeterPathGuide;
+import com.android.systemui.res.R;
 
 public class AssistantInvocationLightsView extends InvocationLightsView {
     private final int mColorBlue;
@@ -44,7 +45,8 @@ public class AssistantInvocationLightsView extends InvocationLightsView {
         this(context, attributeSet, i, 0);
     }
 
-    public AssistantInvocationLightsView(Context context, AttributeSet attributeSet, int i, int i2) {
+    public AssistantInvocationLightsView(
+            Context context, AttributeSet attributeSet, int i, int i2) {
         super(context, attributeSet, i, i2);
         Resources resources = context.getResources();
         mColorRed = resources.getColor(R.color.edge_light_red);
@@ -61,13 +63,18 @@ public class AssistantInvocationLightsView extends InvocationLightsView {
         }
     }
 
-    @Override 
+    @Override
     public void onInvocationProgress(float f) {
         if (f <= 1.0f) {
             super.onInvocationProgress(f);
         } else {
             float regionWidth = mGuide.getRegionWidth(PerimeterPathGuide.Region.BOTTOM) / 4.0f;
-            float lerp = MathUtils.lerp((mGuide.getRegionWidth(PerimeterPathGuide.Region.BOTTOM_LEFT) * 0.6f) / 2.0f, regionWidth, 1.0f - (f - 1.0f));
+            float lerp =
+                    MathUtils.lerp(
+                            (mGuide.getRegionWidth(PerimeterPathGuide.Region.BOTTOM_LEFT) * 0.6f)
+                                    / 2.0f,
+                            regionWidth,
+                            1.0f - (f - 1.0f));
             setLight(0, regionWidth - lerp, regionWidth);
             float f2 = 2.0f * regionWidth;
             setLight(1, regionWidth, f2);

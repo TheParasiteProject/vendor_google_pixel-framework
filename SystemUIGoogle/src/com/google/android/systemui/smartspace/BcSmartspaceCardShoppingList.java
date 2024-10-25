@@ -9,13 +9,18 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.android.systemui.res.R;
+
 import com.android.systemui.plugins.BcSmartspaceDataPlugin;
+import com.android.systemui.res.R;
+
 import com.google.android.systemui.smartspace.logging.BcSmartspaceCardLoggingInfo;
+
 import java.util.Locale;
 
 public class BcSmartspaceCardShoppingList extends BcSmartspaceCardSecondary {
-    public static final int[] LIST_ITEM_TEXT_VIEW_IDS = {R.id.list_item_1, R.id.list_item_2, R.id.list_item_3};
+    public static final int[] LIST_ITEM_TEXT_VIEW_IDS = {
+        R.id.list_item_1, R.id.list_item_2, R.id.list_item_3
+    };
     public ImageView mCardPromptIconView;
     public TextView mCardPromptView;
     public TextView mEmptyListMessageView;
@@ -45,7 +50,12 @@ public class BcSmartspaceCardShoppingList extends BcSmartspaceCardSecondary {
         for (int i2 = 0; i2 < 3; i2++) {
             TextView textView = this.mListItems[i2];
             if (textView == null) {
-                Log.w("BcSmartspaceCardShoppingList", String.format(Locale.US, "Missing list item view to update at row: %d", Integer.valueOf(i2 + 1)));
+                Log.w(
+                        "BcSmartspaceCardShoppingList",
+                        String.format(
+                                Locale.US,
+                                "Missing list item view to update at row: %d",
+                                Integer.valueOf(i2 + 1)));
                 return;
             }
             textView.setTextColor(i);
@@ -69,7 +79,10 @@ public class BcSmartspaceCardShoppingList extends BcSmartspaceCardSecondary {
     }
 
     @Override // com.google.android.systemui.smartspace.BcSmartspaceCardSecondary
-    public final boolean setSmartspaceActions(SmartspaceTarget smartspaceTarget, BcSmartspaceDataPlugin.SmartspaceEventNotifier smartspaceEventNotifier, BcSmartspaceCardLoggingInfo bcSmartspaceCardLoggingInfo) {
+    public final boolean setSmartspaceActions(
+            SmartspaceTarget smartspaceTarget,
+            BcSmartspaceDataPlugin.SmartspaceEventNotifier smartspaceEventNotifier,
+            BcSmartspaceCardLoggingInfo bcSmartspaceCardLoggingInfo) {
         Bundle extras;
         SmartspaceAction baseAction = smartspaceTarget.getBaseAction();
         Bitmap bitmap = null;
@@ -120,7 +133,12 @@ public class BcSmartspaceCardShoppingList extends BcSmartspaceCardSecondary {
                 for (int i = 0; i < 3; i++) {
                     TextView textView3 = this.mListItems[i];
                     if (textView3 == null) {
-                        Log.w("BcSmartspaceCardShoppingList", String.format(Locale.US, "Missing list item view to update at row: %d", Integer.valueOf(i + 1)));
+                        Log.w(
+                                "BcSmartspaceCardShoppingList",
+                                String.format(
+                                        Locale.US,
+                                        "Missing list item view to update at row: %d",
+                                        Integer.valueOf(i + 1)));
                         return true;
                     }
                     if (i < stringArray.length) {

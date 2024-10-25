@@ -9,9 +9,12 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
 import androidx.constraintlayout.widget.ConstraintLayout;
-import com.android.systemui.res.R;
+
 import com.android.systemui.plugins.BcSmartspaceDataPlugin;
+import com.android.systemui.res.R;
+
 import com.google.android.systemui.smartspace.logging.BcSmartspaceCardLoggingInfo;
 
 public class BcSmartspaceCardGenericImage extends BcSmartspaceCardSecondary {
@@ -22,8 +25,7 @@ public class BcSmartspaceCardGenericImage extends BcSmartspaceCardSecondary {
     }
 
     @Override // com.google.android.systemui.smartspace.BcSmartspaceCardSecondary
-    public void setTextColor(int i) {
-    }
+    public void setTextColor(int i) {}
 
     public BcSmartspaceCardGenericImage(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
@@ -44,7 +46,10 @@ public class BcSmartspaceCardGenericImage extends BcSmartspaceCardSecondary {
     }
 
     @Override // com.google.android.systemui.smartspace.BcSmartspaceCardSecondary
-    public boolean setSmartspaceActions(SmartspaceTarget smartspaceTarget, BcSmartspaceDataPlugin.SmartspaceEventNotifier smartspaceEventNotifier, BcSmartspaceCardLoggingInfo bcSmartspaceCardLoggingInfo) {
+    public boolean setSmartspaceActions(
+            SmartspaceTarget smartspaceTarget,
+            BcSmartspaceDataPlugin.SmartspaceEventNotifier smartspaceEventNotifier,
+            BcSmartspaceCardLoggingInfo bcSmartspaceCardLoggingInfo) {
         Bundle extras;
         SmartspaceAction baseAction = smartspaceTarget.getBaseAction();
         if (baseAction == null) {
@@ -63,13 +68,16 @@ public class BcSmartspaceCardGenericImage extends BcSmartspaceCardSecondary {
             }
             String dimensionRatio = BcSmartSpaceUtil.getDimensionRatio(extras);
             if (dimensionRatio != null) {
-                ((ConstraintLayout.LayoutParams) this.mImageView.getLayoutParams()).dimensionRatio = dimensionRatio;
+                ((ConstraintLayout.LayoutParams) this.mImageView.getLayoutParams()).dimensionRatio =
+                        dimensionRatio;
             }
             if (extras.containsKey("imageLayoutWidth")) {
-                ((ViewGroup.MarginLayoutParams) this.mImageView.getLayoutParams()).width = extras.getInt("imageLayoutWidth");
+                ((ViewGroup.MarginLayoutParams) this.mImageView.getLayoutParams()).width =
+                        extras.getInt("imageLayoutWidth");
             }
             if (extras.containsKey("imageLayoutHeight")) {
-                ((ViewGroup.MarginLayoutParams) this.mImageView.getLayoutParams()).height = extras.getInt("imageLayoutHeight");
+                ((ViewGroup.MarginLayoutParams) this.mImageView.getLayoutParams()).height =
+                        extras.getInt("imageLayoutHeight");
             }
             setImageBitmap((Bitmap) extras.get("imageBitmap"));
             return true;

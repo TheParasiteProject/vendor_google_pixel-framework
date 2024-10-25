@@ -6,6 +6,7 @@ import android.util.AttributeSet;
 import android.view.ViewGroup;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.TextView;
+
 import com.android.wm.shell.R;
 
 public class PromptView extends TextView {
@@ -41,7 +42,8 @@ public class PromptView extends TextView {
             z2 = false;
         }
         if (z || z2) {
-            setTextSize(0, getContext().getResources().getDimension(R.dimen.transcription_text_size));
+            setTextSize(
+                    0, getContext().getResources().getDimension(R.dimen.transcription_text_size));
             updateViewHeight();
         }
     }
@@ -54,13 +56,25 @@ public class PromptView extends TextView {
     public final void updateViewHeight() {
         ViewGroup.LayoutParams layoutParams = getLayoutParams();
         if (layoutParams != null) {
-            layoutParams.height = (int) (getContext().getResources().getDimension(R.dimen.transcription_text_size) + getResources().getDimension(R.dimen.assist_prompt_start_height) + mRiseDistance);
+            layoutParams.height =
+                    (int)
+                            (getContext()
+                                            .getResources()
+                                            .getDimension(R.dimen.transcription_text_size)
+                                    + getResources()
+                                            .getDimension(R.dimen.assist_prompt_start_height)
+                                    + mRiseDistance);
         }
         requestLayout();
     }
 
     private void setAlphaProgress(int i, float f) {
-        setAlpha((i == 2 || f <= 0.8f) ? f > 0.32000002f ? 1.0f : mDecelerateInterpolator.getInterpolation(f / 0.32000002f) : 0.0f);
+        setAlpha(
+                (i == 2 || f <= 0.8f)
+                        ? f > 0.32000002f
+                                ? 1.0f
+                                : mDecelerateInterpolator.getInterpolation(f / 0.32000002f)
+                        : 0.0f);
     }
 
     private void setTranslationYProgress(float f) {
@@ -143,7 +157,7 @@ public class PromptView extends TextView {
             mHasDarkBackground = z2;
         }
     }
-    
+
     public void setHasDarkBackground(boolean z) {
         if (z != mHasDarkBackground) {
             setTextColor(z ? mTextColorDark : mTextColorLight);
@@ -151,4 +165,3 @@ public class PromptView extends TextView {
         }
     }
 }
-

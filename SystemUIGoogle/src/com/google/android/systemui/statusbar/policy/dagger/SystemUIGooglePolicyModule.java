@@ -31,8 +31,8 @@ import com.android.systemui.settings.UserContentResolverProvider;
 import com.android.systemui.statusbar.policy.BatteryController;
 import com.android.systemui.statusbar.policy.BatteryControllerLogger;
 
-import com.google.android.systemui.statusbar.policy.BatteryControllerImplGoogle;
 import com.google.android.systemui.reversecharging.ReverseChargingController;
+import com.google.android.systemui.statusbar.policy.BatteryControllerImplGoogle;
 
 import dagger.Module;
 import dagger.Provides;
@@ -53,18 +53,19 @@ public class SystemUIGooglePolicyModule {
             @Background Handler bgHandler,
             UserContentResolverProvider userContentResolverProvider,
             ReverseChargingController reverseChargingController) {
-        BatteryController bC = new BatteryControllerImplGoogle(
-                context,
-                enhancedEstimates,
-                powerManager,
-                broadcastDispatcher,
-                demoModeController,
-                dumpManager,
-                logger,
-                mainHandler,
-                bgHandler,
-                userContentResolverProvider,
-                reverseChargingController);
+        BatteryController bC =
+                new BatteryControllerImplGoogle(
+                        context,
+                        enhancedEstimates,
+                        powerManager,
+                        broadcastDispatcher,
+                        demoModeController,
+                        dumpManager,
+                        logger,
+                        mainHandler,
+                        bgHandler,
+                        userContentResolverProvider,
+                        reverseChargingController);
         bC.init();
         return bC;
     }

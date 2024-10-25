@@ -18,19 +18,20 @@ package com.google.android.systemui.dagger;
 
 import com.android.systemui.keyguard.dagger.KeyguardModule;
 import com.android.systemui.recents.RecentsModule;
-import com.google.android.systemui.statusbar.dagger.CentralSurfacesGoogleModule;
+
 import com.google.android.systemui.columbus.dagger.ColumbusBinderModule;
+import com.google.android.systemui.statusbar.dagger.CentralSurfacesGoogleModule;
 
 import dagger.Module;
 
 /**
  * SystemUI objects that are injectable should go here.
  */
-@Module(includes = {
-        RecentsModule.class,
-        CentralSurfacesGoogleModule.class,
-        KeyguardModule.class,
-        ColumbusBinderModule.class,
-})
-public abstract class SystemUIGoogleBinder {
-}
+@Module(
+        includes = {
+            RecentsModule.class,
+            CentralSurfacesGoogleModule.class,
+            KeyguardModule.class,
+            ColumbusBinderModule.class,
+        })
+public abstract class SystemUIGoogleBinder {}

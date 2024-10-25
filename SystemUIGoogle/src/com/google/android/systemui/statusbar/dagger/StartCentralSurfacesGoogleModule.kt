@@ -26,7 +26,7 @@ import dagger.multibindings.IntoMap
 
 @Module
 interface StartCentralSurfacesGoogleModule {
-    /** Start the CentralSurfaces   */
+    /** Start the CentralSurfaces */
     @Binds
     @IntoMap
     @ClassKey(CentralSurfaces::class)

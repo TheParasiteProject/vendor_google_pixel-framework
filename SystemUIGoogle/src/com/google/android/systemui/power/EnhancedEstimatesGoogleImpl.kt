@@ -32,13 +32,17 @@ import java.time.Duration
 import javax.inject.Inject
 
 @SysUISingleton
-class EnhancedEstimatesGoogleImpl @Inject constructor(private val mContext: Context) : EnhancedEstimates {
+class EnhancedEstimatesGoogleImpl @Inject constructor(private val mContext: Context) :
+    EnhancedEstimates {
     private val mParser = KeyValueListParser(',')
 
     override fun isHybridNotificationEnabled(): Boolean {
         return try {
-            val packageInfo = mContext.packageManager.getPackageInfo("com.google.android.apps.turbo", 512)
-            packageInfo.applicationInfo?.enabled == true && updateFlags() && mParser.getBoolean("hybrid_enabled", true)
+            val packageInfo =
+                mContext.packageManager.getPackageInfo("com.google.android.apps.turbo", 512)
+            packageInfo.applicationInfo?.enabled == true &&
+                updateFlags() &&
+                mParser.getBoolean("hybrid_enabled", true)
         } catch (e: PackageManager.NameNotFoundException) {
             false
         }
@@ -47,43 +51,50 @@ class EnhancedEstimatesGoogleImpl @Inject constructor(private val mContext: Cont
     override fun getEstimate(): Estimate {
         var query: Cursor? = null
         return try {
-            query = mContext.contentResolver.query(
-                Uri.Builder()
-                    .scheme("content")
-                    .authority("com.google.android.apps.turbo.estimated_time_remaining")
-                    .appendPath("time_remaining")
-                    .build(),
-                null,
-                null,
-                null,
-                null
-            )
+            query =
+                mContext.contentResolver.query(
+                    Uri.Builder()
+                        .scheme("content")
+                        .authority("com.google.android.apps.turbo.estimated_time_remaining")
+                        .appendPath("time_remaining")
+                        .build(),
+                    null,
+                    null,
+                    null,
+                    null)
             if (query != null && query.moveToFirst()) {
-                val isBasedOnUsage = query.getColumnIndex("is_based_on_usage") == -1 || query.getInt(query.getColumnIndex("is_based_on_usage")) != 0
+                val isBasedOnUsage =
+                    query.getColumnIndex("is_based_on_usage") == -1 ||
+                        query.getInt(query.getColumnIndex("is_based_on_usage")) != 0
                 val columnIndex = query.getColumnIndex("average_battery_life")
-                val j: Long = if (columnIndex != -1) {
-                    val j2 = query.getLong(columnIndex)
-                    if (j2 != -1L) {
-                        val millis = if (Duration.ofMillis(j2).compareTo(Duration.ofDays(1L)) >= 0) {
-                            Duration.ofHours(1L).toMillis()
+                val j: Long =
+                    if (columnIndex != -1) {
+                        val j2 = query.getLong(columnIndex)
+                        if (j2 != -1L) {
+                            val millis =
+                                if (Duration.ofMillis(j2).compareTo(Duration.ofDays(1L)) >= 0) {
+                                    Duration.ofHours(1L).toMillis()
+                                } else {
+                                    Duration.ofMinutes(15L).toMillis()
+                                }
+                            PowerUtil.roundTimeToNearestThreshold(j2, millis)
                         } else {
-                            Duration.ofMinutes(15L).toMillis()
+                            -1L
                         }
-                        PowerUtil.roundTimeToNearestThreshold(j2, millis)
                     } else {
                         -1L
                     }
-                } else {
-                    -1L
-                }
-                val estimate = Estimate(query.getLong(query.getColumnIndex("battery_estimate")), isBasedOnUsage, j)
+                val estimate =
+                    Estimate(
+                        query.getLong(query.getColumnIndex("battery_estimate")), isBasedOnUsage, j)
                 Estimate.storeCachedEstimate(mContext, estimate)
                 estimate
             } else {
                 Estimate(-1L, false, -1L)
             }
         } catch (e: Exception) {
-            Log.d("EnhancedEstimates", "Something went wrong when getting an estimate from Turbo", e)
+            Log.d(
+                "EnhancedEstimates", "Something went wrong when getting an estimate from Turbo", e)
             Estimate(-1L, false, -1L)
         } finally {
             query?.close()
@@ -107,7 +118,9 @@ class EnhancedEstimatesGoogleImpl @Inject constructor(private val mContext: Cont
 
     private fun updateFlags(): Boolean {
         return try {
-            mParser.setString(Settings.Global.getString(mContext.contentResolver, "hybrid_sysui_battery_warning_flags"))
+            mParser.setString(
+                Settings.Global.getString(
+                    mContext.contentResolver, "hybrid_sysui_battery_warning_flags"))
             true
         } catch (e: IllegalArgumentException) {
             Log.e("EnhancedEstimates", "Bad hybrid sysui warning flags")

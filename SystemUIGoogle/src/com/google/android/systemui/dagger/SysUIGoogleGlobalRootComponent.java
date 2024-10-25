@@ -12,23 +12,20 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
-*/
+ */
 
 package com.google.android.systemui.dagger;
 
 import com.android.systemui.dagger.GlobalModule;
 import com.android.systemui.dagger.GlobalRootComponent;
-import com.android.systemui.dagger.qualifiers.InstrumentationTest;
 import com.android.systemui.dagger.WMComponent;
-
-import javax.inject.Singleton;
 
 import dagger.Component;
 
+import javax.inject.Singleton;
+
 @Singleton
-@Component(modules = {
-        GlobalModule.class
-})
+@Component(modules = {GlobalModule.class})
 public interface SysUIGoogleGlobalRootComponent extends GlobalRootComponent {
     @Component.Builder
     interface Builder extends GlobalRootComponent.Builder {

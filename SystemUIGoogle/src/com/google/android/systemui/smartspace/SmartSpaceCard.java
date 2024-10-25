@@ -23,7 +23,9 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.text.TextUtils;
 import android.util.Log;
+
 import androidx.annotation.NonNull;
+
 import com.android.systemui.res.R;
 import com.android.systemui.smartspace.nano.SmartspaceProto;
 
@@ -37,7 +39,12 @@ public final class SmartSpaceCard {
     public final long mPublishTime;
     public int mRequestCode;
 
-    public SmartSpaceCard(Context context, SmartspaceProto.SmartspaceUpdate.SmartspaceCard smartspaceCard, Intent intent, Bitmap bitmap, long j) {
+    public SmartSpaceCard(
+            Context context,
+            SmartspaceProto.SmartspaceUpdate.SmartspaceCard smartspaceCard,
+            Intent intent,
+            Bitmap bitmap,
+            long j) {
         this.mContext = context.getApplicationContext();
         this.mCard = smartspaceCard;
         this.mIntent = intent;
@@ -91,11 +98,13 @@ public final class SmartSpaceCard {
         return substitute(false);
     }
 
-    public static SmartSpaceCard fromWrapper(Context context, SmartspaceProto.CardWrapper cardWrapper, boolean z) {
+    public static SmartSpaceCard fromWrapper(
+            Context context, SmartspaceProto.CardWrapper cardWrapper, boolean z) {
         Intent intent;
         Bitmap cardIcon;
         try {
-            SmartspaceProto.SmartspaceUpdate.SmartspaceCard.TapAction tapAction = cardWrapper.card.tapAction;
+            SmartspaceProto.SmartspaceUpdate.SmartspaceCard.TapAction tapAction =
+                    cardWrapper.card.tapAction;
             if (tapAction != null && !TextUtils.isEmpty(tapAction.intent)) {
                 intent = Intent.parseUri(cardWrapper.card.tapAction.intent, 0);
             } else {
@@ -103,22 +112,33 @@ public final class SmartSpaceCard {
             }
             byte[] cardIconFromWrapper = cardWrapper.icon;
             if (cardIconFromWrapper != null) {
-                cardIcon = BitmapFactory.decodeByteArray(cardIconFromWrapper, 0, cardIconFromWrapper.length, null);
+                cardIcon =
+                        BitmapFactory.decodeByteArray(
+                                cardIconFromWrapper, 0, cardIconFromWrapper.length, null);
             } else {
                 cardIcon = null;
             }
-            int dimensionPixelSize = context.getResources().getDimensionPixelSize(R.dimen.header_icon_size);
+            int dimensionPixelSize =
+                    context.getResources().getDimensionPixelSize(R.dimen.header_icon_size);
             if (cardIcon != null && cardIcon.getHeight() > dimensionPixelSize) {
-                cardIcon = Bitmap.createScaledBitmap(cardIcon, (dimensionPixelSize / cardIcon.getHeight()) * cardIcon.getWidth(), dimensionPixelSize, true);
+                cardIcon =
+                        Bitmap.createScaledBitmap(
+                                cardIcon,
+                                (dimensionPixelSize / cardIcon.getHeight()) * cardIcon.getWidth(),
+                                dimensionPixelSize,
+                                true);
             }
-            return new SmartSpaceCard(context, cardWrapper.card, intent, cardIcon, cardWrapper.publishTime);
+            return new SmartSpaceCard(
+                    context, cardWrapper.card, intent, cardIcon, cardWrapper.publishTime);
         } catch (Exception e) {
             Log.e("SmartspaceCard", "from proto", e);
             return null;
         }
     }
 
-    public String getDurationText(SmartspaceProto.SmartspaceUpdate.SmartspaceCard.Message.FormattedText.FormatParam formatParam) {
+    public String getDurationText(
+            SmartspaceProto.SmartspaceUpdate.SmartspaceCard.Message.FormattedText.FormatParam
+                    formatParam) {
         long j;
         if (formatParam.formatParamArgs == 2) {
             SmartspaceProto.SmartspaceUpdate.SmartspaceCard smartspaceCard = this.mCard;
@@ -130,10 +150,23 @@ public final class SmartSpaceCard {
         if (ceil >= 60) {
             int i = ceil / 60;
             int i2 = ceil % 60;
-            String quantityString = this.mContext.getResources().getQuantityString(R.plurals.smartspace_hours, i, Integer.valueOf(i));
-            return i2 > 0 ? this.mContext.getString(R.string.smartspace_hours_mins, quantityString, this.mContext.getResources().getQuantityString(R.plurals.smartspace_minutes, i2, Integer.valueOf(i2))) : quantityString;
+            String quantityString =
+                    this.mContext
+                            .getResources()
+                            .getQuantityString(R.plurals.smartspace_hours, i, Integer.valueOf(i));
+            return i2 > 0
+                    ? this.mContext.getString(
+                            R.string.smartspace_hours_mins,
+                            quantityString,
+                            this.mContext
+                                    .getResources()
+                                    .getQuantityString(
+                                            R.plurals.smartspace_minutes, i2, Integer.valueOf(i2)))
+                    : quantityString;
         }
-        return this.mContext.getResources().getQuantityString(R.plurals.smartspace_minutes, ceil, Integer.valueOf(ceil));
+        return this.mContext
+                .getResources()
+                .getQuantityString(R.plurals.smartspace_minutes, ceil, Integer.valueOf(ceil));
     }
 
     public long getExpiration() {
@@ -165,9 +198,12 @@ public final class SmartSpaceCard {
     public String getFormattedTitle() {
         SmartspaceProto.SmartspaceUpdate.SmartspaceCard.Message.FormattedText formattedText;
         String str;
-        SmartspaceProto.SmartspaceUpdate.SmartspaceCard.Message.FormattedText.FormatParam[] formatParamArr;
+        SmartspaceProto.SmartspaceUpdate.SmartspaceCard.Message.FormattedText.FormatParam[]
+                formatParamArr;
         SmartspaceProto.SmartspaceUpdate.SmartspaceCard.Message message = getMessage();
-        if (message == null || (formattedText = message.title) == null || (str = formattedText.text) == null) {
+        if (message == null
+                || (formattedText = message.title) == null
+                || (str = formattedText.text) == null) {
             return "";
         }
         if (!hasParams(formattedText)) {
@@ -181,7 +217,8 @@ public final class SmartSpaceCard {
             if (i >= formatParamArr.length) {
                 break;
             }
-            SmartspaceProto.SmartspaceUpdate.SmartspaceCard.Message.FormattedText.FormatParam formatParam = formatParamArr[i];
+            SmartspaceProto.SmartspaceUpdate.SmartspaceCard.Message.FormattedText.FormatParam
+                    formatParam = formatParamArr[i];
             if (formatParam != null) {
                 int i2 = formatParam.formatParamArgs;
                 if (i2 == 1 || i2 == 2) {
@@ -209,9 +246,16 @@ public final class SmartSpaceCard {
         return this.mContext.getString(R.string.smartspace_pill_text_format, str3, str2);
     }
 
-    private boolean hasParams(SmartspaceProto.SmartspaceUpdate.SmartspaceCard.Message.FormattedText formattedText) {
-        SmartspaceProto.SmartspaceUpdate.SmartspaceCard.Message.FormattedText.FormatParam[] formatParamArr;
-        return (formattedText == null || formattedText.text == null || (formatParamArr = formattedText.formatParam) == null || formatParamArr.length <= 0) ? false : true;
+    private boolean hasParams(
+            SmartspaceProto.SmartspaceUpdate.SmartspaceCard.Message.FormattedText formattedText) {
+        SmartspaceProto.SmartspaceUpdate.SmartspaceCard.Message.FormattedText.FormatParam[]
+                formatParamArr;
+        return (formattedText == null
+                        || formattedText.text == null
+                        || (formatParamArr = formattedText.formatParam) == null
+                        || formatParamArr.length <= 0)
+                ? false
+                : true;
     }
 
     public SmartspaceProto.SmartspaceUpdate.SmartspaceCard.Message getMessage() {
@@ -246,13 +290,16 @@ public final class SmartSpaceCard {
         if (formattedText == null || (str = formattedText.text) == null) {
             return "";
         }
-        SmartspaceProto.SmartspaceUpdate.SmartspaceCard.Message.FormattedText.FormatParam[] formatParamArr = formattedText.formatParam;
+        SmartspaceProto.SmartspaceUpdate.SmartspaceCard.Message.FormattedText.FormatParam[]
+                formatParamArr = formattedText.formatParam;
         if (formatParamArr != null && formatParamArr.length > 0) {
-            SmartspaceProto.SmartspaceUpdate.SmartspaceCard.Message.FormattedText.FormatParam[] formatParamArr2 = formattedText.formatParam;
+            SmartspaceProto.SmartspaceUpdate.SmartspaceCard.Message.FormattedText.FormatParam[]
+                    formatParamArr2 = formattedText.formatParam;
             int length = formatParamArr.length;
             String[] strArr = new String[length];
             for (int i = 0; i < length; i++) {
-                SmartspaceProto.SmartspaceUpdate.SmartspaceCard.Message.FormattedText.FormatParam formatParam = formatParamArr[i];
+                SmartspaceProto.SmartspaceUpdate.SmartspaceCard.Message.FormattedText.FormatParam
+                        formatParam = formatParamArr[i];
                 int i2 = formatParam.formatParamArgs;
                 if (i2 != 1 && i2 != 2) {
                     if (i2 != 3) {
@@ -275,6 +322,13 @@ public final class SmartSpaceCard {
 
     @NonNull
     public String toString() {
-        return "title:" + substitute(true) + " subtitle:" + substitute(false) + " expires:" + getExpiration() + " published:" + this.mPublishTime;
+        return "title:"
+                + substitute(true)
+                + " subtitle:"
+                + substitute(false)
+                + " expires:"
+                + getExpiration()
+                + " published:"
+                + this.mPublishTime;
     }
 }

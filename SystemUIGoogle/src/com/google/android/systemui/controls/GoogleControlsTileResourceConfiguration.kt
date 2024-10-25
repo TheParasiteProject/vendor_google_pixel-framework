@@ -1,20 +1,20 @@
 package com.google.android.systemui.controls
 
 import android.content.ComponentName
-
 import com.android.systemui.controls.controller.ControlsController
 import com.android.systemui.controls.controller.ControlsTileResourceConfiguration
 import com.android.systemui.dagger.SysUISingleton
 import com.android.systemui.res.R
-
 import javax.inject.Inject
 
 @SysUISingleton
-class GoogleControlsTileResourceConfigurationImpl @Inject constructor(
+class GoogleControlsTileResourceConfigurationImpl
+@Inject
+constructor(
     private val controlsController: ControlsController,
-): ControlsTileResourceConfiguration {
+) : ControlsTileResourceConfiguration {
 
-   val componentName: ComponentName
+    val componentName: ComponentName
         get() = controlsController.getPreferredSelection().componentName
 
     override fun getPackageName(): String? {
@@ -41,5 +41,4 @@ class GoogleControlsTileResourceConfigurationImpl @Inject constructor(
     companion object {
         const val GOOGLE_HOME_PACKAGE: String = "com.google.android.apps.chromecast.app"
     }
-
 }

@@ -26,10 +26,9 @@ import com.android.systemui.assist.ui.DefaultUiController;
 import com.android.systemui.dagger.SysUISingleton;
 import com.android.systemui.navigationbar.NavigationBarController;
 
-import javax.inject.Inject;
-
 import dagger.Lazy;
 
+import javax.inject.Inject;
 
 @SysUISingleton
 public class GoogleDefaultUiController extends DefaultUiController {
@@ -41,7 +40,13 @@ public class GoogleDefaultUiController extends DefaultUiController {
             MetricsLogger metricsLogger,
             Lazy<AssistManager> assistManagerLazy,
             NavigationBarController navigationBarController) {
-        super(context, assistLogger, windowManager, metricsLogger, assistManagerLazy, navigationBarController);
+        super(
+                context,
+                assistLogger,
+                windowManager,
+                metricsLogger,
+                assistManagerLazy,
+                navigationBarController);
         setGoogleAssistant(false);
     }
 

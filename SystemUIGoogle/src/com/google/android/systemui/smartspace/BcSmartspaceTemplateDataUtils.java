@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.android.systemui.res.R;
 
 public final class BcSmartspaceTemplateDataUtils {
@@ -29,7 +30,8 @@ public final class BcSmartspaceTemplateDataUtils {
         }
     }
 
-    public static void offsetImageViewForIcon(ImageView imageView, DoubleShadowIconDrawable doubleShadowIconDrawable) {
+    public static void offsetImageViewForIcon(
+            ImageView imageView, DoubleShadowIconDrawable doubleShadowIconDrawable) {
         if (doubleShadowIconDrawable == null) {
             imageView.setTranslationX(0.0f);
             imageView.setTranslationY(0.0f);
@@ -40,7 +42,8 @@ public final class BcSmartspaceTemplateDataUtils {
         imageView.setTranslationY(f);
     }
 
-    public static void offsetTextViewForIcon(TextView textView, DoubleShadowIconDrawable doubleShadowIconDrawable, boolean z) {
+    public static void offsetTextViewForIcon(
+            TextView textView, DoubleShadowIconDrawable doubleShadowIconDrawable, boolean z) {
         int i;
         if (doubleShadowIconDrawable == null) {
             textView.setTranslationX(0.0f);

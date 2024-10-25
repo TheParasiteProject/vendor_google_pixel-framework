@@ -32,7 +32,8 @@ import javax.inject.Inject;
 @SysUISingleton
 public class OpaEnabledSettings {
     private final Context mContext;
-    private final ILockSettings mLockSettings = ILockSettings.Stub.asInterface(ServiceManager.getService("lock_settings"));
+    private final ILockSettings mLockSettings =
+            ILockSettings.Stub.asInterface(ServiceManager.getService("lock_settings"));
 
     @Inject
     public OpaEnabledSettings(Context context) {
@@ -41,18 +42,28 @@ public class OpaEnabledSettings {
 
     public boolean isOpaEligible() {
         Assert.isNotMainThread();
-        return Settings.Secure.getIntForUser(mContext.getContentResolver(), "systemui.google.opa_enabled", 0, ActivityManager.getCurrentUser()) != 0;
+        return Settings.Secure.getIntForUser(
+                        mContext.getContentResolver(),
+                        "systemui.google.opa_enabled",
+                        0,
+                        ActivityManager.getCurrentUser())
+                != 0;
     }
 
     public void setOpaEligible(boolean z) {
         Assert.isNotMainThread();
-        Settings.Secure.putIntForUser(mContext.getContentResolver(), "systemui.google.opa_enabled", z ? 1 : 0, ActivityManager.getCurrentUser());
+        Settings.Secure.putIntForUser(
+                mContext.getContentResolver(),
+                "systemui.google.opa_enabled",
+                z ? 1 : 0,
+                ActivityManager.getCurrentUser());
     }
 
     public boolean isOpaEnabled() {
         Assert.isNotMainThread();
         try {
-            return mLockSettings.getBoolean("systemui.google.opa_user_enabled", false, ActivityManager.getCurrentUser());
+            return mLockSettings.getBoolean(
+                    "systemui.google.opa_user_enabled", false, ActivityManager.getCurrentUser());
         } catch (RemoteException e) {
             Log.e("OpaEnabledSettings", "isOpaEnabled RemoteException", e);
             return false;
@@ -62,7 +73,8 @@ public class OpaEnabledSettings {
     public void setOpaEnabled(boolean z) {
         Assert.isNotMainThread();
         try {
-            mLockSettings.setBoolean("systemui.google.opa_user_enabled", z, ActivityManager.getCurrentUser());
+            mLockSettings.setBoolean(
+                    "systemui.google.opa_user_enabled", z, ActivityManager.getCurrentUser());
         } catch (RemoteException e) {
             Log.e("OpaEnabledSettings", "RemoteException on OPA_USER_ENABLED", e);
         }
@@ -75,6 +87,15 @@ public class OpaEnabledSettings {
 
     public boolean isLongPressHomeEnabled() {
         Assert.isNotMainThread();
-        return Settings.Secure.getInt(mContext.getContentResolver(), "assist_long_press_home_enabled", mContext.getResources().getBoolean(com.android.internal.R.bool.config_assistLongPressHomeEnabledDefault) ? 1 : 0) != 0;
+        return Settings.Secure.getInt(
+                        mContext.getContentResolver(),
+                        "assist_long_press_home_enabled",
+                        mContext.getResources()
+                                        .getBoolean(
+                                                com.android.internal.R.bool
+                                                        .config_assistLongPressHomeEnabledDefault)
+                                ? 1
+                                : 0)
+                != 0;
     }
 }

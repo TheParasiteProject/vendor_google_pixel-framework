@@ -28,7 +28,9 @@ import android.os.UserHandle;
 import android.provider.Settings;
 import android.util.KeyValueListParser;
 import android.util.Log;
+
 import androidx.annotation.NonNull;
+
 import com.android.keyguard.KeyguardUpdateMonitor;
 import com.android.keyguard.KeyguardUpdateMonitorCallback;
 import com.android.systemui.Dumpable;
@@ -39,12 +41,10 @@ import com.android.systemui.dump.DumpManager;
 import com.android.systemui.smartspace.nano.SmartspaceProto;
 import com.android.systemui.util.Assert;
 
-import javax.inject.Inject;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Objects;
-import java.util.stream.Stream;
+
+import javax.inject.Inject;
 
 @SysUISingleton
 public class SmartSpaceController implements Dumpable {
@@ -61,26 +61,36 @@ public class SmartSpaceController implements Dumpable {
     public boolean mHideWorkData;
     public final ProtoStore mStore;
     public final ArrayList<SmartSpaceUpdateListener> mListeners = new ArrayList<>();
-    public final AlarmManager.OnAlarmListener mExpireAlarmAction = () -> {
-        onExpire(false);
-    };
-    public final BroadcastReceiver mBroadcastReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            SmartSpaceController.this.onGsaChanged();
-        }
-    };
-    public final KeyguardUpdateMonitorCallback mKeyguardMonitorCallback = new KeyguardUpdateMonitorCallback() {
-        public void onTimeChanged() {
-            if (SmartSpaceController.this.mData.hasCurrent() || SmartSpaceController.this.mData.getExpirationRemainingMillis() > 0) {
-                SmartSpaceController.this.update();
-            }
-        }
-    };
+    public final AlarmManager.OnAlarmListener mExpireAlarmAction =
+            () -> {
+                onExpire(false);
+            };
+    public final BroadcastReceiver mBroadcastReceiver =
+            new BroadcastReceiver() {
+                @Override
+                public void onReceive(Context context, Intent intent) {
+                    SmartSpaceController.this.onGsaChanged();
+                }
+            };
+    public final KeyguardUpdateMonitorCallback mKeyguardMonitorCallback =
+            new KeyguardUpdateMonitorCallback() {
+                public void onTimeChanged() {
+                    if (SmartSpaceController.this.mData.hasCurrent()
+                            || SmartSpaceController.this.mData.getExpirationRemainingMillis() > 0) {
+                        SmartSpaceController.this.update();
+                    }
+                }
+            };
     public final Handler mUiHandler = new Handler(Looper.getMainLooper());
 
     @Inject
-    public SmartSpaceController(Context context, KeyguardUpdateMonitor keyguardUpdateMonitor, @Background Handler backgroundHandler, AlarmManager alarmManager, BroadcastSender broadcastSender, DumpManager dumpManager) {
+    public SmartSpaceController(
+            Context context,
+            KeyguardUpdateMonitor keyguardUpdateMonitor,
+            @Background Handler backgroundHandler,
+            AlarmManager alarmManager,
+            BroadcastSender broadcastSender,
+            DumpManager dumpManager) {
         this.mContext = context;
         this.mStore = new ProtoStore(context);
         new HandlerThread("smartspace-background").start();
@@ -95,12 +105,24 @@ public class SmartSpaceController implements Dumpable {
         keyguardUpdateMonitor.registerCallback(this.mKeyguardMonitorCallback);
         reloadData();
         onGsaChanged();
-        context.registerReceiver(this.mBroadcastReceiver, GSAIntents.getGsaPackageFilter("android.intent.action.PACKAGE_ADDED", "android.intent.action.PACKAGE_CHANGED", "android.intent.action.PACKAGE_REMOVED", "android.intent.action.PACKAGE_DATA_CLEARED"), 2);
+        context.registerReceiver(
+                this.mBroadcastReceiver,
+                GSAIntents.getGsaPackageFilter(
+                        "android.intent.action.PACKAGE_ADDED",
+                        "android.intent.action.PACKAGE_CHANGED",
+                        "android.intent.action.PACKAGE_REMOVED",
+                        "android.intent.action.PACKAGE_DATA_CLEARED"),
+                2);
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction("android.intent.action.USER_SWITCHED");
         intentFilter.addAction("android.intent.action.USER_UNLOCKED");
         context.registerReceiver(new UserSwitchReceiver(), intentFilter);
-        context.registerReceiver(new SmartSpaceBroadcastReceiver(this, this.mBroadcastSender), new IntentFilter("com.google.android.apps.nexuslauncher.UPDATE_SMARTSPACE"), "android.permission.CAPTURE_AUDIO_HOTWORD", this.mUiHandler, 2);
+        context.registerReceiver(
+                new SmartSpaceBroadcastReceiver(this, this.mBroadcastSender),
+                new IntentFilter("com.google.android.apps.nexuslauncher.UPDATE_SMARTSPACE"),
+                "android.permission.CAPTURE_AUDIO_HOTWORD",
+                this.mUiHandler,
+                2);
         dumpManager.registerDumpable(SmartSpaceController.class.getName(), this);
     }
 
@@ -132,36 +154,43 @@ public class SmartSpaceController implements Dumpable {
                 }
                 return;
             }
-            mBackgroundHandler.post(new Runnable() {
-                @Override
-                public final void run() {
-                    final SmartspaceProto.CardWrapper wrapper = newCardInfo.toWrapper(mContext);
-                    if (!mHidePrivateData) {
-                        ProtoStore protoStore = mStore;
-                        StringBuilder sb = new StringBuilder();
-                        sb.append("smartspace_");
-                        sb.append(mCurrentUserId);
-                        sb.append("_");
-                        sb.append(newCardInfo.isPrimary());
-                        protoStore.store(wrapper, sb.toString());
-                    }
-                    mUiHandler.post(new Runnable() {
+            mBackgroundHandler.post(
+                    new Runnable() {
                         @Override
                         public final void run() {
-                            SmartSpaceCard smartSpaceCard = newCardInfo.shouldDiscard() ? null :
-                                SmartSpaceCard.fromWrapper(mContext, wrapper, newCardInfo.isPrimary());
-                            if (newCardInfo.isPrimary()) {
-                                mData.mCurrentCard = smartSpaceCard;
-                            } else {
-                                mData.mWeatherCard = smartSpaceCard;
+                            final SmartspaceProto.CardWrapper wrapper =
+                                    newCardInfo.toWrapper(mContext);
+                            if (!mHidePrivateData) {
+                                ProtoStore protoStore = mStore;
+                                StringBuilder sb = new StringBuilder();
+                                sb.append("smartspace_");
+                                sb.append(mCurrentUserId);
+                                sb.append("_");
+                                sb.append(newCardInfo.isPrimary());
+                                protoStore.store(wrapper, sb.toString());
                             }
-                            mData.handleExpire();
-                            update();
-
+                            mUiHandler.post(
+                                    new Runnable() {
+                                        @Override
+                                        public final void run() {
+                                            SmartSpaceCard smartSpaceCard =
+                                                    newCardInfo.shouldDiscard()
+                                                            ? null
+                                                            : SmartSpaceCard.fromWrapper(
+                                                                    mContext,
+                                                                    wrapper,
+                                                                    newCardInfo.isPrimary());
+                                            if (newCardInfo.isPrimary()) {
+                                                mData.mCurrentCard = smartSpaceCard;
+                                            } else {
+                                                mData.mWeatherCard = smartSpaceCard;
+                                            }
+                                            mData.handleExpire();
+                                            update();
+                                        }
+                                    });
                         }
                     });
-                }
-            });
         }
     }
 
@@ -181,7 +210,8 @@ public class SmartSpaceController implements Dumpable {
         }
         long expiresAtMillis = this.mData.getExpiresAtMillis();
         if (expiresAtMillis > 0) {
-            this.mAlarmManager.set(0, expiresAtMillis, "SmartSpace", this.mExpireAlarmAction, this.mUiHandler);
+            this.mAlarmManager.set(
+                    0, expiresAtMillis, "SmartSpace", this.mExpireAlarmAction, this.mUiHandler);
             this.mAlarmRegistered = true;
         }
         if (this.mListeners != null) {
@@ -246,7 +276,9 @@ public class SmartSpaceController implements Dumpable {
 
     private boolean isSmartSpaceDisabledByExperiments() {
         boolean z;
-        String string = Settings.Global.getString(this.mContext.getContentResolver(), "always_on_display_constants");
+        String string =
+                Settings.Global.getString(
+                        this.mContext.getContentResolver(), "always_on_display_constants");
         KeyValueListParser keyValueListParser = new KeyValueListParser(',');
         try {
             keyValueListParser.setString(string);
@@ -276,7 +308,8 @@ public class SmartSpaceController implements Dumpable {
             smartSpaceUpdateListener.onSmartSpaceUpdated(this.mData);
         }
         if (smartSpaceUpdateListener != null) {
-            smartSpaceUpdateListener.onSensitiveModeChanged(this.mHidePrivateData, this.mHideWorkData);
+            smartSpaceUpdateListener.onSensitiveModeChanged(
+                    this.mHidePrivateData, this.mHideWorkData);
         }
     }
 
@@ -286,16 +319,18 @@ public class SmartSpaceController implements Dumpable {
     }
 
     private class UserSwitchReceiver extends BroadcastReceiver {
-        private UserSwitchReceiver() {
-        }
+        private UserSwitchReceiver() {}
 
         @Override
         public void onReceive(Context context, Intent intent) {
             if (SmartSpaceController.DEBUG) {
-                Log.d(SmartSpaceController.TAG, "Switching user: " + intent.getAction() + " uid: " + UserHandle.myUserId());
+                Log.d(
+                        SmartSpaceController.TAG,
+                        "Switching user: " + intent.getAction() + " uid: " + UserHandle.myUserId());
             }
             if (intent.getAction().equals("android.intent.action.USER_SWITCHED")) {
-                SmartSpaceController.this.mCurrentUserId = intent.getIntExtra("android.intent.extra.user_handle", -1);
+                SmartSpaceController.this.mCurrentUserId =
+                        intent.getIntExtra("android.intent.extra.user_handle", -1);
                 SmartSpaceController.this.mData.clear();
                 SmartSpaceController.this.onExpire(true);
             }
@@ -304,8 +339,7 @@ public class SmartSpaceController implements Dumpable {
     }
 
     private static class GSAIntents {
-        private GSAIntents() {
-        }
+        private GSAIntents() {}
 
         public static IntentFilter getGsaPackageFilter(String... intents) {
             return getPackageFilter("com.google.android.googlequicksearchbox", intents);

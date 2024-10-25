@@ -17,6 +17,7 @@
 package com.google.android.systemui.dreamliner;
 
 import android.os.Bundle;
+
 import java.util.ArrayList;
 
 public interface WirelessCharger {
@@ -50,7 +51,13 @@ public interface WirelessCharger {
     }
 
     interface GetWpcAuthChallengeResponseCallback {
-        void onCallback(int i, byte b, byte b2, byte b3, ArrayList<Byte> arrayList, ArrayList<Byte> arrayList2);
+        void onCallback(
+                int i,
+                byte b,
+                byte b2,
+                byte b3,
+                ArrayList<Byte> arrayList,
+                ArrayList<Byte> arrayList2);
     }
 
     interface GetWpcAuthDigestsCallback {
@@ -81,15 +88,20 @@ public interface WirelessCharger {
 
     int getFanLevel();
 
-    void getFanSimpleInformation(byte b, GetFanSimpleInformationCallback getFanSimpleInformationCallback);
+    void getFanSimpleInformation(
+            byte b, GetFanSimpleInformationCallback getFanSimpleInformationCallback);
 
     void getFeatures(long j, GetFeaturesCallback getFeaturesCallback);
 
     void getInformation(GetInformationCallback getInformationCallback);
 
-    void getWpcAuthCertificate(byte b, short s, short s2, GetWpcAuthCertificateCallback getWpcAuthCertificateCallback);
+    void getWpcAuthCertificate(
+            byte b, short s, short s2, GetWpcAuthCertificateCallback getWpcAuthCertificateCallback);
 
-    void getWpcAuthChallengeResponse(byte b, byte[] bArr, GetWpcAuthChallengeResponseCallback getWpcAuthChallengeResponseCallback);
+    void getWpcAuthChallengeResponse(
+            byte b,
+            byte[] bArr,
+            GetWpcAuthChallengeResponseCallback getWpcAuthChallengeResponseCallback);
 
     void getWpcAuthDigests(byte b, GetWpcAuthDigestsCallback getWpcAuthDigestsCallback);
 

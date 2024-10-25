@@ -24,9 +24,12 @@ import android.os.Bundle;
 import android.os.LocaleList;
 import android.os.UserHandle;
 import android.text.format.DateFormat;
+
 import androidx.core.app.NotificationCompat;
+
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.systemui.res.R;
+
 import java.time.Clock;
 import java.util.Locale;
 
@@ -36,14 +39,24 @@ public final class PowerUtils {
     public static final int AC_NOTIFICATION_ID = R.string.adaptive_charging_notify_title;
 
     static PendingIntent createHelpArticlePendingIntent(Context context, int i) {
-        return PendingIntent.getActivity(context, 0, new Intent("android.intent.action.VIEW", Uri.parse(context.getString(i))), 67108864);
+        return PendingIntent.getActivity(
+                context,
+                0,
+                new Intent("android.intent.action.VIEW", Uri.parse(context.getString(i))),
+                67108864);
     }
 
     static PendingIntent createNormalChargingIntent(Context context, String str) {
-        return PendingIntent.getBroadcastAsUser(context, 0, new Intent(str).setPackage(context.getPackageName()).setFlags(1342177280), 67108864, UserHandle.CURRENT);
+        return PendingIntent.getBroadcastAsUser(
+                context,
+                0,
+                new Intent(str).setPackage(context.getPackageName()).setFlags(1342177280),
+                67108864,
+                UserHandle.CURRENT);
     }
 
-    static void overrideNotificationAppName(Context context, NotificationCompat.Builder builder, int i) {
+    static void overrideNotificationAppName(
+            Context context, NotificationCompat.Builder builder, int i) {
         Bundle bundle = new Bundle();
         bundle.putString("android.substName", context.getString(i));
         builder.addExtras(bundle);
@@ -68,7 +81,12 @@ public final class PowerUtils {
 
     static String getCurrentTime(Context context, long j) {
         Locale locale = getLocale(context);
-        return DateFormat.format(DateFormat.getBestDateTimePattern(locale, DateFormat.is24HourFormat(context) ? "HH:mm" : "h:m"), j).toString().toUpperCase(locale);
+        return DateFormat.format(
+                        DateFormat.getBestDateTimePattern(
+                                locale, DateFormat.is24HourFormat(context) ? "HH:mm" : "h:m"),
+                        j)
+                .toString()
+                .toUpperCase(locale);
     }
 
     @VisibleForTesting

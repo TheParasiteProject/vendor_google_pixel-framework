@@ -25,6 +25,5 @@ import dagger.Module;
 @Module
 public abstract class DreamlinerModule {
     @Binds
-    abstract WirelessCharger bindWirelessCharger(
-            WirelessChargerImpl wirelessCharger);
+    abstract WirelessCharger bindWirelessCharger(WirelessChargerImpl wirelessCharger);
 }

@@ -59,7 +59,8 @@ public final class OpaUtils {
         return renderNodeAnimator;
     }
 
-    static ObjectAnimator getAlphaObjectAnimator(View view, float f, int i, int i2, Interpolator interpolator) {
+    static ObjectAnimator getAlphaObjectAnimator(
+            View view, float f, int i, int i2, Interpolator interpolator) {
         ObjectAnimator ofFloat = ObjectAnimator.ofFloat(view, View.ALPHA, f);
         ofFloat.setInterpolator(interpolator);
         ofFloat.setDuration(i);
@@ -80,21 +81,28 @@ public final class OpaUtils {
         return animator;
     }
 
-    static ObjectAnimator getScaleObjectAnimator(View view, float f, int i, Interpolator interpolator) {
-        ObjectAnimator ofPropertyValuesHolder = ObjectAnimator.ofPropertyValuesHolder(view, PropertyValuesHolder.ofFloat(View.SCALE_X, f), PropertyValuesHolder.ofFloat(View.SCALE_Y, f));
+    static ObjectAnimator getScaleObjectAnimator(
+            View view, float f, int i, Interpolator interpolator) {
+        ObjectAnimator ofPropertyValuesHolder =
+                ObjectAnimator.ofPropertyValuesHolder(
+                        view,
+                        PropertyValuesHolder.ofFloat(View.SCALE_X, f),
+                        PropertyValuesHolder.ofFloat(View.SCALE_Y, f));
         ofPropertyValuesHolder.setDuration(i);
         ofPropertyValuesHolder.setInterpolator(interpolator);
         return ofPropertyValuesHolder;
     }
 
-    static ObjectAnimator getTranslationObjectAnimatorY(View view, Interpolator interpolator, float f, float f2, int i) {
+    static ObjectAnimator getTranslationObjectAnimatorY(
+            View view, Interpolator interpolator, float f, float f2, int i) {
         ObjectAnimator ofFloat = ObjectAnimator.ofFloat(view, View.Y, f2, f2 + f);
         ofFloat.setInterpolator(interpolator);
         ofFloat.setDuration(i);
         return ofFloat;
     }
 
-    static ObjectAnimator getTranslationObjectAnimatorX(View view, Interpolator interpolator, float f, float f2, int i) {
+    static ObjectAnimator getTranslationObjectAnimatorX(
+            View view, Interpolator interpolator, float f, float f2, int i) {
         ObjectAnimator ofFloat = ObjectAnimator.ofFloat(view, View.X, f2, f2 + f);
         ofFloat.setInterpolator(interpolator);
         ofFloat.setDuration(i);
@@ -106,8 +114,11 @@ public final class OpaUtils {
     }
 
     static boolean isAGSACurrentAssistant(Context context) {
-        ComponentName assistComponentForUser = new AssistUtils(context).getAssistComponentForUser(-2);
-        return assistComponentForUser != null && "com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService".equals(assistComponentForUser.flattenToString());
+        ComponentName assistComponentForUser =
+                new AssistUtils(context).getAssistComponentForUser(-2);
+        return assistComponentForUser != null
+                && "com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService"
+                        .equals(assistComponentForUser.flattenToString());
     }
 
     static float getDeltaDiamondPositionTopY(Resources resources) {

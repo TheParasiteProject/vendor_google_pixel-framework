@@ -27,11 +27,10 @@ import com.android.systemui.plugins.ActivityStarter;
 import com.android.systemui.power.EnhancedEstimates;
 import com.android.systemui.power.PowerUI;
 import com.android.systemui.power.data.repository.PowerRepositoryModule;
-import com.android.systemui.qs.QsEventLogger;
 import com.android.systemui.settings.UserTracker;
 import com.android.systemui.statusbar.phone.SystemUIDialog;
 import com.android.systemui.statusbar.policy.BatteryController;
-import com.android.systemui.util.settings.GlobalSettings;
+
 import com.google.android.systemui.power.EnhancedEstimatesGoogleImpl;
 import com.google.android.systemui.power.PowerNotificationWarningsGoogleImpl;
 
@@ -40,15 +39,13 @@ import dagger.Lazy;
 import dagger.Module;
 import dagger.Provides;
 
-
 /**
  * Dagger Module for code in the power package.
  */
 @Module(
-    includes = {
+        includes = {
             PowerRepositoryModule.class,
-    }
-)
+        })
 public interface PowerModuleGoogle {
     @Provides
     @SysUISingleton
@@ -62,7 +59,16 @@ public interface PowerModuleGoogle {
             UserTracker userTracker,
             SystemUIDialog.Factory systemUIDialogFactory,
             BroadcastDispatcher broadcastDispatcher) {
-        return new PowerNotificationWarningsGoogleImpl(context, activityStarter, broadcastSender, batteryControllerLazy, dialogTransitionAnimator, uiEventLogger, userTracker, systemUIDialogFactory, broadcastDispatcher);
+        return new PowerNotificationWarningsGoogleImpl(
+                context,
+                activityStarter,
+                broadcastSender,
+                batteryControllerLazy,
+                dialogTransitionAnimator,
+                uiEventLogger,
+                userTracker,
+                systemUIDialogFactory,
+                broadcastDispatcher);
     }
 
     /**

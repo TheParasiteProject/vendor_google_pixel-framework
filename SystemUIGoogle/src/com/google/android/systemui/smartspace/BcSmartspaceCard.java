@@ -11,14 +11,18 @@ import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.constraintlayout.widget.ConstraintLayout;
-import com.android.launcher3.icons.GraphicsUtils;
-import com.android.systemui.res.R;
+
 import com.android.app.animation.Interpolators;
+import com.android.launcher3.icons.GraphicsUtils;
 import com.android.systemui.plugins.BcSmartspaceDataPlugin;
+import com.android.systemui.res.R;
+
 import com.google.android.systemui.smartspace.logging.BcSmartspaceCardLoggingInfo;
 import com.google.android.systemui.smartspace.logging.BcSmartspaceCardMetadataLoggingInfo;
 import com.google.android.systemui.smartspace.logging.BcSmartspaceSubcardLoggingInfo;
+
 import java.util.List;
 import java.util.Locale;
 
@@ -72,15 +76,19 @@ public class BcSmartspaceCard extends ConstraintLayout {
         this.mDndIconDrawable = new DoubleShadowIconDrawable(context);
     }
 
-    public static int getClickedIndex(BcSmartspaceCardLoggingInfo bcSmartspaceCardLoggingInfo, int i) {
+    public static int getClickedIndex(
+            BcSmartspaceCardLoggingInfo bcSmartspaceCardLoggingInfo, int i) {
         List<BcSmartspaceCardMetadataLoggingInfo> list;
-        BcSmartspaceSubcardLoggingInfo bcSmartspaceSubcardLoggingInfo = bcSmartspaceCardLoggingInfo.mSubcardInfo;
-        if (bcSmartspaceSubcardLoggingInfo == null || (list = bcSmartspaceSubcardLoggingInfo.mSubcards) == null) {
+        BcSmartspaceSubcardLoggingInfo bcSmartspaceSubcardLoggingInfo =
+                bcSmartspaceCardLoggingInfo.mSubcardInfo;
+        if (bcSmartspaceSubcardLoggingInfo == null
+                || (list = bcSmartspaceSubcardLoggingInfo.mSubcards) == null) {
             return 0;
         }
         for (int i2 = 0; i2 < list.size(); i2++) {
             BcSmartspaceCardMetadataLoggingInfo bcSmartspaceCardMetadataLoggingInfo = list.get(i2);
-            if (bcSmartspaceCardMetadataLoggingInfo != null && bcSmartspaceCardMetadataLoggingInfo.mCardTypeId == i) {
+            if (bcSmartspaceCardMetadataLoggingInfo != null
+                    && bcSmartspaceCardMetadataLoggingInfo.mCardTypeId == i) {
                 return i2 + 1;
             }
         }
@@ -89,7 +97,9 @@ public class BcSmartspaceCard extends ConstraintLayout {
 
     public final void setDozeAmount(float f) {
         this.mDozeAmount = f;
-        if (this.mTarget != null && this.mTarget.getBaseAction() != null && this.mTarget.getBaseAction().getExtras() != null) {
+        if (this.mTarget != null
+                && this.mTarget.getBaseAction() != null
+                && this.mTarget.getBaseAction().getExtras() != null) {
             Bundle extras = this.mTarget.getBaseAction().getExtras();
             if (this.mTitleTextView != null && extras.getBoolean("hide_title_on_aod")) {
                 this.mTitleTextView.setAlpha(1.0f - f);
@@ -116,8 +126,12 @@ public class BcSmartspaceCard extends ConstraintLayout {
                 if (!isRtl()) {
                     i2 = -1;
                 }
-                viewGroup3.setTranslationX(Interpolators.EMPHASIZED.getInterpolation(this.mDozeAmount) * this.mSecondaryCardGroup.getWidth() * i2);
-                this.mSecondaryCardGroup.setAlpha(Math.max(0.0f, Math.min(1.0f, ((1.0f - this.mDozeAmount) * 9.0f) - 6.0f)));
+                viewGroup3.setTranslationX(
+                        Interpolators.EMPHASIZED.getInterpolation(this.mDozeAmount)
+                                * this.mSecondaryCardGroup.getWidth()
+                                * i2);
+                this.mSecondaryCardGroup.setAlpha(
+                        Math.max(0.0f, Math.min(1.0f, ((1.0f - this.mDozeAmount) * 9.0f) - 6.0f)));
                 return;
             }
             this.mTextGroup.setTranslationX(0.0f);
@@ -153,7 +167,8 @@ public class BcSmartspaceCard extends ConstraintLayout {
         updateIconTint();
     }
 
-    public final void setSubtitle(CharSequence charSequence, CharSequence charSequence2, boolean z) {
+    public final void setSubtitle(
+            CharSequence charSequence, CharSequence charSequence2, boolean z) {
         DoubleShadowIconDrawable doubleShadowIconDrawable;
         int i;
         if (this.mSubtitleTextView == null) {
@@ -167,9 +182,12 @@ public class BcSmartspaceCard extends ConstraintLayout {
         } else {
             doubleShadowIconDrawable = null;
         }
-        this.mSubtitleTextView.setCompoundDrawablesRelative(doubleShadowIconDrawable, null, null, null);
+        this.mSubtitleTextView.setCompoundDrawablesRelative(
+                doubleShadowIconDrawable, null, null, null);
         SmartspaceTarget smartspaceTarget = this.mTarget;
-        if (smartspaceTarget != null && smartspaceTarget.getFeatureType() == 5 && !this.mUsePageIndicatorUi) {
+        if (smartspaceTarget != null
+                && smartspaceTarget.getFeatureType() == 5
+                && !this.mUsePageIndicatorUi) {
             i = 2;
         } else {
             i = 1;
@@ -179,7 +197,8 @@ public class BcSmartspaceCard extends ConstraintLayout {
         if (z) {
             doubleShadowIconDrawable2 = this.mIconDrawable;
         }
-        BcSmartspaceTemplateDataUtils.offsetTextViewForIcon(this.mSubtitleTextView, doubleShadowIconDrawable2, isRtl());
+        BcSmartspaceTemplateDataUtils.offsetTextViewForIcon(
+                this.mSubtitleTextView, doubleShadowIconDrawable2, isRtl());
     }
 
     public final void setTitle(CharSequence charSequence, CharSequence charSequence2, boolean z) {
@@ -210,7 +229,16 @@ public class BcSmartspaceCard extends ConstraintLayout {
             } catch (IllegalArgumentException e) {
                 Log.e("BcSmartspaceCard", "Invalid TruncateAt value: " + string);
             }
-        } else if (this.mTarget != null && this.mTarget.getFeatureType() == 2 && Locale.ENGLISH.getLanguage().equals(getContext().getResources().getConfiguration().locale.getLanguage())) {
+        } else if (this.mTarget != null
+                && this.mTarget.getFeatureType() == 2
+                && Locale.ENGLISH
+                        .getLanguage()
+                        .equals(
+                                getContext()
+                                        .getResources()
+                                        .getConfiguration()
+                                        .locale
+                                        .getLanguage())) {
             this.mTitleTextView.setEllipsize(TextUtils.TruncateAt.MIDDLE);
         } else {
             this.mTitleTextView.setEllipsize(TextUtils.TruncateAt.END);
@@ -236,11 +264,13 @@ public class BcSmartspaceCard extends ConstraintLayout {
         } else {
             doubleShadowIconDrawable = null;
         }
-        this.mTitleTextView.setCompoundDrawablesRelative(doubleShadowIconDrawable, null, null, null);
+        this.mTitleTextView.setCompoundDrawablesRelative(
+                doubleShadowIconDrawable, null, null, null);
         if (z3) {
             doubleShadowIconDrawable2 = this.mIconDrawable;
         }
-        BcSmartspaceTemplateDataUtils.offsetTextViewForIcon(this.mTitleTextView, doubleShadowIconDrawable2, isRtl());
+        BcSmartspaceTemplateDataUtils.offsetTextViewForIcon(
+                this.mTitleTextView, doubleShadowIconDrawable2, isRtl());
     }
 
     public final void updateIconTint() {
@@ -264,7 +294,9 @@ public class BcSmartspaceCard extends ConstraintLayout {
         boolean z = imageView != null && imageView.getVisibility() == 0;
         ImageView imageView2 = this.mNextAlarmImageView;
         boolean z2 = imageView2 != null && imageView2.getVisibility() == 0;
-        if ((!z && !z2) || (this.mUsePageIndicatorUi && (this.mTarget == null || this.mTarget.getFeatureType() != 1))) {
+        if ((!z && !z2)
+                || (this.mUsePageIndicatorUi
+                        && (this.mTarget == null || this.mTarget.getFeatureType() != 1))) {
             z3 = false;
         }
         int i2 = this.mTopPadding;
@@ -276,7 +308,8 @@ public class BcSmartspaceCard extends ConstraintLayout {
             if (this.mNextAlarmTextView != null) {
                 this.mNextAlarmTextView.setTextColor(this.mIconTintColor);
             }
-            if (this.mNextAlarmImageView != null && this.mNextAlarmImageView.getDrawable() != null) {
+            if (this.mNextAlarmImageView != null
+                    && this.mNextAlarmImageView.getDrawable() != null) {
                 this.mNextAlarmImageView.getDrawable().setTint(this.mIconTintColor);
             }
             if (this.mDndImageView != null && this.mDndImageView.getDrawable() != null) {
@@ -288,7 +321,9 @@ public class BcSmartspaceCard extends ConstraintLayout {
 
     public final AccessibilityNodeInfo createAccessibilityNodeInfo() {
         AccessibilityNodeInfo createAccessibilityNodeInfo = super.createAccessibilityNodeInfo();
-        createAccessibilityNodeInfo.getExtras().putCharSequence("AccessibilityNodeInfo.roleDescription", " ");
+        createAccessibilityNodeInfo
+                .getExtras()
+                .putCharSequence("AccessibilityNodeInfo.roleDescription", " ");
         return createAccessibilityNodeInfo;
     }
 
@@ -299,7 +334,8 @@ public class BcSmartspaceCard extends ConstraintLayout {
         this.mDateView = (IcuDateTextView) findViewById(R.id.date);
         this.mTitleTextView = (TextView) findViewById(R.id.title_text);
         this.mSubtitleTextView = (TextView) findViewById(R.id.subtitle_text);
-        this.mBaseActionIconSubtitleView = (DoubleShadowTextView) findViewById(R.id.base_action_icon_subtitle);
+        this.mBaseActionIconSubtitleView =
+                (DoubleShadowTextView) findViewById(R.id.base_action_icon_subtitle);
         this.mExtrasGroup = (ViewGroup) findViewById(R.id.smartspace_extras_group);
         this.mTopPadding = getPaddingTop();
         if (this.mExtrasGroup != null) {
@@ -309,7 +345,8 @@ public class BcSmartspaceCard extends ConstraintLayout {
         }
     }
 
-    public final void setFormattedContentDescription(TextView textView, CharSequence charSequence, CharSequence charSequence2) {
+    public final void setFormattedContentDescription(
+            TextView textView, CharSequence charSequence, CharSequence charSequence2) {
         String string;
         String str;
         if (TextUtils.isEmpty(charSequence)) {
@@ -317,7 +354,12 @@ public class BcSmartspaceCard extends ConstraintLayout {
         } else if (TextUtils.isEmpty(charSequence2)) {
             string = String.valueOf(charSequence);
         } else {
-            string = getContext().getString(R.string.generic_smartspace_concatenated_desc, charSequence2, charSequence);
+            string =
+                    getContext()
+                            .getString(
+                                    R.string.generic_smartspace_concatenated_desc,
+                                    charSequence2,
+                                    charSequence);
         }
         Object[] objArr = new Object[4];
         if (textView == this.mTitleTextView) {
@@ -331,7 +373,12 @@ public class BcSmartspaceCard extends ConstraintLayout {
         objArr[1] = charSequence;
         objArr[2] = charSequence2;
         objArr[3] = string;
-        Log.i("BcSmartspaceCard", String.format("setFormattedContentDescription: textView=%s, text=%s, iconDescription=%s, contentDescription=%s", objArr));
+        Log.i(
+                "BcSmartspaceCard",
+                String.format(
+                        "setFormattedContentDescription: textView=%s, text=%s, iconDescription=%s,"
+                            + " contentDescription=%s",
+                        objArr));
         textView.setContentDescription(string);
     }
 }

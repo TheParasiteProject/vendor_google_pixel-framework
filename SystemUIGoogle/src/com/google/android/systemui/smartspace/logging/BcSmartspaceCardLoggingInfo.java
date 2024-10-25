@@ -32,7 +32,14 @@ public final class BcSmartspaceCardLoggingInfo {
             return false;
         }
         BcSmartspaceCardLoggingInfo bcSmartspaceCardLoggingInfo = (BcSmartspaceCardLoggingInfo) obj;
-        if (this.mInstanceId != bcSmartspaceCardLoggingInfo.mInstanceId || this.mDisplaySurface != bcSmartspaceCardLoggingInfo.mDisplaySurface || this.mRank != bcSmartspaceCardLoggingInfo.mRank || this.mCardinality != bcSmartspaceCardLoggingInfo.mCardinality || this.mFeatureType != bcSmartspaceCardLoggingInfo.mFeatureType || this.mReceivedLatency != bcSmartspaceCardLoggingInfo.mReceivedLatency || this.mUid != bcSmartspaceCardLoggingInfo.mUid || !Objects.equals(this.mSubcardInfo, bcSmartspaceCardLoggingInfo.mSubcardInfo)) {
+        if (this.mInstanceId != bcSmartspaceCardLoggingInfo.mInstanceId
+                || this.mDisplaySurface != bcSmartspaceCardLoggingInfo.mDisplaySurface
+                || this.mRank != bcSmartspaceCardLoggingInfo.mRank
+                || this.mCardinality != bcSmartspaceCardLoggingInfo.mCardinality
+                || this.mFeatureType != bcSmartspaceCardLoggingInfo.mFeatureType
+                || this.mReceivedLatency != bcSmartspaceCardLoggingInfo.mReceivedLatency
+                || this.mUid != bcSmartspaceCardLoggingInfo.mUid
+                || !Objects.equals(this.mSubcardInfo, bcSmartspaceCardLoggingInfo.mSubcardInfo)) {
             z = false;
         }
         return z;
@@ -70,6 +77,14 @@ public final class BcSmartspaceCardLoggingInfo {
     }
 
     public final int hashCode() {
-        return Objects.hash(Integer.valueOf(this.mInstanceId), Integer.valueOf(this.mDisplaySurface), Integer.valueOf(this.mRank), Integer.valueOf(this.mCardinality), Integer.valueOf(this.mFeatureType), Integer.valueOf(this.mReceivedLatency), Integer.valueOf(this.mUid), this.mSubcardInfo);
+        return Objects.hash(
+                Integer.valueOf(this.mInstanceId),
+                Integer.valueOf(this.mDisplaySurface),
+                Integer.valueOf(this.mRank),
+                Integer.valueOf(this.mCardinality),
+                Integer.valueOf(this.mFeatureType),
+                Integer.valueOf(this.mReceivedLatency),
+                Integer.valueOf(this.mUid),
+                this.mSubcardInfo);
     }
 }

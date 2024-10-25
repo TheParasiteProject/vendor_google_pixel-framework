@@ -19,8 +19,10 @@ public final class BcSmartspaceCardMetadataLoggingInfo {
         if (!(obj instanceof BcSmartspaceCardMetadataLoggingInfo)) {
             return false;
         }
-        BcSmartspaceCardMetadataLoggingInfo bcSmartspaceCardMetadataLoggingInfo = (BcSmartspaceCardMetadataLoggingInfo) obj;
-        if (this.mInstanceId != bcSmartspaceCardMetadataLoggingInfo.mInstanceId || this.mCardTypeId != bcSmartspaceCardMetadataLoggingInfo.mCardTypeId) {
+        BcSmartspaceCardMetadataLoggingInfo bcSmartspaceCardMetadataLoggingInfo =
+                (BcSmartspaceCardMetadataLoggingInfo) obj;
+        if (this.mInstanceId != bcSmartspaceCardMetadataLoggingInfo.mInstanceId
+                || this.mCardTypeId != bcSmartspaceCardMetadataLoggingInfo.mCardTypeId) {
             z = false;
         }
         return z;

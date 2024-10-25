@@ -4,14 +4,12 @@ import android.app.ActivityManager
 import android.app.AlarmManager
 import android.content.Context
 import android.graphics.drawable.Drawable
-import android.graphics.drawable.InsetDrawable
 import android.os.Handler
 import android.text.format.DateFormat
 import android.view.View
-import com.android.internal.annotations.VisibleForTesting
-import com.android.systemui.res.R
 import com.android.systemui.dagger.SysUISingleton
 import com.android.systemui.plugins.BcSmartspaceDataPlugin
+import com.android.systemui.res.R
 import com.android.systemui.statusbar.policy.NextAlarmController
 import com.android.systemui.statusbar.policy.ZenModeController
 import java.util.LinkedHashSet
@@ -19,7 +17,9 @@ import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
 @SysUISingleton
-class KeyguardZenAlarmViewController @Inject constructor(
+class KeyguardZenAlarmViewController
+@Inject
+constructor(
     val context: Context,
     val plugin: BcSmartspaceDataPlugin,
     val zenModeController: ZenModeController,
@@ -29,39 +29,42 @@ class KeyguardZenAlarmViewController @Inject constructor(
 ) {
     val alarmImage = context.getResources().getDrawable(R.drawable.ic_access_alarms_big, null)
     val smartspaceViews = LinkedHashSet<BcSmartspaceDataPlugin.SmartspaceView>()
-	val zenModeCallback = object : ZenModeController.Callback {
-        override fun onZenChanged(i: Int) {
-            updateDnd()
+    val zenModeCallback =
+        object : ZenModeController.Callback {
+            override fun onZenChanged(i: Int) {
+                updateDnd()
+            }
         }
-    }
-    
-    val nextAlarmCallback = object : NextAlarmController.NextAlarmChangeCallback {
+
+    val nextAlarmCallback =
+        object : NextAlarmController.NextAlarmChangeCallback {
             override fun onNextAlarmChanged(alarmClockInfo: AlarmManager.AlarmClockInfo?) {
                 updateNextAlarm()
             }
         }
-    
-    val dndImage: Drawable = loadDndImage()
-    
-    fun init() {
-        plugin.addOnAttachStateChangeListener(object : View.OnAttachStateChangeListener {
-            override fun onViewAttachedToWindow(v: View) {
-                smartspaceViews.add(v as BcSmartspaceDataPlugin.SmartspaceView)
-                if (smartspaceViews.size == 1) {
-                    zenModeController.addCallback(zenModeCallback)
-                    nextAlarmController.addCallback(nextAlarmCallback)
-                }
-                refresh()
-            }
 
-            override fun onViewDetachedFromWindow(v: View) {
-                smartspaceViews.remove(v as BcSmartspaceDataPlugin.SmartspaceView)
-                if (smartspaceViews.isEmpty()) {
-                    zenModeController.removeCallback(zenModeCallback)
-                    nextAlarmController.removeCallback(nextAlarmCallback)
+    val dndImage: Drawable = loadDndImage()
+
+    fun init() {
+        plugin.addOnAttachStateChangeListener(
+            object : View.OnAttachStateChangeListener {
+                override fun onViewAttachedToWindow(v: View) {
+                    smartspaceViews.add(v as BcSmartspaceDataPlugin.SmartspaceView)
+                    if (smartspaceViews.size == 1) {
+                        zenModeController.addCallback(zenModeCallback)
+                        nextAlarmController.addCallback(nextAlarmCallback)
+                    }
+                    refresh()
                 }
-            }
-        })
+
+                override fun onViewDetachedFromWindow(v: View) {
+                    smartspaceViews.remove(v as BcSmartspaceDataPlugin.SmartspaceView)
+                    if (smartspaceViews.isEmpty()) {
+                        zenModeController.removeCallback(zenModeCallback)
+                        nextAlarmController.removeCallback(nextAlarmCallback)
+                    }
+                }
+            })
         updateNextAlarm()
     }
 
@@ -90,11 +93,12 @@ class KeyguardZenAlarmViewController @Inject constructor(
     }
 
     fun updateNextAlarm() {
-        alarmManager.cancel(object : AlarmManager.OnAlarmListener {
-            override fun onAlarm() {
-                showAlarm()
-            }
-        })
+        alarmManager.cancel(
+            object : AlarmManager.OnAlarmListener {
+                override fun onAlarm() {
+                    showAlarm()
+                }
+            })
         val nextAlarm: Long = zenModeController.getNextAlarm()
         if (nextAlarm > 0) {
             val millis: Long = nextAlarm - TimeUnit.HOURS.toMillis(12L)
@@ -108,8 +112,7 @@ class KeyguardZenAlarmViewController @Inject constructor(
                             showAlarm()
                         }
                     },
-                    handler
-                )
+                    handler)
             }
         }
         showAlarm()
@@ -118,13 +121,13 @@ class KeyguardZenAlarmViewController @Inject constructor(
     fun showAlarm() {
         val nextAlarm: Long = zenModeController.getNextAlarm()
         if (nextAlarm > 0 && withinNHours(nextAlarm, 12L)) {
-            val obj: String = DateFormat.format(
-                if (DateFormat.is24HourFormat(
-                        context,
-                        ActivityManager.getCurrentUser()
-                    )
-                ) "HH:mm" else "h:mm", nextAlarm
-            ).toString()
+            val obj: String =
+                DateFormat.format(
+                        if (DateFormat.is24HourFormat(context, ActivityManager.getCurrentUser()))
+                            "HH:mm"
+                        else "h:mm",
+                        nextAlarm)
+                    .toString()
             for (smartspaceView in smartspaceViews) {
                 smartspaceView.setNextAlarm(alarmImage, obj)
             }

@@ -9,8 +9,10 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.android.systemui.res.R;
+
 import com.android.systemui.plugins.BcSmartspaceDataPlugin;
+import com.android.systemui.res.R;
+
 import com.google.android.systemui.smartspace.logging.BcSmartspaceCardLoggingInfo;
 
 public class BcSmartspaceCardLoyalty extends BcSmartspaceCardGenericImage {
@@ -26,7 +28,8 @@ public class BcSmartspaceCardLoyalty extends BcSmartspaceCardGenericImage {
         super(context, attributeSet);
     }
 
-    @Override // com.google.android.systemui.smartspace.BcSmartspaceCardGenericImage, com.google.android.systemui.smartspace.BcSmartspaceCardSecondary
+    @Override // com.google.android.systemui.smartspace.BcSmartspaceCardGenericImage,
+              // com.google.android.systemui.smartspace.BcSmartspaceCardSecondary
     public final void setTextColor(int i) {
         this.mLoyaltyProgramNameView.setTextColor(i);
         this.mCardPromptView.setTextColor(i);
@@ -40,7 +43,8 @@ public class BcSmartspaceCardLoyalty extends BcSmartspaceCardGenericImage {
         this.mCardPromptView = (TextView) findViewById(R.id.card_prompt);
     }
 
-    @Override // com.google.android.systemui.smartspace.BcSmartspaceCardGenericImage, com.google.android.systemui.smartspace.BcSmartspaceCardSecondary
+    @Override // com.google.android.systemui.smartspace.BcSmartspaceCardGenericImage,
+              // com.google.android.systemui.smartspace.BcSmartspaceCardSecondary
     public final void resetUi() {
         super.resetUi();
         BcSmartspaceTemplateDataUtils.updateVisibility(this.mImageView, 8);
@@ -55,10 +59,15 @@ public class BcSmartspaceCardLoyalty extends BcSmartspaceCardGenericImage {
         this.mLoyaltyProgramLogoView.setImageBitmap(bitmap);
     }
 
-    @Override // com.google.android.systemui.smartspace.BcSmartspaceCardGenericImage, com.google.android.systemui.smartspace.BcSmartspaceCardSecondary
-    public final boolean setSmartspaceActions(SmartspaceTarget smartspaceTarget, BcSmartspaceDataPlugin.SmartspaceEventNotifier smartspaceEventNotifier, BcSmartspaceCardLoggingInfo bcSmartspaceCardLoggingInfo) {
+    @Override // com.google.android.systemui.smartspace.BcSmartspaceCardGenericImage,
+              // com.google.android.systemui.smartspace.BcSmartspaceCardSecondary
+    public final boolean setSmartspaceActions(
+            SmartspaceTarget smartspaceTarget,
+            BcSmartspaceDataPlugin.SmartspaceEventNotifier smartspaceEventNotifier,
+            BcSmartspaceCardLoggingInfo bcSmartspaceCardLoggingInfo) {
         Bundle extras;
-        super.setSmartspaceActions(smartspaceTarget, smartspaceEventNotifier, bcSmartspaceCardLoggingInfo);
+        super.setSmartspaceActions(
+                smartspaceTarget, smartspaceEventNotifier, bcSmartspaceCardLoggingInfo);
         SmartspaceAction baseAction = smartspaceTarget.getBaseAction();
         if (baseAction == null) {
             extras = null;

@@ -20,7 +20,6 @@ import static com.android.systemui.statusbar.notification.interruption.VisualInt
 import static com.android.systemui.statusbar.notification.interruption.VisualInterruptionType.PEEK;
 import static com.android.systemui.statusbar.notification.interruption.VisualInterruptionType.PULSE;
 
-import androidx.annotation.NonNull;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -29,6 +28,8 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.HandlerExecutor;
 import android.os.IBinder;
 import android.os.PowerManager;
 import android.os.RemoteException;
@@ -36,32 +37,31 @@ import android.os.ResultReceiver;
 import android.os.ServiceManager;
 import android.os.SystemClock;
 import android.os.UserHandle;
-import android.os.Handler;
-import android.os.HandlerExecutor;
 import android.service.dreams.IDreamManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
+
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.systemui.Dependency;
-import com.android.systemui.dagger.qualifiers.Main;
 import com.android.systemui.dagger.SysUISingleton;
+import com.android.systemui.dagger.qualifiers.Main;
 import com.android.systemui.dock.DockManager;
 import com.android.systemui.dock.DockManagerImpl;
 import com.android.systemui.plugins.statusbar.StatusBarStateController;
 import com.android.systemui.settings.UserTracker;
 import com.android.systemui.statusbar.notification.collection.NotificationEntry;
+import com.android.systemui.statusbar.notification.interruption.NotificationInterruptSuppressor;
 import com.android.systemui.statusbar.notification.interruption.VisualInterruptionCondition;
 import com.android.systemui.statusbar.notification.interruption.VisualInterruptionDecisionProvider;
-import com.android.systemui.statusbar.notification.interruption.VisualInterruptionType;
 import com.android.systemui.statusbar.notification.interruption.VisualInterruptionRefactor;
-import com.android.systemui.statusbar.notification.interruption.NotificationInterruptSuppressor;
 import com.android.systemui.statusbar.policy.ConfigurationController;
 import com.android.systemui.statusbar.policy.KeyguardStateController;
 import com.android.systemui.util.concurrency.DelayableExecutor;
-import com.google.android.systemui.dreamliner.WirelessCharger;
+
 import com.google.android.systemui.elmyra.gates.KeyguardVisibility;
 
 import dagger.Lazy;
@@ -69,54 +69,69 @@ import dagger.Lazy;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.Set;
 
 import javax.inject.Inject;
 
 @SysUISingleton
 public class DockObserver extends DockManagerImpl {
     @VisibleForTesting
-    static final String ACTION_ALIGN_STATE_CHANGE = "com.google.android.systemui.dreamliner.ALIGNMENT_CHANGE";
+    static final String ACTION_ALIGN_STATE_CHANGE =
+            "com.google.android.systemui.dreamliner.ALIGNMENT_CHANGE";
+
     @VisibleForTesting
-    static final String ACTION_CHALLENGE = "com.google.android.systemui.dreamliner.ACTION_CHALLENGE";
+    static final String ACTION_CHALLENGE =
+            "com.google.android.systemui.dreamliner.ACTION_CHALLENGE";
+
     @VisibleForTesting
-    static final String ACTION_DOCK_UI_ACTIVE = "com.google.android.systemui.dreamliner.ACTION_DOCK_UI_ACTIVE";
+    static final String ACTION_DOCK_UI_ACTIVE =
+            "com.google.android.systemui.dreamliner.ACTION_DOCK_UI_ACTIVE";
+
     @VisibleForTesting
-    static final String ACTION_DOCK_UI_IDLE = "com.google.android.systemui.dreamliner.ACTION_DOCK_UI_IDLE";
+    static final String ACTION_DOCK_UI_IDLE =
+            "com.google.android.systemui.dreamliner.ACTION_DOCK_UI_IDLE";
+
     @VisibleForTesting
-    static final String ACTION_GET_DOCK_INFO = "com.google.android.systemui.dreamliner.ACTION_GET_DOCK_INFO";
+    static final String ACTION_GET_DOCK_INFO =
+            "com.google.android.systemui.dreamliner.ACTION_GET_DOCK_INFO";
+
     @VisibleForTesting
-    static final String ACTION_KEY_EXCHANGE = "com.google.android.systemui.dreamliner.ACTION_KEY_EXCHANGE";
+    static final String ACTION_KEY_EXCHANGE =
+            "com.google.android.systemui.dreamliner.ACTION_KEY_EXCHANGE";
+
     @VisibleForTesting
-    static final String ACTION_REBIND_DOCK_SERVICE = "com.google.android.systemui.dreamliner.ACTION_REBIND_DOCK_SERVICE";
+    static final String ACTION_REBIND_DOCK_SERVICE =
+            "com.google.android.systemui.dreamliner.ACTION_REBIND_DOCK_SERVICE";
+
     @VisibleForTesting
-    static final String ACTION_START_DREAMLINER_CONTROL_SERVICE = "com.google.android.apps.dreamliner.START";
+    static final String ACTION_START_DREAMLINER_CONTROL_SERVICE =
+            "com.google.android.apps.dreamliner.START";
+
     @VisibleForTesting
-    static final String COMPONENTNAME_DREAMLINER_CONTROL_SERVICE = "com.google.android.apps.dreamliner/.DreamlinerControlService";
+    static final String COMPONENTNAME_DREAMLINER_CONTROL_SERVICE =
+            "com.google.android.apps.dreamliner/.DreamlinerControlService";
+
+    @VisibleForTesting static final String EXTRA_ALIGN_STATE = "align_state";
+    @VisibleForTesting static final String EXTRA_CHALLENGE_DATA = "challenge_data";
+    @VisibleForTesting static final String EXTRA_CHALLENGE_DOCK_ID = "challenge_dock_id";
+    @VisibleForTesting static final String EXTRA_PUBLIC_KEY = "public_key";
+    @VisibleForTesting static final String KEY_SHOWING = "showing";
+
     @VisibleForTesting
-    static final String EXTRA_ALIGN_STATE = "align_state";
-    @VisibleForTesting
-    static final String EXTRA_CHALLENGE_DATA = "challenge_data";
-    @VisibleForTesting
-    static final String EXTRA_CHALLENGE_DOCK_ID = "challenge_dock_id";
-    @VisibleForTesting
-    static final String EXTRA_PUBLIC_KEY = "public_key";
-    @VisibleForTesting
-    static final String KEY_SHOWING = "showing";
-    @VisibleForTesting
-    static final String PERMISSION_WIRELESS_CHARGER_STATUS = "com.google.android.systemui.permission.WIRELESS_CHARGER_STATUS";
-    @VisibleForTesting
-    static final int RESULT_NOT_FOUND = 1;
-    @VisibleForTesting
-    static final int RESULT_OK = 0;
+    static final String PERMISSION_WIRELESS_CHARGER_STATUS =
+            "com.google.android.systemui.permission.WIRELESS_CHARGER_STATUS";
+
+    @VisibleForTesting static final int RESULT_NOT_FOUND = 1;
+    @VisibleForTesting static final int RESULT_OK = 0;
     private static final boolean DEBUG = Log.isLoggable("DLObserver", 3);
-    @VisibleForTesting
-    static volatile ExecutorService mSingleThreadExecutor;
+    @VisibleForTesting static volatile ExecutorService mSingleThreadExecutor;
     private static boolean sIsDockingUiShowing;
+
     @VisibleForTesting
     final DreamlinerBroadcastReceiver mDreamlinerReceiver = new DreamlinerBroadcastReceiver();
+
     private final Lazy<VisualInterruptionDecisionProvider> mVisualInterruptionDecisionProviderLazy;
     private final List<DockManager.AlignmentStateListener> mAlignmentStateListeners;
     private final List<DockManager.DockEventListener> mClients;
@@ -127,15 +142,11 @@ public class DockObserver extends DockManagerImpl {
     private final DelayableExecutor mMainExecutor;
     private final StatusBarStateController mStatusBarStateController;
     private final WirelessCharger mWirelessCharger;
-    @VisibleForTesting
-    DockGestureController mDockGestureController;
-    @VisibleForTesting
-    DreamlinerServiceConn mDreamlinerServiceConn;
+    @VisibleForTesting DockGestureController mDockGestureController;
+    @VisibleForTesting DreamlinerServiceConn mDreamlinerServiceConn;
     DockIndicationController mIndicationController;
-    @VisibleForTesting
-    int mDockState = 0;
-    @VisibleForTesting
-    int mLastAlignState = -1;
+    @VisibleForTesting int mDockState = 0;
+    @VisibleForTesting int mLastAlignState = -1;
     private ImageView mDreamlinerGear;
     private Runnable mPhotoAction;
     private FrameLayout mPhotoPreview;
@@ -153,59 +164,62 @@ public class DockObserver extends DockManagerImpl {
                 }
             };
 
-    private BroadcastReceiver stateReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            if (intent == null) {
-                return;
-            }
-            if (DEBUG) {
-                Log.i("DLObserver", "onReceive(); " + intent.getAction());
-            }
-            String action = intent.getAction();
-            switch (action) {
-                case "android.intent.action.ACTION_POWER_DISCONNECTED":
-                    stopDreamlinerService(context);
-                    sIsDockingUiShowing = false;
-                    break;
-                case "com.google.android.systemui.dreamliner.ACTION_SET_FEATURES":
-                    setFeatures(intent);
-                    break;
-                case "android.intent.action.BOOT_COMPLETED":
-                    break;
-                case "com.google.android.systemui.dreamliner.ACTION_GET_FEATURES":
-                    getFeatures(intent);
-                    break;
-                case "android.intent.action.ACTION_POWER_CONNECTED":
-                    checkIsDockPresentIfNeeded(context);
-                    break;
-                case ACTION_REBIND_DOCK_SERVICE:
-                    updateCurrentDockingStatus(context);
-                    break;
-            }
-        }
-    };
-
-    @Inject
-    public DockObserver(final Context context, WirelessCharger wirelessCharger,
-        StatusBarStateController statusBarStateController,
-        Lazy<VisualInterruptionDecisionProvider> visualInterruptionDecisionProviderLazy,
-        ConfigurationController configurationController,
-        @Main DelayableExecutor delayableExecutor,
-        @NonNull UserTracker userTracker, @Main Handler mainHandler
-    ) {
-        mInterruptSuppressor =
-            new NotificationInterruptSuppressor() {
+    private BroadcastReceiver stateReceiver =
+            new BroadcastReceiver() {
                 @Override
-                public String getName() {
-                    return "DLObserver";
-                }
-
-                @Override
-                public boolean suppressInterruptions(NotificationEntry notificationEntry) {
-                    return DockObserver.isDockingUiShowing();
+                public void onReceive(Context context, Intent intent) {
+                    if (intent == null) {
+                        return;
+                    }
+                    if (DEBUG) {
+                        Log.i("DLObserver", "onReceive(); " + intent.getAction());
+                    }
+                    String action = intent.getAction();
+                    switch (action) {
+                        case "android.intent.action.ACTION_POWER_DISCONNECTED":
+                            stopDreamlinerService(context);
+                            sIsDockingUiShowing = false;
+                            break;
+                        case "com.google.android.systemui.dreamliner.ACTION_SET_FEATURES":
+                            setFeatures(intent);
+                            break;
+                        case "android.intent.action.BOOT_COMPLETED":
+                            break;
+                        case "com.google.android.systemui.dreamliner.ACTION_GET_FEATURES":
+                            getFeatures(intent);
+                            break;
+                        case "android.intent.action.ACTION_POWER_CONNECTED":
+                            checkIsDockPresentIfNeeded(context);
+                            break;
+                        case ACTION_REBIND_DOCK_SERVICE:
+                            updateCurrentDockingStatus(context);
+                            break;
+                    }
                 }
             };
+
+    @Inject
+    public DockObserver(
+            final Context context,
+            WirelessCharger wirelessCharger,
+            StatusBarStateController statusBarStateController,
+            Lazy<VisualInterruptionDecisionProvider> visualInterruptionDecisionProviderLazy,
+            ConfigurationController configurationController,
+            @Main DelayableExecutor delayableExecutor,
+            @NonNull UserTracker userTracker,
+            @Main Handler mainHandler) {
+        mInterruptSuppressor =
+                new NotificationInterruptSuppressor() {
+                    @Override
+                    public String getName() {
+                        return "DLObserver";
+                    }
+
+                    @Override
+                    public boolean suppressInterruptions(NotificationEntry notificationEntry) {
+                        return DockObserver.isDockingUiShowing();
+                    }
+                };
         mVisualInterruptionDecisionProviderLazy = visualInterruptionDecisionProviderLazy;
         mMainExecutor = delayableExecutor;
         mContext = context;
@@ -216,7 +230,8 @@ public class DockObserver extends DockManagerImpl {
             Log.i("DLObserver", "wireless charger is null, check dock component.");
         }
         mStatusBarStateController = statusBarStateController;
-        context.registerReceiver(stateReceiver, getDockIntentFilter(), PERMISSION_WIRELESS_CHARGER_STATUS, null, 2);
+        context.registerReceiver(
+                stateReceiver, getDockIntentFilter(), PERMISSION_WIRELESS_CHARGER_STATUS, null, 2);
         mDockAlignmentController = new DockAlignmentController(wirelessCharger, this);
         mConfigurationController = configurationController;
         refreshFanLevel(null);
@@ -225,8 +240,7 @@ public class DockObserver extends DockManagerImpl {
     }
 
     private final VisualInterruptionCondition mDockModeCondition =
-            new VisualInterruptionCondition(Set.of(PEEK, PULSE, BUBBLE),
-                    "device in in dock mode") {
+            new VisualInterruptionCondition(Set.of(PEEK, PULSE, BUBBLE), "device in in dock mode") {
                 @Override
                 public boolean shouldSuppress() {
                     return isDockingUiShowing();
@@ -245,7 +259,9 @@ public class DockObserver extends DockManagerImpl {
         if (VisualInterruptionRefactor.isEnabled()) {
             mVisualInterruptionDecisionProviderLazy.get().addCondition(mDockModeCondition);
         } else {
-            mVisualInterruptionDecisionProviderLazy.get().removeLegacySuppressor(mInterruptSuppressor);
+            mVisualInterruptionDecisionProviderLazy
+                    .get()
+                    .removeLegacySuppressor(mInterruptSuppressor);
         }
     }
 
@@ -314,7 +330,8 @@ public class DockObserver extends DockManagerImpl {
     }
 
     @Override
-    public void addAlignmentStateListener(DockManager.AlignmentStateListener alignmentStateListener) {
+    public void addAlignmentStateListener(
+            DockManager.AlignmentStateListener alignmentStateListener) {
         if (DEBUG) {
             Log.d("DLObserver", "add alignment listener: " + alignmentStateListener);
         }
@@ -324,7 +341,8 @@ public class DockObserver extends DockManagerImpl {
     }
 
     @Override
-    public void removeAlignmentStateListener(DockManager.AlignmentStateListener alignmentStateListener) {
+    public void removeAlignmentStateListener(
+            DockManager.AlignmentStateListener alignmentStateListener) {
         if (DEBUG) {
             Log.d("DLObserver", "remove alignment listener: " + alignmentStateListener);
         }
@@ -376,40 +394,58 @@ public class DockObserver extends DockManagerImpl {
 
     private void notifyDreamlinerAlignStateChanged(int i) {
         if (isDocked()) {
-            mContext.sendBroadcastAsUser(new Intent(ACTION_ALIGN_STATE_CHANGE).putExtra(EXTRA_ALIGN_STATE, i).addFlags(1073741824), UserHandle.CURRENT);
+            mContext.sendBroadcastAsUser(
+                    new Intent(ACTION_ALIGN_STATE_CHANGE)
+                            .putExtra(EXTRA_ALIGN_STATE, i)
+                            .addFlags(1073741824),
+                    UserHandle.CURRENT);
         }
     }
 
     private void refreshFanLevel(final Runnable runnable) {
         Log.d("DLObserver", "command=2");
-        runOnBackgroundThread(() -> {
-            if (mWirelessCharger == null) {
-                Log.i("DLObserver", "hint is UNKNOWN for null wireless charger HAL");
-                mFanLevel = -1;
-            } else {
-                long currentTimeMillis = System.currentTimeMillis();
-                mFanLevel = mWirelessCharger.getFanLevel();
-                if (DEBUG) {
-                    Log.d("DLObserver", "command=2, l=" + mFanLevel + ", spending time=" + (System.currentTimeMillis() - currentTimeMillis));
-                }
-            }
-            if (runnable != null) {
-                runnable.run();
-            }
-        });
+        runOnBackgroundThread(
+                () -> {
+                    if (mWirelessCharger == null) {
+                        Log.i("DLObserver", "hint is UNKNOWN for null wireless charger HAL");
+                        mFanLevel = -1;
+                    } else {
+                        long currentTimeMillis = System.currentTimeMillis();
+                        mFanLevel = mWirelessCharger.getFanLevel();
+                        if (DEBUG) {
+                            Log.d(
+                                    "DLObserver",
+                                    "command=2, l="
+                                            + mFanLevel
+                                            + ", spending time="
+                                            + (System.currentTimeMillis() - currentTimeMillis));
+                        }
+                    }
+                    if (runnable != null) {
+                        runnable.run();
+                    }
+                });
     }
 
     void onFanLevelChange() {
-        refreshFanLevel(() -> {
-            Log.d("DLObserver", "notify l=" + mFanLevel + ", isDocked=" + isDocked());
-            if (isDocked()) {
-                mContext.sendBroadcastAsUser(new Intent("com.google.android.systemui.dreamliner.ACTION_UPDATE_FAN_LEVEL").putExtra("fan_level", mFanLevel).addFlags(1073741824), UserHandle.CURRENT);
-            }
-        });
+        refreshFanLevel(
+                () -> {
+                    Log.d("DLObserver", "notify l=" + mFanLevel + ", isDocked=" + isDocked());
+                    if (isDocked()) {
+                        mContext.sendBroadcastAsUser(
+                                new Intent(
+                                                "com.google.android.systemui.dreamliner.ACTION_UPDATE_FAN_LEVEL")
+                                        .putExtra("fan_level", mFanLevel)
+                                        .addFlags(1073741824),
+                                UserHandle.CURRENT);
+                    }
+                });
     }
 
     private boolean isWirelessCharging(Context context) {
-        Intent registerReceiver = context.registerReceiver(null, new IntentFilter("android.intent.action.BATTERY_CHANGED"));
+        Intent registerReceiver =
+                context.registerReceiver(
+                        null, new IntentFilter("android.intent.action.BATTERY_CHANGED"));
         if (registerReceiver == null) {
             if (DEBUG) {
                 Log.d("DLObserver", "null battery intent when checking plugged status");
@@ -444,7 +480,8 @@ public class DockObserver extends DockManagerImpl {
         if (DEBUG) {
             Log.d("DLObserver", "gF, id=" + longExtra);
         }
-        ResultReceiver resultReceiver = intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER");
+        ResultReceiver resultReceiver =
+                intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER");
         if (resultReceiver != null) {
             if (longExtra == -1) {
                 resultReceiver.send(1, null);
@@ -457,7 +494,8 @@ public class DockObserver extends DockManagerImpl {
     private void setFeatures(Intent intent) {
         long longExtra = intent.getLongExtra("charger_id", -1L);
         long longExtra2 = intent.getLongExtra("charger_feature", -1L);
-        ResultReceiver resultReceiver = intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER");
+        ResultReceiver resultReceiver =
+                intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER");
         if (DEBUG) {
             Log.d("DLObserver", "sF, id=" + longExtra + ", feature=" + longExtra2);
         }
@@ -487,11 +525,21 @@ public class DockObserver extends DockManagerImpl {
         if (mDreamlinerServiceConn == null) {
             mDreamlinerReceiver.registerReceiver(context);
             ImageView imageView = mDreamlinerGear;
-            DockGestureController dockGestureController = new DockGestureController(context, imageView, mPhotoPreview, (View) imageView.getParent(), mIndicationController, mStatusBarStateController, (KeyguardStateController) Dependency.get(KeyguardStateController.class));
+            DockGestureController dockGestureController =
+                    new DockGestureController(
+                            context,
+                            imageView,
+                            mPhotoPreview,
+                            (View) imageView.getParent(),
+                            mIndicationController,
+                            mStatusBarStateController,
+                            (KeyguardStateController)
+                                    Dependency.get(KeyguardStateController.class));
             mDockGestureController = dockGestureController;
             mConfigurationController.addCallback(dockGestureController);
             Intent intent = new Intent(ACTION_START_DREAMLINER_CONTROL_SERVICE);
-            intent.setComponent(ComponentName.unflattenFromString(COMPONENTNAME_DREAMLINER_CONTROL_SERVICE));
+            intent.setComponent(
+                    ComponentName.unflattenFromString(COMPONENTNAME_DREAMLINER_CONTROL_SERVICE));
             intent.putExtra("type", i);
             intent.putExtra("orientation", i2);
             intent.putExtra("id", i3);
@@ -499,8 +547,13 @@ public class DockObserver extends DockManagerImpl {
             try {
                 DreamlinerServiceConn dreamlinerServiceConn = new DreamlinerServiceConn(context);
                 mDreamlinerServiceConn = dreamlinerServiceConn;
-                if (context.bindServiceAsUser(intent, dreamlinerServiceConn, 1, new UserHandle(mUserTracker.getUserId()))) {
-                    mUserTracker.addCallback(mUserChangedCallback, new HandlerExecutor(mMainHandler));
+                if (context.bindServiceAsUser(
+                        intent,
+                        dreamlinerServiceConn,
+                        1,
+                        new UserHandle(mUserTracker.getUserId()))) {
+                    mUserTracker.addCallback(
+                            mUserChangedCallback, new HandlerExecutor(mMainHandler));
                     return;
                 }
             } catch (SecurityException e) {
@@ -519,7 +572,8 @@ public class DockObserver extends DockManagerImpl {
             if (mDreamlinerServiceConn == null) {
                 return;
             }
-            if (assertNotNull(mDockGestureController, DockGestureController.class.getSimpleName())) {
+            if (assertNotNull(
+                    mDockGestureController, DockGestureController.class.getSimpleName())) {
                 mConfigurationController.removeCallback(mDockGestureController);
                 mDockGestureController.stopMonitoring();
                 mDockGestureController = null;
@@ -577,7 +631,10 @@ public class DockObserver extends DockManagerImpl {
         if (DEBUG) {
             Log.d("DLObserver", "triggerKeyExchangeWithDock");
         }
-        if (intent == null || (resultReceiver = intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER")) == null) {
+        if (intent == null
+                || (resultReceiver =
+                                intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER"))
+                        == null) {
             return;
         }
         byte[] byteArrayExtra = intent.getByteArrayExtra(EXTRA_PUBLIC_KEY);
@@ -593,7 +650,10 @@ public class DockObserver extends DockManagerImpl {
         if (DEBUG) {
             Log.d("DLObserver", "triggerChallengeWithDock");
         }
-        if (intent == null || (resultReceiver = intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER")) == null) {
+        if (intent == null
+                || (resultReceiver =
+                                intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER"))
+                        == null) {
             return;
         }
         byte byteExtra = intent.getByteExtra(EXTRA_CHALLENGE_DOCK_ID, (byte) -1);
@@ -612,7 +672,8 @@ public class DockObserver extends DockManagerImpl {
         if (intent == null) {
             return;
         }
-        final ResultReceiver resultReceiver = intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER");
+        final ResultReceiver resultReceiver =
+                intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER");
         boolean booleanExtra = intent.getBooleanExtra("enabled", false);
         if (mDockGestureController != null) {
             mDockGestureController.setPhotoEnabled(booleanExtra);
@@ -624,7 +685,9 @@ public class DockObserver extends DockManagerImpl {
     }
 
     private void runPhotoAction() {
-        if (mLastAlignState != 0 || mPhotoAction == null || mIndicationController.isPromoShowing()) {
+        if (mLastAlignState != 0
+                || mPhotoAction == null
+                || mIndicationController.isPromoShowing()) {
             return;
         }
         mMainExecutor.executeDelayed(mPhotoAction, Duration.ofSeconds(3L).toMillis());
@@ -670,17 +733,19 @@ public class DockObserver extends DockManagerImpl {
         return bundle;
     }
 
-    private Bundle createWpcAuthDigestsResponseBundle(byte b, byte b2, ArrayList<byte[]> arrayList) {
+    private Bundle createWpcAuthDigestsResponseBundle(
+            byte b, byte b2, ArrayList<byte[]> arrayList) {
         Bundle bundle = new Bundle();
         bundle.putByte("slot_populated_mask", b);
         bundle.putByte("slot_returned_mask", b2);
         final ArrayList<Bundle> arrayList2 = new ArrayList<>();
         if (arrayList != null) {
-            arrayList.forEach(bytes -> {
-                Bundle bundle1 = new Bundle();
-                bundle1.putByteArray("wpc_digest", bytes);
-                arrayList2.add(bundle1);
-            });
+            arrayList.forEach(
+                    bytes -> {
+                        Bundle bundle1 = new Bundle();
+                        bundle1.putByteArray("wpc_digest", bytes);
+                        arrayList2.add(bundle1);
+                    });
         }
         bundle.putParcelableArrayList("wpc_digests", arrayList2);
         return bundle;
@@ -696,7 +761,8 @@ public class DockObserver extends DockManagerImpl {
         return bundle;
     }
 
-    private Bundle createWpcAuthChallengeResponseBundle(byte b, byte b2, byte b3, ArrayList<Byte> arrayList, ArrayList<Byte> arrayList2) {
+    private Bundle createWpcAuthChallengeResponseBundle(
+            byte b, byte b2, byte b3, ArrayList<Byte> arrayList, ArrayList<Byte> arrayList2) {
         Bundle bundle = new Bundle();
         bundle.putByte("max_protocol_ver", b);
         bundle.putByte("slot_populated_mask", b2);
@@ -713,7 +779,8 @@ public class DockObserver extends DockManagerImpl {
     }
 
     @VisibleForTesting
-    static final class GetFanSimpleInformationCallback implements WirelessCharger.GetFanSimpleInformationCallback {
+    static final class GetFanSimpleInformationCallback
+            implements WirelessCharger.GetFanSimpleInformationCallback {
         private final byte mFanId;
         private final ResultReceiver mResultReceiver;
 
@@ -729,7 +796,14 @@ public class DockObserver extends DockManagerImpl {
             }
             if (i == 0) {
                 if (DockObserver.DEBUG) {
-                    Log.d("DLObserver", "Callback of command=3, i=" + bundle.getByte("fan_id", (byte) -1) + ", m=" + bundle.getByte("fan_mode", (byte) -1) + ", cr=" + bundle.getInt("fan_current_rpm", -1));
+                    Log.d(
+                            "DLObserver",
+                            "Callback of command=3, i="
+                                    + bundle.getByte("fan_id", (byte) -1)
+                                    + ", m="
+                                    + bundle.getByte("fan_mode", (byte) -1)
+                                    + ", cr="
+                                    + bundle.getInt("fan_current_rpm", -1));
                 }
                 mResultReceiver.send(0, bundle);
                 return;
@@ -739,7 +813,8 @@ public class DockObserver extends DockManagerImpl {
     }
 
     @VisibleForTesting
-    static final class GetFanInformationCallback implements WirelessCharger.GetFanInformationCallback {
+    static final class GetFanInformationCallback
+            implements WirelessCharger.GetFanInformationCallback {
         private final byte mFanId;
         private final ResultReceiver mResultReceiver;
 
@@ -755,7 +830,22 @@ public class DockObserver extends DockManagerImpl {
             }
             if (i == 0) {
                 if (DockObserver.DEBUG) {
-                    Log.d("DLObserver", "Callback of command=0, i=" + bundle.getByte("fan_id", (byte) -1) + ", m=" + bundle.getByte("fan_mode", (byte) -1) + ", cr=" + bundle.getInt("fan_current_rpm", -1) + ", mir=" + bundle.getInt("fan_min_rpm", -1) + ", mxr=" + bundle.getInt("fan_max_rpm", -1) + ", t=" + bundle.getByte("fan_type", (byte) -1) + ", c=" + bundle.getByte("fan_count", (byte) -1));
+                    Log.d(
+                            "DLObserver",
+                            "Callback of command=0, i="
+                                    + bundle.getByte("fan_id", (byte) -1)
+                                    + ", m="
+                                    + bundle.getByte("fan_mode", (byte) -1)
+                                    + ", cr="
+                                    + bundle.getInt("fan_current_rpm", -1)
+                                    + ", mir="
+                                    + bundle.getInt("fan_min_rpm", -1)
+                                    + ", mxr="
+                                    + bundle.getInt("fan_max_rpm", -1)
+                                    + ", t="
+                                    + bundle.getByte("fan_type", (byte) -1)
+                                    + ", c="
+                                    + bundle.getByte("fan_count", (byte) -1));
                 }
                 mResultReceiver.send(0, bundle);
                 return;
@@ -766,13 +856,19 @@ public class DockObserver extends DockManagerImpl {
 
     @VisibleForTesting
     static final class SetFanCallback implements WirelessCharger.SetFanCallback {
-        SetFanCallback() {
-        }
+        SetFanCallback() {}
 
         @Override
         public void onCallback(int i, Bundle bundle) {
             if (DockObserver.DEBUG) {
-                Log.d("DLObserver", "Callback of command=1, i=" + bundle.getByte("fan_id", (byte) -1) + ", m=" + bundle.getByte("fan_mode", (byte) -1) + ", cr=" + bundle.getInt("fan_current_rpm", -1));
+                Log.d(
+                        "DLObserver",
+                        "Callback of command=1, i="
+                                + bundle.getByte("fan_id", (byte) -1)
+                                + ", m="
+                                + bundle.getByte("fan_mode", (byte) -1)
+                                + ", cr="
+                                + bundle.getInt("fan_current_rpm", -1));
             }
         }
     }
@@ -844,7 +940,8 @@ public class DockObserver extends DockManagerImpl {
                 return;
             }
             byte b = mFanId;
-            mWirelessCharger.getFanSimpleInformation(b, new GetFanSimpleInformationCallback(b, mResultReceiver));
+            mWirelessCharger.getFanSimpleInformation(
+                    b, new GetFanSimpleInformationCallback(b, mResultReceiver));
         }
     }
 
@@ -863,7 +960,8 @@ public class DockObserver extends DockManagerImpl {
                 return;
             }
             byte b = mFanId;
-            mWirelessCharger.getFanInformation(b, new GetFanInformationCallback(b, mResultReceiver));
+            mWirelessCharger.getFanInformation(
+                    b, new GetFanInformationCallback(b, mResultReceiver));
         }
     }
 
@@ -903,7 +1001,8 @@ public class DockObserver extends DockManagerImpl {
             if (mWirelessCharger == null) {
                 return;
             }
-            mWirelessCharger.challenge(dockId, challengeData, new ChallengeCallback(resultReceiver));
+            mWirelessCharger.challenge(
+                    dockId, challengeData, new ChallengeCallback(resultReceiver));
         }
     }
 
@@ -921,7 +1020,8 @@ public class DockObserver extends DockManagerImpl {
             if (mWirelessCharger == null) {
                 return;
             }
-            mWirelessCharger.getWpcAuthDigests(mSlotMask, new GetWpcAuthDigestsCallback(mResultReceiver));
+            mWirelessCharger.getWpcAuthDigests(
+                    mSlotMask, new GetWpcAuthDigestsCallback(mResultReceiver));
         }
     }
 
@@ -943,7 +1043,8 @@ public class DockObserver extends DockManagerImpl {
             if (mWirelessCharger == null) {
                 return;
             }
-            mWirelessCharger.getWpcAuthCertificate(mSlotNum, mOffset, mLength, new GetWpcAuthCertificateCallback(mResultReceiver));
+            mWirelessCharger.getWpcAuthCertificate(
+                    mSlotNum, mOffset, mLength, new GetWpcAuthCertificateCallback(mResultReceiver));
         }
     }
 
@@ -963,7 +1064,8 @@ public class DockObserver extends DockManagerImpl {
             if (mWirelessCharger == null) {
                 return;
             }
-            mWirelessCharger.getWpcAuthChallengeResponse(mSlotNum, mWpcNonce, new GetWpcAuthChallengeResponseCallback(mResultReceiver));
+            mWirelessCharger.getWpcAuthChallengeResponse(
+                    mSlotNum, mWpcNonce, new GetWpcAuthChallengeResponseCallback(mResultReceiver));
         }
     }
 
@@ -983,12 +1085,15 @@ public class DockObserver extends DockManagerImpl {
             if (mWirelessCharger == null) {
                 return;
             }
-            mWirelessCharger.setFeatures(mChargerId, mFeature, new WirelessCharger.SetFeaturesCallback() {
-                @Override
-                public void onCallback(int i) {
-                    mResultReceiver.send(i, null);
-                }
-            });
+            mWirelessCharger.setFeatures(
+                    mChargerId,
+                    mFeature,
+                    new WirelessCharger.SetFeaturesCallback() {
+                        @Override
+                        public void onCallback(int i) {
+                            mResultReceiver.send(i, null);
+                        }
+                    });
         }
     }
 
@@ -1019,8 +1124,7 @@ public class DockObserver extends DockManagerImpl {
         }
 
         @Override
-        public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
-        }
+        public void onServiceConnected(ComponentName componentName, IBinder iBinder) {}
 
         @Override
         public void onServiceDisconnected(ComponentName componentName) {
@@ -1045,7 +1149,18 @@ public class DockObserver extends DockManagerImpl {
         @Override
         public void onCallback(boolean z, byte b, byte b2, boolean z2, int i) {
             if (DockObserver.DEBUG) {
-                Log.i("DLObserver", "isDockPresent() docked: " + z + ", id: " + i + ", type: " + ((int) b) + ", orientation: " + ((int) b2) + ", support GetInfo: " + z2);
+                Log.i(
+                        "DLObserver",
+                        "isDockPresent() docked: "
+                                + z
+                                + ", id: "
+                                + i
+                                + ", type: "
+                                + ((int) b)
+                                + ", orientation: "
+                                + ((int) b2)
+                                + ", support GetInfo: "
+                                + z2);
             }
             if (z) {
                 addInterruptionSuppressor();
@@ -1144,7 +1259,14 @@ public class DockObserver extends DockManagerImpl {
             }
             if (i == 0) {
                 if (DockObserver.DEBUG) {
-                    Log.d("DLObserver", "GWAD() response: pm=" + ((int) b) + ", rm=" + ((int) b2) + ", d=" + arrayList);
+                    Log.d(
+                            "DLObserver",
+                            "GWAD() response: pm="
+                                    + ((int) b)
+                                    + ", rm="
+                                    + ((int) b2)
+                                    + ", d="
+                                    + arrayList);
                 }
                 mResultReceiver.send(0, createWpcAuthDigestsResponseBundle(b, b2, arrayList));
                 return;
@@ -1154,7 +1276,8 @@ public class DockObserver extends DockManagerImpl {
     }
 
     @VisibleForTesting
-    final class GetWpcAuthCertificateCallback implements WirelessCharger.GetWpcAuthCertificateCallback {
+    final class GetWpcAuthCertificateCallback
+            implements WirelessCharger.GetWpcAuthCertificateCallback {
         private final ResultReceiver mResultReceiver;
 
         GetWpcAuthCertificateCallback(ResultReceiver resultReceiver) {
@@ -1178,7 +1301,8 @@ public class DockObserver extends DockManagerImpl {
     }
 
     @VisibleForTesting
-    final class GetWpcAuthChallengeResponseCallback implements WirelessCharger.GetWpcAuthChallengeResponseCallback {
+    final class GetWpcAuthChallengeResponseCallback
+            implements WirelessCharger.GetWpcAuthChallengeResponseCallback {
         private final ResultReceiver mResultReceiver;
 
         GetWpcAuthChallengeResponseCallback(ResultReceiver resultReceiver) {
@@ -1186,15 +1310,33 @@ public class DockObserver extends DockManagerImpl {
         }
 
         @Override
-        public void onCallback(int i, byte b, byte b2, byte b3, ArrayList<Byte> arrayList, ArrayList<Byte> arrayList2) {
+        public void onCallback(
+                int i,
+                byte b,
+                byte b2,
+                byte b3,
+                ArrayList<Byte> arrayList,
+                ArrayList<Byte> arrayList2) {
             if (DockObserver.DEBUG) {
                 Log.d("DLObserver", "GWACR() result: " + i);
             }
             if (i == 0) {
                 if (DockObserver.DEBUG) {
-                    Log.d("DLObserver", "GWACR() response: mpv=" + ((int) b) + ", pm=" + ((int) b2) + ", chl=" + ((int) b3) + ", rv=" + arrayList + ", sv=" + arrayList2);
+                    Log.d(
+                            "DLObserver",
+                            "GWACR() response: mpv="
+                                    + ((int) b)
+                                    + ", pm="
+                                    + ((int) b2)
+                                    + ", chl="
+                                    + ((int) b3)
+                                    + ", rv="
+                                    + arrayList
+                                    + ", sv="
+                                    + arrayList2);
                 }
-                mResultReceiver.send(0, createWpcAuthChallengeResponseBundle(b, b2, b3, arrayList, arrayList2));
+                mResultReceiver.send(
+                        0, createWpcAuthChallengeResponseBundle(b, b2, b3, arrayList, arrayList2));
                 return;
             }
             mResultReceiver.send(1, null);
@@ -1229,8 +1371,7 @@ public class DockObserver extends DockManagerImpl {
     class DreamlinerBroadcastReceiver extends BroadcastReceiver {
         private boolean mListening;
 
-        DreamlinerBroadcastReceiver() {
-        }
+        DreamlinerBroadcastReceiver() {}
 
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -1249,7 +1390,8 @@ public class DockObserver extends DockManagerImpl {
                     setFan(intent);
                     return;
                 case DockObserver.ACTION_GET_DOCK_INFO:
-                    ResultReceiver resultReceiver = intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER");
+                    ResultReceiver resultReceiver =
+                            intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER");
                     if (resultReceiver == null) {
                         return;
                     }
@@ -1275,15 +1417,18 @@ public class DockObserver extends DockManagerImpl {
                     getWpcAuthDigests(intent);
                     return;
                 case "com.google.android.systemui.dreamliner.paired":
-                    if (assertNotNull(mDockGestureController, DockGestureController.class.getSimpleName())) {
-                        mDockGestureController.setTapAction((PendingIntent) intent.getParcelableExtra("single_tap_action"));
+                    if (assertNotNull(
+                            mDockGestureController, DockGestureController.class.getSimpleName())) {
+                        mDockGestureController.setTapAction(
+                                (PendingIntent) intent.getParcelableExtra("single_tap_action"));
                     }
                     break;
                 case "com.google.android.systemui.dreamliner.resume":
                     break;
                 case "com.google.android.systemui.dreamliner.undock":
                     onDockStateChanged(0);
-                    if (!assertNotNull(mDockGestureController, DockGestureController.class.getSimpleName())) {
+                    if (!assertNotNull(
+                            mDockGestureController, DockGestureController.class.getSimpleName())) {
                         return;
                     }
                     mDockGestureController.stopMonitoring();
@@ -1293,7 +1438,8 @@ public class DockObserver extends DockManagerImpl {
                     return;
                 case "com.google.android.systemui.dreamliner.pause":
                     onDockStateChanged(2);
-                    if (!assertNotNull(mDockGestureController, DockGestureController.class.getSimpleName())) {
+                    if (!assertNotNull(
+                            mDockGestureController, DockGestureController.class.getSimpleName())) {
                         return;
                     }
                     mDockGestureController.stopMonitoring();
@@ -1307,7 +1453,8 @@ public class DockObserver extends DockManagerImpl {
                     if (dockIndicationController == null) {
                         return;
                     }
-                    dockIndicationController.setShowing(intent.getBooleanExtra(DockObserver.KEY_SHOWING, false));
+                    dockIndicationController.setShowing(
+                            intent.getBooleanExtra(DockObserver.KEY_SHOWING, false));
                     return;
                 case "com.google.android.systemui.dreamliner.ACTION_GET_WPC_CERTIFICATE":
                     getWpcAuthCertificate(intent);
@@ -1324,7 +1471,8 @@ public class DockObserver extends DockManagerImpl {
                     return;
             }
             onDockStateChanged(1);
-            if (!assertNotNull(mDockGestureController, DockGestureController.class.getSimpleName())) {
+            if (!assertNotNull(
+                    mDockGestureController, DockGestureController.class.getSimpleName())) {
                 return;
             }
             mDockGestureController.startMonitoring();
@@ -1332,27 +1480,44 @@ public class DockObserver extends DockManagerImpl {
 
         private void getFanSimpleInformation(Intent intent) {
             if (DockObserver.DEBUG) {
-                Log.d("DLObserver", "command=3, i=" + ((int) intent.getByteExtra("fan_id", (byte) -1)));
+                Log.d(
+                        "DLObserver",
+                        "command=3, i=" + ((int) intent.getByteExtra("fan_id", (byte) -1)));
             }
-            ResultReceiver resultReceiver = intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER");
+            ResultReceiver resultReceiver =
+                    intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER");
             if (resultReceiver != null) {
-                DockObserver.runOnBackgroundThread(new GetFanSimpleInformation(intent.getByteExtra("fan_id", (byte) 0), resultReceiver));
+                DockObserver.runOnBackgroundThread(
+                        new GetFanSimpleInformation(
+                                intent.getByteExtra("fan_id", (byte) 0), resultReceiver));
             }
         }
 
         private void getFanInformation(Intent intent) {
             if (DockObserver.DEBUG) {
-                Log.d("DLObserver", "command=0, i=" + ((int) intent.getByteExtra("fan_id", (byte) -1)));
+                Log.d(
+                        "DLObserver",
+                        "command=0, i=" + ((int) intent.getByteExtra("fan_id", (byte) -1)));
             }
-            ResultReceiver resultReceiver = intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER");
+            ResultReceiver resultReceiver =
+                    intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER");
             if (resultReceiver != null) {
-                DockObserver.runOnBackgroundThread(new GetFanInformation(intent.getByteExtra("fan_id", (byte) 0), resultReceiver));
+                DockObserver.runOnBackgroundThread(
+                        new GetFanInformation(
+                                intent.getByteExtra("fan_id", (byte) 0), resultReceiver));
             }
         }
 
         private void setFan(Intent intent) {
             if (DockObserver.DEBUG) {
-                Log.d("DLObserver", "command=1, i=" + ((int) intent.getByteExtra("fan_id", (byte) -1)) + ", m=" + ((int) intent.getByteExtra("fan_mode", (byte) -1)) + ", r=" + intent.getIntExtra("fan_rpm", -1));
+                Log.d(
+                        "DLObserver",
+                        "command=1, i="
+                                + ((int) intent.getByteExtra("fan_id", (byte) -1))
+                                + ", m="
+                                + ((int) intent.getByteExtra("fan_mode", (byte) -1))
+                                + ", r="
+                                + intent.getIntExtra("fan_rpm", -1));
             }
             byte byteExtra = intent.getByteExtra("fan_id", (byte) 0);
             byte byteExtra2 = intent.getByteExtra("fan_mode", (byte) 0);
@@ -1369,10 +1534,12 @@ public class DockObserver extends DockManagerImpl {
             if (DockObserver.DEBUG) {
                 Log.d("DLObserver", "gWAD, mask=" + ((int) byteExtra));
             }
-            ResultReceiver resultReceiver = intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER");
+            ResultReceiver resultReceiver =
+                    intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER");
             if (resultReceiver != null) {
                 if (byteExtra != -1) {
-                    DockObserver.runOnBackgroundThread(new GetWpcAuthDigests(resultReceiver, byteExtra));
+                    DockObserver.runOnBackgroundThread(
+                            new GetWpcAuthDigests(resultReceiver, byteExtra));
                 } else {
                     resultReceiver.send(1, null);
                 }
@@ -1384,12 +1551,22 @@ public class DockObserver extends DockManagerImpl {
             short shortExtra = intent.getShortExtra("cert_offset", (short) -1);
             short shortExtra2 = intent.getShortExtra("cert_length", (short) -1);
             if (DockObserver.DEBUG) {
-                Log.d("DLObserver", "gWAC, num=" + ((int) byteExtra) + ", offset=" + ((int) shortExtra) + ", length=" + ((int) shortExtra2));
+                Log.d(
+                        "DLObserver",
+                        "gWAC, num="
+                                + ((int) byteExtra)
+                                + ", offset="
+                                + ((int) shortExtra)
+                                + ", length="
+                                + ((int) shortExtra2));
             }
-            ResultReceiver resultReceiver = intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER");
+            ResultReceiver resultReceiver =
+                    intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER");
             if (resultReceiver != null) {
                 if (byteExtra != -1 && shortExtra != -1 && shortExtra2 != -1) {
-                    DockObserver.runOnBackgroundThread(new GetWpcAuthCertificate(resultReceiver, byteExtra, shortExtra, shortExtra2));
+                    DockObserver.runOnBackgroundThread(
+                            new GetWpcAuthCertificate(
+                                    resultReceiver, byteExtra, shortExtra, shortExtra2));
                 } else {
                     resultReceiver.send(1, null);
                 }
@@ -1401,11 +1578,14 @@ public class DockObserver extends DockManagerImpl {
             if (DockObserver.DEBUG) {
                 Log.d("DLObserver", "gWACR, num=" + ((int) byteExtra));
             }
-            ResultReceiver resultReceiver = intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER");
+            ResultReceiver resultReceiver =
+                    intent.getParcelableExtra("android.intent.extra.RESULT_RECEIVER");
             if (resultReceiver != null) {
                 byte[] byteArrayExtra = intent.getByteArrayExtra("wpc_nonce");
                 if (byteArrayExtra != null && byteArrayExtra.length > 0) {
-                    DockObserver.runOnBackgroundThread(new GetWpcAuthChallengeResponse(resultReceiver, byteExtra, byteArrayExtra));
+                    DockObserver.runOnBackgroundThread(
+                            new GetWpcAuthChallengeResponse(
+                                    resultReceiver, byteExtra, byteArrayExtra));
                 } else {
                     resultReceiver.send(1, null);
                 }
@@ -1428,18 +1608,27 @@ public class DockObserver extends DockManagerImpl {
             intentFilter.addAction("com.google.android.systemui.dreamliner.photo");
             intentFilter.addAction("com.google.android.systemui.dreamliner.photo_error");
             intentFilter.addAction("com.google.android.systemui.dreamliner.ACTION_GET_FAN_INFO");
-            intentFilter.addAction("com.google.android.systemui.dreamliner.ACTION_GET_FAN_SIMPLE_INFO");
+            intentFilter.addAction(
+                    "com.google.android.systemui.dreamliner.ACTION_GET_FAN_SIMPLE_INFO");
             intentFilter.addAction("com.google.android.systemui.dreamliner.ACTION_SET_FAN");
             intentFilter.addAction("com.google.android.systemui.dreamliner.ACTION_GET_FAN_LEVEL");
             intentFilter.addAction("com.google.android.systemui.dreamliner.ACTION_GET_WPC_DIGESTS");
-            intentFilter.addAction("com.google.android.systemui.dreamliner.ACTION_GET_WPC_CERTIFICATE");
-            intentFilter.addAction("com.google.android.systemui.dreamliner.ACTION_GET_WPC_CHALLENGE_RESPONSE");
+            intentFilter.addAction(
+                    "com.google.android.systemui.dreamliner.ACTION_GET_WPC_CERTIFICATE");
+            intentFilter.addAction(
+                    "com.google.android.systemui.dreamliner.ACTION_GET_WPC_CHALLENGE_RESPONSE");
             return intentFilter;
         }
 
         public void registerReceiver(Context context) {
             if (!mListening) {
-                context.registerReceiverAsUser(this, UserHandle.ALL, getIntentFilter(), DockObserver.PERMISSION_WIRELESS_CHARGER_STATUS, null, 2);
+                context.registerReceiverAsUser(
+                        this,
+                        UserHandle.ALL,
+                        getIntentFilter(),
+                        DockObserver.PERMISSION_WIRELESS_CHARGER_STATUS,
+                        null,
+                        2);
                 mListening = true;
             }
         }

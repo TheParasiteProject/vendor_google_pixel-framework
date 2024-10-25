@@ -30,8 +30,6 @@ import android.graphics.drawable.DrawableWrapper;
 import android.media.MediaMetadata;
 import android.os.Handler;
 import android.os.Looper;
-import android.os.PowerManager;
-import android.os.SystemClock;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -40,32 +38,33 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintSet;
-import com.android.app.animation.Interpolators;
-import com.android.keyguard.KeyguardUpdateMonitor;
 
-import com.android.internal.util.ArrayUtils;
+import com.android.app.animation.Interpolators;
 import com.android.internal.annotations.VisibleForTesting;
+import com.android.internal.util.ArrayUtils;
 import com.android.systemui.AutoReinflateContainer;
 import com.android.systemui.Dependency;
 import com.android.systemui.doze.DozeReceiver;
 import com.android.systemui.plugins.statusbar.StatusBarStateController;
+import com.android.systemui.res.R;
 import com.android.systemui.shade.NotificationPanelViewController;
 import com.android.systemui.shade.ShadeViewController;
 import com.android.systemui.statusbar.NotificationMediaManager;
 import com.android.systemui.statusbar.phone.CentralSurfaces;
-import com.android.systemui.statusbar.phone.CentralSurfacesImpl;
 import com.android.systemui.util.wakelock.DelayedWakeLock;
 import com.android.systemui.util.wakelock.WakeLock;
-
-import com.android.systemui.res.R;
 
 import java.util.Objects;
 
 import javax.inject.Inject;
 
-public class AmbientIndicationContainer extends AutoReinflateContainer implements DozeReceiver, StatusBarStateController.StateListener, NotificationMediaManager.MediaListener {
+public class AmbientIndicationContainer extends AutoReinflateContainer
+        implements DozeReceiver,
+                StatusBarStateController.StateListener,
+                NotificationMediaManager.MediaListener {
     public Drawable mAmbientIconOverride;
     public ConstraintLayout mAmbientIndicationContainer;
     public int mAmbientIndicationIconSize;
@@ -119,39 +118,50 @@ public class AmbientIndicationContainer extends AutoReinflateContainer implement
         mCentralSurfaces = centralSurfaces;
         mDelayedWakeLockFactory = delayedWakeLockFactory;
         mWakeLock = createWakeLock();
-        addInflateListener(new AutoReinflateContainer.InflateListener() {
-          @Override
-            public void onInflated(View view) {
-                mTextView = (TextView) findViewById(R.id.ambient_indication_text);
-                mIconView = (ImageView) findViewById(R.id.ambient_indication_icon);
-                if (mTextView == null || mIconView == null || mContext == null) {
-                    return;
-                }
-                mAmbientIndicationContainer = (ConstraintLayout) findViewById(R.id.ambient_indication);
-                ConstraintSet constraintSet = new ConstraintSet();
-                int[] udfpsProps = context.getResources().getIntArray(
-                        com.android.internal.R.array.config_udfps_sensor_props);
-                if (!ArrayUtils.isEmpty(udfpsProps)) {
-                    constraintSet.load(context, R.xml.ambient_indication_inner_downwards);
-                } else {
-                    constraintSet.load(context, R.xml.ambient_indication_inner_upwards);
-                }
-                constraintSet.applyTo(mAmbientIndicationContainer);
-                mAmbientMusicAnimation = null;
-                mAmbientMusicNoteIcon = null;
-                mReverseChargingAnimation = null;
-                mTextColor = mTextView.getCurrentTextColor();
-                mAmbientIndicationIconSize = getResources().getDimensionPixelSize(R.dimen.ambient_indication_icon_size);
-                mAmbientMusicNoteIconIconSize = getResources().getDimensionPixelSize(R.dimen.ambient_indication_note_icon_size);
-                mTextView.setEnabled(!mDozing);
-                updateColors();
-                updatePill();
-                mTextView.setOnClickListener((v) -> onTextClick());
-                mIconView.setOnClickListener((v) -> onIconClick());
-                mInflated = true;
-            }
-       });
-       addOnLayoutChangeListener(
+        addInflateListener(
+                new AutoReinflateContainer.InflateListener() {
+                    @Override
+                    public void onInflated(View view) {
+                        mTextView = (TextView) findViewById(R.id.ambient_indication_text);
+                        mIconView = (ImageView) findViewById(R.id.ambient_indication_icon);
+                        if (mTextView == null || mIconView == null || mContext == null) {
+                            return;
+                        }
+                        mAmbientIndicationContainer =
+                                (ConstraintLayout) findViewById(R.id.ambient_indication);
+                        ConstraintSet constraintSet = new ConstraintSet();
+                        int[] udfpsProps =
+                                context.getResources()
+                                        .getIntArray(
+                                                com.android.internal.R.array
+                                                        .config_udfps_sensor_props);
+                        if (!ArrayUtils.isEmpty(udfpsProps)) {
+                            constraintSet.load(context, R.xml.ambient_indication_inner_downwards);
+                        } else {
+                            constraintSet.load(context, R.xml.ambient_indication_inner_upwards);
+                        }
+                        constraintSet.applyTo(mAmbientIndicationContainer);
+                        mAmbientMusicAnimation = null;
+                        mAmbientMusicNoteIcon = null;
+                        mReverseChargingAnimation = null;
+                        mTextColor = mTextView.getCurrentTextColor();
+                        mAmbientIndicationIconSize =
+                                getResources()
+                                        .getDimensionPixelSize(
+                                                R.dimen.ambient_indication_icon_size);
+                        mAmbientMusicNoteIconIconSize =
+                                getResources()
+                                        .getDimensionPixelSize(
+                                                R.dimen.ambient_indication_note_icon_size);
+                        mTextView.setEnabled(!mDozing);
+                        updateColors();
+                        updatePill();
+                        mTextView.setOnClickListener((v) -> onTextClick());
+                        mIconView.setOnClickListener((v) -> onIconClick());
+                        mInflated = true;
+                    }
+                });
+        addOnLayoutChangeListener(
                 (v, left, top, right, bottom, oldLeft, oldTop, oldRight, oldBottom) -> {
                     updateBottomSpacing();
                 });
@@ -176,8 +186,10 @@ public class AmbientIndicationContainer extends AutoReinflateContainer implement
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        ((StatusBarStateController) Dependency.get(StatusBarStateController.class)).addCallback(this);
-        ((NotificationMediaManager) Dependency.get(NotificationMediaManager.class)).addCallback(this);
+        ((StatusBarStateController) Dependency.get(StatusBarStateController.class))
+                .addCallback(this);
+        ((NotificationMediaManager) Dependency.get(NotificationMediaManager.class))
+                .addCallback(this);
     }
 
     @Override
@@ -189,8 +201,10 @@ public class AmbientIndicationContainer extends AutoReinflateContainer implement
     @Override
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        ((StatusBarStateController) Dependency.get(StatusBarStateController.class)).removeCallback(this);
-        ((NotificationMediaManager) Dependency.get(NotificationMediaManager.class)).removeCallback(this);
+        ((StatusBarStateController) Dependency.get(StatusBarStateController.class))
+                .removeCallback(this);
+        ((NotificationMediaManager) Dependency.get(NotificationMediaManager.class))
+                .removeCallback(this);
         mMediaPlaybackState = 0;
     }
 
@@ -253,9 +267,20 @@ public class AmbientIndicationContainer extends AutoReinflateContainer implement
         onTextClick();
     }
 
-    public void setAmbientMusic(CharSequence charSequence, PendingIntent pendingIntent, PendingIntent pendingIntent2, int i, boolean z, String str) {
+    public void setAmbientMusic(
+            CharSequence charSequence,
+            PendingIntent pendingIntent,
+            PendingIntent pendingIntent2,
+            int i,
+            boolean z,
+            String str) {
         Drawable drawable;
-        if (Objects.equals(mAmbientMusicText, charSequence) && Objects.equals(mOpenIntent, pendingIntent) && Objects.equals(mFavoritingIntent, pendingIntent2) && mIconOverride == i && Objects.equals(mIconDescription, str) && mAmbientSkipUnlock == z) {
+        if (Objects.equals(mAmbientMusicText, charSequence)
+                && Objects.equals(mOpenIntent, pendingIntent)
+                && Objects.equals(mFavoritingIntent, pendingIntent2)
+                && mIconOverride == i
+                && Objects.equals(mIconDescription, str)
+                && mAmbientSkipUnlock == z) {
             return;
         }
         mAmbientMusicText = charSequence;
@@ -300,7 +325,8 @@ public class AmbientIndicationContainer extends AutoReinflateContainer implement
         if (!mInflated) {
             return;
         }
-        int dimensionPixelSize = getResources().getDimensionPixelSize(R.dimen.ambient_indication_margin_bottom);
+        int dimensionPixelSize =
+                getResources().getDimensionPixelSize(R.dimen.ambient_indication_margin_bottom);
         if (mBottomMarginPx != dimensionPixelSize) {
             mBottomMarginPx = dimensionPixelSize;
             ((FrameLayout.LayoutParams) getLayoutParams()).bottomMargin = mBottomMarginPx;
@@ -311,11 +337,18 @@ public class AmbientIndicationContainer extends AutoReinflateContainer implement
         } else {
             z = false;
         }
-        ShadeViewController shadeViewController = mCentralSurfaces.getNotificationPanelViewController();
+        ShadeViewController shadeViewController =
+                mCentralSurfaces.getNotificationPanelViewController();
         int top = getTop();
-        NotificationPanelViewController notificationPanelViewController = (NotificationPanelViewController) shadeViewController;
+        NotificationPanelViewController notificationPanelViewController =
+                (NotificationPanelViewController) shadeViewController;
         if (z) {
-            i = notificationPanelViewController.getScrollerLayoutController().getNotificationStackScrollLayoutView().getBottom() - top;
+            i =
+                    notificationPanelViewController
+                                    .getScrollerLayoutController()
+                                    .getNotificationStackScrollLayoutView()
+                                    .getBottom()
+                            - top;
         }
         if (notificationPanelViewController.getAmbientIndicationBottomPadding() != i) {
             notificationPanelViewController.setAmbientIndicationBottomPadding(i);
@@ -337,22 +370,25 @@ public class AmbientIndicationContainer extends AutoReinflateContainer implement
         mTextColorAnimator = ValueAnimator.ofArgb(defaultColor, i);
         mTextColorAnimator.setInterpolator(Interpolators.LINEAR_OUT_SLOW_IN);
         mTextColorAnimator.setDuration(500L);
-        mTextColorAnimator.addUpdateListener(valueAnimator -> {
-            int intValue = (Integer) valueAnimator.getAnimatedValue();
-            mTextView.setTextColor(intValue);
-            mIconView.setImageTintList(ColorStateList.valueOf(intValue));
-        });
-        mTextColorAnimator.addListener(new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationEnd(Animator animator) {
-                mTextColorAnimator = null;
-            }
-        });
+        mTextColorAnimator.addUpdateListener(
+                valueAnimator -> {
+                    int intValue = (Integer) valueAnimator.getAnimatedValue();
+                    mTextView.setTextColor(intValue);
+                    mIconView.setImageTintList(ColorStateList.valueOf(intValue));
+                });
+        mTextColorAnimator.addListener(
+                new AnimatorListenerAdapter() {
+                    @Override
+                    public void onAnimationEnd(Animator animator) {
+                        mTextColorAnimator = null;
+                    }
+                });
         mTextColorAnimator.start();
     }
 
     public void setWirelessChargingMessage(CharSequence charSequence) {
-        if (!Objects.equals(mWirelessChargingMessage, charSequence) || mReverseChargingMessage != null) {
+        if (!Objects.equals(mWirelessChargingMessage, charSequence)
+                || mReverseChargingMessage != null) {
             mWirelessChargingMessage = charSequence;
             mReverseChargingMessage = null;
             updatePill();
@@ -360,7 +396,8 @@ public class AmbientIndicationContainer extends AutoReinflateContainer implement
     }
 
     public void setReverseChargingMessage(CharSequence charSequence) {
-        if (!Objects.equals(mReverseChargingMessage, charSequence) || mWirelessChargingMessage != null) {
+        if (!Objects.equals(mReverseChargingMessage, charSequence)
+                || mWirelessChargingMessage != null) {
             mWirelessChargingMessage = null;
             mReverseChargingMessage = charSequence;
             updatePill();
@@ -440,7 +477,8 @@ public class AmbientIndicationContainer extends AutoReinflateContainer implement
             mIconView.setClickable(false);
             z2 = false;
             charSequence = null;
-        } else if ((!TextUtils.isEmpty(charSequence2) || z2) && (drawable3 = mAmbientIconOverride) == null) {
+        } else if ((!TextUtils.isEmpty(charSequence2) || z2)
+                && (drawable3 = mAmbientIconOverride) == null) {
             if (z) {
                 if (mAmbientMusicNoteIcon == null) {
                     mAmbientMusicNoteIcon = mContext.getDrawable(R.drawable.ic_music_note);
@@ -466,27 +504,36 @@ public class AmbientIndicationContainer extends AutoReinflateContainer implement
                 i2 = mAmbientIndicationIconSize;
             }
             MathUtils.fitRect(rect, i2);
-            drawable2 = new DrawableWrapper(drawable3) { 
-                @Override
-                public final int getIntrinsicHeight() {
-                    return mIconBounds.height();
-                }
+            drawable2 =
+                    new DrawableWrapper(drawable3) {
+                        @Override
+                        public final int getIntrinsicHeight() {
+                            return mIconBounds.height();
+                        }
 
-                @Override
-                public final int getIntrinsicWidth() {
-                    return mIconBounds.width();
-                }
-            };
+                        @Override
+                        public final int getIntrinsicWidth() {
+                            return mIconBounds.width();
+                        }
+                    };
             if (!TextUtils.isEmpty(charSequence2)) {
                 i3 = (int) (getResources().getDisplayMetrics().density * 24.0f);
             } else {
                 i3 = 0;
             }
             TextView textView4 = mTextView;
-            textView4.setPaddingRelative(textView4.getPaddingStart(), mTextView.getPaddingTop(), i3, mTextView.getPaddingBottom());
+            textView4.setPaddingRelative(
+                    textView4.getPaddingStart(),
+                    mTextView.getPaddingTop(),
+                    i3,
+                    mTextView.getPaddingBottom());
         } else {
             TextView textView5 = mTextView;
-            textView5.setPaddingRelative(textView5.getPaddingStart(), mTextView.getPaddingTop(), 0, mTextView.getPaddingBottom());
+            textView5.setPaddingRelative(
+                    textView5.getPaddingStart(),
+                    mTextView.getPaddingTop(),
+                    0,
+                    mTextView.getPaddingBottom());
             drawable2 = drawable3;
         }
         mIconView.setImageDrawable(drawable2);
@@ -514,13 +561,22 @@ public class AmbientIndicationContainer extends AutoReinflateContainer implement
                 }
                 mTextView.setTranslationY(mTextView.getHeight() / 2);
                 mTextView.setAlpha(0.0f);
-                mTextView.animate().alpha(1.0f).translationY(0.0f).setStartDelay(150L).setDuration(100L).setListener(new AnimatorListenerAdapter() {
-                    @Override
-                    public void onAnimationEnd(Animator animator) {
-                        mWakeLock.release("AmbientIndication");
-                        mTextView.animate().setListener(null);
-                    }
-                }).setInterpolator(Interpolators.DECELERATE_QUINT).start();
+                mTextView
+                        .animate()
+                        .alpha(1.0f)
+                        .translationY(0.0f)
+                        .setStartDelay(150L)
+                        .setDuration(100L)
+                        .setListener(
+                                new AnimatorListenerAdapter() {
+                                    @Override
+                                    public void onAnimationEnd(Animator animator) {
+                                        mWakeLock.release("AmbientIndication");
+                                        mTextView.animate().setListener(null);
+                                    }
+                                })
+                        .setInterpolator(Interpolators.DECELERATE_QUINT)
+                        .start();
             } else if (i4 != mIndicationTextMode) {
                 if (drawable3 != null && (drawable3 instanceof AnimatedVectorDrawable)) {
                     mWakeLock.acquire("AmbientIndication");

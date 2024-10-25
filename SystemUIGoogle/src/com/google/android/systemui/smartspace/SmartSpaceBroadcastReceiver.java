@@ -23,8 +23,10 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.UserHandle;
 import android.util.Log;
+
 import com.android.systemui.broadcast.BroadcastSender;
 import com.android.systemui.smartspace.nano.SmartspaceProto;
+
 import com.google.protobuf.nano.InvalidProtocolBufferNanoException;
 import com.google.protobuf.nano.MessageNano;
 
@@ -32,7 +34,8 @@ public class SmartSpaceBroadcastReceiver extends BroadcastReceiver {
     public final BroadcastSender mBroadcastSender;
     public final SmartSpaceController mController;
 
-    public SmartSpaceBroadcastReceiver(SmartSpaceController smartSpaceController, BroadcastSender broadcastSender) {
+    public SmartSpaceBroadcastReceiver(
+            SmartSpaceController smartSpaceController, BroadcastSender broadcastSender) {
         this.mController = smartSpaceController;
         this.mBroadcastSender = broadcastSender;
     }
@@ -56,17 +59,23 @@ public class SmartSpaceBroadcastReceiver extends BroadcastReceiver {
         if (!intent.hasExtra("uid")) {
             intent.putExtra("uid", myUserId);
         }
-        byte[] byteArrayExtra = intent.getByteArrayExtra("com.google.android.apps.nexuslauncher.extra.SMARTSPACE_CARD");
+        byte[] byteArrayExtra =
+                intent.getByteArrayExtra(
+                        "com.google.android.apps.nexuslauncher.extra.SMARTSPACE_CARD");
         if (byteArrayExtra != null) {
-            SmartspaceProto.SmartspaceUpdate smartspaceUpdate = new SmartspaceProto.SmartspaceUpdate();
+            SmartspaceProto.SmartspaceUpdate smartspaceUpdate =
+                    new SmartspaceProto.SmartspaceUpdate();
             try {
                 MessageNano.mergeFrom(smartspaceUpdate, byteArrayExtra);
-                for (SmartspaceProto.SmartspaceUpdate.SmartspaceCard smartspaceCard : smartspaceUpdate.card) {
+                for (SmartspaceProto.SmartspaceUpdate.SmartspaceCard smartspaceCard :
+                        smartspaceUpdate.card) {
                     int i = smartspaceCard.cardPriority;
                     boolean z = i == 1;
                     boolean z2 = i == 2;
                     if (!z && !z2) {
-                        Log.w("SmartSpaceReceiver", "unrecognized card priority: " + smartspaceCard.cardPriority);
+                        Log.w(
+                                "SmartSpaceReceiver",
+                                "unrecognized card priority: " + smartspaceCard.cardPriority);
                     }
                     notify(smartspaceCard, context, intent, z);
                 }
@@ -79,15 +88,24 @@ public class SmartSpaceBroadcastReceiver extends BroadcastReceiver {
         Log.e("SmartSpaceReceiver", "receiving update with no proto: " + intent.getExtras());
     }
 
-    public void notify(SmartspaceProto.SmartspaceUpdate.SmartspaceCard smartspaceCard, Context context, Intent intent, boolean z) {
+    public void notify(
+            SmartspaceProto.SmartspaceUpdate.SmartspaceCard smartspaceCard,
+            Context context,
+            Intent intent,
+            boolean z) {
         PackageInfo packageInfo;
         long currentTimeMillis = System.currentTimeMillis();
         try {
-            packageInfo = context.getPackageManager().getPackageInfo("com.google.android.googlequicksearchbox", PackageManager.PackageInfoFlags.of(0L));
+            packageInfo =
+                    context.getPackageManager()
+                            .getPackageInfo(
+                                    "com.google.android.googlequicksearchbox",
+                                    PackageManager.PackageInfoFlags.of(0L));
         } catch (PackageManager.NameNotFoundException ex) {
             Log.w("SmartSpaceReceiver", "Cannot find GSA", ex);
             packageInfo = null;
         }
-        this.mController.onNewCard(new NewCardInfo(smartspaceCard, intent, z, currentTimeMillis, packageInfo));
+        this.mController.onNewCard(
+                new NewCardInfo(smartspaceCard, intent, z, currentTimeMillis, packageInfo));
     }
 }
