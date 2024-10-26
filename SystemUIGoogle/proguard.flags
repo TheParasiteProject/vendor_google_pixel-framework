@@ -2,8 +2,9 @@
 
 -keep,allowoptimization class android.frameworks.** { *; }
 -keep,allowoptimization class android.hardware.** { *; }
--keep,allowoptimization class androidx.appsearch.** { *; }
 -keep,allowoptimization class com.android.systemui.** { *; }
 -keep,allowoptimization class com.google.** { *; }
+-keep,allowoptimization class kotlinx.coroutines.flow.** { *; }
+-keep,allowoptimization class org.pixelexperience.** { *; }
 -keep,allowoptimization class org.tensorflow.** { *; }
 -keep,allowoptimization class vendor.** { *; }
