@@ -3,6 +3,7 @@ package org.pixelexperience.systemui.utils;
 import android.util.Log;
 
 import java.io.PrintWriter;
+import java.util.ArrayList;
 
 public abstract class Compat {
 
