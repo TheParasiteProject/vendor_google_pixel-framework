@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:focusable="true"
         android:layout_marginEnd="@dimen/enhanced_smartspace_base_action_icon_margin"
-        android:textColor="?android:textColorPrimary"
+        android:textColor="?android:attr/textColorPrimary"
         style="@style/DateWeatherText" />
 
 </com.google.android.systemui.smartspace.WeatherSmartspaceView>

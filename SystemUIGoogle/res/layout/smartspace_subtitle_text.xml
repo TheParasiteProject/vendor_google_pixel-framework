@@ -8,7 +8,7 @@
     android:focusable="true"
     android:paddingBottom="@dimen/enhanced_smartspace_base_action_icon_padding"
     android:paddingTop="@dimen/enhanced_smartspace_base_action_icon_padding"
-    android:textColor="?android:textColorPrimary"
+    android:textColor="?android:attr/textColorPrimary"
     style="@style/EnhancedSmartspaceTextSubtitle"
     app:layout_constrainedWidth="true"
     app:layout_constraintBottom_toBottomOf="parent"

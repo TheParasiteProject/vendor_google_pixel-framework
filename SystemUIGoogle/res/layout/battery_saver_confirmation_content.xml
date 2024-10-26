@@ -10,7 +10,7 @@
         android:id="@id/standard_option_layout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="?android:selectableItemBackground"
+        android:background="?android:attr/selectableItemBackground"
         android:gravity="center_vertical"
         android:layout_marginBottom="20.0dip">
 
@@ -33,8 +33,8 @@
             android:layout_marginBottom="4.0dip"
             android:layout_toEndOf="@id/standard_button"
             android:text="@string/saver_confirmation_dialog_title_standard_mode"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="?android:textColorPrimary" />
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?android:attr/textColorPrimary" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -42,8 +42,8 @@
             android:layout_below="@id/standard_title"
             android:layout_toEndOf="@id/standard_button"
             android:text="@string/saver_confirmation_dialog_summary_standard_mode"
-            android:textAppearance="?android:textAppearanceListItemSecondary"
-            android:textColor="?android:textColorSecondary" />
+            android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+            android:textColor="?android:attr/textColorSecondary" />
 
     </RelativeLayout>
 
@@ -51,7 +51,7 @@
         android:id="@id/extreme_option_layout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="?android:selectableItemBackground"
+        android:background="?android:attr/selectableItemBackground"
         android:gravity="center_vertical"
         android:layout_marginTop="20.0dip">
 
@@ -73,8 +73,8 @@
             android:layout_marginBottom="4.0dip"
             android:layout_toEndOf="@id/extreme_button"
             android:text="@string/saver_confirmation_dialog_title_extreme_mode"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="?android:textColorPrimary" />
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?android:attr/textColorPrimary" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -82,8 +82,8 @@
             android:layout_below="@id/extreme_title"
             android:layout_toEndOf="@id/extreme_button"
             android:text="@string/saver_confirmation_dialog_summary_extreme_mode"
-            android:textAppearance="?android:textAppearanceListItemSecondary"
-            android:textColor="?android:textColorSecondary" />
+            android:textAppearance="?android:attr/textAppearanceListItemSecondary"
+            android:textColor="?android:attr/textColorSecondary" />
 
     </RelativeLayout>
 
@@ -99,7 +99,7 @@
         android:paddingEnd="@dimen/columbus_target_request_dialog_button_background_radius"
         android:paddingStart="@dimen/columbus_target_request_dialog_button_background_radius"
         android:text="@string/face_reenroll_dialog_confirm"
-        android:textColor="?android:textColorPrimary"
+        android:textColor="?android:attr/textColorPrimary"
         android:textSize="@dimen/columbus_target_request_dialog_content_text_size" />
 
 </LinearLayout>
