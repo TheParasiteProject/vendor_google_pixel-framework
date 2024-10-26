@@ -2,6 +2,6 @@
 <shape android:shape="rectangle"
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
-    <solid android:color="?androidprv:attr/colorAccentPrimary" />
+    <solid android:color="?android:^attr-private/colorAccentPrimary" />
     <corners android:radius="@dimen/enhanced_smartspace_combination_sub_card_corner_radius" />
 </shape>
